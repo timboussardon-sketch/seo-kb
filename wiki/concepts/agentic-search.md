@@ -5,7 +5,7 @@ aliases: [agentic-search, seo-agentique, mle-star]
 tags: [agentic, agents-ia, seo-ia, geo, titans]
 created: 2026-04-12
 updated: 2026-04-13
-sources: 4
+sources: 7
 confidence: high
 status: stable
 ---
@@ -40,4 +40,4 @@ LLM de recherche générative **déployé en production** (RedNote/Xiaohongshu, 
 
 ## Pages liées
 
-[[sources/2026-04-11-seo-ia-tim]] · [[sources/2026-04-13-core-ranking-jin-2025]] · [[sources/2026-04-13-raid-gseo-2025]] · [[sources/2026-04-13-searchllm-2026]] · [[sources/2026-04-12-tim-skills-seo-proprietary]] · [[concepts/surprise-metric]] · [[concepts/aeo]] · [[concepts/4w-deep-reflection]] · [[concepts/answer-first-pattern]] · [[concepts/data-proprietaire]] · [[entities/titans]]
+[[sources/2026-04-11-seo-ia-tim]] · [[sources/2026-04-13-core-ranking-jin-2025]] · [[sources/2026-04-13-raid-gseo-2025]] · [[sources/2026-04-13-searchllm-2026]] · [[sources/2026-04-12-tim-skills-seo-proprietary]] · [[sources/2026-04-15-scan-arxiv-15-avril]] (AgenticGEO 2603.20213, Role-Augmented G-SEO 2508.11158) · [[sources/2026-04-25-scan-arxiv-25-avril]] (MAGEO 2604.19516 — 3 agents avec mémoire) · [[sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse]] (Addy Osmani formalise l'AEO côté Google Cloud) · [[concepts/surprise-metric]] · [[concepts/aeo]] · [[concepts/4w-deep-reflection]] · [[concepts/answer-first-pattern]] · [[concepts/data-proprietaire]] · [[concepts/grounding-score]] · [[entities/titans]]

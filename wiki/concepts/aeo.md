@@ -5,8 +5,8 @@ aliases: [aeo, answer-engine-optimization]
 tags: [geo, aeo, seo-ia, ranking, moteurs-reponse]
 created: 2026-04-12
 updated: 2026-04-13
-sources: 1
-confidence: medium
+sources: 9
+confidence: high
 status: stable
 ---
 
@@ -33,4 +33,4 @@ Les deux se recouvrent largement. Tim utilise les deux termes.
 
 ## Pages liées
 
-[[sources/2026-04-13-semrush-llm-conversion-study]] · [[concepts/grounding-score]] · [[concepts/surprise-gap]] · [[concepts/data-proprietaire]] · [[concepts/agentic-search]] · [[sources/2026-04-12-tim-skills-seo-proprietary]]
+[[sources/2026-04-24-reflexion-organikk-4-piliers]] (pilier 4 explicite) · [[sources/2026-04-24-cluster-business-organikk-4-piliers]] (cluster opérationnel) · [[sources/2026-04-17-organikk-process-seo-b2b-2026]] (process B2B + Know-Simple/Know/Do) · [[sources/2026-04-15-opendecoder-seo-scoring-system]] (S_AEO comme 4e score) · [[sources/2026-04-13-semrush-llm-conversion-study]] · [[sources/2026-04-11-algorithme-linkedin-2e-source-ia]] (étude LinkedIn 2e source IA : "être cité vaut plus que ranker") · [[sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse]] (Addy Osmani formalise l'AEO côté Google Cloud) · [[sources/2026-04-22-algorithme-core-update-fermes-ia]] (divergence ChatGPT/Perplexity/AI Mode = AEO différencié par moteur) · [[concepts/grounding-score]] · [[concepts/surprise-gap]] · [[concepts/data-proprietaire]] · [[concepts/agentic-search]] · [[sources/2026-04-12-tim-skills-seo-proprietary]] · [[entities/chatgpt-search]] · [[entities/perplexity]] · [[entities/google-ai-mode]] · [[entities/linkedin]]

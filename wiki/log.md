@@ -323,6 +323,172 @@ Détail :
   - nom d'agence Caroline + nom de famille non donnés dans le transcript
   - statut final inscription non confirmé à la fin du call
 
+## [2026-05-01] batch-ingest | T4 + T5 + T6 — 11 sources supplémentaires (validation "do it" Tim)
+
+Suite directe du batch-ingest T1+T2+T3. Tim valide T4 (notes doctrinales) + T5 (scoring + agent) + T6 (sous-collections). Décision de fusion : `cluster-business-organikk-source.md` ET `2026-04-24-cluster-business-organikk-cursor.md` étant identiques → 1 source fusionnée. Décisions de skip pour T6 : `raw/notes/skill-*.md` (12 fichiers, déjà couverts par tim-skills-seo-proprietary), `raw/notes/tim-*.md` (6 fichiers, déjà couverts par les 3 sources tim-* existantes), `raw/articles/organikk-blog/` (déjà via scrape sauf process-seo-b2b-2026 ingéré séparément), `raw/articles/lost-from-old-site/` et `raw/notes/contenu-seo/` (faible valeur ajoutée vs sources existantes).
+
+### Sources créées (11)
+
+**T4 — Notes doctrinales (5)**
+- [[sources/2026-04-24-reflexion-organikk-4-piliers]] — `doctrine`. Cadre doctrinal Organikk : 4 piliers (Surprise Gap / Grounding / pSEO / AEO) + 6 interconnexions + matrice 11 skills × 4 piliers + cadre de décision séquentiel
+- [[sources/2026-04-24-cluster-business-organikk-4-piliers]] — `doctrine`. Cluster opérationnel : page pilier + 16 satellites (4 sous-piliers × 4 pages : Know-Simple/Know/Know thought leadership/Do) + 3 commerciales + roadmap 90j + 6 KPIs cluster
+- [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]] — `doctrine`. 4 modèles pSEO data-driven : Modèle 1 Empreinte SERP (Google/Claude/Gemini) · Modèle 2 Entités SERP · Modèle 5 Arbre Suggest · Modèle 6 Schema secteur. Stack 100% APIs officielles, stack interdit explicite (SerpAPI/DataForSEO/Bright Data/Apify)
+- [[sources/2026-04-17-organikk-process-seo-b2b-2026]] — `article`. Article pilier Organikk publié 17 avril (HUB Pilier 1 du blog, 2400 mots). Verbatim doctrinal "ne plus vendre du trafic, vendre des leads" + test ChatGPT 2 questions + bannissement "visibilité"
+- [[sources/2026-04-25-tim-ton-de-voix-extraction-terrain]] — `doctrine`. Analyse 35 patterns + 5 intros + 5 closings + structures rhétoriques + vocabulaire signature + 10 règles applicables sur ~12 000 mots verbatim Tim (5 Substack + 4 LinkedIn + Organikk + doctrine my-voice)
+
+**T5 — Scoring + agent (2)**
+- [[sources/2026-04-15-opendecoder-seo-scoring-system]] — `doctrine`. Système de scoring 4 axes (S_Pertinence dominant + S_Qualité + S_Potentiel + S_AEO) inspiré paper OpenDecoder (Mo et al. 2026). 15 prompts LLM structurés. Formule S_100 = (S_final / 2.5) × 100. Référence officielle pour audit/évaluation contenu avant publication.
+- [[sources/2026-04-30-qadence-seo-agent-snapshot]] — `doctrine`. Snapshot Edge Function Supabase (Deno + 2643 LoC) — dispatcher d'agent SEO connecté GSC. 9 tools (fetch_gsc_data, score_content OpenDecoder, load_skill via embedding Gemini, update_project_memory, etc.). Patterns : skill loader sémantique + mémoire projet persistante par (user_id, domain) + agir-pas-annoncer + anti-contamination contexte projet vs choix skill.
+
+**T6 — Sous-collections batchées (4)**
+- [[sources/2026-04-30-tim-posts-linkedin-batch]] — `doctrine`. 11 posts LinkedIn (idées + posts publiés). Pattern dominant "Type A : J'ai fait X". 5 types de data propriétaire formalisés (cas client chiffré, réflexion originale, méthodologie documentée, outil interactif, signaux sociaux).
+- [[sources/2026-04-30-fg-formation-pseo-cas-client]] — `client-note`. 2e client-note wiki après Victoria Garden. Angle B2B inversé : parler aux créateurs d'OF (pas aux apprenants). Densité données propriétaires : 32 indicateurs Qualiopi × 25+ secteurs × 11 OPCO = jusqu'à 8 800 combinaisons théoriques. 5 modèles pSEO documentés (Modèle 1 secteurs détaillé).
+- [[sources/2026-04-30-drive-accompagnement-templates]] — `doctrine`. Kit 7 dossiers (00_Admin → 06_Livrables_Client) avec ordre d'import par call (Call 1 Fondations → Call 4-6 Contenu). Workflow migration vers Google Drive partagé client.
+- [[sources/2026-04-30-scheduled-skills-cron]] — `doctrine`. 6 specs cron : revue-presse-quotidienne · raw-revue-de-presse · scan-arxiv-seo-ia (5 prompts détaillés) · recap-hebdo-vendredi · todo-quotidienne-bilan-tim · rappel-calls-1h. Articulation avec routine cloud Anthropic `trig_01Q9turzWB81Ck2i4YF3gyzN` (cron `7 7 * * *` UTC) documentée dans MIGRATION.md.
+
+### Entities créées (2)
+
+- [[entities/qadence-seo-agent]] — sous-cat Architectures IA / Agents (extension §4.1). Edge Function Supabase 2643 LoC, 9 tools, snapshot 2026-04-30
+- [[entities/fg-formation]] — sous-cat Clients Tim. Accompagnement OF Qualiopi/OPCO, angle B2B inversé
+
+### Concepts créés (4)
+
+- [[concepts/methode-organikk-4-piliers]] — sous-cat AEO/GEO. **Concept umbrella** qui formalise la doctrine 4 piliers + 6 interconnexions + matrice skills + cadre de décision séquentiel
+- [[concepts/mots-cles-actionnels]] — sous-cat Stratégie contenu. **Terme signature Tim** : décisionnel + transactionnel, l'utilisateur attend une action. Test "ChatGPT 2 questions"
+- [[concepts/know-simple-know-do]] — sous-cat Stratégie contenu. **Framework Tim qui remplace TOFU/MOFU/BOFU** obsolète. 3 intentions × formats × Schema.org. Matrice OpenDecoder format×intention
+- [[concepts/pseo-data-driven-models]] — sous-cat Maillage & architecture. **4 modèles pSEO conformes** : Empreinte SERP / Entités SERP / Suggest / Schema secteur. Stack autorisé/interdit explicite
+
+### Entities mises à jour (2)
+
+- [[entities/organikk-co]] — sources 3→8. Ajout des 5 sources doctrine Organikk (réflexion, cluster, pSEO data-driven, process-b2b article publié, ton-voix)
+- [[entities/bootcamp-seo-ia]] — sources 6→7 (drive-accompagnement = kit livrables client bootcamp). Ajout entity-link vers fg-formation (cas client compatible)
+
+### Concepts mis à jour (5)
+
+- [[concepts/programmatique-pseo]] — sources 4→9 (fg-formation, pseo-data-driven, cluster-organikk, process-b2b, maillage-interne)
+- [[concepts/data-proprietaire]] — sources 19→25 (5 types formalisés posts-linkedin + fg-formation B2B inversé + 4 modèles APIs officielles + cluster + process B2B + scoring)
+- [[concepts/aeo]] — sources 5→9 (réflexion 4 piliers pilier 4 explicite + cluster + process B2B + scoring S_AEO)
+- [[concepts/anti-ai-writing]] — sources 7→9 (volet positif 35 patterns Tim + corpus LinkedIn cohérent)
+
+### Pages créées : 17 (11 sources + 2 entities + 4 concepts)
+### Pages mises à jour : 8 (2 entities + 5 concepts + index)
+
+### Contradictions / dépendances ouvertes
+
+- **Paper OpenDecoder (Mo et al., 2026)** — référence centrale du scoring system, **non encore ingéré** comme source paper. À ajouter pour audit fidélité de la transposition.
+- **Cluster Organikk + 4 modèles pSEO** — plans non encore implémentés au 2026-04-30. Aucune mesure post-déploiement disponible
+- **Repo qadence-seo-agent** — snapshot 2026-04-30 figé, le repo continue d'évoluer (prochaine session : ré-ingester un nouveau snapshot ou diff)
+- **Audit blanc Qualiopi (FG Formation)** — fichier `audit-blanc.md` lu en titre uniquement, contenu non détaillé dans la KB
+- **Templates Drive Accompagnement individuels** — seul l'INDEX est ingéré, les 21 templates eux-mêmes (mvs-strategie, architecture-semantique, etc.) ne sont pas en pages wiki source distinctes
+- **11 workflows automatisés** mentionnés dans drive-accompagnement non explicités (vs 10 skills propriétaires actuels — divergence comptable à clarifier)
+
+### Skips documentés
+
+- `raw/notes/skill-*.md` (12 fichiers : skill-brief-contenu, skill-cannibalisation, skill-cluster-aeo, skill-content-pipeline, skill-entites-vectorielles, skill-kb-semantic-search, skill-linkedin-post-tim, skill-maillage-interne(-UPDATED), skill-peurs-objections, skill-product-led-seo, skill-programmatique-pseo, skill-quick-win, skill-revue-presse-iteration, skill-workflow-article) — déjà couverts par [[sources/2026-04-12-tim-skills-seo-proprietary]]
+- `raw/notes/tim-*.md` (6 fichiers : tim-about-me, tim-anti-ai-writing-style, tim-my-rules, tim-my-voice, tim-prompt-systeme, tim-readme-bot-instructions) — déjà couverts par [[sources/2026-03-31-tim-profil-et-regles]] · [[sources/2026-03-31-tim-prompt-systeme-fusionn]] · [[sources/2026-03-31-tim-workflow-redaction]]
+- `raw/articles/organikk-blog/*` — 14 articles déjà couverts par [[sources/2026-04-12-organikk-blog-scrape]] (sauf `process-seo-b2b-2026.md` ingéré séparément en T4)
+- `raw/articles/lost-from-old-site/` (2 HTML : analyse-niche-seo, seo-entreprise-locale) — faible valeur ajoutée doctrinale vs sources existantes
+- `raw/notes/contenu-seo/` (7 fichiers : DATASET-SEO, LAST-POSTs-LK, Newsletter, SEO-IA, STRAT-SEO-2025, best-SEO-post, newsletter-cowork-seo) — l'échantillon SEO-IA.md est l'analyse Tim sur Titans/MIRAS déjà couverte par [[sources/2026-04-11-seo-ia-tim]]
+- `raw/notes/archive/skills-pre-cursor-merge-2026-04-25/` — archive de versions antérieures des skills, non doctrinale
+
+### Angle SEO identifié — convergence des 11 sources
+
+3 axes doctrinaux que ce batch consolide en système exécutable :
+
+1. **Méthode Organikk = système opérationnel à 4 piliers** (réflexion + cluster + pSEO data-driven + ton-de-voix) — passe de "thèse" à "produit" avec roadmap 90j et garde-fous chiffrés
+2. **Scoring + agent = chaîne d'évaluation automatisable** (OpenDecoder + Qadence) — ferme la boucle production → audit → amélioration en infrastructure
+3. **Vente SEO B2B 2026 cristallisée** — process B2B (article pilier) + 11 posts LinkedIn (Type A) + scheduled skills (Algorithme quotidien) + drive-accompagnement (kit livrables) + 2 cas clients pSEO (Victoria Garden + FG Formation) → couverture complète prospection → livraison
+
+### Skills hookés à activer ensuite (suggestions)
+
+- `seo-cluster-aeo` sur Organikk pour valider en simulation le cluster avant implémentation
+- `seo-product-led` pour spécifier les 4 outils Do du cluster (calculateur Surprise / audit Grounding / générateur template pSEO / audit AEO citabilité)
+- `linkedin-post-tim` sur les 8 idées Type A non encore publiées (1, 4, 6, 8 a priori les plus performantes)
+- `revue-presse-iteration` sur "Méthode Organikk 4 piliers" comme thème éditorial pour la newsletter
+
+---
+
+## [2026-05-01] batch-ingest | 9 nouvelles sources raw/ → wiki/ (T1+T2+T3 validés par Tim)
+
+Ingest groupé après diff `raw/` vs `wiki/sources/`. Tim valide T1 (newsletters Algorithme) + T2 (scans ArXiv) + T3 (transcripts calls). Workflow §6.1 appliqué en batch (autorisé sur demande explicite).
+
+### Sources créées (9)
+
+**T1 — Newsletters Algorithme (3)**
+- [[sources/2026-04-11-algorithme-linkedin-2e-source-ia]] — `source_type: article`. INFO LinkedIn 2e source IA (325k prompts ALM Corp + Semrush) + Core Update mars 2026 + AI Mode 93% sans clic (Seer 25,1 M impressions) + Semrush humain 8x #1.
+- [[sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse]] — `source_type: article`. INFO listicles ChatGPT −30% (Seer 2 M citations) — survivantes = 10-20 items + signaux externes. Brèves : Core Update intermédiaires dérouillent, Addy Osmani formalise AEO côté Google Cloud (`llms.txt` / `skill.md`), LinkedIn 360Brew "authenticity update" (save 5x reach > like).
+- [[sources/2026-04-22-algorithme-core-update-fermes-ia]] — `source_type: article`. Édition longue compilée : 3 INFOs (LinkedIn + IA spécialisées Profound 680 M + listicles −30%). Données nouvelles : ChatGPT vs Perplexity vs AI Mode (11% domaines communs ChatGPT/Perplexity, ChatGPT cite Wikipedia 47,9%, Perplexity cite Reddit 46,7%) + brevet Google US12536233B1 (landing page IA générée si "page design quality" insuffisant) + −40 à −80% sur sites IA industrialisés.
+
+**T2 — Scans ArXiv (2)**
+- [[sources/2026-04-15-scan-arxiv-15-avril]] — `source_type: doctrine` (compilation Tim). 5 papers : LLMSEO Bench (2603.25500, 99,78% black-hat filtré + 7 nouvelles attaques), Retrieval Collapse NAVER (2602.16136, 67% pool → 80% exposure), AgenticGEO (2603.20213), AI Search Bias (2602.13415, AI Overviews 7→229 pays), Role-Augmented G-SEO (2508.11158).
+- [[sources/2026-04-25-scan-arxiv-25-avril]] — `source_type: doctrine`. 5 papers ACM Web Conf 2026 : MAGEO (2604.19516, 3 agents avec mémoire — Tsinghua/Tencent), LLMSEO Bench (réf croisée), Retrieval Collapse (analyse approfondie), Formalized Information Needs (2604.04140), LLM Reranking Positional Bias (2604.03642 — passages en bas sous-classés).
+
+**T3 — Transcripts calls (3)**
+- [[sources/2026-04-13-call-02-marrusia-cecile]] — `source_type: transcript`. Cécile freelance contenu/web ~6-7 mois, niche artisans/asso, profil presse (lecteur correcteur 10 ans).
+- [[sources/2026-04-13-call-03-cecile-suite]] — `source_type: transcript`. Suite immédiate : Live Mentor 2025, blocages clients ("ils comprennent rien à ‘visibilité'"), pédagogie Tim Claude Code vs Fusion ("Fusion = 5% de ce que Claude Code fait"), prix bootcamp 590€/2 mois.
+- [[sources/2026-04-15-call-10-franck-suite]] — `source_type: transcript`. Suite call-08. Franck **26 ans SEO depuis 2000**, fondateur historique `SEO.fr` (vendu début 2024 à `Netlinking.fr`). Discussion centrale : rapport Claude reçu d'un client (location véhicules), métriques agence (Top 10) vs business (réservations). Doctrine vente Tim cristallisée : "ne plus vendre du trafic, vendre des emails qualifiés". Démo Obsidian + Claude Code en partage d'écran.
+
+### Entities créées (7)
+
+- [[entities/linkedin]] — sous-cat Concepts-marque / Plateformes (2e source IA citée, algo 360Brew)
+- [[entities/chatgpt-search]] — sous-cat Concepts-marque / Produits IA
+- [[entities/perplexity]] — sous-cat Concepts-marque / Produits IA
+- [[entities/google-ai-mode]] — sous-cat Algorithmes Google / Produits IA (93% sans clic, AI Overviews 7→229 pays)
+- [[entities/semrush]] — sous-cat Outils SEO (étude 42k URLs humain 8x #1, étude conversion 4x ChatGPT vs Google)
+- [[entities/seer-interactive]] — sous-cat Concurrents / Agences (études 2M citations ChatGPT, 25,1M impressions AI Mode)
+- [[entities/naver]] — sous-cat Acteurs / organisations recherche (paper Retrieval Collapse)
+
+### Concepts créés (3)
+
+- [[concepts/maillage-systeme]] — sous-cat **Maillage & architecture** (nouvelle sous-catégorie). Architecture éditoriale 3 axes (topique/vectoriel/cognitif), hub/satellite, cross-pillar pollination, 6 règles de gouvernance par publication
+- [[concepts/5-types-ancres]] — sous-cat Maillage & architecture. Exact / partial (60-70%) / sémantique / naming / contextuelle, avec quotas et 5 critères de validation par ancre
+- [[concepts/retrieval-collapse]] — sous-cat **Métriques & GEO opérationnel**. 67% pool → 80% exposure (NAVER paper), qualité apparente stable, justification scientifique de [[concepts/data-proprietaire]] et [[concepts/e-e-a-t]]
+
+### Entities mises à jour (5)
+
+- [[entities/marrusia-cecile]] — sources 1→3, confidence medium→high (transcripts désormais ingérés). Profil enrichi (presse + niche artisans + ex-chargée comm asso 10 ans)
+- [[entities/franck]] — sources 2→3. **Correction parcours** : 26 ans SEO depuis 2000, ex-fondateur `SEO.fr` (vendu début 2024 à `Netlinking.fr`), pas "15 ans Jumpto". Stack Mamoot AI 10€/mois ajouté.
+- [[entities/jumpto]] — flag `a-verifier` ajouté. Discordance avec call-10 (Franck se présente comme freelance ex-SEO.fr, pas directeur Jumpto). À clarifier auprès de Tim.
+- [[entities/bootcamp-seo-ia]] — sources 3→6 (calls 02, 03, 10 ajoutés)
+- [[entities/organikk-co]] — sources 2→3 (newsletter-maillage = cas terrain blog)
+- [[entities/fusionn-io]] — sources 5→6 (call-03 Cécile = positionnement Fusion vs Claude Code documenté)
+
+### Concepts mis à jour (5)
+
+- [[concepts/data-proprietaire]] — sources 14→19 (5 nouvelles sources convergentes : Retrieval Collapse, Core Update fermes IA, listicles densité de preuves, LinkedIn signal humain)
+- [[concepts/seo-multi-plateforme]] — sources 3→6, confidence medium→high (LinkedIn 2e source IA + 360Brew + IA spécialisées)
+- [[concepts/aeo]] — sources 1→5, confidence medium→high (LinkedIn "être cité vaut plus que ranker", AEO Addy Osmani Google Cloud, divergence ChatGPT/Perplexity/AI Mode)
+- [[concepts/agentic-search]] — sources 4→7 (MAGEO, AgenticGEO, Role-Augmented G-SEO, AEO Addy Osmani)
+- [[concepts/anti-ai-writing]] — sources 4→7 (LLMSEO Bench 99,78% filtré, Retrieval Collapse, Core Update −40 à −80% fermes IA)
+
+### Pages créées : 19 (9 sources + 7 entities + 3 concepts)
+### Pages mises à jour : 11 (5 entities + 5 concepts + index)
+
+### Contradictions / dépendances ouvertes
+
+- **Discordance Franck — Jumpto vs SEO.fr** : à clarifier au prochain call ou ingest. Possible parcours intermédiaire 2024-? non documenté
+- **Brevet Google US12536233B1** : surveiller si déploiement (pas juste publication brevet)
+- **Paper MAGEO 2604.19516** : PDF non récupéré dans `raw/etudes-seo/`, ingest paper séparé possible
+- **Paper Role-Augmented G-SEO 2508.11158** : numérotation 25xx atypique, ID à revérifier ; PDF présent dans `raw/etudes-seo/arxiv-2508.11158v1.pdf` → ingest paper séparé possible si Tim demande
+- **Statut inscription Cécile et Franck** : non confirmé en fin des transcripts (récap email envoyé)
+
+### Angle SEO identifié
+
+Convergence forte des 9 sources sur **3 axes doctrinaux** :
+1. **Le contenu IA brut est mort en 2026** — Core Update (−40 à −80% fermes IA), Semrush (humain 8x #1), Retrieval Collapse (67% pool → 80% exposure), LLMSEO Bench (99,78% black-hat filtré)
+2. **LinkedIn devient un canal de citation IA prioritaire B2B** — 2e source citée derrière les profils individuels, signal humain non-fakeable, 5 posts/4 semaines suffisent
+3. **Bifurcation GEO artisanal vs industriel** — MAGEO (3 agents avec mémoire) + AEO Addy Osmani (`llms.txt`, `skill.md`) → les agences qui ne basculent pas vers une approche "stratégies réutilisables + data propriétaire" vont être commoditisées
+
+Le concept [[concepts/retrieval-collapse]] devient l'argument scientifique central pour justifier la doctrine [[concepts/data-proprietaire]] auprès des prospects qui doutent ("pourquoi pas du contenu IA pour aller plus vite").
+
+### Skills hookés à activer ensuite (suggestions)
+
+- `revue-presse-iteration` sur Retrieval Collapse comme INFO DU JOUR
+- `linkedin-post-tim` sur le pivot vente "ne plus vendre du trafic"
+- `seo-brief-contenu` éventuel sur le terme "Agentic Engine Optimization" (Addy Osmani) pour devancer le SEO français
+
+---
+
 ## [2026-04-15] cleanup | Récupération call 10 + correction 2 erreurs factuelles index
 - déclencheur : Tim demande "récupère dans dossier bootcamp call". Audit du dossier source `~/Documents/CLAUDE/SEO/Bootcamp CALL/` révèle 2 erreurs propagées dans la KB depuis l'ingest initial.
 

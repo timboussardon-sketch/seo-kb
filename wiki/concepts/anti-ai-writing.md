@@ -5,7 +5,7 @@ aliases: [anti-ai-writing, anti-patterns-ia, wikipedia-signs-ai-writing]
 tags: [redaction, anti-patterns, qualite, doctrine-tim]
 created: 2026-04-12
 updated: 2026-04-13
-sources: 4
+sources: 9
 confidence: high
 status: stable
 ---
@@ -45,4 +45,4 @@ Un contenu qui **ressemble à du LLM** a une [[concepts/surprise-metric]] ≈ 0 
 
 ## Pages liées
 
-[[sources/2026-04-13-geo-aggarwal-2024]] (confirmation empirique : Keyword Stuffing −8 % PAWC / −9 % Perplexity) · [[sources/2026-04-13-google-quality-raters-guidelines-2026]] (norme p.42 effort-less) · [[sources/2026-03-31-tim-profil-et-regles]] · [[sources/2026-03-31-tim-workflow-redaction]] · [[concepts/workflow-redaction-8-etapes]] · [[concepts/surprise-metric]] · [[concepts/surprise-gap]] · [[concepts/answer-first-pattern]] · [[entities/quality-raters-guidelines]]
+[[sources/2026-04-25-tim-ton-de-voix-extraction-terrain]] (35 patterns positifs Tim sur ~12 000 mots verbatim — volet positif complémentaire) · [[sources/2026-04-30-tim-posts-linkedin-batch]] (corpus LinkedIn cohérent avec patterns Substack) · [[sources/2026-04-13-geo-aggarwal-2024]] (confirmation empirique : Keyword Stuffing −8 % PAWC / −9 % Perplexity) · [[sources/2026-04-13-google-quality-raters-guidelines-2026]] (norme p.42 effort-less) · [[sources/2026-04-15-scan-arxiv-15-avril]] (LLMSEO Bench : black-hat 99,78 % filtré + Retrieval Collapse) · [[sources/2026-04-25-scan-arxiv-25-avril]] (validation académique étendue) · [[sources/2026-04-22-algorithme-core-update-fermes-ia]] (Core Update mars 2026 : −40 à −80 % sur fermes IA industrialisées) · [[sources/2026-03-31-tim-profil-et-regles]] · [[sources/2026-03-31-tim-workflow-redaction]] · [[concepts/workflow-redaction-8-etapes]] · [[concepts/surprise-metric]] · [[concepts/surprise-gap]] · [[concepts/answer-first-pattern]] · [[concepts/retrieval-collapse]] · [[entities/quality-raters-guidelines]] · [[entities/naver]]

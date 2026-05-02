@@ -5,7 +5,7 @@ aliases: [fusionn, fusionn-io, fusionn-ai]
 tags: [outil, seo, geo, saas, doctrine-tim]
 created: 2026-04-12
 updated: 2026-04-13
-sources: 5
+sources: 6
 confidence: high
 status: stable
 ---
@@ -26,4 +26,4 @@ Plateforme SaaS d'analyse sémantique SEO/GEO créée par Tim. Recherche de mots
 
 ## Pages liées
 
-[[sources/2026-03-31-tim-prompt-systeme-fusionn]] · [[sources/2026-04-13-offre-bootcamp-seo-ia]] · [[sources/2026-04-13-cas-clients-resultats]] (Julien reprend positions après refonte via Fusionn) · [[entities/bootcamp-seo-ia]] · [[concepts/ingenierie-semantique-inversee]] · [[concepts/grounding-score]] · [[concepts/surprise-gap]]
+[[sources/2026-03-31-tim-prompt-systeme-fusionn]] · [[sources/2026-04-13-offre-bootcamp-seo-ia]] · [[sources/2026-04-13-cas-clients-resultats]] (Julien reprend positions après refonte via Fusionn) · [[sources/2026-04-13-call-03-cecile-suite]] (Cécile utilise Fusion pour mots-clés ; Tim positionne Claude Code en complémentaire) · [[entities/bootcamp-seo-ia]] · [[concepts/ingenierie-semantique-inversee]] · [[concepts/grounding-score]] · [[concepts/surprise-gap]] · [[concepts/cli-tools-optional]]

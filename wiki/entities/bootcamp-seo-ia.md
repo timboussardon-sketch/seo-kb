@@ -5,7 +5,7 @@ aliases: [bootcamp-seo-ia, bootcamp-tim, bootcamp-4]
 tags: [bootcamp, offre, produit, freelance, claude-cowork]
 created: 2026-04-13
 updated: 2026-04-13
-sources: 3
+sources: 7
 confidence: high
 status: stable
 ---
@@ -60,4 +60,4 @@ Produit commercial phare de Timothée Boussardon / [[entities/fusionn-io]]. Édi
 
 ## Pages liées
 
-[[sources/2026-04-13-offre-bootcamp-seo-ia]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] · [[sources/2026-04-13-cas-clients-resultats]] · [[entities/fusionn-io]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/workflow-redaction-8-etapes]] · [[concepts/data-proprietaire]] · [[concepts/tabou-visibilite]]
+[[sources/2026-04-13-offre-bootcamp-seo-ia]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] · [[sources/2026-04-13-cas-clients-resultats]] · [[sources/2026-04-13-call-02-marrusia-cecile]] · [[sources/2026-04-13-call-03-cecile-suite]] · [[sources/2026-04-15-call-10-franck-suite]] · [[sources/2026-04-30-drive-accompagnement-templates]] (kit livrables client bootcamp + accompagnement) · [[entities/fusionn-io]] · [[entities/fg-formation]] · [[entities/victoria-garden]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/workflow-redaction-8-etapes]] · [[concepts/data-proprietaire]] · [[concepts/tabou-visibilite]]

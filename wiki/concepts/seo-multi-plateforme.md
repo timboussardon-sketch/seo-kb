@@ -5,8 +5,8 @@ aliases: [seo-multi-plateforme, seo-multi-vectoriel]
 tags: [doctrine-tim, seo, youtube, linkedin, multi-vectoriel, strategie]
 created: 2026-04-12
 updated: 2026-04-13
-sources: 3
-confidence: medium
+sources: 6
+confidence: high
 status: stable
 ---
 
@@ -37,4 +37,4 @@ Les trois se renforcent mutuellement → signaux croisés de marque → indexati
 
 ## Pages liées
 
-[[sources/2026-02-27-algorithme-youtube-ai-overviews]] · [[sources/2026-03-04-algorithme-lancer-site-sans-cms]] · [[sources/2026-04-13-semrush-llm-conversion-study]] (4x conversion LLM justifie diversification au-delà de Google) · [[entities/youtube]] · [[concepts/grounding-score]] · [[concepts/information-gain]] · [[concepts/aeo]]
+[[sources/2026-02-27-algorithme-youtube-ai-overviews]] · [[sources/2026-03-04-algorithme-lancer-site-sans-cms]] · [[sources/2026-04-13-semrush-llm-conversion-study]] (4x conversion LLM justifie diversification au-delà de Google) · [[sources/2026-04-11-algorithme-linkedin-2e-source-ia]] (LinkedIn = 2e source IA, signal humain non-fakeable B2B) · [[sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse]] (LinkedIn 360Brew authenticity update) · [[sources/2026-04-22-algorithme-core-update-fermes-ia]] (IA spécialisées : ChatGPT vs Perplexity vs AI Mode) · [[entities/youtube]] · [[entities/linkedin]] · [[entities/chatgpt-search]] · [[entities/perplexity]] · [[entities/google-ai-mode]] · [[concepts/grounding-score]] · [[concepts/information-gain]] · [[concepts/aeo]]

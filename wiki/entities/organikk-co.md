@@ -5,7 +5,7 @@ aliases: [organikk, organikk-co, site-tim]
 tags: [site, organikk, tim, blog, bootcamp, outils, brand]
 created: 2026-04-13
 updated: 2026-04-13
-sources: 2
+sources: 8
 confidence: high
 status: stable
 ---
@@ -60,4 +60,4 @@ Organikk.co n'est pas un site client — c'est le **laboratoire public** de Tim 
 
 ## Pages liées
 
-[[sources/2026-04-12-organikk-blog-scrape]] · [[sources/2026-04-12-organikk-glossaire-scrape]] · [[entities/bootcamp-seo-ia]] · [[entities/fusionn-io]] · [[concepts/seo-multi-plateforme]] · [[concepts/tabou-visibilite]]
+[[sources/2026-04-12-organikk-blog-scrape]] · [[sources/2026-04-12-organikk-glossaire-scrape]] · [[sources/2026-04-30-newsletter-maillage-interne]] (cas terrain 0 → 62 liens internes sur le blog) · [[sources/2026-04-24-reflexion-organikk-4-piliers]] (doctrine 4 piliers) · [[sources/2026-04-24-cluster-business-organikk-4-piliers]] (cluster 16 satellites + 3 commerciales) · [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]] (4 modèles pSEO data-driven) · [[sources/2026-04-17-organikk-process-seo-b2b-2026]] (article pilier blog) · [[sources/2026-04-25-tim-ton-de-voix-extraction-terrain]] (analyse ton de voix Tim/Organikk) · [[entities/bootcamp-seo-ia]] · [[entities/fusionn-io]] · [[concepts/seo-multi-plateforme]] · [[concepts/tabou-visibilite]] · [[concepts/maillage-systeme]] · [[concepts/methode-organikk-4-piliers]] · [[concepts/pseo-data-driven-models]] · [[concepts/mots-cles-actionnels]] · [[concepts/know-simple-know-do]]
