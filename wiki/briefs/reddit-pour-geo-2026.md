@@ -21,6 +21,38 @@ methode_brief: 4W Deep Reflection (RAID Chen et al. 2025) appliqué à la concep
 
 # Comment utiliser Reddit pour améliorer son GEO (sans se faire bannir)
 
+## Vidéo
+
+<iframe
+  width="100%"
+  height="450"
+  src="https://www.youtube.com/embed/qJzcdjVF_pA"
+  title="L'influence de Reddit sur le SEO IA"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+→ Source vidéo : [L'influence de Reddit sur le SEO IA](https://www.youtube.com/watch?v=qJzcdjVF_pA) — Tim Boussardon
+
+---
+
+## Intro
+
+Reddit est en train de bouleverser le marché du SEO. Pas en forçant, pas en hackant — simplement en répondant pragmatiquement aux exigences de Google.
+
+Quelques chiffres pour cadrer. Reddit, c'est 2 milliards de visiteurs aujourd'hui. La plateforme est passée de 350 millions fin décembre 2023 à 450 millions en trois mois, puis de 450 millions à 2 milliards en dix-huit mois — multiplié par 4,4 en un an et demi. Six fois la taille de Quora. Une analyse SEMrush montre +207 % de mots-clés sur un an, soit 110 millions de mots-clés supplémentaires. Reddit est passé de la 85e à la 2e place des sites les plus visités aux États-Unis (3e selon SEMrush, derrière YouTube et Wikipédia).
+
+Mais le vrai signal n'est pas le trafic. Le trafic généraliste, le haut-funnel, c'est de la commodité que les IA mangent. Le vrai signal, c'est la **citation** : Reddit représente à lui seul 10 % des citations sur les LLM, en hausse de 87 % en un an. Et ça commence à déborder sur les SERPs commerciales — *« meilleur plombier à New York »* voit Reddit ranker premier sous le pack local. Reddit n'est plus seulement un canal informationnel, c'est devenu un canal transactionnel.
+
+Pourquoi ça marche ? Parce que les **signaux utilisateurs** y sont énormes. Un visiteur moyen passe entre 35 et 45 minutes par jour sur Reddit, sur 5 pages en moyenne. Compare à un site classique : 1 à 5 minutes, 1 à 2 pages. Google détecte la différence, et il en tire les conséquences dans son algorithme. Ajoute le deal Google ↔ Reddit signé en février 2024 (Gemini entraîné sur le corpus Reddit) — la corrélation avec l'explosion du trafic Reddit est trop forte pour être un hasard.
+
+Ce qui veut dire pour toi — consultant SEO, CMO, marque B2B — qu'ignorer Reddit n'est plus une option en 2026. La vraie question n'est pas *« faut-il y aller »*, c'est *« comment y aller sans se faire bannir »*. Parce que 89 % des marques qui s'y lancent en mode promo classique sont bannies en 30 jours. La voie qui marche : construire une communauté autour de ta marque, participer à faire avancer ton marché, faire intervenir des experts de ton domaine — et publier sur les mots-clés business identifiés dans ta stratégie, en respectant la règle 9-1-1.
+
+C'est ce que cet article documente, étape par étape, avec 8 prompts opérationnels et la matrice de rebranchement aux 4 piliers Organikk.
+
+---
+
 ## Brief 4W (pré-requis Chen et al. 2025 — RAID G-SEO)
 
 | Persona (Who) | Besoins (What) | Gap vs. consensus SERP (Why) | Couverture (How) |
