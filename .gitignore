@@ -4,6 +4,10 @@ Thumbs.db
 
 # Obsidian
 .obsidian/
+.obsidian.broken/
+
+# Claude Code runtime logs (regenerated daily)
+.claude/logs/
 
 # Python
 __pycache__/

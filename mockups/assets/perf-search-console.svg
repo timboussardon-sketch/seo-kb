@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Roboto, -apple-system, system-ui, Arial, sans-serif">
+  <!-- background -->
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <!-- top toolbar -->
+  <rect x="0" y="0" width="1600" height="64" fill="#fff" stroke="#dadce0" stroke-width="1"/>
+  <text x="40" y="40" font-size="20" fill="#202124" font-weight="500">Performances · résultats de recherche</text>
+  <rect x="1380" y="20" width="180" height="32" rx="4" fill="#f1f3f4"/>
+  <text x="1397" y="40" font-size="13" fill="#3c4043">Date : 3 derniers mois</text>
+  <text x="1540" y="40" font-size="13" fill="#5f6368">▾</text>
+
+  <!-- filter chips -->
+  <g transform="translate(40, 96)">
+    <rect x="0" y="0" width="155" height="32" rx="16" fill="#fff" stroke="#dadce0"/>
+    <circle cx="14" cy="16" r="4" fill="#1a73e8"/>
+    <text x="26" y="20" font-size="13" fill="#3c4043">Date : 3 derniers mois</text>
+    <text x="138" y="20" font-size="11" fill="#5f6368">×</text>
+
+    <rect x="170" y="0" width="135" height="32" rx="16" fill="#fff" stroke="#dadce0"/>
+    <text x="184" y="20" font-size="13" fill="#3c4043">+ Nouveau</text>
+  </g>
+
+  <!-- KPI cards row -->
+  <g transform="translate(40, 156)">
+    <!-- Card 1 — Clics -->
+    <g>
+      <rect x="0" y="0" width="365" height="180" rx="8" fill="#fff" stroke="#dadce0"/>
+      <rect x="0" y="0" width="6" height="180" rx="8" fill="#1a73e8"/>
+      <circle cx="32" cy="32" r="6" fill="#1a73e8"/>
+      <text x="48" y="37" font-size="14" fill="#3c4043" font-weight="500">Total des clics</text>
+      <text x="32" y="92" font-size="46" fill="#202124" font-weight="400" letter-spacing="-1">6,87 k</text>
+      <text x="32" y="118" font-size="13" fill="#137333" font-weight="500">↑ +47,2 %</text>
+      <text x="105" y="118" font-size="13" fill="#5f6368">vs période préc.</text>
+      <!-- mini sparkline -->
+      <path d="M32,160 C70,158 100,154 140,148 C180,142 210,138 245,128 C280,118 310,108 333,96"
+            fill="none" stroke="#1a73e8" stroke-width="2"/>
+    </g>
+    <!-- Card 2 — Impressions -->
+    <g transform="translate(385, 0)">
+      <rect x="0" y="0" width="365" height="180" rx="8" fill="#fff" stroke="#dadce0"/>
+      <rect x="0" y="0" width="6" height="180" rx="8" fill="#673ab7"/>
+      <circle cx="32" cy="32" r="6" fill="#673ab7"/>
+      <text x="48" y="37" font-size="14" fill="#3c4043" font-weight="500">Total des impressions</text>
+      <text x="32" y="92" font-size="46" fill="#202124" font-weight="400" letter-spacing="-1">192 k</text>
+      <text x="32" y="118" font-size="13" fill="#137333" font-weight="500">↑ +63,8 %</text>
+      <text x="105" y="118" font-size="13" fill="#5f6368">vs période préc.</text>
+      <path d="M32,160 C70,156 100,150 140,140 C180,128 210,118 245,104 C280,90 310,76 333,62"
+            fill="none" stroke="#673ab7" stroke-width="2"/>
+    </g>
+    <!-- Card 3 — CTR -->
+    <g transform="translate(770, 0)">
+      <rect x="0" y="0" width="365" height="180" rx="8" fill="#fff" stroke="#dadce0"/>
+      <rect x="0" y="0" width="6" height="180" rx="8" fill="#34a853"/>
+      <circle cx="32" cy="32" r="6" fill="#34a853"/>
+      <text x="48" y="37" font-size="14" fill="#3c4043" font-weight="500">CTR moyen</text>
+      <text x="32" y="92" font-size="46" fill="#202124" font-weight="400" letter-spacing="-1">3,6 %</text>
+      <text x="32" y="118" font-size="13" fill="#137333" font-weight="500">↑ +0,8 pt</text>
+      <text x="98" y="118" font-size="13" fill="#5f6368">vs période préc.</text>
+      <path d="M32,158 C70,156 100,154 140,150 C180,146 210,142 245,134 C280,126 310,118 333,108"
+            fill="none" stroke="#34a853" stroke-width="2"/>
+    </g>
+    <!-- Card 4 — Position -->
+    <g transform="translate(1155, 0)">
+      <rect x="0" y="0" width="365" height="180" rx="8" fill="#fff" stroke="#dadce0"/>
+      <rect x="0" y="0" width="6" height="180" rx="8" fill="#fbbc04"/>
+      <circle cx="32" cy="32" r="6" fill="#fbbc04"/>
+      <text x="48" y="37" font-size="14" fill="#3c4043" font-weight="500">Position moyenne</text>
+      <text x="32" y="92" font-size="46" fill="#202124" font-weight="400" letter-spacing="-1">14,2</text>
+      <text x="32" y="118" font-size="13" fill="#137333" font-weight="500">↑ -3,4</text>
+      <text x="80" y="118" font-size="13" fill="#5f6368">positions gagnées</text>
+      <path d="M32,108 C70,116 100,124 140,132 C180,140 210,144 245,148 C280,152 310,156 333,158"
+            fill="none" stroke="#fbbc04" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- main chart area -->
+  <g transform="translate(40, 360)">
+    <rect x="0" y="0" width="1520" height="500" rx="8" fill="#fff" stroke="#dadce0"/>
+
+    <!-- chart title -->
+    <text x="24" y="36" font-size="14" fill="#3c4043" font-weight="500">Performances sur la période</text>
+
+    <!-- legend -->
+    <g transform="translate(1090, 24)">
+      <circle cx="6" cy="8" r="5" fill="#1a73e8"/>
+      <text x="18" y="12" font-size="12" fill="#3c4043">Clics</text>
+
+      <circle cx="76" cy="8" r="5" fill="#673ab7"/>
+      <text x="88" y="12" font-size="12" fill="#3c4043">Impressions</text>
+
+      <circle cx="190" cy="8" r="5" fill="#34a853"/>
+      <text x="202" y="12" font-size="12" fill="#3c4043">CTR</text>
+
+      <circle cx="248" cy="8" r="5" fill="#fbbc04"/>
+      <text x="260" y="12" font-size="12" fill="#3c4043">Position</text>
+    </g>
+
+    <!-- grid -->
+    <g stroke="#e8eaed" stroke-width="1">
+      <line x1="60" y1="80" x2="1500" y2="80"/>
+      <line x1="60" y1="170" x2="1500" y2="170"/>
+      <line x1="60" y1="260" x2="1500" y2="260"/>
+      <line x1="60" y1="350" x2="1500" y2="350"/>
+      <line x1="60" y1="440" x2="1500" y2="440"/>
+    </g>
+
+    <!-- y-axis labels (clics/impressions scale, left) -->
+    <g font-size="11" fill="#5f6368" text-anchor="end">
+      <text x="52" y="84">2,5k</text>
+      <text x="52" y="174">2k</text>
+      <text x="52" y="264">1,5k</text>
+      <text x="52" y="354">1k</text>
+      <text x="52" y="444">0</text>
+    </g>
+
+    <!-- x-axis labels (months) -->
+    <g font-size="11" fill="#5f6368" text-anchor="middle">
+      <text x="180"  y="465">févr. 2026</text>
+      <text x="540"  y="465">mars 2026</text>
+      <text x="900"  y="465">avr. 2026</text>
+      <text x="1260" y="465">mai 2026</text>
+      <text x="1465" y="465">aujourd'hui</text>
+    </g>
+
+    <!-- vertical month dividers -->
+    <g stroke="#e8eaed" stroke-width="1" stroke-dasharray="3 3">
+      <line x1="360" y1="60" x2="360" y2="445"/>
+      <line x1="720" y1="60" x2="720" y2="445"/>
+      <line x1="1080" y1="60" x2="1080" y2="445"/>
+      <line x1="1440" y1="60" x2="1440" y2="445"/>
+    </g>
+
+    <!-- IMPRESSIONS curve (purple) — fill -->
+    <defs>
+      <linearGradient id="impFill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#673ab7" stop-opacity=".18"/>
+        <stop offset="1" stop-color="#673ab7" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="clicFill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#1a73e8" stop-opacity=".22"/>
+        <stop offset="1" stop-color="#1a73e8" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+
+    <!-- impressions area (192k cumul on 90j → courbe ascendante marquée) -->
+    <path d="M60,395 C140,388 220,380 300,365 C380,348 460,330 540,308 C620,284 700,258 780,228 C860,198 940,170 1020,148 C1100,128 1180,112 1260,96 C1340,82 1420,72 1500,60 L1500,445 L60,445 Z"
+          fill="url(#impFill)"/>
+
+    <!-- impressions line -->
+    <path d="M60,395 C140,388 220,380 300,365 C380,348 460,330 540,308 C620,284 700,258 780,228 C860,198 940,170 1020,148 C1100,128 1180,112 1260,96 C1340,82 1420,72 1500,60"
+          fill="none" stroke="#673ab7" stroke-width="2.4"/>
+
+    <!-- clicks area (6,87k cumul → courbe ascendante plus aplatie) -->
+    <path d="M60,432 C140,428 220,422 300,415 C380,406 460,395 540,380 C620,365 700,348 780,330 C860,312 940,292 1020,272 C1100,252 1180,232 1260,212 C1340,192 1420,178 1500,162 L1500,445 L60,445 Z"
+          fill="url(#clicFill)"/>
+
+    <!-- clicks line -->
+    <path d="M60,432 C140,428 220,422 300,415 C380,406 460,395 540,380 C620,365 700,348 780,330 C860,312 940,292 1020,272 C1100,252 1180,232 1260,212 C1340,192 1420,178 1500,162"
+          fill="none" stroke="#1a73e8" stroke-width="2.4"/>
+
+    <!-- data points clicks -->
+    <g>
+      <circle cx="60"   cy="432" r="3.5" fill="#fff" stroke="#1a73e8" stroke-width="2"/>
+      <circle cx="360"  cy="395" r="3.5" fill="#fff" stroke="#1a73e8" stroke-width="2"/>
+      <circle cx="720"  cy="345" r="3.5" fill="#fff" stroke="#1a73e8" stroke-width="2"/>
+      <circle cx="1080" cy="262" r="3.5" fill="#fff" stroke="#1a73e8" stroke-width="2"/>
+      <circle cx="1440" cy="180" r="3.5" fill="#fff" stroke="#1a73e8" stroke-width="2"/>
+    </g>
+
+    <!-- highlight last point clicks -->
+    <circle cx="1500" cy="162" r="9"  fill="#1a73e8" fill-opacity=".18"/>
+    <circle cx="1500" cy="162" r="5"  fill="#fff" stroke="#1a73e8" stroke-width="2.5"/>
+
+    <!-- highlight last point impressions -->
+    <circle cx="1500" cy="60"  r="9"  fill="#673ab7" fill-opacity=".18"/>
+    <circle cx="1500" cy="60"  r="5"  fill="#fff" stroke="#673ab7" stroke-width="2.5"/>
+
+    <!-- annotation badge "Today" near right edge -->
+    <g transform="translate(1380, 40)">
+      <rect x="0" y="0" width="116" height="26" rx="13" fill="#e8f0fe" stroke="#1a73e8" stroke-width="1"/>
+      <text x="58" y="17" font-size="12" fill="#1a73e8" text-anchor="middle" font-weight="500">02 mai 2026</text>
+    </g>
+  </g>
+
+  <!-- footer mention -->
+  <g transform="translate(40, 875)">
+    <text x="0" y="0" font-size="11" fill="#80868b">Source : Google Search Console · propriété organikk.co · données filtrées sur les 3 derniers mois</text>
+  </g>
+</svg>

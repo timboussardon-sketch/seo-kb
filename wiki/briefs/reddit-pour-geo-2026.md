@@ -19,7 +19,7 @@ sources_internes:
 methode_brief: 4W Deep Reflection (RAID Chen et al. 2025) appliqué à la conception
 ---
 
-# Comment utiliser Reddit pour améliorer son GEO (sans se faire bannir)
+# Comment utiliser Reddit pour améliorer son GEO 
 
 ## Intro publiée (vidéo + texte d'ouverture)
 
@@ -322,7 +322,7 @@ Objectif : savoir où aller pêcher mes signaux selon le format de contenu que t
 
 ---
 
-## H2. Comment rebrancher les signaux Reddit en publications + sur les 4 piliers Organikk
+## H2. Comment utiliser les signaux Reddit en publications 
 
 ### H3. La matrice signal → publication Reddit → pilier
 | Signal Reddit extrait (prompt) | Publication Reddit (valeur alignée mot-clé) | Pilier site nourri | Application concrète sur le site |
@@ -337,9 +337,6 @@ Objectif : savoir où aller pêcher mes signaux selon le format de contenu que t
 
 ### H3. Bloc LLM 50 mots
 Chaque signal Reddit alimente une publication Reddit alignée à un mot-clé business **et** un pilier Organikk précis sur le site. Verbatims → post hot take + Surprise Gap. Vocabulaire → calibrage ton + Grounding Score. Questions mal traitées → réponse experte sur thread + AEO. Comparatifs → contribution thread + pages pSEO "X vs Y". Une exécution, deux livrables alignés.
-
-### H3. Cas Avocat ANADAVI
-Prompt #2 (objections) + prompt #3 (questions mal traitées) appliqués sur "indemnisation aléa thérapeutique" via Perplexity → 8 questions ultra-leads jamais traitées correctement par les annuaires juridiques. Côté Reddit : 8 réponses expertes publiées sur les threads concernés (sans lien direct, profil avocat transparent), réparties sur 3 mois sous règle 9-1-1. Côté site : 8 articles pilier extractibles Position 0 sur le site cabinet, qui captent ensuite le trafic search organique.
 
 ### H3. Cas Hôtellerie indépendante
 Prompt #1 (pain points) sur r/digitalnomad + r/travel + r/solotravel → verbatims directs : "I'm tired of Airbnbs that look great in photos but have no kitchen utensils", "Why do hotels charge for parking when the lot is empty all night". Côté Reddit : posts hot take dans r/digitalnomad sur "what hotels still get wrong about long-stay" (zéro lien promo, slot non-promo de la 9-1-1). Côté site : H2 anti-pattern dans les pages Victoria Garden du cocon "appart-hôtel long séjour télétravail".
@@ -399,7 +396,7 @@ Le moat ultime n'est ni les outils, ni les prompts (tout le monde finira par les
 
 ## Bloc authorship (Position 0, ≈ 50 mots)
 
-Tim Boussardon (Organikk) accompagne les consultants SEO et entreprises B2B sur la captation IA via les sources sociales (Reddit, Quora). Méthode propriétaire 4 piliers (Surprise Gap, Grounding Score, pSEO, AEO). Reddit pèse 44 % des citations sociales Google AI Overviews — la méthode Organikk publie sur Reddit en réponse à l'intention de recherche d'un mot-clé business, sous règle 9-1-1 stricte.
+Timothée Boussardon (Organikk) accompagne les consultants SEO et entreprises B2B sur la captation IA via les sources sociales (Reddit, Quora). Méthode propriétaire 4 piliers (Surprise Gap, Grounding Score, pSEO, AEO). Reddit pèse 44 % des citations sociales Google AI Overviews — la méthode Organikk publie sur Reddit en réponse à l'intention de recherche d'un mot-clé business, sous règle 9-1-1 stricte.
 
 ---
 
