@@ -1,0 +1,70 @@
+name: Algorithme Recap Hebdo
+
+on:
+  schedule:
+    # Dimanche 18:00 UTC = 20h Paris été / 19h Paris hiver
+    # Tourne après la revue du dimanche (qui sort à 07:00 UTC)
+    - cron: "0 18 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Compute week number
+        id: week
+        run: |
+          echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          echo "week=$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if already generated
+        id: check
+        run: |
+          if [ -f "wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Récap de la semaine déjà présent, on saute."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate recap
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          claude --print \
+            --permission-mode acceptEdits \
+            --allowed-tools "Read,Write,Edit,Bash,Glob,Grep" \
+            "Lance le skill algorithme-recap-hebdo. Date du jour : ${{ steps.week.outputs.today }}. Numéro de semaine ISO : ${{ steps.week.outputs.week }}. Output : wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md."
+
+      - name: Verify output exists
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          test -f "wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md" || (echo "::error::Récap non généré" && exit 1)
+          wc -l "wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md"
+
+      - name: Commit and push
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md"
+          git commit -m "Algorithme recap — semaine ${{ steps.week.outputs.week }} (auto)"
+          git push

@@ -1,0 +1,58 @@
+name: Audit Vault Hygiene
+
+on:
+  schedule:
+    # Dimanche 06:00 UTC = 08h Paris été / 07h Paris hiver
+    - cron: "0 6 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Compute date
+        id: date
+        run: echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Run audit
+        run: |
+          claude --print \
+            --permission-mode acceptEdits \
+            --allowed-tools "Read,Write,Edit,Bash,Glob,Grep" \
+            "Lance le skill audit-vault-hygiene. Date du jour : ${{ steps.date.outputs.today }}. Output : wiki/audit/${{ steps.date.outputs.today }}-audit.md."
+
+      - name: Verify output exists
+        run: |
+          test -f "wiki/audit/${{ steps.date.outputs.today }}-audit.md" || (echo "::error::Rapport non généré" && exit 1)
+          wc -l "wiki/audit/${{ steps.date.outputs.today }}-audit.md"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "wiki/audit/${{ steps.date.outputs.today }}-audit.md"
+          if git diff --cached --quiet; then
+            echo "Aucun changement à committer."
+          else
+            git commit -m "Audit vault — ${{ steps.date.outputs.today }} (auto)"
+            git push
+          fi
