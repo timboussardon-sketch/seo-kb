@@ -1,0 +1,2 @@
+- [Canonical SEO KB vault path](canonical_vault_path.md) — toujours éditer dans `/Users/timothee/Documents/seo-kb/` (vault Obsidian) ; ne jamais propager sur des copies extérieures sans confirmation
+- [Automatisations vault (5 agents)](automation_revue_presse_todo.md) — revue presse + audit vault + recap hebdo via GH Actions ; /todo + /repeats via slash local ; hook/cron auto todo différés à ~2026-05-22
