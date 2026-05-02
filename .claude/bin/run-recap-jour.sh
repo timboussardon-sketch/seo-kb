@@ -20,5 +20,18 @@ cd "$VAULT"
     --permission-mode bypassPermissions
   EXIT_CODE=$?
   echo ""
+  echo "--- auto-commit raw/journal/ ---"
+  git add raw/journal/ 2>/dev/null || true
+  if git diff --cached --quiet; then
+    echo "No journal changes to commit."
+  else
+    git -c user.email="noreply@anthropic.com" -c user.name="recap-jour-cron" \
+      commit -m "Journal $(date +%Y-%m-%d) (auto)"
+    if git push origin main; then
+      echo "Pushed."
+    else
+      echo "WARN: git push failed. Commit kept locally for next run."
+    fi
+  fi
   echo "=== /recap-jour run ended at $(date -Iseconds) — exit $EXIT_CODE ==="
 } >> "$LOG_FILE" 2>&1
