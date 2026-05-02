@@ -24,9 +24,10 @@ git clone https://github.com/timboussardon-sketch/seo-kb.git ~/Documents/seo-kb
 # 2. Skills user-globaux (repo séparé)
 git clone https://github.com/timboussardon-sketch/tim-claude-skills.git ~/.claude/skills
 
-# 3. LaunchAgent /recap-jour
-cp ~/Documents/seo-kb/.claude/launchd/com.timboussardon.recap-jour.plist ~/Library/LaunchAgents/
+# 3. LaunchAgents (recap-jour quotidien + refresh-snapshots mensuel)
+cp ~/Documents/seo-kb/.claude/launchd/com.timboussardon.*.plist ~/Library/LaunchAgents/
 launchctl load -w ~/Library/LaunchAgents/com.timboussardon.recap-jour.plist
+launchctl load -w ~/Library/LaunchAgents/com.timboussardon.refresh-snapshots.plist
 
 # 4. Mémoire conversationnelle (au moment du snapshot)
 mkdir -p ~/.claude/projects/-Users-timothee-Documents-seo-kb/memory
@@ -42,21 +43,19 @@ claude  # déclenche le flow d'auth
 
 ## Re-snapshoter périodiquement
 
-Les snapshots `memory-snapshot/` et `transcripts-archive/` ne se mettent PAS à jour automatiquement. Pour les rafraîchir (ex: tous les mois) :
+**Automatisé** : le LaunchAgent `com.timboussardon.refresh-snapshots` tourne le **1er de chaque mois à 8h** et lance `bin/run-refresh-snapshots.sh` qui :
+
+1. Refresh `memory-snapshot/`
+2. Crée un nouveau tarball dans `transcripts-archive/transcripts-YYYY-MM-DD-snapshot.tar.gz`
+3. Prune les tarballs > 180 jours (garde ~6 mois d'historique)
+4. Commit + push si changements
+
+Logs dans `.claude/logs/refresh-snapshots-YYYY-MM-DD.log`.
+
+**Manuel** (si besoin de forcer un snapshot maintenant) :
 
 ```bash
-# Memory
-cp -r ~/.claude/projects/-Users-timothee-Documents-seo-kb/memory/. ~/Documents/seo-kb/.claude/memory-snapshot/
-
-# Transcripts
-cd ~/.claude/projects
-tar czf ~/Documents/seo-kb/.claude/transcripts-archive/transcripts-$(date +%Y-%m-%d)-snapshot.tar.gz \
-  -- "-Users-timothee-Documents-seo-kb" "-Users-timothee-Documents-organikk-next"
-
-cd ~/Documents/seo-kb
-git add .claude/memory-snapshot .claude/transcripts-archive
-git commit -m "Refresh memory + transcripts snapshot $(date +%Y-%m-%d)"
-git push
+~/Documents/seo-kb/.claude/bin/run-refresh-snapshots.sh
 ```
 
 ## Pourquoi tout n'est pas dans `~/.claude/`
