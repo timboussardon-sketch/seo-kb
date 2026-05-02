@@ -1,0 +1,67 @@
+name: Revue de Presse Quotidienne
+
+on:
+  schedule:
+    # 07:00 UTC = 09:00 Paris (été) / 08:00 Paris (hiver)
+    - cron: "0 7 * * *"
+  workflow_dispatch: {} # déclenchement manuel pour tester
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Compute date
+        id: date
+        run: echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if already generated
+        id: check
+        run: |
+          if [ -f "raw/revue-de-presse/${{ steps.date.outputs.today }}-revue-presse.md" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Edition du jour déjà présente, on saute."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate edition
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          claude --print \
+            --permission-mode acceptEdits \
+            --allowed-tools "Read,Write,Edit,Bash,WebSearch,WebFetch,Glob,Grep" \
+            "Lance le skill revue-presse-quotidienne pour aujourd'hui. Date du jour : ${{ steps.date.outputs.today }}. Sauvegarde le fichier final dans raw/revue-de-presse/${{ steps.date.outputs.today }}-revue-presse.md. Respecte strictement le format Algorithme et le style défini dans raw/notes/tim-my-voice.md."
+
+      - name: Verify output exists
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          test -f "raw/revue-de-presse/${{ steps.date.outputs.today }}-revue-presse.md" || (echo "::error::Fichier non généré" && exit 1)
+          wc -l "raw/revue-de-presse/${{ steps.date.outputs.today }}-revue-presse.md"
+
+      - name: Commit and push
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "raw/revue-de-presse/${{ steps.date.outputs.today }}-revue-presse.md"
+          git commit -m "Revue de presse — ${{ steps.date.outputs.today }} (auto)"
+          git push
