@@ -1,13 +1,13 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-05-04 22:05 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-05-04 22:13 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **323 fichiers** markdown (158 dans `raw/`, 165 dans `wiki/`)
-- **439k mots** au total
-- **3028 wikilinks** (moyenne 9.4 / fichier)
-- **Ratio raw→wiki** : 1.04 *(< 1 = matière brute pas encore synthétisée)*
+- **324 fichiers** markdown (158 dans `raw/`, 166 dans `wiki/`)
+- **440k mots** au total
+- **3038 wikilinks** (moyenne 9.4 / fichier)
+- **Ratio raw→wiki** : 1.05 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
 
@@ -35,20 +35,20 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **13** commits
-- **332** fichiers créés
+- **14** commits
+- **333** fichiers créés
 - **17** fichiers modifiés
 
 ### 30 derniers jours
-- **13** commits
-- **332** fichiers créés
+- **14** commits
+- **333** fichiers créés
 - **17** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
 - **7** éditions publiées (7 sur les 30 derniers jours)
-- Dernière édition : `revue-presse-2026-04-29` (il y a ?j)
+- Dernière édition : `2026-05-04-revue-presse-trafic-ia` (il y a 0j)
 - **Couverture 30j** : 7/30 (23%)
 
 ### Newsletter
@@ -75,18 +75,9 @@
 
 ### Top 10 hubs (les plus cités)
 
-- `[[concepts/data-proprietaire]]` — **134** backlinks
-- `[[22,30]]` — **130** backlinks
-- `[[concepts/grounding-score]]` — **98** backlinks
-- `[[concepts/surprise-gap]]` — **97** backlinks
-- `[[concepts/surprise-metric]]` — **58** backlinks
-- `[[concepts/information-gain]]` — **53** backlinks
-- `[[concepts/anti-ai-writing]]` — **51** backlinks
-- `[[concepts/aeo]]` — **48** backlinks
-- `[[sources/2026-04-12-tim-skills-seo-proprietary]]` — **46** backlinks
-- `[[entities/bootcamp-seo-ia]]` — **44** backlinks
+aucun wikilink détecté
 
-### Orphelins (sans backlink) : **323**
+### Orphelins (sans backlink) : **321**
 
 - `raw/cas-clients/victoria-garden.md`
 - `raw/transcripts/call-09-julien.md`
@@ -98,12 +89,12 @@
 - `raw/transcripts/call-10-franck-suite.md`
 - `raw/transcripts/call-05-dev-web.md`
 - `raw/transcripts/call-06-juliette.md`
-*(323 au total — voir `wiki/audit` pour la liste complète)*
+*(321 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: ··························▁█·▁
+30j: ··························▁█·▃
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
@@ -121,7 +112,7 @@
 | revue-presse | 2026-05-04 18:02 | 0 | ✓ |
 | recap-jour | 2026-05-04 11:24 | 0 | ✓ |
 | refresh-snapshots | 2026-05-04 18:27 | 0 | ✓ |
-| dashboard | 2026-05-04 22:05 | 0 | ✓ |
+| dashboard | 2026-05-04 22:13 | 256 | ✗ |
 
 ---
 
