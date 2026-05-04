@@ -1,12 +1,12 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-05-04 22:13 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-05-04 22:33 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
 - **324 fichiers** markdown (158 dans `raw/`, 166 dans `wiki/`)
 - **440k mots** au total
-- **3038 wikilinks** (moyenne 9.4 / fichier)
+- **3028 wikilinks** (moyenne 9.3 / fichier)
 - **Ratio raw→wiki** : 1.05 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
@@ -35,14 +35,14 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **14** commits
+- **15** commits
 - **333** fichiers créés
-- **17** fichiers modifiés
+- **18** fichiers modifiés
 
 ### 30 derniers jours
-- **14** commits
+- **15** commits
 - **333** fichiers créés
-- **17** fichiers modifiés
+- **18** fichiers modifiés
 
 ## 📰 Flux métier
 
@@ -75,7 +75,16 @@
 
 ### Top 10 hubs (les plus cités)
 
-aucun wikilink détecté
+- `[[data-proprietaire]]]]` — **134** backlinks
+- `[[grounding-score]]]]` — **98** backlinks
+- `[[surprise-gap]]]]` — **97** backlinks
+- `[[surprise-metric]]]]` — **58** backlinks
+- `[[information-gain]]]]` — **53** backlinks
+- `[[anti-ai-writing]]]]` — **51** backlinks
+- `[[aeo]]]]` — **48** backlinks
+- `[[2026-04-12-tim-skills-seo-proprietary]]]]` — **46** backlinks
+- `[[bootcamp-seo-ia]]]]` — **44** backlinks
+- `[[avatar-freelance-sans-systeme]]]]` — **43** backlinks
 
 ### Orphelins (sans backlink) : **321**
 
@@ -112,7 +121,7 @@ aucun wikilink détecté
 | revue-presse | 2026-05-04 18:02 | 0 | ✓ |
 | recap-jour | 2026-05-04 11:24 | 0 | ✓ |
 | refresh-snapshots | 2026-05-04 18:27 | 0 | ✓ |
-| dashboard | 2026-05-04 22:13 | 256 | ✗ |
+| dashboard | 2026-05-04 22:33 | 0 | ✓ |
 
 ---
 
