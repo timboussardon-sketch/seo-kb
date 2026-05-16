@@ -513,3 +513,131 @@ Le concept [[concepts/retrieval-collapse]] devient l'argument scientifique centr
 
 ### Dépendances ouvertes
 - Ingest formel calls 02, 03, 10 non fait. À demander explicitement si Tim veut les pages wiki sources (call-02-marrusia, call-03-cecile-suite, call-10-franck-suite). Pour l'instant : matériau brut disponible mais pas synthétisé en page wiki.
+
+## [2026-05-05] synthese | Process KW research 5 étapes (Keyword Planner → GSC → Grok → Propriétaires → pSEO)
+- déclencheur : Tim partage son process opérationnel de recherche de mots-clés (5 sources outillées) et demande sa formalisation en synthèse avec wikilinks vers la doctrine.
+- type : synthesis (4e du wiki)
+- source : [[syntheses/process-keyword-research-5-etapes]]
+- structure : rappel des 4 piliers en intro → 5 étapes détaillées (Keyword Planner / GSC delta impressions-clics / Grok DeepSearch ◉1-4 / Données propriétaires A-B-C / pSEO matrice + 3 phases) → tableau de synthèse → livrable Google Sheet 5 critères (volume, CPC, intérêt business, difficulté, YoY) → articulation par pilier
+- confidence: high — matérialise la doctrine [[concepts/mots-cles-actionnels]] + [[raw/notes/process-seo-b2b-2026]] en pipeline outillé
+
+### Pages mises à jour (backlinks)
+- [[index]] : section Syntheses 3 → 4
+- [[concepts/mots-cles-actionnels]] : ajout dans Pages liées (concept central du process)
+- [[concepts/methode-organikk-4-piliers]] : ajout en Cas d'application (le process est l'opérationnalisation outillée des 4 piliers en KW research)
+- [[concepts/programmatique-pseo]] : ajout dans Pages liées (étape 5 = pSEO)
+
+### Articulation doctrinale
+- Étape 1 (KP) = découverte / seeder
+- Étape 2 (GSC) = pilier [[concepts/grounding-score|Grounding]] (fondation)
+- Étape 3 (Grok) = pilier [[concepts/surprise-gap|Surprise Gap]] + alimente [[concepts/information-gain]]
+- Étape 4 (Propriétaires) = pilier transversal [[concepts/data-proprietaire]]
+- Étape 5 (pSEO) = piliers [[concepts/programmatique-pseo|pSEO]] + couverture MECE [[concepts/aeo|AEO]]
+
+### Dépendances ouvertes
+- Pas de script qui ingère automatiquement les calls clients / GSC / CRM pour en extraire des KW actionnels (étape 4 reste manuelle)
+- Croisement explicite entre le scrape Google Suggest existant ([[raw/data/keyword-research-2026-05-02]]) et le filtre "actionnel" de l'étape 4 non documenté — query candidate.
+
+## [2026-05-05] skill-add | kw-research-workflow (orchestrateur 5 phases)
+- déclencheur : Tim partage la spec d'un nouveau skill orchestrateur qui automatise le process KW research documenté plus tôt dans la session.
+- type : skill (13e du portfolio propriétaire)
+- source : [[raw/notes/skill-kw-research-workflow]]
+- rôle : enchaîne 6 phases (cadrage 6 questions → KP CSV → GSC CSV → 4 WebSearch séquentielles → verbatims → pSEO → livrable Sheet scoré + synthèse 5 lignes). Cible 10-15 min.
+- sous-skills appelés : `seo-quick-win` (phase 2), `seo-cannibalisation` (phase 2 si conflit), `seo-programmatique-pseo` (phase 5)
+- output : `wiki/queries/kw-research-YYYY-MM-DD-slug.md` + Google Sheet `KW_Research_[Client]_[Date]` (5 colonnes scorées : volume, CPC, intérêt business 1-5, difficulté 1-5, YoY %)
+
+### Pages mises à jour
+- [[AGENTS]] §7 : "12 skills" → "13 skills" + ligne `kw-research-workflow` ajoutée à la table de hooks
+- [[syntheses/process-keyword-research-5-etapes]] : encadré "Skill orchestrateur" en intro + ajout du skill et des 3 sous-skills dans Pages liées
+- [[concepts/mots-cles-actionnels]] : ajout du skill dans Pages liées
+
+### Articulation
+Le skill est l'outillage de la synthèse [[syntheses/process-keyword-research-5-etapes]] (qui était la version doctrinale). Mapping : phase 0 cadrage = nouveau, phases 1→5 du skill = étapes 1→5 de la synthèse, phases 6-7 = livrable Sheet + synthèse 5 lignes (formalise le "Livrable Google Sheet — 5 critères" de la synthèse).
+
+### Garde-fous notables (du skill)
+- Phase 4 verbatims = différenciateur non-skippable ("c'est ce qui différencie le livrable d'un export Ahrefs")
+- 4 WebSearch en séquence stricte, pas en parallèle (chaque search dépend du précédent)
+- Pas de modèle pSEO recommandé sans data propriétaire phase 4
+- Synthèse 5 lignes obligatoire AVANT le lien
+
+## [2026-05-05] post-linkedin | Workflow KW research 5 étapes (voix Tim, ≈200 mots)
+- déclencheur : Tim demande un post court pour expliquer le workflow KW research formalisé en synthèse + skill plus tôt dans la session.
+- type : post
+- source : [[posts-linkedin/2026-05-05-workflow-kw-research-5-etapes]]
+- format : LinkedIn court ≈ 200 mots, hook anti-consensus ("ne se fait plus dans Semrush"), 5 étapes en deux lignes chacune, punchline finale sur data propriétaire non-copiable
+- voix : phrases courtes, pas de hashtag, pas d'emoji, pas de règle de 3 décorative, vocabulaire signature ("vendre des leads pas du trafic", absence de "visibilité")
+- premier post du dossier `wiki/posts-linkedin/` (compteur index.md 0 → 1)
+
+### Pages mises à jour
+- [[index]] : section Posts LinkedIn 0 → 1
+- post lui-même : pages liées vers [[syntheses/process-keyword-research-5-etapes]], [[raw/notes/skill-kw-research-workflow]], [[concepts/mots-cles-actionnels]], [[concepts/data-proprietaire]], [[concepts/surprise-gap]], [[concepts/methode-organikk-4-piliers]], [[concepts/programmatique-pseo]], [[raw/notes/process-seo-b2b-2026]]
+
+### À tester
+- Variation avec story client en hook (Victoria Garden / FG Formation) pour activer le pilier preuve
+- Mesurer engagement vs posts précédents de la batch [[sources/2026-04-30-tim-posts-linkedin-batch]]
+
+## [2026-05-11] methode | Engine carte sémantique sans SERP (v8)
+- déclencheur : Tim cherche une alternative aux outils type 1.fr (scraping SERP) pour la densité sémantique. Itéré 8 versions au cours d'une session.
+- type : méthode opérationnelle
+- source : [[engine-densite-semantique-sans-serp]] (raw/articles/brouillons/)
+- portée : carte sémantique pure (5 couches : micro-intentions, entités, vecteurs preuves, multimodal, divergence) + cartographie concurrentielle. Aucune couche éditoriale.
+- architecture : 9 phases workflow + Mode 0 (KB Bootstrap), 8 livrables, matrice de couverture
+- modes : Bronze (training pur) / Silver (KB partiel) / Gold (KB structuré). Détection auto.
+- éthique : zéro scraping SERP, respect robots.txt strict pour sourcing externe (arxiv, hal, OSF, INSEE, OECD, Wikipedia, docs officielles)
+- feedback loop : phase 9 identifie 3-5 concepts à versionner dans /wiki/concepts/, /wiki/entities/, /wiki/competitors/ à chaque passage
+
+### Pages mises à jour
+- [[index]] : nouvelle section "Engines / Méthodes opérationnelles" (0 → 1)
+
+### À tester
+- Premier passage réel sur une vraie requête pour remplir la section "Exemple appliqué" du fichier engine
+- Mode 0 KB Bootstrap sur 20+ articles Organikk pour stress-tester l'extraction des concepts atomiques
+
+## [2026-05-16] pseo | Landing pages lead-gen sur problématique SEO (Organikk)
+- déclencheur : Tim veut lister les problématiques SEO commerciales sur lesquelles ranker pour ramener des leads, déclinées sur un template de landing service unique.
+- type : pSEO-strategy (skill seo-programmatique-pseo)
+- source : organikk-next (strategies.ts, pages.ts, /secteurs, /templates) + seo-kb (raw/acquisition, raw/cas-clients, raw/notes/analyse-calls-prospects-bootcamp)
+- output : [[queries/pseo-2026-05-16-landing-lead-gen-organikk]]
+- portée : 5 modèles MECE par intention (M1 pain-first, M2 secteur B2B, M3 livrable, M4 escape, M5 praticien), 45 pages possibles phase 1
+- priorisation : M1 + M3 score 17/20 → lancer en premier (conversion + données propres max, compétition faible GEO-era)
+- moat : verbatims calls + chiffres cas clients + scoring propriétaire (invisibles depuis la SERP)
+- anti-cannibalisation : ne re-fait pas le pSEO local métier×ville ([[pseo-2026-05-13-organikk-secteur-ville]]) — ici national/B2B/pain
+
+### Pages mises à jour
+- [[index]] : section Queries (1 → 2)
+
+### À tester
+- Valider le périmètre M1 (15 slugs) avec Tim, puis scaffolder src/app/seo/[slug]/ + strategies.ts (trafic-en-chute, pas-cite-par-chatgpt)
+- Sourcer les chiffres `[DONNÉE À SOURCER]` avant toute mise en ligne (cas clients + étude conversions LLM)
+
+## [2026-05-16] systeme | Fermeture des 3 boucles + rituel + navigation (refonte second cerveau)
+
+- déclencheur : Tim veut le meilleur second cerveau possible — audit système + comblement des manques (docs + routines)
+- décision : [[decisions/0001-fermeture-boucles-second-cerveau]] (ADR-0001)
+- hors scope explicite Tim : revue-presse-quotidienne + audit-vault-hygiene (laissés tranquilles)
+
+### Documents créés (13)
+- registres : [[hypotheses]] (10 hypothèses seedées du vault réel), [[contradictions]] (13 contradictions consolidées du log), [[ingest-backlog]] (backlog P1/P2/P3 + skips documentés)
+- navigation : [[000-home]] + 5 MOCs ([[moc/moc-aeo-geo]], [[moc/moc-maillage]], [[moc/moc-vente-objections]], [[moc/moc-redaction]], [[moc/moc-methode-kb]])
+- boucle preuves : [[preuves/index]], [[preuves/_template]], [[preuves/SETUP-GSC]]
+- décisions : [[decisions/index]], [[decisions/_template]], [[decisions/0001-fermeture-boucles-second-cerveau]]
+- rituel : [[revue-hebdo/index]]
+
+### Skills créés (6) — cf. §7bis AGENTS.md
+- ingest-backlog-sweep (lundi), hypotheses-validation (1er du mois), preuves-feedback (à la demande), gsc-watcher (1er du mois), revue-hebdo (vendredi), resurgence-espacee (mercredi)
+
+### Automation créée
+- 5 LaunchAgents : com.timboussardon.{ingest-backlog, hypotheses-validation, revue-hebdo, resurgence, gsc-pull}
+- runners dans ~/.local/bin/seo-kb/ + gsc-fetch.py (importateur Search Console API service account)
+- garde-fou .gitignore : *service-account*.json
+
+### Gouvernance
+- AGENTS.md 2.5 → 2.6 (§14 trois boucles + rituel, §7bis skills système, types register|moc|decision|proof, nouveaux dossiers wiki §3)
+- [[index]] : section "Système & navigation" ajoutée en tête
+- mémoire obsolète canonical_vault_path corrigée : /Users/timothee/Documents/seo-kb/ (disparu) → /Users/timothee/Code/seo-kb/
+
+### Contradictions / dépendances ouvertes
+- Boucle preuves inerte tant que Tim n'a pas déposé le service account GSC ([[preuves/SETUP-GSC]]) — dégrade proprement en mode dépôt manuel via gsc-watcher
+- 5 nouveaux LaunchAgents à charger via launchctl (instruction donnée à Tim)
+- audit-vault-hygiene/SKILL.md contient encore l'ancien path /Users/timothee/Documents/seo-kb/ — hors scope (laissé tranquille à la demande de Tim), à corriger plus tard
+- Valeur des registres conditionnée à la discipline de revue : dette assumée dans ADR-0001

@@ -1,7 +1,7 @@
-- [Canonical SEO KB vault path](canonical_vault_path.md) — toujours éditer dans `/Users/timothee/Documents/seo-kb/` (vault Obsidian) ; ne jamais propager sur des copies extérieures sans confirmation
+- [Canonical SEO KB vault path](canonical_vault_path.md) — toujours éditer dans `/Users/timothee/Code/seo-kb/` (vault Obsidian, déplacé de ~/Documents le 2026-05-04) ; ne jamais propager sur des copies extérieures sans confirmation
 - [Automatisations vault (5 agents)](automation_revue_presse_todo.md) — revue presse + audit vault + recap hebdo via GH Actions ; /todo + /repeats via slash local ; hook/cron auto todo différés à ~2026-05-22
 - [Voix Tim + anti-AI writing](voice_anti_ai_writing.md) — toute rédaction (newsletter, article, post) passe tim-my-voice.md + checklist anti-AI writing à chaque itération
 - [Formation Claude Cowork pixel perfect](project_formation_claude_cowork.md) — Tim prépare un produit/formation pour reproduire son setup complet chez d'autres (skills + agents + vault + automations)
 - [Pas "employé IA" en rédaction](feedback_terminologie_employe_ia.md) — terme rejeté ; Tim cherche un mot propriétaire (candidats : Factotum, Mandataire, Majordome) — non tranché
-- [Format revue-presse Algorithme = monographique, sans jargon](feedback_revue_presse_format.md) — 1 sujet / 1200-1500 mots / voix Tim ; référence pixel-perfect = Substack scrapés dans `raw/articles/algorithme-*.md`, PAS le template multi-piliers
+- [Format revue-presse Algorithme = monographique, sans jargon](feedback_revue_presse_format.md) — 1 sujet / 1200-1500 mots / voix Tim ; référence pixel-perfect = Substack scrapés dans `raw/articles/algorithme/algorithme-*.md`, PAS le template multi-piliers
 - [macOS launchd + TCC bloquent ~/Documents](feedback_launchd_tcc_documents.md) — wrappers LaunchAgent doivent vivre dans `~/.local/bin/seo-kb/`, pas dans `~/Documents/.../bin/` ; sinon TCC bloque l'exec silencieusement

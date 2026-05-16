@@ -40,6 +40,7 @@ Construire une base de connaissances **persistante, compoundante et interconnect
 seo-kb/
 ├── raw/                   ← sources immuables (lecture seule pour l'agent)
 │   ├── articles/          ← clippings web (Obsidian Web Clipper)
+│   ├── auteurs/           ← posts verbatim d'auteurs externes (LinkedIn, X, newsletters) — règle d'attribution stricte (§13)
 │   ├── papers/            ← papers académiques (PDFs)
 │   ├── data/              ← exports GSC, Ahrefs, Semrush, Screaming Frog
 │   ├── clients/           ← notes client, briefs reçus, audits
@@ -47,8 +48,16 @@ seo-kb/
 │   └── assets/            ← images téléchargées
 │
 ├── wiki/                  ← domaine de l'agent (écriture exclusive)
+│   ├── 000-home.md        ← carte d'entrée curée (MOC racine, lecture humaine)
 │   ├── index.md           ← catalogue de toutes les pages
 │   ├── log.md             ← append-only chronologique
+│   ├── hypotheses.md      ← registre des claims non validés (boucle validation)
+│   ├── contradictions.md  ← registre de la dette doctrinale (boucle validation)
+│   ├── ingest-backlog.md  ← raw non digéré, trié P1/P2/P3 (boucle capture)
+│   ├── moc/               ← Maps of Content thématiques (navigation humaine)
+│   ├── preuves/           ← fiches contenu publié ↔ doctrine (boucle apprentissage)
+│   ├── decisions/         ← ADR, décisions structurantes du système
+│   ├── revue-hebdo/       ← éditions du rituel de décision + résurgences
 │   ├── sources/           ← résumé structuré par source ingérée
 │   ├── entities/          ← algos, outils, acteurs, concurrents, Google, Quality Raters
 │   ├── concepts/          ← AEO, GEO, pSEO, Grounding Score, RRF, E-E-A-T, Agentic Search…
@@ -125,8 +134,12 @@ Chaque page `wiki/` commence par :
 
 ```yaml
 ---
-type: source | entity | concept | synthesis | query | brief | cluster | quick-win
+type: source | entity | concept | synthesis | query | brief | cluster | quick-win | doctrine | revue-presse | pseo-strategy | audit | register | moc | decision | proof
 source_type: article | paper | doc-google | gsc-export | client-note | transcript | test-terrain | doctrine  # pour type=source uniquement
+# register : pages-index vivantes (hypotheses, contradictions, ingest-backlog, decisions/index, revue-hebdo)
+# moc : carte d'entrée / Map of Content (000-home, moc/*)
+# decision : ADR (decisions/NNNN-*)
+# proof : fiche preuve (preuves/*)
 title: Titre lisible
 aliases: [alias1, alias2]
 tags: [seo, ia, aeo, geo, pseo, gsc, algo-google, quality-raters, ...]
@@ -229,7 +242,7 @@ status: draft | stable | stale
 
 ---
 
-## 7. Hooks vers les 12 skills SEO propriétaires
+## 7. Hooks vers les 13 skills SEO propriétaires
 
 **Règle impérative** : quand une requête matche un trigger, **activer le skill correspondant** et **filer l'output dans la bonne sous-catégorie du wiki**. Ne jamais répondre en chat volatile.
 
@@ -247,6 +260,18 @@ status: draft | stable | stale
 | **maillage-interne-gsc** | "maillage", "liens internes", "cocon SEO", "GSC + SEO" | `wiki/maillage/YYYY-MM-DD-slug.md` |
 | **linkedin-post-tim** | "post LinkedIn", "contenu LinkedIn", "idée de post" | `wiki/posts-linkedin/YYYY-MM-DD-slug.md` |
 | **revue-presse-iteration** | "revue de presse", "newsletter Algorithme", "édition du jour" | `wiki/revues-presse/YYYY-MM-DD-slug.md` |
+| **kw-research-workflow** | "recherche mots-clés", "workflow keyword research", "j'ai un nouveau client à analyser", "fais-moi le workflow complet", upload Keyword Planner / GSC + verbatims | `wiki/queries/kw-research-YYYY-MM-DD-slug.md` (+ Google Sheet `KW_Research_[Client]_[Date]`) |
+
+### 7bis. Skills système (boucles + rituel) — cf. §14
+
+| Skill | Triggers | Cadence | Output |
+|---|---|---|---|
+| **ingest-backlog-sweep** | "sweep backlog", "quoi ingérer", "raw non traité" | lundi 08:00 | `wiki/ingest-backlog.md` |
+| **hypotheses-validation** | "validation hypothèses", "revue mensuelle doctrine" | 1er du mois 08:30 | `wiki/hypotheses.md` + `wiki/contradictions.md` |
+| **preuves-feedback** | "fiche preuve", "qu'est-ce que cet article a donné", data perf sur URL publiée | à la demande | `wiki/preuves/YYYY-MM-DD-slug.md` |
+| **gsc-watcher** | "traite la GSC", "j'ai déposé un export GSC" | 1er du mois 07:00 | `wiki/preuves/` (depuis `raw/data/exports-gsc/`) |
+| **revue-hebdo** | "revue hebdo", "on fait le point", "qu'est-ce qu'on décide" | vendredi 17:30 | `wiki/revue-hebdo/YYYY-Www.md` |
+| **resurgence-espacee** | "résurgence", "concept oublié" | mercredi 09:00 | `wiki/revue-hebdo/resurgence-YYYY-MM-DD.md` |
 
 **Après chaque déclenchement de skill** :
 1. Appliquer le skill avec toute son expertise
@@ -334,6 +359,7 @@ Parseable via `grep "^## \[" wiki/log.md | tail -10`
 10. **Log entry strict** : `## [YYYY-MM-DD] action | titre`
 11. **[[concepts/anti-ai-writing]] systématique pour toute rédaction** — cf. §11 ci-dessous
 12. **Skill `seo-workflow-article` obligatoire pour rédiger ou réécrire un article** — cf. §12 ci-dessous
+13. **Attribution stricte pour tout contenu issu de `raw/auteurs/`** — cf. §13 ci-dessous
 
 ---
 
@@ -429,6 +455,73 @@ Dans ces cas, appliquer §11 seule.
 
 ---
 
-**Version** : 2.4 SEO-first — 2026-04-14 (ajout §12 skill workflow article obligatoire)
+## 13. Règle d'attribution — contenu issu de `raw/auteurs/`
+
+`raw/auteurs/` archive des posts verbatim d'auteurs externes (LinkedIn, X, Substack, newsletters, blogs). Voir [[raw/auteurs/README]] pour les conventions de stockage.
+
+**Règle non négociable** : toute citation, paraphrase, reformulation ou réutilisation d'une idée tirée d'un fichier de `raw/auteurs/` doit attribuer explicitement l'auteur, comme on cite une étude.
+
+### Ce qui déclenche la règle
+
+- Reprise verbatim d'une phrase ou d'un paragraphe
+- Paraphrase ou reformulation d'une idée
+- Reprise d'un cadre conceptuel, d'une métaphore ou d'un chiffre venant de l'auteur
+- Usage de la prise de parole comme accroche, contre-argument ou pivot d'analyse
+
+### Format imposé
+
+- **Citation directe** : blockquote markdown + attribution inline avec nom de l'auteur, titre du post (italique), date.
+  > "The new buyer on the internet is an agent." — Greg Isenberg, *Notes on the agent economy*, 2026-05-13
+- **Paraphrase** : nom de l'auteur en clair dans la phrase + wikilink vers la source `[[auteurs/{auteur}/{slug}]]`.
+- **Reprise d'idée** : préciser "selon X" / "X observe que" / "X soutient que" avant l'argument, puis lien.
+
+### Ce qui est interdit
+
+- Faire passer une phrase d'auteur pour une idée de Tim
+- Faire passer une phrase d'auteur pour une vérité neutre ou un consensus
+- Diluer l'attribution avec "des experts disent que…", "on observe que…", "il est bien connu que…"
+- Mélanger une voix d'auteur avec la voix de Tim sans marquer la frontière
+
+### Articulation avec les autres règles
+
+- §10 règle 4 *"pas de source = pas d'affirmation"* — s'applique aussi, l'attribution remplit l'exigence de sourcing
+- §11 anti-AI-writing — s'applique sur la rédaction qui entoure la citation
+- §12 workflow article — s'applique sur les articles longs ; toute citation d'un auteur `raw/auteurs/` dans un article doit respecter §13 en plus
+
+Cette règle s'applique partout : wiki, briefs, articles, posts LinkedIn, revues de presse, réponses inline en chat.
+
+---
+
+## 14. Les trois boucles fermées + le rituel
+
+Décision fondatrice : [[decisions/0001-fermeture-boucles-second-cerveau]]. Le système capture et compile bien, mais sans ces boucles il accumule sans se reprendre en main.
+
+### Boucle capture → traitement
+
+`raw/` se remplit plus vite qu'il ne se digère. [[ingest-backlog]] rend le retard visible et trié (P1 data terrain > P2 contenu publié non bouclé > P3 reste). Le skill `ingest-backlog-sweep` régénère le registre chaque lundi. **Il cartographie, il n'ingère pas** : l'ingest reste le workflow §6.1, déclenché par Tim, qui décide l'angle. Les skips documentés ne se re-litigent pas.
+
+### Boucle doctrine → validation
+
+Toute la doctrine repose sur des transferts d'architecture non prouvables directement. [[hypotheses]] rassemble les claims "non validé" en programme de recherche, [[contradictions]] consolide la dette. **Règle dure : une hypothèse ne passe `validé`/`invalidé` que via une [[preuves/index|fiche preuve]] adossée à de la data réelle. Jamais sur du ressenti.** Skill `hypotheses-validation`, 1er du mois.
+
+### Boucle sortie → apprentissage
+
+Le contenu publié doit revenir mesuré dans le wiki, sinon "data propriétaire" reste un argument et pas un fait. [[preuves/index]] relie chaque contenu à l'hypothèse qu'il teste, à J+30 et J+90. Deux alimentations, un seul traitement (`gsc-watcher`) : dépôt manuel d'un export dans `raw/data/exports-gsc/`, ou pull API autonome via service account (`gsc-fetch.py`, voir [[preuves/SETUP-GSC]]). Jamais de chiffre inventé (§5.4).
+
+### Le rituel
+
+Mercredi, `resurgence-espacee` remonte un concept stable oublié et prépare un verdict. Vendredi, `revue-hebdo` tranche : promotions `draft`→`stable`, hypothèse à tester, lot d'ingest, contradiction à fermer, archivage, fil rouge. Distinct de la revue de presse quotidienne, du lint d'hygiène et de l'`algorithme-recap-hebdo`. C'est le seul moment de décision : l'agent propose à 95%, Tim arbitre les 5% de jugement irréductible.
+
+### Qui nourrit quoi
+
+Auto (agent, cron, zéro effort) : sweeps, résurgence, maintenance des registres, recap-jour. Agent propose / Tim décide (~15 min/semaine) : revue hebdo, validation mensuelle. Irréductiblement Tim ou pull GSC : la data de preuve. Sans elle, la boucle apprentissage ne tourne pas et les hypothèses restent `ouvert`.
+
+### Navigation humaine
+
+[[index]] est un catalogue (agent, recherche). [[000-home]] + `moc/` sont les portes d'entrée curées quand on veut *penser* dans le vault. Les MOCs pointent vers les hubs et signalent ce qui n'est pas tranché ([[hypotheses]], [[contradictions]]).
+
+---
+
+**Version** : 2.6 SEO-first — 2026-05-16 (ajout §14 trois boucles + rituel ; nouveaux types `register|moc|decision|proof` en §5.1 ; nouveaux dossiers wiki en §3 ; §7bis skills système ; cf. [[decisions/0001-fermeture-boucles-second-cerveau]])
 **Maintainer humain** : Timothée Boussardon
 **Maintainer LLM** : Claude Code (et tout agent qui lit ce fichier)

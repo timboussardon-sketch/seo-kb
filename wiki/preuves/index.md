@@ -1,0 +1,56 @@
+---
+type: register
+title: Banque de preuves
+aliases: [preuves, banque-preuves, proof-bank, boucle-preuves]
+tags: [meta, preuves, validation, terrain, moat, gsc]
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: high
+status: living-doc
+---
+
+# Banque de preuves
+
+> La KB nourrit les articles, les newsletters, les briefs. Mais la performance de ces sorties ne revenait jamais dans le wiki : `gsc-export` à zéro fichier, `test-terrain` à un seul. La boucle qui rendrait la doctrine auto-corrigeante n'était pas branchée. On affirmait "data propriétaire" sans la prouver dans le vault.
+>
+> Une fiche preuve relie un contenu publié à l'hypothèse de [[hypotheses|doctrine]] qu'il teste, et suit sa performance à J+30 et J+90. C'est le seul mécanisme qui transforme [[concepts/data-proprietaire]] d'un argument commercial en fait opposable, et qui fait passer une [[hypotheses|hypothèse]] de `ouvert` à `validé` ou `invalidé`.
+>
+> Remplissage manuel pour l'instant : pas de pull GSC automatisé. Le skill `preuves-feedback` crée et met à jour les fiches à la demande, à partir de la data que Tim fournit (export GSC, citations IA constatées, mesures client). Quand un pull GSC sera branché, il alimentera ces mêmes fiches.
+
+## Comment ça marche
+
+1. Un contenu est publié (article Organikk, newsletter, page pSEO, livrable client)
+2. On crée une fiche `preuves/YYYY-MM-DD-slug.md` depuis [[preuves/_template]]
+3. On déclare l'hypothèse testée ([[hypotheses#H-XXX]]) et la prédiction chiffrée
+4. On note la baseline (positions, citations IA, conversions avant)
+5. À J+30 et J+90, on remplit la mesure réelle
+6. On tranche : la prédiction tient ou pas
+7. On répercute sur [[hypotheses]] (statut + `confidence:` sur les pages doctrine) et sur [[log]]
+
+## Statuts des fiches
+
+- `en-cours` : publié, en attente des jalons J+30 / J+90
+- `concluante` : la prédiction tient, l'hypothèse liée avance vers `validé`
+- `non-concluante` : la prédiction ne tient pas, l'hypothèse liée recule ou passe `invalidé`
+- `bruitée` : mesure non exploitable (trop peu de volume, variable confondante), à rejouer
+
+## Fiches
+
+> Aucune fiche encore. Premières fiches attendues sur les articles pSEO secteur×ville (Paris/Lyon) et les newsletters récentes listées en [[ingest-backlog#priorité-2-contenu-publié-non-bouclé-boucle-preuves|backlog P2]]. Ces pages testent directement [[hypotheses#H-002]] (Surprise Gap → citation), [[hypotheses#H-003]] (Grounding Score prédictif) et [[hypotheses#H-007]] (data propriétaire vs Retrieval Collapse).
+
+| Fiche | Contenu | Hypothèse | Publié | Statut |
+|---|---|---|---|---|
+| _(à venir)_ | — | — | — | — |
+
+## Données minimales par fiche
+
+Pour qu'une fiche soit exploitable, il faut au moins une de ces sources de vérité (jamais d'estimation inventée, règle §5.4) :
+
+- Export GSC sur l'URL (positions, impressions, CTR) avant / J+30 / J+90
+- Citations IA constatées (ChatGPT, Perplexity, AI Mode) sur les requêtes cibles, croise [[concepts/metriques-visibilite-geo]]
+- Mesure client tierce (réservations, leads, closing), croise [[sources/2026-04-13-cas-clients-resultats]] et [[hypotheses#H-009]]
+
+Pas de data = la fiche reste `en-cours`, l'hypothèse reste `ouvert`. On ne valide jamais sur du ressenti.
+
+Pages liées : [[hypotheses]] · [[contradictions]] · [[ingest-backlog]] · [[concepts/data-proprietaire]] · [[concepts/metriques-visibilite-geo]] · [[index]]

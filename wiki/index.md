@@ -1,6 +1,25 @@
 # Index du wiki SEO/IA/GEO
 
 > Catalogue de toutes les pages. Mis à jour à chaque ingest.
+> Pour naviguer en humain plutôt que tout lister : [[000-home]].
+
+## Système & navigation
+
+### Carte d'entrée & MOCs
+- [[000-home]] — carte d'entrée curée du vault
+- [[moc/moc-aeo-geo]] — doctrine SEO/GEO post-SGE
+- [[moc/moc-maillage]] — maillage et architecture éditoriale
+- [[moc/moc-vente-objections]] — vente, avatar, objections
+- [[moc/moc-redaction]] — rédaction et ton de voix
+- [[moc/moc-methode-kb]] — méthode KB et système
+
+### Registres (boucles fermées)
+- [[hypotheses]] — registre des claims non validés (revue mensuelle)
+- [[contradictions]] — dette doctrinale et dépendances ouvertes (revue mensuelle)
+- [[ingest-backlog]] — raw non digéré, trié P1/P2/P3 (sweep hebdo)
+- [[preuves/index]] — banque de preuves contenu ↔ doctrine · [[preuves/SETUP-GSC]]
+- [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
+- [[decisions/index]] — journal de décisions (ADR)
 
 ## Sources (57)
 
@@ -154,7 +173,7 @@
 ### Infrastructure Google (1)
 - [[entities/isi]] — Index Serve Infrastructure, pré-filtre candidats avant ranking
 
-## Concepts (30)
+## Concepts (35)
 
 ### AEO / GEO (7)
 - [[concepts/surprise-metric]] — Gradient d'information (2 sources)
@@ -214,13 +233,26 @@
 - [[concepts/cli-tools-optional]] — Tooling CLI émergent (1 source)
 - [[concepts/obsidian-as-ide]] — Obsidian=IDE, LLM=programmer (1 source)
 
-## Syntheses (3)
+### Nouveautés bootcamp 4 · session 1 (5)
+- [[concepts/arbitrage-plateforme-publication]] — Choisir la plateforme selon la SERP (1 source)
+- [[concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas]] — Filtre Tim 2026 sur les prestations (1 source)
+- [[concepts/80-pourcent-pattern-strategie]] — Stratégie identique à 80% entre clients (1 source)
+- [[concepts/modele-page-variable-prix]] — pSEO sur variable continue (fourchette tarif) (1 source)
+- [[concepts/scam-objection-data-aleatoire]] — Page arnaque comme levier SEO + E-E-A-T (1 source)
+
+## Syntheses (4)
 - [[syntheses/doctrine-seo-post-sge]] — Thèse unifiée 4 piliers (8 sources)
 - [[syntheses/vendre-seo-ia-2026]] — 7 principes de vente SEO IA (5 sources)
 - [[syntheses/workflow-complet-consultant-seo-ia]] — Pipeline 9 étapes prospection → livraison (6 sources)
+- [[syntheses/process-keyword-research-5-etapes]] — Process KW research 5 étapes (Keyword Planner → GSC → Grok → Propriétaires → pSEO) (5 sources)
 
-## Queries (1)
+## Queries (2)
+- [[queries/pseo-2026-05-16-landing-lead-gen-organikk]] — pSEO Organikk : 5 modèles de landing lead-gen sur problématique SEO (45 pages possibles, M1 pain-first prioritaire)
 - [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] — Wiki persistant optimise-t-il le Grounding Score ? (8 sources)
+
+## Engines / Méthodes opérationnelles (1)
+
+- [[engine-densite-semantique-sans-serp]] — Engine v8 : carte sémantique pure sans scraping SERP (9 phases, 8 livrables, modes Bronze/Silver/Gold + Mode 0 KB Bootstrap)
 
 ## Outputs skills
 ### Briefs (1)
@@ -229,7 +261,8 @@
 ### Quick Wins (0)
 ### Cannibalisation (0)
 ### Maillage (0)
-### Posts LinkedIn (0)
+### Posts LinkedIn (1)
+- [[posts-linkedin/2026-05-05-workflow-kw-research-5-etapes]] — Workflow recherche mots-clés 5 étapes (voix Tim, ≈200 mots)
 ### Revues de presse (2)
 - [[revues-presse/2026-04-13-claude-code-obsidian-sans-complexite]] — Claude Code + Obsidian setup (validé Tim)
 - [[revues-presse/2026-04-13-algorithme-revue-presse]] — Édition Algorithme + 4e brève A-RAG

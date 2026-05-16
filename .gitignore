@@ -21,3 +21,7 @@ __pycache__/
 
 # Sub-repo: revue de presse synced via routine cloud + GitHub
 raw/revue-de-presse/
+
+# GSC service account credential (jamais committer)
+*service-account*.json
+.venv/
