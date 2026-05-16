@@ -42,7 +42,7 @@ status: living-doc
 
 | Semaine | Édition | Décisions clés |
 |---|---|---|
-| _(à venir)_ | — | — |
+| 2026-W20 | [[revue-hebdo/2026-W20]] | rrf draft→stable · H-007 en-test · lot ingest = keyword-research 2026-05-02 · C-002 à fermer (OpenDecoder) · data-proprietaire frontmatter corrigé · fil rouge = moat mis à l'épreuve |
 
 Chaque édition est filée dans `revue-hebdo/YYYY-Www.md` et résumée dans cette table.
 

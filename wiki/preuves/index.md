@@ -37,11 +37,11 @@ status: living-doc
 
 ## Fiches
 
-> Aucune fiche encore. Premières fiches attendues sur les articles pSEO secteur×ville (Paris/Lyon) et les newsletters récentes listées en [[ingest-backlog#priorité-2-contenu-publié-non-bouclé-boucle-preuves|backlog P2]]. Ces pages testent directement [[hypotheses#H-002]] (Surprise Gap → citation), [[hypotheses#H-003]] (Grounding Score prédictif) et [[hypotheses#H-007]] (data propriétaire vs Retrieval Collapse).
+> Première fiche ouverte le 2026-05-16 (revue mensuelle `hypotheses-validation`, sur décision [[revue-hebdo/2026-W20]] point 2). Elle teste [[hypotheses#H-007]] (data propriétaire vs Retrieval Collapse) sur la cohorte pSEO secteur×ville déjà publiée. Statut `en-cours` : baseline GSC en attente du dépôt du service account ([[preuves/SETUP-GSC]]), aucune mesure inventée. Les newsletters récentes du [[ingest-backlog#priorité-2-contenu-publié-non-bouclé-boucle-preuves|backlog P2]] suivront.
 
 | Fiche | Contenu | Hypothèse | Publié | Statut |
 |---|---|---|---|---|
-| _(à venir)_ | — | — | — | — |
+| [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] | 5 pages pSEO secteur×ville Organikk | [[hypotheses#H-007]] | ≤ 2026-05-13 | `en-cours` |
 
 ## Données minimales par fiche
 

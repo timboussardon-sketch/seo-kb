@@ -30,8 +30,8 @@ status: living-doc
 | ID | Contradiction / dépendance | Statut | Détectée | Action attendue |
 |---|---|---|---|---|
 | C-001 | Discordance parcours Franck : Jumpto vs SEO.fr | `ouverte` | 2026-05-01 | Clarifier au prochain call/ingest |
-| C-002 | Paper OpenDecoder (Mo et al., 2026) jamais ingéré alors qu'il fonde le scoring | `ouverte` | 2026-04-30 | Ingest paper primaire → croise [[hypotheses#H-010]] |
-| C-003 | Cluster Organikk + 4 modèles pSEO non implémentés, zéro mesure post-déploiement | `ouverte` | 2026-04-30 | Mesurer après déploiement → [[preuves/index]] |
+| C-002 | Paper OpenDecoder (Mo et al., 2026) jamais ingéré alors qu'il fonde le scoring | `en-cours` | 2026-04-30 | Ingest paper primaire → croise [[hypotheses#H-010]] |
+| C-003 | Cluster Organikk + 4 modèles pSEO non implémentés, zéro mesure post-déploiement | `en-cours` | 2026-04-30 | Mesurer après déploiement → [[preuves/index]] |
 | C-004 | Snapshot qadence-seo-agent figé au 2026-04-30, le repo évolue | `ouverte` | 2026-04-30 | Ré-ingest snapshot ou diff |
 | C-005 | Audit blanc Qualiopi FG Formation lu en titre seulement | `ouverte` | 2026-04-30 | Détailler le contenu en source |
 | C-006 | 21 templates Drive Accompagnement : seul l'INDEX est en wiki source | `acceptée` | 2026-04-30 | Limite assumée, ingest à la demande |
@@ -53,9 +53,13 @@ status: living-doc
 
 [[sources/2026-04-15-opendecoder-seo-scoring-system]] est la référence canonique du scoring SEO (4 axes, 15 prompts LLM), mais le paper primaire OpenDecoder (Mo et al., 2026) n'a jamais été ingéré comme source `paper`. Tant qu'il ne l'est pas, on ne peut pas auditer la fidélité de la transposition. Bloque [[hypotheses#H-010]]. Action : ingest prioritaire.
 
+`en-cours` depuis le 2026-05-16 : [[revue-hebdo/2026-W20]] point 4 a tranché l'ingest du paper primaire en W21 (action bornée, distincte du lot d'ingest W21). Statut `résolue` à poser quand le paper est ingéré et la transposition auditée formule par formule.
+
 ### C-003 — Cluster Organikk non mesuré
 
 Le cluster business Organikk et les 4 modèles pSEO ([[sources/2026-04-24-cluster-business-organikk-4-piliers]], [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]]) sont planifiés mais l'implémentation et la mesure post-déploiement manquent. C'est la dépendance qui bloque la moitié des hypothèses du registre : sans pages publiées et mesurées, [[hypotheses#H-002]], [[hypotheses#H-003]], [[hypotheses#H-007]] restent `ouvert`. Action : alimenter [[preuves/index]] dès les premières pages en ligne.
+
+`en-cours` depuis le 2026-05-16 : la cohorte pSEO secteur×ville déjà publiée a permis d'engager la première instrumentation sans attendre le déploiement complet du cluster — fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (H-007 passé `en-test`). La contradiction ne se ferme que quand le cluster complet est déployé et mesuré ; cette fiche en couvre une fraction (5 pages, H-007 seule), pas la totalité.
 
 ### C-007 — Décompte workflows vs skills
 

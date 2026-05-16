@@ -641,3 +641,32 @@ Le skill est l'outillage de la synthèse [[syntheses/process-keyword-research-5-
 - 5 nouveaux LaunchAgents à charger via launchctl (instruction donnée à Tim)
 - audit-vault-hygiene/SKILL.md contient encore l'ancien path /Users/timothee/Documents/seo-kb/ — hors scope (laissé tranquille à la demande de Tim), à corriger plus tard
 - Valeur des registres conditionnée à la discipline de revue : dette assumée dans ADR-0001
+
+## [2026-05-16] backlog | sweep — 38 en backlog (P1:16 P2:13 P3:9) + 21 drive-accompagnement parké C-006
+- raw inventorié: 169 fichiers (hors journal/, revue-de-presse/, _archive/, archive/)
+- corrections diff: FG-Formation-—-Base-de-Connaissances + audit-blanc + ton-de-voix-tim-organikk-substack → désormais TREATED (listés en Fichier raw de sources existantes), retirés du backlog ; newsletter-maillage-interne.md TREATED ([[sources/2026-04-30-newsletter-maillage-interne]]) mais variante -claude.md NON couverte → reste P2
+- prochain lot proposé: raw/bootcamp4/session-1-mots-cles-transcript.md, raw/bootcamp4/session-2-redaction-transcript.md, raw/articles/modele-production/modele-strategie-b2b.md
+- nouveaux skips: aucun
+
+## [2026-05-16] resurgence | [[concepts/data-proprietaire]] — verdict proposé : MAJ frontmatter `updated:` 2026-04-13→2026-05-01 (corps juste, drift métadonnée 18j sur hub 98 backlinks)
+
+## [2026-05-16] revue-hebdo | Semaine W20 — 7 décisions (édition inaugurale)
+- promotions: rrf draft→stable (charge opérationnelle article-engine-pipeline, confidence reste medium) ; aucun stable→stale (vault < 40j)
+- hypothèse en test: H-007 (data propriétaire vs Retrieval Collapse) → fiche preuve pSEO secteur×ville (5 articles Organikk publiés), J+30 ≈ 2026-06-15
+- lot ingest W21: raw/data/keyword-research-2026-05-02/{keywords-cleaned,keywords-classified}.md (P1 oldest-first)
+- contradiction à fermer W21: C-002 (ingest paper OpenDecoder Mo et al. 2026, débloque H-010)
+- archivage: aucun (vault trop jeune, pas d'invention) ; tripwire sur brief Information Gain à revoir W21
+- résurgence: verdict accepté — frontmatter data-proprietaire corrigé updated:→2026-05-01 (exécuté)
+- fil rouge: "le moat data-propriétaire, mis à l'épreuve" — déclencheur = mesure J+30 H-007
+
+## [2026-05-16] hypothese | revue mensuelle (inaugurale) — 1 hypothèse bougée, 0 contradiction fermée
+- périmètre : registres seedés le 2026-05-16 (ADR-0001), aucun ingest depuis. Fenêtre vide hors décision revue-hebdo W20 à exécuter.
+- H-007: `ouvert → en-test` (preuve: [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] créée — exécution de la décision [[revue-hebdo/2026-W20]] point 2 que les registres n'avaient pas répercutée)
+- fiche preuve ouverte `en-cours` : cohorte 5 pages pSEO secteur×ville, jalons J+30 ≈ 2026-06-15 / J+90 ≈ 2026-08-14. Baseline GSC NON capturée (service account non déposé, [[preuves/SETUP-GSC]]) — bloquant assumé, aucune mesure inventée. H-007 ne dépassera pas `en-test` avant la baseline.
+- doctrine tracée (en-test ⇒ pas de changement de `confidence:`, marqueur de traçabilité seulement) : [[concepts/data-proprietaire]] (updated 2026-05-01→2026-05-16, note "sous test" ajoutée, confidence: high inchangé) ; [[concepts/retrieval-collapse]] (updated 2026-05-01→2026-05-16, limite "inférence sous test" ajoutée)
+- C-002: `ouverte → en-cours` (ingest OpenDecoder tranché W21 par revue-hebdo W20)
+- C-003: `ouverte → en-cours` (première instrumentation engagée via la fiche H-007, fraction du cluster seulement)
+- contradictions > 60j : aucune (la plus vieille ~33j) — pas d'escalade revue-hebdo au titre de la règle 60j
+- H-009, H-010 restent `ouvert` (H-010 toujours bloquée par C-002 non encore ingérée) ; H-001 reste `heuristique` assumé
+
+Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0 contradiction fermée (2 avancées ouverte→en-cours : C-002, C-003)
