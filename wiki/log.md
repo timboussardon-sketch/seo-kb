@@ -670,3 +670,9 @@ Le skill est l'outillage de la synthèse [[syntheses/process-keyword-research-5-
 - H-009, H-010 restent `ouvert` (H-010 toujours bloquée par C-002 non encore ingérée) ; H-001 reste `heuristique` assumé
 
 Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0 contradiction fermée (2 avancées ouverte→en-cours : C-002, C-003)
+
+## [2026-05-18] backlog | sweep — 40 en backlog (P1:16 P2:13 P3:11) + 21 drive-accompagnement parké C-006
+- inventaire: 170 raw .md (hors journal/revue-de-presse/archive). P1/P2 inchangés vs sweep 2026-05-16 ; +2 fichiers surfacés en P3
+- nouveaux en P3: raw/ia-employe/recap-jour-health-2026-05-07.md (health-check ops), raw/auteurs/README.md (convention dossier) — tous deux candidats skip, à trancher par Tim (non auto-skip)
+- prochain lot proposé: raw/data/keyword-research-2026-05-02/keywords-cleaned.md + keywords-classified.md (décision W21 standing, pas encore ingérée), puis bootcamp4 transcripts (session-1-mots-cles-transcript, session-2-redaction-transcript = moat terrain non rejouable)
+- nouveaux skips: aucun

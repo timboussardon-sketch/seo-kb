@@ -4,8 +4,8 @@ title: Backlog d'ingest
 aliases: [ingest-backlog, backlog, raw-non-traite, file-ingest]
 tags: [meta, ingest, capture, pipeline, backlog]
 created: 2026-05-16
-updated: 2026-05-16
-last_sweep: 2026-05-16
+updated: 2026-05-18
+last_sweep: 2026-05-18
 sources: 0
 confidence: high
 status: living-doc
@@ -64,14 +64,16 @@ Articles et newsletters publiés qui n'ont ni source wiki ni [[preuves/index|fic
 
 > Note boucle preuves : pour chaque article publié de P2, créer la source ET la [[preuves/index|fiche preuve]] qui le relie à l'hypothèse doctrinale qu'il teste (ex. les pSEO secteur×ville testent [[hypotheses#H-002]] et [[hypotheses#H-007]]).
 
-## Priorité 3 — À traiter selon valeur — 9 (+ drive-accompagnement parké)
+## Priorité 3 — À traiter selon valeur — 11 (+ drive-accompagnement parké)
 
 | Fichier raw | Date | Note |
 |---|---|---|
 | `raw/articles/brouillons/linkedin-trend-research-semaine-2-avril-2026.md` | 2026-04-25 | Notes trend research (ex `linkedin-trend-research-SEO-LLM-…` supprimé, renommé). Pas de source — vérifier valeur doctrinale |
 | `raw/notes/process-redaction-5-piliers.md` | 2026-05-02 | Process rédaction généralisable, à croiser avec [[concepts/workflow-redaction-8-etapes]] (vérifier doublon/évolution) |
+| `raw/ia-employe/recap-jour-health-2026-05-07.md` | 2026-05-07 | `type: health-check` de l'automation recap-jour (statut OK). Méta/ops, valeur doctrinale ~nulle — **candidat skip**, à trancher par Tim (pas auto-skip car non documenté). À vérifier |
 | `raw/articles/brouillons/engine-densite-semantique-sans-serp.md` | 2026-05-11 | Aucune page wiki `engine-densite-semantique-sans-serp` n'existe (réf orpheline dans [[log]]/[[index]]) — brouillon non traité, vérifier si à ingérer |
 | `raw/bootcamp4/ton-de-voix-worksheet.md` | 2026-05-12 | Worksheet ton de voix, croise [[concepts/anti-ai-writing]] |
+| `raw/auteurs/README.md` | 2026-05-13 | Convention du dossier `raw/auteurs/` (règle d'attribution §13). Process/navigation, pas de matière doctrinale — **candidat skip**, à trancher par Tim. À vérifier |
 | `raw/auteurs/greg-isenberg/2026-05-13-notes-on-agent-economy.md` | 2026-05-13 | Auteur externe. Source `source_type: article` + respect strict §13 attribution |
 | `raw/data/strategies-paris/{avocat,hotel,paysagiste}/sources.md` · `raw/data/strategies-b2b/centre-formation-ia/sources.md` (4 fichiers) | — | Listes de sources/citations adossées aux articles pSEO P2 — à ingérer avec eux, pas seules. À vérifier |
 | `raw/notes/drive-accompagnement/` (21 templates individuels, INDEX déjà ingéré [[sources/2026-04-30-drive-accompagnement-templates]]) | — | Voir [[contradictions#C-006]] : statut `acceptée`, ingest à la demande seulement. **Parké**, non compté dans le backlog actif |
