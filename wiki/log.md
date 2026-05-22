@@ -676,3 +676,34 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - nouveaux en P3: raw/ia-employe/recap-jour-health-2026-05-07.md (health-check ops), raw/auteurs/README.md (convention dossier) — tous deux candidats skip, à trancher par Tim (non auto-skip)
 - prochain lot proposé: raw/data/keyword-research-2026-05-02/keywords-cleaned.md + keywords-classified.md (décision W21 standing, pas encore ingérée), puis bootcamp4 transcripts (session-1-mots-cles-transcript, session-2-redaction-transcript = moat terrain non rejouable)
 - nouveaux skips: aucun
+
+## [2026-05-21] note | [[concepts/angle-differenciant-mot-cle]] créé — doctrine de sélection des mots-clés
+- déclencheur : prep du call bootcamp 4 · semaine 3 (démo "mots-clés anti-ChatGPT"). Gap identifié — la méthode d'identification de l'angle différenciant n'était écrite nulle part, seulement éparpillée dans [[session-2-redaction-debrief]], [[session-3-audit-prep]], [[sequencage-semaine-3]].
+- type : concept (Stratégie contenu, 13e)
+- contenu : on ne touche pas au head term de front (saturé + mangé par GPT + intention floue) → on descend dans l'intention → séquence d'attaque 3 horizons (mois 1-2 sous-niches / 3-6 cluster maillé = autorité topique / 6+ head term en récolte). Inclut la grille de tri anti-ChatGPT et le cas plombier comme déroulé de démo.
+- sources : 6 (session-2/3 bootcamp4, sequencage-S3, briefs avocat + hôtellerie, programmatique-pseo)
+- pages mises à jour : [[index]] section Concepts 35→36, Stratégie contenu 12→13
+
+## [2026-05-21] audit | Audit santé du vault — [[audit/2026-05-21-audit-vault]]
+- déclencheur : demande de Tim « fais un audit du vault SEO », puis « corrige tout ».
+- périmètre : 421 notes (197 wiki, 224 raw). Liens cassés, orphelines, frontmatter, index, métadonnées.
+- corrections exécutées :
+  - index : compteurs recalés (Concepts 36→50, Entities 45→47, Syntheses 4→7, Queries 2→4, Briefs 1→6) ; ajout des fichiers absents du catalogue ; sections Audits + Propositions créées.
+  - [[concepts/rrf]] : `draft→stable` (exécution de la décision revue-hebdo W20 restée en suspens).
+  - frontmatter normalisé sur 5 concepts bootcamp (`status: actif`→`stable`, schéma AGENTS.md §5.1, ajout `## Pages liées`) + 3 syntheses (`4-piliers-organikk`, `faq-geo-175-questions`, `tim-profil-doctrine`).
+  - `status: evolving`→`stable` sur [[concepts/confidence-score]], [[entities/muvera]], [[entities/sge]].
+  - liens cassés réparés : `cocon-semantique`→`maillage-systeme`, 7× `feedback_*` déliés, lien dossier keyword-research→fichier.
+  - notes créées : [[concepts/entites-vectorielles]] (réclamée par 6 fichiers raw), [[entities/gsc]].
+  - fichier mal rangé déplacé : `2026-05-05-workflow-kw-research-5-etapes.md` (type post) `syntheses/`→`posts-linkedin/`.
+- résultat : 0 lien cassé wiki/ (hors log historique), 0 orphelin, compteurs index alignés, frontmatter conforme.
+- laissé volontairement : statuts de cycle de vie spécifiques (living-doc/accepted/report/en-cours/phase-1-ready), `.obsidian.broken/` (suppression manuelle).
+
+## [2026-05-22] revue-hebdo | Semaine W21 — 7 décisions (semaine de consolidation)
+- promotions : 0 draft→stable, 0 stable→stale (`rrf` déjà rattrapé par l'audit du 2026-05-21, pas par le rituel).
+- hypothèse en test : aucune nouvelle — déblocage de [[hypotheses#H-007]] priorisé (déposer le service account GSC, capturer la baseline avant J+30 ≈ 2026-06-15).
+- lot ingest W22 : report à l'identique du binôme keyword-research 2026-05-02 (`keywords-cleaned` + `keywords-classified`) — non exécuté en W21.
+- contradiction à fermer : [[contradictions#C-007]] (décompte workflows/skills, zéro dépendance externe) ; [[contradictions#C-002]] non reconduite par inertie — à timeboxer ou assumer horizon long.
+- archivage : brief [[briefs/2026-04-13-information-gain-seo-geo]] → archive (tripwire W20 : article existant antérieur au brief, brief jamais exécuté).
+- résurgence : n'a pas tourné cette semaine (LaunchAgent `com.timboussardon.resurgence` non mis en service) — point 6 sans intrant, à relancer avant W22.
+- fil rouge : moat data-propriétaire sur minuterie (J+30 H-007) + émergence d'un 2ᵉ fil — la doctrine de sélection des mots-clés.
+- méta : 1ʳᵉ revue avec arriéré — W20 a livré 2 actions sur 4 ; W21 décide moins et plus local pour fermer le trou d'exécution nommé par l'audit du 2026-05-21.
