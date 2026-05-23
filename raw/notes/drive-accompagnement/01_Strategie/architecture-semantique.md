@@ -59,7 +59,7 @@ Page mère A
 ---
 
 ## Content gaps identifiés
-> Ce que les concurrents ne disent pas
+> Ce que les autres acteurs du marché ne disent pas
 
 1.
 2.

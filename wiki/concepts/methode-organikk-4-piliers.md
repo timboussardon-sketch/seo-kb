@@ -66,6 +66,7 @@ Toujours dans cet ordre. Fondation (Surprise + Grounding) avant scalabilité (pS
 - Cluster sémantique Organikk ([[sources/2026-04-24-cluster-business-organikk-4-piliers]]) — 16 pages satellites + 3 commerciales + roadmap 90j organisées par les 4 piliers
 - 4 modèles pSEO data-driven ([[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]]) — implémentent le pilier 3 (pSEO) avec garde-fous Surprise + Grounding
 - Article pilier `process-seo-b2b-2026` ([[sources/2026-04-17-organikk-process-seo-b2b-2026]]) — opérationnalise les 4 piliers en process B2B 2400 mots
+- Process KW research 5 étapes ([[syntheses/process-keyword-research-5-etapes]]) — pipeline outillé Keyword Planner → GSC → Grok → propriétaires → pSEO, sous le contrôle des 4 piliers
 
 ## Articulation avec la doctrine globale
 

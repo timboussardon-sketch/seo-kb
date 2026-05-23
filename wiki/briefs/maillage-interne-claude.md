@@ -9,7 +9,7 @@ keyword: maillage interne IA Claude
 readTime: 9 min
 status: prêt-à-implémenter
 sources_internes:
-  - raw/articles/newsletter-maillage-interne.md
+  - raw/articles/algorithme/newsletter-maillage-interne.md
   - wiki/concepts/maillage-systeme.md
   - wiki/concepts/5-types-ancres.md
   - wiki/concepts/know-simple-know-do.md
@@ -39,7 +39,7 @@ Livrable : rapport markdown + plan d'action priorisé (Hub↔Satellite, Know→D
 
 | Composant | Rôle | Coût |
 |---|---|---|
-| Skill `maillage-systeme` | Logique propriétaire — 3 axes, 5 ancres, hub/satellite | Plan Pro / Max |
+| Skill [[concepts/maillage-systeme|maillage-systeme]] | Logique propriétaire — 3 axes, 5 ancres, hub/satellite | Plan Pro / Max |
 | Skill `maillage-interne-gsc` (optionnel) | Croisement avec données comportementales GSC | Plan Pro / Max |
 | Claude Code CLI | Orchestration locale | Plan Pro / Max |
 | GitHub repo | SOT des articles + dépôt du rapport + fichier `internal-links.ts` versionné | Gratuit |
@@ -113,9 +113,9 @@ mkdir -p ~/.claude/skills/maillage-systeme
 ```
 
 Le skill encode :
-- Classification 4 piliers + intention Know-Simple/Know/Know-decisionnel/Do
+- Classification [[syntheses/4-piliers-organikk|4 piliers]] + intention [[concepts/know-simple-know-do|Know-Simple/Know/Know-decisionnel/Do]]
 - Règle hub : 1 par pilier, isHub=true reçoit le plus de liens entrants
-- 5 types d'ancres : exact match (1 max/cible), partial (60-70 %), sémantique étendue, naming/marque, contextuelle longue
+- [[concepts/5-types-ancres|5 types d'ancres]] : exact match (1 max/cible), partial (60-70 %), sémantique étendue, naming/marque, contextuelle longue
 - 5 critères de validation par ancre (promesse cible, phrase porteuse, diversification, position, link context)
 - Cross-pillar obligatoire : ≥1 lien sortant par pilier vers un autre pilier
 - Plafond densité : 5 liens / 1 000 mots

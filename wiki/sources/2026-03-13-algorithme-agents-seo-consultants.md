@@ -15,7 +15,7 @@ status: stable
 
 **Newsletter** : Algorithme #5 · **Date** : 13 mars 2026 · **Auteur** : Tim
 **URL** : `https://algorithme.substack.com/p/agents-seo-les-nouveaux-outils-des`
-**Fichier raw** : `raw/articles/algorithme-agents-seo-consultants.md`
+**Fichier raw** : `raw/articles/algorithme/algorithme-agents-seo-consultants.md`
 
 ## Données clés
 

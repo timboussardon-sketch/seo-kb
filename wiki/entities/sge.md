@@ -7,7 +7,7 @@ created: 2026-04-12
 updated: 2026-04-12
 sources: 2
 confidence: high
-status: evolving
+status: stable
 ---
 
 # SGE / AI Overviews

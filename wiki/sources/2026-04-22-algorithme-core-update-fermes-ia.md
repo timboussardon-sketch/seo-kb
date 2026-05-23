@@ -14,7 +14,7 @@ status: stable
 # Core Update mars 2026 + LinkedIn 2e source + listicles −30 %
 
 **Newsletter** : Algorithme — version longue 3 INFOs (compilation des 2 newsletters précédentes + 3 brèves nouvelles)
-**Auteur** : Tim · **Fichier raw** : `raw/articles/algorithme-core-update-mars-2026-fermes-ia.md`
+**Auteur** : Tim · **Fichier raw** : `raw/articles/algorithme/algorithme-core-update-mars-2026-fermes-ia.md`
 
 ## Périmètre
 

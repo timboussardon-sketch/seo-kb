@@ -4,7 +4,7 @@ title: Retrieval Collapse (effondrement du retrieval IA)
 aliases: [retrieval-collapse, effondrement-retrieval, ai-pollution-pool]
 tags: [doctrine-tim, geo, ia, retrieval, contenu-ia, naver, paper]
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-16
 sources: 2
 confidence: high
 status: stable
@@ -39,6 +39,7 @@ Phénomène d'effondrement progressif du retrieval LLM quand le pool web se poll
 - Étude unique à date (NAVER, 2026), pas encore reproduite par d'autres labos
 - Modélisation théorique du pool web — pas encore de tracking longitudinal du web réel
 - Pas de prescription opérationnelle dans le paper (les implications doctrinales sont des inférences Tim)
+- L'inférence centrale (la data propriétaire échappe au collapse, garde une exposition réelle) est sous test instrumenté depuis le 2026-05-16 : [[hypotheses#H-007]] `en-test`, fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]]. Tant que les jalons ne sont pas mesurés, c'est une hypothèse, pas un acquis.
 
 ## Pages liées
 

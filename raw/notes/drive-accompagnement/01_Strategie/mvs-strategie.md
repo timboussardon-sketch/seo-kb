@@ -18,10 +18,10 @@
 > Mots-clés bas de funnel, micro-intentions business
 
 | Mot-clé / Cluster | Intention | Volume estimé | Position actuelle | Action |
-|-------------------|-----------|---------------|-------------------|--------|
-| | | | | |
-| | | | | |
-| | | | | |
+| ----------------- | --------- | ------------- | ----------------- | ------ |
+|                   |           |               |                   |        |
+|                   |           |               |                   |        |
+|                   |           |               |                   |        |
 
 **Pages à créer / optimiser** :
 -

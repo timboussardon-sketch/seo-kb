@@ -7,7 +7,7 @@ set -euo pipefail
 export PATH="/usr/local/bin:/usr/bin:/bin"
 export HOME="/Users/timothee"
 
-VAULT="/Users/timothee/Documents/seo-kb"
+VAULT="/Users/timothee/Code/seo-kb"
 LOG_DIR="$VAULT/.claude/logs"
 LOG_FILE="$LOG_DIR/refresh-snapshots-$(date +%Y-%m-%d).log"
 

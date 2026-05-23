@@ -15,7 +15,7 @@ status: stable
 
 **Newsletter** : Algorithme #2 · **Date** : 4 mars 2026 · **Auteur** : Tim
 **URL** : `https://algorithme.substack.com/p/lancer-un-site-de-0-sans-cms`
-**Fichier raw** : `raw/articles/algorithme-lancer-site-sans-cms.md`
+**Fichier raw** : `raw/articles/algorithme/algorithme-lancer-site-sans-cms.md`
 
 ## Données clés
 

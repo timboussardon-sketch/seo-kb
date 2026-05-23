@@ -15,7 +15,7 @@ status: stable
 
 **Newsletter** : Algorithme #4 · **Date** : 11 mars 2026 · **Auteur** : Tim
 **URL** : `https://algorithme.substack.com/p/data-avec-claude-perplexity`
-**Fichier raw** : `raw/articles/algorithme-data-claude-perplexity.md`
+**Fichier raw** : `raw/articles/algorithme/algorithme-data-claude-perplexity.md`
 
 ## Données clés
 

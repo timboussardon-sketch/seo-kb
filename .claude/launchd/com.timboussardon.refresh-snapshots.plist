@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/zsh</string>
-        <string>/Users/timothee/Documents/seo-kb/.claude/bin/run-refresh-snapshots.sh</string>
+        <string>/Users/timothee/.local/bin/seo-kb/run-refresh-snapshots.sh</string>
     </array>
 
     <key>StartCalendarInterval</key>
@@ -22,13 +22,13 @@
     </dict>
 
     <key>WorkingDirectory</key>
-    <string>/Users/timothee/Documents/seo-kb</string>
+    <string>/Users/timothee/Code/seo-kb</string>
 
     <key>StandardOutPath</key>
-    <string>/Users/timothee/Documents/seo-kb/.claude/logs/refresh-snapshots.stdout.log</string>
+    <string>/Users/timothee/Code/seo-kb/.claude/logs/refresh-snapshots.stdout.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/timothee/Documents/seo-kb/.claude/logs/refresh-snapshots.stderr.log</string>
+    <string>/Users/timothee/Code/seo-kb/.claude/logs/refresh-snapshots.stderr.log</string>
 
     <key>RunAtLoad</key>
     <false/>

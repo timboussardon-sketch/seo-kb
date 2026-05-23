@@ -1,24 +1,27 @@
 ---
-title: 4 Piliers Organikk — Réflexion fondatrice
-auteur: Timothée Boussardon
-date: 2026-04-24
 type: doctrine
-statut: vivant
-objet: Structuration complète de la réflexion SEO/AEO Organikk articulée autour de 4 piliers fondamentaux et leurs interconnexions.
-source_originale: raw/notes/reflexion-organikk-source.md (fichier source Cursor de Tim — ingéré 2026-04-25)
+title: "4 Piliers Organikk — réflexion fondatrice"
+aliases: [4-piliers-organikk, 4-piliers, piliers-organikk]
+tags: [doctrine-tim, organikk, surprise-gap, grounding-score, pseo, aeo]
+created: 2026-04-24
+updated: 2026-04-24
+sources: 1
+confidence: high
+status: stable
+source_originale: raw/notes/reflexion-organikk-source.md (ingéré 2026-04-25)
 ---
 
 # RÉFLEXION ORGANIKK — 4 Piliers
 
 **Auteur :** Timothée Boussardon
 **Date :** 2026-04-24
-**Objet :** Structuration complète de la réflexion SEO/AEO Organikk articulée autour de 4 piliers fondamentaux et leurs interconnexions.
+**Objet :** Structuration complète de la réflexion SEO/AEO Organikk articulée autour des [[concepts/methode-organikk-4-piliers|4 piliers fondamentaux]] et leurs interconnexions.
 
 ---
 
 ## 1. SURPRISE GAP — Pourquoi on lit
 
-**Fondement théorique :** architecture Titans / MIRAS. La mémoire d'un LLM ne se met à jour que sur les inputs à haute surprise. Ce qui est déjà consensus traverse le modèle sans laisser de trace.
+**Fondement théorique :** architecture [[entities/titans|Titans]] / [[entities/miras|MIRAS]]. La mémoire d'un LLM ne se met à jour que sur les inputs à [[concepts/surprise-gap|haute surprise]]. Ce qui est déjà consensus traverse le modèle sans laisser de trace.
 
 **Principe opérationnel :** mesurer la divergence entre ce que dit la page et le consensus SERP. Ce que personne n'a dit > ce que tout le monde dit mieux.
 
@@ -28,7 +31,7 @@ source_originale: raw/notes/reflexion-organikk-source.md (fichier source Cursor 
 - Verbatims Haute Surprise (pain points, objections inattendues)
 - Angle conceptuel systématique — jamais le volume
 
-**KPI :** Surprise Score par passage / par page.
+**KPI :** [[concepts/surprise-metric|Surprise Score]] par passage / par page.
 
 ---
 
@@ -44,9 +47,9 @@ source_originale: raw/notes/reflexion-organikk-source.md (fichier source Cursor 
 - Vecteurs multimodaux (images, tableaux, vidéos, schémas)
 - Divergence (éléments à Haute Surprise qui éloignent du centroïde SERP — couplage avec pilier 1)
 
-**Méthode :** Triade SERP (analyse des 3 premiers résultats pour extraire le vecteur dominant, puis divergence contrôlée).
+**Méthode :** [[concepts/triade-serp|Triade SERP]] (analyse des 3 premiers résultats pour extraire le vecteur dominant, puis divergence contrôlée).
 
-**KPI :** Grounding Score vs. top 3 du SERP.
+**KPI :** [[concepts/grounding-score|Grounding Score]] vs. top 3 du SERP.
 
 ---
 
@@ -73,15 +76,15 @@ source_originale: raw/notes/reflexion-organikk-source.md (fichier source Cursor 
 
 ## 4. AEO — Comment on gagne les moteurs de réponse
 
-**Fondement théorique :** RRF (Reciprocal Rank Fusion) + framework Know-Simple / Know / Do (remplace TOFU/MOFU/BOFU, obsolètes à l'ère de l'Agentic Search).
+**Fondement théorique :** [[concepts/rrf|RRF (Reciprocal Rank Fusion)]] + framework [[concepts/know-simple-know-do|Know-Simple / Know / Do]] (remplace TOFU/MOFU/BOFU, obsolètes à l'ère de l'[[concepts/agentic-search|Agentic Search]]).
 
-**Principe opérationnel :** architecture MECE (Mutually Exclusive, Collectively Exhaustive) lisible par les agents IA autonomes — SGE, Perplexity, ChatGPT, Claude.
+**Principe opérationnel :** architecture MECE (Mutually Exclusive, Collectively Exhaustive) lisible par les agents IA autonomes — [[entities/sge|SGE]], [[entities/perplexity|Perplexity]], [[entities/chatgpt-search|ChatGPT]], Claude.
 
 **Leviers :**
 - Cluster sémantique Know-Simple / Know / Do
-- Passage Ranking (structure Hn optimisée pour extraction atomique)
+- [[concepts/passage-ranking|Passage Ranking]] (structure Hn optimisée pour extraction atomique)
 - Bloc authorship extractible Position 0 (~50 mots)
-- Product-Led SEO pour décrocher la note "Fully Meets" des Quality Raters
+- [[concepts/product-led-seo|Product-Led SEO]] pour décrocher la note "[[concepts/fully-meets|Fully Meets]]" des [[entities/quality-raters-guidelines|Quality Raters]]
 - Fact-check et sourcing systématique (les LLM citent les sources vérifiables)
 
 **KPI :** taux de citation dans les réponses génératives (Perplexity, ChatGPT, Google AI Overviews).

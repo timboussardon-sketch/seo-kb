@@ -6,7 +6,7 @@ set -euo pipefail
 export PATH="/Users/timothee/.npm-global/bin:/usr/local/bin:/usr/bin:/bin"
 export HOME="/Users/timothee"
 
-VAULT="/Users/timothee/Documents/seo-kb"
+VAULT="/Users/timothee/Code/seo-kb"
 LOG_DIR="$VAULT/.claude/logs"
 LOG_FILE="$LOG_DIR/recap-jour-$(date +%Y-%m-%d).log"
 

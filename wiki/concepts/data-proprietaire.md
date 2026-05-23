@@ -4,7 +4,7 @@ title: Data propriétaire (le moat SEO/GEO)
 aliases: [data-proprietaire, proprietary-data, donnees-proprietaires]
 tags: [doctrine-tim, seo-ia, geo, data, strategie]
 created: 2026-04-12
-updated: 2026-04-13
+updated: 2026-05-16
 sources: 25
 confidence: high
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # Data propriétaire (le moat SEO/GEO)
 
 Concept **transversal** dans les newsletters Algorithme de Tim. Cité dans 4 sources. C'est le moat compétitif pour le SEO post-IA.
+
+> Sous test. `confidence: high` tient sur la convergence des sources, pas sur une preuve terrain. La forme falsifiable du moat est instrumentée depuis le 2026-05-16 : [[hypotheses#H-007]] `en-test`, fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (cohorte pSEO secteur×ville, jalons J+30 ≈ 2026-06-15 / J+90 ≈ 2026-08-14). Si la fiche tranche `non-concluante`, le `confidence:` de cette page baisse — c'est l'enjeu du hub le plus lourd du vault (98 backlinks).
 
 ## Définition
 

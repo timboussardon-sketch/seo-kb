@@ -99,12 +99,13 @@
 ### Tests terrain (1)
 - [[sources/2026-04-13-cas-clients-resultats]] — Preuves chiffrées Tim (1h30→45min, 10→50% closing, top 2 balle de golf)
 
-## Entities (45)
+## Entities (47)
 
-### Outils SEO (3)
+### Outils SEO (4)
 - [[entities/obsidian]] — IDE du wiki (1 source)
 - [[entities/fusionn-io]] — SaaS analyse sémantique SEO/GEO de Tim (6 sources)
 - [[entities/semrush]] — Suite SEO + études (humain 8x #1, ChatGPT 4x conversion) (3 sources)
+- [[entities/gsc]] — Google Search Console, seule source de vérité (2 sources)
 
 ### Offres / Produits Tim (2)
 - [[entities/bootcamp-seo-ia]] — Bootcamp SEO IA 4e édition (590€, 2 mois, 8 max) (7 sources)
@@ -173,9 +174,9 @@
 ### Infrastructure Google (1)
 - [[entities/isi]] — Index Serve Infrastructure, pré-filtre candidats avant ranking
 
-## Concepts (35)
+## Concepts (50)
 
-### AEO / GEO (7)
+### AEO / GEO (9)
 - [[concepts/surprise-metric]] — Gradient d'information (2 sources)
 - [[concepts/grounding-score]] — Proximité cosinus + divergence (4 sources)
 - [[concepts/information-gain]] — Standard Google QRG + benchmark +41% (5 sources)
@@ -183,6 +184,8 @@
 - [[concepts/agentic-search]] — SEO agentique : MAGEO, AgenticGEO (7 sources)
 - [[concepts/fully-meets]] — Note maximale Quality Raters (1 source QRG)
 - [[concepts/methode-organikk-4-piliers]] — Umbrella : Surprise/Grounding/pSEO/AEO + 6 interconnexions (3 sources)
+- [[concepts/entites-vectorielles]] — Cartographie sémantique pour alignement cosinus (1 source)
+- [[concepts/purete-vectorielle]] — Une page = une intention (3 sources)
 
 ### SEO technique (3)
 - [[concepts/weight-decay]] — Forgetting gate / biais de récence (2 sources)
@@ -193,7 +196,7 @@
 - [[concepts/triade-serp]] — Modèle 3 phases : Document → Passage → Micro-Contextualisation
 - [[concepts/confidence-score]] — Score confiance AI Overviews
 
-### Stratégie contenu (12)
+### Stratégie contenu (13)
 - [[concepts/e-e-a-t]] — Experience, Expertise, Authoritativeness, Trustworthiness (1 source QRG)
 - [[concepts/surprise-gap]] — L'info manquante qui force la mémorisation (2 sources)
 - [[concepts/ingenierie-semantique-inversee]] — Framework propriétaire Tim (4 sources)
@@ -206,6 +209,7 @@
 - [[concepts/product-led-seo]] — Le produit/outil EST la page (4 sources)
 - [[concepts/mots-cles-actionnels]] — Décisionnels + transactionnels, terme signature Tim (4 sources)
 - [[concepts/know-simple-know-do]] — Framework remplace TOFU/MOFU/BOFU (4 sources)
+- [[concepts/angle-differenciant-mot-cle]] — Cerner le head term, attaquer la sous-niche décisionnelle (6 sources)
 
 ### Métriques & GEO opérationnel (6)
 - [[concepts/metriques-visibilite-geo]] — Imp_wc + Imp_pos (PAWC) + Subjective Impression (2 sources)
@@ -240,23 +244,33 @@
 - [[concepts/modele-page-variable-prix]] — pSEO sur variable continue (fourchette tarif) (1 source)
 - [[concepts/scam-objection-data-aleatoire]] — Page arnaque comme levier SEO + E-E-A-T (1 source)
 
-## Syntheses (4)
+## Syntheses (7)
 - [[syntheses/doctrine-seo-post-sge]] — Thèse unifiée 4 piliers (8 sources)
 - [[syntheses/vendre-seo-ia-2026]] — 7 principes de vente SEO IA (5 sources)
 - [[syntheses/workflow-complet-consultant-seo-ia]] — Pipeline 9 étapes prospection → livraison (6 sources)
 - [[syntheses/process-keyword-research-5-etapes]] — Process KW research 5 étapes (Keyword Planner → GSC → Grok → Propriétaires → pSEO) (5 sources)
+- [[syntheses/4-piliers-organikk]] — Réflexion fondatrice des 4 piliers Organikk (1 source)
+- [[syntheses/faq-geo-175-questions]] — FAQ GEO 175 questions, réponses doctrine Organikk (20 sources)
+- [[syntheses/tim-profil-doctrine]] — Profil et doctrine de Tim Boussardon
 
-## Queries (2)
+## Queries (4)
 - [[queries/pseo-2026-05-16-landing-lead-gen-organikk]] — pSEO Organikk : 5 modèles de landing lead-gen sur problématique SEO (45 pages possibles, M1 pain-first prioritaire)
+- [[queries/pseo-2026-05-13-organikk-secteur-ville]] — pSEO Organikk : modèle métier local × ville (stratégie SEO {secteur} {ville})
 - [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] — Wiki persistant optimise-t-il le Grounding Score ? (8 sources)
+- [[queries/transfert-vault-client]] — Transfert d'un vault vers un client (tout sauf la stratégie client)
 
 ## Engines / Méthodes opérationnelles (1)
 
 - [[engine-densite-semantique-sans-serp]] — Engine v8 : carte sémantique pure sans scraping SERP (9 phases, 8 livrables, modes Bronze/Silver/Gold + Mode 0 KB Bootstrap)
 
 ## Outputs skills
-### Briefs (1)
+### Briefs (6)
 - [[briefs/2026-04-13-information-gain-seo-geo]] — Brief organikk Information Gain SEO/GEO
+- [[briefs/check-indexation-claude]] — Créer un check d'indexation automatique avec Claude Code
+- [[briefs/maillage-interne-claude]] — Auditer et construire le maillage interne d'un site avec Claude
+- [[briefs/reddit-pour-geo-2026]] — Utiliser Reddit pour améliorer son GEO sans se faire bannir
+- [[briefs/strategie-seo-avocat-2026]] — Stratégie SEO avocat 2026 : capter le client avant le cabinet concurrent
+- [[briefs/strategie-seo-hotellerie-2026]] — Stratégie SEO hôtellerie 2026 : récupérer la réservation directe
 ### Clusters (0)
 ### Quick Wins (0)
 ### Cannibalisation (0)
@@ -266,3 +280,10 @@
 ### Revues de presse (2)
 - [[revues-presse/2026-04-13-claude-code-obsidian-sans-complexite]] — Claude Code + Obsidian setup (validé Tim)
 - [[revues-presse/2026-04-13-algorithme-revue-presse]] — Édition Algorithme + 4e brève A-RAG
+
+## Audits (2)
+- [[audit/2026-05-11-audit]] — Audit vault du 2026-05-11
+- [[audit/2026-05-21-audit-vault]] — Audit santé du vault : liens, orphelines, frontmatter, index
+
+## Propositions (1)
+- [[propositions/template-retainer-2h-500]] — Template de proposition retainer 2h/mois à 500 €

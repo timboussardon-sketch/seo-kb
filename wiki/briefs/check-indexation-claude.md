@@ -3,13 +3,14 @@ title: "Créer un check d'indexation automatique avec Claude Code"
 slug: check-indexation-claude
 type: brief-ops
 date: 2026-05-02
+version: v2 (2026-05-11) — extension causes/statut
 auteur: Tim Boussardon (Organikk)
 category: Agents IA / Monitoring SEO
 keyword: agent IA indexation
-readTime: 8 min
+readTime: 12 min
 status: prêt-à-implémenter
 sources_internes:
-  - raw/newsletter/newsletter-agent-ia-verifier-indexation-seo.md
+  - raw/articles/algorithme/newsletter-agent-ia-verifier-indexation-seo.md
   - wiki/concepts/grounding-score.md
   - wiki/concepts/passage-ranking.md
 sources_externes:
@@ -52,25 +53,45 @@ Aucun outil tiers payant. Pas de SerpAPI, pas de Semrush, pas d'Ahrefs.
         ↓
 3. Agent Claude Sonnet 4.6 (isolé)
         ↓
-4. 6 checks séquentiels
+4. 10 checks séquentiels (3 couches)
         ↓
 5. Rapport markdown
         ↓
 6. PR GitHub → notification email
 ```
 
-## Les 6 checks
+## Les 10 checks (3 couches)
+
+Le check v2 distingue les **causes** d'une non-indexation (couche A — audit) du **statut observable** (couche B — sortie). Le v1 ne vérifiait que la sortie, donc disait "OK 200" même si la page portait un `noindex` accidentel.
+
+### Couche A — Audit technique (causes)
 
 | # | Check | Source | Fiabilité |
 |---|---|---|---|
-| 1 | HTTP 200 | curl direct | 100 % |
-| 2 | Présence sitemap | sitemap.xml public | 100 % |
-| 3 | Indexation Google estimée | scraping `site:` Google | ~40 % (rate-limit) |
-| 4 | Maillage interne intègre | parsing /glossaire et /wiki | 100 % |
-| 5 | Citation Perplexity | scraping HTML | ~60 % (rendu JS) |
-| 6 | Génération rapport + PR | gh CLI | 100 % |
+| 1 | HTTP 200 / pas de 404-500 | curl direct (avec `-L` pour suivre 301) | 100 % |
+| 2 | robots.txt non bloquant pour ce path | curl `/robots.txt` + parse `User-agent` / `Disallow` | 100 % |
+| 3 | Pas de balise `noindex` | curl HTML + grep `<meta name="robots".*noindex>` | 100 % |
+| 4 | Sitemap : URL présente + `lastmod` < 6 mois | sitemap.xml + parse XML | 100 % |
+| 5 | Cohérence sitemap ↔ source de vérité | diff slugs `src/data/{wiki,articles}.ts` vs `<loc>` du sitemap | 100 % |
+| 6 | Maillage interne entrant (≥ 1 lien) | crawl `/`, `/glossaire`, `/wiki`, footer, articles | 80 % |
+| 7 | Longueur de contenu (proxy thin content) | curl HTML + word count du `<main>` ou `<article>` | 70 % |
 
-**Variante haute fiabilité** : remplacer check #3 par un appel à la GSC URL Inspection API via service account. Setup 30 min mais passage à 100 % de fiabilité (statut officiel `INDEXED` / `DISCOVERED_NOT_INDEXED` / `CRAWLED_NOT_INDEXED` / `404`).
+### Couche B — Statut d'indexation (sortie)
+
+| # | Check | Source | Fiabilité |
+|---|---|---|---|
+| 8 | Indexation Google estimée | scraping `site:` Google | ~40-60 % (rate-limit) |
+| 9 | Citation Perplexity | HTML brut (best effort) OU Playwright | 60 % / 95 % |
+
+### Couche C — Reporting
+
+| # | Check | Source | Fiabilité |
+|---|---|---|---|
+| 10 | Rapport markdown + PR GitHub | gh CLI | 100 % |
+
+**Variante haute fiabilité** sur check #8 : remplacer le scraping `site:` par un appel à la **GSC URL Inspection API** via service account. Setup 30 min mais passage à 100 % de fiabilité (statut officiel `INDEXED` / `DISCOVERED_NOT_INDEXED` / `CRAWLED_NOT_INDEXED` / `404`).
+
+**Variante haute fiabilité** sur check #9 : remplacer le scraping HTML par Playwright headless (exécute le JS, voit les vraies citations) ou par l'API Perplexity Sonar (citations en JSON natif).
 
 ## Étapes de mise en place
 
@@ -94,44 +115,119 @@ L'agent démarre **sans aucun contexte**. Le prompt doit être autonome. Structu
 
 ```markdown
 ## Mission
-Produire un rapport de statut sur les N pages, sans tenter aucune
-action de forçage d'indexation. Lecture seule, écriture limitée à reports/.
+Produire un rapport de statut sur les N pages, en distinguant **audit**
+(causes potentielles : robots, noindex, sitemap, maillage, thin content)
+de **statut observable** (indexation Google, citation LLM).
+Sans tenter aucune action de forçage. Lecture seule sur le web public,
+écriture limitée à reports/.
 
 ## Étapes
+
 ### 1. Charger la liste
-Lis `src/data/wiki.ts` et extrais les slugs.
+Lis `src/data/wiki.ts` (et optionnellement `src/data/articles.ts`) et
+extrais les slugs + paths cibles.
 
-### 2. HTTP check
-Pour chaque slug : curl -sI -A "Mozilla/5.0" https://site.fr/wiki/{slug}
+---
 
-### 3. Indexation Google (estimation)
-curl -sL "https://www.google.com/search?q=site:site.fr/wiki/{slug}"
+### COUCHE A — Audit technique
+
+### 2. HTTP check (404/500)
+Pour chaque URL :
+`curl -sIL -A "Mozilla/5.0" -o /dev/null -w "%{http_code}|%{url_effective}" {URL}`
+Note le code HTTP final ET la chaîne de redirects. 200 attendu. Tout
+301→200 systématique est à signaler comme dette (trailing slash, http→https, etc.).
+
+### 3. robots.txt
+`curl -s https://site.fr/robots.txt`
+Pour chaque path à monitorer, vérifie qu'aucune directive `Disallow:`
+ne le bloque pour `User-agent: *` ou `User-agent: Googlebot`.
+
+### 4. Balise noindex
+Pour chaque URL, télécharge le HTML rendu côté serveur :
+`curl -sL -A "Mozilla/5.0" {URL} | grep -i 'name="robots"'`
+Signale toute présence de `noindex` ou `none` dans le content de
+`<meta name="robots">`. Vérifie aussi les en-têtes HTTP `X-Robots-Tag`
+via `curl -sIL`.
+
+### 5. Sitemap : présence + fraîcheur + cohérence
+- `curl -s https://site.fr/sitemap.xml`
+- Vérifie que chaque slug attendu a une `<loc>` présente
+- Lis le `<lastmod>` associé et flagge tout `lastmod` > 6 mois
+- Compare l'ensemble des `<loc>` du sitemap avec les slugs de la
+  source de vérité (`src/data/*.ts`) :
+  - Slugs en source mais absents du sitemap → à ajouter
+  - Slugs dans sitemap mais absents en source → orphelin sitemap
+    (suppression manuelle ou rebuild)
+
+### 6. Maillage interne entrant
+Crawl les pages "hub" qui devraient linker vers chaque URL cible :
+- Homepage `/`
+- `/glossaire` (si applicable)
+- `/wiki` (si applicable)
+- Footer (présent sur toutes les pages, fetch n'importe quelle page)
+- Articles du blog qui devraient citer le concept
+
+Pour chaque URL cible, compte le nombre de liens internes entrants
+détectés. Flagge toute page avec **0 lien entrant** = orpheline.
+Flagge toute page avec **1 seul lien entrant** = sous-maillée.
+
+### 7. Longueur de contenu (proxy thin content)
+Pour chaque URL, télécharge le HTML, extrais le texte du `<main>` ou
+`<article>` (à défaut du `<body>` moins nav/footer), et compte les mots.
+- < 300 mots = THIN (à creuser)
+- 300-800 mots = COURT (acceptable pour fiche atomique)
+- > 800 mots = OK
+
+---
+
+### COUCHE B — Statut d'indexation
+
+### 8. Indexation Google (estimation)
+Pour chaque URL :
+`curl -sL -A "Mozilla/5.0 (Macintosh...)" "https://www.google.com/search?q=site:{URL}&hl=fr"`
 Limites à signaler dans le rapport :
 - Google bloque après 5-15 requêtes (CAPTCHA / page sorry/)
-- Espace les requêtes de 3-5 secondes
-- Marque "non testable - rate limit" plutôt que "non indexée"
+- Espace les requêtes de 3-5 secondes (`sleep 4`)
+- Détection de blocage : grep `sorry/index`, `recaptcha`, `unusual traffic`
+- Marque "non testable - rate limit" plutôt que "non indexée" en cas de blocage
+- Retry une fois si réponse vide (size=0) avant de conclure
+- Marque "indexée" si l'URL apparaît dans le HTML de réponse
 
-### 4. Maillage
-curl /glossaire et /wiki, vérifie présence des liens.
+### 9. Citation LLM (Perplexity, best effort)
+Pour 5 concepts stratégiques :
+`curl -sL "https://www.perplexity.ai/search?q={term encodé}"`
+ATTENTION : Perplexity rend les résultats côté JS. Le HTML brut renvoyé
+sera quasi vide (~5 KB shell). Marque **"non testable - rendu JS"** plutôt
+que "non cité" si la taille de réponse < 10 KB.
+→ Si l'environnement a Playwright disponible : utilise-le pour exécuter
+  le JS et capter les vraies citations. Sinon, accepte le best effort.
 
-### 5. Perplexity (best effort)
-curl perplexity.ai/search?q=... pour 5 concepts stratégiques.
+---
 
-### 6. Rapport
-Crée reports/wiki-indexation-{date}.md avec :
-- Synthèse (X/N par dimension)
-- Tableau détaillé par slug
-- Anomalies + recommandations
-- Section "Limites du rapport"
+### COUCHE C — Reporting
 
-### 7. PR GitHub
-gh pr create avec title et body précis.
+### 10. Rapport
+Crée `reports/wiki-indexation-{date}.md` avec :
+- Synthèse globale (X/N par dimension)
+- Tableau "Audit" (HTTP | robots | noindex | sitemap | maillage | mots)
+- Tableau "Statut" (Google | LLM)
+- Anomalies critiques (noindex sur page importante, page orpheline, 404, etc.)
+- Recommandations priorisées
+- Section "Limites du rapport" (ce qui n'a pas pu être testé et pourquoi)
+
+### 11. PR GitHub
+Branche : `report/wiki-indexation-{date}`
+`gh pr create` avec title `Wiki indexation check — {date}` et le rapport
+en body.
 
 ## Contraintes
-- AUCUNE action de soumission/forçage d'indexation
+- AUCUNE action de soumission / forçage d'indexation
 - Toujours via PR, jamais commit direct sur main
-- Distinction explicite entre "non indexée" et "non testable"
-- Si une étape échoue, continuer les autres et signaler dans le rapport
+- Distinction stricte "non indexée" vs "non testable"
+- Si un check échoue, continuer les autres et signaler dans "Limites"
+- Ne touche rien en dehors de `reports/` et de la branche dédiée
+- Priorité au signalement : un `noindex` accidentel sur une page
+  business doit remonter en TOP du rapport, pas en ligne 47 du tableau.
 ```
 
 ### 3. Schedule via Claude Code
@@ -172,6 +268,20 @@ Ajouter Bing Webmaster Tools (gratuit, API simple), Yandex (si pertinent). Agran
 ### Scoring composite
 Faire l'agent calculer un "Health Score" par page = HTTP × Sitemap × Indexation × Maillage × Citation. Permet de classer les pages les plus à risque en haut du rapport.
 
+### Check JS / rendu côté client
+Le check actuel lit le HTML servi côté serveur (SSR / SSG). Si le site
+dépend du JS pour rendre le contenu principal ou les liens internes,
+brancher Playwright (headless Chromium) :
+1. Lancer un browser headless
+2. Charger l'URL, attendre `networkidle`
+3. Comparer le HTML rendu vs le HTML brut servi par le serveur
+4. Signaler tout contenu uniquement présent post-JS (= invisible pour
+   les crawlers qui n'exécutent pas le JS)
+5. Capter les erreurs JS dans la console (page.on('pageerror'))
+
+Coût : ~2 min de setup, +30 s par URL pendant le check. À réserver
+aux sites SPA ou aux clusters critiques.
+
 ### Pour aller plus loin — GSC API officielle
 Procédure (30 min de setup une fois) :
 1. Console Google Cloud → IAM → service account, activer `searchconsole.googleapis.com`
@@ -186,8 +296,11 @@ Pour 30 URLs, l'estimation suffit. Pour 5 000+ URLs, GSC API obligatoire.
 
 ### Limites techniques
 - **Google rate-limit** : scraping `site:` bloque après 5-15 requêtes. Espacement 3-5 secondes minimum.
-- **Perplexity rendu JS** : le HTML brut peut ne pas contenir les citations. Marquer "non testable" plutôt que "non cité".
+- **Perplexity rendu JS** : le HTML brut renvoyé par `curl` est une coquille vide (~5 KB). Marquer "non testable" plutôt que "non cité". Pour un vrai check : Playwright ou API Sonar.
 - **Sitemap dynamique** : si le sitemap est généré côté serveur avec pagination, l'agent ne lira que la première page.
+- **Maillage hors hubs** : le check de maillage compte les liens depuis les pages crawlées (homepage, /glossaire, /wiki, footer, sample d'articles). Une page peut sembler orpheline alors qu'elle est linkée depuis une page non crawlée. Le scoring est conservateur (mieux vaut un faux positif "orpheline" qu'un faux négatif).
+- **Thin content heuristique** : le seuil 300/800 mots est un proxy, pas un verdict. Une fiche atomique de 250 mots de très haute densité informationnelle peut être excellente. Le check signale, ne juge pas.
+- **Pas de check JS sans Playwright** : si le contenu principal est rendu côté client (SPA), l'agent ne le verra pas. Voir variation Playwright.
 
 ### Garde-fous design
 - Lecture seule sur le web public
@@ -206,20 +319,34 @@ Fichier `reports/wiki-indexation-{date}.md` structuré :
 # Wiki indexation check — 2026-05-16
 
 ## Synthèse
-- HTTP 200 : X/30
-- Présent dans sitemap : X/30
-- Indexation Google estimée : X/30 (Y non testables — rate limit)
-- Citations Perplexity (échantillon 5) : X/5
-- Maillage interne intègre : OUI/NON
 
-## Détail par fiche
-[Tableau markdown : slug | HTTP | sitemap | google estim | notes]
+### Audit (causes)
+- HTTP 200 : X/N
+- robots.txt non bloquant : X/N
+- Sans noindex : X/N
+- Sitemap (présence + lastmod < 6 mois) : X/N
+- Cohérence sitemap ↔ source : OK / N divergences
+- Maillage entrant (≥ 1 lien) : X/N (Y orphelines, Z sous-maillées)
+- Contenu suffisant (≥ 300 mots) : X/N
 
-## Anomalies détectées
-[Liste des problèmes concrets]
+### Statut (sortie)
+- Indexation Google estimée : X/N (Y non testables — rate limit)
+- Citations Perplexity (échantillon 5) : X/5 (ou tous "non testable" si rendu JS)
+
+## Détail Audit
+[Tableau markdown : slug | HTTP | robots | noindex | sitemap | lastmod | maillage | mots]
+
+## Détail Statut
+[Tableau markdown : slug | google estim | perplexity]
+
+## Anomalies CRITIQUES (top du rapport)
+[noindex sur page business, orphelines, 404, etc. — celles qui demandent action immédiate]
+
+## Anomalies mineures
+[redirects 301, sitemap lastmod vieux, sous-maillées, etc.]
 
 ## Recommandations (sans action automatique)
-[2-5 actions à prendre côté humain]
+[2-5 actions à prendre côté humain, priorisées]
 
 ## Limites de ce rapport
 [Ce qui n'a pas pu être testé et pourquoi]
@@ -227,7 +354,14 @@ Fichier `reports/wiki-indexation-{date}.md` structuré :
 
 PR créée sur GitHub avec le rapport en body, branche `report/wiki-indexation-{date}`.
 
+## Changelog
+
+- **v1 (2026-05-02)** — 6 checks : HTTP, sitemap (présence), Google site:, maillage (/glossaire + /wiki), Perplexity, rapport. Trou : ne détectait pas les **causes** de non-indexation (noindex, robots.txt, thin content, sitemap périmé).
+- **v2 (2026-05-11)** — passage à 10 checks en 3 couches (audit / statut / reporting). Ajouts : robots.txt, balise noindex, sitemap lastmod + cohérence vs source de vérité, maillage entrant étendu (homepage + footer + articles), longueur de contenu (proxy thin). Section "Anomalies critiques" placée en TOP du rapport (un `noindex` accidentel ne doit pas se cacher en ligne 47).
+
 ## Exemple d'output réel
+
+> ⚠️ L'exemple ci-dessous date de la v1 (6 checks) et garde une valeur illustrative pour le format. La v2 ajoute les sections Audit détaillée et Anomalies critiques en tête de rapport.
 
 Voici à quoi ressemblerait le rapport généré par l'agent sur le wiki Organikk au 16 mai 2026 (J+14 après le déploiement du 2 mai). Données plausibles, fenêtre serrée.
 

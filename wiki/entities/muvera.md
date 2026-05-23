@@ -7,7 +7,7 @@ created: 2026-04-12
 updated: 2026-04-12
 sources: 1
 confidence: medium
-status: evolving
+status: stable
 ---
 
 # Muvera

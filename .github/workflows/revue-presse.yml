@@ -1,10 +1,12 @@
 name: Revue de Presse Quotidienne
 
 on:
-  schedule:
-    # 07:00 UTC = 09:00 Paris (été) / 08:00 Paris (hiver)
-    - cron: "0 7 * * *"
-  workflow_dispatch: {} # déclenchement manuel pour tester
+  # Cron migré vers launchd local (.claude/launchd/com.timboussardon.revue-presse.plist)
+  # car GH Actions exige une ANTHROPIC_API_KEY non disponible. Schedule conservé en commentaire
+  # au cas où on rebascule plus tard avec une clé.
+  # schedule:
+  #   - cron: "0 7 * * *"  # 09:00 Paris (été) / 08:00 Paris (hiver)
+  workflow_dispatch: {} # déclenchement manuel uniquement
 
 permissions:
   contents: write

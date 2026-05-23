@@ -69,4 +69,4 @@ Croiser GSC + CRM sur les deals déjà closed → remonter aux sessions organiqu
 
 ## Pages liées
 
-[[sources/2026-04-17-organikk-process-seo-b2b-2026]] · [[concepts/data-proprietaire]] · [[concepts/programmatique-pseo]] · [[concepts/product-led-seo]] · [[concepts/tabou-visibilite]] · [[concepts/test-substitution-llm]] · [[concepts/aeo]] · [[concepts/fully-meets]] · [[sources/2026-04-12-tim-skills-seo-proprietary]] · [[sources/2026-04-30-tim-posts-linkedin-batch]] · [[sources/2026-04-30-fg-formation-pseo-cas-client]]
+[[syntheses/process-keyword-research-5-etapes]] · [[raw/notes/skill-kw-research-workflow]] · [[sources/2026-04-17-organikk-process-seo-b2b-2026]] · [[concepts/data-proprietaire]] · [[concepts/programmatique-pseo]] · [[concepts/product-led-seo]] · [[concepts/tabou-visibilite]] · [[concepts/test-substitution-llm]] · [[concepts/aeo]] · [[concepts/fully-meets]] · [[sources/2026-04-12-tim-skills-seo-proprietary]] · [[sources/2026-04-30-tim-posts-linkedin-batch]] · [[sources/2026-04-30-fg-formation-pseo-cas-client]]

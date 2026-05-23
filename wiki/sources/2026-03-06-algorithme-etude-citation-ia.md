@@ -17,7 +17,7 @@ status: stable
 
 **Newsletter** : Algorithme #3 · **Date** : 6 mars 2026 · **Auteur** : Tim
 **URL** : `https://algorithme.substack.com/p/letude-qui-nous-dit-comment-etre`
-**Fichier raw** : `raw/articles/algorithme-etude-citation-ia.md`
+**Fichier raw** : `raw/articles/algorithme/algorithme-etude-citation-ia.md`
 
 ## Données clés — LA source empirique
 

@@ -6,6 +6,10 @@ date_added: 2026-04-30
 source_local: "/Users/boussardontimothee/Downloads/Cursor/organikk-next/newsletter-maillage-interne.md"
 type: newsletter
 topic: maillage-interne
+status: archived
+version: v1-original
+superseded_by: newsletter-maillage-interne-claude
+note: "Version publiée d'origine. Une V2 retravaillée autour du skill Claude existe en draft (newsletter-maillage-interne-claude.md)."
 ---
 
 # 0 → 62 liens internes : comment j'ai maillé mon blog en partant de zéro

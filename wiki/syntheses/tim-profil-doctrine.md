@@ -1,10 +1,13 @@
 ---
-title: Tim Boussardon — profil et doctrine
-type: synthese
-auteur: Timothée Boussardon
-date: 2026-05-01
-statut: vivant
+type: synthesis
+title: "Tim Boussardon — profil et doctrine"
+aliases: [tim-profil-doctrine, profil-tim, doctrine-tim-profil]
 tags: [profil, doctrine, ton-de-voix, regles, vision]
+created: 2026-05-01
+updated: 2026-05-01
+sources: 0
+confidence: high
+status: stable
 ---
 
 # Tim Boussardon — profil et doctrine

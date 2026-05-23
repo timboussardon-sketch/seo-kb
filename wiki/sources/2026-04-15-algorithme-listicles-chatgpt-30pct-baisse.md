@@ -14,7 +14,7 @@ status: stable
 # 30 % de listicles en moins dans ChatGPT
 
 **Newsletter** : Algorithme · **Date estimée** : mi-avril 2026 (post-rollout Core Update + Addy Osmani 11 avril)
-**Auteur** : Tim · **Fichier raw** : `raw/articles/algorithme-listicles-chatgpt-30pct-baisse.md`
+**Auteur** : Tim · **Fichier raw** : `raw/articles/algorithme/algorithme-listicles-chatgpt-30pct-baisse.md`
 
 ## Données clés
 

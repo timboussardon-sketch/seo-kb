@@ -15,7 +15,7 @@ status: stable
 
 **Newsletter** : Algorithme #1 · **Date** : 27 février 2026 · **Auteur** : Tim
 **URL** : `https://algorithme.substack.com/p/youtube-simpose-comme-source-30-des`
-**Fichier raw** : `raw/articles/algorithme-youtube-ai-overviews.md`
+**Fichier raw** : `raw/articles/algorithme/algorithme-youtube-ai-overviews.md`
 
 ## Données clés
 

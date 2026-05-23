@@ -15,7 +15,7 @@ status: stable
 
 **Newsletter** : Algorithme #6 · **Date** : 17 mars 2026 · **Auteur** : Tim
 **URL** : `https://algorithme.substack.com/p/pourquoi-ton-article-bien-redige`
-**Fichier raw** : `raw/articles/algorithme-pourquoi-article-ne-rank-pas.md`
+**Fichier raw** : `raw/articles/algorithme/algorithme-pourquoi-article-ne-rank-pas.md`
 
 ## Thèse
 

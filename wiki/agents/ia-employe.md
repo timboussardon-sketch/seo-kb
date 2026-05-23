@@ -2,7 +2,7 @@
 type: doctrine
 title: IA Employé Tim — architecture & roadmap
 date: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-05
 tags: [ia-employe, infrastructure, automation, kb, agents]
 status: living-doc
 ---
@@ -45,6 +45,9 @@ Sous-dossiers `raw/` actifs : `agents`, `articles`, `assets`, `cas-clients`, `da
 - `revue-presse-quotidienne`
 - `audit-vault-hygiene`
 - `algorithme-recap-hebdo`
+
+**Skills spécifiés mais non encore matérialisés dans `~/.claude/skills/`** :
+- `kw-research-workflow` — orchestrateur 5 phases (KP → GSC → Grok DeepSearch → verbatims → pSEO) + livrable Sheet scoré 5 critères. Spec : [[raw/notes/skill-kw-research-workflow]]. Doctrine doctrinale : [[syntheses/process-keyword-research-5-etapes]]. Premier post LinkedIn : [[posts-linkedin/2026-05-05-workflow-kw-research-5-etapes]]. **À matérialiser** : créer `~/.claude/skills/kw-research-workflow/SKILL.md` à partir de la spec pour rendre le skill exécutable.
 
 ### Automatisations actives (GH Actions)
 1. **`revue-presse.yml`** — édition quotidienne newsletter Algorithme (cron quotidien)

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Proposition SEO et bot autonome, Leexi</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600&display=swap');
+
+:root {
+  --ink: #0A0F1E;
+  --ink-2: #1b2439;
+  --muted: #5a6681;
+  --muted-2: #8590a8;
+  --blue: #4685F0;
+  --blue-2: #2559DD;
+  --blue-deep: #1B3E8F;
+  --line: rgba(10,15,30,.09);
+  --line-2: rgba(10,15,30,.14);
+  --accent: #FF371C;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+html, body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.011em;
+}
+
+@page { size: A4; margin: 14mm 15mm; }
+@page :first { margin: 0; }
+
+.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+/* icône SVG (remplace les glyphes ✓ ✕ ›) */
+.ic {
+  width: 9px; height: 9px; display: block;
+  fill: none; stroke: currentColor; stroke-width: 3.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ─── COUVERTURE ─── */
+.cover {
+  width: 210mm; height: 297mm;
+  background:
+    radial-gradient(ellipse 60% 50% at 78% 12%, rgba(91,134,245,.45), transparent 70%),
+    linear-gradient(158deg, #0c2470 0%, #15327f 46%, #2559DD 100%);
+  color: #fff;
+  padding: 26mm 22mm 22mm;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+  page-break-after: always;
+}
+.cover-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 13mm 13mm;
+  mask-image: radial-gradient(ellipse at 70% 25%, #000 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse at 70% 25%, #000 30%, transparent 78%);
+}
+.cover > * { position: relative; }
+.cover-top { display: flex; justify-content: space-between; align-items: center; }
+.wordmark {
+  font-weight: 700; font-size: 17px; letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.wordmark span { color: #8FB4FF; }
+.cover-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.62);
+}
+.cover-mid { margin-top: auto; }
+.cover-kicker {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  letter-spacing: .24em; text-transform: uppercase; color: #8FB4FF;
+  margin-bottom: 20px;
+}
+.cover-h1 {
+  font-size: 46px; line-height: 1.07; font-weight: 600; letter-spacing: -.035em;
+}
+.cover-h1 .lexi {
+  font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400;
+  color: #A8C7FF;
+}
+.cover-sub {
+  margin-top: 22px; max-width: 135mm;
+  font-size: 14.5px; line-height: 1.62; color: rgba(255,255,255,.82);
+}
+.cover-rule { height: 1px; background: rgba(255,255,255,.22); margin: 26px 0; }
+.cover-metrics { display: flex; gap: 9mm; }
+.cover-metric-n { font-size: 24px; font-weight: 600; letter-spacing: -.03em; }
+.cover-metric-n em { font-style: normal; color: #8FB4FF; }
+.cover-metric-l {
+  margin-top: 5px; font-size: 9.5px; line-height: 1.45;
+  color: rgba(255,255,255,.66); max-width: 38mm;
+}
+.cover-foot {
+  margin-top: auto; padding-top: 22px;
+  display: flex; justify-content: space-between; align-items: flex-end;
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+.cover-foot-block { font-size: 11px; line-height: 1.6; color: rgba(255,255,255,.78); }
+.cover-foot-block b { color: #fff; font-weight: 600; }
+.cover-foot-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 9.5px;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.5);
+}
+
+/* ─── DOCUMENT ─── */
+.doc { background: var(--paper); }
+.sec { padding: 4mm 0 9mm; }
+.sec:first-child { padding-top: 0; }
+
+.sec-head { break-after: avoid; margin-bottom: 7mm; }
+.sec-head-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 9px; }
+.sec-num {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+  letter-spacing: .04em; color: var(--blue-2);
+}
+.sec-rule { flex: 1; height: 1px; background: var(--line-2); }
+.sec-count {
+  font-family: 'JetBrains Mono', monospace; font-size: 9.5px;
+  letter-spacing: .14em; color: var(--muted-2);
+}
+.sec-h2 {
+  font-size: 28px; font-weight: 600; letter-spacing: -.03em; line-height: 1.1;
+  color: #1B3E8F;
+}
+.sec-intro {
+  margin-top: 11px; max-width: 150mm;
+  font-size: 12.5px; line-height: 1.6; color: var(--muted);
+}
+
+.block { margin-top: 7mm; }
+.block:first-of-type { margin-top: 0; }
+
+.sub {
+  font-size: 15px; font-weight: 600; letter-spacing: -.018em; color: var(--ink);
+  margin-bottom: 10px; break-after: avoid;
+}
+.sub-n { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--blue-2); margin-right: 8px; }
+.sub-note { font-size: 11.5px; line-height: 1.55; color: var(--muted); margin-bottom: 11px; max-width: 150mm; }
+
+/* prose */
+.prose { max-width: 162mm; }
+.prose p { font-size: 12.5px; line-height: 1.7; color: var(--ink-2); margin-bottom: 11px; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { font-weight: 600; color: var(--blue-deep); }
+
+/* table */
+.table-wrap {
+  border: 1px solid var(--line-2); border-radius: 11px; overflow: hidden;
+  break-inside: auto;
+}
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+thead { display: table-header-group; }
+th {
+  font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted-2); font-weight: 600; text-align: left;
+  padding: 9px 11px; background: #eef3fe; border-bottom: 1px solid var(--line-2);
+}
+td {
+  padding: 9px 11px; border-bottom: 1px solid var(--line);
+  font-size: 10px; line-height: 1.45; color: var(--ink-2); vertical-align: top;
+}
+tr { break-inside: avoid; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: #fafbfe; }
+td.col-dim { font-weight: 600; color: var(--ink); }
+td.col-muted { color: var(--muted); }
+.vol {
+  display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 8.5px;
+  font-weight: 600; color: var(--blue-deep); white-space: nowrap;
+  padding: 3px 7px; border-radius: 5px;
+  background: rgba(70,133,240,.1); border: 1px solid rgba(70,133,240,.22);
+}
+.t-diag col.c1 { width: 27%; } .t-diag col.c2 { width: 33%; } .t-diag col.c3 { width: 40%; }
+.t-model col.c1 { width: 21%; } .t-model col.c2 { width: 40%; }
+.t-model col.c3 { width: 14%; } .t-model col.c4 { width: 25%; }
+
+/* duo */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.panel { padding: 6mm 6mm 6.5mm; border-radius: 13px; border: 1px solid; break-inside: avoid; }
+.panel.ok { background: linear-gradient(165deg, #f3f8ff, #e6effc); border-color: rgba(70,133,240,.24); }
+.panel.ko { background: linear-gradient(165deg, #fff6f4, #ffe9e4); border-color: rgba(255,55,28,.22); }
+.panel-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 600; margin-bottom: 12px; display: block;
+}
+.panel.ok .panel-label { color: var(--blue-deep); }
+.panel.ko .panel-label { color: var(--accent); }
+
+/* lists */
+.clist { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.clist li { display: flex; gap: 9px; font-size: 10.5px; line-height: 1.5; color: var(--ink-2); break-inside: avoid; }
+.clist li b { color: var(--ink); font-weight: 600; }
+.dot {
+  flex-shrink: 0; width: 14px; height: 14px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; margin-top: 1px;
+}
+.dot.v { background: rgba(70,133,240,.14); color: var(--blue-2); }
+.dot.x { background: rgba(255,55,28,.14); color: var(--accent); }
+.dot.a { background: rgba(70,133,240,.12); color: var(--blue); }
+
+/* soft card */
+.soft {
+  padding: 6mm 6mm; border-radius: 14px; height: 100%;
+  background: #f7f9fc; border: 1px solid var(--line-2); break-inside: avoid;
+}
+.soft p { font-size: 10.5px; line-height: 1.6; color: var(--ink-2); }
+
+/* callout */
+.callout {
+  padding: 7mm 7mm; border-radius: 15px; break-inside: avoid;
+  background: linear-gradient(155deg, #e9f1fd 0%, #d8e7fb 100%);
+  border: 1px solid rgba(70,133,240,.3);
+}
+.callout-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-deep);
+  display: block; margin-bottom: 10px;
+}
+.callout p { font-size: 12.5px; line-height: 1.65; color: var(--ink); }
+.callout strong { font-weight: 600; color: var(--blue-deep); }
+
+/* bot */
+.bot {
+  padding: 8mm 8mm; border-radius: 17px; break-inside: avoid;
+  background: linear-gradient(160deg, #eef3ff 0%, #e3ebfe 52%, #f1f5ff 100%);
+  border: 1px solid rgba(70,133,240,.26);
+}
+.bot-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-2); display: block; margin-bottom: 6px;
+}
+.bot-title {
+  font-size: 21px; font-weight: 600; letter-spacing: -.025em;
+  color: #1B3E8F;
+}
+.bot-intro { margin: 12px 0 0; font-size: 11.5px; line-height: 1.6; color: var(--ink-2); max-width: 160mm; }
+.bot-caps {
+  list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 8mm;
+  margin: 14px 0; padding: 14px 0;
+  border-top: 1px solid rgba(70,133,240,.2); border-bottom: 1px solid rgba(70,133,240,.2);
+}
+.bot-caps li { display: flex; gap: 9px; font-size: 10px; line-height: 1.45; color: var(--ink); }
+.bot-foot { font-size: 11px; line-height: 1.55; color: var(--blue-deep); font-weight: 600; }
+
+/* deliverables */
+.deliver { border: 1px solid var(--line-2); border-radius: 13px; overflow: hidden; }
+.deliver-row {
+  display: flex; gap: 14px; align-items: baseline;
+  padding: 10px 14px; border-bottom: 1px solid var(--line); break-inside: avoid;
+}
+.deliver-row:last-child { border-bottom: none; }
+.deliver-row:nth-child(even) { background: #fafbfe; }
+.deliver-n { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; color: var(--blue-2); flex-shrink: 0; }
+.deliver-t { font-size: 11px; line-height: 1.5; color: var(--ink); }
+
+/* planning */
+.plan { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.month {
+  padding: 5.5mm 5mm; border-radius: 13px; break-inside: avoid;
+  background: #f7f9fc; border: 1px solid var(--line-2);
+}
+.month-head { padding-bottom: 9px; margin-bottom: 10px; border-bottom: 1px dashed rgba(70,133,240,.3); }
+.month-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-2);
+}
+.month-title { margin-top: 5px; font-size: 14px; font-weight: 600; letter-spacing: -.02em; color: var(--ink); }
+.month-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.month-list li { position: relative; padding-left: 12px; font-size: 9.5px; line-height: 1.5; color: var(--ink-2); }
+.month-list li::before {
+  content: ""; position: absolute; left: 0; top: .55em;
+  width: 4px; height: 4px; border-radius: 50%; background: var(--blue);
+}
+
+/* price */
+.price {
+  display: grid; grid-template-columns: 1.4fr 1fr;
+  border: 1px solid rgba(70,133,240,.26); border-radius: 16px; overflow: hidden;
+  break-inside: avoid;
+}
+.price-left { padding: 7mm 7mm; background: #fff; }
+.price-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-deep);
+  display: block; margin-bottom: 14px;
+}
+.price-modal {
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);
+  font-size: 9.5px; line-height: 1.55; color: var(--muted);
+}
+.price-right {
+  padding: 7mm 7mm; color: #fff;
+  background: linear-gradient(160deg, #15327f 0%, #2559DD 62%, #4685F0 100%);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.price-rate { display: flex; align-items: baseline; gap: 8px; }
+.price-amount { font-size: 42px; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
+.price-unit { font-size: 12px; font-weight: 500; color: rgba(255,255,255,.82); }
+.price-x { margin-top: 12px; font-size: 10.5px; line-height: 1.5; color: rgba(255,255,255,.82); }
+
+/* stats */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-bottom: 4mm; }
+.stats-note { margin: 0 0 7mm; font-size: 9.5px; line-height: 1.55; color: var(--muted); font-style: italic; }
+.stats-note b { font-style: normal; font-weight: 600; color: var(--blue-deep); }
+.stat {
+  padding: 6mm 5mm; border-radius: 13px; break-inside: avoid;
+  background: #f7f9fc; border: 1px solid var(--line-2);
+}
+.stat-n { font-size: 22px; font-weight: 600; letter-spacing: -.035em; color: var(--blue-2); line-height: 1.08; }
+.stat-l { margin-top: 9px; font-size: 9px; line-height: 1.5; color: var(--ink-2); }
+
+/* hors périmètre */
+.out {
+  display: flex; gap: 10px; padding: 5mm 5.5mm; height: 100%;
+  border: 1px solid var(--line-2); border-radius: 12px; background: #fbfcfe;
+  font-size: 10.5px; line-height: 1.55; color: var(--ink-2); break-inside: avoid;
+}
+
+/* pourquoi */
+.why { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4mm; }
+.why-card {
+  padding: 5.5mm 5.5mm; border-radius: 13px; break-inside: avoid;
+  background: #f7f9fc; border: 1px solid var(--line-2);
+}
+.why-n {
+  font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 600;
+  display: inline-block; margin-bottom: 9px;
+  color: #2559DD;
+}
+.why-t { font-size: 13px; font-weight: 600; letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px; }
+.why-d { font-size: 10px; line-height: 1.55; color: var(--ink-2); }
+.why-foot {
+  margin-top: 6mm; text-align: center; font-size: 12px; line-height: 1.55;
+  color: var(--blue-deep); font-weight: 600; max-width: 150mm; margin-left: auto; margin-right: auto;
+}
+
+/* final */
+.final {
+  padding: 8mm 8mm; border-radius: 17px; break-inside: avoid;
+  background: linear-gradient(160deg, #ffffff 0%, #f3f7ff 50%, #e7eefe 100%);
+  border: 1px solid rgba(70,133,240,.26);
+}
+.final-lead { font-size: 13px; line-height: 1.6; color: var(--ink); font-weight: 600; max-width: 158mm; }
+.final-p { margin-top: 10px; font-size: 11px; line-height: 1.62; color: var(--muted); max-width: 158mm; }
+.sign { margin-top: 14px; padding-top: 13px; border-top: 1px solid var(--line-2); }
+.sign-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.sign-mail { margin-top: 3px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--blue-2); }
+.sign-foot {
+  margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 8.5px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--muted-2);
+}
+</style>
+</head>
+<body>
+
+<!--
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │  MODÈLE — Proposition commerciale PDF · design organikk.co           │
+  │                                                                     │
+  │  Le contenu ci-dessous est un EXEMPLE rempli (client Leexi).          │
+  │  Nouvelle proposition : dupliquer ce fichier, remplacer le contenu   │
+  │  entre <body> et </body>, NE PAS toucher au <style> du <head>.       │
+  │                                                                     │
+  │  Mode d'emploi complet + règles : modele-proposition-pdf.md          │
+  │  Générer le PDF : Chrome headless --print-to-pdf (commande dans .md) │
+  └─────────────────────────────────────────────────────────────────────┘
+-->
+
+<!-- ══════════ COUVERTURE ══════════ -->
+<section class="cover">
+  <div class="cover-grid"></div>
+  <div class="cover-top">
+    <div class="wordmark">organikk<span>.co</span></div>
+    <div class="cover-tag">Proposition commerciale</div>
+  </div>
+
+  <div class="cover-mid">
+    <div class="cover-kicker">Stratégie SEO et bot autonome</div>
+    <h1 class="cover-h1">
+      Construire une stratégie<br />
+      de leads qualifiés pour <span class="lexi">Leexi</span>.
+    </h1>
+    <p class="cover-sub">
+      Mission de 3 mois : construire 30 à 50 pages décisionnelles et un bot SEO
+      autonome nourri par votre data propriétaire. Le KPI n'est plus le trafic,
+      c'est l'email qualifié.
+    </p>
+    <div class="cover-rule"></div>
+    <div class="cover-metrics">
+      <div class="cover-metric">
+        <div class="cover-metric-n">~1 050</div>
+        <div class="cover-metric-l">URL en ligne, 7 langues</div>
+      </div>
+      <div class="cover-metric">
+        <div class="cover-metric-n"><em>2 %</em></div>
+        <div class="cover-metric-l">des créations de compte via le SEO</div>
+      </div>
+      <div class="cover-metric">
+        <div class="cover-metric-n">30-40 €</div>
+        <div class="cover-metric-l">coût par lead payant actuel</div>
+      </div>
+      <div class="cover-metric">
+        <div class="cover-metric-n">1 M+</div>
+        <div class="cover-metric-l">impressions LinkedIn par an</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-foot">
+    <div class="cover-foot-block">
+      Leexi, plateforme de prise de notes IA pour réunions<br />
+      Préparé par <b>Timothée Boussardon</b> · Mai 2026
+    </div>
+    <div class="cover-foot-tag">organikk.co &amp; Leexi</div>
+  </div>
+</section>
+
+<div class="doc">
+
+<!-- ══ 1 · SYNTHÈSE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">01</span><span class="sec-rule"></span><span class="sec-count">Synthèse</span></div>
+    <h2 class="sec-h2">Synthèse</h2>
+  </div>
+  <div class="prose">
+    <p>Leexi possède déjà une <strong>brand forte</strong> : plus d'un million d'impressions LinkedIn par an, un effet ambassadeur via le « Powered by Leexi », une acquisition payante maîtrisée (CPL ~30-40 €) et un site bien structuré sur le papier, avec environ 1 050 URL et un cocon métier en place.</p>
+    <p>Pourtant, sur 1 000 créations de compte en avril, <strong>seulement 20 sont attribuées au SEO, soit 2 %</strong>. Le canal organique est massivement sous-exploité, à l'heure où ChatGPT, Perplexity et Google AI Overviews redistribuent les cartes du trafic informationnel.</p>
+    <p>Cette proposition cible un objectif unique : convertir le SEO en générateur de leads qualifiés via <strong>30 à 50 pages décisionnelles</strong> construites à partir de votre data propriétaire, et un <strong>bot autonome</strong> qui rend l'équipe Leexi capable de scaler sa production SEO après la mission.</p>
+  </div>
+</section>
+
+<!-- ══ 2 · ANALYSE DE L'EXISTANT ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">02</span><span class="sec-rule"></span><span class="sec-count">L'existant</span></div>
+    <h2 class="sec-h2">Analyse de l'existant</h2>
+    <p class="sec-intro">Synthèse du diagnostic post-call et du scraping du sitemap (1 050 URL).</p>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">2.1</span>État du SEO actuel</div>
+    <div class="table-wrap">
+      <table class="t-diag">
+        <colgroup><col class="c1" /><col class="c2" /><col class="c3" /></colgroup>
+        <thead><tr><th>Dimension</th><th>État actuel</th><th>Lecture</th></tr></thead>
+        <tbody>
+          <tr><td class="col-dim">Volume du site</td><td>~1 050 URL (dont ~280 FR · 7 langues)</td><td class="col-muted">Bon volume, mais inflation due à la traduction automatique</td></tr>
+          <tr><td class="col-dim">Trafic SEO sur création de compte</td><td>20 sur 1 000 comptes en avril (soit 2 %)</td><td class="col-muted">Canal organique massivement sous-exploité</td></tr>
+          <tr><td class="col-dim">Cocon sémantique</td><td>Refonte en cours, maillage cassé</td><td class="col-muted">Pages déconnectées, le PageRank interne ne circule plus</td></tr>
+          <tr><td class="col-dim">Pages « intégration »</td><td>Existent mais non orientées SEO</td><td class="col-muted">Potentiel non capté sur Zoom, Meet, Teams</td></tr>
+          <tr><td class="col-dim">Outils gratuits et lead magnets</td><td>Aucun en ligne (décommissionné)</td><td class="col-muted">Zéro capture d'email depuis l'organique</td></tr>
+          <tr><td class="col-dim">Pages comparatives « X vs Y »</td><td>Présentes mais à fiabiliser</td><td class="col-muted">Volume LLM élevé sur ce type de requêtes</td></tr>
+          <tr><td class="col-dim">Visibilité LLM (ChatGPT, Perplexity)</td><td>Faible hors mots-clés « sécurité »</td><td class="col-muted">Risque majeur : le trafic informationnel migre vers les LLM</td></tr>
+          <tr><td class="col-dim">Articles obsolètes (2022, pré-pivot)</td><td>Volume significatif, faible pertinence</td><td class="col-muted">Cannibalisation possible et dilution d'autorité</td></tr>
+          <tr><td class="col-dim">Données propriétaires</td><td>Très riches (calls, AskLeexi, emails)</td><td class="col-muted">Non exploitées pour le SEO</td></tr>
+          <tr><td class="col-dim">CMS</td><td>Strapi</td><td class="col-muted">Push HTML ou API custom envisageables</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="duo">
+      <div class="panel ok">
+        <span class="panel-label">2.2 · Ce qui fonctionne déjà</span>
+        <ul class="clist">
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Cocon métier amorcé.</b> Cas d'usage, comparatifs et pages d'intégration ont été pensés. La structure est saine.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Brand de référence.</b> Recherches « Leexi » récurrentes, effet ambassadeur, présence éditoriale LinkedIn solide.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Internationalisation lancée.</b> 7 langues actives : une base technique exploitable une fois le SEO assaini.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Connaissance interne.</b> L'équipe a des notions techniques solides (CTO impliqué). Le transfert du bot sera rapide.</span></li>
+        </ul>
+      </div>
+      <div class="panel ko">
+        <span class="panel-label">2.3 · Ce qui ne fonctionne pas</span>
+        <ul class="clist">
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Maillage interne cassé.</b> La refonte des cocons n'a pas été terminée, les liens entre pages ne sont plus rétablis.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Aucun outil gratuit en ligne.</b> L'outil de transcription décommissionné n'a pas été remplacé. Aucun lead magnet.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Pages d'intégration sous-optimisées.</b> Descriptions courtes, sans angle SEO ni triple combinaison outil, meeting et CRM.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Articles obsolètes (2022).</b> Ils diluent l'autorité thématique et peuvent cannibaliser les nouvelles pages.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Visibilité LLM faible.</b> Sur les requêtes « notetaker » génériques, Leexi ne ressort pas. Les profils tech convertissent pourtant 4× mieux via les LLM.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Data propriétaire non exploitée.</b> Calls, AskLeexi, tickets support : la meilleure matière SEO n'est pas convertie en pages.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="callout">
+      <span class="callout-label">2.4 · L'opportunité</span>
+      <p>Tous vos concurrents (Otter, Fathom, Fireflies) attaquent les mêmes mots-clés génériques avec les mêmes outils SEO. Le différenciateur sera <strong>votre data propriétaire</strong> : les vraies questions posées par vos prospects en démo, les vrais cas d'usage métier de vos clients, les vraies objections traitées par votre équipe sales. C'est l'unique moat défendable contre ChatGPT lui-même, qui peut sinon répliquer n'importe quel article informationnel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3 · STRATÉGIE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">03</span><span class="sec-rule"></span><span class="sec-count">La stratégie</span></div>
+    <h2 class="sec-h2">Stratégie proposée</h2>
+    <p class="sec-intro">On abandonne le SEO « visibilité » au profit du SEO « décisionnel » : des pages où l'utilisateur arrive avec l'intention de faire une action.</p>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">3.1</span>Cible : mots-clés business uniquement</div>
+    <div class="prose">
+      <p>Un mot-clé business est un mot-clé où l'utilisateur arrive sur la page avec l'intention de faire une action : prendre rendez-vous, tester l'outil, comparer, demander un devis. <strong>Le KPI n'est plus le trafic, c'est l'email collecté.</strong></p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">3.2</span>Modèles de pages scalables</div>
+    <p class="sub-note">Plutôt que d'attaquer un mot-clé à la fois, on construit des modèles déclinables. Un modèle = un template + une variable = des dizaines de pages générables.</p>
+    <div class="table-wrap">
+      <table class="t-model">
+        <colgroup><col class="c1" /><col class="c2" /><col class="c3" /><col class="c4" /></colgroup>
+        <thead><tr><th>Modèle de page</th><th>Exemples de requêtes</th><th>Volume cible</th><th>Logique business</th></tr></thead>
+        <tbody>
+          <tr><td class="col-dim">Comparatifs et migration</td><td class="col-muted">passer de Whisper à Leexi · alternative à Otter.ai · Leexi vs Fathom</td><td><span class="vol">15-25 pages</span></td><td>Capter les utilisateurs déçus de la concurrence</td></tr>
+          <tr><td class="col-dim">Intégrations métier</td><td class="col-muted">Leexi + Zoom + HubSpot · Leexi + Meet + Salesforce · Leexi + Teams + Pipedrive</td><td><span class="vol">20-40 pages</span></td><td>Triple combinaison outil, meeting et CRM</td></tr>
+          <tr><td class="col-dim">Problématiques métier</td><td class="col-muted">remplir son CRM après un call · onboarder un client sans prendre de notes · transcrire un entretien de recrutement</td><td><span class="vol">20-30 pages</span></td><td>Requêtes « j'ai un vrai problème », LLM friendly</td></tr>
+          <tr><td class="col-dim">Cas d'usage par persona</td><td class="col-muted">prise de notes pour recruteur · pour commercial · pour consultant · pour avocat</td><td><span class="vol">10-15 pages</span></td><td>Personnalisation métier et reprise du ton client</td></tr>
+          <tr><td class="col-dim">Outils gratuits (lead magnets)</td><td class="col-muted">transcripteur audio gratuit · résumeur de réunion · générateur de compte-rendu</td><td><span class="vol">5-8 outils</span></td><td>Capture d'email et signal d'engagement Google</td></tr>
+          <tr><td class="col-dim">Tutoriels vidéo (YouTube SEO)</td><td class="col-muted">comment intégrer Leexi à Zoom · setup compte-rendu automatique HubSpot</td><td><span class="vol">10-15 vidéos</span></td><td>Capter les requêtes « how to » qui n'aboutissent pas sur Google</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="duo">
+      <div class="soft">
+        <div class="sub" style="margin-bottom:8px"><span class="sub-n">3.3</span>Outils gratuits, aimants à leads</div>
+        <p>Chaque outil gratuit publié génère deux effets : la capture d'email, en échange de l'usage ou du résultat, et un signal d'engagement envoyé à Google (temps passé, interactions). C'est le format Product-Led SEO qui domine aujourd'hui la conversion organique en SaaS.</p>
+      </div>
+      <div class="soft">
+        <div class="sub" style="margin-bottom:10px"><span class="sub-n">3.4</span>Optimisation pour les moteurs IA</div>
+        <ul class="clist">
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Blocs de réponse en moins de 50 mots en début de page, pour citation directe par ChatGPT et Perplexity.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Schema.org adapté : FAQPage, HowTo, SoftwareApplication, Product.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Données chiffrées vérifiables pour ancrer l'autorité aux yeux des moteurs IA.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Stratégie hreflang propre sur les 7 langues, priorisation des marchés porteurs.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="bot">
+      <span class="bot-label">3.5 · La pièce centrale</span>
+      <div class="bot-title">Le bot SEO autonome</div>
+      <p class="bot-intro">C'est ce qui différencie cette mission d'une prestation d'agence classique. Le bot est un système d'agents Claude nourri par votre data propriétaire (calls, emails, AskLeexi, tickets), capable de :</p>
+      <ul class="bot-caps">
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Extraire les problématiques métier de vos calls clients et en faire des sujets de page.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Identifier les mots-clés business à partir des questions réellement posées en démo.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Produire des briefs SEO complets pour vos rédacteurs internes ou freelances.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Pré-auditer le site (technique et maillage) et générer la to-do list.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Reprendre le ton de voix de vos clients dans les pages, pour éviter l'écueil « IA writing ».</span></li>
+      </ul>
+      <p class="bot-foot">Le bot est livré, formé et documenté en fin de mission. Vous repartez avec un actif réutilisable, pas une dépendance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4 · MÉTHODOLOGIE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">04</span><span class="sec-rule"></span><span class="sec-count">Méthodologie</span></div>
+    <h2 class="sec-h2">Méthodologie</h2>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">4.1</span>Ce que je prends en charge</div>
+    <div class="prose">
+      <p>Je travaille comme une agence en mode <strong>done-for-you</strong> : audit, stratégie, recherche de mots-clés, rédaction, maillage, intégration HTML sur Strapi (ou push API si le hook existe) et suivi des positions. Aucun rédacteur interne à mobiliser.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="duo">
+      <div class="soft">
+        <div class="sub" style="margin-bottom:10px"><span class="sub-n">4.2</span>Demandé côté Leexi</div>
+        <ul class="clist">
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un export anonymisé de calls clients (au moins 30 calls représentatifs des personas) : la matière qui nourrit le bot.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un accès en lecture aux conversations AskLeexi (échantillon) et aux tickets support.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un point de contact (Mathieu ou Baptiste) pour valider le ton de voix sur les 3 premières pages.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un accès en écriture au CMS Strapi, ou la documentation de l'API.</span></li>
+        </ul>
+      </div>
+      <div class="soft">
+        <div class="sub" style="margin-bottom:10px"><span class="sub-n">4.3</span>Rythme de collaboration</div>
+        <ul class="clist">
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>1 stand-up de 30 minutes par semaine.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Tableau de bord partagé en continu : pages produites, indexation, premiers signaux.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Aucun déplacement requis, full remote.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 5 · LIVRABLES ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">05</span><span class="sec-rule"></span><span class="sec-count">Livrables</span></div>
+    <h2 class="sec-h2">Livrables</h2>
+    <p class="sec-intro">Ce que vous avez en main à la fin des 3 mois.</p>
+  </div>
+  <div class="deliver">
+    <div class="deliver-row"><span class="deliver-n">01</span><span class="deliver-t">Audit SEO initial complet : technique, sémantique, articles à archiver, maillage à reconstruire.</span></div>
+    <div class="deliver-row"><span class="deliver-n">02</span><span class="deliver-t">Cartographie des 30 à 50 mots-clés business prioritaires, avec scoring.</span></div>
+    <div class="deliver-row"><span class="deliver-n">03</span><span class="deliver-t">30 à 50 pages décisionnelles produites, optimisées AEO et LLM, intégrées dans le CMS.</span></div>
+    <div class="deliver-row"><span class="deliver-n">04</span><span class="deliver-t">2 à 3 outils gratuits (lead magnets) conçus et mis en ligne.</span></div>
+    <div class="deliver-row"><span class="deliver-n">05</span><span class="deliver-t">Refonte du maillage interne sur les pages prioritaires (FR principalement, hreflang propagé).</span></div>
+    <div class="deliver-row"><span class="deliver-n">06</span><span class="deliver-t">Bot SEO autonome (V2) livré, documenté, transmis en session de formation.</span></div>
+    <div class="deliver-row"><span class="deliver-n">07</span><span class="deliver-t">Rapport de fin de mission : leads générés, positions, signaux LLM, recommandations phase 2.</span></div>
+  </div>
+</section>
+
+<!-- ══ 6 · PLANNING ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">06</span><span class="sec-rule"></span><span class="sec-count">Planning</span></div>
+    <h2 class="sec-h2">Planning sur 3 mois</h2>
+    <p class="sec-intro">Une phase nourrit la suivante : discovery, puis production, puis scale et transfert.</p>
+  </div>
+  <div class="plan">
+    <div class="month">
+      <div class="month-head"><span class="month-tag">Mois 1</span><div class="month-title">Discovery et setup</div></div>
+      <ul class="month-list">
+        <li>Audit SEO complet : technique, sémantique, cocon existant, articles à archiver.</li>
+        <li>Récupération de la data propriétaire : calls, AskLeexi, emails entrants, tickets support.</li>
+        <li>Cartographie des 30 à 50 mots-clés business prioritaires (décisionnel uniquement).</li>
+        <li>Construction de la V1 du bot SEO : skills Claude d'extraction mots-clés, briefs, audits.</li>
+        <li>Production des 10 premières pages business, modèles têtes de série.</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="month-head"><span class="month-tag">Mois 2</span><div class="month-title">Production</div></div>
+      <ul class="month-list">
+        <li>Production de 15 à 20 pages supplémentaires : comparatifs, intégrations, problématiques métier.</li>
+        <li>Conception et mise en ligne de 2 à 3 outils gratuits (lead magnets).</li>
+        <li>Optimisation AEO et LLM : FAQ schema, blocs réponse, structure pour citation IA.</li>
+        <li>Refonte du maillage interne sur les pages prioritaires.</li>
+        <li>Enrichissement du bot avec les apprentissages de la V1.</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="month-head"><span class="month-tag">Mois 3</span><div class="month-title">Scale et transfert</div></div>
+      <ul class="month-list">
+        <li>Production des dernières pages pour atteindre 30 à 50 pages business publiées.</li>
+        <li>Livraison de la V2 du bot autonome : sous-agents audit, mots-clés, briefs, maillage.</li>
+        <li>Formation de l'équipe Leexi à l'utilisation du bot : 1 session et documentation.</li>
+        <li>Bilan complet : leads générés, positions, signaux LLM, recommandations phase 2.</li>
+        <li>Décision conjointe : arrêt avec transfert complet, ou prolongation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 7 · TARIFICATION ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">07</span><span class="sec-rule"></span><span class="sec-count">Tarification</span></div>
+    <h2 class="sec-h2">Tarification</h2>
+  </div>
+  <div class="price">
+    <div class="price-left">
+      <span class="price-label">La mission couvre</span>
+      <ul class="clist">
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Stratégie SEO complète : audit, mots-clés, maillage, suivi des positions.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Production de 30 à 50 pages business, intégrées au CMS.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Construction du bot SEO autonome, livré et documenté.</span></li>
+      </ul>
+      <p class="price-modal">Modalités : facturation mensuelle, sans engagement de durée. La mission peut s'arrêter à la fin de n'importe quel mois.</p>
+    </div>
+    <div class="price-right">
+      <div class="price-rate"><span class="price-amount">1 850 €</span><span class="price-unit">HT / mois</span></div>
+      <div class="price-x">Sans engagement. La mission peut s'arrêter à la fin de n'importe quel mois.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 8 · RÉSULTATS ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">08</span><span class="sec-rule"></span><span class="sec-count">Résultats</span></div>
+    <h2 class="sec-h2">Résultats attendus</h2>
+    <p class="sec-intro">Référence interne : 20 créations de compte par mois via le SEO, sur ~1 000 au total, soit 2 %.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-n">40-70</div><div class="stat-l">Créations de compte par mois via le SEO, visées à 6 mois, contre 20 aujourd'hui</div></div>
+    <div class="stat"><div class="stat-n">×2 à ×3,5</div><div class="stat-l">Multiplication de la part du SEO dans les créations de compte</div></div>
+    <div class="stat"><div class="stat-n">3 à 4 k€</div><div class="stat-l">Acquisition payante économisée par tranche de 100 leads par mois</div></div>
+    <div class="stat"><div class="stat-n">30-50</div><div class="stat-l">Pages décisionnelles publiées, plus 2 à 3 outils gratuits en ligne</div></div>
+  </div>
+  <p class="stats-note"><b>Ceci est une estimation</b>, pas une garantie de résultat. Les chiffres dépendent de la qualité de la data fournie et de la concurrence sur vos requêtes.</p>
+  <div class="prose">
+    <p>Objectif à 6 mois post-mission : multiplier par 2 à 3,5 la part SEO en s'appuyant sur les 30 à 50 pages business et les outils gratuits, soit une cible de 40 à 70 créations de compte mensuelles attribuables au SEO.</p>
+    <p>Effets secondaires attendus : une présence accrue dans les réponses des LLM (ChatGPT, Perplexity, Google AI Overviews) sur les requêtes décisionnelles, et une amélioration du quality score Google Ads via la cohérence sémantique du site, ce qui peut faire baisser le CPL payant.</p>
+    <p>À comparer à votre coût d'acquisition payant : à 30-40 € le lead Ads, chaque tranche de 100 leads organiques mensuels supplémentaires représente <strong>3 000 à 4 000 € d'économie d'acquisition par mois</strong>.</p>
+  </div>
+</section>
+
+<!-- ══ 9 · HORS PÉRIMÈTRE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">09</span><span class="sec-rule"></span><span class="sec-count">Hors périmètre</span></div>
+    <h2 class="sec-h2">Hors périmètre</h2>
+  </div>
+  <div class="why">
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Production vidéo YouTube : recommandée en phase 2, déléguable à un monteur freelance avec des briefs générés par le bot.</span></div>
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Refonte technique majeure du site : à évaluer après audit si nécessaire, devis séparé.</span></div>
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Campagnes payantes Google Ads et Microsoft Ads : déjà maîtrisées en interne.</span></div>
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Localisation manuelle au-delà du français : le bot peut générer les versions, la production native FR est priorisée sur les 3 mois.</span></div>
+  </div>
+</section>
+
+<!-- ══ 10 · POURQUOI CE SETUP ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">10</span><span class="sec-rule"></span><span class="sec-count">Pourquoi</span></div>
+    <h2 class="sec-h2">Pourquoi ce setup</h2>
+    <p class="sec-intro">Le SEO d'il y a 5 ans, publier 200 articles et attendre du trafic, est mort, surtout en SaaS. Aujourd'hui, ce qui paye :</p>
+  </div>
+  <div class="why">
+    <div class="why-card"><span class="why-n">01</span><div class="why-t">La data propriétaire</div><p class="why-d">Convertie en pages décisionnelles. C'est l'unique moat défendable contre ChatGPT lui-même.</p></div>
+    <div class="why-card"><span class="why-n">02</span><div class="why-t">Les outils gratuits</div><p class="why-d">Qui aspirent des emails, au lieu du trafic vanité qui ne convertit pas.</p></div>
+    <div class="why-card"><span class="why-n">03</span><div class="why-t">Les modèles scalables</div><p class="why-d">Un template plus une variable égalent des dizaines de pages, plutôt que des articles unitaires.</p></div>
+    <div class="why-card"><span class="why-n">04</span><div class="why-t">L'autonomie post-mission</div><p class="why-d">Un bot que vous gardez, plutôt qu'une dépendance agence sur 24 mois.</p></div>
+  </div>
+  <p class="why-foot">C'est exactement le système que je vous livre, testé sur mes propres sites et chez plusieurs clients SaaS et e-commerce.</p>
+</section>
+
+<!-- ══ 11 · PROCHAINE ÉTAPE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">11</span><span class="sec-rule"></span><span class="sec-count">Prochaine étape</span></div>
+    <h2 class="sec-h2">Prochaine étape</h2>
+  </div>
+  <div class="final">
+    <p class="final-lead">Validation de la proposition pour un démarrage sous 7 jours ouvrés. Premier livrable, l'audit complet et l'extraction de la data, sous 2 semaines après signature.</p>
+    <p class="final-p">Même en cas de réponse négative, un retour rapide est apprécié : cela me permet d'organiser mon agenda. Une décision « non » aujourd'hui peut très bien devenir « oui » dans six mois.</p>
+    <div class="sign">
+      <div class="sign-name">Timothée Boussardon</div>
+      <div class="sign-mail">tim.boussardon@gmail.com</div>
+      <div class="sign-foot">organikk.co &amp; Leexi · Proposition commerciale · Mai 2026</div>
+    </div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>

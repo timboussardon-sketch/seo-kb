@@ -15,7 +15,7 @@ status: stable
 
 **Type** : note doctrinale + cas terrain (Tim sur son propre blog)
 **Auteur** : Tim
-**Fichier raw** : `raw/articles/newsletter-maillage-interne.md`
+**Fichier raw** : `raw/articles/algorithme/newsletter-maillage-interne.md`
 **Date** : 2026-04-30
 
 ## Contexte

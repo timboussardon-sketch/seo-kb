@@ -14,7 +14,7 @@ status: stable
 # LinkedIn 2e source citée par les IA
 
 **Newsletter** : Algorithme · **Date estimée** : ~11 avril 2026 (post-rollout Core Update du 8 avril cité dans la brève)
-**Auteur** : Tim · **Fichier raw** : `raw/articles/algorithme-linkedin-2e-source-ia.md`
+**Auteur** : Tim · **Fichier raw** : `raw/articles/algorithme/algorithme-linkedin-2e-source-ia.md`
 
 ## Données clés
 

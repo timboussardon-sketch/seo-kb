@@ -4,10 +4,10 @@ title: Reciprocal Rank Fusion (RRF)
 aliases: [rrf, reciprocal-rank-fusion]
 tags: [ranking, algo, seo-technique, freshness]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-16
 sources: 1
 confidence: medium
-status: draft
+status: stable
 ---
 
 # Reciprocal Rank Fusion (RRF)
