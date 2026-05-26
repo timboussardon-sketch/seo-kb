@@ -4,6 +4,49 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-26 — Plan d'action + LLM : kill les patterns IA, sobriété visuelle
+
+Demande Tim : *"sur l'onglet plan d'action, il faut killer tous les patterns IA (notamment trait de couleur sur le côté gauche) et améliorer la lisibilité"*. Audit + refactor élargi à l'onglet LLM dans la foulée parce que les barres + headers de domaine orange sur 12-15 répétitions criaient pareil.
+
+### Patterns IA tués sur Plan d'action
+
+- **Trait coloré vertical à gauche du banner mois** (`border-left: 4px solid` + `borderLeftColor: meta.accent`) : pattern signature des UI générées par IA. Supprimé. Remplacé par un séparateur `border-bottom: 1px solid var(--ws-border)` sobre.
+- **3 couleurs arbitraires par mois** (M1 #FF371C rouge, M2 #D97706 orange, M3 #059669 vert) : supprimées. La progression dans le temps n'est pas une dimension visuelle, c'est juste un ordre. Tous les mois ont le même rendu monochrome.
+- **Symboles décoratifs ★ ◆ ●** devant chaque mot-clé pour HUB / SPOKE / FAQ : supprimés. Pure ornementation.
+- **Bullet dot coloré stoplight** (vert / orange / gris) pour le potentiel Fort / Moyen / Faible : remplacé par un badge texte sobre `Fort` / `Moyen` / `Faible` avec différenciation par le contraste typo, pas par la couleur.
+- **Pills colorées pastel** pour le rôle (Hub rouge, Spoke noir, FAQ gris) : remplacées par badges monochromes. Hub se distingue par bordure noire + texte gras (donc plus de hiérarchie info sans l'effet "arc-en-ciel").
+- **Tag de semaine en couleur accent** : remplacé par un badge bordé monochrome (typo et bordure font le travail).
+- **Icône Link2 colorée** dans le footer KPI : supprimée.
+- **Import `Link2`** de lucide-react : supprimé du composant.
+
+### Lisibilité améliorée
+
+- "Mois 1 / 2 / 3" au lieu de "M1 / M2 / M3" : lisible direct, plus formel.
+- Hiérarchie typo nette : numéro de mois en petit-caps faint (label), titre en 17px gras strong, sous-titre 13.5px muted, progression chiffrée à droite avec `18/24` propre (chiffre fort en strong + séparateur faint + total normal).
+- Espacement augmenté : padding banner `18/24`, rangées mots-clés `11/16`, gap `12px` entre colonnes.
+- Badge `Fort` pour les mots-clés à fort potentiel : bordure noire et texte noir, distingue par le contraste pas par une couleur.
+
+### Patterns IA tués sur l'onglet LLM (cleanup foulée)
+
+- **`color: var(--ws-brand)` sur `.llm-url-domain`** : 12 cartes URL avaient leur header en orange uppercase, trop tapageur. Passé en `--ws-text-muted` gris.
+- **`background: var(--ws-brand)` sur `.llm-domain-fill`** : 15 barres orange (top 15 domaines), trop. Passé en `--ws-text-strong` (noir sobre) : fort visuel sans agressivité.
+
+### Seule couleur de marque qui reste
+
+`#FF371C` réservée au **check validé** du Plan d'action (`<CheckCircle2>` quand l'utilisateur coche une action). C'est le seul "punch couleur" du composant. Tout le reste est monochrome sur la base `--ws-bg-card`, `--ws-text-strong`, `--ws-text`, `--ws-text-muted`, `--ws-text-faint`, `--ws-border`.
+
+### Commit + push
+
+- Commit `443074a` poussé sur main
+- 2 fichiers : `PlanActionView.tsx` (-110 +86 lignes, refactor JSX), `index.css` (+157 -110 lignes, classes plan-action + 2 classes llm)
+- Netlify auto-deploy déclenché à 06:36 UTC
+
+### LLM tab : pas d'autre changement à pousser
+
+Audit confirme que les autres composants LLM (sélecteur cluster, summary cards, query matrix, polling state) n'ont pas de pattern IA marqué. Les icônes utilisées (Radar, Layers, RefreshCw, Loader2, AlertCircle, ExternalLink) sont navigationnelles, pas décoratives. Pas d'emoji, pas de gradients, pas de blur, pas de cards-in-cards. Quota badge avec icône Crown pour Premium conservé (utilisé en cas premium seulement, peu visible).
+
+---
+
 ## 2026-05-26 — Business Score : streaming + Realtime + barre de progression
 
 Tim signale que l'affichage des colonnes "Score Business" et "Potentiel" dans l'onglet mots-clés est trop lent et qu'on ne voit rien pendant le calcul. Diagnostic : un seul appel Gemini 2.5 Pro qui scoreait les 10 mots-clés d'un bloc (15-30s), polling frontend toutes les 3s, et juste un `…` gris pour signaler l'attente.
