@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Checklist de Livraison"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Checklist de Livraison
 
 > À la fin de l'accompagnement, tu dois avoir tout ça. Coche au fur et à mesure.

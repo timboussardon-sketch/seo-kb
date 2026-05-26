@@ -130,7 +130,11 @@ Une page par source ingérée. Sous-types dans le frontmatter (`source_type`) :
 
 ### 5.1 Frontmatter YAML obligatoire
 
-Chaque page `wiki/` commence par :
+Le frontmatter est **obligatoire pour `wiki/` ET `raw/`**. Les scripts d'index (concepts.json + vector store) s'appuient dessus pour le filtrage déterministe (`./kb search "..." --type concept --tag aeo`). Sans frontmatter, un fichier reste indexé en recherche vectorielle pure mais devient invisible aux filtres.
+
+Pour `raw/`, un schéma minimal suffit : `type: source` + `source_type` + `created` + `title`. Le backfill auto est dispo via `./kb backfill --apply` (génère le frontmatter manquant à partir du nom de fichier, du sous-dossier et du premier H1).
+
+Chaque page `wiki/` (et `raw/`) commence par :
 
 ```yaml
 ---
@@ -278,6 +282,40 @@ status: draft | stable | stale
 2. Sauver l'output dans le bon dossier du wiki (pas dans le chat)
 3. Appeler les entities/concepts pertinents du wiki pour enrichir
 4. Update `wiki/index.md` + `wiki/log.md`
+
+---
+
+## 7ter. Infra d'index local : `./kb`
+
+Le vault expose un CLI `./kb` à la racine qui matérialise le graphe et la sémantique du vault dans deux structures persistées :
+
+- **`.claude/index/concepts.json`** : index inversé des `wiki/concepts/` + `wiki/entities/`. Pour chaque nœud : `title`, `aliases`, `tags`, `outlinks` (wikilinks sortants), `backrefs` (chemins de tous les fichiers du vault qui pointent vers ce nœud). C'est le graphe atomique exploitable en lecture O(1).
+- **`.claude/vector-store/`** : collection ChromaDB persistée, embeddings sentence-transformers (modèle `paraphrase-multilingual-mpnet-base-v2`, multilingue FR-friendly, local, gratuit). Un document = un chunk H2 d'un fichier markdown. Les métadonnées du frontmatter (type, source_type, tags, status, confidence, created) sont stockées dans chaque chunk pour permettre le filtrage déterministe avant la recherche cosinus.
+
+### Commandes
+
+```bash
+./kb rebuild              # audit frontmatter + concepts.json + index vectoriel incrémental
+./kb rebuild --full       # idem, mais rebuild from scratch de l'index vectoriel
+./kb search "ma requête"  # recherche sémantique top-5
+./kb search "RRF" --type concept --tag aeo --k 8
+./kb audit-frontmatter    # liste les fichiers raw/ sans frontmatter
+./kb backfill --apply     # backfill auto des frontmatters manquants
+./kb concepts             # rebuild concepts.json uniquement
+```
+
+### Quand rebuild ?
+
+Manuel, à déclencher après une session d'ingestion ou un batch d'édition (`./kb rebuild`). Pas de hook git ni de file watcher : le rebuild est rapide en incrémental (skip les fichiers dont `mtime+size` n'a pas changé depuis le dernier index).
+
+### Lifecycle des chunks
+
+L'index incrémental supprime tous les anciens chunks d'un fichier modifié puis ré-upsert les nouveaux. Pour repartir de zéro : `./kb rebuild --full`.
+
+### Quand utiliser `./kb search` vs le skill `kb-semantic-search` ?
+
+- **`./kb search`** : lookup rapide, déterministe, scoring numérique. Idéal pour "trouve-moi les notes qui parlent de X".
+- **Skill `kb-semantic-search`** : pipeline complet avec synthèse citée, gaps identifiés, queries dérivées. Le skill court-circuite maintenant ses Phases 1-3 via `./kb search` (Phase 0) si l'index est dispo, puis enchaîne sur Phase 4 (wikilinks 1-hop) + Phase 5 (synthèse).
 
 ---
 

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 07 christophe"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 **Christophe :** Un profil probablement un peu particulier des profils que tu vas rencontrer, enfin je suppose. Moi, j'ai une agence web marketing de 99 à 2010\. Donc je suis dans l'internet depuis plus de 30 ans. Je connais bien l'histoire du SEO, mais quand j'avais mon agence web marketing, moi j'avais pas les mains dans le cambouis, j'étais le fondateur et on va dire commercial. Donc je comprends bien tout un tas de choses, mais je n'en ai jamais fait véritablement de façon opérationnelle, en fait, pour le compte de clients, etc. Par contre, je maîtrise quand même bien plein de choses. J'ai plutôt un profil technique à la base, mais j'ai jamais fait véritablement de développement de ma vie. J'ai 56 ans. Donc je suis plutôt un profil marketing, et bien sûr marketing online. Donc je comprends bien tout ce qu'il faut faire. J'ai une appétence très forte en fait sur l'aspect du contenu et sur l'aspect sémantique. Donc ça c'est des choses que je comprends très, très bien.
 
 Si j'en parle d'un point de vue business, de ce que je fais aujourd'hui... aujourd'hui moi je suis cofondateur d'une boîte qui s'appelle Audopass, qui est un carnet d'entretien numérique en fait, type application mobile. On se sert en fait du site web pour aller acquérir des nouveaux utilisateurs. Dans le secteur de l'automobile, il n'y a pas beaucoup d'investissement. On s'est posé la question en fait d'ajouter des lignes de revenus, donc en fait on a ouvert un Shopify il y a déjà un an et demi, presque 2 ans en fait, ça fera 2 ans au mois de mai. Donc on a ouvert un Shopify, j'ai cette compétence supplémentaire sur l'aspect e-commerce, un site qui s'appelle Audokit, qui vend de l'accessoire en fait automobile. J'ai fait un peu de Amazon.

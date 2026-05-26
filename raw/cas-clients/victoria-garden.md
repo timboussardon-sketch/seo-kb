@@ -1,3 +1,16 @@
+---
+type: source
+source_type: client-note
+title: "Victoria Garden — Cas client"
+aliases: []
+tags: []
+created: 2026-04-13
+updated: 2026-04-13
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Victoria Garden — Cas client
 
 ## Sources

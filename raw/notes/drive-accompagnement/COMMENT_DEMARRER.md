@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Comment démarrer avec un client — Guide pratique"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Comment démarrer avec un client — Guide pratique
 
 > Checklist pour transformer les templates en Drive de travail réel

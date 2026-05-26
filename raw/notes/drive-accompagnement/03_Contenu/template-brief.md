@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Brief de Contenu SEO"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Brief de Contenu SEO
 
 > On ne crée pas de contenu sans brief validé. On ne brief pas sans données (GSC minimum).

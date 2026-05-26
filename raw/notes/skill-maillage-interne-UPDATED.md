@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Skill : Maillage Interne — LinkMap AI"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Skill : Maillage Interne — LinkMap AI
 
 ## Philosophie (méthode Boussardon)

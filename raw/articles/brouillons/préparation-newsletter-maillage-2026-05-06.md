@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "RAW - Préparation newsletter 2026-05-06"
+aliases: []
+tags: []
+created: 2026-05-06
+updated: 2026-05-06
+sources: 0
+confidence: medium
+status: draft
+---
+
 # RAW - Préparation newsletter 2026-05-06
 
 **Sujet** : pourquoi les liens entre tes pages sont mal posés, et comment Claude refait le travail à un endroit où aucun plugin de maillage interne ne sait aller.

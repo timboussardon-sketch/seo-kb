@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "post linkedin seo kb obsidian"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 CLAUDE + OBSIDIAN, c'est le niveau boss final pour exploiter la puissance de l'IA. Tu peux te créer un "employé IA" qui va tout mémoriser.
 
 On connaît tous ce problème : à chaque nouvelle session avec une IA, elle repart de zéro.

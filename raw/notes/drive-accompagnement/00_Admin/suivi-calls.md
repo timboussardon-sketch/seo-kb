@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Suivi des Calls"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Suivi des Calls
 
 > Un call = un objectif clair + un livrable associé

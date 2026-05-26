@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "algorithme etude citation ia"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 \# L&\#x27;étude qui nous dit comment être cité par les IA
 
 \*\*URL:\*\* https://algorithme.substack.com/p/letude-qui-nous-dit-comment-etre

@@ -25,3 +25,5 @@ raw/revue-de-presse/
 # GSC service account credential (jamais committer)
 *service-account*.json
 .venv/
+.claude/vector-store/
+.claude/index/embed_mtime.json

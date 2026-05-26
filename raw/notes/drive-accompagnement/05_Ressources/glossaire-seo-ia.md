@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Glossaire SEO + IA"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Glossaire SEO + IA
 
 > Les termes qu'on utilise pendant l'accompagnement. Pas de jargon sans explication.

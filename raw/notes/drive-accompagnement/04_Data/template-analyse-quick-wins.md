@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Analyse Quick Wins"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Analyse Quick Wins
 
 > Date de l'analyse : ___

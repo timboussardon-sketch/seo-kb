@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Template — Fichiers Contexte"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Template — Fichiers Contexte
 
 > 3 fichiers à créer pour que ton bot te connaisse. À remplir ensemble lors du Call 1.

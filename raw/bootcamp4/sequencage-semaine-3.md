@@ -1,4 +1,17 @@
 ---
+type: source
+source_type: transcript
+title: "Séquençage Semaine 3 — Bootcamp 4"
+aliases: []
+tags: []
+created: 2026-05-21
+updated: 2026-05-21
+sources: 0
+confidence: medium
+status: draft
+---
+
+---
 title: Séquençage Semaine 3 — Workflow audit resserré (réordonné : data GSC avant structurel)
 bootcamp: 4
 semaine: 3

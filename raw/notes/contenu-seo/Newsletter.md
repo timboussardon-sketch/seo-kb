@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Newsletter"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 \# Pourquoi ton article bien rédigé ne rank pas ?
 
 \*\*URL:\*\* https://algorithme.substack.com/p/pourquoi-ton-article-bien-redige

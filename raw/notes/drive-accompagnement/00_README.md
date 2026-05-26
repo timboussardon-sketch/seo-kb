@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Accompagnement SEO — Espace Client"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Accompagnement SEO — Espace Client
 
 ## Bienvenue

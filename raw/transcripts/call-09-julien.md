@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 09 julien"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 ## **Transcript de la vidéo**
 
 **Julien :** … donc je fais, on va dire à 90% de la création de sites WordPress et de l’accompagnement SEO technique pur. Je fais pas d’accompagnement, alors je faisais à l’époque mais j’ai arrêté, sur du SEO off-site, de linking et cetera, parce que pas forcément le temps de mettre à jour sur toutes les nouveautés et surtout le plus gros de mes prestas, c’est la création de sites, donc je suis focus là-dessus.

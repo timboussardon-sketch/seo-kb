@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Skills SEO à Installer"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Skills SEO à Installer
 
 > Les skills sont les briques de ton système. On les installe progressivement.

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "post linkedin audit sans semrush"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 J'ai arrêté d'utiliser Semrush et Ahrefs pour mes audits SEO.
 
 Voici comment j'audite un site complet avec Claude et les données Google gratuites.

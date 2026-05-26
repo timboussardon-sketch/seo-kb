@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Workflows IA — Système Complet"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Workflows IA — Système Complet
 
 > Chaque workflow automatise une tâche répétitive. L'objectif : que le système tourne seul.

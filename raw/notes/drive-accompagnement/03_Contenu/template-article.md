@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Article — [TITRE]"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Article — [TITRE]
 
 > Produit via le workflow 8 étapes. Chaque section suit le pattern Tension → Résolution → Preuve.

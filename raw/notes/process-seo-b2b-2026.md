@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Process SEO B2B 2026 : arrêter de chercher du trafic, commencer à chercher des clients"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Process SEO B2B 2026 : arrêter de chercher du trafic, commencer à chercher des clients
 
 Un mot-clé B2B, c'est une landing page qui a pour but de récupérer un email qualifié. Mais pas de n'importe quelle manière. Il faut créer le contenu le plus engagé et expert possible pour donner envie au lecteur d'aller plus loin avec la marque. On ne parle pas de trafic. On parle de conversion.

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "post linkedin role seo claude"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 Claude peut aujourd'hui faire le SEO d'un artisan.
 
 Pas parfaitement. Mais suffisamment pour générer du trafic local, structurer un site, rédiger des pages de service.

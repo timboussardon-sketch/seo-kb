@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "SEO IA"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 C'est une découverte majeure pour ta thèse sur le passage du SEO sémantique au GEO (Generative Engine Optimization) et à l'ère des agents autonomes (MLE-STAR).
 
 Ce papier sur Titans et le framework MIRAS ne décrit pas seulement une nouvelle architecture technique ; il décrit le mécanisme exact de sélection de l'information par les futurs moteurs de recherche (Google DeepMind).

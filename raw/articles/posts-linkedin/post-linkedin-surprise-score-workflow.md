@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "Post LinkedIn — Surprise Score + Workflow propriétaire"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Post LinkedIn — Surprise Score + Workflow propriétaire
 
 ---

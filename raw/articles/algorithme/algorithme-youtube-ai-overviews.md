@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "algorithme youtube ai overviews"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 \# YouTube s&\#x27;impose comme source \+30% des AI Overviews
 
 \*\*URL:\*\* https://algorithme.substack.com/p/youtube-simpose-comme-source-30-des

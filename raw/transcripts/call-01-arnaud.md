@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 01 arnaud"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 Voici le script de ton échange, nettoyé et formaté au format « pixel perfect ». J’ai restructuré la retranscription brute pour en faire un véritable dialogue fluide, en corrigeant naturellement les coquilles liées à la reconnaissance vocale (comme « Cloud/cowork » corrigés en « Claude/Cursor », ou « bout » en « Cebu ») afin que le document soit prêt à être exploité.
 
 ---

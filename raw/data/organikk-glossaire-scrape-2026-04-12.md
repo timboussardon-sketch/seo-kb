@@ -1,3 +1,16 @@
+---
+type: source
+source_type: gsc-export
+title: "Scrape Glossaire Organikk.co — 12 avril 2026"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Scrape Glossaire Organikk.co — 12 avril 2026
 ## 78 termes SEO, GEO & LLM
 

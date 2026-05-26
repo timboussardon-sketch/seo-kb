@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "MVS — Minimal Viable Strategy"
+aliases: []
+tags: []
+created: 2026-05-22
+updated: 2026-05-22
+sources: 0
+confidence: medium
+status: draft
+---
+
 # MVS — Minimal Viable Strategy
 
 > On ne fait pas un plan SEO à 12 mois. On identifie les signaux rapides, on itère.

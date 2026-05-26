@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "tim anti ai writing style"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 Wikipedia:Signs of AI writing - Wikipedia
 =========================================
 

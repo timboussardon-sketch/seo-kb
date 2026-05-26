@@ -1,0 +1,4683 @@
+{
+  "4w-deep-reflection": {
+    "aliases": [
+      "4w-deep-reflection",
+      "raid-method",
+      "multi-role-reflection"
+    ],
+    "backrefs": [
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/surprise-gap.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-13-raid-gseo-2025.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/4w-deep-reflection.md",
+    "outlinks": [
+      "2026-04-13-raid-gseo-2025",
+      "2026-04-13-geo-aggarwal-2024",
+      "surprise-gap",
+      "ingenierie-semantique-inversee",
+      "information-gain",
+      "workflow-redaction-8-etapes",
+      "avatar-freelance-sans-systeme"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "methode",
+      "intent-modeling",
+      "multi-role",
+      "brief-contenu"
+    ],
+    "title": "4W Deep Reflection (Who / What / Why / How — méthode RAID)",
+    "type": "concept"
+  },
+  "5-types-ancres": {
+    "aliases": [
+      "5-types-ancres",
+      "types-ancres",
+      "ancres-diversifiees"
+    ],
+    "backrefs": [
+      "wiki/briefs/maillage-interne-claude.md",
+      "wiki/concepts/maillage-systeme.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/5-types-ancres.md",
+    "outlinks": [
+      "2026-04-30-newsletter-maillage-interne",
+      "maillage-systeme",
+      "aeo"
+    ],
+    "status": "stable",
+    "tags": [
+      "maillage-interne",
+      "ancres",
+      "anchor-text",
+      "doctrine-tim"
+    ],
+    "title": "5 types d'ancres internes (et leurs quotas)",
+    "type": "concept"
+  },
+  "80-pourcent-pattern-strategie": {
+    "aliases": [
+      "80-pourcent-pattern-strategie",
+      "pattern-strategie-80"
+    ],
+    "backrefs": [
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/80-pourcent-pattern-strategie.md",
+    "outlinks": [
+      "methode-organikk-4-piliers",
+      "cli-tools-optional",
+      "mots-cles-actionnels",
+      "session-1-mots-cles-nouveautes",
+      "session-1-mots-cles-transcript"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "methode",
+      "portefeuille-client",
+      "scaling",
+      "bootcamp4"
+    ],
+    "title": "80 % de pattern dans la stratégie SEO",
+    "type": "concept"
+  },
+  "aeo": {
+    "aliases": [
+      "aeo",
+      "answer-engine-optimization"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/process-seo-b2b-2026.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/papers/semrush-llm-conversion-study.md",
+      "wiki/000-home.md",
+      "wiki/concepts/5-types-ancres.md",
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/maillage-systeme.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/purete-vectorielle.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/dashboard.md",
+      "wiki/entities/audopass.md",
+      "wiki/entities/chatgpt-search.md",
+      "wiki/entities/christophe.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/entities/google-ai-mode.md",
+      "wiki/entities/linkedin.md",
+      "wiki/entities/mum.md",
+      "wiki/entities/perplexity.md",
+      "wiki/entities/seer-interactive.md",
+      "wiki/entities/semrush.md",
+      "wiki/entities/sge.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md",
+      "wiki/sources/2026-04-13-semrush-llm-conversion-study.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/aeo.md",
+    "outlinks": [
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-03-31-tim-profil-et-regles",
+      "surprise-gap",
+      "grounding-score",
+      "2026-04-13-semrush-llm-conversion-study",
+      "2026-04-24-reflexion-organikk-4-piliers",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "2026-04-15-opendecoder-seo-scoring-system",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "data-proprietaire",
+      "agentic-search",
+      "chatgpt-search",
+      "perplexity",
+      "google-ai-mode",
+      "linkedin"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "aeo",
+      "seo-ia",
+      "ranking",
+      "moteurs-reponse"
+    ],
+    "title": "AEO (Answer Engine Optimization)",
+    "type": "concept"
+  },
+  "agentic-search": {
+    "aliases": [
+      "agentic-search",
+      "seo-agentique",
+      "mle-star"
+    ],
+    "backrefs": [
+      "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/mots-cles-seo-2026.md",
+      "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/etudes-seo/etude-core-ranking-2025.md",
+      "raw/etudes-seo/etude-geo-aggarwal-2024.md",
+      "raw/etudes-seo/etude-raid-gseo-2025.md",
+      "raw/etudes-seo/etude-sageo-arena-2025.md",
+      "raw/etudes-seo/etude-searchllm-2026.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/entities/naver.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
+      "wiki/sources/2026-04-13-raid-gseo-2025.md",
+      "wiki/sources/2026-04-13-searchllm-2026.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
+      "wiki/sources/2026-04-30-scheduled-skills-cron.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/agentic-search.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "surprise-metric",
+      "titans",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-03-06-algorithme-etude-citation-ia",
+      "2026-04-13-core-ranking-jin-2025",
+      "2026-04-13-raid-gseo-2025",
+      "4w-deep-reflection",
+      "2026-04-13-searchllm-2026",
+      "2026-04-15-scan-arxiv-15-avril",
+      "2026-04-25-scan-arxiv-25-avril",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "aeo",
+      "answer-first-pattern",
+      "data-proprietaire",
+      "grounding-score"
+    ],
+    "status": "stable",
+    "tags": [
+      "agentic",
+      "agents-ia",
+      "seo-ia",
+      "geo",
+      "titans"
+    ],
+    "title": "Agentic Search (SEO agentique)",
+    "type": "concept"
+  },
+  "angle-differenciant-mot-cle": {
+    "aliases": [
+      "angle-differenciant",
+      "angle-differenciant-mot-cle",
+      "cerner-le-head-term",
+      "sous-niche-avant-head-term",
+      "mots-cles-anti-chatgpt"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "wiki/concepts/scam-objection-data-aleatoire.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/revue-hebdo/2026-W21.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/angle-differenciant-mot-cle.md",
+    "outlinks": [
+      "triade-serp",
+      "mots-cles-actionnels",
+      "data-proprietaire",
+      "session-2-redaction-debrief",
+      "strategie-seo-hotellerie-2026",
+      "strategie-seo-avocat-2026",
+      "programmatique-pseo",
+      "maillage-systeme",
+      "test-substitution-llm",
+      "scam-objection-data-aleatoire",
+      "session-3-audit-prep",
+      "sequencage-semaine-3",
+      "workflow-redaction-8-etapes",
+      "surprise-gap",
+      "know-simple-know-do",
+      "tabou-visibilite",
+      "methode-organikk-4-piliers",
+      "process-keyword-research-5-etapes",
+      "session-1-mots-cles-prep"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "mots-cles",
+      "keyword-research",
+      "anti-chatgpt",
+      "longue-traine",
+      "strategie-contenu",
+      "bootcamp4"
+    ],
+    "title": "Angle différenciant — cerner le head term, attaquer la sous-niche",
+    "type": "concept"
+  },
+  "answer-first-pattern": {
+    "aliases": [
+      "answer-first-pattern",
+      "answer-firstness",
+      "passage-ancre"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/passage-ranking.md",
+      "wiki/concepts/purete-vectorielle.md",
+      "wiki/concepts/structural-information-geo.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-redaction.md",
+      "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
+      "wiki/sources/2026-04-13-sageo-arena-2025.md",
+      "wiki/sources/2026-04-13-searchllm-2026.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/answer-first-pattern.md",
+    "outlinks": [
+      "2026-04-13-searchllm-2026",
+      "2026-04-13-sageo-arena-2025",
+      "2026-04-13-geo-aggarwal-2024",
+      "aeo",
+      "2026-04-13-prompt-pseo-produit-service",
+      "anti-ai-writing",
+      "tabou-visibilite",
+      "data-proprietaire",
+      "2026-04-13-prompt-pseo-non-produit",
+      "passage-ranking",
+      "grounding-score",
+      "metriques-visibilite-geo"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "aeo",
+      "passage-ranking",
+      "featured-snippet",
+      "ai-overview",
+      "doctrine-tim"
+    ],
+    "title": "Answer-first pattern (réponse directe dans les 2-3 premières phrases)",
+    "type": "concept"
+  },
+  "anti-ai-writing": {
+    "aliases": [
+      "anti-ai-writing",
+      "anti-patterns-ia",
+      "wikipedia-signs-ai-writing"
+    ],
+    "backrefs": [
+      "AGENTS.md",
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/articles/organikk-blog/semrush-contenu-ia.md",
+      "raw/articles/organikk-blog/strategie-seo-agence-immobiliere-lyon.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/papers/google-quality-raters-guidelines-2026.md",
+      "wiki/000-home.md",
+      "wiki/audit/2026-05-21-audit-vault.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/purete-vectorielle.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/dashboard.md",
+      "wiki/entities/naver.md",
+      "wiki/entities/quality-raters-guidelines.md",
+      "wiki/entities/semrush.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/log.md",
+      "wiki/moc/moc-redaction.md",
+      "wiki/queries/pseo-2026-05-16-landing-lead-gen-organikk.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
+      "wiki/sources/2026-04-13-google-quality-raters-guidelines-2026.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-13-searchllm-2026.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/sources/2026-04-25-tim-ton-de-voix-extraction-terrain.md",
+      "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/anti-ai-writing.md",
+    "outlinks": [
+      "workflow-redaction-8-etapes",
+      "surprise-metric",
+      "quality-raters-guidelines",
+      "surprise-gap",
+      "2026-04-25-tim-ton-de-voix-extraction-terrain",
+      "2026-04-30-tim-posts-linkedin-batch",
+      "2026-04-13-geo-aggarwal-2024",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "2026-04-15-scan-arxiv-15-avril",
+      "2026-04-25-scan-arxiv-25-avril",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "2026-03-31-tim-profil-et-regles",
+      "2026-03-31-tim-workflow-redaction",
+      "answer-first-pattern",
+      "retrieval-collapse",
+      "naver"
+    ],
+    "status": "stable",
+    "tags": [
+      "redaction",
+      "anti-patterns",
+      "qualite",
+      "doctrine-tim"
+    ],
+    "title": "Anti-AI Writing (anti-patterns IA)",
+    "type": "concept"
+  },
+  "arbitrage-plateforme-publication": {
+    "aliases": [
+      "arbitrage-plateforme-publication",
+      "arbitrage-plateforme"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/arbitrage-plateforme-publication.md",
+    "outlinks": [
+      "seo-multi-plateforme",
+      "triade-serp",
+      "passage-ranking",
+      "session-1-mots-cles-nouveautes",
+      "session-1-mots-cles-transcript"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "seo",
+      "strategie",
+      "plateforme",
+      "serp",
+      "bootcamp4"
+    ],
+    "title": "Arbitrage de plateforme de publication",
+    "type": "concept"
+  },
+  "arnaud": {
+    "aliases": [
+      "arnaud-prospect-01",
+      "prospect-arnaud"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-01-arnaud.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/arnaud.md",
+    "outlinks": [
+      "2026-04-13-call-01-arnaud",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "bootcamp-seo-ia",
+      "avatar-freelance-sans-systeme"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "consultant-seo",
+      "wordpress",
+      "voyage-train",
+      "freelance"
+    ],
+    "title": "Arnaud (prospect bootcamp",
+    "type": "entity"
+  },
+  "audopass": {
+    "aliases": [
+      "audopass",
+      "audokit"
+    ],
+    "backrefs": [
+      "wiki/entities/christophe.md",
+      "wiki/index.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/audopass.md",
+    "outlinks": [
+      "christophe",
+      "2026-04-13-semrush-llm-conversion-study",
+      "2026-04-13-call-07-christophe",
+      "aeo",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "entreprise",
+      "automobile",
+      "shopify",
+      "chatgpt-conversion",
+      "case-study-geo"
+    ],
+    "title": "Audopass / Audokit (boîte Christophe)",
+    "type": "entity"
+  },
+  "avatar-freelance-sans-systeme": {
+    "aliases": [
+      "avatar-freelance-sans-systeme",
+      "avatar-bootcamp",
+      "freelance-web-seo"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/concepts/4w-deep-reflection.md",
+      "wiki/concepts/cercle-vicieux-temps-structure.md",
+      "wiki/concepts/peur-train-ia.md",
+      "wiki/concepts/tabou-visibilite.md",
+      "wiki/dashboard.md",
+      "wiki/entities/arnaud.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/entities/caroline.md",
+      "wiki/entities/christophe.md",
+      "wiki/entities/dev-web-anon.md",
+      "wiki/entities/franck.md",
+      "wiki/entities/jamel.md",
+      "wiki/entities/julien.md",
+      "wiki/entities/juliette.md",
+      "wiki/entities/marrusia-cecile.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-01-arnaud.md",
+      "wiki/sources/2026-04-13-call-02-marrusia-cecile.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-13-call-04-jamel.md",
+      "wiki/sources/2026-04-13-call-05-dev-web.md",
+      "wiki/sources/2026-04-13-call-06-juliette.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md",
+      "wiki/sources/2026-04-13-call-08-franck.md",
+      "wiki/sources/2026-04-13-call-09-julien.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
+      "wiki/sources/2026-04-15-call-10-franck-suite.md",
+      "wiki/sources/2026-04-15-call-13-caroline.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/avatar-freelance-sans-systeme.md",
+    "outlinks": [
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "cercle-vicieux-temps-structure",
+      "peur-train-ia",
+      "data-proprietaire",
+      "tabou-visibilite",
+      "2026-04-13-offre-bootcamp-seo-ia",
+      "bootcamp-seo-ia"
+    ],
+    "status": "stable",
+    "tags": [
+      "avatar",
+      "prospect",
+      "marketing",
+      "bootcamp",
+      "peurs-objections",
+      "doctrine-tim"
+    ],
+    "title": "Avatar \"Freelance Web qui Fait du SEO Sans Système\"",
+    "type": "concept"
+  },
+  "bert": {
+    "aliases": [
+      "bert",
+      "bidirectional-encoder-representations-from-transformers"
+    ],
+    "backrefs": [
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/bm25.md",
+      "wiki/entities/dpr.md",
+      "wiki/entities/mum.md",
+      "wiki/entities/muvera.md",
+      "wiki/entities/neural-matching.md",
+      "wiki/entities/rankbrain.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/bert.md",
+    "outlinks": [
+      "passage-ranking",
+      "mum",
+      "titans",
+      "grounding-score",
+      "rankbrain",
+      "ingenierie-semantique-inversee"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-google",
+      "nlp",
+      "ranking",
+      "comprehension-requetes"
+    ],
+    "title": "BERT (Google)",
+    "type": "entity"
+  },
+  "bm25": {
+    "aliases": [
+      "bm25",
+      "okapi-bm25",
+      "best-matching-25"
+    ],
+    "backrefs": [
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/dpr.md",
+      "wiki/entities/isi.md",
+      "wiki/index.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/bm25.md",
+    "outlinks": [
+      "grounding-score",
+      "rrf",
+      "rankbrain",
+      "bert",
+      "neural-matching",
+      "passage-ranking"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-recherche",
+      "ranking",
+      "pertinence-lexicale"
+    ],
+    "title": "BM25",
+    "type": "entity"
+  },
+  "bootcamp-seo-ia": {
+    "aliases": [
+      "bootcamp-seo-ia",
+      "bootcamp-tim",
+      "bootcamp-4"
+    ],
+    "backrefs": [
+      "wiki/concepts/avatar-freelance-sans-systeme.md",
+      "wiki/concepts/cercle-vicieux-temps-structure.md",
+      "wiki/concepts/peur-train-ia.md",
+      "wiki/concepts/tabou-visibilite.md",
+      "wiki/entities/arnaud.md",
+      "wiki/entities/caroline.md",
+      "wiki/entities/christophe.md",
+      "wiki/entities/dev-web-anon.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/entities/franck.md",
+      "wiki/entities/fusionn-io.md",
+      "wiki/entities/jamel.md",
+      "wiki/entities/julien.md",
+      "wiki/entities/juliette.md",
+      "wiki/entities/jumpto.md",
+      "wiki/entities/marrusia-cecile.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-01-arnaud.md",
+      "wiki/sources/2026-04-13-call-02-marrusia-cecile.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-13-call-04-jamel.md",
+      "wiki/sources/2026-04-13-call-05-dev-web.md",
+      "wiki/sources/2026-04-13-call-06-juliette.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md",
+      "wiki/sources/2026-04-13-call-08-franck.md",
+      "wiki/sources/2026-04-13-call-09-julien.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
+      "wiki/sources/2026-04-15-call-10-franck-suite.md",
+      "wiki/sources/2026-04-15-call-13-caroline.md",
+      "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
+      "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/bootcamp-seo-ia.md",
+    "outlinks": [
+      "fusionn-io",
+      "avatar-freelance-sans-systeme",
+      "2026-04-13-cas-clients-resultats",
+      "2026-04-13-offre-bootcamp-seo-ia",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "2026-04-13-call-02-marrusia-cecile",
+      "2026-04-13-call-03-cecile-suite",
+      "2026-04-15-call-10-franck-suite",
+      "2026-04-30-drive-accompagnement-templates",
+      "fg-formation",
+      "victoria-garden",
+      "workflow-redaction-8-etapes",
+      "data-proprietaire",
+      "tabou-visibilite"
+    ],
+    "status": "stable",
+    "tags": [
+      "bootcamp",
+      "offre",
+      "produit",
+      "freelance",
+      "claude-cowork"
+    ],
+    "title": "Bootcamp SEO IA (produit Tim)",
+    "type": "entity"
+  },
+  "caroline": {
+    "aliases": [
+      "caroline-prospect",
+      "prospect-13"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-15-call-13-caroline.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/caroline.md",
+    "outlinks": [
+      "avatar-freelance-sans-systeme",
+      "2026-04-15-call-13-caroline",
+      "bootcamp-seo-ia"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "agence",
+      "employee-agence",
+      "seo",
+      "claude-projects",
+      "niveau-avance"
+    ],
+    "title": "Caroline (prospect bootcamp — employée agence web marketing)",
+    "type": "entity"
+  },
+  "cercle-vicieux-temps-structure": {
+    "aliases": [
+      "cercle-vicieux-temps-structure",
+      "boucle-bricolage",
+      "pas-le-temps-de-structurer"
+    ],
+    "backrefs": [
+      "wiki/concepts/avatar-freelance-sans-systeme.md",
+      "wiki/concepts/peur-train-ia.md",
+      "wiki/entities/juliette.md",
+      "wiki/entities/marrusia-cecile.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-01-arnaud.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-13-call-06-juliette.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/cercle-vicieux-temps-structure.md",
+    "outlinks": [
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "avatar-freelance-sans-systeme",
+      "bootcamp-seo-ia",
+      "workflow-redaction-8-etapes"
+    ],
+    "status": "stable",
+    "tags": [
+      "avatar",
+      "peurs",
+      "douleurs",
+      "freelance",
+      "bootcamp",
+      "doctrine-tim"
+    ],
+    "title": "Cercle vicieux temps/structure",
+    "type": "concept"
+  },
+  "chatgpt-search": {
+    "aliases": [
+      "chatgpt-search",
+      "chatgpt-web",
+      "openai-search"
+    ],
+    "backrefs": [
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/entities/google-ai-mode.md",
+      "wiki/entities/perplexity.md",
+      "wiki/entities/seer-interactive.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/syntheses/4-piliers-organikk.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/chatgpt-search.md",
+    "outlinks": [
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-15-scan-arxiv-15-avril",
+      "2026-04-13-semrush-llm-conversion-study",
+      "aeo",
+      "data-proprietaire",
+      "perplexity",
+      "google-ai-mode",
+      "linkedin"
+    ],
+    "status": "stable",
+    "tags": [
+      "moteur-ia",
+      "openai",
+      "citation-ia",
+      "geo",
+      "aeo"
+    ],
+    "title": "ChatGPT Search",
+    "type": "entity"
+  },
+  "christophe": {
+    "aliases": [
+      "christophe-prospect",
+      "prospect-07"
+    ],
+    "backrefs": [
+      "wiki/entities/audopass.md",
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/christophe.md",
+    "outlinks": [
+      "audopass",
+      "avatar-freelance-sans-systeme",
+      "fusionn-io",
+      "2026-04-13-semrush-llm-conversion-study",
+      "peur-train-ia",
+      "2026-04-13-call-07-christophe",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "bootcamp-seo-ia",
+      "aeo"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "entrepreneur-web",
+      "automobile",
+      "senior",
+      "30-ans-internet",
+      "chatgpt-conversion"
+    ],
+    "title": "Christophe (prospect bootcamp",
+    "type": "entity"
+  },
+  "cli-tools-optional": {
+    "aliases": [
+      "cli-tools",
+      "qmd-wiki"
+    ],
+    "backrefs": [
+      "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/concepts/80-pourcent-pattern-strategie.md",
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas.md",
+      "wiki/entities/fusionn-io.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/cli-tools-optional.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "persistent-wiki-vs-rag",
+      "obsidian"
+    ],
+    "status": "stable",
+    "tags": [
+      "pattern-kb",
+      "outil",
+      "cli",
+      "meta",
+      "optionnel"
+    ],
+    "title": "CLI tools (optionnels, émergents)",
+    "type": "concept"
+  },
+  "confidence-score": {
+    "aliases": [
+      "confidence-score",
+      "score-confiance-aio"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/confidence-score.md",
+    "outlinks": [
+      "sge",
+      "grounding-score",
+      "e-e-a-t",
+      "data-proprietaire",
+      "information-gain"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "ai-overviews",
+      "ranking",
+      "verification"
+    ],
+    "title": "Confidence Score (AI Overviews)",
+    "type": "concept"
+  },
+  "data-proprietaire": {
+    "aliases": [
+      "data-proprietaire",
+      "proprietary-data",
+      "donnees-proprietaires"
+    ],
+    "backrefs": [
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/mots-cles-seo-2026.md",
+      "raw/articles/organikk-blog/process-seo-b2b-2026.md",
+      "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/articles/organikk-blog/semrush-contenu-ia.md",
+      "raw/articles/organikk-blog/strategie-seo-avocat-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
+      "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/journal/2026-05-12.md",
+      "raw/journal/2026-05-16.md",
+      "raw/journal/2026-05-19.md",
+      "raw/journal/2026-05-22.md",
+      "raw/journal/2026-05-23.md",
+      "raw/notes/skill-kw-research-workflow.md",
+      "raw/papers/google-quality-raters-guidelines-2026.md",
+      "raw/papers/semrush-llm-conversion-study.md",
+      "wiki/000-home.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/avatar-freelance-sans-systeme.md",
+      "wiki/concepts/confidence-score.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/maillage-systeme.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/product-led-seo.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/concepts/tabou-visibilite.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/contradictions.md",
+      "wiki/dashboard.md",
+      "wiki/entities/audopass.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/entities/chatgpt-search.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/entities/franck.md",
+      "wiki/entities/jamel.md",
+      "wiki/entities/linkedin.md",
+      "wiki/entities/marrusia-cecile.md",
+      "wiki/entities/naver.md",
+      "wiki/entities/perplexity.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/entities/semrush.md",
+      "wiki/entities/victoria-garden.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
+      "wiki/preuves/2026-05-16-pseo-secteur-ville-data-proprietaire.md",
+      "wiki/preuves/_template.md",
+      "wiki/preuves/index.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/revue-hebdo/2026-W20.md",
+      "wiki/revue-hebdo/resurgence-2026-05-16.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-03-04-algorithme-lancer-site-sans-cms.md",
+      "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
+      "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
+      "wiki/sources/2026-03-13-algorithme-agents-seo-consultants.md",
+      "wiki/sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-02-marrusia-cecile.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-13-call-04-jamel.md",
+      "wiki/sources/2026-04-13-call-05-dev-web.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
+      "wiki/sources/2026-04-13-google-quality-raters-guidelines-2026.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-13-searchllm-2026.md",
+      "wiki/sources/2026-04-13-semrush-llm-conversion-study.md",
+      "wiki/sources/2026-04-13-victoria-garden-pseo.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-15-call-10-franck-suite.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/sources/2026-04-25-tim-ton-de-voix-extraction-terrain.md",
+      "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
+      "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
+      "wiki/sources/2026-04-30-scheduled-skills-cron.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/data-proprietaire.md",
+    "outlinks": [
+      "hypotheses",
+      "2026-05-16-pseo-secteur-ville-data-proprietaire",
+      "2026-03-04-algorithme-lancer-site-sans-cms",
+      "surprise-metric",
+      "quality-raters-guidelines",
+      "2026-03-11-algorithme-data-claude-perplexity",
+      "2026-03-06-algorithme-etude-citation-ia",
+      "surprise-gap",
+      "2026-04-30-tim-posts-linkedin-batch",
+      "2026-04-30-fg-formation-pseo-cas-client",
+      "2026-04-25-pseo-data-driven-organikk-4-modeles",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "2026-04-15-opendecoder-seo-scoring-system",
+      "2026-04-15-scan-arxiv-15-avril",
+      "2026-04-25-scan-arxiv-25-avril",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-13-victoria-garden-pseo",
+      "2026-04-13-geo-aggarwal-2024",
+      "2026-04-13-core-ranking-jin-2025",
+      "2026-04-13-raid-gseo-2025",
+      "2026-04-13-sageo-arena-2025",
+      "2026-04-13-searchllm-2026",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "2026-04-13-semrush-llm-conversion-study",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "2026-04-13-cas-clients-resultats",
+      "2026-03-17-algorithme-pourquoi-article-ne-rank-pas",
+      "information-gain",
+      "e-e-a-t",
+      "tabou-visibilite",
+      "answer-first-pattern"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "seo-ia",
+      "geo",
+      "data",
+      "strategie"
+    ],
+    "title": "Data propriétaire (le moat SEO/GEO)",
+    "type": "concept"
+  },
+  "dev-web-anon": {
+    "aliases": [
+      "dev-web",
+      "prospect-05",
+      "le-freelance"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-05-dev-web.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/dev-web-anon.md",
+    "outlinks": [
+      "avatar-freelance-sans-systeme",
+      "2026-04-13-call-05-dev-web",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "bootcamp-seo-ia",
+      "tabou-visibilite"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "dev-web",
+      "transition-seo",
+      "freelance",
+      "honte-copier-coller"
+    ],
+    "title": "Dev web anonyme (prospect bootcamp",
+    "type": "entity"
+  },
+  "dpr": {
+    "aliases": [
+      "dpr",
+      "dense-passage-retrieval"
+    ],
+    "backrefs": [
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/muvera.md",
+      "wiki/index.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/dpr.md",
+    "outlinks": [
+      "passage-ranking",
+      "grounding-score",
+      "bm25",
+      "bert",
+      "ingenierie-semantique-inversee"
+    ],
+    "status": "stable",
+    "tags": [
+      "architecture-ia",
+      "recherche-semantique",
+      "embeddings",
+      "passage-ranking"
+    ],
+    "title": "DPR (Dense Passage Retrieval)",
+    "type": "entity"
+  },
+  "e-e-a-t": {
+    "aliases": [
+      "e-e-a-t",
+      "eeat",
+      "eat"
+    ],
+    "backrefs": [
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/strategie-seo-agence-immobiliere-lyon.md",
+      "raw/articles/organikk-blog/strategie-seo-avocat-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-paysagiste-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-serrurier-lyon.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "raw/papers/google-quality-raters-guidelines-2026.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/confidence-score.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/fully-meets.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/concepts/scam-objection-data-aleatoire.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/jamel.md",
+      "wiki/entities/linkedin.md",
+      "wiki/entities/naver.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/entities/quality-raters-guidelines.md",
+      "wiki/entities/sge.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-call-04-jamel.md",
+      "wiki/sources/2026-04-13-google-quality-raters-guidelines-2026.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/e-e-a-t.md",
+    "outlinks": [
+      "quality-raters-guidelines",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-03-06-algorithme-etude-citation-ia",
+      "workflow-redaction-8-etapes",
+      "surprise-gap",
+      "data-proprietaire",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "seo-multi-plateforme",
+      "fully-meets",
+      "anti-ai-writing"
+    ],
+    "status": "stable",
+    "tags": [
+      "google",
+      "quality-raters",
+      "ranking",
+      "seo"
+    ],
+    "title": "E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)",
+    "type": "concept"
+  },
+  "entites-vectorielles": {
+    "aliases": [
+      "entites-vectorielles",
+      "entites-semantiques",
+      "vecteurs-semantiques",
+      "cartographie-entites-vectorielles"
+    ],
+    "backrefs": [
+      "raw/etudes-seo/etude-geo-aggarwal-2024.md",
+      "raw/etudes-seo/etude-raid-gseo-2025.md",
+      "raw/etudes-seo/etude-sageo-arena-2025.md",
+      "raw/etudes-seo/etude-searchllm-2026.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-21-audit-vault.md",
+      "wiki/index.md",
+      "wiki/log.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/entites-vectorielles.md",
+    "outlinks": [
+      "grounding-score",
+      "triade-serp",
+      "confidence-score",
+      "product-led-seo",
+      "surprise-gap",
+      "muvera",
+      "dpr",
+      "passage-ranking",
+      "data-proprietaire",
+      "information-gain"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "geo",
+      "aeo",
+      "embedding",
+      "grounding-score",
+      "nlp-seo",
+      "redaction"
+    ],
+    "title": "Entités vectorielles — cartographier le vecteur sémantique d'une page",
+    "type": "concept"
+  },
+  "fg-formation": {
+    "aliases": [
+      "fg-formation",
+      "fgformation"
+    ],
+    "backrefs": [
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/fg-formation.md",
+    "outlinks": [
+      "data-proprietaire",
+      "test-substitution-llm",
+      "organikk-co",
+      "2026-04-30-fg-formation-pseo-cas-client",
+      "programmatique-pseo",
+      "product-led-seo",
+      "aeo",
+      "bootcamp-seo-ia",
+      "victoria-garden"
+    ],
+    "status": "stable",
+    "tags": [
+      "client",
+      "formation",
+      "qualiopi",
+      "opco",
+      "organisme-de-formation",
+      "b2b",
+      "pseo"
+    ],
+    "title": "FG Formation (client Tim — accompagnement OF Qualiopi)",
+    "type": "entity"
+  },
+  "franck": {
+    "aliases": [
+      "franck-prospect",
+      "prospect-08"
+    ],
+    "backrefs": [
+      "wiki/contradictions.md",
+      "wiki/entities/jumpto.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-08-franck.md",
+      "wiki/sources/2026-04-15-call-10-franck-suite.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/franck.md",
+    "outlinks": [
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "jumpto",
+      "2026-04-13-call-08-franck",
+      "2026-04-15-call-10-franck-suite",
+      "bootcamp-seo-ia",
+      "avatar-freelance-sans-systeme",
+      "peur-train-ia",
+      "programmatique-pseo",
+      "data-proprietaire",
+      "vendre-seo-ia-2026"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "senior",
+      "fondateur-seo-fr",
+      "ex-directeur-seo",
+      "vente-leads"
+    ],
+    "title": "Franck (prospect bootcamp",
+    "type": "entity"
+  },
+  "fully-meets": {
+    "aliases": [
+      "fully-meets",
+      "fm"
+    ],
+    "backrefs": [
+      "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/agent-seo-ia-simple.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/process-seo-b2b-2026.md",
+      "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/articles/organikk-blog/semrush-contenu-ia.md",
+      "raw/articles/organikk-blog/strategie-seo-agence-immobiliere-lyon.md",
+      "raw/articles/organikk-blog/strategie-seo-avocat-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-paysagiste-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-serrurier-lyon.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/etudes-seo/etude-core-ranking-2025.md",
+      "raw/etudes-seo/etude-geo-aggarwal-2024.md",
+      "raw/etudes-seo/etude-raid-gseo-2025.md",
+      "raw/etudes-seo/etude-sageo-arena-2025.md",
+      "raw/etudes-seo/etude-searchllm-2026.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "raw/papers/google-quality-raters-guidelines-2026.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/product-led-seo.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/entities/quality-raters-guidelines.md",
+      "wiki/entities/victoria-garden.md",
+      "wiki/index.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-04-13-google-quality-raters-guidelines-2026.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-victoria-garden-pseo.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/fully-meets.md",
+    "outlinks": [
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "2026-04-13-victoria-garden-pseo",
+      "quality-raters-guidelines",
+      "e-e-a-t",
+      "test-substitution-llm"
+    ],
+    "status": "stable",
+    "tags": [
+      "google",
+      "quality-raters",
+      "ranking",
+      "product-led"
+    ],
+    "title": "Fully Meets (Quality Raters)",
+    "type": "concept"
+  },
+  "fusionn-io": {
+    "aliases": [
+      "fusionn",
+      "fusionn-io",
+      "fusionn-ai"
+    ],
+    "backrefs": [
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/entities/christophe.md",
+      "wiki/entities/julien.md",
+      "wiki/entities/marrusia-cecile.md",
+      "wiki/entities/muvera.md",
+      "wiki/entities/neural-matching.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-prompt-systeme-fusionn.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md",
+      "wiki/sources/2026-04-13-call-09-julien.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/fusionn-io.md",
+    "outlinks": [
+      "surprise-gap",
+      "grounding-score",
+      "2026-03-31-tim-prompt-systeme-fusionn",
+      "ingenierie-semantique-inversee",
+      "2026-04-13-offre-bootcamp-seo-ia",
+      "2026-04-13-cas-clients-resultats",
+      "2026-04-13-call-03-cecile-suite",
+      "bootcamp-seo-ia",
+      "cli-tools-optional"
+    ],
+    "status": "stable",
+    "tags": [
+      "outil",
+      "seo",
+      "geo",
+      "saas",
+      "doctrine-tim"
+    ],
+    "title": "Fusionn.io",
+    "type": "entity"
+  },
+  "geo-bench": {
+    "aliases": [
+      "geo-bench",
+      "geo-benchmark-10k"
+    ],
+    "backrefs": [
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/entities/sageo-arena-benchmark.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/geo-bench.md",
+    "outlinks": [
+      "2026-04-13-geo-aggarwal-2024",
+      "metriques-visibilite-geo"
+    ],
+    "status": "stable",
+    "tags": [
+      "benchmark",
+      "geo",
+      "dataset",
+      "aggarwal",
+      "kdd-2024"
+    ],
+    "title": "GEO-Bench (benchmark Aggarwal 2024)",
+    "type": "entity"
+  },
+  "google-ai-mode": {
+    "aliases": [
+      "google-ai-mode",
+      "ai-mode"
+    ],
+    "backrefs": [
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/entities/chatgpt-search.md",
+      "wiki/entities/perplexity.md",
+      "wiki/entities/seer-interactive.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/google-ai-mode.md",
+    "outlinks": [
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-15-scan-arxiv-15-avril",
+      "seo-multi-plateforme",
+      "aeo",
+      "sge",
+      "youtube",
+      "chatgpt-search",
+      "perplexity"
+    ],
+    "status": "stable",
+    "tags": [
+      "moteur-ia",
+      "google",
+      "ai-overviews",
+      "geo",
+      "aeo",
+      "multimodal"
+    ],
+    "title": "Google AI Mode",
+    "type": "entity"
+  },
+  "google-deepmind": {
+    "aliases": [
+      "deepmind",
+      "google-deepmind"
+    ],
+    "backrefs": [
+      "wiki/concepts/surprise-metric.md",
+      "wiki/entities/miras.md",
+      "wiki/entities/titans.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/google-deepmind.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "titans",
+      "surprise-metric"
+    ],
+    "status": "draft",
+    "tags": [
+      "google",
+      "ia",
+      "recherche",
+      "organisation"
+    ],
+    "title": "Google DeepMind",
+    "type": "entity"
+  },
+  "grounding-score": {
+    "aliases": [
+      "grounding-score",
+      "score-ancrage"
+    ],
+    "backrefs": [
+      "AGENTS.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/agent-seo-ia-simple.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/etudes-seo/etude-core-ranking-2025.md",
+      "raw/etudes-seo/etude-geo-aggarwal-2024.md",
+      "raw/etudes-seo/etude-raid-gseo-2025.md",
+      "raw/etudes-seo/etude-sageo-arena-2025.md",
+      "raw/etudes-seo/etude-searchllm-2026.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "raw/papers/miras-architecture.md",
+      "raw/papers/titans-architecture-google-deepmind.md",
+      "wiki/000-home.md",
+      "wiki/briefs/check-indexation-claude.md",
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/confidence-score.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/passage-ranking.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/purete-vectorielle.md",
+      "wiki/concepts/scam-objection-data-aleatoire.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/concepts/structural-information-geo.md",
+      "wiki/concepts/surprise-gap.md",
+      "wiki/concepts/surprise-metric.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/dashboard.md",
+      "wiki/entities/bert.md",
+      "wiki/entities/bm25.md",
+      "wiki/entities/dpr.md",
+      "wiki/entities/fusionn-io.md",
+      "wiki/entities/gsc.md",
+      "wiki/entities/miras.md",
+      "wiki/entities/muvera.md",
+      "wiki/entities/neural-matching.md",
+      "wiki/entities/rankbrain.md",
+      "wiki/entities/titans.md",
+      "wiki/entities/youtube.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/revue-hebdo/resurgence-2026-05-16.md",
+      "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
+      "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
+      "wiki/sources/2026-03-13-algorithme-agents-seo-consultants.md",
+      "wiki/sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-prompt-systeme-fusionn.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-13-sageo-arena-2025.md",
+      "wiki/sources/2026-04-13-searchllm-2026.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/sources/2026-04-13-victoria-garden-pseo.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/grounding-score.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "surprise-metric",
+      "titans",
+      "2026-04-11-karpathy-llm-wiki",
+      "surprise-gap",
+      "2026-04-13-miras-architecture",
+      "passage-ranking",
+      "2026-04-13-titans-architecture-google-deepmind",
+      "2026-04-13-sageo-arena-2025",
+      "2026-04-13-searchllm-2026",
+      "ingenierie-semantique-inversee",
+      "structural-information-geo",
+      "answer-first-pattern",
+      "metriques-visibilite-geo",
+      "miras"
+    ],
+    "status": "stable",
+    "tags": [
+      "seo-ia",
+      "geo",
+      "aeo",
+      "vecteurs",
+      "ranking"
+    ],
+    "title": "Grounding Score",
+    "type": "concept"
+  },
+  "gsc": {
+    "aliases": [
+      "gsc",
+      "google-search-console",
+      "search-console"
+    ],
+    "backrefs": [
+      "AGENTS.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-21-audit-vault.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-03-13-algorithme-agents-seo-consultants.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/gsc.md",
+    "outlinks": [
+      "semrush",
+      "triade-serp",
+      "process-keyword-research-5-etapes",
+      "SETUP-GSC",
+      "grounding-score",
+      "mots-cles-actionnels"
+    ],
+    "status": "stable",
+    "tags": [
+      "outil-seo",
+      "google",
+      "data",
+      "gsc"
+    ],
+    "title": "Google Search Console (GSC)",
+    "type": "entity"
+  },
+  "information-gain": {
+    "aliases": [
+      "information-gain",
+      "gain-information"
+    ],
+    "backrefs": [
+      "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/organikk-blog/semrush-contenu-ia.md",
+      "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/papers/titans-architecture-google-deepmind.md",
+      "wiki/000-home.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/4w-deep-reflection.md",
+      "wiki/concepts/confidence-score.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/concepts/tabou-visibilite.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/dashboard.md",
+      "wiki/entities/mum.md",
+      "wiki/entities/quality-raters-guidelines.md",
+      "wiki/entities/sge.md",
+      "wiki/entities/youtube.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/revue-hebdo/2026-W21.md",
+      "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
+      "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
+      "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
+      "wiki/sources/2026-03-13-algorithme-agents-seo-consultants.md",
+      "wiki/sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-prompt-systeme-fusionn.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
+      "wiki/sources/2026-04-13-raid-gseo-2025.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/information-gain.md",
+    "outlinks": [
+      "surprise-gap",
+      "quality-raters-guidelines",
+      "2026-04-13-geo-aggarwal-2024",
+      "2026-03-06-algorithme-etude-citation-ia",
+      "anti-ai-writing",
+      "2026-03-11-algorithme-data-claude-perplexity",
+      "surprise-metric",
+      "data-proprietaire",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "2026-03-17-algorithme-pourquoi-article-ne-rank-pas",
+      "2026-03-13-algorithme-agents-seo-consultants",
+      "geo-bench",
+      "metriques-visibilite-geo",
+      "answer-first-pattern"
+    ],
+    "status": "stable",
+    "tags": [
+      "seo",
+      "geo",
+      "quality-raters",
+      "benchmark",
+      "ranking",
+      "aeo"
+    ],
+    "title": "Information Gain (standard Google + benchmark GEO)",
+    "type": "concept"
+  },
+  "ingenierie-semantique-inversee": {
+    "aliases": [
+      "ingenierie-semantique-inversee",
+      "reverse-semantic-engineering",
+      "framework-tim"
+    ],
+    "backrefs": [
+      "raw/papers/miras-architecture.md",
+      "wiki/concepts/4w-deep-reflection.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/structural-information-geo.md",
+      "wiki/concepts/surprise-gap.md",
+      "wiki/concepts/surprise-metric.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/entities/bert.md",
+      "wiki/entities/dpr.md",
+      "wiki/entities/fusionn-io.md",
+      "wiki/entities/miras.md",
+      "wiki/entities/muvera.md",
+      "wiki/entities/neural-matching.md",
+      "wiki/entities/rankbrain.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-03-31-tim-prompt-systeme-fusionn.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/ingenierie-semantique-inversee.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "titans",
+      "surprise-gap",
+      "workflow-redaction-8-etapes",
+      "2026-03-31-tim-workflow-redaction",
+      "fusionn-io",
+      "2026-03-31-tim-prompt-systeme-fusionn",
+      "surprise-metric",
+      "grounding-score",
+      "weight-decay"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "seo-ia",
+      "geo",
+      "framework",
+      "strategie"
+    ],
+    "title": "Ingénierie Sémantique Inversée (framework Tim)",
+    "type": "concept"
+  },
+  "ingest-workflow": {
+    "aliases": [
+      "ingest-pattern",
+      "ingest-kb"
+    ],
+    "backrefs": [
+      "MIGRATION.md",
+      "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "wiki/concepts/memory-llm-vs-wiki-persistant.md",
+      "wiki/concepts/obsidian-as-ide.md",
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/concepts/query-synthesis.md",
+      "wiki/entities/karpathy.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-methode-kb.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/ingest-workflow.md",
+    "outlinks": [
+      "persistent-wiki-vs-rag",
+      "2026-04-11-karpathy-llm-wiki",
+      "karpathy",
+      "query-synthesis"
+    ],
+    "status": "stable",
+    "tags": [
+      "pattern-kb",
+      "workflow",
+      "ingest",
+      "meta"
+    ],
+    "title": "Ingest workflow (pattern Karpathy)",
+    "type": "concept"
+  },
+  "isi": {
+    "aliases": [
+      "isi",
+      "index-serve-infrastructure"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/isi.md",
+    "outlinks": [
+      "triade-serp",
+      "bm25",
+      "rankbrain"
+    ],
+    "status": "stable",
+    "tags": [
+      "infrastructure-google",
+      "index",
+      "serving",
+      "ranking"
+    ],
+    "title": "ISI (Index Serve Infrastructure)",
+    "type": "entity"
+  },
+  "jamel": {
+    "aliases": [
+      "jamel-prospect",
+      "prospect-jamel"
+    ],
+    "backrefs": [
+      "wiki/entities/perplexity.md",
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-04-jamel.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/jamel.md",
+    "outlinks": [
+      "2026-04-13-call-04-jamel",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "bootcamp-seo-ia",
+      "avatar-freelance-sans-systeme",
+      "e-e-a-t",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "consultant-seo",
+      "ex-sea",
+      "journaliste",
+      "avance-ia",
+      "silos"
+    ],
+    "title": "Jamel (prospect bootcamp",
+    "type": "entity"
+  },
+  "julien": {
+    "aliases": [
+      "julien-prospect",
+      "prospect-09",
+      "webmaster-wordpress-paris"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-09-julien.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/julien.md",
+    "outlinks": [
+      "fusionn-io",
+      "2026-04-13-cas-clients-resultats",
+      "2026-04-13-call-09-julien",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "bootcamp-seo-ia",
+      "avatar-freelance-sans-systeme",
+      "peur-train-ia"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "wordpress",
+      "seo-technique",
+      "saas",
+      "freelance",
+      "fusionn-user"
+    ],
+    "title": "Julien (prospect bootcamp",
+    "type": "entity"
+  },
+  "juliette": {
+    "aliases": [
+      "juliette-prospect",
+      "prospect-06"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-06-juliette.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/juliette.md",
+    "outlinks": [
+      "2026-04-13-call-06-juliette",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "bootcamp-seo-ia",
+      "avatar-freelance-sans-systeme",
+      "cercle-vicieux-temps-structure",
+      "peur-train-ia"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "strat-digitale",
+      "webflow",
+      "sea",
+      "sea-to-seo",
+      "multi-services"
+    ],
+    "title": "Juliette (prospect bootcamp",
+    "type": "entity"
+  },
+  "jumpto": {
+    "aliases": [
+      "jumpto",
+      "agence-jumpto"
+    ],
+    "backrefs": [
+      "wiki/contradictions.md",
+      "wiki/entities/franck.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-13-call-08-franck.md",
+      "wiki/sources/2026-04-15-call-10-franck-suite.md"
+    ],
+    "confidence": "low",
+    "file": "wiki/entities/jumpto.md",
+    "outlinks": [
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "2026-04-15-call-10-franck-suite",
+      "franck",
+      "2026-04-13-call-08-franck",
+      "bootcamp-seo-ia"
+    ],
+    "status": "draft",
+    "tags": [
+      "agence",
+      "marketing-digital",
+      "paid",
+      "bu-seo",
+      "prospect-b2b",
+      "a-verifier"
+    ],
+    "title": "Jumpto (agence marketing digital)",
+    "type": "entity"
+  },
+  "karpathy": {
+    "aliases": [
+      "karpathy",
+      "andrej-karpathy"
+    ],
+    "backrefs": [
+      "wiki/concepts/ingest-workflow.md",
+      "wiki/concepts/obsidian-as-ide.md",
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/entities/notebooklm.md",
+      "wiki/entities/obsidian.md",
+      "wiki/entities/vannevar-bush.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/karpathy.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "persistent-wiki-vs-rag",
+      "obsidian",
+      "obsidian-as-ide",
+      "ingest-workflow"
+    ],
+    "status": "draft",
+    "tags": [
+      "personne",
+      "ia",
+      "llm",
+      "acteur"
+    ],
+    "title": "Andrej Karpathy",
+    "type": "entity"
+  },
+  "know-simple-know-do": {
+    "aliases": [
+      "know-simple-know-do",
+      "framework-know-do",
+      "ksk-do"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/briefs/maillage-interne-claude.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/know-simple-know-do.md",
+    "outlinks": [
+      "agentic-search",
+      "fully-meets",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "maillage-systeme",
+      "mots-cles-actionnels",
+      "product-led-seo",
+      "test-substitution-llm",
+      "2026-04-15-opendecoder-seo-scoring-system",
+      "2026-04-24-reflexion-organikk-4-piliers",
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "aeo"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "framework",
+      "intentions",
+      "aeo",
+      "agentic-search",
+      "alternative-tofu-mofu-bofu"
+    ],
+    "title": "Framework Know-Simple / Know / Do (remplace TOFU/MOFU/BOFU)",
+    "type": "concept"
+  },
+  "linkedin": {
+    "aliases": [
+      "linkedin",
+      "linkedin-platform"
+    ],
+    "backrefs": [
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/entities/chatgpt-search.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/linkedin.md",
+    "outlinks": [
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "e-e-a-t",
+      "2026-04-15-scan-arxiv-15-avril",
+      "seo-multi-plateforme",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "aeo",
+      "data-proprietaire",
+      "youtube"
+    ],
+    "status": "stable",
+    "tags": [
+      "plateforme",
+      "b2b",
+      "citation-ia",
+      "multi-plateforme",
+      "signal-humain"
+    ],
+    "title": "LinkedIn",
+    "type": "entity"
+  },
+  "maillage-systeme": {
+    "aliases": [
+      "maillage-systeme",
+      "maillage-3-axes",
+      "maillage-architecture"
+    ],
+    "backrefs": [
+      "wiki/audit/2026-05-21-audit-vault.md",
+      "wiki/briefs/maillage-interne-claude.md",
+      "wiki/concepts/5-types-ancres.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/maillage-systeme.md",
+    "outlinks": [
+      "2026-04-30-newsletter-maillage-interne",
+      "aeo",
+      "5-types-ancres",
+      "data-proprietaire",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "programmatique-pseo",
+      "organikk-co"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "maillage-interne",
+      "hub-satellite",
+      "ancres",
+      "cocon",
+      "skill"
+    ],
+    "title": "Maillage-système (architecture éditoriale 3 axes)",
+    "type": "concept"
+  },
+  "marrusia-cecile": {
+    "aliases": [
+      "cecile-prospect",
+      "marrusia",
+      "cecile"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-call-02-marrusia-cecile.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/marrusia-cecile.md",
+    "outlinks": [
+      "fusionn-io",
+      "2026-04-13-call-02-marrusia-cecile",
+      "2026-04-13-call-03-cecile-suite",
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "tabou-visibilite",
+      "avatar-freelance-sans-systeme",
+      "bootcamp-seo-ia",
+      "cercle-vicieux-temps-structure",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "bootcamp",
+      "freelance",
+      "contenu-web",
+      "debutante-seo",
+      "fusionn-user"
+    ],
+    "title": "Marrusia / Cécile (prospect bootcamp",
+    "type": "entity"
+  },
+  "memory-llm-vs-wiki-persistant": {
+    "aliases": [
+      "memory-vs-wiki",
+      "chatgpt-memory-vs-obsidian",
+      "claude-memory-vs-wiki"
+    ],
+    "backrefs": [
+      "MIGRATION.md",
+      "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-methode-kb.md",
+      "wiki/queries/transfert-vault-client.md",
+      "wiki/sources/2026-04-15-call-13-caroline.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/memory-llm-vs-wiki-persistant.md",
+    "outlinks": [
+      "...",
+      "2026-04-11-karpathy-llm-wiki",
+      "2026-04-13-titans-architecture-google-deepmind",
+      "persistent-wiki-vs-rag",
+      "obsidian-as-ide",
+      "ingest-workflow",
+      "2026-04-13-claude-code-obsidian-sans-complexite"
+    ],
+    "status": "stable",
+    "tags": [
+      "memory",
+      "wiki-persistant",
+      "claude-code",
+      "chatgpt",
+      "ownership",
+      "exportabilite"
+    ],
+    "title": "Memory LLM vs Wiki persistant",
+    "type": "concept"
+  },
+  "metehan": {
+    "aliases": [
+      "metehan",
+      "metehan-yildirim"
+    ],
+    "backrefs": [
+      "wiki/concepts/rrf.md",
+      "wiki/concepts/weight-decay.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md"
+    ],
+    "confidence": "low",
+    "file": "wiki/entities/metehan.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "titans",
+      "weight-decay"
+    ],
+    "status": "draft",
+    "tags": [
+      "personne",
+      "seo",
+      "freshness-scoring",
+      "acteur"
+    ],
+    "title": "Metehan Yildirim",
+    "type": "entity"
+  },
+  "methode-organikk-4-piliers": {
+    "aliases": [
+      "methode-organikk-4-piliers",
+      "framework-organikk",
+      "4-piliers-organikk"
+    ],
+    "backrefs": [
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/journal/2026-05-05.md",
+      "raw/journal/2026-05-06.md",
+      "raw/journal/2026-05-07.md",
+      "raw/journal/2026-05-12.md",
+      "raw/journal/2026-05-13.md",
+      "raw/journal/2026-05-14.md",
+      "raw/journal/2026-05-15.md",
+      "raw/journal/2026-05-19.md",
+      "raw/notes/skill-kw-research-workflow.md",
+      "wiki/briefs/maillage-interne-claude.md",
+      "wiki/concepts/80-pourcent-pattern-strategie.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/methode-organikk-4-piliers.md",
+    "outlinks": [
+      "surprise-gap",
+      "grounding-score",
+      "programmatique-pseo",
+      "aeo",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "2026-04-25-pseo-data-driven-organikk-4-modeles",
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "process-keyword-research-5-etapes",
+      "doctrine-seo-post-sge",
+      "2026-04-24-reflexion-organikk-4-piliers",
+      "data-proprietaire",
+      "agentic-search",
+      "organikk-co"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "organikk",
+      "framework",
+      "surprise-gap",
+      "grounding-score",
+      "pseo",
+      "aeo",
+      "umbrella"
+    ],
+    "title": "Méthode Organikk — 4 piliers (Surprise / Grounding / pSEO / AEO)",
+    "type": "concept"
+  },
+  "metriques-visibilite-geo": {
+    "aliases": [
+      "metriques-visibilite-geo",
+      "imp-wc",
+      "imp-pos",
+      "pawc",
+      "subjective-impression"
+    ],
+    "backrefs": [
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/structural-information-geo.md",
+      "wiki/entities/geo-bench.md",
+      "wiki/entities/sageo-arena-benchmark.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/preuves/index.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
+      "wiki/sources/2026-04-13-sageo-arena-2025.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/metriques-visibilite-geo.md",
+    "outlinks": [
+      "2026-04-13-geo-aggarwal-2024",
+      "2026-04-13-sageo-arena-2025",
+      "2026-04-13-prompt-pseo-produit-service",
+      "2026-04-13-searchllm-2026",
+      "answer-first-pattern",
+      "structural-information-geo",
+      "geo-bench",
+      "sageo-arena-benchmark",
+      "information-gain",
+      "grounding-score",
+      "passage-ranking",
+      "fully-meets"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "metriques",
+      "benchmark",
+      "aggarwal",
+      "visibilite",
+      "citation-ia"
+    ],
+    "title": "Métriques de visibilité GEO (Imp_wc, Imp_pos, Subjective Impression)",
+    "type": "concept"
+  },
+  "miras": {
+    "aliases": [
+      "miras-architecture",
+      "multi-resolution-adaptive-summarization"
+    ],
+    "backrefs": [
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/passage-ranking.md",
+      "wiki/contradictions.md",
+      "wiki/entities/titans.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/miras.md",
+    "outlinks": [
+      "titans",
+      "2026-04-13-miras-architecture",
+      "passage-ranking",
+      "grounding-score",
+      "ingenierie-semantique-inversee",
+      "surprise-gap",
+      "google-deepmind"
+    ],
+    "status": "stable",
+    "tags": [
+      "architecture-ia",
+      "google",
+      "passage-ranking",
+      "grounding-score",
+      "multi-resolution"
+    ],
+    "title": "MIRAS (architecture)",
+    "type": "entity"
+  },
+  "modele-page-variable-prix": {
+    "aliases": [
+      "modele-page-variable-prix",
+      "page-variable-prix"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/index.md",
+      "wiki/moc/moc-maillage.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/modele-page-variable-prix.md",
+    "outlinks": [
+      "programmatique-pseo",
+      "pseo-data-driven-models",
+      "mots-cles-actionnels",
+      "session-1-mots-cles-nouveautes",
+      "session-1-mots-cles-transcript"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "pseo",
+      "modeles-de-page",
+      "longue-traine",
+      "bootcamp4"
+    ],
+    "title": "Modèle de page à variable prix",
+    "type": "concept"
+  },
+  "mots-cles-actionnels": {
+    "aliases": [
+      "mots-cles-actionnels",
+      "mots-cles-decisionnels",
+      "requetes-actionnelles",
+      "actionnels"
+    ],
+    "backrefs": [
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/journal/2026-05-05.md",
+      "raw/journal/2026-05-06.md",
+      "raw/journal/2026-05-12.md",
+      "raw/journal/2026-05-13.md",
+      "raw/journal/2026-05-14.md",
+      "raw/journal/2026-05-16.md",
+      "raw/journal/2026-05-19.md",
+      "raw/notes/skill-kw-research-workflow.md",
+      "wiki/concepts/80-pourcent-pattern-strategie.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/modele-page-variable-prix.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/scam-objection-data-aleatoire.md",
+      "wiki/entities/gsc.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/log.md",
+      "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
+      "wiki/revue-hebdo/2026-W20.md",
+      "wiki/revue-hebdo/2026-W21.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/mots-cles-actionnels.md",
+    "outlinks": [
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "test-substitution-llm",
+      "programmatique-pseo",
+      "product-led-seo",
+      "fully-meets",
+      "tabou-visibilite",
+      "aeo",
+      "data-proprietaire",
+      "process-keyword-research-5-etapes",
+      "skill-kw-research-workflow",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-04-30-tim-posts-linkedin-batch",
+      "2026-04-30-fg-formation-pseo-cas-client"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "mots-cles",
+      "b2b",
+      "conversion",
+      "anti-trafic",
+      "do-intent",
+      "terme-signature"
+    ],
+    "title": "Mots-clés actionnels (décisionnels + transactionnels)",
+    "type": "concept"
+  },
+  "mum": {
+    "aliases": [
+      "mum",
+      "multitask-unified-model"
+    ],
+    "backrefs": [
+      "wiki/entities/bert.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/mum.md",
+    "outlinks": [
+      "bert",
+      "sge",
+      "rrf",
+      "information-gain",
+      "titans",
+      "aeo"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-google",
+      "ia-generative",
+      "multimodal",
+      "multilingual"
+    ],
+    "title": "MUM (Google)",
+    "type": "entity"
+  },
+  "muvera": {
+    "aliases": [
+      "muvera",
+      "multi-vector-retrieval"
+    ],
+    "backrefs": [
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/muvera.md",
+    "outlinks": [
+      "dpr",
+      "passage-ranking",
+      "grounding-score",
+      "skill-entites-vectorielles",
+      "bert",
+      "ingenierie-semantique-inversee",
+      "fusionn-io"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-google",
+      "recherche-semantique",
+      "ranking",
+      "multi-vecteur"
+    ],
+    "title": "Muvera",
+    "type": "entity"
+  },
+  "naver": {
+    "aliases": [
+      "naver",
+      "naver-corp"
+    ],
+    "backrefs": [
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/naver.md",
+    "outlinks": [
+      "data-proprietaire",
+      "2026-04-15-scan-arxiv-15-avril",
+      "2026-04-25-scan-arxiv-25-avril",
+      "e-e-a-t",
+      "anti-ai-writing",
+      "agentic-search"
+    ],
+    "status": "stable",
+    "tags": [
+      "acteur",
+      "recherche",
+      "papers",
+      "retrieval-collapse",
+      "coree"
+    ],
+    "title": "NAVER Corp",
+    "type": "entity"
+  },
+  "neural-matching": {
+    "aliases": [
+      "neural-matching",
+      "super-synonym"
+    ],
+    "backrefs": [
+      "wiki/entities/bm25.md",
+      "wiki/entities/rankbrain.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/neural-matching.md",
+    "outlinks": [
+      "passage-ranking",
+      "rankbrain",
+      "bert",
+      "ingenierie-semantique-inversee",
+      "fusionn-io",
+      "grounding-score",
+      "skill-entites-vectorielles"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-google",
+      "nlp",
+      "ranking",
+      "comprehension-semantique"
+    ],
+    "title": "Neural Matching (Google)",
+    "type": "entity"
+  },
+  "notebooklm": {
+    "aliases": [
+      "notebook-lm",
+      "google-notebook-lm"
+    ],
+    "backrefs": [
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-03-04-algorithme-lancer-site-sans-cms.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "low",
+    "file": "wiki/entities/notebooklm.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "karpathy",
+      "persistent-wiki-vs-rag"
+    ],
+    "status": "draft",
+    "tags": [
+      "produit-ia",
+      "rag",
+      "google",
+      "ia"
+    ],
+    "title": "NotebookLM",
+    "type": "entity"
+  },
+  "obsidian": {
+    "aliases": [
+      "obsidian-md"
+    ],
+    "backrefs": [
+      "wiki/concepts/cli-tools-optional.md",
+      "wiki/concepts/obsidian-as-ide.md",
+      "wiki/concepts/query-synthesis.md",
+      "wiki/entities/karpathy.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/queries/transfert-vault-client.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/obsidian.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "obsidian-as-ide",
+      "karpathy",
+      "page",
+      "persistent-wiki-vs-rag"
+    ],
+    "status": "stable",
+    "tags": [
+      "outil",
+      "markdown",
+      "ide",
+      "wiki"
+    ],
+    "title": "Obsidian",
+    "type": "entity"
+  },
+  "obsidian-as-ide": {
+    "aliases": [
+      "obsidian-ide",
+      "llm-programmer-analogy"
+    ],
+    "backrefs": [
+      "MIGRATION.md",
+      "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "wiki/concepts/memory-llm-vs-wiki-persistant.md",
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/entities/karpathy.md",
+      "wiki/entities/obsidian.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-methode-kb.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/obsidian-as-ide.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "obsidian",
+      "karpathy",
+      "persistent-wiki-vs-rag",
+      "ingest-workflow"
+    ],
+    "status": "stable",
+    "tags": [
+      "pattern-kb",
+      "analogie",
+      "obsidian",
+      "ide",
+      "meta"
+    ],
+    "title": "Obsidian as IDE, LLM as programmer",
+    "type": "concept"
+  },
+  "organikk-co": {
+    "aliases": [
+      "organikk",
+      "organikk-co",
+      "site-tim"
+    ],
+    "backrefs": [
+      "raw/journal/2026-05-14.md",
+      "wiki/concepts/maillage-systeme.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
+      "wiki/sources/2026-04-30-scheduled-skills-cron.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/organikk-co.md",
+    "outlinks": [
+      "bootcamp-seo-ia",
+      "fusionn-io",
+      "2026-04-12-organikk-blog-scrape",
+      "2026-04-12-organikk-glossaire-scrape",
+      "tabou-visibilite",
+      "seo-multi-plateforme",
+      "e-e-a-t",
+      "2026-04-30-newsletter-maillage-interne",
+      "2026-04-24-reflexion-organikk-4-piliers",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "2026-04-25-pseo-data-driven-organikk-4-modeles",
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "2026-04-25-tim-ton-de-voix-extraction-terrain",
+      "qadence-seo-agent",
+      "maillage-systeme",
+      "methode-organikk-4-piliers",
+      "pseo-data-driven-models",
+      "mots-cles-actionnels",
+      "know-simple-know-do"
+    ],
+    "status": "stable",
+    "tags": [
+      "site",
+      "organikk",
+      "tim",
+      "blog",
+      "bootcamp",
+      "outils",
+      "brand"
+    ],
+    "title": "Organikk.co (site Tim)",
+    "type": "entity"
+  },
+  "passage-ranking": {
+    "aliases": [
+      "passage-ranking",
+      "passage-indexing"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/strategie-seo-agence-immobiliere-lyon.md",
+      "raw/articles/organikk-blog/strategie-seo-avocat-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-paysagiste-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-serrurier-lyon.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "raw/papers/miras-architecture.md",
+      "wiki/briefs/check-indexation-claude.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/arbitrage-plateforme-publication.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/purete-vectorielle.md",
+      "wiki/concepts/structural-information-geo.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/bert.md",
+      "wiki/entities/bm25.md",
+      "wiki/entities/dpr.md",
+      "wiki/entities/miras.md",
+      "wiki/entities/muvera.md",
+      "wiki/entities/neural-matching.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-13-sageo-arena-2025.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/passage-ranking.md",
+    "outlinks": [
+      "workflow-redaction-8-etapes",
+      "2026-03-31-tim-workflow-redaction",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "grounding-score",
+      "2026-04-13-miras-architecture",
+      "miras",
+      "2026-04-13-sageo-arena-2025",
+      "2026-04-13-searchllm-2026",
+      "answer-first-pattern",
+      "structural-information-geo"
+    ],
+    "status": "stable",
+    "tags": [
+      "google",
+      "ranking",
+      "nlp",
+      "seo-technique"
+    ],
+    "title": "Passage Ranking",
+    "type": "concept"
+  },
+  "perplexity": {
+    "aliases": [
+      "perplexity",
+      "perplexity-ai"
+    ],
+    "backrefs": [
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/entities/chatgpt-search.md",
+      "wiki/entities/google-ai-mode.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/syntheses/4-piliers-organikk.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/perplexity.md",
+    "outlinks": [
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "jamel",
+      "2026-04-13-call-04-jamel",
+      "2026-04-15-scan-arxiv-15-avril",
+      "aeo",
+      "data-proprietaire",
+      "chatgpt-search",
+      "google-ai-mode"
+    ],
+    "status": "stable",
+    "tags": [
+      "moteur-ia",
+      "citation-ia",
+      "geo",
+      "aeo",
+      "reddit"
+    ],
+    "title": "Perplexity",
+    "type": "entity"
+  },
+  "persistent-wiki-vs-rag": {
+    "aliases": [
+      "persistent-wiki",
+      "rag-vs-wiki",
+      "wiki-vs-rag"
+    ],
+    "backrefs": [
+      "MIGRATION.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "wiki/concepts/cli-tools-optional.md",
+      "wiki/concepts/ingest-workflow.md",
+      "wiki/concepts/memory-llm-vs-wiki-persistant.md",
+      "wiki/concepts/obsidian-as-ide.md",
+      "wiki/concepts/query-synthesis.md",
+      "wiki/concepts/weight-decay.md",
+      "wiki/decisions/0001-fermeture-boucles-second-cerveau.md",
+      "wiki/entities/karpathy.md",
+      "wiki/entities/notebooklm.md",
+      "wiki/entities/obsidian.md",
+      "wiki/entities/qadence-seo-agent.md",
+      "wiki/entities/vannevar-bush.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-methode-kb.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/queries/transfert-vault-client.md",
+      "wiki/revue-hebdo/resurgence-2026-05-16.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-03-13-algorithme-agents-seo-consultants.md",
+      "wiki/sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
+      "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/persistent-wiki-vs-rag.md",
+    "outlinks": [
+      "karpathy",
+      "2026-04-11-karpathy-llm-wiki",
+      "notebooklm",
+      "cli-tools-optional",
+      "ingest-workflow",
+      "query-synthesis",
+      "obsidian-as-ide",
+      "vannevar-bush"
+    ],
+    "status": "stable",
+    "tags": [
+      "pattern-kb",
+      "wiki",
+      "rag",
+      "meta",
+      "fondation"
+    ],
+    "title": "Wiki persistant vs RAG",
+    "type": "concept"
+  },
+  "peur-train-ia": {
+    "aliases": [
+      "peur-train-ia",
+      "fomo-ia",
+      "peur-obsolescence"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/concepts/avatar-freelance-sans-systeme.md",
+      "wiki/entities/christophe.md",
+      "wiki/entities/franck.md",
+      "wiki/entities/julien.md",
+      "wiki/entities/juliette.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-01-arnaud.md",
+      "wiki/sources/2026-04-13-call-06-juliette.md",
+      "wiki/sources/2026-04-13-call-07-christophe.md",
+      "wiki/sources/2026-04-13-call-08-franck.md",
+      "wiki/sources/2026-04-13-call-09-julien.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/peur-train-ia.md",
+    "outlinks": [
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "avatar-freelance-sans-systeme",
+      "cercle-vicieux-temps-structure",
+      "bootcamp-seo-ia"
+    ],
+    "status": "stable",
+    "tags": [
+      "avatar",
+      "peurs",
+      "douleurs",
+      "freelance",
+      "bootcamp",
+      "doctrine-tim"
+    ],
+    "title": "Peur du train IA",
+    "type": "concept"
+  },
+  "product-bench": {
+    "aliases": [
+      "product-bench",
+      "core-benchmark"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-13-core-ranking-jin-2025.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/product-bench.md",
+    "outlinks": [
+      "2026-04-13-core-ranking-jin-2025"
+    ],
+    "status": "stable",
+    "tags": [
+      "benchmark",
+      "core",
+      "ranking",
+      "e-commerce",
+      "amazon"
+    ],
+    "title": "ProductBench (benchmark CORE / Jin et al. 2025)",
+    "type": "entity"
+  },
+  "product-led-seo": {
+    "aliases": [
+      "product-led-seo",
+      "pls",
+      "product-led"
+    ],
+    "backrefs": [
+      "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/organikk-blog/process-seo-b2b-2026.md",
+      "raw/articles/organikk-blog/strategie-seo-agence-immobiliere-lyon.md",
+      "raw/articles/organikk-blog/strategie-seo-avocat-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-paysagiste-paris.md",
+      "raw/articles/organikk-blog/strategie-seo-serrurier-lyon.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/product-led-seo.md",
+    "outlinks": [
+      "fully-meets",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "test-substitution-llm",
+      "2026-04-13-prompt-pseo-non-produit",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-04-13-prompt-pseo-produit-service",
+      "2026-04-13-victoria-garden-pseo",
+      "programmatique-pseo",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "pseo",
+      "product-led",
+      "fully-meets",
+      "calculateur",
+      "simulateur",
+      "doctrine-tim"
+    ],
+    "title": "Product-Led SEO",
+    "type": "concept"
+  },
+  "programmatique-pseo": {
+    "aliases": [
+      "programmatique-pseo",
+      "pseo",
+      "programmatic-seo"
+    ],
+    "backrefs": [
+      "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "raw/articles/organikk-blog/process-seo-b2b-2026.md",
+      "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/journal/2026-05-05.md",
+      "raw/journal/2026-05-06.md",
+      "raw/journal/2026-05-07.md",
+      "raw/journal/2026-05-14.md",
+      "raw/journal/2026-05-15.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/maillage-systeme.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/concepts/modele-page-variable-prix.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/product-led-seo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/entities/franck.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md",
+      "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-15-call-10-franck-suite.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/programmatique-pseo.md",
+    "outlinks": [
+      "2026-04-12-tim-skills-seo-proprietary",
+      "2026-04-13-prompt-pseo-produit-service",
+      "2026-04-13-prompt-pseo-non-produit",
+      "2026-04-13-victoria-garden-pseo",
+      "2026-04-30-fg-formation-pseo-cas-client",
+      "2026-04-25-pseo-data-driven-organikk-4-modeles",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "2026-04-17-organikk-process-seo-b2b-2026",
+      "2026-04-30-newsletter-maillage-interne",
+      "surprise-metric",
+      "grounding-score",
+      "passage-ranking",
+      "process-keyword-research-5-etapes",
+      "product-led-seo",
+      "test-substitution-llm",
+      "data-proprietaire",
+      "surprise-gap",
+      "fully-meets",
+      "pseo-data-driven-models",
+      "methode-organikk-4-piliers",
+      "mots-cles-actionnels",
+      "know-simple-know-do",
+      "fg-formation"
+    ],
+    "status": "stable",
+    "tags": [
+      "pseo",
+      "scalable",
+      "template",
+      "longue-traine",
+      "doctrine-tim"
+    ],
+    "title": "Programmatique SEO (pSEO)",
+    "type": "concept"
+  },
+  "pseo-data-driven-models": {
+    "aliases": [
+      "pseo-data-driven-models",
+      "4-modeles-pseo",
+      "modeles-pseo-organikk"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/concepts/modele-page-variable-prix.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/pseo-data-driven-models.md",
+    "outlinks": [
+      "programmatique-pseo",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "2026-04-25-pseo-data-driven-organikk-4-modeles",
+      "data-proprietaire",
+      "grounding-score",
+      "surprise-gap",
+      "maillage-systeme",
+      "test-substitution-llm",
+      "organikk-co",
+      "chatgpt-search",
+      "perplexity",
+      "google-ai-mode"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "pseo",
+      "data-driven",
+      "conformite",
+      "apis-officielles",
+      "anti-thin"
+    ],
+    "title": "pSEO data-driven — 4 modèles (Empreinte SERP, Entités SERP, Suggest, Schema secteur)",
+    "type": "concept"
+  },
+  "purete-vectorielle": {
+    "aliases": [
+      "purete-vectorielle",
+      "purete-semantique",
+      "vector-purity",
+      "une-page-une-intention"
+    ],
+    "backrefs": [
+      "organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/journal/2026-05-16.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/purete-vectorielle.md",
+    "outlinks": [
+      "grounding-score",
+      "surprise-gap",
+      "passage-ranking",
+      "answer-first-pattern",
+      "aeo",
+      "anti-ai-writing",
+      "session-2-redaction-transcript",
+      "session-2-redaction-debrief",
+      "session-2-redaction-resume-participants"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "geo",
+      "embedding",
+      "intention",
+      "redaction",
+      "grounding-score",
+      "faq",
+      "terme-signature"
+    ],
+    "title": "Pureté vectorielle (une page = une intention)",
+    "type": "concept"
+  },
+  "qadence-seo-agent": {
+    "aliases": [
+      "qadence",
+      "qadence-io",
+      "qadence-seo-agent",
+      "qadence-agent",
+      "watcher",
+      "scorer",
+      "botbeat",
+      "veilleur"
+    ],
+    "backrefs": [
+      "raw/fusionn/README.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/qadence-seo-agent.md",
+    "outlinks": [
+      "organikk-co",
+      "methode-organikk-4-piliers",
+      "persistent-wiki-vs-rag",
+      "memory-llm-vs-wiki-persistant",
+      "2026-04-15-opendecoder-seo-scoring-system",
+      "cli-tools-optional",
+      "agentic-search",
+      "2026-04-30-qadence-seo-agent-snapshot",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "agent",
+      "produit-tim",
+      "supabase",
+      "edge-function",
+      "deno",
+      "nextjs",
+      "netlify",
+      "gemini",
+      "gsc",
+      "opendecoder",
+      "dispatcher",
+      "organikk"
+    ],
+    "title": "Qadence (qadence.io)",
+    "type": "entity"
+  },
+  "quality-raters-guidelines": {
+    "aliases": [
+      "quality-raters-guidelines",
+      "qrg",
+      "search-quality-rater-guidelines"
+    ],
+    "backrefs": [
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/concepts/fully-meets.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
+      "wiki/sources/2026-04-13-google-quality-raters-guidelines-2026.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/quality-raters-guidelines.md",
+    "outlinks": [
+      "2026-03-11-algorithme-data-claude-perplexity",
+      "surprise-metric",
+      "information-gain",
+      "2026-04-13-google-quality-raters-guidelines-2026",
+      "e-e-a-t",
+      "fully-meets",
+      "anti-ai-writing"
+    ],
+    "status": "stable",
+    "tags": [
+      "google",
+      "quality-raters",
+      "e-e-a-t",
+      "seo"
+    ],
+    "title": "Quality Rater Guidelines (Google)",
+    "type": "entity"
+  },
+  "query-synthesis": {
+    "aliases": [
+      "query-filing-back",
+      "explorations-compound"
+    ],
+    "backrefs": [
+      "wiki/concepts/ingest-workflow.md",
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-methode-kb.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/query-synthesis.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "...",
+      "ingest-workflow",
+      "persistent-wiki-vs-rag",
+      "obsidian"
+    ],
+    "status": "stable",
+    "tags": [
+      "pattern-kb",
+      "workflow",
+      "query",
+      "meta"
+    ],
+    "title": "Query + synthesis (filing back)",
+    "type": "concept"
+  },
+  "rankbrain": {
+    "aliases": [
+      "rankbrain",
+      "rank-brain"
+    ],
+    "backrefs": [
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/bert.md",
+      "wiki/entities/bm25.md",
+      "wiki/entities/isi.md",
+      "wiki/entities/neural-matching.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/rankbrain.md",
+    "outlinks": [
+      "bert",
+      "neural-matching",
+      "grounding-score",
+      "ingenierie-semantique-inversee"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-google",
+      "machine-learning",
+      "ranking",
+      "interpretation-requetes"
+    ],
+    "title": "RankBrain (Google)",
+    "type": "entity"
+  },
+  "regle-ia-ne-le-fait-pas-je-le-fais-pas": {
+    "aliases": [
+      "regle-ia-ne-le-fait-pas-je-le-fais-pas",
+      "regle-ia-filtre-prestation"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/index.md",
+      "wiki/moc/moc-vente-objections.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas.md",
+    "outlinks": [
+      "cli-tools-optional",
+      "methode-organikk-4-piliers",
+      "maillage-systeme",
+      "session-1-mots-cles-nouveautes",
+      "session-1-mots-cles-transcript"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "posture",
+      "workflow",
+      "ia",
+      "automation",
+      "bootcamp4"
+    ],
+    "title": "Si l'IA ne le fait pas, je ne le fais pas",
+    "type": "concept"
+  },
+  "retrieval-collapse": {
+    "aliases": [
+      "retrieval-collapse",
+      "effondrement-retrieval",
+      "ai-pollution-pool"
+    ],
+    "backrefs": [
+      "raw/journal/2026-05-16.md",
+      "raw/journal/2026-05-19.md",
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/preuves/2026-05-16-pseo-secteur-ville-data-proprietaire.md",
+      "wiki/revue-hebdo/2026-W20.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/retrieval-collapse.md",
+    "outlinks": [
+      "naver",
+      "data-proprietaire",
+      "e-e-a-t",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "linkedin",
+      "test-substitution-llm",
+      "hypotheses",
+      "2026-05-16-pseo-secteur-ville-data-proprietaire",
+      "2026-04-15-scan-arxiv-15-avril",
+      "2026-04-25-scan-arxiv-25-avril",
+      "anti-ai-writing",
+      "surprise-gap"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "geo",
+      "ia",
+      "retrieval",
+      "contenu-ia",
+      "naver",
+      "paper"
+    ],
+    "title": "Retrieval Collapse (effondrement du retrieval IA)",
+    "type": "concept"
+  },
+  "rrf": {
+    "aliases": [
+      "rrf",
+      "reciprocal-rank-fusion"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/organikk-blog/agent-seo-ia-simple.md",
+      "raw/articles/organikk-blog/mots-cles-seo-2026.md",
+      "raw/journal/2026-05-16.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
+      "wiki/entities/bm25.md",
+      "wiki/entities/mum.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/syntheses/4-piliers-organikk.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/rrf.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "weight-decay",
+      "metehan",
+      "2026-04-12-tim-skills-seo-proprietary"
+    ],
+    "status": "stable",
+    "tags": [
+      "ranking",
+      "algo",
+      "seo-technique",
+      "freshness"
+    ],
+    "title": "Reciprocal Rank Fusion (RRF)",
+    "type": "concept"
+  },
+  "sageo-arena-benchmark": {
+    "aliases": [
+      "sageo-arena-benchmark",
+      "sageo-arena"
+    ],
+    "backrefs": [
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-13-sageo-arena-2025.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/sageo-arena-benchmark.md",
+    "outlinks": [
+      "2026-04-13-sageo-arena-2025",
+      "geo-bench",
+      "structural-information-geo",
+      "metriques-visibilite-geo"
+    ],
+    "status": "stable",
+    "tags": [
+      "benchmark",
+      "geo",
+      "retrieval",
+      "reranking",
+      "generation",
+      "structural"
+    ],
+    "title": "SAGEO Arena (benchmark pipeline complet — Kim et al. 2025)",
+    "type": "entity"
+  },
+  "scam-objection-data-aleatoire": {
+    "aliases": [
+      "scam-objection-data-aleatoire",
+      "page-scam",
+      "objection-arnaque"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/index.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/scam-objection-data-aleatoire.md",
+    "outlinks": [
+      "surprise-gap",
+      "e-e-a-t",
+      "mots-cles-actionnels",
+      "grounding-score",
+      "angle-differenciant-mot-cle",
+      "session-1-mots-cles-nouveautes",
+      "session-1-mots-cles-transcript"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "objection",
+      "longue-traine",
+      "transparence",
+      "e-e-a-t",
+      "bootcamp4"
+    ],
+    "title": "Page « scam » : l'objection arnaque comme levier SEO",
+    "type": "concept"
+  },
+  "seer-interactive": {
+    "aliases": [
+      "seer-interactive",
+      "seer"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/seer-interactive.md",
+    "outlinks": [
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "aeo",
+      "chatgpt-search",
+      "google-ai-mode"
+    ],
+    "status": "stable",
+    "tags": [
+      "agence",
+      "etudes-seo",
+      "ai-search",
+      "citations-ia"
+    ],
+    "title": "Seer Interactive",
+    "type": "entity"
+  },
+  "semrush": {
+    "aliases": [
+      "semrush"
+    ],
+    "backrefs": [
+      "wiki/entities/gsc.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/semrush.md",
+    "outlinks": [
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "2026-04-13-semrush-llm-conversion-study",
+      "aeo",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "data-proprietaire",
+      "anti-ai-writing"
+    ],
+    "status": "stable",
+    "tags": [
+      "outil",
+      "seo",
+      "suite-seo",
+      "etudes-seo"
+    ],
+    "title": "Semrush",
+    "type": "entity"
+  },
+  "seo-multi-plateforme": {
+    "aliases": [
+      "seo-multi-plateforme",
+      "seo-multi-vectoriel"
+    ],
+    "backrefs": [
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/journal/2026-05-09.md",
+      "raw/papers/semrush-llm-conversion-study.md",
+      "wiki/concepts/arbitrage-plateforme-publication.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/entities/google-ai-mode.md",
+      "wiki/entities/linkedin.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/entities/sge.md",
+      "wiki/entities/youtube.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
+      "wiki/sources/2026-03-04-algorithme-lancer-site-sans-cms.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-semrush-llm-conversion-study.md",
+      "wiki/sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/seo-multi-plateforme.md",
+    "outlinks": [
+      "youtube",
+      "2026-02-27-algorithme-youtube-ai-overviews",
+      "2026-03-04-algorithme-lancer-site-sans-cms",
+      "information-gain",
+      "grounding-score",
+      "2026-04-13-semrush-llm-conversion-study",
+      "2026-04-11-algorithme-linkedin-2e-source-ia",
+      "2026-04-15-algorithme-listicles-chatgpt-30pct-baisse",
+      "2026-04-22-algorithme-core-update-fermes-ia",
+      "linkedin",
+      "chatgpt-search",
+      "perplexity",
+      "google-ai-mode",
+      "aeo"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "seo",
+      "youtube",
+      "linkedin",
+      "multi-vectoriel",
+      "strategie"
+    ],
+    "title": "SEO multi-plateforme (site + YouTube + LinkedIn)",
+    "type": "concept"
+  },
+  "sge": {
+    "aliases": [
+      "sge",
+      "search-generative-experience",
+      "ai-overviews",
+      "google-ai-overviews"
+    ],
+    "backrefs": [
+      "AGENTS.md",
+      "wiki/concepts/confidence-score.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/entities/google-ai-mode.md",
+      "wiki/entities/mum.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/sge.md",
+    "outlinks": [
+      "youtube",
+      "2026-02-27-algorithme-youtube-ai-overviews",
+      "doctrine-seo-post-sge",
+      "aeo",
+      "surprise-metric",
+      "information-gain",
+      "e-e-a-t",
+      "surprise-gap",
+      "seo-multi-plateforme"
+    ],
+    "status": "stable",
+    "tags": [
+      "algorithme-google",
+      "ia-generative",
+      "serp",
+      "aeo",
+      "geo"
+    ],
+    "title": "SGE / AI Overviews",
+    "type": "entity"
+  },
+  "structural-information-geo": {
+    "aliases": [
+      "structural-information-geo",
+      "schema-geo",
+      "title-meta-geo"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/passage-ranking.md",
+      "wiki/entities/sageo-arena-benchmark.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-13-sageo-arena-2025.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/structural-information-geo.md",
+    "outlinks": [
+      "2026-04-13-sageo-arena-2025",
+      "2026-04-12-organikk-blog-scrape",
+      "answer-first-pattern",
+      "passage-ranking",
+      "grounding-score",
+      "metriques-visibilite-geo",
+      "ingenierie-semantique-inversee",
+      "2026-04-13-prompt-pseo-produit-service"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "schema-markup",
+      "title",
+      "meta",
+      "headings",
+      "structural",
+      "retrieval"
+    ],
+    "title": "Structural Information GEO (title, meta, headings, schema)",
+    "type": "concept"
+  },
+  "surprise-gap": {
+    "aliases": [
+      "surprise-gap",
+      "information-gap",
+      "gap-informationnel"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/etudes-seo/etude-core-ranking-2025.md",
+      "raw/etudes-seo/etude-geo-aggarwal-2024.md",
+      "raw/etudes-seo/etude-raid-gseo-2025.md",
+      "raw/etudes-seo/etude-sageo-arena-2025.md",
+      "raw/etudes-seo/etude-searchllm-2026.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "raw/notes/prompt-pseo-non-produit.md",
+      "raw/notes/prompt-pseo-produit-service.md",
+      "raw/papers/titans-architecture-google-deepmind.md",
+      "wiki/000-home.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/4w-deep-reflection.md",
+      "wiki/concepts/aeo.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/concepts/methode-organikk-4-piliers.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/purete-vectorielle.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/concepts/scam-objection-data-aleatoire.md",
+      "wiki/concepts/surprise-metric.md",
+      "wiki/concepts/tabou-visibilite.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/concepts/triade-serp.md",
+      "wiki/concepts/weight-decay.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/dashboard.md",
+      "wiki/entities/fusionn-io.md",
+      "wiki/entities/miras.md",
+      "wiki/entities/sge.md",
+      "wiki/entities/titans.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/moc/moc-redaction.md",
+      "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-03-04-algorithme-lancer-site-sans-cms.md",
+      "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
+      "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
+      "wiki/sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-prompt-systeme-fusionn.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-13-raid-gseo-2025.md",
+      "wiki/sources/2026-04-13-searchllm-2026.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/sources/2026-04-13-victoria-garden-pseo.md",
+      "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
+      "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
+      "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
+      "wiki/sources/2026-04-24-reflexion-organikk-4-piliers.md",
+      "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/surprise-gap.md",
+    "outlinks": [
+      "2026-04-11-seo-ia-tim",
+      "surprise-metric",
+      "grounding-score",
+      "weight-decay",
+      "ingenierie-semantique-inversee",
+      "2026-04-13-titans-architecture-google-deepmind",
+      "2026-04-13-raid-gseo-2025",
+      "2026-04-13-searchllm-2026",
+      "4w-deep-reflection",
+      "titans"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "seo-ia",
+      "geo",
+      "ranking",
+      "strategie"
+    ],
+    "title": "Surprise Gap (thèse Tim)",
+    "type": "concept"
+  },
+  "surprise-metric": {
+    "aliases": [
+      "surprise-metric",
+      "gradient-information",
+      "metrique-surprise"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
+      "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/papers/titans-architecture-google-deepmind.md",
+      "wiki/000-home.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/information-gain.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/surprise-gap.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/concepts/weight-decay.md",
+      "wiki/concepts/workflow-redaction-8-etapes.md",
+      "wiki/dashboard.md",
+      "wiki/entities/google-deepmind.md",
+      "wiki/entities/quality-raters-guidelines.md",
+      "wiki/entities/sge.md",
+      "wiki/entities/titans.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
+      "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-prompt-pseo-produit-service.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/surprise-metric.md",
+    "outlinks": [
+      "titans",
+      "google-deepmind",
+      "2026-04-11-seo-ia-tim",
+      "surprise-gap",
+      "grounding-score",
+      "2026-04-13-titans-architecture-google-deepmind",
+      "weight-decay",
+      "ingenierie-semantique-inversee"
+    ],
+    "status": "stable",
+    "tags": [
+      "titans",
+      "neural-memory",
+      "seo-ia",
+      "geo",
+      "ranking",
+      "aeo"
+    ],
+    "title": "Surprise Metric (gradient d'information)",
+    "type": "concept"
+  },
+  "tabou-visibilite": {
+    "aliases": [
+      "tabou-visibilite",
+      "mot-visibilite-banni",
+      "vendre-pas-visibilite"
+    ],
+    "backrefs": [
+      "AGENTS.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/avatar-freelance-sans-systeme.md",
+      "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/entities/dev-web-anon.md",
+      "wiki/entities/marrusia-cecile.md",
+      "wiki/entities/organikk-co.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-13-analyse-calls-prospects-bootcamp.md",
+      "wiki/sources/2026-04-13-call-02-marrusia-cecile.md",
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/sources/2026-04-13-call-05-dev-web.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-25-tim-ton-de-voix-extraction-terrain.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/tabou-visibilite.md",
+    "outlinks": [
+      "2026-04-13-analyse-calls-prospects-bootcamp",
+      "2026-04-13-cas-clients-resultats",
+      "data-proprietaire",
+      "information-gain",
+      "surprise-gap",
+      "2026-04-13-offre-bootcamp-seo-ia",
+      "avatar-freelance-sans-systeme",
+      "bootcamp-seo-ia"
+    ],
+    "status": "stable",
+    "tags": [
+      "vente",
+      "doctrine-tim",
+      "copy",
+      "conversion",
+      "peurs-objections",
+      "bootcamp"
+    ],
+    "title": "Le tabou \"visibilité\" (mot à bannir)",
+    "type": "concept"
+  },
+  "test-substitution-llm": {
+    "aliases": [
+      "test-substitution-llm",
+      "filtre-80-pourcent",
+      "substitution-test"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/fully-meets.md",
+      "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/product-led-seo.md",
+      "wiki/concepts/programmatique-pseo.md",
+      "wiki/concepts/pseo-data-driven-models.md",
+      "wiki/concepts/retrieval-collapse.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/entities/victoria-garden.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-redaction.md",
+      "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
+      "wiki/sources/2026-04-13-victoria-garden-pseo.md",
+      "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
+      "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/test-substitution-llm.md",
+    "outlinks": [
+      "2026-04-13-victoria-garden-pseo",
+      "data-proprietaire",
+      "surprise-metric",
+      "2026-04-12-tim-skills-seo-proprietary",
+      "fully-meets",
+      "2026-04-13-prompt-pseo-non-produit",
+      "victoria-garden",
+      "surprise-gap",
+      "programmatique-pseo",
+      "product-led-seo"
+    ],
+    "status": "stable",
+    "tags": [
+      "methode",
+      "doctrine-tim",
+      "pseo",
+      "product-led",
+      "qualification-page",
+      "geo",
+      "aeo"
+    ],
+    "title": "Test de substitution LLM (filtre 80%)",
+    "type": "concept"
+  },
+  "titans": {
+    "aliases": [
+      "titans-architecture",
+      "titans-mac"
+    ],
+    "backrefs": [
+      "wiki/concepts/agentic-search.md",
+      "wiki/concepts/grounding-score.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/concepts/surprise-gap.md",
+      "wiki/concepts/surprise-metric.md",
+      "wiki/concepts/weight-decay.md",
+      "wiki/entities/bert.md",
+      "wiki/entities/google-deepmind.md",
+      "wiki/entities/metehan.md",
+      "wiki/entities/miras.md",
+      "wiki/entities/mum.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-aeo-geo.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-miras-architecture.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/titans.md",
+    "outlinks": [
+      "google-deepmind",
+      "2026-04-11-seo-ia-tim",
+      "surprise-metric",
+      "weight-decay",
+      "surprise-gap",
+      "2026-04-13-titans-architecture-google-deepmind",
+      "2026-04-13-miras-architecture",
+      "miras",
+      "grounding-score"
+    ],
+    "status": "stable",
+    "tags": [
+      "architecture-ia",
+      "google-deepmind",
+      "neural-memory",
+      "surprise-metric"
+    ],
+    "title": "Titans (architecture)",
+    "type": "entity"
+  },
+  "triade-serp": {
+    "aliases": [
+      "triade-serp",
+      "3-phases-serp",
+      "document-passage-generation"
+    ],
+    "backrefs": [
+      "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/organikk-blog/9-skills-seo-claude.md",
+      "raw/articles/organikk-blog/audit-seo-claude.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/notes/archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/arbitrage-plateforme-publication.md",
+      "wiki/concepts/entites-vectorielles.md",
+      "wiki/entities/gsc.md",
+      "wiki/entities/isi.md",
+      "wiki/index.md",
+      "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/sources/2026-04-12-organikk-blog-scrape.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/syntheses/4-piliers-organikk.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/process-keyword-research-5-etapes.md",
+      "wiki/syntheses/tim-profil-doctrine.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/triade-serp.md",
+    "outlinks": [
+      "bm25",
+      "rankbrain",
+      "dpr",
+      "muvera",
+      "bert",
+      "passage-ranking",
+      "sge",
+      "grounding-score",
+      "confidence-score",
+      "e-e-a-t",
+      "surprise-gap",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "ranking",
+      "serp",
+      "passage-ranking",
+      "document-ranking",
+      "geo"
+    ],
+    "title": "Triade SERP",
+    "type": "concept"
+  },
+  "vannevar-bush": {
+    "aliases": [
+      "bush",
+      "vannevar-bush"
+    ],
+    "backrefs": [
+      "wiki/concepts/persistent-wiki-vs-rag.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/vannevar-bush.md",
+    "outlinks": [
+      "2026-04-11-karpathy-llm-wiki",
+      "karpathy",
+      "persistent-wiki-vs-rag"
+    ],
+    "status": "draft",
+    "tags": [
+      "personne",
+      "historique",
+      "memex",
+      "acteur"
+    ],
+    "title": "Vannevar Bush",
+    "type": "entity"
+  },
+  "victoria-garden": {
+    "aliases": [
+      "victoria-garden",
+      "vg",
+      "victoriagarden"
+    ],
+    "backrefs": [
+      "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
+      "wiki/concepts/test-substitution-llm.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/entities/fg-formation.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/moc/moc-maillage.md",
+      "wiki/sources/2026-04-13-victoria-garden-pseo.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/victoria-garden.md",
+    "outlinks": [
+      "2026-04-13-victoria-garden-pseo",
+      "test-substitution-llm",
+      "fully-meets",
+      "data-proprietaire"
+    ],
+    "status": "stable",
+    "tags": [
+      "client",
+      "appart-hotel",
+      "hebergement",
+      "bordeaux",
+      "pau",
+      "hospitality"
+    ],
+    "title": "Victoria Garden (client Tim)",
+    "type": "entity"
+  },
+  "weight-decay": {
+    "aliases": [
+      "weight-decay",
+      "forgetting-gate",
+      "biais-recence"
+    ],
+    "backrefs": [
+      "raw/papers/titans-architecture-google-deepmind.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/concepts/rrf.md",
+      "wiki/concepts/surprise-gap.md",
+      "wiki/concepts/surprise-metric.md",
+      "wiki/entities/metehan.md",
+      "wiki/entities/titans.md",
+      "wiki/hypotheses.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
+      "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
+      "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
+      "wiki/sources/2026-04-11-seo-ia-tim.md",
+      "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
+      "wiki/sources/2026-04-13-titans-architecture-google-deepmind.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md",
+      "wiki/syntheses/faq-geo-175-questions.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/weight-decay.md",
+    "outlinks": [
+      "titans",
+      "2026-04-11-seo-ia-tim",
+      "metehan",
+      "persistent-wiki-vs-rag",
+      "2026-04-13-titans-architecture-google-deepmind",
+      "surprise-metric",
+      "surprise-gap"
+    ],
+    "status": "stable",
+    "tags": [
+      "titans",
+      "freshness",
+      "ranking",
+      "rrf",
+      "seo-ia"
+    ],
+    "title": "Weight Decay + biais de récence",
+    "type": "concept"
+  },
+  "workflow-redaction-8-etapes": {
+    "aliases": [
+      "workflow-redaction-8-etapes",
+      "article-engine",
+      "pipeline-redaction"
+    ],
+    "backrefs": [
+      "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/concepts/4w-deep-reflection.md",
+      "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/anti-ai-writing.md",
+      "wiki/concepts/cercle-vicieux-temps-structure.md",
+      "wiki/concepts/e-e-a-t.md",
+      "wiki/concepts/ingenierie-semantique-inversee.md",
+      "wiki/concepts/passage-ranking.md",
+      "wiki/entities/bootcamp-seo-ia.md",
+      "wiki/index.md",
+      "wiki/ingest-backlog.md",
+      "wiki/moc/moc-redaction.md",
+      "wiki/sources/2026-03-31-tim-profil-et-regles.md",
+      "wiki/sources/2026-03-31-tim-workflow-redaction.md",
+      "wiki/sources/2026-04-12-tim-skills-seo-proprietary.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
+      "wiki/sources/2026-04-13-raid-gseo-2025.md",
+      "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/workflow-redaction-8-etapes.md",
+    "outlinks": [
+      "2026-03-31-tim-workflow-redaction",
+      "surprise-gap",
+      "data-proprietaire",
+      "information-gain",
+      "surprise-metric",
+      "grounding-score",
+      "anti-ai-writing",
+      "doctrine-seo-post-sge",
+      "ingenierie-semantique-inversee",
+      "2026-03-31-tim-profil-et-regles"
+    ],
+    "status": "stable",
+    "tags": [
+      "doctrine-tim",
+      "workflow",
+      "redaction",
+      "surprise-gap",
+      "grounding-score",
+      "operationnel"
+    ],
+    "title": "Workflow rédaction 8 étapes (Article Engine)",
+    "type": "concept"
+  },
+  "youtube": {
+    "aliases": [
+      "youtube"
+    ],
+    "backrefs": [
+      "wiki/concepts/seo-multi-plateforme.md",
+      "wiki/entities/google-ai-mode.md",
+      "wiki/entities/linkedin.md",
+      "wiki/entities/sge.md",
+      "wiki/index.md",
+      "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
+      "wiki/sources/2026-04-13-cas-clients-resultats.md",
+      "wiki/syntheses/doctrine-seo-post-sge.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/entities/youtube.md",
+    "outlinks": [
+      "2026-02-27-algorithme-youtube-ai-overviews",
+      "information-gain",
+      "2026-03-04-algorithme-lancer-site-sans-cms",
+      "seo-multi-plateforme",
+      "grounding-score"
+    ],
+    "status": "stable",
+    "tags": [
+      "plateforme",
+      "video",
+      "ai-overview",
+      "multi-plateforme",
+      "google"
+    ],
+    "title": "YouTube",
+    "type": "entity"
+  }
+}

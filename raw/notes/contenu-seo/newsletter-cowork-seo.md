@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Comment créer ton système SEO avec Claude Cowork"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Comment créer ton système SEO avec Claude Cowork
 
 📝 Cette semaine, pas de veille. Je te montre comment j'ai construit mon propre système SEO à l'intérieur de Claude Cowork — et pourquoi ça change tout pour les consultants.

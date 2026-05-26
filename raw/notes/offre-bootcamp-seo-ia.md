@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Offre Bootcamp SEO IA — Fiche Produit"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Offre Bootcamp SEO IA — Fiche Produit
 
 ## Informations clés

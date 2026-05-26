@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Drive Accompagnement SEO — INDEX complet"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Drive Accompagnement SEO — INDEX complet
 
 > **Pour tes clients** : Tu vas transformer ça en Google Drive partagé. Lis le guide "Migration vers Google Drive" ci-dessous.

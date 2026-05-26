@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "LinkedIn n°2 des sources citées par les IA, -30% de listicles dans ChatGPT, et 80% des #1 Google sont humains"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 # LinkedIn n°2 des sources citées par les IA, -30% de listicles dans ChatGPT, et 80% des #1 Google sont humains
 
 Parce que l'on vit dans l'ere du bruit, je selectionne pour vous ce que je considere comme les meilleures infos SEO / IA pour vous aider a ameliorer vos strategies.

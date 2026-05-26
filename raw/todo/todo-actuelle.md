@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Todo Tim — MAJ 2026-05-02 20:30"
+aliases: []
+tags: []
+created: 2026-05-02
+updated: 2026-05-02
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Todo Tim — MAJ 2026-05-02 20:30
 
 > Source : 6 transcripts Claude Code locaux (seo-kb + organikk-next, 7 derniers jours).

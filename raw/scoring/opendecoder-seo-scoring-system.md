@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "OpenDecoder SEO Scoring System v2"
+aliases: []
+tags: []
+created: 2026-04-15
+updated: 2026-04-15
+sources: 0
+confidence: medium
+status: draft
+---
+
 # OpenDecoder SEO Scoring System v2
 
 ## Systeme de notation de contenus SEO inspire d'OpenDecoder (Mo et al., 2026)

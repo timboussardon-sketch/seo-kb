@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Cluster sémantique — \"SEO AEO pour l'ère des LLM\""
+aliases: []
+tags: []
+created: 2026-04-24
+updated: 2026-04-24
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Cluster sémantique — "SEO AEO pour l'ère des LLM"
 
 > **Site** : organikk.co

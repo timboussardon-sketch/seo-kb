@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "raw/auteurs/ — Posts verbatim d'auteurs externes"
+aliases: []
+tags: []
+created: 2026-05-13
+updated: 2026-05-13
+sources: 0
+confidence: medium
+status: draft
+---
+
 # raw/auteurs/ — Posts verbatim d'auteurs externes
 
 Ce dossier stocke des prises de parole verbatim d'auteurs externes (LinkedIn, X, Substack, newsletters, blogs) que Tim veut conserver tels quels comme matière première.

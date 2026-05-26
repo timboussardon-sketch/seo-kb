@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "LinkedIn, 2e source citée par les IA sur 325 000 prompts — devant Wikipedia et YouTube"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 # LinkedIn, 2e source citée par les IA sur 325 000 prompts — devant Wikipedia et YouTube
 
 Parce que l'on vit dans l'ère du bruit, je sélectionne pour vous ce que je considère comme les meilleures infos SEO / IA pour vous aider à améliorer vos stratégies.

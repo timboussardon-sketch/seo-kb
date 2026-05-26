@@ -1,3 +1,16 @@
+---
+type: source
+source_type: paper
+title: "Scan ArXiv SEO/IA — Semaine du 18-25 avril 2026"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Scan ArXiv SEO/IA — Semaine du 18-25 avril 2026
 
 **Date du scan** : 2026-04-25

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 06 juliette"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 ## **Gemini a dit**
 
 Voici le script complet et structuré de ton appel. J'ai nettoyé la transcription (hésitations mineures, répétitions, erreurs de dictée) pour la rendre plus fluide à la lecture, et j'ai identifié les interlocuteurs (Juliette et toi) pour plus de clarté :

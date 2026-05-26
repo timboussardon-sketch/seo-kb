@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Architecture Sémantique"
+aliases: []
+tags: []
+created: 2026-05-22
+updated: 2026-05-22
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Architecture Sémantique
 
 > On structure par vecteurs sémantiques, pas par mots-clés isolés.

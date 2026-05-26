@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "1  J'ai lancé mon site SEO sans WordPress ni Webflow. Juste du HTML en passant par Claude. Bilan après 3 semaines ?"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # 1  J'ai lancé mon site SEO sans WordPress ni Webflow. Juste du HTML en passant par Claude. Bilan après 3 semaines ?
 
 J'ai lancé organikk(.)co il y a 3 semaines.

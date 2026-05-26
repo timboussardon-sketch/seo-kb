@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Cas Clients & Résultats — Preuves Terrain"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Cas Clients & Résultats — Preuves Terrain
 
 ## Résultats personnels de Tim (documentés dans les calls)

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "algorithme data claude perplexity"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 \# DATA avec Claude \+ Perplexity \- by Timothée \- Algorithme
 
 \*\*URL:\*\* https://algorithme.substack.com/p/data-avec-claude-perplexity

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Workflow Complet : Créer un Article de A à Z"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Workflow Complet : Créer un Article de A à Z
 
 > Basé sur l'ensemble des conversations précédentes. Pipeline en 8 étapes séquentielles — chaque étape alimente la suivante.

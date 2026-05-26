@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Mots-clés Décisionnels"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Mots-clés Décisionnels
 
 > Un mot-clé décisionnel = une requête qui amène un clic qui mène à une action business.

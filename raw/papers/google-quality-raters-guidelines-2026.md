@@ -1,3 +1,16 @@
+---
+type: source
+source_type: paper
+title: "Google Quality Raters Guidelines — Édition 2026"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Google Quality Raters Guidelines — Édition 2026
 
 ## Référence

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "audit blanc"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 * udit Blanc QUALIOPI \\- Antoine GERRIER2026-01-26T10:00:00Z 00:00:01 \\- guillaume schroll (FG Formation)    
 * Donc, indicateur 1, c'est le prestataire de diffuser une information accessible au public, détaillée et vérifiable sur les prestations proposées, et il a un certain nombre d'items obligatoires qu'il faut diffuser. Vous êtes nouvel entrant, hein ? Oui. C'est ça. Donc bon, je vous préciserai parfois qu'en tant que nouvel entrant, c'est pas forcément audité, mais moi je préfère à chaque fois tout checker avec vous, de faire un point sur chaque indicateur, ça évite. Oui, très bien. De ne pas s'en préoccuper, et puis d'après être en difficulté. Donc, je vous signalerai juste que ça, en principe, c'est pas audité en tant que nouvel entrant, mais on regarde quand même les éléments.    
 * 00:00:43 \\- Antoine & Gale (Guest)    

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Roadmap Accompagnement SEO + Système IA"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Roadmap Accompagnement SEO + Système IA
 
 > Programme en 6 mois — Consultants SEO / Freelances

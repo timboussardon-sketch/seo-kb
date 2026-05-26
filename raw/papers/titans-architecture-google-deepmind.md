@@ -1,3 +1,16 @@
+---
+type: source
+source_type: paper
+title: "Titans : Architecture à Mémoire Neurale — Google DeepMind"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Titans : Architecture à Mémoire Neurale — Google DeepMind
 
 ## Référence

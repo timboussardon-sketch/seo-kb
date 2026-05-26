@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Process de rédaction — généralisable tous secteurs"
+aliases: []
+tags: []
+created: 2026-05-02
+updated: 2026-05-02
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Process de rédaction — généralisable tous secteurs
 
 ## Le principe central

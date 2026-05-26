@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 04 jamel"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 **Intervenant 1 :** ...Et donc, moi à la base je suis issu du à la base je suis issu du SEA, euh mais je me suis réorienté vers le SEO et euh je veux me réorienter encore plus sur vers le SEO même si euh si tu regardes LinkedIn dans un an le SEO est mort.
 
 *(Rires)*

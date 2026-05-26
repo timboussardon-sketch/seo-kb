@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "30% de listicles en moins dans ChatGPT — sauf celles qui listent 10 a 20 items"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 # 30% de listicles en moins dans ChatGPT — sauf celles qui listent 10 a 20 items
 
 Parce que l'on vit dans l'ere du bruit, je selectionne pour vous ce que je considere comme les meilleures infos SEO / IA pour vous aider a ameliorer vos strategies.

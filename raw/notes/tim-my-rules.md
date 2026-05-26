@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "My Rules — Règles, valeurs et vision"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # My Rules — Règles, valeurs et vision
 
 ## Règles absolues de travail

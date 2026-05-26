@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Skill — Content Pipeline (Agent 1)"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Skill — Content Pipeline (Agent 1)
 
 ## Rôle

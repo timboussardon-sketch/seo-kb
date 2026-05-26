@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Méthodologie SEO + IA — Référence"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Méthodologie SEO + IA — Référence
 
 > Les principes fondamentaux de l'approche. À relire quand tu doutes.

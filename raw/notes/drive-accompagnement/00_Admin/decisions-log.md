@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Journal de Décisions"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Journal de Décisions
 
 > Chaque décision stratégique est documentée ici avec son contexte et sa justification.

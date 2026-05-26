@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "LLM Wiki"
+aliases: []
+tags: []
+created: 2026-04-11
+updated: 2026-04-11
+sources: 0
+confidence: medium
+status: draft
+---
+
 # LLM Wiki
 
 A pattern for building personal knowledge bases using LLMs.

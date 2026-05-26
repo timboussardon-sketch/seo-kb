@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "post linkedin mots cles llm"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 Cet article a été indexé en moins de 24 heures et a généré 56 visites en 2 jours.
 
 Le SEO n'est pas mort. C'est le choix des mots-clés qui l'est.

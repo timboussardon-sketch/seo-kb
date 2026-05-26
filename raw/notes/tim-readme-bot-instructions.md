@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "◈ Article Engine — Workflow Rédactionnel en 8 Prompts"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # ◈ Article Engine — Workflow Rédactionnel en 8 Prompts
 
 > Pipeline de rédaction d'articles experts B2B. Chaque prompt alimente le suivant.

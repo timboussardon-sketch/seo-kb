@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Modèles de Pages"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Modèles de Pages
 
 > Chaque type de page a sa propre structure. On ne met pas le même contenu partout.

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "My Voice — Ton de voix Timothée Boussardon"
+aliases: []
+tags: []
+created: 2026-05-22
+updated: 2026-05-22
+sources: 0
+confidence: medium
+status: draft
+---
+
 # My Voice — Ton de voix Timothée Boussardon
 
 ## Principes fondamentaux

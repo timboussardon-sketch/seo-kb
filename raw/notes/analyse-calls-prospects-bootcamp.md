@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Analyse des Calls Prospects — Bootcamp SEO IA #4"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Analyse des Calls Prospects — Bootcamp SEO IA #4
 ## Basé sur 10 profils / 9+ calls d'exploration
 

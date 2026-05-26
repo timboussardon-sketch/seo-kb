@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "algorithme agents seo consultants"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 \# Agents SEO : les nouveaux outils des consultants ?
 
 \*\*URL:\*\* https://algorithme.substack.com/p/agents-seo-les-nouveaux-outils-des

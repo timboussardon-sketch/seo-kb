@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "post linkedin linkedin source ia"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 LinkedIn est devenu la 2ème source la plus citée par les IA.
 
 Devant Wikipedia. Devant YouTube. Devant tous les médias.

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: gsc-export
+title: "Mots-clés Organikk — Google Suggest FR (2026-05-02)"
+aliases: []
+tags: []
+created: 2026-05-02
+updated: 2026-05-02
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Mots-clés Organikk — Google Suggest FR (2026-05-02)
 
 Source : scraping Google Suggest (FR/google.fr) sur 40 racines × 39 expansions = 1680 requêtes.

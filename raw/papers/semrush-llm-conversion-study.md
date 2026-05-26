@@ -1,3 +1,16 @@
+---
+type: source
+source_type: paper
+title: "Étude SEMrush : Taux de conversion du trafic LLM"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Étude SEMrush : Taux de conversion du trafic LLM
 
 ## Référence

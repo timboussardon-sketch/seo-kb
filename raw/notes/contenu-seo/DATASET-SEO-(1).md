@@ -1,4 +1,15 @@
-
+---
+type: source
+source_type: doctrine
+title: "DATASET SEO (1)"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
 
 COUCHE 1 : SYSTEM PROMPT  
 COUCHE 2 : DATASET CUSTOM  

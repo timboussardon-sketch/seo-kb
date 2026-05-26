@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "post linkedin grok seo"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 Grok + SEO est en train de retourner la recherche de data pour vos articles. Peu connaissent ce combo. Voici comment en profiter ↓
 
 La majorité des contenus répètent les mêmes stats que tout le monde.

@@ -1,4 +1,17 @@
 ---
+type: source
+source_type: doctrine
+title: "TODO du [jour, date complète en français]"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
+---
 name: todo-quotidienne-bilan-tim
 description: Génère chaque matin une TODO structurée : bilan d'hier, bilan de la semaine, plan de demain et plan de la semaine prochaine, basé sur les sessions passées avec Tim.
 ---

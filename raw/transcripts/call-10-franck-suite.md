@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 10 franck suite"
+aliases: []
+tags: []
+created: 2026-04-15
+updated: 2026-04-15
+sources: 0
+confidence: medium
+status: draft
+---
+
 **Tim :** ...un petit... un petit récap à la fin.
 
 **Franck :** Ouais, bon bah c’est bien comme ça, justement comme ça je le mettrai dans un... dans mon Google Doc... c’est bien de structurer un peu, c’est important.

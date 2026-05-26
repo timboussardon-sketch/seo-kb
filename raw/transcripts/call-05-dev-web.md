@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 05 dev web"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 **Le Freelance :** Salarié en télétravail pendant ces 15 années et ras-le-bol de pas être écouté malgré mes années d'expérience, je me suis lancé en freelance. Donc début 2024\. Développeur web, je fais des sites surtout, et par contre j'avais pris beaucoup de retard sur toute la partie référencement puisque pendant 15 ans j'ai fait que pisser du code et toute la partie marketing, on va dire, a été mise à la trappe. Donc je me suis formé en 2024 pour remonter le niveau là-dessus. Et depuis, bah je fais les deux en parallèle, parfois les deux pour un client ou que l'un ou que l'autre en fonction des clients.
 
 Globalement l'IA... j'utilise principalement Claude pour les process de rédaction. Également les MCP, Quick et HelloScan pour faciliter le process etc., rédiger parfois des documents... Il y a plus qu'à reprendre quelques points, des mises en forme, mais en gros le document est quasiment prêt. Mais tous ces process... le process de rédaction par exemple, j'ai pris celui qui avait été présenté par Déborah *\[Nom inaudible\]*. Parce que moi-même la rédac, c'est pas du tout mon truc, j'ai jamais appris à faire. Donc en gros je copie-colle le process de quelqu'un d'autre mais je me suis pas approprié les outils. Et ce que je voudrais aujourd'hui c'est justement voilà, mieux maîtriser ces choses-là pour pouvoir m'approprier les outils, me faire mes propres process et puis en profiter pleinement quoi, parce qu'il y a un potentiel énorme et que je sais que je le sous-estime.

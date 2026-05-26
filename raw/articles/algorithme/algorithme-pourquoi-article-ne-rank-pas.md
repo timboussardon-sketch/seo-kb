@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "algorithme pourquoi article ne rank pas"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 \# Pourquoi ton article bien rédigé ne rank pas ?
 
 \*\*URL:\*\* https://algorithme.substack.com/p/pourquoi-ton-article-bien-redige

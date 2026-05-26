@@ -1,4 +1,17 @@
 ---
+type: source
+source_type: doctrine
+title: "Ton de voix Tim Boussardon — extraction terrain"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
+---
 title: Ton de voix Tim — extraction Organikk + Substack Algorithme
 date: 2026-04-25
 sources: 5 éditions Substack 2026 (Pourquoi article rédigé ne rank pas, Agents SEO, DATA Claude+Perplexity, L'étude IA, Lancer site sans CMS, YouTube +30%) + 4 posts LinkedIn (audit-sans-semrush, mots-cles-llm, grok-seo, surprise-score-workflow) + page "Qui sommes-nous" organikk.co + article-pilier process-seo-b2b-2026 + fichiers doctrine my-voice.md / about-me.md

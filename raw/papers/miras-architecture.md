@@ -1,3 +1,16 @@
+---
+type: source
+source_type: paper
+title: "MIRAS : Multi-Resolution Adaptive Summarization"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 # MIRAS : Multi-Resolution Adaptive Summarization
 
 ## Référence

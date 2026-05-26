@@ -1,3 +1,16 @@
+---
+type: source
+source_type: transcript
+title: "call 08 franck"
+aliases: []
+tags: []
+created: 2026-04-12
+updated: 2026-04-12
+sources: 0
+confidence: medium
+status: draft
+---
+
 **Voici la transcription complète de ce nouvel appel, structurée et reformatée avec la séparation claire des interlocuteurs (Timothée et Franck) :**
 
 ---

@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Guide — Export Google Search Console"
+aliases: []
+tags: []
+created: 2026-04-25
+updated: 2026-04-25
+sources: 0
+confidence: medium
+status: draft
+---
+
 # Guide — Export Google Search Console
 
 > La GSC est la seule source de vérité. Voici comment extraire les bonnes données.

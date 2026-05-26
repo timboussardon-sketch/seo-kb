@@ -1,3 +1,16 @@
+---
+type: source
+source_type: article
+title: "LinkedIn Trend Research — Semaine du 2 avril 2026"
+aliases: []
+tags: []
+created: 2026-05-16
+updated: 2026-05-16
+sources: 0
+confidence: medium
+status: draft
+---
+
 # LinkedIn Trend Research — Semaine du 2 avril 2026
 
 **Audience cible** : Marketeurs & Growth Managers
