@@ -4,6 +4,616 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-26 — Business Score : streaming + Realtime + barre de progression
+
+Tim signale que l'affichage des colonnes "Score Business" et "Potentiel" dans l'onglet mots-clés est trop lent et qu'on ne voit rien pendant le calcul. Diagnostic : un seul appel Gemini 2.5 Pro qui scoreait les 10 mots-clés d'un bloc (15-30s), polling frontend toutes les 3s, et juste un `…` gris pour signaler l'attente.
+
+### Refactor en 3 axes
+
+**1. Edge Function `generate-business-score` — streaming par batchs**
+- Modèle : `gemini-2.5-pro` → `gemini-2.5-flash` (3-5× plus rapide, qualité validée sur le prompt ComparativeRanker V3 inchangé).
+- Split des keywords en batchs de 5 (`LLM_BATCH_SIZE=5`), tous lancés en parallèle via `Promise.all`.
+- Chaque batch insère ses scores en DB dès qu'il a fini, avec `bucket='Low'` placeholder.
+- Update de `processed_count` / `progress` / `phase` à chaque batch terminé.
+- Phase finale `bucketing` : recalcule les buckets percentile-based et UPDATE chaque row.
+- Reset des anciennes rows en début de run (delete `search_business_score_results` pour ce `search_id`) pour gérer les re-runs proprement.
+
+**2. Hook `useBusinessScores` — polling → Supabase Realtime**
+- Channels Realtime sur `search_business_score_results` (INSERT + UPDATE) et `generation_status` (INSERT + UPDATE).
+- Les scores apparaissent dès qu'ils tombent en DB, plus de latence morte de 0-3s.
+- Polling fallback à 8s seulement (au cas où Realtime échoue, RLS, etc.).
+- Trigger auto inchangé (POST à l'Edge), mais déclenché aussi sur "stalled" (>60s en `in_progress`).
+- Hook expose en plus : `progress`, `phase`, `processedCount`, `totalCount`, `bucketsReady`.
+
+**3. UI — skeleton shimmer + barre de progression live**
+- Composant `BusinessScoreProgress` au-dessus du tableau : phase label en français ("Mesure de la demande Google", "Scoring business par IA", "Classement final"), compteur "X/Y mots-clés", barre rayée animée brand `#FF371C` avec pourcentage.
+- Composant `ShimmerPill` : remplace les `…` des cellules par un pill gris dégradé animé (keyframes `ws-shimmer-bg`).
+- Logique bucket : on n'affiche le badge Potentiel que si `bucketsReady === true` (sinon ShimmerPill), pour ne pas montrer le placeholder `Low` pendant la phase scoring.
+
+### Migration SQL
+
+`20260526140000_business_score_streaming_and_realtime.sql` :
+- Ajoute `processed_count`, `total_count`, `phase` à `generation_status`.
+- `REPLICA IDENTITY FULL` sur les deux tables (pour que les payloads UPDATE Realtime soient complets).
+- Ajoute `search_business_score_results` et `generation_status` à la publication `supabase_realtime` (idempotent via `pg_publication_tables`).
+
+### Gains attendus
+
+| Avant | Après |
+|---|---|
+| 1 appel Gemini Pro séquentiel ~25s | 2 batchs Flash parallèles ~5s pour les premiers scores |
+| Polling DB 3s (latence morte) | Realtime push instantané |
+| `…` gris dans les cellules | Shimmer + barre de progression avec phase + compteur |
+
+### À déployer côté Tim
+
+1. Appliquer la migration : `supabase db push` (ou via dashboard).
+2. Redéployer l'Edge Function : `supabase functions deploy generate-business-score`.
+3. Vérifier que la publication `supabase_realtime` est bien activée (la migration le fait, mais double-check côté dashboard si Realtime ne se déclenche pas).
+
+### Vérifications locales
+
+Type-check vert. Dev server lancé sur `http://localhost:5174/`.
+
+---
+
+## 2026-05-26 — Onglet "LLM" : Radar AEO Gemini par cluster
+
+Session post-étude des marques **Trendtrack** (e-com intelligence) et **TryBrandSearch.ai** (consulting AEO). Décision stratégique : reproduire la brique "Library + Tracker + Analytics" de Trendtrack adaptée au monitoring des citations Gemini, sans repositioning frontal de Fusionn. Ajout d'un 4ème onglet "LLM" dans le workspace.
+
+### Cadrage retenu
+
+- **Moteur ciblé** : Gemini standalone uniquement (API officielle, Google Search grounding). V1 sans Google AI Overviews scraping. Le code Gemini grounded existait déjà dans `tool-citation-probe` (test du 2026-05-23), réutilisé.
+- **Mode "cluster"** : pas de mode "query unique". On scanne en parallèle les `suggested_keyword` d'un `search_semantic_results.cluster` (label texte, pas UUID) pour mesurer la domination transversale, plus juste qu'une seule query.
+- **Déclenchement auto** : ouverture de l'onglet LLM avec un cluster sélectionné = insert auto dans `tracked_clusters` (si sous quota) + premier scan déclenché immédiatement en fire-and-forget.
+- **Quota visible** : 1 cluster en plan gratuit, 10 en plan Pro. Badge en haut à droite.
+- **Tooltips systématiques** : tous les InfoTip ajoutés (titre, sélecteur, quota, cartes summary, métriques URL et domaine, matrice). Pédagogie continue, jamais d'écran sans explication.
+- **Pas de V0 manuel préalable** : Tim a accepté le risque méthodologique. Si la variance Gemini est trop forte, ajustement en V2.
+
+### Décisions data model
+
+- **Identifiant cluster** : `(user_id, search_id, cluster_name)`. Pas d'UUID dédié parce que les clusters vivent dans `search_semantic_results` comme labels.
+- **Granularité maximale conservée** : on stocke chaque citation par run (pas d'agrégation matérialisée). Les agrégats 30j sont calculés à la lecture via 4 fonctions SQL (`llm_domain_ranking`, `llm_url_ranking`, `llm_query_matrix`, `llm_cluster_summary`).
+- **Fenêtre fixe 30 jours glissants** en V1. V2 verra l'ajout de séries temporelles (trend ↗/↘) une fois 60-90j de data accumulés.
+
+### Livré (V1 déployable)
+
+**2 migrations SQL** dans `supabase/migrations/` :
+- `20260526133200_create_llm_radar_tables.sql` : `tracked_clusters` + `gemini_cluster_runs` + `gemini_citations` + indexes + RLS (lecture utilisateur via FK sur tracked_clusters, service_role full access).
+- `20260526133300_create_llm_radar_rpc_aggregations.sql` : 4 fonctions SQL d'agrégation (domain ranking, URL ranking, query matrix, summary) toutes en `SECURITY INVOKER`.
+
+**6 Edge Functions** dans `supabase/functions/` :
+- `_shared/gemini-grounded.ts` (helper partagé : 1 query → URLs via Gemini 2.5 Pro grounded)
+- `query-gemini-grounded` (HTTP endpoint pour debug ponctuel)
+- `run-cluster-radar` (1 cluster → toutes ses queries en batches parallèles de 5, persiste citations, met à jour `last_run_at`)
+- `ensure-tracked-cluster` (auto-track + quota check + premier scan en fire-and-forget)
+- `get-llm-cluster-data` (agrégats 30j pour l'UI, appelle les 4 RPCs en parallèle)
+- `cron-llm-daily` (3x/jour, sélectionne les `tracked_clusters` dus selon `runs_per_day`, déclenche `run-cluster-radar`. Protégé par header `X-Cron-Secret`)
+
+**Frontend** :
+- `src/components/workspace/WorkspaceLayout.tsx` : 4 onglets (Stratégie / Agent / Plan d'action / **LLM**). Segmented control passé de `workspace-segmented-3` (420px) à `workspace-segmented-4` (540px), translateX 0/100/200/300, icône `Radar` de lucide.
+- `src/components/workspace/LLMView.tsx` (nouveau, ~480 lignes) : auto-pick du plus gros cluster au mount, polling 30s × 5 min si scan en attente, sous-composants `SummaryCard`, `DomainRanking`, `UrlList`, `QueryMatrix`, InfoTip sur chaque métrique.
+- `src/index.css` : ~280 lignes CSS pour `.llm-*` (tokens existants `--ws-bg-page`, `--ws-bg-card`, `--ws-brand`, etc.).
+
+Type-check `npx tsc --noEmit` : exit 0. Dev local OK sur http://localhost:5173/.
+
+### À faire côté ops (non couvert par le commit)
+
+1. Pousser les 2 migrations sur l'instance Supabase de prod (`supabase db push` ou via Dashboard SQL editor).
+2. Déployer les 6 Edge Functions (`supabase functions deploy <name>`).
+3. Vérifier que `GEMINI_API_KEY` est bien dans les env vars des Edge Functions (déjà utilisée par `tool-citation-probe`).
+4. Ajouter `CRON_SECRET` dans les env vars Edge Functions.
+5. Configurer le Scheduled Function `cron-llm-daily` dans Supabase Dashboard à 3 fois par jour (06h, 14h, 22h UTC par exemple) avec header `X-Cron-Secret`.
+
+### Coût Gemini API estimé
+
+Gemini 2.5 Pro grounded : ~$0.008/requête. 1 cluster (15 queries) × 3 runs/jour × 30j = 1350 req/mois ≈ $11/cluster/mois. Free tier Google AI 1500 req/jour suffit pour ~1 utilisateur actif. Au-delà, facturable. Implique un pricing premium si le tracking devient l'usage principal.
+
+### Variance Gemini : à surveiller
+
+Le risque méthodologique non levé : Gemini peut renvoyer des citations différentes entre deux runs identiques. La fréquence sur 30j × 3 runs (90 observations par query) devrait lisser ça, mais à mesurer sur les premières semaines. Si variance > 70%, basculer sur Google AI Overviews via SerpAPI (~$0.005/req).
+
+### Pivot positioning : différé
+
+Le repositioning frontal de Fusionn (de "copilote de rédaction" à "radar AEO") n'a PAS été enclenché. Décision Tim : on garde les 3 onglets actuels intacts, on ajoute juste LLM. Si l'usage du Radar dépasse celui des autres onglets dans 4-6 semaines, on pourra envisager le swap (hub Radar + outputs en aval).
+
+### Ops déploiement (même session, fin d'aprem)
+
+**Quota cappé à 1 cluster pour V1** (Free comme Pro). Décision Tim avant deploy pour limiter le coût Gemini sur la durée de mesure.
+
+**Migrations push** : `supabase db push` a buggé sur 2 sujets :
+1. Migration distante `20260521190000` non en local (probablement un hotfix appliqué via SQL editor). Réconcilié via `supabase migration repair --status reverted 20260521190000` (le SQL appliqué en prod reste, on retire juste le tracking).
+2. 7 migrations locales en attente (5 du 22/05, 1 du 25/05, et 1 doublon de timestamp avec `20260522120000_create_youtube_reddit_results_tables` qui partageait son timestamp avec `..._fix_chat_threads_recherche_mode`). Toutes étaient déjà appliquées en prod (CREATE TABLE / policies déjà présentes). Marquées `--status applied` une à une. Le doublon a été renommé `20260522120001_fix_chat_threads_recherche_mode.sql` pour résoudre la collision de clé primaire `schema_migrations_pkey`.
+
+Au final, seules les 2 migrations LLM Radar ont été poussées en prod (les autres étaient déjà appliquées hors-tracker).
+
+**Fonctions deployées** (5/5) :
+- `query-gemini-grounded`, `run-cluster-radar`, `ensure-tracked-cluster`, `get-llm-cluster-data`, `cron-llm-daily`
+
+**Secret `CRON_SECRET`** généré et stocké via `supabase secrets set`. À conserver hors-repo (1Password / Bitwarden) car il sert au header `X-Cron-Secret` du scheduled function.
+
+**Bug grounding Gemini détecté en smoke-test** : les URLs retournées par l'API sont **toutes proxifiées** via `vertexaisearch.cloud.google.com/...`. Sans résolution, tous les domaines auraient été identiques en BDD et l'agrégation par domaine inutile. Fix appliqué dans `_shared/gemini-grounded.ts` : HEAD HTTP avec `redirect: 'manual'` sur chaque URL proxy pour récupérer la vraie destination via le header `Location`. Fallback sur le champ `title` (qui contient parfois le domaine) si la résolution échoue ou timeout (4s). Les `query-gemini-grounded` et `run-cluster-radar` ont été redéployées avec le fix. Re-test smoke prod : 9 citations sur 9 vrais domaines distincts (clubic.com, formalive.fr, plateya.fr, paulvengeons.fr, chatseo.app, social-media-for-you.com, seranking.com, impli.fr, ibdeo.fr) sur la query *"meilleur outil SEO IA pour freelance"*.
+
+### Pivot post-déploiement : scan déclenché à la recherche (pas via cron)
+
+Décision Tim immédiate après le smoke-test : *"ce n'est pas un cron, c'est lors de la recherche que tu dois lancer le résultat de l'onglet LLM. Et tu dois push sur Netlify car on est en main"*.
+
+**Changements appliqués** :
+- `useSearchPipeline.ts` : après que `generate-semantic-keywords` résout, on calcule le cluster majoritaire (max count `cluster`) et on appelle `ensure-tracked-cluster` en fire-and-forget. Ajouté à `Promise.allSettled` pour propre tracking.
+- `ensure-tracked-cluster` : avec quota=1, on **swap automatiquement**. Si le user a déjà un cluster actif, on le passe en `status='paused'` avant d'insérer / réactiver celui demandé. Data historique conservée.
+- `cron-llm-daily/index.ts` : annoté `[DÉSACTIVÉ EN V1]`, conservé pour V2 si time-series nécessaire. Aucun scheduled function configuré côté Dashboard.
+- LLMView garde son picker : l'utilisateur peut basculer entre clusters d'une recherche, chaque switch fait ensure-tracked-cluster qui gère le swap.
+
+### Commit + push main
+
+Commit `f33ce03` poussé sur `main` (auto-deploy Netlify lancé).
+
+13 fichiers, +2095 lignes, -4 lignes :
+- 1 composant frontend (LLMView), 1 hook patché (useSearchPipeline), 1 layout patché (WorkspaceLayout 4 onglets), index.css +421 lignes
+- 1 helper partagé, 5 edge functions (déjà déployées)
+- 2 migrations LLM (déjà appliquées) + 1 rename pour la collision de timestamp
+
+**Préservé hors-commit** : WIP de Tim sur business score realtime (`BusinessScoreProgress.tsx`, `VirtualKeywordTable.tsx`, `useBusinessScores.ts`, `generate-business-score/index.ts`, migration `20260526140000_business_score_streaming_and_realtime.sql`) délibérément exclus du `git add` ciblé.
+
+**CSS index.css** : reconstruction manuelle pour exclure ~35 lignes de keyframes `ws-shimmer-bg` (WIP business-score) mêlées à mes 421 lignes `.llm-*`. Méthode : extract de mes lignes via `sed`, revert du fichier à HEAD, append de mes lignes seules. Diff final : +421 / -0 (clean).
+
+---
+
+## 2026-05-25 — Audit complet (5 passes) + Phase 1 (bugs + nettoyage + UX)
+
+Session d'amélioration globale lancée par « ON va améliorer fusionn ». 5 passes d'audit (fonctionnel / UX / qualité LLM / conversion / dette technique) croisées avec les audits du vault (`Audit-UI-design-system`, `Audit-UX-CX`, `Audit-prompts-vs-doctrine`, `Audit-ux-workspace`, `Briefs-outils-product-led-seo`). Shortlist de 21 chantiers proposée à Tim, qui retient tout sauf #8 (ChatGPT/Perplexity dans Citation Probe), #9 (footer outils + maillage inter-outils), #11 (anti-hallucination `[À SOURCER]`).
+
+Plan d'exécution en 6 phases. Phase 1 (quick wins + bugs + nettoyage) bouclée dans la foulée.
+
+### Phase 1 — livré
+
+**#4 Barème HN aligné /5 → /10** — `generate-hn-structure/index.ts` produisait `note_globale` sur /5 alors que `analyze-hn-score` et l'UI affichent /10 (incohérence d'affichage : `4/10` apparaissait au lieu de `8/10` pour une analyse "très bonne"). Prompt repris (l.168, 178, 194, 199, 205) + commentaire (l.290) + données mockées de la page `/apercu-resultats` (`note_globale: 4` → `8`). Migration SQL prête à appliquer : `supabase/migrations/20260525120000_rescale_hn_note_globale_to_10.sql` (UPDATE × 2 conditionnel sur `note_globale <= 5` pour ne pas re-multiplier des lignes déjà migrées).
+
+Faux positifs de l'audit (déjà fixés en interne avant cette session) : `generate-brief` lisait bien `structure_proposee` ; `note_globale` était bien produit. L'audit `Audit-prompts-vs-doctrine.md` est périmé sur ces 2 points.
+
+**#18 Tailwind `white` → `#FFFFFF`** — RETIRÉ DU PLAN. Aucune redéfinition de `white` dans `tailwind.config.*` ni `index.css`. Le bug n'existe plus (peut-être jamais existé). L'audit `Audit-ux-workspace.md:57` est périmé.
+
+**#21 Nettoyage code mort** — supprimé :
+- `src/pages/Discuter.tsx` (non routée dans App.tsx, ne servait qu'à wrapper l'ancienne UI chat)
+- `supabase/functions/fetch-google-ads-metrics/` (0 appelant)
+- `supabase/functions/get-gsc-sites/` (0 appelant — Google OAuth login reste actif via `google-auth` + `google-oauth-callback`)
+- Conservé : `fetch-volume-trends` (utilisée par `src/hooks/useVolumeTrends.ts`)
+
+**#17 Wording onglets vides** — les 10 empty states de `ResultsContainer.tsx` (FAQ, Outils, Vecteurs, YouTube, Reddit, Semantic, Micro-Intentions, HN Structure, Objections, Modèles) disaient tous *« Lancez la génération depuis le bouton dédié »* alors qu'aucun bouton de re-génération individuelle n'existe (la pipeline `useSearchPipeline` génère tout en batch au lancement de la recherche). Wording remplacé par *« Cette analyse n'a pas été générée pour cette recherche. Relancez une nouvelle recherche pour la produire. »* — honnête. Bug d'à côté corrigé au passage : l'empty state des objections affichait *« Aucun cluster disponible »* (mauvais titre copié-collé) → *« Aucune objection disponible »*.
+
+`EmptyPlaceholder` étendu avec props optionnelles `actionLabel` + `onAction` pour préparer des CTA inline futurs (quand des handlers de re-génération individuelle seront ajoutés, cf. Phase ultérieure).
+
+**#16 Composant onglet unifié** — analyse : les « 3 modèles d'onglet actif » identifiés par l'audit sont en réalité 3 widgets distincts par nature (segmented control top-nav avec slider, sidebar Writer avec disabled+badge, sidebar gauche stratégie avec groupes+dot loading). Les fusionner ferait perdre la cohérence visuelle de chaque contexte. Refactor local appliqué : le segmented control top-nav (3 boutons quasi-identiques répétés dans `WorkspaceLayout.tsx:379-399`) passe en `.map()` sur config `[{ key, label, Icon }]` — réduit 20 lignes en 14.
+
+### État TypeScript
+
+40 erreurs `tsc` préexistantes (TS6133 imports inutilisés, TS2322/TS2345 types lâches). **Aucune régression introduite** par les changements de cette session. Dette à traiter dans une session dédiée si Tim souhaite un repo `tsc --noEmit` propre.
+
+### Actions à faire après merge
+
+1. `supabase db push` pour appliquer la migration HN /5 → /10
+2. `supabase functions deploy generate-hn-structure` pour le nouveau prompt
+3. Vérifier visuellement sur localhost:5174 :
+   - `/compte` → top-nav 3 onglets identique
+   - `/compte` → ouvrir une recherche, naviguer vers FAQ/Outils/Objections → wording honnête
+   - `/apercu-resultats` → carte "Structure Hn" affiche `8/10`
+
+### Audits du vault à mettre à jour
+
+`Audit-prompts-vs-doctrine.md` et `Audit-ux-workspace.md` contiennent maintenant des recommandations périmées (cf. faux positifs #4 et #18). À nettoyer lors d'un prochain refresh.
+
+### Phase 2 — livré (même session, sans pause)
+
+Tim a demandé d'enchaîner sur les chantiers business critiques.
+
+**#2.1 Connexion sans confirmation email bloquante** — la confirmation Supabase forçait l'utilisateur à quitter l'app, perdre son mot-clé et attendre un email. `Connexion.tsx:114-125` simplifié : suppression de la branche `view === 'signup'` qui affichait *« Vérifiez votre boîte mail… »* — désormais, dès que `signUp()` réussit, l'`useEffect` existant l.42-49 redirige automatiquement vers `/compte?keyword=…` (le `pendingKeyword` est déjà persisté via URL). **⚠️ Tim doit désactiver `email_confirm` dans Supabase Dashboard → Authentication → Sign In/Up** pour que le flux soit complet. Sans ça, `signUp()` ne retourne pas de session et l'`useEffect` ne déclenche pas (l'utilisateur reste sur la page connexion sans feedback — bug régressif). À faire avant déploiement.
+
+**#2.2 Quotas alignés 3→5 + widget récap + endpoint dédié** — bug d'incohérence : `types.ts:86` déclarait `FREE_USER_HN_ANALYSIS: 3` mais `supabase/functions/check-hn-score-limit/index.ts:110` autorisait 5/mois. Choix : aligner sur 5 (plus généreux, moins frustrant). 3 fichiers patchés : `types.ts`, `Landing.tsx:758`, `SubscriptionChoiceModal.tsx:153` (+ mention « par mois » ajoutée partout pour clarifier le reset mensuel).
+
+Nouvel endpoint `supabase/functions/get-all-quotas/index.ts` qui retourne en 1 round-trip `{isPremium, quotas: {searches, hn, semantic, geo}, resetsAt}`. Logique premium dupliquée depuis `check-rate-limit` (subscription active/trialing + period_end valide). 4 compteurs en parallèle (`search_history` total, `hn_score_analysis` mensuel, `semantic_score_analysis` mensuel, `geo_analysis_history` mensuel).
+
+Nouveau hook `src/hooks/useQuotas.ts` (~50 lignes) + composant `src/components/workspace/QuotasFooter.tsx` (footer compact, masqué si `isPremium`, valeurs en rouge brand si `remaining ≤ 1`, CTA « Passer Premium »). Intégré en bas de `ResultsNav.tsx` via `margin-top: auto`. CSS `.workspace-quotas-*` ajouté dans `index.css` (tokens `--ws-bg-card`, `--ws-border`, etc.). Le widget n'apparaît que dans la vue Stratégie (limitation acceptée pour le MVP).
+
+Bonus : retiré le `if (visibleSections.length === 0) return null;` de `ResultsNav.tsx` pour que le footer quotas soit visible même quand aucun résultat n'a été généré (vue stratégie vide).
+
+**#2.3 Aligner promesse landing ↔ paywall** — copy alignée par #2.2 (5/mois HN + mention reset mensuel). Ajout d'une nouvelle Q en bas de `FAQSection.tsx` : *« Comment fonctionnent les quotas du plan gratuit ? »* qui clarifie 3 recherches sans expiration + 5 HN/Sémantique/GEO par mois avec reset le 1er.
+
+### Phase 3 — livré (même session)
+
+**#3.7 Pages React Générateur Hn** — `src/pages/StructureHn.tsx` (293 lignes, daté 23 mai) existait déjà, routée sur `/structure-h2-h3-seo` et appelle `tool-hn-structure`. Audit `Briefs-outils-product-led-seo.md` périmé sur ce point.
+
+**#3.10 Stripe customer portal** — l'ancien lien dans `UserProfile.tsx:299` pointait vers le « login link » Stripe générique (`billing.stripe.com/p/login/28EfZh…`) qui force l'utilisateur à ressaisir son email. Nouvel endpoint `supabase/functions/create-billing-portal-session/index.ts` qui résout le `stripe_customer_id` du user via la table `subscriptions` et appelle `stripe.billingPortal.sessions.create({ customer, return_url })`. Bouton `<button>` remplace le `<a>`, état de loading, retour erreur si pas d'abonnement Stripe (« Souscrivez Premium d'abord »).
+
+**#3.5 Section « À reprendre » en tête du compte** — découverte : la section *Reprendre* existait déjà dans `HistoryPanel.tsx:99-120` (filtre `has_saved_results`, tri par `last_opened_at`, top 3) mais visible **uniquement dans la vue Historique**. Extrait en composant réutilisable `src/components/compte/ResumeSection.tsx` (~60 lignes, props `searchHistory`, handlers, `limit`, `title`, `className`). `HistoryPanel` ré-utilise désormais ce composant (suppression du `useMemo` local + de l'import `SearchItem` orphelin). Ajout dans `Compte.tsx` du même composant en TÊTE de la vue conversational, visible **uniquement quand `conversational.phase === 'hero'`** (avant la saisie du mot-clé) — évite de polluer le flow d'analyse. Le parent passe à `overflow: auto` dans cette phase pour que la section ne déborde pas.
+
+### Phase 4 — livré partiellement (même session)
+
+**#4.14 Mobile responsive** — surprise : les fixes critiques étaient déjà en place dans `index.css:2886-2992` (mediaquery 768px) : `.workspace-strategy-sidebar` passe en colonne avec `max-height: 38vh` scrollable (les 15 onglets restent atteignables), éditeur passe à `85dvh` au lieu de 50/50, mode bar wrappé en 2 lignes, boutons d'action en icônes seules. L'audit `Audit-UX-CX.md:l.41` était périmé sur la gravité du « mobile cassé ».
+
+Finalisation : 3 occurrences de `100vh` migrées vers `100dvh` pour iOS Safari (qui réserve la place de la barre d'URL avec `100vh` mais pas avec `100dvh`) — `App.tsx:39` (`calc(100vh - 80px)` → `calc(100dvh - 80px)`), `App.tsx:76` (fallback Suspense), `AnalyseTexte.tsx:642` (page entière). Restes de `100vh` (modale Notes, ToC blog sticky, Admin, PreviewOrganikk) laissés en l'état : ce sont des `max-h` ou modales secondaires, pas des layouts critiques.
+
+**#4.15 Actions « quoi en faire » par vue** — reporté. Demande la création d'un composant `<ViewActions>` générique (copier / exporter XLSX / JSON-LD / envoyer-éditeur) et l'intégration dans 8+ vues (FAQ, Hn, Outils, Vecteurs, YouTube, Reddit, Semantic, Micro-Intentions, Objections, Modèles, Mots-clés, Clusters) avec des handlers spécifiques par format. Session dédiée nécessaire.
+
+### Actions Tim — récap consolidé (à faire avant de tester)
+
+1. **Supabase Dashboard → Authentication → Sign In/Up → décocher « Confirm email »** (sinon `signUp()` ne retourne pas de session et la connexion reste bloquée — régression vs avant)
+2. **Migrations & déploiements** :
+   - `supabase db push` (migration HN /5 → /10)
+   - `supabase functions deploy generate-hn-structure` (prompt /10)
+   - `supabase functions deploy get-all-quotas` (nouveau)
+   - `supabase functions deploy create-billing-portal-session` (nouveau)
+3. **Validation visuelle** sur `http://localhost:5174/` :
+   - `/compte` → sidebar gauche → footer « Vos quotas » (4 lignes + reset + CTA)
+   - `/compte` (avec recherches sauvegardées) → en haut, section « Reprendre » avant le HeroInput
+   - `/compte` → onglets vides (FAQ, Outils, Objections) → wording honnête + EmptyPlaceholder
+   - `/apercu-resultats` → carte Structure Hn affiche `8/10`
+   - `/` → bento gratuit : « 5 analyses Hn et 5 analyses sémantiques par mois »
+   - `/` → FAQ : nouvelle Q sur quotas en dernière position
+   - Profile menu (premium) → « Gérer mon abonnement » → loader + redirect Stripe portal sans saisir l'email
+   - `/connexion?mode=signup` → création compte → redirection directe `/compte` (après désactivation `email_confirm`)
+4. **Tester sur mobile** (DevTools ou vrai device) → la sidebar 15 onglets reste accessible, l'éditeur n'est plus en 50/50, pas de débordement vertical iOS
+
+### Surface de risque
+
+Beaucoup de chantiers empilés sans commit intermédiaire. Si une régression apparaît, la dichotomie sera coûteuse. Recommandation : commit groupé `Phase 1+2+3+4 d'amélioration globale` puis sessions futures unitaires par phase.
+
+### Commits réalisés
+
+- `b352cdd` Decode entities : titres et meta du site fingerprint propres (WIP pré-existant)
+- `c6db84e` Amélioration globale Phase 1+2+3+4 : bugs, quotas, rétention, mobile
+- `8648a24` Cards prix : 1ère tentative (sync avec features récentes — voir correctif `99909cb`)
+- `99909cb` Cards prix honnêtes : reflet du gating réel de l'outil (correctif du précédent)
+
+### Bonus session : cards prix mises à jour (post-commit)
+
+Tim a signalé que les 2 cards de prix (`Landing.tsx` section pricing l.744-810 + `SubscriptionChoiceModal.tsx` modal interne) étaient désynchronisées de l'état réel de l'app au 25 mai. Retirées :
+- « Briefs rédactionnels » (l'onglet Rédaction a été retiré le 23 mai, cf. commit `6c3cf3d`)
+- « Visualisation en clusters (aperçu) » seul (remplacé par « Visualisation en clusters et carte »)
+- « Aperçu des résultats de chaque analyse » (vague)
+- « Les premiers mots-clés de chaque recherche » (déplacé en « 50-80 mots-clés par recherche »)
+- « Chat IA contextuel » → renommé en « Agent conversationnel IA » (plus à jour)
+
+Ajoutées en Freemium (4 items) :
+- « 5 audits GEO Sentinel par mois »
+- « Outils gratuits : Score Business, Structure Hn, Test citation IA »
+- « Aperçu des micro-intentions et modèles »
+- « 50-80 mots-clés par recherche » (chiffre exact)
+
+Ajoutées en Premium (4 items) :
+- « Plan d'action SEO 3 mois personnalisé » (Phase 3 du 23 mai)
+- « Stratégie pSEO : cluster AEO complet »
+- « Mots-clés YouTube et discussions Reddit »
+- « Modèles BoFu complets »
+- « Vecteurs » ajouté à la ligne micro-intentions
+
+Refactor secondaire : les 2 cards (Freemium + Premium) de `SubscriptionChoiceModal` étaient écrites en blocs JSX répétés (~9 lignes par feature). Passées en `.map()` sur un array `[{ title, desc }]` (-146 / +60 lignes au total). Plus simple à maintenir pour les futures évolutions.
+
+### Phase 4.15 — Actions « quoi en faire » par vue (commit `17a9bc7`)
+
+Implémentation complète de ce qui était resté en backlog en début de session. 12 vues du workspace gagnent un bouton **« Copier en markdown »** dans leur en-tête, et la FAQ gagne aussi **« Copier le JSON-LD »** (FAQPage selon schema.org, directement collable dans un `<script type="application/ld+json">`).
+
+**Choix de scope** :
+- Action « envoyer dans l'éditeur » retirée de la matrice : le mode `writer` dans `WorkspaceLayout.tsx:532` est code mort (aucun `setViewMode('writer')` dans le code, aucun bouton dans l'UI top-nav 3 onglets). Pas de cible pour l'envoi.
+- Action « exporter Excel » non étendue : `SortableKeywordsTable` a déjà son export gated en premium (`SortableKeywordsTable.tsx:539-559`). Étendre l'export aux autres vues = session dédiée.
+- Format choisi : markdown pipe-table pour tableaux, headers/listes/blockquotes selon le contenu. Compatible Notion, Obsidian, blogs, briefs.
+
+**Composants créés** :
+- `src/lib/copyHelpers.ts` — 12 formatters markdown + `formatFaqJsonLd()` pour JSON-LD FAQPage. Helper `esc()` qui échappe les pipes et écrase les retours à la ligne pour les cellules de tableau. Helper `table()` qui prend headers + rows et produit du markdown pipe-table.
+- `src/components/workspace/ViewActions.tsx` — composant avec slots conditionnels `getMarkdown` et `getJsonLd`, feedback visuel "Copié" pendant 1.5s, gestion erreur clipboard.
+- CSS `.view-actions`, `.view-action-btn`, `.view-action-error` dans `index.css` avec tokens du design system (`--ws-bg-card`, `--ws-border`, etc.).
+
+**12 vues équipées dans `ResultsContainer.tsx`** :
+- Stratégie / Comprendre : Mots-clés, Clusters, Micro-intentions, Vecteurs, Analyse sémantique
+- Produire : Structure Hn, FAQ (markdown + JSON-LD), Outils, Objections, Modèles
+- Découvrir : YouTube, Reddit
+- **Non équipée** : Carte (vue graphique D3, copier en markdown n'a pas de sens)
+
+**Bugs de types corrigés au passage** :
+- `ClusteredKeywords.keywords` est `SemanticKeyword[]` : les champs sont `suggested_keyword` et `relevance_score`, pas `keyword` et `relevance`. Corrigé dans `formatClustersMarkdown`.
+- `ContextVector` a `{term, weight}` (pas `{label, description}`) et `SemanticEntity` a `{entity_id, entity_type, salience, context_value}` (pas `{term, salience}`). Corrigé dans `formatSemanticAnalysisMarkdown`.
+
+0 régression TS.
+
+---
+
+### Correctif `99909cb` : audit gating et cards honnêtes
+
+Tim a signalé après le 1er commit cards (`8648a24`) que la mention « 5 analyses Hn et 5 sémantiques par mois » n'existe plus et que la différence Freemium / Premium ne se voyait pas.
+
+Audit précis lancé via agent Explore — verdict cinglant : **seules 2 limites sont réellement appliquées** dans l'outil aujourd'hui :
+1. **3 recherches** (`check-rate-limit` appelé depuis `Compte.tsx:40` + paywall via `SubscriptionChoiceModal`)
+2. **Export Excel** (`SortableKeywordsTable.tsx:539-559` — bouton grisé `#9CA3AF`, clic = modale d'upgrade)
+
+Plus 2 différences cosmétiques :
+- Historique limité à 5 dernières recherches en gratuit (`Compte.tsx:62` — `query.limit(5)` si `!isPremium`)
+- `HistoryStatsCards` masquées en gratuit (`HistoryPanel.tsx:81, 96`)
+
+**Tout le reste est ouvert en gratuit** :
+- `check-hn-score-limit` : jamais appelé depuis le frontend (mort)
+- `check-semantic-score-limit` : seulement appelé depuis `/score-semantique` (outil public hors workspace)
+- `check-geo-analysis-limit` : seulement appelé depuis `/analyse-texte` (page protégée hors workspace)
+- `MicroIntentionsTable`, `ModelsTable`, `AgentChatView`, `PlanActionView`, `PseoStrategyView`, `YoutubeKeywordsTable`, `RedditKeywordsTable`, etc. : prop `isPremium` déclarée mais **jamais utilisée dans le render**
+- Aucun gate sur Agent IA, Plan d'action 3 mois, Stratégie pSEO, briefs, FAQ, vecteurs, objections, modèles, YouTube/Reddit, GEO
+- `ai-chat` : aucune limite implémentée (« 15 messages/jour » est du marketing pur)
+
+Décision Tim : assumer cette différenciation faible avec des cards 100 % honnêtes plutôt que de promettre du gating non implémenté ou d'ajouter de vrais gates en urgence.
+
+Cards finales (5 lignes chacune, différence claire) :
+- Freemium : 3 ✓ + 2 ✗ (`Export Excel`, `Historique complet — 5 derniers max`)
+- Premium : 5 ✓
+
+Action future à considérer : **vraiment gater des features** (Agent IA, Plan d'action 3 mois, Stratégie pSEO) pour justifier le 20-29€/mois. C'est une décision produit, pas technique. Si Tim choisit cette voie, ouvrir un nouveau chantier dédié.
+
+---
+
+## 2026-05-25 - Fix entités HTML non décodées dans FusionnKnowsYouCard
+
+Bug visible dans le bloc `Contexte de l'analyse` (composant `FusionnKnowsYouCard`) : les apostrophes scrappées depuis les H2 du site sortaient encodées (`d&#x27;acquisition`, `Ce qu&#x27;en`) au lieu de `d'acquisition`, `Ce qu'en`.
+
+Racine : `stripHtml()` dans `supabase/functions/enrich-context/index.ts` utilisait `.replace(/&[a-z]+;/gi, " ")`, qui ne couvre pas les entités numériques (`&#x27;`, `&#39;`) et remplace les entités nommées par un espace au lieu de les décoder.
+
+Correction sur 2 niveaux :
+
+1. **Source (edge function `enrich-context`)** : nouvelle fonction `decodeHtmlEntities()` qui gère entités hex (`&#x27;`), décimales (`&#39;`) et nommées (`apos`, `nbsp`, `quot`, `laquo`, etc.). `stripHtml()` la rappelle après le strip des balises. Demande un `npx supabase functions deploy enrich-context` pour activer en prod.
+2. **Affichage (`src/components/compte/FusionnKnowsYouCard.tsx`)** : helper `decodeEntities()` local au composant, appliqué à `siteFingerprint.title`, `siteFingerprint.metaDescription` et chaque `h2s[i]`. Shield défensif au boundary externe (contenu scrapé) qui agit immédiatement en local avant le deploy edge.
+
+`finalUrl` non décodé : URL = sémantique préservée (`&amp;` ≠ `&` dans une query string).
+
+Pas encore commité, en attente de validation visuelle Tim.
+
+---
+
+## 2026-05-23 - Workspace top-nav 3 onglets (Stratégie / Agent / Plan d'action 3 mois) + onboarding enrich-context
+
+Commit `6c3cf3d` poussé sur `main`. Très grosse session, 5 axes.
+
+### Workspace top-nav : 3 onglets de premier niveau
+
+Retrait définitif de l'onglet `Rédaction` (briefRedaction). 14 fichiers nettoyés (`src/types.ts`, `useCompteState`, `useSearchPipeline`, `useConversationalAnalysis`, `useGenerationStatus`, `WorkspaceLayout`, `ResultsNav`, `ResultsContainer`, `SeoConversationalChat`, `Compte.tsx`, `ResultsPreview.tsx`, `xlsxGenerator.ts`, `resultsLoader.ts`, `types/compte`), composant `BriefRedactionView.tsx` supprimé, edge function `generate-brief-redaction/` supprimée. 0 nouvelle erreur TS introduite.
+
+Le `viewMode` passe de `'strategy' | 'writer'` à `'strategy' | 'agent' | 'planAction' | 'writer'` (writer reste dans le code mais n'est plus accessible depuis l'UI). Le segmented control 2-boutons devient 3-boutons avec slider qui se déplace sur 3 positions.
+
+**Icônes Fusionn-like** (anti-IA) : Stratégie = `Crosshair`, Agent = `MessageSquare`, Plan d'action = `ListChecks`. Plus de `Bot`, `Zap`, `Sparkles` qui faisaient cliché IA.
+
+**Mount persistent** : pattern lazy-mount + keep-mounted via state `visitedTabs: Set<ViewMode>`. Quand l'utilisateur switch d'onglet, l'état est conservé. L'Agent garde son streaming en cours, le Plan d'action garde son plan généré et ses checkboxes "fait".
+
+### Agent conversationnel (Phase 2)
+
+Composant `AgentChatView.tsx` : interface chat avec streaming SSE Gemini en temps réel, 5 suggestions de questions au démarrage contextualisées (selon onglets disponibles : mots-clés, business score, micro-intentions, etc.). Réutilise l'edge function `ai-chat` existante avec `contextType: 'full_context'` étendu.
+
+Persistance via tables existantes `chat_threads` + `chat_messages`, indexées par `search_id`. Au mount du composant, charge l'historique du thread `full_context` lié à la recherche en cours.
+
+### Plan d'action 3 mois (Phase 3)
+
+Refonte complète. L'ancien plan d'action 4 piliers (Surprise / Grounding / pSEO / AEO) avec 3 actions chacun ne donnait pas de roadmap temporelle ni de priorisation par mot-clé. Le nouveau format croise les deux :
+
+- **Headline** : mot-clé pilier · 20 mots-clés priorisés · N pages à créer · KPI cible 3 mois
+- **3 cards mensuelles** avec accent progressif (rouge M1 / orange M2 / vert M3, symbolise la pyramide Surprise → Grounding → AEO)
+- **Pour chaque mois** : table mots-clés (★ Hub / ◆ Spoke / ● FAQ + score business + bucket dot) · actions hebdomadaires cochables avec bullets concrets · KPI fin de mois
+- **Continuité 3 mois** : à chaque clic "Régénérer", Fusionn produit un nouveau plan daté du jour (le compteur recommence sur le présent)
+- **4-3-4 actions** par mois (Tim a choisi : M1 et M3 intenses, M2 plus léger)
+
+Edge function `generate-plan-action` repensée : prompt avec doctrine 4 piliers compressée + règles de priorisation Fusionn + structure JSON stricte (headline + months[3]). Le LLM reçoit 40 mots-clés + business score + micro-intentions + clusters + objections et doit en sélectionner exactement 20 répartis sur 3 mois.
+
+Composant `PlanActionView.tsx` : barre de progression globale, checkboxes persistées en `localStorage` par `search_id`, cache du plan généré pour ne pas re-call inutilement.
+
+⚠️ Pas de mention "Organikk" dans le copy (Tim a demandé "Fusionn" partout). Le terme "pyramide stratégique" remplace "pyramide Organikk".
+
+### Onboarding enrich-context (3 champs)
+
+Tim a signalé que les champs URL et marque étaient invisibles dans le HeroInput initial. **Refonte complète UX** :
+
+- **3 cases strictement identiques** (mot-clé, site web, entreprise/marque) avec label clair au-dessus chacune et le mot "facultatif" en gris léger pour les 2 dernières
+- **Plus d'icônes décoratives** dans les inputs (pas de Search, Globe, Building2 — c'était cliché IA)
+- **Plus de wrapper "Personnalisez l'analyse" avec Sparkles** et copy marketing
+- **Plus de badge OBLIGATOIRE rouge** — trop agressif
+- Focus state : bordure passe en `#0F172A` (noir profond) + ring très subtile (look Linear/Notion)
+
+Bug fix : **autostart bypass corrigé**. Avant, depuis la landing `?keyword=X&startChat=true` → `handleKeywordSubmit` était appelé direct → bypass du HeroInput → utilisateur ne pouvait pas saisir URL/marque. Maintenant, nouvelle fonction `prefillKeyword(kw)` qui pré-remplit le champ mot-clé sans changer la phase. Sync via `useEffect` dans HeroInput pour gérer le cas où `initialValue` arrive après le mount.
+
+Spinner pendant l'enrich-context : nouveau state `isEnriching` exposé par le hook, propagé jusqu'au bouton HeroInput. Le bouton "Lancer l'analyse" devient "Analyse de votre site et de votre marque" avec spinner pendant les ~8s d'enrichissement.
+
+### Edge function enrich-context : anti-hallucination + parallèlisation
+
+Tim a constaté que pour "Fusionn" (marque récente, peu indexée), Gemini hallucinait sur une plateforme data engineering type Fivetran/Talend. **3 corrections** :
+
+1. **Modèle pour brand lookup passé en `gemini-2.5-flash`** (le `flash-lite` ne supporte pas le grounding Google Search fiablement). Le scrape URL reste sur `gemini-3.1-flash-lite` côté reste de la function.
+2. **Tool `google_search` activé** : Gemini cherche vraiment sur le web au lieu d'inventer.
+3. **Prompt durci** : « Si tu trouves au moins une source publique crédible, rédige... Sinon réponds EXACTEMENT INCONNU. N'invente jamais. Mieux vaut INCONNU qu'une réponse hasardeuse. »
+4. **Filtres post-réponse** : INCONNU, "désolé", "je ne sais pas", textes < 80 chars → `brandSummary = ""` → composant `FusionnKnowsYouCard` ne rend pas la section.
+
+**Tests live validés** :
+- Decathlon → résumé factuel propre ("entreprise française spécialisée dans...")
+- Fusionn → INCONNU (Gemini ne le connaît pas avec certitude, refus de fabuler)
+- Marque inventée "ZorgblattZyx..." → INCONNU
+
+**Performance** : scrape et brand lookup passés en `Promise.all` parallèle. Latence avant analyse divisée par ~2 (de 13s à ~8s max).
+
+Coût marginal : 1 call Gemini 2.5 Flash avec grounding ≈ $0.002 par recherche.
+
+### Refonte UX FusionnKnowsYouCard (anti-IA writing)
+
+L'encart "Ce que Fusionn sait de vous" était trop IA (halo, Sparkles, gradient, sections décorées). Refondu en **fact-sheet** :
+
+```
+┌─────────────────────────────────────────────────┐
+│ Contexte de l'analyse              site + marque │
+├─────────────────────────────────────────────────┤
+│ Site          fusionn.co (titre, meta)           │
+│ Sections      H2 séparés par · sans pills        │
+│ Marque        Résumé Gemini sourcé               │
+└─────────────────────────────────────────────────┘
+```
+
+Layout en grille `label | valeur`, séparateurs gris léger, mini-tag source en haut à droite, lien souligné sobre. Plus d'icône décorative. Titre changé en "Contexte de l'analyse" (plus neutre que l'anthropomorphique "Ce que Fusionn sait de vous").
+
+### Context-builder étendu (Agent voit tout)
+
+`supabase/functions/_shared/context-builder.ts` `buildFullContext` étendu de 8 à 14 sources :
+
+Ajoutées :
+- `search_input` : keyword + contexte enrich-context (scrape URL + brand summary)
+- `micro_intentions`
+- `vecteurs`
+- `semantic_analysis`
+- `youtube_keywords`
+- `reddit_keywords`
+
+L'Agent voit désormais toutes les données de l'onglet Stratégie + le contexte d'entrée (site scrape, brand Gemini). Tim avait insisté : « l'agent doit connaître tous les onglets de stratégie et le contexte qu'on a mis en entrée avec scraping du site ».
+
+### Bug fix barre de progression Sémantique 7/8
+
+Tim a signalé que la barre restait bloquée à "Sémantique" 7/8. Cause : `setCompletedSteps(prev => ({ ...prev, semantic: true }))` n'était appelé que dans la branche `success` de `generate-semantic-analysis`. En cas d'échec ou de format inattendu, la step restait à `false` → barre figée à 7/8.
+
+Fix : `setCompletedSteps semantic: true` est maintenant appelé dans tous les chemins (succès, erreur business, exception réseau). La barre arrive à 8/8 quoi qu'il arrive.
+
+### Edge Functions déployées au cours de la session
+
+- `enrich-context` (2 deploys : parallélisation + brand grounding)
+- `score-keywords-batch` (Phase outils précédente)
+- `tool-hn-structure` (Phase outils)
+- `tool-citation-probe` (Phase outils)
+- `generate-plan-action` (2 deploys : v1 4 piliers puis v2 plan 3 mois)
+- `ai-chat` (re-deploy avec context-builder étendu)
+
+### Commits de la session
+
+- `6c3cf3d` : commit unique de la session (refonte workspace + onboarding + bug fixes)
+
+⚠️ La session a aussi inclus du travail sur 4 outils gratuits Product-Led SEO (`/comparateur-volume-business-seo`, `/structure-h2-h3-seo`, `/test-citation-ia-gemini`, brief technique du Score Business) commités plus tôt. Ne sont pas réinclus ici.
+
+---
+
+## 2026-05-23 - Workspace : Business Scores persistants entre onglets + colonne Score Business dans Clusters
+
+Trois demandes Tim sur le workspace :
+1. « Dans onglet mots-clés, lorsqu'on change d'onglet, une fois les score business calculé, les garder, ne pas le relancer à chaque fois »
+2. « Ajouter Score sém dans score » (dans l'onglet Clusters)
+3. « Ajouter des tooltips dans Clusters pour les colonnes »
+
+**Diagnostic** : le state `businessScores` vivait dans `SortableKeywordsTable.tsx` (useState local + useEffect de fetch/polling/trigger). Or `SortableKeywordsTable` est démonté dès qu'on change d'onglet (`activeView !== 'sortable'`), donc le state était perdu et le polling redémarrait à chaque retour sur l'onglet Mots-clés. La table Clusters n'avait par ailleurs aucun accès aux Business Scores.
+
+**Refactor** :
+- Création du hook `src/hooks/useBusinessScores.ts` qui porte toute la logique fetch + polling 3s + trigger automatique de la function `generate-business-score` + détection des cas no-status / failed / in_progress-stalled. Retourne `{ scores: Map<string, { score, bucket }>, loading: boolean }`.
+- `ResultsContainer.tsx` (parent stable, jamais démonté pendant le switch d'onglet) appelle `useBusinessScores(searchId)` une seule fois et passe `businessScores` + `businessScoreLoading` en props à `SortableKeywordsTable` ET `ClusteredTableView`.
+- `SortableKeywordsTable.tsx` : retire useState `businessScores`, retire useState `businessScoreLoading`, retire le useEffect de ~108 lignes (toute la machinerie hoistée), retire l'import `useAuth` et l'usage de `user` (plus nécessaire ici). Accepte désormais `businessScores` / `businessScoreLoading` en props.
+
+**ClusteredTableView** :
+- Props `businessScores` + `businessScoreLoading` ajoutées.
+- Renommage de la colonne « Score » en « Score Sém » (elle affichait déjà `keyword.relevance_score`, le nouveau label désambiguïse).
+- Nouvelle colonne « Score Business » à droite, qui lit `businessScores.get(normalizeKeyword(keyword.suggested_keyword))` et affiche le score + le bucket en sous-libellé (`formatBucket`). État loading : `…` ; absent : `-`.
+- **Tooltips ajoutés sur toutes les colonnes** : Cluster, Type d'Intention (`IntentInfoTip`), Mots-clés, Score Sém (`ScoreInfoTip`), Score Business (`BusinessScoreInfoTip`). Variantes `light` pour rester lisibles sur le header orange brand.
+
+**Effet utilisateur** : on calcule le Score Business une seule fois par `searchId` puis on navigue librement entre Mots-clés / Clusters / Carte sans relancer le polling, et les deux tableaux affichent désormais les mêmes scores.
+
+---
+
+## 2026-05-23 - Test citation Gemini : passage en gemini-2.5-pro avec Google Search grounding
+
+Tim a testé l'outil sur « outil ia mot cle » et obtenu 0/9 citations. Ses doutes : « la réponse ne fait que deux lignes, il va vraiment scrapper toute la réponse pour voir les citations ? ». Diagnostic complet de ma part : l'outil mesurait juste la mémoire fossile de `gemini-3.1-flash-lite` (modèle léger, mémoire de marque limitée), avec `maxOutputTokens: 600` qui tronquait les réponses, et sans grounding Google Search (donc pas de reflet de ce qu'un utilisateur final verrait en chat avec Gemini connecté au web).
+
+Patch retenu (Tim « ok go ») :
+
+**Function `tool-citation-probe/index.ts`** :
+- Modèle : `gemini-3.1-flash-lite` → `gemini-2.5-pro` (mémoire de marque beaucoup plus large)
+- `maxOutputTokens` : 600 → 4096 (les réponses « Top 5 », « Comparatif » ne sont plus tronquées)
+- **Google Search grounding activé** via `tools: [{ google_search: {} }]`. Gemini recherche réellement sur le web pour chaque requête avant de répondre, comme ce que verrait un utilisateur en chat. Coût API marginal, gratuit côté Gemini.
+- Extraction des **sources consultées** depuis `candidate.groundingMetadata.groundingChunks[].web.uri` (jusqu'à 10 sources par requête, dédupliquées). Chaque source porte `url` + `title`.
+- **Détection de citation à deux niveaux** :
+  - `via: "source"` (signal fort) : le domaine est dans une des URL sources que Gemini a consultées
+  - `via: "text"` (signal faible) : le brand est mentionné dans le texte de la réponse
+  - Le payload retourne aussi `citedBySource` (combien sont citations « via source »).
+- Verdict reformulé pour distinguer les deux cas : « citations dans le texte uniquement, mais Gemini ne consulte jamais directement votre site » signale une visibilité fragile vs « Gemini consulte votre site sur X requêtes » = AEO solide.
+
+**Page `CitationProbe.tsx`** :
+- Type `PromptResult` étendu : `via: 'source' | 'text' | null`, `sources: { url, title? }[]`.
+- Badge par ligne : « Cité dans les sources » (vert) vs « Cité dans le texte » (ambre) ; absent si pas cité.
+- Liste des sources sous chaque réponse, sous forme de badges cliquables (hostname + icône external link). Les sources dont le hostname matche le domaine de l'utilisateur sont mises en vert (preuve forte de citation).
+- Excerpt passé en `line-clamp-3` (au lieu de 2) pour exploiter les réponses plus longues retournées par Pro.
+- Footer message : « Test effectué sur gemini-2.5-pro avec grounding Google Search activé. Gemini recherche réellement sur le web pour chaque requête avant de répondre, comme ce que verrait un utilisateur en chat. »
+
+**Smoke test post-deploy** : `fusionn.co` sur « outil ia mot cle » retourne toujours 0/9 citations, MAIS chaque requête expose maintenant 4 à 7 sources que Gemini a effectivement consultées. Le verdict est précis : Tim sait que son site n'est ni cité dans le texte, ni dans le corpus de sources que Gemini parcourt. C'est une vraie mesure AEO, pas une devinette sur la mémoire d'un Flash Lite.
+
+**Ce qui reste possible si on veut aller plus loin** : brancher SerpAPI / DataForSEO pour tester aussi le vrai Google AI Mode (SGE / AI Overview), ChatGPT Search, Perplexity. Mentionné dans la conversation, pas implémenté ici.
+
+---
+
+## 2026-05-23 - Comparateur Score Business : calcul déterministe en code (retrait du volume)
+
+Demande Tim : « l'outil ne donne pas le volume, juste le score business, et on explique comment on construit le score business au lecteur pour justifier » + « oui calcul déterministe en code basé sur notre reflexion ». L'ancienne version laissait Gemini sortir un `scoreBusiness` arbitraire. Désormais, le LLM ne sort QUE des signaux qualitatifs, et le score est calculé en code à partir de pondérations fixes et publiques.
+
+**Function `score-keywords-batch/index.ts`** réécrite :
+- Le prompt Gemini demande uniquement 6 signaux qualitatifs : `intent` (5 buckets), `hasCommercialModifier`, `hasLocalSignal`, `isLLMSubstitute`, `cpcTier` (very-high/high/medium/low/unknown), `proximityToOffer` (core/adjacent/peripheral), et une `rationale` ≤ 90 chars.
+- En code, fonction `computeScore(signals)` qui applique des pondérations fixes :
+  - Intent : Actionnel +35, Transactionnel +30, Décisionnel +25, Comparatif +15, Informationnel 0
+  - Commercial modifier : +15
+  - Signal local : +15
+  - Substitution LLM : −25 (pénalité)
+  - CPC tier : very-high +20, high +15, medium +8, low 0, unknown +5
+  - Proximité offre : core +15, adjacent +8, peripheral 0
+- Total borné `[0, 100]`. Bucket : Fort ≥ 70, Moyen 40–69, Faible < 40.
+- Champion = top score ≥ 40. Plus de logique « gap volume vs score » (puisque le volume n'existe plus).
+- Le payload retour inclut `method.weights` et `method.buckets` pour traçabilité.
+
+**Smoke test post-deploy** : `agence seo paris` → 100/100 (Actionnel + commercial + local + CPC very-high + core), `c est quoi le seo` → 0/100 (Informationnel + LLM substitue −25). Logique déterministe validée, deux mots-clés contrastés bien départagés.
+
+**Page `ComparateurVolumeBusiness.tsx`** :
+- Retrait complet de la colonne « Volume » dans le tableau de résultats (et de tout `volumeEstimate` côté front).
+- Ajout d'un bloc d'introduction « Comment on calcule le Score Business » visible en haut du tool, avec 6 cards de pondération (une par signal). Le lecteur voit la méthode AVANT de lancer le calcul.
+- Sous chaque ligne de résultat : tags compacts qui résument les signaux (« Actionnel · commercial · local · CPC élevé · cœur d'offre »). Le tag « LLM substitue » est en rouge si la pénalité s'applique.
+- Bouton « Voir » par ligne qui déplie un breakdown en 6 lignes (label + détail + points), avec total final, et la rationale Gemini en italique.
+- Labels bucket francisés en affichage (Fort/Moyen/Faible) tout en gardant les keys serveur (High/Medium/Low).
+- FAQ refondue : retrait des questions « le volume ne sert vraiment à rien ? » et « Gap de Décision ». Ajout de « Comment le Score Business est-il calculé ? » et « Pourquoi un calcul déterministe et pas une note sortie par l'IA ? ».
+- Liens connexes mis à jour (label outil Hn → « Structure Hn et balises »).
+
+**Architecture** : c'est la première brique propriétaire de Fusionn qui combine LLM (signaux qualitatifs) + algorithme déterministe en code (score). Modèle reproductible pour les 2 autres outils (`tool-hn-structure`, `tool-citation-probe`) si Tim veut généraliser.
+
+---
+
+## 2026-05-23 - Polish landing : pulse pills, footer 4 colonnes, FAQ épurée, outils gratuits commit
+
+Grosse passe d'amélioration UX/UI sur la landing + commit des 3 outils gratuits qui étaient encore en untracked.
+
+**DemoSection (pills secteurs)** :
+- Pulse plus marquée qui saute de pill en pill toutes les 2s (double box-shadow rouge brand, opacité 0.85, rayon final 20px). Boucle infinie jusqu'au premier clic, le hover ne stoppe plus.
+- Titre passé de « Voilà ce que Fusionn fait. » à « Voilà ce que Fusionn fait pour vous. »
+
+**Footer (`src/components/Footer.tsx`)** : refondu en 4 colonnes (Brand + tagline + social / Produit / Outils gratuits / Légal & support) + bottom bar copyright + mention « Un produit Organikk ». Fond `#F4F5F7` (token DS). La version minimal aussi passée sur les tokens DS. Footer désormais identique sur Landing, Blog et BlogPost (retrait du `minimal={true}` sur ces deux pages, demande explicite de Tim : « le footer en home page doit être le même sur la partie blog »).
+
+**Renommage des 3 outils dans le footer** (choix Tim « style fonctionnel court ») :
+- Comparateur Volume / Business → Score business des mots-clés
+- Structure H2 / H3 SEO → Structure Hn et balises
+- Test citation Gemini (inchangé)
+
+**Outil Hn** : H1 passé de « Structure H2/H3 SEO : un plan d'article qui ranke » à « Outil balise hn et structure page optimisé » (formulation Tim, conservée telle quelle malgré l'accord grammatical).
+
+**FAQ (`src/components/tools/ToolFAQ.tsx`)** : retiré le radial-gradient orange en arrière-plan des questions ouvertes, retiré le shadow rouge `rgba(255,55,28,0.25)` remplacé par un shadow neutre gris, bordure d'ouverture passée de `#FF371C/20` à `gray-300`. Retiré le petit trait gradient orange (`h-px` linear-gradient) entre la question et la réponse. Le numéro 01/02 en gradient orange et le `+/×` orange restent (marquent l'état actif sans faire « halo »).
+
+**Commit des 3 outils gratuits** (étaient untracked) : pages `ComparateurVolumeBusiness.tsx`, `StructureHn.tsx`, `CitationProbe.tsx`, layout partagé `ToolPageLayout.tsx` + composant `ToolFAQ.tsx`, et les 3 Edge Functions associées (`score-keywords-batch`, `tool-hn-structure`, `tool-citation-probe`).
+
+**Edge Functions non déployées en prod** : diag rapide pendant la session via curl direct sur `https://fwhfnzbtlddzfxbsejyf.supabase.co/functions/v1/<name>` : les 3 functions renvoyaient HTTP 404 `Requested function was not found`. Le SDK Supabase JS convertit ce 404 en message générique « Failed to send a request to the Edge Function » côté front, ce qui ne dit rien d'utile. À déployer avec `supabase functions deploy <name>` ou en bloc avec `--project-ref fwhfnzbtlddzfxbsejyf`. Vérifier aussi que les secrets Supabase nécessaires sont présents (OPENAI_API_KEY, ANTHROPIC_API_KEY, etc.).
+
+**Règle utilisateur** : Tim a posé deux nouvelles règles persistantes durant la session, sauvegardées en mémoire : « montre-moi en local toujours » (lancer le dev server + donner URL après toute modif UI) et « pas de tiret cadratin » (déjà existant mais réaffirmé en pratique). Voir [[feedback_montrer_en_local]].
+
+---
+
+## 2026-05-23 - DemoSection : pulse qui saute de pill en pill (entrée initiale, replacée par la passe complète ci-dessus)
+
+Problème : la rangée de pills secteurs (`consultant SEO IA`, `logiciel CRM PME`, etc.) dans `DemoSection.tsx` ressemblait à des tags statiques. Le premier secteur étant sélectionné par défaut, l'utilisateur voyait déjà le rapport sans aucune incitation à toucher les pills → zéro engagement avec le sélecteur.
+
+Choix retenu après proposition de 4 variantes : **pulse qui saute de pill en pill** (vs pulse fixe / shimmer balayant / flèche bounce). Avantage : signale que TOUTES les pills sont cliquables (pas juste une) + crée du mouvement subtil sans bloquer la lecture + démontre la variété des secteurs passivement.
+
+**Implémentation** :
+- `src/index.css` : keyframe `demoPillPulse` (box-shadow rouge brand `#FF371C` à 55% d'opacité qui s'étend de 0 à 12px en 1.4s easeOut) + classe utilitaire `.demo-pill-pulse`.
+- `src/components/landing/DemoSection.tsx` : 3 nouveaux states (`pulseIdx`, `pulseTick`, `interacted`). `useEffect` avec `setInterval(2000)` qui incrémente `pulseIdx` en sautant la pill active. `pulseTick` bump à chaque saut pour forcer le re-mount du span d'overlay et rejouer la keyframe. Le pulse s'arrête définitivement au 1er clic, hover ou focus (`stopPulse()` sur `onClick`/`onMouseEnter`/`onFocus`).
+- L'effet est rendu par un `<span>` absolute en overlay (pas sur le button directement) pour que le box-shadow s'étende joliment autour sans interférer avec le contenu.
+
+Comportement : 2s par pill, skip de la pill active, arrêt définitif dès interaction.
+
+À noter : la section `DemoSection` utilise toujours `bg-gray-50` (rend `#F9FAFB`, l'ancien gris) au lieu du token `--ws-bg-page` (`#F4F5F7`) du design system validé. Pas corrigé dans cette session (scope = pills uniquement), à traiter dans une passe ultérieure.
+
+---
+
 ## 2026-05-23 - Page connexion split-screen + preview animée + optimisations LCP
 
 Commit `ce23418` poussé sur `main`. Une grosse passe + dommage collatéral.
