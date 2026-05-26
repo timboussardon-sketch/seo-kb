@@ -4,6 +4,38 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-26 — Onglet Agent : kill patterns IA + écran de démarrage minimaliste
+
+Demande Tim : *"pareil tu patterns IA de l'onglet chatbot, et rendre le truc design et minimaliste et travailler écran de démarrage"*.
+
+### Patterns IA virés
+
+- **Gradient pastel orange** sur le header (`background: linear-gradient(180deg, rgba(255,55,28,0.03), transparent)`) : supprimé. Le header entier a été retiré, le tab title "Agent" du segmented control suffit à identifier l'onglet.
+- **Icône carrée 36×36 fond pastel orange + couleur brand** sur le header : supprimée avec le header.
+- **Icône carrée 44×44 fond pastel orange + couleur brand** sur l'empty state : supprimée. L'empty state n'a plus de hero icon.
+- **Suggestions en chips ronds avec icônes décoratives** (`Sparkles`, `BarChart3`, `ListChecks`, `Target`, `Lightbulb` venant de lucide-react) + halo orange au hover : remplacées par une liste verticale de questions complètes en plain text.
+- **Imports lucide superflus** : seuls `Send` (bouton envoyer) et `Loader2` (états chargement) gardés. 6 icônes décoratives retirées.
+
+### Écran de démarrage refait (sobriété type Linear / Notion)
+
+- Container max-width passé de 820px à 760px (resserre le focus).
+- Padding scroll augmenté à `32px 28px` (plus d'air).
+- Titre 22px gras à gauche : *"Posez votre première question sur <keyword>"* avec le mot-clé en italique gris muted pour le détacher visuellement.
+- Sous-titre 13.5px en muted : précise ce que voit l'agent (mots-clés, clusters, micro-intentions, business score, tous les onglets).
+- 5 questions naturelles présentées **telles qu'elles seront posées** (pas un label compressé). Listées verticalement avec séparateurs `border-bottom: 1px solid var(--ws-border)`, padding `14px 0`. Sobre.
+- Hover suggestion : passage de `color: var(--ws-text)` (muted) à `--ws-text-strong` (noir). Pas de couleur, pas de halo, pas de fond.
+- Footnote bas de l'input : raccourci utile *"Entrée pour envoyer, Shift+Entrée pour aller à la ligne"* (au lieu d'une description marketing du modèle).
+
+### Couleur de marque qui reste
+
+Toujours `#FF371C` uniquement sur le **bouton Send** (action primaire) et le **check validé** du Plan d'action.
+
+### Commit + push
+
+- Commit `5560b93` poussé sur main
+- 2 fichiers : `AgentChatView.tsx` (-77 +60 lignes), `index.css` (-114 +60 lignes)
+- Netlify auto-deploy déclenché
+
 ## 2026-05-26 — Plan d'action + LLM : kill les patterns IA, sobriété visuelle
 
 Demande Tim : *"sur l'onglet plan d'action, il faut killer tous les patterns IA (notamment trait de couleur sur le côté gauche) et améliorer la lisibilité"*. Audit + refactor élargi à l'onglet LLM dans la foulée parce que les barres + headers de domaine orange sur 12-15 répétitions criaient pareil.
