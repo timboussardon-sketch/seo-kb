@@ -44,13 +44,14 @@ Une page HTML autonome (un seul fichier `.html`, ouvrable directement dans le na
 
 ### Structure obligatoire en 5 parties
 
-1. **Header** : kicker, h1 « Liste de mots-clés pour [X] », lede 1 paragraphe, 5 stats clés (types de pages, combinaisons générables, notions à couvrir, outils activables, mécaniques de capture).
-2. **Partie 1 · Les micro-intentions sémantiques** : intro qui explique le découpage en longue traîne pour les LLMs + 12 listings de pages filles avec titres simples « Pages par [X] », intros « Pour quelqu'un qui cherche [Y] » zéro jargon, et 5 à 12 exemples de mots-clés par listing.
-3. **Partie 2 · Les entités sémantiques** : intro qui explique pourquoi couvrir le titre ne suffit pas + matrice 4 colonnes (entités techniques, preuves quantitatives, vecteurs multimodaux, divergence) pour 3 grandes familles de pages.
-4. **Partie 3 · Les outils pour récupérer un email du visiteur** : intro « pour ne pas rédiger pour rien » + 10 outils interactifs avec mécanique de capture + 7 mécaniques annexes.
-5. **Partie 4 · Par où commencer** : tableau de priorisation à 7 colonnes à remplir, cellules vides marquées « à mesurer » sans inventer de chiffres.
-6. **Partie 5 · Plan d'action en 3 étapes** : data propriétaire → skills calibrés dans Claude → production. Encadrés timeline visuels.
-7. **CTA** : Bootcamp SEO+IA + Accompagnement 1:1 + Footer.
+1. **Header** : h1 « Liste des mots-clés pour [X] » (pluriel exact, jamais « mot-clé » singulier).
+2. **Bloc doctrine** (obligatoire, juste après le h1, 1 paragraphe court, ton de voix Tim, tutoiement, position tranchée). Reformulation et adaptation au mot-clé cible de la doctrine pixel-perfect : « ne pas refaire ce que les autres ont déjà produit, identifier 3 à 5 mots-clés business sur lesquels on a un différenciant, construire son autorité thématique autour de ces mots-clés, notamment en attaquant les micro-intentions et les problématiques que les prospects formulent vraiment ». Quatre piliers obligatoires : critique du status quo + 3 à 5 mots-clés business + autorité thématique + micro-intentions/problématiques client. Aucun ajout d'interprétation personnelle (sanctions Google, citations LLM, anti-IA writing) en dehors de ces 4 piliers.
+3. **Partie 1 · Les micro-intentions sémantiques** : intro qui explique le découpage en longue traîne pour les LLMs + 12 listings de pages filles avec titres simples « Pages par [X] », intros « Pour quelqu'un qui cherche [Y] » zéro jargon, et 5 à 12 exemples de mots-clés par listing.
+4. **Partie 2 · Les entités sémantiques** : intro qui explique pourquoi couvrir le titre ne suffit pas + matrice 4 colonnes (entités techniques, preuves quantitatives, vecteurs multimodaux, divergence) pour 3 grandes familles de pages.
+5. **Partie 3 · Les outils pour récupérer un email du visiteur** : intro « pour ne pas rédiger pour rien » + 10 outils interactifs avec mécanique de capture + 7 mécaniques annexes.
+6. **Partie 4 · Par où commencer** : tableau de priorisation à 6 colonnes (`#`, `Modèle`, `Pages`, `Effort`, `Conversion`, `Priorité`), scoré 1 à 5 dans les 3 colonnes finales. Effort = déterministe (profondeur du template × besoin d'expertise × données externes requises). Conversion = classification d'intention décisionnelle sur les modificateurs présents dans les exemples (signal `seo-mots-cles-decisionnels`). Priorité = `Conversion / Effort` arrondi à 1-5. Interdit d'ajouter une colonne Volume SEO ou Impact SEO sans Keyword Planner ou SERP probe réel. Interdit d'ajouter une colonne Data dispo sans input humain client. Mieux vaut moins de colonnes que des chiffres inventés.
+7. **Partie 5 · Plan d'action en 3 étapes** : data propriétaire → méthode calibrée dans Claude → production. Tableau 3 lignes.
+8. **CTA** : Bootcamp SEO+IA + Accompagnement 1:1 + Footer.
 
 ### Style visuel (pixel perfect)
 
