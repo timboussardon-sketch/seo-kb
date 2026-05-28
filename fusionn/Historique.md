@@ -4,6 +4,176 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-28 · Refonte v2 des 23 directories (1 partie = 1 skill, sans marques)
+
+Tim rejette les variations de format et fixe le cap définitif : modèle pixel-perfect appliqué uniformément, enrichi par les skills mots-clés, un tableau par skill. Structure validée : **4 parties = 4 skills mots-clés**.
+
+### Structure v2 finale
+
+1. Partie 1. Recherche de mots-clés (`seo-recherche-mots-cles`) : 12 listings × ~78 mots-clés
+2. Partie 2. Clustering en pages (`seo-clustering-mots-cles`) : clusters + cannibalisations
+3. Partie 3. Mots-clés décisionnels (`seo-mots-cles-decisionnels`) : shortlist scorée /125, triée
+4. Partie 4. Modèles de pages satellites (`seo-modeles-pseo`) : Spokes scorés /5, triés
+
+Parties Entités/Outils/Scoring/Plan d'action du modèle initial supprimées.
+
+### Règles éditoriales durcies
+
+- **Pas de marques** ([[feedback-pas-de-marques-directories-seo]]) : interdit concurrents/marques/personnes dans agence/consultant/outil. Plateformes techniques de travail conservées (Shopify, WooCommerce, Prestashop, Amazon, WordPress, FBA/FBM, Liquid, Symfony).
+- **Tout en français** : « page satellite » pas « Spoke », « appel d'offres » pas « RFP », « signaux d'alerte » pas « red flags ».
+- **0 tiret cadratin** : étages « Do · Achat », funnel « Know vers Do ».
+- **Ton Tim sur les intros uniquement**, intros aérées en paragraphes courts, cellules factuelles, pas de colonne #.
+
+### Itérations UI rollback
+
+Essais coloration dégressive + table-layout fixed + container élargi + encadré intro : rejetés (« tableaux illisibles »). Retour CSS d'origine. Seule modif conservée : aération des intros (HTML, pas CSS).
+
+### Industrialisation
+
+agence marketing en pilote (validé), puis « go sans validation » : 7 sub-agents parallèles (3 pages/agent) pour les 21 restantes (dont consultant SEO repassé en seo-recherche). Pas de stall cette fois (charge réduite). Sanity check global : marques tierces résiduelles (Klaviyo, Brevo, Helium 10, Jungle Scout, Stripe, PayPal, transporteurs) générifiées à la main sur 4 fichiers. Vérif finale : 0 marque, 0 tiret cadratin, 0 Spoke, 0 colonne # sur les 23.
+
+Commit `19102de` poussé, Netlify redéploie.
+
+### Reste à faire
+
+- Google Ads / DataForSEO → volumes [À SOURCER]
+- Maillage interne entre directories
+- Confirmer si Stripe/PayPal doivent rester bannis (générifiés par prudence)
+
+---
+
+## 2026-05-27 (suite 5) · Enrichissement anti-slope des 22 directories
+
+Tim détecte que les 23 directories publiées en suite 4 sont du slope IA : template figé répliqué, cellules génériques (Semrush, Ahrefs, AIDA partout), zéro data propriétaire, exemples prévisibles par Claude seul. Il fixe deux règles obligatoires pour toute production SEO future ([[feedback-obligation-skills-seo-et-data-reelle]]) :
+1. Appeler ses skills SEO en amont (seo-recherche-mots-cles, seo-modeles-pseo, seo-entites-vectorielles, seo-product-led-seo, seo-peurs-objections, etc.)
+2. Scraper de la data métier/secteur via WebSearch/WebFetch (marques niche nommées, chiffres vérifiables avec source)
+
+### Pilote validé : agence SEO
+
+WebSearch x4 sur le marché (leaders Eskimoz/Ad's up/Rankit/Primelis/Junto, tarifs précis 500€-6000€/mois, pain points marché brume/junior/sans résultats). Skill seo-recherche-mots-cles invoqué formellement → 78 mots-clés qualifiés sur 12 listings sauvegardés dans `seo-kb/wiki/keywords/recherche-2026-05-27-agence-seo.md`. HTML réécrit cellule par cellule. Taille 13 kB → 18 kB. Commit `b36008a`.
+
+### Industrialisation : 21 directories restantes
+
+4 sub-agents Claude en parallèle (background), un par cluster, avec consigne stricte d'invocation des skills + WebSearch pour chaque keyword. Total ~1h de wall clock pour les 4 agents.
+
+Résultats :
+- **Cluster A (7)** : agence marketing/communication/webmarketing/inbound/growth + freelance SEO + expert SEO. Marques nommées : Yumens, BETC, Inbound Value, Growth Room, Pharow, Malt, Olivier Andrieu, Daniel Roch, Olivier Duffez, Sylvain Peyronnet, SMX Paris, BrightonSEO. Chiffres : Malt 2 647 référencés, TJM 376-412€ médian Malt 2026, plafond micro 83 600€, TJM expert senior 1 200-2 500€.
+- **Cluster B (6)** : outil SEO/IA/SaaS B2B/logiciel marketing/plateforme analytics/outil prospection. Marques : Mistral, Anthropic, Apollo (260M contacts), Pharow, Waalaxy, Pennylane, Brevo, PostHog, Mixpanel, Amplitude, Plausible 6-19€, Piwik PRO 35€. Chiffres publics : Mistral 11,7 Md€ valuation 400M€ ARR 40% Fortune 500 EU, HubSpot 248k clients, marché logiciel marketing 7,39→8,08 Md$ CAGR 9,3%, churn médian SaaS 3,5%, NRR enterprise 118%.
+- **Cluster C (3)** : rédacteur web, content manager (salarié in-house, 28-76k€ grilles Glassdoor médiane 42 498€), SEO content writer (TJM 500-700€, intersection SEO + frameworks E-E-A-T/GEO/RAG). Marques : Malt, Codeur, TextMaster, Surfer, NeuronWriter, FRASE, Glassdoor, WTTJ, BDM, Doctolib, PayFit, Sézane.
+- **Cluster D (5)** : e-commerçant (data FEVAD 196,4 Md€ marché FR, +7%, parts Shopify 22,2% / WooCommerce 47,4% / Prestashop 19,3%), expert Shopify (Liquid/Hydrogen, Klaviyo, Recharge, Loop, TJM 600-1500€), expert WooCommerce (HPOS, Yoast, RankMath, TJM 300-600€), vendeur Amazon (FBA/FBM, A9, Helium 10, Jungle Scout, AMC DSP, frais 0,99€/unité+39€/mois, Pan-European FBA), expert Prestashop (Prestashop 1.7/8/9, Symfony, Smarty, modules officiels, refonte 15-40k€).
+
+### Métriques de qualité
+
+| | Slope (suite 4) | Enrichi (suite 5) |
+|---|---|---|
+| Taille HTML moyenne | 12-14 kB | 18-23 kB |
+| Reading time | 7 min | 9-11 min |
+| Marques nommées par article | 0 | 14-24 |
+| Chiffres vérifiables par article | 0 | 5-14 |
+| Sources externes citées | 0 | Sortlist, Deux.io, Cartelis, Malt, mo.agency, panja.io, Glassdoor, FEVAD, McKinsey State of AI 2025, etc. |
+| Tirets cadratins | 0 (déjà OK) | 0 (déjà OK) |
+
+### Déploiement
+
+Publish batch via `./scripts/publish-batch.sh` → 22 upserts sur Supabase (slug stable, contenu remplacé). `posts.json` régénéré, 30 articles dans la DB (8 anciens + 22 enrichis = 30, copywriter supprimé). Commit `9f6f747` poussé sur main, Netlify redéploie.
+
+### Limites assumées
+
+- Volumes mots-clés tous en `[À SOURCER]` (Google Ads API en attente d'approbation depuis ce matin)
+- Scores Effort/Conversion/Priorité encore qualitatifs (1-5 raisonné par positionnement, pas issu de data)
+- Pas de maillage interne entre les 23 directories (chaque directory pointe vers sa propre catégorie, mais pas de bloc « voir aussi »)
+- Pas de migration vers route dédiée `/directories/` ou `/listes-mots-cles/` (toujours sous `/blog/`)
+
+À traiter dans les prochaines itérations : volumes Google Ads, maillage interne, repositionnement URL si Tim confirme.
+
+---
+
+## 2026-05-27 (suite 4) · Industrialisation modèle « Liste des mots-clés » · 23 nouveaux articles
+
+Après restauration des 8 anciens articles, Tim demande comment industrialiser le modèle « Liste des mots-clés pour [X] ». Doctrine validée : 5 piliers (consultant SEO, agence marketing, agence communication, outil SEO, outil IA, etc.). Décisions :
+- **Volume** : tout publier d'un coup (24 piliers, sans ghostwriter).
+- **Source data** : scoring qualitatif sans Google Ads ni DataForSEO (en attendant l'approbation Google).
+
+### Outillage créé
+
+- `data/keywords-cibles.csv` : 24 mots-clés cibles répartis en 4 clusters (A services SEO/marketing, B éditeurs d'outils, C rédaction, D e-commerce), avec status + draft_file par ligne.
+- `scripts/publish-batch.sh` : wrapper bash qui boucle sur le CSV, appelle `publish.sh` pour chaque ligne status=todo, régénère posts.json à la fin. Options : `--dry-run`, `--draft`, `--cluster <A|B|C|D>`.
+
+### Rédaction des 23 articles HTML
+
+5 sub-agents Claude lancés en parallèle (1 par cluster, A coupé en 2 pour équilibrer la charge), chacun avec :
+- Template de référence : `liste-mot-cle-consultant-seo.html`
+- Guide voix Tim : `raw/notes/tim-my-voice.md`
+- Liste de 3 à 6 keywords à traiter
+- Instructions strictes sur structure (5 parties, tables, scoring) + voix (tutoiement, anti-IA writing, aucun tiret cadratin)
+
+Résultat : 23 fichiers HTML générés dans `seo-kb/fusionn/blog-drafts/`, 12 à 14 kB chacun, 0 tiret cadratin détecté. Différenciation par cluster (vocabulaire growth pour agence growth, A9 algorithm pour vendeur Amazon, Liquid/Hydrogen pour expert Shopify, AIDA/PAS pour copywriter, etc.).
+
+### Publish batch
+
+`./scripts/publish-batch.sh` → 23 articles upsertés via service_role sur Supabase. Bug bash mineur : le compteur dans le pipe `tail | while` est dans un sous-shell, le récap final affiche `Publiés : 0` même quand tout a marché. Sans impact sur la publication.
+
+Régénération manuelle de `posts.json` (le bug bash a empêché l'auto-régénération) → **31 articles dans la DB** (8 anciens + 23 nouveaux ; consultant SEO comptait dans les 8 restaurés).
+
+### Déploiement
+
+Commit `4e79278` : « Blog : industrialisation modèle 'Liste mots-clés' x23 nouveaux articles » → push origin/main → Netlify auto-déploie. Branch up to date.
+
+### Pattern industrialisable pour la suite
+
+Pour publier une nouvelle « Liste des mots-clés pour [X] » :
+1. Rédiger le HTML dans `seo-kb/fusionn/blog-drafts/liste-mot-cle-<slug>.html` en suivant le template.
+2. Ajouter une ligne au CSV avec status=todo.
+3. Lancer `./scripts/publish-batch.sh` (ou `--cluster X` pour filtrer).
+4. Commit + push → déploiement auto.
+
+À améliorer dans une prochaine itération :
+- Fix bug bash du compteur dans publish-batch.sh.
+- Brancher DataForSEO ou Google Ads API pour scorer Effort/Conversion sur de vraies données (en attente approbation Google soumise aujourd'hui).
+- Ajouter le maillage interne automatique entre pages liste-mots-cles (bloc « voir aussi » + page index `/blog/liste-des-mots-cles/`).
+
+---
+
+## 2026-05-27 (suite 3) · Restauration des 8 articles de blog supprimés
+
+Tim signale qu'il n'y a plus qu'un seul article visible sur fusionn.co/blog.
+
+### Diagnostic
+
+Audit complet en 3 sondes :
+1. `posts.json` dans `public/blog-data/` ne référence qu'un article (`liste-des-mots-cles-consultant-seo`).
+2. Les 8 fichiers JSON individuels d'anciens articles sont toujours présents sur disque.
+3. La table Supabase `blog_posts` contient `0-0/1` (1 ligne) via service_role + `Prefer: count=exact`.
+
+Conclusion : les 8 anciens articles ont été supprimés manuellement de la base (aucune migration coupable, dernière migration touchant `blog_posts` = `20260203143726_fix_blog_posts_public_access.sql` qui ajoute juste une policy RLS).
+
+Le frontend charge `/blog-data/posts.json` en priorité ; au build, `generate-blog-urls.js` régénère ce fichier depuis Supabase → 1 article retourné → posts.json écrasé avec 1 entrée.
+
+Note GRANT bonus : l'API anon retourne `42501 permission denied for table blog_posts`. Le `GRANT SELECT ... TO anon` manque côté Postgres (RLS policy seule ne suffit pas). À fixer dans une future migration.
+
+### Restauration
+
+Création du script `scripts/restore-blog-from-json.mjs` (réutilisable) :
+- Lit tous les JSON de `public/blog-data/` sauf `posts.json`
+- Filtre les colonnes autorisées (whitelist sur le schéma `blog_posts`)
+- Upsert sur `slug` via service_role
+- Mode `--dry-run` pour vérifier avant exécution
+
+Exécution :
+- Dry run : OK, 8 articles à restaurer
+- Run réel : 8 articles upsertés
+- Vérif DB : `0-0/8` (8 lignes), OK
+- `generate-blog-urls.js` rerun avec `VITE_SUPABASE_ANON_KEY=<service_role>` (contournement du grant manquant) → posts.json à 8 entrées
+
+Commit `f5b2426` : "Blog : restaurer les 8 articles supprimés de Supabase" puis push origin/main → déclenche le redéploiement Netlify auto.
+
+### À surveiller pour le futur
+
+- Le `GRANT SELECT ON blog_posts TO anon` est manquant → si Netlify a la même config et que son prebuild échoue silencieusement, le posts.json commité (à jour) est servi tel quel, donc OK temporairement.
+- Vraie solution : migration qui restaure le grant, sinon tout publish futur via `publish-keyword-list.mjs` regénérera un posts.json à 1 entrée au prochain build Netlify si le grant tombe.
+
+---
+
 ## 2026-05-27 (suite 2) · Pivot Approche A · pipeline 4 sources avec YouTube + Brave
 
 Tim retoque le draft v2 : trop pauvre, hallucinations résiduelles, contenu débutant. Demande la méthode de génération des mots-clés.
@@ -1356,3 +1526,61 @@ Règle uniformisée sur les 14 fonctions de génération : toute année mentionn
 **À faire ensuite (industrialisation).** Écrire `newFusionn/scripts/publish-keyword-list.mjs` qui prend en input un mot-clé pilier + un fichier HTML body et publie via supabase-js + service_role. Permettra de scaler à N articles « Liste mot-clé pour [X] » sans copier-coller du SQL.
 
 **Suite 2026-05-27** : correction titre « Liste des mots-clés pour X » (pluriel, pas singulier), refonte tables dans `BlogPost.tsx` pour matcher pixel-perfect le design workspace (header brand orange `#FF371C`, white uppercase). Ancien slug `liste-mot-cle-consultant-seo` supprimé, republié sous `liste-des-mots-cles-consultant-seo`. Script `scripts/publish.sh` (wrapper service_role auto via CLI Supabase) + `scripts/publish-keyword-list.mjs` créés et committed dans `newFusionn` (push sur `main`, Netlify auto-deploy). URL live : https://fusionn.co/blog/liste-des-mots-cles-consultant-seo. Règle d'autonomie sauvegardée en mémoire : Claude exécute désormais publish + commit + push + deploy sans rien demander.
+
+## 2026-05-28 — Compte : 4e case "Contexte" sur HeroInput
+
+**Demande Tim.** Sur `/compte`, ajouter sous "Votre entreprise ou marque" une 4e case permettant d'uploader un fichier de contexte (md, doc, pdf, etc.).
+
+**Implémentation.**
+- `src/components/compte/HeroInput.tsx` : nouveau champ "Contexte" facultatif, file picker `.md/.txt/.pdf/.docx`. Parsers chargés en dynamic import (pdfjs-dist 5.7 et mammoth 1.12) pour ne pas alourdir le bundle initial. Le `.doc` (vieux binaire Word) n'est pas supporté : message d'erreur invite à réexporter en .docx. Chip d'affichage du fichier avec nom + nb caractères + croix pour retirer. État `isParsingContext` avec spinner pendant lecture.
+- `HeroSubmitPayload` gagne `context` et `contextFileName`.
+- `src/hooks/useConversationalAnalysis.ts` : `handleHeroSubmit` propage `context` vers `enrich-context` comme `freeText`. Présence de contexte compte aussi comme "extra" qui déclenche l'enrichissement automatique (sans passer par les questions de cadrage).
+- `supabase/functions/enrich-context/index.ts` : plafond `freeText` monté de 800 → 10 000 chars. Label dans le contextSummary passé à Gemini : "Contexte fourni" au lieu de "Activité décrite".
+
+**Deploy.** Front push sur main (Netlify auto-deploy). Edge function `enrich-context` déployée via `supabase functions deploy --project-ref fwhfnzbtlddzfxbsejyf`. Commit `a2da8dc`.
+
+## 2026-05-28 (suite) — Fix carte "Contexte de l'analyse" + Page Documentation
+
+**Suite session précédente sur la 4e case Contexte.**
+
+**Bug trouvé et corrigé.** La carte `FusionnKnowsYouCard` prévoyait dans son type un champ `freeText` à rendre sous la row "Activité", mais `useConversationalAnalysis.handleHeroSubmit` ne le passait jamais dans `setEnrichmentContext`. Résultat : le contexte uploadé partait bien jusqu'au prompt Gemini (vérifié end-to-end sur `generate-semantic-keywords` ligne 412, `generate-faq` ligne 205, `generate-micro-intentions` ligne 123, `generate-tools` ligne 174, `generate-models` ligne 89, `generate-objections` ligne 206, `generate-brief` ligne 89), mais l'utilisateur ne voyait pas la preuve que son fichier avait été pris en compte. Correction : on reprend `contextText` + `payload.contextFileName` côté hook pour fabriquer un snippet (400 chars max) affiché dans la carte avec le label "Contexte" (renommé depuis "Activité"). Commit `5bb5756`.
+
+**Verification pipeline contexte → prompts.** Le `cacheKey` de `generate-semantic-keywords` inclut le contexte (ligne 289) et la cache est explicitement bypassée quand un contexte est fourni (ligne 297) → chaque recherche avec contexte produit donc une réponse fraîche orientée par ce contexte. Le contexte est aussi persisté dans `search_history.context` pour debug a posteriori.
+
+**Page /documentation.** Ajout d'une vraie page de doc SaaS accessible depuis le footer (colonne Produit + version minimal). `src/pages/Documentation.tsx`, 549 lignes. Layout : sidebar TOC sticky à gauche (Intersection Observer pour highlight la section active au scroll), 21 sections numérotées à droite. Couvre : démarrage, 4 champs de recherche (avec FieldBlock par champ — Mot-clé, Site, Marque, Contexte), GSC, 14 blocs de résultats (mots-clés sémantiques, FAQ, micro-intentions, structure Hn, objections, mini-outils, modèles, vecteurs, brief, plan d'action, score sémantique, YouTube, Reddit "bientôt"), crédits & abonnement, outils gratuits (avec liens), glossaire, support. Composants internes réutilisables : `Section`, `FieldBlock`, `Steps`, `Bullets`, `Tip`. Route lazy-loaded dans `App.tsx`. Commit `5f26c03`.
+
+**Deploy.** Push main → Netlify auto-deploy (front uniquement, pas de re-deploy edge function nécessaire pour ces commits).
+
+## 2026-05-28 (suite) — Gestion de projet Phase 1 (Tableau de bord)
+
+**Demande Tim.** Gérer des projets dans le Tableau de bord. Projet = un client (agence). Ambition "vrai PM" mais livré en Phase 1 (fondations).
+
+**Découverte clé.** Une table `projects` + `project_searches` + `project_tasks` existait déjà (migration `20251222073448_create_projects_system.sql`, déc. 2025) mais l'UI n'avait jamais été branchée (composants orphelins `ProjectFolder.tsx`, `ProjectCreator.tsx`, `ProjectTaskList.tsx`, `projectsHelper.ts`). On a réutilisé le schéma (junction `project_searches`, pas de FK directe) et étendu la table `projects` avec status/client_contact/site_url/default_brand/default_context/archived_at (migration `20260528120000_create_projects.sql`).
+
+**Décisions de cadrage (validées par Tim).** Projet = client. Multi-user "pas tout de suite" (schema solo, ouvert au partage futur). Recherches existantes = bucket "Sans projet". Création projet "les deux" (Tableau de bord + on-the-fly dans HeroInput). Pré-remplissage HeroInput depuis le projet = OUI (site/marque/contexte). Tags existants conservés en parallèle des projets.
+
+**Livré.** Onglet Projets (cards compactes), modal création/édition avec upload contexte, drawer détail + picker "Ajouter des recherches" existantes, archivage. Champ Projet dans le formulaire de recherche (préfill + rattachement auto). Badge projet + menu "Rattacher à..." + filtre projet dans l'historique. "Mon Espace" (navbar Action) ouvre le Tableau de bord au lieu du workspace.
+
+**Retours visuels traités.** Cards trop grandes → layout compact. Bande couleur latérale → avatar coloré. Texte coupé → min-w-0 sur les troncatures. Perf (rame) → loadProjects passé de N+1 à 2 requêtes. Heatmap "Activité 12 mois" coupée à droite → pleine largeur + auto-scroll droite + placée au-dessus de l'Historique. "Sujets pivots" → "Sujets piliers". Barre de stats "Votre travail" refondue (séparateurs, valeur en avant, flèche tendance).
+
+**Fix data important (anti-hallucination cluster).** L'insight "Cette semaine vous avez surtout creusé X" comptait les LIGNES BRUTES (double-comptage si même sujet relancé). Vérifié via service_role sur le compte de Tim : ses vrais clusters = "Services Agence SEO E-commerce (23)" etc., le "Services SEO B2B Lyon (35)" qu'il voyait n'existait nulle part (cache/démo navigateur). Règles déterministes posées : périmètre 7j strict, comptage DISTINCT, tri stable (count desc → date → nom), seuil anti-bruit >=2 mots-clés. Comptage distinct aussi appliqué aux cards de cluster.
+
+**Deploy.** Commit `fa1fe4a` push main → Netlify auto-deploy. Migration `projects` déjà appliquée en prod via `supabase db push`. Aucune edge function impactée.
+
+**Reste pour Phase 2+ (non fait).** Kanban + tasks (table project_tasks existe déjà), briefs/plan d'action consolidés par projet, deadlines, notifications. Question ouverte : retirer l'icône historique séparée de la navbar (redondante avec "Mon Espace").
+
+## 2026-05-28 (suite) — Écriture humaine : anti-tics IA sur les 23 articles « Liste des mots-clés »
+
+**Demande Tim.** Sur le blog (modèles « Liste des mots-clés »), corriger 3 tics IA : (1) persona halluciné « le marchand » (« personne ne dit le marchand »), (2) absolutisme faux « en 2026 ton prospect ne tape plus X » (certains tapent encore → formuler en proportion), (3) « a un différenciant » → « se différencie de la masse et du généraliste ». Règle générale : parler comme un humain, parler d'« utilisateur », ne pas inventer de mots.
+
+**Diagnostic.** Ces phrases n'étaient PAS des chaînes statiques d'un prompt : c'est du contenu publié dans `public/blog-data/liste-des-mots-cles-*.json` (BlogPost lit le JSON statique d'abord, DB `blog_posts` en fallback). 23 articles, « ne tape plus » dans 20, « différenciant » dans 22, « marchand » dans 5.
+
+**Fix.** Script `scripts/fix-blog-wording.mjs` (idempotent, dry-run par défaut) avec regexes ciblées :
+- « En 2026 ton prospect ne tape plus « X » tout seul. Il tape… » → « En 2026, ton prospect tape de moins en moins « X » tout seul. Il tape plutôt… » (garde le singulier pour ne pas casser l'accord « son secteur… »). Variantes gérées : ton/le prospect, tout seul/seul, Il tape/Le candidat tape.
+- « [sujet] a un différenciant que … ne servent pas » → « se différencie de la masse et du généraliste ». Forme « tu as un différenciant » → « tu te différencies… ».
+- « le marchand » → « l'utilisateur » (+ accords). Résidus finaux : 0.
+DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_description via service_role).
+
+**Prévention futures générations.** Mêmes règles injectées dans le prompt de l'assistant conversationnel `analyze-seo-chat` (REGLE 11 — FORMULATION HUMAINE + bloc dans `<style>`), déployé. Règle sauvegardée en mémoire (`feedback_ecriture_humaine_fusionn.md`).
+
+**Deploy.** Commit `ab8445e` push main → Netlify auto-deploy. Edge function déployée.
