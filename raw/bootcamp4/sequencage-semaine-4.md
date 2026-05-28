@@ -1,104 +1,132 @@
 ---
-title: Séquençage Semaine 4 — Automatisations puis prospection
+title: Séquençage Semaine 4 — Préparer, rendre parfait, planifier, vendre
 bootcamp: 4
 semaine: 4
-theme: on automatise le site (balisage, veille, publication) avant d'automatiser l'acquisition (prospection IA)
+theme: "4 skills : préparation sémantique → balisage auto → perf → roadmap client. De la matière d'une page jusqu'au plan de prod qu'on vend au client."
 related:
   - "[[sequencage-semaine-3]]"
+  - "[[skill-preparation-semantique]]"
   - "[[skill-donnees-structurees]]"
-  - "[[skill-maillage-systeme]]"
+  - "[[skill-core-web-vitals]]"
+  - "[[skill-roadmap-pseo]]"
+  - "[[skills-checklist-bootcamp4]]"
   - "[[session-2-redaction-resume-participants]]"
-  - "[[session-2-redaction-debrief]]"
   - "[[observations-whatsapp-bootcamp]]"
-source-workflow: "S4 = automatisations + prospection (cf. [[session-2-redaction-resume-participants]] L271). Séquençage créé mai 2026, grille validée : automatisations site J1-J3, prospection J4."
+source-workflow: "S4 recentrée sur 4 skills (2026-05-28) : préparation sémantique, données structurées, Core Web Vitals, roadmap client. Bascule depuis le plan automatisations/prospection précédent (conservé en annexe)."
 ---
 
 # Séquençage Semaine 4 — Bootcamp 4
 
-**Logique de la semaine** : trois semaines de production derrière nous (mots-clés, rédaction, audit). Cette semaine on arrête de faire à la main ce qui peut tourner tout seul. On automatise le site d'abord (le balisage, la veille thématique, la publication), puis on automatise l'acquisition (la prospection IA). Une brique par jour, chacune utilisable seule, chacune installée chez vous, pas une démo qu'on regarde.
+**Logique de la semaine** : trois semaines de production derrière nous (mots-clés, rédaction, audit). Cette semaine on outille les deux bouts qui manquaient : ce qui se passe AVANT d'écrire une page (la matière sémantique), ce qui rend une page techniquement irréprochable (balisage + perf), et ce qui transforme tout ça en plan de production qu'on vend à un client (la roadmap).
 
-Pourquoi cet ordre : on ne lance pas la prospection avant que la machine de contenu soit autonome. Si tu signes un client et que ton site ne se balise pas seul, ne se nourrit pas seul, tu retombes dans le redémarrage perpétuel qu'on a passé trois semaines à tuer.
+Quatre skills, quatre jours, chacun utilisable seul, chacun installé chez toi, pas une démo qu'on regarde. Le J5 on déroule en live.
 
-**Le squelette** : pas un workflow unique cette fois, quatre automatisations indépendantes. Chacune a son doc sur le Drive.
+**Pourquoi cet ordre** : on part de la matière première d'une page (sémantique), on passe à ce qui la rend parfaite techniquement (balisage puis perf), et on finit sur le skill qui te fait gagner des clients (la roadmap commerciale). La semaine monte vers le business, elle ne s'éparpille pas dans la technique.
 
-| Jour | Contenu | Skill / outil | Livrable |
-|------|---------|---------------|----------|
-| 1 | Données structurées (balisage auto) | `seo-donnees-structurees` (bundle) | Balisage qui se génère depuis le contenu, validé Rich Results |
-| 2 | Automatisation revue de presse sur la thématique du client | skill projet `revue-presse-quotidienne` adapté | Une veille auto qui sort un chiffre sourcé pour les pages du client |
-| 3 | Connexion site auto (WordPress, pipeline de publication) | tuto Romain + MCP WordPress | Le contenu validé part sur le site sans copier-coller |
-| 4 | Prospection IA | système Anthony (à cadrer) | Une séquence de prospection qui tourne sur vos cibles |
-| 5 | Call (10h00) | revue 2-3 setups + démo | "Le système qui bosse pendant que tu dors" |
+**Le squelette** : pas un workflow unique cette fois, quatre skills indépendants. Chacun a son bundle sur le Drive, prêt à copier-coller.
 
-Budget : 2,5-4h sur la semaine (le J3 dépend du CMS du client).
+| Jour | Contenu | Skill | Livrable |
+|------|---------|-------|----------|
+| 1 | Préparation sémantique (ce que ta page doit contenir) | `seo-preparation-semantique` | La carte sémantique d'une page cible, prête à alimenter le brief |
+| 2 | Données structurées (le balisage qui se génère seul) | `seo-donnees-structurees` | Balisage JSON-LD validé Rich Results sur une page client |
+| 3 | Core Web Vitals (la perf qui fait ranker) | `seo-core-web-vitals` | Audit perf d'un site avec les 5 pires pages priorisées |
+| 4 | Roadmap client (le plan de prod qu'on vend) | `seo-roadmap-pseo` | Une roadmap 30/60/90 présentable en RDV commercial |
+| 5 | Call (10h00) | revue 2-3 setups + démo | "De la matière première au plan qu'on vend" |
+
+Budget : 2,5-4h sur la semaine.
+
+**Les 4 bundles sont déjà sur le Drive aujourd'hui.** Tu peux tout installer d'un coup si tu veux prendre de l'avance, ou suivre jour par jour. Les messages ci-dessous sont la trame du déroulé.
 
 ---
 
-## Jour 1 — Données structurées (le balisage qui se génère tout seul)
+## Jour 1 — Préparation sémantique (ce que ta page doit contenir)
 
 Salut à tous,
 
-Semaine 4, on bascule sur les automatisations. Premier module : les données structurées, le JSON-LD. Pas le balisage à la main case par case. Le balisage qui se génère depuis le contenu et qui se corrige tout seul quand le contenu change.
+On démarre la semaine 4 par le début d'une page : sa matière sémantique. Avant d'écrire, avant même de faire le brief, il faut savoir tout ce que la page doit contenir pour ranker. C'est le rôle du skill `seo-preparation-semantique`.
 
-Le skill `seo-donnees-structurees` est HORS pack des 9, vraie nouvelle install, deux fichiers. Tout est dans le doc dédié sur le Drive : [[skill-donnees-structurees]], gardez-le ouvert, la pédagogie et le code y sont.
+Tu lui donnes une requête + un profil, il te sort les entités pondérées, le lexique signature, les pain points, les preuves chiffrées à aller chercher, la gap analysis vs les concurrents, et un Surprise Score sur 100. Le tout sans scraper Google.
 
-Les 3 règles, à retenir même si vous ne touchez pas le code :
+Pourquoi sans SERP : les outils type Surfer ou NeuronWriter te disent "mets ces mots parce que tes concurrents les ont". Tu écris la même page que tout le monde, l'AI Overview te résume en trois phrases, terminé. Ce skill fait l'inverse : il te donne la carte attendue ET ta divergence, ce que tu dis que personne d'autre ne dit. C'est ça qui te fait citer.
+
+Deux modes :
+- Création : une requête + un profil → la carte d'une page à écrire
+- Audit : tu colles en plus un contenu existant → le diff entre ce que ta page couvre et la carte attendue, avec plan de correction
+
+⚠️ Le cosinus et le Surprise Score sont simulés (projection corpus Claude), pas calculés par une API d'embeddings. Le skill le marque lui-même. Ne vends pas ces chiffres comme une mesure exacte à un client : c'est une estimation pour prioriser.
+
+⚠️ Ce skill ne rédige pas. Il sort la matière. La structure Hn, c'est `seo-brief-contenu`. L'article, c'est `article-engine-pipeline`.
+
+Bundle complet (pédagogie + bloc à coller) : [[skill-preparation-semantique]].
+
+Livrable : la carte sémantique d'une requête de ton client, prête à alimenter un brief.
+
+Install ou déclenchement qui coince ? MP aujourd'hui, pas vendredi.
+
+---
+
+## Jour 2 — Données structurées (le balisage qui se génère tout seul)
+
+Salut à tous,
+
+Jour 2. Hier tu sais ce que ta page doit contenir. Aujourd'hui on s'occupe de comment Google la comprend : le balisage, le JSON-LD, schema.org. Pas le balisage à la main case par case. Le balisage qui se génère depuis le contenu et qui se corrige tout seul quand le contenu change.
+
+Le skill `seo-donnees-structurees`. Les 3 règles, à retenir même si tu ne touches pas le code :
 - Source unique : tout le balisage sort d'un seul fichier, jamais écrit en dur dans une page
-- Une entité référencée une fois : la marque et l'auteur déclarés une seule fois pour tout le site, chaque page pointe dessus. Google recolle et comprend une seule entité. C'est ça qui vous fait exister dans son knowledge graph
-- Le schema se déduit du contenu, jamais saisi : une FAQ sur la page génère le FAQPage seule, une vidéo le VideoObject, un H2 d'étapes le HowTo
+- Une entité référencée une fois : la marque et l'auteur déclarés une seule fois pour tout le site, chaque page pointe dessus. Google recolle et comprend une seule entité. C'est ça qui te fait exister dans son knowledge graph
+- Le schema se déduit du contenu, jamais saisi : une FAQ génère le FAQPage seule, une vidéo le VideoObject, un H2 d'étapes le HowTo
 
 ⚠️ Le piège : on n'invente jamais un signal. Pas de FAQPage si pas de FAQ visible, pas de note ou de prix invérifiable. Un faux signal structuré, Google le voit et dégrade la page.
 
-⚠️ Site WordPress ou no-code (beaucoup d'entre vous) : vous n'appliquez pas le code Next.js, mais les 3 règles restent obligatoires, via la config du thème ou un plugin schema. Le code est optionnel, les 3 règles ne le sont pas. Si vous êtes dans ce cas, MP aujourd'hui, on cadre votre version sans terminal, on ne perd personne là-dessus.
+⚠️ Site WordPress ou no-code (beaucoup d'entre vous) : tu n'appliques pas le code Next.js, mais les 3 règles restent obligatoires, via la config du thème ou un plugin schema. Le code est optionnel, les 3 règles ne le sont pas. Si tu es dans ce cas, MP aujourd'hui, on cadre ta version sans terminal.
 
-Livrable : le balisage du site du client se génère depuis le contenu et passe le test Rich Results de Google sans erreur.
+Bundle complet : [[skill-donnees-structurees]].
 
-Install ou WordPress qui coince ? MP aujourd'hui, pas vendredi.
-
----
-
-## Jour 2 — Automatisation revue de presse sur la thématique du client
-
-Salut à tous,
-
-Jour 2. Hier le balisage se génère seul. Aujourd'hui c'est la veille qui tourne seule. On adapte l'automatisation revue de presse à la thématique de votre client : tous les jours, une étude ou un chiffre sourcé sur sa niche, prêt à alimenter ses pages.
-
-Pourquoi : la fraîcheur est un signal. Une page qui s'appuie sur un chiffre de la semaine, sourcé, bat une page figée. Et ça nourrit le surprise score sans que vous passiez vos journées à scraper.
-
-Le principe : le skill projet `revue-presse-quotidienne` (celui qui fait tourner ma newsletter Algorithme) se rebranche sur la thématique du client. Il scrape les sources de la niche, en sort un résumé daté avec le lien source, stocké pour que Claude le réinjecte en rédaction.
-
-⚠️ On ne publie pas la veille brute. Elle alimente, elle ne remplace pas. Le chiffre sort dans une page seulement s'il est sourcé et vérifiable, sinon il dégrade la note (même règle qu'au fact-check de la S2).
-
-Livrable : une automatisation qui sort chaque jour un chiffre sourcé exploitable sur les pages du client.
+Livrable : le balisage du site d'un client se génère depuis le contenu et passe le test Rich Results de Google sans erreur.
 
 ---
 
-## Jour 3 — Connexion site auto (WordPress, pipeline de publication)
+## Jour 3 — Core Web Vitals (la perf qui fait ranker)
 
 Salut à tous,
 
-Jour 3. Le contenu est produit, validé, scoré. Reste le geste idiot qu'on fait encore à la main : le copier-coller dans le CMS. Aujourd'hui on coupe ça.
+Jour 3. La page est balisée, Google la comprend. Reste à savoir si elle est rapide, parce que la perf mobile est un facteur de ranking direct. Aujourd'hui on audite la performance d'un site complet avec `seo-core-web-vitals`.
 
-La plupart de vos clients sont sur WordPress. On branche la publication : le contenu validé part sur le site sans repasser par le copier-coller, avec ses titres, son balisage, ses images.
+Le skill crawle ton sitemap, passe Lighthouse mobile sur 50 pages en parallèle, et sort un rapport avec les 5 pires URLs à corriger en priorité, le LCP element identifié page par page, et le breakdown qui dit où le temps part. Pas un score PageSpeed copié-collé, un vrai diagnostic exploitable.
 
-On s'appuie sur le tuto et le plugin de Romain (merci Romain), plus le plugin officiel côté WordPress. Romain fait une démo en direct aujourd'hui.
+Pourquoi c'est rentable chez un client : tu poses un baseline en début de mission, tu corriges les 5 pires, tu re-mesures la semaine d'après, tu prouves le gain en chiffres. PageSpeed cliqué URL par URL sur 50 pages, oublie, ça prend des jours.
 
-⚠️ C'est le point technique le plus variable de la semaine. Connexion au CMS, droits, plugin : ça dépend du site du client. Si le client n'est pas sur WordPress ou que l'accès n'est pas dispo, on cadre une alternative (export propre prêt à coller, ou connexion sur l'autre CMS). On ne bloque personne, on documente le cas et on avance.
+⚠️ Skill terminal uniquement. Il requiert Lighthouse en CLI (`npm install -g lighthouse`) et `jq` (`brew install jq`). Si tu es sur Cowork pur sans terminal, tu ne peux pas le lancer tel quel. Pas grave : tu prends le rapport PageSpeed Insights public en attendant, ou tu fais l'audit perf depuis une machine avec terminal. MP si tu veux qu'on pose Node ensemble.
 
-Livrable : un contenu validé qui arrive sur le site cible sans copier-coller manuel.
+⚠️ Les 3 règles : mobile uniquement (Google indexe mobile-first), pas de score halluciné (URL qui crash = marquée ERROR, jamais un faux 0), pas de reco sans opportunity Lighthouse correspondante.
+
+Bundle complet : [[skill-core-web-vitals]].
+
+Livrable : l'audit perf d'un site client avec les 5 pires pages et leur plan de correction.
 
 ---
 
-## Jour 4 — Prospection IA
+## Jour 4 — Roadmap client (le plan de prod qu'on vend)
 
 Salut à tous,
 
-Jour 4. Le site est autonome (balisage, veille, publication). Maintenant on automatise ce qui fait vivre l'activité : trouver et toucher les bons clients.
+Jour 4. Tu sais préparer une page, la baliser, la rendre rapide. Aujourd'hui on assemble tout ça en un plan de production sur 90 jours que tu présentes à un client. C'est le skill qui transforme ton expertise en proposition commerciale : `seo-roadmap-pseo`.
 
-Anthony présente son système de prospection IA. L'idée : arrêter la prospection au doigt mouillé, brancher un système qui cible, qui prépare l'approche avec votre data, et qui tourne pendant que vous bossez le SEO.
+Tu lui donnes une thématique (ou une liste de mots-clés) + la Money Page du client, il sort un calendrier 30/60/90 découpé en deux phases :
+- Phase 1 — transactionnel et décisionnel d'abord. Les pages qui convertissent, celles qui paient le SEO dès le premier mois. C'est ça qui justifie le budget au client.
+- Phase 2 — informationnel bas de funnel ensuite. Les pages proches de la décision qui alimentent Phase 1 par maillage. Jamais d'informationnel pur : ça se fait manger par ChatGPT, c'est de l'effort gratuit.
 
-⚠️ La prospection automatisée, ce n'est pas du spam de masse. On vise juste, on personnalise avec de la vraie data sur la cible, sinon ça brûle votre nom. Le système sert votre réflexion, il ne la remplace pas, exactement comme pour le contenu.
+L'ordre n'est pas négociable. Si tu commences par l'informationnel, tu fabriques de l'autorité que tu ne monétises pas et le client ne voit pas de retour.
 
-Livrable : une séquence de prospection cadrée qui tourne sur vos cibles réelles.
+Pourquoi c'est ton meilleur argument de vente : la sortie a une section "mots-clés rejetés" qui explique au client pourquoi tu ne produis PAS certaines pages. Ça prouve que tu ne factures pas du volume au kilo, que tu protèges son budget contre les pages que l'IA va dévorer. C'est ton anti-agence-qui-pond-200-articles.
+
+⚠️ Pas de roadmap sans Money Page. Si le client ne sait pas où il convertit, le skill bloque et te le fait poser. Un planning sans point de conversion, c'est de l'effort gratuit.
+
+⚠️ Pas de volume inventé. Si tu ne donnes pas la data GSC/Ahrefs, le skill met `[À SOURCER]`. Ne présente jamais une roadmap avec des volumes inventés à un client.
+
+Bundle complet : [[skill-roadmap-pseo]].
+
+Livrable : une roadmap 30/60/90 sur un cas client réel, présentable telle quelle en RDV de découverte.
 
 À demain pour le call 🙌
 
@@ -110,18 +138,18 @@ Salut à tous,
 
 Jour 5 🎉 call à 10h00.
 
-Ce que vous amenez :
-- Vos automatisations installées (balisage, veille, publication) sur un vrai site, plus votre setup prospection
-- Le geste manuel que vous avez tué cette semaine, et le temps que ça vous rend
-- **1 question concrète** sur laquelle vous bloquez
+Ce que tu amènes :
+- Tes 4 skills installés et testés sur un cas réel
+- Au moins une carte sémantique, un audit perf OU une roadmap client que tu as produit cette semaine
+- **1 question concrète** sur laquelle tu bloques
 
 Format du call :
-- Tour de table express (1 min / personne) : quelle automatisation tourne déjà chez vous
+- Tour de table express (1 min / personne) : quel skill t'a le plus servi cette semaine
 - Revue en live de 2-3 setups représentatifs
-- **Démo : le système qui bosse pendant que tu dors.** On déroule en live l'enchaînement complet sur un cas réel : la veille sort un chiffre le matin, il alimente une page, la page se balise seule, elle part sur le site, et la prospection tourne en parallèle. C'est ça qu'on vend, pas des heures.
+- **Démo : de la matière première au plan qu'on vend.** On déroule en live l'enchaînement complet sur un cas réel : la prépa sémantique sort la carte d'une page, la page se balise seule, on vérifie sa perf, et on cale le tout dans une roadmap 90 jours présentable au client.
 - Q&R libre
 
-Quatre semaines, c'est bouclé. Vous n'avez plus un workflow, vous avez un système. La différence : un workflow vous fait gagner du temps, un système vous fait gagner des clients pendant que vous dormez.
+Quatre semaines, c'est bouclé. Tu n'as plus des skills isolés, tu as une chaîne complète : trouver les mots-clés, préparer, rédiger, auditer, baliser, optimiser, et vendre le plan. C'est ça que tu factures.
 
 À tout à l'heure 🙌
 
@@ -129,13 +157,31 @@ Quatre semaines, c'est bouclé. Vous n'avez plus un workflow, vous avez un syst�
 
 ## Notes pour Tim (interne)
 
-- **Séquençage S4 créé from scratch (mai 2026).** Il n'existait aucun `sequencage-semaine-4`. Grille validée : automatisations site J1-J3, prospection J4, call J5 (modèle S3). Thème confirmé par [[session-2-redaction-resume-participants]] L271 ("on bascule sur les automatisations et la prospection en S4").
-- **⚠️ À ne pas oublier (rappel Tim 2026-05-23) :** caser le **skill sémantique** (`seo-preparation-semantique` ou `seo-entites-vectorielles`, à trancher) **en plus** du reste, et confirmer les **données structurées** (déjà au J1). Le skill sémantique n'est pas encore placé dans la grille J1-J5 — soit on l'insère en module bonus, soit on le branche en amont de la rédaction (boucle S2 ↔ S4), soit on bascule un autre jour. À cadrer avant d'envoyer les messages WhatsApp.
-- **J1 = bundle déjà prêt** [[skill-donnees-structurees]] (skill + code verbatim + pédagogie). Rien à refaire pour le J1.
-- **J2 à confirmer.** Le skill projet `revue-presse-quotidienne` existe (GH Action, fait tourner Algorithme, cf. [[skill-donnees-structurees]] note + archi ia-employe). Mais "le rebrancher sur la thématique d'un client" n'est pas documenté en pas-à-pas. Action : produire un bundle J2 (comme le J1) avec la procédure d'adaptation client, sinon le J2 est creux. Pas encore fait.
-- **J3 dépend de Romain.** Le module s'appuie sur son plugin WordPress + tuto (romainfillatre.fr) et le plugin officiel `enable-abilities-for-mcp` / `github.com/WordPress/mcp-adapter` ([[observations-whatsapp-bootcamp]] L78-79). Démo Romain "possible" mentionnée, pas confirmée. Action : caler la démo avec Romain AVANT le J3, sinon basculer en module dirigé par toi. Risque si Romain indispo.
-- **J4 = trou réel.** Anthony a "proposé son système de prospection IA pour S4" ([[observations-whatsapp-bootcamp]] L142), mais je n'ai aucun détail de ce système, aucun skill associé. Le J4 est écrit au niveau principe seulement, volontairement. Action obligatoire : cadrer le contenu réel avec Anthony, ou le remplacer par un module prospection à toi. Ne pas distribuer le J4 tel quel sans ce cadrage.
-- **⚠️ Risque audience technique** ([[session-2-redaction-debrief]] L234 : "ne pas perdre la moitié du groupe en S4 sur Obsidian/technique"). J1 (Next.js) et J3 (WordPress/MCP) sont les plus durs. Garde-fous mis : J1 a la section WordPress/no-code + renvoi MP ; J3 a l'alternative no-WordPress. À marteler chaque jour : le code est optionnel, le principe est obligatoire.
-- **Livrables S4 ≠ S3.** Pas d'`audit/`, ce sont des automatisations installées et qui tournent. Le "format qui fait signer" de la S3 devient ici "le système qui tourne sans toi".
-- **Boucle S2 ↔ S4.** Le J2 (veille auto) referme la boucle : la revue de presse client réalimente `article-engine-pipeline` de la S2. À expliciter au call.
-- **Normalisation.** Doc sans em-dashes (règle maison). Messages WhatsApp prêts à coller. Tableau J1-J5 à figer une fois J2/J3/J4 confirmés (Romain, Anthony, bundle revue-presse client).
+- **S4 recentrée sur 4 skills (2026-05-28).** Bascule depuis le plan "automatisations + prospection" (conservé en annexe ci-dessous). Raison de la bascule : les 4 skills (sémantique, données structurées, CWV, roadmap) sont prêts et distribuables aujourd'hui, sans dépendance externe, alors que le plan automatisations/prospection dépendait de Romain (démo WordPress jamais confirmée) et d'Anthony (système prospection = trou réel jamais cadré). On livre du concret plutôt que du "à confirmer".
+- **Ordre proposé à valider.** J'ai mis sémantique (J1, la matière) → données structurées (J2) → CWV (J3) → roadmap (J4, le commercial). L'arc monte vers le business. Si tu préfères grouper le technique (données structurées + CWV en J1-J2) et mettre sémantique + roadmap autour, dis-moi, je réordonne en 2 minutes.
+- **Tout est livré aujourd'hui sur le Drive.** Les 4 bundles ([[skill-preparation-semantique]], [[skill-donnees-structurees]], [[skill-core-web-vitals]], [[skill-roadmap-pseo]]) sont prêts à copier-coller. Le découpage J1-J4 est pédagogique (un message WhatsApp par jour), pas une contrainte d'install. Tu peux dire au groupe "tout est dispo, je vous déroule un skill par jour".
+- **CWV terminal-only = même risque audience qu'avant.** Le J3 (Core Web Vitals) ne tourne pas sur Cowork pur. Garde-fou mis dans le message J3 (PageSpeed public en repli + renvoi MP). À marteler : c'est le seul des 4 qui exige un terminal.
+- **Roadmap jamais testé en prod.** Cf. note de [[skill-roadmap-pseo]] : lance-le une fois sur un cas client avant le J4 pour valider la sortie. Si le scoring ou le phasage cloche, on corrige avant distribution.
+- **Sémantique nettoyé pour distribution.** Le bundle [[skill-preparation-semantique]] retire les refs à ton vault (doc source 1245 lignes + chemin sauvegarde). Version dé-vault-isée, comme données structurées. Détail dans la note du bundle.
+- **Cohérence checklist : fait.** Les 4 skills sont dans [[skills-checklist-bootcamp4]] section 4 + récap S4 mis à jour.
+- **Normalisation.** Doc sans em-dashes (règle maison). Messages WhatsApp prêts à coller.
+
+---
+
+## Annexe — Version précédente S4 (automatisations + prospection, non retenue)
+
+Plan initial créé en mai 2026, basculé le 2026-05-28 vers les 4 skills. Conservé ici pour mémoire (dépendances Romain / Anthony / revue-presse à réutiliser si tu remontes un module automatisation plus tard).
+
+| Jour | Contenu | Skill / outil | Statut à la bascule |
+|------|---------|---------------|---------------------|
+| 1 | Données structurées | `seo-donnees-structurees` | Conservé (passé en J2 dans le nouveau plan) |
+| 2 | Automatisation revue de presse sur la thématique du client | skill projet `revue-presse-quotidienne` adapté | Jamais documenté en pas-à-pas. Trou. |
+| 3 | Connexion site auto (WordPress, pipeline publication) | tuto Romain + MCP WordPress | Dépendait de Romain, démo jamais confirmée |
+| 4 | Prospection IA | système Anthony | Trou réel, jamais cadré avec Anthony |
+| 5 | Call | revue + démo | Conservé (réorienté) |
+
+Briques à réutiliser si module automatisation futur :
+- Démo plugin WordPress de Romain (romainfillatre.fr) + plugin officiel `enable-abilities-for-mcp` / `github.com/WordPress/mcp-adapter`
+- Système de prospection IA d'Anthony (à cadrer avec lui)
+- `revue-presse-quotidienne` rebranché sur la thématique d'un client (referme la boucle S2 ↔ S4)
+- Risque audience technique signalé en S3 debrief ([[session-2-redaction-debrief]] L234 : "ne pas perdre la moitié du groupe sur Obsidian/technique")
