@@ -1643,3 +1643,13 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Deploy.** newFusionn commit `c235e29` (empilé sans conflit sur un commit parallèle `d442cb1` de Tim) push main → Netlify. DB resync 23/23. Drafts + packs + Historique commités dans seo-kb.
 
 **Reste à faire si Tim veut aller plus loin.** Grounding éditorial profond des pages outils ; score regroundé sur le `pull` réel (au lieu du jugement modèle) ; brancher une vraie source de volumes (Keyword Planner / DataForSEO) pour passer de « requêtes réelles » à « requêtes réelles + volume réel ».
+
+## 2026-05-28 (suite) — « Pour qui » factuel + scores regroundés sur le pull
+
+**Demande Tim.** (1) « Sait quel pan du SEO il veut faire bouger en priorité : ça ne veut rien dire. Sois factuel, anti-AI writing. » → colonne « Pour qui » des tableaux à rendre concrète. (2) « On va changer et partout, regrounder le score sur le pull réel de Suggest. » Skill `ton-de-voix-tim` chargé. Règle sauvegardée : [[feedback_pour_qui_factuel]].
+
+**Pour qui factuel (23 pages).** Réécriture des cellules « Pour qui » vagues (mind-reading creux : « sait quel pan il veut faire bouger », « se reconnaît dans un rôle ») en factuel concret ancré sur la colonne Exemples (leviers, rôles, secteurs réels). Agence-seo fait à la main (étalon), les 22 autres délégués à 3 sous-agents en parallèle puis vérifiés (0 tiret cadratin, 0 mot banni, scores intacts) ; 17 cellules résiduelles ratées par un agent corrigées à la main. Pages outils adaptées (intention produit, pas prestataire).
+
+**Scores regroundés sur le pull (script `reground-score-pull.mjs`).** Le score /10 ne reflète plus un jugement modèle mais la demande réelle : match des tokens DISTINCTIFS du mot-clé (terme tête retiré) contre les requêtes du pack Suggest, pull → /10 (bucket). Stoplist élargie (google, mois, jours, villes…) après un 1er run qui matchait « 90 jours » sur « seoul combien de jours ». Mots-clés à vraie demande montent (tarif→8, GEO/AEO→7), inventions sans demande → 4 (demande non confirmée, gardées et transparentes, choix Tim). Révèle que ~la moitié des « décisionnels » d'agence-seo n'avaient aucune demande réelle.
+
+**Deploy.** newFusionn : le travail s'est retrouvé poussé en `8ab7ea5` (commit identique d'une session parallèle ; mon commit local redondant droppé au rebase). DB resync 23/23. Drafts + Historique commités dans seo-kb.
