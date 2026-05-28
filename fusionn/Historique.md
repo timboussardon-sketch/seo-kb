@@ -1584,3 +1584,37 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Prévention futures générations.** Mêmes règles injectées dans le prompt de l'assistant conversationnel `analyze-seo-chat` (REGLE 11 — FORMULATION HUMAINE + bloc dans `<style>`), déployé. Règle sauvegardée en mémoire (`feedback_ecriture_humaine_fusionn.md`).
 
 **Deploy.** Commit `ab8445e` push main → Netlify auto-deploy. Edge function déployée.
+
+## 2026-05-28 (suite) — Section dédiée « Listes de mots-clés » (sortie du blog)
+
+**Demande Tim.** Cloner pixel-perfect le blog mais réservé aux listes de mots-clés, dans une section « Listes de mots-clés » (comme « Stratégies » sur Organikk). Décision actée : migrer les URLs de détail vers `/listes-mots-cles/:slug` (avec 301), lien en Footer uniquement. En cours de route : « un icône différent sur chaque miniature ».
+
+**État de départ.** Les 23 « Liste des mots-clés pour X » étaient publiées dans la table `blog_posts` (slug préfixé `liste-des-mots-cles-`), servies sous `/blog/:slug`, et le blog les affichait pêle-mêle avec les 7 vrais articles. Discriminant retenu : le préfixe de slug (zéro migration DB).
+
+**Fix.**
+- Routing : `/listes-mots-cles` (index) + `/listes-mots-cles/:slug` → `BlogPost section="keywords"` (slug DB reconstruit = `liste-des-mots-cles-${param}`, canonical/back-link adaptés). Pas de duplication des 330 lignes de BlogPost.
+- Nouvelle page `ListesMotsCles.tsx` (clone de Blog.tsx) : fetch `/blog-data/keyword-lists.json`, fallback Supabase `slug like 'liste-des-mots-cles-%'`. `BlogCard` reçoit un prop `href` + `iconName`.
+- `Blog.tsx` exclut désormais les listes (`not slug like prefix`) ; `generate-blog-urls.js` génère 2 manifests (`posts.json` = 7 articles, `keyword-lists.json` = 23 listes) et bascule les URLs reactSnap vers `/listes-mots-cles/...`.
+- 301 : `netlify.toml` (prioritaire sur `_redirects`) `/blog/liste-des-mots-cles-* → /listes-mots-cles/:splat force=true`, placé AVANT le catch-all SPA. Doublon documentaire dans `_redirects`.
+- Sitemap edge function + `inject-seo-tags.js` + `publish-keyword-list.mjs` alignés sur la nouvelle URL. Constantes partagées dans `config/site.ts` (`KEYWORD_LIST_PREFIX/PATH`, helpers).
+- Icône distinct par carte : palette de 35 icônes lucide, assignation stable par rang alphabétique du slug (23 distincts garantis). Vérifié headless (Chrome système — le Chromium puppeteer plante en -86 arch).
+
+**Vérif.** Render headless OK (index 23 cartes + icônes uniques, détail h1/back/canonical, blog sans listes). Bundle vite build OK. Post-deploy prod : `/blog/liste-...-consultant-seo` → 301 `Location: /listes-mots-cles/consultant-seo`, index + détail 200, sitemap = 23 URLs.
+
+**Deploy.** Commit `11aedde` push main → Netlify (`fusionn2`). Edge function `generate-sitemap` redéployée + `sitemap.xml` régénéré (via curl direct, `generate-sitemap.js` exige un `.env` absent). Le commit embarque aussi, à la demande de Tim, sa feature tracking analytics en cours (PageTracker, `lib/tracking`, admin-v2, `admin-stats-v2`, 3 migrations) ; `supabase db push --dry-run` = « up to date » (migrations déjà appliquées en prod par sa session parallèle).
+
+**À noter (non traité, hors scope).** Incohérence pré-existante `fusionn.io` (sitemap, inject-seo-tags, config/site `SITE_URL`) vs prod canonique `fusionn.co`. 96 erreurs TS pré-existantes dans le repo (le build vite ne typecheck pas).
+
+## 2026-05-28 (suite) — Scores des « Liste des mots-clés » unifiés sur /10
+
+**Demande Tim.** « Pourquoi cette note sur 125 ? Tu peux pas faire que des notes sur 10 partout ? On doit retravailler les scores. Si impossible, ne pas mettre de score. » Contexte : il challengeait la qualité des pages (slop ?) et la fausse précision des scores. Décisions actées : Score /10 entier partout, propagation pages + skills.
+
+**Diagnostic des échelles.** 2 tableaux scorés par page : décisionnels `Score /125` (= proximité × intention × faisabilité, chacun 1-5, produit max 125) et modèles `Score /5` (même produit ramené sur 5). Sources : skills `seo-mots-cles-decisionnels` (/125) et `seo-modeles-pseo` (/5). La colonne « Pages » du tableau de segmentation (8, 7, 6…) n'est PAS un score → à ne pas toucher.
+
+**Fix.** Script `scripts/rescale-scores.mjs` (newFusionn, idempotent, dry-run par défaut, garde `isMain`) : transforme uniquement la colonne dont l'en-tête contient « Score ». Rescale déterministe `/125 → round(v/12.5)`, `/5 → round(v*2)` (gère la décimale FR « 4,0 »), clamp 0-10, en-tête → « Score /10 ». Prose alignée (« sur 125 » → « sur 10 », « scorés sur 5 (proximité…) » → « sur 10 »). Appliqué aux 23 drafts (`--apply`) + DB `blog_posts` (`--db --apply`, service_role) + régénération `public/blog-data`. Résidus /125 ou /5 : 0 partout. Vérif headless : en-têtes « Score /10 », valeurs 8/6…, colonne Pages intacte.
+
+**Skills corrigés.** `seo-mots-cles-decisionnels` (méthodo + exemple `64/125` → `5/10`) et `seo-modeles-pseo` (« ramené sur 0-5 » → « 0-10 », en-tête `Score Business /5` → `/10`, exemples). Vérifié : aucune edge function ni Qadence ne hardcode le /125. NON touchés (échelles différentes, hors de ces pages) : `seo-roadmap-pseo` (score priorité max 24) et `seo-product-led-seo` (Confidence Score sans dénominateur fixe) — à harmoniser plus tard si Tim veut.
+
+**Deploy.** newFusionn commit `d1b9ce2` push main → Netlify (`fusionn2`). DB déjà resynchronisée. 23 drafts commités dans seo-kb. Skills `~/.claude/skills` modifiés en local.
+
+**Question de fond ouverte (slop).** Le rescale règle l'échelle, pas le grounding : les scores restent des jugements modèle (pas de volume/difficulté sourcés). Gemini juge la page Prestashop « très haute volée » mais évalue 1 page en lecture, sans voir l'isomorphisme des 23 templates ni l'absence de data. Reste à grounder (vraie data métier) et différencier (1 angle Haute Surprise par page) si on veut sortir franchement de la zone slop.
