@@ -1,0 +1,3252 @@
+{
+  "keyword": "plateforme analytics",
+  "fetched_at": "2026-05-28T14:44:55.709Z",
+  "sources": {
+    "google_suggest": 764,
+    "reddit": 25,
+    "hacker_news": 1
+  },
+  "real_queries": [
+    {
+      "query": "analytics engineer",
+      "pull": 3
+    },
+    {
+      "query": "data platform engineer vs platform engineer",
+      "pull": 3
+    },
+    {
+      "query": "plateforme freelance data",
+      "pull": 3
+    },
+    {
+      "query": "agence analytics",
+      "pull": 2
+    },
+    {
+      "query": "agence analytics lyon",
+      "pull": 2
+    },
+    {
+      "query": "agence data analytics",
+      "pull": 2
+    },
+    {
+      "query": "analytics ai",
+      "pull": 2
+    },
+    {
+      "query": "analytics definition",
+      "pull": 2
+    },
+    {
+      "query": "analytics definition in business",
+      "pull": 2
+    },
+    {
+      "query": "analytics engineer salaire",
+      "pull": 2
+    },
+    {
+      "query": "analytics google",
+      "pull": 2
+    },
+    {
+      "query": "analytics instagram",
+      "pull": 2
+    },
+    {
+      "query": "analytics lol",
+      "pull": 2
+    },
+    {
+      "query": "analytics meaning",
+      "pull": 2
+    },
+    {
+      "query": "analytics travaux",
+      "pull": 2
+    },
+    {
+      "query": "analytics vidhya",
+      "pull": 2
+    },
+    {
+      "query": "analytics youtube",
+      "pull": 2
+    },
+    {
+      "query": "certified analytics professional",
+      "pull": 2
+    },
+    {
+      "query": "certified analytics professional cap",
+      "pull": 2
+    },
+    {
+      "query": "certified analytics professional cap cost",
+      "pull": 2
+    },
+    {
+      "query": "certified analytics professional informs",
+      "pull": 2
+    },
+    {
+      "query": "consultant analytics",
+      "pull": 2
+    },
+    {
+      "query": "data platform definition",
+      "pull": 2
+    },
+    {
+      "query": "data platform example",
+      "pull": 2
+    },
+    {
+      "query": "data platform kubernetes",
+      "pull": 2
+    },
+    {
+      "query": "database vs data platform",
+      "pull": 2
+    },
+    {
+      "query": "developer analytics",
+      "pull": 2
+    },
+    {
+      "query": "developer analytics tools",
+      "pull": 2
+    },
+    {
+      "query": "developer analytics tools visual studio",
+      "pull": 2
+    },
+    {
+      "query": "expert analytics",
+      "pull": 2
+    },
+    {
+      "query": "formation analytics engineer",
+      "pull": 2
+    },
+    {
+      "query": "formation analytics google",
+      "pull": 2
+    },
+    {
+      "query": "freelance analytics engineer",
+      "pull": 2
+    },
+    {
+      "query": "plateforme analyse technique gratuite",
+      "pull": 2
+    },
+    {
+      "query": "plateforme data gouv fr",
+      "pull": 2
+    },
+    {
+      "query": "plateforme formation data",
+      "pull": 2
+    },
+    {
+      "query": "plateforme freelance data scientist",
+      "pull": 2
+    },
+    {
+      "query": "platform analytics dashboards servicenow",
+      "pull": 2
+    },
+    {
+      "query": "platform analytics microstrategy",
+      "pull": 2
+    },
+    {
+      "query": "platform analytics roles servicenow",
+      "pull": 2
+    },
+    {
+      "query": "platform analytics servicenow",
+      "pull": 2
+    },
+    {
+      "query": "platform analytics servicenow docs",
+      "pull": 2
+    },
+    {
+      "query": "platform analytics workspace servicenow",
+      "pull": 2
+    },
+    {
+      "query": "platform freelance data entry",
+      "pull": 2
+    },
+    {
+      "query": "servicenow reports vs platform analytics",
+      "pull": 2
+    },
+    {
+      "query": "tjm analytics engineer",
+      "pull": 2
+    },
+    {
+      "query": "zik analytics avis",
+      "pull": 2
+    },
+    {
+      "query": ".data how to open",
+      "pull": 1
+    },
+    {
+      "query": "agence google analytics",
+      "pull": 1
+    },
+    {
+      "query": "agence web analytics",
+      "pull": 1
+    },
+    {
+      "query": "agency analytics",
+      "pull": 1
+    },
+    {
+      "query": "agency analytics alternative",
+      "pull": 1
+    },
+    {
+      "query": "agency analytics careers",
+      "pull": 1
+    },
+    {
+      "query": "agency analytics login",
+      "pull": 1
+    },
+    {
+      "query": "agency analytics platform",
+      "pull": 1
+    },
+    {
+      "query": "agency analytics pricing",
+      "pull": 1
+    },
+    {
+      "query": "agencyanalytics reviews",
+      "pull": 1
+    },
+    {
+      "query": "analyse avis amazon",
+      "pull": 1
+    },
+    {
+      "query": "analyse avis de l auteur manon lescaut",
+      "pull": 1
+    },
+    {
+      "query": "analyse avis google",
+      "pull": 1
+    },
+    {
+      "query": "analyse avisée",
+      "pull": 1
+    },
+    {
+      "query": "analyse combien de temps",
+      "pull": 1
+    },
+    {
+      "query": "analyse combien de temps a jeun",
+      "pull": 1
+    },
+    {
+      "query": "analyse comment",
+      "pull": 1
+    },
+    {
+      "query": "analyse comment faire",
+      "pull": 1
+    },
+    {
+      "query": "analyse comment wang fo fut sauvé",
+      "pull": 1
+    },
+    {
+      "query": "analyse commentaire",
+      "pull": 1
+    },
+    {
+      "query": "analyse commentaire composé",
+      "pull": 1
+    },
+    {
+      "query": "analyse commentaire de texte",
+      "pull": 1
+    },
+    {
+      "query": "analyse commentaire theatre",
+      "pull": 1
+    },
+    {
+      "query": "analyse de sang",
+      "pull": 1
+    },
+    {
+      "query": "analyse definition",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis dentaire",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis ia",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis photovoltaique",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis santeclair",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis travaux",
+      "pull": 1
+    },
+    {
+      "query": "analyse devise",
+      "pull": 1
+    },
+    {
+      "query": "analyse exemple swot",
+      "pull": 1
+    },
+    {
+      "query": "analyse formation",
+      "pull": 1
+    },
+    {
+      "query": "analyse laboratoire",
+      "pull": 1
+    },
+    {
+      "query": "analyse lyon",
+      "pull": 1
+    },
+    {
+      "query": "analyse lyon 1",
+      "pull": 1
+    },
+    {
+      "query": "analyse meilleur",
+      "pull": 1
+    },
+    {
+      "query": "analyse meilleur coup echec",
+      "pull": 1
+    },
+    {
+      "query": "analyse ou",
+      "pull": 1
+    },
+    {
+      "query": "analyse paris",
+      "pull": 1
+    },
+    {
+      "query": "analyse paris sportif",
+      "pull": 1
+    },
+    {
+      "query": "analyse paris sportif foot",
+      "pull": 1
+    },
+    {
+      "query": "analyse paris texas",
+      "pull": 1
+    },
+    {
+      "query": "analyse prix",
+      "pull": 1
+    },
+    {
+      "query": "analyse prix algerie",
+      "pull": 1
+    },
+    {
+      "query": "analyse prix amazon",
+      "pull": 1
+    },
+    {
+      "query": "analyse prix bitcoin",
+      "pull": 1
+    },
+    {
+      "query": "analyse prix ht ou ttc marché public",
+      "pull": 1
+    },
+    {
+      "query": "analyse prix maroc",
+      "pull": 1
+    },
+    {
+      "query": "analyse tarifaire",
+      "pull": 1
+    },
+    {
+      "query": "analyse vol pas.cher",
+      "pull": 1
+    },
+    {
+      "query": "analysis meaning",
+      "pull": 1
+    },
+    {
+      "query": "analysis tariffs",
+      "pull": 1
+    },
+    {
+      "query": "analysis tariffs trump",
+      "pull": 1
+    },
+    {
+      "query": "analyst certified",
+      "pull": 1
+    },
+    {
+      "query": "analyst definition",
+      "pull": 1
+    },
+    {
+      "query": "analyst formation",
+      "pull": 1
+    },
+    {
+      "query": "analyst freelance",
+      "pull": 1
+    },
+    {
+      "query": "analyst freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "analyst opta",
+      "pull": 1
+    },
+    {
+      "query": "analytic noun",
+      "pull": 1
+    },
+    {
+      "query": "analytic philosophy",
+      "pull": 1
+    },
+    {
+      "query": "analytic pokemon",
+      "pull": 1
+    },
+    {
+      "query": "analytic project france",
+      "pull": 1
+    },
+    {
+      "query": "analytic rubrics",
+      "pull": 1
+    },
+    {
+      "query": "analytical balance",
+      "pull": 1
+    },
+    {
+      "query": "analytical definition",
+      "pull": 1
+    },
+    {
+      "query": "analytical definition example",
+      "pull": 1
+    },
+    {
+      "query": "analytical meaning",
+      "pull": 1
+    },
+    {
+      "query": "analytics",
+      "pull": 1
+    },
+    {
+      "query": "analytics academy",
+      "pull": 1
+    },
+    {
+      "query": "analytics adobe",
+      "pull": 1
+    },
+    {
+      "query": "analytics and business",
+      "pull": 1
+    },
+    {
+      "query": "analytics and insights",
+      "pull": 1
+    },
+    {
+      "query": "analytics android",
+      "pull": 1
+    },
+    {
+      "query": "analytics api",
+      "pull": 1
+    },
+    {
+      "query": "analytics app",
+      "pull": 1
+    },
+    {
+      "query": "analytics application",
+      "pull": 1
+    },
+    {
+      "query": "analytics at google",
+      "pull": 1
+    },
+    {
+      "query": "analytics beckhoff",
+      "pull": 1
+    },
+    {
+      "query": "analytics brawl stars",
+      "pull": 1
+    },
+    {
+      "query": "analytics brussels",
+      "pull": 1
+    },
+    {
+      "query": "analytics business",
+      "pull": 1
+    },
+    {
+      "query": "analytics by google",
+      "pull": 1
+    },
+    {
+      "query": "analytics c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "analytics center",
+      "pull": 1
+    },
+    {
+      "query": "analytics certification google",
+      "pull": 1
+    },
+    {
+      "query": "analytics certified data analyst",
+      "pull": 1
+    },
+    {
+      "query": "analytics channel youtube",
+      "pull": 1
+    },
+    {
+      "query": "analytics club",
+      "pull": 1
+    },
+    {
+      "query": "analytics club eth",
+      "pull": 1
+    },
+    {
+      "query": "analytics com google",
+      "pull": 1
+    },
+    {
+      "query": "analytics consultant google",
+      "pull": 1
+    },
+    {
+      "query": "analytics consulting",
+      "pull": 1
+    },
+    {
+      "query": "analytics dashboard",
+      "pull": 1
+    },
+    {
+      "query": "analytics debugger",
+      "pull": 1
+    },
+    {
+      "query": "analytics debugger extension",
+      "pull": 1
+    },
+    {
+      "query": "analytics demo",
+      "pull": 1
+    },
+    {
+      "query": "analytics demo account",
+      "pull": 1
+    },
+    {
+      "query": "analytics down",
+      "pull": 1
+    },
+    {
+      "query": "analytics dune",
+      "pull": 1
+    },
+    {
+      "query": "analytics en français",
+      "pull": 1
+    },
+    {
+      "query": "analytics engineer c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "analytics engineer formation",
+      "pull": 1
+    },
+    {
+      "query": "analytics engineer jobs",
+      "pull": 1
+    },
+    {
+      "query": "analytics engineer junior",
+      "pull": 1
+    },
+    {
+      "query": "analytics engineer paris",
+      "pull": 1
+    },
+    {
+      "query": "analytics engineering",
+      "pull": 1
+    },
+    {
+      "query": "analytics evolucare",
+      "pull": 1
+    },
+    {
+      "query": "analytics facebook",
+      "pull": 1
+    },
+    {
+      "query": "analytics fc",
+      "pull": 1
+    },
+    {
+      "query": "analytics ff14",
+      "pull": 1
+    },
+    {
+      "query": "analytics football",
+      "pull": 1
+    },
+    {
+      "query": "analytics for business",
+      "pull": 1
+    },
+    {
+      "query": "analytics for google",
+      "pull": 1
+    },
+    {
+      "query": "analytics for tiktok",
+      "pull": 1
+    },
+    {
+      "query": "analytics for youtube",
+      "pull": 1
+    },
+    {
+      "query": "analytics formation",
+      "pull": 1
+    },
+    {
+      "query": "analytics freelance",
+      "pull": 1
+    },
+    {
+      "query": "analytics freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "analytics google 4",
+      "pull": 1
+    },
+    {
+      "query": "analytics google demo",
+      "pull": 1
+    },
+    {
+      "query": "analytics google demo account",
+      "pull": 1
+    },
+    {
+      "query": "analytics google login",
+      "pull": 1
+    },
+    {
+      "query": "analytics graduate program - client capabilities network",
+      "pull": 1
+    },
+    {
+      "query": "analytics graduate program mckinsey",
+      "pull": 1
+    },
+    {
+      "query": "analytics hiopos",
+      "pull": 1
+    },
+    {
+      "query": "analytics hr",
+      "pull": 1
+    },
+    {
+      "query": "analytics hub",
+      "pull": 1
+    },
+    {
+      "query": "analytics icon",
+      "pull": 1
+    },
+    {
+      "query": "analytics in business",
+      "pull": 1
+    },
+    {
+      "query": "analytics in french",
+      "pull": 1
+    },
+    {
+      "query": "analytics in google",
+      "pull": 1
+    },
+    {
+      "query": "analytics in tiktok",
+      "pull": 1
+    },
+    {
+      "query": "analytics in youtube",
+      "pull": 1
+    },
+    {
+      "query": "analytics insight",
+      "pull": 1
+    },
+    {
+      "query": "analytics jio",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs entry level",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs for freshers",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs in bangalore",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs in dubai",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs london",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs near me",
+      "pull": 1
+    },
+    {
+      "query": "analytics jobs remote",
+      "pull": 1
+    },
+    {
+      "query": "analytics js",
+      "pull": 1
+    },
+    {
+      "query": "analytics ka hindi meaning",
+      "pull": 1
+    },
+    {
+      "query": "analytics ka matlab kya hota hai",
+      "pull": 1
+    },
+    {
+      "query": "analytics kick",
+      "pull": 1
+    },
+    {
+      "query": "analytics knowledge base",
+      "pull": 1
+    },
+    {
+      "query": "analytics kochi",
+      "pull": 1
+    },
+    {
+      "query": "analytics kpi",
+      "pull": 1
+    },
+    {
+      "query": "analytics kpo",
+      "pull": 1
+    },
+    {
+      "query": "analytics kpo research",
+      "pull": 1
+    },
+    {
+      "query": "analytics kya hota hai",
+      "pull": 1
+    },
+    {
+      "query": "analytics lab",
+      "pull": 1
+    },
+    {
+      "query": "analytics linkedin",
+      "pull": 1
+    },
+    {
+      "query": "analytics login",
+      "pull": 1
+    },
+    {
+      "query": "analytics login google",
+      "pull": 1
+    },
+    {
+      "query": "analytics logo",
+      "pull": 1
+    },
+    {
+      "query": "analytics made easy",
+      "pull": 1
+    },
+    {
+      "query": "analytics manager",
+      "pull": 1
+    },
+    {
+      "query": "analytics mango",
+      "pull": 1
+    },
+    {
+      "query": "analytics mania",
+      "pull": 1
+    },
+    {
+      "query": "analytics navigator",
+      "pull": 1
+    },
+    {
+      "query": "analytics navigator highmark",
+      "pull": 1
+    },
+    {
+      "query": "analytics nba",
+      "pull": 1
+    },
+    {
+      "query": "analytics near me",
+      "pull": 1
+    },
+    {
+      "query": "analytics news",
+      "pull": 1
+    },
+    {
+      "query": "analytics noida",
+      "pull": 1
+    },
+    {
+      "query": "analytics northeastern university",
+      "pull": 1
+    },
+    {
+      "query": "analytics npm",
+      "pull": 1
+    },
+    {
+      "query": "analytics nurse",
+      "pull": 1
+    },
+    {
+      "query": "analytics of business",
+      "pull": 1
+    },
+    {
+      "query": "analytics on google",
+      "pull": 1
+    },
+    {
+      "query": "analytics on instagram",
+      "pull": 1
+    },
+    {
+      "query": "analytics on tiktok",
+      "pull": 1
+    },
+    {
+      "query": "analytics on youtube",
+      "pull": 1
+    },
+    {
+      "query": "analytics oracle",
+      "pull": 1
+    },
+    {
+      "query": "analytics ou",
+      "pull": 1
+    },
+    {
+      "query": "analytics outlook",
+      "pull": 1
+    },
+    {
+      "query": "analytics pane in power bi",
+      "pull": 1
+    },
+    {
+      "query": "analytics partners",
+      "pull": 1
+    },
+    {
+      "query": "analytics piano",
+      "pull": 1
+    },
+    {
+      "query": "analytics pinterest",
+      "pull": 1
+    },
+    {
+      "query": "analytics platform databricks",
+      "pull": 1
+    },
+    {
+      "query": "analytics platform definition",
+      "pull": 1
+    },
+    {
+      "query": "analytics platform free",
+      "pull": 1
+    },
+    {
+      "query": "analytics platform gartner",
+      "pull": 1
+    },
+    {
+      "query": "analytics platform knime",
+      "pull": 1
+    },
+    {
+      "query": "analytics platform open source",
+      "pull": 1
+    },
+    {
+      "query": "analytics pronunciation",
+      "pull": 1
+    },
+    {
+      "query": "analytics quad4",
+      "pull": 1
+    },
+    {
+      "query": "analytics que es",
+      "pull": 1
+    },
+    {
+      "query": "analytics questions",
+      "pull": 1
+    },
+    {
+      "query": "analytics questions for interview",
+      "pull": 1
+    },
+    {
+      "query": "analytics quotient",
+      "pull": 1
+    },
+    {
+      "query": "analytics quotient bangalore",
+      "pull": 1
+    },
+    {
+      "query": "analytics quotient careers",
+      "pull": 1
+    },
+    {
+      "query": "analytics quotient company",
+      "pull": 1
+    },
+    {
+      "query": "analytics quotient inc",
+      "pull": 1
+    },
+    {
+      "query": "analytics quotient linkedin",
+      "pull": 1
+    },
+    {
+      "query": "analytics reader iphone",
+      "pull": 1
+    },
+    {
+      "query": "analytics recruiting",
+      "pull": 1
+    },
+    {
+      "query": "analytics report",
+      "pull": 1
+    },
+    {
+      "query": "analytics report example",
+      "pull": 1
+    },
+    {
+      "query": "analytics report template",
+      "pull": 1
+    },
+    {
+      "query": "analytics research tools.com",
+      "pull": 1
+    },
+    {
+      "query": "analytics ringcentral",
+      "pull": 1
+    },
+    {
+      "query": "analytics roblox",
+      "pull": 1
+    },
+    {
+      "query": "analytics role",
+      "pull": 1
+    },
+    {
+      "query": "analytics shop",
+      "pull": 1
+    },
+    {
+      "query": "analytics site web",
+      "pull": 1
+    },
+    {
+      "query": "analytics spotify",
+      "pull": 1
+    },
+    {
+      "query": "analytics studio salesforce",
+      "pull": 1
+    },
+    {
+      "query": "analytics systems africa",
+      "pull": 1
+    },
+    {
+      "query": "analytics tft",
+      "pull": 1
+    },
+    {
+      "query": "analytics tiger",
+      "pull": 1
+    },
+    {
+      "query": "analytics tiktok",
+      "pull": 1
+    },
+    {
+      "query": "analytics tiktok account",
+      "pull": 1
+    },
+    {
+      "query": "analytics tools",
+      "pull": 1
+    },
+    {
+      "query": "analytics traduction",
+      "pull": 1
+    },
+    {
+      "query": "analytics travaux avis",
+      "pull": 1
+    },
+    {
+      "query": "analytics travaux tous corps d'état avis",
+      "pull": 1
+    },
+    {
+      "query": "analytics twitter",
+      "pull": 1
+    },
+    {
+      "query": "analytics u",
+      "pull": 1
+    },
+    {
+      "query": "analytics uc berkeley",
+      "pull": 1
+    },
+    {
+      "query": "analytics ui",
+      "pull": 1
+    },
+    {
+      "query": "analytics ui design",
+      "pull": 1
+    },
+    {
+      "query": "analytics uky",
+      "pull": 1
+    },
+    {
+      "query": "analytics unite",
+      "pull": 1
+    },
+    {
+      "query": "analytics unite 2026",
+      "pull": 1
+    },
+    {
+      "query": "analytics unite chicago",
+      "pull": 1
+    },
+    {
+      "query": "analytics university",
+      "pull": 1
+    },
+    {
+      "query": "analytics user attribute function token",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs ai",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs analysis",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs analysis meaning",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs analyst",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs data",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs data science",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs metrics",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs reporting",
+      "pull": 1
+    },
+    {
+      "query": "analytics vs statistics",
+      "pull": 1
+    },
+    {
+      "query": "analytics website",
+      "pull": 1
+    },
+    {
+      "query": "analytics website traffic",
+      "pull": 1
+    },
+    {
+      "query": "analytics with google",
+      "pull": 1
+    },
+    {
+      "query": "analytics x",
+      "pull": 1
+    },
+    {
+      "query": "analytics x account",
+      "pull": 1
+    },
+    {
+      "query": "analytics x free",
+      "pull": 1
+    },
+    {
+      "query": "analytics x login",
+      "pull": 1
+    },
+    {
+      "query": "analytics x twitter",
+      "pull": 1
+    },
+    {
+      "query": "analytics xero",
+      "pull": 1
+    },
+    {
+      "query": "analytics xylem",
+      "pull": 1
+    },
+    {
+      "query": "analytics y",
+      "pull": 1
+    },
+    {
+      "query": "analytics youtube api",
+      "pull": 1
+    },
+    {
+      "query": "analytics youtube channel",
+      "pull": 1
+    },
+    {
+      "query": "analytics youtube checker",
+      "pull": 1
+    },
+    {
+      "query": "analytics youtube extension",
+      "pull": 1
+    },
+    {
+      "query": "analytics youtube studio",
+      "pull": 1
+    },
+    {
+      "query": "analytics youtube video",
+      "pull": 1
+    },
+    {
+      "query": "analytics yt",
+      "pull": 1
+    },
+    {
+      "query": "analytics zeraki",
+      "pull": 1
+    },
+    {
+      "query": "analytics zeraki app",
+      "pull": 1
+    },
+    {
+      "query": "analytics zeraki app download",
+      "pull": 1
+    },
+    {
+      "query": "analytics zeraki co ke",
+      "pull": 1
+    },
+    {
+      "query": "analytics zeraki login",
+      "pull": 1
+    },
+    {
+      "query": "analytics zoho",
+      "pull": 1
+    },
+    {
+      "query": "analytics zoho api",
+      "pull": 1
+    },
+    {
+      "query": "analytics zoho login",
+      "pull": 1
+    },
+    {
+      "query": "analytics zoho pricing",
+      "pull": 1
+    },
+    {
+      "query": "analytix ksa",
+      "pull": 1
+    },
+    {
+      "query": "avis analytics",
+      "pull": 1
+    },
+    {
+      "query": "avis google analytics",
+      "pull": 1
+    },
+    {
+      "query": "avis impulse analytics",
+      "pull": 1
+    },
+    {
+      "query": "avis sur analytics travaux",
+      "pull": 1
+    },
+    {
+      "query": "avis sur mass analytics",
+      "pull": 1
+    },
+    {
+      "query": "avis sur prime analytics",
+      "pull": 1
+    },
+    {
+      "query": "avis sur sah analytics",
+      "pull": 1
+    },
+    {
+      "query": "business analytics course",
+      "pull": 1
+    },
+    {
+      "query": "cabinet analytics",
+      "pull": 1
+    },
+    {
+      "query": "carte data pas cher",
+      "pull": 1
+    },
+    {
+      "query": "certification analytics",
+      "pull": 1
+    },
+    {
+      "query": "certification analytics engineer",
+      "pull": 1
+    },
+    {
+      "query": "certification analytics google",
+      "pull": 1
+    },
+    {
+      "query": "clearwater analytics paris",
+      "pull": 1
+    },
+    {
+      "query": "combien coute google analytics",
+      "pull": 1
+    },
+    {
+      "query": "comment configurer google analytics",
+      "pull": 1
+    },
+    {
+      "query": "comment fonctionne google analytics",
+      "pull": 1
+    },
+    {
+      "query": "comment installer google analytics",
+      "pull": 1
+    },
+    {
+      "query": "comment installer google analytics sur wordpress",
+      "pull": 1
+    },
+    {
+      "query": "comment mettre google analytics sur son site",
+      "pull": 1
+    },
+    {
+      "query": "comment utiliser google analytics",
+      "pull": 1
+    },
+    {
+      "query": "comment utiliser google analytics pour optimiser son site internet",
+      "pull": 1
+    },
+    {
+      "query": "consultant analytics jobs",
+      "pull": 1
+    },
+    {
+      "query": "consultant analytics salary",
+      "pull": 1
+    },
+    {
+      "query": "consultant digital analytics",
+      "pull": 1
+    },
+    {
+      "query": "consulting & analytics club iit guwahati",
+      "pull": 1
+    },
+    {
+      "query": "consulting & analytics graduate visa",
+      "pull": 1
+    },
+    {
+      "query": "consulting & analytics graduate visa salary",
+      "pull": 1
+    },
+    {
+      "query": "consulting analytics",
+      "pull": 1
+    },
+    {
+      "query": "dashboard vs platform analytics servicenow",
+      "pull": 1
+    },
+    {
+      "query": "data agence",
+      "pull": 1
+    },
+    {
+      "query": "data analytics logiciel",
+      "pull": 1
+    },
+    {
+      "query": "data analytics ou data science",
+      "pull": 1
+    },
+    {
+      "query": "data auto",
+      "pull": 1
+    },
+    {
+      "query": "data aviso",
+      "pull": 1
+    },
+    {
+      "query": "data breach",
+      "pull": 1
+    },
+    {
+      "query": "data center",
+      "pull": 1
+    },
+    {
+      "query": "data center pas cher",
+      "pull": 1
+    },
+    {
+      "query": "data certified",
+      "pull": 1
+    },
+    {
+      "query": "data comment",
+      "pull": 1
+    },
+    {
+      "query": "data commentary",
+      "pull": 1
+    },
+    {
+      "query": "data definition",
+      "pull": 1
+    },
+    {
+      "query": "data definition in computer",
+      "pull": 1
+    },
+    {
+      "query": "data definition language",
+      "pull": 1
+    },
+    {
+      "query": "data developer platform",
+      "pull": 1
+    },
+    {
+      "query": "data devisa hasil ekspor",
+      "pull": 1
+    },
+    {
+      "query": "data devisa negara indonesia",
+      "pull": 1
+    },
+    {
+      "query": "data devisa pariwisata indonesia",
+      "pull": 1
+    },
+    {
+      "query": "data driven",
+      "pull": 1
+    },
+    {
+      "query": "data exemple",
+      "pull": 1
+    },
+    {
+      "query": "data formation",
+      "pull": 1
+    },
+    {
+      "query": "data formation aws",
+      "pull": 1
+    },
+    {
+      "query": "data freelance",
+      "pull": 1
+    },
+    {
+      "query": "data freelance hub",
+      "pull": 1
+    },
+    {
+      "query": "data freelance work",
+      "pull": 1
+    },
+    {
+      "query": "data hk",
+      "pull": 1
+    },
+    {
+      "query": "data hk 2025",
+      "pull": 1
+    },
+    {
+      "query": "data hk pools 2025",
+      "pull": 1
+    },
+    {
+      "query": "data hoje",
+      "pull": 1
+    },
+    {
+      "query": "data hongkong 2025",
+      "pull": 1
+    },
+    {
+      "query": "data job freelance",
+      "pull": 1
+    },
+    {
+      "query": "data loss prevention",
+      "pull": 1
+    },
+    {
+      "query": "data lyon",
+      "pull": 1
+    },
+    {
+      "query": "data meilleurs agents",
+      "pull": 1
+    },
+    {
+      "query": "data mining",
+      "pull": 1
+    },
+    {
+      "query": "data open",
+      "pull": 1
+    },
+    {
+      "query": "data outsourcing",
+      "pull": 1
+    },
+    {
+      "query": "data paris",
+      "pull": 1
+    },
+    {
+      "query": "data paris 1",
+      "pull": 1
+    },
+    {
+      "query": "data pas cher",
+      "pull": 1
+    },
+    {
+      "query": "data patterns share price",
+      "pull": 1
+    },
+    {
+      "query": "data plateforme ovh",
+      "pull": 1
+    },
+    {
+      "query": "data platform advanced veeam",
+      "pull": 1
+    },
+    {
+      "query": "data platform benchmark",
+      "pull": 1
+    },
+    {
+      "query": "data platform best practices",
+      "pull": 1
+    },
+    {
+      "query": "data platform bi",
+      "pull": 1
+    },
+    {
+      "query": "data platform bronze silver gold",
+      "pull": 1
+    },
+    {
+      "query": "data platform building",
+      "pull": 1
+    },
+    {
+      "query": "data platform building blocks",
+      "pull": 1
+    },
+    {
+      "query": "data platform capability map",
+      "pull": 1
+    },
+    {
+      "query": "data platform cloud ibm",
+      "pull": 1
+    },
+    {
+      "query": "data platform databricks",
+      "pull": 1
+    },
+    {
+      "query": "data platform dbt",
+      "pull": 1
+    },
+    {
+      "query": "data platform development",
+      "pull": 1
+    },
+    {
+      "query": "data platform diagram",
+      "pull": 1
+    },
+    {
+      "query": "data platform for dummies",
+      "pull": 1
+    },
+    {
+      "query": "data platform gartner",
+      "pull": 1
+    },
+    {
+      "query": "data platform gartner magic quadrant",
+      "pull": 1
+    },
+    {
+      "query": "data platform gcp",
+      "pull": 1
+    },
+    {
+      "query": "data platform gitlab",
+      "pull": 1
+    },
+    {
+      "query": "data platform google",
+      "pull": 1
+    },
+    {
+      "query": "data platform google cloud",
+      "pull": 1
+    },
+    {
+      "query": "data platform governance framework",
+      "pull": 1
+    },
+    {
+      "query": "data platform hadoop",
+      "pull": 1
+    },
+    {
+      "query": "data platform handbook",
+      "pull": 1
+    },
+    {
+      "query": "data platform healthcare",
+      "pull": 1
+    },
+    {
+      "query": "data platform hub",
+      "pull": 1
+    },
+    {
+      "query": "data platform ibm",
+      "pull": 1
+    },
+    {
+      "query": "data platform iceberg",
+      "pull": 1
+    },
+    {
+      "query": "data platform icon",
+      "pull": 1
+    },
+    {
+      "query": "data platform in azure",
+      "pull": 1
+    },
+    {
+      "query": "data platform in gcp",
+      "pull": 1
+    },
+    {
+      "query": "data platform is",
+      "pull": 1
+    },
+    {
+      "query": "data platform job",
+      "pull": 1
+    },
+    {
+      "query": "data platform job description",
+      "pull": 1
+    },
+    {
+      "query": "data platform jobs remote",
+      "pull": 1
+    },
+    {
+      "query": "data platform journey",
+      "pull": 1
+    },
+    {
+      "query": "data platform kafka",
+      "pull": 1
+    },
+    {
+      "query": "data platform knmi",
+      "pull": 1
+    },
+    {
+      "query": "data platform kpi",
+      "pull": 1
+    },
+    {
+      "query": "data platform là gì",
+      "pull": 1
+    },
+    {
+      "query": "data platform layers",
+      "pull": 1
+    },
+    {
+      "query": "data platform learning",
+      "pull": 1
+    },
+    {
+      "query": "data platform magic quadrant",
+      "pull": 1
+    },
+    {
+      "query": "data platform market share",
+      "pull": 1
+    },
+    {
+      "query": "data platform marketing",
+      "pull": 1
+    },
+    {
+      "query": "data platform mcp",
+      "pull": 1
+    },
+    {
+      "query": "data platform meme",
+      "pull": 1
+    },
+    {
+      "query": "data platform microsoft",
+      "pull": 1
+    },
+    {
+      "query": "data platform monitoring",
+      "pull": 1
+    },
+    {
+      "query": "data platform mvp",
+      "pull": 1
+    },
+    {
+      "query": "data platform name ideas",
+      "pull": 1
+    },
+    {
+      "query": "data platform names",
+      "pull": 1
+    },
+    {
+      "query": "data platform netflix",
+      "pull": 1
+    },
+    {
+      "query": "data platform next step",
+      "pull": 1
+    },
+    {
+      "query": "data platform next step 2025",
+      "pull": 1
+    },
+    {
+      "query": "data platform next step 2026",
+      "pull": 1
+    },
+    {
+      "query": "data platform on premise",
+      "pull": 1
+    },
+    {
+      "query": "data platform open source",
+      "pull": 1
+    },
+    {
+      "query": "data platform optimization",
+      "pull": 1
+    },
+    {
+      "query": "data platform oracle",
+      "pull": 1
+    },
+    {
+      "query": "data platform ovhcloud",
+      "pull": 1
+    },
+    {
+      "query": "data platform owner",
+      "pull": 1
+    },
+    {
+      "query": "data platform palantir",
+      "pull": 1
+    },
+    {
+      "query": "data platform pipeline",
+      "pull": 1
+    },
+    {
+      "query": "data platform product",
+      "pull": 1
+    },
+    {
+      "query": "data platform product manager",
+      "pull": 1
+    },
+    {
+      "query": "data platform product manager jobs",
+      "pull": 1
+    },
+    {
+      "query": "data platform product owner",
+      "pull": 1
+    },
+    {
+      "query": "data platform que es",
+      "pull": 1
+    },
+    {
+      "query": "data platform raci",
+      "pull": 1
+    },
+    {
+      "query": "data platform role",
+      "pull": 1
+    },
+    {
+      "query": "data platform rotterdam",
+      "pull": 1
+    },
+    {
+      "query": "data platform solutions",
+      "pull": 1
+    },
+    {
+      "query": "data platform tutorial",
+      "pull": 1
+    },
+    {
+      "query": "data platform uber",
+      "pull": 1
+    },
+    {
+      "query": "data platform udemy",
+      "pull": 1
+    },
+    {
+      "query": "data platform ui",
+      "pull": 1
+    },
+    {
+      "query": "data platform use cases",
+      "pull": 1
+    },
+    {
+      "query": "data platform veeam",
+      "pull": 1
+    },
+    {
+      "query": "data platform vendors",
+      "pull": 1
+    },
+    {
+      "query": "data platform virtual summit",
+      "pull": 1
+    },
+    {
+      "query": "data platform visualization",
+      "pull": 1
+    },
+    {
+      "query": "data platform what is it",
+      "pull": 1
+    },
+    {
+      "query": "data platform wikipedia",
+      "pull": 1
+    },
+    {
+      "query": "data platform with ai",
+      "pull": 1
+    },
+    {
+      "query": "data platform yandex cloud",
+      "pull": 1
+    },
+    {
+      "query": "data prix",
+      "pull": 1
+    },
+    {
+      "query": "data prix immobilier",
+      "pull": 1
+    },
+    {
+      "query": "data prix immobilier gouv",
+      "pull": 1
+    },
+    {
+      "query": "data prix vente immobilier",
+      "pull": 1
+    },
+    {
+      "query": "data science",
+      "pull": 1
+    },
+    {
+      "query": "data science course",
+      "pull": 1
+    },
+    {
+      "query": "data scientist",
+      "pull": 1
+    },
+    {
+      "query": "data show pas cher",
+      "pull": 1
+    },
+    {
+      "query": "data speed test",
+      "pull": 1
+    },
+    {
+      "query": "data tarif",
+      "pull": 1
+    },
+    {
+      "query": "data tarif vodafone",
+      "pull": 1
+    },
+    {
+      "query": "data tariff",
+      "pull": 1
+    },
+    {
+      "query": "data tariff plan for airtel",
+      "pull": 1
+    },
+    {
+      "query": "data tariff post quota completion",
+      "pull": 1
+    },
+    {
+      "query": "data visualization",
+      "pull": 1
+    },
+    {
+      "query": "data warehouse",
+      "pull": 1
+    },
+    {
+      "query": "data wipe",
+      "pull": 1
+    },
+    {
+      "query": "data world bank",
+      "pull": 1
+    },
+    {
+      "query": "data xxl",
+      "pull": 1
+    },
+    {
+      "query": "data xxl promo",
+      "pull": 1
+    },
+    {
+      "query": "data xxl wow",
+      "pull": 1
+    },
+    {
+      "query": "data-training platform",
+      "pull": 1
+    },
+    {
+      "query": "dataouest",
+      "pull": 1
+    },
+    {
+      "query": "definition analytics",
+      "pull": 1
+    },
+    {
+      "query": "definition big data analytics",
+      "pull": 1
+    },
+    {
+      "query": "definition data analytics",
+      "pull": 1
+    },
+    {
+      "query": "definition data platform",
+      "pull": 1
+    },
+    {
+      "query": "definition predictive analytics",
+      "pull": 1
+    },
+    {
+      "query": "disable platform analytics workspace servicenow",
+      "pull": 1
+    },
+    {
+      "query": "esim data pas cher",
+      "pull": 1
+    },
+    {
+      "query": "exemple analyse",
+      "pull": 1
+    },
+    {
+      "query": "exemple google analytics",
+      "pull": 1
+    },
+    {
+      "query": "exemple rapport google analytics",
+      "pull": 1
+    },
+    {
+      "query": "expert analytics ericsson",
+      "pull": 1
+    },
+    {
+      "query": "expert analytics gmbh",
+      "pull": 1
+    },
+    {
+      "query": "expert google analytics",
+      "pull": 1
+    },
+    {
+      "query": "forfait data pas cher",
+      "pull": 1
+    },
+    {
+      "query": "formation analytics",
+      "pull": 1
+    },
+    {
+      "query": "formation data analytics",
+      "pull": 1
+    },
+    {
+      "query": "formation data platform",
+      "pull": 1
+    },
+    {
+      "query": "formation google analytics 4",
+      "pull": 1
+    },
+    {
+      "query": "formation google analytics certification",
+      "pull": 1
+    },
+    {
+      "query": "formation google analytics gratuite",
+      "pull": 1
+    },
+    {
+      "query": "formation people analytics",
+      "pull": 1
+    },
+    {
+      "query": "formation piano analytics",
+      "pull": 1
+    },
+    {
+      "query": "formation sap analytics cloud",
+      "pull": 1
+    },
+    {
+      "query": "formation/stats",
+      "pull": 1
+    },
+    {
+      "query": "free analytics",
+      "pull": 1
+    },
+    {
+      "query": "free analytics for website",
+      "pull": 1
+    },
+    {
+      "query": "free analytics for x",
+      "pull": 1
+    },
+    {
+      "query": "free analytics google",
+      "pull": 1
+    },
+    {
+      "query": "free analytics instagram",
+      "pull": 1
+    },
+    {
+      "query": "free analytics platform",
+      "pull": 1
+    },
+    {
+      "query": "free analytics tiktok",
+      "pull": 1
+    },
+    {
+      "query": "free analytics tools for social media",
+      "pull": 1
+    },
+    {
+      "query": "free analytics twitter",
+      "pull": 1
+    },
+    {
+      "query": "freelance analytics",
+      "pull": 1
+    },
+    {
+      "query": "freelance analytics consulting",
+      "pull": 1
+    },
+    {
+      "query": "freelance analytics jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance analytics projects",
+      "pull": 1
+    },
+    {
+      "query": "freelance analytics work",
+      "pull": 1
+    },
+    {
+      "query": "freelance data platform",
+      "pull": 1
+    },
+    {
+      "query": "freelance google analytics",
+      "pull": 1
+    },
+    {
+      "query": "freelance people analytics",
+      "pull": 1
+    },
+    {
+      "query": "freelance sap analytics cloud",
+      "pull": 1
+    },
+    {
+      "query": "future of data platform",
+      "pull": 1
+    },
+    {
+      "query": "georgia tech master analytics",
+      "pull": 1
+    },
+    {
+      "query": "github data platform",
+      "pull": 1
+    },
+    {
+      "query": "google analytics avis",
+      "pull": 1
+    },
+    {
+      "query": "google analytics certified",
+      "pull": 1
+    },
+    {
+      "query": "google analytics comment ça marche",
+      "pull": 1
+    },
+    {
+      "query": "ieee ou analytics login",
+      "pull": 1
+    },
+    {
+      "query": "ieee vtools ou analytics",
+      "pull": 1
+    },
+    {
+      "query": "independent analytics",
+      "pull": 1
+    },
+    {
+      "query": "laboratoire analyse pas cher",
+      "pull": 1
+    },
+    {
+      "query": "lead data platform",
+      "pull": 1
+    },
+    {
+      "query": "logiciel acl analytics",
+      "pull": 1
+    },
+    {
+      "query": "logiciel analytics",
+      "pull": 1
+    },
+    {
+      "query": "logiciel analytics & services private limited",
+      "pull": 1
+    },
+    {
+      "query": "logiciel google analytics",
+      "pull": 1
+    },
+    {
+      "query": "logo data platform",
+      "pull": 1
+    },
+    {
+      "query": "master analytics",
+      "pull": 1
+    },
+    {
+      "query": "master analytics and management",
+      "pull": 1
+    },
+    {
+      "query": "master analytics rmit",
+      "pull": 1
+    },
+    {
+      "query": "master of analytics berkeley",
+      "pull": 1
+    },
+    {
+      "query": "meaning analytics",
+      "pull": 1
+    },
+    {
+      "query": "meilleur analytics",
+      "pull": 1
+    },
+    {
+      "query": "now assist platform analytics",
+      "pull": 1
+    },
+    {
+      "query": "now platform analytics workspace dashboard library",
+      "pull": 1
+    },
+    {
+      "query": "ou analytics",
+      "pull": 1
+    },
+    {
+      "query": "ou analytics ieee",
+      "pull": 1
+    },
+    {
+      "query": "ou analytics login",
+      "pull": 1
+    },
+    {
+      "query": "ou analytics vtools",
+      "pull": 1
+    },
+    {
+      "query": "ou business analytics",
+      "pull": 1
+    },
+    {
+      "query": "ou data analytics",
+      "pull": 1
+    },
+    {
+      "query": "ou data analytics certificate",
+      "pull": 1
+    },
+    {
+      "query": "outil analytics",
+      "pull": 1
+    },
+    {
+      "query": "outil data analytics",
+      "pull": 1
+    },
+    {
+      "query": "outil google analytics",
+      "pull": 1
+    },
+    {
+      "query": "outil piano analytics",
+      "pull": 1
+    },
+    {
+      "query": "outil web analytics",
+      "pull": 1
+    },
+    {
+      "query": "outils analytics site web",
+      "pull": 1
+    },
+    {
+      "query": "passwords data breach",
+      "pull": 1
+    },
+    {
+      "query": "performance vs platform analytics",
+      "pull": 1
+    },
+    {
+      "query": "performance vs platform analytics servicenow",
+      "pull": 1
+    },
+    {
+      "query": "plateforme analyse bourse",
+      "pull": 1
+    },
+    {
+      "query": "plateforme analyse technique",
+      "pull": 1
+    },
+    {
+      "query": "plateforme analyse trading",
+      "pull": 1
+    },
+    {
+      "query": "plateforme big data",
+      "pull": 1
+    },
+    {
+      "query": "plateforme data es",
+      "pull": 1
+    },
+    {
+      "query": "plateforme data room",
+      "pull": 1
+    },
+    {
+      "query": "plateforme data running",
+      "pull": 1
+    },
+    {
+      "query": "plateforme data science",
+      "pull": 1
+    },
+    {
+      "query": "plateforme health data hub",
+      "pull": 1
+    },
+    {
+      "query": "plateforme houellebecq analyse",
+      "pull": 1
+    },
+    {
+      "query": "plateforme open data",
+      "pull": 1
+    },
+    {
+      "query": "plateforme recherche data gouv",
+      "pull": 1
+    },
+    {
+      "query": "platform analysis trading",
+      "pull": 1
+    },
+    {
+      "query": "platform analyst job description",
+      "pull": 1
+    },
+    {
+      "query": "platform analyst jobs",
+      "pull": 1
+    },
+    {
+      "query": "platform analytical procedure",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics academy servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics advanced",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics advanced servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics ai",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics breakdown",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics certification",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics cis",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics cis servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics dashboard",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics documentation servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics examples",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics experience",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics experience servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics export to excel",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics filter",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics filters servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics fundamentals",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics in servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics indicators servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics jobs",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics kpi",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics kpi servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics meaning",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics migration",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics migration servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics migration zurich",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics now learning",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics quickbase",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics reports servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics role",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics roles",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics servicenow community",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics servicenow dashboard",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics servicenow migration",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics servicenow roles",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics servicenow training",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics servicenow university",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics tables",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics tables servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics task servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics training servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics ui builder",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics unload dashboard",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics update set",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics visualization",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics workshop",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics workspace",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics workspace roles",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics xanadu",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics your dashboard could not be saved",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics youtube",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics zurich",
+      "pull": 1
+    },
+    {
+      "query": "platform analytics zurich servicenow",
+      "pull": 1
+    },
+    {
+      "query": "platform and analytics",
+      "pull": 1
+    },
+    {
+      "query": "platform and data",
+      "pull": 1
+    },
+    {
+      "query": "platform data annotation",
+      "pull": 1
+    },
+    {
+      "query": "platform data architect",
+      "pull": 1
+    },
+    {
+      "query": "platform data architect salesforce",
+      "pull": 1
+    },
+    {
+      "query": "platform data axle",
+      "pull": 1
+    },
+    {
+      "query": "platform data breach",
+      "pull": 1
+    },
+    {
+      "query": "platform data center",
+      "pull": 1
+    },
+    {
+      "query": "platform data centres",
+      "pull": 1
+    },
+    {
+      "query": "platform data cloud blue yonder",
+      "pull": 1
+    },
+    {
+      "query": "platform data collection",
+      "pull": 1
+    },
+    {
+      "query": "platform data engineer",
+      "pull": 1
+    },
+    {
+      "query": "platform data engineer jobs",
+      "pull": 1
+    },
+    {
+      "query": "platform data engineering",
+      "pull": 1
+    },
+    {
+      "query": "platform data entry",
+      "pull": 1
+    },
+    {
+      "query": "platform data integration",
+      "pull": 1
+    },
+    {
+      "query": "platform data lake",
+      "pull": 1
+    },
+    {
+      "query": "platform data management",
+      "pull": 1
+    },
+    {
+      "query": "platform data model",
+      "pull": 1
+    },
+    {
+      "query": "platform data warehouse",
+      "pull": 1
+    },
+    {
+      "query": "platform for data",
+      "pull": 1
+    },
+    {
+      "query": "platform for data scientist",
+      "pull": 1
+    },
+    {
+      "query": "platform history_stats",
+      "pull": 1
+    },
+    {
+      "query": "platform history_stats home assistant",
+      "pull": 1
+    },
+    {
+      "query": "platform level data model",
+      "pull": 1
+    },
+    {
+      "query": "platform linked data",
+      "pull": 1
+    },
+    {
+      "query": "platform native analytics",
+      "pull": 1
+    },
+    {
+      "query": "platform resource data plane heavy",
+      "pull": 1
+    },
+    {
+      "query": "platform statistics home assistant",
+      "pull": 1
+    },
+    {
+      "query": "platform.quality analyst",
+      "pull": 1
+    },
+    {
+      "query": "prix google analytics",
+      "pull": 1
+    },
+    {
+      "query": "reddit comment analytics",
+      "pull": 1
+    },
+    {
+      "query": "service analytics",
+      "pull": 1
+    },
+    {
+      "query": "servicenow now assist platform analytics",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics calculated field",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics certified",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics certified dashboard",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics custom filter",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics formula indicator",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics highlighted content",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics jobs",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics join tables",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics kpi details",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics questions",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics ui builder",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics unload dashboard",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics version",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics view all",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics vs dashboards",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics vs reporting",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics year over year",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics yokohama",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics your dashboard could not be saved",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform analytics youtube",
+      "pull": 1
+    },
+    {
+      "query": "servicenow platform-analytics indicator",
+      "pull": 1
+    },
+    {
+      "query": "sim data pas cher",
+      "pull": 1
+    },
+    {
+      "query": "statistics definition",
+      "pull": 1
+    },
+    {
+      "query": "statistics freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "statistics vital",
+      "pull": 1
+    },
+    {
+      "query": "stats avis",
+      "pull": 1
+    },
+    {
+      "query": "stats bf6",
+      "pull": 1
+    },
+    {
+      "query": "stats cs",
+      "pull": 1
+    },
+    {
+      "query": "stats for lol",
+      "pull": 1
+    },
+    {
+      "query": "stats foxhole",
+      "pull": 1
+    },
+    {
+      "query": "stats haaland",
+      "pull": 1
+    },
+    {
+      "query": "stats lnh",
+      "pull": 1
+    },
+    {
+      "query": "stats lol",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon 1",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon lens",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon lille",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon marseille",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon psg",
+      "pull": 1
+    },
+    {
+      "query": "stats lyon strasbourg",
+      "pull": 1
+    },
+    {
+      "query": "stats mbappe",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur buteur",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur buteur europe",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur buteur ldc",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur buteur liga",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur buteur ligue 1",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur marqueur nba",
+      "pull": 1
+    },
+    {
+      "query": "stats meilleur pointeur nhl",
+      "pull": 1
+    },
+    {
+      "query": "stats messi",
+      "pull": 1
+    },
+    {
+      "query": "stats olise",
+      "pull": 1
+    },
+    {
+      "query": "stats ounahi",
+      "pull": 1
+    },
+    {
+      "query": "stats ousmane",
+      "pull": 1
+    },
+    {
+      "query": "stats ousmane dembele",
+      "pull": 1
+    },
+    {
+      "query": "stats ousmane dembele 24 25",
+      "pull": 1
+    },
+    {
+      "query": "stats outlook",
+      "pull": 1
+    },
+    {
+      "query": "stats ovechkin",
+      "pull": 1
+    },
+    {
+      "query": "stats paris",
+      "pull": 1
+    },
+    {
+      "query": "stats paris arsenal",
+      "pull": 1
+    },
+    {
+      "query": "stats paris bayern",
+      "pull": 1
+    },
+    {
+      "query": "stats paris inter",
+      "pull": 1
+    },
+    {
+      "query": "stats poll awards",
+      "pull": 1
+    },
+    {
+      "query": "stats steam",
+      "pull": 1
+    },
+    {
+      "query": "stats tft",
+      "pull": 1
+    },
+    {
+      "query": "stats victor wembanyama",
+      "pull": 1
+    },
+    {
+      "query": "stats vj edgecombe",
+      "pull": 1
+    },
+    {
+      "query": "stats warzone",
+      "pull": 1
+    },
+    {
+      "query": "stats wembanyama",
+      "pull": 1
+    },
+    {
+      "query": "stats wemby",
+      "pull": 1
+    },
+    {
+      "query": "stats westbrook",
+      "pull": 1
+    },
+    {
+      "query": "stats yamal",
+      "pull": 1
+    },
+    {
+      "query": "tarif google analytics",
+      "pull": 1
+    },
+    {
+      "query": "tarifa data",
+      "pull": 1
+    },
+    {
+      "query": "tarifas trump data",
+      "pull": 1
+    },
+    {
+      "query": "the data lakehouse platform",
+      "pull": 1
+    },
+    {
+      "query": "top analytics platform",
+      "pull": 1
+    },
+    {
+      "query": "yokohama platform analytics",
+      "pull": 1
+    },
+    {
+      "query": "youtube comment analytics",
+      "pull": 1
+    },
+    {
+      "query": "zik analytics",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "Roast me de ma recherche d'emploi infructueuse (CV et Sankey inclus)",
+      "subreddit": "emploi",
+      "ups": 3,
+      "comments": 24,
+      "url": "https://reddit.com/r/emploi/comments/1qqagbj/roast_me_de_ma_recherche_demploi_infructueuse_cv/"
+    },
+    {
+      "title": "Rustatio : un RatioMaster-like moderne (multi-plateforme)",
+      "subreddit": "yggTorrents",
+      "ups": 0,
+      "comments": 15,
+      "url": "https://reddit.com/r/yggTorrents/comments/1q5q9wt/rustatio_un_ratiomasterlike_moderne/"
+    },
+    {
+      "title": "I'm building a custom tool to save my client from 'Excel Hell'?",
+      "subreddit": "Entrepreneur",
+      "ups": 3,
+      "comments": 15,
+      "url": "https://reddit.com/r/Entrepreneur/comments/1pi9wdt/im_building_a_custom_tool_to_save_my_client_from/"
+    },
+    {
+      "title": "Les compétences ne suffisent plus .... pour un stage de 2 mois non rémunéré.",
+      "subreddit": "emploi",
+      "ups": 48,
+      "comments": 15,
+      "url": "https://reddit.com/r/emploi/comments/1nfcl6b/les_compétences_ne_suffisent_plus_pour_un_stage/"
+    },
+    {
+      "title": "Demande d'avis et pistes d'améliorations CV Expert Cyber Senior",
+      "subreddit": "aviscv",
+      "ups": 6,
+      "comments": 11,
+      "url": "https://reddit.com/r/aviscv/comments/1qpkbpw/demande_davis_et_pistes_daméliorations_cv_expert/"
+    },
+    {
+      "title": "Ingénieur Data ~2.5 années d'expérience",
+      "subreddit": "aviscv",
+      "ups": 5,
+      "comments": 10,
+      "url": "https://reddit.com/r/aviscv/comments/1qv2urp/ingénieur_data_25_années_dexpérience/"
+    },
+    {
+      "title": "Avis CV",
+      "subreddit": "aviscv",
+      "ups": 2,
+      "comments": 5,
+      "url": "https://reddit.com/r/aviscv/comments/1soaigd/avis_cv/"
+    },
+    {
+      "title": "I built a 4.99 lifetime CRM for freelance &amp; small businesses, no subscription, no AI bloat, just a clean native Apple app",
+      "subreddit": "Appstore",
+      "ups": 9,
+      "comments": 5,
+      "url": "https://reddit.com/r/Appstore/comments/1sde103/i_built_a_499_lifetime_crm_for_freelance_small/"
+    },
+    {
+      "title": "Okovision 2023 - Plateforme auto-hébergée de suivi de consommation de chaudière à granulés Okofen",
+      "subreddit": "selfhosted",
+      "ups": 0,
+      "comments": 4,
+      "url": "https://reddit.com/r/selfhosted/comments/1sgkfb4/okovision_2023_plateforme_autohébergée_de_suivi/"
+    },
+    {
+      "title": "On a dépensé des centaines d’heures…\njuste pour comprendre d’où venaient nos utilisateurs.",
+      "subreddit": "microsaas",
+      "ups": 0,
+      "comments": 4,
+      "url": "https://reddit.com/r/microsaas/comments/1s902bz/on_a_dépensé_des_centaines_dheures_juste_pour/"
+    },
+    {
+      "title": "I saved 10 hours a week on client acquisition by changing one thing. Here’s exactly how.",
+      "subreddit": "nocode",
+      "ups": 1,
+      "comments": 3,
+      "url": "https://reddit.com/r/nocode/comments/1s8vka3/i_saved_10_hours_a_week_on_client_acquisition_by/"
+    },
+    {
+      "title": "I built a 4.99 lifetime CRM for freelance &amp; small businesses, no subscription, no AI bloat, just a clean native Apple app",
+      "subreddit": "iosapps",
+      "ups": 3,
+      "comments": 2,
+      "url": "https://reddit.com/r/iosapps/comments/1sddxbc/i_built_a_499_lifetime_crm_for_freelance_small/"
+    },
+    {
+      "title": "I built a 4.99 lifetime CRM for freelance &amp; small businesses, no subscription, no AI bloat, just a clean native Apple app",
+      "subreddit": "ProductivityApps",
+      "ups": 1,
+      "comments": 2,
+      "url": "https://reddit.com/r/ProductivityApps/comments/1sddpg7/i_built_a_499_lifetime_crm_for_freelance_small/"
+    },
+    {
+      "title": "LendList — Suivez vos objets prêtés et empruntés (recherche beta testeurs !)",
+      "subreddit": "betatests",
+      "ups": 1,
+      "comments": 1,
+      "url": "https://reddit.com/r/betatests/comments/1s7320u/lendlist_suivez_vos_objets_prêtés_et_empruntés/"
+    },
+    {
+      "title": "Le problème à plusieurs millions que Lovable, Bolt et v0 ne résolvent pas. On l'a résolu. On vend la plateforme.",
+      "subreddit": "saasforsale",
+      "ups": 0,
+      "comments": 1,
+      "url": "https://reddit.com/r/saasforsale/comments/1rqr3jq/le_problème_à_plusieurs_millions_que_lovable_bolt/"
+    },
+    {
+      "title": "🚀 Comment j'ai lancé QRia.me, un SaaS d'IA Phygitale développé à 100% avec Claude Code et Gemini (Retour d'expérience / Vibe Coding)",
+      "subreddit": "SaasVibeCodingFrance",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/SaasVibeCodingFrance/comments/1tkhrue/comment_jai_lancé_qriame_un_saas_dia_phygitale/"
+    },
+    {
+      "title": "Les Missions IT du 12 Mai 2026 en France | +3000 offres aujourd'hui + 50 Full remote",
+      "subreddit": "GetYourJob_MissionIT",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/GetYourJob_MissionIT/comments/1taua02/les_missions_it_du_12_mai_2026_en_france_3000/"
+    },
+    {
+      "title": "Les missions IT du 7 Mai 2026 | 13 Full Remote",
+      "subreddit": "GetYourJob_MissionIT",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/GetYourJob_MissionIT/comments/1t6c6y5/les_missions_it_du_7_mai_2026_13_full_remote/"
+    },
+    {
+      "title": "j'ai arrêté de chercher des réponses génériques sur google. voilà ce que j'utilise maintenant",
+      "subreddit": "FicheProAI",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/FicheProAI/comments/1sz5vas/jai_arrêté_de_chercher_des_réponses_génériques/"
+    },
+    {
+      "title": "Les missions en IT de Mardi 28 Avril 2026",
+      "subreddit": "GetYourJob_MissionIT",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/GetYourJob_MissionIT/comments/1sxz1q6/les_missions_en_it_de_mardi_28_avril_2026/"
+    },
+    {
+      "title": "NeuraScope en 2 minutes : la plateforme IA souveraine qui connecte tous vos besoins métie",
+      "subreddit": "NEURASCOPE",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/NEURASCOPE/comments/1sp7lel/neurascope_en_2_minutes_la_plateforme_ia/"
+    },
+    {
+      "title": "Google revient sur le rebrand. Looker Studio redevient Data Studio.",
+      "subreddit": "SEOQuebec",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/SEOQuebec/comments/1so12qd/google_revient_sur_le_rebrand_looker_studio/"
+    },
+    {
+      "title": "Kissmetrics",
+      "subreddit": "salestoolsai",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/salestoolsai/comments/1sgkn9c/kissmetrics/"
+    },
+    {
+      "title": "I built a 4.99 lifetime CRM for freelance &amp; small businesses, no subscription, no AI bloat, just a clean native Apple app",
+      "subreddit": "LaunchMyStartup",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/LaunchMyStartup/comments/1sddt6t/i_built_a_499_lifetime_crm_for_freelance_small/"
+    },
+    {
+      "title": "I built a 4.99 lifetime CRM for freelance &amp; small businesses, no subscription, no AI bloat, just a clean native Apple app",
+      "subreddit": "ViralApps",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/ViralApps/comments/1sddqqm/i_built_a_499_lifetime_crm_for_freelance_small/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "Show HN: How to analyze your LLM output – A behavioural health monitor for LLMs",
+      "points": 10,
+      "comments": 7,
+      "url": "https://splabs.io"
+    }
+  ]
+}

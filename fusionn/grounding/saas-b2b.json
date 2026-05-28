@@ -1,0 +1,1286 @@
+{
+  "keyword": "saas b2b",
+  "fetched_at": "2026-05-28T14:45:13.468Z",
+  "sources": {
+    "google_suggest": 244,
+    "reddit": 25,
+    "hacker_news": 20
+  },
+  "real_queries": [
+    {
+      "query": "saas b2b prix",
+      "pull": 4
+    },
+    {
+      "query": "b2c b2b saas",
+      "pull": 3
+    },
+    {
+      "query": "logiciel saas b2b",
+      "pull": 3
+    },
+    {
+      "query": "saas b2b définition",
+      "pull": 3
+    },
+    {
+      "query": "saas b2b exemple",
+      "pull": 3
+    },
+    {
+      "query": "saas b2b sales jobs",
+      "pull": 3
+    },
+    {
+      "query": "saas b2b vs b2c",
+      "pull": 3
+    },
+    {
+      "query": "saas ou b2b",
+      "pull": 3
+    },
+    {
+      "query": "saas vs b2b",
+      "pull": 3
+    },
+    {
+      "query": "b2b saas scale up",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b c est quoi",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b companies",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b examples",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b marketing",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b meaning",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b o que é",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b que es",
+      "pull": 2
+    },
+    {
+      "query": "saas b2b sales",
+      "pull": 2
+    },
+    {
+      "query": "saas business analyst job description",
+      "pull": 2
+    },
+    {
+      "query": "saas business analyst jobs",
+      "pull": 2
+    },
+    {
+      "query": "saas business definition",
+      "pull": 2
+    },
+    {
+      "query": "saas business growth rate",
+      "pull": 2
+    },
+    {
+      "query": "saas business ideas reddit",
+      "pull": 2
+    },
+    {
+      "query": "saas business kya hai",
+      "pull": 2
+    },
+    {
+      "query": "saas business model template",
+      "pull": 2
+    },
+    {
+      "query": "saas business operations jobs",
+      "pull": 2
+    },
+    {
+      "query": "saas business plan template",
+      "pull": 2
+    },
+    {
+      "query": "saas hotel business bay",
+      "pull": 2
+    },
+    {
+      "query": "saas tower business bay dubai",
+      "pull": 2
+    },
+    {
+      "query": "agence seo saas b2b",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas benchmarks",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas boilerplate",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas brands",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas businesses",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas certification",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas companies usa",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas company que es",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas copywriter jobs",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas data",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas distribution",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas ebitda multiple",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas edtech",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas english",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas finance",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas firms",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas free trial",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas freelance writer",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas github",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas go to market",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas go to market strategy",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas go to market strategy template",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas gpt wrapper",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas group",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas gtm",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas gtm strategy",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas hat",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas healthcare",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas healthcare companies",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas hiring",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas homepage",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas how to get first customers",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas industry que es",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas interview questions",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas job board",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas joke",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas key metrics",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas kit",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas kpi",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas linkedin meme",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas list",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas meaning examples",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas meaning in hindi",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas meaning joke",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas meaning reddit",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas news",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas newsletter",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas niche",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas night",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas nps",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas or technical topics",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas organization",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas ranking",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas revenue multiples",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas reviews",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas rising 100",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas sales interview questions",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas sales joke",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas solution",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas start up",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas tips",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas ui",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas usa",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas ux",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas valuation multiples",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas vc",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas vendor",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas venture",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas venture capital",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas vs b2b sets",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas vs enterprise",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas vs sets",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas what does it mean",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas what is",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas writing",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas wso",
+      "pull": 1
+    },
+    {
+      "query": "b2b saas yc",
+      "pull": 1
+    },
+    {
+      "query": "b2c vs b2b saas",
+      "pull": 1
+    },
+    {
+      "query": "business analyst saas",
+      "pull": 1
+    },
+    {
+      "query": "business development saas",
+      "pull": 1
+    },
+    {
+      "query": "definition of b2b saas",
+      "pull": 1
+    },
+    {
+      "query": "empresas saas b2b o que é",
+      "pull": 1
+    },
+    {
+      "query": "enterprise software vs b2b saas",
+      "pull": 1
+    },
+    {
+      "query": "enterprise vs b2b saas",
+      "pull": 1
+    },
+    {
+      "query": "example of b2b saas",
+      "pull": 1
+    },
+    {
+      "query": "freelance b2b saas content writer",
+      "pull": 1
+    },
+    {
+      "query": "micro saas business ideas",
+      "pull": 1
+    },
+    {
+      "query": "plateforme saas b2b",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b ads",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b agency",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b ai",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b and b2c",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b co to",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b com ia",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b company",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b customer support",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b customer support role",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b dashboard",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b def",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b design",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b ejemplos",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b empresa",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b entreprise",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b environment",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b experience",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b france",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b full form",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b ia",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b ideas",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b industry",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b jobs",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b kpis",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b là gì",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b landing page",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b lead generation",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b leads",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b logo",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b marketing jobs",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b marketing strategy",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b marketplace",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b meme",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b metrics",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b nedir",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b platform",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b pricing",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b pricing models",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b product marketing",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b products",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b reddit",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b sales course",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b sales funnel",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b tech",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b tools",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b vertical",
+      "pull": 1
+    },
+    {
+      "query": "saas b2b website",
+      "pull": 1
+    },
+    {
+      "query": "saas business ai",
+      "pull": 1
+    },
+    {
+      "query": "saas business applications",
+      "pull": 1
+    },
+    {
+      "query": "saas business australia",
+      "pull": 1
+    },
+    {
+      "query": "saas business bay",
+      "pull": 1
+    },
+    {
+      "query": "saas business books",
+      "pull": 1
+    },
+    {
+      "query": "saas business buy",
+      "pull": 1
+    },
+    {
+      "query": "saas business c est quoi",
+      "pull": 1
+    },
+    {
+      "query": "saas business canvas",
+      "pull": 1
+    },
+    {
+      "query": "saas business certification",
+      "pull": 1
+    },
+    {
+      "query": "saas business codecanyon",
+      "pull": 1
+    },
+    {
+      "query": "saas business developer",
+      "pull": 1
+    },
+    {
+      "query": "saas business development manager salary",
+      "pull": 1
+    },
+    {
+      "query": "saas business development meaning",
+      "pull": 1
+    },
+    {
+      "query": "saas business financial model",
+      "pull": 1
+    },
+    {
+      "query": "saas business for sale",
+      "pull": 1
+    },
+    {
+      "query": "saas business for sale australia",
+      "pull": 1
+    },
+    {
+      "query": "saas business for sale south africa",
+      "pull": 1
+    },
+    {
+      "query": "saas business growth",
+      "pull": 1
+    },
+    {
+      "query": "saas business hours",
+      "pull": 1
+    },
+    {
+      "query": "saas business how to start",
+      "pull": 1
+    },
+    {
+      "query": "saas business ideas",
+      "pull": 1
+    },
+    {
+      "query": "saas business ideas 2025",
+      "pull": 1
+    },
+    {
+      "query": "saas business in australia",
+      "pull": 1
+    },
+    {
+      "query": "saas business in kenya",
+      "pull": 1
+    },
+    {
+      "query": "saas business in usa",
+      "pull": 1
+    },
+    {
+      "query": "saas business intelligence",
+      "pull": 1
+    },
+    {
+      "query": "saas business jobs",
+      "pull": 1
+    },
+    {
+      "query": "saas business kaufen",
+      "pull": 1
+    },
+    {
+      "query": "saas business key metrics",
+      "pull": 1
+    },
+    {
+      "query": "saas business kpi",
+      "pull": 1
+    },
+    {
+      "query": "saas business là gì",
+      "pull": 1
+    },
+    {
+      "query": "saas business logo",
+      "pull": 1
+    },
+    {
+      "query": "saas business meaning and examples",
+      "pull": 1
+    },
+    {
+      "query": "saas business model kpis",
+      "pull": 1
+    },
+    {
+      "query": "saas business name generator",
+      "pull": 1
+    },
+    {
+      "query": "saas business names",
+      "pull": 1
+    },
+    {
+      "query": "saas business near me",
+      "pull": 1
+    },
+    {
+      "query": "saas business news",
+      "pull": 1
+    },
+    {
+      "query": "saas business objects",
+      "pull": 1
+    },
+    {
+      "query": "saas business on sale",
+      "pull": 1
+    },
+    {
+      "query": "saas business online",
+      "pull": 1
+    },
+    {
+      "query": "saas business owner",
+      "pull": 1
+    },
+    {
+      "query": "saas business plan",
+      "pull": 1
+    },
+    {
+      "query": "saas business plan example",
+      "pull": 1
+    },
+    {
+      "query": "saas business plan template excel",
+      "pull": 1
+    },
+    {
+      "query": "saas business platform",
+      "pull": 1
+    },
+    {
+      "query": "saas business que es",
+      "pull": 1
+    },
+    {
+      "query": "saas business reddit",
+      "pull": 1
+    },
+    {
+      "query": "saas business revenue",
+      "pull": 1
+    },
+    {
+      "query": "saas business roadmap",
+      "pull": 1
+    },
+    {
+      "query": "saas business school",
+      "pull": 1
+    },
+    {
+      "query": "saas business services",
+      "pull": 1
+    },
+    {
+      "query": "saas business templates",
+      "pull": 1
+    },
+    {
+      "query": "saas business tower",
+      "pull": 1
+    },
+    {
+      "query": "saas business trends",
+      "pull": 1
+    },
+    {
+      "query": "saas business tutorial",
+      "pull": 1
+    },
+    {
+      "query": "saas business udemy",
+      "pull": 1
+    },
+    {
+      "query": "saas business uk",
+      "pull": 1
+    },
+    {
+      "query": "saas business unit",
+      "pull": 1
+    },
+    {
+      "query": "saas business usa",
+      "pull": 1
+    },
+    {
+      "query": "saas business valuation",
+      "pull": 1
+    },
+    {
+      "query": "saas business website",
+      "pull": 1
+    },
+    {
+      "query": "saas business what does it mean",
+      "pull": 1
+    },
+    {
+      "query": "saas business what is it",
+      "pull": 1
+    },
+    {
+      "query": "saas business white label",
+      "pull": 1
+    },
+    {
+      "query": "saas business with ai",
+      "pull": 1
+    },
+    {
+      "query": "saas definition business",
+      "pull": 1
+    },
+    {
+      "query": "saas lander business france",
+      "pull": 1
+    },
+    {
+      "query": "saas meaning b2b",
+      "pull": 1
+    },
+    {
+      "query": "saas or b2b",
+      "pull": 1
+    },
+    {
+      "query": "saas platform business model",
+      "pull": 1
+    },
+    {
+      "query": "saas service business",
+      "pull": 1
+    },
+    {
+      "query": "saas y b2b",
+      "pull": 1
+    },
+    {
+      "query": "software saas b2b",
+      "pull": 1
+    },
+    {
+      "query": "startup saas b2b",
+      "pull": 1
+    },
+    {
+      "query": "valo saas b2b ebitda",
+      "pull": 1
+    },
+    {
+      "query": "vertical saas vs b2b saas",
+      "pull": 1
+    },
+    {
+      "query": "what is a b2b saas model",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "Anyone else just “exhausted” with the way the AI culture here is?",
+      "subreddit": "bayarea",
+      "ups": 2850,
+      "comments": 602,
+      "url": "https://reddit.com/r/bayarea/comments/1sgvr65/anyone_else_just_exhausted_with_the_way_the_ai/"
+    },
+    {
+      "title": "my saas hit $9k/month. if i had to start over, here's how i'd find the best saas ideas in 2026",
+      "subreddit": "SaaS",
+      "ups": 198,
+      "comments": 151,
+      "url": "https://reddit.com/r/SaaS/comments/1sai8o6/my_saas_hit_9kmonth_if_i_had_to_start_over_heres/"
+    },
+    {
+      "title": "Reviewing AI-generated pull requests in 2026",
+      "subreddit": "ClaudeAI",
+      "ups": 5298,
+      "comments": 135,
+      "url": "https://reddit.com/r/ClaudeAI/comments/1teuh5w/reviewing_aigenerated_pull_requests_in_2026/"
+    },
+    {
+      "title": "What maximizing 2 fish and 5 loaves of bread for 5,000 stakeholders taught me about b2b saas",
+      "subreddit": "LinkedInLunatics",
+      "ups": 971,
+      "comments": 124,
+      "url": "https://reddit.com/r/LinkedInLunatics/comments/1sdnkz6/what_maximizing_2_fish_and_5_loaves_of_bread_for/"
+    },
+    {
+      "title": "Estou pensando em transformar essa tecnologia em um Micro-SaaS B2B. Acham que o mercado pagaria por isso?",
+      "subreddit": "empreendedorismo",
+      "ups": 201,
+      "comments": 94,
+      "url": "https://reddit.com/r/empreendedorismo/comments/1pq18zx/estou_pensando_em_transformar_essa_tecnologia_em/"
+    },
+    {
+      "title": "PSA: If you vibe coded your own \"B2B SaaS\", that means your potential \"customers\" can vibe code it too.",
+      "subreddit": "ClaudeCode",
+      "ups": 171,
+      "comments": 89,
+      "url": "https://reddit.com/r/ClaudeCode/comments/1tpekg3/psa_if_you_vibe_coded_your_own_b2b_saas_that/"
+    },
+    {
+      "title": "Any good B2B SaaS agencies?",
+      "subreddit": "b2bmarketing",
+      "ups": 37,
+      "comments": 82,
+      "url": "https://reddit.com/r/b2bmarketing/comments/1snsm98/any_good_b2b_saas_agencies/"
+    },
+    {
+      "title": "The three levels of AI in B2B SaaS (or how to prevent the SaaS-pocalypse)",
+      "subreddit": "SaaS",
+      "ups": 20,
+      "comments": 75,
+      "url": "https://reddit.com/r/SaaS/comments/1smo62l/the_three_levels_of_ai_in_b2b_saas_or_how_to/"
+    },
+    {
+      "title": "I will launch your SaaS into my 250k+ B2B affiliate creator network—pitch your product and share your URL.",
+      "subreddit": "microsaas",
+      "ups": 5,
+      "comments": 71,
+      "url": "https://reddit.com/r/microsaas/comments/1sr49rx/i_will_launch_your_saas_into_my_250k_b2b/"
+    },
+    {
+      "title": "A free space for B2B SaaS founders who are stuck on marketing.",
+      "subreddit": "SaaS",
+      "ups": 21,
+      "comments": 66,
+      "url": "https://reddit.com/r/SaaS/comments/1sor5mz/a_free_space_for_b2b_saas_founders_who_are_stuck/"
+    },
+    {
+      "title": "I will launch your SaaS into my 25k+ B2B affiliate creator network—pitch your product and share your URL.",
+      "subreddit": "microsaas",
+      "ups": 5,
+      "comments": 66,
+      "url": "https://reddit.com/r/microsaas/comments/1sub6kg/i_will_launch_your_saas_into_my_25k_b2b_affiliate/"
+    },
+    {
+      "title": "Built a production grade B2B SaaS with Lovable. Doing $4,600 MRR 2 months later. Here to answer any questions you guys have.",
+      "subreddit": "lovable",
+      "ups": 33,
+      "comments": 61,
+      "url": "https://reddit.com/r/lovable/comments/1smm0pp/built_a_production_grade_b2b_saas_with_lovable/"
+    },
+    {
+      "title": "AI is Killing B2B SaaS",
+      "subreddit": "SaaS",
+      "ups": 35,
+      "comments": 58,
+      "url": "https://reddit.com/r/SaaS/comments/1qvxa7q/ai_is_killing_b2b_saas/"
+    },
+    {
+      "title": "B2B SaaS founders, what do you think is the #1 reason visitors land on your homepage and don't sign up?",
+      "subreddit": "SaaS",
+      "ups": 7,
+      "comments": 57,
+      "url": "https://reddit.com/r/SaaS/comments/1tp1564/b2b_saas_founders_what_do_you_think_is_the_1/"
+    },
+    {
+      "title": "THIS is what a realistic one month B2B SaaS looks like.",
+      "subreddit": "SaaS",
+      "ups": 39,
+      "comments": 53,
+      "url": "https://reddit.com/r/SaaS/comments/1tmwn72/this_is_what_a_realistic_one_month_b2b_saas_looks/"
+    },
+    {
+      "title": "How do B2B SaaS startups actually get their first clients",
+      "subreddit": "SaaS",
+      "ups": 27,
+      "comments": 43,
+      "url": "https://reddit.com/r/SaaS/comments/1s8isbr/how_do_b2b_saas_startups_actually_get_their_first/"
+    },
+    {
+      "title": "Went through 5+ rounds at a B2B SaaS company. Here's what they extracted from me as a designer.",
+      "subreddit": "UXDesign",
+      "ups": 142,
+      "comments": 38,
+      "url": "https://reddit.com/r/UXDesign/comments/1sv3yu4/went_through_5_rounds_at_a_b2b_saas_company_heres/"
+    },
+    {
+      "title": "B2B SaaS taking off too quickly - help",
+      "subreddit": "SaaS",
+      "ups": 10,
+      "comments": 34,
+      "url": "https://reddit.com/r/SaaS/comments/1t5arl2/b2b_saas_taking_off_too_quickly_help/"
+    },
+    {
+      "title": "here's what latte taught me about b2b saas",
+      "subreddit": "LinkedInLunatics",
+      "ups": 1364,
+      "comments": 30,
+      "url": "https://reddit.com/r/LinkedInLunatics/comments/1mucm6u/heres_what_latte_taught_me_about_b2b_saas/"
+    },
+    {
+      "title": "Is B2B SaaS just stupid hard now?",
+      "subreddit": "SaaS",
+      "ups": 21,
+      "comments": 25,
+      "url": "https://reddit.com/r/SaaS/comments/1s0u8rf/is_b2b_saas_just_stupid_hard_now/"
+    },
+    {
+      "title": "How do you validate a b2b saas idea before building mvp?",
+      "subreddit": "SaaS",
+      "ups": 3,
+      "comments": 19,
+      "url": "https://reddit.com/r/SaaS/comments/1svkmbf/how_do_you_validate_a_b2b_saas_idea_before/"
+    },
+    {
+      "title": "You give me a SaaS idea. If it hits $10k MRR, I'll give you 50% of Year 1 revenue.",
+      "subreddit": "micro_saas",
+      "ups": 5,
+      "comments": 17,
+      "url": "https://reddit.com/r/micro_saas/comments/1qpk5n4/you_give_me_a_saas_idea_if_it_hits_10k_mrr_ill/"
+    },
+    {
+      "title": "Do B2B SaaS still have hope?",
+      "subreddit": "Entrepreneur",
+      "ups": 4,
+      "comments": 15,
+      "url": "https://reddit.com/r/Entrepreneur/comments/1rao32h/do_b2b_saas_still_have_hope/"
+    },
+    {
+      "title": "Finding new B2B SaaS ideas to build",
+      "subreddit": "microsaas",
+      "ups": 1,
+      "comments": 8,
+      "url": "https://reddit.com/r/microsaas/comments/1r54uj9/finding_new_b2b_saas_ideas_to_build/"
+    },
+    {
+      "title": "Are Reddit Ads actually effective for B2B SaaS?",
+      "subreddit": "SaaS",
+      "ups": 3,
+      "comments": 5,
+      "url": "https://reddit.com/r/SaaS/comments/1rcehu4/are_reddit_ads_actually_effective_for_b2b_saas/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "AI is killing B2B SaaS",
+      "points": 517,
+      "comments": 729,
+      "url": "https://nmn.gl/blog/ai-killing-b2b-saas"
+    },
+    {
+      "title": "I Listened to 1000 B2B SaaS Sales Calls",
+      "points": 487,
+      "comments": 168,
+      "url": "https://www.sofuckingagile.com/blog/i-listened-to-1000-b2b-saas-sales-calls"
+    },
+    {
+      "title": "When I raised my B2B SaaS’s prices",
+      "points": 238,
+      "comments": 76,
+      "url": "https://discuss.bootstrapped.fm/t/when-i-raised-my-b2b-saass-prices/7017"
+    },
+    {
+      "title": "B2B SaaS marketplaces with opportunities for indie hackers",
+      "points": 160,
+      "comments": 81,
+      "url": "https://rocketgems.com/blog/saas-marketplaces/"
+    },
+    {
+      "title": "Ask HN: How come there is no example code for B2B-SaaS apps?",
+      "points": 159,
+      "comments": 90,
+      "url": "https://news.ycombinator.com/item?id=23054881"
+    },
+    {
+      "title": "Why Elixir Is the Best Language for Building a Bootstrapped, B2B SaaS in 2024",
+      "points": 143,
+      "comments": 138,
+      "url": "https://www.sleepeasy.app/2024/01/21/elixir-best-language-for-bootstrapped-b2b-saas/"
+    },
+    {
+      "title": "Launch HN: June (YC W21) – Product Analytics for B2B SaaS Companies",
+      "points": 115,
+      "comments": 48,
+      "url": "https://news.ycombinator.com/item?id=36505743"
+    },
+    {
+      "title": "Show HN: I open-sourced my Go and Next B2B SaaS Starter (deploy anywhere, MIT)",
+      "points": 83,
+      "comments": 35,
+      "url": "https://github.com/moasq/production-saas-starter"
+    },
+    {
+      "title": "Auth for B2B SaaS: it's not like auth for consumer software",
+      "points": 75,
+      "comments": 45,
+      "url": "https://tesseral.com/blog/b2b-auth-isnt-that-similar-to-b2c-auth"
+    },
+    {
+      "title": "Ask HN: I need advice on my first B2B SaaS startup",
+      "points": 59,
+      "comments": 79,
+      "url": "https://news.ycombinator.com/item?id=22064364"
+    },
+    {
+      "title": "My B2B SaaS just hit 10 years old. A personal story about how it all started",
+      "points": 28,
+      "comments": 11,
+      "url": "https://nusii.com/blog/nusii-is-10-years-old/"
+    },
+    {
+      "title": "Ask HN: What B2B SaaS Apps do you pay for?",
+      "points": 24,
+      "comments": 14,
+      "url": "https://news.ycombinator.com/item?id=9373366"
+    },
+    {
+      "title": "Show HN: I built a gallary of 200 B2B SaaS pricing pages",
+      "points": 19,
+      "comments": 4,
+      "url": "https://www.pageshidara.com/saas-pricing-page-inspo"
+    },
+    {
+      "title": "Ask HN: What did I do wrong in my SaaS B2B startup?",
+      "points": 17,
+      "comments": 45,
+      "url": "https://news.ycombinator.com/item?id=15460568"
+    },
+    {
+      "title": "Show HN: B2B SaaS Kit – open-source kit for building webapps with customer orgs",
+      "points": 17,
+      "comments": 4,
+      "url": "https://github.com/fogbender/b2b-saaskit"
+    },
+    {
+      "title": "B2B SaaS Growth – Reverse Engineered",
+      "points": 16,
+      "comments": 3,
+      "url": "https://www.indiehackers.com/@Fairpixels/reverse-engineering-b2b-growth-strategies-2994826153?n"
+    },
+    {
+      "title": "B2B SaaS in the AI era is impossible?",
+      "points": 15,
+      "comments": 21,
+      "url": "https://news.ycombinator.com/item?id=39065997"
+    },
+    {
+      "title": "B2B SaaS in China",
+      "points": 14,
+      "comments": 6,
+      "url": "http://www.jonathanbrun.com/b2b-saas-in-china/"
+    },
+    {
+      "title": "Show HN: I've curated thousands of UI elements from the best B2B SaaS apps",
+      "points": 14,
+      "comments": 4,
+      "url": "https://nicelydone.club/components"
+    },
+    {
+      "title": "A landscape of the major 50 B2B SaaS app stores",
+      "points": 14,
+      "comments": 0,
+      "url": "https://medium.com/point-nine-news/a-landscape-of-the-major-saas-app-stores-4c48b103e69b"
+    }
+  ]
+}

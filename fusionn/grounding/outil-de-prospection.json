@@ -1,0 +1,1001 @@
+{
+  "keyword": "outil de prospection",
+  "fetched_at": "2026-05-28T14:44:20.450Z",
+  "sources": {
+    "google_suggest": 203,
+    "reddit": 25,
+    "hacker_news": 0
+  },
+  "real_queries": [
+    {
+      "query": "logiciel de prospection immobilière gratuit",
+      "pull": 5
+    },
+    {
+      "query": "outil de prospection commerciale gratuit",
+      "pull": 5
+    },
+    {
+      "query": "logiciel de prospection gratuit",
+      "pull": 4
+    },
+    {
+      "query": "meilleur outil de prospection",
+      "pull": 4
+    },
+    {
+      "query": "outil de prospection gratuit",
+      "pull": 4
+    },
+    {
+      "query": "outil de prospection ia",
+      "pull": 4
+    },
+    {
+      "query": "outil de prospection immobilière",
+      "pull": 4
+    },
+    {
+      "query": "outil de prospection linkedin gratuit",
+      "pull": 4
+    },
+    {
+      "query": "outils de prospection exemple",
+      "pull": 4
+    },
+    {
+      "query": "agence de prospection lyon",
+      "pull": 3
+    },
+    {
+      "query": "agence de prospection paris",
+      "pull": 3
+    },
+    {
+      "query": "logiciel de prospection immobilière",
+      "pull": 3
+    },
+    {
+      "query": "outil de prospection automatique",
+      "pull": 3
+    },
+    {
+      "query": "outil de prospection commerciale",
+      "pull": 3
+    },
+    {
+      "query": "outil de prospection linkedin",
+      "pull": 3
+    },
+    {
+      "query": "outil de suivi de prospection excel",
+      "pull": 3
+    },
+    {
+      "query": "outils de prospection c'est quoi",
+      "pull": 3
+    },
+    {
+      "query": "agence de prospection",
+      "pull": 2
+    },
+    {
+      "query": "agence de prospection b2c",
+      "pull": 2
+    },
+    {
+      "query": "agence de prospection commerciale",
+      "pull": 2
+    },
+    {
+      "query": "agence de prospection digitale",
+      "pull": 2
+    },
+    {
+      "query": "agence de prospection externalisée",
+      "pull": 2
+    },
+    {
+      "query": "agence de prospection téléphonique",
+      "pull": 2
+    },
+    {
+      "query": "combien de prospection dofus",
+      "pull": 2
+    },
+    {
+      "query": "combien de prospection dofus retro",
+      "pull": 2
+    },
+    {
+      "query": "combien de prospection pour un client",
+      "pull": 2
+    },
+    {
+      "query": "definition de prospection",
+      "pull": 2
+    },
+    {
+      "query": "développement de prospection",
+      "pull": 2
+    },
+    {
+      "query": "exemple de prospection commerciale pdf",
+      "pull": 2
+    },
+    {
+      "query": "formation de prospection",
+      "pull": 2
+    },
+    {
+      "query": "logiciel de prospection b2b",
+      "pull": 2
+    },
+    {
+      "query": "logiciel de prospection commerciale",
+      "pull": 2
+    },
+    {
+      "query": "logiciel de prospection commerciale gratuit",
+      "pull": 2
+    },
+    {
+      "query": "logiciel de prospection foncière",
+      "pull": 2
+    },
+    {
+      "query": "logiciel de prospection linkedin",
+      "pull": 2
+    },
+    {
+      "query": "logiciel de prospection telephonique",
+      "pull": 2
+    },
+    {
+      "query": "logiciel gratuit de prospection",
+      "pull": 2
+    },
+    {
+      "query": "meilleur logiciel de prospection",
+      "pull": 2
+    },
+    {
+      "query": "outil de prospection b2b",
+      "pull": 2
+    },
+    {
+      "query": "outil de prospection def",
+      "pull": 2
+    },
+    {
+      "query": "outil de prospection telephonique",
+      "pull": 2
+    },
+    {
+      "query": "outil suivi prospection gratuit",
+      "pull": 2
+    },
+    {
+      "query": "outils de prospection",
+      "pull": 2
+    },
+    {
+      "query": "outils de prospection en ligne",
+      "pull": 2
+    },
+    {
+      "query": "outils de prospection gratuit",
+      "pull": 2
+    },
+    {
+      "query": "outils de prospection terrain",
+      "pull": 2
+    },
+    {
+      "query": "plan de prospection exemple",
+      "pull": 2
+    },
+    {
+      "query": "plateforme de prospection b2b",
+      "pull": 2
+    },
+    {
+      "query": "plateforme prospection téléphonique",
+      "pull": 2
+    },
+    {
+      "query": "prospection de l or",
+      "pull": 2
+    },
+    {
+      "query": "prospection de loisir",
+      "pull": 2
+    },
+    {
+      "query": "prospection de prix",
+      "pull": 2
+    },
+    {
+      "query": "waalaxy outil de prospection linkedin",
+      "pull": 2
+    },
+    {
+      "query": "action de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "agence de prospection b2b",
+      "pull": 1
+    },
+    {
+      "query": "agence de prospection france",
+      "pull": 1
+    },
+    {
+      "query": "agence de prospection linkedin",
+      "pull": 1
+    },
+    {
+      "query": "agent de prospection ia",
+      "pull": 1
+    },
+    {
+      "query": "apollo outil de prospection",
+      "pull": 1
+    },
+    {
+      "query": "attestation de prospection",
+      "pull": 1
+    },
+    {
+      "query": "cabinet de prospection",
+      "pull": 1
+    },
+    {
+      "query": "cabinet de prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "carte de prospection gratuite",
+      "pull": 1
+    },
+    {
+      "query": "carte de prospection immobilière",
+      "pull": 1
+    },
+    {
+      "query": "codigos de prospecting en roblox",
+      "pull": 1
+    },
+    {
+      "query": "codigos de prospecting roblox",
+      "pull": 1
+    },
+    {
+      "query": "comment avoir plus de prospection dofus",
+      "pull": 1
+    },
+    {
+      "query": "comment faire de la prospection",
+      "pull": 1
+    },
+    {
+      "query": "comment faire de la prospection client",
+      "pull": 1
+    },
+    {
+      "query": "comment faire de la prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "comment faire de la prospection immobiliere",
+      "pull": 1
+    },
+    {
+      "query": "comment faire de la prospection sur linkedin",
+      "pull": 1
+    },
+    {
+      "query": "comment faire de la prospection terrain",
+      "pull": 1
+    },
+    {
+      "query": "comment faire un mail de prospection",
+      "pull": 1
+    },
+    {
+      "query": "comment faire un plan de prospection",
+      "pull": 1
+    },
+    {
+      "query": "comment faire un rapport de prospection",
+      "pull": 1
+    },
+    {
+      "query": "consultant prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "coût de prospection",
+      "pull": 1
+    },
+    {
+      "query": "coût de prospection définition",
+      "pull": 1
+    },
+    {
+      "query": "crm de prospection gratuit",
+      "pull": 1
+    },
+    {
+      "query": "de la prospection",
+      "pull": 1
+    },
+    {
+      "query": "de la prospection définition",
+      "pull": 1
+    },
+    {
+      "query": "de prospect à client",
+      "pull": 1
+    },
+    {
+      "query": "définition de prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "définition prospection client",
+      "pull": 1
+    },
+    {
+      "query": "définition prospection digitale",
+      "pull": 1
+    },
+    {
+      "query": "definition prospection immobiliere",
+      "pull": 1
+    },
+    {
+      "query": "définition prospection minière",
+      "pull": 1
+    },
+    {
+      "query": "définition prospection téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "distribution de prospect film",
+      "pull": 1
+    },
+    {
+      "query": "dossier de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "entonnoir de prospection",
+      "pull": 1
+    },
+    {
+      "query": "entonnoir de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "exemple de prospection",
+      "pull": 1
+    },
+    {
+      "query": "exemple de prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "exemple de prospection immobiliere",
+      "pull": 1
+    },
+    {
+      "query": "exemple de prospection par mail",
+      "pull": 1
+    },
+    {
+      "query": "exemple de prospection physique",
+      "pull": 1
+    },
+    {
+      "query": "exemple de prospection téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "expert prospection",
+      "pull": 1
+    },
+    {
+      "query": "fiche de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "fichier de prospection gratuit",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection b2b",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection commerciale cpf",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection commerciale gratuite",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection digitale",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection immobilière",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection linkedin",
+      "pull": 1
+    },
+    {
+      "query": "formation prospection téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "formation technique de prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "freelance prospection",
+      "pull": 1
+    },
+    {
+      "query": "freelance prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "freelance prospection telephonique",
+      "pull": 1
+    },
+    {
+      "query": "les outils de la prospection commerciale pdf",
+      "pull": 1
+    },
+    {
+      "query": "les outils de la prospective pdf",
+      "pull": 1
+    },
+    {
+      "query": "les outils de prospection pdf",
+      "pull": 1
+    },
+    {
+      "query": "lettre de prospection immobilière",
+      "pull": 1
+    },
+    {
+      "query": "liste de prospection gratuite",
+      "pull": 1
+    },
+    {
+      "query": "logiciel de prospection",
+      "pull": 1
+    },
+    {
+      "query": "logiciel de prospection automobile",
+      "pull": 1
+    },
+    {
+      "query": "logiciel de prospection ia",
+      "pull": 1
+    },
+    {
+      "query": "machine de prospection aurifère",
+      "pull": 1
+    },
+    {
+      "query": "mail de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "mail de prospection freelance",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agent carte de prospection",
+      "pull": 1
+    },
+    {
+      "query": "meilleur mail de prospection",
+      "pull": 1
+    },
+    {
+      "query": "meilleur message de prospection linkedin",
+      "pull": 1
+    },
+    {
+      "query": "meilleur moyen de prospection",
+      "pull": 1
+    },
+    {
+      "query": "meilleur outil prospection linkedin",
+      "pull": 1
+    },
+    {
+      "query": "meilleur technique de prospection",
+      "pull": 1
+    },
+    {
+      "query": "méthode de prospection",
+      "pull": 1
+    },
+    {
+      "query": "méthode de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "méthode de prospection immobilière",
+      "pull": 1
+    },
+    {
+      "query": "méthode de prospection physique",
+      "pull": 1
+    },
+    {
+      "query": "méthodes de prospection archéologique",
+      "pull": 1
+    },
+    {
+      "query": "nomination outil de prospection",
+      "pull": 1
+    },
+    {
+      "query": "ou faire de la prospection",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection crm",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection digital",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection facebook",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection foncière",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection instagram",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection mail",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection multicanal",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospection sur linkedin",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospective financière",
+      "pull": 1
+    },
+    {
+      "query": "outil de prospective urbaine",
+      "pull": 1
+    },
+    {
+      "query": "outil de suivi de la prospection",
+      "pull": 1
+    },
+    {
+      "query": "outil de suivi de prospection",
+      "pull": 1
+    },
+    {
+      "query": "outil de suivi prospection",
+      "pull": 1
+    },
+    {
+      "query": "outils de la prospection",
+      "pull": 1
+    },
+    {
+      "query": "outils de la prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "outils de prospection b2b",
+      "pull": 1
+    },
+    {
+      "query": "outils de prospection client",
+      "pull": 1
+    },
+    {
+      "query": "outils de prospection commerciale",
+      "pull": 1
+    },
+    {
+      "query": "outils de prospection digitale",
+      "pull": 1
+    },
+    {
+      "query": "outils de prospection or",
+      "pull": 1
+    },
+    {
+      "query": "permis de prospection québec",
+      "pull": 1
+    },
+    {
+      "query": "plan de prospection",
+      "pull": 1
+    },
+    {
+      "query": "plan de prospection exemple gratuit",
+      "pull": 1
+    },
+    {
+      "query": "plan de prospection gratuit",
+      "pull": 1
+    },
+    {
+      "query": "plateforme de prospection",
+      "pull": 1
+    },
+    {
+      "query": "prestataire prospection",
+      "pull": 1
+    },
+    {
+      "query": "prix prospection",
+      "pull": 1
+    },
+    {
+      "query": "prospection agence de voyage",
+      "pull": 1
+    },
+    {
+      "query": "prospection de clients",
+      "pull": 1
+    },
+    {
+      "query": "prospection de l eau souterraine",
+      "pull": 1
+    },
+    {
+      "query": "prospection de l'eau",
+      "pull": 1
+    },
+    {
+      "query": "prospection de l'entreprise",
+      "pull": 1
+    },
+    {
+      "query": "prospection de l'or pdf",
+      "pull": 1
+    },
+    {
+      "query": "prospection de la clientèle",
+      "pull": 1
+    },
+    {
+      "query": "prospection de loisir fr",
+      "pull": 1
+    },
+    {
+      "query": "prospection de marché",
+      "pull": 1
+    },
+    {
+      "query": "prospection de nouveaux clients",
+      "pull": 1
+    },
+    {
+      "query": "prospection de service",
+      "pull": 1
+    },
+    {
+      "query": "prospection de site",
+      "pull": 1
+    },
+    {
+      "query": "prospection de terrain",
+      "pull": 1
+    },
+    {
+      "query": "prospection de travail",
+      "pull": 1
+    },
+    {
+      "query": "rapport de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "service de prospection",
+      "pull": 1
+    },
+    {
+      "query": "service de prospection téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "site de prospection gratuit",
+      "pull": 1
+    },
+    {
+      "query": "site de prospection immobiliere",
+      "pull": 1
+    },
+    {
+      "query": "sondes de prospection arc",
+      "pull": 1
+    },
+    {
+      "query": "support de prospection awex",
+      "pull": 1
+    },
+    {
+      "query": "synonymes de prospection",
+      "pull": 1
+    },
+    {
+      "query": "tableau de prospection alternance",
+      "pull": 1
+    },
+    {
+      "query": "tableau de prospection exemple",
+      "pull": 1
+    },
+    {
+      "query": "tableau de prospection gratuit",
+      "pull": 1
+    },
+    {
+      "query": "tableau de prospection immobilière",
+      "pull": 1
+    },
+    {
+      "query": "tarif prospection téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "taux de prospection",
+      "pull": 1
+    },
+    {
+      "query": "taux de prospection calcul",
+      "pull": 1
+    },
+    {
+      "query": "taux de prospection def",
+      "pull": 1
+    },
+    {
+      "query": "technique de prospection agent immobilier",
+      "pull": 1
+    },
+    {
+      "query": "technique de prospection analogique",
+      "pull": 1
+    },
+    {
+      "query": "type de prospection",
+      "pull": 1
+    },
+    {
+      "query": "types de prospection archéologique",
+      "pull": 1
+    },
+    {
+      "query": "visite de prospection",
+      "pull": 1
+    },
+    {
+      "query": "zone de prospection",
+      "pull": 1
+    },
+    {
+      "query": "zones de prospection 8 lettres",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "Votre avis sincère sur le cv une note sur 10",
+      "subreddit": "aviscv",
+      "ups": 67,
+      "comments": 126,
+      "url": "https://reddit.com/r/aviscv/comments/1nhgmgn/votre_avis_sincère_sur_le_cv_une_note_sur_10/"
+    },
+    {
+      "title": "Visibilité IA, j'ai passé 3 mois à chercher pourquoi mon trafic s'effondrait et la réponse m'a un peu retourné le cerveau",
+      "subreddit": "FrenchTech",
+      "ups": 50,
+      "comments": 68,
+      "url": "https://reddit.com/r/FrenchTech/comments/1t298c0/visibilité_ia_jai_passé_3_mois_à_chercher/"
+    },
+    {
+      "title": "Des entrepreneurs ou freelances dans l’automatisation ici pour échanger",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 10,
+      "comments": 44,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1t66inp/des_entrepreneurs_ou_freelances_dans/"
+    },
+    {
+      "title": "J'ai crée un outil pour trouver des clients locaux (Recherche de feedbacks)",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 8,
+      "comments": 37,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1renrj5/jai_crée_un_outil_pour_trouver_des_clients_locaux/"
+    },
+    {
+      "title": "Freelance dev B2B : galère à trouver mes premiers clients",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 2,
+      "comments": 34,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1t3iaey/freelance_dev_b2b_galère_à_trouver_mes_premiers/"
+    },
+    {
+      "title": "le mythe de l'agent IA qui prospecte pour toi",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 19,
+      "comments": 24,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1tklmn7/le_mythe_de_lagent_ia_qui_prospecte_pour_toi/"
+    },
+    {
+      "title": "L'AEO est-il en train de remplacer le référencement naturel (SEO) pour les équipes CRM, ou modifie-t-il simplement la manière dont les acheteurs trouvent des outils ?",
+      "subreddit": "FrenchTech",
+      "ups": 8,
+      "comments": 23,
+      "url": "https://reddit.com/r/FrenchTech/comments/1snqtqj/laeo_estil_en_train_de_remplacer_le_référencement/"
+    },
+    {
+      "title": "Vous détestez prospecter ? Je bosse sur un outil et j’ai besoin de vos retours",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 14,
+      "comments": 18,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1qorw6k/vous_détestez_prospecter_je_bosse_sur_un_outil_et/"
+    },
+    {
+      "title": "[ Freelance ] outils quotidien et pour la prospection",
+      "subreddit": "developpeurs",
+      "ups": 1,
+      "comments": 14,
+      "url": "https://reddit.com/r/developpeurs/comments/1mh90c0/freelance_outils_quotidien_et_pour_la_prospection/"
+    },
+    {
+      "title": "le mythe de l'agent IA en prospection",
+      "subreddit": "SalesFrance",
+      "ups": 8,
+      "comments": 11,
+      "url": "https://reddit.com/r/SalesFrance/comments/1tklfnt/le_mythe_de_lagent_ia_en_prospection/"
+    },
+    {
+      "title": "Besoin de vos retours sur un sujet prospection B2B",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 2,
+      "comments": 11,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1s2evu0/besoin_de_vos_retours_sur_un_sujet_prospection_b2b/"
+    },
+    {
+      "title": "TUTO : Monter une machine de prospection (5000 leads/mois) pour moins de 200€",
+      "subreddit": "SalesFrance",
+      "ups": 7,
+      "comments": 11,
+      "url": "https://reddit.com/r/SalesFrance/comments/1poy3b5/tuto_monter_une_machine_de_prospection_5000/"
+    },
+    {
+      "title": "On a créé Prospectus pour arrêter de passer des journées à faire des listes de prospect",
+      "subreddit": "FrenchTech",
+      "ups": 0,
+      "comments": 11,
+      "url": "https://reddit.com/r/FrenchTech/comments/1mp223u/on_a_créé_prospectus_pour_arrêter_de_passer_des/"
+    },
+    {
+      "title": "Salut à tous, je bosse sur un outil qui facilite la prospection pour freelances IT et j'aimerais vos retours honnêtes",
+      "subreddit": "freelancefrance",
+      "ups": 2,
+      "comments": 7,
+      "url": "https://reddit.com/r/freelancefrance/comments/1sgys3f/salut_à_tous_je_bosse_sur_un_outil_qui_facilite/"
+    },
+    {
+      "title": "Votre stack de prospection B2B en 2026. Qu'est-ce qui marche vraiment ?",
+      "subreddit": "SalesFrance",
+      "ups": 4,
+      "comments": 6,
+      "url": "https://reddit.com/r/SalesFrance/comments/1sqs30e/votre_stack_de_prospection_b2b_en_2026_questce/"
+    },
+    {
+      "title": "Comparaison outils numéros de téléphone",
+      "subreddit": "SalesFrance",
+      "ups": 2,
+      "comments": 3,
+      "url": "https://reddit.com/r/SalesFrance/comments/1qe0rdl/comparaison_outils_numéros_de_téléphone/"
+    },
+    {
+      "title": "[Projet] J'ai lancé Freelens, un outil de suivi et pilotage pour freelances — retour sur les 6 premiers mois",
+      "subreddit": "Entreprendre_France",
+      "ups": 3,
+      "comments": 1,
+      "url": "https://reddit.com/r/Entreprendre_France/comments/1sroili/projet_jai_lancé_freelens_un_outil_de_suivi_et/"
+    },
+    {
+      "title": "Quelqu’un a déjà développé un outil de personnalisation de messages de prospection sur Claude sans utiliser l’API ?",
+      "subreddit": "ClaudeAI",
+      "ups": 0,
+      "comments": 1,
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sexttl/quelquun_a_déjà_développé_un_outil_de/"
+    },
+    {
+      "title": "Outil pour prospecter les restaurants, vous utilisez quoi ?",
+      "subreddit": "duckflow",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/duckflow/comments/1tlsv8r/outil_pour_prospecter_les_restaurants_vous/"
+    },
+    {
+      "title": "Freelances : je cherche des personnes pour tester un outil de prospection (gratuit)",
+      "subreddit": "freelancefrance",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/freelancefrance/comments/1sn36tm/freelances_je_cherche_des_personnes_pour_tester/"
+    },
+    {
+      "title": "J’ai lancé une agence de prospection B2B où vous payez uniquement quand ça signe : avis sur mon modèle ?",
+      "subreddit": "AIReceptionists",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/AIReceptionists/comments/1rz8l7r/jai_lancé_une_agence_de_prospection_b2b_où_vous/"
+    },
+    {
+      "title": "Oui… j’ai encore refait l’interface de mon outil de prospection",
+      "subreddit": "FrenchTech",
+      "ups": 0,
+      "comments": 0,
+      "url": "https://reddit.com/r/FrenchTech/comments/1o1evkr/oui_jai_encore_refait_linterface_de_mon_outil_de/"
+    },
+    {
+      "title": "Où trouver (ou comment créer) un bon fichier de prospects pour le cold emailing B2B ?",
+      "subreddit": "CiblageMarketing",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/CiblageMarketing/comments/1nnhbkr/où_trouver_ou_comment_créer_un_bon_fichier_de/"
+    },
+    {
+      "title": "Nouvelle version de mon outil de prospection B2B — vos avis ?",
+      "subreddit": "FrenchTech",
+      "ups": 0,
+      "comments": 0,
+      "url": "https://reddit.com/r/FrenchTech/comments/1nm7urz/nouvelle_version_de_mon_outil_de_prospection_b2b/"
+    },
+    {
+      "title": "Idées de contenu pour les réseaux sociaux sur la lutte antiparasitaire pour stimuler l'engagement et les prospects [+ outil d'IA]",
+      "subreddit": "u_RaulTiru",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/u_RaulTiru/comments/1mlr6qs/idées_de_contenu_pour_les_réseaux_sociaux_sur_la/"
+    }
+  ],
+  "hacker_news": []
+}

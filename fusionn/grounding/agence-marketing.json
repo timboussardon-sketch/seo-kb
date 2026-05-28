@@ -1,0 +1,4394 @@
+{
+  "keyword": "agence marketing",
+  "fetched_at": "2026-05-28T14:19:33.888Z",
+  "sources": {
+    "google_suggest": 1021,
+    "reddit": 25,
+    "hacker_news": 20
+  },
+  "real_queries": [
+    {
+      "query": "agence marketing lyon",
+      "pull": 4
+    },
+    {
+      "query": "tarif agence marketing digital maroc",
+      "pull": 4
+    },
+    {
+      "query": "agence marketing digital",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing digital casablanca",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing digital paris",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing montreal",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing paris",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing paris luxe",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing pas cher",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing prix",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing tarif",
+      "pull": 3
+    },
+    {
+      "query": "devis agence marketing",
+      "pull": 3
+    },
+    {
+      "query": "marketing définition",
+      "pull": 3
+    },
+    {
+      "query": "agence marketing avis",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing bordeaux",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing casablanca",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing digital maroc",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing influence",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing lyon 7",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing lyon alternance",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing lyon recrutement",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing new york",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing oujda",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing paris recrutement",
+      "pull": 2
+    },
+    {
+      "query": "agence marketing sportif",
+      "pull": 2
+    },
+    {
+      "query": "agence publicité paris",
+      "pull": 2
+    },
+    {
+      "query": "agency vs marketing",
+      "pull": 2
+    },
+    {
+      "query": "avis marketing automobile",
+      "pull": 2
+    },
+    {
+      "query": "avis marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "avis marketing immobilier",
+      "pull": 2
+    },
+    {
+      "query": "branding agency freelance",
+      "pull": 2
+    },
+    {
+      "query": "consultant marketing",
+      "pull": 2
+    },
+    {
+      "query": "definition of a marketing agency",
+      "pull": 2
+    },
+    {
+      "query": "dev marketing",
+      "pull": 2
+    },
+    {
+      "query": "developer marketing",
+      "pull": 2
+    },
+    {
+      "query": "developer marketing does not exist",
+      "pull": 2
+    },
+    {
+      "query": "développement marketing",
+      "pull": 2
+    },
+    {
+      "query": "développement marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "développement marketing et commercial",
+      "pull": 2
+    },
+    {
+      "query": "développeur marketing",
+      "pull": 2
+    },
+    {
+      "query": "developpeur marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "développeur marketing et commercial",
+      "pull": 2
+    },
+    {
+      "query": "développeur web marketing",
+      "pull": 2
+    },
+    {
+      "query": "devis marketing",
+      "pull": 2
+    },
+    {
+      "query": "devis marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "devis marketing digital pdf",
+      "pull": 2
+    },
+    {
+      "query": "directeur marketing combien d année d étude",
+      "pull": 2
+    },
+    {
+      "query": "exemple devis marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing d influence",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing direct",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing mix",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing relationnel",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing social",
+      "pull": 2
+    },
+    {
+      "query": "exemple marketing territorial",
+      "pull": 2
+    },
+    {
+      "query": "formation agence marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "formation marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "formation marketing digital cpf",
+      "pull": 2
+    },
+    {
+      "query": "formation marketing digital en ligne",
+      "pull": 2
+    },
+    {
+      "query": "formation marketing digital gratuite",
+      "pull": 2
+    },
+    {
+      "query": "formation marketing digital tunisie",
+      "pull": 2
+    },
+    {
+      "query": "freelance marketing",
+      "pull": 2
+    },
+    {
+      "query": "marketing agency examples",
+      "pull": 2
+    },
+    {
+      "query": "marketing agency template free",
+      "pull": 2
+    },
+    {
+      "query": "marketing agency zurich",
+      "pull": 2
+    },
+    {
+      "query": "marketing combien d annee d etude",
+      "pull": 2
+    },
+    {
+      "query": "marketing combien gagne",
+      "pull": 2
+    },
+    {
+      "query": "marketing comment faire",
+      "pull": 2
+    },
+    {
+      "query": "marketing comment vendre un produit",
+      "pull": 2
+    },
+    {
+      "query": "marketing de reseau",
+      "pull": 2
+    },
+    {
+      "query": "marketing def",
+      "pull": 2
+    },
+    {
+      "query": "marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "marketing digital c'est quoi",
+      "pull": 2
+    },
+    {
+      "query": "marketing digital formation",
+      "pull": 2
+    },
+    {
+      "query": "marketing digital salaire",
+      "pull": 2
+    },
+    {
+      "query": "marketing formation",
+      "pull": 2
+    },
+    {
+      "query": "marketing freelance",
+      "pull": 2
+    },
+    {
+      "query": "marketing lyon",
+      "pull": 2
+    },
+    {
+      "query": "marketing lyon alternance",
+      "pull": 2
+    },
+    {
+      "query": "marketing lyon emploi",
+      "pull": 2
+    },
+    {
+      "query": "marketing lyon recrutement",
+      "pull": 2
+    },
+    {
+      "query": "marketing mix",
+      "pull": 2
+    },
+    {
+      "query": "marketing paris alternance",
+      "pull": 2
+    },
+    {
+      "query": "marketing paris cdi",
+      "pull": 2
+    },
+    {
+      "query": "marketing paris emploi",
+      "pull": 2
+    },
+    {
+      "query": "marketing pas cher",
+      "pull": 2
+    },
+    {
+      "query": "marketing prix psychologique",
+      "pull": 2
+    },
+    {
+      "query": "marketing relationnel",
+      "pull": 2
+    },
+    {
+      "query": "marketing vs communication",
+      "pull": 2
+    },
+    {
+      "query": "meilleur agence marketing",
+      "pull": 2
+    },
+    {
+      "query": "meilleur agence marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "meilleur agence marketing france",
+      "pull": 2
+    },
+    {
+      "query": "meilleur marketing",
+      "pull": 2
+    },
+    {
+      "query": "meilleur marketing de reseau",
+      "pull": 2
+    },
+    {
+      "query": "meilleur marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "meilleure agence marketing au québec",
+      "pull": 2
+    },
+    {
+      "query": "meilleure agence marketing digital france",
+      "pull": 2
+    },
+    {
+      "query": "meilleure agence marketing digital paris",
+      "pull": 2
+    },
+    {
+      "query": "paris marketing agency",
+      "pull": 2
+    },
+    {
+      "query": "prix agence marketing",
+      "pull": 2
+    },
+    {
+      "query": "prix agence marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "prix marketing conseillé",
+      "pull": 2
+    },
+    {
+      "query": "prix marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "prix marketing mix",
+      "pull": 2
+    },
+    {
+      "query": "tarif agence marketing",
+      "pull": 2
+    },
+    {
+      "query": "tarif agence marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "tjm marketing",
+      "pull": 2
+    },
+    {
+      "query": "tjm marketing digital",
+      "pull": 2
+    },
+    {
+      "query": "tjm marketing sdn bhd",
+      "pull": 2
+    },
+    {
+      "query": "tjm marketing sdn bhd photos",
+      "pull": 2
+    },
+    {
+      "query": "- services marketing quarterly",
+      "pull": 1
+    },
+    {
+      "query": "advertising agency definition",
+      "pull": 1
+    },
+    {
+      "query": "advertising agency freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "advertising agency outdoor",
+      "pull": 1
+    },
+    {
+      "query": "advertising agency zurich",
+      "pull": 1
+    },
+    {
+      "query": "advertising tariffs",
+      "pull": 1
+    },
+    {
+      "query": "affiliate marketing tj maxx",
+      "pull": 1
+    },
+    {
+      "query": "agence amplify marketing digital avis",
+      "pull": 1
+    },
+    {
+      "query": "agence branding france",
+      "pull": 1
+    },
+    {
+      "query": "agence branding geneve",
+      "pull": 1
+    },
+    {
+      "query": "agence branding lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence branding new york",
+      "pull": 1
+    },
+    {
+      "query": "agence branding paris",
+      "pull": 1
+    },
+    {
+      "query": "agence branding quebec",
+      "pull": 1
+    },
+    {
+      "query": "agence commerce paris habitat",
+      "pull": 1
+    },
+    {
+      "query": "agence commerciale exemple",
+      "pull": 1
+    },
+    {
+      "query": "agence communication lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication lyon 2",
+      "pull": 1
+    },
+    {
+      "query": "agence communication lyon 6",
+      "pull": 1
+    },
+    {
+      "query": "agence communication lyon recrutement",
+      "pull": 1
+    },
+    {
+      "query": "agence communication paris",
+      "pull": 1
+    },
+    {
+      "query": "agence communication paris 17",
+      "pull": 1
+    },
+    {
+      "query": "agence communication paris recrutement",
+      "pull": 1
+    },
+    {
+      "query": "agence de branding definition",
+      "pull": 1
+    },
+    {
+      "query": "agence de marketing digital definition",
+      "pull": 1
+    },
+    {
+      "query": "agence de publicité prix",
+      "pull": 1
+    },
+    {
+      "query": "agence freelance marketing",
+      "pull": 1
+    },
+    {
+      "query": "agence horizon marketing",
+      "pull": 1
+    },
+    {
+      "query": "agence interim commerce",
+      "pull": 1
+    },
+    {
+      "query": "agence lyon marketing fr",
+      "pull": 1
+    },
+    {
+      "query": "agence market one",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing abidjan",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing agadir",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing agen",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing agroalimentaire",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing aix en provence",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing alger",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing angers",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing annecy",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing autour de moi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing avignon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing b2b",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing be wise",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing belgique",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing besancon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing boulogne billancourt",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing bourgoin jallieu",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing brossard",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing bruxelles",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing btp",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing caen",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing cannes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing charleroi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing chicoutimi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing clermont ferrand",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing communication",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing corse",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing cote d'ivoire",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing d'influence",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing definition",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital pas cher",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital prix",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital rabat",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital tarif",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital toulouse",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital tunisie",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital usa",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital yaoundé",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing digital yverdon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing dijon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing ecommerce",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing emploi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing en france",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing en ligne",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing essonne",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing estrie",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing et communication",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing et communication toulouse",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing evenementiel",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing expérientiel",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing fes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing food",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing formation",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing france",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing freelance",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing fribourg",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing gatineau",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing geneve",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing google ads",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing granby",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing grenoble",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing guyane",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing hotellerie",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing ia",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing immobilier",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing international",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing it",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing job",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing joliette",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing junto",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing jura",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing kenitra",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing kinshasa",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing kuala lumpur",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing laurentides",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing lausanne",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing laval",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing le havre",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing le mans",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing liege",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing lille",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing luxe",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing luxe paris",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing luxembourg",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing madagascar",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing maroc",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing marrakech",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing marseille",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing martinique",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing meknes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing metz",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing monaco",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing montpellier",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing nador",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing namur",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing nancy",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing nantes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing nice",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing nimes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing niort",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing numérique",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing offre d emploi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing opérationnel",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing oran",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing orleans",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing orleans com maker",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing ottawa",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing pau",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing perpignan",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing poitiers",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing pres de moi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing publicité",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing québec",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing quebec city",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing québec emploi",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing rabat",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing recrutement",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing reims",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing relationnel",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing rennes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing restaurant",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing rimouski",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing rive nord",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing rive sud",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing rouen",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing saguenay",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing santé",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing sens",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing sfax",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing sherbrooke",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing sousse",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing sportif bordeaux",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing sportif paris",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing strasbourg",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing suisse",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing tanger",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing terrebonne",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing toulon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing toulouse",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing tourisme",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing tours",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing trois rivieres",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing troyes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing tunis",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing tunisie",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing ugc",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing usa",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing valais",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing valence",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing valenciennes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing vannes",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing vaud",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing vaudreuil",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing victoriaville",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing video",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing ville de québec",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing vin",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing web",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing web avignon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing x av",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing yaoundé",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing youtube",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing yvelines",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing yverdon",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing zurich",
+      "pull": 1
+    },
+    {
+      "query": "agence modele commerciale",
+      "pull": 1
+    },
+    {
+      "query": "agence off market",
+      "pull": 1
+    },
+    {
+      "query": "agence paris branding",
+      "pull": 1
+    },
+    {
+      "query": "agence paris commerce",
+      "pull": 1
+    },
+    {
+      "query": "agence paris commerce caisse d'epargne",
+      "pull": 1
+    },
+    {
+      "query": "agence paris publicité",
+      "pull": 1
+    },
+    {
+      "query": "agence pourquoi pas communication marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire definition",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire kinshasa",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire oran",
+      "pull": 1
+    },
+    {
+      "query": "agence publicité genève",
+      "pull": 1
+    },
+    {
+      "query": "agence publicité havas",
+      "pull": 1
+    },
+    {
+      "query": "agence publicité lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence publicité paris recrutement",
+      "pull": 1
+    },
+    {
+      "query": "agence publicité québec",
+      "pull": 1
+    },
+    {
+      "query": "agence publicité quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence strategie marketing quimper",
+      "pull": 1
+    },
+    {
+      "query": "agency advertising jakarta",
+      "pull": 1
+    },
+    {
+      "query": "agency advertising jobs",
+      "pull": 1
+    },
+    {
+      "query": "agency and marketing",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing course",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing f&b",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing facebook",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing florida",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing flyer",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing hà nội",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing hcm",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing indonesia",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing influencer",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing instagram",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing internship",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing jakarta",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing japan",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing jobs",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing jobs remote",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing uae",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing uk",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing usa",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing website",
+      "pull": 1
+    },
+    {
+      "query": "agency marketing work",
+      "pull": 1
+    },
+    {
+      "query": "agency x marketing",
+      "pull": 1
+    },
+    {
+      "query": "alpha marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "and marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "and marketing company",
+      "pull": 1
+    },
+    {
+      "query": "and marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "and marketing head",
+      "pull": 1
+    },
+    {
+      "query": "and marketing meaning",
+      "pull": 1
+    },
+    {
+      "query": "avis alpha marketing",
+      "pull": 1
+    },
+    {
+      "query": "avis dsa marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "avis hype marketing",
+      "pull": 1
+    },
+    {
+      "query": "avis inertie marketing",
+      "pull": 1
+    },
+    {
+      "query": "avis marketing",
+      "pull": 1
+    },
+    {
+      "query": "avis strada marketing",
+      "pull": 1
+    },
+    {
+      "query": "avis sur a2r agence marketing sens",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence amplify marketing digital paris",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence one agence marketing de québec",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence saturne marketing paris",
+      "pull": 1
+    },
+    {
+      "query": "avis sur digital minds agence marketing yaoundé",
+      "pull": 1
+    },
+    {
+      "query": "avis sur hwb agency agence marketing hwb",
+      "pull": 1
+    },
+    {
+      "query": "avis sur marketing call center",
+      "pull": 1
+    },
+    {
+      "query": "avis sur mon agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "avis sur size up agence marketing rennes",
+      "pull": 1
+    },
+    {
+      "query": "bache publicitaire pas cher",
+      "pull": 1
+    },
+    {
+      "query": "boite marketing quebec",
+      "pull": 1
+    },
+    {
+      "query": "brand vs agency marketing",
+      "pull": 1
+    },
+    {
+      "query": "cabinet conseil marketing",
+      "pull": 1
+    },
+    {
+      "query": "cabinet conseil marketing recrutement",
+      "pull": 1
+    },
+    {
+      "query": "cabinet consulting marketing",
+      "pull": 1
+    },
+    {
+      "query": "cabinet marketing",
+      "pull": 1
+    },
+    {
+      "query": "cabinet marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "cabinet marketing douala",
+      "pull": 1
+    },
+    {
+      "query": "cabinet marketing paris",
+      "pull": 1
+    },
+    {
+      "query": "cabinet recrutement marketing",
+      "pull": 1
+    },
+    {
+      "query": "cabinet recrutement marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "cadeau marketing pas cher",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing en ligne",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing hec",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing numerique uqam",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing ulaval",
+      "pull": 1
+    },
+    {
+      "query": "certificat marketing uqam",
+      "pull": 1
+    },
+    {
+      "query": "certification marketing",
+      "pull": 1
+    },
+    {
+      "query": "certification marketing digital gratuite",
+      "pull": 1
+    },
+    {
+      "query": "certification marketing gratuite",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing analyst",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing associate",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing colchester",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing management professional",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing management specialist",
+      "pull": 1
+    },
+    {
+      "query": "certified marketing professional cmp",
+      "pull": 1
+    },
+    {
+      "query": "client vs agency marketing",
+      "pull": 1
+    },
+    {
+      "query": "cmpp® (certified marketing management professional)",
+      "pull": 1
+    },
+    {
+      "query": "combien coute une agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "combien de marketing",
+      "pull": 1
+    },
+    {
+      "query": "combien gagne marketing de luxe",
+      "pull": 1
+    },
+    {
+      "query": "combien gagne marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "combien gagne un marketing digital par mois",
+      "pull": 1
+    },
+    {
+      "query": "combien paye le marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "combien rapporte le marketing",
+      "pull": 1
+    },
+    {
+      "query": "combien rapporte le marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "comment apprendre marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "comment commencer marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "comment créer une agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "comment creer une agence marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir marketing digital sans diplôme",
+      "pull": 1
+    },
+    {
+      "query": "comment faire marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "comment le marketing digital fonctionne",
+      "pull": 1
+    },
+    {
+      "query": "comment marketing",
+      "pull": 1
+    },
+    {
+      "query": "comment marketing strategy",
+      "pull": 1
+    },
+    {
+      "query": "commerce avis",
+      "pull": 1
+    },
+    {
+      "query": "commerce comment",
+      "pull": 1
+    },
+    {
+      "query": "commerce commentry",
+      "pull": 1
+    },
+    {
+      "query": "commerce lyon",
+      "pull": 1
+    },
+    {
+      "query": "commerce lyon 7",
+      "pull": 1
+    },
+    {
+      "query": "commerce paris",
+      "pull": 1
+    },
+    {
+      "query": "commerce pas cher",
+      "pull": 1
+    },
+    {
+      "query": "commerce prix",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing automation",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing digital freelance",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing et communication",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing freelance",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing job",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing junior",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing offre d'emploi",
+      "pull": 1
+    },
+    {
+      "query": "consultant marketing salaire",
+      "pull": 1
+    },
+    {
+      "query": "corporate vs agency marketing",
+      "pull": 1
+    },
+    {
+      "query": "cours gratuit marketing digital pdf",
+      "pull": 1
+    },
+    {
+      "query": "definition advertising agency",
+      "pull": 1
+    },
+    {
+      "query": "definition agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing direct",
+      "pull": 1
+    },
+    {
+      "query": "definition marketing experientiel",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing mix",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing pdf",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing produit",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing relationnel",
+      "pull": 1
+    },
+    {
+      "query": "définition marketing simple",
+      "pull": 1
+    },
+    {
+      "query": "definition marketing social",
+      "pull": 1
+    },
+    {
+      "query": "devise marketing",
+      "pull": 1
+    },
+    {
+      "query": "devise marketing strategies for facebook linkedin twitter",
+      "pull": 1
+    },
+    {
+      "query": "devising marketing strategy",
+      "pull": 1
+    },
+    {
+      "query": "directeur marketing meilleurtaux",
+      "pull": 1
+    },
+    {
+      "query": "e formation agence de marketing digital dakar",
+      "pull": 1
+    },
+    {
+      "query": "ecole marketing pas cher",
+      "pull": 1
+    },
+    {
+      "query": "emily in paris agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "exemple marketing de contenu",
+      "pull": 1
+    },
+    {
+      "query": "exemple marketing expérientiel",
+      "pull": 1
+    },
+    {
+      "query": "exemple marketing opérationnel",
+      "pull": 1
+    },
+    {
+      "query": "exemple marketing plan",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing digital c est quoi",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing digital salaire",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing linkedin",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing online",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing sa",
+      "pull": 1
+    },
+    {
+      "query": "expert marketing sa barranquilla",
+      "pull": 1
+    },
+    {
+      "query": "falcon marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "formation agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "formation agent marketing",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing communication",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing digital à distance",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing digital bruxelles",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing digital gratuite avec certificat",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing digital gratuite pdf",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing en ligne",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing gratuite",
+      "pull": 1
+    },
+    {
+      "query": "formation marketing gratuite en ligne",
+      "pull": 1
+    },
+    {
+      "query": "free agency marketing",
+      "pull": 1
+    },
+    {
+      "query": "free marketing",
+      "pull": 1
+    },
+    {
+      "query": "free marketing agency course",
+      "pull": 1
+    },
+    {
+      "query": "free marketing agency templates",
+      "pull": 1
+    },
+    {
+      "query": "free marketing agency website template",
+      "pull": 1
+    },
+    {
+      "query": "free marketing agency wordpress theme",
+      "pull": 1
+    },
+    {
+      "query": "free marketing certification courses",
+      "pull": 1
+    },
+    {
+      "query": "free marketing certifications",
+      "pull": 1
+    },
+    {
+      "query": "free marketing classes",
+      "pull": 1
+    },
+    {
+      "query": "free marketing courses",
+      "pull": 1
+    },
+    {
+      "query": "free marketing courses online",
+      "pull": 1
+    },
+    {
+      "query": "free marketing courses with certificates",
+      "pull": 1
+    },
+    {
+      "query": "free marketing ideas",
+      "pull": 1
+    },
+    {
+      "query": "free marketing plan template",
+      "pull": 1
+    },
+    {
+      "query": "free marketing tools",
+      "pull": 1
+    },
+    {
+      "query": "freelance advertising agency",
+      "pull": 1
+    },
+    {
+      "query": "freelance advertising agency jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance agency marketing",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing agency jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing agency uk",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing communication",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing digital maroc",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing digital tarif",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing jobs remote",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing manager",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing mission",
+      "pull": 1
+    },
+    {
+      "query": "freelance marketing offre",
+      "pull": 1
+    },
+    {
+      "query": "grand prix marketing",
+      "pull": 1
+    },
+    {
+      "query": "hec paris marketing",
+      "pull": 1
+    },
+    {
+      "query": "hype marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "intense marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "kelowna marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "le marketing",
+      "pull": 1
+    },
+    {
+      "query": "licence marketing combien de temps",
+      "pull": 1
+    },
+    {
+      "query": "livre marketing gratuit pdf",
+      "pull": 1
+    },
+    {
+      "query": "logiciel crm marketing",
+      "pull": 1
+    },
+    {
+      "query": "logiciel email marketing",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing automation",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing communication",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing d'influence",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing digital gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel marketing whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "lyon agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing enseigne fr",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing jobs",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing master",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing services",
+      "pull": 1
+    },
+    {
+      "query": "lyon marketing territorial",
+      "pull": 1
+    },
+    {
+      "query": "mark davis ibm",
+      "pull": 1
+    },
+    {
+      "query": "market avis",
+      "pull": 1
+    },
+    {
+      "query": "market comment",
+      "pull": 1
+    },
+    {
+      "query": "market commentry",
+      "pull": 1
+    },
+    {
+      "query": "market commentry avis",
+      "pull": 1
+    },
+    {
+      "query": "market commentry photos",
+      "pull": 1
+    },
+    {
+      "query": "market lyon",
+      "pull": 1
+    },
+    {
+      "query": "market lyon frères lumière",
+      "pull": 1
+    },
+    {
+      "query": "market paris",
+      "pull": 1
+    },
+    {
+      "query": "market paris restaurant",
+      "pull": 1
+    },
+    {
+      "query": "market pas cher",
+      "pull": 1
+    },
+    {
+      "query": "market prix",
+      "pull": 1
+    },
+    {
+      "query": "market prix paris",
+      "pull": 1
+    },
+    {
+      "query": "market reaction tariff",
+      "pull": 1
+    },
+    {
+      "query": "market tarifa",
+      "pull": 1
+    },
+    {
+      "query": "market tariffs news",
+      "pull": 1
+    },
+    {
+      "query": "market vs",
+      "pull": 1
+    },
+    {
+      "query": "market vs book value",
+      "pull": 1
+    },
+    {
+      "query": "market vs limit order",
+      "pull": 1
+    },
+    {
+      "query": "marketing",
+      "pull": 1
+    },
+    {
+      "query": "marketing achat",
+      "pull": 1
+    },
+    {
+      "query": "marketing affiliation",
+      "pull": 1
+    },
+    {
+      "query": "marketing agence",
+      "pull": 1
+    },
+    {
+      "query": "marketing agence de voyage",
+      "pull": 1
+    },
+    {
+      "query": "marketing agence paris",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency and ai",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency and consultancy",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency certifications",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency course reddit",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency def",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency description sample",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency france",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency free",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency free images",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency free trial",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency free wordpress theme",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency freelance",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency freelancers",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency hiring",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency hong kong",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency houston",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency in ukraine",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency kenya",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency kochi",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency korea",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency kuala lumpur",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency kuwait",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency near me hiring",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency quebec",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency theme wordpress",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency united states",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency utah",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency utrecht",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency vs company",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency vs consulting",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency vs firm",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency vs freelancer",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency vs in house",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency vs in house reddit",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency web",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency website design",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency website template",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency west palm beach",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency what do they do",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency yerevan",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency york",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency zagreb",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency zambia",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency zanzibar",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency zug",
+      "pull": 1
+    },
+    {
+      "query": "marketing agency zwolle",
+      "pull": 1
+    },
+    {
+      "query": "marketing ai",
+      "pull": 1
+    },
+    {
+      "query": "marketing alternance",
+      "pull": 1
+    },
+    {
+      "query": "marketing analyst",
+      "pull": 1
+    },
+    {
+      "query": "marketing analytics",
+      "pull": 1
+    },
+    {
+      "query": "marketing automation",
+      "pull": 1
+    },
+    {
+      "query": "marketing automation def",
+      "pull": 1
+    },
+    {
+      "query": "marketing automobile",
+      "pull": 1
+    },
+    {
+      "query": "marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "marketing b2b",
+      "pull": 1
+    },
+    {
+      "query": "marketing b2c",
+      "pull": 1
+    },
+    {
+      "query": "marketing bancaire",
+      "pull": 1
+    },
+    {
+      "query": "marketing bancaire pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing board",
+      "pull": 1
+    },
+    {
+      "query": "marketing books",
+      "pull": 1
+    },
+    {
+      "query": "marketing bordeaux",
+      "pull": 1
+    },
+    {
+      "query": "marketing brew",
+      "pull": 1
+    },
+    {
+      "query": "marketing burger king",
+      "pull": 1
+    },
+    {
+      "query": "marketing business",
+      "pull": 1
+    },
+    {
+      "query": "marketing c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "marketing cabinet comptable",
+      "pull": 1
+    },
+    {
+      "query": "marketing call center",
+      "pull": 1
+    },
+    {
+      "query": "marketing campaign",
+      "pull": 1
+    },
+    {
+      "query": "marketing certified",
+      "pull": 1
+    },
+    {
+      "query": "marketing certified courses",
+      "pull": 1
+    },
+    {
+      "query": "marketing certified professional",
+      "pull": 1
+    },
+    {
+      "query": "marketing cloud",
+      "pull": 1
+    },
+    {
+      "query": "marketing cloud next",
+      "pull": 1
+    },
+    {
+      "query": "marketing comment",
+      "pull": 1
+    },
+    {
+      "query": "marketing commercial",
+      "pull": 1
+    },
+    {
+      "query": "marketing communication",
+      "pull": 1
+    },
+    {
+      "query": "marketing coordinator",
+      "pull": 1
+    },
+    {
+      "query": "marketing cours",
+      "pull": 1
+    },
+    {
+      "query": "marketing courses",
+      "pull": 1
+    },
+    {
+      "query": "marketing creation",
+      "pull": 1
+    },
+    {
+      "query": "marketing d'affiliation",
+      "pull": 1
+    },
+    {
+      "query": "marketing d'influence",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition ama",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition by philip kotler",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition english",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition francais",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition in business",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition in management",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition of brand",
+      "pull": 1
+    },
+    {
+      "query": "marketing definition of product",
+      "pull": 1
+    },
+    {
+      "query": "marketing définition simple",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital combien d années d etude",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital combien on gagne",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital comment se lancer",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital cours gratuit",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital formation gratuite",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital formation gratuite en ligne",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital gratuit",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital meilleur livre",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital meilleure formation",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital pas cher",
+      "pull": 1
+    },
+    {
+      "query": "marketing digital prix formation",
+      "pull": 1
+    },
+    {
+      "query": "marketing direct",
+      "pull": 1
+    },
+    {
+      "query": "marketing division",
+      "pull": 1
+    },
+    {
+      "query": "marketing emploi",
+      "pull": 1
+    },
+    {
+      "query": "marketing en arabe",
+      "pull": 1
+    },
+    {
+      "query": "marketing en français",
+      "pull": 1
+    },
+    {
+      "query": "marketing en ligne",
+      "pull": 1
+    },
+    {
+      "query": "marketing espace",
+      "pull": 1
+    },
+    {
+      "query": "marketing et communication",
+      "pull": 1
+    },
+    {
+      "query": "marketing et communication digitale",
+      "pull": 1
+    },
+    {
+      "query": "marketing etude",
+      "pull": 1
+    },
+    {
+      "query": "marketing evenementiel",
+      "pull": 1
+    },
+    {
+      "query": "marketing exemple",
+      "pull": 1
+    },
+    {
+      "query": "marketing expérientiel",
+      "pull": 1
+    },
+    {
+      "query": "marketing financier",
+      "pull": 1
+    },
+    {
+      "query": "marketing flow",
+      "pull": 1
+    },
+    {
+      "query": "marketing fondamental",
+      "pull": 1
+    },
+    {
+      "query": "marketing fondamental cours",
+      "pull": 1
+    },
+    {
+      "query": "marketing fondamental exercices corrigés pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing fondamental pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing formation en ligne",
+      "pull": 1
+    },
+    {
+      "query": "marketing formation gratuite",
+      "pull": 1
+    },
+    {
+      "query": "marketing francais",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelance consultant",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelance hourly rate",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelance jobs remote",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelance reddit",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelance work",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelancer stundensatz",
+      "pull": 1
+    },
+    {
+      "query": "marketing freelancer tuyển dụng",
+      "pull": 1
+    },
+    {
+      "query": "marketing funnel",
+      "pull": 1
+    },
+    {
+      "query": "marketing garage automobile",
+      "pull": 1
+    },
+    {
+      "query": "marketing garage automobile attirer clients",
+      "pull": 1
+    },
+    {
+      "query": "marketing garage automobile attirer clients seo publicité conseils",
+      "pull": 1
+    },
+    {
+      "query": "marketing geneve",
+      "pull": 1
+    },
+    {
+      "query": "marketing genré",
+      "pull": 1
+    },
+    {
+      "query": "marketing geo",
+      "pull": 1
+    },
+    {
+      "query": "marketing global",
+      "pull": 1
+    },
+    {
+      "query": "marketing gratuit",
+      "pull": 1
+    },
+    {
+      "query": "marketing gratuito curso",
+      "pull": 1
+    },
+    {
+      "query": "marketing growth",
+      "pull": 1
+    },
+    {
+      "query": "marketing gta 6",
+      "pull": 1
+    },
+    {
+      "query": "marketing guerilla",
+      "pull": 1
+    },
+    {
+      "query": "marketing heaven",
+      "pull": 1
+    },
+    {
+      "query": "marketing hec",
+      "pull": 1
+    },
+    {
+      "query": "marketing helmo",
+      "pull": 1
+    },
+    {
+      "query": "marketing henallux",
+      "pull": 1
+    },
+    {
+      "query": "marketing hepl",
+      "pull": 1
+    },
+    {
+      "query": "marketing holiste",
+      "pull": 1
+    },
+    {
+      "query": "marketing hospitalier",
+      "pull": 1
+    },
+    {
+      "query": "marketing hotelier",
+      "pull": 1
+    },
+    {
+      "query": "marketing hub",
+      "pull": 1
+    },
+    {
+      "query": "marketing hub sage",
+      "pull": 1
+    },
+    {
+      "query": "marketing ia",
+      "pull": 1
+    },
+    {
+      "query": "marketing icon",
+      "pull": 1
+    },
+    {
+      "query": "marketing image",
+      "pull": 1
+    },
+    {
+      "query": "marketing immobilier",
+      "pull": 1
+    },
+    {
+      "query": "marketing immobilier avis",
+      "pull": 1
+    },
+    {
+      "query": "marketing inbound",
+      "pull": 1
+    },
+    {
+      "query": "marketing industriel",
+      "pull": 1
+    },
+    {
+      "query": "marketing international",
+      "pull": 1
+    },
+    {
+      "query": "marketing international ofppt",
+      "pull": 1
+    },
+    {
+      "query": "marketing international pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing job dubai",
+      "pull": 1
+    },
+    {
+      "query": "marketing job geneve",
+      "pull": 1
+    },
+    {
+      "query": "marketing job luxembourg",
+      "pull": 1
+    },
+    {
+      "query": "marketing job paris",
+      "pull": 1
+    },
+    {
+      "query": "marketing jobs",
+      "pull": 1
+    },
+    {
+      "query": "marketing jobs casablanca",
+      "pull": 1
+    },
+    {
+      "query": "marketing jobs montreal",
+      "pull": 1
+    },
+    {
+      "query": "marketing junior",
+      "pull": 1
+    },
+    {
+      "query": "marketing junior cdi",
+      "pull": 1
+    },
+    {
+      "query": "marketing junior emploi",
+      "pull": 1
+    },
+    {
+      "query": "marketing kedge",
+      "pull": 1
+    },
+    {
+      "query": "marketing kol",
+      "pull": 1
+    },
+    {
+      "query": "marketing kol meaning",
+      "pull": 1
+    },
+    {
+      "query": "marketing köln jobs",
+      "pull": 1
+    },
+    {
+      "query": "marketing kotler",
+      "pull": 1
+    },
+    {
+      "query": "marketing kotler pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing kpi",
+      "pull": 1
+    },
+    {
+      "query": "marketing kv",
+      "pull": 1
+    },
+    {
+      "query": "marketing kya hai",
+      "pull": 1
+    },
+    {
+      "query": "marketing là gì",
+      "pull": 1
+    },
+    {
+      "query": "marketing lab",
+      "pull": 1
+    },
+    {
+      "query": "marketing lead",
+      "pull": 1
+    },
+    {
+      "query": "marketing les 4 p",
+      "pull": 1
+    },
+    {
+      "query": "marketing livre",
+      "pull": 1
+    },
+    {
+      "query": "marketing local",
+      "pull": 1
+    },
+    {
+      "query": "marketing logo",
+      "pull": 1
+    },
+    {
+      "query": "marketing luxe",
+      "pull": 1
+    },
+    {
+      "query": "marketing luxembourg",
+      "pull": 1
+    },
+    {
+      "query": "marketing lyon ecole",
+      "pull": 1
+    },
+    {
+      "query": "marketing lyon job",
+      "pull": 1
+    },
+    {
+      "query": "marketing management",
+      "pull": 1
+    },
+    {
+      "query": "marketing management kotler",
+      "pull": 1
+    },
+    {
+      "query": "marketing management philip kotler",
+      "pull": 1
+    },
+    {
+      "query": "marketing management philip kotler pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing mania",
+      "pull": 1
+    },
+    {
+      "query": "marketing métier",
+      "pull": 1
+    },
+    {
+      "query": "marketing mix 4p",
+      "pull": 1
+    },
+    {
+      "query": "marketing mix modeling",
+      "pull": 1
+    },
+    {
+      "query": "marketing mixte",
+      "pull": 1
+    },
+    {
+      "query": "marketing neuchatel",
+      "pull": 1
+    },
+    {
+      "query": "marketing news",
+      "pull": 1
+    },
+    {
+      "query": "marketing nike",
+      "pull": 1
+    },
+    {
+      "query": "marketing ninja",
+      "pull": 1
+    },
+    {
+      "query": "marketing ninja co",
+      "pull": 1
+    },
+    {
+      "query": "marketing numérique",
+      "pull": 1
+    },
+    {
+      "query": "marketing numérique définition",
+      "pull": 1
+    },
+    {
+      "query": "marketing numérique emploi",
+      "pull": 1
+    },
+    {
+      "query": "marketing numérique formation",
+      "pull": 1
+    },
+    {
+      "query": "marketing numérique uqam",
+      "pull": 1
+    },
+    {
+      "query": "marketing offre d'emploi",
+      "pull": 1
+    },
+    {
+      "query": "marketing ofppt",
+      "pull": 1
+    },
+    {
+      "query": "marketing olfactif",
+      "pull": 1
+    },
+    {
+      "query": "marketing omnicanal",
+      "pull": 1
+    },
+    {
+      "query": "marketing one to one",
+      "pull": 1
+    },
+    {
+      "query": "marketing opérationnel",
+      "pull": 1
+    },
+    {
+      "query": "marketing opérationnel def",
+      "pull": 1
+    },
+    {
+      "query": "marketing opérationnel et stratégique",
+      "pull": 1
+    },
+    {
+      "query": "marketing opérationnel pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing organique",
+      "pull": 1
+    },
+    {
+      "query": "marketing ou communication",
+      "pull": 1
+    },
+    {
+      "query": "marketing ou coup de génie on a analysé 14 nouveautés pour les cheveux",
+      "pull": 1
+    },
+    {
+      "query": "marketing ou management",
+      "pull": 1
+    },
+    {
+      "query": "marketing ou markéting",
+      "pull": 1
+    },
+    {
+      "query": "marketing outbound",
+      "pull": 1
+    },
+    {
+      "query": "marketing outbound definition",
+      "pull": 1
+    },
+    {
+      "query": "marketing outbound et inbound",
+      "pull": 1
+    },
+    {
+      "query": "marketing outdoor",
+      "pull": 1
+    },
+    {
+      "query": "marketing outils",
+      "pull": 1
+    },
+    {
+      "query": "marketing output",
+      "pull": 1
+    },
+    {
+      "query": "marketing paris",
+      "pull": 1
+    },
+    {
+      "query": "marketing paris job",
+      "pull": 1
+    },
+    {
+      "query": "marketing paris master",
+      "pull": 1
+    },
+    {
+      "query": "marketing paris saclay",
+      "pull": 1
+    },
+    {
+      "query": "marketing pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing pdf cours",
+      "pull": 1
+    },
+    {
+      "query": "marketing pharmaceutique",
+      "pull": 1
+    },
+    {
+      "query": "marketing place",
+      "pull": 1
+    },
+    {
+      "query": "marketing plan",
+      "pull": 1
+    },
+    {
+      "query": "marketing plateforme de marque",
+      "pull": 1
+    },
+    {
+      "query": "marketing politique",
+      "pull": 1
+    },
+    {
+      "query": "marketing prédictif",
+      "pull": 1
+    },
+    {
+      "query": "marketing prix",
+      "pull": 1
+    },
+    {
+      "query": "marketing produit",
+      "pull": 1
+    },
+    {
+      "query": "marketing publicitaire",
+      "pull": 1
+    },
+    {
+      "query": "marketing pyramidal",
+      "pull": 1
+    },
+    {
+      "query": "marketing qcm",
+      "pull": 1
+    },
+    {
+      "query": "marketing qu'est ce que c'est",
+      "pull": 1
+    },
+    {
+      "query": "marketing qualified leads",
+      "pull": 1
+    },
+    {
+      "query": "marketing quantique",
+      "pull": 1
+    },
+    {
+      "query": "marketing quantitatif",
+      "pull": 1
+    },
+    {
+      "query": "marketing que veut dire",
+      "pull": 1
+    },
+    {
+      "query": "marketing quebec",
+      "pull": 1
+    },
+    {
+      "query": "marketing questions",
+      "pull": 1
+    },
+    {
+      "query": "marketing quiz",
+      "pull": 1
+    },
+    {
+      "query": "marketing quotes",
+      "pull": 1
+    },
+    {
+      "query": "marketing recrutement",
+      "pull": 1
+    },
+    {
+      "query": "marketing relationnel définition",
+      "pull": 1
+    },
+    {
+      "query": "marketing relationnel pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing research",
+      "pull": 1
+    },
+    {
+      "query": "marketing reseau",
+      "pull": 1
+    },
+    {
+      "query": "marketing reseaux sociaux",
+      "pull": 1
+    },
+    {
+      "query": "marketing responsable",
+      "pull": 1
+    },
+    {
+      "query": "marketing restaurant",
+      "pull": 1
+    },
+    {
+      "query": "marketing rh",
+      "pull": 1
+    },
+    {
+      "query": "marketing salaire",
+      "pull": 1
+    },
+    {
+      "query": "marketing scan",
+      "pull": 1
+    },
+    {
+      "query": "marketing sensoriel",
+      "pull": 1
+    },
+    {
+      "query": "marketing skills claude",
+      "pull": 1
+    },
+    {
+      "query": "marketing social",
+      "pull": 1
+    },
+    {
+      "query": "marketing sportif",
+      "pull": 1
+    },
+    {
+      "query": "marketing stratégique",
+      "pull": 1
+    },
+    {
+      "query": "marketing stratégique et opérationnel",
+      "pull": 1
+    },
+    {
+      "query": "marketing strategy",
+      "pull": 1
+    },
+    {
+      "query": "marketing synonyme",
+      "pull": 1
+    },
+    {
+      "query": "marketing territorial",
+      "pull": 1
+    },
+    {
+      "query": "marketing territorial pdf",
+      "pull": 1
+    },
+    {
+      "query": "marketing tools",
+      "pull": 1
+    },
+    {
+      "query": "marketing toulouse",
+      "pull": 1
+    },
+    {
+      "query": "marketing touristique",
+      "pull": 1
+    },
+    {
+      "query": "marketing traditionnel",
+      "pull": 1
+    },
+    {
+      "query": "marketing traduction",
+      "pull": 1
+    },
+    {
+      "query": "marketing traduction en français",
+      "pull": 1
+    },
+    {
+      "query": "marketing transactionnel",
+      "pull": 1
+    },
+    {
+      "query": "marketing tribal",
+      "pull": 1
+    },
+    {
+      "query": "marketing udem",
+      "pull": 1
+    },
+    {
+      "query": "marketing ugc",
+      "pull": 1
+    },
+    {
+      "query": "marketing ulaval",
+      "pull": 1
+    },
+    {
+      "query": "marketing underground",
+      "pull": 1
+    },
+    {
+      "query": "marketing université",
+      "pull": 1
+    },
+    {
+      "query": "marketing uottawa",
+      "pull": 1
+    },
+    {
+      "query": "marketing uqam",
+      "pull": 1
+    },
+    {
+      "query": "marketing urbain",
+      "pull": 1
+    },
+    {
+      "query": "marketing urbain def",
+      "pull": 1
+    },
+    {
+      "query": "marketing usp",
+      "pull": 1
+    },
+    {
+      "query": "marketing vaud",
+      "pull": 1
+    },
+    {
+      "query": "marketing vente",
+      "pull": 1
+    },
+    {
+      "query": "marketing vente (mv)",
+      "pull": 1
+    },
+    {
+      "query": "marketing vente iae lyon",
+      "pull": 1
+    },
+    {
+      "query": "marketing vert",
+      "pull": 1
+    },
+    {
+      "query": "marketing video",
+      "pull": 1
+    },
+    {
+      "query": "marketing viral",
+      "pull": 1
+    },
+    {
+      "query": "marketing viral def",
+      "pull": 1
+    },
+    {
+      "query": "marketing visuel",
+      "pull": 1
+    },
+    {
+      "query": "marketing vs advertising",
+      "pull": 1
+    },
+    {
+      "query": "marketing vs commerce",
+      "pull": 1
+    },
+    {
+      "query": "marketing wallpaper",
+      "pull": 1
+    },
+    {
+      "query": "marketing web",
+      "pull": 1
+    },
+    {
+      "query": "marketing website",
+      "pull": 1
+    },
+    {
+      "query": "marketing week",
+      "pull": 1
+    },
+    {
+      "query": "marketing wella",
+      "pull": 1
+    },
+    {
+      "query": "marketing what is it",
+      "pull": 1
+    },
+    {
+      "query": "marketing whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "marketing wikipedia",
+      "pull": 1
+    },
+    {
+      "query": "marketing with ai",
+      "pull": 1
+    },
+    {
+      "query": "marketing with canva",
+      "pull": 1
+    },
+    {
+      "query": "marketing x",
+      "pull": 1
+    },
+    {
+      "query": "marketing xã hội",
+      "pull": 1
+    },
+    {
+      "query": "marketing xã hội là gì",
+      "pull": 1
+    },
+    {
+      "query": "marketing xã hội neu",
+      "pull": 1
+    },
+    {
+      "query": "marketing xanh",
+      "pull": 1
+    },
+    {
+      "query": "marketing xanh là gì",
+      "pull": 1
+    },
+    {
+      "query": "marketing xi",
+      "pull": 1
+    },
+    {
+      "query": "marketing xii",
+      "pull": 1
+    },
+    {
+      "query": "marketing xp",
+      "pull": 1
+    },
+    {
+      "query": "marketing y gestion commercial",
+      "pull": 1
+    },
+    {
+      "query": "marketing y mercadotecnia es lo mismo",
+      "pull": 1
+    },
+    {
+      "query": "marketing y negocios digitales",
+      "pull": 1
+    },
+    {
+      "query": "marketing y publicidad",
+      "pull": 1
+    },
+    {
+      "query": "marketing y publicidad carrera",
+      "pull": 1
+    },
+    {
+      "query": "marketing y publicidad es lo mismo",
+      "pull": 1
+    },
+    {
+      "query": "marketing y publicidad grado superior",
+      "pull": 1
+    },
+    {
+      "query": "marketing y ventas",
+      "pull": 1
+    },
+    {
+      "query": "marketing youtube",
+      "pull": 1
+    },
+    {
+      "query": "marketing yves rocher",
+      "pull": 1
+    },
+    {
+      "query": "marketing za sve",
+      "pull": 1
+    },
+    {
+      "query": "marketing zakumi withdrawal",
+      "pull": 1
+    },
+    {
+      "query": "marketing zaposlitev",
+      "pull": 1
+    },
+    {
+      "query": "marketing zettabyte",
+      "pull": 1
+    },
+    {
+      "query": "marketing ziele",
+      "pull": 1
+    },
+    {
+      "query": "marketing zilla",
+      "pull": 1
+    },
+    {
+      "query": "marketing znacenje",
+      "pull": 1
+    },
+    {
+      "query": "marketing zoho",
+      "pull": 1
+    },
+    {
+      "query": "marketing zone",
+      "pull": 1
+    },
+    {
+      "query": "marketing zoo",
+      "pull": 1
+    },
+    {
+      "query": "master marketing",
+      "pull": 1
+    },
+    {
+      "query": "master marketing combien de temps",
+      "pull": 1
+    },
+    {
+      "query": "meaning marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "medialaoui agence marketing digital avis",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agence marketing montreal",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agence marketing paris",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ecole marketing",
+      "pull": 1
+    },
+    {
+      "query": "meilleur formation marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "meilleur livre marketing",
+      "pull": 1
+    },
+    {
+      "query": "meilleur livre marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "meilleur magazine marketing",
+      "pull": 1
+    },
+    {
+      "query": "meilleur master marketing",
+      "pull": 1
+    },
+    {
+      "query": "meilleur master marketing france",
+      "pull": 1
+    },
+    {
+      "query": "meilleure agence branding montreal",
+      "pull": 1
+    },
+    {
+      "query": "meilleure agence marketing paris",
+      "pull": 1
+    },
+    {
+      "query": "mix marketing combien de p",
+      "pull": 1
+    },
+    {
+      "query": "mon agence marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "mon agence marketing formation",
+      "pull": 1
+    },
+    {
+      "query": "moose agence marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing courses",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing degree",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing degree checksheet",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing degree plan",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing degree sheet",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing department",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing major",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing minor",
+      "pull": 1
+    },
+    {
+      "query": "ou marketing minor degree sheet",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing automation",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing automation gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing def",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing google",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing ia",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing salesforce",
+      "pull": 1
+    },
+    {
+      "query": "outil marketing swot",
+      "pull": 1
+    },
+    {
+      "query": "own vs agency marketing research",
+      "pull": 1
+    },
+    {
+      "query": "paris advertising agency",
+      "pull": 1
+    },
+    {
+      "query": "paris agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "paris branding agency",
+      "pull": 1
+    },
+    {
+      "query": "paris marketing",
+      "pull": 1
+    },
+    {
+      "query": "paris marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "paris marketing job",
+      "pull": 1
+    },
+    {
+      "query": "paris marketing master",
+      "pull": 1
+    },
+    {
+      "query": "plateforme d'influence marketing",
+      "pull": 1
+    },
+    {
+      "query": "plateforme marketing",
+      "pull": 1
+    },
+    {
+      "query": "plateforme marketing d affiliation",
+      "pull": 1
+    },
+    {
+      "query": "plateforme marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "plateforme marketing google",
+      "pull": 1
+    },
+    {
+      "query": "plateforme sms marketing",
+      "pull": 1
+    },
+    {
+      "query": "platform marketing",
+      "pull": 1
+    },
+    {
+      "query": "platform marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "platform marketing real estate",
+      "pull": 1
+    },
+    {
+      "query": "prix formation marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "prix formation marketing digital tunisie",
+      "pull": 1
+    },
+    {
+      "query": "prix marketing",
+      "pull": 1
+    },
+    {
+      "query": "prix publicité boite aux lettres",
+      "pull": 1
+    },
+    {
+      "query": "propulsagence agence marketing digital avis",
+      "pull": 1
+    },
+    {
+      "query": "publicitaire pas cher",
+      "pull": 1
+    },
+    {
+      "query": "publicité exemple",
+      "pull": 1
+    },
+    {
+      "query": "savoir paris marketing",
+      "pull": 1
+    },
+    {
+      "query": "service marketing",
+      "pull": 1
+    },
+    {
+      "query": "service marketing book",
+      "pull": 1
+    },
+    {
+      "query": "service marketing definition",
+      "pull": 1
+    },
+    {
+      "query": "service marketing meaning",
+      "pull": 1
+    },
+    {
+      "query": "service marketing mix",
+      "pull": 1
+    },
+    {
+      "query": "service marketing triangle",
+      "pull": 1
+    },
+    {
+      "query": "service marketing.pdf",
+      "pull": 1
+    },
+    {
+      "query": "services marketing integrating customer focus across the firm",
+      "pull": 1
+    },
+    {
+      "query": "services marketing people technology strategy",
+      "pull": 1
+    },
+    {
+      "query": "sms marketing pas cher",
+      "pull": 1
+    },
+    {
+      "query": "solutions m votre agence marketing avis",
+      "pull": 1
+    },
+    {
+      "query": "stratégie marketing prix",
+      "pull": 1
+    },
+    {
+      "query": "tarif consultant marketing",
+      "pull": 1
+    },
+    {
+      "query": "tarif crash market",
+      "pull": 1
+    },
+    {
+      "query": "tarif freelance marketing",
+      "pull": 1
+    },
+    {
+      "query": "tarif hubspot marketing",
+      "pull": 1
+    },
+    {
+      "query": "tarif marketing",
+      "pull": 1
+    },
+    {
+      "query": "tarif marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "tarif marketing digital maroc",
+      "pull": 1
+    },
+    {
+      "query": "tarif marketing fee pph 23",
+      "pull": 1
+    },
+    {
+      "query": "tarif marketing manager",
+      "pull": 1
+    },
+    {
+      "query": "tariffs and market",
+      "pull": 1
+    },
+    {
+      "query": "tjm consultant marketing",
+      "pull": 1
+    },
+    {
+      "query": "tjm directeur marketing",
+      "pull": 1
+    },
+    {
+      "query": "tjm freelance marketing",
+      "pull": 1
+    },
+    {
+      "query": "tjm freelance marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "tjm responsable marketing",
+      "pull": 1
+    },
+    {
+      "query": "tjm sales and marketing",
+      "pull": 1
+    },
+    {
+      "query": "tjmaxx marketing",
+      "pull": 1
+    },
+    {
+      "query": "tjmaxx marketing jobs",
+      "pull": 1
+    },
+    {
+      "query": "top agence marketing",
+      "pull": 1
+    },
+    {
+      "query": "top agence publicitaire",
+      "pull": 1
+    },
+    {
+      "query": "valeur marketing",
+      "pull": 1
+    },
+    {
+      "query": "versus marketing agency",
+      "pull": 1
+    },
+    {
+      "query": "vs marketing",
+      "pull": 1
+    },
+    {
+      "query": "vs marketing a division of vs group",
+      "pull": 1
+    },
+    {
+      "query": "vs marketing opc pvt ltd",
+      "pull": 1
+    },
+    {
+      "query": "vs marketing solutions",
+      "pull": 1
+    },
+    {
+      "query": "vs marketing.co.in",
+      "pull": 1
+    },
+    {
+      "query": "zurich branding agency",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "AI has absolutely ruined my life",
+      "subreddit": "antiwork",
+      "ups": 18691,
+      "comments": 986,
+      "url": "https://reddit.com/r/antiwork/comments/1rh20lc/ai_has_absolutely_ruined_my_life/"
+    },
+    {
+      "title": "Do you believe Trump is the worst President of all time?",
+      "subreddit": "allthequestions",
+      "ups": 5169,
+      "comments": 877,
+      "url": "https://reddit.com/r/allthequestions/comments/1tidkfs/do_you_believe_trump_is_the_worst_president_of/"
+    },
+    {
+      "title": "Valve veteran Chet Faliszek slams Tim Sweeney and Epic Games for laying off 1000 people while making \"as much money as possible… and hey Tim, Gabe's better at that than you\"",
+      "subreddit": "pcgaming",
+      "ups": 9031,
+      "comments": 538,
+      "url": "https://reddit.com/r/pcgaming/comments/1s58744/valve_veteran_chet_faliszek_slams_tim_sweeney_and/"
+    },
+    {
+      "title": "Windhorst on Nike influencing free agency: \"At the time (2003), yes. In today's market, basketball shoes aren't selling like back then. It's currently not fashionable to wear basketball shoes when not playing ball… the number of players getting deals &amp; the shoe deals themselves are way way way down\"",
+      "subreddit": "nba",
+      "ups": 1625,
+      "comments": 460,
+      "url": "https://reddit.com/r/nba/comments/1r8jqex/windhorst_on_nike_influencing_free_agency_at_the/"
+    },
+    {
+      "title": "I’m a recruiter at a staffing agency and this job market is unreal",
+      "subreddit": "jobs",
+      "ups": 4529,
+      "comments": 402,
+      "url": "https://reddit.com/r/jobs/comments/1sykf4z/im_a_recruiter_at_a_staffing_agency_and_this_job/"
+    },
+    {
+      "title": "[Robbins] Trae Young is expected to assess the free agency market this Summer. There is no rush to have Trae Young return from injury: “I would be surprised if he plays much, if at all, the remainder of this season.”",
+      "subreddit": "nba",
+      "ups": 1067,
+      "comments": 367,
+      "url": "https://reddit.com/r/nba/comments/1q7ing6/robbins_trae_young_is_expected_to_assess_the_free/"
+    },
+    {
+      "title": "[Charania] Restricted free agent Quentin Grimes is signing a one-year, $8.7 million qualifying offer to return to the Philadelphia 76ers, agent David Bauman told ESPN. Grimes will now hold an inherent no-trade clause and enter a more flush market in unrestricted free agency next summer.",
+      "subreddit": "nba",
+      "ups": 1711,
+      "comments": 330,
+      "url": "https://reddit.com/r/nba/comments/1nvipq0/charania_restricted_free_agent_quentin_grimes_is/"
+    },
+    {
+      "title": "The Slovak Transport Authority, adhering to the standards of the European Union Aviation Safety Agency, has granted a flight certificate to AIRCAR, the prototype flying car—bringing it one step closer to entering the consumer market.",
+      "subreddit": "Damnthatsinteresting",
+      "ups": 1013,
+      "comments": 322,
+      "url": "https://reddit.com/r/Damnthatsinteresting/comments/1nuywbi/the_slovak_transport_authority_adhering_to_the/"
+    },
+    {
+      "title": "[Charania] Restricted free agent Quentin Grimes is signing a one-year, $8.7 million qualifying offer to return to the Philadelphia 76ers, agent David Bauman told ESPN. Grimes will now hold an inherent no-trade clause and enter a more flush market in unrestricted free agency next summer.",
+      "subreddit": "sixers",
+      "ups": 383,
+      "comments": 280,
+      "url": "https://reddit.com/r/sixers/comments/1nvirth/charania_restricted_free_agent_quentin_grimes_is/"
+    },
+    {
+      "title": "Fake Fans - into the digital marketing agency that creates your music taste",
+      "subreddit": "indieheads",
+      "ups": 349,
+      "comments": 268,
+      "url": "https://reddit.com/r/indieheads/comments/1sb5jor/fake_fans_into_the_digital_marketing_agency_that/"
+    },
+    {
+      "title": "I'm beating almost every web design agency and digital marketing firm for web design",
+      "subreddit": "SEO",
+      "ups": 308,
+      "comments": 244,
+      "url": "https://reddit.com/r/SEO/comments/1t207d3/im_beating_almost_every_web_design_agency_and/"
+    },
+    {
+      "title": "Framber Valdez is apparently circulating a video to teams that highlights how nice of a guy he is. ESPN reporter Jorge Castillo speaks on his market in free agency.[Baseball is Dead podcast]",
+      "subreddit": "baseball",
+      "ups": 705,
+      "comments": 208,
+      "url": "https://reddit.com/r/baseball/comments/1pkdig3/framber_valdez_is_apparently_circulating_a_video/"
+    },
+    {
+      "title": "[Charania] The Lakers have made it clear that they want him back... but the one thing I do know is that multiple contenders are already circling. If LeBron is really going to hit the open market and decide and have a true free agency, he's not going to have a shortage of teams.",
+      "subreddit": "nba",
+      "ups": 249,
+      "comments": 202,
+      "url": "https://reddit.com/r/nba/comments/1tj19ma/charania_the_lakers_have_made_it_clear_that_they/"
+    },
+    {
+      "title": "Up to 70% of income earners priced out of property market, Land Developmeny Agency chief says",
+      "subreddit": "ireland",
+      "ups": 474,
+      "comments": 186,
+      "url": "https://reddit.com/r/ireland/comments/1nmqbag/up_to_70_of_income_earners_priced_out_of_property/"
+    },
+    {
+      "title": "A few years ago I paid a marketing agency $5,000/mo to scale my e-com brand. Here is the harsh lesson I learned about where that money actually went.",
+      "subreddit": "Entrepreneur",
+      "ups": 221,
+      "comments": 175,
+      "url": "https://reddit.com/r/Entrepreneur/comments/1rv8lo0/a_few_years_ago_i_paid_a_marketing_agency_5000mo/"
+    },
+    {
+      "title": "How long does it take to make 10k a month as a Digital Marketing Agency? (My story)",
+      "subreddit": "agency",
+      "ups": 146,
+      "comments": 148,
+      "url": "https://reddit.com/r/agency/comments/1suhrma/how_long_does_it_take_to_make_10k_a_month_as_a/"
+    },
+    {
+      "title": "[Pelissero] The Green Bay Packers wanted to keep LB Quay Walker and made several runs at re-signing him before the Zaire Franklin trade. But it now appears the former first-round pick will hit free agency Monday, and he is expected to have a strong market.",
+      "subreddit": "nfl",
+      "ups": 582,
+      "comments": 140,
+      "url": "https://reddit.com/r/nfl/comments/1rnl10e/pelissero_the_green_bay_packers_wanted_to_keep_lb/"
+    },
+    {
+      "title": "I Hired an Marketing Agency for My Demo Release So You Don’t Have To - Here Are My Results",
+      "subreddit": "gamedev",
+      "ups": 503,
+      "comments": 137,
+      "url": "https://reddit.com/r/gamedev/comments/1p2znt4/i_hired_an_marketing_agency_for_my_demo_release/"
+    },
+    {
+      "title": "Kenneth Walker to test free agency market; Seahawks not expected to use franchise tag",
+      "subreddit": "DynastyFF",
+      "ups": 284,
+      "comments": 123,
+      "url": "https://reddit.com/r/DynastyFF/comments/1rjv66o/kenneth_walker_to_test_free_agency_market/"
+    },
+    {
+      "title": "[Russini] Wide receiver Mike Evans plans on exploring his options in free agency, per his agent Deryk Gilmore. The Buccaneers’ franchise leader in receiving yards and TDs, Evans will see what the market holds before making a decision on his future.",
+      "subreddit": "nfl",
+      "ups": 558,
+      "comments": 119,
+      "url": "https://reddit.com/r/nfl/comments/1ro8e7v/russini_wide_receiver_mike_evans_plans_on/"
+    },
+    {
+      "title": "What Are the Top Digital Marketing Agencies for Businesses?",
+      "subreddit": "MarketingGeek",
+      "ups": 374,
+      "comments": 102,
+      "url": "https://reddit.com/r/MarketingGeek/comments/1r2nyyx/what_are_the_top_digital_marketing_agencies_for/"
+    },
+    {
+      "title": "(Schefter) Cornerback Montaric “Buster” Brown is staying in Jacksonville on a three-year, $33 million deal, per @JFowlerESPN and me. The 2022 7th-round pick would have had a strong market in free agency, but didn’t to want to leave Jacksonville",
+      "subreddit": "Jaguars",
+      "ups": 811,
+      "comments": 86,
+      "url": "https://reddit.com/r/Jaguars/comments/1royz0v/schefter_cornerback_montaric_buster_brown_is/"
+    },
+    {
+      "title": "Landlord said she wants 700k I countered with 500k, she went to an estate agency, they've listed the house as 1.2m... Real market value of the house is 450k at most.",
+      "subreddit": "lostgeneration",
+      "ups": 1583,
+      "comments": 75,
+      "url": "https://reddit.com/r/lostgeneration/comments/1kzyxpt/landlord_said_she_wants_700k_i_countered_with/"
+    },
+    {
+      "title": "TIL the guy in the \"Worst Person You Know\" picture is Josep Maria García, a guy who works in a marketing agency in a small town in Spain and was unaware of his fame initially",
+      "subreddit": "todayilearned",
+      "ups": 3689,
+      "comments": 52,
+      "url": "https://reddit.com/r/todayilearned/comments/1o79cyi/til_the_guy_in_the_worst_person_you_know_picture/"
+    },
+    {
+      "title": "Georgia Tann with an unknown toddler, circa 1945. Tann owned and operated the unlicensed Tennessee Children's Home Society adoption agency which between the mid-1920s and 1950 trafficked over 5,000 children in a black market baby adoption scheme. [800 x 628]",
+      "subreddit": "HistoryPorn",
+      "ups": 1154,
+      "comments": 37,
+      "url": "https://reddit.com/r/HistoryPorn/comments/1qnp039/georgia_tann_with_an_unknown_toddler_circa_1945/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "Ask HN: How does one start a digital marketing agency with zero clients?",
+      "points": 22,
+      "comments": 23,
+      "url": "https://news.ycombinator.com/item?id=34736867"
+    },
+    {
+      "title": "I built a $90k/month email marketing agency",
+      "points": 5,
+      "comments": 0,
+      "url": "https://productizedstartups.com/building-a-90k-month-email-marketing-agency-for-e-commerce-brands/"
+    },
+    {
+      "title": "Show HN: HypeBridge – Your Dedicated AI-Agent Driven Influencer Marketing Agency",
+      "points": 3,
+      "comments": 2,
+      "url": "https://thehypebridge.com"
+    },
+    {
+      "title": "Ask HN: What do small marketing agency deals look like?",
+      "points": 3,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=19929188"
+    },
+    {
+      "title": "Growth Cave: Bootstrapping a $5k/Month Marketing Agency in College",
+      "points": 3,
+      "comments": 0,
+      "url": "https://www.failory.com/interview/growth-cave"
+    },
+    {
+      "title": "Show HN: A marketing agency for tech companies",
+      "points": 2,
+      "comments": 1,
+      "url": "https://www.copywritech.net/"
+    },
+    {
+      "title": "Outside the Box Reddit Marketing Agency",
+      "points": 2,
+      "comments": 0,
+      "url": "https://redditgrowth.com/"
+    },
+    {
+      "title": "Ask HN: How was your experience when you hired a PR/Marketing Agency?",
+      "points": 2,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=22782229"
+    },
+    {
+      "title": "Once You’ve Left Your Marketing Agency, You’ve Found Out You Don’t Own Your Data",
+      "points": 2,
+      "comments": 0,
+      "url": "https://www.mayple.com/blog/own-your-marketing-data"
+    },
+    {
+      "title": "I Started a $230K/Month Marketing Agency from My Porch",
+      "points": 2,
+      "comments": 0,
+      "url": "https://www.starterstory.com/how-to-start-a-marketing-agency-new-jersey"
+    },
+    {
+      "title": "Growing a marketing agency to 20 people while starting a SaaS company (Podcast)",
+      "points": 2,
+      "comments": 0,
+      "url": "https://marketingmashup.co.uk/episodes/gareth-bull-10"
+    },
+    {
+      "title": "Ask HN: How do you find a good digital marketing agency to deal with?",
+      "points": 2,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=19469644"
+    },
+    {
+      "title": "How to start a marketing agency – a practical, no-bull guide",
+      "points": 2,
+      "comments": 0,
+      "url": "https://everyonehatesmarketers.com/start-marketing-agency/"
+    },
+    {
+      "title": "We Killed Our Marketing Agency to Grow Our Business",
+      "points": 1,
+      "comments": 2,
+      "url": "https://centis.net/blog/2022/01/02/why-we-killed-our-marketing-agency-to-grow-our-business/"
+    },
+    {
+      "title": "Marketing Agency Raises $100 Billion Dollars to Make iPhone Apps",
+      "points": 1,
+      "comments": 2,
+      "url": "https://news.ycombinator.com/item?id=2604858"
+    },
+    {
+      "title": "Ask HN: Serious app marketing agency",
+      "points": 1,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=8007365"
+    },
+    {
+      "title": "Is it still a good time to start a digital marketing agency?",
+      "points": 1,
+      "comments": 1,
+      "url": "https://koyastack.com/2020/09/25/crypto-trading-101-buy-sell-trade-cryptocurrency-for-profit/"
+    },
+    {
+      "title": "WPP, Snapchat, Daily Mail Form Marketing Agency Truffle Pig",
+      "points": 1,
+      "comments": 0,
+      "url": "http://www.bloomberg.com/news/articles/2015-06-23/wpp-snapchat-and-daily-mail-form-marketing-agency-truffle-pig"
+    },
+    {
+      "title": "New Bitcoin Digital Marketing Agency – BlackbitBooks",
+      "points": 1,
+      "comments": 0,
+      "url": "http://www.blackbitbooks.com"
+    },
+    {
+      "title": "Technology and IT Marketing Agency UK | Tech Marketing Company",
+      "points": 1,
+      "comments": 0,
+      "url": "http://www.welcometobora.com/"
+    }
+  ]
+}

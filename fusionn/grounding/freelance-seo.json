@@ -1,0 +1,3766 @@
+{
+  "keyword": "freelance seo",
+  "fetched_at": "2026-05-28T14:21:13.044Z",
+  "sources": {
+    "google_suggest": 864,
+    "reddit": 25,
+    "hacker_news": 20
+  },
+  "real_queries": [
+    {
+      "query": "freelance seo lyon",
+      "pull": 5
+    },
+    {
+      "query": "consultant seo lyon",
+      "pull": 4
+    },
+    {
+      "query": "consultant seo paris",
+      "pull": 3
+    },
+    {
+      "query": "seo comment faire",
+      "pull": 3
+    },
+    {
+      "query": "seo gratuit google",
+      "pull": 3
+    },
+    {
+      "query": "seo in guk",
+      "pull": 3
+    },
+    {
+      "query": "seo ou geo",
+      "pull": 3
+    },
+    {
+      "query": "seo ou sea",
+      "pull": 3
+    },
+    {
+      "query": "tjm freelance seo",
+      "pull": 3
+    },
+    {
+      "query": "agence seo lille",
+      "pull": 2
+    },
+    {
+      "query": "agence seo toulouse",
+      "pull": 2
+    },
+    {
+      "query": "comment seo",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo definition",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo formation",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo freelance lyon",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo freelance paris",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo geo paris",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo local",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo marseille",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo pas cher",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo prix",
+      "pull": 2
+    },
+    {
+      "query": "consultant seo tarif",
+      "pull": 2
+    },
+    {
+      "query": "definition seo et sea",
+      "pull": 2
+    },
+    {
+      "query": "dev seo",
+      "pull": 2
+    },
+    {
+      "query": "dev seoni",
+      "pull": 2
+    },
+    {
+      "query": "dev seoni gyaras",
+      "pull": 2
+    },
+    {
+      "query": "dev_seochan",
+      "pull": 2
+    },
+    {
+      "query": "developer seo",
+      "pull": 2
+    },
+    {
+      "query": "developer seo google",
+      "pull": 2
+    },
+    {
+      "query": "developpement seo",
+      "pull": 2
+    },
+    {
+      "query": "developpeur seo",
+      "pull": 2
+    },
+    {
+      "query": "développeur web seo",
+      "pull": 2
+    },
+    {
+      "query": "dew drops",
+      "pull": 2
+    },
+    {
+      "query": "formation seo certifiante",
+      "pull": 2
+    },
+    {
+      "query": "formation seo gratuite",
+      "pull": 2
+    },
+    {
+      "query": "formation seo sea",
+      "pull": 2
+    },
+    {
+      "query": "formation seo tunisie",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo c est quoi",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo jobs uk",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo jobs work from home",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo le havre",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo lille",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo marseille",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo montpellier",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo nice",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo prix",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo rennes",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo strasbourg",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo tarif",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo tunisie",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo vs agence seo",
+      "pull": 2
+    },
+    {
+      "query": "freelance seo wordpress",
+      "pull": 2
+    },
+    {
+      "query": "meilleur consultant seo",
+      "pull": 2
+    },
+    {
+      "query": "meilleur consultant seo france",
+      "pull": 2
+    },
+    {
+      "query": "meilleur consultant seo lyon",
+      "pull": 2
+    },
+    {
+      "query": "meilleur freelance seo",
+      "pull": 2
+    },
+    {
+      "query": "meilleur seo",
+      "pull": 2
+    },
+    {
+      "query": "meilleur seo france",
+      "pull": 2
+    },
+    {
+      "query": "meilleur seo wordpress",
+      "pull": 2
+    },
+    {
+      "query": "outil seo gratuit",
+      "pull": 2
+    },
+    {
+      "query": "outil seo gratuit en ligne",
+      "pull": 2
+    },
+    {
+      "query": "prix seo google",
+      "pull": 2
+    },
+    {
+      "query": "salaire consultant seo",
+      "pull": 2
+    },
+    {
+      "query": "salaire consultant seo junior",
+      "pull": 2
+    },
+    {
+      "query": "salaire consultant seo senior",
+      "pull": 2
+    },
+    {
+      "query": "seo agence",
+      "pull": 2
+    },
+    {
+      "query": "seo combien ca coute",
+      "pull": 2
+    },
+    {
+      "query": "seo combien de temps",
+      "pull": 2
+    },
+    {
+      "query": "seo comment ça marche",
+      "pull": 2
+    },
+    {
+      "query": "seo comment l'améliorer",
+      "pull": 2
+    },
+    {
+      "query": "seo comment optimiser",
+      "pull": 2
+    },
+    {
+      "query": "seo comment réussir son référencement",
+      "pull": 2
+    },
+    {
+      "query": "seo définition",
+      "pull": 2
+    },
+    {
+      "query": "seo definition francais",
+      "pull": 2
+    },
+    {
+      "query": "seo définition marketing",
+      "pull": 2
+    },
+    {
+      "query": "seo definition simple",
+      "pull": 2
+    },
+    {
+      "query": "seo formation",
+      "pull": 2
+    },
+    {
+      "query": "seo formation gratuite",
+      "pull": 2
+    },
+    {
+      "query": "seo freelance",
+      "pull": 2
+    },
+    {
+      "query": "seo freelancer in india",
+      "pull": 2
+    },
+    {
+      "query": "seo ia",
+      "pull": 2
+    },
+    {
+      "query": "seo in guk couple",
+      "pull": 2
+    },
+    {
+      "query": "seo in guk couple 2026",
+      "pull": 2
+    },
+    {
+      "query": "seo in guk est il en couple",
+      "pull": 2
+    },
+    {
+      "query": "seo in guk mariage",
+      "pull": 2
+    },
+    {
+      "query": "seo kang joon",
+      "pull": 2
+    },
+    {
+      "query": "seo lyon",
+      "pull": 2
+    },
+    {
+      "query": "seo outils",
+      "pull": 2
+    },
+    {
+      "query": "seo vs aeo",
+      "pull": 2
+    },
+    {
+      "query": "seo vs geo",
+      "pull": 2
+    },
+    {
+      "query": "seo vs geo vs aeo",
+      "pull": 2
+    },
+    {
+      "query": "seo vs sea",
+      "pull": 2
+    },
+    {
+      "query": "seo vs sem",
+      "pull": 2
+    },
+    {
+      "query": "seoul",
+      "pull": 2
+    },
+    {
+      "query": "seoul meteo",
+      "pull": 2
+    },
+    {
+      "query": "tarif seo e commerce",
+      "pull": 2
+    },
+    {
+      "query": "tarif seo freelance",
+      "pull": 2
+    },
+    {
+      "query": "tjm consultant seo",
+      "pull": 2
+    },
+    {
+      "query": "tjm seo",
+      "pull": 2
+    },
+    {
+      "query": "agence seo",
+      "pull": 1
+    },
+    {
+      "query": "agence seo angers",
+      "pull": 1
+    },
+    {
+      "query": "agence seo botanik",
+      "pull": 1
+    },
+    {
+      "query": "agence seo casablanca",
+      "pull": 1
+    },
+    {
+      "query": "agence seo maroc",
+      "pull": 1
+    },
+    {
+      "query": "agence seo marrakech",
+      "pull": 1
+    },
+    {
+      "query": "agence seo marseille",
+      "pull": 1
+    },
+    {
+      "query": "agence seo montpellier",
+      "pull": 1
+    },
+    {
+      "query": "agence seo nantes",
+      "pull": 1
+    },
+    {
+      "query": "agence seo pas cher",
+      "pull": 1
+    },
+    {
+      "query": "agence seo rennes",
+      "pull": 1
+    },
+    {
+      "query": "agence seo tarif",
+      "pull": 1
+    },
+    {
+      "query": "agence seo tunisie",
+      "pull": 1
+    },
+    {
+      "query": "analyse seo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "apma cabinet seoul",
+      "pull": 1
+    },
+    {
+      "query": "article seo combien de mots",
+      "pull": 1
+    },
+    {
+      "query": "article seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "audit seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "audit seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "audit seo prix",
+      "pull": 1
+    },
+    {
+      "query": "audit seo tarif",
+      "pull": 1
+    },
+    {
+      "query": "avis seo",
+      "pull": 1
+    },
+    {
+      "query": "avis seo fr",
+      "pull": 1
+    },
+    {
+      "query": "avis seo sans migraine",
+      "pull": 1
+    },
+    {
+      "query": "avis seobserver",
+      "pull": 1
+    },
+    {
+      "query": "avis seoni",
+      "pull": 1
+    },
+    {
+      "query": "avis seoni pommeau de douche",
+      "pull": 1
+    },
+    {
+      "query": "avis seonsaengnim",
+      "pull": 1
+    },
+    {
+      "query": "avis seoul",
+      "pull": 1
+    },
+    {
+      "query": "avis seoul 1988",
+      "pull": 1
+    },
+    {
+      "query": "avis seoul care",
+      "pull": 1
+    },
+    {
+      "query": "avis seoul glam",
+      "pull": 1
+    },
+    {
+      "query": "avis seoul station",
+      "pull": 1
+    },
+    {
+      "query": "billet pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "cabinet avocat seoul",
+      "pull": 1
+    },
+    {
+      "query": "cabinet in seoul brand",
+      "pull": 1
+    },
+    {
+      "query": "cabinet seo",
+      "pull": 1
+    },
+    {
+      "query": "cabinet seoul",
+      "pull": 1
+    },
+    {
+      "query": "certificat seo",
+      "pull": 1
+    },
+    {
+      "query": "certification seo",
+      "pull": 1
+    },
+    {
+      "query": "certification seo google",
+      "pull": 1
+    },
+    {
+      "query": "certification seo gratuite",
+      "pull": 1
+    },
+    {
+      "query": "certification seo hubspot",
+      "pull": 1
+    },
+    {
+      "query": "certification seo sea",
+      "pull": 1
+    },
+    {
+      "query": "certification seo semrush",
+      "pull": 1
+    },
+    {
+      "query": "certified seo courses",
+      "pull": 1
+    },
+    {
+      "query": "certified seo expert",
+      "pull": 1
+    },
+    {
+      "query": "certified seo expert in dubai",
+      "pull": 1
+    },
+    {
+      "query": "certified seo expert in pakistan",
+      "pull": 1
+    },
+    {
+      "query": "chat seo avis",
+      "pull": 1
+    },
+    {
+      "query": "coaching seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "combien d'aéroport seoul",
+      "pull": 1
+    },
+    {
+      "query": "combien d'habitants a seoul",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir consultant seo",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "comment prononcer seoir",
+      "pull": 1
+    },
+    {
+      "query": "comment utiliser seoul 1988",
+      "pull": 1
+    },
+    {
+      "query": "comment utiliser seoul 1988 eye cream",
+      "pull": 1
+    },
+    {
+      "query": "consultant formateur seo",
+      "pull": 1
+    },
+    {
+      "query": "consultant freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "consultant green seo nancy",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo / digital freelance",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo adrien beaujeu",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo amiens",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo angers",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo annecy",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo arras",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo besançon",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo bordeaux",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo c est quoi",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo c quoi",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo cabinet comptable",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo caen",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo cambrai",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo cannes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo clermont ferrand",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo dakar",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo datashake",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo digital freelance",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo dijon",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo dordogne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo douai",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo dunkerque",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo fabien raquidel",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo feurs",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo fiche métier",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo finistère",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo français le mieux noté",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo france",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance à saint etienne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance andrézieux",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance firminy",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance lille",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance saint chamond",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo freelance salaire",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo fribourg",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo full remote",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo genève",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo geo",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo gournay sur marne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo grenoble",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo guyane",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo haute savoie",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo hauts de france",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo hôtellerie",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo hyffen",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo ia",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo immobilier",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo indeed",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo indépendant",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo international",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo la rochelle",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo lausanne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo le mans",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo leo poitevin",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo maroc",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo montpellier",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo nanterre",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo nantes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo neuilly sur marne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo nice",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo nimes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo nord",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo occitanie",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo odoo",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo offre d emploi",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo offre d'emploi",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo orléans",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo oyonnax",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo poitiers",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo prestashop",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo quimper",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo reims",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo rennes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo rennes cédric guérin",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo réunion",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo roubaix",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo rueil malmaison",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo saint germain en laye",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo salaire",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo sens",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo technique",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo toulouse",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo tourisme",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo tours",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo troyes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo tunisie",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo val d oise",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo valence",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo valenciennes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo vannes",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo vendée",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo villefranche sur saone",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo villeneuve d ascq",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo villeurbanne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo vosges",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo webflow",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo yonne",
+      "pull": 1
+    },
+    {
+      "query": "consultant seo yvelines",
+      "pull": 1
+    },
+    {
+      "query": "consultor seo freelance zaragoza",
+      "pull": 1
+    },
+    {
+      "query": "cours seo gratuit pdf",
+      "pull": 1
+    },
+    {
+      "query": "definition seo",
+      "pull": 1
+    },
+    {
+      "query": "definition seo en francais",
+      "pull": 1
+    },
+    {
+      "query": "définition seo marketing",
+      "pull": 1
+    },
+    {
+      "query": "définition seoir",
+      "pull": 1
+    },
+    {
+      "query": "definition seoir verbe",
+      "pull": 1
+    },
+    {
+      "query": "definition seoul",
+      "pull": 1
+    },
+    {
+      "query": "description seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "devis seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "devis seo ia",
+      "pull": 1
+    },
+    {
+      "query": "devis seo lille",
+      "pull": 1
+    },
+    {
+      "query": "devis seo pdf",
+      "pull": 1
+    },
+    {
+      "query": "eau seo prix",
+      "pull": 1
+    },
+    {
+      "query": "emploi seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "exemple article seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple audit seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple audit seo pdf",
+      "pull": 1
+    },
+    {
+      "query": "exemple cv seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple devis seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple page seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple rapport seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple seo",
+      "pull": 1
+    },
+    {
+      "query": "exemple stratégie seo pdf",
+      "pull": 1
+    },
+    {
+      "query": "expert seo",
+      "pull": 1
+    },
+    {
+      "query": "expert seo c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "expert seo casablanca",
+      "pull": 1
+    },
+    {
+      "query": "expert seo freelance",
+      "pull": 1
+    },
+    {
+      "query": "expert seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "expert seo maroc",
+      "pull": 1
+    },
+    {
+      "query": "expert seo marrakech",
+      "pull": 1
+    },
+    {
+      "query": "expert seo nice",
+      "pull": 1
+    },
+    {
+      "query": "expert seo salaire",
+      "pull": 1
+    },
+    {
+      "query": "expert seo shopify",
+      "pull": 1
+    },
+    {
+      "query": "expert seo tunisie",
+      "pull": 1
+    },
+    {
+      "query": "formation consultant seo",
+      "pull": 1
+    },
+    {
+      "query": "formation seo",
+      "pull": 1
+    },
+    {
+      "query": "formation seo cpf",
+      "pull": 1
+    },
+    {
+      "query": "formation seo en ligne",
+      "pull": 1
+    },
+    {
+      "query": "formation seo freelance",
+      "pull": 1
+    },
+    {
+      "query": "formation seo geo",
+      "pull": 1
+    },
+    {
+      "query": "formation seo google",
+      "pull": 1
+    },
+    {
+      "query": "formation seo ia",
+      "pull": 1
+    },
+    {
+      "query": "free seo",
+      "pull": 1
+    },
+    {
+      "query": "free seo analyzer",
+      "pull": 1
+    },
+    {
+      "query": "free seo audit",
+      "pull": 1
+    },
+    {
+      "query": "free seo audit tool",
+      "pull": 1
+    },
+    {
+      "query": "free seo checker",
+      "pull": 1
+    },
+    {
+      "query": "free seo course",
+      "pull": 1
+    },
+    {
+      "query": "free seo course with certificate",
+      "pull": 1
+    },
+    {
+      "query": "free seo tools",
+      "pull": 1
+    },
+    {
+      "query": "free seoul",
+      "pull": 1
+    },
+    {
+      "query": "freelance in seo",
+      "pull": 1
+    },
+    {
+      "query": "freelance organic seo",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo agen",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo agency",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo agency india",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo angers",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo annecy",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo arras",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo audit",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo b2b",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo belgique",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo birmingham",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo bordeaux",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo bourg en bresse",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo bristol",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo business guide",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo cholet",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo consultant leicester",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo consultant uk",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo content writer",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo content writer jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo copywriter",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo delhi",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo dubai",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo e-commerce",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo essex",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in calicut",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in delhi",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in dubai",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in india",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in kerala",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in kochi",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in malappuram",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in palakkad",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert in qatar",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert uae",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo expert uk",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo france",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo grenoble",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo hampshire",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo hourly rate",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo how i get clients from google",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo in bangalore",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo in delhi",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo in dubai",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo india",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs in dubai",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs in india",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs in usa",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs london",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs near me",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo jobs remote",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo junior",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo kerala",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo kochi",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo lausanne",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo magento",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo manager",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo maroc",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo meaning",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo metz",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo miribel",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo nancy",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo nantes",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo nottingham",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo pakistan",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo perth",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo philippines",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo poitiers",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo price",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo projects",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo rates",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo reddit",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo remote jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo salary",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo sea",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo senior",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo services in india",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo shopify",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo specialist",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo specialist salary",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo strategist",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo suisse",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo toulouse",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo tours",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo uk",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo vacature",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo webflow",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo website",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo work",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo writer",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo writer jobs",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo writer kumparan",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo writer singapore",
+      "pull": 1
+    },
+    {
+      "query": "freelance seo writing",
+      "pull": 1
+    },
+    {
+      "query": "freelance web tasarım yazılım seo",
+      "pull": 1
+    },
+    {
+      "query": "freelancer seo katowice",
+      "pull": 1
+    },
+    {
+      "query": "geo seo definition",
+      "pull": 1
+    },
+    {
+      "query": "google certified seo course",
+      "pull": 1
+    },
+    {
+      "query": "grandma cabinet seoul",
+      "pull": 1
+    },
+    {
+      "query": "hotel pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "hotel pas cher seoul centre ville",
+      "pull": 1
+    },
+    {
+      "query": "jean seo avis",
+      "pull": 1
+    },
+    {
+      "query": "job seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "logement pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "logiciel analyse seo",
+      "pull": 1
+    },
+    {
+      "query": "logiciel seo",
+      "pull": 1
+    },
+    {
+      "query": "logiciel seo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel seo ia",
+      "pull": 1
+    },
+    {
+      "query": "logiciel seo ranxplorer",
+      "pull": 1
+    },
+    {
+      "query": "logiciel seo referencement",
+      "pull": 1
+    },
+    {
+      "query": "logiciel seo sea",
+      "pull": 1
+    },
+    {
+      "query": "logiciel suivi seo",
+      "pull": 1
+    },
+    {
+      "query": "lyon seo",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul avion",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul direct",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul distance",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul flight",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul google flights",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul pas cher",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul temps de vol",
+      "pull": 1
+    },
+    {
+      "query": "lyon seoul vol direct",
+      "pull": 1
+    },
+    {
+      "query": "magasin pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "meilleur bibimbap seoul",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo 2026",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo adrien beaujeu",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo france 2025",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo lille",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo marseille",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo paris",
+      "pull": 1
+    },
+    {
+      "query": "meilleur consultant seo tunisie",
+      "pull": 1
+    },
+    {
+      "query": "meilleur hotel seoul",
+      "pull": 1
+    },
+    {
+      "query": "meilleur logiciel seo",
+      "pull": 1
+    },
+    {
+      "query": "nova seo avis",
+      "pull": 1
+    },
+    {
+      "query": "o que significa",
+      "pull": 1
+    },
+    {
+      "query": "offre freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "ou seoul",
+      "pull": 1
+    },
+    {
+      "query": "outil seo",
+      "pull": 1
+    },
+    {
+      "query": "outil seo définition",
+      "pull": 1
+    },
+    {
+      "query": "outil seo francais",
+      "pull": 1
+    },
+    {
+      "query": "outil seo google",
+      "pull": 1
+    },
+    {
+      "query": "outil seo ia",
+      "pull": 1
+    },
+    {
+      "query": "outil seo pas cher",
+      "pull": 1
+    },
+    {
+      "query": "outil seo studio",
+      "pull": 1
+    },
+    {
+      "query": "outil seo wordpress",
+      "pull": 1
+    },
+    {
+      "query": "outil seo youtube",
+      "pull": 1
+    },
+    {
+      "query": "outsource freelance seo pakistan",
+      "pull": 1
+    },
+    {
+      "query": "pack seo prix",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul air france",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul avion",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul combien d heure de vol",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul decalage horaire",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul distance",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul flight",
+      "pull": 1
+    },
+    {
+      "query": "paris séoul google flight",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul pas cher",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul vol",
+      "pull": 1
+    },
+    {
+      "query": "paris seoul vol temps",
+      "pull": 1
+    },
+    {
+      "query": "park seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "plateforme freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "plateforme seo",
+      "pull": 1
+    },
+    {
+      "query": "platform seo",
+      "pull": 1
+    },
+    {
+      "query": "platform seoul",
+      "pull": 1
+    },
+    {
+      "query": "prix freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "prix seo",
+      "pull": 1
+    },
+    {
+      "query": "prix seo maroc",
+      "pull": 1
+    },
+    {
+      "query": "prix seo par mois",
+      "pull": 1
+    },
+    {
+      "query": "prix seo senegal",
+      "pull": 1
+    },
+    {
+      "query": "prix seo site web",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul 1988",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul 1988 tunisie",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul busan",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul busan train",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul glam",
+      "pull": 1
+    },
+    {
+      "query": "prix seoul tower",
+      "pull": 1
+    },
+    {
+      "query": "quick seo",
+      "pull": 1
+    },
+    {
+      "query": "quick wins seo",
+      "pull": 1
+    },
+    {
+      "query": "rapport seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "rédaction seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "rédactrice seo freelance lyon",
+      "pull": 1
+    },
+    {
+      "query": "référencement seo comment faire",
+      "pull": 1
+    },
+    {
+      "query": "referencement seo tarif",
+      "pull": 1
+    },
+    {
+      "query": "responsable seo lyon",
+      "pull": 1
+    },
+    {
+      "query": "saoudite ou saoudite",
+      "pull": 1
+    },
+    {
+      "query": "seao quebec",
+      "pull": 1
+    },
+    {
+      "query": "seo",
+      "pull": 1
+    },
+    {
+      "query": "seo acronyme",
+      "pull": 1
+    },
+    {
+      "query": "seo agence france",
+      "pull": 1
+    },
+    {
+      "query": "seo agence maroc",
+      "pull": 1
+    },
+    {
+      "query": "seo agence monaco",
+      "pull": 1
+    },
+    {
+      "query": "seo agence paris",
+      "pull": 1
+    },
+    {
+      "query": "seo agency",
+      "pull": 1
+    },
+    {
+      "query": "seo ai",
+      "pull": 1
+    },
+    {
+      "query": "seo air france guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "seo analyser",
+      "pull": 1
+    },
+    {
+      "query": "seo and geo",
+      "pull": 1
+    },
+    {
+      "query": "seo ari",
+      "pull": 1
+    },
+    {
+      "query": "seo armée",
+      "pull": 1
+    },
+    {
+      "query": "seo audit",
+      "pull": 1
+    },
+    {
+      "query": "seo avis",
+      "pull": 1
+    },
+    {
+      "query": "seo avis google",
+      "pull": 1
+    },
+    {
+      "query": "seo backlinks",
+      "pull": 1
+    },
+    {
+      "query": "seo basics",
+      "pull": 1
+    },
+    {
+      "query": "seo billens",
+      "pull": 1
+    },
+    {
+      "query": "seo birdlife",
+      "pull": 1
+    },
+    {
+      "query": "seo blog",
+      "pull": 1
+    },
+    {
+      "query": "seo blog commenting sites",
+      "pull": 1
+    },
+    {
+      "query": "seo blog comments",
+      "pull": 1
+    },
+    {
+      "query": "seo bo-ram",
+      "pull": 1
+    },
+    {
+      "query": "seo bok",
+      "pull": 1
+    },
+    {
+      "query": "seo bot",
+      "pull": 1
+    },
+    {
+      "query": "seo brest",
+      "pull": 1
+    },
+    {
+      "query": "seo bum-june",
+      "pull": 1
+    },
+    {
+      "query": "seo c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "seo ca veut dire quoi",
+      "pull": 1
+    },
+    {
+      "query": "seo cabinet office",
+      "pull": 1
+    },
+    {
+      "query": "seo cabinet office salary",
+      "pull": 1
+    },
+    {
+      "query": "seo caudan",
+      "pull": 1
+    },
+    {
+      "query": "seo certified",
+      "pull": 1
+    },
+    {
+      "query": "seo certified courses",
+      "pull": 1
+    },
+    {
+      "query": "seo certified hubspot",
+      "pull": 1
+    },
+    {
+      "query": "seo certified hubspot academy",
+      "pull": 1
+    },
+    {
+      "query": "seo certified meaning",
+      "pull": 1
+    },
+    {
+      "query": "seo certified professional",
+      "pull": 1
+    },
+    {
+      "query": "seo chae-hyun",
+      "pull": 1
+    },
+    {
+      "query": "seo changbin",
+      "pull": 1
+    },
+    {
+      "query": "seo checker",
+      "pull": 1
+    },
+    {
+      "query": "seo claude",
+      "pull": 1
+    },
+    {
+      "query": "seo communication",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant freelancer",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant karachi",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant kent",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant kerala",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant kl",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant kolkata",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant meaning",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant online aannemer",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant oxford",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant que es",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant uk",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant upwork",
+      "pull": 1
+    },
+    {
+      "query": "seo consultant yorkshire",
+      "pull": 1
+    },
+    {
+      "query": "seo dahyun",
+      "pull": 1
+    },
+    {
+      "query": "seo dan",
+      "pull": 1
+    },
+    {
+      "query": "seo de urgel",
+      "pull": 1
+    },
+    {
+      "query": "seo def",
+      "pull": 1
+    },
+    {
+      "query": "seo definition english",
+      "pull": 1
+    },
+    {
+      "query": "seo definition finance",
+      "pull": 1
+    },
+    {
+      "query": "seo definition google",
+      "pull": 1
+    },
+    {
+      "query": "seo définition informatique",
+      "pull": 1
+    },
+    {
+      "query": "seo design",
+      "pull": 1
+    },
+    {
+      "query": "seo devis",
+      "pull": 1
+    },
+    {
+      "query": "seo devise",
+      "pull": 1
+    },
+    {
+      "query": "seo do young",
+      "pull": 1
+    },
+    {
+      "query": "seo dong ju",
+      "pull": 1
+    },
+    {
+      "query": "seo eau",
+      "pull": 1
+    },
+    {
+      "query": "seo en français",
+      "pull": 1
+    },
+    {
+      "query": "seo entreprise",
+      "pull": 1
+    },
+    {
+      "query": "seo et geo",
+      "pull": 1
+    },
+    {
+      "query": "seo et sea",
+      "pull": 1
+    },
+    {
+      "query": "seo etancheite",
+      "pull": 1
+    },
+    {
+      "query": "seo eun hye",
+      "pull": 1
+    },
+    {
+      "query": "seo eun-soo",
+      "pull": 1
+    },
+    {
+      "query": "seo eunkwang",
+      "pull": 1
+    },
+    {
+      "query": "seo europe",
+      "pull": 1
+    },
+    {
+      "query": "seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "seo facebook",
+      "pull": 1
+    },
+    {
+      "query": "seo finance",
+      "pull": 1
+    },
+    {
+      "query": "seo for ai",
+      "pull": 1
+    },
+    {
+      "query": "seo for llm",
+      "pull": 1
+    },
+    {
+      "query": "seo formation cpf",
+      "pull": 1
+    },
+    {
+      "query": "seo formation en ligne",
+      "pull": 1
+    },
+    {
+      "query": "seo formation google",
+      "pull": 1
+    },
+    {
+      "query": "seo formation paris",
+      "pull": 1
+    },
+    {
+      "query": "seo formation pdf",
+      "pull": 1
+    },
+    {
+      "query": "seo france",
+      "pull": 1
+    },
+    {
+      "query": "seo freelance barcelona",
+      "pull": 1
+    },
+    {
+      "query": "seo freelance job",
+      "pull": 1
+    },
+    {
+      "query": "seo freelance jobs work from home",
+      "pull": 1
+    },
+    {
+      "query": "seo freelance opportunities",
+      "pull": 1
+    },
+    {
+      "query": "seo freelance work",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer hyderabad",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer in bangalore",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer in delhi",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer in dubai",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer kanpur",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer kolkata",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer meaning",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer qatar",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer uae",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer usa",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer whatsapp group link",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancer zürich",
+      "pull": 1
+    },
+    {
+      "query": "seo freelancers",
+      "pull": 1
+    },
+    {
+      "query": "seo friendly",
+      "pull": 1
+    },
+    {
+      "query": "seo frog",
+      "pull": 1
+    },
+    {
+      "query": "seo geo",
+      "pull": 1
+    },
+    {
+      "query": "seo geo aeo",
+      "pull": 1
+    },
+    {
+      "query": "seo geo signification",
+      "pull": 1
+    },
+    {
+      "query": "seo google",
+      "pull": 1
+    },
+    {
+      "query": "seo google ads",
+      "pull": 1
+    },
+    {
+      "query": "seo google analytics",
+      "pull": 1
+    },
+    {
+      "query": "seo google pas cher",
+      "pull": 1
+    },
+    {
+      "query": "seo gratuit ou payant",
+      "pull": 1
+    },
+    {
+      "query": "seo gratuit wordpress",
+      "pull": 1
+    },
+    {
+      "query": "seo group",
+      "pull": 1
+    },
+    {
+      "query": "seo gu",
+      "pull": 1
+    },
+    {
+      "query": "seo guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "seo ha",
+      "pull": 1
+    },
+    {
+      "query": "seo ha joon",
+      "pull": 1
+    },
+    {
+      "query": "seo hero ninja",
+      "pull": 1
+    },
+    {
+      "query": "seo hweol",
+      "pull": 1
+    },
+    {
+      "query": "seo hye-won",
+      "pull": 1
+    },
+    {
+      "query": "seo hyo-rim",
+      "pull": 1
+    },
+    {
+      "query": "seo hyun jin couple",
+      "pull": 1
+    },
+    {
+      "query": "seo hyun-jin",
+      "pull": 1
+    },
+    {
+      "query": "seo hyun-woo",
+      "pull": 1
+    },
+    {
+      "query": "seo in guk drama",
+      "pull": 1
+    },
+    {
+      "query": "seo in guk parle français",
+      "pull": 1
+    },
+    {
+      "query": "seo in guk wife",
+      "pull": 1
+    },
+    {
+      "query": "seo in guk yeux",
+      "pull": 1
+    },
+    {
+      "query": "seo jang hoon",
+      "pull": 1
+    },
+    {
+      "query": "seo ji won",
+      "pull": 1
+    },
+    {
+      "query": "seo ji-hoon",
+      "pull": 1
+    },
+    {
+      "query": "seo ji-hye",
+      "pull": 1
+    },
+    {
+      "query": "seo jieun",
+      "pull": 1
+    },
+    {
+      "query": "seo jin",
+      "pull": 1
+    },
+    {
+      "query": "seo joon",
+      "pull": 1
+    },
+    {
+      "query": "seo jun",
+      "pull": 1
+    },
+    {
+      "query": "seo jun park",
+      "pull": 1
+    },
+    {
+      "query": "seo jun true beauty",
+      "pull": 1
+    },
+    {
+      "query": "seo kang",
+      "pull": 1
+    },
+    {
+      "query": "seo kang joon couple",
+      "pull": 1
+    },
+    {
+      "query": "seo kang joon eyes",
+      "pull": 1
+    },
+    {
+      "query": "seo kang joon femme",
+      "pull": 1
+    },
+    {
+      "query": "seo kang joon netflix",
+      "pull": 1
+    },
+    {
+      "query": "seo kang joon wife",
+      "pull": 1
+    },
+    {
+      "query": "seo kang joon yeux",
+      "pull": 1
+    },
+    {
+      "query": "seo kang-joon drama",
+      "pull": 1
+    },
+    {
+      "query": "seo kouji",
+      "pull": 1
+    },
+    {
+      "query": "seo là gì",
+      "pull": 1
+    },
+    {
+      "query": "seo linkedin",
+      "pull": 1
+    },
+    {
+      "query": "seo llm",
+      "pull": 1
+    },
+    {
+      "query": "seo local",
+      "pull": 1
+    },
+    {
+      "query": "seo local c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "seo logiciel definition",
+      "pull": 1
+    },
+    {
+      "query": "seo logo",
+      "pull": 1
+    },
+    {
+      "query": "seo london",
+      "pull": 1
+    },
+    {
+      "query": "seo lorient",
+      "pull": 1
+    },
+    {
+      "query": "seo luxembourg",
+      "pull": 1
+    },
+    {
+      "query": "seo manager",
+      "pull": 1
+    },
+    {
+      "query": "seo marketing",
+      "pull": 1
+    },
+    {
+      "query": "seo marketing digital",
+      "pull": 1
+    },
+    {
+      "query": "seo meaning",
+      "pull": 1
+    },
+    {
+      "query": "seo meta in 1 click",
+      "pull": 1
+    },
+    {
+      "query": "seo metier",
+      "pull": 1
+    },
+    {
+      "query": "seo mi ae",
+      "pull": 1
+    },
+    {
+      "query": "seo mi rae",
+      "pull": 1
+    },
+    {
+      "query": "seo minion",
+      "pull": 1
+    },
+    {
+      "query": "seo monkey",
+      "pull": 1
+    },
+    {
+      "query": "seo monkey avis",
+      "pull": 1
+    },
+    {
+      "query": "seo nancy",
+      "pull": 1
+    },
+    {
+      "query": "seo nantes",
+      "pull": 1
+    },
+    {
+      "query": "seo nari",
+      "pull": 1
+    },
+    {
+      "query": "seo nari manhwa",
+      "pull": 1
+    },
+    {
+      "query": "seo naturel",
+      "pull": 1
+    },
+    {
+      "query": "seo neuchâtel",
+      "pull": 1
+    },
+    {
+      "query": "seo news",
+      "pull": 1
+    },
+    {
+      "query": "seo ninja",
+      "pull": 1
+    },
+    {
+      "query": "seo ninja hero",
+      "pull": 1
+    },
+    {
+      "query": "seo off page",
+      "pull": 1
+    },
+    {
+      "query": "seo on page",
+      "pull": 1
+    },
+    {
+      "query": "seo ontario",
+      "pull": 1
+    },
+    {
+      "query": "seo optimisation",
+      "pull": 1
+    },
+    {
+      "query": "seo optimizer",
+      "pull": 1
+    },
+    {
+      "query": "seo ou ceo",
+      "pull": 1
+    },
+    {
+      "query": "seo ou sio",
+      "pull": 1
+    },
+    {
+      "query": "seo outaouais",
+      "pull": 1
+    },
+    {
+      "query": "seo outbound",
+      "pull": 1
+    },
+    {
+      "query": "seo outlines",
+      "pull": 1
+    },
+    {
+      "query": "seo outreach specialist",
+      "pull": 1
+    },
+    {
+      "query": "seo outreach specialist remote",
+      "pull": 1
+    },
+    {
+      "query": "seo pas cher",
+      "pull": 1
+    },
+    {
+      "query": "seo payant",
+      "pull": 1
+    },
+    {
+      "query": "seo pinterest",
+      "pull": 1
+    },
+    {
+      "query": "seo pour ia",
+      "pull": 1
+    },
+    {
+      "query": "seo pour l'ia",
+      "pull": 1
+    },
+    {
+      "query": "seo powersuite",
+      "pull": 1
+    },
+    {
+      "query": "seo prix",
+      "pull": 1
+    },
+    {
+      "query": "seo prix maroc",
+      "pull": 1
+    },
+    {
+      "query": "seo pro extension",
+      "pull": 1
+    },
+    {
+      "query": "seo programmatique",
+      "pull": 1
+    },
+    {
+      "query": "seo publicité",
+      "pull": 1
+    },
+    {
+      "query": "seo publicité 3 lettres",
+      "pull": 1
+    },
+    {
+      "query": "seo q",
+      "pull": 1
+    },
+    {
+      "query": "seo qu'est ce que c'est",
+      "pull": 1
+    },
+    {
+      "query": "seo quantum",
+      "pull": 1
+    },
+    {
+      "query": "seo quartz",
+      "pull": 1
+    },
+    {
+      "query": "seo que es",
+      "pull": 1
+    },
+    {
+      "query": "seo quimper",
+      "pull": 1
+    },
+    {
+      "query": "seo rank",
+      "pull": 1
+    },
+    {
+      "query": "seo ranking",
+      "pull": 1
+    },
+    {
+      "query": "seo ranking checker",
+      "pull": 1
+    },
+    {
+      "query": "seo recrutement",
+      "pull": 1
+    },
+    {
+      "query": "seo referencement",
+      "pull": 1
+    },
+    {
+      "query": "seo référencement naturel",
+      "pull": 1
+    },
+    {
+      "query": "seo rennes",
+      "pull": 1
+    },
+    {
+      "query": "seo restaurant",
+      "pull": 1
+    },
+    {
+      "query": "seo review tools",
+      "pull": 1
+    },
+    {
+      "query": "seo sans migraine",
+      "pull": 1
+    },
+    {
+      "query": "seo sea",
+      "pull": 1
+    },
+    {
+      "query": "seo sea def",
+      "pull": 1
+    },
+    {
+      "query": "seo sea exemple",
+      "pull": 1
+    },
+    {
+      "query": "seo senegal",
+      "pull": 1
+    },
+    {
+      "query": "seo signification",
+      "pull": 1
+    },
+    {
+      "query": "seo site",
+      "pull": 1
+    },
+    {
+      "query": "seo site internet",
+      "pull": 1
+    },
+    {
+      "query": "seo studio comment picker",
+      "pull": 1
+    },
+    {
+      "query": "seo studio tools",
+      "pull": 1
+    },
+    {
+      "query": "seo summit",
+      "pull": 1
+    },
+    {
+      "query": "seo syndicat",
+      "pull": 1
+    },
+    {
+      "query": "seo taiji",
+      "pull": 1
+    },
+    {
+      "query": "seo taiji and boys",
+      "pull": 1
+    },
+    {
+      "query": "seo tarif",
+      "pull": 1
+    },
+    {
+      "query": "seo tarif google",
+      "pull": 1
+    },
+    {
+      "query": "seo tarifa pet e cia",
+      "pull": 1
+    },
+    {
+      "query": "seo technique",
+      "pull": 1
+    },
+    {
+      "query": "seo test",
+      "pull": 1
+    },
+    {
+      "query": "seo test website",
+      "pull": 1
+    },
+    {
+      "query": "seo tester online",
+      "pull": 1
+    },
+    {
+      "query": "seo tiktok",
+      "pull": 1
+    },
+    {
+      "query": "seo tjmg",
+      "pull": 1
+    },
+    {
+      "query": "seo tools",
+      "pull": 1
+    },
+    {
+      "query": "seo tools free",
+      "pull": 1
+    },
+    {
+      "query": "seo traduction",
+      "pull": 1
+    },
+    {
+      "query": "seo udemy",
+      "pull": 1
+    },
+    {
+      "query": "seo ultimate",
+      "pull": 1
+    },
+    {
+      "query": "seo url",
+      "pull": 1
+    },
+    {
+      "query": "seo ux",
+      "pull": 1
+    },
+    {
+      "query": "seo verification",
+      "pull": 1
+    },
+    {
+      "query": "seo veut dire quoi",
+      "pull": 1
+    },
+    {
+      "query": "seo vianden",
+      "pull": 1
+    },
+    {
+      "query": "seo vinted",
+      "pull": 1
+    },
+    {
+      "query": "seo visibility",
+      "pull": 1
+    },
+    {
+      "query": "seo vs aio",
+      "pull": 1
+    },
+    {
+      "query": "seo vs geo meaning",
+      "pull": 1
+    },
+    {
+      "query": "seo vs gso",
+      "pull": 1
+    },
+    {
+      "query": "seo vs ppc",
+      "pull": 1
+    },
+    {
+      "query": "seo vs sea marketing",
+      "pull": 1
+    },
+    {
+      "query": "seo web",
+      "pull": 1
+    },
+    {
+      "query": "seo web solution way",
+      "pull": 1
+    },
+    {
+      "query": "seo website",
+      "pull": 1
+    },
+    {
+      "query": "seo won",
+      "pull": 1
+    },
+    {
+      "query": "seo won jeong",
+      "pull": 1
+    },
+    {
+      "query": "seo woo",
+      "pull": 1
+    },
+    {
+      "query": "seo woo-jin",
+      "pull": 1
+    },
+    {
+      "query": "seo wordpress",
+      "pull": 1
+    },
+    {
+      "query": "seo writing",
+      "pull": 1
+    },
+    {
+      "query": "seo writing ai",
+      "pull": 1
+    },
+    {
+      "query": "seo ye ji",
+      "pull": 1
+    },
+    {
+      "query": "seo ye ji couple",
+      "pull": 1
+    },
+    {
+      "query": "seo yea-ji",
+      "pull": 1
+    },
+    {
+      "query": "seo yea-ji apparaît dans",
+      "pull": 1
+    },
+    {
+      "query": "seo yeon",
+      "pull": 1
+    },
+    {
+      "query": "seo yi-sook",
+      "pull": 1
+    },
+    {
+      "query": "seo yoon-jeong",
+      "pull": 1
+    },
+    {
+      "query": "seo young-hee",
+      "pull": 1
+    },
+    {
+      "query": "seo youtube",
+      "pull": 1
+    },
+    {
+      "query": "seo youtube gratuit",
+      "pull": 1
+    },
+    {
+      "query": "seo yul",
+      "pull": 1
+    },
+    {
+      "query": "seo zaragoza",
+      "pull": 1
+    },
+    {
+      "query": "seo zaragoza entradas",
+      "pull": 1
+    },
+    {
+      "query": "seo zaragoza gratis",
+      "pull": 1
+    },
+    {
+      "query": "seo zaragoza horario",
+      "pull": 1
+    },
+    {
+      "query": "seo ze",
+      "pull": 1
+    },
+    {
+      "query": "seo zen",
+      "pull": 1
+    },
+    {
+      "query": "seo zertifikat",
+      "pull": 1
+    },
+    {
+      "query": "seo zilla",
+      "pull": 1
+    },
+    {
+      "query": "seo zoom",
+      "pull": 1
+    },
+    {
+      "query": "seo zurich",
+      "pull": 1
+    },
+    {
+      "query": "seohyun",
+      "pull": 1
+    },
+    {
+      "query": "seoi nage",
+      "pull": 1
+    },
+    {
+      "query": "seoir",
+      "pull": 1
+    },
+    {
+      "query": "seoir def",
+      "pull": 1
+    },
+    {
+      "query": "seoir definition francais",
+      "pull": 1
+    },
+    {
+      "query": "seoir exemple",
+      "pull": 1
+    },
+    {
+      "query": "seolis",
+      "pull": 1
+    },
+    {
+      "query": "seolis ou edf",
+      "pull": 1
+    },
+    {
+      "query": "seolis tarif bleu",
+      "pull": 1
+    },
+    {
+      "query": "seoni",
+      "pull": 1
+    },
+    {
+      "query": "seopress",
+      "pull": 1
+    },
+    {
+      "query": "seorina",
+      "pull": 1
+    },
+    {
+      "query": "seoul 1988",
+      "pull": 1
+    },
+    {
+      "query": "seoul combien de fois paris",
+      "pull": 1
+    },
+    {
+      "query": "seoul combien de fois plus grand que paris",
+      "pull": 1
+    },
+    {
+      "query": "seoul combien de jours",
+      "pull": 1
+    },
+    {
+      "query": "seoul combien de km",
+      "pull": 1
+    },
+    {
+      "query": "seoul combien de temps",
+      "pull": 1
+    },
+    {
+      "query": "seoul comment se deplacer",
+      "pull": 1
+    },
+    {
+      "query": "seoul meilleur periode",
+      "pull": 1
+    },
+    {
+      "query": "seoul meilleur quartier",
+      "pull": 1
+    },
+    {
+      "query": "seoul meilleur restaurant",
+      "pull": 1
+    },
+    {
+      "query": "seoul ou busan",
+      "pull": 1
+    },
+    {
+      "query": "seoul ou dormir",
+      "pull": 1
+    },
+    {
+      "query": "seoul ou loger",
+      "pull": 1
+    },
+    {
+      "query": "seoul ou se trouve",
+      "pull": 1
+    },
+    {
+      "query": "seoul ou tokyo",
+      "pull": 1
+    },
+    {
+      "query": "seoul vs jeonbuk",
+      "pull": 1
+    },
+    {
+      "query": "seoul vs vissel kobe",
+      "pull": 1
+    },
+    {
+      "query": "service seor",
+      "pull": 1
+    },
+    {
+      "query": "shopping pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "signification seo",
+      "pull": 1
+    },
+    {
+      "query": "stratégie seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "surfer seo avis",
+      "pull": 1
+    },
+    {
+      "query": "tarif consultant seo",
+      "pull": 1
+    },
+    {
+      "query": "tarif consultant seo freelance",
+      "pull": 1
+    },
+    {
+      "query": "tarif freelance seo",
+      "pull": 1
+    },
+    {
+      "query": "tarif seo",
+      "pull": 1
+    },
+    {
+      "query": "tarif seo google",
+      "pull": 1
+    },
+    {
+      "query": "tarif seolis",
+      "pull": 1
+    },
+    {
+      "query": "tarif seolis 2025",
+      "pull": 1
+    },
+    {
+      "query": "tarif seolis 2026",
+      "pull": 1
+    },
+    {
+      "query": "tarif seolis fevrier 2025",
+      "pull": 1
+    },
+    {
+      "query": "tarif seolis tempo",
+      "pull": 1
+    },
+    {
+      "query": "test seo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "texte seo exemple pdf",
+      "pull": 1
+    },
+    {
+      "query": "thot seo prix",
+      "pull": 1
+    },
+    {
+      "query": "titre seo exemple",
+      "pull": 1
+    },
+    {
+      "query": "upwork seo freelance",
+      "pull": 1
+    },
+    {
+      "query": "valise pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "vk cabinet seoni",
+      "pull": 1
+    },
+    {
+      "query": "vol pas cher seoul",
+      "pull": 1
+    },
+    {
+      "query": "vol pas cher seoul paris",
+      "pull": 1
+    },
+    {
+      "query": "vol pas cher seoul tokyo",
+      "pull": 1
+    },
+    {
+      "query": "vs seongnam",
+      "pull": 1
+    },
+    {
+      "query": "vs seongnam fc",
+      "pull": 1
+    },
+    {
+      "query": "vs seoul",
+      "pull": 1
+    },
+    {
+      "query": "vs seoul city",
+      "pull": 1
+    },
+    {
+      "query": "vs seoul city wfc",
+      "pull": 1
+    },
+    {
+      "query": "vs seoul e land",
+      "pull": 1
+    },
+    {
+      "query": "vs seoul e land fc",
+      "pull": 1
+    },
+    {
+      "query": "vs seoul fc",
+      "pull": 1
+    },
+    {
+      "query": "yoast seo avis",
+      "pull": 1
+    },
+    {
+      "query": "yoast seo tarif",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "I tracked every \"passive income\" idea I tried over 2 years. Here's what actually made money and what was a complete waste of time.",
+      "subreddit": "passive_income",
+      "ups": 5727,
+      "comments": 806,
+      "url": "https://reddit.com/r/passive_income/comments/1s92wwq/i_tracked_every_passive_income_idea_i_tried_over/"
+    },
+    {
+      "title": "I spent months researching remote job sites. Here are the 15 best ones",
+      "subreddit": "RemoteJobs",
+      "ups": 3172,
+      "comments": 656,
+      "url": "https://reddit.com/r/RemoteJobs/comments/1lzi6fs/i_spent_months_researching_remote_job_sites_here/"
+    },
+    {
+      "title": "I scraped 25K comments to find which AI tools actually make people money or save time",
+      "subreddit": "Entrepreneur",
+      "ups": 1654,
+      "comments": 300,
+      "url": "https://reddit.com/r/Entrepreneur/comments/1n4a3wx/i_scraped_25k_comments_to_find_which_ai_tools/"
+    },
+    {
+      "title": "Like many of you, I've been obsessed with Marathon's visual identity, so I made my resume with it",
+      "subreddit": "Marathon",
+      "ups": 1378,
+      "comments": 167,
+      "url": "https://reddit.com/r/Marathon/comments/1tghx6f/like_many_of_you_ive_been_obsessed_with_marathons/"
+    },
+    {
+      "title": "Should I renew my SEO freelancer’s contract or look for someone new?",
+      "subreddit": "SEO",
+      "ups": 51,
+      "comments": 78,
+      "url": "https://reddit.com/r/SEO/comments/1o2bjqe/should_i_renew_my_seo_freelancers_contract_or/"
+    },
+    {
+      "title": "Looking for Tips: How to Land Clients as a New SEO Freelancer",
+      "subreddit": "SEO",
+      "ups": 38,
+      "comments": 64,
+      "url": "https://reddit.com/r/SEO/comments/1obovqr/looking_for_tips_how_to_land_clients_as_a_new_seo/"
+    },
+    {
+      "title": "Freelance opportunity for SEO specialist",
+      "subreddit": "freelancing",
+      "ups": 23,
+      "comments": 56,
+      "url": "https://reddit.com/r/freelancing/comments/1oi59be/freelance_opportunity_for_seo_specialist/"
+    },
+    {
+      "title": "Is Freelance SEO Still Worth It in 2025?",
+      "subreddit": "SEO",
+      "ups": 62,
+      "comments": 51,
+      "url": "https://reddit.com/r/SEO/comments/1m678o1/is_freelance_seo_still_worth_it_in_2025/"
+    },
+    {
+      "title": "Looking for SEO freelance for dental office website",
+      "subreddit": "SEO_Marketing_Offers",
+      "ups": 18,
+      "comments": 46,
+      "url": "https://reddit.com/r/SEO_Marketing_Offers/comments/1oga7bh/looking_for_seo_freelance_for_dental_office/"
+    },
+    {
+      "title": "Looking for an SEO freelancer India",
+      "subreddit": "DigitalMarketing",
+      "ups": 28,
+      "comments": 45,
+      "url": "https://reddit.com/r/DigitalMarketing/comments/1p11jid/looking_for_an_seo_freelancer_india/"
+    },
+    {
+      "title": "Want to transition from full-time SEO to freelance – where do you actually find clients?",
+      "subreddit": "localseo",
+      "ups": 11,
+      "comments": 40,
+      "url": "https://reddit.com/r/localseo/comments/1so619t/want_to_transition_from_fulltime_seo_to_freelance/"
+    },
+    {
+      "title": "What would you advise to people who want to switch to SEO freelancing? How to find clients?",
+      "subreddit": "SEO",
+      "ups": 44,
+      "comments": 39,
+      "url": "https://reddit.com/r/SEO/comments/1qd4evr/what_would_you_advise_to_people_who_want_to/"
+    },
+    {
+      "title": "Looking for Freelancers – Web, Apps, Ads, SEO, SMM, Editing &amp; More (Starting Full-Fledged Agency)",
+      "subreddit": "FreelanceIndia",
+      "ups": 12,
+      "comments": 37,
+      "url": "https://reddit.com/r/FreelanceIndia/comments/1r6ix2k/looking_for_freelancers_web_apps_ads_seo_smm/"
+    },
+    {
+      "title": "Hiring freelancers vs. agency for website redesign + SEO - what's been your experience?",
+      "subreddit": "marketing",
+      "ups": 7,
+      "comments": 32,
+      "url": "https://reddit.com/r/marketing/comments/1r75fuc/hiring_freelancers_vs_agency_for_website_redesign/"
+    },
+    {
+      "title": "Freelance marketplace or agency for SEO services?",
+      "subreddit": "DigitalMarketing",
+      "ups": 8,
+      "comments": 29,
+      "url": "https://reddit.com/r/DigitalMarketing/comments/1s52ouc/freelance_marketplace_or_agency_for_seo_services/"
+    },
+    {
+      "title": "Agency or freelancers for SEO?",
+      "subreddit": "smallbusinessowner",
+      "ups": 10,
+      "comments": 28,
+      "url": "https://reddit.com/r/smallbusinessowner/comments/1srlzht/agency_or_freelancers_for_seo/"
+    },
+    {
+      "title": "What’s a realistic budget for hiring a freelance SEO expert in 2026?",
+      "subreddit": "DigitalMarketingHack",
+      "ups": 6,
+      "comments": 28,
+      "url": "https://reddit.com/r/DigitalMarketingHack/comments/1r5epz4/whats_a_realistic_budget_for_hiring_a_freelance/"
+    },
+    {
+      "title": "Freelance writer for financial space - website SEO copy",
+      "subreddit": "content_marketing",
+      "ups": 21,
+      "comments": 20,
+      "url": "https://reddit.com/r/content_marketing/comments/1su3dxg/freelance_writer_for_financial_space_website_seo/"
+    },
+    {
+      "title": "Freelancers: how are you using SEO to get clients without doing cold outreach?",
+      "subreddit": "WebsiteSEO",
+      "ups": 7,
+      "comments": 20,
+      "url": "https://reddit.com/r/WebsiteSEO/comments/1stcasp/freelancers_how_are_you_using_seo_to_get_clients/"
+    },
+    {
+      "title": "Struggling to find real SEO freelancers (especially for link building)?",
+      "subreddit": "BacklinkSEO",
+      "ups": 3,
+      "comments": 20,
+      "url": "https://reddit.com/r/BacklinkSEO/comments/1s9eiae/struggling_to_find_real_seo_freelancers/"
+    },
+    {
+      "title": "Call for help - lost my job last week, going all-in on local SEO freelancing",
+      "subreddit": "localseo",
+      "ups": 23,
+      "comments": 19,
+      "url": "https://reddit.com/r/localseo/comments/1s970bj/call_for_help_lost_my_job_last_week_going_allin/"
+    },
+    {
+      "title": "Looking for SEO Freelancer (Part-Time)",
+      "subreddit": "ForHireFreelance",
+      "ups": 13,
+      "comments": 15,
+      "url": "https://reddit.com/r/ForHireFreelance/comments/1tm7nvh/looking_for_seo_freelancer_parttime/"
+    },
+    {
+      "title": "India based freelance developer needed for SEO tool project",
+      "subreddit": "DeveloperJobs",
+      "ups": 7,
+      "comments": 13,
+      "url": "https://reddit.com/r/DeveloperJobs/comments/1t9eyny/india_based_freelance_developer_needed_for_seo/"
+    },
+    {
+      "title": "How do SEO freelancers get their first clients?",
+      "subreddit": "NoStupidQuestions",
+      "ups": 2,
+      "comments": 12,
+      "url": "https://reddit.com/r/NoStupidQuestions/comments/1t3b0dm/how_do_seo_freelancers_get_their_first_clients/"
+    },
+    {
+      "title": "Any SEO freelancer here? DM with prices",
+      "subreddit": "FreelanceIndia",
+      "ups": 4,
+      "comments": 11,
+      "url": "https://reddit.com/r/FreelanceIndia/comments/1t2lilq/any_seo_freelancer_here_dm_with_prices/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "Ask HN: Standard freelance web development rates",
+      "points": 49,
+      "comments": 31,
+      "url": "https://news.ycombinator.com/item?id=9150989"
+    },
+    {
+      "title": "Ask HN: Is it worth paying $6k/month for an SEO agency?",
+      "points": 12,
+      "comments": 36,
+      "url": "https://news.ycombinator.com/item?id=39638177"
+    },
+    {
+      "title": "Ask HN: How do you get Freelance Gigs?",
+      "points": 4,
+      "comments": 8,
+      "url": "https://news.ycombinator.com/item?id=4150421"
+    },
+    {
+      "title": "Ask HN: What is the best advice I can give my wife on finding freelance work?",
+      "points": 4,
+      "comments": 5,
+      "url": "https://news.ycombinator.com/item?id=3756404"
+    },
+    {
+      "title": "Where to find a copywriter, 37signals' style?",
+      "points": 3,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=1769077"
+    },
+    {
+      "title": "Freelance SEO Help Available – Open to Opportunities",
+      "points": 2,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=44287073"
+    },
+    {
+      "title": "What marketing tools/methods do you use for your startup?",
+      "points": 2,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=1839668"
+    },
+    {
+      "title": "How to Quit Your Job and Go Freelance",
+      "points": 2,
+      "comments": 0,
+      "url": "http://www.seolondonsurrey.co.uk/blog/how-to-go-freelance-as-a-seo-ppc-consultant"
+    },
+    {
+      "title": "Ask HN: Is there any point hiring a freelance SEO link-builder? Is it too risky?",
+      "points": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=11815148"
+    },
+    {
+      "title": "Misadventures in Omaha SEO Related Networking",
+      "points": 1,
+      "comments": 0,
+      "url": "http://bigomahaseo.com/2013/02/misadventures-in-omaha-seo-related-networking/1584"
+    },
+    {
+      "title": "3 Common Reasons Why You Are Afraid to Start Freelancing",
+      "points": 1,
+      "comments": 0,
+      "url": "https://blog.ahrefs.com/freelance-seo-career/"
+    },
+    {
+      "title": "Ask HN: SEO freelancers? Any good one to suggest?",
+      "points": 1,
+      "comments": 9,
+      "url": "https://news.ycombinator.com/item?id=3632351"
+    },
+    {
+      "title": "Ask HN: Best SEO Book/Resource?",
+      "points": 1,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=9315224"
+    },
+    {
+      "title": "Ask HN: What is the best way to find web development freelance clients?",
+      "points": 1,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=7925933"
+    },
+    {
+      "title": "Ask HN: What should I freelance in? ",
+      "points": 1,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=7170943"
+    },
+    {
+      "title": "Ask HN: As a freelance web developer how much should i charge?",
+      "points": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=9146254"
+    },
+    {
+      "title": "Ask HN: Looking for Freelance Bloggers in Japan (English to Japanese)",
+      "points": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=6274414"
+    },
+    {
+      "title": "Making money online with freelance jobs",
+      "points": 1,
+      "comments": 0,
+      "url": "http://www.jamjee.com/2012/05/making-money-online-with-freelance-jobs.html"
+    },
+    {
+      "title": "Anyone Need a Technology Content Writer / SEO Content Strategist (SaaS and B2B)",
+      "points": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=22145125"
+    },
+    {
+      "title": "Anyone Need a Technology Copywriter / SEO Content Strategist (SaaS and B2B)",
+      "points": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=22025982"
+    }
+  ]
+}

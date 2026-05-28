@@ -1,0 +1,1858 @@
+{
+  "keyword": "vendeur amazon",
+  "fetched_at": "2026-05-28T14:45:32.288Z",
+  "sources": {
+    "google_suggest": 387,
+    "reddit": 25,
+    "hacker_news": 20
+  },
+  "real_queries": [
+    {
+      "query": "tarif vendeur amazon",
+      "pull": 3
+    },
+    {
+      "query": "vendeur amazon avis",
+      "pull": 3
+    },
+    {
+      "query": "vendeur amazon fba avis",
+      "pull": 3
+    },
+    {
+      "query": "vendeur amazon fba c est quoi",
+      "pull": 3
+    },
+    {
+      "query": "amazon seller gratuit",
+      "pull": 2
+    },
+    {
+      "query": "amazon vendeur prix",
+      "pull": 2
+    },
+    {
+      "query": "developer amazon seller",
+      "pull": 2
+    },
+    {
+      "query": "developer amazon seller central",
+      "pull": 2
+    },
+    {
+      "query": "expert amazon seller",
+      "pull": 2
+    },
+    {
+      "query": "formation vendeur amazon cpf",
+      "pull": 2
+    },
+    {
+      "query": "formation vendeur amazon fba",
+      "pull": 2
+    },
+    {
+      "query": "logiciel vendeur amazon",
+      "pull": 2
+    },
+    {
+      "query": "meilleur vendeur amazon",
+      "pull": 2
+    },
+    {
+      "query": "meilleur vendeur amazon france",
+      "pull": 2
+    },
+    {
+      "query": "prix vendeur amazon",
+      "pull": 2
+    },
+    {
+      "query": "seller amazon canada",
+      "pull": 2
+    },
+    {
+      "query": "seller amazon fr",
+      "pull": 2
+    },
+    {
+      "query": "seller amazon france",
+      "pull": 2
+    },
+    {
+      "query": "seller consultant amazon",
+      "pull": 2
+    },
+    {
+      "query": "seller consultant amazon salary",
+      "pull": 2
+    },
+    {
+      "query": "vendeur amazon fba",
+      "pull": 2
+    },
+    {
+      "query": "vendeur amazon formation",
+      "pull": 2
+    },
+    {
+      "query": "vendeur amazon forum",
+      "pull": 2
+    },
+    {
+      "query": "vendeur amazon france",
+      "pull": 2
+    },
+    {
+      "query": "vendeur amazon particulier",
+      "pull": 2
+    },
+    {
+      "query": "vendeur amazon reunion",
+      "pull": 2
+    },
+    {
+      "query": "vendor consultant amazon",
+      "pull": 2
+    },
+    {
+      "query": "vendor consultant amazon interview questions",
+      "pull": 2
+    },
+    {
+      "query": "vendor consultant amazon job",
+      "pull": 2
+    },
+    {
+      "query": "vendor consultant amazon job description",
+      "pull": 2
+    },
+    {
+      "query": "vendor consultant amazon salary",
+      "pull": 2
+    },
+    {
+      "query": "vendor consultant amazon salary india",
+      "pull": 2
+    },
+    {
+      "query": "agence amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "amazon ireland seller",
+      "pull": 1
+    },
+    {
+      "query": "amazon ksa seller",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller agency india",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller agency near me",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller application",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller avis",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller business loan",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller central canada",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller central france",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller certification",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller certification course",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller comment ca marche",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller contact téléphone",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller emirates",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller error",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller et vendor",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller europe login",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller expert",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller formation",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller france contact",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller france login",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free account",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free course",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free plan",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free shipping",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free tools",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller free trial",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller freelancer",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller global",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller global login",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller gtin exemption",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller guide",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller guide pdf",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller help number",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller help phone number",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller hub login",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller japan login",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller job work from home",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller join",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller jungle",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller jungle scout",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller konto",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller konto erstellen",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller konto löschen",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller kosten",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller kyc",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller log",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller login europe",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller mail",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller market",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller maroc",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller mon compte",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller naics code",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller name",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller near me",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller new account",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller not responding",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller numero",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller official site",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller online",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller only",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller origin",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller prix",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller qatar",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller question",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller quickbooks integration",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller registration india",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller revenue calculator",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller reviews",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller support phone number 24 7 canada",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller system",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller tarif",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller tarif wechseln",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller tarifas",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller tariff reddit",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller tariffe",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller telephone",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller training",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller university france",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vacation",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller verification process",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller video guidelines",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs affiliate",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs business account",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs dropshipping",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs ebay",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs etsy",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs fba",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs kdp",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller vs shopify",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller wallet",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller wants me to cancel order",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller wants me to pay return shipping",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller warehouse",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller web",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller werden",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller without gst",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller won t refund",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller xero",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller year end report",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller you",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller your account does not qualify",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller your account has been deactivated",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller your account is at risk of deactivation",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller your account is inactive",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller your card could not be verified please try again",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller your request has been rejected",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller za",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller zahlungsweise",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller zaloguj",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller zauba",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller zentrale",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller zero commission",
+      "pull": 1
+    },
+    {
+      "query": "amazon seller zone",
+      "pull": 1
+    },
+    {
+      "query": "amazon selleramp",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendeur compte",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendeur ne répond pas",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendeur numero",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendeur particulier gratuit",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendeur tiers retour",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor agency",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor certification",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor edi",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor europe",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor france",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor jobs",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor registration",
+      "pull": 1
+    },
+    {
+      "query": "amazon vendor vs fba",
+      "pull": 1
+    },
+    {
+      "query": "amazon vente voiture",
+      "pull": 1
+    },
+    {
+      "query": "avis amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "avis amazon seller central",
+      "pull": 1
+    },
+    {
+      "query": "avis site amazon",
+      "pull": 1
+    },
+    {
+      "query": "avis vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "avis vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "best seller amazon t shirt",
+      "pull": 1
+    },
+    {
+      "query": "certification amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "certified amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "combien de vendeur amazon en france",
+      "pull": 1
+    },
+    {
+      "query": "combien gagne un vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "combien peut toucher un vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment choisir vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment contacter vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir vendeur amazon fba",
+      "pull": 1
+    },
+    {
+      "query": "comment devenir vendeur amazon prime",
+      "pull": 1
+    },
+    {
+      "query": "comment ecrire vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment filtrer vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment parler au vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment signaler un vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "comment trouver vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "commentaire vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "compte vendeur amazon gratuit",
+      "pull": 1
+    },
+    {
+      "query": "compte vendeur amazon prix",
+      "pull": 1
+    },
+    {
+      "query": "devenir vendeur amazon avis",
+      "pull": 1
+    },
+    {
+      "query": "evaluation vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "formation amazon seller central",
+      "pull": 1
+    },
+    {
+      "query": "formation amazon vendor",
+      "pull": 1
+    },
+    {
+      "query": "formation seller amazon",
+      "pull": 1
+    },
+    {
+      "query": "formation vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "formation vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "forum vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "frais amazon vendeur particulier",
+      "pull": 1
+    },
+    {
+      "query": "frais amazon vendeur pro",
+      "pull": 1
+    },
+    {
+      "query": "frais compte vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "frais vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller calculator",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller central account",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller course",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller scanner app",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller software",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller tools",
+      "pull": 1
+    },
+    {
+      "query": "free amazon seller training",
+      "pull": 1
+    },
+    {
+      "query": "free seller amazon account",
+      "pull": 1
+    },
+    {
+      "query": "freelance amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "freelance amazon seller central",
+      "pull": 1
+    },
+    {
+      "query": "hotline amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "is amazon seller app free",
+      "pull": 1
+    },
+    {
+      "query": "logiciel vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "master amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "meilleur vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "meilleur vente amazon 2024",
+      "pull": 1
+    },
+    {
+      "query": "meilleur vente amazon livre",
+      "pull": 1
+    },
+    {
+      "query": "meilleur vente amazon noel",
+      "pull": 1
+    },
+    {
+      "query": "meilleur vente amazon usa",
+      "pull": 1
+    },
+    {
+      "query": "modifier avis vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "nombre de vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "outil vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "prix abonnement amazon vendeur",
+      "pull": 1
+    },
+    {
+      "query": "prix amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "prix compte vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "prix envoi vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "prix vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon account",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon account login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon ae",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon app",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon au",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon australia",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon bazaar",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon belgium",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon br",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon brasil",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon brasil login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon business",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon ca",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon center",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon central",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon central fr",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon connexion",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon dashboard",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon de",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon deutschland",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon down",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon dubai",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon eg",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon egypt",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon europe",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon germany",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon handmade",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon help",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon helpline",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon helpline number",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon home",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon hub",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon in",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon in login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon india",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon india login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon individual",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon individual account",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon italia",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon italy",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon japan",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon job",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon kdp",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon kindle",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon login india",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon login uae",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon login uk",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon login us",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon login usa",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon meaning",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon mexico",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon mx",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon n",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon number",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon o que é",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon pl",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon que es",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon reddit",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon registration",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon returns",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon sa",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon saudi arabia",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon sign in",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon sign up",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon south africa",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon spain",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon support",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon tools",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon tr",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon turkey",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon tuyển dụng",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon uae",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon uae login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon uk",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon uk login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon university",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon usa",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon usa login",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon vacation mode",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon vietnam",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon vine",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon vn",
+      "pull": 1
+    },
+    {
+      "query": "seller amazon website",
+      "pull": 1
+    },
+    {
+      "query": "seller central amazon za",
+      "pull": 1
+    },
+    {
+      "query": "seller on amazon",
+      "pull": 1
+    },
+    {
+      "query": "seller on amazon bazaar",
+      "pull": 1
+    },
+    {
+      "query": "seller on amazon canada",
+      "pull": 1
+    },
+    {
+      "query": "seller on amazon india",
+      "pull": 1
+    },
+    {
+      "query": "seller platform amazon",
+      "pull": 1
+    },
+    {
+      "query": "seller university amazon youtube",
+      "pull": 1
+    },
+    {
+      "query": "sellerx amazon",
+      "pull": 1
+    },
+    {
+      "query": "service seller amazon",
+      "pull": 1
+    },
+    {
+      "query": "supprimer avis vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "supprimer evaluation vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "tarif amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "tarif vente amazon",
+      "pull": 1
+    },
+    {
+      "query": "top seller amazon 2024",
+      "pull": 1
+    },
+    {
+      "query": "top seller amazon 2025",
+      "pull": 1
+    },
+    {
+      "query": "top vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon business",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon comment ca marche",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon fr",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon frais",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon guyane",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon marketplace",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon martinique",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon pro",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon quebec",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon quel statut",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon qui ne repond pas",
+      "pull": 1
+    },
+    {
+      "query": "vendeur amazon uk",
+      "pull": 1
+    },
+    {
+      "query": "vendeur pour amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendeur pro amazon avis",
+      "pull": 1
+    },
+    {
+      "query": "vendeur pro amazon formation",
+      "pull": 1
+    },
+    {
+      "query": "vendeur sur amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendeur tiers amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendeur tiers amazon garantie",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon api",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon de",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon in",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon login",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon mexico",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon que es",
+      "pull": 1
+    },
+    {
+      "query": "vendor amazon uk",
+      "pull": 1
+    },
+    {
+      "query": "vendor central amazon de",
+      "pull": 1
+    },
+    {
+      "query": "vendor consultant amazon review",
+      "pull": 1
+    },
+    {
+      "query": "vendor on amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendor receive amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendor returns amazon",
+      "pull": 1
+    },
+    {
+      "query": "vendor services amazon",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon bezos",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon black friday",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon date",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon drummondville",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon en baisse",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon gatineau",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon jeff bezos",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon juillet",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon kdp",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon kindle",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon livre",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon montréal",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon palette",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon prime",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon prime 2025",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon prime 2026",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon prime day",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon printemps",
+      "pull": 1
+    },
+    {
+      "query": "vente amazon quebec",
+      "pull": 1
+    },
+    {
+      "query": "vente d'amazon",
+      "pull": 1
+    },
+    {
+      "query": "verification amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "video amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "wholesale amazon seller",
+      "pull": 1
+    },
+    {
+      "query": "youtube amazon seller",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "AliExpress c'est vraiment génial",
+      "subreddit": "opinionnonpopulaire",
+      "ups": 214,
+      "comments": 228,
+      "url": "https://reddit.com/r/opinionnonpopulaire/comments/1rr04oa/aliexpress_cest_vraiment_génial/"
+    },
+    {
+      "title": "LBC: Trop pauvre pour mon prix, mais assez riche pour le magasin",
+      "subreddit": "besoinderaler",
+      "ups": 218,
+      "comments": 193,
+      "url": "https://reddit.com/r/besoinderaler/comments/1rg0huk/lbc_trop_pauvre_pour_mon_prix_mais_assez_riche/"
+    },
+    {
+      "title": "Être un rat de luxe - petit guide sur l'optimisation des dépenses",
+      "subreddit": "vosfinances",
+      "ups": 258,
+      "comments": 161,
+      "url": "https://reddit.com/r/vosfinances/comments/1q18obq/être_un_rat_de_luxe_petit_guide_sur_loptimisation/"
+    },
+    {
+      "title": "je déteste mon oncle",
+      "subreddit": "besoinderaler",
+      "ups": 38,
+      "comments": 97,
+      "url": "https://reddit.com/r/besoinderaler/comments/1r5my56/je_déteste_mon_oncle/"
+    },
+    {
+      "title": "Les vendeurs tiers Amazon lorsqu'ils se rendent compte qu'ils peuvent vendre leur RAM deux fois plus cher le jour d'après",
+      "subreddit": "pcmasterraceFR",
+      "ups": 456,
+      "comments": 65,
+      "url": "https://reddit.com/r/pcmasterraceFR/comments/1p7zqer/les_vendeurs_tiers_amazon_lorsquils_se_rendent/"
+    },
+    {
+      "title": "Est-ce légal d'interdir les retours de produits tech ?",
+      "subreddit": "AskFrance",
+      "ups": 15,
+      "comments": 50,
+      "url": "https://reddit.com/r/AskFrance/comments/1sg0zhn/estce_légal_dinterdir_les_retours_de_produits_tech/"
+    },
+    {
+      "title": "Où me procurer ces livres?",
+      "subreddit": "MinecraftFR",
+      "ups": 94,
+      "comments": 47,
+      "url": "https://reddit.com/r/MinecraftFR/comments/1rjkmj7/où_me_procurer_ces_livres/"
+    },
+    {
+      "title": "Will this be enough for beamng ? (Context in desc)",
+      "subreddit": "BeamNG",
+      "ups": 53,
+      "comments": 45,
+      "url": "https://reddit.com/r/BeamNG/comments/1rzoh47/will_this_be_enough_for_beamng_context_in_desc/"
+    },
+    {
+      "title": "Amazon refuse de me rembourser après avoir perdu mon colis :  Mastercard me rembourse en une heure",
+      "subreddit": "pcmasterraceFR",
+      "ups": 444,
+      "comments": 43,
+      "url": "https://reddit.com/r/pcmasterraceFR/comments/1skjl9y/amazon_refuse_de_me_rembourser_après_avoir_perdu/"
+    },
+    {
+      "title": "Problème Amazon Vendeur \"We are processing your information, which is taking longer than usual. Please check back on this page in two hours to verify your registration status.\"",
+      "subreddit": "FulfillmentByAmazon",
+      "ups": 3,
+      "comments": 16,
+      "url": "https://reddit.com/r/FulfillmentByAmazon/comments/1rjrm85/problème_amazon_vendeur_we_are_processing_your/"
+    },
+    {
+      "title": "Amazon instaure une surtaxe carburant pour certains vendeurs canadiens",
+      "subreddit": "Quebec",
+      "ups": 13,
+      "comments": 10,
+      "url": "https://reddit.com/r/Quebec/comments/1so1zwa/amazon_instaure_une_surtaxe_carburant_pour/"
+    },
+    {
+      "title": "Vous pensé quoi de ce vendeur Amazon ?",
+      "subreddit": "france",
+      "ups": 0,
+      "comments": 6,
+      "url": "https://reddit.com/r/france/comments/1l4ld7i/vous_pensé_quoi_de_ce_vendeur_amazon/"
+    },
+    {
+      "title": "Compte vendeur Amazon refusé pour “comptes multiples” – Bloqué sans solution",
+      "subreddit": "AmazonFC",
+      "ups": 0,
+      "comments": 4,
+      "url": "https://reddit.com/r/AmazonFC/comments/1sf703q/compte_vendeur_amazon_refusé_pour_comptes/"
+    },
+    {
+      "title": "Voilà comment j'ai récupéré mon compte vendeur amazon bloque",
+      "subreddit": "FulfillmentByAmazon",
+      "ups": 1,
+      "comments": 1,
+      "url": "https://reddit.com/r/FulfillmentByAmazon/comments/1qomkb2/voilà_comment_jai_récupéré_mon_compte_vendeur/"
+    },
+    {
+      "title": "Après avoir analysé plusieurs suspensions de comptes vendeurs Amazon, voici les 3 erreurs qui reviennent presque toujours",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 1,
+      "comments": 1,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1py2bs1/après_avoir_analysé_plusieurs_suspensions_de/"
+    },
+    {
+      "title": "Colis vide / vendeur tiers Amazon",
+      "subreddit": "amazonemployees",
+      "ups": 0,
+      "comments": 0,
+      "url": "https://reddit.com/r/amazonemployees/comments/1rnhmaz/colis_vide_vendeur_tiers_amazon/"
+    },
+    {
+      "title": "Voilà comment j'ai récupéré mon compte vendeur amazon bloque",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1qmeskl/voilà_comment_jai_récupéré_mon_compte_vendeur/"
+    },
+    {
+      "title": "⚠️ Compte vendeur Amazon suspendu : vous pouvez PERDRE définitivement vos fonds et votre inventaire",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1pzfd5y/compte_vendeur_amazon_suspendu_vous_pouvez_perdre/"
+    },
+    {
+      "title": "Réactiver un compte vendeur Amazon suspendu : approche professionnelle et conseils pratiques",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 2,
+      "comments": 0,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1pxchjj/réactiver_un_compte_vendeur_amazon_suspendu/"
+    },
+    {
+      "title": "Après avoir analysé plusieurs suspensions de comptes vendeurs Amazon, voici les 3 erreurs qui reviennent presque toujours",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1py25ue/après_avoir_analysé_plusieurs_suspensions_de/"
+    },
+    {
+      "title": "🚨 Près d’1 vendeur Amazon sur 2 serait suspendu au moins une fois : mythe ou réalité ?",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1pxpfra/près_d1_vendeur_amazon_sur_2_serait_suspendu_au/"
+    },
+    {
+      "title": "🚨 Compte vendeur Amazon suspendu ? Ne restez pas bloqué",
+      "subreddit": "AmazonSuspensionFR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/AmazonSuspensionFR/comments/1px6sz3/compte_vendeur_amazon_suspendu_ne_restez_pas/"
+    },
+    {
+      "title": "Amazon n’est plus un site de vente pour les clients, mais une plate-forme de services pour ses vendeurs",
+      "subreddit": "techFR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/techFR/comments/1nj08mz/amazon_nest_plus_un_site_de_vente_pour_les/"
+    },
+    {
+      "title": "Amazon n’est plus un site de vente pour les clients, mais une plate-forme de services pour ses vendeurs",
+      "subreddit": "Tech_FR",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/Tech_FR/comments/1nj090s/amazon_nest_plus_un_site_de_vente_pour_les/"
+    },
+    {
+      "title": "Amazon n’est plus un site de vente pour les clients, mais une plate-forme de services pour ses vendeurs",
+      "subreddit": "ebiz",
+      "ups": 1,
+      "comments": 0,
+      "url": "https://reddit.com/r/ebiz/comments/1nj08ct/amazon_nest_plus_un_site_de_vente_pour_les/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "Amazon walks back vendor purge",
+      "points": 69,
+      "comments": 23,
+      "url": "https://digiday.com/retail/amazon-vendor-purge-sellers-reduce-dependence-platform/"
+    },
+    {
+      "title": "Amazon Kindle SDK Beta Applications now open  ",
+      "points": 33,
+      "comments": 18,
+      "url": "https://kindlepublishing.amazon.com/gp/vendor/kindlepubs/kdk/request-seat"
+    },
+    {
+      "title": "Ask HN: An Amazon vendor wrote me a letter asking for reviews",
+      "points": 9,
+      "comments": 14,
+      "url": "https://news.ycombinator.com/item?id=26441371"
+    },
+    {
+      "title": "Kindle Dev Kit open to beta testers",
+      "points": 7,
+      "comments": 7,
+      "url": "https://kindlepublishing.amazon.com/gp/vendor/sign-in"
+    },
+    {
+      "title": "Kindle Development Kit for Active Content - Sign up for beta devkit",
+      "points": 5,
+      "comments": 1,
+      "url": "https://kindlepublishing.amazon.com/gp/vendor/sign-in/176-8336576-5878429?ie=UTF8&originatingURI=%2Fgp%2Fvendor%2Fmembers%2Fkindlepubs%2Fkdk"
+    },
+    {
+      "title": "Amazon confirms employee data breach after vendor hack",
+      "points": 5,
+      "comments": 0,
+      "url": "https://www.bleepingcomputer.com/news/security/amazon-confirms-employee-data-breach-after-vendor-hack/"
+    },
+    {
+      "title": "Fighting Fakes Was a Big Reason Behind Amazon's Big Vendor Purge",
+      "points": 4,
+      "comments": 2,
+      "url": "https://www.bloomberg.com/news/articles/2019-03-09/fighting-fakes-was-a-big-reason-behind-amazon-s-big-vendor-purge"
+    },
+    {
+      "title": "Google Vision vs. Amazon Rekognition: A Vendor-Neutral Comparison",
+      "points": 4,
+      "comments": 0,
+      "url": "http://cloudacademy.com/blog/google-vision-vs-amazon-rekognition/"
+    },
+    {
+      "title": "Amazon Cognito and Vendor Lock-In",
+      "points": 3,
+      "comments": 0,
+      "url": "https://content.nanobox.io/vendor-lock-in-issues-with-amazon-cognito/"
+    },
+    {
+      "title": "Did anyone else get a defective Gemalto key fob for Amazon AWS?",
+      "points": 3,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=2033362"
+    },
+    {
+      "title": "Ask HN: Kubernetes Firewall?",
+      "points": 2,
+      "comments": 3,
+      "url": "https://news.ycombinator.com/item?id=28130017"
+    },
+    {
+      "title": "Ask HN: Help regarding Email Parsing and Analysis",
+      "points": 2,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=1906136"
+    },
+    {
+      "title": "Amazon.it starts selling Toyota Aygo online (Italian)",
+      "points": 2,
+      "comments": 1,
+      "url": "http://www.dday.it/redazione/18155/amazonit-vende-online-la-toyota-aygo-super-sconto-e-diritto-di-recesso"
+    },
+    {
+      "title": "Award-winning text-to-speech startup/vendor acquired by Amazon",
+      "points": 2,
+      "comments": 0,
+      "url": "http://phx.corporate-ir.net/phoenix.zhtml?p=irol-mediaHome&c=176060"
+    },
+    {
+      "title": "Fighting Fakes Was a Big Reason Behind Amazon's Big Vendor Purge",
+      "points": 2,
+      "comments": 0,
+      "url": "https://www.bloomberg.com/news/articles/2019-03-09/fighting-fakes-was-a-big-reason-behind-amazon-s-big-vendor-purge"
+    },
+    {
+      "title": "Kindle Development Kit now in limited beta",
+      "points": 2,
+      "comments": 0,
+      "url": "https://kindlepublishing.amazon.com/gp/vendor/members/kindlepubs/kdk"
+    },
+    {
+      "title": "Ask HN: How to auto-Parse Email for specific data",
+      "points": 1,
+      "comments": 3,
+      "url": "https://news.ycombinator.com/item?id=1908538"
+    },
+    {
+      "title": "Ask HN: Automated Replies Through Amazon",
+      "points": 1,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=32247970"
+    },
+    {
+      "title": "Amazon walks back vendor purge as sellers look to reduce platform dependence",
+      "points": 1,
+      "comments": 0,
+      "url": "https://digiday.com/retail/amazon-vendor-purge-sellers-reduce-dependence-platform/"
+    },
+    {
+      "title": "Kindle Development Kit, Now Accepting Beta Requests",
+      "points": 1,
+      "comments": 0,
+      "url": "https://kindlepublishing.amazon.com/gp/vendor/sign-in/181-2697234-7897767?ie=UTF8&originatingURI=%2Fgp%2Fvendor%2Fmembers%2Fkindlepubs%2Fkdk"
+    }
+  ]
+}

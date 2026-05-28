@@ -1,0 +1,3820 @@
+{
+  "keyword": "outil ia",
+  "fetched_at": "2026-05-28T14:44:31.468Z",
+  "sources": {
+    "google_suggest": 906,
+    "reddit": 25,
+    "hacker_news": 1
+  },
+  "real_queries": [
+    {
+      "query": "ia claude",
+      "pull": 3
+    },
+    {
+      "query": "ia gratuite",
+      "pull": 3
+    },
+    {
+      "query": "ia ou ai",
+      "pull": 3
+    },
+    {
+      "query": "logiciel devis ia",
+      "pull": 3
+    },
+    {
+      "query": "outil ia gratuit",
+      "pull": 3
+    },
+    {
+      "query": "avis ia claude",
+      "pull": 2
+    },
+    {
+      "query": "avis ia grok",
+      "pull": 2
+    },
+    {
+      "query": "consultant ia freelance",
+      "pull": 2
+    },
+    {
+      "query": "developpeur ia",
+      "pull": 2
+    },
+    {
+      "query": "développeur ia alternance",
+      "pull": 2
+    },
+    {
+      "query": "développeur ia junior",
+      "pull": 2
+    },
+    {
+      "query": "développeur ia salaire",
+      "pull": 2
+    },
+    {
+      "query": "exemple ia agentique",
+      "pull": 2
+    },
+    {
+      "query": "exemple ia faible",
+      "pull": 2
+    },
+    {
+      "query": "exemple ia forte",
+      "pull": 2
+    },
+    {
+      "query": "exemple ia générative",
+      "pull": 2
+    },
+    {
+      "query": "exemple ia prédictive",
+      "pull": 2
+    },
+    {
+      "query": "ia definition",
+      "pull": 2
+    },
+    {
+      "query": "ia devis batiment",
+      "pull": 2
+    },
+    {
+      "query": "ia francaise",
+      "pull": 2
+    },
+    {
+      "query": "ia google",
+      "pull": 2
+    },
+    {
+      "query": "ia gratuite en ligne",
+      "pull": 2
+    },
+    {
+      "query": "ia gratuite image",
+      "pull": 2
+    },
+    {
+      "query": "ia ou pas",
+      "pull": 2
+    },
+    {
+      "query": "ia ouroboros",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia gratuit",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia image",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia pour coder",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia pour cv",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia pour excel",
+      "pull": 2
+    },
+    {
+      "query": "meilleur outil ia pour generer des images",
+      "pull": 2
+    },
+    {
+      "query": "outil formation à distance",
+      "pull": 2
+    },
+    {
+      "query": "outil ia claude",
+      "pull": 2
+    },
+    {
+      "query": "outil ia definition",
+      "pull": 2
+    },
+    {
+      "query": "outil ia formation",
+      "pull": 2
+    },
+    {
+      "query": "outil ia francais",
+      "pull": 2
+    },
+    {
+      "query": "outil ia google",
+      "pull": 2
+    },
+    {
+      "query": "outil ia gratuit de paraphrase",
+      "pull": 2
+    },
+    {
+      "query": "outil ia gratuit pour générer des images",
+      "pull": 2
+    },
+    {
+      "query": "outil ia gratuit pour générer des vidéos",
+      "pull": 2
+    },
+    {
+      "query": "outil ia gratuit pour présentation powerpoint",
+      "pull": 2
+    },
+    {
+      "query": "outil ia pour cv",
+      "pull": 2
+    },
+    {
+      "query": "outil ia pour faire des powerpoint",
+      "pull": 2
+    },
+    {
+      "query": "outil ia pour présentation powerpoint gratuit",
+      "pull": 2
+    },
+    {
+      "query": "outil ia powerpoint",
+      "pull": 2
+    },
+    {
+      "query": "outil ia site web",
+      "pull": 2
+    },
+    {
+      "query": "tjm ia",
+      "pull": 2
+    },
+    {
+      "query": "a combien de mois le bébé commence à bouger dans le ventre",
+      "pull": 1
+    },
+    {
+      "query": "a combien de semaine on accouche",
+      "pull": 1
+    },
+    {
+      "query": "a combien de semaine peut-on déclencher un accouchement",
+      "pull": 1
+    },
+    {
+      "query": "a combien doit battre le coeur",
+      "pull": 1
+    },
+    {
+      "query": "a combien est le gramme d or",
+      "pull": 1
+    },
+    {
+      "query": "a combien est le smic",
+      "pull": 1
+    },
+    {
+      "query": "a combien est le smic 2026",
+      "pull": 1
+    },
+    {
+      "query": "à combien est le smic net",
+      "pull": 1
+    },
+    {
+      "query": "a combien est le smic net 2026",
+      "pull": 1
+    },
+    {
+      "query": "a combien laver les draps",
+      "pull": 1
+    },
+    {
+      "query": "a pas cher",
+      "pull": 1
+    },
+    {
+      "query": "agence ia",
+      "pull": 1
+    },
+    {
+      "query": "agence ia paris",
+      "pull": 1
+    },
+    {
+      "query": "agence iad",
+      "pull": 1
+    },
+    {
+      "query": "agence iad 77",
+      "pull": 1
+    },
+    {
+      "query": "agence iad france",
+      "pull": 1
+    },
+    {
+      "query": "agence iad immobilier",
+      "pull": 1
+    },
+    {
+      "query": "agence iam",
+      "pull": 1
+    },
+    {
+      "query": "agence iam a proximité",
+      "pull": 1
+    },
+    {
+      "query": "agence iam casablanca",
+      "pull": 1
+    },
+    {
+      "query": "agence ianniello",
+      "pull": 1
+    },
+    {
+      "query": "ai chat",
+      "pull": 1
+    },
+    {
+      "query": "ai detector",
+      "pull": 1
+    },
+    {
+      "query": "ai detector free",
+      "pull": 1
+    },
+    {
+      "query": "ai film",
+      "pull": 1
+    },
+    {
+      "query": "ai image generator",
+      "pull": 1
+    },
+    {
+      "query": "ai logo",
+      "pull": 1
+    },
+    {
+      "query": "ai logo generator",
+      "pull": 1
+    },
+    {
+      "query": "ai music",
+      "pull": 1
+    },
+    {
+      "query": "ai notebook",
+      "pull": 1
+    },
+    {
+      "query": "ai studio",
+      "pull": 1
+    },
+    {
+      "query": "ai upscale",
+      "pull": 1
+    },
+    {
+      "query": "ai upscale image",
+      "pull": 1
+    },
+    {
+      "query": "ai video",
+      "pull": 1
+    },
+    {
+      "query": "ai video generator",
+      "pull": 1
+    },
+    {
+      "query": "ai video generator free",
+      "pull": 1
+    },
+    {
+      "query": "ai voice",
+      "pull": 1
+    },
+    {
+      "query": "ai voice generator",
+      "pull": 1
+    },
+    {
+      "query": "analyse devis ia",
+      "pull": 1
+    },
+    {
+      "query": "attestation ias",
+      "pull": 1
+    },
+    {
+      "query": "avis ia",
+      "pull": 1
+    },
+    {
+      "query": "avis ia copilot",
+      "pull": 1
+    },
+    {
+      "query": "avis ia gemini",
+      "pull": 1
+    },
+    {
+      "query": "avis ia mistral",
+      "pull": 1
+    },
+    {
+      "query": "avis ia perplexity",
+      "pull": 1
+    },
+    {
+      "query": "avis iad",
+      "pull": 1
+    },
+    {
+      "query": "avis iad france",
+      "pull": 1
+    },
+    {
+      "query": "avis iad immobilier",
+      "pull": 1
+    },
+    {
+      "query": "avis outil a bois com",
+      "pull": 1
+    },
+    {
+      "query": "cabinet ia",
+      "pull": 1
+    },
+    {
+      "query": "cabinet iac",
+      "pull": 1
+    },
+    {
+      "query": "cabinet iai",
+      "pull": 1
+    },
+    {
+      "query": "cabinet ian knafou",
+      "pull": 1
+    },
+    {
+      "query": "cabinet iapr",
+      "pull": 1
+    },
+    {
+      "query": "cabinet iara",
+      "pull": 1
+    },
+    {
+      "query": "cabinet iatros",
+      "pull": 1
+    },
+    {
+      "query": "candy ia avis",
+      "pull": 1
+    },
+    {
+      "query": "certificat ia",
+      "pull": 1
+    },
+    {
+      "query": "certificat iae",
+      "pull": 1
+    },
+    {
+      "query": "certificat iata",
+      "pull": 1
+    },
+    {
+      "query": "certification ia",
+      "pull": 1
+    },
+    {
+      "query": "certification ia columbia",
+      "pull": 1
+    },
+    {
+      "query": "certification ia google",
+      "pull": 1
+    },
+    {
+      "query": "certification ia gratuite",
+      "pull": 1
+    },
+    {
+      "query": "certification ia microsoft",
+      "pull": 1
+    },
+    {
+      "query": "certified ai dummy",
+      "pull": 1
+    },
+    {
+      "query": "claude ai tarif",
+      "pull": 1
+    },
+    {
+      "query": "combien ia",
+      "pull": 1
+    },
+    {
+      "query": "combien iad prend de commission",
+      "pull": 1
+    },
+    {
+      "query": "comment creer un outil ia",
+      "pull": 1
+    },
+    {
+      "query": "comment ia",
+      "pull": 1
+    },
+    {
+      "query": "comment ia a été créé",
+      "pull": 1
+    },
+    {
+      "query": "comment ia consomme de l eau",
+      "pull": 1
+    },
+    {
+      "query": "comment ia fonctionne",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia emploi",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia formation",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia job",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia junior",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia lyon",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia salaire",
+      "pull": 1
+    },
+    {
+      "query": "consultant ia tjm",
+      "pull": 1
+    },
+    {
+      "query": "consultant iam",
+      "pull": 1
+    },
+    {
+      "query": "consultant iam salaire",
+      "pull": 1
+    },
+    {
+      "query": "definition ia",
+      "pull": 1
+    },
+    {
+      "query": "définition ia agentique",
+      "pull": 1
+    },
+    {
+      "query": "définition ia générative",
+      "pull": 1
+    },
+    {
+      "query": "definition iad",
+      "pull": 1
+    },
+    {
+      "query": "definition iad immobilier",
+      "pull": 1
+    },
+    {
+      "query": "definition iae",
+      "pull": 1
+    },
+    {
+      "query": "définition iam",
+      "pull": 1
+    },
+    {
+      "query": "definition iard",
+      "pull": 1
+    },
+    {
+      "query": "definition iata",
+      "pull": 1
+    },
+    {
+      "query": "définition iatrogénie",
+      "pull": 1
+    },
+    {
+      "query": "developpeur ia bceao",
+      "pull": 1
+    },
+    {
+      "query": "développeur ia c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "developpeur ia emploi",
+      "pull": 1
+    },
+    {
+      "query": "développeur ia fiche métier",
+      "pull": 1
+    },
+    {
+      "query": "développeur ia formation",
+      "pull": 1
+    },
+    {
+      "query": "developpeur ia metier",
+      "pull": 1
+    },
+    {
+      "query": "développeur ia offre d'emploi",
+      "pull": 1
+    },
+    {
+      "query": "développeur ia salaire débutant",
+      "pull": 1
+    },
+    {
+      "query": "développeur ia simplon",
+      "pull": 1
+    },
+    {
+      "query": "devis avec ia gratuit",
+      "pull": 1
+    },
+    {
+      "query": "devis ia",
+      "pull": 1
+    },
+    {
+      "query": "devis ia btp",
+      "pull": 1
+    },
+    {
+      "query": "devis ia gratuit",
+      "pull": 1
+    },
+    {
+      "query": "devis iard",
+      "pull": 1
+    },
+    {
+      "query": "devis iard la banque postale",
+      "pull": 1
+    },
+    {
+      "query": "exemple d'outil ia",
+      "pull": 1
+    },
+    {
+      "query": "exemple ia",
+      "pull": 1
+    },
+    {
+      "query": "exemple ia non generative",
+      "pull": 1
+    },
+    {
+      "query": "exemple ia symbolique",
+      "pull": 1
+    },
+    {
+      "query": "exemple iaas",
+      "pull": 1
+    },
+    {
+      "query": "exemple iae",
+      "pull": 1
+    },
+    {
+      "query": "exemple iae message",
+      "pull": 1
+    },
+    {
+      "query": "expert ia",
+      "pull": 1
+    },
+    {
+      "query": "expert ia 2030 sera le point de non retour",
+      "pull": 1
+    },
+    {
+      "query": "expert ia belgique",
+      "pull": 1
+    },
+    {
+      "query": "expert ia france",
+      "pull": 1
+    },
+    {
+      "query": "expert ia salaire",
+      "pull": 1
+    },
+    {
+      "query": "expert iam",
+      "pull": 1
+    },
+    {
+      "query": "expert iard",
+      "pull": 1
+    },
+    {
+      "query": "expert iard définition",
+      "pull": 1
+    },
+    {
+      "query": "expert iard salaire",
+      "pull": 1
+    },
+    {
+      "query": "formation développeur ia",
+      "pull": 1
+    },
+    {
+      "query": "formation ia",
+      "pull": 1
+    },
+    {
+      "query": "formation ia certifiante",
+      "pull": 1
+    },
+    {
+      "query": "formation ia claude",
+      "pull": 1
+    },
+    {
+      "query": "formation ia cpf",
+      "pull": 1
+    },
+    {
+      "query": "formation ia en ligne",
+      "pull": 1
+    },
+    {
+      "query": "formation ia en ligne gratuite",
+      "pull": 1
+    },
+    {
+      "query": "formation ia france travail",
+      "pull": 1
+    },
+    {
+      "query": "formation ia generative",
+      "pull": 1
+    },
+    {
+      "query": "formation ia gratuite",
+      "pull": 1
+    },
+    {
+      "query": "formation iad",
+      "pull": 1
+    },
+    {
+      "query": "formation logiciel ia",
+      "pull": 1
+    },
+    {
+      "query": "formation outil ia",
+      "pull": 1
+    },
+    {
+      "query": "freelance consultant ia",
+      "pull": 1
+    },
+    {
+      "query": "freelance ia",
+      "pull": 1
+    },
+    {
+      "query": "freelance ia c'est quoi",
+      "pull": 1
+    },
+    {
+      "query": "freelance iam",
+      "pull": 1
+    },
+    {
+      "query": "freelance iapwe",
+      "pull": 1
+    },
+    {
+      "query": "gratuit ia",
+      "pull": 1
+    },
+    {
+      "query": "i certified meaning",
+      "pull": 1
+    },
+    {
+      "query": "i certified true copy",
+      "pull": 1
+    },
+    {
+      "query": "i devise my own demise meaning",
+      "pull": 1
+    },
+    {
+      "query": "i freelance en français",
+      "pull": 1
+    },
+    {
+      "query": "i freelance hindi meaning",
+      "pull": 1
+    },
+    {
+      "query": "i freelance meaning",
+      "pull": 1
+    },
+    {
+      "query": "i freelance pro",
+      "pull": 1
+    },
+    {
+      "query": "i know",
+      "pull": 1
+    },
+    {
+      "query": "i scooter pas cher",
+      "pull": 1
+    },
+    {
+      "query": "i tjmaxx closing",
+      "pull": 1
+    },
+    {
+      "query": "i tjmaxx open today",
+      "pull": 1
+    },
+    {
+      "query": "ia",
+      "pull": 1
+    },
+    {
+      "query": "ia act",
+      "pull": 1
+    },
+    {
+      "query": "ia agence",
+      "pull": 1
+    },
+    {
+      "query": "ia agence cartier",
+      "pull": 1
+    },
+    {
+      "query": "ia agence champlain",
+      "pull": 1
+    },
+    {
+      "query": "ia agence de voyage",
+      "pull": 1
+    },
+    {
+      "query": "ia agence immobiliere",
+      "pull": 1
+    },
+    {
+      "query": "ia agencement appartement",
+      "pull": 1
+    },
+    {
+      "query": "ia agencement interieur",
+      "pull": 1
+    },
+    {
+      "query": "ia agencement interieur gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia agencement maison",
+      "pull": 1
+    },
+    {
+      "query": "ia agencement piece",
+      "pull": 1
+    },
+    {
+      "query": "ia agentique",
+      "pull": 1
+    },
+    {
+      "query": "ia agentique définition",
+      "pull": 1
+    },
+    {
+      "query": "ia anthropic",
+      "pull": 1
+    },
+    {
+      "query": "ia apple",
+      "pull": 1
+    },
+    {
+      "query": "ia application",
+      "pull": 1
+    },
+    {
+      "query": "ia assurance",
+      "pull": 1
+    },
+    {
+      "query": "ia assurance auto",
+      "pull": 1
+    },
+    {
+      "query": "ia assurance collective",
+      "pull": 1
+    },
+    {
+      "query": "ia autre que chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "ia avis",
+      "pull": 1
+    },
+    {
+      "query": "ia avis google",
+      "pull": 1
+    },
+    {
+      "query": "ia avis medical",
+      "pull": 1
+    },
+    {
+      "query": "ia banana",
+      "pull": 1
+    },
+    {
+      "query": "ia benchmark",
+      "pull": 1
+    },
+    {
+      "query": "ia bibliographie",
+      "pull": 1
+    },
+    {
+      "query": "ia bing",
+      "pull": 1
+    },
+    {
+      "query": "ia blackbox",
+      "pull": 1
+    },
+    {
+      "query": "ia bot",
+      "pull": 1
+    },
+    {
+      "query": "ia bourse",
+      "pull": 1
+    },
+    {
+      "query": "ia box",
+      "pull": 1
+    },
+    {
+      "query": "ia brad pitt tom cruise",
+      "pull": 1
+    },
+    {
+      "query": "ia bulle",
+      "pull": 1
+    },
+    {
+      "query": "ia canva",
+      "pull": 1
+    },
+    {
+      "query": "ia certified",
+      "pull": 1
+    },
+    {
+      "query": "ia chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "ia chinoise",
+      "pull": 1
+    },
+    {
+      "query": "ia claude avis",
+      "pull": 1
+    },
+    {
+      "query": "ia claude origine",
+      "pull": 1
+    },
+    {
+      "query": "ia comment animer une photo",
+      "pull": 1
+    },
+    {
+      "query": "ia comment ça fonctionne",
+      "pull": 1
+    },
+    {
+      "query": "ia comment ca marche",
+      "pull": 1
+    },
+    {
+      "query": "ia comment gagner de l'argent",
+      "pull": 1
+    },
+    {
+      "query": "ia comment l utiliser",
+      "pull": 1
+    },
+    {
+      "query": "ia comment l'utiliser",
+      "pull": 1
+    },
+    {
+      "query": "ia comment les machines pourraient nous remplacer",
+      "pull": 1
+    },
+    {
+      "query": "ia comment modifier une photo",
+      "pull": 1
+    },
+    {
+      "query": "ia comment ne pas perdre le nord",
+      "pull": 1
+    },
+    {
+      "query": "ia commentaire d'arrêt",
+      "pull": 1
+    },
+    {
+      "query": "ia commentaire de texte",
+      "pull": 1
+    },
+    {
+      "query": "ia copilot",
+      "pull": 1
+    },
+    {
+      "query": "ia creation image",
+      "pull": 1
+    },
+    {
+      "query": "ia cv",
+      "pull": 1
+    },
+    {
+      "query": "ia de google",
+      "pull": 1
+    },
+    {
+      "query": "ia decoration",
+      "pull": 1
+    },
+    {
+      "query": "ia definition english",
+      "pull": 1
+    },
+    {
+      "query": "ia definition francais",
+      "pull": 1
+    },
+    {
+      "query": "ia definition larousse",
+      "pull": 1
+    },
+    {
+      "query": "ia définition simple",
+      "pull": 1
+    },
+    {
+      "query": "ia dessin",
+      "pull": 1
+    },
+    {
+      "query": "ia detecteur",
+      "pull": 1
+    },
+    {
+      "query": "ia devis",
+      "pull": 1
+    },
+    {
+      "query": "ia devis gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia devis travaux",
+      "pull": 1
+    },
+    {
+      "query": "ia devise",
+      "pull": 1
+    },
+    {
+      "query": "ia devoir",
+      "pull": 1
+    },
+    {
+      "query": "ia diapo",
+      "pull": 1
+    },
+    {
+      "query": "ia diaporama",
+      "pull": 1
+    },
+    {
+      "query": "ia ecologique",
+      "pull": 1
+    },
+    {
+      "query": "ia ecosia",
+      "pull": 1
+    },
+    {
+      "query": "ia emploi",
+      "pull": 1
+    },
+    {
+      "query": "ia en ligne",
+      "pull": 1
+    },
+    {
+      "query": "ia en ligne gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia espace client",
+      "pull": 1
+    },
+    {
+      "query": "ia éthique",
+      "pull": 1
+    },
+    {
+      "query": "ia euria",
+      "pull": 1
+    },
+    {
+      "query": "ia européenne",
+      "pull": 1
+    },
+    {
+      "query": "ia excel",
+      "pull": 1
+    },
+    {
+      "query": "ia exemple",
+      "pull": 1
+    },
+    {
+      "query": "ia exemple de prompt",
+      "pull": 1
+    },
+    {
+      "query": "ia fiche de révision",
+      "pull": 1
+    },
+    {
+      "query": "ia financial group",
+      "pull": 1
+    },
+    {
+      "query": "ia foot",
+      "pull": 1
+    },
+    {
+      "query": "ia foot gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia formation",
+      "pull": 1
+    },
+    {
+      "query": "ia formation certifiante",
+      "pull": 1
+    },
+    {
+      "query": "ia formation compétences",
+      "pull": 1
+    },
+    {
+      "query": "ia formation cpf",
+      "pull": 1
+    },
+    {
+      "query": "ia formation en ligne",
+      "pull": 1
+    },
+    {
+      "query": "ia formation gratuite",
+      "pull": 1
+    },
+    {
+      "query": "ia formation gratuite en ligne",
+      "pull": 1
+    },
+    {
+      "query": "ia formation la roche sur yon",
+      "pull": 1
+    },
+    {
+      "query": "ia formation nantes",
+      "pull": 1
+    },
+    {
+      "query": "ia formation pdf",
+      "pull": 1
+    },
+    {
+      "query": "ia francaise claude",
+      "pull": 1
+    },
+    {
+      "query": "ia française gratuite",
+      "pull": 1
+    },
+    {
+      "query": "ia francaise mistral",
+      "pull": 1
+    },
+    {
+      "query": "ia free",
+      "pull": 1
+    },
+    {
+      "query": "ia freelance",
+      "pull": 1
+    },
+    {
+      "query": "ia gemini",
+      "pull": 1
+    },
+    {
+      "query": "ia generateur d'image",
+      "pull": 1
+    },
+    {
+      "query": "ia générative",
+      "pull": 1
+    },
+    {
+      "query": "ia google gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuit générateur d image",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuit illimité",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuite francaise",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuite google",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuite photo",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuite pour générer des images",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuite texte",
+      "pull": 1
+    },
+    {
+      "query": "ia gratuite video",
+      "pull": 1
+    },
+    {
+      "query": "ia grok",
+      "pull": 1
+    },
+    {
+      "query": "ia groupe financier",
+      "pull": 1
+    },
+    {
+      "query": "ia hallucination",
+      "pull": 1
+    },
+    {
+      "query": "ia harvey",
+      "pull": 1
+    },
+    {
+      "query": "ia higgsfield",
+      "pull": 1
+    },
+    {
+      "query": "ia histoire",
+      "pull": 1
+    },
+    {
+      "query": "ia home assistant",
+      "pull": 1
+    },
+    {
+      "query": "ia humain",
+      "pull": 1
+    },
+    {
+      "query": "ia humaniser",
+      "pull": 1
+    },
+    {
+      "query": "ia humaniser gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia humaniser texte",
+      "pull": 1
+    },
+    {
+      "query": "ia humanizer",
+      "pull": 1
+    },
+    {
+      "query": "ia illustration",
+      "pull": 1
+    },
+    {
+      "query": "ia image",
+      "pull": 1
+    },
+    {
+      "query": "ia image gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia image modification",
+      "pull": 1
+    },
+    {
+      "query": "ia immobilier",
+      "pull": 1
+    },
+    {
+      "query": "ia infomaniak",
+      "pull": 1
+    },
+    {
+      "query": "ia intelligence artificiel",
+      "pull": 1
+    },
+    {
+      "query": "ia iphone",
+      "pull": 1
+    },
+    {
+      "query": "ia ipr",
+      "pull": 1
+    },
+    {
+      "query": "ia japonaise",
+      "pull": 1
+    },
+    {
+      "query": "ia jardin",
+      "pull": 1
+    },
+    {
+      "query": "ia jardin gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia jeux vidéo",
+      "pull": 1
+    },
+    {
+      "query": "ia job",
+      "pull": 1
+    },
+    {
+      "query": "ia joyeux anniversaire gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia juridique",
+      "pull": 1
+    },
+    {
+      "query": "ia juridique chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "ia juridique gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia justice film",
+      "pull": 1
+    },
+    {
+      "query": "ia kimi",
+      "pull": 1
+    },
+    {
+      "query": "ia kiné",
+      "pull": 1
+    },
+    {
+      "query": "ia king",
+      "pull": 1
+    },
+    {
+      "query": "ia kiro",
+      "pull": 1
+    },
+    {
+      "query": "ia kling",
+      "pull": 1
+    },
+    {
+      "query": "ia klm",
+      "pull": 1
+    },
+    {
+      "query": "ia kork",
+      "pull": 1
+    },
+    {
+      "query": "ia krea",
+      "pull": 1
+    },
+    {
+      "query": "ia krog",
+      "pull": 1
+    },
+    {
+      "query": "ia la plus performante",
+      "pull": 1
+    },
+    {
+      "query": "ia le chat",
+      "pull": 1
+    },
+    {
+      "query": "ia le chat mistral",
+      "pull": 1
+    },
+    {
+      "query": "ia lettre de motivation",
+      "pull": 1
+    },
+    {
+      "query": "ia liste",
+      "pull": 1
+    },
+    {
+      "query": "ia llm",
+      "pull": 1
+    },
+    {
+      "query": "ia locale",
+      "pull": 1
+    },
+    {
+      "query": "ia login",
+      "pull": 1
+    },
+    {
+      "query": "ia lyon",
+      "pull": 1
+    },
+    {
+      "query": "ia lyon arena",
+      "pull": 1
+    },
+    {
+      "query": "ia lyon webmail",
+      "pull": 1
+    },
+    {
+      "query": "ia maths",
+      "pull": 1
+    },
+    {
+      "query": "ia medical",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur ami",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur application",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur coup echec",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur que chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur que chatgpt gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur que claude",
+      "pull": 1
+    },
+    {
+      "query": "ia meilleur rapport qualité prix",
+      "pull": 1
+    },
+    {
+      "query": "ia microsoft",
+      "pull": 1
+    },
+    {
+      "query": "ia mistral",
+      "pull": 1
+    },
+    {
+      "query": "ia mistral chat",
+      "pull": 1
+    },
+    {
+      "query": "ia modification photo",
+      "pull": 1
+    },
+    {
+      "query": "ia montage video",
+      "pull": 1
+    },
+    {
+      "query": "ia musique",
+      "pull": 1
+    },
+    {
+      "query": "ia musique gratuite",
+      "pull": 1
+    },
+    {
+      "query": "ia nano banana",
+      "pull": 1
+    },
+    {
+      "query": "ia nantes",
+      "pull": 1
+    },
+    {
+      "query": "ia news",
+      "pull": 1
+    },
+    {
+      "query": "ia nom",
+      "pull": 1
+    },
+    {
+      "query": "ia non restreinte",
+      "pull": 1
+    },
+    {
+      "query": "ia note",
+      "pull": 1
+    },
+    {
+      "query": "ia notebooklm",
+      "pull": 1
+    },
+    {
+      "query": "ia notion",
+      "pull": 1
+    },
+    {
+      "query": "ia nova",
+      "pull": 1
+    },
+    {
+      "query": "ia online",
+      "pull": 1
+    },
+    {
+      "query": "ia open",
+      "pull": 1
+    },
+    {
+      "query": "ia open source",
+      "pull": 1
+    },
+    {
+      "query": "ia opera",
+      "pull": 1
+    },
+    {
+      "query": "ia or not",
+      "pull": 1
+    },
+    {
+      "query": "ia ora na",
+      "pull": 1
+    },
+    {
+      "query": "ia orthographe",
+      "pull": 1
+    },
+    {
+      "query": "ia ou iria",
+      "pull": 1
+    },
+    {
+      "query": "ia ou pas ia image",
+      "pull": 1
+    },
+    {
+      "query": "ia ou pas ia jeu",
+      "pull": 1
+    },
+    {
+      "query": "ia ouroboros hope",
+      "pull": 1
+    },
+    {
+      "query": "ia ours polaire",
+      "pull": 1
+    },
+    {
+      "query": "ia outil numérique",
+      "pull": 1
+    },
+    {
+      "query": "ia outils",
+      "pull": 1
+    },
+    {
+      "query": "ia outlook",
+      "pull": 1
+    },
+    {
+      "query": "ia ouvert actuellement",
+      "pull": 1
+    },
+    {
+      "query": "ia paris",
+      "pull": 1
+    },
+    {
+      "query": "ia paris 1",
+      "pull": 1
+    },
+    {
+      "query": "ia paris 18",
+      "pull": 1
+    },
+    {
+      "query": "ia paris est",
+      "pull": 1
+    },
+    {
+      "query": "ia paris fixed",
+      "pull": 1
+    },
+    {
+      "query": "ia paris foot",
+      "pull": 1
+    },
+    {
+      "query": "ia paris hippique",
+      "pull": 1
+    },
+    {
+      "query": "ia paris saclay",
+      "pull": 1
+    },
+    {
+      "query": "ia paris sportif",
+      "pull": 1
+    },
+    {
+      "query": "ia paris sportif apk",
+      "pull": 1
+    },
+    {
+      "query": "ia pas cher",
+      "pull": 1
+    },
+    {
+      "query": "ia perplexity",
+      "pull": 1
+    },
+    {
+      "query": "ia photo",
+      "pull": 1
+    },
+    {
+      "query": "ia photo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia photo montage",
+      "pull": 1
+    },
+    {
+      "query": "ia pour créer des images",
+      "pull": 1
+    },
+    {
+      "query": "ia pour devis",
+      "pull": 1
+    },
+    {
+      "query": "ia pour devis de construction",
+      "pull": 1
+    },
+    {
+      "query": "ia pour générer des images",
+      "pull": 1
+    },
+    {
+      "query": "ia pour modifier photo",
+      "pull": 1
+    },
+    {
+      "query": "ia powerpoint",
+      "pull": 1
+    },
+    {
+      "query": "ia presentation",
+      "pull": 1
+    },
+    {
+      "query": "ia prix",
+      "pull": 1
+    },
+    {
+      "query": "ia prix abonnement",
+      "pull": 1
+    },
+    {
+      "query": "ia prix immobilier",
+      "pull": 1
+    },
+    {
+      "query": "ia prix nobel",
+      "pull": 1
+    },
+    {
+      "query": "ia pronostic gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia qcm",
+      "pull": 1
+    },
+    {
+      "query": "ia question",
+      "pull": 1
+    },
+    {
+      "query": "ia qui crée des images",
+      "pull": 1
+    },
+    {
+      "query": "ia qui fait des powerpoint",
+      "pull": 1
+    },
+    {
+      "query": "ia qui fait des vidéos",
+      "pull": 1
+    },
+    {
+      "query": "ia qui genere des images",
+      "pull": 1
+    },
+    {
+      "query": "ia qui genere des videos",
+      "pull": 1
+    },
+    {
+      "query": "ia qui lit un texte",
+      "pull": 1
+    },
+    {
+      "query": "ia qui modifie les photos",
+      "pull": 1
+    },
+    {
+      "query": "ia qui parle",
+      "pull": 1
+    },
+    {
+      "query": "ia rag",
+      "pull": 1
+    },
+    {
+      "query": "ia rap",
+      "pull": 1
+    },
+    {
+      "query": "ia recherche",
+      "pull": 1
+    },
+    {
+      "query": "ia reformulation",
+      "pull": 1
+    },
+    {
+      "query": "ia reformulation texte",
+      "pull": 1
+    },
+    {
+      "query": "ia retouche photo",
+      "pull": 1
+    },
+    {
+      "query": "ia retouche photo en ligne",
+      "pull": 1
+    },
+    {
+      "query": "ia retouche photo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia revision",
+      "pull": 1
+    },
+    {
+      "query": "ia samsung",
+      "pull": 1
+    },
+    {
+      "query": "ia sans censure",
+      "pull": 1
+    },
+    {
+      "query": "ia sans limite",
+      "pull": 1
+    },
+    {
+      "query": "ia score exact foot",
+      "pull": 1
+    },
+    {
+      "query": "ia scrabble",
+      "pull": 1
+    },
+    {
+      "query": "ia studio",
+      "pull": 1
+    },
+    {
+      "query": "ia studio google",
+      "pull": 1
+    },
+    {
+      "query": "ia suisse",
+      "pull": 1
+    },
+    {
+      "query": "ia suisse euria",
+      "pull": 1
+    },
+    {
+      "query": "ia tarif",
+      "pull": 1
+    },
+    {
+      "query": "ia tarif etudiant",
+      "pull": 1
+    },
+    {
+      "query": "ia tatouage",
+      "pull": 1
+    },
+    {
+      "query": "ia test",
+      "pull": 1
+    },
+    {
+      "query": "ia texte",
+      "pull": 1
+    },
+    {
+      "query": "ia texte gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia tiktok",
+      "pull": 1
+    },
+    {
+      "query": "ia tjma",
+      "pull": 1
+    },
+    {
+      "query": "ia tjmg",
+      "pull": 1
+    },
+    {
+      "query": "ia tjms",
+      "pull": 1
+    },
+    {
+      "query": "ia tjmt",
+      "pull": 1
+    },
+    {
+      "query": "ia trading",
+      "pull": 1
+    },
+    {
+      "query": "ia traduction",
+      "pull": 1
+    },
+    {
+      "query": "ia transcription",
+      "pull": 1
+    },
+    {
+      "query": "ia transcription audio",
+      "pull": 1
+    },
+    {
+      "query": "ia tremblay",
+      "pull": 1
+    },
+    {
+      "query": "ia twitter",
+      "pull": 1
+    },
+    {
+      "query": "ia uclouvain",
+      "pull": 1
+    },
+    {
+      "query": "ia ugc",
+      "pull": 1
+    },
+    {
+      "query": "ia ulaval",
+      "pull": 1
+    },
+    {
+      "query": "ia universitaire",
+      "pull": 1
+    },
+    {
+      "query": "ia unreal engine",
+      "pull": 1
+    },
+    {
+      "query": "ia usa",
+      "pull": 1
+    },
+    {
+      "query": "ia utilisation",
+      "pull": 1
+    },
+    {
+      "query": "ia utilisation eau",
+      "pull": 1
+    },
+    {
+      "query": "ia vidéo",
+      "pull": 1
+    },
+    {
+      "query": "ia vidéo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia videos",
+      "pull": 1
+    },
+    {
+      "query": "ia vocal",
+      "pull": 1
+    },
+    {
+      "query": "ia voix",
+      "pull": 1
+    },
+    {
+      "query": "ia vs",
+      "pull": 1
+    },
+    {
+      "query": "ia vs humain",
+      "pull": 1
+    },
+    {
+      "query": "ia vs human",
+      "pull": 1
+    },
+    {
+      "query": "ia vs ia générative",
+      "pull": 1
+    },
+    {
+      "query": "ia vs iag",
+      "pull": 1
+    },
+    {
+      "query": "ia vs machine learning",
+      "pull": 1
+    },
+    {
+      "query": "ia vs medecin",
+      "pull": 1
+    },
+    {
+      "query": "ia vs real",
+      "pull": 1
+    },
+    {
+      "query": "ia vs reality",
+      "pull": 1
+    },
+    {
+      "query": "ia vscode",
+      "pull": 1
+    },
+    {
+      "query": "ia wand",
+      "pull": 1
+    },
+    {
+      "query": "ia web",
+      "pull": 1
+    },
+    {
+      "query": "ia website",
+      "pull": 1
+    },
+    {
+      "query": "ia whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "ia wikipedia",
+      "pull": 1
+    },
+    {
+      "query": "ia windows",
+      "pull": 1
+    },
+    {
+      "query": "ia windows 11",
+      "pull": 1
+    },
+    {
+      "query": "ia word",
+      "pull": 1
+    },
+    {
+      "query": "ia workday",
+      "pull": 1
+    },
+    {
+      "query": "ia writer",
+      "pull": 1
+    },
+    {
+      "query": "ia x",
+      "pull": 1
+    },
+    {
+      "query": "ia x grok",
+      "pull": 1
+    },
+    {
+      "query": "ia x twitter",
+      "pull": 1
+    },
+    {
+      "query": "ia xavier niel",
+      "pull": 1
+    },
+    {
+      "query": "ia xbox",
+      "pull": 1
+    },
+    {
+      "query": "ia xd",
+      "pull": 1
+    },
+    {
+      "query": "ia xiaomi",
+      "pull": 1
+    },
+    {
+      "query": "ia xiaomi 15t pro",
+      "pull": 1
+    },
+    {
+      "query": "ia xploria",
+      "pull": 1
+    },
+    {
+      "query": "ia y",
+      "pull": 1
+    },
+    {
+      "query": "ia yahoo",
+      "pull": 1
+    },
+    {
+      "query": "ia yahoo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "ia yiaho",
+      "pull": 1
+    },
+    {
+      "query": "ia yolo",
+      "pull": 1
+    },
+    {
+      "query": "ia yoshua bengio",
+      "pull": 1
+    },
+    {
+      "query": "ia youcam",
+      "pull": 1
+    },
+    {
+      "query": "ia youtube",
+      "pull": 1
+    },
+    {
+      "query": "ia youtube résumé",
+      "pull": 1
+    },
+    {
+      "query": "ia ypareo",
+      "pull": 1
+    },
+    {
+      "query": "ia z",
+      "pull": 1
+    },
+    {
+      "query": "ia zara",
+      "pull": 1
+    },
+    {
+      "query": "ia zefir",
+      "pull": 1
+    },
+    {
+      "query": "ia zero",
+      "pull": 1
+    },
+    {
+      "query": "ia zick",
+      "pull": 1
+    },
+    {
+      "query": "ia ziguinchor",
+      "pull": 1
+    },
+    {
+      "query": "ia zoom",
+      "pull": 1
+    },
+    {
+      "query": "ia zotero",
+      "pull": 1
+    },
+    {
+      "query": "ia zouzou",
+      "pull": 1
+    },
+    {
+      "query": "ia zuzu",
+      "pull": 1
+    },
+    {
+      "query": "iad",
+      "pull": 1
+    },
+    {
+      "query": "iad immobilier",
+      "pull": 1
+    },
+    {
+      "query": "iae lyon 3",
+      "pull": 1
+    },
+    {
+      "query": "iam ou ião",
+      "pull": 1
+    },
+    {
+      "query": "iamos ou iriamos",
+      "pull": 1
+    },
+    {
+      "query": "ian davis",
+      "pull": 1
+    },
+    {
+      "query": "ian somerhalder",
+      "pull": 1
+    },
+    {
+      "query": "ian ziering",
+      "pull": 1
+    },
+    {
+      "query": "iao airport",
+      "pull": 1
+    },
+    {
+      "query": "iapwe freelance writer",
+      "pull": 1
+    },
+    {
+      "query": "iapwe freelance writer application",
+      "pull": 1
+    },
+    {
+      "query": "iapwe freelance writer salary",
+      "pull": 1
+    },
+    {
+      "query": "iasi cabinet stomatologic",
+      "pull": 1
+    },
+    {
+      "query": "iasi cabinet veterinar",
+      "pull": 1
+    },
+    {
+      "query": "id freelance",
+      "pull": 1
+    },
+    {
+      "query": "independent ian",
+      "pull": 1
+    },
+    {
+      "query": "ingénieur ia",
+      "pull": 1
+    },
+    {
+      "query": "ingénieur ia salaire",
+      "pull": 1
+    },
+    {
+      "query": "intelligence artificielle devis",
+      "pull": 1
+    },
+    {
+      "query": "intelligence artificielle exemple d usage",
+      "pull": 1
+    },
+    {
+      "query": "intelligence artificielle exemple robot",
+      "pull": 1
+    },
+    {
+      "query": "ipad certified pre owned",
+      "pull": 1
+    },
+    {
+      "query": "ipad certified refurbished",
+      "pull": 1
+    },
+    {
+      "query": "ipad certified refurbished apple",
+      "pull": 1
+    },
+    {
+      "query": "ipad devis",
+      "pull": 1
+    },
+    {
+      "query": "ipad pas cher",
+      "pull": 1
+    },
+    {
+      "query": "ipad pas cher 11",
+      "pull": 1
+    },
+    {
+      "query": "ipad pas cher air",
+      "pull": 1
+    },
+    {
+      "query": "ipad pas cher neuf",
+      "pull": 1
+    },
+    {
+      "query": "ipad pas cher pro",
+      "pull": 1
+    },
+    {
+      "query": "ipad pas cher reconditionné",
+      "pull": 1
+    },
+    {
+      "query": "ipad prix",
+      "pull": 1
+    },
+    {
+      "query": "ipad prix 10",
+      "pull": 1
+    },
+    {
+      "query": "ipad prix algerie",
+      "pull": 1
+    },
+    {
+      "query": "ipad prix apple",
+      "pull": 1
+    },
+    {
+      "query": "ipad prix maroc",
+      "pull": 1
+    },
+    {
+      "query": "ipad prix tunisie",
+      "pull": 1
+    },
+    {
+      "query": "ipad tarif",
+      "pull": 1
+    },
+    {
+      "query": "ipad tarif etudiant",
+      "pull": 1
+    },
+    {
+      "query": "ipad tarif reparation",
+      "pull": 1
+    },
+    {
+      "query": "la meilleure boulangerie de france",
+      "pull": 1
+    },
+    {
+      "query": "la meilleure boulangerie de france 2026",
+      "pull": 1
+    },
+    {
+      "query": "lex ia tjmt",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ai video",
+      "pull": 1
+    },
+    {
+      "query": "logiciel gratuit ia francais",
+      "pull": 1
+    },
+    {
+      "query": "logiciel gratuit ia image",
+      "pull": 1
+    },
+    {
+      "query": "logiciel gratuit ia musique",
+      "pull": 1
+    },
+    {
+      "query": "logiciel gratuit ia photo",
+      "pull": 1
+    },
+    {
+      "query": "logiciel gratuit ia retouche photo",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia architecture",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia bourse",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia claude",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia formation",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia francais",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia hors ligne",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia humain",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia image",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia image gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia juridique",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia meilleur",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia montage video",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia musique",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia paris sportif",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia pas cher",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia photo",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia photo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia prix",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia qui genere des images",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia qui parle",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia retouche photo",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia université",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia urbanisme",
+      "pull": 1
+    },
+    {
+      "query": "logiciel ia zuru",
+      "pull": 1
+    },
+    {
+      "query": "logiciel video ai gratuit",
+      "pull": 1
+    },
+    {
+      "query": "lyon ia",
+      "pull": 1
+    },
+    {
+      "query": "lyon iae",
+      "pull": 1
+    },
+    {
+      "query": "lyon iasi vol direct",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia 2026",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia gratuit",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia pour coder",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia pour créer des images",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia pour générer des images",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia pour générer des images gratuit",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia pronostic foot",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia pronostic foot gratuit",
+      "pull": 1
+    },
+    {
+      "query": "meilleur ia que chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "meilleur outil ia juridique",
+      "pull": 1
+    },
+    {
+      "query": "meilleur outil ia pour powerpoint",
+      "pull": 1
+    },
+    {
+      "query": "meilleur outil ia pour présentation powerpoint",
+      "pull": 1
+    },
+    {
+      "query": "meilleur outil ia powerpoint",
+      "pull": 1
+    },
+    {
+      "query": "meilleur outil ia video",
+      "pull": 1
+    },
+    {
+      "query": "minuta ia tjmg",
+      "pull": 1
+    },
+    {
+      "query": "miriam ou iam",
+      "pull": 1
+    },
+    {
+      "query": "modele ia vs outil ia",
+      "pull": 1
+    },
+    {
+      "query": "outil a batterie",
+      "pull": 1
+    },
+    {
+      "query": "outil a batterie dewalt",
+      "pull": 1
+    },
+    {
+      "query": "outil a batterie pas cher",
+      "pull": 1
+    },
+    {
+      "query": "outil a bois",
+      "pull": 1
+    },
+    {
+      "query": "outil a bois 5 lettres",
+      "pull": 1
+    },
+    {
+      "query": "outil a bois mots fléchés",
+      "pull": 1
+    },
+    {
+      "query": "outil a helicoil",
+      "pull": 1
+    },
+    {
+      "query": "outil a homard",
+      "pull": 1
+    },
+    {
+      "query": "outil a honer",
+      "pull": 1
+    },
+    {
+      "query": "outil a huitre",
+      "pull": 1
+    },
+    {
+      "query": "outil a induction",
+      "pull": 1
+    },
+    {
+      "query": "outil a jardin",
+      "pull": 1
+    },
+    {
+      "query": "outil a joint",
+      "pull": 1
+    },
+    {
+      "query": "outil a joint carrelage",
+      "pull": 1
+    },
+    {
+      "query": "outil a joint pour cloison seche",
+      "pull": 1
+    },
+    {
+      "query": "outil a joint silicone",
+      "pull": 1
+    },
+    {
+      "query": "outil a joint spi",
+      "pull": 1
+    },
+    {
+      "query": "outil a jointoyer",
+      "pull": 1
+    },
+    {
+      "query": "outil a la main",
+      "pull": 1
+    },
+    {
+      "query": "outil a labourer",
+      "pull": 1
+    },
+    {
+      "query": "outil a lame vibrante",
+      "pull": 1
+    },
+    {
+      "query": "outil a laval",
+      "pull": 1
+    },
+    {
+      "query": "outil a levier",
+      "pull": 1
+    },
+    {
+      "query": "outil a lidl",
+      "pull": 1
+    },
+    {
+      "query": "outil a louer",
+      "pull": 1
+    },
+    {
+      "query": "outil a oeillet",
+      "pull": 1
+    },
+    {
+      "query": "outil a ongle",
+      "pull": 1
+    },
+    {
+      "query": "outil a onglet",
+      "pull": 1
+    },
+    {
+      "query": "outil à quadriller",
+      "pull": 1
+    },
+    {
+      "query": "outil a quadriller le bois",
+      "pull": 1
+    },
+    {
+      "query": "outil à quadriller les crosses de fusil",
+      "pull": 1
+    },
+    {
+      "query": "outil a quebec",
+      "pull": 1
+    },
+    {
+      "query": "outil a quilling",
+      "pull": 1
+    },
+    {
+      "query": "outil a usage multiple",
+      "pull": 1
+    },
+    {
+      "query": "outil a usage multiple milwaukee",
+      "pull": 1
+    },
+    {
+      "query": "outil a usiner",
+      "pull": 1
+    },
+    {
+      "query": "outil a utiliser",
+      "pull": 1
+    },
+    {
+      "query": "outil a wrapper",
+      "pull": 1
+    },
+    {
+      "query": "outil à wrapper rexel",
+      "pull": 1
+    },
+    {
+      "query": "outil à wrapper telecom",
+      "pull": 1
+    },
+    {
+      "query": "outil a zeste",
+      "pull": 1
+    },
+    {
+      "query": "outil a zinc",
+      "pull": 1
+    },
+    {
+      "query": "outil ai make",
+      "pull": 1
+    },
+    {
+      "query": "outil ai video google",
+      "pull": 1
+    },
+    {
+      "query": "outil ai zapier",
+      "pull": 1
+    },
+    {
+      "query": "outil anti ia",
+      "pull": 1
+    },
+    {
+      "query": "outil gratuit détection ia",
+      "pull": 1
+    },
+    {
+      "query": "outil gratuit ia",
+      "pull": 1
+    },
+    {
+      "query": "outil gratuit ia image",
+      "pull": 1
+    },
+    {
+      "query": "outil gratuit intelligence artificielle",
+      "pull": 1
+    },
+    {
+      "query": "outil hilti à vendre",
+      "pull": 1
+    },
+    {
+      "query": "outil humanisation ai",
+      "pull": 1
+    },
+    {
+      "query": "outil ia",
+      "pull": 1
+    },
+    {
+      "query": "outil ia agentique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia aménagement intérieur",
+      "pull": 1
+    },
+    {
+      "query": "outil ia analyse de données",
+      "pull": 1
+    },
+    {
+      "query": "outil ia apple",
+      "pull": 1
+    },
+    {
+      "query": "outil ia architecture",
+      "pull": 1
+    },
+    {
+      "query": "outil ia article scientifique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia automatisation",
+      "pull": 1
+    },
+    {
+      "query": "outil ia autre que chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "outil ia banana",
+      "pull": 1
+    },
+    {
+      "query": "outil ia bibliographie",
+      "pull": 1
+    },
+    {
+      "query": "outil ia bourse",
+      "pull": 1
+    },
+    {
+      "query": "outil ia canva",
+      "pull": 1
+    },
+    {
+      "query": "outil ia chinois",
+      "pull": 1
+    },
+    {
+      "query": "outil ia cnrs",
+      "pull": 1
+    },
+    {
+      "query": "outil ia comme chatgpt",
+      "pull": 1
+    },
+    {
+      "query": "outil ia compte rendu reunion",
+      "pull": 1
+    },
+    {
+      "query": "outil ia compte rendu reunion gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia copilot",
+      "pull": 1
+    },
+    {
+      "query": "outil ia création vidéo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia cv",
+      "pull": 1
+    },
+    {
+      "query": "outil ia davinci resolve",
+      "pull": 1
+    },
+    {
+      "query": "outil ia de google",
+      "pull": 1
+    },
+    {
+      "query": "outil ia de microsoft",
+      "pull": 1
+    },
+    {
+      "query": "outil ia de presentation",
+      "pull": 1
+    },
+    {
+      "query": "outil ia de retouche photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia de traduction",
+      "pull": 1
+    },
+    {
+      "query": "outil ia de transcription audio",
+      "pull": 1
+    },
+    {
+      "query": "outil ia decoration interieur",
+      "pull": 1
+    },
+    {
+      "query": "outil ia design",
+      "pull": 1
+    },
+    {
+      "query": "outil ia developpement web",
+      "pull": 1
+    },
+    {
+      "query": "outil ia diaporama",
+      "pull": 1
+    },
+    {
+      "query": "outil ia ebim",
+      "pull": 1
+    },
+    {
+      "query": "outil ia education nationale",
+      "pull": 1
+    },
+    {
+      "query": "outil ia en ligne",
+      "pull": 1
+    },
+    {
+      "query": "outil ia en ligne gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia enregistrement reunion",
+      "pull": 1
+    },
+    {
+      "query": "outil ia entreprise",
+      "pull": 1
+    },
+    {
+      "query": "outil ia ethique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia européen",
+      "pull": 1
+    },
+    {
+      "query": "outil ia excel",
+      "pull": 1
+    },
+    {
+      "query": "outil ia excel gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia exemple",
+      "pull": 1
+    },
+    {
+      "query": "outil ia facebook",
+      "pull": 1
+    },
+    {
+      "query": "outil ia fiche de révision",
+      "pull": 1
+    },
+    {
+      "query": "outil ia figma",
+      "pull": 1
+    },
+    {
+      "query": "outil ia finance",
+      "pull": 1
+    },
+    {
+      "query": "outil ia flyer",
+      "pull": 1
+    },
+    {
+      "query": "outil ia français gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia free",
+      "pull": 1
+    },
+    {
+      "query": "outil ia frise chronologique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia gemini",
+      "pull": 1
+    },
+    {
+      "query": "outil ia générateur d image",
+      "pull": 1
+    },
+    {
+      "query": "outil ia génération image gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia générative",
+      "pull": 1
+    },
+    {
+      "query": "outil ia gratuit en ligne",
+      "pull": 1
+    },
+    {
+      "query": "outil ia gratuit image",
+      "pull": 1
+    },
+    {
+      "query": "outil ia gratuit pour cv",
+      "pull": 1
+    },
+    {
+      "query": "outil ia gratuit pour faire des slides",
+      "pull": 1
+    },
+    {
+      "query": "outil ia gratuit retouche photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia harvey",
+      "pull": 1
+    },
+    {
+      "query": "outil ia home staging",
+      "pull": 1
+    },
+    {
+      "query": "outil ia image",
+      "pull": 1
+    },
+    {
+      "query": "outil ia image gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia immobilier",
+      "pull": 1
+    },
+    {
+      "query": "outil ia infographie",
+      "pull": 1
+    },
+    {
+      "query": "outil ia jardin",
+      "pull": 1
+    },
+    {
+      "query": "outil ia juridique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia local",
+      "pull": 1
+    },
+    {
+      "query": "outil ia marketing",
+      "pull": 1
+    },
+    {
+      "query": "outil ia microsoft",
+      "pull": 1
+    },
+    {
+      "query": "outil ia mise en page",
+      "pull": 1
+    },
+    {
+      "query": "outil ia mistral",
+      "pull": 1
+    },
+    {
+      "query": "outil ia modification image",
+      "pull": 1
+    },
+    {
+      "query": "outil ia modification photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia montage photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia montage video",
+      "pull": 1
+    },
+    {
+      "query": "outil ia musique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia n8n",
+      "pull": 1
+    },
+    {
+      "query": "outil ia napkin",
+      "pull": 1
+    },
+    {
+      "query": "outil ia newsletter",
+      "pull": 1
+    },
+    {
+      "query": "outil ia no code",
+      "pull": 1
+    },
+    {
+      "query": "outil ia noota",
+      "pull": 1
+    },
+    {
+      "query": "outil ia note",
+      "pull": 1
+    },
+    {
+      "query": "outil ia notebook",
+      "pull": 1
+    },
+    {
+      "query": "outil ia notebooklm",
+      "pull": 1
+    },
+    {
+      "query": "outil ia photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia photoshop",
+      "pull": 1
+    },
+    {
+      "query": "outil ia pour compte rendu de réunion",
+      "pull": 1
+    },
+    {
+      "query": "outil ia pour faire des présentations",
+      "pull": 1
+    },
+    {
+      "query": "outil ia pour générer des images gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia pour modifier une image",
+      "pull": 1
+    },
+    {
+      "query": "outil ia pour modifier une photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia pour word",
+      "pull": 1
+    },
+    {
+      "query": "outil ia prise de note",
+      "pull": 1
+    },
+    {
+      "query": "outil ia qui genere des images",
+      "pull": 1
+    },
+    {
+      "query": "outil ia qui resume une video",
+      "pull": 1
+    },
+    {
+      "query": "outil ia quiz",
+      "pull": 1
+    },
+    {
+      "query": "outil ia recherche emploi",
+      "pull": 1
+    },
+    {
+      "query": "outil ia recherche scientifique",
+      "pull": 1
+    },
+    {
+      "query": "outil ia recrutement",
+      "pull": 1
+    },
+    {
+      "query": "outil ia rédaction",
+      "pull": 1
+    },
+    {
+      "query": "outil ia reformulation",
+      "pull": 1
+    },
+    {
+      "query": "outil ia renovation maison",
+      "pull": 1
+    },
+    {
+      "query": "outil ia résumé vidéo youtube",
+      "pull": 1
+    },
+    {
+      "query": "outil ia retouche photo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia retouche photo gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia revision",
+      "pull": 1
+    },
+    {
+      "query": "outil ia rh",
+      "pull": 1
+    },
+    {
+      "query": "outil ia samsung",
+      "pull": 1
+    },
+    {
+      "query": "outil ia schema",
+      "pull": 1
+    },
+    {
+      "query": "outil ia seo",
+      "pull": 1
+    },
+    {
+      "query": "outil ia slides",
+      "pull": 1
+    },
+    {
+      "query": "outil ia sora",
+      "pull": 1
+    },
+    {
+      "query": "outil ia suisse",
+      "pull": 1
+    },
+    {
+      "query": "outil ia sur photoshop",
+      "pull": 1
+    },
+    {
+      "query": "outil ia synthèse document",
+      "pull": 1
+    },
+    {
+      "query": "outil ia synthese reunion",
+      "pull": 1
+    },
+    {
+      "query": "outil ia teams",
+      "pull": 1
+    },
+    {
+      "query": "outil ia texte",
+      "pull": 1
+    },
+    {
+      "query": "outil ia tiktok",
+      "pull": 1
+    },
+    {
+      "query": "outil ia tout en un",
+      "pull": 1
+    },
+    {
+      "query": "outil ia trading",
+      "pull": 1
+    },
+    {
+      "query": "outil ia traduction",
+      "pull": 1
+    },
+    {
+      "query": "outil ia traduction en direct",
+      "pull": 1
+    },
+    {
+      "query": "outil ia traduction video",
+      "pull": 1
+    },
+    {
+      "query": "outil ia transcription",
+      "pull": 1
+    },
+    {
+      "query": "outil ia transcription audio",
+      "pull": 1
+    },
+    {
+      "query": "outil ia unige",
+      "pull": 1
+    },
+    {
+      "query": "outil ia veille",
+      "pull": 1
+    },
+    {
+      "query": "outil ia video",
+      "pull": 1
+    },
+    {
+      "query": "outil ia video gratuit",
+      "pull": 1
+    },
+    {
+      "query": "outil ia vinted",
+      "pull": 1
+    },
+    {
+      "query": "outil ia visio",
+      "pull": 1
+    },
+    {
+      "query": "outil ia visuel",
+      "pull": 1
+    },
+    {
+      "query": "outil ia voix",
+      "pull": 1
+    },
+    {
+      "query": "outil ia voix off",
+      "pull": 1
+    },
+    {
+      "query": "outil ia voyage",
+      "pull": 1
+    },
+    {
+      "query": "outil ia windows",
+      "pull": 1
+    },
+    {
+      "query": "outil ia word",
+      "pull": 1
+    },
+    {
+      "query": "outil ia workflow",
+      "pull": 1
+    },
+    {
+      "query": "outil ia youtube",
+      "pull": 1
+    },
+    {
+      "query": "outil iam",
+      "pull": 1
+    },
+    {
+      "query": "outil kreg a vendre",
+      "pull": 1
+    },
+    {
+      "query": "outil miniature youtube ia",
+      "pull": 1
+    },
+    {
+      "query": "outil notion ai",
+      "pull": 1
+    },
+    {
+      "query": "outil test ia",
+      "pull": 1
+    },
+    {
+      "query": "outil utilisation ia",
+      "pull": 1
+    },
+    {
+      "query": "outillage a main pas cher",
+      "pull": 1
+    },
+    {
+      "query": "outils ia bureautique",
+      "pull": 1
+    },
+    {
+      "query": "outils ia les plus utilisés",
+      "pull": 1
+    },
+    {
+      "query": "outils ia liste",
+      "pull": 1
+    },
+    {
+      "query": "outils ia utiles",
+      "pull": 1
+    },
+    {
+      "query": "outils ia wordpress",
+      "pull": 1
+    },
+    {
+      "query": "paris ia",
+      "pull": 1
+    },
+    {
+      "query": "paris ia immo day",
+      "pull": 1
+    },
+    {
+      "query": "paris iae",
+      "pull": 1
+    },
+    {
+      "query": "paris ian somerhalder",
+      "pull": 1
+    },
+    {
+      "query": "paris iasi",
+      "pull": 1
+    },
+    {
+      "query": "paris iasi avion",
+      "pull": 1
+    },
+    {
+      "query": "paris iasi ryanair",
+      "pull": 1
+    },
+    {
+      "query": "paris iasi vol",
+      "pull": 1
+    },
+    {
+      "query": "paris iasi vol direct",
+      "pull": 1
+    },
+    {
+      "query": "paris iata code",
+      "pull": 1
+    },
+    {
+      "query": "pas cher a dubai",
+      "pull": 1
+    },
+    {
+      "query": "pas cher a londres",
+      "pull": 1
+    },
+    {
+      "query": "pas cher a manger",
+      "pull": 1
+    },
+    {
+      "query": "pas cher a paris",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia agentique",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia bourse",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia française",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia gratuite",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia pour gagner de l'argent",
+      "pull": 1
+    },
+    {
+      "query": "plateforme ia trading",
+      "pull": 1
+    },
+    {
+      "query": "plateforme iae",
+      "pull": 1
+    },
+    {
+      "query": "plateforme iae emploi",
+      "pull": 1
+    },
+    {
+      "query": "plateforme iam",
+      "pull": 1
+    },
+    {
+      "query": "prix ia",
+      "pull": 1
+    },
+    {
+      "query": "prix ia claude",
+      "pull": 1
+    },
+    {
+      "query": "prix ia mistral",
+      "pull": 1
+    },
+    {
+      "query": "prix iad",
+      "pull": 1
+    },
+    {
+      "query": "prix iae",
+      "pull": 1
+    },
+    {
+      "query": "prix iae lille",
+      "pull": 1
+    },
+    {
+      "query": "prix iae message",
+      "pull": 1
+    },
+    {
+      "query": "prix ialu proct",
+      "pull": 1
+    },
+    {
+      "query": "prix ialuset",
+      "pull": 1
+    },
+    {
+      "query": "prix iapq",
+      "pull": 1
+    },
+    {
+      "query": "quel outil ia utiliser",
+      "pull": 1
+    },
+    {
+      "query": "service iam client",
+      "pull": 1
+    },
+    {
+      "query": "service iasi auto",
+      "pull": 1
+    },
+    {
+      "query": "service iau ec ir",
+      "pull": 1
+    },
+    {
+      "query": "service iauec ac ir",
+      "pull": 1
+    },
+    {
+      "query": "tarif aiguille du midi",
+      "pull": 1
+    },
+    {
+      "query": "tarif ia",
+      "pull": 1
+    },
+    {
+      "query": "tarif ia claude",
+      "pull": 1
+    },
+    {
+      "query": "tarif ia comparatif",
+      "pull": 1
+    },
+    {
+      "query": "tarif ia mistral",
+      "pull": 1
+    },
+    {
+      "query": "tarif iad",
+      "pull": 1
+    },
+    {
+      "query": "tarif iae lille",
+      "pull": 1
+    },
+    {
+      "query": "tarif iam",
+      "pull": 1
+    },
+    {
+      "query": "tarif iara",
+      "pull": 1
+    },
+    {
+      "query": "tarif iata",
+      "pull": 1
+    },
+    {
+      "query": "tjm consultant ia",
+      "pull": 1
+    },
+    {
+      "query": "tjm developpeur ia",
+      "pull": 1
+    },
+    {
+      "query": "tjm expert ia",
+      "pull": 1
+    },
+    {
+      "query": "tjm formateur ia",
+      "pull": 1
+    },
+    {
+      "query": "tjm freelance ia",
+      "pull": 1
+    },
+    {
+      "query": "tjm iata",
+      "pull": 1
+    },
+    {
+      "query": "tjm iata code",
+      "pull": 1
+    },
+    {
+      "query": "tjm ingénieur ia",
+      "pull": 1
+    },
+    {
+      "query": "treinar ia freelancer",
+      "pull": 1
+    },
+    {
+      "query": "verifier ia",
+      "pull": 1
+    },
+    {
+      "query": "vs iam",
+      "pull": 1
+    },
+    {
+      "query": "yeschat outil ia pour changer les paroles d une chanson",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "La récente sortie de Fred sur l'IA votre avis ?",
+      "subreddit": "joueurdugrenier",
+      "ups": 1317,
+      "comments": 440,
+      "url": "https://reddit.com/r/joueurdugrenier/comments/1poyh1p/la_récente_sortie_de_fred_sur_lia_votre_avis/"
+    },
+    {
+      "title": "Une offre comme ça, ça donne envie de rester au chômage",
+      "subreddit": "JobSansFiltre",
+      "ups": 1295,
+      "comments": 316,
+      "url": "https://reddit.com/r/JobSansFiltre/comments/1royp42/une_offre_comme_ça_ça_donne_envie_de_rester_au/"
+    },
+    {
+      "title": "J’ai créé un outil pour créer des plans d’entraînement à base d’IA 🤩",
+      "subreddit": "runningfr",
+      "ups": 0,
+      "comments": 108,
+      "url": "https://reddit.com/r/runningfr/comments/1perl6j/jai_créé_un_outil_pour_créer_des_plans/"
+    },
+    {
+      "title": "J’ai créé un outil pour créer des plans d’entraînement à base d’IA 🤩 (3/3)",
+      "subreddit": "runningfr",
+      "ups": 0,
+      "comments": 75,
+      "url": "https://reddit.com/r/runningfr/comments/1q33kae/jai_créé_un_outil_pour_créer_des_plans/"
+    },
+    {
+      "title": "Quels sont les meilleurs outils pour créer du contenu marketing adapté à l’IA ?",
+      "subreddit": "FrenchTech",
+      "ups": 11,
+      "comments": 61,
+      "url": "https://reddit.com/r/FrenchTech/comments/1rhjvxo/quels_sont_les_meilleurs_outils_pour_créer_du/"
+    },
+    {
+      "title": "Plus de 50 % des moins de 25 ans en France s’informent via les réseaux sociaux et outils d’IA",
+      "subreddit": "france",
+      "ups": 68,
+      "comments": 58,
+      "url": "https://reddit.com/r/france/comments/1qw3bt6/plus_de_50_des_moins_de_25_ans_en_france/"
+    },
+    {
+      "title": "\"Je suis tombé de ma chaise\": l'Etat va équiper des fonctionnaires avec les outils d'IA de Doctrine, une entreprise dans le collimateur des éditeurs juridiques",
+      "subreddit": "france",
+      "ups": 214,
+      "comments": 52,
+      "url": "https://reddit.com/r/france/comments/1p8o1bs/je_suis_tombé_de_ma_chaise_letat_va_équiper_des/"
+    },
+    {
+      "title": "Vous payez combien pour vos outils IA chaque mois ?",
+      "subreddit": "france",
+      "ups": 0,
+      "comments": 46,
+      "url": "https://reddit.com/r/france/comments/1ta2br4/vous_payez_combien_pour_vos_outils_ia_chaque_mois/"
+    },
+    {
+      "title": "Question : En 2026, la critique sur ... outils IA ... qu’il est honteux ... ?",
+      "subreddit": "ecrivains",
+      "ups": 1,
+      "comments": 41,
+      "url": "https://reddit.com/r/ecrivains/comments/1shhkll/question_en_2026_la_critique_sur_outils_ia_quil/"
+    },
+    {
+      "title": "Les développeurs affirment que les outils de codage IA fonctionnent, et c'est précisément ce qui les inquiète.",
+      "subreddit": "actutech",
+      "ups": 0,
+      "comments": 36,
+      "url": "https://reddit.com/r/actutech/comments/1qrxsmh/les_développeurs_affirment_que_les_outils_de/"
+    },
+    {
+      "title": "Je galère à trouver mes premiers clients pour un outil IA",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 0,
+      "comments": 28,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1p2ebjm/je_galère_à_trouver_mes_premiers_clients_pour_un/"
+    },
+    {
+      "title": "Avec l’IA et tous les outils pour faire un CV ou trouver un job. Lesquels sont vraiment utiles ???",
+      "subreddit": "JobSansFiltre",
+      "ups": 6,
+      "comments": 22,
+      "url": "https://reddit.com/r/JobSansFiltre/comments/1redbbt/avec_lia_et_tous_les_outils_pour_faire_un_cv_ou/"
+    },
+    {
+      "title": "HubSpot outil suivi mentions IA, ça vaut le coup ?",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 6,
+      "comments": 16,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1snigrp/hubspot_outil_suivi_mentions_ia_ça_vaut_le_coup/"
+    },
+    {
+      "title": "Quels outils IA ne nécessitant pas de connexion utiliser avec mes élèves ?",
+      "subreddit": "PasDeQuestionIdiote",
+      "ups": 0,
+      "comments": 16,
+      "url": "https://reddit.com/r/PasDeQuestionIdiote/comments/1rtupa1/quels_outils_ia_ne_nécessitant_pas_de_connexion/"
+    },
+    {
+      "title": "Comment faites vous pour ne pas vous noyer dans tous les outils IA?",
+      "subreddit": "EntreprendreenFrance",
+      "ups": 2,
+      "comments": 14,
+      "url": "https://reddit.com/r/EntreprendreenFrance/comments/1sxeo3p/comment_faites_vous_pour_ne_pas_vous_noyer_dans/"
+    },
+    {
+      "title": "J’ai créé un outil IA pour la diaspora qui construit au pays, feedback bienvenu / I built an AI tool for the diaspora building back home, feedback welcome",
+      "subreddit": "Senegal",
+      "ups": 34,
+      "comments": 13,
+      "url": "https://reddit.com/r/Senegal/comments/1t0982x/jai_créé_un_outil_ia_pour_la_diaspora_qui/"
+    },
+    {
+      "title": "Écrire ses textes avec l’ia : triche ou nouvel outil de travail ?",
+      "subreddit": "frenchrap",
+      "ups": 0,
+      "comments": 13,
+      "url": "https://reddit.com/r/frenchrap/comments/1sqzez2/écrire_ses_textes_avec_lia_triche_ou_nouvel_outil/"
+    },
+    {
+      "title": "J'ai créé un outil qui génère des lettres de motivation en 30 secondes grâce à l'IA — retours bienvenus",
+      "subreddit": "emploi",
+      "ups": 0,
+      "comments": 11,
+      "url": "https://reddit.com/r/emploi/comments/1t1m5pm/jai_créé_un_outil_qui_génère_des_lettres_de/"
+    },
+    {
+      "title": "Avec un nouvel outil IA qui sort chaque semaine, comment vous évitez que votre budget SaaS parte en vrille ?",
+      "subreddit": "FrenchTech",
+      "ups": 1,
+      "comments": 8,
+      "url": "https://reddit.com/r/FrenchTech/comments/1tm52ao/avec_un_nouvel_outil_ia_qui_sort_chaque_semaine/"
+    },
+    {
+      "title": "[Recherche bêta-testeurs] J'ai créé un outil IA qui trouve \nton idée de business en 10 min — 5 accès gratuits contre \nton avis honnête",
+      "subreddit": "FrenchTech",
+      "ups": 0,
+      "comments": 8,
+      "url": "https://reddit.com/r/FrenchTech/comments/1t91spd/recherche_bêtatesteurs_jai_créé_un_outil_ia_qui/"
+    },
+    {
+      "title": "J'ai construit un outil de candidatures. Puis j'ai vu ce que l'IA peut vraiment faire. Maintenant je suis honnêtement moins sûr de moi.",
+      "subreddit": "aviscv",
+      "ups": 0,
+      "comments": 8,
+      "url": "https://reddit.com/r/aviscv/comments/1sz4cn1/jai_construit_un_outil_de_candidatures_puis_jai/"
+    },
+    {
+      "title": "J’ai créé un outil IA pour la diaspora qui construit au pays, feedback bienvenu / I built an AI tool for the diaspora building back home, feedback welcome",
+      "subreddit": "Cotedivoire",
+      "ups": 10,
+      "comments": 6,
+      "url": "https://reddit.com/r/Cotedivoire/comments/1t1trb5/jai_créé_un_outil_ia_pour_la_diaspora_qui/"
+    },
+    {
+      "title": "Outil IA Prepa ECG",
+      "subreddit": "etudiants",
+      "ups": 0,
+      "comments": 6,
+      "url": "https://reddit.com/r/etudiants/comments/1t4t7ep/outil_ia_prepa_ecg/"
+    },
+    {
+      "title": "👉 🚀 la commu s'agrandie + 2 nouveaux outils (générateur prez + bot IA seed)",
+      "subreddit": "Entraide_C411",
+      "ups": 9,
+      "comments": 6,
+      "url": "https://reddit.com/r/Entraide_C411/comments/1stpwlj/la_commu_sagrandie_2_nouveaux_outils_générateur/"
+    },
+    {
+      "title": "Quels outils IA vous utilisez pour gagner du temps dans votre activité ?",
+      "subreddit": "autoentrepreneurs",
+      "ups": 0,
+      "comments": 4,
+      "url": "https://reddit.com/r/autoentrepreneurs/comments/1tev8gb/quels_outils_ia_vous_utilisez_pour_gagner_du/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "I Compared the 5 Most Popular AI Logo Tools – Here's What No One Tells You",
+      "points": 2,
+      "comments": 1,
+      "url": "https://www.brandolia.io/blog-comparatif-5-outils-ia-logo-branding.html"
+    }
+  ]
+}

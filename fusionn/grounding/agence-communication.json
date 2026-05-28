@@ -1,0 +1,4226 @@
+{
+  "keyword": "agence communication",
+  "fetched_at": "2026-05-28T14:19:00.166Z",
+  "sources": {
+    "google_suggest": 979,
+    "reddit": 25,
+    "hacker_news": 20
+  },
+  "real_queries": [
+    {
+      "query": "agence communication bordeaux",
+      "pull": 3
+    },
+    {
+      "query": "agence communication lille",
+      "pull": 3
+    },
+    {
+      "query": "agence communication lyon",
+      "pull": 3
+    },
+    {
+      "query": "agence communication montpellier",
+      "pull": 3
+    },
+    {
+      "query": "agence communication nantes",
+      "pull": 3
+    },
+    {
+      "query": "agence communication paris",
+      "pull": 3
+    },
+    {
+      "query": "agence communication paris 11",
+      "pull": 3
+    },
+    {
+      "query": "agence communication rennes",
+      "pull": 3
+    },
+    {
+      "query": "agence communication toulouse",
+      "pull": 3
+    },
+    {
+      "query": "communication définition",
+      "pull": 3
+    },
+    {
+      "query": "devis agence de communication exemple",
+      "pull": 3
+    },
+    {
+      "query": ".agency vs .com",
+      "pull": 2
+    },
+    {
+      "query": "agence avis contact",
+      "pull": 2
+    },
+    {
+      "query": "agence communication burger king",
+      "pull": 2
+    },
+    {
+      "query": "agence communication freelance",
+      "pull": 2
+    },
+    {
+      "query": "agence communication lyon 1",
+      "pull": 2
+    },
+    {
+      "query": "agence communication lyon 2",
+      "pull": 2
+    },
+    {
+      "query": "agence communication lyon 3",
+      "pull": 2
+    },
+    {
+      "query": "agence communication lyon 6",
+      "pull": 2
+    },
+    {
+      "query": "agence communication lyon 9",
+      "pull": 2
+    },
+    {
+      "query": "agence communication lyon recrutement",
+      "pull": 2
+    },
+    {
+      "query": "agence communication marseille",
+      "pull": 2
+    },
+    {
+      "query": "agence communication outdoor",
+      "pull": 2
+    },
+    {
+      "query": "agence communication paris 12",
+      "pull": 2
+    },
+    {
+      "query": "agence communication paris 15",
+      "pull": 2
+    },
+    {
+      "query": "agence communication paris 17",
+      "pull": 2
+    },
+    {
+      "query": "agence communication paris recrutement",
+      "pull": 2
+    },
+    {
+      "query": "agence communication paris stage",
+      "pull": 2
+    },
+    {
+      "query": "agence communication prix",
+      "pull": 2
+    },
+    {
+      "query": "agence communication tarif",
+      "pull": 2
+    },
+    {
+      "query": "agence de communication avis",
+      "pull": 2
+    },
+    {
+      "query": "agence free contact",
+      "pull": 2
+    },
+    {
+      "query": "agence media definition",
+      "pull": 2
+    },
+    {
+      "query": "agence media exemple",
+      "pull": 2
+    },
+    {
+      "query": "agence publicitaire definition",
+      "pull": 2
+    },
+    {
+      "query": "agence versus communication",
+      "pull": 2
+    },
+    {
+      "query": "agency communication definition",
+      "pull": 2
+    },
+    {
+      "query": "avis communication animale",
+      "pull": 2
+    },
+    {
+      "query": "bts communication combien d année",
+      "pull": 2
+    },
+    {
+      "query": "bts communication combien de temps",
+      "pull": 2
+    },
+    {
+      "query": "communication animale",
+      "pull": 2
+    },
+    {
+      "query": "communication assertive",
+      "pull": 2
+    },
+    {
+      "query": "communication developer",
+      "pull": 2
+    },
+    {
+      "query": "communication digitale",
+      "pull": 2
+    },
+    {
+      "query": "communication et comprehension",
+      "pull": 2
+    },
+    {
+      "query": "communication formation",
+      "pull": 2
+    },
+    {
+      "query": "communication institutionnelle",
+      "pull": 2
+    },
+    {
+      "query": "communication interpersonnelle",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon 2",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon 3",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon alternance",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon emploi",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon entreprise",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon job",
+      "pull": 2
+    },
+    {
+      "query": "communication lyon recrutement",
+      "pull": 2
+    },
+    {
+      "query": "communication non verbale",
+      "pull": 2
+    },
+    {
+      "query": "communication ou communication",
+      "pull": 2
+    },
+    {
+      "query": "communication ou marketing",
+      "pull": 2
+    },
+    {
+      "query": "communication ouverte",
+      "pull": 2
+    },
+    {
+      "query": "communication para verbale",
+      "pull": 2
+    },
+    {
+      "query": "communication paris cdd",
+      "pull": 2
+    },
+    {
+      "query": "communication paris cdi",
+      "pull": 2
+    },
+    {
+      "query": "communication paris emploi",
+      "pull": 2
+    },
+    {
+      "query": "communication paris offre",
+      "pull": 2
+    },
+    {
+      "query": "communication pas cher",
+      "pull": 2
+    },
+    {
+      "query": "communication synonyme",
+      "pull": 2
+    },
+    {
+      "query": "communication vs",
+      "pull": 2
+    },
+    {
+      "query": "communication vs marketing",
+      "pull": 2
+    },
+    {
+      "query": "communication/def",
+      "pull": 2
+    },
+    {
+      "query": "dev communication",
+      "pull": 2
+    },
+    {
+      "query": "dev communication alwar",
+      "pull": 2
+    },
+    {
+      "query": "dev communication alwar photos",
+      "pull": 2
+    },
+    {
+      "query": "dev communication kotputli",
+      "pull": 2
+    },
+    {
+      "query": "dev communication kurukshetra",
+      "pull": 2
+    },
+    {
+      "query": "dev communication near me",
+      "pull": 2
+    },
+    {
+      "query": "dev communication photos",
+      "pull": 2
+    },
+    {
+      "query": "développement communication",
+      "pull": 2
+    },
+    {
+      "query": "devis agence communication",
+      "pull": 2
+    },
+    {
+      "query": "devis agence de communication pdf",
+      "pull": 2
+    },
+    {
+      "query": "devis communication digitale",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication commerciale",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication de crise",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication institutionnelle",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication interne",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication non verbale",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication positive",
+      "pull": 2
+    },
+    {
+      "query": "exemple communication verbale",
+      "pull": 2
+    },
+    {
+      "query": "formation communication animale",
+      "pull": 2
+    },
+    {
+      "query": "freelance communication bordeaux",
+      "pull": 2
+    },
+    {
+      "query": "freelance communication digitale",
+      "pull": 2
+    },
+    {
+      "query": "freelance communication lyon",
+      "pull": 2
+    },
+    {
+      "query": "freelance communication paris",
+      "pull": 2
+    },
+    {
+      "query": "freelance communication tarif",
+      "pull": 2
+    },
+    {
+      "query": "honoraires agence de communication",
+      "pull": 2
+    },
+    {
+      "query": "master communication combien d année",
+      "pull": 2
+    },
+    {
+      "query": "meilleur communication",
+      "pull": 2
+    },
+    {
+      "query": "meilleur communication entreprise",
+      "pull": 2
+    },
+    {
+      "query": "meilleur communication moto",
+      "pull": 2
+    },
+    {
+      "query": "meilleure agence communication paris",
+      "pull": 2
+    },
+    {
+      "query": "prix agence communication",
+      "pull": 2
+    },
+    {
+      "query": "prix communication animale",
+      "pull": 2
+    },
+    {
+      "query": "prix communication maroc france",
+      "pull": 2
+    },
+    {
+      "query": "tarif agence communication",
+      "pull": 2
+    },
+    {
+      "query": "tarif communication",
+      "pull": 2
+    },
+    {
+      "query": "tarif communication animale",
+      "pull": 2
+    },
+    {
+      "query": "tarif communication animale laila del monte",
+      "pull": 2
+    },
+    {
+      "query": "tarif communication bouygues",
+      "pull": 2
+    },
+    {
+      "query": "tarif communication free",
+      "pull": 2
+    },
+    {
+      "query": "tarif communication free mobile",
+      "pull": 2
+    },
+    {
+      "query": "tjm agence de communication",
+      "pull": 2
+    },
+    {
+      "query": "agence com avis",
+      "pull": 1
+    },
+    {
+      "query": "agence com burger king",
+      "pull": 1
+    },
+    {
+      "query": "agence com ia",
+      "pull": 1
+    },
+    {
+      "query": "agence com immobilier",
+      "pull": 1
+    },
+    {
+      "query": "agence com j",
+      "pull": 1
+    },
+    {
+      "query": "agence com pralognan avis",
+      "pull": 1
+    },
+    {
+      "query": "agence com une",
+      "pull": 1
+    },
+    {
+      "query": "agence com unik",
+      "pull": 1
+    },
+    {
+      "query": "agence com unique",
+      "pull": 1
+    },
+    {
+      "query": "agence com up",
+      "pull": 1
+    },
+    {
+      "query": "agence com web",
+      "pull": 1
+    },
+    {
+      "query": "agence com'uniti",
+      "pull": 1
+    },
+    {
+      "query": "agence com&kids",
+      "pull": 1
+    },
+    {
+      "query": "agence comm on",
+      "pull": 1
+    },
+    {
+      "query": "agence comm unique tournai",
+      "pull": 1
+    },
+    {
+      "query": "agence comm'on solenzara",
+      "pull": 1
+    },
+    {
+      "query": "agence communication",
+      "pull": 1
+    },
+    {
+      "query": "agence communication agen",
+      "pull": 1
+    },
+    {
+      "query": "agence communication aix en provence",
+      "pull": 1
+    },
+    {
+      "query": "agence communication amiens",
+      "pull": 1
+    },
+    {
+      "query": "agence communication angers",
+      "pull": 1
+    },
+    {
+      "query": "agence communication angouleme",
+      "pull": 1
+    },
+    {
+      "query": "agence communication annecy",
+      "pull": 1
+    },
+    {
+      "query": "agence communication arras",
+      "pull": 1
+    },
+    {
+      "query": "agence communication autour de moi",
+      "pull": 1
+    },
+    {
+      "query": "agence communication auxerre",
+      "pull": 1
+    },
+    {
+      "query": "agence communication avignon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication bayonne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication belgique",
+      "pull": 1
+    },
+    {
+      "query": "agence communication besançon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication biarritz",
+      "pull": 1
+    },
+    {
+      "query": "agence communication bourg en bresse",
+      "pull": 1
+    },
+    {
+      "query": "agence communication bourges",
+      "pull": 1
+    },
+    {
+      "query": "agence communication bourgoin jallieu",
+      "pull": 1
+    },
+    {
+      "query": "agence communication brest",
+      "pull": 1
+    },
+    {
+      "query": "agence communication bruxelles",
+      "pull": 1
+    },
+    {
+      "query": "agence communication caen",
+      "pull": 1
+    },
+    {
+      "query": "agence communication cannes",
+      "pull": 1
+    },
+    {
+      "query": "agence communication carcassonne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication casablanca",
+      "pull": 1
+    },
+    {
+      "query": "agence communication chambéry",
+      "pull": 1
+    },
+    {
+      "query": "agence communication chartres",
+      "pull": 1
+    },
+    {
+      "query": "agence communication chateauroux",
+      "pull": 1
+    },
+    {
+      "query": "agence communication cholet",
+      "pull": 1
+    },
+    {
+      "query": "agence communication clermont ferrand",
+      "pull": 1
+    },
+    {
+      "query": "agence communication corporate",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dakar",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dax",
+      "pull": 1
+    },
+    {
+      "query": "agence communication de crise",
+      "pull": 1
+    },
+    {
+      "query": "agence communication def",
+      "pull": 1
+    },
+    {
+      "query": "agence communication digitale",
+      "pull": 1
+    },
+    {
+      "query": "agence communication digitale paris",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dijon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dinan",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dole",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dreux",
+      "pull": 1
+    },
+    {
+      "query": "agence communication dunkerque",
+      "pull": 1
+    },
+    {
+      "query": "agence communication eco web design quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence communication emploi",
+      "pull": 1
+    },
+    {
+      "query": "agence communication epernay",
+      "pull": 1
+    },
+    {
+      "query": "agence communication equestre",
+      "pull": 1
+    },
+    {
+      "query": "agence communication essonne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication et marketing",
+      "pull": 1
+    },
+    {
+      "query": "agence communication ethnique",
+      "pull": 1
+    },
+    {
+      "query": "agence communication evenementiel paris",
+      "pull": 1
+    },
+    {
+      "query": "agence communication evenementielle",
+      "pull": 1
+    },
+    {
+      "query": "agence communication evreux",
+      "pull": 1
+    },
+    {
+      "query": "agence communication financière",
+      "pull": 1
+    },
+    {
+      "query": "agence communication fontainebleau",
+      "pull": 1
+    },
+    {
+      "query": "agence communication food",
+      "pull": 1
+    },
+    {
+      "query": "agence communication food lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication food paris",
+      "pull": 1
+    },
+    {
+      "query": "agence communication football",
+      "pull": 1
+    },
+    {
+      "query": "agence communication france",
+      "pull": 1
+    },
+    {
+      "query": "agence communication frejus",
+      "pull": 1
+    },
+    {
+      "query": "agence communication fribourg",
+      "pull": 1
+    },
+    {
+      "query": "agence communication gap",
+      "pull": 1
+    },
+    {
+      "query": "agence communication geneve",
+      "pull": 1
+    },
+    {
+      "query": "agence communication grenoble",
+      "pull": 1
+    },
+    {
+      "query": "agence communication guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "agence communication guyane",
+      "pull": 1
+    },
+    {
+      "query": "agence communication haguenau",
+      "pull": 1
+    },
+    {
+      "query": "agence communication havas",
+      "pull": 1
+    },
+    {
+      "query": "agence communication hazebrouck",
+      "pull": 1
+    },
+    {
+      "query": "agence communication hossegor",
+      "pull": 1
+    },
+    {
+      "query": "agence communication hotellerie",
+      "pull": 1
+    },
+    {
+      "query": "agence communication hyeres",
+      "pull": 1
+    },
+    {
+      "query": "agence communication ia",
+      "pull": 1
+    },
+    {
+      "query": "agence communication ile de france",
+      "pull": 1
+    },
+    {
+      "query": "agence communication immobilier",
+      "pull": 1
+    },
+    {
+      "query": "agence communication industrie",
+      "pull": 1
+    },
+    {
+      "query": "agence communication institutionnelle",
+      "pull": 1
+    },
+    {
+      "query": "agence communication intermarché",
+      "pull": 1
+    },
+    {
+      "query": "agence communication interne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication job",
+      "pull": 1
+    },
+    {
+      "query": "agence communication jura",
+      "pull": 1
+    },
+    {
+      "query": "agence communication la roche sur yon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication la rochelle",
+      "pull": 1
+    },
+    {
+      "query": "agence communication lausanne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication laval",
+      "pull": 1
+    },
+    {
+      "query": "agence communication le havre",
+      "pull": 1
+    },
+    {
+      "query": "agence communication le mans",
+      "pull": 1
+    },
+    {
+      "query": "agence communication liege",
+      "pull": 1
+    },
+    {
+      "query": "agence communication luxembourg",
+      "pull": 1
+    },
+    {
+      "query": "agence communication marketing",
+      "pull": 1
+    },
+    {
+      "query": "agence communication marrakech",
+      "pull": 1
+    },
+    {
+      "query": "agence communication martinique",
+      "pull": 1
+    },
+    {
+      "query": "agence communication metz",
+      "pull": 1
+    },
+    {
+      "query": "agence communication monaco",
+      "pull": 1
+    },
+    {
+      "query": "agence communication montauban",
+      "pull": 1
+    },
+    {
+      "query": "agence communication montreal",
+      "pull": 1
+    },
+    {
+      "query": "agence communication mulhouse",
+      "pull": 1
+    },
+    {
+      "query": "agence communication namur",
+      "pull": 1
+    },
+    {
+      "query": "agence communication nancy",
+      "pull": 1
+    },
+    {
+      "query": "agence communication narbonne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication neuchatel",
+      "pull": 1
+    },
+    {
+      "query": "agence communication nevers",
+      "pull": 1
+    },
+    {
+      "query": "agence communication new york",
+      "pull": 1
+    },
+    {
+      "query": "agence communication nice",
+      "pull": 1
+    },
+    {
+      "query": "agence communication nimes",
+      "pull": 1
+    },
+    {
+      "query": "agence communication niort",
+      "pull": 1
+    },
+    {
+      "query": "agence communication noumea",
+      "pull": 1
+    },
+    {
+      "query": "agence communication offre emploi",
+      "pull": 1
+    },
+    {
+      "query": "agence communication oise",
+      "pull": 1
+    },
+    {
+      "query": "agence communication orange",
+      "pull": 1
+    },
+    {
+      "query": "agence communication orchies",
+      "pull": 1
+    },
+    {
+      "query": "agence communication orleans",
+      "pull": 1
+    },
+    {
+      "query": "agence communication paris 10",
+      "pull": 1
+    },
+    {
+      "query": "agence communication paris 13",
+      "pull": 1
+    },
+    {
+      "query": "agence communication paris mode",
+      "pull": 1
+    },
+    {
+      "query": "agence communication pau",
+      "pull": 1
+    },
+    {
+      "query": "agence communication pays basque",
+      "pull": 1
+    },
+    {
+      "query": "agence communication perigueux",
+      "pull": 1
+    },
+    {
+      "query": "agence communication perpignan",
+      "pull": 1
+    },
+    {
+      "query": "agence communication poitiers",
+      "pull": 1
+    },
+    {
+      "query": "agence communication politique",
+      "pull": 1
+    },
+    {
+      "query": "agence communication print",
+      "pull": 1
+    },
+    {
+      "query": "agence communication publique",
+      "pull": 1
+    },
+    {
+      "query": "agence communication quebec",
+      "pull": 1
+    },
+    {
+      "query": "agence communication quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence communication rabat",
+      "pull": 1
+    },
+    {
+      "query": "agence communication reims",
+      "pull": 1
+    },
+    {
+      "query": "agence communication réseaux sociaux",
+      "pull": 1
+    },
+    {
+      "query": "agence communication responsable",
+      "pull": 1
+    },
+    {
+      "query": "agence communication restaurant",
+      "pull": 1
+    },
+    {
+      "query": "agence communication reunion",
+      "pull": 1
+    },
+    {
+      "query": "agence communication roanne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication rouen",
+      "pull": 1
+    },
+    {
+      "query": "agence communication rse",
+      "pull": 1
+    },
+    {
+      "query": "agence communication saint brieuc",
+      "pull": 1
+    },
+    {
+      "query": "agence communication saint jean de luz",
+      "pull": 1
+    },
+    {
+      "query": "agence communication saint malo",
+      "pull": 1
+    },
+    {
+      "query": "agence communication salon de provence",
+      "pull": 1
+    },
+    {
+      "query": "agence communication santé",
+      "pull": 1
+    },
+    {
+      "query": "agence communication savoie",
+      "pull": 1
+    },
+    {
+      "query": "agence communication scientifique",
+      "pull": 1
+    },
+    {
+      "query": "agence communication sens",
+      "pull": 1
+    },
+    {
+      "query": "agence communication sport",
+      "pull": 1
+    },
+    {
+      "query": "agence communication sport paris",
+      "pull": 1
+    },
+    {
+      "query": "agence communication strasbourg",
+      "pull": 1
+    },
+    {
+      "query": "agence communication suisse",
+      "pull": 1
+    },
+    {
+      "query": "agence communication tahiti",
+      "pull": 1
+    },
+    {
+      "query": "agence communication talence",
+      "pull": 1
+    },
+    {
+      "query": "agence communication tarbes",
+      "pull": 1
+    },
+    {
+      "query": "agence communication toulon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication tourisme",
+      "pull": 1
+    },
+    {
+      "query": "agence communication tournai",
+      "pull": 1
+    },
+    {
+      "query": "agence communication tours",
+      "pull": 1
+    },
+    {
+      "query": "agence communication troyes",
+      "pull": 1
+    },
+    {
+      "query": "agence communication tunisie",
+      "pull": 1
+    },
+    {
+      "query": "agence communication uzes",
+      "pull": 1
+    },
+    {
+      "query": "agence communication valais",
+      "pull": 1
+    },
+    {
+      "query": "agence communication valence",
+      "pull": 1
+    },
+    {
+      "query": "agence communication vannes",
+      "pull": 1
+    },
+    {
+      "query": "agence communication var",
+      "pull": 1
+    },
+    {
+      "query": "agence communication vendée",
+      "pull": 1
+    },
+    {
+      "query": "agence communication versailles",
+      "pull": 1
+    },
+    {
+      "query": "agence communication vevey",
+      "pull": 1
+    },
+    {
+      "query": "agence communication vichy",
+      "pull": 1
+    },
+    {
+      "query": "agence communication visuelle",
+      "pull": 1
+    },
+    {
+      "query": "agence communication visuelle paris",
+      "pull": 1
+    },
+    {
+      "query": "agence communication web",
+      "pull": 1
+    },
+    {
+      "query": "agence communication web design finistere",
+      "pull": 1
+    },
+    {
+      "query": "agence communication web pays bigouden",
+      "pull": 1
+    },
+    {
+      "query": "agence communication web quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence communication yachting",
+      "pull": 1
+    },
+    {
+      "query": "agence communication yonne",
+      "pull": 1
+    },
+    {
+      "query": "agence communication yvelines",
+      "pull": 1
+    },
+    {
+      "query": "agence communication yverdon",
+      "pull": 1
+    },
+    {
+      "query": "agence communication yvetot",
+      "pull": 1
+    },
+    {
+      "query": "agence communication zurich",
+      "pull": 1
+    },
+    {
+      "query": "agence de com definition",
+      "pull": 1
+    },
+    {
+      "query": "agence de com graphisme",
+      "pull": 1
+    },
+    {
+      "query": "agence de com tarif",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication devis",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication exemple",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication formation",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication jin",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication kenitra",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication kinshasa",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication pas cher",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication recherche freelance",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication x",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication yaoundé",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication youville inc",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication yssingeaux",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication z and ko",
+      "pull": 1
+    },
+    {
+      "query": "agence de communication z and ko avis",
+      "pull": 1
+    },
+    {
+      "query": "agence de prix",
+      "pull": 1
+    },
+    {
+      "query": "agence design communication quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence digital avis",
+      "pull": 1
+    },
+    {
+      "query": "agence elite media avis",
+      "pull": 1
+    },
+    {
+      "query": "agence evasion communication avis",
+      "pull": 1
+    },
+    {
+      "query": "agence freelance communication",
+      "pull": 1
+    },
+    {
+      "query": "agence g com",
+      "pull": 1
+    },
+    {
+      "query": "agence gauter com",
+      "pull": 1
+    },
+    {
+      "query": "agence global com",
+      "pull": 1
+    },
+    {
+      "query": "agence hamilton com",
+      "pull": 1
+    },
+    {
+      "query": "agence hop com",
+      "pull": 1
+    },
+    {
+      "query": "agence horizon com",
+      "pull": 1
+    },
+    {
+      "query": "agence i communication",
+      "pull": 1
+    },
+    {
+      "query": "agence joly com",
+      "pull": 1
+    },
+    {
+      "query": "agence juive contact",
+      "pull": 1
+    },
+    {
+      "query": "agence juridique com",
+      "pull": 1
+    },
+    {
+      "query": "agence karma communication",
+      "pull": 1
+    },
+    {
+      "query": "agence karma communication avis",
+      "pull": 1
+    },
+    {
+      "query": "agence kimba com",
+      "pull": 1
+    },
+    {
+      "query": "agence king com",
+      "pull": 1
+    },
+    {
+      "query": "agence kiwi com",
+      "pull": 1
+    },
+    {
+      "query": "agence lyon pub",
+      "pull": 1
+    },
+    {
+      "query": "agence marketing lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence media haiku",
+      "pull": 1
+    },
+    {
+      "query": "agence media lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence media quebec",
+      "pull": 1
+    },
+    {
+      "query": "agence media um",
+      "pull": 1
+    },
+    {
+      "query": "agence media unilever",
+      "pull": 1
+    },
+    {
+      "query": "agence media wpp",
+      "pull": 1
+    },
+    {
+      "query": "agence media zenith",
+      "pull": 1
+    },
+    {
+      "query": "agence meilleurtaux com",
+      "pull": 1
+    },
+    {
+      "query": "agence paris pub",
+      "pull": 1
+    },
+    {
+      "query": "agence paris publicité",
+      "pull": 1
+    },
+    {
+      "query": "agence pdf com formation",
+      "pull": 1
+    },
+    {
+      "query": "agence planète communication avis",
+      "pull": 1
+    },
+    {
+      "query": "agence pub josiane",
+      "pull": 1
+    },
+    {
+      "query": "agence pub quebec",
+      "pull": 1
+    },
+    {
+      "query": "agence pub quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire kinshasa",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire lyon",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire oran",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire quebec",
+      "pull": 1
+    },
+    {
+      "query": "agence publicitaire quimper",
+      "pull": 1
+    },
+    {
+      "query": "agence qmi contact",
+      "pull": 1
+    },
+    {
+      "query": "agence rp & influence zmirov communication photos",
+      "pull": 1
+    },
+    {
+      "query": "agence scoop communication avis",
+      "pull": 1
+    },
+    {
+      "query": "agence social media tarif",
+      "pull": 1
+    },
+    {
+      "query": "agence w com",
+      "pull": 1
+    },
+    {
+      "query": "agence wimmo com",
+      "pull": 1
+    },
+    {
+      "query": "agence winimmobilier com",
+      "pull": 1
+    },
+    {
+      "query": "agence winter com",
+      "pull": 1
+    },
+    {
+      "query": "agence yas contact",
+      "pull": 1
+    },
+    {
+      "query": "agence z com",
+      "pull": 1
+    },
+    {
+      "query": "agence ze com",
+      "pull": 1
+    },
+    {
+      "query": "agence zebra communication",
+      "pull": 1
+    },
+    {
+      "query": "agence zmirov communication",
+      "pull": 1
+    },
+    {
+      "query": "agency communication meaning",
+      "pull": 1
+    },
+    {
+      "query": "agency definition communication",
+      "pull": 1
+    },
+    {
+      "query": "agency definition media",
+      "pull": 1
+    },
+    {
+      "query": "agency media definition",
+      "pull": 1
+    },
+    {
+      "query": "agency media group",
+      "pull": 1
+    },
+    {
+      "query": "agency vs media",
+      "pull": 1
+    },
+    {
+      "query": "alternance paris communication",
+      "pull": 1
+    },
+    {
+      "query": "attestation communication liste électorale",
+      "pull": 1
+    },
+    {
+      "query": "avis af communication",
+      "pull": 1
+    },
+    {
+      "query": "avis agence com",
+      "pull": 1
+    },
+    {
+      "query": "avis bts communication",
+      "pull": 1
+    },
+    {
+      "query": "avis bts communication cned",
+      "pull": 1
+    },
+    {
+      "query": "avis coherence communication",
+      "pull": 1
+    },
+    {
+      "query": "avis communication",
+      "pull": 1
+    },
+    {
+      "query": "avis communication animale chat perdu",
+      "pull": 1
+    },
+    {
+      "query": "avis de communication des coordonnées du client",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence de communication angers ça bouge avrillé",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence de communication home média landerneau",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence ellipse communication marketing événementiel troyes",
+      "pull": 1
+    },
+    {
+      "query": "avis sur agence scoop communication",
+      "pull": 1
+    },
+    {
+      "query": "avis sur ats communication agence d yssingeaux",
+      "pull": 1
+    },
+    {
+      "query": "avis sur ats communication agence de clermont ferrand",
+      "pull": 1
+    },
+    {
+      "query": "avis sur ats communication agence de montluçon",
+      "pull": 1
+    },
+    {
+      "query": "avis sur communication animale lyon carole bardon",
+      "pull": 1
+    },
+    {
+      "query": "avis sur communication animale pascale landou",
+      "pull": 1
+    },
+    {
+      "query": "beton contact pas cher",
+      "pull": 1
+    },
+    {
+      "query": "bonne communication",
+      "pull": 1
+    },
+    {
+      "query": "bonne communication au travail",
+      "pull": 1
+    },
+    {
+      "query": "bonne communication définition",
+      "pull": 1
+    },
+    {
+      "query": "bonne communication en famille 3 lettres",
+      "pull": 1
+    },
+    {
+      "query": "bonne communication synonyme",
+      "pull": 1
+    },
+    {
+      "query": "brief agence de communication exemple",
+      "pull": 1
+    },
+    {
+      "query": "cabinet communication",
+      "pull": 1
+    },
+    {
+      "query": "cabinet de conseil communication",
+      "pull": 1
+    },
+    {
+      "query": "cabinet de recrutement communication paris",
+      "pull": 1
+    },
+    {
+      "query": "cabinet recrutement communication",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication à distance",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication marketing",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication organisationnelle",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication publique",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication udem",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication ulaval",
+      "pull": 1
+    },
+    {
+      "query": "certificat communication uqam",
+      "pull": 1
+    },
+    {
+      "query": "certification communication",
+      "pull": 1
+    },
+    {
+      "query": "certified compensation professional (ccp)",
+      "pull": 1
+    },
+    {
+      "query": "coffret communication pas cher",
+      "pull": 1
+    },
+    {
+      "query": "colle contact pas cher",
+      "pull": 1
+    },
+    {
+      "query": "com'over agence",
+      "pull": 1
+    },
+    {
+      "query": "combien coute une communication a l etranger",
+      "pull": 1
+    },
+    {
+      "query": "combien coute une communication animal",
+      "pull": 1
+    },
+    {
+      "query": "combien coute une communication telephonique",
+      "pull": 1
+    },
+    {
+      "query": "combien coute une communication whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "combien d agence de communication en france",
+      "pull": 1
+    },
+    {
+      "query": "combien de communication",
+      "pull": 1
+    },
+    {
+      "query": "combien de communication existe t il",
+      "pull": 1
+    },
+    {
+      "query": "combien types de communication existe t il",
+      "pull": 1
+    },
+    {
+      "query": "comment améliorer communication",
+      "pull": 1
+    },
+    {
+      "query": "comment améliorer la communication dans une équipe de travail",
+      "pull": 1
+    },
+    {
+      "query": "comment com",
+      "pull": 1
+    },
+    {
+      "query": "comment enregistrer une communication",
+      "pull": 1
+    },
+    {
+      "query": "comment enregistrer une communication sur iphone",
+      "pull": 1
+    },
+    {
+      "query": "comment enregistrer une communication sur whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "comment enregistrer une communication téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "comment enregistrer une communication téléphonique sur iphone",
+      "pull": 1
+    },
+    {
+      "query": "comment faire communication animale",
+      "pull": 1
+    },
+    {
+      "query": "comment fonctionne la communication animale",
+      "pull": 1
+    },
+    {
+      "query": "communication",
+      "pull": 1
+    },
+    {
+      "query": "communication agence",
+      "pull": 1
+    },
+    {
+      "query": "communication agence de voyage",
+      "pull": 1
+    },
+    {
+      "query": "communication agence lyon",
+      "pull": 1
+    },
+    {
+      "query": "communication agence paris",
+      "pull": 1
+    },
+    {
+      "query": "communication agency qatar",
+      "pull": 1
+    },
+    {
+      "query": "communication agency zurich",
+      "pull": 1
+    },
+    {
+      "query": "communication alternative",
+      "pull": 1
+    },
+    {
+      "query": "communication alternative améliorée",
+      "pull": 1
+    },
+    {
+      "query": "communication alternative et augmentée",
+      "pull": 1
+    },
+    {
+      "query": "communication animale chat",
+      "pull": 1
+    },
+    {
+      "query": "communication animale chien",
+      "pull": 1
+    },
+    {
+      "query": "communication animale formation",
+      "pull": 1
+    },
+    {
+      "query": "communication animale gratuite",
+      "pull": 1
+    },
+    {
+      "query": "communication animale pas cher",
+      "pull": 1
+    },
+    {
+      "query": "communication assertive def",
+      "pull": 1
+    },
+    {
+      "query": "communication avis",
+      "pull": 1
+    },
+    {
+      "query": "communication bebe",
+      "pull": 1
+    },
+    {
+      "query": "communication bébé in utero",
+      "pull": 1
+    },
+    {
+      "query": "communication bidirectionnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication bienveillante",
+      "pull": 1
+    },
+    {
+      "query": "communication biology",
+      "pull": 1
+    },
+    {
+      "query": "communication biology impact factor",
+      "pull": 1
+    },
+    {
+      "query": "communication bordeaux",
+      "pull": 1
+    },
+    {
+      "query": "communication breakdown",
+      "pull": 1
+    },
+    {
+      "query": "communication bucco sinusienne",
+      "pull": 1
+    },
+    {
+      "query": "communication burger king",
+      "pull": 1
+    },
+    {
+      "query": "communication caa",
+      "pull": 1
+    },
+    {
+      "query": "communication casque moto",
+      "pull": 1
+    },
+    {
+      "query": "communication cellulaire",
+      "pull": 1
+    },
+    {
+      "query": "communication charlevoix",
+      "pull": 1
+    },
+    {
+      "query": "communication claire",
+      "pull": 1
+    },
+    {
+      "query": "communication comments",
+      "pull": 1
+    },
+    {
+      "query": "communication comments for appraisal",
+      "pull": 1
+    },
+    {
+      "query": "communication comments for employee evaluations",
+      "pull": 1
+    },
+    {
+      "query": "communication comments for evaluations",
+      "pull": 1
+    },
+    {
+      "query": "communication comments for performance review",
+      "pull": 1
+    },
+    {
+      "query": "communication commerciale",
+      "pull": 1
+    },
+    {
+      "query": "communication corporate",
+      "pull": 1
+    },
+    {
+      "query": "communication corporate def",
+      "pull": 1
+    },
+    {
+      "query": "communication couple",
+      "pull": 1
+    },
+    {
+      "query": "communication culturelle",
+      "pull": 1
+    },
+    {
+      "query": "communication d'entreprise",
+      "pull": 1
+    },
+    {
+      "query": "communication dans le couple",
+      "pull": 1
+    },
+    {
+      "query": "communication de crise",
+      "pull": 1
+    },
+    {
+      "query": "communication de masse",
+      "pull": 1
+    },
+    {
+      "query": "communication def",
+      "pull": 1
+    },
+    {
+      "query": "communication definition and process",
+      "pull": 1
+    },
+    {
+      "query": "communication definition francais",
+      "pull": 1
+    },
+    {
+      "query": "communication definition ifsi",
+      "pull": 1
+    },
+    {
+      "query": "communication definition in business",
+      "pull": 1
+    },
+    {
+      "query": "communication definition in english",
+      "pull": 1
+    },
+    {
+      "query": "communication definition in nursing",
+      "pull": 1
+    },
+    {
+      "query": "communication definition pdf",
+      "pull": 1
+    },
+    {
+      "query": "communication des organisations",
+      "pull": 1
+    },
+    {
+      "query": "communication descendante",
+      "pull": 1
+    },
+    {
+      "query": "communication device",
+      "pull": 1
+    },
+    {
+      "query": "communication devis",
+      "pull": 1
+    },
+    {
+      "query": "communication digitale def",
+      "pull": 1
+    },
+    {
+      "query": "communication efficace",
+      "pull": 1
+    },
+    {
+      "query": "communication emploi",
+      "pull": 1
+    },
+    {
+      "query": "communication en anglais",
+      "pull": 1
+    },
+    {
+      "query": "communication en arabe",
+      "pull": 1
+    },
+    {
+      "query": "communication en dialogues pdf",
+      "pull": 1
+    },
+    {
+      "query": "communication en français",
+      "pull": 1
+    },
+    {
+      "query": "communication entreprise",
+      "pull": 1
+    },
+    {
+      "query": "communication et collaboration",
+      "pull": 1
+    },
+    {
+      "query": "communication et correspondance",
+      "pull": 1
+    },
+    {
+      "query": "communication et marketing",
+      "pull": 1
+    },
+    {
+      "query": "communication evenementiel",
+      "pull": 1
+    },
+    {
+      "query": "communication exemple",
+      "pull": 1
+    },
+    {
+      "query": "communication exemple cv",
+      "pull": 1
+    },
+    {
+      "query": "communication externe",
+      "pull": 1
+    },
+    {
+      "query": "communication féline",
+      "pull": 1
+    },
+    {
+      "query": "communication financière",
+      "pull": 1
+    },
+    {
+      "query": "communication fluide",
+      "pull": 1
+    },
+    {
+      "query": "communication fluide synonyme",
+      "pull": 1
+    },
+    {
+      "query": "communication fonctionnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication formation à distance",
+      "pull": 1
+    },
+    {
+      "query": "communication formation alternance",
+      "pull": 1
+    },
+    {
+      "query": "communication formation continue",
+      "pull": 1
+    },
+    {
+      "query": "communication formation en ligne",
+      "pull": 1
+    },
+    {
+      "query": "communication formation metier",
+      "pull": 1
+    },
+    {
+      "query": "communication formation professionnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication formelle",
+      "pull": 1
+    },
+    {
+      "query": "communication formelle et informelle",
+      "pull": 1
+    },
+    {
+      "query": "communication francais",
+      "pull": 1
+    },
+    {
+      "query": "communication freelance",
+      "pull": 1
+    },
+    {
+      "query": "communication freelance jobs",
+      "pull": 1
+    },
+    {
+      "query": "communication freelance rennes",
+      "pull": 1
+    },
+    {
+      "query": "communication freelance toulouse",
+      "pull": 1
+    },
+    {
+      "query": "communication futée",
+      "pull": 1
+    },
+    {
+      "query": "communication générale",
+      "pull": 1
+    },
+    {
+      "query": "communication geneve",
+      "pull": 1
+    },
+    {
+      "query": "communication gestuelle",
+      "pull": 1
+    },
+    {
+      "query": "communication gestuelle associée à la parole",
+      "pull": 1
+    },
+    {
+      "query": "communication gestuelle bébé",
+      "pull": 1
+    },
+    {
+      "query": "communication girafe",
+      "pull": 1
+    },
+    {
+      "query": "communication globale",
+      "pull": 1
+    },
+    {
+      "query": "communication gouvernementale",
+      "pull": 1
+    },
+    {
+      "query": "communication graphique",
+      "pull": 1
+    },
+    {
+      "query": "communication graphique guyane",
+      "pull": 1
+    },
+    {
+      "query": "communication gratuite",
+      "pull": 1
+    },
+    {
+      "query": "communication gratuite avec whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "communication gratuite mots fléchés",
+      "pull": 1
+    },
+    {
+      "query": "communication hachée ou hachurée",
+      "pull": 1
+    },
+    {
+      "query": "communication hachurée",
+      "pull": 1
+    },
+    {
+      "query": "communication haptique",
+      "pull": 1
+    },
+    {
+      "query": "communication harcelante code criminel",
+      "pull": 1
+    },
+    {
+      "query": "communication horizontale",
+      "pull": 1
+    },
+    {
+      "query": "communication hormonal 1bac",
+      "pull": 1
+    },
+    {
+      "query": "communication hormonale",
+      "pull": 1
+    },
+    {
+      "query": "communication hors média",
+      "pull": 1
+    },
+    {
+      "query": "communication hors média exemple",
+      "pull": 1
+    },
+    {
+      "query": "communication hypnotique",
+      "pull": 1
+    },
+    {
+      "query": "communication informelle",
+      "pull": 1
+    },
+    {
+      "query": "communication institutionnelle def",
+      "pull": 1
+    },
+    {
+      "query": "communication interauriculaire",
+      "pull": 1
+    },
+    {
+      "query": "communication interculturelle",
+      "pull": 1
+    },
+    {
+      "query": "communication interne",
+      "pull": 1
+    },
+    {
+      "query": "communication interne entreprise",
+      "pull": 1
+    },
+    {
+      "query": "communication interpersonnelle définition",
+      "pull": 1
+    },
+    {
+      "query": "communication interventriculaire",
+      "pull": 1
+    },
+    {
+      "query": "communication jakobson",
+      "pull": 1
+    },
+    {
+      "query": "communication jean malo",
+      "pull": 1
+    },
+    {
+      "query": "communication jeunesse",
+      "pull": 1
+    },
+    {
+      "query": "communication job",
+      "pull": 1
+    },
+    {
+      "query": "communication journalisme",
+      "pull": 1
+    },
+    {
+      "query": "communication journalistique",
+      "pull": 1
+    },
+    {
+      "query": "communication judiciaire",
+      "pull": 1
+    },
+    {
+      "query": "communication juridictionnelle consolidée",
+      "pull": 1
+    },
+    {
+      "query": "communication juridique",
+      "pull": 1
+    },
+    {
+      "query": "communication juxtacrine",
+      "pull": 1
+    },
+    {
+      "query": "communication ka hindi",
+      "pull": 1
+    },
+    {
+      "query": "communication karting",
+      "pull": 1
+    },
+    {
+      "query": "communication keolis",
+      "pull": 1
+    },
+    {
+      "query": "communication key blue gate",
+      "pull": 1
+    },
+    {
+      "query": "communication kiabi",
+      "pull": 1
+    },
+    {
+      "query": "communication kinesique",
+      "pull": 1
+    },
+    {
+      "query": "communication kinesthésique",
+      "pull": 1
+    },
+    {
+      "query": "communication kit",
+      "pull": 1
+    },
+    {
+      "query": "communication knx",
+      "pull": 1
+    },
+    {
+      "query": "communication ksp",
+      "pull": 1
+    },
+    {
+      "query": "communication larousse",
+      "pull": 1
+    },
+    {
+      "query": "communication lassuranceretraite fr",
+      "pull": 1
+    },
+    {
+      "query": "communication latérale",
+      "pull": 1
+    },
+    {
+      "query": "communication lille",
+      "pull": 1
+    },
+    {
+      "query": "communication liste électorale",
+      "pull": 1
+    },
+    {
+      "query": "communication liste électorale candidat",
+      "pull": 1
+    },
+    {
+      "query": "communication liste électorale rgpd",
+      "pull": 1
+    },
+    {
+      "query": "communication logo",
+      "pull": 1
+    },
+    {
+      "query": "communication lora",
+      "pull": 1
+    },
+    {
+      "query": "communication manager",
+      "pull": 1
+    },
+    {
+      "query": "communication managériale",
+      "pull": 1
+    },
+    {
+      "query": "communication marketing",
+      "pull": 1
+    },
+    {
+      "query": "communication media",
+      "pull": 1
+    },
+    {
+      "query": "communication media hors media",
+      "pull": 1
+    },
+    {
+      "query": "communication métier",
+      "pull": 1
+    },
+    {
+      "query": "communication modbus",
+      "pull": 1
+    },
+    {
+      "query": "communication moto",
+      "pull": 1
+    },
+    {
+      "query": "communication mots fléchés",
+      "pull": 1
+    },
+    {
+      "query": "communication multicanal",
+      "pull": 1
+    },
+    {
+      "query": "communication nerveuse",
+      "pull": 1
+    },
+    {
+      "query": "communication nerveuse 1 bac",
+      "pull": 1
+    },
+    {
+      "query": "communication non agressive",
+      "pull": 1
+    },
+    {
+      "query": "communication non verbale combien de pourcentage",
+      "pull": 1
+    },
+    {
+      "query": "communication non verbale définition",
+      "pull": 1
+    },
+    {
+      "query": "communication non verbale définition oms",
+      "pull": 1
+    },
+    {
+      "query": "communication non verbale exemple",
+      "pull": 1
+    },
+    {
+      "query": "communication non verbale pdf",
+      "pull": 1
+    },
+    {
+      "query": "communication non verbale pourcentage",
+      "pull": 1
+    },
+    {
+      "query": "communication numérique",
+      "pull": 1
+    },
+    {
+      "query": "communication officer",
+      "pull": 1
+    },
+    {
+      "query": "communication officielle",
+      "pull": 1
+    },
+    {
+      "query": "communication offre d'emploi",
+      "pull": 1
+    },
+    {
+      "query": "communication omnicanale",
+      "pull": 1
+    },
+    {
+      "query": "communication opérationnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication orale",
+      "pull": 1
+    },
+    {
+      "query": "communication orale définition",
+      "pull": 1
+    },
+    {
+      "query": "communication organisationnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication osbd",
+      "pull": 1
+    },
+    {
+      "query": "communication outage",
+      "pull": 1
+    },
+    {
+      "query": "communication outbound",
+      "pull": 1
+    },
+    {
+      "query": "communication outils",
+      "pull": 1
+    },
+    {
+      "query": "communication ouverte couple",
+      "pull": 1
+    },
+    {
+      "query": "communication ouverte définition",
+      "pull": 1
+    },
+    {
+      "query": "communication ouverte et honnête",
+      "pull": 1
+    },
+    {
+      "query": "communication ouverture magasin",
+      "pull": 1
+    },
+    {
+      "query": "communication pacifiante",
+      "pull": 1
+    },
+    {
+      "query": "communication par les mots",
+      "pull": 1
+    },
+    {
+      "query": "communication paris",
+      "pull": 1
+    },
+    {
+      "query": "communication paris 8",
+      "pull": 1
+    },
+    {
+      "query": "communication paris fc",
+      "pull": 1
+    },
+    {
+      "query": "communication paris job",
+      "pull": 1
+    },
+    {
+      "query": "communication paris saclay",
+      "pull": 1
+    },
+    {
+      "query": "communication pdf",
+      "pull": 1
+    },
+    {
+      "query": "communication politique",
+      "pull": 1
+    },
+    {
+      "query": "communication positive",
+      "pull": 1
+    },
+    {
+      "query": "communication pour le changement de comportement",
+      "pull": 1
+    },
+    {
+      "query": "communication prix",
+      "pull": 1
+    },
+    {
+      "query": "communication prix marché public",
+      "pull": 1
+    },
+    {
+      "query": "communication professionnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication progressive du français",
+      "pull": 1
+    },
+    {
+      "query": "communication publique",
+      "pull": 1
+    },
+    {
+      "query": "communication qatar airways",
+      "pull": 1
+    },
+    {
+      "query": "communication qhse",
+      "pull": 1
+    },
+    {
+      "query": "communication qualité",
+      "pull": 1
+    },
+    {
+      "query": "communication quantique",
+      "pull": 1
+    },
+    {
+      "query": "communication quantique agathe",
+      "pull": 1
+    },
+    {
+      "query": "communication quantique bébé",
+      "pull": 1
+    },
+    {
+      "query": "communication quantique formation",
+      "pull": 1
+    },
+    {
+      "query": "communication quantique psychologie",
+      "pull": 1
+    },
+    {
+      "query": "communication québec",
+      "pull": 1
+    },
+    {
+      "query": "communication qui coupe",
+      "pull": 1
+    },
+    {
+      "query": "communication radio",
+      "pull": 1
+    },
+    {
+      "query": "communication radio militaire",
+      "pull": 1
+    },
+    {
+      "query": "communication receptive",
+      "pull": 1
+    },
+    {
+      "query": "communication recrutement",
+      "pull": 1
+    },
+    {
+      "query": "communication relationnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication réseaux sociaux",
+      "pull": 1
+    },
+    {
+      "query": "communication responsable",
+      "pull": 1
+    },
+    {
+      "query": "communication responsable ademe",
+      "pull": 1
+    },
+    {
+      "query": "communication rh",
+      "pull": 1
+    },
+    {
+      "query": "communication rse",
+      "pull": 1
+    },
+    {
+      "query": "communication scientifique",
+      "pull": 1
+    },
+    {
+      "query": "communication skills",
+      "pull": 1
+    },
+    {
+      "query": "communication sociale",
+      "pull": 1
+    },
+    {
+      "query": "communication soignant soigné",
+      "pull": 1
+    },
+    {
+      "query": "communication sportive",
+      "pull": 1
+    },
+    {
+      "query": "communication stratégique",
+      "pull": 1
+    },
+    {
+      "query": "communication structurée",
+      "pull": 1
+    },
+    {
+      "query": "communication structurée tva",
+      "pull": 1
+    },
+    {
+      "query": "communication sur internet",
+      "pull": 1
+    },
+    {
+      "query": "communication technique",
+      "pull": 1
+    },
+    {
+      "query": "communication téléphonique",
+      "pull": 1
+    },
+    {
+      "query": "communication territoriale",
+      "pull": 1
+    },
+    {
+      "query": "communication thérapeutique",
+      "pull": 1
+    },
+    {
+      "query": "communication toulouse",
+      "pull": 1
+    },
+    {
+      "query": "communication tower blue gate",
+      "pull": 1
+    },
+    {
+      "query": "communication transactionnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication transparente",
+      "pull": 1
+    },
+    {
+      "query": "communication transversale",
+      "pull": 1
+    },
+    {
+      "query": "communication travail",
+      "pull": 1
+    },
+    {
+      "query": "communication uart",
+      "pull": 1
+    },
+    {
+      "query": "communication udem",
+      "pull": 1
+    },
+    {
+      "query": "communication ulaval",
+      "pull": 1
+    },
+    {
+      "query": "communication uliege",
+      "pull": 1
+    },
+    {
+      "query": "communication unidirectionnelle",
+      "pull": 1
+    },
+    {
+      "query": "communication unifiée",
+      "pull": 1
+    },
+    {
+      "query": "communication unilatérale",
+      "pull": 1
+    },
+    {
+      "query": "communication université",
+      "pull": 1
+    },
+    {
+      "query": "communication university of china",
+      "pull": 1
+    },
+    {
+      "query": "communication uqam",
+      "pull": 1
+    },
+    {
+      "query": "communication verbale",
+      "pull": 1
+    },
+    {
+      "query": "communication verbale définition",
+      "pull": 1
+    },
+    {
+      "query": "communication verbale définition oms",
+      "pull": 1
+    },
+    {
+      "query": "communication verbale et non verbale",
+      "pull": 1
+    },
+    {
+      "query": "communication verbale non verbale et paraverbale",
+      "pull": 1
+    },
+    {
+      "query": "communication verticale",
+      "pull": 1
+    },
+    {
+      "query": "communication verticale et horizontale",
+      "pull": 1
+    },
+    {
+      "query": "communication visuelle",
+      "pull": 1
+    },
+    {
+      "query": "communication visuelle définition",
+      "pull": 1
+    },
+    {
+      "query": "communication visuelle plurimédia",
+      "pull": 1
+    },
+    {
+      "query": "communication vs information",
+      "pull": 1
+    },
+    {
+      "query": "communication vs interpersonal skills",
+      "pull": 1
+    },
+    {
+      "query": "communication vs langage",
+      "pull": 1
+    },
+    {
+      "query": "communication vs talking",
+      "pull": 1
+    },
+    {
+      "query": "communication w",
+      "pull": 1
+    },
+    {
+      "query": "communication watzlawick",
+      "pull": 1
+    },
+    {
+      "query": "communication web",
+      "pull": 1
+    },
+    {
+      "query": "communication werber",
+      "pull": 1
+    },
+    {
+      "query": "communication whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "communication whatsapp gratuit",
+      "pull": 1
+    },
+    {
+      "query": "communication white house",
+      "pull": 1
+    },
+    {
+      "query": "communication wifi",
+      "pull": 1
+    },
+    {
+      "query": "communication wikipedia",
+      "pull": 1
+    },
+    {
+      "query": "communication workers union",
+      "pull": 1
+    },
+    {
+      "query": "communication x",
+      "pull": 1
+    },
+    {
+      "query": "communication xiaomi",
+      "pull": 1
+    },
+    {
+      "query": "communication xmum",
+      "pull": 1
+    },
+    {
+      "query": "communication xplorrecreation com",
+      "pull": 1
+    },
+    {
+      "query": "communication xtra",
+      "pull": 1
+    },
+    {
+      "query": "communication y",
+      "pull": 1
+    },
+    {
+      "query": "communication y briançon",
+      "pull": 1
+    },
+    {
+      "query": "communication yeux nez",
+      "pull": 1
+    },
+    {
+      "query": "communication yverdon",
+      "pull": 1
+    },
+    {
+      "query": "communication yves rocher",
+      "pull": 1
+    },
+    {
+      "query": "communication zara",
+      "pull": 1
+    },
+    {
+      "query": "communication zero",
+      "pull": 1
+    },
+    {
+      "query": "communication zhejiang university",
+      "pull": 1
+    },
+    {
+      "query": "communication zigbee",
+      "pull": 1
+    },
+    {
+      "query": "communication zigue",
+      "pull": 1
+    },
+    {
+      "query": "communication zohran mamdani",
+      "pull": 1
+    },
+    {
+      "query": "communication zoom",
+      "pull": 1
+    },
+    {
+      "query": "communications platform",
+      "pull": 1
+    },
+    {
+      "query": "communiquer comment",
+      "pull": 1
+    },
+    {
+      "query": "consultant communication",
+      "pull": 1
+    },
+    {
+      "query": "consultant communication freelance",
+      "pull": 1
+    },
+    {
+      "query": "consultant communication offre emploi",
+      "pull": 1
+    },
+    {
+      "query": "consultant communications",
+      "pull": 1
+    },
+    {
+      "query": "contact avis",
+      "pull": 1
+    },
+    {
+      "query": "contact avis budget",
+      "pull": 1
+    },
+    {
+      "query": "contact avis canada",
+      "pull": 1
+    },
+    {
+      "query": "contact avis france",
+      "pull": 1
+    },
+    {
+      "query": "contact avis location",
+      "pull": 1
+    },
+    {
+      "query": "contact avis preferred",
+      "pull": 1
+    },
+    {
+      "query": "contact avis rent a car",
+      "pull": 1
+    },
+    {
+      "query": "contact certified fasting",
+      "pull": 1
+    },
+    {
+      "query": "contact combien de saison",
+      "pull": 1
+    },
+    {
+      "query": "contact comment",
+      "pull": 1
+    },
+    {
+      "query": "contact devis gestion matmut fr",
+      "pull": 1
+    },
+    {
+      "query": "contact devis l olivier assurance",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit air france",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit colissimo",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit mondial relay",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit oney",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit orange",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit royal air maroc",
+      "pull": 1
+    },
+    {
+      "query": "contact gratuit ups",
+      "pull": 1
+    },
+    {
+      "query": "contact meilleurpoele com",
+      "pull": 1
+    },
+    {
+      "query": "contact meilleurs agents",
+      "pull": 1
+    },
+    {
+      "query": "contact meilleurtaux assurance",
+      "pull": 1
+    },
+    {
+      "query": "contact meilleurtaux santé",
+      "pull": 1
+    },
+    {
+      "query": "contact plombier pas cher",
+      "pull": 1
+    },
+    {
+      "query": "contact prixtel",
+      "pull": 1
+    },
+    {
+      "query": "contact prixtel résiliation",
+      "pull": 1
+    },
+    {
+      "query": "contact prixtel service client",
+      "pull": 1
+    },
+    {
+      "query": "contact prixtel téléphone",
+      "pull": 1
+    },
+    {
+      "query": "contact tahiti pas cher",
+      "pull": 1
+    },
+    {
+      "query": "contact tarification solidaire",
+      "pull": 1
+    },
+    {
+      "query": "contact tjm",
+      "pull": 1
+    },
+    {
+      "query": "contact tjmaxx",
+      "pull": 1
+    },
+    {
+      "query": "contact tjmaxx credit card",
+      "pull": 1
+    },
+    {
+      "query": "contact tjmaxx customer service",
+      "pull": 1
+    },
+    {
+      "query": "contact xbox",
+      "pull": 1
+    },
+    {
+      "query": "contact xcover",
+      "pull": 1
+    },
+    {
+      "query": "contact xiaomi",
+      "pull": 1
+    },
+    {
+      "query": "contact xiaomi support",
+      "pull": 1
+    },
+    {
+      "query": "contact yahoo mail",
+      "pull": 1
+    },
+    {
+      "query": "contact younited credit",
+      "pull": 1
+    },
+    {
+      "query": "contact yuzzu",
+      "pull": 1
+    },
+    {
+      "query": "contact zara",
+      "pull": 1
+    },
+    {
+      "query": "contact.tj maxx management.hq@gmail.com",
+      "pull": 1
+    },
+    {
+      "query": "conversation devis",
+      "pull": 1
+    },
+    {
+      "query": "conversation youtube",
+      "pull": 1
+    },
+    {
+      "query": "conversation youtube mp3",
+      "pull": 1
+    },
+    {
+      "query": "conversion combien de db",
+      "pull": 1
+    },
+    {
+      "query": "convertisseur devise",
+      "pull": 1
+    },
+    {
+      "query": "définition agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "definition agence media",
+      "pull": 1
+    },
+    {
+      "query": "définition communication",
+      "pull": 1
+    },
+    {
+      "query": "définition communication digitale",
+      "pull": 1
+    },
+    {
+      "query": "definition communication informelle",
+      "pull": 1
+    },
+    {
+      "query": "définition communication institutionnelle",
+      "pull": 1
+    },
+    {
+      "query": "définition communication interne",
+      "pull": 1
+    },
+    {
+      "query": "définition communication interpersonnelle",
+      "pull": 1
+    },
+    {
+      "query": "définition communication larousse",
+      "pull": 1
+    },
+    {
+      "query": "définition communication non verbale",
+      "pull": 1
+    },
+    {
+      "query": "définition communication orale",
+      "pull": 1
+    },
+    {
+      "query": "définition communication verbale",
+      "pull": 1
+    },
+    {
+      "query": "devis communication",
+      "pull": 1
+    },
+    {
+      "query": "devis communication en ligne",
+      "pull": 1
+    },
+    {
+      "query": "devis communication exemple",
+      "pull": 1
+    },
+    {
+      "query": "devis contact",
+      "pull": 1
+    },
+    {
+      "query": "devis prestation communication",
+      "pull": 1
+    },
+    {
+      "query": "devis stratégie de communication",
+      "pull": 1
+    },
+    {
+      "query": "devis tablette de communication",
+      "pull": 1
+    },
+    {
+      "query": "devise communication",
+      "pull": 1
+    },
+    {
+      "query": "ecole paris communication",
+      "pull": 1
+    },
+    {
+      "query": "exemple agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "exemple brief agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "exemple communication",
+      "pull": 1
+    },
+    {
+      "query": "exemple communication cse",
+      "pull": 1
+    },
+    {
+      "query": "exemple communication externe",
+      "pull": 1
+    },
+    {
+      "query": "exemple communication hors media",
+      "pull": 1
+    },
+    {
+      "query": "exemple devis agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "exemple nom agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "exemple slogan agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "expert communication",
+      "pull": 1
+    },
+    {
+      "query": "expert communication non verbale",
+      "pull": 1
+    },
+    {
+      "query": "expert communication unifiée inc",
+      "pull": 1
+    },
+    {
+      "query": "formation agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "formation agent de communication",
+      "pull": 1
+    },
+    {
+      "query": "formation communication",
+      "pull": 1
+    },
+    {
+      "query": "formation communication animale cpf",
+      "pull": 1
+    },
+    {
+      "query": "formation communication animale gratuite",
+      "pull": 1
+    },
+    {
+      "query": "formation communication digitale",
+      "pull": 1
+    },
+    {
+      "query": "formation communication interpersonnelle",
+      "pull": 1
+    },
+    {
+      "query": "formation communication marketing",
+      "pull": 1
+    },
+    {
+      "query": "formation communication non verbale",
+      "pull": 1
+    },
+    {
+      "query": "formation communication relationnelle",
+      "pull": 1
+    },
+    {
+      "query": "formation communication réseaux sociaux",
+      "pull": 1
+    },
+    {
+      "query": "formation ia agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "free agence media",
+      "pull": 1
+    },
+    {
+      "query": "free communication",
+      "pull": 1
+    },
+    {
+      "query": "free communication apps",
+      "pull": 1
+    },
+    {
+      "query": "free communication courses",
+      "pull": 1
+    },
+    {
+      "query": "free communication skills course",
+      "pull": 1
+    },
+    {
+      "query": "free communication skills course with certificate online",
+      "pull": 1
+    },
+    {
+      "query": "freelance communication",
+      "pull": 1
+    },
+    {
+      "query": "freelance communication lille",
+      "pull": 1
+    },
+    {
+      "query": "freelance communication marketing",
+      "pull": 1
+    },
+    {
+      "query": "freelance communication nantes",
+      "pull": 1
+    },
+    {
+      "query": "freelance communication toulouse",
+      "pull": 1
+    },
+    {
+      "query": "freelance communications agency",
+      "pull": 1
+    },
+    {
+      "query": "freelance media agency",
+      "pull": 1
+    },
+    {
+      "query": "freelance media agency jobs",
+      "pull": 1
+    },
+    {
+      "query": "grille tarif agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "idée communication agence immobilière",
+      "pull": 1
+    },
+    {
+      "query": "information agency definition",
+      "pull": 1
+    },
+    {
+      "query": "information avis tiers détenteur",
+      "pull": 1
+    },
+    {
+      "query": "information definition",
+      "pull": 1
+    },
+    {
+      "query": "information devis",
+      "pull": 1
+    },
+    {
+      "query": "information lyon",
+      "pull": 1
+    },
+    {
+      "query": "information tarifaire",
+      "pull": 1
+    },
+    {
+      "query": "information vs communication",
+      "pull": 1
+    },
+    {
+      "query": "interaction et communication",
+      "pull": 1
+    },
+    {
+      "query": "lentilles contact pas cher",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication autisme",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication digitale",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication entreprise",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication handicap",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication interne",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication interne entreprise",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication interne entreprise gratuit",
+      "pull": 1
+    },
+    {
+      "query": "logiciel communication visuelle",
+      "pull": 1
+    },
+    {
+      "query": "lyon agence communication",
+      "pull": 1
+    },
+    {
+      "query": "lyon communication",
+      "pull": 1
+    },
+    {
+      "query": "lyon sport communication",
+      "pull": 1
+    },
+    {
+      "query": "master communication",
+      "pull": 1
+    },
+    {
+      "query": "master communication corporate",
+      "pull": 1
+    },
+    {
+      "query": "media agency vs production company",
+      "pull": 1
+    },
+    {
+      "query": "media formation",
+      "pull": 1
+    },
+    {
+      "query": "media formation rouen",
+      "pull": 1
+    },
+    {
+      "query": "media freelance",
+      "pull": 1
+    },
+    {
+      "query": "media lyon",
+      "pull": 1
+    },
+    {
+      "query": "media parisien twitter",
+      "pull": 1
+    },
+    {
+      "query": "media tarif",
+      "pull": 1
+    },
+    {
+      "query": "media tjmaxx",
+      "pull": 1
+    },
+    {
+      "query": "media zone",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agence communication",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agence de communication au monde",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agent com avis",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agent com estimation",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agent com frais de notaire",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agent com prix m2",
+      "pull": 1
+    },
+    {
+      "query": "meilleur agent contact",
+      "pull": 1
+    },
+    {
+      "query": "meilleur communication animale",
+      "pull": 1
+    },
+    {
+      "query": "meilleur communication burger king",
+      "pull": 1
+    },
+    {
+      "query": "meilleure agence communication",
+      "pull": 1
+    },
+    {
+      "query": "meilleure communication animale",
+      "pull": 1
+    },
+    {
+      "query": "meilleure communication synonyme",
+      "pull": 1
+    },
+    {
+      "query": "meilleurtaux contact",
+      "pull": 1
+    },
+    {
+      "query": "nettoyant contact pas cher",
+      "pull": 1
+    },
+    {
+      "query": "ou communication department",
+      "pull": 1
+    },
+    {
+      "query": "ou communication sciences and disorders",
+      "pull": 1
+    },
+    {
+      "query": "ou communication skills 3rd semester pdf",
+      "pull": 1
+    },
+    {
+      "query": "ou communication sona",
+      "pull": 1
+    },
+    {
+      "query": "ou communications",
+      "pull": 1
+    },
+    {
+      "query": "ou communications degree sheet",
+      "pull": 1
+    },
+    {
+      "query": "ou communications major",
+      "pull": 1
+    },
+    {
+      "query": "outil communication",
+      "pull": 1
+    },
+    {
+      "query": "outil communication autisme",
+      "pull": 1
+    },
+    {
+      "query": "outil communication couple",
+      "pull": 1
+    },
+    {
+      "query": "outil communication entreprise",
+      "pull": 1
+    },
+    {
+      "query": "outil communication interne",
+      "pull": 1
+    },
+    {
+      "query": "outil communication interne entreprise",
+      "pull": 1
+    },
+    {
+      "query": "outil communication interne imagina",
+      "pull": 1
+    },
+    {
+      "query": "outil communication parents séparés",
+      "pull": 1
+    },
+    {
+      "query": "outil communication patient étranger",
+      "pull": 1
+    },
+    {
+      "query": "outil communication tsa",
+      "pull": 1
+    },
+    {
+      "query": "paris agence communication",
+      "pull": 1
+    },
+    {
+      "query": "paris communication jobs",
+      "pull": 1
+    },
+    {
+      "query": "paris communication master",
+      "pull": 1
+    },
+    {
+      "query": "paris communications",
+      "pull": 1
+    },
+    {
+      "query": "plateforme communication",
+      "pull": 1
+    },
+    {
+      "query": "plateforme de communication ppt",
+      "pull": 1
+    },
+    {
+      "query": "plateforme freelance communication",
+      "pull": 1
+    },
+    {
+      "query": "platform communication meaning",
+      "pull": 1
+    },
+    {
+      "query": "prix agence media",
+      "pull": 1
+    },
+    {
+      "query": "prix agence media de l année",
+      "pull": 1
+    },
+    {
+      "query": "prix agence media de l année 2025",
+      "pull": 1
+    },
+    {
+      "query": "prix agence media de l année 2026",
+      "pull": 1
+    },
+    {
+      "query": "prix communication",
+      "pull": 1
+    },
+    {
+      "query": "prix communication 078",
+      "pull": 1
+    },
+    {
+      "query": "prix communication 3960",
+      "pull": 1
+    },
+    {
+      "query": "prix communication belgique france",
+      "pull": 1
+    },
+    {
+      "query": "prix communication guadeloupe",
+      "pull": 1
+    },
+    {
+      "query": "prix communication ile maurice",
+      "pull": 1
+    },
+    {
+      "query": "prix communication locale",
+      "pull": 1
+    },
+    {
+      "query": "prix communication maroc",
+      "pull": 1
+    },
+    {
+      "query": "prix communication orange mobile hors forfait",
+      "pull": 1
+    },
+    {
+      "query": "prix communication whatsapp",
+      "pull": 1
+    },
+    {
+      "query": "prix logo agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "réactivation ou communication du n neph",
+      "pull": 1
+    },
+    {
+      "query": "rosa paris agence communication",
+      "pull": 1
+    },
+    {
+      "query": "sens agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "service communication",
+      "pull": 1
+    },
+    {
+      "query": "service communication is currently unavailable",
+      "pull": 1
+    },
+    {
+      "query": "service communication is currently unavailable copilot",
+      "pull": 1
+    },
+    {
+      "query": "service communication stihl",
+      "pull": 1
+    },
+    {
+      "query": "stage lyon communication",
+      "pull": 1
+    },
+    {
+      "query": "stage paris communication",
+      "pull": 1
+    },
+    {
+      "query": "tarif agence de communication digitale",
+      "pull": 1
+    },
+    {
+      "query": "tarif agence de communication pdf",
+      "pull": 1
+    },
+    {
+      "query": "tarif agence de communication site web et reseau social",
+      "pull": 1
+    },
+    {
+      "query": "tarif communication etranger free",
+      "pull": 1
+    },
+    {
+      "query": "tarif communication freebox",
+      "pull": 1
+    },
+    {
+      "query": "tarif communication freelance",
+      "pull": 1
+    },
+    {
+      "query": "tarif communication orange",
+      "pull": 1
+    },
+    {
+      "query": "tarif communication orange fixe",
+      "pull": 1
+    },
+    {
+      "query": "tarif horaire agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "tarif moyen agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "telecommunication definition",
+      "pull": 1
+    },
+    {
+      "query": "tjm chargé de communication",
+      "pull": 1
+    },
+    {
+      "query": "tjm communication",
+      "pull": 1
+    },
+    {
+      "query": "tjm communications",
+      "pull": 1
+    },
+    {
+      "query": "tjm communications inc",
+      "pull": 1
+    },
+    {
+      "query": "tjm consultant communication",
+      "pull": 1
+    },
+    {
+      "query": "tjm freelance communication",
+      "pull": 1
+    },
+    {
+      "query": "top agence communication",
+      "pull": 1
+    },
+    {
+      "query": "top agence communication paris",
+      "pull": 1
+    },
+    {
+      "query": "unity agence",
+      "pull": 1
+    },
+    {
+      "query": "valeur agence de communication",
+      "pull": 1
+    },
+    {
+      "query": "verre contact pas cher",
+      "pull": 1
+    },
+    {
+      "query": "vs communication",
+      "pull": 1
+    },
+    {
+      "query": "vs communication 2.0",
+      "pull": 1
+    },
+    {
+      "query": "vs communication gandhi nagar jammu",
+      "pull": 1
+    },
+    {
+      "query": "vs communication jammu",
+      "pull": 1
+    },
+    {
+      "query": "vs communication jammu nanak nagar",
+      "pull": 1
+    },
+    {
+      "query": "vs communication technology",
+      "pull": 1
+    },
+    {
+      "query": "vs communications agency",
+      "pull": 1
+    },
+    {
+      "query": "vs media agency",
+      "pull": 1
+    },
+    {
+      "query": "xiaomi communication co ltd",
+      "pull": 1
+    },
+    {
+      "query": "zone communication",
+      "pull": 1
+    }
+  ],
+  "reddit": [
+    {
+      "title": "I [28M] wrote a song. My girlfriend [28F] listened to it without knowing I created it, and called it trash. When she found out I created it, she got extremely mad at me",
+      "subreddit": "BestofRedditorUpdates",
+      "ups": 5167,
+      "comments": 2687,
+      "url": "https://reddit.com/r/BestofRedditorUpdates/comments/1mpq574/i_28m_wrote_a_song_my_girlfriend_28f_listened_to/"
+    },
+    {
+      "title": "AITA for saying my daughter’s friend can’t come back to our house until I’ve spoken to her parents?",
+      "subreddit": "AITAH",
+      "ups": 3627,
+      "comments": 2369,
+      "url": "https://reddit.com/r/AITAH/comments/1oi5tc0/aita_for_saying_my_daughters_friend_cant_come/"
+    },
+    {
+      "title": "Federal government forces Jimmy Kimmel off the air. RIP First Amendment.",
+      "subreddit": "NoFilterNews",
+      "ups": 14274,
+      "comments": 1625,
+      "url": "https://reddit.com/r/NoFilterNews/comments/1njtveh/federal_government_forces_jimmy_kimmel_off_the/"
+    },
+    {
+      "title": "Women empowerment is one of the most dominant reasons for failing modern marriages.",
+      "subreddit": "DeepThoughts",
+      "ups": 5317,
+      "comments": 1556,
+      "url": "https://reddit.com/r/DeepThoughts/comments/1ps20l3/women_empowerment_is_one_of_the_most_dominant/"
+    },
+    {
+      "title": "I betrayed my boyfriend on his birthday",
+      "subreddit": "BestofRedditorUpdates",
+      "ups": 5412,
+      "comments": 1070,
+      "url": "https://reddit.com/r/BestofRedditorUpdates/comments/1pg7yx6/i_betrayed_my_boyfriend_on_his_birthday/"
+    },
+    {
+      "title": "AITAH for firing someone because they used AI",
+      "subreddit": "AITAH",
+      "ups": 3008,
+      "comments": 1064,
+      "url": "https://reddit.com/r/AITAH/comments/1q6lahs/aitah_for_firing_someone_because_they_used_ai/"
+    },
+    {
+      "title": "Interviewed and hired two people this year. The people that showed up to work were not the people we interviewed.",
+      "subreddit": "recruitinghell",
+      "ups": 10031,
+      "comments": 1005,
+      "url": "https://reddit.com/r/recruitinghell/comments/1ovud0z/interviewed_and_hired_two_people_this_year_the/"
+    },
+    {
+      "title": "AI has absolutely ruined my life",
+      "subreddit": "antiwork",
+      "ups": 18688,
+      "comments": 986,
+      "url": "https://reddit.com/r/antiwork/comments/1rh20lc/ai_has_absolutely_ruined_my_life/"
+    },
+    {
+      "title": "AITAH for still getting on a flight home when my two young coworkers I was traveling with weren’t at the airport yet and were obviously going to miss it?",
+      "subreddit": "BestofRedditorUpdates",
+      "ups": 8968,
+      "comments": 933,
+      "url": "https://reddit.com/r/BestofRedditorUpdates/comments/1mqzhxj/aitah_for_still_getting_on_a_flight_home_when_my/"
+    },
+    {
+      "title": "This image has captivated me for a while",
+      "subreddit": "HighStrangeness",
+      "ups": 6186,
+      "comments": 766,
+      "url": "https://reddit.com/r/HighStrangeness/comments/1q2igmo/this_image_has_captivated_me_for_a_while/"
+    },
+    {
+      "title": "[Woike] Luka Dončić, according to league sources, had communicated his desires for a rim-running center, shooting &amp; defensive support and has been an active recruiter helping secure Ayton and Smart. Luka has also committed to getting into fantastic shape thanks to a strict diet and exercise routine",
+      "subreddit": "nba",
+      "ups": 5490,
+      "comments": 706,
+      "url": "https://reddit.com/r/nba/comments/1m4gsjy/woike_luka_dončić_according_to_league_sources_had/"
+    },
+    {
+      "title": "THE OVERLORDS: Who Was Jeffrey Epstein Really Working For? Four hypotheses. 237,000 documents. 5.37 million data points. One answer.",
+      "subreddit": "Epstein",
+      "ups": 2414,
+      "comments": 575,
+      "url": "https://reddit.com/r/Epstein/comments/1rfy0tj/the_overlords_who_was_jeffrey_epstein_really/"
+    },
+    {
+      "title": "The Golden Treasure Part II [100% Proof Apes Get Paid]",
+      "subreddit": "Superstonk",
+      "ups": 7923,
+      "comments": 381,
+      "url": "https://reddit.com/r/Superstonk/comments/1ohiz4y/the_golden_treasure_part_ii_100_proof_apes_get/"
+    },
+    {
+      "title": "Myths about calling 911, from a 911 operator",
+      "subreddit": "TwoXPreppers",
+      "ups": 3838,
+      "comments": 347,
+      "url": "https://reddit.com/r/TwoXPreppers/comments/1qvuwvm/myths_about_calling_911_from_a_911_operator/"
+    },
+    {
+      "title": "Yesterday my brother told me he was in love with me.",
+      "subreddit": "BestofRedditorUpdates",
+      "ups": 4340,
+      "comments": 334,
+      "url": "https://reddit.com/r/BestofRedditorUpdates/comments/1rijsjb/yesterday_my_brother_told_me_he_was_in_love_with/"
+    },
+    {
+      "title": "An Arkansas Trooper Rammed a Car Doing 10mph Over the Limit. Two Toddlers Were Inside. One Was Having a Medical Emergency.",
+      "subreddit": "MotorBuzz",
+      "ups": 3606,
+      "comments": 273,
+      "url": "https://reddit.com/r/MotorBuzz/comments/1rk81ct/an_arkansas_trooper_rammed_a_car_doing_10mph_over/"
+    },
+    {
+      "title": "I'm surrendering guardianship of my brother [Long]",
+      "subreddit": "BestofRedditorUpdates",
+      "ups": 4473,
+      "comments": 246,
+      "url": "https://reddit.com/r/BestofRedditorUpdates/comments/1smarem/im_surrendering_guardianship_of_my_brother_long/"
+    },
+    {
+      "title": "Nexstar Says It Made Decision To Preempt Jimmy Kimmel “Unilaterally” And With No Communication With FCC Or Government Agencies",
+      "subreddit": "television",
+      "ups": 720,
+      "comments": 236,
+      "url": "https://reddit.com/r/television/comments/1nkn6oi/nexstar_says_it_made_decision_to_preempt_jimmy/"
+    },
+    {
+      "title": "The FBI is now recruiting on tiktok and hiring prosecutors straight out of law school because they've lost so many people they don't know what else to do. this should concern everyone regardless of how you feel about trump.",
+      "subreddit": "DiscussionZone",
+      "ups": 6022,
+      "comments": 204,
+      "url": "https://reddit.com/r/DiscussionZone/comments/1t6yrxi/the_fbi_is_now_recruiting_on_tiktok_and_hiring/"
+    },
+    {
+      "title": "Offical government agency communication: Calling Americans \"imbecilic morons\" for protesting an agency filled with lazy loser racists who suck at their jobs is a hot take, but sure...🙈🔥",
+      "subreddit": "CzechCoconutCommunity",
+      "ups": 138,
+      "comments": 115,
+      "url": "https://reddit.com/r/CzechCoconutCommunity/comments/1oxye7f/offical_government_agency_communication_calling/"
+    },
+    {
+      "title": "Obama White House Counsel Kathryn Ruemmler steps down from Goldman Sachs after emails show her extensive communications between herself and Epstein - She won the CIA Agency Medal as a civilian, undisclosed to the public, and couldn't wait to tell \"Uncle Jeffrey\" the same day",
+      "subreddit": "PoliticalCompassMemes",
+      "ups": 294,
+      "comments": 82,
+      "url": "https://reddit.com/r/PoliticalCompassMemes/comments/1r3fls9/obama_white_house_counsel_kathryn_ruemmler_steps/"
+    },
+    {
+      "title": "Bob Myers on his role with the 76ers after the new hire: \"I wont be on the day to day level but on the high level decision making, which is the draft, trade deadline, free agency, I'm gonna be involved at that level. I will be communicating with [the new GM] daily.\"",
+      "subreddit": "nba",
+      "ups": 192,
+      "comments": 68,
+      "url": "https://reddit.com/r/nba/comments/1tdbedz/bob_myers_on_his_role_with_the_76ers_after_the/"
+    },
+    {
+      "title": "🇮🇷 Iran has released a footage showing a highly trained group of individuals (most likely Mossad) preparing an attack in Iran on Thursday, 8 January\n\nLoading weapons, concealing firearms under clothing, and using satellite communications believed to be linked to foreign intelligence agencies.",
+      "subreddit": "suppressed_news",
+      "ups": 553,
+      "comments": 66,
+      "url": "https://reddit.com/r/suppressed_news/comments/1qecz6w/iran_has_released_a_footage_showing_a_highly/"
+    },
+    {
+      "title": "Nexstar Says It Made Decision To Preempt Jimmy Kimmel “Unilaterally” And With No Communication With FCC Or Government Agencies",
+      "subreddit": "Conservative",
+      "ups": 542,
+      "comments": 58,
+      "url": "https://reddit.com/r/Conservative/comments/1nla6vh/nexstar_says_it_made_decision_to_preempt_jimmy/"
+    },
+    {
+      "title": "MRW I see nexstar say they cancelled Jimmy Kimmel \"With No Communication With FCC Or Government Agencies\"",
+      "subreddit": "reactiongifs",
+      "ups": 1504,
+      "comments": 16,
+      "url": "https://reddit.com/r/reactiongifs/comments/1nkpwme/mrw_i_see_nexstar_say_they_cancelled_jimmy_kimmel/"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "FCC approves Charter Communications' $34.5B deal to buy Cox",
+      "points": 17,
+      "comments": 2,
+      "url": "https://www.reuters.com/world/us-agency-approves-charter-communications-345-billion-deal-buy-cox-2026-02-27/"
+    },
+    {
+      "title": "Now you officially can't fuck off in Russia without using a VPN",
+      "points": 5,
+      "comments": 0,
+      "url": "https://news.ycombinator.com/item?id=21197722"
+    },
+    {
+      "title": "Tell HN: Google bot suspended our startup's email with 0 human recourse",
+      "points": 4,
+      "comments": 4,
+      "url": "https://news.ycombinator.com/item?id=47663132"
+    },
+    {
+      "title": "French spying agency tapping Australia’s communications",
+      "points": 3,
+      "comments": 0,
+      "url": "https://www.thesaturdaypaper.com.au/news/politics/2015/07/11/french-spying-agency-tapping-australias-communications/14365368002113"
+    },
+    {
+      "title": "Paloha – Agence de communication Montpellier",
+      "points": 2,
+      "comments": 3,
+      "url": "https://paloha.fr/fr"
+    },
+    {
+      "title": "Dutch Communications Agency Cracks Down On Pirate Stations",
+      "points": 2,
+      "comments": 0,
+      "url": "http://www.techdirt.com/articles/20110825/02130615675/dutch-communications-agency-cracks-down-pirate-stations-can-go-warning-to-fine-30-minutes.shtml"
+    },
+    {
+      "title": "Brazilian Communications Agency Moves Towards Surveillance Superpowers",
+      "points": 2,
+      "comments": 0,
+      "url": "http://www.freedom-to-tinker.com/blog/rlemos/brazilian-communications-agency-moves-towards-surveillance-superpowers"
+    },
+    {
+      "title": "French spying agency tapping Australia’s communications",
+      "points": 2,
+      "comments": 0,
+      "url": "https://www.thesaturdaypaper.com.au/news/politics/2015/07/11/french-spying-agency-tapping-australias-communications/14365368002113"
+    },
+    {
+      "title": "NZ govt trying to quickly allow spy agency to intercept communications of public",
+      "points": 2,
+      "comments": 0,
+      "url": "http://owened.co.nz/odd-things-brewing-in-nz"
+    },
+    {
+      "title": "Feds Demand Dismissal of Dragnet-Surveillance Challenge",
+      "points": 2,
+      "comments": 0,
+      "url": "http://www.wired.com/threatlevel/2013/03/terminate-spy-challenge/"
+    },
+    {
+      "title": "Data Breach Occurs at Agency in Charge of Secure White House Communications",
+      "points": 2,
+      "comments": 0,
+      "url": "https://threatpost.com/data-breach-occurs-at-agency-in-charge-of-secure-white-house-communications/153160/"
+    },
+    {
+      "title": "La seule agence de communication au maroc spécialisée en identité",
+      "points": 1,
+      "comments": 1,
+      "url": "https://combind.ma/agence-communication-casablanca"
+    },
+    {
+      "title": "Neuralab “Client and Agency Communication Handbook”",
+      "points": 1,
+      "comments": 0,
+      "url": "https://www.neuralab.net/agency-communication-is-key-handbook-client/"
+    },
+    {
+      "title": "Defense Communications Agency",
+      "points": 1,
+      "comments": 0,
+      "url": "https://en.wikipedia.org/wiki/Defense_Information_Systems_Agency"
+    },
+    {
+      "title": "Nine Tips for Any Communications Agency Startup",
+      "points": 1,
+      "comments": 0,
+      "url": "http://adage.com/smallagency/post?article_id=142840"
+    },
+    {
+      "title": "Watchdog says US cyber agency lacks a plan for communicating during major hacks",
+      "points": 1,
+      "comments": 0,
+      "url": "https://www.cnn.com/2023/03/07/politics/dhs-cyber-agency-communication-hacks/index.html"
+    },
+    {
+      "title": "Data breach hits agency overseeing White House communications",
+      "points": 1,
+      "comments": 0,
+      "url": "https://www.bbc.com/news/technology-51580925"
+    },
+    {
+      "title": "How to Handle Public Blackmail on Social Media?",
+      "points": 1,
+      "comments": 1,
+      "url": "https://news.ycombinator.com/item?id=41122361"
+    },
+    {
+      "title": "US spy agency broke encryption on UN communications, report says",
+      "points": 1,
+      "comments": 0,
+      "url": "http://phys.org/news/2013-08-spy-agency-broke-encryption.html"
+    },
+    {
+      "title": "Is the SecDef asking something like Dell's ideastorm?",
+      "points": 1,
+      "comments": 0,
+      "url": "http://www.newsweek.com/id/165654/output/print"
+    }
+  ]
+}

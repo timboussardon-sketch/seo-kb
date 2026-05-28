@@ -1618,3 +1618,28 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Deploy.** newFusionn commit `d1b9ce2` push main → Netlify (`fusionn2`). DB déjà resynchronisée. 23 drafts commités dans seo-kb. Skills `~/.claude/skills` modifiés en local.
 
 **Question de fond ouverte (slop).** Le rescale règle l'échelle, pas le grounding : les scores restent des jugements modèle (pas de volume/difficulté sourcés). Gemini juge la page Prestashop « très haute volée » mais évalue 1 page en lecture, sans voir l'isomorphisme des 23 templates ni l'absence de data. Reste à grounder (vraie data métier) et différencier (1 angle Haute Surprise par page) si on veut sortir franchement de la zone slop.
+
+## 2026-05-28 (suite) — Grounding des 23 pages sur data réelle (Google Suggest)
+
+**Demande Tim.** Suite au débat slop : grounder le contenu (et le score) des pages mots-clés sur des sources gratuites réelles. Validé après proto sur Prestashop. Consigne ajoutée en cours de route : **aucune note de provenance/méthode ni disclaimer volume sur les pages** (le grounding reste invisible) — sauvegardé en mémoire `feedback_pas_de_provenance_pages.md`.
+
+**Découverte clé.** Le `fetch-volume-trends` de Fusionn n'a pas de vraie source : il fait estimer les volumes par **Gemini** = même slop. Pour de la vraie data gratuite : Google Suggest (requêtes réelles), Reddit JSON, HN Algolia. Les volumes absolus restent non-sourçables sans Keyword Planner / API payante → jamais inventés.
+
+**Outils créés (newFusionn/scripts).**
+- `ground-keyword.mjs` : Google Suggest (seed + a-z + topic + rôles + modificateurs FR) avec un `pull` = nb de seeds qui font remonter la requête (proxy de demande) + Reddit + HN. Sans clé API. Sortie data pack JSON.
+- `ground-brief.mjs` : transforme un pack en buckets actionnables (villes, comparatifs vs/ou, pricing, rôles, **hors-intention à écarter** type formation/emploi/salaire/definition).
+- `rescale-scores.mjs` : déjà créé à la session scores.
+
+**Harvest.** 23 mots-clés, packs dans `seo-kb/fusionn/grounding/*.json`. Riche pour les métiers de service (centaines de requêtes, vraies villes), **bruité** pour les mots génériques (growth → « beard growth », ia → « ia ou ai », marketing → « burger king »). Reddit/HN faibles sur le B2B FR.
+
+**Grounding appliqué (drafts + DB + JSON).**
+- Prestashop (proto complet) : certif « core skills » (au lieu de « 2/3 étoiles » inventé), villes réelles (Grenoble/Vannes), comparatifs vs/ou WordPress, « freelance prestashop tarif ». Exclusion assumée des requêtes hors-intention (formation, emploi).
+- 13 autres pages de service : **vraies villes par métier** (Lyon #1 sur consultant/freelance/expert shopify ; Casablanca/Montréal sur marketing ; offshore Tunisie/Maroc/Madagascar sur rédacteur web), villes devinées retirées (Londres/Berlin/Amsterdam sur growth, Strasbourg sur communication), fausse précision retirée (TJM inventés agence SEO).
+- Les 22 : **disclaimer volume « pas de Keyword Planner branché »** retiré (2 variantes templatées).
+- Pages outils (outil seo/ia, logiciel marketing, saas b2b, plateforme analytics, outil de prospection, vendeur amazon, seo-content-writer, e-commerçant) : pas de grounding villes (pas d'intention locale / data trop bruitée), déjà alignées sur l'intention réelle (gratuit/meilleur/pas cher) + disclaimer retiré. Grounding plus poussé possible plus tard si Tim veut.
+
+**Constat honnête.** Les pages bien développées (agence-seo, consultant-seo) étaient **déjà** alignées sur l'intention réelle (elles couvrent GEO/AEO, tarif, alternative, sans engagement — tous high-pull réels). Moins de slop que craint ; le vrai gisement de grounding c'était les **listes de villes** (souvent devinées) + tuer la fausse précision.
+
+**Deploy.** newFusionn commit `c235e29` (empilé sans conflit sur un commit parallèle `d442cb1` de Tim) push main → Netlify. DB resync 23/23. Drafts + packs + Historique commités dans seo-kb.
+
+**Reste à faire si Tim veut aller plus loin.** Grounding éditorial profond des pages outils ; score regroundé sur le `pull` réel (au lieu du jugement modèle) ; brancher une vraie source de volumes (Keyword Planner / DataForSEO) pour passer de « requêtes réelles » à « requêtes réelles + volume réel ».
