@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trouver tes mots-clés avec Claude — les 3 skills</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-page: #F4F5F7; --card: #FFFFFF; --border: #E5E7EB;
+    --strong: #212121; --text: #374151; --muted: #6B7280; --faint: #9CA3AF;
+    --brand: #FF371C; --brand-soft: #FFE4DE;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: #D9DBE0; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Poppins', sans-serif; color: var(--strong); }
+
+  .page { width: 210mm; min-height: 297mm; background: var(--card); margin: 16px auto; padding: 22mm 22mm 26mm; position: relative; box-shadow: 0 8px 40px rgba(0,0,0,0.12); }
+  .page.flow { min-height: 0; padding-bottom: 22mm; }
+
+  /* COUVERTURE */
+  .cover { background: linear-gradient(155deg, #1A1A1A 0%, #2A2017 55%, #3A1A12 100%); color: #fff; display: flex; flex-direction: column; justify-content: space-between; min-height: 297mm; }
+  .cover .brandmark { display: flex; align-items: center; gap: 10px; font-family: 'Poppins'; font-weight: 700; font-size: 18px; color: #fff; }
+  .cover .atom { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background: var(--brand); border-radius: 8px; }
+  .cover-mid { margin-top: auto; margin-bottom: auto; }
+  .cover .eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 22px; }
+  .cover h1 { color: #fff; font-size: 44px; font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; margin-bottom: 20px; }
+  .cover h1 .hl { color: var(--brand); }
+  .cover .sub { font-size: 17px; color: #C9CBD1; max-width: 82%; line-height: 1.5; }
+  .cover .footer-note { font-size: 13px; color: #8A8D95; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px; }
+  .cover .footer-note strong { color: #fff; }
+
+  /* CONTENU */
+  .kicker { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand); margin-bottom: 9px; }
+  h2.section { font-size: 27px; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 14px; line-height: 1.15; }
+  h3.block { font-size: 13px; font-weight: 700; color: var(--strong); text-transform: uppercase; letter-spacing: 0.05em; margin: 18px 0 9px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  p { margin-bottom: 11px; font-size: 13.5px; }
+  p.lead { font-size: 15px; color: var(--strong); font-weight: 500; margin-bottom: 13px; }
+  strong { color: var(--strong); font-weight: 600; }
+  .aside { color: var(--muted); font-size: 13px; }
+
+  /* HOW TO */
+  .howto { list-style: none; counter-reset: ht; margin: 6px 0; }
+  .howto li { counter-increment: ht; position: relative; padding-left: 30px; font-size: 13.5px; margin-bottom: 9px; }
+  .howto li::before { content: counter(ht); position: absolute; left: 0; top: 0; width: 20px; height: 20px; border-radius: 6px; background: var(--strong); color: #fff; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; font-family: 'Poppins'; }
+
+  /* SKILL CARD */
+  .skill-card { margin-bottom: 18px; }
+  .skill-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+  .skill-head .ks { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand); }
+  .skill-head h2 { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; margin-top: 2px; font-family: 'SFMono-Regular', Consolas, monospace; }
+  .copy-btn { flex-shrink: 0; background: var(--strong); color: #fff; border: none; font-family: 'Inter'; font-weight: 600; font-size: 12.5px; padding: 9px 16px; border-radius: 9px; cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+  .copy-btn:hover { background: var(--brand); }
+  .copy-btn.done { background: #16A34A; }
+  .skill-raw { background: #1A1A1A; color: #E6E6E6; border-radius: 12px; padding: 20px 22px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 11px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; overflow-x: auto; }
+
+  /* MOCKUP FUSIONN */
+  .mock { border: 1px solid var(--border); border-radius: 13px; overflow: hidden; box-shadow: 0 12px 40px -16px rgba(17,24,39,0.3); margin: 14px 0; }
+  .mock-bar { display: flex; align-items: center; gap: 6px; background: #F0F1F4; padding: 9px 14px; border-bottom: 1px solid var(--border); }
+  .mock-bar .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .mock-url { margin-left: 8px; background: #fff; border-radius: 6px; padding: 2px 12px; font-size: 10px; color: var(--faint); font-family: monospace; }
+  .mock-body { display: flex; min-height: 230px; }
+  .mock-side { flex: 0 0 150px; background: #FAFBFC; border-right: 1px solid var(--border); padding: 12px 10px; }
+  .mock-side .grp { font-size: 8.5px; font-weight: 700; color: var(--faint); text-transform: uppercase; letter-spacing: 0.06em; margin: 9px 0 5px; }
+  .mock-side .it { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text); padding: 4px 7px; border-radius: 6px; margin-bottom: 1px; }
+  .mock-side .it.on { background: var(--strong); color: #fff; font-weight: 600; }
+  .mock-side .it .ic { width: 11px; height: 11px; border-radius: 3px; background: currentColor; opacity: 0.55; flex-shrink: 0; }
+  .mock-main { flex: 1; padding: 14px 16px; background: #fff; }
+  .mock-main h4 { font-size: 13px; margin-bottom: 9px; }
+  .mock-row { display: flex; align-items: center; gap: 9px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 5px; }
+  .mock-row .sc { flex: 0 0 30px; height: 24px; border-radius: 6px; background: var(--strong); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; }
+  .mock-row .kw { flex: 1; font-size: 11.5px; color: var(--strong); font-weight: 500; }
+  .mock-row .badge { font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+  .badge-do { background: var(--brand-soft); color: var(--brand); }
+  .badge-know { background: #DBEAFE; color: #1E40AF; }
+
+  .cta { margin-top: 20px; background: var(--bg-page); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .cta h3 { font-size: 17px; margin-bottom: 6px; }
+  .cta p { font-size: 13px; margin-bottom: 13px; }
+  .cta a { display: inline-block; background: var(--brand); color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; padding: 11px 22px; border-radius: 10px; }
+
+  /* AUTEUR */
+  .author { margin-top: 22px; display: flex; gap: 18px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
+  .author img { width: 92px; height: 92px; border-radius: 14px; object-fit: cover; flex-shrink: 0; }
+  .author .au-body h3 { font-size: 15px; margin-bottom: 5px; }
+  .author .au-body p { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
+  .author .au-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .author .au-tags span { font-size: 11px; font-weight: 600; color: var(--strong); background: var(--bg-page); border: 1px solid var(--border); border-radius: 999px; padding: 3px 11px; }
+  .author .au-tags span b { color: var(--brand); font-weight: 700; }
+  .author .au-link { display: inline-block; margin-top: 10px; font-size: 12.5px; font-weight: 600; color: var(--brand); text-decoration: none; }
+  .author .au-link:hover { text-decoration: underline; }
+
+  @page { size: A4; margin: 0; }
+  @media print { body { background: #fff; } .page { margin: 0; box-shadow: none; page-break-after: always; } .no-print { display: none; } .skill-raw { font-size: 9.5px; } }
+  .topbar { position: fixed; top: 14px; right: 14px; z-index: 99; }
+  .topbar button { background: var(--brand); color: #fff; border: none; padding: 10px 16px; border-radius: 10px; font-family: 'Inter'; font-weight: 600; font-size: 13px; cursor: pointer; box-shadow: 0 6px 20px rgba(255,55,28,0.4); }
+</style>
+</head>
+<body>
+
+<div class="topbar no-print"><button onclick="window.print()">Exporter en PDF</button></div>
+
+<!-- ============ COUVERTURE ============ -->
+<section class="page cover">
+  <div class="brandmark">
+    <span class="atom">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="1"/>
+        <path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/>
+        <path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/>
+      </svg>
+    </span>
+    Fusionn
+  </div>
+  <div class="cover-mid">
+    <span class="eyebrow">Les 3 skills mots-clés · 2026</span>
+    <h1>Trouver tes mots-clés avec <span class="hl">Claude</span></h1>
+    <p class="sub">Les trois skills que j'utilise avec Claude pour sortir mes mots-clés, les regrouper en pages et isoler ceux qui amènent un client, à copier directement dans ton dossier de skills.</p>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="page flow">
+  <p class="lead">J'ai déjà partagé les skills qui couvrent tout mon workflow SEO. Pour les mots-clés, trois skills spécifiques : le premier fait une analyse générale autour du mot-clé principal, le second va les regrouper par intention pour savoir quelle page créer, puis ensuite te les classer en fonction du potentiel business. L'idée, c'est de créer des pages ultra quali et utiles pour l'utilisateur, dans le but de récupérer un email qualifié pour l'engager avec ta marque.</p>
+  <p>Voici les trois skills à copier dans Claude. Chacun est documenté pareil : ce qu'il fait, le moment où le déclencher, et le SKILL.md complet à coller dans ton dossier .claude/skills/.</p>
+
+  <h2 class="section" style="margin-top:26px">Un skill mots-clés peut remplacer un outil</h2>
+  <p>Sortir une liste de mots-clés est devenu une commodité. N'importe quel LLM ou outil SEO t'en sort une liste complète en quelques secondes. L'important, c'est donc de trouver des mots-clés qui ne seront pas mangés par les IA : des requêtes qui te permettent de te positionner sur des mots-clés business et, si possible, peu compétitives.</p>
+  <p>Tu l'auras compris, le type de mots-clés qu'on attaque a changé aussi. L'IA répond aux requêtes informationnelles à ta place, donc on vise le décisionnel (action + transactionnel), c'est-à-dire toutes les requêtes où l'utilisateur veut faire quelque chose, pas juste lire un contenu (pour ça, il ira sur ChatGPT). Cela ne veut pas dire plus aucun informationnel, car il faut évidemment que tu ajoutes du contenu pour ta sémantique, ton maillage interne, pour partager tes valeurs, etc.</p>
+
+  <h3 class="block">Concrètement, voilà comment je m'en sers</h3>
+  <ol class="howto">
+    <li>Je lui donne le maximum de contexte : mes exports Google Search Console, le ton de voix de mon client, des scripts de call commerciaux, des tickets SAV, etc. Sans ce contexte, Claude devine, et il devine la même chose que pour tout le monde. Donc difficile d'être original.</li>
+    <li>Je lui demande les requêtes qu'un utilisateur tape en situation de décision, pas l'informationnel que l'IA va manger. Si quelqu'un veut juste lire, ChatGPT fait le job et je n'y vais pas. S'il veut comparer, calculer ou choisir, là je crée la page.</li>
+    <li>Je le force à classer par intention business, jamais par volume. La plupart des mots-clés qui amènent un client n'ont aucun volume : ce sont des micro-intentions que les outils classiques SEO ont bien du mal à trouver.</li>
+    <li>Je croise avec ma data propriétaire pour faire mieux que la moyenne sur la SERP. Une donnée qui existe ailleurs, c'est de la commodité ; une donnée qui n'existe que chez moi, c'est ce qui me démarque et me permet de ranker.</li>
+  </ol>
+</section>
+
+<!-- ============ LE CONTEXTE ============ -->
+<section class="page flow">
+  <span class="kicker">Avant de lancer le premier skill</span>
+  <h2 class="section">Le contexte que tu donnes à Claude</h2>
+
+  <p class="lead">Sans contexte client réel, ton vecteur reste générique. Même vecteur que tout le monde = nulle part dans la SERP. Le contexte fait diverger le vecteur, la divergence crée le Surprise Gap.</p>
+
+  <p>Quatre sources alimentent le contexte que j'injecte dans Claude :</p>
+
+  <h3 class="block">Calls clients</h3>
+  <p>Verbatims, objections réelles, vocabulaire des prospects. Tout ce qui ne remonte ni dans la SERP ni dans les outils SEO. Source numéro un : la data client qui devient de la data propriétaire que personne d'autre ne peut avoir. Chaque call commercial contient 10 à 20 formulations exactes que tes prospects emploient pour parler de leur problème. C'est ça, nos nouveaux mots-clés.</p>
+
+  <h3 class="block">Études de marché</h3>
+  <p>Les chiffres de ton secteur : tendances, parts de marché, taille du marché. C'est ce qui te permet d'avancer des données vérifiables au lieu de simples opinions. Une page qui cite des chiffres réels, Google et les IA la reprennent plus facilement qu'une page qui donne juste un avis.</p>
+
+  <h3 class="block">Reddit</h3>
+  <p>Les vraies questions des utilisateurs, leurs problèmes concrets, leurs retours d'expérience. Reddit, ce sont des utilisateurs qui parlent à d'autres utilisateurs : tu dois donc capter ce qui se dit sur ton produit/service sur ce type de forum pour ensuite l'exploiter sur des pages et traiter des micro-intentions invisibles avec une approche classique.</p>
+
+  <h3 class="block">Grok ou Perplexity</h3>
+  <p>Data fraîche par les utilisateurs eux-mêmes, signaux sociaux. Le complément qu'un contenu moyen n'a pas, car il s'arrête sur des requêtes que tout le monde traite déjà. Permet aussi de trouver des sujets émergents sur ta thématique, bref très pratique.</p>
+
+  <p style="margin-top:16px">Un facteur de ranking sur les LLM est le Surprise Gap : l'écart mesuré entre ta page et la moyenne du corpus sur la requête.</p>
+  <p>Perplexity aussi te permet de faire des études de marché approfondies et qualitatives pour venir alimenter un angle rédactionnel, une requête ou tes contenus.</p>
+</section>
+
+<!-- ============ SKILL 1 ============ -->
+<section class="page flow">
+  <div class="skill-card">
+    <div class="ks">Skill n°1 · Recherche de mots-clés</div>
+    <h2>seo-recherche-mots-cles</h2>
+
+    <h3 class="block">Définition</h3>
+    <p>Partir d'une thématique ou de quelques mots-clés de départ et produire une liste exhaustive, qualifiée par intention et priorisée. C'est la première étape : tant que cette liste n'existe pas, le clustering et les briefs restent trop généralistes et ne permettent plus de ranker sur des mots-clés compétitifs.</p>
+
+    <h3 class="block">Pourquoi tu en as besoin</h3>
+    <p>C'est ici que ton contexte / data propriétaire devient ultra important (celui que tu as rassemblé à l'étape précédente). Sans lui, tu ne fais que répéter ce qui se dit déjà sur la SERP. Comme tout le monde. Les skills que je te donne permettent à Claude de sortir des requêtes basées sur l'utilisateur, piochées dans le vocabulaire réel de tes clients.</p>
+    <p>Et une règle importante dans chaque skill : Claude n'a pas le droit d'inventer ni d'halluciner (il faut quand même vérifier, évidemment). Il va structurer l'approche et traiter des intentions de recherche.</p>
+
+    <div class="skill-head">
+      <h3 class="block" style="margin-bottom:0; border:none">Le skill complet</h3>
+      <button class="copy-btn no-print" data-target="s1">Copier le skill</button>
+    </div>
+    <pre class="skill-raw" id="s1">---
+name: seo-recherche-mots-cles
+description: |
+  Recherche de mots-clés from scratch : partir d'une thématique ou de quelques seed keywords et produire une liste exhaustive, qualifiée et priorisée — chaque mot-clé avec son intention, son volume et sa difficulté. Pipeline en 5 étapes : cadrer la thématique → expansion sémantique → qualification (intention/volume/difficulté) → filtrage du bruit → tableau priorisé. Règle anti-hallucination stricte : aucun volume ni aucune difficulté inventé, placeholder [À SOURCER] obligatoire.
+
+  TOUJOURS utiliser ce skill quand l'utilisateur dit : "recherche de mots-clés", "trouve-moi des mots-clés", "keyword research", "liste de mots-clés sur [thème]", "quels mots-clés cibler", "explore les requêtes sur", "j'ai une thématique, sors les mots-clés", "expansion de mots-clés".
+
+  Première brique du workflow mots-clés : sa sortie alimente seo-clustering-mots-cles puis seo-mots-cles-decisionnels.
+---
+
+# Skill — Recherche de Mots-Clés
+
+## Quand déclencher
+
+Partir d'une thématique ou de seed keywords et produire une liste de mots-clés exhaustive, qualifiée et priorisée. C'est l'amont de tout : tant que la liste n'existe pas, ni le clustering ni le brief n'ont de matière.
+
+## Doctrine
+
+- L'IA n'invente **jamais** un volume de recherche ni une difficulté. Elle structure, qualifie l'intention, propose des variantes. Les chiffres viennent d'un outil : GSC, Ahrefs, Semrush, Keyword Planner.
+- On ne part pas des concurrents. On part de l'intention de l'audience et de l'offre.
+- Un mot-clé sans intention claire n'est pas un mot-clé, c'est du bruit.
+- Exhaustivité d'abord, tri ensuite : générer large, filtrer après.
+
+## Input requis
+
+| Source | Obligatoire |
+|--------|-------------|
+| Thématique ou 3-5 seed keywords | Oui |
+| Secteur + audience / persona | Oui |
+| Offre (ce qu'on vend, point de conversion) | Oui — sinon le funnel est inqualifiable |
+| Marché géo + langue | Oui |
+| Export GSC / Ahrefs / Semrush si dispo | Recommandé — rend les volumes réels |
+
+## Pipeline (5 étapes)
+
+1. **Cadrer** — thématique, périmètre, ce qui est dans le scope et ce qui en sort.
+2. **Expansion sémantique** — pour chaque seed, générer :
+   - modificateurs (comment, pourquoi, prix, avis, meilleur, vs, sans…)
+   - questions (patterns People Also Ask)
+   - longue traîne (3 mots et plus)
+   - co-occurrences et entités liées
+   - synonymes et variantes lexicales
+   Objectif : **50 à 150 mots-clés bruts** minimum avant tri.
+3. **Qualifier chaque mot-clé** — intention (Know-Simple / Know / Do, cf. `seo-cluster-aeo`), volume (`[À SOURCER]` ou chiffre réel si export fourni), difficulté estimée (proxy : nb de mots, présence de marques, type de SERP), étage de funnel.
+4. **Filtrer le bruit** — retirer hors-sujet, hors-intention vs l'offre, doublons stricts, requêtes branded concurrent non pertinentes.
+5. **Livrable** — tableau priorisé.
+
+## Output obligatoire
+
+```
+RECHERCHE MOTS-CLÉS — '[Thématique]'
+
+| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
+|---|---|---|---|---|---|
+| ... | Know | [À SOURCER] | Moyenne | Know | ... |
+| ... | Do | 1 300 (Ahrefs) | Élevée | Décision | ... |
+
+Synthèse : [nb total] mots-clés · [nb] Do · [nb] Know · [nb] Know-Simple
+Top 5 à prioriser : [liste]
+```
+
+## Règles absolues
+
+- Zéro volume ou difficulté inventé → `[À SOURCER]`.
+- Si un export d'outil est fourni, utiliser **ses** chiffres, ne jamais les arrondir ni les estimer au hasard.
+- Générer large (50+ avant filtrage), livrer trié.
+- Chaque mot-clé a une intention identifiée, ou il dégage de la liste.
+
+## Enchaînement workflow
+
+`seo-recherche-mots-cles` (cette liste) → `seo-clustering-mots-cles` (regroupe en pages) → `seo-mots-cles-decisionnels` (isole les convertisseurs) → `seo-brief-contenu` / `seo-cluster-aeo` / `seo-programmatique-pseo`.
+
+## Concepts liés
+
+`know-simple-know-do` · `funnel` · `rrf` · `clustering-mots-cles` · `mots-cles-decisionnels` · `brief-contenu`</pre>
+  </div>
+</section>
+
+<!-- ============ SKILL 2 ============ -->
+<section class="page flow">
+  <div class="skill-card">
+    <div class="ks">Skill n°2 · Clustering de mots-clés</div>
+    <h2>seo-clustering-mots-cles</h2>
+
+    <h3 class="block">Définition</h3>
+    <p>Transformer une liste brute de N mots-clés en clusters exploitables, où chaque cluster devient une page.</p>
+
+    <h3 class="block">Pourquoi tu en as besoin</h3>
+    <p>Une liste plate de 150 mots-clés, c'est inexploitable. Le vrai critère pour les regrouper, ce n'est pas la ressemblance des mots, c'est le partage de SERP : si Google affiche le même top 10 pour deux requêtes, il les traite comme la même intention, donc une seule page.</p>
+    <p>Te tromper là-dessus, c'est créer deux pages sur la même intention et programmer ta propre cannibalisation. C'est la première cause de stagnation que je vois chez mes clients. La règle tient en une ligne : un cluster, une page, un mot-clé pivot.</p>
+
+    <div class="skill-head">
+      <h3 class="block" style="margin-bottom:0; border:none">Le skill complet</h3>
+      <button class="copy-btn no-print" data-target="s2">Copier le skill</button>
+    </div>
+    <pre class="skill-raw" id="s2">---
+name: seo-clustering-mots-cles
+description: |
+  Regroupe une liste brute de mots-clés en clusters exploitables — 1 cluster = 1 page. Critère de regroupement : le partage de SERP (deux mots-clés qui affichent le même top 10 = la même intention = une seule page). Pipeline en 5 étapes : importer la liste → normaliser (dédoublonner, nettoyer) → regrouper par intention de SERP → nommer chaque cluster et désigner le mot-clé pivot → affecter 1 cluster = 1 page avec détection de cannibalisation.
+
+  TOUJOURS utiliser ce skill quand l'utilisateur dit : "cluster mes mots-clés", "groupe cette liste de mots-clés", "keyword clustering", "regroupe mes requêtes", "j'ai 200 mots-clés à organiser", "quels mots-clés vont sur la même page", "transforme ma liste en pages".
+
+  Diffère de seo-cluster-aeo, qui part d'UN mot-clé pilier pour bâtir une architecture. Ici on part d'une LISTE BRUTE de N mots-clés et on la découpe en pages. Brique d'architecture du workflow mots-clés : après seo-recherche-mots-cles, avant seo-brief-contenu.
+---
+
+# Skill — Clustering de Mots-Clés
+
+## Quand déclencher
+
+Transformer une liste brute de N mots-clés en clusters exploitables, où chaque cluster devient une page.
+
+## Doctrine
+
+- Le vrai critère de clustering SEO = le **partage de SERP**. Si Google affiche le même top 10 pour deux requêtes, il les traite comme la même intention → une seule page.
+- La proximité sémantique seule ne suffit pas. "Assurance auto pas chère" et "tarif assurance auto" se ressemblent mais peuvent avoir des SERP distinctes.
+- 1 cluster = 1 page = 1 mot-clé pivot. Deux pages sur le même cluster = cannibalisation programmée.
+- Sans accès aux SERP réelles, l'IA cluster par intention + sémantique **en proxy** : la sortie est une hypothèse à valider, jamais une vérité.
+
+## Input requis
+
+| Source | Obligatoire |
+|--------|-------------|
+| La liste brute de mots-clés (collage, CSV, sortie de `seo-recherche-mots-cles`) | Oui |
+| Intention + volume par mot-clé | Recommandé |
+| Données de SERP overlap d'un outil (Keyword Insights, Ahrefs "Parent topic") | Recommandé — rend le clustering fiable |
+| Le site / l'offre (pour orienter le nommage et détecter la cannibalisation) | Recommandé |
+
+## Pipeline (5 étapes)
+
+1. **Importer la liste** — accepter un collage brut, un CSV ou la sortie de `seo-recherche-mots-cles`.
+2. **Normaliser** — dédoublonner, retirer le bruit (mots-clés sans intention, branded concurrent hors scope), fusionner les variantes orthographiques strictes (singulier/pluriel, accents).
+3. **Regrouper** — critère #1 : SERP overlap si la donnée est fournie. Sinon proxy : intention identique + même tête sémantique. Chaque groupe = un cluster.
+4. **Nommer + pivot** — pour chaque cluster : nom (head term), intention dominante (Know-Simple / Know / Do), mot-clé pivot (le plus représentatif, plus fort volume) + mots-clés secondaires.
+5. **Affecter** — 1 cluster = 1 page. Détecter les clusters qui recoupent une page existante → risque de cannibalisation, renvoyer vers `seo-cannibalisation`.
+
+## Output obligatoire
+
+```
+CLUSTERS — '[Liste / thématique]'
+
+| Cluster | Mot-clé pivot | Secondaires | Intention | Page (nouvelle / existante) | Risque cannibalisation |
+|---|---|---|---|---|---|
+| ... | ... | ... | Know | Nouvelle | — |
+
+Non clusterisés : [mots-clés orphelins laissés seuls]
+À valider : confirmer chaque cluster par un SERP overlap réel (outil ou vérification manuelle).
+```
+
+## Règles absolues
+
+- 1 cluster = 1 page = 1 pivot. Jamais deux clusters sur la même intention (principe MECE).
+- Un mot-clé n'appartient qu'à un seul cluster.
+- Sans donnée SERP, marquer explicitement la sortie « hypothèse — à valider par overlap réel ».
+- Ne pas forcer un mot-clé orphelin dans un cluster : le laisser en « non clusterisé ».
+- Si un cluster recoupe une page live → flag cannibalisation, ne pas créer de doublon.
+
+## Enchaînement workflow
+
+Après `seo-recherche-mots-cles` → chaque cluster devient un input : `seo-brief-contenu` (1 cluster = 1 brief), ou `seo-cluster-aeo` si le cluster est assez gros pour devenir un pilier. Les clusters d'intention Do → `seo-mots-cles-decisionnels`.
+
+## Concepts liés
+
+`serp-overlap` · `mece` · `cannibalisation` · `cluster-aeo` · `passage-ranking` · `maillage-interne`</pre>
+  </div>
+</section>
+
+<!-- ============ SKILL 3 ============ -->
+<section class="page flow">
+  <div class="skill-card">
+    <div class="ks">Skill n°3 · Mots-clés décisionnels</div>
+    <h2>seo-mots-cles-decisionnels</h2>
+
+    <h3 class="block">Définition</h3>
+    <p>Isoler, dans ta liste, les requêtes qui amènent un client, pas seulement du trafic.</p>
+
+    <h3 class="block">Pourquoi tu en as besoin</h3>
+    <p>L'IA mange les requêtes informationnelles. ChatGPT et l'AI Overview répondent aux « qu'est-ce que X » sans clic vers ton site. Les mots-clés qui survivent sont ceux où l'utilisateur veut faire quelque chose : comparer, calculer, demander un devis, choisir. C'est ce que j'appelle les mots-clés actionnels, à la fois décisionnels et transactionnels. Ce sont les seuls qui génèrent du chiffre d'affaires en SEO aujourd'hui.</p>
+    <p>Avant d'attaquer un mot-clé, passe-le au test des deux questions : est-ce que ChatGPT peut y répondre, et est-ce qu'il peut faire mieux que toi ? Si c'est oui aux deux, la page est morte avant d'exister. Le décisionnel se repère à ses modificateurs (prix, devis, meilleur, avis, alternative), pas à son volume.</p>
+
+    <div class="skill-head">
+      <h3 class="block" style="margin-bottom:0; border:none">Le skill complet</h3>
+      <button class="copy-btn no-print" data-target="s3">Copier le skill</button>
+    </div>
+    <pre class="skill-raw" id="s3">---
+name: seo-mots-cles-decisionnels
+description: |
+  Isole les mots-clés décisionnels — les requêtes transactionnelles et bas de funnel qui convertissent, par opposition aux requêtes informationnelles qui ne font que du trafic. Pipeline en 5 étapes : définir l'offre et le point de conversion → repérer les signaux décisionnels → classer par étage de décision → scorer le potentiel de conversion → shortlist priorisée avec page et format recommandés. Part d'une liste existante ou d'une thématique.
+
+  TOUJOURS utiliser ce skill quand l'utilisateur dit : "mots-clés décisionnels", "mots-clés transactionnels", "mots-clés qui convertissent", "requêtes bas de funnel", "requêtes Do", "mots-clés bottom funnel", "quels mots-clés rapportent", "trie ma liste par potentiel de conversion", "mots-clés commerciaux".
+
+  Brique de conversion du workflow mots-clés : se branche après seo-recherche-mots-cles ou seo-clustering-mots-cles.
+---
+
+# Skill — Mots-Clés Décisionnels
+
+## Quand déclencher
+
+Isoler, dans une liste ou une thématique, les requêtes qui amènent un client — pas seulement du trafic.
+
+## Doctrine
+
+- Le trafic n'est pas l'objectif, la conversion l'est. Un mot-clé à 10 000 vues/mois sans intention d'achat vaut moins qu'un mot-clé à 80 vues qui amène un client.
+- Un mot-clé décisionnel = l'internaute est en train de choisir, comparer ou acheter. Il a mentalement sorti la carte bleue.
+- Le décisionnel se repère à ses **modificateurs**, pas à son volume.
+- Bas de funnel ≠ forcément faible volume : "meilleur [catégorie]" peut peser lourd.
+- Le décisionnel se traite en priorité : c'est le ROI le plus court du SEO.
+
+## Input requis
+
+| Source | Obligatoire |
+|--------|-------------|
+| Liste de mots-clés OU thématique | Oui |
+| Offre : ce qu'on vend, prix, point de conversion (formulaire, achat, démo, appel) | Oui |
+| Audience / persona | Oui |
+| Concurrents (pour les requêtes branded) | Recommandé |
+
+## Signaux décisionnels (table de modificateurs)
+
+| Catégorie | Modificateurs |
+|-----------|---------------|
+| **Achat direct** | acheter, commander, prix, tarif, devis, abonnement, s'inscrire |
+| **Comparaison** | meilleur, top, vs, comparatif, alternative à, lequel choisir |
+| **Évaluation** | avis, test, retour d'expérience, fiable, arnaque |
+| **Local / immédiat** | près de moi, [ville], en ligne, livraison, ouvert |
+| **Marque** | [ta marque], [ta marque] avis/prix, [concurrent] alternative |
+
+## Étages de décision
+
+- **Do — Achat** : l'internaute veut transformer maintenant.
+- **Do — Comparatif** : il choisit entre options, toi inclus.
+- **Do — Local** : intention d'achat + contrainte géographique.
+- **Do — Marque** : il te connaît déjà, ou connaît un concurrent.
+- **Know commercial** : "comment choisir un X" — pré-décision, à capter tôt.
+
+## Pipeline (5 étapes)
+
+1. **Définir l'offre** — ce qu'on vend, le prix, le point de conversion réel.
+2. **Repérer les signaux** — passer la liste ou la thématique au filtre des modificateurs décisionnels.
+3. **Classer par étage de décision** — ranger chaque mot-clé retenu.
+4. **Scorer le potentiel de conversion** — proximité à l'offre (1-5) × intention d'achat (1-5) × faisabilité de ranker (1-5). Flag les requêtes branded concurrent pour vérifier la légitimité.
+5. **Livrable** — shortlist priorisée ; pour chaque mot-clé : page cible (landing, comparatif, page produit, page locale), format, CTA.
+
+## Output obligatoire
+
+```
+MOTS-CLÉS DÉCISIONNELS — '[Offre]'
+
+| Mot-clé | Étage | Score conv. | Page cible | Format | CTA |
+|---|---|---|---|---|---|
+| ... | Do — Comparatif | 64/125 | Page comparatif | Tableau + verdict | Devis |
+
+Top 3 à attaquer en premier : [liste + justification]
+```
+
+## Règles absolues
+
+- Ne jamais classer décisionnel un mot-clé purement informationnel pour gonfler la liste.
+- Requête branded concurrent → vérifier la légitimité : page comparative honnête, aucune tromperie.
+- Chaque mot-clé décisionnel pointe vers une page avec offre + CTA, sinon il ne convertit pas.
+- Prioriser proximité à l'offre + faisabilité, pas le volume brut.
+
+## Enchaînement workflow
+
+Après `seo-recherche-mots-cles` ou `seo-clustering-mots-cles` → alimente `seo-product-led-seo` (outils pour les requêtes Do) et `seo-brief-contenu` (pages de conversion).
+
+## Concepts liés
+
+`know-simple-know-do` · `funnel` · `product-led-seo` · `fully-meets` · `cannibalisation` · `e-e-a-t`</pre>
+  </div>
+</section>
+
+<!-- ============ FUSIONN ============ -->
+<section class="page flow">
+  <span class="kicker">Aller plus loin</span>
+  <h2 class="section">Pour ceux qui veulent pousser l'analyse sur 14 angles</h2>
+  <p>Faire tourner les trois skills à la main dans Claude suffit pour sortir tes mots-clés. Fusionn va plus loin : à partir d'une thématique, il décortique ton sujet sur 14 angles, des clusters aux micro-intentions, de la structure Hn aux objections, jusqu'à la stratégie pSEO. Chaque mot-clé est noté sur son potentiel business et rangé par intention.</p>
+
+  <div class="mock">
+    <div class="mock-bar">
+      <span class="dot" style="background:#F0554A"></span>
+      <span class="dot" style="background:#F5BE4F"></span>
+      <span class="dot" style="background:#5AC267"></span>
+      <span class="mock-url">fusionn.co</span>
+    </div>
+    <div class="mock-body">
+      <div class="mock-side">
+        <div class="grp">Comprendre</div>
+        <div class="it on"><span class="ic"></span> Mots-clés</div>
+        <div class="it"><span class="ic"></span> Clusters</div>
+        <div class="it"><span class="ic"></span> Carte</div>
+        <div class="it"><span class="ic"></span> Micro-intentions</div>
+        <div class="grp">Produire</div>
+        <div class="it"><span class="ic"></span> Structure Hn</div>
+        <div class="it"><span class="ic"></span> FAQ</div>
+        <div class="grp">Décider</div>
+        <div class="it"><span class="ic"></span> Stratégie pSEO</div>
+      </div>
+      <div class="mock-main">
+        <h4>agence seo paris — 87 mots-clés, 6 clusters</h4>
+        <div class="mock-row"><span class="sc">82</span><span class="kw">agence seo paris</span><span class="badge badge-do">Do</span></div>
+        <div class="mock-row"><span class="sc">78</span><span class="kw">tarif agence seo</span><span class="badge badge-do">Do</span></div>
+        <div class="mock-row"><span class="sc">71</span><span class="kw">meilleure agence seo b2b</span><span class="badge badge-do">Do</span></div>
+        <div class="mock-row"><span class="sc">44</span><span class="kw">comment choisir son agence seo</span><span class="badge badge-know">Know</span></div>
+        <div class="mock-row"><span class="sc">33</span><span class="kw">c'est quoi le seo</span><span class="badge badge-know">Know</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="aside">Aperçu de l'interface. Chaque mot-clé est noté sur son potentiel business et rangé par intention. La même logique que les trois skills, mais sans rien copier-coller.</p>
+
+  <div class="cta">
+    <h3>Tester sur un de tes mots-clés</h3>
+    <p>Tu donnes une thématique, tu récupères la liste qualifiée, les clusters et la shortlist de ce qui convertit. Trois analyses gratuites, sans carte bancaire.</p>
+    <a href="https://fusionn.co">Ouvrir Fusionn</a>
+  </div>
+
+  <div class="author">
+    <img src="tim-portrait.webp" alt="Timothée Boussardon, consultant SEO">
+    <div class="au-body">
+      <h3>Timothée Boussardon</h3>
+      <p>Consultant SEO depuis 6 ans. J'accompagne des boîtes B2B à transformer leur SEO en canal d'acquisition, avec un système SEO-IA branché sur leur vraie data (Search Console, calls commerciaux, tickets SAV).</p>
+      <div class="au-tags">
+        <span><b>Top 3</b> · balle de golf</span>
+        <span><b>Top 3</b> · accompagnement Qualiopi</span>
+        <span><b>Top 3</b> · appart-hôtel Bordeaux</span>
+      </div>
+      <a class="au-link" href="https://www.linkedin.com/in/timoth%C3%A9e-b-consultant-seo/" target="_blank" rel="noopener">Me suivre sur LinkedIn →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.dataset.target);
+      if (!el) return;
+      navigator.clipboard.writeText(el.textContent).then(function () {
+        var old = btn.textContent;
+        btn.textContent = 'Copié !';
+        btn.classList.add('done');
+        setTimeout(function () { btn.textContent = old; btn.classList.remove('done'); }, 1600);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
