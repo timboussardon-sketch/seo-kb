@@ -201,7 +201,7 @@ Structure ta réponse exactement comme suit :
 
 ## Concepts liés
 
-[[programmatique-pseo]] · [[product-led-seo]] · [[fully-meets]] · [[grounding-score]] · [[surprise-gap]] · [[agentic-search]] · [[entites-vectorielles]] · [[maillage-interne]] · [[cannibalisation]]
+[[programmatique-pseo]] · [[product-led-seo]] · [[fully-meets]] · [[grounding-score]] · [[surprise-gap]] · [[agentic-search]] · [[entites-vectorielles]] · [[skill-maillage-interne]] · [[skill-cannibalisation]]
 
 ## Skills mobilisés
 

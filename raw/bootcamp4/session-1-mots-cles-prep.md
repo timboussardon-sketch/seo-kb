@@ -15,10 +15,10 @@ tags:
   - workflow-mot-cle
 related:
   - "[[bootcamp-seo-ia]]"
-  - "[[seo-entites-vectorielles]]"
-  - "[[seo-cluster-aeo]]"
-  - "[[seo-quick-win]]"
-  - "[[seo-brief-contenu]]"
+  - "[[skill-entites-vectorielles]]"
+  - "[[skill-cluster-aeo]]"
+  - "[[skill-quick-win]]"
+  - "[[skill-brief-contenu]]"
 ---
 
 # Session 1 · Mots-clés · Résumé

@@ -3,6 +3,7 @@ title: "Créer un check d'indexation automatique avec Claude Code"
 slug: check-indexation-claude
 type: brief-ops
 date: 2026-05-02
+created: 2026-05-02
 version: v2 (2026-05-11) — extension causes/statut
 auteur: Tim Boussardon (Organikk)
 category: Agents IA / Monitoring SEO

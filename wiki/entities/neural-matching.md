@@ -29,7 +29,7 @@ Système de matching sémantique déployé par Google en 2018. Surnommé le syst
 - Fondation du concept d'[[concepts/ingenierie-semantique-inversee]] dans la KB : si Google comprend les concepts, il faut structurer le contenu par concepts (entités, relations) et pas par mots-clés
 - Justifie l'approche vectorielle de Fusionn ([[entities/fusionn-io]]) : les entités connectées (Roi-Reine) sont des concepts que Neural Matching comprend
 - Le [[concepts/grounding-score]] est l'évolution de ce principe : matching vectoriel multi-dimensionnel
-- Renforce l'importance des [[concepts/skill-entites-vectorielles|entités vectorielles]] : mapper les relations sémantiques pour couvrir le champ conceptuel complet
+- Renforce l'importance des [[skill-entites-vectorielles|entités vectorielles]] : mapper les relations sémantiques pour couvrir le champ conceptuel complet
 
 ## Pages liées
 

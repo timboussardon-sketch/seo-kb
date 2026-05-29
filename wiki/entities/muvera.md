@@ -28,7 +28,7 @@ Algorithme de Google combinant **recherche vectorielle et structurelle** pour un
 - Renforce massivement l'importance de la **structure Hn** : chaque H2/H3 génère potentiellement un vecteur distinct dans Muvera
 - Justifie la doctrine de Tim sur le [[concepts/passage-ranking]] : "H2 = vecteur sémantique"
 - Le [[concepts/grounding-score]] avec Muvera n'est plus un score unique mais un **ensemble de scores** par passage → chaque passage doit être optimisé individuellement
-- Connexion avec les [[concepts/skill-entites-vectorielles|entités vectorielles]] de Fusionn : mapper les relations sémantiques aide Muvera à associer le bon vecteur à la bonne requête
+- Connexion avec les [[skill-entites-vectorielles|entités vectorielles]] de Fusionn : mapper les relations sémantiques aide Muvera à associer le bon vecteur à la bonne requête
 - Le brief de contenu (skill-brief-contenu) prend encore plus d'importance : chaque H2 doit cibler un vecteur sémantique distinct et intentionnel
 
 ## Pages liées

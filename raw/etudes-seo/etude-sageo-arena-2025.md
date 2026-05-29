@@ -77,7 +77,7 @@ Optimisation différenciée par étape :
 
 ## Concepts liés
 
-[[grounding-score]] · [[agentic-search]] · [[entites-vectorielles]] · [[maillage-interne]] · [[fully-meets]] · [[surprise-gap]]
+[[grounding-score]] · [[agentic-search]] · [[entites-vectorielles]] · [[skill-maillage-interne]] · [[fully-meets]] · [[surprise-gap]]
 
 ## Études liées
 

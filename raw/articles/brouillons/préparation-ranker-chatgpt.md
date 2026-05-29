@@ -16,7 +16,7 @@ tags:
   - youtube
 related:
   - "[[session-1-mots-cles-prep]]"
-  - "[[seo-cluster-aeo]]"
+  - "[[skill-cluster-aeo]]"
   - "[[surprise-gap]]"
   - "[[grounding-score]]"
   - "[[data-proprietaire]]"

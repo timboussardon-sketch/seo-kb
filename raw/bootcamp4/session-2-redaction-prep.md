@@ -19,11 +19,11 @@ related:
   - "[[session-1-mots-cles-prep]]"
   - "[[sequencage-semaine-2]]"
   - "[[ton-de-voix-worksheet]]"
-  - "[[seo-brief-contenu]]"
+  - "[[skill-brief-contenu]]"
   - "[[article-engine-pipeline]]"
-  - "[[seo-workflow-article]]"
-  - "[[seo-entites-vectorielles]]"
-  - "[[seo-programmatique-pseo]]"
+  - "[[skill-workflow-article]]"
+  - "[[skill-entites-vectorielles]]"
+  - "[[skill-programmatique-pseo]]"
   - "[[opendecoder-seo-scoring-system]]"
 ---
 

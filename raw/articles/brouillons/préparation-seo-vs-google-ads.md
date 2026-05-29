@@ -199,7 +199,7 @@ La méthode (à expliquer en 4 étapes) :
 3. **Bascule progressive.** Quand la page SEO ramène plus de leads que la pub, tu coupes la pub sur ce mot-clé. Tu réinvestis le budget Ads sur un nouveau mot-clé à valider.
 4. **Itération.** Tu refais ça mot-clé par mot-clé. Au bout de 18 mois, 70 à 80 % du budget Ads de départ est passé en SEO, et tu génères 3 à 8× plus de leads pour le même budget global.
 
-Source : [[methode-lead-gen-seo]] §12 (roadmap d'implémentation type 90 jours), [[ma-strategie-seo-du-moment.md]] §"se greffer sans casser l'existant".
+Source : [[methode-lead-gen-seo]] §12 (roadmap d'implémentation type 90 jours), [[ma-strategie-seo-du-moment]] §"se greffer sans casser l'existant".
 
 ---
 

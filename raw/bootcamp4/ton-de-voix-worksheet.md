@@ -6,7 +6,7 @@ date: 2026-05-12
 related:
   - "[[tim-my-voice]]"
   - "[[tim-anti-ai-writing-style]]"
-  - "[[seo-workflow-article]]"
+  - "[[skill-workflow-article]]"
   - "[[article-engine-pipeline]]"
 ---
 

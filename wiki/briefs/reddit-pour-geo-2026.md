@@ -3,6 +3,7 @@ title: "Comment utiliser Reddit pour améliorer son GEO (sans se faire bannir)"
 slug: comment-utiliser-reddit-pour-geo
 type: article-blog
 date: 2026-04-25
+created: 2026-04-25
 auteur: Tim Boussardon (Organikk)
 category: GEO / Stratégie sociale
 keyword: reddit GEO

@@ -3,6 +3,7 @@ title: "Auditer et construire le maillage interne d'un site avec Claude"
 slug: maillage-interne-claude
 type: brief-ops
 date: 2026-05-02
+created: 2026-05-02
 auteur: Tim Boussardon (Organikk)
 category: Agents IA / Architecture éditoriale
 keyword: maillage interne IA Claude

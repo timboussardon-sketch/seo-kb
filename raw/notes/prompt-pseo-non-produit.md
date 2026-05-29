@@ -271,7 +271,7 @@ Un site non-produit n'a **aucun moat naturel** : tout son contenu textuel est re
 
 ## Concepts liés
 
-[[programmatique-pseo]] · [[product-led-seo]] · [[fully-meets]] · [[grounding-score]] · [[surprise-gap]] · [[agentic-search]] · [[entites-vectorielles]] · [[maillage-interne]] · [[cannibalisation]]
+[[programmatique-pseo]] · [[product-led-seo]] · [[fully-meets]] · [[grounding-score]] · [[surprise-gap]] · [[agentic-search]] · [[entites-vectorielles]] · [[skill-maillage-interne]] · [[skill-cannibalisation]]
 
 ## Skills mobilisés
 
