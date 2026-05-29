@@ -264,8 +264,7 @@
 - [[engine-densite-semantique-sans-serp]] — Engine v8 : carte sémantique pure sans scraping SERP (9 phases, 8 livrables, modes Bronze/Silver/Gold + Mode 0 KB Bootstrap)
 
 ## Outputs skills
-### Briefs (6)
-- [[briefs/2026-04-13-information-gain-seo-geo]] — Brief organikk Information Gain SEO/GEO
+### Briefs (5)
 - [[briefs/check-indexation-claude]] — Créer un check d'indexation automatique avec Claude Code
 - [[briefs/maillage-interne-claude]] — Auditer et construire le maillage interne d'un site avec Claude
 - [[briefs/reddit-pour-geo-2026]] — Utiliser Reddit pour améliorer son GEO sans se faire bannir

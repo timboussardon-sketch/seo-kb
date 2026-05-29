@@ -4,11 +4,14 @@ title: Brief — Information Gain SEO/GEO (le benchmark +41% qui change la règl
 aliases: [brief-information-gain, brief-info-gain-geo]
 tags: [brief, information-gain, geo, aeo, benchmark, arxiv, qrg, data-proprietaire]
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-29
 sources: 5
 confidence: high
-status: draft
+status: archived
 ---
+
+> **Archivé le 2026-05-29 (revue-hebdo W22, décision reconduite de W21).** Brief jamais exécuté : l'article spécifié ici (slug `information-gain-seo-geo`, benchmark +41 %, QRG 4.6.6, 5 sources) n'a pas été écrit. L'article en ligne `information-gain-geo` (publié 2026-02-20, antérieur au brief) ne le couvre que faiblement. Conservé comme spec lisible si Tim densifie un jour cet article mince. Le concept [[concepts/information-gain]] (`stable`) reste actif — seul ce brief sort du chemin.
+
 
 # Brief — Information Gain SEO/GEO
 

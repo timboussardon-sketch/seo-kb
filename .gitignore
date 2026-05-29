@@ -27,3 +27,6 @@ raw/revue-de-presse/
 .venv/
 .claude/vector-store/
 .claude/index/embed_mtime.json
+
+# Supabase CLI cache
+supabase/.temp/

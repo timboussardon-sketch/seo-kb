@@ -4,6 +4,43 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-29 · Finalisation des 3 nouveaux outils gratuits
+
+**Contexte.** Reprise du chantier WIP laissé non commité à la session précédente : 3 nouveaux outils gratuits Product-Led SEO. Type-check vert, dev relancé sur :5173 pour montrer les pages.
+
+**Les 3 outils.**
+- **Explorateur de questions** (`/explorateur-questions-seo`) → edge function `tool-question-explorer` (déterministe, sans clé) : renvoie les vraies questions tapées autour d'un mot-clé, catégorisées (definition, prix, comment, combien…).
+- **Clusteriseur de mots-clés** (`/clusteriser-mots-cles`) → edge function `tool-cluster-keywords` : regroupe une liste brute en clusters sémantiques via embeddings Gemini (`GEMINI_API_KEY` présent, méthode `embeddings`, seuil 0.8). 1 cluster = 1 page.
+- **Mots-clés qui convertissent** (`/mots-cles-qui-convertissent`) → 100% client via `src/lib/decisionalScore.ts`, aucun appel réseau. Tri par potentiel de conversion (transactionnel → informationnel).
+
+**Câblage.** Routes `App.tsx`, footer (7 outils gratuits au total), doc section 19 (« Quatre » → « Sept outils »).
+
+**Sitemap.** Constat : AUCUN outil gratuit n'était dans le sitemap (manque préexistant, pas que les 3 nouveaux). Ajout des 7 outils dans `staticPages` de l'edge function `generate-sitemap`, redéployée. Sitemap régénéré (curl direct, le script `generate-sitemap.js` plantait sur `.env` absent) : 45 URLs, 7 outils présents.
+
+**Deploy.** 3 edge functions déployées sur prod (`fwhfnzbtlddzfxbsejyf`) : `tool-question-explorer`, `tool-cluster-keywords`, `generate-sitemap`. Smoke-test prod OK (HTTP 200 sur les 2 endpoints outils). Commit `9da09b1` poussé sur `main` (11 fichiers, staging sélectif pour ne pas embarquer l'article blog WIP google-io). Netlify rebuild auto.
+
+**Maillage interne + fix lien mort (commit `bf297ac`).** Constat : footer OK mais aucune page outil existante ne pointait vers les 3 nouvelles (maillage entrant nul hors footer). Au passage, lien mort détecté dans StructureHn (`/score-business-mot-cle`, route inexistante). Corrections : StructureHn lien mort → `/mots-cles-qui-convertissent` ; SuggestExtractor (entrée du funnel) → +Explorateur de questions +Clusteriseur ; ComparateurVolumeBusiness → +Mots-clés qui convertissent. Résultat : explorateur-questions 1 entrante, clusteriser 3, convertissent 4 (+ footer). Ton respecté par fichier (Suggest tutoie, Comparateur vouvoie).
+
+**Suivi des 2 points (commit `31eb7e7`) — traités.**
+- **Canonical `fusionn.io` → `fusionn.co`.** Vérifié par curl : `fusionn.io` renvoie un 301 vers `fusionn.co` (200), `www.fusionn.co` aussi. Donc TOUT le site déclarait sa canonical / og:image / schema.org / sitemap sur un domaine de redirection (bug SEO site-wide, pas que le sitemap). Corrigé en centralisant sur `SITE_URL` : `src/config/site.ts`, `SEOHead.tsx` (canonical, og, schema Organization + BlogPosting), `generate-sitemap` (baseUrl, redéployée, sitemap régénéré : 45 URLs, 0 `fusionn.io`), `BriefSynthesisView` (footer + retrait d'un tiret cadratin au passage).
+- **Seuil clustering 0.80 → 0.88.** Calibré empiriquement (tests prod sur échantillon 12 mots-clés multi-intentions aux seuils 0.80/0.84/0.86/0.88/0.90). À 0.80 → 1 méga-cluster inutilisable (les mots-clés SEO partagent tous « seo », cosinus élevé). 0.88 = meilleur compromis : garde les vrais synonymes (« formation seo » / « formation référencement naturel ») tout en séparant prix / audit / géo. L'UI ne règle pas le seuil (défaut serveur affiché), donc le défaut impacte tous les users. Edge function redéployée. Limite résiduelle connue : l'algo « leader » à pivot unique fait que « seo lyon » attrape parfois « agence seo » — ce n'est pas le seuil, c'est l'algo (chantier futur si besoin).
+
+---
+
+## 2026-05-29 · Suppression page seo-content-writer + doctrine anti-backlink
+
+**Demande Tim (2 points).** (1) Supprimer la page `/listes-mots-cles/seo-content-writer` partout. (2) Règle permanente : ne JAMAIS parler d'achat de backlink, d'achat de lien ou de netlinking — nulle part, jamais (Fusionn n'en fait pas et n'en parle pas).
+
+**Point 1 — suppression.** La row DB `blog_posts` était déjà supprimée (session précédente coupée en plein delete). Nettoyé les 4 références locales restantes : fichier de contenu `liste-des-mots-cles-seo-content-writer.json` (rm), entrée dans `keyword-lists.json` (22 entrées restantes), `package.json` (liste prerender), `public/sitemap.xml` (bloc `<url>`).
+
+**Point 2 — guardrail générateur.** Le prompt de `tool-hn-structure` (qui alimente la page `/structure-h2-h3-seo`) n'avait aucune interdiction. Ajout d'une ligne « INTERDICTION ABSOLUE » alignée sur le guardrail existant de `guided-exploration`. Edge function redéployée sur prod (`fwhfnzbtlddzfxbsejyf`).
+
+**Point 2 bis — nettoyage pages publiques.** Termes interdits retirés de 4 pages déjà en ligne : `pourquoi-88-pourcent...` (« achat de backlinks » → « signaux techniques »), `agence-seo`, `freelance-seo`, `expert-seo` (mentions « netlinking » dans des listes de spécialités/ancres → autres requêtes SEO légitimes). Vérif : 0 occurrence restante dans `public/`, JSON tous valides.
+
+**Deploy.** Commit `640685a` poussé sur `main` (9 fichiers, staging sélectif pour ne pas embarquer le chantier WIP « 3 nouveaux outils gratuits » resté non commité). Netlify rebuild auto.
+
+---
+
 ## 2026-05-29 · Resserrement de l'outil « Générateur de mots-clés Google Suggest »
 
 **Demande Tim.** L'outil gratuit `tool-suggest-extract` (page `/generateur-mots-cles-google-suggest`) renvoyait des résultats « trop larges ». Objectif : ne garder que les requêtes les plus proches du mot-clé. Tim précise : resserrement **sémantique**, pas lexical.
@@ -1681,3 +1718,13 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Garde-fous faux positifs.** Prénoms aussi noms communs/marques (rose, pierre, olivier, margaux, jade, iris, camille…) volontairement absents de la liste. Un prénom déjà présent dans le mot-clé tapé n'est jamais filtré (respect d'une recherche nominale volontaire).
 
 **Deploy + test.** Commit `afe2f57` poussé sur `main`, edge function déployée sur Supabase prod (`fwhfnzbtlddzfxbsejyf`). Test live `consultant seo` : 24 résultats, 0 nom propre (vs « adrien beaujeu » avant).
+
+---
+
+## 2026-05-29 — Premium manuel pour seosfpro@gmail.com
+
+**Demande.** Passer seosfpro@gmail.com en premium avec recherche illimitée.
+
+**Action.** Insertion d'une ligne dans la table `subscriptions` (Supabase prod `fwhfnzbtlddzfxbsejyf`) pour le user `5ad447b8-380d-4e2d-b237-1f75b655d03d` : `status: active`, `plan_name: Premium manuel`, `plan_price: 0`, `current_period_end: 2099-12-31`, sans Stripe (le code valide le premium sur statut + période, pas sur les ids Stripe depuis la migration). Pas d'abonnement préexistant.
+
+**Effet.** Premium reconnu front + edge functions → recherche illimitée (free = 3), Semantic/HN 999/mois, chat 15/jour. Pas de déploiement, data prod, effet immédiat après refresh.

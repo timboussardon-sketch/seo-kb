@@ -2,7 +2,24 @@
 
 Document de suivi de l'état du projet Fusionn. Pour le détail chronologique des sessions, voir [[Historique]].
 
-Repo actif : `~/Code/newFusionn`. Dernière mise à jour : 2026-05-22.
+Repo actif : `~/Code/newFusionn`. Dernière mise à jour : 2026-05-26.
+
+---
+
+## État au 2026-05-26
+
+**Diagnostic global et plan d'action 90 jours : voir [[Diagnostic-plan-action-2026-05-26]].**
+
+MRR 696 € · ARR 8 352 € · MAU 8 % · acquisition à l'arrêt (0 inscrit sur 7j). Trois fuites distinctes identifiées : top-funnel + activation (46 % s'inscrivent sans chercher) + rétention (23 % testent une fois et partent). Priorité immédiate : casser la fuite d'activation avant tout (email J+1, tour produit forcé, décongelation Brief synthèse).
+
+Côté UI/UX, livraisons de cette session :
+- Nouvel onglet **Brief synthèse** en tête de la nav Stratégie (modèle Organikk repris pour la structure de contenu, DA Fusionn pour la mise en page).
+- Refonte **Stratégie pSEO** : header sobre, KPI strip, timeline 3 phases avec narrative parsé par phase, accordéons playbooks lisibles, tables zebra.
+- Suppression FAB "Tout télécharger" en bas à droite.
+- Accents FR forcés dans 6 edge functions Gemini (`generate-brief`, `generate-hn-structure`, `generate-vecteurs`, `generate-micro-intentions`, `generate-faq`, `generate-objections`).
+- Bouton "Copier le brief" passé en bleu Google. Bouton "Exporter Google Docs" temporairement retiré côté UI (edge function `export-to-gdocs` déployée mais renvoie 2xx-error à déboguer).
+- Création compte manuel `contact@ameline-calendrier.fr` + edge function `admin-recover-user` pour automatiser le geste à l'avenir.
+- Accroche écran d'accueil : "Tim, sur quel mot-clé veux-tu travailler ?" (remplace "analysons-nous ?").
 
 ---
 

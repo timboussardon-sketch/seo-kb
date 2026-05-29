@@ -2,8 +2,8 @@
 title: Workflow audit SEO — version bootcamp 4 (resserrée)
 derive-de: "Workflow V3 — Méthodologie Timothée Boussardon, avril 2026"
 version: "Bootcamp 4, mai 2026"
-principe: "100% données Google + structure éditoriale. Aucun outil payant tiers (Claude Pro 20€/mois + GSC + Chrome)."
-phases: 7
+principe: "100% données Google + structure éditoriale. Aucun outil payant tiers (Claude Pro 20€/mois + GSC + Chrome + Lighthouse)."
+phases: 8
 related:
   - "[[sequencage-semaine-3]]"
   - "[[session-3-audit-prep]]"
@@ -18,19 +18,22 @@ Version bootcamp 4 du workflow audit. Dérivée du V3, **resserrée sur l'audit 
 - Les données viennent de la GSC + la recherche web Claude (qui montre qui est visible) + le crawl Chrome de vos pages
 - Aucun outil payant tiers : Claude Pro (20€/mois) + données gratuites de Google
 
-**Les 7 phases :**
+**Les 8 phases :**
 
 | Phase | Skill | Source | Durée |
 |-------|-------|--------|-------|
 | 0 · Positionnement | aucun (prompt) | GSC + recherche web | 20-30 min |
 | 1 · Indexation | `indexation-check` | sitemap + URLs (lecture web publique) | 15-25 min |
+| 1bis · Core Web Vitals | `seo-core-web-vitals` | sitemap + Lighthouse local (terminal) | 10-15 min (échantillon 50) |
 | 2 · Quick Wins | `seo-quick-win` | GSC + Chrome | 15-20 min |
 | 3 · Audit structurel Hn | aucun (prompt + scrap) | sitemap complet + Chrome/curl + GSC | variable (scale sitemap) |
 | 4 · Cannibalisations | `seo-cannibalisation` | GSC + Chrome | 15-20 min |
 | 5 · Maillage interne | `maillage-systeme` + `maillage-interne-gsc` | Chrome (crawl liens) + GSC | 25-40 min |
 | 6 · Synthèse + plan | aucun (synthèse Claude) | résultats Phases 0-5 | 20-30 min |
 
-Une phase nourrit la suivante. Budget total : 3-4,5h, étalable (la Phase 3 dépend de la taille du sitemap).
+Une phase nourrit la suivante. Budget total : 3,5-5h, étalable (les Phases 1bis et 3 dépendent de la taille du sitemap).
+
+**Phase 1bis = terminal uniquement** (Lighthouse local). En Cowork sans terminal, sauter cette phase et la documenter, ou laisser la perf au prochain audit côté terminal.
 
 ---
 
@@ -108,7 +111,61 @@ Sur chaque URL, le skill vérifie 9 points : statut HTTP, blocages techniques (r
 
 ### Ce que ça nourrit
 
-→ Phase 2 (une page non indexée ne sera JAMAIS un quick win) → Phase 6 (le déblocage d'indexation va dans l'horizon Semaine 1-2).
+→ Phase 1bis (les URLs indexables sont celles qu'on audite côté perf) → Phase 2 (une page non indexée ne sera JAMAIS un quick win) → Phase 6 (le déblocage d'indexation va dans l'horizon Semaine 1-2).
+
+---
+
+## PHASE 1bis — Core Web Vitals (perf mobile)
+
+**Skill** : `seo-core-web-vitals`.
+**Source** : sitemap.xml + Lighthouse local (terminal uniquement, mobile, échantillon 50 URLs par défaut).
+**Durée** : 10-15 min sur 50 URLs (3 workers parallèles).
+**Pré-requis** : Lighthouse installé une fois (`npm install -g lighthouse`) + jq (`brew install jq`).
+
+> Phase **technique** qui complète l'indexation. Une page indexée mais lente = SEO bridé : LCP > 4s impacte directement le ranking mobile (Google = mobile-first indexing). À dérouler dans la foulée de la Phase 1, mêmes inputs (sitemap), même posture lecture seule.
+
+### Étape 1bis-A — Lancer l'audit
+
+Sur le sitemap.xml (échantillon 50 URLs ou `all` si le site est petit), Lighthouse mesure pour chaque page :
+- **LCP** (Largest Contentful Paint) : seuil good < 2.5s, poor > 4s
+- **CLS** (Cumulative Layout Shift) : seuil good < 0.1, poor > 0.25
+- **TBT** (Total Blocking Time) : proxy de l'INP, seuil good < 200ms, poor > 600ms
+- **Score perf** Lighthouse 0-100
+
+⚠️ **INP non mesurable en lab** (métrique field uniquement). TBT utilisé comme proxy — c'est suffisant pour 80 % des cas, à signaler dans le rapport.
+
+### Étape 1bis-B — Détection auto du pattern "redirect sitemap"
+
+Si **>50 % des pages** ont une opportunity `redirects` Lighthouse → quasi-certain mismatch de trailing slash entre sitemap et serveur (le sitemap liste `/page` mais le serveur sert `/page/` ou inverse). Chaque visite = 301 = ~800ms de LCP perdus. **C'est le quick win le plus rentable** quand il est présent — à corriger soit dans le sitemap, soit côté serveur (Next.js : `trailingSlash`).
+
+### Étape 1bis-C — Lecture du LCP breakdown
+
+Pour chaque page lente, le skill décompose le LCP en 4 sous-parties :
+- **TTFB > 600ms** → problème serveur / CDN / cache (root cause hosting)
+- **Load delay > 200ms** → image LCP pas dans le HTML initial (lazy-loaded, CSS background, JS-injectée)
+- **Load duration > 500ms** → image trop lourde / pas en avif/webp
+- **Render delay > 300ms** → CSS/JS render-blocking, hydratation lente
+
+Cette ventilation oriente la reco : on ne dit pas « optimise la page », on dit **où** est le temps perdu.
+
+### Output attendu
+
+- Tableau par URL : `| URL | LCP | CLS | TBT | Score | Verdict |` avec verdicts ✅ / ⚠️ / ❌
+- Synthèse : combien de pages en Poor, médiane perf, problèmes structurels
+- **Problèmes récurrents site-wide** : top 5 opportunities qui reviennent sur >30 % des pages
+- **Top 5 pages à corriger** avec plan détaillé (incluant le LCP breakdown)
+- Mention du pattern redirect sitemap **en tête** s'il est détecté
+- Limites assumées : INP non mesuré, échantillon X/Y URLs, données synthétiques
+
+### Ce que ça nourrit
+
+→ Phase 2 (une page quick win SEO mais en LCP > 4s = quick win bridé — la combo « title fixé + LCP fixé » est plus impactante que les deux séparés). → Phase 6 (les correctifs perf vont dans l'horizon Semaine 1-2 si triviaux comme le trailing slash, Mois 1 si refonte CSS/JS).
+
+### Limites & quand skipper
+
+- **Pas de terminal (Cowork)** → skip cette phase, mentionner dans le rapport « audit perf à dérouler côté terminal au prochain passage »
+- **Sitemap protégé / inaccessible** → demander un export local des URLs
+- **Site SPA / auth-walled** → certaines pages timeout, marquées ERROR (pas zéro halluciné)
 
 ---
 
@@ -286,6 +343,7 @@ Voici les résultats de mon audit SEO :
 
 PHASE 0 - Positionnement : [coller synthèse]
 PHASE 1 - Indexation : [coller synthèse]
+PHASE 1bis - Core Web Vitals : [coller synthèse]
 PHASE 2 - Quick Wins : [coller synthèse]
 PHASE 3 - Structure Hn : [coller synthèse]
 PHASE 4 - Cannibalisations : [coller synthèse]
@@ -323,10 +381,11 @@ Le rapport d'audit final, format client : synthèse exécutive en tête, anomali
 
 ## Configuration minimale & checklist pré-audit
 
-**Audit complet** : export GSC + Chrome + sitemap.
+**Audit complet** : export GSC + Chrome + sitemap + Lighthouse local.
 - GSC sert les Phases 0, 2, 3, 4, 5 (passe data)
 - Chrome (extension Claude in Chrome) sert les Phases 2, 3, 5
-- Le sitemap sert les Phases 1 et 3 (Phase 3 = sitemap **complet**, pas un échantillon)
+- Le sitemap sert les Phases 1, 1bis et 3 (Phase 3 = sitemap **complet**, pas un échantillon ; Phase 1bis = échantillon 50 par défaut)
+- Lighthouse local sert la Phase 1bis (terminal uniquement)
 - Phase 5 : la passe structurelle (`maillage-systeme`) ne dépend PAS de la GSC ; la passe data (`maillage-interne-gsc`) la requiert
 
 **Checklist pré-audit :**
@@ -334,8 +393,9 @@ Le rapport d'audit final, format client : synthèse exécutive en tête, anomali
 - [ ] Chrome ouvert avec l'extension Claude in Chrome connectée et testée
 - [ ] URL du site + sitemap.xml accessible (liste complète des URLs)
 - [ ] Liste de 5-10 requêtes business principales
+- [ ] Lighthouse installé (`npm install -g lighthouse`) + jq (`brew install jq`) — terminal uniquement
 - [ ] Connaissance du business model et des pages stratégiques
-- [ ] Budget temps : 3-4,5h pour l'audit complet, étalable (la Phase 3 dépend du nombre d'URLs)
+- [ ] Budget temps : 3,5-5h pour l'audit complet, étalable (les Phases 1bis et 3 dépendent du nombre d'URLs)
 
 ---
 

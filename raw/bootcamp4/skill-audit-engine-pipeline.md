@@ -17,6 +17,7 @@ related:
 
 C'est un **orchestrateur** : il ne remplace pas les sous-skills, il les pilote. Les sous-skills doivent être installés à part :
 - `indexation-check` (variante terminal OU Cowork — une seule) — **hors pack des 9, à distribuer**
+- `seo-core-web-vitals` (Phase 1bis, terminal uniquement, requiert Lighthouse + jq) — **hors pack des 9, à distribuer**
 - `seo-quick-win` (pack des 9, #2)
 - `seo-cannibalisation` (pack des 9, #3)
 - `maillage-systeme` (pack des 9, #4)
@@ -33,7 +34,7 @@ C'est un **orchestrateur** : il ne remplace pas les sous-skills, il les pilote. 
 ---
 name: audit-engine-pipeline
 description: |
-  Workflow d'audit SEO complet "bout en bout" — version bootcamp 4 resserrée, 7 phases enchaînées : Positionnement → Indexation → Quick Wins → Audit structurel Hn → Cannibalisation → Maillage → Synthèse & plan d'action 3 horizons. 100% données Google (GSC + Chrome ou terminal), aucun outil payant tiers. Orchestre les skills indexation-check, seo-quick-win, seo-cannibalisation, maillage-systeme et maillage-interne-gsc, et produit un rapport client au format "qui fait signer".
+  Workflow d'audit SEO complet "bout en bout" — version bootcamp 4 resserrée, 8 phases enchaînées : Positionnement → Indexation → Core Web Vitals (terminal) → Quick Wins → Audit structurel Hn → Cannibalisation → Maillage → Synthèse & plan d'action 3 horizons. 100% données Google (GSC + Chrome ou terminal) + Lighthouse local, aucun outil payant tiers. Orchestre les skills indexation-check, seo-core-web-vitals, seo-quick-win, seo-cannibalisation, maillage-systeme et maillage-interne-gsc, et produit un rapport client au format "qui fait signer".
 
   TOUJOURS utiliser ce skill quand l'utilisateur dit : "lance le workflow audit", "audit SEO complet", "audite ce site", "audit bootcamp", "déroule l'audit", "fais l'audit de [site]", "pipeline audit", "audit de A à Z", ou quand il fournit un export GSC + un sitemap en demandant un audit complet.
 
@@ -49,8 +50,9 @@ Orchestrateur. Déroule les 7 phases DANS L'ORDRE, appelle le sous-skill à chaq
 - Export GSC en CSV (3-6 mois, toutes requêtes + toutes pages)
 - URL du site + sitemap.xml accessible
 - 5-10 requêtes business principales
-- Sous-skills installés : `indexation-check`, `seo-quick-win`, `seo-cannibalisation`, `maillage-systeme`, `maillage-interne-gsc`
+- Sous-skills installés : `indexation-check`, `seo-core-web-vitals`, `seo-quick-win`, `seo-cannibalisation`, `maillage-systeme`, `maillage-interne-gsc`
 - Environnement : Claude Code (terminal) OU Cowork + extension Claude in Chrome
+- Pour la Phase 1bis (terminal uniquement) : Lighthouse (`npm install -g lighthouse`) + jq (`brew install jq`). Si l'utilisateur est en Cowork → la Phase 1bis sera skippée et documentée.
 
 Si un pré-requis manque → le dire clairement et s'arrêter. Ne pas improviser un audit dégradé sans prévenir.
 
@@ -81,6 +83,16 @@ Stocker → `audit/00-positionnement.md`. Nourrit P1, P2, P3, P6.
 
 Appeler le skill `indexation-check` sur le sitemap + la liste d'URLs. Conserver strictement la distinction **« non indexée » / « non testable » / « présomption (absente GSC) »**. Stocker → `audit/01-indexation.md`.
 → Une page non indexée ne passera JAMAIS en quick win : on la signale, on ne l'optimise pas.
+
+### Phase 1bis — Core Web Vitals (terminal uniquement)
+
+**Pré-condition** : environnement terminal + Lighthouse installé. Si Cowork → SKIP, documenter « audit perf à dérouler au prochain passage côté terminal », ne PAS forcer.
+
+Appeler le skill `seo-core-web-vitals` sur le sitemap.xml (échantillon 50 URLs par défaut, mobile). Le skill mesure LCP / CLS / TBT par page, détecte automatiquement le pattern « redirect sitemap » (>50 % des pages avec opportunity `redirects` = mismatch trailing slash, ~800ms LCP perdus à fixer en priorité), et décompose le LCP en sous-parties (TTFB / load delay / load duration / render delay) pour orienter chaque reco.
+
+INP non mesuré (métrique field) → TBT comme proxy, mention obligatoire dans le rapport. Stocker → `audit/01bis-core-web-vitals.md`.
+
+→ Une page indexée mais en LCP > 4s = quick win SEO bridé : la Phase 2 doit coupler les recos title/meta avec les correctifs perf identifiés ici.
 
 ### Phase 2 — Quick Wins
 
@@ -142,7 +154,9 @@ Stocker → `audit/06-rapport.md`. **C'est le livrable final.**
 - **Aucun scraping Google automatique en Cowork** (CAPTCHA) → croisement export GSC à la place.
 - Distinction stricte « non indexée » / « non testable » / « présomption ».
 - **< 10 URLs GSC → skip Phase 4** (documenter, ne pas forcer).
+- **Cowork → skip Phase 1bis** (Lighthouse = terminal uniquement, ne PAS tenter PageSpeed Insights dans Chrome à la place — c'est un autre périmètre).
 - **Cowork + gros sitemap → Phase 3 priorisée via GSC**, jamais 800 URLs à l'aveugle dans Chrome.
+- **Phase 1bis : INP non mesuré** (lab → TBT en proxy), mention obligatoire dans le rapport. Échantillon 50 URLs par défaut, marquer comme tel.
 - Si une phase échoue, la consigner dans le rapport (section « Limites ») et continuer les autres.
 - Stocker chaque phase dans `audit/` AU FUR ET À MESURE, pas à la fin.
 - Observation côté agent, décision côté humain.
@@ -156,6 +170,6 @@ Stocker → `audit/06-rapport.md`. **C'est le livrable final.**
 ## Note pour Tim (interne)
 
 - **Nom** : `audit-engine-pipeline`, en parallèle strict de `article-engine-pipeline` (S2). Si tu préfères un nom bootcamp explicite (`workflow-audit-bootcamp`), dis-le, je renomme dossier + frontmatter.
-- **C'est un orchestrateur, pas un monolithe** : il appelle `indexation-check` + `seo-quick-win` + `seo-cannibalisation` + `maillage-systeme`. Donc le message week-end doit lister CE skill **en plus** des sous-skills (3 sont dans le pack des 9, seul `indexation-check` est à ajouter). Préciser au groupe : installer `audit-engine-pipeline` ET `indexation-check` (la bonne variante), les 3 autres sont déjà là.
+- **C'est un orchestrateur, pas un monolithe** : il appelle `indexation-check` + `seo-core-web-vitals` + `seo-quick-win` + `seo-cannibalisation` + `maillage-systeme` + `maillage-interne-gsc`. Donc le message week-end doit lister CE skill **en plus** des sous-skills (3 sont dans le pack des 9 ; `indexation-check`, `seo-core-web-vitals` et `maillage-interne-gsc` sont à ajouter). Préciser au groupe : installer `audit-engine-pipeline` ET `indexation-check` (la bonne variante) ET `seo-core-web-vitals` (terminal uniquement, requiert `npm install -g lighthouse` + `brew install jq`), les 3 autres sont déjà là.
 - **Skill vs doc workflow** : on a maintenant les deux. Le doc [[workflow-audit-bootcamp4]] = pédagogie (le groupe comprend chaque phase) ; le skill = exécution (Claude déroule tout seul). Cohérent avec ce que tu as dit en S2 (« moi j'utilise plus les skills que les workflows ») : le doc pour apprendre, le skill pour produire vite ensuite. À cadrer au call S3 : déroulez d'abord à la main avec le doc cette semaine, le skill c'est pour quand vous avez compris.
 - Si tu modifies le doc workflow, répercute ici (les 7 phases doivent rester alignées doc ↔ skill).

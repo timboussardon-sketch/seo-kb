@@ -3,7 +3,7 @@ slug: engine-densite-semantique-sans-serp
 title: "Engine — Carte sémantique sans SERP (13 phases, cosinus simulé, Surprise Score Sémantique, skill Claude)"
 author: "Timothée Boussardon"
 date_added: 2026-05-11
-date_updated: 2026-05-23
+date_updated: 2026-05-27
 type: methode
 audience: seo-rédacteur
 topic: entites-semantiques-aeo
@@ -12,6 +12,24 @@ version: v10
 ---
 
 # Engine — Carte sémantique sans SERP
+
+## Pourquoi la sémantique devient le verrou de visibilité IA
+
+Pendant quinze ans, le SEO se jouait sur trois leviers : mot-clé, backlink, autorité de domaine. La sémantique restait un terme de chercheur. En 2026, c'est l'inverse — c'est devenu *le* signal sur lequel les moteurs IA arbitrent qui ressort dans une réponse générée, et qui disparaît.
+
+Quatre études récentes convergent sur cette bascule.
+
+**SAGEO Arena (Kim et al., Yonsei, fév. 2025 — arXiv:2602.12187).** Premier benchmark qui mesure la GEO à chaque étape du pipeline (retrieval → reranking → generation). Verdict : optimiser uniquement le body text **dégrade** la visibilité (−4.54 Hit Rate au retrieval, −16% ΔRank). Optimiser la couche structurelle (title, meta, headings, schema) apporte **+22% Hit Rate**, et combinée à l'ajout de statistiques sourcées, **+35%**. Traduction : ce que tu mets dans le corps compte moins que comment tu structures ta sémantique.
+
+**GEO Aggarwal (KDD'24, Princeton — arXiv:2311.09735).** Premier framework formel d'optimisation pour moteurs génératifs, testé sur 10 000 requêtes. Le Keyword Stuffing est **mort** sur les LLM (zéro amélioration mesurée, parfois dégradation). À l'inverse : **Quotation Addition +41%**, **Statistics Addition +34%**, **Cite Sources +29%** sur le Position-Adjusted Word Count. Le ton autoritaire seul : +13% — bien moins efficace que la citation verbatim. La sémantique qui ressort dans les LLM est faite d'entités citées, de chiffres datés et de sources, pas de mots-clés densifiés.
+
+**Retrieval Collapse (NAVER, ACM Web Conference 2026 — arXiv:2602.16136).** À 67% de pollution du pool de contenu par du synthétique, **80% de l'exposition** devient compromise — et le système semble continuer de tourner. Les rerankers LLM filtrent le malicieux mais ne détectent pas la dérive synthétique normale. Conséquence : les moteurs IA vont devenir critiquement dépendants des signaux d'humanité vérifiable — verbatims experts, cas terrain chiffrés, lexique signature qu'un agrégateur ne sait pas inventer.
+
+**MAGEO (Tsinghua / Tencent, ACL 2026 Findings, avril 2026 — arXiv:2604.19516).** Démonte les approches GEO qui optimisent page par page. Propose un système de 3 agents (planificateur + éditeur + évaluateur de fidélité) qui mémorise les stratégies gagnantes et les réutilise. Gain simultané en visibilité ET en exactitude des citations sur 3 moteurs grand public. La GEO bascule de l'artisanat vers l'industriel — les playbooks réutilisables battent les bricolages ponctuels.
+
+Quatre études, une même conclusion : la sémantique qui ressort dans les LLM n'est pas une wordlist scrapée du top 10. C'est une carte structurelle — entités pondérées, n-grams signature, preuves citées, angles divergents — qu'il faut produire en amont, pas extraire en aval. C'est exactement ce que fait l'engine ci-dessous.
+
+---
 
 ## À quoi sert cet engine
 
@@ -43,144 +61,108 @@ Plus une Phase 0 informative en amont, une Phase 12 (matrice couverture × mappi
 
 ---
 
-## CE QUE L'UTILISATEUR DONNE
+## 1. Outil classique vs Claude sémantique
 
-### Obligatoire
+Les outils sémantiques du marché scrapent le top 10 Google et te listent les termes statistiquement surreprésentés. Tu deviens la moyenne lexicale de tes concurrents. Cet engine fait l'inverse : il construit la carte depuis l'intention, ta doctrine et le corpus du domaine — sans regarder ce qui ranke.
 
-**1. La requête cible.** La query mot pour mot.
+| Axe                    | Outil classique (scraping SERP)                                | Claude sémantique (sans SERP)                                                                                           |
+| ---------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Méthode                | Scrape le top 10, compte les termes surreprésentés             | Décode l'intention, mobilise les entités du domaine, croise avec ta doctrine                                            |
+| Source de la carte     | Le consensus du top 10 = ce que tes concurrents ont déjà écrit | Ton intention + le corpus du domaine + ton expertise propre                                                             |
+| Différenciation        | Tu converges vers la moyenne lexicale du top 10                | Tu construis le standard à partir d'un angle non couvert                                                                |
+| Couches couvertes      | 1-2 (mots-clés, parfois questions)                             | 11 couches (entités, n-grams, pain points, preuves, multimodal, gap analysis, divergence, FAQ, structurel, Triade SERP) |
+| Expertise propriétaire | Aucune (le scraping n'a pas accès à ton vault)                 | Intègre ton KB, ta voix, tes cas clients                                                                                |
+| Robustesse             | Casse à chaque mise à jour algo qui rebrasse le top 10         | Stable, ancrée sur l'intention pas sur la SERP du jour                                                                  |
+| Conformité ToS         | Viole les conditions d'utilisation Google (scraping SERP)      | 100% conforme — lit uniquement ce que robots.txt autorise                                                               |
+| Output rédacteur       | Wordlist à insérer dans le texte                               | Brief structuré directement exploitable par la rédaction                                                                |
 
-**2. Le profil utilisateur (6 variables).** Sans ces 6 variables, l'engine pose une seule question groupée avant de produire.
-
-| Variable | Exemple de valeur | Rôle |
-|---|---|---|
-| Pays / langue | FR/FR par défaut | Vocabulaire, références culturelles, sources |
-| B2B / B2C + rôle | « B2B — CMO SaaS 50p » ou « B2C — particulier 30-50 ans » | Verrouille les verbatims et les preuves |
-| Objectif | Lead Gen / Conversion / Expertise FM | Calibre l'Action Engine flag en Phase 1 |
-| Secteur | SaaS, immobilier, BTP, juridique… | Filtre les entités et les cas terrain |
-| Audience (expertise) | junior / expert / mixte | Calibre la profondeur lexicale |
-| Localisation | Ville, région, ou « N/A » | Ancrage local SEO |
-
-### Recommandé
-
-**3. La couche d'expertise unique.** Une phrase. Ce que toi tu sais et que personne d'autre n'écrira sur le sujet. Si vide, Claude propose 5 angles divergents en Phase 9.
+Le moat ne réside pas dans l'outil — n'importe qui peut lancer cet engine. Il réside dans ce que tu donnes en input (voir partie 3).
 
 ---
 
-## MODES BRONZE / SILVER / GOLD
+## 2. Ce que Claude fait : tâches et actions
 
-L'engine détecte automatiquement le niveau de matière disponible et adapte la profondeur de ses livrables.
+Onze tâches sémantiques, exécutées en chaîne sur une requête + un profil + ton expertise. Chacune produit un livrable directement exploitable par la rédaction.
 
-### Détection automatique du mode
+### 1. Décode l'intention de recherche
+Casse la requête en trois niveaux : intention principale ([[know-simple-know-do|Know-Simple / Know / Do]]), 3-5 sous-intentions parallèles, 15-25 micro-intentions granulaires. Reformule le profil utilisateur en une phrase tranchante. Si l'intention est `Do`, flag obligatoire : un outil interactif est requis pour viser [[fully-meets]].
 
-| Conditions détectées | Mode activé |
-|---|---|
-| Aucun KB, juste une requête et une expertise | Bronze |
-| KB partiel (quelques notes ou doctrines) | Silver |
-| KB structuré (wiki, notes, doctrines, concepts versionnés) | Gold |
+### 2. Pondère les entités sémantiques
+30 à 50 entités classées par type (Concept, Algo, Tool, Method, Doctrine, Person, Location), chacune avec son poids 0-1, sa densité cible dans le texte (%), une similarité cosinus *simulée* avec la requête, une justification (paper, doctrine, co-occurrence) et un statut P1/P2/P3. Aucune entité arbitraire — chacune doit pouvoir être défendue.
 
-L'utilisateur peut forcer un mode plus bas.
+### 3. Repère le lexique signature
+Bigrams, trigrams et expressions multi-mots du domaine, avec leur fréquence attendue sur 2000 mots et leur co-occurrence dominante. Distingue les n-grams P1 (standard du domaine) des n-grams signature P2 (vocabulaire propre au média). Force la cohérence lexicale du corps.
 
-### Ce que produit chaque mode par couche sémantique
+### 4. Sort les vrais pain points
+Tableau de 10 lignes minimum : pain point précis nommé + verbatim Haute Surprise (citation experte rarement verbalisée) + preuve atomique chiffrée. Refus systématique du cliché (« je veux du ROI », « je veux des résultats »). Priorise 3 objections critiques selon fréquence × intensité × différenciation.
 
-| Couche | Bronze | Silver | Gold |
-|---|---|---|---|
-| Micro-intentions | Complet (training) | Complet | Complet |
-| Banlist / whitelist | Non | Partielle | Oui (documentée dans le KB) |
-| Entités sémantiques pondérées | 30-40, training seul | 40-50, + KB partiel | 50+, + entités propriétaires + doctrines |
-| Lexique signature (n-grams) | Standard du domaine | + n-grams KB partiels | + lexique signature documenté |
-| Pain points / verbatims | Génériques | + verbatims partiels du KB | + verbatims signature et data terrain |
-| Preuves quantitatives | Training + sourcing externe | Idem | Idem + cas terrain propriétaires |
-| Multimodal | Générique | Générique | + patrons multimodaux signature |
-| Cartographie concurrentielle | Training + sourcing externe | Idem | Idem + références internes |
-| Gap analysis | Score estimé | Score + KB | Score + KB + doctrines |
-| Divergence Haute Surprise | Limitée (training) | Moyenne | Forte (anti-positionnements maison) |
-| FAQ stratégique FM | Standard | Standard + KB | + questions issues des bootcamps / sessions clients |
-| Structural Information GEO | Standard | Standard | + patterns title / meta éprouvés sur le média |
+### 5. Génère les preuves quantitatives
+Chiffres datés avec source primaire, études, papers, jurisprudences, cas terrain. Chaque preuve porte un [[confidence-score|Confidence Score]] (haute / moyenne / basse) et un Freshness Guard (< 18 mois / 18-36 mois / > 36 mois). Si confidence basse ou source douteuse : placeholder `[À SOURCER]` obligatoire. Aucun chiffre inventé pour gonfler le [[grounding-score]].
 
-### Sur quoi Claude s'appuie selon le mode
+### 6. Liste les éléments multimodaux
+Tableaux, schémas, captures, photos, vidéos courtes, audio, données interactives. Pour chacun : objectif sémantique + format + micro-intention couverte.
 
-**Mode Bronze.**
-| Source | Rôle |
-|---|---|
-| Training du modèle | Connaissance générale, frameworks publics, études connues |
-| Sourcing externe autorisé (robots.txt compliant) | Études récentes, papers, rapports publics |
-| Input requête (Q1) | Décodage intentionnel |
-| Input expertise unique (Q2) | Seule couche propriétaire qualitative |
+### 7. Cartographie les concurrents sans SERP
+5 à 10 acteurs dominants identifiés depuis le training Claude + le KB interne + WebSearch ciblé (robots.txt OK). Pour chacun : nom + type (média / agence / expert / institution / plateforme) + angle dominant défendu + faiblesse identifiable.
 
-**Mode Silver.**
-| Source | Rôle |
-|---|---|
-| Training + sourcing externe | Idem Bronze |
-| KB partiel | Concepts en cours de constitution, doctrines isolées |
-| Input expertise unique | Couche propriétaire qualitative |
+### 8. Identifie les gaps marché
+Trois vues complémentaires :
+- **Matrice acteur × concept** — quelles entités P1 sont absentes chez les concurrents (= opportunités d'attaque)
+- **Content Gap Score** — % de couverture standard du domaine + % de couverture surprise
+- **Surprise Score Sémantique 0-100** — moyenne pondérée du ratio entités propriétaires, ratio verbatims experts, distance lexicale vs consensus, présence Quotation + Statistics
 
-**Mode Gold.**
-| Source | Rôle |
-|---|---|
-| Training + sourcing externe | Idem Bronze |
-| KB structuré (wiki, notes, doctrines) | Concepts propriétaires, banlist documentée, doctrines maison |
-| Input expertise unique | Couche propriétaire qualitative (souvent déjà partiellement dans le KB) |
+### 9. Construit les angles divergents
+Pour chaque axe de divergence : acteur dominant ciblé + entité de la gap map attaquée + type d'inversion (paresseuse vs juste mais contre-intuitive) + forme (citation verbatim, stat propriétaire, cas terrain). Calibré sur le benchmark [[information-gain]] Aggarwal KDD'24 : Quotation Addition +41%, Statistics Addition +34%, Cite Sources +29%, ton autoritaire seul +13% seulement.
 
-### Le moat n'est pas l'engine, c'est le KB
+### 10. Rédige les questions FAQ stratégiques
+5 à 7 questions = 5 à 7 vecteurs sémantiques distincts, chacune répondant à une micro-intention non couverte par le corps. Réponses courtes, citables isolément ([[answer-first-pattern]], AI Overview ready). La FAQ absorbe la périphérie sémantique pour préserver la [[purete-vectorielle|pureté vectorielle]] du corps.
 
-Engine Bronze : carte correcte mais réplicable. N'importe qui avec Claude peut produire la même.
+### 11. Spécifie les contraintes structurelles
+Title (≈10 mots), meta description (155 char), H1, H2 (5-8 prévus), schema.org adapté à l'intention (Article + FAQPage + LocalBusiness + HowTo + VideoObject). Pas la rédaction Hn finale, mais les contraintes sémantiques que la rédaction devra respecter. Finding SAGEO Arena 2025 ([[structural-information-geo]]) : optimiser le body seul dégrade le retrieval (−4.54 Hit Rate), structural seul +22%, structural + statistics combinés +35%.
 
-Engine Gold : carte signature, irréplicable. Le moat tient au KB qui le nourrit.
+### Tâches transverses
 
-**Conséquence opérationnelle.** Chaque article rédigé doit déposer un atome de concept dans le KB. Sinon Bronze à vie. Voir Phase 13 (feedback loop). Pour un utilisateur Bronze qui veut passer Silver/Gold vite, voir Mode 0 (KB Bootstrap).
+**Matrice de couverture finale** — vérifie qu'aucune micro-intention n'est orpheline, mappe chaque livrable sur la phase [[triade-serp|Triade SERP]] qu'il nourrit (Document Ranking / Passage Ranking / Generation).
+
+**Feedback loop KB** — identifie les concepts originaux apparus, les angles divergents qui pourraient devenir doctrines maison, les verbatims experts à archiver. Liste de patches à appliquer au KB. Sans cette tâche, l'engine ne progresse pas — avec, il s'auto-améliore à chaque passage.
+
+Ce que Claude ne fait pas : pas de H1 final, pas de hook, pas d'architecture Hn finale, pas de CTA, pas de prose narrative. La rédaction est une étape séparée, branchée en aval.
 
 ---
 
-## MODE 0 — KB BOOTSTRAP
+## 3. Ce que tu donnes en contexte (pour maximiser le résultat)
 
-Opération préalable à l'engine principal. Sert à constituer un KB en quelques heures à partir de matière existante.
+Plus tu donnes de matière brute, plus la carte sortie est signature. Sans expertise propriétaire, l'engine produit une carte correcte mais réplicable — n'importe qui avec Claude la produit aussi. Le moat n'est pas l'engine, c'est ce que tu y verses.
 
-### Ce que tu dois donner en input (pour maximiser le résultat)
+| # | Élément de contexte | Catégorie | Statut | Effet sur la carte |
+|---|---|---|---|---|
+| 1 | Requête cible (mot pour mot, pas de reformulation) | Requête | ✅ Obligatoire | Décode l'intention principale et les micro-intentions |
+| 2 | Pays / langue (FR/FR par défaut) | Profil | ✅ Obligatoire | Vocabulaire, références culturelles, sources |
+| 3 | B2B / B2C + rôle (ex. « B2B — CMO SaaS 50p ») | Profil | ✅ Obligatoire | Verrouille les verbatims et les preuves |
+| 4 | Objectif (Lead Gen / Conversion / Expertise) | Profil | ✅ Obligatoire | Calibre l'Action Engine flag (intention Do) |
+| 5 | Secteur (SaaS, immobilier, BTP, juridique…) | Profil | ✅ Obligatoire | Filtre les entités et les cas terrain |
+| 6 | Audience (junior / expert / mixte) | Profil | ✅ Obligatoire | Calibre la profondeur lexicale |
+| 7 | Localisation (ville, région ou « N/A ») | Profil | ✅ Obligatoire | Ancrage local SEO |
+| 8 | Destination du KB (chemin local, structure plate ou sous-dossiers) | Sortie | ✅ Obligatoire | Sans, les patches KB en fin de run restent inertes |
+| 9 | Expertise unique (une phrase signature) | Voix | ⚡ Recommandé | Active la couche divergence avec ton angle propre |
+| 10 | Articles publiés (20 minimum, 30-50 idéal, 3-7 thématiques) | Corpus publié | ⚡ Recommandé | Pose la base de la voix et des positions tranchées |
+| 11 | Newsletters publiées ou drafts | Corpus non publié | 💎 Densifie fort | Voix plus tranchée que sur le blog, positions assumées |
+| 12 | Posts LinkedIn (les tiens, exportés) | Corpus non publié | 💎 Densifie fort | Concepts atomiques formulés en 200 mots |
+| 13 | Transcripts d'interviews ou podcasts | Corpus non publié | 💎 Densifie fort | Vocabulaire signature au naturel, expressions récurrentes |
+| 14 | Briefs commerciaux ou propositions client | Corpus non publié | 💎 Densifie fort | Cas terrain chiffrés, objections traitées |
+| 15 | Notes Obsidian / Notion (même brouillon) | Corpus non publié | 💎 Densifie fort | Concepts en cours de formulation |
+| 16 | Slides de conférences ou formations | Corpus non publié | 💎 Densifie fort | Doctrines distillées en 1-2 phrases |
+| 17 | Liste de 10 expressions que tu utilises souvent | Cadrage | 🔧 Optionnel | Accélère la détection de la whitelist signature |
+| 18 | Liste de 10 mots ou formules que tu bannis | Cadrage | 🔧 Optionnel | Pré-remplit la banlist sans extraction |
+| 19 | Liste de 3-5 concurrents que tu refuses de citer | Cadrage | 🔧 Optionnel | Calibre l'anti-positionnement |
+| 20 | 3 cas clients dont tu es fier (1 paragraphe chacun) | Cadrage | 🔧 Optionnel | Densifie les cas terrain chiffrés |
 
-#### 1. Articles publiés (obligatoire)
+Évite, dans le corpus que tu fournis : articles génériques type « 10 best practices », contenus opportunistes SEO sans position tranchée, contenus rédigés par un freelance qui n'a pas ta voix. Ils diluent ta signature au lieu de la révéler.
 
-| Critère | Minimum | Idéal |
-|---|---|---|
-| Volume | 20 articles | 30 à 50 articles |
-| Format | URLs ou fichiers Markdown / HTML | Markdown brut dans un dossier local |
-| Diversité de sujets | 3 thématiques couvertes | 5 à 7 thématiques |
-| Positionnement | Articles où tu prends position | Articles avec concepts ou frameworks originaux |
-
-Évite : articles génériques "10 best practices", articles d'opportunisme SEO sans position, contenus rédigés par un freelance sans ta voix.
-
-#### 2. Matière non publiée (recommandé)
-
-Ces matériaux densifient le KB beaucoup plus que les articles seuls. Donne-les si tu les as.
-
-| Type | Pourquoi c'est précieux |
-|---|---|
-| Newsletters publiées ou drafts | Voix plus tranchée que sur le blog, positions assumées |
-| Posts LinkedIn (les tiens, exportés) | Concepts atomiques formulés en 200 mots |
-| Transcripts d'interviews ou podcasts | Vocabulaire signature au naturel, expressions récurrentes |
-| Briefs commerciaux ou propositions client | Cas terrain chiffrés, objections traitées |
-| Notes Obsidian / Notion existantes (même brouillon) | Concepts en cours de formulation |
-| Slides de conférences ou de formations | Doctrines distillées en 1-2 phrases |
-
-#### 3. Inputs de cadrage (optionnel mais accélère le tri)
-
-| Input | Effet |
-|---|---|
-| Liste de 10 expressions que tu utilises souvent | Accélère la détection de la whitelist signature |
-| Liste de 10 mots ou formules que tu bannis | Pré-remplit la banlist sans extraction |
-| Liste de 3-5 concurrents / médias que tu refuses de citer | Calibre l'anti-positionnement |
-| 3 cas clients dont tu es fier (1 paragraphe chacun) | Densifie les cas terrain chiffrés |
-
-#### 4. Destination du KB (obligatoire)
-
-| Item | Détail |
-|---|---|
-| Chemin local | Là où Claude va créer les fichiers (ex. `/Users/toi/Code/mon-kb/`) |
-| Structure préférée | Plate ou par sous-dossiers (`/concepts/`, `/entities/`, `/competitors/`) |
-
-### Format prompt d'invocation
+### Format prompt d'invocation — Bootstrap KB
 
 ```
-Lance Mode 0 KB Bootstrap.
+Lance le KB Bootstrap.
 
 Articles publiés : [chemin du dossier ou liste d'URLs]
 Matière non publiée : [chemin du dossier]
@@ -189,7 +171,471 @@ Whitelist initiale (optionnel) : [...]
 Destination KB : [chemin]
 ```
 
-Plus tu donnes de matière brute, moins tu auras à arbitrer en sortie. Sans les inputs de cadrage, Claude extrait à l'aveugle et tu valides manuellement plus de propositions.
+Plus tu donnes de matière brute, moins tu auras à arbitrer en sortie. Sans les éléments de cadrage (lignes 17-20), Claude extrait à l'aveugle et tu valides manuellement plus de propositions.
+
+---
+
+## 4. Le skill entier (autonome, copier-coller direct)
+
+Skill Claude **100% autonome**. Aucune dépendance externe, aucun vault à brancher, aucune doctrine maison à lire ailleurs. Tu copies le bloc ci-dessous dans un fichier, tu redémarres, ça marche.
+
+### Installation (30 secondes)
+
+1. Crée le dossier : `mkdir -p ~/.claude/skills/seo-preparation-semantique/`
+2. Copie tout le bloc ci-dessous dans `~/.claude/skills/seo-preparation-semantique/SKILL.md`
+3. Redémarre la session Claude Code (ou la fenêtre Claude Desktop)
+4. Vérifie que le skill est chargé : `/skills` doit lister `seo-preparation-semantique`
+5. Lance-le en disant « prépare la sémantique de [ta requête] »
+
+### Premier appel — exemple
+
+```
+Lance la préparation sémantique sur « consultant seo » pour un profil B2B
+indépendant en France, objectif Lead Gen, secteur SaaS, audience expert,
+basé à Lyon.
+
+Mon expertise unique : 15 ans dans le SEO B2B, j'ai vu passer 3 cycles
+d'algos majeurs et je sais ce qui survit aux refontes.
+```
+
+Claude pose une seule question groupée si une variable obligatoire manque, sinon il sort la carte complète des 13 phases.
+
+### Le skill complet (à copier dans `~/.claude/skills/seo-preparation-semantique/SKILL.md`)
+
+````markdown
+---
+name: seo-preparation-semantique
+description: |
+  Engine autonome de préparation sémantique sans scraping SERP. Deux modes : CRÉATION (requête → carte vierge en 13 phases) et AUDIT (contenu existant → diff vs carte attendue + plan de correction P0/P1/P2).
+
+  Format de sortie : entités sémantiques pondérées (poids 0-1 + densité cible + cosinus simulé + justification + statut P1/P2/P3), lexique signature (n-grams + co-occurrences), pain points & verbatims Haute Surprise, preuves quantitatives (Confidence Score + Freshness Guard), multimodal, cartographie concurrentielle (5-10 acteurs), Gap analysis 3 vues (Gap Competitive Map + Content Gap Score + Surprise Score Sémantique 0-100), divergence calibrée Information Gain, FAQ stratégique (5-7 vecteurs), Structural Information GEO, matrice couverture × Mapping Triade SERP, patches KB.
+
+  Phase 0 informative (jamais bloquante) : alerte sur head term saturé / multi-intentions et propose sous-niches en annexe, mais produit toujours la carte complète.
+
+  Embeddings simulés : cosinus Phase 2 calibré sur le corpus Claude, marqué « simulé » dans chaque sortie. Pas de vraie API embedding — honnête sur le calcul.
+
+  TOUJOURS utiliser ce skill quand l'utilisateur dit :
+  - Mode Création : "prépare la sémantique", "carte sémantique", "préparation sémantique", "engine sémantique", "tout ce que ma page doit contenir", "fais-moi l'analyse sémantique de [requête]", "lance l'engine sur [requête]", "sémantique sans SERP", "analyse sémantique [mot-clé]", "prépa sémantique [requête]", "entités pondérées [requête]", "surprise score sémantique de [requête]".
+  - Mode Audit : "audite la sémantique de", "audit sémantique de cette page", "ma page couvre-t-elle [requête]", "compare ce contenu à la carte sémantique attendue", "qu'est-ce qui manque à mon article sur [requête]", "diff sémantique", "audit de couverture sémantique", "ma page ne ranke pas — qu'est-ce qui lui manque", "plan de correction sémantique".
+
+  Ce skill remplace les outils de scraping SERP. Il produit la matière sémantique brute (carte). Il NE produit pas la rédaction, ni la structure Hn finale, ni le hook — ces étapes sont en aval.
+---
+
+# Skill — Préparation sémantique sans SERP
+
+Engine autonome qui produit la carte sémantique complète d'une page à écrire (Mode Création) ou audite la couverture sémantique d'un contenu existant (Mode Audit). Aucun scraping de SERP. La carte se construit depuis l'intention de la requête, le corpus du domaine, et l'expertise propre fournie en input.
+
+## Détecter le mode
+
+- **Requête + profil seuls** → Mode **CRÉATION**.
+- **Requête + profil + contenu fourni** (texte collé, chemin de fichier, ou URL publique) → Mode **AUDIT**.
+- Si ambigu, demander : « Tu veux créer la carte sémantique d'une page à écrire, ou auditer un contenu existant ? »
+
+## Inputs requis
+
+### Mode Création
+
+| Variable | Valeur attendue | Statut |
+|---|---|---|
+| Requête cible | mot pour mot | Obligatoire |
+| Pays / langue | FR/FR par défaut | Obligatoire |
+| B2B/B2C + rôle | « B2B — CMO SaaS 50p » | Obligatoire |
+| Objectif | Lead Gen / Conversion / Expertise | Obligatoire |
+| Secteur | nommé | Obligatoire |
+| Audience | junior / expert / mixte | Obligatoire |
+| Localisation | ville ou « N/A » | Obligatoire |
+| Expertise unique | une phrase signature | Recommandé |
+
+### Mode Audit (en plus des inputs Création)
+
+| Variable | Valeur attendue | Statut |
+|---|---|---|
+| Contenu à auditer | texte collé, chemin local, ou URL publique (robots.txt OK) | Obligatoire |
+| Version cible | refonte / update freshness / élargissement / migration | Recommandé |
+
+Si une variable obligatoire manque, poser **une seule question groupée** avant de produire.
+
+## Pipeline — 13 phases en chaîne
+
+```
+Phase 0 — Filtre stratégique (informatif, jamais bloquant)
+Phase 1 — Décodage micro-intentionnel + Action Engine flag
+Phase 2 — Entités sémantiques pondérées (7 colonnes)
+Phase 3 — Lexique signature (n-grams + co-occurrences)
+Phase 4 — Pain points & verbatims Haute Surprise
+Phase 5 — Preuves quantitatives (Confidence Score + Freshness Guard)
+Phase 6 — Vecteurs multimodaux
+Phase 7 — Cartographie concurrentielle (5-10 acteurs)
+Phase 8 — Gap analysis 3 vues (8a Gap Competitive Map / 8b Content Gap Score / 8c Surprise Score Sémantique 0-100)
+Phase 9 — Divergence calibrée Information Gain
+Phase 10 — FAQ stratégique (5-7 vecteurs latents)
+Phase 11 — Structural Information GEO
+Phase 12 — Matrice couverture × Mapping Triade SERP
+Phase 13 — Feedback loop KB (patches à archiver)
+```
+
+## Format détaillé par phase
+
+### Phase 0 — Filtre stratégique (informatif, jamais bloquant)
+
+Trois tests en amont. L'engine ne bloque jamais, il alerte et continue.
+
+**0.1 Test de substitution LLM** — deux questions binaires :
+1. ChatGPT répond déjà à cette requête à 80% ?
+2. Si oui, peut-il faire mieux que l'utilisateur ?
+
+Verdict : PASS / WARN / WARN sévère (flag « divergence obligatoire » en Phase 9 si WARN).
+
+**0.2 Angle différenciant** — la requête est-elle un head term tapé pour 10 intentions différentes par 100 personnes différentes (`agence SEO`, `plombier Paris`) ? Si oui : WARN + propose des sous-niches en annexe (ex. `plombier 15e urgence nuit`).
+
+**0.3 Pureté vectorielle** — UNE intention dominante ou plusieurs ? Si plusieurs : WARN + propose découpage en N pages.
+
+Livrable Phase 0 :
+
+```
+PHASE 0 — Filtre stratégique
+- Test LLM : [PASS / WARN — raison]
+- Angle différenciant : [PASS / WARN — sous-niches proposées : (1) ... (2) ...]
+- Pureté vectorielle : [PASS / WARN — N intentions : (1) ... (2) ...]
+Verdict global : [GO franche / GO avec avertissement]
+```
+
+L'engine continue toujours vers Phase 1.
+
+### Phase 1 — Décodage micro-intentionnel + Action Engine flag
+
+Trois niveaux d'intention :
+- **Intention principale** : taxonomie Know-Simple / Know / Do (remplace TOFU/MOFU/BOFU)
+- **Sous-intentions** : 3 à 5 questions parallèles
+- **Micro-intentions** : 15 à 25 questions granulaires
+
+Profil utilisateur reformulé en une phrase tranchante.
+
+**Action Engine flag** : si l'intention principale = `Do`, flag obligatoire — un outil interactif (calculateur, simulateur, générateur, audit) est requis pour viser Fully Meets. Une page Know textuelle ne ranke pas sur intention Do.
+
+### Phase 2 — Entités sémantiques pondérées (format obligatoire 7 colonnes)
+
+30 à 50+ entités par run. Format strict :
+
+```
+| # | Entité | Type | Poids (0-1) | Densité cible (%) | Cosinus estimé requête (0-1) | Justification | Statut |
+|---|---|---|---|---|---|---|---|
+| 1 | `passage ranking` | Concept | 0.94 | 0.8% | 0.91 | Brique du grounding, citée dans 3 papers MIRAS | P1 critique |
+| 2 | `BM25` | Algo | 0.87 | 0.3% | 0.79 | Mécanique sous-jacente du Document Ranking | P1 critique |
+```
+
+- **Type** : Person / Concept / Tool / Method / Doctrine / Event / Location / Algo
+- **Poids** : > 0.8 = entité pivot, 0.5-0.8 = supportive, < 0.5 = périphérique
+- **Densité cible** : pivots 0.5-1%, supportives 0.2-0.5%, périphériques < 0.2% (sur 2000 mots)
+- **Cosinus estimé** : projection Claude de la similarité entité ↔ requête, **marqué « simulé »** en pied de tableau
+- **Justification obligatoire** : courte (paper, doctrine, co-occurrence). Aucune entité arbitraire.
+- **Statut** : P1 critique (sans, ne ranke pas) / P2 (supportif) / P3 (bonus)
+
+Pied de tableau obligatoire : *« Cosinus simulé par projection corpus Claude, non calibré mathématiquement. Pour calibration exacte : API embeddings Voyage / Cohere / OpenAI. »*
+
+### Phase 3 — Lexique signature (n-grams + co-occurrences)
+
+```
+| N-gram / expression | Type | Fréquence attendue (sur 2000 mots) | Co-occurrence dominante | Statut |
+|---|---|---|---|---|
+| « passage ancré » | bigram | 2-3x | grounding-score, featured snippet | P1 |
+| « ranker dans ChatGPT » | trigram | 1-2x | AIO, citation LLM | P1 |
+```
+
+Bigrams (2 mots), trigrams (3 mots), expressions multi-mots (> 3). Co-occurrence dominante = avec quelles autres entités/concepts ce n-gram apparaît systématiquement. Statut P1 = standard du domaine / P2 = bonus signature.
+
+### Phase 4 — Pain points & verbatims Haute Surprise
+
+Tableau de 10 lignes minimum :
+
+```
+| Micro-intention / Pain Point | Verbatim « Haute Surprise » | Preuve atomique attendue |
+|---|---|---|
+| [Frein précis nommé] | [Citation experte rarement verbalisée — zéro cliché] | [Sujet + Verbe + Donnée chiffrée] |
+```
+
+**Règles verbatims** :
+- Frustration experte ou technique propre au métier
+- Vocabulaire signature (verrouillé sur B2B/B2C du profil)
+- Refus strict du cliché (« je veux du ROI », « je veux des résultats »)
+
+Exemple :
+- ❌ Cliché : « Je veux voir des résultats concrets »
+- ✅ Haute Surprise : « La dernière agence m'envoyait des rapports de 40 pages où le seul KPI lisible était le nombre de backlinks, jamais croisé avec mon CRM »
+
+**Règles preuves atomiques** : format binaire ou chiffré, vérifiable.
+- ✅ « 73% des prospects B2B refusent un devis sans estimation immédiate »
+- ❌ « Nous offrons un excellent service »
+
+**Priorisation finale** : sortir 3 objections critiques selon `fréquence × intensité × différenciation`.
+
+### Phase 5 — Preuves quantitatives (Confidence Score + Freshness Guard)
+
+Génération depuis le training : chiffres datés avec source primaire, études, papers, jurisprudence, cas terrain.
+
+**Confidence Score par preuve** :
+
+| Niveau | Critère | Action |
+|---|---|---|
+| Haute | Source primaire récente identifiée, paper avec DOI, organisme officiel | Utilisable telle quelle |
+| Moyenne | Source connue mais non vérifiée à 100% | Utilisable + fact-check obligatoire en aval |
+| Basse | Reformulation indirecte, source secondaire, donnée approximative | **Remplacer par `[À SOURCER]`** |
+
+**Règle absolue** : si confidence basse ou source inconnue → placeholder `[À SOURCER]` obligatoire. Aucun chiffre inventé.
+
+**Freshness Guard** :
+
+| Âge de la donnée | Statut |
+|---|---|
+| < 18 mois | Preuve fraîche — OK |
+| 18-36 mois | Flag « à actualiser » — utilisable mais signalée |
+| > 36 mois | Omise sauf paper fondateur (étude structurante non substituable) |
+
+Format livrable : preuve + source + confidence + datation + flag fraîcheur + micro-intention couverte.
+
+### Phase 6 — Vecteurs multimodaux
+
+Tableaux, schémas, captures, photos, vidéos courtes, audio, données interactives. Pour chacun : objectif sémantique + format + micro-intention couverte.
+
+### Phase 7 — Cartographie concurrentielle sans SERP
+
+5 à 10 acteurs dominants identifiés depuis : training Claude + WebSearch ciblé (robots.txt OK) + KB interne si fourni.
+
+```
+| Acteur | Type | Angle dominant | Faiblesse identifiable |
+|---|---|---|---|
+```
+
+Type : média / agence / expert individuel / institution / plateforme. Angle dominant = la thèse défendue. Faiblesse = ce qu'ils ne traitent pas, ne disent pas, ou refusent de voir.
+
+### Phase 8 — Gap analysis (3 vues)
+
+**8a. Gap Competitive Map** — matrice acteur × concept (P1 critiques uniquement, sinon trop chargé) :
+
+```
+| Acteur | Entité A | Entité B | Entité C | Entité D | Entité E | Gap exploitable |
+|---|---|---|---|---|---|---|
+| Acteur X | ✅ | ✅ | ❌ | ✅ | ❌ | Entités C + E |
+| **GAP MARCHÉ** | — | — | — | — | **0/3** | **E = gap général** |
+```
+
+Une entité avec gap commun (jamais traitée par les 3 acteurs analysés) = opportunité d'attaque prioritaire.
+
+**8b. Content Gap Score** :
+
+| Axe | Définition | Cible |
+|---|---|---|
+| Couverture standard | % entités P1 que 80%+ des concurrents traitent | ≥ 70% (franchir Document Ranking) |
+| Couverture surprise | % entités P1 traitées par < 20% des concurrents | ≥ 30% (passer Information Gain) |
+
+Verdict :
+- Standard < 70% → page n'a pas la base sémantique, ne ranke pas
+- Standard ≥ 70% mais Surprise < 30% → indexable mais Low Surprise, oubliée par les modèles IA
+- Standard ≥ 70% ET Surprise ≥ 30% → cible idéale
+
+**8c. Surprise Score Sémantique 0-100** — moyenne pondérée de 4 composantes :
+
+```
+30% — Ratio entités propriétaires / entités totales
+20% — Ratio verbatims Haute Surprise / verbatims totaux
+25% — Distance lexicale propriétaire ↔ consensus (1 - cosinus simulé)
+25% — Présence Quotation Addition + Statistics Addition (preuves verbatim + chiffrées avec source)
+```
+
+Échelle :
+- **0-30** = Médiocrité statistique (oubli mémoriel garanti, refonte ou abandon)
+- **30-60** = Acceptable mais réplicable (améliorations P1 obligatoires)
+- **60-85** = Information Gain validé (publication OK)
+- **85-100** = Inversion experte maximale
+
+Avertissement obligatoire : *« Score calibré sur projection corpus Claude. Pour calibration exacte : audit GEO avec scores algorithmiques. »*
+
+### Phase 9 — Divergence calibrée Information Gain
+
+Benchmark Aggarwal KDD'24 (arXiv:2311.09735) — gains PAWC mesurés vs baseline :
+
+| Méthode | Gain PAWC |
+|---|---|
+| Quotation Addition (citation verbatim) | +41% |
+| Statistics Addition | +34% |
+| Cite Sources | +29% |
+| Authoritative (ton seul) | +13% |
+
+Privilégier les angles divergents qui s'appuient sur **citation verbatim + statistiques sourcées**, pas sur le ton autoritaire.
+
+Pour chaque axe de divergence, exiger :
+- Acteur dominant ciblé (issu Phase 7)
+- Entité de la Gap Competitive Map attaquée (Phase 8a)
+- Type d'inversion (paresseuse vs juste mais contre-intuitive)
+- Forme (citation verbatim, stat propriétaire, cas terrain, donnée externe sourcée)
+
+Critère final : un expert dirait *« tiens, je n'avais pas vu ça comme ça »*.
+
+### Phase 10 — FAQ stratégique (5-7 vecteurs latents)
+
+5 à 7 questions = 5 à 7 vecteurs sémantiques distincts. Zéro chevauchement avec le corps.
+
+Règles strictes :
+- Chaque question répond à une micro-intention **non couverte par le corps**
+- Réponse courte, actionnable, citable isolément (AI Overview ready)
+- Verrouillage B2B/B2C selon profil Phase 1
+- Aucune question pédagogique générique (« qu'est-ce que X »)
+- Priorité aux questions Know / Comparatif / Do non traitées dans le corps
+
+La FAQ absorbe la périphérie sémantique pour préserver la pureté vectorielle du corps.
+
+### Phase 11 — Structural Information GEO
+
+Finding SAGEO Arena 2025 (Kim et al., Yonsei, arXiv:2602.12187) : optimiser le body seul **dégrade** le retrieval (−4.54 Hit Rate). Optimisation structurelle apporte +22% Hit Rate. Structural + Statistics combinés : **+35%**.
+
+```
+| Champ | Contrainte sémantique | Entité(s) à inclure (Phase 2) |
+|---|---|---|
+| Title (≈10 mots) | Mot-clé exact + différenciateur | Entité principale + angle divergence |
+| Meta description (155 char) | Answer-first + bénéfice mesurable | Entité principale + verbe d'action |
+| H1 | Mot-clé sémantique + promesse | Entité principale + Surprise Gap |
+| H2 (5-8 prévus) | Chaque H2 = un vecteur sémantique distinct | Une entité ou concept par H2 |
+| Schema.org | Type adapté à l'intention | Article + FAQPage + LocalBusiness (si géo) + HowTo (si Do) + VideoObject (si multimodal) |
+```
+
+### Phase 12 — Matrice couverture × Mapping Triade SERP
+
+Croise micro-intentions × couches Phases 2-11. Vérifie qu'aucune micro-intention n'est orpheline.
+
+**Mapping Triade SERP** — chaque livrable est tagué selon la phase Google qu'il nourrit :
+
+```
+| Couche produite | Phase Triade SERP cible | Mécanisme |
+|---|---|---|
+| Entités nommées + Structural Information | Phase 1 — Document Ranking (admission) | BM25 + RankBrain |
+| Concepts structurants + preuves + grounding + n-grams | Phase 2 — Passage Ranking (densité par bloc) | DPR / Muvera + BERT |
+| FAQ + answer-first + Surprise Gap | Phase 3 — Generation (AIO, citation LLM) | Grounding + Confidence Score |
+```
+
+Sans ce mapping, le rédacteur en aval ne sait pas où placer quoi.
+
+### Phase 13 — Feedback loop KB
+
+À la fin de chaque exécution, identifier les éléments à versionner dans le KB local (si l'utilisateur en a un) :
+
+```
+À ajouter à /concepts/ : concept-X.md (résumé en une phrase)
+À ajouter à /entities/ : entité-Y.md (rôle dans le domaine)
+À ajouter à /competitors/ : concurrent-Z.md (angle + faiblesse)
+À ajouter à doctrine.md : doctrine-W (formulation tranchée)
+À archiver dans /verbatims/ : verbatim-V.md (frustration experte rare)
+À archiver dans /lexique/ : n-gram-N.md (expression signature)
+```
+
+L'utilisateur valide ou ajuste avant d'archiver. Sans cette phase, l'engine ne progresse pas — avec, il s'auto-améliore à chaque passage. Si l'utilisateur ne dispose pas d'un KB structuré, lister simplement les éléments candidats à archiver pour qu'il les copie où il veut.
+
+## Template d'output final
+
+```
+PRÉPARATION SÉMANTIQUE — Requête : "[...]"
+Profil : [B2B/B2C, rôle, secteur, objectif, audience, géo]
+
+== PHASE 0 — Filtre stratégique (informatif) ==
+- Test LLM : [PASS / WARN]
+- Angle différenciant : [PASS / WARN]
+- Pureté vectorielle : [PASS / WARN]
+Verdict : [GO franche / GO avec avertissement]
+Annexe sous-niches (si WARN) : [...]
+
+== Livrables 1-13 ==
+1. Micro-intentions (3 niveaux + profil + Action Engine flag)
+2. Entités sémantiques pondérées (tableau 7 colonnes + avertissement « cosinus simulé »)
+3. Lexique signature (n-grams + co-occurrences + statut P1/P2)
+4. Pain points (10+ lignes) + 3 objections priorisées
+5. Preuves quantitatives (Confidence Score + Freshness Guard + datation)
+6. Multimodal
+7. Cartographie concurrentielle (5-10 acteurs)
+8. Gap analysis :
+   8a. Gap Competitive Map (matrice acteur × concept)
+   8b. Content Gap Score (% standard vs % surprise + verdict)
+   8c. Surprise Score Sémantique : XX/100 — [verdict] + avertissement
+9. Divergences (Information Gain calibré + acteur ciblé + entité attaquée)
+10. FAQ stratégique (5-7 questions = 5-7 vecteurs)
+11. Structural Information GEO (title / meta / H1 / H2 / schema)
+12. Matrice couverture × Mapping Triade SERP
+13. Patches KB à archiver
+```
+
+## Règles absolues
+
+- **Aucun scraping SERP**, jamais. Pas Google, pas Bing, pas autre moteur.
+- **Robots.txt strict** pour tout WebFetch. Si bloqué : training Claude + demande à l'utilisateur, jamais bypass.
+- **Cosinus simulé toujours marqué** : sortie Phase 2 + Phase 8c avec avertissement « simulé par projection corpus Claude ».
+- **Confidence Score obligatoire** sur chaque preuve chiffrée. Si basse ou inconnue → `[À SOURCER]`. Aucun chiffre inventé.
+- **Freshness Guard** : preuves > 36 mois omises sauf paper fondateur.
+- **Phase 0 jamais bloquante** : alerte WARN + sous-niches en annexe, produit toujours la carte complète.
+- **Ne pas rédiger** : pas de H1 final, pas de hook, pas d'architecture Hn finale, pas de CTA, pas de prose narrative.
+- **Une page = une intention** (pureté vectorielle). Si pluralité d'intentions Phase 0.3 → WARN + N sous-cartes en annexe.
+- **Anti-cliché obligatoire** Phase 4 : pas de « je veux du ROI », pas de « je veux des résultats ».
+- **Phase 2 — Justification obligatoire** : chaque entité avec sa justification courte. Pas d'entité arbitraire.
+
+## Concepts mobilisés (définitions inline — pour usage autonome)
+
+- **Triade SERP** : les 3 phases successives par lesquelles passe une requête sur Google moderne — Document Ranking (filtre d'admission via BM25/RankBrain), Passage Ranking (densité sémantique par bloc via DPR/Muvera/BERT), Generation (citation dans AI Overview / Featured Snippet / réponse LLM).
+- **Information Gain** : standard Google formalisé dans les Quality Rater Guidelines (page 42) — un contenu sans effort qui reprend ce qui existe déjà reçoit la note la plus basse. Benchmark Aggarwal KDD'24 (arXiv:2311.09735) mesure les méthodes qui gonflent l'IG.
+- **Confidence Score** : niveau de fiabilité d'une preuve chiffrée (haute / moyenne / basse) qui détermine si elle est utilisable telle quelle, à fact-checker, ou à remplacer par `[À SOURCER]`.
+- **Freshness Guard** : règle d'âge des preuves — < 18 mois fraîche, 18-36 mois à flagger, > 36 mois omise (sauf paper fondateur structurel).
+- **Action Engine flag** : drapeau levé en Phase 1 si l'intention est `Do` — la page doit alors embarquer un outil interactif (calculateur, simulateur, générateur, audit) pour viser la note Fully Meets des Quality Raters.
+- **Pureté vectorielle** : une page = une intention. Multi-intentions dilue le vecteur sémantique et fait sortir la page du retrieval.
+- **Answer-first pattern** : la réponse directe doit être en début de section/page, pas après 800 mots de mise en contexte. Validé par le finding Positional Bias des rerankers LLM (arXiv:2604.03642).
+- **Grounding Score** : mesure de fidélité aux sources — critère de tri prioritaire des LLM modernes, plus important que le keyword stuffing.
+- **Know-Simple / Know / Do** : taxonomie d'intention qui remplace TOFU/MOFU/BOFU pour l'ère LLM. Know-Simple = fait isolé, Know = compréhension complète, Do = action transactionnelle.
+- **Surprise Gap** : la fracture entre ce que tous les concurrents disent (consensus) et ce que toi seul dis (angle propriétaire). Plus le gap est large, plus le contenu est mémorisé par les modèles IA.
+- **Structural Information GEO** : finding SAGEO Arena 2025 (Kim et al., arXiv:2602.12187) — optimiser uniquement le body dégrade le retrieval, optimiser la couche structurelle (title, meta, headings, schema) + ajouter des statistiques sourcées apporte +35% Hit Rate.
+
+## Sauvegarde (optionnel)
+
+Si l'utilisateur dispose d'un vault structuré (Obsidian, dossier markdown organisé), proposer de sauvegarder l'output dans `<vault>/queries/prepa-semantique-YYYY-MM-DD-slug.md`. Sinon, output dans la conversation seule.
+
+## Mode Audit — différences
+
+En Mode Audit, chaque phase produit **3 colonnes** au lieu d'une : Attendu (calculé Mode Création) / Couvert dans le contenu actuel / Gap + action de correction.
+
+Trois statuts par couche :
+- ✅ Couvert : élément attendu présent et conforme → validation
+- ❌ Gap : élément attendu absent ou non conforme → correction à planifier
+- ⚠️ Hors scope : élément présent qui ne correspond à aucune couche attendue → suppression ou déplacement (FAQ, autre page)
+
+Le statut « Hors scope » est critique : il préserve la pureté vectorielle.
+
+**Plan de correction priorisé** livré à la fin :
+
+```
+PLAN DE CORRECTION — Contenu : "[titre/URL/chemin]"
+Surprise Score Sémantique actuel : XX/100 — [verdict]
+
+P0 — Bloquants (à corriger avant publication)
+- [Phase X — Couche Y] Gap : [description] → Action : [verbe + objet précis]
+
+P1 — Importants (avant prochaine vague de mises à jour)
+- [...]
+
+P2 — Améliorations (sur les versions suivantes)
+- [...]
+
+ÉLÉMENTS HORS SCOPE détectés :
+- [Citation du contenu] → Raison : pollue le vecteur → Action : déplacer / supprimer
+
+Score de couverture global : X/11 couches couvertes
+```
+
+- **P0** : Gap sur Phase 11 (Structural) ou phase Triade SERP entière non couverte → ne franchit pas l'admission Google
+- **P1** : Gap sur Phase 4 (pain points), Phase 9 (divergence), Phase 5 (preuves), ou Surprise Score < 60 → indexée mais Low Surprise
+- **P2** : Gap sur Phase 10 (FAQ), Phase 6 (multimodal), Phase 13 (patches KB) → ranke mais ne maximise pas la Triade SERP phase 3
+````
+
+> **Note pour Tim** : ce skill autonome diffère du skill actuellement installé sur ta machine (`~/.claude/skills/seo-preparation-semantique/SKILL.md`) qui contient encore une référence au doc source vault + les modes bronze/silver/gold. Si tu veux aligner ton install locale sur cette version, copie le bloc ci-dessus par-dessus le fichier existant.
+
+---
+
+# Annexes opérationnelles
+
+Détails de référence : modes, phases en profondeur, formats de prompt, éthique scraping. Tout ce que la partie haute synthétise se retrouve ici en version exhaustive.
 
 ---
 
@@ -296,7 +742,6 @@ Contenu à auditer : [texte markdown collé | chemin de fichier | URL publique]
 Version cible (optionnel) : [refonte / update freshness / élargissement / migration]
 
 Expertise unique (optionnel) : [...]
-Mode forcé (optionnel) : [bronze / silver / gold]
 ```
 
 ---
@@ -377,7 +822,7 @@ Profil utilisateur reformulé en une phrase tranchante à partir des 6 variables
 
 ### Phase 2. Entités sémantiques pondérées (avec cosinus simulé + justification)
 
-**Format de sortie : 7 colonnes**, 30 à 50 entités par run (50+ en mode Gold).
+**Format de sortie : 7 colonnes**, 30 à 50+ entités par run.
 
 | # | Entité | Type | Poids (0-1) | Densité cible (%) | Cosinus estimé requête (0-1) | Justification | Statut |
 |---|---|---|---|---|---|---|---|
@@ -489,7 +934,7 @@ Sans scraping de la SERP, l'engine identifie les acteurs qui dominent le sujet, 
 | Source | Rôle |
 |---|---|
 | Training Claude | Qui Claude associe spontanément à ce sujet |
-| KB interne (si Silver / Gold) | Qui le média référence comme concurrent ou source |
+| KB interne (si présent) | Qui le média référence comme concurrent ou source |
 | WebSearch ciblé (robots.txt compliant) | Qui apparaît dans les sources académiques et institutionnelles |
 
 **Output Phase 7**
@@ -542,7 +987,7 @@ Mesure quantifiée du gradient de divergence sémantique entre :
 
 | Composante | Poids | Mesure |
 |---|---|---|
-| Ratio entités propriétaires / entités totales | 30% | (KB Gold) entités issues du KB ÷ (entités KB + entités training standard) |
+| Ratio entités propriétaires / entités totales | 30% | (si KB présent) entités issues du KB ÷ (entités KB + entités training standard) |
 | Ratio verbatims Haute Surprise / verbatims totaux | 20% | (Phase 4) verbatims experts rares ÷ verbatims totaux |
 | Distance lexicale moyenne propriétaire ↔ consensus | 25% | (simulée Claude) cosinus moyen entités propriétaires ↔ entités consensus, inversé (1 - cosinus) |
 | Présence Quotation Addition + Statistics Addition | 25% | (Phase 5) % de preuves citées en verbatim avec source + % preuves chiffrées avec source |
@@ -732,7 +1177,6 @@ Profil utilisateur :
 - Localisation : [ville ou N/A]
 
 Expertise unique (recommandé) : [une phrase]
-Mode forcé (optionnel) : [bronze / silver / gold]
 Sourcing externe (optionnel) : [oui / non, oui par défaut]
 ```
 
@@ -745,12 +1189,11 @@ Profil utilisateur : [6 variables]
 Contenu à auditer : [texte | chemin | URL]
 Version cible (optionnel) : [refonte / update freshness / élargissement / migration]
 Expertise unique (optionnel) : [...]
-Mode forcé (optionnel) : [bronze / silver / gold]
 ```
 
-**Mode 0 KB Bootstrap**
+**KB Bootstrap**
 ```
-Lance Mode 0 KB Bootstrap.
+Lance le KB Bootstrap.
 
 Articles sources : [liste d'URLs ou chemin de dossier]
 Destination KB : [chemin où créer les fichiers]
@@ -788,7 +1231,6 @@ Cet engine te file une carte typée de tout ce qui doit être présent pour trai
 À remplir :
 - Requête testée
 - Profil utilisateur saisi
-- Mode détecté (Bronze / Silver / Gold)
 - Verdict Phase 0 (filtre stratégique informatif)
 - Décodage micro-intentionnel produit
 - Tableau entités pondérées (avec cosinus simulé)
@@ -801,125 +1243,3 @@ Cet engine te file une carte typée de tout ce qui doit être présent pour trai
 - Matrice de couverture finale + mapping Triade SERP
 - Patches KB suggérés en Phase 13
 
----
-
-# SKILL CLAUDE — `seo-preparation-semantique`
-
-Section opérationnelle. Installé dans `/Users/timothee/.claude/skills/seo-preparation-semantique/SKILL.md` (v10 synchronisé).
-
-```yaml
----
-name: seo-preparation-semantique
-description: |
-  Engine de préparation sémantique sans scraping SERP. Deux modes : CRÉATION (requête → carte vierge en 11 couches) et AUDIT (contenu existant → diff vs carte attendue + plan de correction P0/P1/P2).
-
-  Format de sortie (v10) : entités sémantiques pondérées (poids 0-1 + densité cible + cosinus simulé + justification + statut), lexique signature (n-grams + co-occurrences), pain points & verbatims Haute Surprise, preuves quantitatives (Confidence Score + Freshness Guard), multimodal, cartographie concurrentielle, Gap analysis 3 vues (Gap Competitive Map + Content Gap Score + Surprise Score Sémantique 0-100), divergence calibrée Information Gain, FAQ stratégique FM, Structural Information GEO, matrice couverture × Mapping Triade SERP, patches KB.
-
-  Phase 0 informative (jamais bloquante) : alerte sur head term saturé / multi-intentions et propose sous-niches en annexe, mais produit toujours la carte complète.
-
-  Embeddings simulés : cosinus Phase 2 calibré sur le corpus Claude, marqué « simulé » dans chaque sortie. Pas de vraie API embedding — honnête sur le calcul.
-
-  TOUJOURS utiliser ce skill quand l'utilisateur dit :
-  - Mode Création : "prépare la sémantique", "carte sémantique", "préparation sémantique", "engine sémantique", "tout ce que ma page doit contenir", "fais-moi l'analyse sémantique de [requête]", "lance l'engine sur [requête]", "sémantique sans SERP", "analyse sémantique [mot-clé]", "prépa sémantique [requête]", "entités pondérées [requête]", "surprise score sémantique de [requête]".
-  - Mode Audit : "audite la sémantique de", "audit sémantique de cette page", "ma page couvre-t-elle [requête]", "compare ce contenu à la carte sémantique attendue", "qu'est-ce qui manque à mon article sur [requête]", "diff sémantique", "audit de couverture sémantique", "ma page ne ranke pas — qu'est-ce qui lui manque", "plan de correction sémantique".
-
-  Ce skill remplace les outils de scraping SERP (Surfer, NeuronWriter, etc.). Il se branche en amont de `seo-brief-contenu` (qui construit la structure Hn) et de `article-engine-pipeline` (qui rédige). Il NE produit pas la rédaction, ni la structure Hn finale, ni le hook. Il produit la matière sémantique brute qui les alimente.
-
-  Diffère de `seo-entites-vectorielles` (4 catégories d'entités seulement, pas de Gap analysis, pas de Surprise Score Sémantique, pas de n-grams) en couvrant 13 phases dont la Gap analysis 3 vues. Diffère de `seo-geo-audit` qui note 7 scores algorithmiques de qualité — ici on mesure la complétude par couche, pas la qualité par score. Les deux s'enchaînent : Audit (couverture) puis geo-audit (qualité).
----
-
-# Skill — Préparation sémantique sans SERP (v10)
-
-## Détecter le mode
-
-Si l'utilisateur fournit **uniquement une requête + un profil** → Mode **CRÉATION**.
-
-Si l'utilisateur fournit **en plus un contenu** (texte collé, chemin de fichier `*.md` / `*.html`, ou URL publique) → Mode **AUDIT**.
-
-Si ambigu, demander : « Tu veux créer la carte sémantique d'une page à écrire, ou auditer un contenu existant ? »
-
-## Input requis — Mode Création
-
-| Variable | Valeur attendue | Obligatoire |
-|---|---|---|
-| Requête cible | mot pour mot | Oui |
-| Pays / langue | FR/FR par défaut | Oui |
-| B2B/B2C + rôle | « B2B — CMO SaaS 50p » | Oui |
-| Objectif | Lead Gen / Conversion / Expertise FM | Oui |
-| Secteur | nommé | Oui |
-| Audience (expertise) | junior / expert / mixte | Oui |
-| Localisation | ville ou « N/A » | Oui |
-| Expertise unique | une phrase | Recommandé |
-| Mode forcé | bronze / silver / gold | Optionnel |
-
-## Input requis — Mode Audit (en plus des inputs Création)
-
-| Variable | Valeur attendue | Obligatoire |
-|---|---|---|
-| Contenu à auditer | texte markdown collé, chemin local, URL publique (robots.txt OK) | Oui |
-| Version cible | refonte / update freshness / élargissement d'intention / migration | Recommandé |
-
-Si une variable obligatoire manque, Claude pose **une seule question groupée** avant de produire.
-
-## Pipeline (13 phases)
-
-```
-Phase 0 — Filtre stratégique (informatif, jamais bloquant)
-   │  alerte WARN éventuelle + annexe sous-niches
-   ▼ GO toujours
-Phase 1 — Décodage micro-intentionnel + Action Engine flag
-Phase 2 — Entités sémantiques pondérées (poids + densité + cosinus simulé + justif + statut)
-Phase 3 — Lexique signature (n-grams + co-occurrences)
-Phase 4 — Pain points & verbatims Haute Surprise
-Phase 5 — Preuves quantitatives (Confidence Score + Freshness Guard)
-Phase 6 — Vecteurs multimodaux
-Phase 7 — Cartographie concurrentielle sans SERP (5-10 acteurs)
-Phase 8 — Gap analysis 3 vues :
-   8a. Gap Competitive Map (matrice acteur × concept)
-   8b. Content Gap Score (% standard vs % surprise)
-   8c. Surprise Score Sémantique 0-100
-Phase 9 — Divergence calibrée Information Gain (Quotation +41%, Stats +34%, Sources +29%)
-Phase 10 — FAQ stratégique FM (5-7 vecteurs latents)
-Phase 11 — Structural Information GEO (title/meta/H/schema)
-Phase 12 — Matrice couverture × Mapping Triade SERP
-Phase 13 — Feedback loop KB (patches à archiver)
-```
-
-## Règles absolues
-
-- **Aucun scraping SERP**, jamais. Pas Google, pas Bing, pas autre moteur.
-- **Robots.txt strict** pour tout WebFetch. Si bloqué : training Claude + demande à l'utilisateur, jamais bypass.
-- **Cosinus simulé toujours marqué** : chaque sortie Phase 2 + Phase 8c doit inclure l'avertissement « *simulé par projection corpus Claude, non calibré mathématiquement* ».
-- **Confidence Score obligatoire** sur chaque preuve chiffrée. Si basse ou inconnue → placeholder `[À SOURCER]`. Aucun chiffre inventé pour gonfler le Grounding Score.
-- **Freshness Guard** : preuves > 36 mois omises sauf paper fondateur.
-- **Phase 0 jamais bloquante** : alerte WARN éventuelle + propose sous-niches en annexe, mais produit toujours la carte complète.
-- **Ne pas rédiger** : pas de H1 final, pas de hook, pas d'architecture Hn finale, pas de CTA, pas de prose narrative.
-- **Une page = une intention** (pureté vectorielle). Si pluralité d'intentions détectée Phase 0.3, signaler en WARN + proposer N sous-cartes en annexe.
-- **Anti-cliché obligatoire** dans la couche pain points : pas de « je veux du ROI », pas de « je veux des résultats ».
-- **Phase 2 — Justification obligatoire** : chaque entité doit avoir une justification courte (paper, doctrine, co-occurrence). Pas d'entité arbitraire.
-
-## Output obligatoire
-
-13 tableaux livrables + matrice de couverture mappée sur la Triade SERP + Surprise Score Sémantique 0-100 + verdict global + liste patches KB.
-
-Format markdown structuré, prêt à alimenter `seo-brief-contenu` (structure Hn) ou `article-engine-pipeline` (rédaction complète).
-
-## Enchaînement workflow
-
-**En amont** : aucun (c'est la première brique).
-
-**En aval, selon objectif** :
-- `seo-brief-contenu` → structure Hn complète à partir de la carte
-- `article-engine-pipeline` → rédaction complète à partir de la carte (passe par seo-workflow-article)
-- `seo-product-led-seo` → si Action Engine flag déclenché (intention Do)
-- `seo-donnees-structurees` → implémentation JSON-LD à partir de la Phase 11
-- `seo-geo-audit` → en aval d'une rédaction, audit qualité 7 scores (complémentaire à Mode Audit qui mesure la couverture)
-
-## Sauvegarde
-
-Output dans `wiki/queries/prepa-semantique-YYYY-MM-DD-slug.md` selon hook §7 AGENTS.md (vault seo-kb).
-
-## Concepts liés
-
-[[purete-vectorielle]] · [[triade-serp]] · [[information-gain]] · [[surprise-gap]] · [[surprise-metric]] · [[grounding-score]] · [[confidence-score]] · [[mots-cles-actionnels]] · [[angle-differenciant-mot-cle]] · [[data-proprietaire]] · [[fully-meets]] · [[passage-ranking]] · [[structural-information-geo]] · [[answer-first-pattern]] · [[freshness-guard]] · [[rrf]] · [[aeo]] · [[know-simple-know-do]] · [[product-led-seo]] · [[anti-ai-writing]]
-```
