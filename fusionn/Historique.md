@@ -1669,3 +1669,15 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Scores regroundés sur le pull (script `reground-score-pull.mjs`).** Le score /10 ne reflète plus un jugement modèle mais la demande réelle : match des tokens DISTINCTIFS du mot-clé (terme tête retiré) contre les requêtes du pack Suggest, pull → /10 (bucket). Stoplist élargie (google, mois, jours, villes…) après un 1er run qui matchait « 90 jours » sur « seoul combien de jours ». Mots-clés à vraie demande montent (tarif→8, GEO/AEO→7), inventions sans demande → 4 (demande non confirmée, gardées et transparentes, choix Tim). Révèle que ~la moitié des « décisionnels » d'agence-seo n'avaient aucune demande réelle.
 
 **Deploy.** newFusionn : le travail s'est retrouvé poussé en `8ab7ea5` (commit identique d'une session parallèle ; mon commit local redondant droppé au rebase). DB resync 23/23. Drafts + Historique commités dans seo-kb.
+
+---
+
+## 2026-05-29 — Filtre anti-noms propres (Générateur Suggest)
+
+**Règle.** Interdiction de publier le nom d'un freelance, d'une personne, d'une entreprise ou d'une agence dans les résultats du Générateur de mots-clés. Le résidu « adrien beaujeu » survivait au filtre `pull>=2` (commit `309f8c1`) parce que corroboré par 2 préfixes indépendants.
+
+**Solution.** Dictionnaire de prénoms FR (~270 entrées) dans `tool-suggest-extract/index.ts`. Google Suggest renvoyant tout en minuscules, la casse est inutile : un prénom isolé dans une requête de service = quasi toujours une personne. Helper `isNominal(query, kwTokens)` ; drop en amont du filet `MIN_RESULTS` (comme `hors-intention`) pour qu'aucun nom interdit ne soit ressuscité pour remplir la page.
+
+**Garde-fous faux positifs.** Prénoms aussi noms communs/marques (rose, pierre, olivier, margaux, jade, iris, camille…) volontairement absents de la liste. Un prénom déjà présent dans le mot-clé tapé n'est jamais filtré (respect d'une recherche nominale volontaire).
+
+**Deploy + test.** Commit `afe2f57` poussé sur `main`, edge function déployée sur Supabase prod (`fwhfnzbtlddzfxbsejyf`). Test live `consultant seo` : 24 résultats, 0 nom propre (vs « adrien beaujeu » avant).
