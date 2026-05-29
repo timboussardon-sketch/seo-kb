@@ -101,6 +101,78 @@ C'est exactement ce que ce guide opérationnalise. Comment publier sur Reddit en
 
 ---
 
+## Vidéo
+
+<iframe
+  width="100%"
+  height="450"
+  src="https://www.youtube.com/embed/qJzcdjVF_pA"
+  title="L'influence de Reddit sur le SEO IA"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+→ Source vidéo : [L'influence de Reddit sur le SEO IA](https://www.youtube.com/watch?v=qJzcdjVF_pA) — Tim Boussardon
+
+---
+
+## Reddit, ou la fin du SEO dégueu
+
+Reddit est en train de bouleverser le marché du SEO. Pas en forçant, pas en hackant — simplement en répondant pragmatiquement aux exigences de Google.
+
+### Les chiffres, pour cadrer
+
+Reddit, c'est 2 milliards de visiteurs aujourd'hui. La plateforme est passée de 350 millions fin décembre 2023 à 450 millions en trois mois — 100 millions supplémentaires en un trimestre. Puis de 450 millions à 2 milliards en dix-huit mois. Multiplié par 4,4 en un an et demi. Pour mettre ça en perspective : TikTok pèse 841 millions de visiteurs, Quora 350 millions. Reddit, c'est six fois la taille de Quora.
+
+Une analyse SEMrush montre une augmentation de 207 % du nombre total de mots-clés en un an, soit 110 millions de mots-clés supplémentaires. Pour comparaison : quand on travaille bien sur un site, on capte 1 000 à 2 000 mots-clés supplémentaires par an. Là on est à 110 millions — c'est stratosphérique. Reddit est passé de la 85e à la 2e place des sites les plus visités aux États-Unis (3e selon SEMrush, derrière YouTube et Wikipédia).
+
+### Le vrai signal n'est pas le trafic
+
+Le trafic généraliste, le haut-funnel, c'est de la commodité que les IA mangent. Le vrai signal, c'est la **citation**. Reddit, comme Wikipédia, fait partie des sites les plus cités sur les LLM. Reddit représente à lui seul **10 % des citations sur les IA**, en hausse de 87 % en un an. Et citation, ça veut dire clic — pas toujours, mais le lien est étroit.
+
+Le trafic ne devrait plus être ton indicateur principal en SEO IA. Ce qui compte, c'est : est-ce que le mot-clé est business ? Est-ce qu'il a un CPC ? Est-ce qu'il est en bas du funnel, là où l'utilisateur veut comparer, calculer, décider ?
+
+### Reddit devient transactionnel
+
+Avant, Reddit pesait surtout sur de l'informationnel. Aujourd'hui, on le voit ranker sur du transactionnel : recommandations de restaurants, *« meilleur restaurant à Paris »*, plombier d'urgence à Paris. Les SERPs spéciales (carrousel *Discussions and forums*) accélèrent le mouvement. Sur la requête anglaise *« best plumber New York »*, Reddit ranke premier sous le pack local, juste devant Quora. Pour un site de plombier, c'est une opportunité inédite.
+
+### Pourquoi ça marche : les signaux utilisateurs
+
+Un visiteur moyen passe entre 35 et 45 minutes par jour sur Reddit, sur 5 pages en moyenne. Compare à un site classique : 1 à 5 minutes par session, 1 à 2 pages visitées maximum. Les ratios sont dingues — Google détecte la différence, et il en tire les conséquences dans son algorithme.
+
+Ce qui veut dire que sur ton propre site, il faut penser différemment. Est-ce qu'on est capable de mettre un forum sur le site ? Un groupe Facebook autour de la marque ? Le but n'est pas de fabriquer de fausses citations, c'est de créer des synergies réelles entre l'audience, l'utilisateur et la marque. Google met d'ailleurs de plus en plus en avant ses sections *Discussions and Forums* — sur la requête *« accompagnement Caliopi »*, Facebook ressort directement dans la SERP. Le forum, le subreddit, le groupe Facebook : tout ça participe à la stratégie SEO globale en 2026.
+
+### SEO conversationnel et AEO
+
+On parle de plus en plus de **SEO conversationnel**. Sur ChatGPT, la requête moyenne fait jusqu'à 24 mots. Plus seulement *« plombier Paris »*, mais : *« j'ai une fuite d'eau dans ma salle de bain, je vais avoir besoin d'un plombier en urgence »*. C'est aussi ce qui se joue avec la recherche vocale.
+
+L'acronyme qui me semble le plus pertinent aujourd'hui, c'est **AEO** — *Answer Engine Optimization*. Du SEO par question. Le SEO traditionnel répond à un objectif de ranking. AEO répond à un objectif utilisateur, et on tend de plus en plus vers ce type de requête. ChatGPT en fait partie.
+
+Ce que ça change concrètement : il va falloir connaître parfaitement ton **ICP**, ton client idéal. Vouloir ranker un site de plombier sur *« plombier Paris »*, ce n'est plus possible. Il faut prendre chaque service, chaque intervention, en faire une page spécifique avec le tarif, l'outil de pré-calcul, le temps de prestation. On répond à des **problèmes**, plus à des requêtes. Et ça va faire du bien à tout le monde.
+
+### Le deal Google-Reddit et la communauté
+
+Le 4ᵉ point, c'est le deal Google-Reddit signé en février 2024. Officiellement, pas de corrélation directe — mais l'accord arrive en février et l'explosion Reddit démarre dès février. Google avait besoin de nourrir Gemini avec un corpus de signaux utilisateurs réels. Reddit est arrivé pile au bon moment.
+
+Si tu cherches comment te positionner sur Reddit (pour l'instant en anglais, le moteur étant majoritairement anglo), tape par exemple *« how to do SEO without backlinks »* : Reddit ne te renvoie pas vers des sites, il te renvoie vers des **subreddits**. Construire une communauté sur Reddit — que tu sois plombier ou vendeur de vélos électriques — devient pertinent. Le but n'est pas de vendre ton produit, c'est de **participer à faire avancer ton marché**, de faire intervenir des experts de ton domaine, et de mettre tout ça dans un subreddit qui finira par ressortir à la fois sur Reddit et dans Google.
+
+### Les 4 scénarios futurs
+
+Pour la suite, j'en vois quatre.
+
+Premièrement, Reddit saturé par du contenu généré par IA — c'est ce qui se passe sur Quora, sur LinkedIn. Si ça arrive, les utilisateurs ne reviendront plus. Deuxièmement, les marques qui spamment : quand elles comprendront qu'une recommandation sur un subreddit pèse plus qu'une pub Facebook, certains subs vont devenir aussi puissants qu'un influenceur top tier — au risque de casser la dynamique. Troisièmement, Google reprend la main, soit en créant son propre Reddit, soit en l'absorbant dans son AI Mode. Peu probable à court terme : Google a besoin de Reddit. Quatrièmement, Reddit met des barrières au contenu IA, structure les subreddits par scoring d'expertise, et ramène activement des experts sur la plateforme. Dans ce dernier scénario, Reddit ressort grand gagnant — il se positionne sur quasiment toutes les SERPs.
+
+### Ce qu'il faut faire maintenant
+
+Ce qu'il faut comprendre, c'est qu'on tend vers du **conversationnel**. Le contenu informationnel haut-funnel, les définitions, les généralités : il en faut sur ton site pour la sémantique, mais ce ne sont plus tes contenus prioritaires. Attaque du **bas de funnel**, expert, technique, spécifique à ton ICP.
+
+Et au-delà du contenu, il va falloir une **brand** et une **audience**. Parce qu'au bout de la chaîne, Google attend une validation utilisateur. Les signaux sociaux extérieurs (LinkedIn, Quora, YouTube, Reddit) participent eux-mêmes à remonter ta visibilité dans les LLM. C'est la fin du SEO dégueu : aujourd'hui, ce qui paie, c'est un contenu très expert, très original, capable de devenir l'**originalité de la SERP**. Et autour, une marque que les utilisateurs valident.
+
+C'est exactement ce que cet article documente, étape par étape — avec 8 prompts opérationnels, la matrice de rebranchement aux 4 piliers Organikk, et les cas concrets Avocat ANADAVI / Hôtellerie indépendante.
+
+---
+
 ## Brief 4W (pré-requis Chen et al. 2025 — RAID G-SEO)
 
 | Persona (Who) | Besoins (What) | Gap vs. consensus SERP (Why) | Couverture (How) |

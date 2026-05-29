@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Organikk — Services SEO d'acquisition</title>
+<style>
+  :root {
+    --bg: #f4efe6;
+    --bg-soft: #ebe4d6;
+    --fg: #141413;
+    --fg-soft: #57534a;
+    --rule: #d8cfbd;
+    --accent: #b9462a;
+    --accent-soft: #e9d4c3;
+    --serif: "Tiempos Text", "Source Serif Pro", Georgia, serif;
+    --sans: "Inter", "Helvetica Neue", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.62;
+    font-feature-settings: "kern", "liga", "onum";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .wrap-wide {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* NAV */
+  nav.top {
+    border-bottom: 1px solid var(--rule);
+    padding: 22px 0;
+    font-family: var(--sans);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  nav.top .row { display: flex; justify-content: space-between; align-items: center; }
+  nav.top .brand { font-weight: 600; letter-spacing: -0.01em; }
+  nav.top .brand .dot { color: var(--accent); }
+  nav.top ul { display: flex; gap: 28px; list-style: none; }
+  nav.top a { color: var(--fg-soft); text-decoration: none; }
+  nav.top a:hover { color: var(--fg); }
+  nav.top .cta {
+    color: var(--fg);
+    border: 1px solid var(--fg);
+    padding: 8px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  nav.top .cta:hover { background: var(--fg); color: var(--bg); }
+
+  /* HERO */
+  .hero { padding: 120px 0 80px; border-bottom: 1px solid var(--rule); }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .lede {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--fg-soft);
+    max-width: 600px;
+    margin-bottom: 44px;
+  }
+  .cta-row { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--fg);
+    color: var(--bg);
+    padding: 16px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { background: var(--accent); }
+  .btn-secondary {
+    color: var(--fg);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    font-family: var(--sans);
+    font-size: 15px;
+  }
+
+  /* HERO PROOF (Search Console screenshot) */
+  .hero-proof {
+    margin-top: 60px;
+    padding: 0;
+  }
+  .hero-proof img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: 0 18px 40px rgba(20,20,19,0.08);
+  }
+  .hero-proof figcaption {
+    margin-top: 14px;
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--fg-soft);
+    max-width: 640px;
+  }
+
+  /* HERO META */
+  .hero-meta {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+    padding-top: 32px;
+  }
+  .hero-meta div { font-family: var(--sans); }
+  .hero-meta .num {
+    font-family: var(--serif);
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+    color: var(--fg);
+  }
+  .hero-meta .lab {
+    font-size: 13px;
+    color: var(--fg-soft);
+    letter-spacing: 0.01em;
+  }
+
+  /* SECTIONS */
+  section { padding: 100px 0; border-bottom: 1px solid var(--rule); }
+  section.dark { background: var(--fg); color: var(--bg); border-bottom: 1px solid var(--fg); }
+  section.dark .lab, section.dark .eyebrow { color: var(--accent-soft); }
+  section.dark .num, section.dark h2, section.dark h3 { color: var(--bg); }
+  section.dark p { color: #d6cfbe; }
+  section.dark a { color: var(--bg); }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+  h2 em { color: var(--accent); font-style: italic; }
+  section.dark h2 em { color: var(--accent-soft); }
+
+  h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+
+  p { margin-bottom: 22px; }
+  p strong { font-weight: 600; }
+  p em { font-style: italic; }
+
+  /* CONSTAT — pull quote */
+  .constat {
+    border-left: 2px solid var(--accent);
+    padding-left: 28px;
+    font-size: 24px;
+    line-height: 1.4;
+    font-style: italic;
+    color: var(--fg);
+  }
+
+  /* PARTI PRIS */
+  .parti {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* 3 ACTES */
+  .actes { display: grid; gap: 80px; margin-top: 60px; }
+  .acte {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .acte .num-acte {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    padding-top: 8px;
+    border-top: 1px solid var(--accent);
+  }
+
+  /* WHAT WE DON'T DO */
+  .anti {
+    background: var(--fg);
+    color: var(--bg);
+    padding: 100px 0;
+    border-bottom: 1px solid var(--fg);
+  }
+  .anti h2 { color: var(--bg); }
+  .anti .nope-list { margin-top: 40px; }
+  .anti .nope {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #2a2926;
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .anti .nope:last-child { border: none; }
+  .anti .nope .x {
+    font-family: var(--mono);
+    color: var(--accent);
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  .anti .closing {
+    margin-top: 50px;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-style: italic;
+    color: var(--accent-soft);
+  }
+
+  /* OUTPUT */
+  .output {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .output .vivant {
+    font-family: var(--serif);
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+
+  /* CASES */
+  .cases { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-top: 60px; }
+  .case {
+    border-top: 1px solid var(--rule);
+    padding-top: 28px;
+  }
+  .case .meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  .case h3 { font-size: 20px; margin-bottom: 12px; }
+  .case p { font-size: 16px; line-height: 1.55; color: var(--fg-soft); margin-bottom: 14px; }
+  .case .kpi {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--fg);
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+  }
+  .case .kpi span {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--fg-soft);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 4px;
+  }
+
+  /* OBJECTIONS */
+  .obj { padding: 100px 0; border-bottom: 1px solid var(--rule); background: var(--bg-soft); }
+  .obj-block { margin-top: 40px; }
+  .obj-block .q {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-style: italic;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .obj-block .a {
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .obj-block:last-child .a { border-bottom: none; padding-bottom: 0; }
+
+  /* SCARCITY */
+  .scarcity {
+    padding: 80px 0;
+    background: var(--fg);
+    color: var(--bg);
+    border-bottom: 1px solid var(--fg);
+  }
+  .scarcity h2 { color: var(--bg); font-size: clamp(28px, 3.5vw, 36px); }
+  .scarcity p { color: #cdc5b3; margin-top: 20px; font-size: 20px; line-height: 1.5; }
+  .scarcity .signature {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--accent-soft);
+    margin-top: 30px;
+  }
+
+  /* TIM BLOCK */
+  .tim { padding: 100px 0; border-bottom: 1px solid var(--rule); }
+  .tim-grid { display: grid; grid-template-columns: 200px 1fr; gap: 60px; align-items: start; }
+  .tim-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), #8b3320);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 80px;
+    color: var(--bg);
+    font-weight: 500;
+  }
+  .tim h3 { font-size: 28px; margin-bottom: 18px; }
+  .tim p { font-size: 18px; line-height: 1.55; }
+  .tim .links {
+    margin-top: 24px;
+    font-family: var(--sans);
+    font-size: 14px;
+    display: flex;
+    gap: 24px;
+  }
+  .tim .links a { color: var(--accent); text-decoration: none; }
+  .tim .links a::after { content: " →"; }
+
+  /* CTA FINAL */
+  .final {
+    background: var(--bg-soft);
+    padding: 120px 0;
+    text-align: left;
+  }
+  .final h2 em { color: var(--accent); }
+  .final .promise {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 36px 0 48px;
+    max-width: 580px;
+  }
+
+  /* FOOTER MAXIME */
+  .maxim {
+    padding: 80px 0 60px;
+    text-align: center;
+  }
+  .maxim p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 28px;
+    color: var(--fg-soft);
+    letter-spacing: -0.01em;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 30px 0;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--fg-soft);
+  }
+  footer .row { display: flex; justify-content: space-between; }
+
+  /* STICKY CTA */
+  .sticky {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--fg);
+    color: var(--bg);
+    padding: 14px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+  }
+  .sticky:hover { transform: translateY(-2px); background: var(--accent); }
+  .sticky::before { content: "→ "; }
+
+  @media (max-width: 760px) {
+    .hero { padding: 80px 0 60px; }
+    section, .anti, .output, .obj, .tim, .final { padding: 70px 0; }
+    .hero-meta { grid-template-columns: 1fr; gap: 24px; }
+    .hero-meta > div { padding-bottom: 20px; border-bottom: 1px solid var(--rule); }
+    .hero-meta > div:last-child { border: none; }
+    .acte { grid-template-columns: 1fr; gap: 16px; }
+    .cases { grid-template-columns: 1fr; }
+    .tim-grid { grid-template-columns: 1fr; gap: 30px; }
+    .tim-photo { width: 120px; height: 120px; font-size: 50px; }
+    nav.top ul { display: none; }
+    .sticky { bottom: 16px; right: 16px; padding: 12px 18px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="wrap-wide row">
+    <div class="brand">organikk<span class="dot">.</span></div>
+    <ul>
+      <li><a href="#methode">Méthode</a></li>
+      <li><a href="#cases">Résultats</a></li>
+      <li><a href="#tim">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="cta">Pré-audit offert</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Services — SEO B2B 2026</div>
+    <h1>On ne vend plus du trafic. <em>On vend de la performance.</em></h1>
+    <p class="lede">Audit, contenu et système IA pour les boîtes B2B qui veulent des leads qualifiés. Pas un dashboard Search Console qui fait joli en réunion.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn-primary">Réserver 30 min — diagnostic offert</a>
+      <a href="#methode" class="btn-secondary">Voir la méthode</a>
+    </div>
+
+    <figure class="hero-proof">
+      <img src="assets/perf-search-console.png" alt="Search Console — courbe de performance d'un client Organikk : passage de ~60 à ~150 clics quotidiens et de 1,3k à 3,5k impressions sur 3 mois (janvier-avril 2026)" />
+      <figcaption>Search Console — un client Organikk, 3 derniers mois. 6,87k clics, 192k impressions, CTR 3,6 %. La bascule au quatrième mois correspond au déploiement du système SEO-IA.</figcaption>
+    </figure>
+
+    <div class="hero-meta">
+      <div>
+        <div class="num">6 ans</div>
+        <div class="lab">de pratique terrain</div>
+      </div>
+      <div>
+        <div class="num">1 000+</div>
+        <div class="lab">articles produits</div>
+      </div>
+      <div>
+        <div class="num">100+</div>
+        <div class="lab">projets clients accompagnés</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CONSTAT -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Le constat</div>
+    <h2>L'IA a déjà <em>tout lu.</em></h2>
+    <p>Les contenus génériques de votre thématique, elle les connaît mieux que vos concurrents. Aujourd'hui, écrire un article correct est devenu une commodité que Claude exécute en 30 secondes.</p>
+    <p class="constat">La question n'est plus « comment écrire » — c'est « comment ranker quand tout le monde écrit ».</p>
+  </div>
+</section>
+
+<!-- PARTI PRIS -->
+<section class="parti" id="methode">
+  <div class="wrap">
+    <div class="eyebrow">Notre parti pris</div>
+    <h2>Le succès se mesure aux leads, <em>pas aux visites.</em></h2>
+    <p>Notre roadmap part d'une règle claire : on ne vend plus du trafic, on vend de la performance. Le succès d'un projet ne se mesure pas au volume de visites, mais aux leads qualifiés et aux conversions que le SEO génère réellement pour le business.</p>
+    <p>Derrière cette posture, il y a une méthode éprouvée : six années de pratique, plus de 1 000 articles produits et plus de 100 projets clients accompagnés — un capital de réflexions, de stratégies et de data testées sur le terrain.</p>
+  </div>
+</section>
+
+<!-- 3 ACTES -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Comment on s'y prend</div>
+    <h2>En trois actes, <em>pas six étapes.</em></h2>
+
+    <div class="actes">
+      <div class="acte">
+        <div class="num-acte">ACTE 01</div>
+        <div>
+          <h3>On remonte la chaîne, on ne la descend pas.</h3>
+          <p>La plupart des audits SEO partent du site et descendent vers les mots-clés. Nous partons des leads qui closent et remontons jusqu'aux requêtes qui les ont générés.</p>
+        </div>
+      </div>
+
+      <div class="acte">
+        <div class="num-acte">ACTE 02</div>
+        <div>
+          <h3>On attaque les mots-clés que les autres n'ont pas vus.</h3>
+          <p>Pas le volume. Pas la concurrence frontale. Les <em>3 à 5 piliers business</em> propres à votre offre, déclinés en <em>micro-intentions</em>, sourcés par votre data terrain — calls clients, tickets SAV, CRM.</p>
+        </div>
+      </div>
+
+      <div class="acte">
+        <div class="num-acte">ACTE 03</div>
+        <div>
+          <h3>On construit le système qui survit à votre prochain consultant.</h3>
+          <p>Un système SEO-IA propriétaire qui se nourrit de chaque article, chaque échange client, chaque jeu de data. Quand on se quitte, vous avez un asset transmissible — pas un trou.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DON'T DO -->
+<section class="anti">
+  <div class="wrap">
+    <div class="eyebrow">Ce qu'on ne fait pas</div>
+    <h2>Pas de hacks. Pas de promesses. <em>Pas de raccourcis.</em></h2>
+
+    <div class="nope-list">
+      <div class="nope"><div class="x">01</div><div>Pas de cocon sémantique gonflé pour faire du volume.</div></div>
+      <div class="nope"><div class="x">02</div><div>Pas de backlinks bidons achetés sur des PBN qui dureront 6 mois.</div></div>
+      <div class="nope"><div class="x">03</div><div>Pas de promesse « TOP 1 en 30 jours ».</div></div>
+      <div class="nope"><div class="x">04</div><div>Pas de reporting sur la position moyenne — c'est une métrique de vanité.</div></div>
+      <div class="nope"><div class="x">05</div><div>Pas de SEO low-cost externalisé à des rédacteurs généralistes.</div></div>
+    </div>
+
+    <p class="closing">Le SEO est un jeu mathématique à long terme. Si vous cherchez le hack rapide, ce n'est pas chez nous.</p>
+  </div>
+</section>
+
+<!-- OUTPUT -->
+<section class="output">
+  <div class="wrap">
+    <div class="eyebrow">Ce que vous récupérez</div>
+    <h2>À la sortie, <em>vous gardez le système.</em></h2>
+    <p class="vivant">Vos pages business rankent sur les requêtes où les acheteurs décident. Votre formulaire reçoit des leads qualifiés mesurables, pas du clic anonyme.</p>
+    <p class="vivant">Et surtout : vous gardez le système. Le prochain consultant, le prochain stagiaire, le prochain CMO reprend où on s'est arrêtés — sans repartir de zéro.</p>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases">
+  <div class="wrap-wide">
+    <div class="wrap" style="padding: 0;">
+      <div class="eyebrow">Trois clients qui ont vécu ça</div>
+      <h2>Des chiffres réels, <em>pas des slides.</em></h2>
+    </div>
+
+    <div class="cases">
+      <article class="case">
+        <div class="meta">SaaS B2B · 25 pers.</div>
+        <h3>Du blog vanity au pipe commercial</h3>
+        <p>Site qui générait 12 000 visites/mois et 0 leads. On a tout réécrit autour de 4 piliers actionnels et plugé le formulaire en aval.</p>
+        <div class="kpi">+ 47 leads<span>en 4 mois — même budget</span></div>
+      </article>
+
+      <article class="case">
+        <div class="meta">Industrie · ETI</div>
+        <h3>Reprise après un consultant qui a tout claqué</h3>
+        <p>Six mois pour reconstruire la stratégie sur leur data terrain (calls SAV) que personne n'avait jamais touchée. Système IA livré en interne.</p>
+        <div class="kpi">×3,4<span>volume de devis qualifiés</span></div>
+      </article>
+
+      <article class="case">
+        <div class="meta">Cabinet conseil · 8 pers.</div>
+        <h3>Un article = un lead qualifié toutes les semaines</h3>
+        <p>Refonte complète sur 5 mots-clés transactionnels. Production hebdomadaire d'un passage ancré + déclinaison LinkedIn et YouTube.</p>
+        <div class="kpi">1 lead / semaine<span>ticket moyen 18 k€</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIONS -->
+<section class="obj">
+  <div class="wrap">
+    <div class="eyebrow">Les questions qu'on me pose en call</div>
+    <h2>Et mes <em>réponses honnêtes.</em></h2>
+
+    <div class="obj-block">
+      <p class="q">Combien ça coûte ?</p>
+      <p class="a">Entre 4 500 et 9 000 € par mois selon la profondeur du système à construire et le volume de contenus. Trois mois minimum pour la phase agence, six mois recommandés pour livrer le système complet. Je facture à l'engagement, pas à l'article — parce que la valeur ne se mesure pas au mot mais au lead.</p>
+    </div>
+
+    <div class="obj-block">
+      <p class="q">On a déjà un consultant SEO.</p>
+      <p class="a">Tant mieux. Si son travail performe, gardez-le. Si ce que vous lisez sur cette page vous parle plus que ce qu'il vous propose, on en parle. L'audit gratuit vous dira lequel des deux est vrai — sans bullshit.</p>
+    </div>
+
+    <div class="obj-block">
+      <p class="q">On préfère internaliser.</p>
+      <p class="a">Le système qu'on construit est précisément fait pour ça. Vous n'achetez pas un contrat à vie, vous achetez la transmission. À 6 mois, votre équipe ou un nouveau consultant reprend l'asset sans repartir de zéro.</p>
+    </div>
+
+    <div class="obj-block">
+      <p class="q">En combien de temps je vois des leads ?</p>
+      <p class="a">Premiers signaux entre 6 et 10 semaines sur des piliers transactionnels propres. Pas avant. Le SEO est un jeu mathématique à long terme — quiconque vous promet l'inverse vous vend du vent.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCARCITY -->
+<section class="scarcity">
+  <div class="wrap">
+    <div class="eyebrow">Pourquoi je n'accepte pas tous les projets</div>
+    <h2>Quatre nouveaux clients par an. <em>Pas plus.</em></h2>
+    <p>Parce que chaque accompagnement implique de construire un système propriétaire, et qu'un système propriétaire ne se scale pas en empilant des comptes. Si on travaille ensemble, vous avez Tim. Pas un account manager, pas un junior briefé la veille.</p>
+    <div class="signature">— Tim</div>
+  </div>
+</section>
+
+<!-- TIM -->
+<section class="tim" id="tim">
+  <div class="wrap">
+    <div class="eyebrow">Qui pilote</div>
+    <div class="tim-grid">
+      <div class="tim-photo">T</div>
+      <div>
+        <h3>Tim Boussardon — fondateur Organikk</h3>
+        <p>Six ans de SEO, plus de 1 000 articles produits, plus de 100 projets clients. Je publie chaque semaine ma méthode sur <em>Algorithme</em> (3 000+ lecteurs B2B). J'ai construit le premier agent SEO-IA propriétaire en 2026.</p>
+        <p>Et avant tout : je rank moi-même les sujets que je vends. <em>« En toute transparence, je n'ai jamais aussi bien ranké depuis presque 6 ans de SEO. »</em></p>
+        <div class="links">
+          <a href="https://algorithme.substack.com">Lire Algorithme</a>
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Le pré-audit</div>
+    <h2>Utile, <em>qu'on bosse ensemble ou non.</em></h2>
+    <p class="promise">30 minutes par visio. Je regarde votre site, vos mots-clés actuels, votre offre. Je vous dis si vous avez un problème SEO, un problème offre, ou les deux. Vous repartez avec 3 actions concrètes — que vous les mettiez en place avec moi, en interne, ou avec quelqu'un d'autre.</p>
+    <a href="#" class="btn-primary">Réserver mon créneau →</a>
+  </div>
+</section>
+
+<!-- MAXIM -->
+<div class="maxim">
+  <div class="wrap">
+    <p>Ne pas avoir peur de l'avenir. Mais le préparer.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap-wide row">
+    <div>© 2026 Organikk · SEO d'acquisition B2B</div>
+    <div>Tim Boussardon · <a href="#" style="color: inherit; text-decoration: underline;">Mentions légales</a></div>
+  </div>
+</footer>
+
+<a href="#contact" class="sticky">30 min avec Tim</a>
+
+</body>
+</html>
