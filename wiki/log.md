@@ -707,3 +707,14 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - résurgence : n'a pas tourné cette semaine (LaunchAgent `com.timboussardon.resurgence` non mis en service) — point 6 sans intrant, à relancer avant W22.
 - fil rouge : moat data-propriétaire sur minuterie (J+30 H-007) + émergence d'un 2ᵉ fil — la doctrine de sélection des mots-clés.
 - méta : 1ʳᵉ revue avec arriéré — W20 a livré 2 actions sur 4 ; W21 décide moins et plus local pour fermer le trou d'exécution nommé par l'audit du 2026-05-21.
+
+## [2026-05-29] revue-hebdo | Semaine W22 — 8 décisions (le mécanisme d'exécution tranché)
+- carry-over W21 : les 3 actions vault-internes (ingest kw-research, C-007, archive brief) **toutes non exécutées** + résurgence muette 2 mercredis + sweep backlog 11j de retard. La prédiction W21 s'est réalisée.
+- promotions : 0 draft→stable (aucun nouveau draft — production allée sur Fusionn/bootcamp, pas en wiki), 0 stable→stale.
+- hypothèse en test : aucune nouvelle ; **changement de chemin** sur [[hypotheses#H-007]] — capturer la baseline par export GSC **manuel** (`gsc-watcher`, pas le service account) avant J+30 ≈ 2026-06-15.
+- lot ingest W23 : binôme keyword-research 2026-05-02 — 3ᵉ reconduction, cap atteint ; relancer d'abord `ingest-backlog-sweep` (11j) et attacher l'ingest au momentum Fusionn mots-clés. Pas de 4ᵉ reconduction : sinon skip documenté.
+- contradiction : [[contradictions#C-007]] — poser la définition « skill propriétaire » (10 vs 13 vs 20+) **avant** le décompte ; C-002 toujours non timeboxée.
+- archivage : **exécuté en séance** — brief [[briefs/2026-04-13-information-gain-seo-geo]] `draft → archived` + retiré de [[index]] (Briefs 6→5).
+- résurgence : 3ᵉ semaine sans intrant ; LaunchAgent `com.timboussardon.resurgence` chargé mais ne produit rien → diag ops (wrapper/TCC), pas un report.
+- fil rouge : doctrine de sélection des mots-clés **productisée** (modèle Fusionn « Liste des mots-clés pour X », 23 drafts regroundés, lead magnet) → pilier acté de fait, wiki en retard sur le produit ; candidat synthèse `doctrine-selection-mots-cles` + angle newsletter.
+- méta (déc. 8) : exécution rituelle W20=1/4, W21=0/3. Remède tranché : (1) attacher les décisions au travail réel, (2) l'agent exécute en séance les décisions bureaucratiques déjà arbitrées, (3) carry-over check + cap à 1 reconduction. À intégrer au skill `revue-hebdo` si Tim valide.

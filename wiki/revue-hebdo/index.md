@@ -44,6 +44,7 @@ status: living-doc
 |---|---|---|
 | 2026-W20 | [[revue-hebdo/2026-W20]] | rrf draft→stable · H-007 en-test · lot ingest = keyword-research 2026-05-02 · C-002 à fermer (OpenDecoder) · data-proprietaire frontmatter corrigé · fil rouge = moat mis à l'épreuve |
 | 2026-W21 | [[revue-hebdo/2026-W21]] | semaine de consolidation · 0 promotion · aucune hypothèse en-test (déblocage H-007/baseline GSC priorisé) · lot ingest = report keyword-research 2026-05-02 · C-007 à fermer · brief info-gain archivé · résurgence non tournée · fil rouge = doctrine de sélection des mots-clés |
+| 2026-W22 | [[revue-hebdo/2026-W22]] | 3 carry-overs W21 tous non exécutés → tranche le mécanisme d'exécution (déc. 8) · brief info-gain **archivé en séance** · H-007 débloquée par export GSC manuel (pas service account) · lot ingest kw-research 3ᵉ reconduction + relancer sweep · C-007 = poser la définition « skill propriétaire » avant le décompte · résurgence muette 2 mercredis (diag ops) · fil rouge sélection mots-clés **productisé** (Fusionn + lead magnet) |
 
 Chaque édition est filée dans `revue-hebdo/YYYY-Www.md` et résumée dans cette table.
 
