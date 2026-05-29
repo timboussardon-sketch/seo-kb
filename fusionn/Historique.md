@@ -4,6 +4,22 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-29 · Resserrement de l'outil « Générateur de mots-clés Google Suggest »
+
+**Demande Tim.** L'outil gratuit `tool-suggest-extract` (page `/generateur-mots-cles-google-suggest`) renvoyait des résultats « trop larges ». Objectif : ne garder que les requêtes les plus proches du mot-clé. Tim précise : resserrement **sémantique**, pas lexical.
+
+**Diagnostic.** Filtre lexical pur (`contient tous les mots`, n'importe où) → ~150 résultats, dont 115 remontés par un seul préfixe (villes étrangères kochi/karachi/madagascar, noms propres).
+
+**Piste embeddings testée puis abandonnée (donnée réelle).** Couche cosinus via Gemini `gemini-embedding-001` (taskType SEMANTIC_SIMILARITY ; `text-embedding-004` → 404 pour cette clé). Testé en prod : **la similarité sature à 0.89-1.0** pour des requêtes quasi-identiques. Aucun seuil ne coupe proprement, et le cosinus ne vire pas le vrai bruit (« consultant seo karachi » EST sémantiquement du consultant seo). Mauvais outil pour ce problème.
+
+**Solution retenue : pull >= 2.** Le bruit = les suggestions remontées par **un seul** préfixe. Gate sur pull>=2 (corroboration par plusieurs préfixes indépendants) = le vrai signal de cohérence, gratuit et instantané. Ironie : le « pull » soupçonné gadget est le meilleur filtre anti-bruit. Choix Tim : **pull>=2** + **virer complètement** le hors-intention (salaire/formation/emploi). Filet `MIN_RESULTS=8` pour les mots-clés de niche.
+
+**Résultats live.** consultant seo 150→28 (propre), logiciel facturation 42 (riche, par métier), rachat de credit lille 3 (niche, filet ok). Résidu mineur : un nom propre passe encore en pull=2.
+
+**Deploy.** Edge function déployée via supabase CLI (`fwhfnzbtlddzfxbsejyf`). Source commitée `309f8c1` sur main. Aucune modif UI (le front affiche déjà `pull`).
+
+---
+
 ## 2026-05-28 · Refonte v2 des 23 directories (1 partie = 1 skill, sans marques)
 
 Tim rejette les variations de format et fixe le cap définitif : modèle pixel-perfect appliqué uniformément, enrichi par les skills mots-clés, un tableau par skill. Structure validée : **4 parties = 4 skills mots-clés**.
