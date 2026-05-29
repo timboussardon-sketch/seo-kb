@@ -1,23 +1,23 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-05-28 09:42 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-05-29 09:42 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **463 fichiers** markdown (239 dans `raw/`, 224 dans `wiki/`)
-- **696k mots** au total
-- **4751 wikilinks** (moyenne 10.3 / fichier)
-- **Ratio raw→wiki** : 0.94 *(< 1 = matière brute pas encore synthétisée)*
+- **474 fichiers** markdown (246 dans `raw/`, 228 dans `wiki/`)
+- **712k mots** au total
+- **4813 wikilinks** (moyenne 10.2 / fichier)
+- **Ratio raw→wiki** : 0.93 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
 
 | Dossier | Fichiers | Mots | Dernière modif |
 |---------|---------:|-----:|:--------------:|
-| raw/articles | 50 | 103.9k | 2026-05-27 |
+| raw/articles | 50 | 103.9k | 2026-05-28 |
 | raw/notes | 83 | 200.2k | 2026-05-26 |
-| raw/revue-de-presse | 12 | 11.0k | 2026-05-26 |
+| raw/revue-de-presse | 13 | 12.2k | 2026-05-28 |
 | raw/newsletter | 0 | 0 | — |
-| raw/journal | 21 | 30.2k | 2026-05-27 |
+| raw/journal | 22 | 31.6k | 2026-05-28 |
 | raw/briefs | 0 | 0 | — |
 | raw/etudes-seo | 6 | 4.8k | 2026-05-26 |
 | raw/papers | 5 | 2.3k | 2026-05-26 |
@@ -35,21 +35,21 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **16** commits
-- **81** fichiers créés
-- **135** fichiers modifiés
+- **24** commits
+- **82** fichiers créés
+- **136** fichiers modifiés
 
 ### 30 derniers jours
-- **58** commits
-- **455** fichiers créés
-- **151** fichiers modifiés
+- **68** commits
+- **457** fichiers créés
+- **152** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
-- **12** éditions publiées (12 sur les 30 derniers jours)
-- Dernière édition : `2026-05-26-brief-micro-intentions` (il y a 2j)
-- **Couverture 30j** : 12/30 (40%)
+- **13** éditions publiées (13 sur les 30 derniers jours)
+- Dernière édition : `2026-05-28-revue-presse` (il y a 1j)
+- **Couverture 30j** : 13/30 (43%)
 
 ### Newsletter
 - **0** newsletters
@@ -84,7 +84,7 @@
 - `[[programmatique-pseo]]` — **50** backlinks
 - `[[2026-04-12-tim-skills-seo-proprietary]]` — **49** backlinks
 
-### Orphelins (sans backlink) : **249**
+### Orphelins (sans backlink) : **260**
 
 - `raw/journal/2026-05-07.md`
 - `raw/journal/2026-05-23.md`
@@ -96,12 +96,12 @@
 - `raw/journal/2026-05-06.md`
 - `raw/journal/2026-05-22.md`
 - `raw/journal/2026-05-16.md`
-*(249 au total — voir `wiki/audit` pour la liste complète)*
+*(260 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: ··▁█·▅▁▁▁········█▁▃▁▁▁▃▃·▁▅▃·
+30j: ·▁█·▅▁▁▁········█▁▃▁▁▁▃▃·▁▅▃█·
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
@@ -115,10 +115,10 @@
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-05-28 09:08 | 0 | ✓ |
-| recap-jour | 2026-05-27 23:06 | 0 | ✓ |
+| revue-presse | 2026-05-29 09:08 | 0 | ✓ |
+| recap-jour | 2026-05-28 23:08 | 0 | ✓ |
 | refresh-snapshots | 2026-05-04 18:27 | 0 | ✓ |
-| dashboard | 2026-05-28 09:42 | 0 | ✓ |
+| dashboard | 2026-05-29 09:42 | 0 | ✓ |
 
 ---
 
