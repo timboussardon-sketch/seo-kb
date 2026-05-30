@@ -95,6 +95,7 @@ Test simple avant de retenir un sujet : « est-ce que ça change la façon dont 
 - **Règle dure explore/publication.** Une source NOUVELLE peut déclencher une piste, mais **ne peut pas suffire à publier un claim**. Le claim final doit être porté soit par une source connue (historique), soit par 2 sources indépendantes dont au moins une a déjà un historique dans `sources.jsonl`. Ça évite que l'agent tombe amoureux d'une source brillante mais inconnue.
 - **Hook intelligent, jamais racoleur.** Le titre prouve qu'on a creusé. Pas de promesse creuse.
 - **Pas de tiret cadratim.** Jamais.
+- **Aucun langage métaphorique.** Interdiction absolue de métaphores, analogies, images, personnification (entreprises/produits/marchés), et de vocabulaire emprunté à un autre univers (rails, moteur, vague, bataille, passer à la caisse, ouvrir la voie...). On décrit le fait et le mécanisme, littéralement. Clarté > style, précision > impact. Détail dans `memory/voix-synthetic.md`.
 - **Ledgers append-only.** On ajoute des lignes, on ne réécrit pas l'historique.
 
 ## La boucle (11 agents, 2 phases)
