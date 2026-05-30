@@ -1,6 +1,8 @@
 # Directives pour la prochaine édition
 
 > PÉRIMÈTRE STRICT (Tim, 2026-05-30) : SEO, IA, LLM, Google, moteurs de recherche, search marketing. RIEN D'AUTRE. Test : « ça change la façon dont on est trouvé/lu/cité dans un moteur ? » Sinon, écarter.
+>
+> LIENS DE SOURCES (Tim, 2026-05-30) : TOUJOURS afficher le lien cliquable de chaque source dans le corps.
 
 
 Écrit par l'agent 9 (calibration) à la fin de chaque édition. Lu par l'agent 0 (briefing) au début de la suivante. Garder court et actionnable.
