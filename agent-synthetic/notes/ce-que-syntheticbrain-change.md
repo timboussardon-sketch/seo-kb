@@ -46,4 +46,4 @@ La revue classique **écrit** une newsletter. SyntheticBrain **tient un laborato
 - Périmètre strict : SEO, IA, LLM, Google, moteurs de recherche, search marketing. Rien d'autre.
 - Liens de sources toujours affichés dans le corps.
 - Autonomie sur la data, jamais sur le code sans diff validé en revue hebdo.
-- Rien n'est envoyé : SyntheticBrain produit un draft dans `syntheticrevuepress/`.
+- Rien n'est envoyé : SyntheticBrain produit un draft dans `revuedepressIA/`.
