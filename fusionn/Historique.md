@@ -1728,3 +1728,55 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Action.** Insertion d'une ligne dans la table `subscriptions` (Supabase prod `fwhfnzbtlddzfxbsejyf`) pour le user `5ad447b8-380d-4e2d-b237-1f75b655d03d` : `status: active`, `plan_name: Premium manuel`, `plan_price: 0`, `current_period_end: 2099-12-31`, sans Stripe (le code valide le premium sur statut + période, pas sur les ids Stripe depuis la migration). Pas d'abonnement préexistant.
 
 **Effet.** Premium reconnu front + edge functions → recherche illimitée (free = 3), Semantic/HN 999/mois, chat 15/jour. Pas de déploiement, data prod, effet immédiat après refresh.
+
+---
+
+## 2026-05-30 — Retrait de la page /analyse-texte
+
+**Contexte.** Tim ne veut plus de la page publique `fusionn.co/analyse-texte` (analyse de texte GEO en standalone).
+
+**Action.** Suppression frontend complète + 301 + backend. Commit `3c1e804` sur `main` (repo newFusionn), push → auto-deploy Netlify (site `fusionn2`).
+- Supprimé : page `AnalyseTexte.tsx`, composants exclusifs `GeoAnalysisHistory`, `HighlightedText`, `SemanticCoverageDisplay`, `AnalyseChatPanel` (déjà orphelin).
+- Retiré : la route `/analyse-texte` dans `App.tsx` + l'entrée « Analyser » du menu Navbar.
+- 301 `/analyse-texte` → `/` ajouté dans `netlify.toml` (URL déjà indexée).
+- Edge function `check-geo-analysis-limit` supprimée (code + déploiement Supabase `fwhfnzbtlddzfxbsejyf`).
+
+**Conservé.** L'analyse GEO reste dans le **workspace** (`/compte`) : `GeoScoreCard`, `EditorAnalysisPanel`, et l'edge function `analyze-geo-sentinel` (partagée, toujours active).
+
+## 2026-05-30 — Nettoyage navbar (Notes + Historique)
+
+**Contexte.** Suite au retrait de /analyse-texte, Tim veut alléger la navbar.
+
+**Action.** Commit `4a501ae` sur `main` (repo newFusionn), push → auto-deploy Netlify.
+- Retiré le bouton **Notes** (icône stylo) de la navbar + suppression des composants `NotesModal.tsx` et `FloatingNoteButton.tsx` (ce dernier déjà orphelin).
+- Retiré l'**icône Historique** de la navbar (jugée redondante avec « Mon Espace »). Pas d'ajout dans le bouton Action (demande annulée par Tim).
+- Nettoyage des imports/state inutilisés (`Pen`, `History`, `AnimatePresence`, `isNotesOpen`, `hasActiveNote`, `notesDropdownRef`).
+
+**Note.** Erreurs `tsc` pré-existantes dans `Documentation.tsx` (typage LucideIcon), sans rapport ; le build réel est `vite build` (pas de type-check), passe vert.
+
+## 2026-05-30 — Radar LLM : plus de relance automatique
+
+**Contexte.** Tim : « Sur tableau de bord, il faut toujours voir ou relancer sur les mots-clés, jamais relancer tout seul. »
+
+**Diagnostic.** L'onglet Radar LLM (`LLMView.tsx`) appelait `ensure-tracked-cluster` dans un `useEffect` au montage / changement de mot-clé. Avec quota=1, ça mettait l'ancien cluster en pause et lançait un scan Gemini fire-and-forget sans clic → relance automatique non voulue, consommant le quota.
+
+**Action.** Commit `853e66c` sur `main` (newFusionn).
+- À l'ouverture : lecture seule de l'existant via `select tracked_clusters` (RLS « Users select own tracked clusters »), aucun scan.
+- Mot-clé jamais scanné → état vide explicite + bouton manuel « Lancer le scan Gemini ».
+- Premier scan + re-scan : uniquement sur clic. Aucun changement backend (RLS suffisait).
+
+**Note.** Le déclenchement du radar via `useSearchPipeline` (lors d'une recherche explicite « Rechercher ») a été laissé tel quel : c'est une action utilisateur, pas une relance auto.
+
+---
+
+## 2026-05-30 — Agent Search Console + refonte header + onglet Historique
+
+**Search Console dans l'agent.** Reprise du fil GSC inachevé (table `google_connections` + flux OAuth `google-auth`/`google-oauth-callback` déjà en prod, 44 connexions existantes, mais aucune récupération de données ni consommation chat). Porté le `fetchGSC` de Qadence dans `supabase/functions/_shared/gsc.ts` (refresh token, searchAnalytics, cache 2h). Créé la fonction `gsc-fetch` (que le front appelait dans le vide). Ajouté le **function-calling Gemini** dans `ai-chat` (outil `fetch_gsc_data`) — garde-fou : comportement strictement inchangé si l'utilisateur n'a pas connecté sa Search Console. Onglet Agent : bannière de connexion + sélecteur de propriété GSC. Décisions Tim : réutiliser l'onglet Agent (pas de nouvel onglet) + tool-calling à la Qadence. Fonctions déployées sur prod `fwhfnzbtlddzfxbsejyf`.
+
+**Refonte header (Navbar).** Supprimé le bouton « + » et son dropdown → 3 entrées minimalistes **Rechercher / Espace / Historique** (texte + petite icône, accent `#FF371C` sur l'actif). Icône compte refaite en avatar minimaliste (cercle initiale + prénom). Bouton « Accéder à mon compte » supprimé (Espace fait le même job). Contenu du header désormais **identique home / compte**.
+
+**Espace = workspace dernière recherche.** `handleAnalyzeClick` ouvre maintenant `handleHistoryItemClick(searchHistory[0])` au lieu du tableau de bord.
+
+**Tableau de bord.** Nouvel onglet **Historique** (Recherches / Historique / Projets) : toute la liste filtrable des recherches y a basculé, l'onglet Recherches garde la vue d'ensemble (stats + récentes). Carte « Historique » renommée **« Opportunités détectées »** (lève la confusion avec l'entrée de nav), sous-texte réécrit, badge compteur en pill marque, score badge `/100` teinté quand pertinence ≥70.
+
+**Deploy.** Front : commit `d6e477f` poussé sur `main` (Netlify auto-deploy). Build prod OK. Backend : `ai-chat` + `gsc-fetch` déployées.
