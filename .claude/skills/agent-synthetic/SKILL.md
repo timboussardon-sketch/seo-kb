@@ -73,9 +73,20 @@ SyntheticBrain est un système distribué entre local, cloud, git et l'humain. A
 - Date du jour : `date +%F`
 - Cadrage : `~/Code/seo-kb/wiki/methodes/cadrage-boucle-edition-algorithme.md`
 
+## Périmètre thématique (strict, non négociable)
+
+Algorithme ne parle QUE de : **SEO, IA, LLM, Google, et tout ce qui touche aux moteurs de recherche et au search marketing.** Rien d'autre.
+
+Sont DANS le périmètre : SEO (technique, contenu, maillage, core updates), GEO/AEO, AI Overviews, AI Mode, SGE, les LLM et moteurs génératifs en tant qu'ils touchent la recherche (ChatGPT search, Perplexity, Gemini, Claude search), Google (Search, Ads liés au search, annonces produit search), Bing, le commerce et les agents EN TANT QU'ils passent par la recherche (recherche agentique, checkout depuis Search), le search marketing.
+
+Sont HORS périmètre, à écarter même si l'actu est énorme : politique, finance/bourse générale, hardware/puces, levées de fonds et valorisations qui ne touchent pas le search, sorties de modèles LLM pour elles-mêmes (capacités de raisonnement, benchmarks, coding) sauf si l'angle est l'impact sur la recherche, réseaux sociaux hors search, crypto, gaming, actu tech générale.
+
+Test simple avant de retenir un sujet : « est-ce que ça change la façon dont on est trouvé, lu ou cité dans un moteur de recherche ? ». Si non, on écarte, et on logge le sujet écarté dans `runs.jsonl` (sources_rejetees) avec la raison « hors périmètre ».
+
 ## Règles absolues
 
 - **Rien n'est envoyé.** On produit un draft, point.
+- **Respect strict du périmètre thématique** (section ci-dessus). Hors sujet = écarté, même si c'est viral.
 - **Anti-hallucination strict.** Aucun chiffre, %, date ou citation qui ne soit pas dans une source réellement consultée. Si pas sourçable, `[À SOURCER]`.
 - **L'unité de qualité est le claim, pas la source.** Chaque affirmation qui ira dans le corps devient une ligne de `claims.jsonl` avec ses sources, son verdict et sa confiance.
 - **Recoupement obligatoire.** Toute info du corps tient sur au moins 2 sources indépendantes, sinon elle est marquée `fragile` ou écartée.
