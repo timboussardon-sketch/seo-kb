@@ -10,6 +10,13 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 
 (vide pour l'instant)
 
+## Run v4 (2026-05-30) — pour la revue hebdo
+
+- **Trois éditions le même jour, est-ce voulu ?** v2 (Information Agents), v3 (Universal Cart), v4 (llms.txt) ont été produites le 2026-05-30. La cadence prévue est 2/jour en semaine. Confirmer la politique de versionnage et si une de ces éditions fait référence.
+- **Overlap llms.txt / guide 15 mai** : l'info du jour v4 recoupe partiellement le sujet du run cloud. J'ai publié avec un hook et du matériel distincts mais baissé le novelty_score à 3. Arbitrage : était-ce le bon choix, ou aurait-il fallu basculer sur le redesign du champ de recherche (sujet plus vierge) ? Voir mistake M-004.
+- **Valider 2 nouvelles sources explore** : `theseocommunity` (0.6) et `getpassionfruit` (0.6), toutes deux corroborées sur le dossier llms.txt. À confirmer en `exploit` ou retirer.
+- **Sources tech généralistes mobilisées en brève** : Tom's Guide, VentureBeat, TechRadar utilisées comme corroboration secondaire (champ de recherche, parts Gemini). Non ajoutées au registre (hors spécialité SEO/search). À trancher : les garde-t-on hors registre comme corroboration ponctuelle uniquement ?
+
 ## Pour la revue hebdo
 
 - **Rubrique fixe ?** Faut-il une section récurrente « ce qu'un agent retiendrait de cette édition » pour forcer l'angle citation à chaque numéro ?
@@ -32,7 +39,11 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 - **2026-05-30** : `lumar` (lumar.io, industry news SEO/IA) ajoutée en statut `explore`, trust 0.62. Corroborée par blog.google et SEJ sur I/O 2026, donc au-dessus du seuil d'auto-ajout (0.6 + corroboration). À confirmer ou retirer en revue hebdo.
 - **2026-05-30 (v3)** : `cloudflare-radar` (blog.cloudflare.com / Radar) ajoutée en `explore`, trust 0.85, données primaires crawl-to-refer corroborées par TechnologyChecker + SEOmator. `similarweb-geo` (similarweb.com/blog/marketing/geo) en `explore`, trust 0.78, clickstream. `seer-interactive` (seerinteractive.com/insights) en `explore`, trust 0.75, études conversion. Les trois au-dessus du seuil d'auto-ajout (0.6 + corroboration). À confirmer/retirer en revue hebdo. Note vigilance fraîcheur enregistrée dans le registre pour Seer et Cloudflare (agrégateurs qui redatent en 2026 des études 2025).
 
+- **2026-05-30 (v4)** : `theseocommunity` (theseocommunity.com) ajoutée en `explore`, trust 0.6 ; a porté l'étude SE Ranking (39 000 domaines), la citation Mueller et l'incident d'apparition du fichier. `getpassionfruit` (getpassionfruit.com) ajoutée en `explore`, trust 0.6 ; guidance llms.txt 2026 détaillée. Les deux corroborées par Search Engine Land sur la position de Google. À confirmer/retirer en revue hebdo.
+
 ## Propositions doctrine (à valider en revue hebdo, non appliquées)
+
+- **Signal pour `wiki/concepts/structural-information-geo.md` et `wiki/concepts/aeo.md` (v4)** : la position publique de Google (llms.txt non utilisé, AI surfaces sur le même index, SEO normal suffit) converge avec le finding SAGEO Arena (le levier au retrieval = champs structurels + schema, pas le body ni un fichier dédié). Candidat : ajouter une ligne « confirmé par la position officielle de Google sur llms.txt (Illyes 2025, guide 2026) » dans la section preuve de `structural-information-geo`. À valider.
 
 - **Hypothèse candidate pour `wiki/hypotheses.md`** : « Avec le commerce agentique (UCP/Universal Cart), la qualité du flux produit structuré (attributs, prix, dispo, Conversational Attributes Merchant Center) devient un facteur de sélection plus fort que le contenu éditorial de la page pour les requêtes transactionnelles. » Prolonge `mots-cles-actionnels` et `agentic-search`. À tester quand des données de sélection d'agent seront publiques. Lié à la prédiction P-2026-05-30-2.
 - **Signal pour `wiki/concepts/agentic-search.md`** : l'actu UCP conforte le concept (« être sélectionné par l'agent pour accomplir une tâche ») et le précise côté ACHAT (l'agent ne fait plus que lire/comparer, il transige). Candidat ajout d'une section « agent qui achète » au concept, à valider.

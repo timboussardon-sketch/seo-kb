@@ -17,9 +17,11 @@ Pas encore d'historique. Première édition à produire sans biais de boucle. Ob
 - Tester le mode explore : trouver au moins 1 source nouvelle, hors liste socle, et la noter dans `source_registry.jsonl`.
 - Logger au moins 1 prédiction datée dans `predictions.jsonl`.
 
-## Directives pour la prochaine édition (écrit après 2026-05-30-v3)
+## Directives pour la prochaine édition (écrit après 2026-05-30-v4)
 
-- **Anti-redite** : ne pas reprendre, déjà traités → « guide AEO du 15 mai », « Information Agents I/O » (v2), « commerce agentique / Universal Cart / UCP » (v3), Cloudflare crawl-to-refer (v3), conversion trafic IA vs volume (v3). Voir `said_index.jsonl`.
+- **Anti-redite (mis à jour v4)** : déjà traités, ne pas reprendre sans fait nouveau → « guide AEO du 15 mai », « Information Agents I/O » (v2), « commerce agentique / Universal Cart / UCP » (v3), Cloudflare crawl-to-refer (v3), conversion trafic IA vs volume (v3), **« llms.txt non utilisé par Google » + champ de recherche redessiné I/O + parts Gemini vs ChatGPT + CTR AIO recovery Seer (v4)**. Voir `said_index.jsonl`.
+- **Leçon v4 (vérifier l'overlap avant de choisir l'info du jour)** : avant de figer l'info du jour, lire `runs.jsonl` champ `sujet_info_jour`/`sujets_candidats` des runs récents (y compris cloud), pas seulement `said_index.jsonl`. Le sujet llms.txt avait déjà été effleuré par le run cloud via le guide du 15 mai. Préférer un sujet vierge quand il en existe un d'aussi solide. Voir mistake M-004.
+- **Pistes fraîches non encore traitées (candidates prochaine édition)** : fin du déploiement du core update de mai (bilan ≥1 semaine après le 4 juin) ; premières ventes mesurées via checkout agentique UCP (résout P-2026-05-30-2) ; remontées terrain sur le bloc Expert Advice des AIO (résout P-2026-05-30-1, échéance 2026-07-15) ; Perplexity / ChatGPT search côté citations (jamais traité en profondeur) ; tester une source FR de référence (Abondance).
 - **Suivre en priorité** :
   - Fin du core update de mai (déploiement clos vers le 4 juin). Quand Google confirme la fin, candidat brève « bilan » si des verticaux gagnants/perdants nets se dégagent dans les données publiques. Attendre ≥1 semaine après la fin avant de citer des courbes.
   - Premières remontées terrain sur le checkout agentique UCP/Universal Cart (déploiement US « cet été »). Dès qu'un retailer publie un chiffre de ventes via agent → info du jour forte (résout aussi P-2026-05-30-2).

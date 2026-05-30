@@ -20,6 +20,7 @@
 |---|---|---|---|---|---|---|
 | 2026-05-30-v2 | 4/5 | 5/5 | 4/5 | 4/5 | 4 retenues / 6 candidates | 4,2/5 |
 | 2026-05-30-v3 | 5/5 | 5/5 | 5/5 | 4/5 | corps 100% recoupé ≥2 sources | 4,7/5 |
+| 2026-05-30-v4 | 5/5 | 3/5 | 5/5 | 4/5 | 8 retenus, corps recoupé ≥2 sauf 1 fragile attribué | 4,3/5 |
 
 ### Notes du run d'amorçage (2026-05-30-v2)
 
@@ -36,3 +37,12 @@
 - **Piège anti-hallucination déjoué** : les résumés de WebSearch dataient à tort de 2026 des études de 2025 (Seer juin 2025 / Cloudflare juillet 2025). Vérif sur source primaire → Seer daté honnêtement dans le corps, Cloudflare repivoté sur les données fraîches du 18 mai 2026. Leçon enregistrée dans le registre (note sur seer-interactive et cloudflare-radar).
 - **Écarté du corps** : ratios crawl-to-refer précis type 13 528:1 (cités par agrégateurs mais non confirmés sur primaire à la bonne fenêtre) → remplacés par la formulation corroborée « des dizaines de milliers de pages pour un visiteur ». Parts ChatGPT 68 % / Gemini 18 % (Similarweb, données janv. 2026, hors fenêtre 30 j) → non utilisées comme brève.
 - **Prédictions ouvertes** : P-2026-05-30-2 (vente via checkout agentique avant 2026-09-30) et P-2026-05-30-3 (Googlebot sous 27 % du crawl IA d'ici fin 2026).
+
+### Notes 2026-05-30-v4
+
+- **Recoupement (5/5)** : info du jour (llms.txt non utilisé par Google) sur 3 sources indépendantes dont Search Engine Land (seed historique) : Illyes au Search Central Deep Dive APAC du 23 juillet 2025, Mueller (comparaison meta keywords) confirmé par 2 sources, incident d'apparition du fichier sur des pages Google sur 2 sources. Chaque brève sur ≥2 sources (Gemini : Similarweb + TechRadar + TechnologyChecker ; champ de recherche : blog.google + Tom's Guide + SEJ ; CTR AIO : SEL + Seer + SEJ).
+- **Angle (3/5)** : volontairement plus bas. Overlap thématique partiel reconnu avec le run cloud du même jour, dont l'info du jour était le guide IA du 15 mai (« llms.txt inutile, AEO=SEO »). Le hook v4 est distinct (la contradiction : Google dit non, mais le fichier est apparu sur ses propres pages) et apporte du matériel neuf (citation Illyes datée, comparaison Mueller, incident, étude SE Ranking 39 000 domaines, benchmark SAGEO). Mais ce n'est pas un sujet vierge, d'où 3/5 et non 5/5.
+- **Doctrine (5/5)** : lien réel et non décoratif vers `structural-information-geo` (le levier au retrieval = champs structurels + schema, pas un fichier dédié) et `aeo` (être cité = SEO normal, pas un canal séparé). La donnée empirique de la KB et la position de Google convergent.
+- **Piège fraîcheur géré** : étude Seer du CTR AIO datée explicitement dans le corps (publi SEL 24 avril 2026, données jan2025-fév2026), au-delà de 30 j donc présentée comme tendance, pas comme état du jour. Parts Gemini/ChatGPT : chiffres exacts contradictoires entre Similarweb/Statcounter/agrégateurs → présentés comme divergence assumée, direction seule retenue.
+- **Écarté du corps** : « planning queries +80 % » et « marques citées +35 % de clics » issus des annonces I/O (mono-source com Google ou redite avec la brève Seer plus solide). SE Ranking 39 000 domaines gardé mais marqué fragile et attribué (mono-source).
+- **Prédiction ouverte** : P-2026-05-30-4 (position « llms.txt non utilisé » maintenue par Google d'ici fin 2026).
