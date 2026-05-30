@@ -15,7 +15,7 @@ Le prompt de ce skill est **figé et auditable**. L'apprentissage vit dans la **
 ## Constantes
 
 - Mémoire : `~/Code/seo-kb/agent-synthetic/` (alias `$BRAIN`)
-- Sortie édition : `~/Code/seo-kb/raw/revue-de-presse/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà)
+- Sortie édition : `~/Code/seo-kb/raw/revue-de-presse/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Attention : ce dossier est dans `.gitignore`, donc pour committer une édition il faut `git add -f`. La mémoire `agent-synthetic/` est suivie normalement.
 - Date du jour : `date +%F`
 - Cadrage : `~/Code/seo-kb/wiki/methodes/cadrage-boucle-edition-algorithme.md`
 
@@ -50,7 +50,7 @@ Dédup contre `said_index.jsonl` : écarte ce qui a déjà été traité récemm
 
 **Agent 2 — Recoupement.** Pour chaque sujet candidat, croise les sources entre elles. Une info portée par plusieurs sources indépendantes monte. Une info isolée est marquée `fragile`. C'est le cœur d'une vraie revue de presse. Note pour chaque info retenue : sources, niveau de corroboration.
 
-**Agent 3 — Connexions doctrine.** Pour les sujets forts, lance `cd ~/Code/seo-kb && ./kb search "<sujet>"` pour relier l'actu aux concepts de Tim (`wiki/concepts/`). Une info reliée à la doctrine vaut mieux qu'une info isolée.
+**Agent 3 — Connexions doctrine.** Pour les sujets forts, lance `cd ~/Code/seo-kb && ./kb search "<sujet>"` pour relier l'actu aux concepts de Tim (`wiki/concepts/`). Si le venv `./kb` est absent (cas du run cloud), fallback : `grep -ril "<terme>" wiki/concepts/`. Une info reliée à la doctrine vaut mieux qu'une info isolée.
 
 **Agent 4 — Fact-check à verdict.** Pour chaque claim qui ira dans le corps : verdict **vérifié / réfuté / incertain**. Croise avec le recoupement (agent 2). Seuls les `vérifié` entrent dans le corps. Les `incertain` sont soit creusés, soit écartés, jamais publiés tels quels.
 
