@@ -4,6 +4,7 @@
 schema_version: 2
 
 source_of_truth:
+  editions: raw/           # éditions produites, {date}-revue-presse[-vN].md, suivi git
   memory: memory/          # interprétations durables, ne changent qu'après revue humaine
   event_ledgers: ledgers/  # faits observés, append-only
   derived_views: derived/  # vues calculées à partir des ledgers

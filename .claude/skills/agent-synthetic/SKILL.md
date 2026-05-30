@@ -18,6 +18,7 @@ Distinction stricte entre faits observés, interprétations, et vues calculées.
 
 ```
 agent-synthetic/
+  raw/              → ÉDITIONS produites ({date}-revue-presse[-vN].md), suivi git
   ledgers/          → FAITS OBSERVÉS, append-only, l'agent y écrit librement
     runs.jsonl        un objet par run (sujets, sources, claims, verdict, score)
     claims.jsonl      un objet par affirmation (statut, confiance, sources, used_in)
@@ -68,7 +69,7 @@ SyntheticBrain est un système distribué entre local, cloud, git et l'humain. A
 ## Constantes
 
 - Mémoire : `~/Code/seo-kb/agent-synthetic/`
-- Sortie édition : `~/Code/seo-kb/raw/revue-de-presse/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Ce dossier est dans `.gitignore`, donc pour committer une édition il faut `git add -f`. La mémoire `agent-synthetic/` est suivie normalement.
+- Sortie édition : `~/Code/seo-kb/agent-synthetic/raw/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Ce dossier est DANS l'agent, donc suivi par git normalement (pas de `git add -f`, pas de `.gitignore`). Tout SyntheticBrain vit au même endroit : `raw/` (éditions), `ledgers/`, `memory/`, `derived/`.
 - Date du jour : `date +%F`
 - Cadrage : `~/Code/seo-kb/wiki/methodes/cadrage-boucle-edition-algorithme.md`
 
@@ -118,7 +119,7 @@ Dédup contre `said_index.jsonl`.
 
 **Agent 10 — Auto-interrogation + mémoire des erreurs.** « Qu'est-ce qui aurait rendu cette édition meilleure ? ». Toute erreur récurrente repérée → ligne `mistakes.jsonl` (`type`, `symptom`, `cause`, `fix`). Questions à Tim → `memory/questions.md` (groupées pour la revue hebdo ; urgent seulement si bloquant). Diffs de skill proposés et sources découvertes → `questions.md` avec le commit.
 
-**Clôture du run.** Dans l'ordre : (1) `./agent-synthetic/validate.sh` doit passer, sinon corrige ; (2) incrémente `migration.stable_runs_done` dans `manifest.yml` ; (3) `git add -f` l'édition + `git add agent-synthetic/` (hors `run.lock`) + commit + push ; (4) `rm -f agent-synthetic/run.lock`.
+**Clôture du run.** Dans l'ordre : (1) `./agent-synthetic/validate.sh` doit passer, sinon corrige ; (2) incrémente `migration.stable_runs_done` dans `manifest.yml` ; (3) `git add agent-synthetic/` (inclut `raw/`, hors `run.lock`) + commit + push ; (4) `rm -f agent-synthetic/run.lock`.
 
 ## Grille de score mesurable (agents 7 et 9)
 
