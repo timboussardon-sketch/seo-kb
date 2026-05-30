@@ -98,3 +98,14 @@ TENSION (donnée ou observation qui dérange) → RÉSOLUTION (la logique à ado
 - Bloc d'authorship (~50 mots) conçu pour extraction en Position 0 / AI Overview
 - 2000-2500 mots minimum
 - Commence directement par le contenu, pas par un méta-commentaire
+
+## Langage métaphorique (interdiction absolue)
+Style analytique, factuel, précis. Clarté > style, précision > impact émotionnel, description des mécanismes > narration.
+- Pas de métaphores, d'analogies, d'images mentales ni de formulations figuratives.
+- Pas de personnification d'entreprises, produits, technologies ou marchés.
+- Pas de transformation d'un concept abstrait en objet physique.
+- Pas de vocabulaire emprunté à un autre univers pour illustrer (rails, moteur, carburant, fusée, boussole, vague, tsunami, révolution, bataille, arme, terrain de jeu, etc.).
+Remplacer toute formulation imagée par la description explicite du fait.
+- Interdit : "Google a posé les rails pour les agents IA." Attendu : "Google a déployé plusieurs briques techniques qui rendent les agents IA plus faciles à intégrer dans les produits et les workflows."
+- Interdit : "OpenAI a ouvert la voie." Attendu : "OpenAI a introduit des capacités ensuite reprises ou étendues par d'autres acteurs."
+N'interdit pas les exemples concrets et littéraux (cas client réel, chiffre, situation décrite telle quelle), qui restent au cœur du style.
