@@ -18,7 +18,8 @@ Distinction stricte entre faits observés, interprétations, et vues calculées.
 
 ```
 agent-synthetic/
-  raw/              → ÉDITIONS produites ({date}-revue-presse[-vN].md), suivi git
+  syntheticrevuepress/ → ÉDITIONS produites ({date}-revue-presse[-vN].md), suivi git
+  notes/            → notes de doctrine sur l'agent lui-même
   ledgers/          → FAITS OBSERVÉS, append-only, l'agent y écrit librement
     runs.jsonl        un objet par run (sujets, sources, claims, verdict, score)
     claims.jsonl      un objet par affirmation (statut, confiance, sources, used_in)
@@ -69,7 +70,7 @@ SyntheticBrain est un système distribué entre local, cloud, git et l'humain. A
 ## Constantes
 
 - Mémoire : `~/Code/seo-kb/agent-synthetic/`
-- Sortie édition : `~/Code/seo-kb/agent-synthetic/raw/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Ce dossier est DANS l'agent, donc suivi par git normalement (pas de `git add -f`, pas de `.gitignore`). Tout SyntheticBrain vit au même endroit : `raw/` (éditions), `ledgers/`, `memory/`, `derived/`.
+- Sortie édition : `~/Code/seo-kb/agent-synthetic/syntheticrevuepress/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Ce dossier est DANS l'agent, donc suivi par git normalement (pas de `git add -f`, pas de `.gitignore`). Tout SyntheticBrain vit au même endroit : `raw/` (éditions), `ledgers/`, `memory/`, `derived/`.
 - Date du jour : `date +%F`
 - Cadrage : `~/Code/seo-kb/wiki/methodes/cadrage-boucle-edition-algorithme.md`
 
