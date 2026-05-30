@@ -4,6 +4,49 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-05-30 · Moteur d'emails de cycle de vie (lifecycle / drip)
+
+**Contexte.** Tim demande des séquences email automatiques et gratuites par comportement (inscrit 0 recherche, 1 recherche, 2 recherches, etc.). Choix validés : moteur complet + tout le cycle de vie. Constat à l'exploration : toute la data existe déjà (`user_profiles.created_at`, `search_history` par user, `analytics_events.premium_click`, `subscriptions`), seul l'envoi email manquait (aucun Resend/SMTP dans le repo).
+
+**Ce qui a été construit (3 fichiers, branche dédiée).**
+- **Migration `20260530180000_create_email_lifecycle_system.sql`** : tables `email_sequences` (catalogue + seed des 6 séquences, vouvoiement, design Fusionn `#FF371C`/`#F4F5F7`), `email_queue` (file, `UNIQUE(user_id, sequence_key)` = idempotent), `user_email_preferences` (opt-out + token désinscription). RLS activé, écritures service_role only. Fonction SQL `enqueue_lifecycle_emails()` (SECURITY DEFINER) qui calcule les 6 segments et remplit la file en `ON CONFLICT DO NOTHING`.
+- **Edge `cron-lifecycle-emails`** : cron quotidien → RPC enqueue puis envoi des dus via Resend. Garde-fous : DRY-RUN par défaut (tant que `LIFECYCLE_EMAILS_ENABLED!=true` ou pas de `RESEND_API_KEY`, 0 envoi), batch plafonné 90/run (< 100/jour gratuit Resend), `X-Cron-Secret`.
+- **Edge `email-unsubscribe`** : désinscription 1 clic par token, sans login (RGPD). Lien présent dans chaque mail + header `List-Unsubscribe`.
+
+**Les 6 séquences.** activation_no_search · nudge_after_1_search · nudge_after_2_searches · reengage_inactive (14j) · premium_click_no_purchase · premium_onboarding.
+
+**Déployé (même session, clé Resend fournie par Tim).** Migration `20260530180000` poussée en prod (`db push`), 2 Edge Functions déployées, secrets posés (`RESEND_API_KEY`, `EMAIL_FROM=Fusionn <hello@fusionn.co>`, `LIFECYCLE_EMAILS_ENABLED=false`). Test à blanc : RPC `enqueue_lifecycle_emails` appelée → 40 users segmentés (24 activation_no_search, 12 nudge_after_1, 4 nudge_after_2), tous `pending`, 0 envoi. Clé Resend en mode « envoi seul ».
+
+**Vérif domaine + DNS (fait).** `fusionn.co` ajouté chez Resend (clé restreinte « envoi seul »). DNS posés via API Netlify (zone `6a0d950565bb45eb3fb31539`, token CLI dans `~/Library/Preferences/netlify/config.json`) : DKIM `resend._domainkey`, MX `send` → `feedback-smtp.ap-northeast-1.amazonses.com`, SPF `send`, DMARC `_dmarc`. Aucun conflit ImprovMX (racine vs sous-domaine `send`). Domaine vérifié après clic « Verify DNS Records » de Tim.
+
+**Pivot produit « site first » (correction Tim en cours de route).** Le produit n'est plus « taper un mot-clé » mais « analyser son site » (table `site_crawls`, `status='done'`, bouton UI « Analyser »). Donc segmentation REBASÉE sur `site_crawls` (migration `20260530200000`), copy entièrement réécrit. Nouvelle règle mémoire appliquée : **jamais « concurrent/concurrence »** dans le copy (comme netlinking/backlink). Borne `activation_no_search` aux inscrits < 30 jours (migration `20260530190000`).
+
+**Logo + signature.** Logos du repo en SVG (pas email-safe) → généré un PNG via PIL (marque atome `#FF371C` + wordmark), uploadé sur Supabase Storage bucket public `assets` (`/storage/v1/object/public/assets/fusionn-logo.png`). Wrapper email : logo en tête + signature « A+, Tim » + lien désinscription. PS « répondez OK » ajouté à l'activation (délivrabilité ; replies `hello@fusionn.co` → ImprovMX → Gmail Tim).
+
+**Personnalisation des 3 emails post-analyse (migration `20260530210000` + fonction).** Marqueur `{{PERSO_BLOCK}}` remplacé par destinataire : top 3 opportunités réelles du dernier crawl (`crawl_findings` du dernier `site_crawls` à `opportunities_status='done'`), **filtrées** des termes bannis (`netlinking|backlink|link building|achat de lien|concurrent`), + « Par où commencer » + sujet dynamique référençant le domaine. Repli générique si pas de data. Activation reste générique (pas de data site à ce stade).
+
+**LIVE.** Domaine vérifié, secret dédié `LIFECYCLE_CRON_SECRET` (la clé restreinte ne lit pas `CRON_SECRET`), fonction améliorée (inner join `is_active` = pause sans brûler la file ; fix embed `user_profiles` via requête séparée). **49 emails d'activation envoyés** (segmentation site-first : 49 inscrits 0 analyse), 0 échec, confirmés `sent` en base. Aperçus envoyés à Tim (activation v2 + perso organikk.co réel).
+
+**Affinages copy (demandes Tim).** Email 2 : clusters au lieu de mots-clés exacts (moins risqué). Email 3 : + plan d'action 2 phases (Phase 1 décisionnel/transactionnel, Phase 2 informationnel). Email 4 : TABLEAU des 10 meilleurs mots-clés par vrai score business `interet_business` (table `search_business_score_results`, Gemini, `user_id`, scores 87-98 + bucket Fort/Moyen/Faible) dédupliqué. Email 5 : analyses illimitées + 4 agents SEO en « bientôt » (Maillage, Search Console, Rédaction, Veille ; « gap concurrentiel » retiré). PS « répondez OK » sur l'activation (délivrabilité). Filtre `FORBIDDEN_TERMS` sur tout mot-clé/opportunité affiché.
+
+**Règle « — » : nettoyée partout** (pied de page, bloc perso, libellés). Zéro tiret cadratin en base.
+
+**PLEINE AUTO LIVE (Tim : « go pour les 6 »).** 6 séquences `is_active=true`. Cron `lifecycle-emails-daily` posé via **pg_cron + pg_net** (`supabase db query --linked`, secret injecté one-off = PAS dans git), `0 9 * * *`, header `X-Cron-Secret`=`LIFECYCLE_CRON_SECRET`. Fonction redéployée `--no-verify-jwt` (secret = seul guard). Test chemin cron : 200, 1 activation enqueue+envoyée auto. **Moteur autonome en production.**
+
+**Dette technique.** Repo basculé sur `main` (session parallèle) : fonctions + migrations (180000/190000/200000/210000/224700) en PROD mais source sur branche `feat/lifecycle-emails` à recommiter ; collisions de numéros avec les `lock_documents_rls` parallèles (d'où renommage `224700`). Secret cron aussi dans `/tmp/lifecycle_secret.txt` (local). Réglages possibles : heure du cron (9h UTC = 11h Paris), cadrage agents « bientôt » vs dispo.
+
+**Règle ajoutée.** Jamais parler d'argent dans le copy Fusionn (« paient votre SEO », « se rentabilise », ROI, prix). Retiré des emails 3 et 5. Mémoire `feedback_fusionn_pas_argent`.
+
+**Suivi ouvertures/clics + rapports Obsidian.** Migration `20260530231500_email_events_tracking` : table `email_events` (idempotente sur provider_id+event_type) + vue `email_stats_by_sequence`. Edge `resend-webhook` (`--no-verify-jwt`, vérif signature Svix via `RESEND_WEBHOOK_SECRET`) déployée, reliée par `provider_id`. Rapport auto : `seo-kb/fusionn/scripts/email-report.sh` (clé service_role via CLI, jamais en dur) écrit `rapports-emails/AAAA-MM-JJ-rapport-emails.md` dans le vault ; planifié par launchd `co.fusionn.email-report` chaque lundi 9h.
+
+**Config Resend (faite par moi via clé full-access fournie par Tim, puis révocable).** Suivi ouvertures + clics activé sur fusionn.co, webhook créé et `RESEND_WEBHOOK_SECRET` posé. Chaîne vérifiée bout-en-bout (event `delivered` signé reçu et stocké en 10s). La clé de prod reste la « envoi seul ».
+
+**Refonte admin (`/admin`).** `admin-stats-v2` étendu (accès `tim.boussardon@gmail.com` + objet `emails` depuis la vue). UI refondue en onglets au design Fusionn (Vue d'ensemble / Emails / Business / Utilisateurs / Usage), nouveau composant `AdminEmailLifecycle` (KPIs + taux ouverture/clic par séquence + derniers envois). Montré en local (port 5177) puis validé.
+
+**PUSH MAIN (`e249cdc`).** Tout commité et poussé sur `main` (Netlify auto-deploy) : refonte admin + moteur emails complet (functions + 6 migrations) + suivi. Dette « source à recommiter » RÉSOLUE. Restait juste : `email-unsubscribe`/README restaurés depuis la branche `feat/lifecycle-emails` avant commit.
+
+---
+
 ## 2026-05-29 · Finalisation des 3 nouveaux outils gratuits
 
 **Contexte.** Reprise du chantier WIP laissé non commité à la session précédente : 3 nouveaux outils gratuits Product-Led SEO. Type-check vert, dev relancé sur :5173 pour montrer les pages.
@@ -1799,3 +1842,38 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Navbar.** « Espace » non cliquable s'il n'y a aucune recherche (calcul `effectiveCanAccessEspace` côté Navbar global).
 
 **Deploy.** Front commit `807f24e` sur `main` (Netlify). Edge `ai-chat` + `gsc-fetch` déployées. Build prod OK.
+
+---
+
+## 2026-05-30 (suite) — Audit global UX/UI/technique + corrections « tout corriger »
+
+**Audit.** 3 sous-agents (UX, UI, technique) sur l'état prod `main`. Synthèse priorisée écrite dans `fusionn/Audit-2026-05-30-global-ux-ui-tech.md` (P0/P1/P2 + 8 priorités absolues). Constat : pivot site-first partiel (entrée URL posée par-dessus le système keyword-first), cœur workspace sain, dette concentrée sur les écrans récents + sécurité des Edge Functions.
+
+**Corrections déployées (mêmes que commit `00a6be7`).**
+- **Sécurité S1.** `_shared/auth.ts` : le `userId` est dérivé du JWT, plus du body, dans `generate-semantic-keywords` et `generate-business-score` (corrige un IDOR + un bypass des crédits exploitable avec la clé anon publique). Vérif d'appartenance de la recherche sur business-score. Functions redéployées.
+- **Sécurité S2.** Migration `20260530220000_lock_documents_rls` : suppression des policies anon « Anyone can ... » qui exposaient tous les documents de contexte (cross-user). Appliquée en prod via `db push`.
+- **Fiabilité crawl R1.** `start-site-crawl` renvoie `crawl_id` tout de suite et exécute le crawl en arrière-plan (`EdgeRuntime.waitUntil`) avec deadline globale 70s + statut terminal garanti (plus de polling infini). `useSiteCrawl` : verrou coverage/opportunities relâché en cas d'échec + garde-fou anti-boucle (5 min).
+- **Activation UX1/UX2.** `SiteAuditPanel` vérifie le quota AVANT le crawl (plus de ~1 min d'analyse pour un compte sans crédit) et affiche les analyses restantes. Onboarding keyword-first retiré : le hero site-first est l'unique point d'entrée.
+- **Design system.** `SiteAuditPanel` : `slate-*` migré vers tokens `--ws-*`, shimmer en gris chaud, marque sur `var(--ws-brand)`. Nouveaux tokens `--ws-brand-hover` + sévérité, `focus-visible` global. Verts `#244831` + glassmorphism retirés de `OnboardingOverlay`, `SubscriptionChoiceModal`, `SeoConversationalChat`. `aria-label` sur les boutons icône de l'agent. `FirstSearchTour` au vouvoiement.
+- **Perf.** `loadSearchHistory` dérive les compteurs de `results_summary` (les 4 requêtes lourdes ne tournent plus que pour les anciennes recherches sans summary). `resultsLoader` : colonnes ciblées au lieu de `select('*')`. Code-split déjà en place (Compte/pdf/mammoth en chunks séparés).
+- **Copy.** Promesse de temps alignée (~1 min) sur Landing et Connexion.
+
+**Reste P2 non traité (volontairement, hors scope risque/temps) :** responsive mobile du workspace 3 colonnes, unification IA de la navigation (ViewMode/ResultsNav), écrans d'erreur crawl enrichis, autres `generate-*` qui écrivent avec userId du body (write-only, faible risque), CORS `*` à restreindre.
+
+**WIP de Tim non touché :** migrations email lifecycle (`180000`-`210000`) + `cron-lifecycle-emails` laissées non commitées.
+
+**Deploy.** Front commit `00a6be7` sur `main` (Netlify auto-deploy). Edge `start-site-crawl` + `generate-semantic-keywords` + `generate-business-score` redéployées. Migration RLS appliquée. Build prod OK, tsc clean.
+
+**Suite P2 (commit `c2d0ac9`).**
+- **Sécurité (suite S1).** `generate-vecteurs/tools/reddit-keywords/objections/youtube-keywords/faq` : userId effectif dérivé du JWT (`authed ?? body`), parcours authentifié non usurpable. `analyze-hn-score` déjà JWT-only. Functions redéployées.
+- **Robustesse R5.** `ai-chat` : timeout AbortController 30s sur les appels Gemini (boucle outils + streaming).
+- **Responsive mobile.** Agent chat : sidebar 258px + conteneur en pleine largeur empilée sous 768px. Workspace 3 colonnes : scroll vertical au lieu de clip sous 768px.
+- **UX.** Écran d'erreur crawl enrichi (cause + recours). Remise annuelle alignée à -30% (modale abo). Teasers Reddit « Bientôt » retirés (nav workspace + carte Landing). Au passage, mot « concurrents » retiré d'un visuel Landing.
+- **Restent hors scope :** unification IA navigation (ViewMode/ResultsNav), CORS `*` (volontairement gardé : le restreindre casserait dev local + previews Netlify, et l'auth fait foi), onglet « Agents Bientôt » et doc Reddit conservés (retrait risqué).
+- **Deploy.** Front `c2d0ac9` sur `main` (Netlify). 7 functions redéployées. Build prod OK, tsc clean. WIP email de Tim toujours non touché.
+
+**Unification navigation workspace (commit `3212895`).** Choix de Tim : supprimer les orphelins + condenser.
+- Retrait des 3 modes orphelins (rendus mais inaccessibles) : `planAction` (doublon du sous-onglet pSEO), `llm` (radar citations IA), `writer` (éditeur). `WorkspaceLayout` ne garde que **Stratégie + Agent** ; tout le code éditeur/polling/autosave retiré (-70 modules au build). `ViewMode` = `'strategy' | 'agent'`. Type mort `'conversation'` retiré (`businessScore`/`synthese` gardés, encore référencés).
+- `ResultsNav` : **5 sections → 3** (Comprendre : Brief, Mots-clés, Clusters, Micro-intentions, Analyse | Produire : Structure, Outils, Objections, YouTube | Décider : Stratégie pSEO).
+- Composants orphelinés (PlanActionView, LLMView, EditorPanel, AssistantChat, EditorAnalysisPanel) laissés en modules morts (tree-shakés), non supprimés pour éviter une cascade risquée.
+- Deploy : front `3212895` sur `main` (Netlify). Build OK (2925 modules), tsc clean.
