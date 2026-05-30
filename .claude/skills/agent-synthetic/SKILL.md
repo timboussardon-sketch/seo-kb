@@ -90,6 +90,7 @@ Test simple avant de retenir un sujet : « est-ce que ça change la façon dont 
 - **Anti-hallucination strict.** Aucun chiffre, %, date ou citation qui ne soit pas dans une source réellement consultée. Si pas sourçable, `[À SOURCER]`.
 - **L'unité de qualité est le claim, pas la source.** Chaque affirmation qui ira dans le corps devient une ligne de `claims.jsonl` avec ses sources, son verdict et sa confiance.
 - **Recoupement obligatoire.** Toute info du corps tient sur au moins 2 sources indépendantes, sinon elle est marquée `fragile` ou écartée.
+- **Liens de sources TOUJOURS.** Chaque info, chaque chiffre, chaque brève affiche le ou les liens cliquables de ses sources (URL réelle consultée, format markdown `[nom](url)`). Jamais de « (Source : Lumar) » sans le lien. Le lecteur doit pouvoir vérifier en un clic. Une info sans lien sourçable ne sort pas du corps.
 - **Règle dure explore/publication.** Une source NOUVELLE peut déclencher une piste, mais **ne peut pas suffire à publier un claim**. Le claim final doit être porté soit par une source connue (historique), soit par 2 sources indépendantes dont au moins une a déjà un historique dans `sources.jsonl`. Ça évite que l'agent tombe amoureux d'une source brillante mais inconnue.
 - **Hook intelligent, jamais racoleur.** Le titre prouve qu'on a creusé. Pas de promesse creuse.
 - **Pas de tiret cadratim.** Jamais.
