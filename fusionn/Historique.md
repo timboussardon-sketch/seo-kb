@@ -1780,3 +1780,22 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Tableau de bord.** Nouvel onglet **Historique** (Recherches / Historique / Projets) : toute la liste filtrable des recherches y a basculé, l'onglet Recherches garde la vue d'ensemble (stats + récentes). Carte « Historique » renommée **« Opportunités détectées »** (lève la confusion avec l'entrée de nav), sous-texte réécrit, badge compteur en pill marque, score badge `/100` teinté quand pertinence ≥70.
 
 **Deploy.** Front : commit `d6e477f` poussé sur `main` (Netlify auto-deploy). Build prod OK. Backend : `ai-chat` + `gsc-fetch` déployées.
+
+---
+
+## 2026-05-30 (suite) — Agent : panneau latéral, croisement GSC, anti-netlinking ; Structure+FAQ ; flash home
+
+**Chat / Agent.**
+- Panneau latéral repliable à droite du chat : onglet **Historique** (conversations précédentes = mots-clés analysés, clic rouvre la recherche via `onOpenSearch`→`handleHistoryItemClick`) + onglet **Agents (Bientôt)** = teaser `AgentsComingSoon` (thinking flow animé en boucle + écrans mockés Agent Maillage/Search Console/Rédaction/Veille).
+- Search Console mise en avant : **point vert « connectée »** + sélecteur « Propriété analysée ».
+- Prompt `ai-chat` : **REGLE 12 anti-netlinking** (jamais d'achat/vente/échange de liens ; maillage interne OK) + **croisement systématique** Search Console ↔ analyse workspace dans les réponses.
+
+**Fix GSC (erreur d'accès fusionn.io).** `fetchGSC` (`_shared/gsc.ts`) : restauration de la validation de propriété contre les sites réellement vérifiés (auto-correction `sc-domain:`/`https://`/www/slash) + erreur explicite listant les propriétés accessibles. Diag : `fusionn.io` est un 301 vers `.co` ; la donnée vit sous une autre propriété. Tim a plusieurs comptes Fusionn (même Google) ; la propriété connectée est `https://fusionn.io/`.
+
+**Workspace.** Onglet **FAQ fusionné dans Structure** (la FAQ s'affiche sous la structure Hn, onglet FAQ retiré de `ResultsNav`).
+
+**Home.** **Flash UX orange** (glow pulsé) sur la barre « votre site » pour inciter à saisir son site ; s'arrête au focus, off si reduced-motion.
+
+**Navbar.** « Espace » non cliquable s'il n'y a aucune recherche (calcul `effectiveCanAccessEspace` côté Navbar global).
+
+**Deploy.** Front commit `807f24e` sur `main` (Netlify). Edge `ai-chat` + `gsc-fetch` déployées. Build prod OK.
