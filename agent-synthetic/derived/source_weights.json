@@ -2,11 +2,11 @@
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
   "updated": "2026-05-30",
   "weights": {
-    "google-search-central": 1.09,
-    "the-keyword": 1.17,
+    "google-search-central": 1.13,
+    "the-keyword": 1.21,
     "bing-webmaster": 1.05,
-    "search-engine-land": 1.08,
-    "search-engine-journal": 1.12,
+    "search-engine-land": 1.12,
+    "search-engine-journal": 1.16,
     "search-engine-roundtable": 1.04,
     "techcrunch-ai": 1.0,
     "the-verge-ai": 1.0,
@@ -18,6 +18,9 @@
     "seer-interactive": 1.08,
     "similarweb-geo": 1.08,
     "theseocommunity": 1.04,
-    "getpassionfruit": 1.04
+    "getpassionfruit": 1.04,
+    "ahrefs": 1.04,
+    "averi": 1.04,
+    "tryprofound": 1.04
   }
 }

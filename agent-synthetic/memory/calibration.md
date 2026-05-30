@@ -21,6 +21,7 @@
 | 2026-05-30-v2 | 4/5 | 5/5 | 4/5 | 4/5 | 4 retenues / 6 candidates | 4,2/5 |
 | 2026-05-30-v3 | 5/5 | 5/5 | 5/5 | 4/5 | corps 100% recoupé ≥2 sources | 4,7/5 |
 | 2026-05-30-v4 | 5/5 | 3/5 | 5/5 | 4/5 | 8 retenus, corps recoupé ≥2 sauf 1 fragile attribué | 4,3/5 |
+| 2026-05-30-v5 | 5/5 | 4/5 | 4/5 | 4/5 | 6 claims retenus, corps recoupé ≥2 sauf FAQ (doc officielle) et 11 % (mono-étude flaguée) | 4,3/5 |
 
 ### Notes du run d'amorçage (2026-05-30-v2)
 
@@ -46,3 +47,12 @@
 - **Piège fraîcheur géré** : étude Seer du CTR AIO datée explicitement dans le corps (publi SEL 24 avril 2026, données jan2025-fév2026), au-delà de 30 j donc présentée comme tendance, pas comme état du jour. Parts Gemini/ChatGPT : chiffres exacts contradictoires entre Similarweb/Statcounter/agrégateurs → présentés comme divergence assumée, direction seule retenue.
 - **Écarté du corps** : « planning queries +80 % » et « marques citées +35 % de clics » issus des annonces I/O (mono-source com Google ou redite avec la brève Seer plus solide). SE Ranking 39 000 domaines gardé mais marqué fragile et attribué (mono-source).
 - **Prédiction ouverte** : P-2026-05-30-4 (position « llms.txt non utilisé » maintenue par Google d'ici fin 2026).
+
+### Notes 2026-05-30-v5
+
+- **Recoupement (5/5)** : info du jour (formats publicitaires Gemini dans AI Mode, GML du 20 mai) sur 2 sources indépendantes, dont la primaire blog.google + Search Engine Land (seed historique). Brèves : OpenAI ads (SEL x2 + SEJ), divergence citations (Averi + Profound, direction recoupée), Ahrefs 38 % (Ahrefs + SEJ), FAQ (doc officielle Google Search Central). Une seule info du corps tient sur une source unique : la dépréciation FAQ, mais c'est une doc officielle de l'éditeur lui-même (recoupement inutile), citation textuelle.
+- **Angle (4/5)** : la publicité payante dans la réponse générative n'avait pas été traitée. Distinguée explicitement de v3 (checkout agentique organique via UCP) : ici l'angle est l'emplacement payé étiqueté « Sponsored », et la distinction citation organique / achat d'espace. Le rapprochement Google (GML) + OpenAI (ChatGPT ads) sur le même principe d'étiquetage est l'apport propre de l'édition.
+- **Doctrine (4/5)** : lien réel vers `aeo` (la publicité ne remplace pas la citation organique : deux voies distinctes) et `agentic-search` (paiement natif UCP dans la réponse = être sélectionné pour transiger). Lien non décoratif mais l'actu publicitaire n'est pas au cœur de la doctrine GEO actuelle, d'où 4 et non 5.
+- **Piège fraîcheur géré** : chiffre 11 % (Averi) explicitement présenté comme mono-étude ; seule la direction (faible recouvrement, sources distinctes) présentée comme corroborée. Caveat méthodologique d'Ahrefs (parsing amélioré → datasets non comparables) repris tel quel dans le corps.
+- **Écarté du corps** : bilan gagnants/perdants du core update de mai (déploiement non clos avant ~4 juin, directive : attendre ≥1 semaine après la fin) ; chiffres d'audience I/O (2,5 Md MAU AIO, AI Mode 1 Md) redite v2/v4.
+- **Prédictions ouvertes** : P-2026-05-30-5 (un format pub AI Mode sorti du stade annonce d'ici fin 2026) et P-2026-05-30-6 (recouvrement citations ChatGPT/Perplexity < 25 % confirmé d'ici fin 2026).

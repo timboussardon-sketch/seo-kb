@@ -10,6 +10,14 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 
 (vide pour l'instant)
 
+## Run v5 (2026-05-30) — pour la revue hebdo
+
+- **Cinquième édition le même jour.** v5 (publicité payante dans AI Mode / GML) produite après v2/v3/v4. Question de cadence et de versionnage toujours ouverte (voir run v4). Confirmer si une édition fait référence pour la journée.
+- **Frontière sujet pub vs commerce agentique** : v5 traite la publicité payante dans la réponse (formats Gemini étiquetés Sponsored, GML 20 mai), distincte du checkout agentique organique de v3 (UCP/Universal Cart). J'ai jugé la distinction suffisante pour ne pas être une redite. À confirmer.
+- **FAQ rich results dépréciés** sourcé sur une seule source (doc officielle Google Search Central, citation textuelle). J'ai considéré qu'une doc officielle de l'éditeur lui-même n'exige pas de recoupement à 2 sources indépendantes. Valider cette règle : doc primaire officielle de l'éditeur = recoupement non requis ?
+- **Valider 3 nouvelles sources explore** : `ahrefs` (0.8, études quantitatives primaires, candidate forte au passage exploit), `averi` (0.62, étude 680M citations), `tryprofound` (0.6, profils de citation par moteur). Toutes corroborées. À confirmer/retirer.
+- **Chiffre 11 % (Averi)** publié comme mono-étude flaguée, direction seule recoupée (Profound + Semrush). Bon réflexe ou fallait-il l'écarter complètement du corps faute de 2e source chiffrée indépendante ? Arbitrage de seuil.
+
 ## Run v4 (2026-05-30) — pour la revue hebdo
 
 - **Trois éditions le même jour, est-ce voulu ?** v2 (Information Agents), v3 (Universal Cart), v4 (llms.txt) ont été produites le 2026-05-30. La cadence prévue est 2/jour en semaine. Confirmer la politique de versionnage et si une de ces éditions fait référence.
@@ -40,6 +48,8 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 - **2026-05-30 (v3)** : `cloudflare-radar` (blog.cloudflare.com / Radar) ajoutée en `explore`, trust 0.85, données primaires crawl-to-refer corroborées par TechnologyChecker + SEOmator. `similarweb-geo` (similarweb.com/blog/marketing/geo) en `explore`, trust 0.78, clickstream. `seer-interactive` (seerinteractive.com/insights) en `explore`, trust 0.75, études conversion. Les trois au-dessus du seuil d'auto-ajout (0.6 + corroboration). À confirmer/retirer en revue hebdo. Note vigilance fraîcheur enregistrée dans le registre pour Seer et Cloudflare (agrégateurs qui redatent en 2026 des études 2025).
 
 - **2026-05-30 (v4)** : `theseocommunity` (theseocommunity.com) ajoutée en `explore`, trust 0.6 ; a porté l'étude SE Ranking (39 000 domaines), la citation Mueller et l'incident d'apparition du fichier. `getpassionfruit` (getpassionfruit.com) ajoutée en `explore`, trust 0.6 ; guidance llms.txt 2026 détaillée. Les deux corroborées par Search Engine Land sur la position de Google. À confirmer/retirer en revue hebdo.
+
+- **2026-05-30 (v5)** : `ahrefs` (ahrefs.com/blog) ajoutée en `explore`, trust 0.8 ; étude quantitative primaire sur les citations AI Overviews vs top-10 organique (863k SERP, 4M URL), corroborée par SEJ. Source SEO de référence, candidate forte au passage `exploit`. `averi` (averi.ai) ajoutée en `explore`, trust 0.62 ; étude 680M citations (11 % recouvrement ChatGPT/Perplexity), chiffre mono-étude, direction corroborée par `tryprofound`. `tryprofound` (tryprofound.com) ajoutée en `explore`, trust 0.6 ; profils de citation par moteur. Les trois à confirmer/retirer en revue hebdo.
 
 ## Propositions doctrine (à valider en revue hebdo, non appliquées)
 
