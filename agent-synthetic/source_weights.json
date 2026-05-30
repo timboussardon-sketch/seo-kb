@@ -1,0 +1,17 @@
+{
+  "_comment": "Poids courants par source, derives de source_registry.jsonl par l'agent 9. 1.0 = neutre. >1 privilegie, <1 deprioritise. Reecrit a chaque calibration.",
+  "updated": "2026-05-30",
+  "weights": {
+    "google-search-central": 1.0,
+    "the-keyword": 1.0,
+    "bing-webmaster": 1.0,
+    "search-engine-land": 1.0,
+    "search-engine-journal": 1.0,
+    "search-engine-roundtable": 1.0,
+    "techcrunch-ai": 1.0,
+    "the-verge-ai": 1.0,
+    "ars-technica": 1.0,
+    "reddit-seo": 1.0,
+    "hacker-news": 1.0
+  }
+}
