@@ -17,11 +17,12 @@ legacy_root_files: deprecated
 #   2. L'agent ÉCRIT uniquement dans la nouvelle structure.
 #   3. Les fichiers legacy racine ne sont supprimés qu'après 2-3 runs stables sur v2.
 migration:
-  status: in-progress
-  reads: new-first-then-legacy
+  status: done                      # migration supervisée le 2026-05-30, validée par validate.sh
+  reads: new-first-then-legacy      # fallback legacy conservé dans le skill par sécurité
   writes: new-only
-  legacy_cleanup_after_stable_runs: 3
-  stable_runs_done: 0
+  legacy_root_files_removed: true   # supprimés en un passage supervisé (plus de double mémoire)
+  reconciled_cloud_run: "2026-05-30-cloud"
+  stable_runs_done: 1               # le run cloud du 2026-05-30 (tournait en v1, appris fondu en v2)
 
 # Validation : tout .jsonl doit parser ligne par ligne avant commit (voir validate.sh).
 integrity:
