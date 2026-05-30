@@ -3,16 +3,19 @@
   "updated": "2026-05-30",
   "weights": {
     "google-search-central": 1.1,
-    "the-keyword": 1.1,
+    "the-keyword": 1.15,
     "bing-webmaster": 1.0,
-    "search-engine-land": 1.0,
-    "search-engine-journal": 1.05,
+    "search-engine-land": 1.1,
+    "search-engine-journal": 1.1,
     "search-engine-roundtable": 1.0,
     "techcrunch-ai": 1.0,
     "the-verge-ai": 1.0,
     "ars-technica": 1.0,
     "reddit-seo": 1.0,
     "hacker-news": 1.0,
-    "lumar": 1.0
+    "lumar": 1.05,
+    "cloudflare-radar": 1.2,
+    "seer-interactive": 1.05,
+    "similarweb-geo": 1.1
   }
 }
