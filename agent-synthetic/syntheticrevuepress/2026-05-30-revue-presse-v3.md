@@ -38,7 +38,7 @@ Je le dis depuis un moment : on ne vend plus du trafic, on vend de la performanc
 
 Le vrai sujet, c'est de ne pas se faire désintermédier sans s'en rendre compte. Ça démarre aux États-Unis sur quelques verticaux, mais ça arrivera chez nous, et l'hôtel et la livraison de repas passeront avant le reste. Si vous vendez en ligne, le chantier à ouvrir maintenant n'est pas un énième article (ne créez pas une page de plus sur un mot-clé que ChatGPT répond à votre place), c'est l'hygiène de votre flux produit. C'est rasoir, ça demande de la discipline, et c'est exactement pour ça que la plupart ne le feront pas.
 
-Sources : blog.google (Universal Cart) | Search Engine Land (UCP) | Google Merchant Center
+Sources : [blog.google — Universal Cart](https://blog.google/products-and-platforms/products/search/search-io-2026/) | [Search Engine Land — UCP](https://searchengineland.com) | [Google Merchant Center](https://www.google.com/retail/solutions/merchant-center/)
 
 ---
 
@@ -48,19 +48,19 @@ Sources : blog.google (Universal Cart) | Search Engine Land (UCP) | Google Merch
 Google a lancé sa deuxième mise à jour majeure de l'année le 21 mai. Le déploiement prend environ deux semaines, donc la fin se situe vers le 4 juin. Rien d'officiel sur les gagnants et les perdants (Google ne donne jamais la liste), mais le motif que remontent les observateurs est toujours le même : les pages fines, sans données structurées, sans auteur identifié, qui ne répondent pas vraiment à la question, décrochent. Celles avec un balisage propre et une signature d'expert réelle tiennent ou montent.
 
 Le conseil de Google n'a pas bougé : attendez une semaine après la fin du déploiement avant de regarder votre Search Console et de toucher quoi que ce soit. C'est vraiment pas le moment de paniquer sur trois jours de courbe.
-Source : Search Engine Land, Search Engine Journal.
+Sources : [Search Engine Land](https://searchengineland.com) · [Search Engine Journal](https://www.searchenginejournal.com).
 
 **Les robots IA aspirent ton contenu, ils n'en rendent presque rien**
 Cloudflare a publié ses derniers chiffres sur qui aspire le web et qui renvoie du monde. Sur les 28 jours arrêtés au 18 mai, Googlebot reste le plus gros robot mais glisse, de 31,7 % à 27,9 % des requêtes. Le déséquilibre est brutal : Google renvoie environ 1 visiteur pour 5 pages aspirées, là où certains robots d'IA aspirent des dizaines de milliers de pages pour un seul visiteur renvoyé.
 
 En clair, ces robots se servent de votre contenu pour entraîner ou nourrir leurs réponses, et ils vous renvoient une miette. Si votre seule monétisation, c'est la visite, vous travaillez gratuitement pour eux. D'où l'intérêt de devenir la source qu'ils citent, et demain le produit que leur agent achète.
-Source : Cloudflare Radar, TechnologyChecker.
+Sources : [Cloudflare Radar](https://radar.cloudflare.com) · [blog Cloudflare](https://blog.cloudflare.com) · [TechnologyChecker](https://technologychecker.io/blog/chatgpt-statistics).
 
 **Le trafic IA convertit mieux que l'organique, mais reste une goutte d'eau**
 Petit rappel qui prend tout son sens maintenant que l'agent passe à la caisse. Une étude de Seer Interactive sur un client B2B (données fin 2024 à printemps 2025) mesurait 15,9 % de conversion sur les visiteurs venus de ChatGPT, contre 1,76 % pour l'organique Google. Les données de clickstream 2026 de Similarweb vont dans le même sens : sessions plus longues, plus d'achats. Le piège, c'est le volume. Ce même trafic IA pesait 0,07 % des sessions, soit 1 370 conversions face à près de 14 millions de sessions organiques.
 
 Donc non, vous ne lâchez pas l'organique (on est d'accord). Mais vous arrêtez de juger un canal à son volume. Un visiteur qui arrive avec une intention d'achat déjà mûrie par une IA vaut dix curieux.
-Source : Seer Interactive, Similarweb.
+Sources : [Seer Interactive](https://www.seerinteractive.com/insights) · [Similarweb](https://www.similarweb.com/blog/marketing/geo/).
 
 ---
 
