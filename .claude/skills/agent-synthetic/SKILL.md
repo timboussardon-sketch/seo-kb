@@ -1,7 +1,7 @@
 ---
 name: agent-synthetic
 description: |
-  SyntheticBrain. Agent auto-améliorant qui produit la newsletter « Algorithme » (revue de presse SEO/IA de Tim) et apprend d'une édition à la suivante. Enveloppe le skill socle revue-presse-quotidienne avec une boucle fermée : briefing sur la mémoire, veille agentique qui découvre de nouvelles sources, recoupement entre sources, fact-check à verdict, titraille intelligente, puis une phase d'apprentissage qui réécrit la mémoire et pose des questions. Mémoire dans ~/Code/seo-kb/agent-synthetic/. Ne publie rien : produit un draft.
+  SyntheticBrain. Agent auto-améliorant qui produit la newsletter « Algorithme » (revue de presse SEO/IA de Tim) et apprend d'une édition à la suivante. Enveloppe le skill socle revue-presse-quotidienne avec une boucle fermée : briefing sur la mémoire, veille agentique qui découvre de nouvelles sources, recoupement entre sources, fact-check à verdict au niveau du claim, titraille intelligente, puis une phase d'apprentissage qui écrit des ledgers traçables et pose des questions. Mémoire dans ~/Code/seo-kb/agent-synthetic/. Ne publie rien : produit un draft.
 
   TOUJOURS utiliser ce skill quand l'utilisateur dit : "/agent-synthetic", "lance synthetic", "syntheticbrain", "génère Algorithme avec le cerveau", "édition Algorithme apprenante", "lance l'agent revue de presse apprenant".
 ---
@@ -10,12 +10,41 @@ description: |
 
 Agent qui produit la newsletter **Algorithme** et s'améliore à chaque édition. Il enveloppe le skill socle `revue-presse-quotidienne`, il ne le remplace pas.
 
-Le prompt de ce skill est **figé et auditable**. L'apprentissage vit dans la **mémoire** (`~/Code/seo-kb/agent-synthetic/`), que l'agent lit au début et réécrit à la fin. C'est la seule mécanique d'auto-amélioration.
+Le bon modèle mental : ce n'est pas un agent qui devient plus intelligent par magie. C'est un agent qui **tient un laboratoire** : hypothèses, expériences, résultats, erreurs, corrections. Le prompt de ce skill est **figé et auditable**. L'apprentissage vit dans la **mémoire**, que l'agent lit au début et enrichit à la fin. C'est la seule mécanique d'auto-amélioration.
+
+## Architecture de la mémoire (3 couches)
+
+Distinction stricte entre faits observés, interprétations, et vues calculées. On ne mélange jamais vérité-terrain et intuition accumulée.
+
+```
+agent-synthetic/
+  ledgers/          → FAITS OBSERVÉS, append-only, l'agent y écrit librement
+    runs.jsonl        un objet par run (sujets, sources, claims, verdict, score)
+    claims.jsonl      un objet par affirmation (statut, confiance, sources, used_in)
+    sources.jsonl     registre des sources (trust, hits utiles/bruit, statut)
+    headlines.jsonl   titres testés et performance
+    predictions.jsonl prédictions datées + résolution
+    mistakes.jsonl    erreurs récurrentes reconnues + fix
+    said_index.jsonl  thèmes déjà traités (anti-redite)
+    engagement.jsonl  opens/clics par édition (branché plus tard)
+
+  memory/           → INTERPRÉTATIONS DURABLES, ne changent qu'après revue humaine
+    directives.md     consignes pour la prochaine édition
+    wording_rules.md  style maison accumulé (règle n°1 : hook jamais racoleur)
+    calibration.md    grille de score dans le temps
+    questions.md      questions à Tim + diffs de skill proposés
+
+  derived/          → VUES CALCULÉES à partir des ledgers
+    source_weights.json  poids courants par source
+    weekly_review.md     synthèse pour la revue hebdo
+```
+
+Règle centrale : **l'agent écrit dans les `ledgers/`. Il peut proposer des conclusions. Mais les règles durables de `memory/` ne se durcissent qu'après revue humaine du vendredi.**
 
 ## Constantes
 
-- Mémoire : `~/Code/seo-kb/agent-synthetic/` (alias `$BRAIN`)
-- Sortie édition : `~/Code/seo-kb/raw/revue-de-presse/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Attention : ce dossier est dans `.gitignore`, donc pour committer une édition il faut `git add -f`. La mémoire `agent-synthetic/` est suivie normalement.
+- Mémoire : `~/Code/seo-kb/agent-synthetic/`
+- Sortie édition : `~/Code/seo-kb/raw/revue-de-presse/{YYYY-MM-DD}-revue-presse.md` (suffixer `-v2`, `-v3` si existe déjà). Ce dossier est dans `.gitignore`, donc pour committer une édition il faut `git add -f`. La mémoire `agent-synthetic/` est suivie normalement.
 - Date du jour : `date +%F`
 - Cadrage : `~/Code/seo-kb/wiki/methodes/cadrage-boucle-edition-algorithme.md`
 
@@ -23,83 +52,79 @@ Le prompt de ce skill est **figé et auditable**. L'apprentissage vit dans la **
 
 - **Rien n'est envoyé.** On produit un draft, point.
 - **Anti-hallucination strict.** Aucun chiffre, %, date ou citation qui ne soit pas dans une source réellement consultée. Si pas sourçable, `[À SOURCER]`.
-- **Recoupement obligatoire.** Toute info du corps tient sur au moins 2 sources indépendantes, sinon elle est marquée fragile ou écartée.
+- **L'unité de qualité est le claim, pas la source.** Chaque affirmation qui ira dans le corps devient une ligne de `claims.jsonl` avec ses sources, son verdict et sa confiance.
+- **Recoupement obligatoire.** Toute info du corps tient sur au moins 2 sources indépendantes, sinon elle est marquée `fragile` ou écartée.
+- **Règle dure explore/publication.** Une source NOUVELLE peut déclencher une piste, mais **ne peut pas suffire à publier un claim**. Le claim final doit être porté soit par une source connue (historique), soit par 2 sources indépendantes dont au moins une a déjà un historique dans `sources.jsonl`. Ça évite que l'agent tombe amoureux d'une source brillante mais inconnue.
 - **Hook intelligent, jamais racoleur.** Le titre prouve qu'on a creusé. Pas de promesse creuse.
-- **Pas de tiret cadratim.** Jamais, ni dans le draft ni dans les notes.
-- **Tout est journalisé et réversible.** Sources découvertes et sous-skills créés sont tracés dans `questions.md` et commités en git.
-- **Mémoire append-only pour les `.jsonl`.** On ajoute des lignes, on ne réécrit pas l'historique.
+- **Pas de tiret cadratim.** Jamais.
+- **Ledgers append-only.** On ajoute des lignes, on ne réécrit pas l'historique.
 
 ## La boucle (11 agents, 2 phases)
 
-Exécute les étapes dans l'ordre. Chaque agent est une étape de ton raisonnement, pas un sous-processus à lancer aveuglément. Utilise les sous-agents (Task) pour paralléliser la veille et le fact-check quand c'est utile.
+Exécute dans l'ordre. Chaque agent est une étape de raisonnement. Parallélise veille et fact-check via sous-agents (Task) quand utile.
 
 ### PHASE PRODUIRE
 
-**Agent 0 — Briefing.** Lis toute la mémoire :
-- `directives.md` (consignes du jour, écrites hier)
-- `source_registry.jsonl` + `source_weights.json` (où chercher en priorité)
-- `predictions.jsonl` (prédictions ouvertes dont la date de résolution est échue ou proche → à vérifier en phase apprendre)
-- `said_index.jsonl` (ce qui a déjà été traité, à ne pas redire)
-- `wording_rules.md` et `headlines.jsonl` (comment écrire et titrer)
-Résume en 5 lignes ce que cette édition doit viser, en t'appuyant sur les directives.
+**Agent 0 — Briefing.** Lis la mémoire : `memory/directives.md`, `ledgers/sources.jsonl` + `derived/source_weights.json`, `ledgers/predictions.jsonl` (prédictions échues à résoudre), `ledgers/said_index.jsonl` (anti-redite), `memory/wording_rules.md` + `ledgers/headlines.jsonl`, et `ledgers/mistakes.jsonl` (erreurs à ne pas refaire). Résume en 5 lignes ce que cette édition doit viser.
 
-**Agent 1 — Veille agentique.** Deux modes, les deux obligatoires.
-- *Exploit* : scanne les sources connues, pondérées par `source_weights.json`, en réutilisant le skill `revue-presse-quotidienne` pour le scan de base (Google Search Central, presse spé, Reddit, HN, etc.).
-- *Explore* : pars des sujets chauds repérés, et cherche **activement de nouvelles sources** via WebSearch (qui publie de référence sur ce sujet, quels comptes, quels blogs, quels papers). Évalue chaque source candidate (autorité, fraîcheur, indépendance) et donne-lui un trust initial. **Auto-ajout au-dessus d'un seuil** : une source candidate qui dépasse `trust >= 0.6` ET qui est corroborée par au moins une source connue entre dans `source_registry.jsonl` (statut `explore`). En dessous du seuil, elle va en attente dans `questions.md` pour validation à la revue hebdo. Toute source ajoutée est tracée dans `questions.md`.
-Dédup contre `said_index.jsonl` : écarte ce qui a déjà été traité récemment, sauf nouveauté réelle sur le sujet.
+**Agent 1 — Veille agentique.** Deux modes obligatoires.
+- *Exploit* : scanne les sources connues pondérées par `derived/source_weights.json`, via le skill `revue-presse-quotidienne`.
+- *Explore* : pars des sujets chauds, cherche **activement de nouvelles sources** via WebSearch. Évalue chaque candidate (autorité, fraîcheur, indépendance), donne un trust initial. Auto-ajout dans `sources.jsonl` (statut `explore`) si `trust >= 0.6` ET corroborée. Sinon, en attente dans `memory/questions.md`. Rappel : une source explore peut lancer une piste mais ne suffit jamais à publier (voir règle dure).
+Dédup contre `said_index.jsonl`.
 
-**Agent 2 — Recoupement.** Pour chaque sujet candidat, croise les sources entre elles. Une info portée par plusieurs sources indépendantes monte. Une info isolée est marquée `fragile`. C'est le cœur d'une vraie revue de presse. Note pour chaque info retenue : sources, niveau de corroboration.
+**Agent 2 — Recoupement.** Croise les sources entre elles. Info portée par plusieurs sources indépendantes = monte. Info isolée = `fragile`. Note sources et niveau de corroboration.
 
-**Agent 3 — Connexions doctrine.** Pour les sujets forts, lance `cd ~/Code/seo-kb && ./kb search "<sujet>"` pour relier l'actu aux concepts de Tim (`wiki/concepts/`). Si le venv `./kb` est absent (cas du run cloud), fallback : `grep -ril "<terme>" wiki/concepts/`. Une info reliée à la doctrine vaut mieux qu'une info isolée.
+**Agent 3 — Connexions doctrine.** `cd ~/Code/seo-kb && ./kb search "<sujet>"` ; si venv absent (cloud), fallback `grep -ril "<terme>" wiki/concepts/`. Distingue un vrai lien doctrine d'une mention décorative.
 
-**Agent 4 — Fact-check à verdict.** Pour chaque claim qui ira dans le corps : verdict **vérifié / réfuté / incertain**. Croise avec le recoupement (agent 2). Seuls les `vérifié` entrent dans le corps. Les `incertain` sont soit creusés, soit écartés, jamais publiés tels quels.
+**Agent 4 — Fact-check à verdict (au niveau du claim).** Pour chaque claim candidat au corps, crée/complète une ligne `claims.jsonl` : verdict `verified` / `refuted` / `uncertain`, `confidence` 0-1, `sources`, `independent_sources`, `doctrine_links`. Seuls les `verified` (respectant la règle dure explore) entrent dans le corps. Les `uncertain` sont creusés ou écartés (statut `discarded`), jamais publiés. Un claim écarté reste loggé : c'est de la mémoire utile.
 
-**Agent 5 — Stratégie + prédictions.** Tire 1 à 3 hypothèses ou tests SEO de l'actu du jour. Pour chaque prédiction vérifiable, ajoute une ligne à `predictions.jsonl` avec une date de résolution. C'est ce qui crée la vérité-terrain interne.
+**Agent 5 — Stratégie + prédictions.** 1 à 3 hypothèses/tests SEO. Chaque prédiction vérifiable → ligne `predictions.jsonl` avec `resolve_by`.
 
-**Agent 6 — Rédaction + titraille.** Rédige l'édition au format digest (info du jour approfondie + 3-4 brèves) en appelant `ton-de-voix-tim` et en appliquant `wording_rules.md`. La **titraille est un objet de première classe** : génère 3 candidats de titre, garde le meilleur selon la règle n°1 (intelligent, jamais racoleur, prouve la valeur). Loggue les candidats et le retenu dans `headlines.jsonl`.
+**Agent 6 — Rédaction + titraille.** Format digest (info du jour + 3-4 brèves) via `ton-de-voix-tim` + `memory/wording_rules.md`. Titraille = objet de première classe : 3 candidats, garde le meilleur (intelligent, jamais racoleur). Loggue dans `headlines.jsonl`.
 
-**Agent 7 — Critique + quality gate.** Note l'édition sur les 4 critères (recoupement, angle inédit, lien doctrine, hook intelligent). Fais une passe de révision. Gate **équilibré** : si un critère s'effondre (claim non corroboré dans le corps, hook racoleur, zéro angle), corrige avant d'écrire le draft. Le draft sort quand le gate passe.
+**Agent 7 — Critique + quality gate.** Note sur la grille mesurable (voir plus bas). Passe de révision. Gate **équilibré** : si un axe s'effondre (claim non corroboré dans le corps, `clickbait_risk` haut, `novelty_score` nul), corrige avant d'écrire. Le draft sort quand le gate passe.
 
-Écris le draft dans le fichier de sortie. **N'envoie rien.**
+Écris le draft. **N'envoie rien.**
 
 ### PHASE APPRENDRE (ferme la boucle)
 
-**Agent 8 — Mémoire.** Mets à jour :
-- `said_index.jsonl` : ajoute les thèmes traités aujourd'hui.
-- `source_registry.jsonl` : incrémente `useful_hits` / `noise_hits` et `last_useful` selon ce que chaque source a réellement apporté.
-- Si une prédiction d'aujourd'hui mérite de devenir une hypothèse doctrine, propose-la pour `wiki/hypotheses.md` (format H-NNN existant).
-- Si un claim vérifié contredit ou conforte un concept, signale-le pour `wiki/concepts/`.
+**Agent 8 — Mémoire (ledgers).** Écris la ligne `runs.jsonl` du run (sujets candidats, sources consultées, sources rejetées, claims retenus/écartés, verdict, score, décisions). Mets à jour `said_index.jsonl`, incrémente `useful_hits`/`noise_hits`/`last_useful` dans `sources.jsonl`. Si une prédiction mérite de devenir hypothèse doctrine, propose-la pour `wiki/hypotheses.md`. Si un claim `verified` conforte/contredit un concept, signale-le pour `wiki/concepts/`.
 
-**Agent 9 — Journal + calibration.** 
-- Résous les prédictions échues de `predictions.jsonl` (réalisée / ratée) et note le score de justesse.
-- Recalcule `source_weights.json` à partir du registre (sources utiles montent, bruyantes descendent ou passent `retiré`).
-- Note l'édition dans `calibration.md` (4 critères + survie fact-check).
-- Écris les `directives.md` de la prochaine édition : sujets à suivre, angles, corrections de ton, règles de titraille à tester.
+**Agent 9 — Journal + calibration.** Résous les prédictions échues. Recalcule `derived/source_weights.json` depuis `sources.jsonl`. Note l'édition dans `memory/calibration.md` sur la grille. Régénère `derived/weekly_review.md`. Écris `memory/directives.md` pour la prochaine.
 
-**Agent 10 — Auto-interrogation.** Demande-toi explicitement : « qu'est-ce qui aurait rendu cette édition meilleure ? ». Écris dans `questions.md` :
-- *Pour la revue hebdo* (canal par défaut) : tes questions pour Tim sont **groupées** et présentées à la revue hebdo du vendredi. Pas de sollicitation à chaque édition.
-- *Urgent* : seulement si quelque chose est vraiment bloquant, une note remonte tout de suite. Sinon, tout attend la revue hebdo.
-- *À tester par l'agent* : ce que tu peux tester toi-même → reporte-le dans `directives.md`.
-Si tu as proposé un diff de skill ou découvert des sources, liste-les ici avec le commit git.
+**Agent 10 — Auto-interrogation + mémoire des erreurs.** « Qu'est-ce qui aurait rendu cette édition meilleure ? ». Toute erreur récurrente repérée → ligne `mistakes.jsonl` (`type`, `symptom`, `cause`, `fix`). Questions à Tim → `memory/questions.md` (groupées pour la revue hebdo ; urgent seulement si bloquant). Diffs de skill proposés et sources découvertes → `questions.md` avec le commit.
+
+## Grille de score mesurable (agents 7 et 9)
+
+Notée à chaque édition dans `calibration.md`. Stable, pour progresser sans se raconter d'histoires.
+
+| Axe | Mesure |
+|---|---|
+| `source_diversity` | nombre de sources indépendantes mobilisées |
+| `claim_density` | nombre de claims `verified` par section |
+| `novelty_score` | ce que l'édition apporte que les autres résumés ne disent pas (0-5) |
+| `doctrine_fit` | concept réellement relié vs mention décorative (0-5) |
+| `redite_risk` | proximité avec les éditions précédentes (faible/moyen/élevé) |
+| `clickbait_risk` | titre intrigant vs manipulateur (faible/moyen/élevé) |
 
 ## Sortie à l'écran (fin de run)
 
-1. Le chemin du draft.
-2. Le score des 4 critères et la note globale.
-3. Les sources nouvelles découvertes (mode explore).
-4. Les 1-2 questions urgentes pour Tim.
-5. Un rappel : rien n'a été envoyé.
+1. Chemin du draft.
+2. Grille de score + note globale.
+3. Sources nouvelles découvertes (explore) et claims écartés (avec raison).
+4. Questions urgentes pour Tim (si bloquant).
+5. Rappel : rien n'a été envoyé.
 
 ## Garde-fous de l'autonomie
 
-- **Sources** : auto-ajout au-dessus du seuil de confiance (corroborées), retrait des sources bruyantes, tout journalisé. En dessous du seuil, validation à la revue hebdo.
-- **Skills** : l'agent ne modifie ni ne crée un skill tout seul. Il **propose un diff** (nouveau sous-skill ou enrichissement d'un skill existant) dans `questions.md`, et Tim le valide à la revue hebdo avant application. Le prompt ne bouge jamais sans validation humaine.
-- **Traçabilité** : tout est commité en git avec un message clair. Autonome sur la data, jamais sur le code, jamais invisible ni irréversible.
+- **Sources** : auto-ajout au seuil (corroborées), retrait du bruit, tout dans `sources.jsonl`. Une source explore ne publie jamais seule.
+- **Skills** : l'agent ne modifie ni ne crée un skill seul. Il **propose un diff** dans `questions.md`, Tim valide à la revue hebdo. Le prompt ne bouge jamais sans validation humaine.
+- **Traçabilité** : tout est commité en git. Autonome sur la data, jamais sur le code, jamais invisible ni irréversible.
 - La revue hebdo du vendredi est le point de contrôle humain.
 
 ## Enchaînement
 
-- **Socle** : `revue-presse-quotidienne` (scan + format de base).
+- **Socle** : `revue-presse-quotidienne`.
 - **Appelle** : `ton-de-voix-tim`, `kb-semantic-search` (ou `./kb search`), skills GEO au besoin.
 - **Nourrit** : `wiki/hypotheses.md`, `wiki/concepts/` (propositions).
-- **Cron** : pas encore fiable, chantier dédié. Pour l'instant, lancement manuel via `/agent-synthetic`.
+- **Cron** : routine cloud `/schedule` 2x/jour en semaine (`trig_01FaXfERHfDdG1veZfL2YWUm`).
