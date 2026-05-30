@@ -41,6 +41,30 @@ agent-synthetic/
 
 Règle centrale : **l'agent écrit dans les `ledgers/`. Il peut proposer des conclusions. Mais les règles durables de `memory/` ne se durcissent qu'après revue humaine du vendredi.**
 
+## Intégrité du système (lire avant tout)
+
+SyntheticBrain est un système distribué entre local, cloud, git et l'humain. Avant d'écrire, il faut savoir où écrire, au bon moment, sans écraser une autre vérité.
+
+**1. Manifest.** Lis `agent-synthetic/manifest.yml` en premier. Il dit quelle mémoire fait foi (`schema_version: 2`), où lire, où écrire, l'état de migration.
+
+**2. Lock de run (`agent-synthetic/run.lock`).** Au lancement :
+- Si `run.lock` existe et date de moins de 3h → un autre run est en cours. **Passe en lecture seule** (tu peux lire la mémoire mais tu n'écris ni édition ni ledger), signale-le et arrête.
+- Si `run.lock` existe et date de plus de 3h → lock probablement orphelin. Signale-le et demande validation avant de forcer.
+- Sinon, crée le lock :
+  ```bash
+  printf '{"started":"%s","branch":"%s","head":"%s","context":"%s"}\n' \
+    "$(date -Iseconds)" "$(git branch --show-current)" "$(git rev-parse --short HEAD)" "cloud|local" > agent-synthetic/run.lock
+  ```
+- À la toute fin (après commit/push), **supprime le lock** : `rm -f agent-synthetic/run.lock`. Ne le committe jamais (il est dans `.gitignore`).
+
+**3. Lecture new-first, fallback legacy.** Lis la nouvelle structure (`ledgers/`, `memory/`, `derived/`) en priorité. Si un fichier attendu n'existe pas encore, fallback sur l'ancien emplacement racine (`agent-synthetic/<fichier>`). N'écris JAMAIS dans les fichiers racine legacy.
+
+**4. Écriture new-only.** Toutes tes écritures vont dans `ledgers/`, `memory/`, `derived/`. Le manifest `migration.stable_runs_done` s'incrémente à chaque run propre ; les fichiers legacy racine ne seront supprimés qu'après 3 runs stables (tâche humaine ou de fin de run, jamais automatique avant le seuil).
+
+**5. capture_mode.** Toute ligne de `runs.jsonl` et `claims.jsonl` porte un champ `capture_mode` : `native` (capturé pendant le run, en temps réel) ou `reconstructed_from_run` (reconstruit après coup). Ne jamais confondre les deux : un claim natif a traversé le fact-check en direct, un claim reconstruit non.
+
+**6. Validation avant commit.** Lance `./agent-synthetic/validate.sh`. S'il sort non-zéro, **ne commit pas** : corrige la ligne JSONL cassée d'abord. Les `.jsonl` sont le cerveau transactionnel, une ligne cassée et la mémoire devient suspecte.
+
 ## Constantes
 
 - Mémoire : `~/Code/seo-kb/agent-synthetic/`
@@ -65,7 +89,7 @@ Exécute dans l'ordre. Chaque agent est une étape de raisonnement. Parallélise
 
 ### PHASE PRODUIRE
 
-**Agent 0 — Briefing.** Lis la mémoire : `memory/directives.md`, `ledgers/sources.jsonl` + `derived/source_weights.json`, `ledgers/predictions.jsonl` (prédictions échues à résoudre), `ledgers/said_index.jsonl` (anti-redite), `memory/wording_rules.md` + `ledgers/headlines.jsonl`, et `ledgers/mistakes.jsonl` (erreurs à ne pas refaire). Résume en 5 lignes ce que cette édition doit viser.
+**Agent 0 — Briefing.** D'abord l'intégrité : lis `manifest.yml`, gère le `run.lock` (section Intégrité ci-dessus). Puis lis la mémoire (new-first, fallback legacy) : `memory/directives.md`, `ledgers/sources.jsonl` + `derived/source_weights.json`, `ledgers/predictions.jsonl` (prédictions échues à résoudre), `ledgers/said_index.jsonl` (anti-redite), `memory/wording_rules.md` + `ledgers/headlines.jsonl`, et `ledgers/mistakes.jsonl` (erreurs à ne pas refaire). Résume en 5 lignes ce que cette édition doit viser.
 
 **Agent 1 — Veille agentique.** Deux modes obligatoires.
 - *Exploit* : scanne les sources connues pondérées par `derived/source_weights.json`, via le skill `revue-presse-quotidienne`.
@@ -76,7 +100,7 @@ Dédup contre `said_index.jsonl`.
 
 **Agent 3 — Connexions doctrine.** `cd ~/Code/seo-kb && ./kb search "<sujet>"` ; si venv absent (cloud), fallback `grep -ril "<terme>" wiki/concepts/`. Distingue un vrai lien doctrine d'une mention décorative.
 
-**Agent 4 — Fact-check à verdict (au niveau du claim).** Pour chaque claim candidat au corps, crée/complète une ligne `claims.jsonl` : verdict `verified` / `refuted` / `uncertain`, `confidence` 0-1, `sources`, `independent_sources`, `doctrine_links`. Seuls les `verified` (respectant la règle dure explore) entrent dans le corps. Les `uncertain` sont creusés ou écartés (statut `discarded`), jamais publiés. Un claim écarté reste loggé : c'est de la mémoire utile.
+**Agent 4 — Fact-check à verdict (au niveau du claim).** Pour chaque claim candidat au corps, crée/complète une ligne `claims.jsonl` avec `capture_mode: "native"` : verdict `verified` / `refuted` / `uncertain`, `confidence` 0-1, `sources`, `independent_sources`, `doctrine_links`. Seuls les `verified` (respectant la règle dure explore) entrent dans le corps. Les `uncertain` sont creusés ou écartés (statut `discarded`), jamais publiés. Un claim écarté reste loggé : c'est de la mémoire utile.
 
 **Agent 5 — Stratégie + prédictions.** 1 à 3 hypothèses/tests SEO. Chaque prédiction vérifiable → ligne `predictions.jsonl` avec `resolve_by`.
 
@@ -88,11 +112,13 @@ Dédup contre `said_index.jsonl`.
 
 ### PHASE APPRENDRE (ferme la boucle)
 
-**Agent 8 — Mémoire (ledgers).** Écris la ligne `runs.jsonl` du run (sujets candidats, sources consultées, sources rejetées, claims retenus/écartés, verdict, score, décisions). Mets à jour `said_index.jsonl`, incrémente `useful_hits`/`noise_hits`/`last_useful` dans `sources.jsonl`. Si une prédiction mérite de devenir hypothèse doctrine, propose-la pour `wiki/hypotheses.md`. Si un claim `verified` conforte/contredit un concept, signale-le pour `wiki/concepts/`.
+**Agent 8 — Mémoire (ledgers).** Écris la ligne `runs.jsonl` du run avec `capture_mode: "native"` (sujets candidats, sources consultées, sources rejetées, claims retenus/écartés, verdict, score, décisions). Mets à jour `said_index.jsonl`, incrémente `useful_hits`/`noise_hits`/`last_useful` dans `sources.jsonl`. Si une prédiction mérite de devenir hypothèse doctrine, propose-la pour `wiki/hypotheses.md`. Si un claim `verified` conforte/contredit un concept, signale-le pour `wiki/concepts/`.
 
 **Agent 9 — Journal + calibration.** Résous les prédictions échues. Recalcule `derived/source_weights.json` depuis `sources.jsonl`. Note l'édition dans `memory/calibration.md` sur la grille. Régénère `derived/weekly_review.md`. Écris `memory/directives.md` pour la prochaine.
 
 **Agent 10 — Auto-interrogation + mémoire des erreurs.** « Qu'est-ce qui aurait rendu cette édition meilleure ? ». Toute erreur récurrente repérée → ligne `mistakes.jsonl` (`type`, `symptom`, `cause`, `fix`). Questions à Tim → `memory/questions.md` (groupées pour la revue hebdo ; urgent seulement si bloquant). Diffs de skill proposés et sources découvertes → `questions.md` avec le commit.
+
+**Clôture du run.** Dans l'ordre : (1) `./agent-synthetic/validate.sh` doit passer, sinon corrige ; (2) incrémente `migration.stable_runs_done` dans `manifest.yml` ; (3) `git add -f` l'édition + `git add agent-synthetic/` (hors `run.lock`) + commit + push ; (4) `rm -f agent-synthetic/run.lock`.
 
 ## Grille de score mesurable (agents 7 et 9)
 

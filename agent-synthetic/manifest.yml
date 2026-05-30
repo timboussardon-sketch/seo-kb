@@ -1,0 +1,39 @@
+# Manifest de schéma SyntheticBrain
+# L'agent lit ce fichier en premier pour savoir quelle mémoire fait foi.
+
+schema_version: 2
+
+source_of_truth:
+  memory: memory/          # interprétations durables, ne changent qu'après revue humaine
+  event_ledgers: ledgers/  # faits observés, append-only
+  derived_views: derived/  # vues calculées à partir des ledgers
+
+# Fichiers historiques à la racine de agent-synthetic/ (schema v1).
+# Lus en fallback tant que la migration n'est pas stable, jamais écrits.
+legacy_root_files: deprecated
+
+# Règle de migration (en cours) :
+#   1. L'agent LIT la nouvelle structure en priorité, fallback sur l'ancienne si absente.
+#   2. L'agent ÉCRIT uniquement dans la nouvelle structure.
+#   3. Les fichiers legacy racine ne sont supprimés qu'après 2-3 runs stables sur v2.
+migration:
+  status: in-progress
+  reads: new-first-then-legacy
+  writes: new-only
+  legacy_cleanup_after_stable_runs: 3
+  stable_runs_done: 0
+
+# Validation : tout .jsonl doit parser ligne par ligne avant commit (voir validate.sh).
+integrity:
+  jsonl_validation: required
+  validator: ./validate.sh
+
+ledgers:
+  runs.jsonl: { capture_mode_field: required }       # native | reconstructed_from_run
+  claims.jsonl: { capture_mode_field: required }
+  sources.jsonl: {}
+  headlines.jsonl: {}
+  predictions.jsonl: {}
+  mistakes.jsonl: {}
+  said_index.jsonl: {}
+  engagement.jsonl: {}

@@ -30,3 +30,6 @@ raw/revue-de-presse/
 
 # Supabase CLI cache
 supabase/.temp/
+
+# SyntheticBrain run lock (jamais committé)
+agent-synthetic/run.lock
