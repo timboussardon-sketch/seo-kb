@@ -7,9 +7,13 @@ status: draft
 edition: synthetic-brain-v1
 ---
 
-# Google met des agents 24/7 entre toi et ton lecteur. Reste la source qu'ils citent.
+# Google met des agents entre vous et votre lecteur. Restez la source qu'ils citent.
 
-Parce que l'on vit dans l'ère du bruit, je sélectionne pour vous ce que je considère comme les meilleures infos SEO / IA du mois pour vous aider à préparer l'évolution du marché.
+**L'essentiel en 4 points**
+- Google lance les « Information Agents » : des agents IA qui surveillent un sujet 24/7 et poussent des synthèses, sans que la personne lise votre page.
+- AI Mode dépasse le milliard d'utilisateurs mensuels ; Gemini 3.5 Flash devient son modèle par défaut mondial.
+- Quand c'est un agent qui lit et résume, le clic devient optionnel et la citation devient la bataille : seule l'info que vous seul détenez vous protège.
+- Deux signaux à suivre : le core update du 21 mai (en cours) et le bloc « Expert Advice » des AI Overviews qui pousse l'avis de première main.
 
 ---
 
@@ -40,11 +44,11 @@ Concrètement, pose-toi une seule question sur chaque page que tu publies : qu'e
 
 ## Aussi sur le radar
 
-**Un nouveau core update est en cours depuis le 21 mai.** Google a confirmé sur son compte Search Central le déploiement du deuxième core update de l'année, étalé sur deux semaines. Pas de blog dédié, pas d'objectif chiffré, la formule habituelle sur le fait de mieux remonter du contenu pertinent. Si tes positions bougent ces jours-ci, regarde avant de toucher quoi que ce soit : un core update n'est pas une pénalité, c'est un recalibrage. (Sources : Search Engine Journal, Search Central.)
+**Un nouveau core update est en cours depuis le 21 mai.** Google a confirmé sur son compte Search Central le déploiement du deuxième core update de l'année, étalé sur deux semaines. Pas de blog dédié, pas d'objectif chiffré, la formule habituelle sur le fait de mieux remonter du contenu pertinent. Si tes positions bougent ces jours-ci, regarde avant de toucher quoi que ce soit : un core update n'est pas une pénalité, c'est un recalibrage. Sources : [Search Engine Journal](https://www.searchenginejournal.com) · [Google Search Central](https://developers.google.com/search/blog).
 
-**Les AI Overviews poussent maintenant un bloc « Expert Advice ».** Depuis le 6 mai, Google a déployé sa plus grosse mise à jour des AI Overviews depuis leur lancement. Les citations s'affichent désormais juste à côté du passage qu'elles soutiennent, et un nouveau bloc met en avant des avis de première main tirés de forums, de réseaux et de sites d'avis. Traduction : l'expérience vécue, racontée par une vraie personne, gagne du terrain sur le contenu lisse. (Source : Lumar.)
+**Les AI Overviews poussent maintenant un bloc « Expert Advice ».** Depuis le 6 mai, Google a déployé sa plus grosse mise à jour des AI Overviews depuis leur lancement. Les citations s'affichent désormais juste à côté du passage qu'elles soutiennent, et un nouveau bloc met en avant des avis de première main tirés de forums, de réseaux et de sites d'avis. Traduction : l'expérience vécue, racontée par une vraie personne, gagne du terrain sur le contenu lisse. Source : [Lumar](https://www.lumar.io/blog/industry-news/).
 
-**ChatGPT s'est mis à renvoyer du clic pour de vrai.** Le 7 mai, OpenAI a changé la façon d'afficher les marques : au lieu de notes de bas de page, le nom de la marque devient un lien cliquable posé directement dans la réponse. Les renvois vers les sites ont bondi dans la semaine qui a suivi. Le trafic IA n'est plus une promesse théorique, il commence à arriver dans les analytics. (Source : analyses de trafic IA, mai 2026.)
+**ChatGPT s'est mis à renvoyer du clic pour de vrai.** Le 7 mai, OpenAI a changé la façon d'afficher les marques : au lieu de notes de bas de page, le nom de la marque devient un lien cliquable posé directement dans la réponse. Les renvois vers les sites ont bondi dans la semaine qui a suivi. Le trafic IA n'est plus une promesse théorique, il commence à arriver dans les analytics. Sources : [Similarweb](https://www.similarweb.com/blog/marketing/geo/) · [TechnologyChecker](https://technologychecker.io/blog/chatgpt-statistics).
 
 ---
 

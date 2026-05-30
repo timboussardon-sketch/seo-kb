@@ -8,7 +8,12 @@ status: draft
 
 # Universal Cart : l'achat par agent sort de la démo
 
-Parce que l'on vit dans l'ère du bruit, je sélectionne pour vous ce que je considère comme les meilleures infos SEO / IA du mois pour vous aider à préparer l'évolution du marché.
+**L'essentiel en 5 points**
+- Google lance Universal Cart : un panier IA unique sur Search, Gemini, YouTube et Gmail, avec un protocole d'achat (UCP) co-construit avec les marques.
+- Le checkout par agent se déploie cet été aux États-Unis ; hôtel et livraison de repas suivront.
+- Le SEO « plaire à l'humain qui scrolle » laisse place à un SEO « être choisissable par une machine » : flux produit, attributs, prix, dispo.
+- Le core update de mai termine son déploiement vers le 4 juin : attendre une semaine avant de lire ses positions.
+- Le trafic IA convertit fort (jusqu'à 15,9 % vs 1,76 % organique) mais reste minuscule en volume : on ne juge plus un canal à son volume.
 
 ---
 

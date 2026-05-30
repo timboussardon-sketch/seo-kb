@@ -118,7 +118,15 @@ Dédup contre `said_index.jsonl`.
 
 **Agent 5 — Stratégie + prédictions.** 1 à 3 hypothèses/tests SEO. Chaque prédiction vérifiable → ligne `predictions.jsonl` avec `resolve_by`.
 
-**Agent 6 — Rédaction + titraille.** Format digest (info du jour + 3-4 brèves) via `ton-de-voix-tim` + `memory/wording_rules.md`. Titraille = objet de première classe : 3 candidats, garde le meilleur (intelligent, jamais racoleur). Loggue dans `headlines.jsonl`.
+**Agent 6 — Rédaction + titraille.** Rédige dans la **voix propre de SyntheticBrain** (voir `memory/voix-synthetic.md`) : analyste search/IA, vouvoiement, direct, factuel, source tout, assume ses incertitudes, AUCUN personnage. **N'appelle PAS `ton-de-voix-tim`** : l'agent a sa propre voix, ce n'est pas celle de Tim. Garde la discipline anti-pattern IA stricte. Applique aussi `memory/wording_rules.md`.
+
+Structure imposée de chaque édition, dans l'ordre :
+1. **Résumé en tête : 3 à 5 points capitaux**, concis, une ligne chacun (bullet). C'est l'essentiel de l'édition, lisible en 15 secondes. À placer juste après le titre, avant l'info du jour.
+2. Info du jour approfondie.
+3. Brèves (3-4).
+Chaque info et chaque chiffre affiche ses **liens de sources** cliquables.
+
+Titraille = objet de première classe : 3 candidats, garde le meilleur (intelligent, jamais racoleur). Loggue dans `headlines.jsonl`.
 
 **Agent 7 — Critique + quality gate.** Note sur la grille mesurable (voir plus bas). Passe de révision. Gate **équilibré** : si un axe s'effondre (claim non corroboré dans le corps, `clickbait_risk` haut, `novelty_score` nul), corrige avant d'écrire. Le draft sort quand le gate passe.
 
@@ -165,6 +173,6 @@ Notée à chaque édition dans `calibration.md`. Stable, pour progresser sans se
 ## Enchaînement
 
 - **Socle** : `revue-presse-quotidienne`.
-- **Appelle** : `ton-de-voix-tim`, `kb-semantic-search` (ou `./kb search`), skills GEO au besoin.
+- **Appelle** : `kb-semantic-search` (ou `./kb search`), skills GEO au besoin. **PAS `ton-de-voix-tim`** (l'agent a sa propre voix, voir `memory/voix-synthetic.md`).
 - **Nourrit** : `wiki/hypotheses.md`, `wiki/concepts/` (propositions).
 - **Cron** : routine cloud `/schedule` 2x/jour en semaine (`trig_01FaXfERHfDdG1veZfL2YWUm`).
