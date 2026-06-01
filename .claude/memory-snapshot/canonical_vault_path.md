@@ -8,7 +8,7 @@ Toujours éditer la SEO KB dans le vault Obsidian canonique : **`/Users/timothee
 
 **Why:** Le 2026-05-02, Tim avait 3 copies du fichier `wiki/briefs/reddit-pour-geo-2026.md` sur son Mac (vault canonique + 2 dossiers `tim-claude-transfer` snapshots de transferts passés). Il lisait depuis une copie obsolète et croyait que mes edits n'avaient pas été appliqués. Les dossiers `tim-claude-transfer` ont été supprimés à sa demande pour éviter la confusion.
 
-**Le 2026-05-04, le repo a été migré de `/Users/timothee/Documents/seo-kb/` vers `/Users/timothee/Code/seo-kb/`** parce que macOS Sequoia bloque les LaunchAgents (cron locaux) qui tentent d'accéder à `~/Documents/` via TCC. Le déplacement vers `~/Code/` (zone non-TCC) débloque les LaunchAgents. **L'ancien path `/Users/timothee/Documents/seo-kb/` n'existe plus** (vérifié 2026-05-16, snapshot resynchronisé sur la mémoire live).
+**Le 2026-05-04, le repo a été migré de `/Users/timothee/Documents/seo-kb/` vers `/Users/timothee/Code/seo-kb/`** parce que macOS Sequoia bloque les LaunchAgents (cron locaux) qui tentent d'accéder à `~/Documents/` via TCC. Le déplacement vers `~/Code/` (zone non-TCC) débloque les 3 LaunchAgents (`revue-presse`, `recap-jour`, `refresh-snapshots`).
 
 **How to apply:**
 - Tous les edits de fichiers markdown SEO/GEO (briefs, concepts, entités, sources, syntheses, etc.) doivent cibler `/Users/timothee/Code/seo-kb/`.
@@ -18,7 +18,7 @@ Toujours éditer la SEO KB dans le vault Obsidian canonique : **`/Users/timothee
 
 **Diagnostic "Tim ne voit pas mon edit" :** quand Tim affirme que les modifs n'apparaissent pas alors que le fichier sur disque est bien à jour, vérifier d'abord :
 1. **Quel vault Obsidian est ouvert** : `cat ~/Library/Application\ Support/obsidian/obsidian.json` — si le path n'est pas `/Users/timothee/Code/seo-kb/`, c'est la cause. Tim doit "Open another vault" sur le bon path.
-2. **Doublons sur le disque** : `find ~ -name "<filename>" 2>/dev/null` pour repérer des copies parallèles (cas du 2026-05-02 : 3 copies entre vault canonique et 2 dossiers `tim-claude-transfer` supprimés depuis).
+2. **Doublons sur le disque** : `find ~ -name "<filename>" 2>/dev/null` pour repérer des copies parallèles.
 3. **Cache éditeur** : refresh manuel (`Cmd+R` Obsidian, "Revert File" VS Code).
 
 Faire ce diagnostic AVANT de re-démontrer le contenu du fichier — sinon on tourne en rond plusieurs messages.
