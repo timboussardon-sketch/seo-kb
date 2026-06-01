@@ -69,3 +69,18 @@ Pas encore d'historique. Première édition à produire sans biais de boucle. Ob
 
 - P-2026-06-01-v2-1 (part de sites déclarant une préférence d'agents IA dans robots.txt > 4 %, 2026-12-31).
 - P-2026-06-01-v2-2 (appel Amazon-Perplexity non tranché au fond avant 2026-09-30).
+
+## Directives pour la prochaine édition (écrit après 2026-06-01-v3)
+
+- **Anti-redite (mis à jour 2026-06-01-v3)** : ajouter à la liste à ne pas reprendre sans fait nouveau → « déclin du contenu IA mis à l'échelle / étude Lily Ray 220+ sites du 13 mai (54/39/22 %) / motif Mount AI » (v3), « données originales = 2e prédicteur de citation ChatGPT, SEL nov 2025 52,2 % » (v3), « effet fraîcheur sur citation AIO contesté, Digital Applied médiane 14 mois / pas de corrélation après contrôle autorité de domaine » (v3), « schema 2,3× citation AIO vs position Google aucun markup requis » (v3), « éligibilité Universal Cart : attribut native_commerce + profil /.well-known/ucp » (v3). Voir said_index.jsonl.
+- **Variation des piliers (à tenir)** : trois dernières info du jour = Actualité SEO (matin) → Recherche agentique (v2) → Product-Led SEO (v3). Prochaine édition : viser plutôt GEO / search IA en info du jour (pilier non encore pris en info du jour récemment), ou un angle Actualité SEO si un événement net sort. Ne pas réenchaîner Product-Led SEO sans fait nouveau.
+- **PRIORITÉ reportée toujours en attente** : bilan gagnants/perdants du core update de mai (déploiement clos ~4 juin). Dès qu'une analyse large échantillon stable sort (SISTRIX/Lily Ray, Semrush Sensor, Mozcast), produire le bilan en BRÈVE du pilier Actualité SEO, jamais en info du jour (interdiction mono-Google). Résout P-2026-06-01-1 (échéance 2026-06-30).
+- **Boucle preuve à surveiller (interne)** : la fiche preuve pSEO data-propriétaire (H-007) a son jalon J+30 vers le 2026-06-15. Si elle est renseignée, c'est un fait interne fort pour une édition Product-Led SEO ou data-propriétaire (mais attendre un fait neuf, ne pas re-traiter le pilier sans).
+- **Pistes fraîches non traitées (candidates)** : premières ventes mesurées via checkout agentique UCP (résout P-2026-05-30-2) ; bloc Expert Advice AIO (résout P-2026-05-30-1, 2026-07-15) ; disponibilité effective des formats pub AI Mode (résout P-2026-05-30-5) ; nouvelle mesure de recouvrement de citations entre moteurs (résout P-2026-05-30-6) ; adoption préférences d'agents robots.txt/Content Signals (résout P-2026-06-01-v2-1).
+- **Sources** : 2 explore ajoutées (lilyraynyc 0.78, almcorp 0.6). lilyraynyc et digitalapplied sont des candidates au passage exploit en revue hebdo (sources data utiles, plusieurs hits). Continuer 1 source neuve/édition. Tester encore une source de mesure de visibilité (Sistrix, Semrush Sensor, Mozcast) pour le bilan core update.
+- **Méthode confirmée v3** : relier un fait d'actualité daté (étude récente) à une page de doctrine interne précise donne un doctrine_fit 5/5 et une novelty 4/5 sans forcer. Quand on cite un chiffre contre-intuitif (Digital Applied : la fraîcheur ne prédit pas la citation), présenter le désaccord entre études plutôt que de trancher ; c'est conforme à la voix (assumer l'incertitude).
+
+## Prédictions ouvertes ajoutées 2026-06-01-v3
+
+- P-2026-06-01-v3-1 (déclin durable >50% confirmé par une étude indépendante de Lily Ray d'ici fin 2026).
+- P-2026-06-01-v3-2 (effet fraîcheur sur citation AIO reste contesté après contrôle de l'autorité de domaine, fin 2026).

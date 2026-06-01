@@ -23,7 +23,7 @@ migration:
   writes: new-only
   legacy_root_files_removed: true   # supprimés en un passage supervisé (plus de double mémoire)
   reconciled_cloud_run: "2026-05-30-cloud"
-  stable_runs_done: 5               # +1 run du 2026-06-01-v2 (pilier recherche agentique, natif v2, validate.sh passé)
+  stable_runs_done: 6               # +1 run du 2026-06-01-v3 (pilier Product-Led SEO en info du jour, natif v2, validate.sh passé)
 
 # Validation : tout .jsonl doit parser ligne par ligne avant commit (voir validate.sh).
 integrity:

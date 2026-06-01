@@ -5,7 +5,7 @@
     "google-search-central": 1.13,
     "the-keyword": 1.21,
     "bing-webmaster": 1.05,
-    "search-engine-land": 1.2,
+    "search-engine-land": 1.24,
     "search-engine-journal": 1.2,
     "search-engine-roundtable": 1.08,
     "techcrunch-ai": 1.0,
@@ -23,13 +23,15 @@
     "averi": 1.08,
     "tryprofound": 1.04,
     "abondance": 1.04,
-    "digitalapplied": 1.04,
+    "digitalapplied": 1.12,
     "cmswire": 1.04,
     "searchlab": 1.04,
     "emarketer": 1.04,
     "decrypt": 1.04,
     "martech": 1.04,
     "yext": 1.04,
-    "cyberscoop": 1.04
+    "cyberscoop": 1.04,
+    "lilyraynyc": 1.04,
+    "almcorp": 1.04
   }
 }
