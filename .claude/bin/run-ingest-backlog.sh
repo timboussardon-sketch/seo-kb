@@ -1,6 +1,6 @@
 #!/bin/zsh
-# Daily /recap-jour runner — invoked by launchd ~/Library/LaunchAgents/com.timboussardon.recap-jour.plist
-# Compiles substance of Claude Code conversations into raw/journal/YYYY-MM-DD.md
+# Weekly ingest-backlog sweep — invoked by launchd com.timboussardon.ingest-backlog.plist
+# Regenerates wiki/ingest-backlog.md via the ingest-backlog-sweep skill
 set -euo pipefail
 
 export PATH="/Users/timothee/.npm-global/bin:/usr/local/bin:/usr/bin:/bin"
@@ -8,7 +8,8 @@ export HOME="/Users/timothee"
 
 VAULT="/Users/timothee/Code/seo-kb"
 LOG_DIR="$VAULT/.claude/logs"
-LOG_FILE="$LOG_DIR/recap-jour-$(date +%Y-%m-%d).log"
+LOG_FILE="$LOG_DIR/ingest-backlog-$(date +%Y-%m-%d).log"
+TODAY="$(date +%Y-%m-%d)"
 
 mkdir -p "$LOG_DIR"
 cd "$VAULT"
@@ -31,19 +32,21 @@ claude_retry() {
 }
 
 {
-  echo "=== /recap-jour run started at $(date -Iseconds) ==="
+  echo "=== /ingest-backlog-sweep run started at $(date -Iseconds) ==="
+
   set +e
-  claude_retry -p "/recap-jour" --permission-mode bypassPermissions
+  claude_retry -p "/ingest-backlog-sweep" --permission-mode bypassPermissions
   EXIT_CODE=$?
   set -e
+
   echo ""
-  echo "--- auto-commit raw/journal/ ---"
-  git add raw/journal/ 2>/dev/null || true
+  echo "--- auto-commit wiki/ ---"
+  git add wiki/ingest-backlog.md wiki/log.md 2>/dev/null || true
   if git diff --cached --quiet; then
-    echo "No journal changes to commit."
+    echo "No backlog changes to commit."
   else
-    git -c user.email="noreply@anthropic.com" -c user.name="recap-jour-cron" \
-      commit -m "Journal $(date +%Y-%m-%d) (auto)"
+    git -c user.email="noreply@anthropic.com" -c user.name="ingest-backlog-cron" \
+      commit -m "Ingest backlog sweep — ${TODAY} (auto)"
     # resync avant push (evite la divergence chronique : remote a pu avancer)
     git pull --rebase --autostash origin main 2>/dev/null || true
     if git push origin main; then
@@ -52,5 +55,5 @@ claude_retry() {
       echo "WARN: git push failed. Commit kept locally for next run."
     fi
   fi
-  echo "=== /recap-jour run ended at $(date -Iseconds) — exit $EXIT_CODE ==="
+  echo "=== /ingest-backlog-sweep run ended at $(date -Iseconds) — exit $EXIT_CODE ==="
 } >> "$LOG_FILE" 2>&1
