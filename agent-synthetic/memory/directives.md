@@ -3,6 +3,8 @@
 > PÉRIMÈTRE STRICT (Tim, 2026-05-30) : SEO, IA, LLM, Google, moteurs de recherche, search marketing. RIEN D'AUTRE. Test : « ça change la façon dont on est trouvé/lu/cité dans un moteur ? » Sinon, écarter.
 >
 > LIENS DE SOURCES (Tim, 2026-05-30) : TOUJOURS afficher le lien cliquable de chaque source dans le corps.
+>
+> PILIERS DE SUJETS (Tim, 2026-06-01) : chaque édition s'ancre sur l'un des 4 piliers, identifié explicitement dans le corps — (1) Agentic search, (2) Product-Led SEO, (3) GEO / search IA, (4) Actualité SEO. Varier le pilier d'une édition à l'autre, ne pas rester bloqué sur le même. INTERDICTION DU MONO-SUJET GOOGLE : un core update ou une update d'algorithme Google ne peut être qu'une brève dans « Actualité SEO », JAMAIS l'info du jour. Angles principaux à privilégier : Agentic search, Product-Led SEO, GEO. Cette liste fait foi ; si Tim la change, c'est ici qu'on la met à jour.
 
 
 Écrit par l'agent 9 (calibration) à la fin de chaque édition. Lu par l'agent 0 (briefing) au début de la suivante. Garder court et actionnable.
