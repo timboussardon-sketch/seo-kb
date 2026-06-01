@@ -718,3 +718,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - résurgence : 3ᵉ semaine sans intrant ; LaunchAgent `com.timboussardon.resurgence` chargé mais ne produit rien → diag ops (wrapper/TCC), pas un report.
 - fil rouge : doctrine de sélection des mots-clés **productisée** (modèle Fusionn « Liste des mots-clés pour X », 23 drafts regroundés, lead magnet) → pilier acté de fait, wiki en retard sur le produit ; candidat synthèse `doctrine-selection-mots-cles` + angle newsletter.
 - méta (déc. 8) : exécution rituelle W20=1/4, W21=0/3. Remède tranché : (1) attacher les décisions au travail réel, (2) l'agent exécute en séance les décisions bureaucratiques déjà arbitrées, (3) carry-over check + cap à 1 reconduction. À intégrer au skill `revue-hebdo` si Tim valide.
+
+## [2026-06-01] hypothese | revue mensuelle — 0 hypothèse bougée, 0 contradiction fermée
+- périmètre : 16 jours depuis la revue inaugurale (2026-05-16), pas un mois plein. Aucun intrant neuf : 0 source ingérée depuis 2026-04-30, 0 export dans `raw/data/exports-gsc/`, 0 nouvelle fiche preuve. Règle dure appliquée : pas de preuve = pas de mouvement.
+- H-001 reste `heuristique`, H-002 à H-010 restent `ouvert`. Aucune n'a reçu de preuve dans un sens ou l'autre.
+- H-007 reste `en-test` : fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] toujours `en-cours`, baseline non capturée. **J+30 le 2026-06-15 — dans 14 jours.** Si la baseline n'est pas posée avant, le J+30 mesure dans le vide. Chemin déjà tranché en [[revue-hebdo/2026-W22]] déc. 2 : export GSC manuel + `gsc-watcher`, pas le service account.
+- H-010 reste bloquée par [[contradictions#C-002]] (paper OpenDecoder jamais ingéré).
+- contradictions : aucune > 60 j, donc aucune ne remonte encore en revue hebdo. C-011/C-012 (détectées 2026-04-13, 49 j) franchissent le seuil ≈ 2026-06-12 — à trancher en W23/W24. Aucune fermeture ce mois (l'ingest OpenDecoder décidé en W20 n'a pas eu lieu).
+- doctrine : aucun `confidence:` touché, aucun wording corrigé — rien n'a changé de statut.
+- Doctrine 2026-06-01 : 0 hypothèse bougée (validé:0 invalidé:0 en-test:0) / 0 contradiction fermée. Goulot unique et inchangé depuis 3 revues hebdo : la baseline GSC de H-007 qui ne se capture pas.
