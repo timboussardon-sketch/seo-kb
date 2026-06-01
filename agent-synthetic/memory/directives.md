@@ -53,3 +53,17 @@ Pas encore d'historique. Première édition à produire sans biais de boucle. Ob
 - P-2026-06-01-1 (profil des perdants core update mai = déficit signaux structurés, 2026-06-30, échéance courte).
 - P-2026-06-01-2 (YouTube reste devant Reddit en citations moteurs de réponse, 2026-12-31).
 - Plus les P-2026-05-30-1 à 6 déjà listées.
+
+## Directives pour la prochaine édition (écrit après 2026-06-01-v2)
+
+- **Anti-redite (mis à jour 2026-06-01-v2)** : ajouter à la liste à ne pas reprendre sans fait nouveau → « recherche agentique : accès/autorisation des marques pour les agents (jurisprudence Amazon-Perplexity, blocage robots.txt OpenAI, Cloudflare agent-readiness, lisibilité machine @id/JSON-LD/Action) » (v2), « contradiction Yext vs 5W/Muck Rack sur brand-managed vs earned media » (v2), « données propriétaires/format structuré et taux de citation, BrightEdge/Averi » (v2), « trafic IA e-commerce +805 % Black Friday 2025 » (v2). Voir said_index.jsonl.
+- **Variation des piliers (à tenir)** : deux derniers piliers d'info du jour = Actualité SEO (matin) puis Recherche agentique (v2). Prochaine édition : viser plutôt GEO ou Product-Led SEO en info du jour pour ne pas répéter l'agentique. Product-Led SEO n'a encore jamais été l'info du jour, c'est un angle à privilégier (calculateur/simulateur/générateur qui se classe sur requête « Do », score Fully Meets des Quality Raters).
+- **PRIORITÉ reportée toujours en attente** : le bilan gagnants/perdants du core update de mai (déploiement clos ~4 juin). Dès qu'une analyse large échantillon stable sort (SISTRIX/Lily Ray, Semrush Sensor, Mozcast), produire le bilan en brève du pilier Actualité SEO (jamais en info du jour : interdiction du mono-sujet Google). Résout P-2026-06-01-1 (échéance 2026-06-30).
+- **Pistes fraîches non traitées (candidates)** : premières ventes mesurées via checkout agentique UCP (résout P-2026-05-30-2) ; suite de l'appel Amazon-Perplexity au 9e circuit (résout P-2026-06-01-v2-2) ; adoption mesurée des préférences d'agents dans robots.txt / Content Signals (résout P-2026-06-01-v2-1) ; bloc Expert Advice AIO (résout P-2026-05-30-1, 2026-07-15) ; disponibilité effective des formats pub AI Mode (résout P-2026-05-30-5).
+- **Sources** : 5 explore ajoutées (emarketer 0.72, martech 0.7, yext 0.65, decrypt 0.62, cyberscoop 0.6). martech et emarketer sont des sources de référence, candidates au passage exploit en revue hebdo. Continuer 1 source neuve/édition. Tester encore une source de mesure de visibilité (Sistrix, Semrush Sensor, Mozcast) pour le bilan core update.
+- **Méthode confirmée v2** : quand aucun événement de la semaine en cours n'est disponible, un angle de synthèse opérationnelle (décomposer un phénomène en conditions concrètes et actionnables) ancré sur la donnée datée la plus récente, avec dates affichées, vaut mieux qu'une fausse fraîcheur. Novelty 4/5 atteignable sans événement neuf si l'angle est vraiment propre.
+
+## Prédictions ouvertes ajoutées 2026-06-01-v2
+
+- P-2026-06-01-v2-1 (part de sites déclarant une préférence d'agents IA dans robots.txt > 4 %, 2026-12-31).
+- P-2026-06-01-v2-2 (appel Amazon-Perplexity non tranché au fond avant 2026-09-30).
