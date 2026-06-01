@@ -2,7 +2,13 @@
 
 Synthèse calculée par l'agent 9 à partir des ledgers, présentée à Tim à la revue du vendredi. Vue dérivée, pas une source de vérité : tout vient des `ledgers/`.
 
-## Semaine en cours (au 2026-05-30)
+## Semaine en cours (au 2026-06-01)
+
+Édition du 2026-06-01 (cloud), première depuis les cinq versions du 30 mai. Sujet du jour : fin de déploiement du core update de mai 2026 (lancé le 21 mai, fin ~4 juin), traité par les faits procéduraux (deuxième core update de 2026, cadence resserrée 6-7 semaines, absence de billet de blog d'accompagnement, communication minimale du Search Liaison) plutôt que par une liste gagnants/perdants jugée prématurée. Brèves : échéancier de retrait des résultats enrichis FAQ (juin/août 2026), déplacement de la composition des sources dans les moteurs de réponse après le litige Reddit-Perplexity (YouTube passe devant Reddit), mise en perspective des parts de marché (search IA ~0,9 % des visites, Google ~90 %).
+
+Note qualité : 4,1/5 (novelty modeste 3/5, semaine sans événement neuf, beaucoup de matériel en redite avec les éditions du 30 mai). Décision méthodo confirmée : assumer un angle « ce que les données ne disent pas encore » + faits procéduraux plutôt que forcer la nouveauté ou publier un bilan avant la fin du déploiement. Abondance (source FR de référence) enfin testée et ajoutée en explore, directive d'amorçage tenue.
+
+## Semaine précédente (au 2026-05-30)
 
 Cinq éditions le 2026-05-30 (run d'amorçage v2, cloud, v3, v4, v5). Sujets couverts, tous dans le périmètre search/IA :
 - v2 : Information Agents (agents qui lisent), AI Mode > 1 Md MAU, Gemini 3.5 Flash, core update du 21 mai, Expert Advice AIO.
@@ -14,6 +20,8 @@ Note qualité moyenne de la semaine : ~4,4/5. Point d'attention : cinq éditions
 
 ## Prédictions ouvertes à suivre
 
+- P-2026-06-01-1 : les perdants du core update de mai partagent un déficit de signaux structurés (vs vertical unique), confirmé par une analyse à large échantillon d'ici 2026-06-30 (échéance courte).
+- P-2026-06-01-2 : YouTube reste devant Reddit comme première source sociale citée dans les moteurs de réponse d'ici fin 2026.
 - P-2026-05-30-1 : Expert Advice augmente la part de citations de première main (échéance 2026-07-15).
 - P-2026-05-30-2 : une vente via checkout agentique UCP rapportée avant 2026-09-30.
 - P-2026-05-30-3 : Googlebot sous 27 % du crawl IA d'ici fin 2026.
@@ -23,11 +31,12 @@ Note qualité moyenne de la semaine : ~4,4/5. Point d'attention : cinq éditions
 
 ## À trancher par Tim (issu de `memory/questions.md`)
 
+- **Contradiction mémoire (nouveau 2026-06-01)** : `wording_rules.md` cite encore `ton-de-voix-tim` et le tutoiement, en contradiction avec `voix-synthetic.md` (qui fait foi : vouvoiement, voix propre). Diff proposé : nettoyer `wording_rules.md`. À valider.
 - Cadence et versionnage : 5 éditions le 30 mai (prévu 2/jour). Une édition fait-elle référence pour la journée ? Format de l'édition de l'après-midi (court vs complet) ?
 - Rubrique fixe « ce qu'un agent retiendrait » ?
 - Règle à valider : une doc primaire officielle de l'éditeur (ex. Google Search Central sur la dépréciation FAQ) dispense-t-elle du recoupement à 2 sources indépendantes ?
 - Seuil mono-étude : le chiffre 11 % (Averi) publié comme mono-étude flaguée avec direction recoupée, ou à écarter du corps faute de 2e source chiffrée ?
-- Sources `explore` à confirmer ou retirer : `lumar` (0.62), `cloudflare-radar` (0.85), `similarweb-geo` (0.78), `seer-interactive` (0.75), `theseocommunity` (0.6), `getpassionfruit` (0.6), et nouvelles du run v5 `ahrefs` (0.8, candidate exploit), `averi` (0.62), `tryprofound` (0.6).
+- Sources `explore` à confirmer ou retirer : `lumar` (0.62), `cloudflare-radar` (0.85), `similarweb-geo` (0.78), `seer-interactive` (0.75), `theseocommunity` (0.6), `getpassionfruit` (0.6), `ahrefs` (0.8, candidate exploit), `averi` (0.62), `tryprofound` (0.6), et nouvelles du run 2026-06-01 : `abondance` (0.7, FR de référence, candidate exploit), `digitalapplied` (0.6), `cmswire` (0.62), `searchlab` (0.6). En attente sous le seuil : `pikaseo` (0.58), `premiere.page` (0.55).
 - Sources tech généralistes (Tom's Guide, VentureBeat, TechRadar, BleepingComputer, PPC.land) : corroboration ponctuelle hors registre, ou intégration ?
 
 ## Propositions doctrine (issu de `memory/questions.md`)

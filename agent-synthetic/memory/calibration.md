@@ -22,6 +22,7 @@
 | 2026-05-30-v3 | 5/5 | 5/5 | 5/5 | 4/5 | corps 100% recoupé ≥2 sources | 4,7/5 |
 | 2026-05-30-v4 | 5/5 | 3/5 | 5/5 | 4/5 | 8 retenus, corps recoupé ≥2 sauf 1 fragile attribué | 4,3/5 |
 | 2026-05-30-v5 | 5/5 | 4/5 | 4/5 | 4/5 | 6 claims retenus, corps recoupé ≥2 sauf FAQ (doc officielle) et 11 % (mono-étude flaguée) | 4,3/5 |
+| 2026-06-01 | 5/5 | 3/5 | 4/5 | 4/5 | 7 claims retenus tous recoupés ≥2 ; 1 claim préliminaire (secteurs FR) gardé avec caveat explicite, pas compté comme établi | 4,1/5 |
 
 ### Notes du run d'amorçage (2026-05-30-v2)
 
@@ -56,3 +57,13 @@
 - **Piège fraîcheur géré** : chiffre 11 % (Averi) explicitement présenté comme mono-étude ; seule la direction (faible recouvrement, sources distinctes) présentée comme corroborée. Caveat méthodologique d'Ahrefs (parsing amélioré → datasets non comparables) repris tel quel dans le corps.
 - **Écarté du corps** : bilan gagnants/perdants du core update de mai (déploiement non clos avant ~4 juin, directive : attendre ≥1 semaine après la fin) ; chiffres d'audience I/O (2,5 Md MAU AIO, AI Mode 1 Md) redite v2/v4.
 - **Prédictions ouvertes** : P-2026-05-30-5 (un format pub AI Mode sorti du stade annonce d'ici fin 2026) et P-2026-05-30-6 (recouvrement citations ChatGPT/Perplexity < 25 % confirmé d'ici fin 2026).
+
+### Notes 2026-06-01
+
+- **Recoupement (5/5)** : info du jour (core update mai, fin de deploiement) sur 4 sources independantes dont 2 seeds historiques (SEL, SEJ) + Search Engine Roundtable + Abondance. Faits proceduraux (2e core update, absence de billet, cadence 6-7 sem) recoupes SEL/SEJ/Digital Applied. Brèves : FAQ (SEL + SEJ + Passionfruit), composition des sources (SEJ + CMSWire/Conductor + PikaSEO), parts de marche (Digital Applied + Searchlab). Chaque info du corps sur >=2 sources independantes.
+- **Angle (3/5)** : pas d'evenement totalement neuf cette semaine ; le materiel disponible recoupait beaucoup de themes deja traites (I/O, ads ChatGPT, recouvrement citations, FAQ). Angle retenu = la discipline d'attendre la fin du deploiement et les faits proceduraux (absence de billet, cadence resserree) plutot qu'une liste gagnants/perdants prematuree. Honnete et utile, mais novelty modeste : 3/5. Plusieurs sujets ecartes pour redite (loggues dans runs.jsonl sources_rejetees).
+- **Doctrine (4/5)** : lien reel vers structural-information-geo (champs structurels = levier retrieval, coherent avec un update qui recompense le contenu citable/structure), pas decoratif. Pas force sur les brèves.
+- **Hook (4/5)** : titre nomme l'evenement date et signale la posture (savoir que le rollout finit ~4 juin, pourquoi le bilan est premature). Non racoleur.
+- **Ce qui a ete ecarté du corps** : remontees sectorielles FR gardees en preliminaire avec caveat, jamais comme constat etabli (deploiement en cours, echantillon faible, sources FR peu independantes entre elles). Figure "86% de chute immediate des citations Reddit" non retenue (mono-origine cmswire/pikaseo) au profit du -23% Conductor et du depassement YouTube, mieux corrobores.
+- **Sources** : directive de l'amorcage enfin honoree, Abondance testee et ajoutee en explore (trust 0.7), corroboree. 3 autres explore ajoutees (digitalapplied, cmswire, searchlab). 2 sources sous le seuil laissees en attente dans questions.md (pikaseo 0.58, premiere.page 0.55).
+- **Prediction nouvelle a echeance courte** : P-2026-06-01-1 (profil des perdants du core update, resolve_by 2026-06-30) permettra une boucle de calibration rapide des fin juin.

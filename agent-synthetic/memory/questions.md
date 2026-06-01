@@ -10,6 +10,14 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 
 (vide pour l'instant)
 
+## Run 2026-06-01 — pour la revue hebdo
+
+- **Contradiction dans la mémoire à trancher** : `memory/wording_rules.md` cite encore le skill `ton-de-voix-tim` (lignes 3 et 9 : « source = skill ton-de-voix-tim », « tutoiement, positions tranchées ») alors que `memory/voix-synthetic.md` et le SKILL imposent la voix propre de SyntheticBrain (vouvoiement, pas de personnage, ne PAS appeler `ton-de-voix-tim`). J'ai suivi `voix-synthetic.md` (qui fait foi). **Diff de skill proposé** : mettre à jour `wording_rules.md` pour retirer la référence à `ton-de-voix-tim` et au tutoiement, et pointer vers `voix-synthetic.md`. À valider en revue hebdo (je ne modifie pas le fichier seul, garde-fou autonomie).
+- **2 sources sous le seuil d'auto-ajout, laissées en attente** : `pikaseo` (trust 0.58, a porté le chiffre YouTube ~16% vs Reddit ~10%, direction corroborée par CMSWire/Conductor mais figure exacte mono-origine) et `premiere.page` (trust 0.55, remontées sectorielles préliminaires FR). Les ajouter en explore ou les laisser hors registre ? Arbitrage de seuil.
+- **Valider 4 nouvelles sources explore** : `abondance` (0.7, source FR de référence, candidate forte au passage exploit), `digitalapplied` (0.6), `cmswire` (0.62, relais Conductor), `searchlab` (0.6, agrégateur parts de marché). Toutes corroborées. À confirmer/retirer.
+- **Claim préliminaire dans le corps** : les remontées sectorielles FR (finance, santé, e-commerce, SaaS, services locaux) sur le core update ont été gardées dans l'info du jour mais marquées explicitement comme non stabilisées (déploiement en cours, échantillon faible, sources FR peu indépendantes entre elles). Bon réflexe de transparence, ou fallait-il les écarter complètement du corps ? Arbitrage de seuil cohérent avec celui du 11 % (Averi) en v5.
+- **Cadence / référence du jour** : première édition depuis les 5 versions du 30 mai. Toujours pas clarifié quelle édition fait référence pour une journée donnée (question ouverte depuis v4/v5).
+
 ## Run v5 (2026-05-30) — pour la revue hebdo
 
 - **Cinquième édition le même jour.** v5 (publicité payante dans AI Mode / GML) produite après v2/v3/v4. Question de cadence et de versionnage toujours ouverte (voir run v4). Confirmer si une édition fait référence pour la journée.

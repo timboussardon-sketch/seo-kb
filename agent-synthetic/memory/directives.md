@@ -39,3 +39,17 @@ Pas encore d'historique. Première édition à produire sans biais de boucle. Ob
 
 - Empiler des stats mono-source de blogs marketing. Toujours recouper avant de mettre un chiffre dans le corps.
 - **Piège fraîcheur confirmé v3** : les résumés de WebSearch redatent en 2026 des études de 2025. RÈGLE : pour tout chiffre clé, ouvrir la source primaire et vérifier la date de publication ET la période de mesure avant de l'écrire. Si l'étude a > 30 j, soit on la date explicitement dans le corps, soit on ne la met pas en brève.
+
+## Directives pour la prochaine édition (écrit après 2026-06-01)
+
+- **Anti-redite (mis à jour 2026-06-01)** : ajouter à la liste à ne pas reprendre sans fait nouveau → « core update mai : fin de déploiement + faits procéduraux (absence de billet, cadence 6-7 sem) » (2026-06-01), « échéancier de retrait des résultats enrichis FAQ juin/août » (2026-06-01), « composition des sources moteurs de réponse : litige Reddit-Perplexity, YouTube devant Reddit » (2026-06-01), « parts de marché search IA vs Google/Bing StatCounter » (2026-06-01). Voir `said_index.jsonl`.
+- **PRIORITÉ prochaine édition (le bilan reporté)** : le déploiement du core update de mai se termine ~4 juin. Dès qu'une analyse à large échantillon sort (SISTRIX/Lily Ray attendue ~5 juin, Sistrix Visibility, Semrush Sensor stabilisé), produire le bilan gagnants/perdants par vertical. Cela résout P-2026-06-01-1 (profil des perdants : déficit de signaux structurés vs vertical unique). C'est l'info du jour la plus forte disponible à court terme. Attendre la fin du déploiement + données stables, ne pas publier de liste avant le 4 juin.
+- **Pistes fraîches non traitées (candidates)** : premières ventes mesurées via checkout agentique UCP (résout P-2026-05-30-2) ; remontées terrain sur le bloc Expert Advice des AIO (résout P-2026-05-30-1, 2026-07-15) ; disponibilité effective des formats pub AI Mode aux annonceurs (résout P-2026-05-30-5) ; nouvelle mesure de recouvrement de citations entre moteurs (résout P-2026-05-30-6).
+- **Sources** : Abondance enfin testée (directive tenue), ajoutée en explore 0.7, corroborée, bonne candidate au passage exploit en revue hebdo (source FR de référence). 3 autres explore ajoutées (digitalapplied, cmswire, searchlab). Continuer 1 source neuve/édition. Pour le bilan core update, viser une source de mesure de visibilité (Sistrix, Semrush Sensor, Mozcast) comme nouvelle source explore data.
+- **Méthode confirmée 2026-06-01** : quand la semaine n'offre pas d'événement neuf, l'angle « ce que les données ne disent pas encore » + faits procéduraux est préférable à la redite ou à une liste gagnants/perdants prématurée. Assumer un novelty_score modeste (3/5) plutôt que de forcer.
+
+## Prédictions ouvertes à surveiller (mis à jour 2026-06-01)
+
+- P-2026-06-01-1 (profil des perdants core update mai = déficit signaux structurés, 2026-06-30, échéance courte).
+- P-2026-06-01-2 (YouTube reste devant Reddit en citations moteurs de réponse, 2026-12-31).
+- Plus les P-2026-05-30-1 à 6 déjà listées.
