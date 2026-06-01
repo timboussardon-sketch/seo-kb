@@ -1877,3 +1877,11 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 - `ResultsNav` : **5 sections → 3** (Comprendre : Brief, Mots-clés, Clusters, Micro-intentions, Analyse | Produire : Structure, Outils, Objections, YouTube | Décider : Stratégie pSEO).
 - Composants orphelinés (PlanActionView, LLMView, EditorPanel, AssistantChat, EditorAnalysisPanel) laissés en modules morts (tree-shakés), non supprimés pour éviter une cascade risquée.
 - Deploy : front `3212895` sur `main` (Netlify). Build OK (2925 modules), tsc clean.
+
+## 2026-06-01 — Fix focus champ URL hero (carré orange)
+
+**Bug.** Au focus du champ URL du hero (`SiteAuditPanel`, phase accueil « Bonjour [prénom] »), un outline orange à coins droits débordait du champ arrondi (« carré orange cassé »). Cause : la règle globale d'accessibilité `input:focus-visible { outline: 2px solid var(--ws-brand) }` (`src/index.css`) s'applique à l'`<input>` intérieur alors que le visuel du champ est le `div` wrapper arrondi ; sa spécificité (`input:focus-visible`) écrase le `outline-none` Tailwind, d'où la persistance.
+
+**Fix (`SiteAuditPanel.tsx`).** Outline neutralisé sur l'input (`focus:outline-none focus-visible:outline-none`) et affordance de focus portée sur le wrapper via `focus-within:border-[--ws-brand] focus-within:ring-1 focus-within:ring-[--ws-brand]`. Ring orange 1px qui épouse les coins arrondis, toujours accessible au clavier, raccord design system. Règle globale `input:focus-visible` conservée pour le reste de l'app.
+
+**Deploy.** Commit `35c75af` sur `main` (Netlify auto-deploy). tsc clean, montré en local sur `/compte`.
