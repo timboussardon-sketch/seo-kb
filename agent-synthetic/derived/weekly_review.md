@@ -66,3 +66,13 @@ Aucun appliqué. Piste récurrente : garde-fou « vérifier la date de la source
 - M-002 : ligne JSONL malformée (run cloud). Corrigé, `validate.sh` obligatoire avant commit.
 - M-003 : fichier édition écrasé par une redirection d'erreur git. Corrigé, plus de `2>&1` vers un fichier de donnée.
 - M-004 : redite partielle de l'info du jour (v4 vs run cloud). Fix : scanner `runs.jsonl` (sujet_info_jour) avant de figer le sujet, pas seulement `said_index.jsonl`.
+
+---
+
+## Instantané 2026-06-02-v2 (régénéré agent 9)
+
+- **Édition du jour (v2)** : pilier Recherche agentique, info du jour = couche découverte du commerce agentique (flux structuré comme unité de découverte, multi-interfaces, coexistence des standards UCP/ACP/AP2). Note globale 4,4/5 (recoupement 5, angle 4, doctrine 5, hook 4).
+- **Variation des piliers sur 5 éditions** : Actualité SEO → Recherche agentique (accès) → Product-Led SEO → GEO (récupération/citation) → Recherche agentique (découverte). Recherche agentique pris 2 fois sur 5 ; prochaine édition à orienter GEO, Actualité SEO ou Product-Led SEO.
+- **Sources** : 38 sources au registre, 6 ajoutées ce run (2 primaires fortes : google-cloud-blog 1.09, openai-blog 1.09). Candidates exploit en revue hebdo : ahrefs, lilyraynyc, digitalapplied, getpassionfruit, abondance, emarketer, martech, airops, google-cloud-blog, openai-blog.
+- **Dette récurrente** : aucune source de mesure de visibilité (Sistrix/Semrush Sensor/Mozcast) toujours pas testée après 4 éditions ; bloquante pour le bilan core update attendu mi-juin.
+- **Prédictions ouvertes** : 16 au total, dont 2 nouvelles ce run (P-2026-06-02-v2-1 coexistence des standards, P-2026-06-02-v2-2 flux produit prédicteur de sélection par agent). Aucune échue à résoudre au 2026-06-02.

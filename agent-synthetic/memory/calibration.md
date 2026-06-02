@@ -23,6 +23,7 @@
 | 2026-05-30-v4 | 5/5 | 3/5 | 5/5 | 4/5 | 8 retenus, corps recoupé ≥2 sauf 1 fragile attribué | 4,3/5 |
 | 2026-05-30-v5 | 5/5 | 4/5 | 4/5 | 4/5 | 6 claims retenus, corps recoupé ≥2 sauf FAQ (doc officielle) et 11 % (mono-étude flaguée) | 4,3/5 |
 | 2026-06-01 | 5/5 | 3/5 | 4/5 | 4/5 | 7 claims retenus tous recoupés ≥2 ; 1 claim préliminaire (secteurs FR) gardé avec caveat explicite, pas compté comme établi | 4,1/5 |
+| 2026-06-02-v2 | 5/5 | 4/5 | 5/5 | 4/5 | 6 claims retenus ; corps recoupé ≥2 sources avec historique (info du jour), 1 chiffre vendeur (Shopify x8/x15) marqué fragile et attribué, 1 lecture (FourWeekMBA) attribuée | 4,4/5 |
 
 ### Notes du run d'amorçage (2026-05-30-v2)
 
@@ -30,6 +31,14 @@
 - **Angle** : choisi distinct de l'édition du matin (guide AEO du 15 mai) pour éviter la redite. Information Agents = angle frais et méta.
 - **Fact-check, ce qui a été écarté du corps** : étude Yext « 86 % de citations brand-managed » (octobre 2025, hors fenêtre fraîcheur 30 j) ; chiffre d'overlap citations vs top-10 organique (BrightEdge, conflit 54 % vs 17 % selon méthode, mono-source) ; le « +157 % » de renvois ChatGPT laissé en qualitatif (mono-analyse). Conforme à la règle anti-hallucination.
 - **À surveiller** : pas encore de signal lecteur (engagement.jsonl vide tant que l'envoi n'est pas branché).
+
+### Notes 2026-06-02-v2
+
+- **Recoupement (5/5)** : info du jour portée par sources indépendantes avec historique, blog.google (primaire, 11 janv. 2026) et Search Engine Land (secondaire, 20 mai 2026) pour les attributs de découverte, plus Google Cloud et OpenAI (primaires) pour l'existence et les dates des standards UCP/ACP/AP2. Règle dure explore tenue : aucune source nouvelle ne porte seule un claim.
+- **Angle (4/5)** : pilier Recherche agentique, angle de la couche de découverte de l'achat agentique (unité = flux structuré, multi-interfaces, multi-standards). Distinct du 0601-v2 (accès adversarial/autorisation), du 0530-v3 (annonce UCP/checkout) et du 0601-v3 (éligibilité native_commerce). Comble une limite explicite de la fiche `agentic-search` (l'agent qui agit, mal couvert empiriquement) sur le cas de l'achat.
+- **Doctrine (5/5)** : ancrage réel sur `agentic-search` (sélection par l'agent vs liste de liens), liens secondaires non décoratifs `product-led-seo` (version agent-friendly API/embed) et `know-simple-know-do` (pages Do exécutables par un agent).
+- **Fact-check, ce qui a été cadré** : chiffres Shopify x8/x15 attribués comme direction vendeur, pas valeur de référence ; issue « marchands supportant plusieurs standards » donnée comme lecture FourWeekMBA, le fait corroboré étant l'existence de standards distincts. Écartés du périmètre : extension crypto x402/stablecoins d'AP2 et détails Visa TAP/Mastercard (couche paiement, hors search).
+- **Méthode** : faute d'événement neuf de la semaine sur ce pilier, synthèse opérationnelle ancrée sur les faits datés les plus récents (GML 20 mai, amicus EFF/Mozilla 9 avril) plutôt que fausse fraîcheur. Novelty 4/5 atteinte sans événement neuf.
 
 ### Notes 2026-05-30-v3
 

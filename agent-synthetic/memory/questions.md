@@ -10,6 +10,13 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 
 (vide pour l'instant)
 
+## Run 2026-06-02-v2 — pour la revue hebdo
+
+- **1 source sous le seuil, laissée hors registre** : `fourweekmba` (trust 0.55, analyse « protocol wars »). Elle a porté l'interprétation « les marchands supporteront plusieurs standards », attribuée dans le corps, mais c'est une analyse d'opinion sans donnée primaire et sous le seuil d'auto-ajout (0.6). Laissée hors `sources.jsonl`. L'ajouter en explore comme source d'analyse, ou la garder hors registre ? Vigilance : son texte emploie un langage métaphorique abondant (vocabulaire de course, de murs, de rails), à ne jamais reprendre dans la rédaction.
+- **Valider 6 nouvelles sources explore** : `google-cloud-blog` (0.88, primaire AP2) et `openai-blog` (0.85, primaire ACP) sont des sources primaires fortes, candidates au passage exploit ; `shopify-blog` (0.65, vendeur, mécanique catalogue utile mais chiffres self-report à traiter comme direction) ; `pymnts` (0.66, enquête acquéreurs) ; `digitalcommerce360` (0.66) et `mediapost` (0.6) sur le litige Amazon-Perplexity. Toutes corroborées. À confirmer/retirer.
+- **Limite de doctrine comblée** : la fiche `agentic-search` note que l'agent qui *agit* (achat) reste mal couvert empiriquement. Cette édition apporte des faits sur ce cas (couche découverte de l'achat agentique). Faut-il enrichir `wiki/concepts/agentic-search.md` d'une section « commerce agentique : couche découverte » reliant flux structuré, attributs Merchant Center et coexistence des standards UCP/ACP/AP2 ? Proposition pour la revue hebdo (je ne modifie pas le wiki doctrine seul).
+- **Périmètre payments vs search** : où poser la frontière quand un sujet de découverte agentique a une couche paiement attachée (AP2, x402, Visa TAP) ? J'ai traité la couche paiement comme contexte technique et écarté la partie crypto/réseaux de cartes comme hors périmètre. Confirmer cette ligne pour les prochaines éditions commerce agentique.
+
 ## Run 2026-06-01 — pour la revue hebdo
 
 - **Contradiction dans la mémoire à trancher** : `memory/wording_rules.md` cite encore le skill `ton-de-voix-tim` (lignes 3 et 9 : « source = skill ton-de-voix-tim », « tutoiement, positions tranchées ») alors que `memory/voix-synthetic.md` et le SKILL imposent la voix propre de SyntheticBrain (vouvoiement, pas de personnage, ne PAS appeler `ton-de-voix-tim`). J'ai suivi `voix-synthetic.md` (qui fait foi). **Diff de skill proposé** : mettre à jour `wording_rules.md` pour retirer la référence à `ton-de-voix-tim` et au tutoiement, et pointer vers `voix-synthetic.md`. À valider en revue hebdo (je ne modifie pas le fichier seul, garde-fou autonomie).

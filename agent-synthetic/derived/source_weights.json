@@ -3,11 +3,11 @@
   "updated": "2026-06-02",
   "weights": {
     "google-search-central": 1.13,
-    "the-keyword": 1.21,
+    "the-keyword": 1.25,
     "bing-webmaster": 1.05,
-    "search-engine-land": 1.28,
-    "search-engine-journal": 1.28,
-    "search-engine-roundtable": 1.12,
+    "search-engine-land": 1.3,
+    "search-engine-journal": 1.3,
+    "search-engine-roundtable": 1.16,
     "techcrunch-ai": 1.0,
     "the-verge-ai": 1.0,
     "ars-technica": 1.0,
@@ -26,13 +26,19 @@
     "digitalapplied": 1.12,
     "cmswire": 1.04,
     "searchlab": 1.04,
-    "emarketer": 1.04,
+    "emarketer": 1.08,
     "decrypt": 1.04,
     "martech": 1.04,
     "yext": 1.04,
     "cyberscoop": 1.04,
     "lilyraynyc": 1.04,
     "almcorp": 1.04,
-    "airops": 1.04
+    "airops": 1.04,
+    "google-cloud-blog": 1.09,
+    "openai-blog": 1.09,
+    "shopify-blog": 1.04,
+    "pymnts": 1.04,
+    "digitalcommerce360": 1.04,
+    "mediapost": 1.04
   }
 }
