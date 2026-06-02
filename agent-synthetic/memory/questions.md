@@ -79,3 +79,13 @@ L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui dem
 Toute skill créée ou modifiée par l'agent est tracée ici, avec le commit git correspondant.
 
 (vide pour l'instant)
+
+---
+
+## Run 2026-06-02 — sources découvertes et points pour la revue hebdo
+
+- **Nouvelle source explore ajoutée** : `airops` (https://www.airops.com/report, trust 0.7). Rapports data primaires sur le search IA (étude 548 534 pages récupérées / 15 000 requêtes ChatGPT, 15 % citées). Portée dans le corps par Search Engine Land (connue) + Passionfruit. À confirmer/passer exploit en revue hebdo.
+- **Candidate au passage exploit** : `getpassionfruit` atteint 3 hits utiles (synthèse GEO de 25+ études en avril 2026, en plus de la guidance llms.txt). Bonne source de synthèse, à arbitrer.
+- **Sources mentionnées via synthèse, non ajoutées au registre** (citées par Passionfruit, non consultées en direct) : SparkToro (non-reproductibilité des classements de citation), Profound (instabilité temporelle ; déjà au registre comme tryprofound). Si une de ces études devient centrale dans une future édition, consulter la source primaire avant de la créditer.
+- **Divergence non résolue** : l'affiliation des auteurs du preprint arXiv:2603.09296 est rapportée différemment selon les sources (Stanford vs Virginia Tech). Non assertée dans le corps. À ne pas reprendre sans vérification de la source primaire.
+- **Commit du run** : `SyntheticBrain — édition 2026-06-02 + apprentissage (auto)`.
