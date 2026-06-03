@@ -76,3 +76,17 @@ Aucun appliqué. Piste récurrente : garde-fou « vérifier la date de la source
 - **Sources** : 38 sources au registre, 6 ajoutées ce run (2 primaires fortes : google-cloud-blog 1.09, openai-blog 1.09). Candidates exploit en revue hebdo : ahrefs, lilyraynyc, digitalapplied, getpassionfruit, abondance, emarketer, martech, airops, google-cloud-blog, openai-blog.
 - **Dette récurrente** : aucune source de mesure de visibilité (Sistrix/Semrush Sensor/Mozcast) toujours pas testée après 4 éditions ; bloquante pour le bilan core update attendu mi-juin.
 - **Prédictions ouvertes** : 16 au total, dont 2 nouvelles ce run (P-2026-06-02-v2-1 coexistence des standards, P-2026-06-02-v2-2 flux produit prédicteur de sélection par agent). Aucune échue à résoudre au 2026-06-02.
+
+---
+
+## Mise à jour 2026-06-03 (pré-revue hebdo)
+
+**Piliers d'info du jour de la semaine** : Actualité SEO (0601 matin) → Recherche agentique accès (0601 v2) → Product-Led SEO (0601 v3) → GEO écart récupération-citation (0602 matin) → Recherche agentique découverte (0602 v2) → GEO mesure first-party de la présence IA (0603). Bonne rotation, deux occurrences GEO et deux Recherche agentique sur six ; Product-Led SEO sous-représenté (1 fois), à privilégier la semaine prochaine.
+
+**Fait marquant 0603** : Google ouvre une mesure de première main de l'apparition d'un site en AI Overviews/AI Mode (rapport Search Console) et un réglage d'exclusion séparé de la recherche classique, déployé d'abord au Royaume-Uni après l'exigence de l'autorité de concurrence britannique (28 janv. 2026). Réserve : la métrique d'impression est en cours de correction (sur-comptage reconnu le 3 avril 2026).
+
+**Core update mai** : déploiement clos le 2 juin. Lecture fiable ~9 juin. Le bilan gagnants/perdants (brève Actualité SEO, jamais info du jour) devient enfin produisible dès qu'une analyse large échantillon stable sort. Résout l'échéance proche P-2026-06-01-1 (2026-06-30).
+
+**Sources** : passages exploit à arbitrer — ahrefs, abondance, getpassionfruit, digitalapplied, lilyraynyc, emarketer, martech, google-cloud-blog, openai-blog, 9to5google (toutes à plusieurs hits ou à forte autorité). Directive Sistrix/Mozcast toujours non tenue.
+
+**Prédictions à échéance proche** : P-2026-06-01-1 (profil des perdants core update, 2026-06-30).

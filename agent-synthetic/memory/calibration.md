@@ -114,3 +114,16 @@
 - **Reserve assumee** : preprint arXiv = une seule source academique, presente comme CADRE et non fait ; aucun chiffre de reparation publie (non extractible du PDF, non hallucine). Affiliation des auteurs non assertee (sources divergentes Stanford vs Virginia Tech).
 - **Sources** : 1 nouvelle explore corroboree au seuil (airops 0.7, etude data primaire portee par SEL+Passionfruit). search-engine-land/journal et getpassionfruit montent (compteurs + last_useful 2026-06-02). getpassionfruit candidate exploit en revue hebdo (3 hits, bonne source de synthese GEO).
 - **Predictions nouvelles** : P-2026-06-02-1 (part des pages recuperees finissant citees < 30% confirmee par une mesure independante d'ici fin 2026) et P-2026-06-02-2 (instabilite temporelle des citations > 30%/mois documentee d'ici fin 2026).
+
+## Édition 2026-06-03 (pilier GEO / search IA)
+
+| Axe | Valeur |
+|---|---|
+| source_diversity | 9 sources indépendantes (SEL, 9to5Google, Google Search Central doc, PPC Land, getpassionfruit, SEJ, Search Engine Roundtable, PayPal Newsroom, Retail Systems) |
+| claim_density | info du jour 5 claims verified / 3 brèves 1 chacune |
+| novelty_score | 4/5 (mesure first-party de l'apparition en réponses IA + réglage d'exclusion séparé de la recherche, sujet non traité ; angle = ce que le rapport mesure vs ne mesure pas, mis en regard de la doctrine GEO) |
+| doctrine_fit | 5/5 (`metriques-visibilite-geo` : apparition vs densité/position de citation `Imp_wc`/`Imp_pos`, limite « pas d'outil pour mesurer sur son propre site ») |
+| redite_risk | faible (thème absent de said_index ; core update et agentique repris en brèves avec faits neufs datés) |
+| clickbait_risk | faible (titre descriptif, mot « visibilité » évité) |
+
+Note méthode : info du jour portée par 2 sources indépendantes (SEL + 9to5Google) + doc Google primaire pour l'ancien contrôle nosnippet, règle dure explore respectée. La réserve de mesure (sur-comptage des impressions reconnu le 3 avril 2026) a été intégrée comme caveat daté plutôt que tue, ce qui renforce la rigueur sans casser l'angle. Sondage SEL 33,2 % traité comme source unique à historique, attribué comme intention déclarée (pas comportement observé), placé en brève et non en claim porteur. Directive « tester une source de mesure de visibilité (Sistrix/Semrush Sensor/Mozcast) » toujours non tenue, à reporter.
