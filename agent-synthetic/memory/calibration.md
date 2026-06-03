@@ -146,3 +146,11 @@ Tim a annoté en direct les brèves v2/v3. Bilan : je sur-notais systématiqueme
 **Familles qu'il REJETTE** : technique/infra (crawl, 402, robots, protocoles), conseils d'hygiène (« complétez vos données »), niche/cycle de vie produit, vieux/déjà-vu.
 
 Survivants de l'édition du jour après son goût : trafic IA convertit mieux (5/5), Gemini > Perplexity, CNN vs Perplexity (promu). Autorité de domaine = tentatif. → 3 confirmés. Confirme que le seuil 4,5 + son goût donnent peu de brèves/jour : prochaine veille à orienter vers les familles aimées, et probablement élargir la fenêtre à ~7 jours.
+
+## Calibration Brèves 2026-06-03 (suite) — conflits, clarté, ton
+
+- **Conflits éditeurs↔IA = pas une famille récurrente.** Tim a adoré CNN (affaire concrète, marquante) mais a jugé « null » la méta-observation « le marché se scinde, certains signent, d'autres attaquent ». Règle : au plus une affaire judiciaire marquante et concrète, jamais une méta-observation vague ni un thème de conflit répété. Le « qui monétise le contenu » passe mieux par l'angle business (modèles de rémunération) que conflit.
+- **Clarté de l'intérêt (nouvelle porte implicite).** Sur la brève Reddit/RSL : « on comprend rien à l'intérêt de l'info ». Si l'on ne voit pas immédiatement pourquoi ça compte pour un consultant SEO/IA, on écarte. L'intérêt doit être évident en une phrase.
+- **Ton : neutre et journalistique.** Retour Tim : « parle neutre et journaliste, pas d'émotion ni d'envolée lyrique, respecte la voix SyntheticBrain ». Bannir les formules d'auteur et chutes punchy (ex. « rater la marche », « être nommé ne suffit pas, encore faut-il être cliquable », « le métier qui paie est celui qui... »). Structure de chaque brève : fait → mécanisme → portée, décrits littéralement. Pas de métaphore, pas de chute rhétorique.
+
+Édition v5 réécrite en conséquence (conflit + Reddit retirés, ton neutre, 10 brèves ≥ 4,5).

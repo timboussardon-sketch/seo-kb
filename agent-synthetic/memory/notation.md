@@ -27,7 +27,7 @@ Définie avec Tim le 2026-06-03. Sert à choisir les meilleures infos, pas seule
 ## Profil de goût de Tim (dérivé des verdicts du 2026-06-03)
 
 **Aime (vise haut sur ces familles) :**
-- **Conflits éditeurs/créateurs vs moteurs IA** : procès, licences, copyright, qui contrôle et monétise le contenu, droit de citation. Forte tension + enjeu direct pour ceux qui produisent du contenu. (Ex. adoré : CNN attaque Perplexity.)
+- **Affaire judiciaire marquante (ponctuel, pas un thème récurrent)** : un procès concret, daté, à enjeu réel et de premier plan (ex. adoré : CNN, première chaîne TV à attaquer Perplexity). MAIS la querelle éditeurs↔IA n'est PAS une famille à répéter : **au plus une affaire marquante**, jamais une méta-observation vague (« le marché se scinde, certains signent, d'autres attaquent » = null, retour Tim 2026-06-03). Le « qui contrôle/monétise le contenu » est mieux traité par l'angle business (nouveaux modèles de rémunération) que par l'angle conflit.
 - **Bascules de marché / hiérarchie** : qui dépasse qui, part de trafic, fragmentation des moteurs. (Ex. adoré : Gemini dépasse Perplexity.)
 - **Données de résultat business** : conversion, revenu, comportement d'achat liés au search/IA. (Ex. 5/5 : le trafic IA convertit mieux que l'organique.)
 - **Contre-vérités mesurées** : un signal réputé clé qui s'effondre. (Ex. l'autorité de domaine ne corrèle plus.)
