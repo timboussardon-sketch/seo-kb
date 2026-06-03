@@ -1,0 +1,23 @@
+# Manifest de schéma content-brain (un par projet)
+# Le skill lit ce fichier en premier pour savoir quelle mémoire fait foi.
+# Calqué sur agent-synthetic/manifest.yml.
+
+schema_version: 1
+project: "golfiller"            # remplacé au bootstrap (slug du projet/client)
+
+source_of_truth:
+  outputs: outputs/               # contenus produits (article/page .md) + pointeur URL publiée
+  memory: memory/                 # interprétations durables, ne changent qu'après revue humaine
+  event_ledgers: ledgers/         # faits observés, append-only
+  derived_views: derived/         # vues calculées à partir des ledgers
+
+integrity:
+  jsonl_validation: required
+  validator: ../validate.sh       # usage : ../validate.sh <project>
+
+ledgers:
+  runs.jsonl:       { capture_mode_field: required }   # native | reconstructed_from_run
+  claims.jsonl:     { capture_mode_field: required }   # 1 ligne par fait/chiffre du contenu
+  predictions.jsonl: {}                                # 1 ligne par pari ranking/citation, resolve_by J+30/J+90
+  mistakes.jsonl:   {}                                 # pages qui sous-performent → doctrine d'erreurs empirique
+  said_index.jsonl: {}                                 # intentions/angles déjà couverts → anti-cannibalisation
