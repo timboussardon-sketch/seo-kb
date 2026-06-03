@@ -27,6 +27,18 @@ Chaque jour : **1 édition Brèves + 2 éditions revue de presse (Algorithme)**.
 
 L'édition Brèves et les deux éditions Algorithme du même jour ne se répètent pas : anti-redite croisée entre les trois.
 
+## Grille de sélection (seuil minimum 4,5/5)
+
+Une info ne devient une brève que si elle passe la grille. Chaque candidat est noté de 0 à 5 sur les 5 critères, on fait la moyenne, et **on ne retient que les moyennes ≥ 4,5**. Seuil exigeant et assumé : si moins de 10 candidats atteignent 4,5, on élargit la veille pour remonter à 10, jamais on ne descend le seuil.
+
+| Critère | Note 0-5 sur quoi |
+|---|---|
+| **Pertinent** | L'info change quelque chose pour un consultant SEO/IA ou ses clients. Pas une curiosité tech sans conséquence search. |
+| **Original** | Pas déjà rabâchée partout ni reprise des éditions récentes. Apporte un fait, un chiffre ou une nuance qu'on ne lit pas dans tous les résumés. |
+| **Angle intéressant** | Il y a un angle, une implication, une tension, pas juste une annonce brute recopiée. |
+| **Basé sur ma doctrine** | Se relie à la doctrine de Tim (4 piliers, anti-volume, données propriétaires / ce qui ne se copie pas, SEO post-SGE, GEO/AEO). Lien réel, pas décoratif. |
+| **Orienté IA SEO** | Au cœur du search/IA, pas en périphérie. Touche la façon dont on est trouvé, lu ou cité par un moteur. |
+
 ## Convention de fichier
 
 `breves-IA/{YYYY-MM-DD}-breves.md`. Suffixer `-v2`, `-v3` si le fichier du jour existe déjà.
