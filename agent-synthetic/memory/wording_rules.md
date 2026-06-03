@@ -29,3 +29,10 @@ Aucun jargon ni anglicisme de métier dans les brèves et éditions. On écrit e
 - « GEO » : toléré (terme du domaine employé par Tim), mais jamais empilé avec d'autres sigles
 - Pas de « canal », « périmètre » seulement si nécessaire et clair
 Règle générale : si un lecteur non-expert ne comprend pas le mot, on le remplace.
+
+## Ouvertures interdites (retour Tim 2026-06-03)
+
+Bannir les ouvertures méta-rhétoriques et les jeux d'antithèse. On énonce le fait ou le chiffre directement, l'attribution vient après si besoin.
+- INTERDIT : « Plusieurs sources s'accordent sur un point : … sans s'accorder sur … », « Plusieurs études convergent : … », « Une chose est sûre : … », « Le constat est clair : … », tout « X, sans Y » employé comme effet de style.
+- ATTENDU : « Les visiteurs venus de l'IA achètent plus souvent, mais l'écart varie selon les études. » / « Une page citée reçoit ~35 % de clics en plus, d'après des mesures 2026. »
+Règle : sujet + fait + chiffre d'abord. Pas de mise en scène de la source ni de formule à tiroir.
