@@ -16,3 +16,16 @@ Le hook est **intelligent, jamais racoleur**. Un bon titre prouve qu'on est all�
 ## Règles apprises (s'enrichit à chaque édition)
 
 (vide pour l'instant)
+
+## Jargon : INTERDIT (règle dure, retour Tim 2026-06-03)
+
+Aucun jargon ni anglicisme de métier dans les brèves et éditions. On écrit en français clair, comme un journaliste. Traductions obligatoires (liste ouverte) :
+- « first-party » → données de première main / ses propres chiffres
+- « earned media » → mentions sur des sites tiers
+- « Tier-1 » → grands médias
+- « corrélation r = X » → ne dire que l'effet en clair (« n'a presque plus d'effet »)
+- « organique » reste acceptable, mais préférer « référencement naturel » si doute
+- « AEO », sigles secondaires → expliciter (« présence dans les réponses IA »)
+- « GEO » : toléré (terme du domaine employé par Tim), mais jamais empilé avec d'autres sigles
+- Pas de « canal », « périmètre » seulement si nécessaire et clair
+Règle générale : si un lecteur non-expert ne comprend pas le mot, on le remplace.

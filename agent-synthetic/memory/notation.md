@@ -6,7 +6,8 @@ Définie avec Tim le 2026-06-03. Sert à choisir les meilleures infos, pas seule
 
 1. **Périmètre** : search / IA / SEO / GEO / AEO / moteurs. Test : « est-ce que ça change la façon dont on est trouvé, lu ou cité dans un moteur ? ».
 2. **Sourçable** : au moins une source réelle consultable, et **zéro chiffre, %, date ou citation non sourcé** (anti-hallucination, non négociable).
-3. **Fraîcheur** (ajoutée 2026-06-03, retour Tim) : le fait, la donnée ou l'étude date de **moins de ~30 jours**, OU porte un développement neuf daté. Un fait ancien qui a déjà tourné partout (ex. « Google sous 90 % », annoncé début 2026) est **écarté**, même s'il scorerait haut sur le fond. Le déjà-vu, c'est non. Corollaire sur la note : un fait vieux / déjà largement diffusé plafonne **Original ≤ 2**.
+3. **Zéro jargon** (règle dure) : français clair, ton journaliste. Aucun anglicisme de métier ni sigle non expliqué (cf. `wording_rules.md`). Si un non-expert ne comprend pas le mot, on le remplace.
+4. **Fraîcheur** (ajoutée 2026-06-03, retour Tim) : le fait, la donnée ou l'étude date de **moins de ~30 jours**, OU porte un développement neuf daté. Un fait ancien qui a déjà tourné partout (ex. « Google sous 90 % », annoncé début 2026) est **écarté**, même s'il scorerait haut sur le fond. Le déjà-vu, c'est non. Corollaire sur la note : un fait vieux / déjà largement diffusé plafonne **Original ≤ 2**.
 
 ## Note de sélection — 4 critères, notés 0-5, **poids égal**, moyenne
 
