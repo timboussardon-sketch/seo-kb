@@ -127,3 +127,12 @@
 | clickbait_risk | faible (titre descriptif, mot « visibilité » évité) |
 
 Note méthode : info du jour portée par 2 sources indépendantes (SEL + 9to5Google) + doc Google primaire pour l'ancien contrôle nosnippet, règle dure explore respectée. La réserve de mesure (sur-comptage des impressions reconnu le 3 avril 2026) a été intégrée comme caveat daté plutôt que tue, ce qui renforce la rigueur sans casser l'angle. Sondage SEL 33,2 % traité comme source unique à historique, attribué comme intention déclarée (pas comportement observé), placé en brève et non en claim porteur. Directive « tester une source de mesure de visibilité (Sistrix/Semrush Sensor/Mozcast) » toujours non tenue, à reporter.
+
+## Calibration notation Brèves — 2026-06-03 (retour de Tim)
+
+Premier retour terrain sur la grille `notation.md`. Tim : **« Gemini dépasse Perplexity est une grosse info »** → brève #4, que ma grille avait mise à 4,25 (coupe), aurait dû être **gardée/top**. Deux dérives de mon échelle corrigées :
+
+- **Solidité — ne pas confondre « agrégé » et « fragile ».** Une donnée d'agence **corroborée par ≥2 agences indépendantes** qui concordent (ici Similarweb + Trakkr + AIVIS sur la montée de Gemini) vaut **Solidité 4**, pas 3. Le 3 est réservé à la source d'agence **unique** ou non recoupée. (Je sur-pénalisais l'origine agence même quand le fait était recoupé.)
+- **Envie — une bascule de hiérarchie entre moteurs est une grosse info.** Un renversement de part de trafic/marché entre moteurs (qui dépasse qui) change la stratégie de tout le monde → **Envie 5**, pas 4. Je sous-notais le hook des faits structurels au profit des faits « spectaculaires ».
+
+Re-score #4 après correction : Solidité 4, Envie 5, Original 4, Doctrine 4, +0,5 consensus = **4,75 → gardée** (au niveau de la #5). Échelle ajustée en conséquence pour les prochaines éditions ; règles ajoutées à `notation.md`.

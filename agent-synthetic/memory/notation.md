@@ -13,6 +13,10 @@ Définie avec Tim le 2026-06-03. Sert à choisir les meilleures infos, pas seule
 |---|---|---|---|
 | **Solidité** (vérifié + sourcé) | Qualité de la preuve | Source primaire + recoupée par 2 sources indépendantes | Mono-source secondaire / relevé d'agence non confirmé |
 | **Envie d'en savoir plus** | Le hook, la tension | On veut lire la suite | Annonce plate, déjà digérée |
+
+**Précisions calibrées (retour Tim 2026-06-03) :**
+- *Solidité* : une donnée d'agence **corroborée par ≥2 agences indépendantes concordantes** vaut **4**, pas 3. Le 3 ne vise que la source d'agence **unique / non recoupée**. Ne pas confondre « agrégé » et « fragile ».
+- *Envie* : une **bascule de hiérarchie entre moteurs** (part de trafic/marché, qui dépasse qui) est une grosse info structurelle → **Envie 5**. Ne pas sous-noter les faits structurels au profit du spectaculaire.
 | **Original** | Fait ou nuance neuf | Personne ne l'a dit comme ça | Repris partout depuis 3 jours |
 | **Doctrine / orienté SEO-IA** | Lien aux 4 piliers + cœur search | Change comment on est trouvé/cité, colle à la doctrine | Périphérique, lien décoratif |
 
