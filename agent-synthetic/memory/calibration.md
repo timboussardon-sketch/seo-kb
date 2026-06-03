@@ -136,3 +136,13 @@ Premier retour terrain sur la grille `notation.md`. Tim : **« Gemini dépasse P
 - **Envie — une bascule de hiérarchie entre moteurs est une grosse info.** Un renversement de part de trafic/marché entre moteurs (qui dépasse qui) change la stratégie de tout le monde → **Envie 5**, pas 4. Je sous-notais le hook des faits structurels au profit des faits « spectaculaires ».
 
 Re-score #4 après correction : Solidité 4, Envie 5, Original 4, Doctrine 4, +0,5 consensus = **4,75 → gardée** (au niveau de la #5). Échelle ajustée en conséquence pour les prochaines éditions ; règles ajoutées à `notation.md`.
+
+## Calibration Brèves 2026-06-03 (session de verdicts en direct) — profil de goût
+
+Tim a annoté en direct les brèves v2/v3. Bilan : je sur-notais systématiquement le **technique/infra**, l'**opérationnel** et le **niche produit**, et je sous-notais un **événement frais à enjeu** (CNN) en le confondant avec du déjà-vu thématique. Règles ajoutées à `notation.md` : porte fraîcheur ; Envie ≤2 pour technique/infra et conseil d'hygiène ; Pertinence/Doctrine ≤2 pour niche/produit ; « événement frais ≠ déjà-vu thématique ».
+
+**Familles qu'il AIME** (viser haut) : conflits éditeurs/créateurs vs moteurs IA (procès/licences/copyright), bascules de marché entre moteurs, données de résultat business (conversion/revenu), contre-vérités mesurées, **nouveaux business/modèles en SEO-GEO**, **tendances GEO/SEO sur les réseaux sociaux (voix des praticiens/utilisateurs)**.
+
+**Familles qu'il REJETTE** : technique/infra (crawl, 402, robots, protocoles), conseils d'hygiène (« complétez vos données »), niche/cycle de vie produit, vieux/déjà-vu.
+
+Survivants de l'édition du jour après son goût : trafic IA convertit mieux (5/5), Gemini > Perplexity, CNN vs Perplexity (promu). Autorité de domaine = tentatif. → 3 confirmés. Confirme que le seuil 4,5 + son goût donnent peu de brèves/jour : prochaine veille à orienter vers les familles aimées, et probablement élargir la fenêtre à ~7 jours.
