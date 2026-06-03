@@ -18,6 +18,15 @@ Différence avec Algorithme : Algorithme creuse une info du jour + 3-4 brèves. 
 - **Voix SyntheticBrain** : analyste search/IA, vouvoiement, factuel, direct. Pas de métaphore, pas de tiret cadratin, aucun personnage.
 - **Rien n'est envoyé** : draft uniquement.
 
+## Rythme quotidien
+
+Chaque jour : **1 édition Brèves + 2 éditions revue de presse (Algorithme)**.
+
+- Brèves : 1 fois par jour, ce fichier (`breves-IA/{date}-breves.md`).
+- Algorithme : 2 fois par jour (`revuedepressIA/{date}-revue-presse.md`, puis `-v2`).
+
+L'édition Brèves et les deux éditions Algorithme du même jour ne se répètent pas : anti-redite croisée entre les trois.
+
 ## Convention de fichier
 
 `breves-IA/{YYYY-MM-DD}-breves.md`. Suffixer `-v2`, `-v3` si le fichier du jour existe déjà.
