@@ -24,6 +24,16 @@
 | 2026-05-30-v5 | 5/5 | 4/5 | 4/5 | 4/5 | 6 claims retenus, corps recoupé ≥2 sauf FAQ (doc officielle) et 11 % (mono-étude flaguée) | 4,3/5 |
 | 2026-06-01 | 5/5 | 3/5 | 4/5 | 4/5 | 7 claims retenus tous recoupés ≥2 ; 1 claim préliminaire (secteurs FR) gardé avec caveat explicite, pas compté comme établi | 4,1/5 |
 | 2026-06-02-v2 | 5/5 | 4/5 | 5/5 | 4/5 | 6 claims retenus ; corps recoupé ≥2 sources avec historique (info du jour), 1 chiffre vendeur (Shopify x8/x15) marqué fragile et attribué, 1 lecture (FourWeekMBA) attribuée | 4,4/5 |
+| 2026-06-06-v3 | 5/5 | 4/5 | 5/5 | 4/5 | 15 claims retenus (4 info du jour + 3 Web IQ + 3 Amazon-Perplexity + 2 Adobe + 3 doctrine/réutilisables) ; corps recoupé ≥2 sources indépendantes pour chaque claim publié ; 5 claims écartés (Liz Reid redite, GEO Measurement isolée, Goodie Claude mono-source, Seer claim non confirmé, Glenn Gabe redite matin) | 4,6/5 |
+
+### Notes 2026-06-06-v3
+
+- **Recoupement (5/5)** : info du jour portée par primaire blog.google + 3 secondaires indépendantes (getpassionfruit, interestingengineering, techwyse) avec corroboration sur exemples cités. Brève Web IQ : primaire blogs.bing.com + 4 secondaires indépendantes (SEL, SEJ, PPC.land, Neowin). Brève Amazon-Perplexity : 4 sources indépendantes (SEJ, MediaPost, Law360, docket CourtListener primaire). Brève Adobe : primaire Adobe + 2 secondaires (e-commerce.news, dbbnwa). Règle dure explore tenue : aucune source nouvelle isolée ne porte un claim.
+- **Angle (4/5)** : 1re fois que la générative UI I/O 2026 est traitée sous l'angle Product-Led SEO. La doctrine product-led-seo + filtre test-substitution-llm fournit le cadre d'évaluation et permet de mesurer ce que l'annonce déplace dans le filtre. Pas 5/5 car l'annonce générative UI date de mai 2026 et a déjà été couverte par d'autres sources sous d'autres angles ; le neuf est la doctrine, pas le fait.
+- **Doctrine (5/5)** : ancrage direct sur product-led-seo (thèse centrale), test-substitution-llm (filtre à réécrire), data-proprietaire (défense qui tient), fully-meets (score max product-led). Cas Victoria Garden documenté dans la KB sert de référence opérationnelle. Lien doctrine non décoratif.
+- **Fact-check, ce qui a été cadré** : chiffre Adobe Q1 2026 marqué « base clients Adobe » et « direction agrégée, pas état universel du marché » ; rappel Seer 93 % sans clic AI Mode mis en regard plutôt que claim neuf ; quote Liz Reid « biggest upgrade » écartée du corps car déjà citée v4 0530 (redite). Le claim que AI Mode embarquerait des calculateurs/simulations en direct selon Seer (lu dans le résumé nobori.ai) écarté faute de confirmation Seer primaire.
+- **Méthode** : sur une annonce de plate-forme déjà couverte par la presse, le levier de différenciation est la doctrine propriétaire (product-led-seo + test-substitution-llm + cas Victoria Garden) qui mesure ce que l'annonce déplace dans le filtre. Trois défenses identifiées (donnée propriétaire, persistance d'état, accès stocks) bornent le sujet sans forcer une thèse univoque. Conforme à la voix (assumer l'incertitude là où le déploiement n'a pas eu lieu).
+- **Prédictions ouvertes** : P-2026-06-06-v3-1 (filtre étendu à l'UI générative), P-2026-06-06-v3-2 (perte mesurée sur calculateur substituable vs résistance des pages branchées sur données propriétaires).
 
 ### Notes du run d'amorçage (2026-05-30-v2)
 
