@@ -2018,3 +2018,16 @@ Typecheck OK. Commit + push `main` (Netlify déploie fusionn.co).
 **Bug pré-existant détecté** (hors migration) : table `search_semantic_analysis_results` réduite à 3 colonnes (id/user_id/search_id) → le save de `generate-semantic-analysis` échoue, quel que soit le modèle. Migration de cette fonction codée mais NON activée tant que le schéma n'est pas réparé. À traiter séparément.
 
 **Coût estimé** : ~+42 $/mois à ~200 analyses (brief +18, objections +12, vecteurs +12). Réversible instantanément : `supabase secrets unset BRIEF_MODEL OBJECTIONS_MODEL VECTEURS_MODEL`.
+
+## 2026-06-06 (suite) — Répartition LLM complète appliquée
+
+**Réparé** : table `search_semantic_analysis_results` (n'avait que id/user_id/search_id) → ajout `context_vectors jsonb`, `entities jsonb`, `created_at` + reload schéma PostgREST. Test Sonnet OK (14s, save OK) → activé.
+
+**Répartition finale en prod (flags secrets, défaut Gemini si flag absent)** :
+- Opus 4.7 : `BRIEF_MODEL` (brief)
+- Sonnet 4.6 : `OBJECTIONS_MODEL`, `VECTEURS_MODEL`, `SEMANTIC_ANALYSIS_MODEL`, `PLAN_ACTION_MODEL`, `HN_STRUCTURE_MODEL`
+- Gemini Flash : tout le reste, + youtube/reddit redescendus de gemini-2.5-pro → flash (Pro inutile sur du clustering de data réelle), + **pseo-strategy GARDÉ sur Gemini** (output 16k tokens > limite edge Supabase 150s en Sonnet : a timeout, n'a pas sauvegardé).
+
+**Contrainte clé découverte** : edge functions Supabase = **150s wall-clock max**. → thinking coupé sur tous les appels Claude ; fonctions à très gros output (pseo) incompatibles avec Claude synchrone.
+
+**Non curl-testés** (exigent un JWT user, anon refusé) : plan-action, hn-structure — activés sur la base du pattern identique validé 4× ; à confirmer au 1er run réel. Rollback : `supabase secrets unset <FLAG>`.
