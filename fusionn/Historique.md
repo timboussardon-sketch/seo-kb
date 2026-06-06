@@ -4,7 +4,23 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
-## 2026-06-06 · Onglet « Par contexte » (3e mode de recherche) — DÉPLOYÉ
+## 2026-06-06 · 1 seule requête gratuite à vie, de partout + wording — DÉPLOYÉ (sauf 1 migration)
+
+- **Demande Tim** : « 1 seul requête gratuit. De partout. Wording aussi. » Décisions cadrées : **chaque fonction plafonnée à 1** (pas un crédit unique partagé) et **à vie** (plus de reset mensuel/quotidien).
+- **Constat** : le « gratuit » était éclaté en 4+ quotas séparés (recherches 3 total, Hn 5/mois, sémantique 5/mois, geo 5/mois, chat 5/jour), chacun avec sa constante front, sa fonction edge et parfois une fonction SQL.
+- **Enforcement passé à 1 / à vie (déployé sur Supabase `fwhfnzbtlddzfxbsejyf`)** :
+  - `check-rate-limit` : `searchLimit` 3→1 ; mode keyword passe de fenêtre glissante 24h à **à vie** (retrait du `gte(since)`).
+  - `check-hn-score-limit` / `check-semantic-score-limit` : `monthlyLimit` free 5→1, retrait du filtre `startOfMonth` (compte à vie).
+  - `analyze-geo-sentinel` : `freeLimit` 5→1, retrait de la fenêtre mensuelle.
+  - `get-all-quotas` : `LIMITS` tous à 1, comptage à vie (plus de `gte`), `period: 'total'`, `resetsAt: null`.
+  - `analyze-semantic-score` : message d'erreur 429 reformulé (plus de date de réinitialisation).
+  - `SEARCH_LIMITS` (front, `compte/types.ts`) : valeurs free → 1.
+- **Chat laissé tel quel** (jugement) : `check_and_increment_chat_usage` / `get_chat_daily_usage` non touchés. 1 message à vie casserait l'assistant conversationnel ; « requête » = analyse, pas message de chat. **À confirmer avec Tim.**
+- **Wording** : ~20 chaînes mises à jour (FAQ, Landing ×3, ArticleCTABanner, ToolPageLayout, Connexion, Documentation, CitationProbe, KeywordGenerator, ComparateurVolumeBusiness, SubscriptionChoiceModal, compteurs SearchPanel/HeroInput/ConversationalSearch/StickyInput, KeywordHeroPanel, SiteAuditPanel, AnalysisLimitCounter « ce mois »→« à vie », HnScoreView, SemanticScoreView, SemanticScore). De « 3 recherches / 5 analyses / par mois / réinitialisation » vers « 1 requête gratuite à vie ».
+- **Build** : tsc clean, `vite build` OK (le `react-snap` post-build échoue pour un souci Puppeteer local, sans rapport). Commit `e6c7233` poussé sur `main` → Netlify redéploie fusionn.co.
+- **RESTE — 1 étape manuelle** : la migration `20260606120000_one_free_request_lifetime.sql` (slot SQL `reserve_semantic_analysis_slot` 3→1 à vie) n'a pas pu être poussée (`supabase db push` demande le mot de passe DB que je n'ai pas). Le gate sémantique est déjà effectif via `check-semantic-score-limit` (edge) ; la migration aligne le backstop serveur. **Tim : lancer `cd ~/Code/newFusionn && supabase db push`.**
+
+
 
 - **Origine** : idée Tim née d'une session FG Formation (extraction de 14 calls .docx → personas → mots-clés décisionnels → modèles pSEO). « Ça pourrait devenir un onglet : j'ajoute des documents et tu lances la recherche. » À côté de « Mon site » et « Un mot-clé », nouveau mode « Par contexte ».
 - **Découverte** : l'infra existait déjà à 90%. La table `documents`, le pipeline `startAnalysis(kw, ctx, documentIds)` qui injecte les docs (ligne 322 de `useConversationalAnalysis`), et l'upload dans `ContextPills` étaient en place. **Cause racine du blocage** : `ContextPills` n'acceptait que `.txt/.csv/.json/.md` et rejetait les `.docx`/`.pdf`.
