@@ -4,6 +4,28 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-06-04 · Chatbot (suppression/édition + skills partagés) + premium + home
+
+- **Premium** : `louis.bertin@live.fr` passé Premium 1 mois (subscription `active`, `current_period_end` 2026-07-04, sans Stripe) via l'API Management Supabase. `is_subscription_valid` = true. Modèle = table `subscriptions`.
+- **Chatbot Agent** (`AgentChatView.tsx`, `ChatMessage.tsx`) : suppression d'une conversation depuis la sidebar (corbeille au survol, confirm, cascade via policy DELETE existante) ; édition d'un message utilisateur façon LLM (coupe la suite en base + régénère, rechargement post-envoi pour ids réels) ; sparkles remplacés par `FusionnIcon`.
+- **Chatbot onglet mots-clés** (`ContextualChatModal.tsx`) : même menu Skills que l'agent, via nouveau module partagé `src/lib/agentSkills.ts` (`buildAgentSkills(keyword)`). `keyword={mainKeyword}` passé depuis `SortableKeywordsTable`. Origine : un mot-clé pSEO n'apparaît pas dans l'onglet mots-clés et l'agent ne l'analysait pas — cause racine : onglet + agent ne lisent que `search_semantic_results`, le pSEO vit dans `action_plan_results.pseo_playbooks`. Livré : parité des skills + **ajout d'un mot-clé à analyser** (champ dans le chatbot → `insertManualKeyword` dans `search_semantic_results`, dédoublonné, affichage immédiat dans l'onglet via état local `localKeywords`, vu par l'agent, analyse lancée automatiquement).
+- **Home** : retrait de la pill de démo « assurance vie en ligne » (`DemoSection.tsx`).
+- Commit + push `main` (Netlify auto-deploy). Type-check OK (warnings restants pré-existants).
+
+---
+
+## 2026-06-02 · Onglet Stratégie pSEO — scroll + lisibilité
+
+**Contexte.** Sur l'onglet Stratégie pSEO (vue `actionPlan`), en arrivant depuis un autre sous-onglet on restait à la position « en bas » héritée. Et les cartes de playbooks (stratégies) manquaient de lisibilité, toutes au même fond neutre.
+
+**Fix 1 — scroll (`WorkspaceLayout.tsx`).** Le `strategyContentRef` existait mais n'était jamais exploité. Ajout d'un `useEffect([analyzeSubView])` qui `scrollTo({ top: 0 })` la zone scrollable à chaque changement de sous-onglet → on arrive toujours en haut.
+
+**Fix 2 — alternance (`PseoStrategyView.tsx`).** Dans `PlaybookCard`, fond orange très léger (`#FFF5F2`, bordure `#FBD9CF`) une carte sur deux (`index % 2 === 1`) ; hover et bloc description dépliés alignés sur le même fond.
+
+**Deploy.** Commit `7503e88` sur `main` (Netlify auto-deploy, site fusionn2). tsc clean, build Vite OK (react-snap échoue en local sur puppeteer mais OK côté CI Netlify), montré en local sur `localhost:5173`. Inclut aussi les modifs working tree en cours (admin, tables, modal abonnement, edge `admin-stats-v2`).
+
+---
+
 ## 2026-05-30 · Moteur d'emails de cycle de vie (lifecycle / drip)
 
 **Contexte.** Tim demande des séquences email automatiques et gratuites par comportement (inscrit 0 recherche, 1 recherche, 2 recherches, etc.). Choix validés : moteur complet + tout le cycle de vie. Constat à l'exploration : toute la data existe déjà (`user_profiles.created_at`, `search_history` par user, `analytics_events.premium_click`, `subscriptions`), seul l'envoi email manquait (aucun Resend/SMTP dans le repo).
@@ -1885,3 +1907,53 @@ DB `blog_posts` resynchronisée sur les 23 slugs (update content/excerpt/meta_de
 **Fix (`SiteAuditPanel.tsx`).** Outline neutralisé sur l'input (`focus:outline-none focus-visible:outline-none`) et affordance de focus portée sur le wrapper via `focus-within:border-[--ws-brand] focus-within:ring-1 focus-within:ring-[--ws-brand]`. Ring orange 1px qui épouse les coins arrondis, toujours accessible au clavier, raccord design system. Règle globale `input:focus-visible` conservée pour le reste de l'app.
 
 **Deploy.** Commit `35c75af` sur `main` (Netlify auto-deploy). tsc clean, montré en local sur `/compte`.
+
+## 2026-06-02 — Refonte agent : plein écran, attribution GSC, fix historiques, bouton Skills
+
+**Chat plein écran (façon Claude).** La conversation occupe désormais toute la partie droite, de sous la nav bar jusqu'en bas. Suppression de la carte flottante centrée : `.agent-chat-container` perd `border` + `border-radius` + `max-width: 1040px` et passe en `height: 100%` ; `.agent-chat-layout` perd son `padding`/`gap`. Sidebar historique rendue flush (bordure droite seule au lieu d'une carte arrondie). Bouton de repli avec petite marge quand la sidebar est fermée.
+
+**Attribution GSC (prouver qu'il n'invente rien).** Dans `ai-chat/index.ts`, section « Google Search Console » du prompt système (active dès que la GSC est connectée) : règle non négociable d'annoncer explicitement la source à chaque donnée issue d'un `fetch_gsc_data` (« D'après votre Google Search Console… », « Ce que je lis sur votre Search Console… ») avec période et propriété, et de séparer le constat chiffré de l'interprétation. Interdiction de présenter un chiffre comme GSC sans appel d'outil préalable.
+
+**Fix historiques qui disparaissaient/fusionnaient.** Cause racine : un seul thread par (user, search, full_context). Au clic « Nouvelle conversation » le client envoyait `threadId=null`, et l'edge réutilisait le dernier thread au lieu d'en créer un neuf → toutes les conversations fusionnaient ; pire, `.maybeSingle()` plantait dès 2+ threads. Correctifs : nouveau param `newThread` (le client l'arme via `forceNewThreadRef` au clic « Nouvelle conversation ») qui force un `insert` ; lookup robuste `order('updated_at').limit(1).maybeSingle()` au lieu de `maybeSingle()` seul ; `loadConversations()` rappelé après chaque envoi pour rafraîchir la liste latérale.
+
+**Refonte UX box « Propriété analysée ».** Le `<select>` natif héritait du brand orange en `accent-color` (contour orange cassé). Remplacé par un contrôle custom `.gsc-property-select` : `appearance: none`, chevron SVG gris, bordure + focus du design system (halo gris léger, plus d'orange). Cas mono-propriété affiché en chip gris clair.
+
+**Bouton « + Skills » (repris de Qadence).** En haut à droite de la conversation, un bouton ouvre un popover listant 10 skills SEO ; le clic envoie un prompt prêt à l'emploi à l'agent via le `sendMessage` existant, sans aucune dépendance serveur ajoutée (pas de tool `load_skill` ni de table comme Qadence). Skills : Quick wins, Audit Search Console, Cannibalisation, Maillage interne, Mots-clés décisionnels, Brief de contenu, Structure Hn, Décodage de la requête, FAQ stratégique, Contenus manquants, Score GEO. Chaque prompt s'adapte au mot-clé en cours et pousse à s'appuyer sur la GSC. Header passé en barre flex (GSC à gauche, Skills à droite) affichée même sans GSC connectée ; popover fermé au clic extérieur + Échap ; skills désactivés tant qu'aucune analyse n'est lancée.
+
+**Deploy.** Commit `482244f` sur `main` (Netlify auto-deploy front). Edge `ai-chat` redéployée (Supabase) pour activer fix historique + attribution GSC. tsc clean, montré en local sur :5173. Dossier non suivi `supabase/functions/admin-gsc-study/` laissé de côté (non créé dans cette session).
+
+---
+
+## 2026-06-03 — Diagnostic & remise en route du moteur d'emails lifecycle
+
+**Constat.** Tim demande si 10 nouveaux inscrits ont reçu les emails du workflow selon leur nombre de recherches. Croisement `email_queue` × `auth.users` × `search_history` (service_role, projet `fusionn` fwhfnzbtlddzfxbsejyf) : **la file était figée à 50 lignes, toutes datées du 2026-05-30** (jour du go-live), zéro entrée depuis. Le cron quotidien n'avait jamais été planifié (le README renvoyait au Dashboard, étape jamais faite). Résultat : tous les users devenus éligibles après le 30/05 n'ont rien reçu.
+
+**Nuance.** Les 10 de la liste ont tous fait 1-2 recherches → ils ne relèvent pas de `activation_no_search` (0 recherche) mais des nudges, déclenchés 24h après la recherche. 8 (recherche du 06-02) n'avaient pas encore passé les 24h ; 2 (rousclement, t.rabeson, recherche du 06-01) étaient en retard.
+
+**Actions.**
+1. **Rattrapage réel** : régénéré `LIFECYCLE_CRON_SECRET` (valeur d'origine non extractible), invoqué `cron-lifecycle-emails` en réel (`LIFECYCLE_EMAILS_ENABLED=true` déjà armé). **13 emails envoyés, 0 échec** (4 activation, 6 nudge_1, 3 nudge_2) — dont rousclement + t.rabeson.
+2. **Cron durable** : migration `20260603050000_schedule_lifecycle_emails_cron.sql` → job pg_cron `lifecycle-emails-daily` à `0 9 * * *`, POST de la fonction via pg_net, secret `X-Cron-Secret` lu depuis **Vault** (jamais en clair dans le repo). Vérifié : job id=2 actif. Secret rédigé hors du fichier après push. Commit `d3f59d8` sur `feat/lifecycle-emails`.
+
+**Suite.** Les 8 inscrits du 06-02 partiront automatiquement au run de 09:00 UTC à mesure qu'ils passent 24h.
+
+## 2026-06-03 — Compte : bouton « Gérer mon compte » vers le portail Stripe
+
+**Constat.** Dans la modale Compte (`UserProfile.tsx`), les premium voyaient « Abonnement géré manuellement. Pour toute modification, contactez le support. » au lieu d'un bouton vers le portail Stripe. Cause : le bouton n'était rendu que si `subscription.stripe_customer_id` existait en base, or beaucoup de comptes premium n'ont pas ce `cus_` synchronisé.
+
+**Correction.**
+1. **Edge function `create-billing-portal-session`** : si pas de `stripe_customer_id` en base, on retrouve le client existant **par email** (`stripe.customers.list({ email })`, jamais de création → pas de double facturation, cf. règle `admin-link-stripe` proscrit), puis backfill de la ligne `subscriptions`. Déployée sur `fwhfnzbtlddzfxbsejyf`.
+2. **Front** : le bouton « Gérer mon compte » s'affiche toujours pour un premium et ouvre le portail. Message « géré manuellement » supprimé.
+
+Typecheck OK. Commit + push `main` (Netlify déploie fusionn.co).
+
+---
+
+## 2026-06-06 — Réparation moteur emails lifecycle + monitoring
+
+**Constat** : séquence email morte depuis le 3 juin (63 envoyés du 30 mai au 3 juin, puis 0, `email_queue` vide). Inscrits récents ne recevaient rien.
+
+**Cause racine (définitive)** : `cron-lifecycle-emails` est en `verify_jwt=true`, mais le pg_cron l'appelle avec `X-Cron-Secret` seul, sans header `Authorization`. Tous les tirs rejetés en **401 par la plateforme** avant d'atteindre le code. Les envois 30 mai-3 juin = déclenchements manuels (avec JWT). Preuve : sans Authorization → 401 ; avec → 200, `sent:14`.
+
+**Correctifs** : (1) backlog flushé = 14 emails (0 échec, total 77) ; (2) `LIFECYCLE_CRON_SECRET` régénéré ; (3) nouveau déclencheur = routine distante `trig_01Fx1xDt1CAR4Hh3c5Tp4jof` (quotidienne 08:00 UTC, curl avec Authorization anon + X-Cron-Secret). pg_cron laissé actif mais en 401 (inoffensif, idempotence) ; nettoyage propre = accès DB requis.
+
+**Monitoring (nouveau)** : edge function `ops-alert` (Resend, `--no-verify-jwt`, commit `d2ebaf3`) + watchdog quotidien `trig_01H7tem5fgt25yF2vAddPSyJ` (11:00 UTC) + rapport hebdo email `trig_015EHXasyZs5zGmdR6kYtNMZ` (dimanche 12:00 UTC). Détail : note mémoire `project_monitoring_automatisations`.
