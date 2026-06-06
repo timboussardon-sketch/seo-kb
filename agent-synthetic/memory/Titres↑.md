@@ -20,6 +20,7 @@ Règle d'usage (pour l'agent) :
 2. The Boring Truth About What Makes a Good Life
 3. AI Isn't Replacing Developers. It's Doing Something Worse
 4. Should You Still Learn to Code in 2026?
+5. Est-ce que l'IA va détruire ton business SEO ?
 
 
 ---
@@ -37,4 +38,6 @@ Note transverse : ces 4 titres sont hors search/IA (carrière, IA-emploi, vie). 
 3. **« X n'est pas Y. C'est quelque chose de pire / d'autre »** — *AI Isn't Replacing Developers. It's Doing Something Worse*. Structure : négation d'une croyance répandue + retournement qui escalade ou recadre. Crée la tension par correction, pas par promesse creuse. Décliné : « L'IA ne tue pas votre trafic. Elle fait quelque chose de plus gênant ». Garde-fou : le retournement doit reposer sur un fait, sinon c'est du clickbait.
 4. **« Faut-il encore [évidence] en [année] ? »** — *Should You Still Learn to Code in 2026?*. Structure : question directe que se pose le lecteur + remise en cause d'une évidence + ancrage daté. Décliné : « Faut-il encore viser la position 1 sur Google en 2026 ? ». Garde-fou : le titre pose la vraie question, le corps tranche avec des données, pas de fausse hésitation.
 
-Familles dominantes de ce lot : **contrarian / dégonflage du hype** (2, 3) et **anxiété d'époque + méthode ou question** (1, 4). À croiser avec les familles que Tim aime (calibration 2026-06-03) : bascule de marché, contre-vérité mesurée, business.
+5. **« Est-ce que [menace] va détruire ton [actif du lecteur] ? »** — *Est-ce que l'IA va détruire ton business SEO ?* (FR, tutoiement). Structure : question directe + menace nommée + ce que le lecteur possède et craint de perdre. Variante de 4 (question directe) croisée avec 3 (menace), mais en s'adressant à « ton » bien précis, ce qui personnalise l'enjeu. Décliné : « Est-ce que les AI Overviews vont détruire ton trafic de marque ? ». Garde-fou : le corps doit répondre franchement et avec des données, pas entretenir la peur ; la réponse honnête est souvent « pas ton business, mais une forme précise de ce que tu fais ».
+
+Familles dominantes du lot : **contrarian / dégonflage du hype** (2, 3) et **anxiété d'époque + méthode ou question** (1, 4, 5). À croiser avec les familles que Tim aime (calibration 2026-06-03) : bascule de marché, contre-vérité mesurée, business. Note : 5 est en français et au tutoiement (registre Tim direct), les 4 premiers en anglais ; on garde le modèle, on adapte la langue au support.
