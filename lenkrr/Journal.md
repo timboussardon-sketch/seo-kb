@@ -118,6 +118,16 @@ Repo : `/Users/timothee/Code/lenkrr`. Plan détaillé : `~/.claude/plans/staged-
 - 6 env vars requises pour tourner : `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `LENKRR_USER_ID`, `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`.
 - **Déploiement public : NON fait, décision de Tim « nulle part pour l'instant »** (pas de domaine lenkrr réservé). Quand on déploiera, il faudra : choisir l'hébergeur (Netlify pour rester homogène avec Fusionn/Organikk), câbler les 6 env vars, et ajouter le callback de prod `<domaine>/api/github/callback` au client OAuth GitHub (un OAuth App classique n'autorise qu'une seule callback URL → soit on bascule l'URL, soit on crée une 2e OAuth App pour la prod).
 
+## Diagnostic flux GSC refait de bout en bout (2026-06-06) — DÉBLOQUÉ
+Refait tout le flux OAuth + impact étape par étape pour localiser le blocage supposé. Conclusion : **plus rien ne bloque, le journal du 03/06 était périmé.**
+1. **lenkrr-google-auth** : génère l'URL de consentement correcte. `redirect_uri = https://ytgbnqqmcnhmscbvhoin.supabase.co/functions/v1/lenkrr-google-oauth-callback`, client_id `309434449968-...`, scopes webmasters.readonly + userinfo.
+2. **Test redirect_uri** : faux code envoyé au callback → Google répond `invalid_grant: Malformed auth code`, **PAS** `redirect_uri_mismatch`. Donc l'URI **est** bien inscrite dans le client OAuth Google. La manip console qu'on croyait manquante était déjà faite. L'hypothèse « callback local » était fausse : le redirect Google passe par l'URL publique Supabase, jamais par localhost (localhost = seulement `frontendUrl()`, le renvoi navigateur en toute fin, inoffensif).
+3. **Stockage** : 28 lignes dans `google_connections` pour `LENKRR_USER_ID`, refresh_token présent partout, email tim.boussardon@gmail.com. La persistance marche.
+4. **Refresh de token** : `lenkrr-get-gsc-sites` renvoie la liste fraîche de toutes les propriétés → le refresh fonctionne, **les tokens ne sont PAS révoqués** (contrairement au « 401 partout » du 03/06 ; Tim a dû ré-autoriser depuis).
+5. **lenkrr-impact** : `ok:true` avec vraies données. golfiller.fr (pivot 06/05, ±21j) : avant 1286 clics / pos 6,3 → après 1232 clics / pos 5,6. Chaîne complète validée.
+- **Note** : mesurer l'impact d'un lien posé il y a 3 jours est prématuré (GSC a 2-3j de latence + il faut une fenêtre « après » qui se remplit). Sur une page sans trafic, `found:false` est normal.
+- **RESTE pour rendre l'impact utilisable dans le produit** (pas un blocage technique) : câbler le bouton « Connecter GSC » dans l'UI + afficher l'impact par proposition appliquée.
+
 ## Règle de travail
 
 Avancer phase par phase sans rien casser : le build doit rester vert, les écrans rendre en 200, et ne jamais écraser les fonctions de Qadence sur le projet Supabase partagé.
