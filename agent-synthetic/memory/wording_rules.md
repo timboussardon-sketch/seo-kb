@@ -6,6 +6,10 @@ Accumulé par l'agent au fil des éditions. Injecté dans la rédaction (agent 6
 
 Le hook est **intelligent, jamais racoleur**. Un bon titre prouve qu'on est allé creuser et qu'on apporte de la valeur. Il montre la pertinence, il ne vend pas du vide. Pas de « vous n'allez pas croire », pas de promesse creuse, pas de chiffre sorti du chapeau. Le titre dit ce qu'on a trouvé et pourquoi ça compte.
 
+## Titraille — banque de modèles `Titres↑` (Tim, 2026-06-06)
+
+Avant de figer tout titre (brève ou info du jour), lire `memory/Titres↑.md` : c'est la banque de titres-modèles que Tim alimente. On s'inspire du **modèle** (structure, angle, type de promesse, longueur), **jamais du titre exact ni du même sujet plaqué**. Les 3 candidats de titre (objet de première classe, loggés dans `headlines.jsonl`) doivent décliner un ou des patterns de cette banque, nettoyés des écarts de voix (pas de métaphore, pas de jargon, pas de tiret cadratin, jamais racoleur). Quand Tim ajoute des titres, mettre à jour la section « Patterns extraits » de `Titres↑.md`. Si la banque est vide, titraille normale selon la règle n°1.
+
 ## Ton (rappel, source = skill ton-de-voix-tim)
 
 - Tutoiement, phrases courtes, positions tranchées quand c'est légitime.
