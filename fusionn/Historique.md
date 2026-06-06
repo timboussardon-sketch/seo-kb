@@ -4,6 +4,22 @@ Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus réce
 
 ---
 
+## 2026-06-06 · Onglet « Par contexte » (3e mode de recherche) — DÉPLOYÉ
+
+- **Origine** : idée Tim née d'une session FG Formation (extraction de 14 calls .docx → personas → mots-clés décisionnels → modèles pSEO). « Ça pourrait devenir un onglet : j'ajoute des documents et tu lances la recherche. » À côté de « Mon site » et « Un mot-clé », nouveau mode « Par contexte ».
+- **Découverte** : l'infra existait déjà à 90%. La table `documents`, le pipeline `startAnalysis(kw, ctx, documentIds)` qui injecte les docs (ligne 322 de `useConversationalAnalysis`), et l'upload dans `ContextPills` étaient en place. **Cause racine du blocage** : `ContextPills` n'acceptait que `.txt/.csv/.json/.md` et rejetait les `.docx`/`.pdf`.
+- **Livré (MVP, branche `feat/recherche-par-contexte`)** :
+  - `src/lib/parseDocument.ts` (nouveau) : parser navigateur partagé — docx→mammoth, pdf→pdfjs (`?worker` Vite), xlsx→xlsx-js-style, csv/txt/md/json→texte. Libs déjà installées.
+  - `ContextPills.tsx` : utilise le parser partagé → accepte enfin docx/pdf/csv/xlsx (bénéficie aussi au flux mot-clé existant). Limite 5→10 Mo.
+  - `ContextHeroPanel.tsx` (nouveau) : panneau de l'onglet, thématique + upload front + note, upload vers `documents`, design system `--ws-*`.
+  - `useConversationalAnalysis.ts` : `handleContextModeSubmit(kw, note, documentIds)` → `startAnalysis` direct (saute les questions), exporté.
+  - `Compte.tsx` : 3e onglet `context`, rendu `ContextHeroPanel`, quota réutilise le mode `keyword` (3/j free) pour le MVP.
+- **MVP assumé** : les documents enrichissent le pipeline existant (mots-clés/FAQ/objections vus à travers les docs). Pas encore d'extraction de personas formalisés (V2 décidée avec Tim).
+- **État** : type-check OK + build prod OK (worker pdfjs bundlé en chunk séparé). Commit `4694b5e` mergé sur `main` + push (auto-deploy Netlify `fusionn2`). Le push a aussi emporté `d2ebaf3` (ops-alert, commit local du monitoring non encore poussé). Branche `feat/recherche-par-contexte` conservée.
+- **Suites possibles (non faites)** : quota dédié `context` dans `check-rate-limit` (réutilise `keyword` pour l'instant) ; V2 extraction de personas formalisés.
+
+---
+
 ## 2026-06-04 · Chatbot (suppression/édition + skills partagés) + premium + home
 
 - **Premium** : `louis.bertin@live.fr` passé Premium 1 mois (subscription `active`, `current_period_end` 2026-07-04, sans Stripe) via l'API Management Supabase. `is_subscription_valid` = true. Modèle = table `subscriptions`.
@@ -1957,3 +1973,13 @@ Typecheck OK. Commit + push `main` (Netlify déploie fusionn.co).
 **Correctifs** : (1) backlog flushé = 14 emails (0 échec, total 77) ; (2) `LIFECYCLE_CRON_SECRET` régénéré ; (3) nouveau déclencheur = routine distante `trig_01Fx1xDt1CAR4Hh3c5Tp4jof` (quotidienne 08:00 UTC, curl avec Authorization anon + X-Cron-Secret). pg_cron laissé actif mais en 401 (inoffensif, idempotence) ; nettoyage propre = accès DB requis.
 
 **Monitoring (nouveau)** : edge function `ops-alert` (Resend, `--no-verify-jwt`, commit `d2ebaf3`) + watchdog quotidien `trig_01H7tem5fgt25yF2vAddPSyJ` (11:00 UTC) + rapport hebdo email `trig_015EHXasyZs5zGmdR6kYtNMZ` (dimanche 12:00 UTC). Détail : note mémoire `project_monitoring_automatisations`.
+
+---
+
+## 2026-06-06 — Onglet « Par contexte » : les prompts mots-clés ignoraient le contexte/documents
+
+**Symptôme (signalé par Tim)** : en mode « Par contexte », le contexte saisi + documents uploadés ne semblaient pris en compte que dans les micro-intentions, pas dans la liste de mots-clés.
+
+**Diagnostic** : le câblage existe (extraction docs ≤30k chars, fusion note+docs, injection `context` dans les 11 edge functions, cache contourné si contexte ≠ vide). MAIS dans `generate-semantic-keywords` le contexte était **dumpé en vrac** (`CONTEXTE :\n${context}`) sans aucune directive d'usage, noyé sous les règles génériques (expansion, clustering, scoring) qui ne parlaient que du mot-clé pivot. À temp 0.2 → contexte inerte, mots-clés génériques. Les autres functions (faq, tools, objections, models, micro-intentions, semantic-analysis, vecteurs, youtube) avaient une directive « Utilise ce contexte pour adapter… » → d'où l'impression que seules les micro-intentions en tenaient compte. `generate-brief` était aussi un simple dump.
+
+**Correctifs** : (1) `generate-semantic-keywords` — bloc « CONTEXTE IMPÉRATIF » qui prime, + rappels dans MÉTHODE (filtre le plus dur = contexte) et CLUSTERING (nommage dérivé du contexte). (2) `generate-brief` — contexte rendu impératif. Les 5 autres functions vérifiées : directive déjà OK. **Déployé** sur `fwhfnzbtlddzfxbsejyf` (generate-semantic-keywords, generate-brief).
