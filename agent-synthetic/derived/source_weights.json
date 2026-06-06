@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-06-03",
+  "updated": "2026-06-06",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.25,
@@ -43,6 +43,13 @@
     "9to5google": 1.04,
     "ppc.land": 1.04,
     "paypal-newsroom": 1.09,
-    "retail-systems": 1.04
+    "retail-systems": 1.04,
+    "ietf-datatracker": 1.09,
+    "cloudflare-blog": 1.09,
+    "variety": 1.04,
+    "apptopia": 1.04,
+    "sistrix": 1.09,
+    "piunikaweb": 1.04,
+    "mediacopilot": 1.04
   }
 }
