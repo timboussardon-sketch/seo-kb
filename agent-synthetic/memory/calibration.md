@@ -154,3 +154,11 @@ Survivants de l'édition du jour après son goût : trafic IA convertit mieux (5
 - **Ton : neutre et journalistique.** Retour Tim : « parle neutre et journaliste, pas d'émotion ni d'envolée lyrique, respecte la voix SyntheticBrain ». Bannir les formules d'auteur et chutes punchy (ex. « rater la marche », « être nommé ne suffit pas, encore faut-il être cliquable », « le métier qui paie est celui qui... »). Structure de chaque brève : fait → mécanisme → portée, décrits littéralement. Pas de métaphore, pas de chute rhétorique.
 
 Édition v5 réécrite en conséquence (conflit + Reddit retirés, ton neutre, 10 brèves ≥ 4,5).
+
+
+## Édition Algorithme 2026-06-06 — 1er run avec YouTube comme source de découverte
+
+Grille : source_diversity 11, claim_density « info du jour 2 claims verified / 3 brèves », novelty 4/5, doctrine_fit 4/5, redite_risk faible, clickbait_risk faible. Gate équilibré passé.
+
+- **Branchement YouTube testé avec succès.** La veille vidéo élargie (requêtes search/IA larges, pas seulement Claude×SEO) a surfacé 4 pistes publiées après recoupement primaire (Web Bot Auth, Ask.com, Search profiles, DuckDuckGo) et 1 piste écartée (montage Princeton/15 mai). Source `youtube-veille` en mode découverte : 1er hit utile loggé, jamais promue en exploit, aucun claim porté par la seule vidéo.
+- **Tension de goût à arbitrer (honnête).** L'info du jour est Web Bot Auth, famille **technique/infra/protocole** que Tim sous-note explicitement en Brèves (calibration 2026-06... du 2026-06-03 : « Envie ≤2 pour technique/infra », rejet de « crawl, robots, protocoles »). Choisie ici comme info du jour Algorithme par exception « fait franchement neuf » de la directive, et par analogie avec le 0603 (rapport GSC, aussi technique, accepté en info du jour). MAIS un angle plus aligné sur le goût de Tim existait dans le même run : le signal de marché DuckDuckGo + l'aveu Microsoft (« l'IA résume et réduit les clics »), qui relève des familles AIMÉES (bascule entre moteurs, contre-vérité mesurée). Décision : garder Web Bot Auth en info du jour pour la nouveauté, signaler à Tim qu'il peut préférer basculer ce signal de marché en info du jour et reléguer Web Bot Auth en brève. À trancher en revue.
