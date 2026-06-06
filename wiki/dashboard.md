@@ -1,12 +1,12 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-06-05 09:44 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-06-06 09:36 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **522 fichiers** markdown (288 dans `raw/`, 234 dans `wiki/`)
-- **801k mots** au total
-- **5034 wikilinks** (moyenne 9.6 / fichier)
+- **526 fichiers** markdown (291 dans `raw/`, 235 dans `wiki/`)
+- **804k mots** au total
+- **5038 wikilinks** (moyenne 9.6 / fichier)
 - **Ratio raw→wiki** : 0.81 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
@@ -17,7 +17,7 @@
 | raw/notes | 83 | 200.4k | 2026-05-30 |
 | raw/revue-de-presse | 17 | 16.5k | 2026-06-02 |
 | raw/newsletter | 0 | 0 | — |
-| raw/journal | 27 | 36.0k | 2026-06-05 |
+| raw/journal | 28 | 36.5k | 2026-06-05 |
 | raw/briefs | 0 | 0 | — |
 | raw/etudes-seo | 7 | 6.1k | 2026-06-04 |
 | raw/papers | 5 | 2.3k | 2026-05-26 |
@@ -35,20 +35,20 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **82** commits
-- **103** fichiers créés
-- **51** fichiers modifiés
+- **79** commits
+- **60** fichiers créés
+- **31** fichiers modifiés
 
 ### 30 derniers jours
-- **132** commits
-- **225** fichiers créés
+- **134** commits
+- **226** fichiers créés
 - **181** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
 - **17** éditions publiées (17 sur les 30 derniers jours)
-- Dernière édition : `2026-06-02-revue-presse-infographie` (il y a 3j)
+- Dernière édition : `2026-06-02-revue-presse-infographie` (il y a 4j)
 - **Couverture 30j** : 17/30 (57%)
 
 ### Newsletter
@@ -84,7 +84,7 @@
 - `[[2026-04-12-tim-skills-seo-proprietary]]` — **51** backlinks
 - `[[programmatique-pseo]]` — **50** backlinks
 
-### Orphelins (sans backlink) : **304**
+### Orphelins (sans backlink) : **308**
 
 - `raw/journal/2026-05-07.md`
 - `raw/journal/2026-05-23.md`
@@ -96,29 +96,30 @@
 - `raw/journal/2026-05-06.md`
 - `raw/journal/2026-05-22.md`
 - `raw/journal/2026-05-16.md`
-*(304 au total — voir `wiki/audit` pour la liste complète)*
+*(308 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: ▁········█▁▃▁▁▁▃▃·▁▅▃█▅█·█▅█▅▁
+30j: ········█▁▃▁▁▁▃▃·▁▅▃█▅█·█▅█▅▃·
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
-**Streak actuel** : 5 jour(s) consécutif(s) avec commit
+**Streak actuel** : 0 jour(s) consécutif(s) avec commit
 
 ### Dossiers inactifs > 14j
 
-*Aucun — tout est actif*
+- `wiki/concepts` — dernière modif il y a **15j** (2026-05-22)
+- `wiki/sources` — dernière modif il y a **15j** (2026-05-22)
 
 ## 🤖 Automatisations (LaunchAgents)
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-06-05 09:00 | 256 | ✗ |
-| recap-jour | 2026-06-05 02:21 | 0 | ✓ |
+| revue-presse | 2026-06-06 09:12 | 256 | ✗ |
+| recap-jour | 2026-06-05 23:02 | 0 | ✓ |
 | refresh-snapshots | 2026-06-01 08:14 | 0 | ✓ |
-| dashboard | 2026-06-05 09:44 | 0 | ✓ |
+| dashboard | 2026-06-06 09:36 | 0 | ✓ |
 
 ---
 
