@@ -2031,3 +2031,12 @@ Typecheck OK. Commit + push `main` (Netlify déploie fusionn.co).
 **Contrainte clé découverte** : edge functions Supabase = **150s wall-clock max**. → thinking coupé sur tous les appels Claude ; fonctions à très gros output (pseo) incompatibles avec Claude synchrone.
 
 **Non curl-testés** (exigent un JWT user, anon refusé) : plan-action, hn-structure — activés sur la base du pattern identique validé 4× ; à confirmer au 1er run réel. Rollback : `supabase secrets unset <FLAG>`.
+
+## 2026-06-06 (vérif finale) — Tests end-to-end de toutes les fonctions migrées
+
+Vérif via vrai JWT utilisateur (user de test créé/supprimé). Résultats :
+- brief (Opus 4.7) ✅, objections / vecteurs / semantic-analysis / **plan-action** (57s) / **hn-structure** (25s, async, save OK) en Sonnet 4.6 ✅.
+- youtube/reddit : downgrade Pro→Flash **annulé** (Flash produit du JSON malformé sur les titres vidéos/posts réels) → **remis sur gemini-2.5-pro**, youtube re-testé OK. `responseMimeType: application/json` ajouté.
+- **reddit-keywords** : 403 Reddit pré-existant (IP datacenter bloquée) — plante avant le LLM, besoin `REDDIT_CLIENT_ID`/`REDDIT_CLIENT_SECRET`. Hors périmètre migration.
+
+Tout déployé, commité, poussé. Données de test nettoyées, user de test supprimé.
