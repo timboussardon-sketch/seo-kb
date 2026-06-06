@@ -1983,3 +1983,38 @@ Typecheck OK. Commit + push `main` (Netlify déploie fusionn.co).
 **Diagnostic** : le câblage existe (extraction docs ≤30k chars, fusion note+docs, injection `context` dans les 11 edge functions, cache contourné si contexte ≠ vide). MAIS dans `generate-semantic-keywords` le contexte était **dumpé en vrac** (`CONTEXTE :\n${context}`) sans aucune directive d'usage, noyé sous les règles génériques (expansion, clustering, scoring) qui ne parlaient que du mot-clé pivot. À temp 0.2 → contexte inerte, mots-clés génériques. Les autres functions (faq, tools, objections, models, micro-intentions, semantic-analysis, vecteurs, youtube) avaient une directive « Utilise ce contexte pour adapter… » → d'où l'impression que seules les micro-intentions en tenaient compte. `generate-brief` était aussi un simple dump.
 
 **Correctifs** : (1) `generate-semantic-keywords` — bloc « CONTEXTE IMPÉRATIF » qui prime, + rappels dans MÉTHODE (filtre le plus dur = contexte) et CLUSTERING (nommage dérivé du contexte). (2) `generate-brief` — contexte rendu impératif. Les 5 autres functions vérifiées : directive déjà OK. **Déployé** sur `fwhfnzbtlddzfxbsejyf` (generate-semantic-keywords, generate-brief).
+
+---
+
+## 2026-06-06 — Nouvel outil gratuit « Générateur de mots-clés gratuit »
+
+**Objectif** : outil gratuit qui, à partir d'UN mot-clé de départ, génère 20 mots-clés autour via l'API Gemini, avec Score Business et fourchette de volume dans l'analyse. Construit sur le modèle des autres outils (ToolPageLayout).
+
+**Edge function** : `tool-keyword-generator` (déployée sur `fwhfnzbtlddzfxbsejyf`). Gemini (`gemini-3.1-flash-lite`) propose 20 requêtes + signaux qualitatifs ; le **Score Business est calculé en code** (mêmes poids déterministes que `score-keywords-batch` : intent, modificateur commercial, signal local, pénalité substitution IA, tension commerciale, proximité offre, borné 0-100). La **fourchette de volume** est un ordre de grandeur estimé (tiers very-high→niche), **hors du score** et jamais un chiffre précis inventé (doctrine anti-volume + anti-hallucination). Sanitize/dedup côté serveur, exclut le seed.
+
+**Page** : `src/pages/KeywordGenerator.tsx`, route `/generateur-mots-cles-gratuit`. Un seul champ de saisie (comme Suggest) → tableau trié par Score Business avec colonnes Volume estimé / Score / Potentiel / Détail (breakdown ligne par ligne), bloc « champion », bloc méthodo, FAQ + related links + schema FAQPage. Copy au vouvoiement, zéro mention d'argent (« tension commerciale » au lieu de CPC/euros), pas de tiret cadratin.
+
+**Câblage** : route App.tsx (lazy), lien Footer (en tête des outils gratuits), entrée sitemap.xml.
+
+**Vérifs** : tsc OK sur les 2 nouveaux fichiers (bruit TS préexistant ailleurs ignoré par `vite build`). Test réel sur « consultant seo » → 20 résultats, champion « agence seo paris » (100/100), volumes et scores cohérents. Montré en local (port dev).
+
+**Reste à faire** : commit + push main pour déploiement Netlify prod (en attente de la relecture locale de Tim).
+
+---
+
+## 2026-06-06 — Migration LLM hybride Gemini → Claude (brief Opus 4.7, objections+vecteurs Sonnet 4.6)
+
+**Contexte** : audit des 17 edge functions `generate-*`. Tri masse (reste Gemini) vs raisonnement stratégique (→ Claude). Helper `_shared/claude.ts` (Anthropic Messages API, raw HTTP). Sélecteur provider par fonction via `body.<x>Model` (override testable) ou env `<X>_MODEL` ; défaut Gemini inchangé.
+
+**POC brief réel** (« accompagnement qualiopi », Opus 4.7 vs Gemini Flash) : Opus nettement supérieur (entités réglementaires réelles décret 2019-565/COFRAC/RNQ 32 indicateurs, 8 semantic gaps vs 4, Surprise Gap métier « désalignement BPF/site/conventions »). Coût réel mesuré : 2564 in / 3545 out, **0 token de thinking** → ~0,10 $/brief vs ~0,01 $ Gemini.
+
+**Activé en prod** (clé `ANTHROPIC_API_KEY` posée dans secrets) :
+- `BRIEF_MODEL=claude-opus-4-7`
+- `OBJECTIONS_MODEL=claude-sonnet-4-6`
+- `VECTEURS_MODEL=claude-sonnet-4-6`
+
+**Décision technique** : thinking COUPÉ sur tous les appels Claude. Raison = limite edge Supabase 150s (objections+thinking a timeout à 155s) ET qualité identique sans thinking (le POC brief gagnant avait 0 token thinking). Sonnet sans thinking : objections 64s, vecteurs 73s — OK.
+
+**Bug pré-existant détecté** (hors migration) : table `search_semantic_analysis_results` réduite à 3 colonnes (id/user_id/search_id) → le save de `generate-semantic-analysis` échoue, quel que soit le modèle. Migration de cette fonction codée mais NON activée tant que le schéma n'est pas réparé. À traiter séparément.
+
+**Coût estimé** : ~+42 $/mois à ~200 analyses (brief +18, objections +12, vecteurs +12). Réversible instantanément : `supabase secrets unset BRIEF_MODEL OBJECTIONS_MODEL VECTEURS_MODEL`.
