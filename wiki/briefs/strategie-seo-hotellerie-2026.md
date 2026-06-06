@@ -1,7 +1,7 @@
 ---
 title: "Stratégie SEO hôtellerie 2026 : récupérer la réservation directe"
 slug: strategie-seo-hotellerie-2026
-type: article-blog
+type: brief
 date: 2026-04-25
 created: 2026-04-25
 auteur: Tim Boussardon (Organikk)

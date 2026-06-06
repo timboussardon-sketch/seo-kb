@@ -1,3 +1,12 @@
+---
+type: register
+title: Log chronologique du vault
+tags: [register, log]
+created: 2026-04-11
+updated: 2026-06-06
+status: stable
+---
+
 # Log
 
 > Journal chronologique append-only. Parseable via `grep "^## \[" wiki/log.md`.
@@ -547,7 +556,7 @@ Le concept [[concepts/retrieval-collapse]] devient l'argument scientifique centr
 - output : `wiki/queries/kw-research-YYYY-MM-DD-slug.md` + Google Sheet `KW_Research_[Client]_[Date]` (5 colonnes scorées : volume, CPC, intérêt business 1-5, difficulté 1-5, YoY %)
 
 ### Pages mises à jour
-- [[AGENTS]] §7 : "12 skills" → "13 skills" + ligne `kw-research-workflow` ajoutée à la table de hooks
+- `AGENTS.md` §7 : "12 skills" → "13 skills" + ligne `kw-research-workflow` ajoutée à la table de hooks
 - [[syntheses/process-keyword-research-5-etapes]] : encadré "Skill orchestrateur" en intro + ajout du skill et des 3 sous-skills dans Pages liées
 - [[concepts/mots-cles-actionnels]] : ajout du skill dans Pages liées
 
@@ -727,3 +736,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - contradictions : aucune > 60 j, donc aucune ne remonte encore en revue hebdo. C-011/C-012 (détectées 2026-04-13, 49 j) franchissent le seuil ≈ 2026-06-12 — à trancher en W23/W24. Aucune fermeture ce mois (l'ingest OpenDecoder décidé en W20 n'a pas eu lieu).
 - doctrine : aucun `confidence:` touché, aucun wording corrigé — rien n'a changé de statut.
 - Doctrine 2026-06-01 : 0 hypothèse bougée (validé:0 invalidé:0 en-test:0) / 0 contradiction fermée. Goulot unique et inchangé depuis 3 revues hebdo : la baseline GSC de H-007 qui ne se capture pas.
+
+## [2026-06-06] audit | Audit vault + liens et correctifs
+- rapport: [[audit/2026-06-06-audit-vault-liens]]
+- keywords/ (27): type wiki→query, MOC [[keywords/index]] créée, "Voir aussi" liens réels
+- liens cassés wiki: 10→0 (pipe échappé, liens racine/skills, entité golfiller créée)
+- types frontmatter: 35→0 (synthese→synthesis, article-blog→brief, cadrage→methode)
+- AGENTS.md §5.1 étendu: proposition, methode, post
+- index.md + log.md typés register; orphelines raccrochées au catalogue
+- raw bootcamp4 backfillé; 2 canvas vides supprimés; ./kb rebuild

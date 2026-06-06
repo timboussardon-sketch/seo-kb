@@ -1,3 +1,12 @@
+---
+type: register
+title: Index du wiki SEO/IA/GEO
+tags: [register, index, navigation]
+created: 2026-04-11
+updated: 2026-06-06
+status: stable
+---
+
 # Index du wiki SEO/IA/GEO
 
 > Catalogue de toutes les pages. Mis à jour à chaque ingest.
@@ -12,6 +21,7 @@
 - [[moc/moc-vente-objections]] — vente, avatar, objections
 - [[moc/moc-redaction]] — rédaction et ton de voix
 - [[moc/moc-methode-kb]] — méthode KB et système
+- [[keywords/index]] — recherches mots-clés : index des campagnes (27 pages)
 
 ### Registres (boucles fermées)
 - [[hypotheses]] — registre des claims non validés (revue mensuelle)
@@ -244,7 +254,7 @@
 - [[concepts/modele-page-variable-prix]] — pSEO sur variable continue (fourchette tarif) (1 source)
 - [[concepts/scam-objection-data-aleatoire]] — Page arnaque comme levier SEO + E-E-A-T (1 source)
 
-## Syntheses (7)
+## Syntheses (8)
 - [[syntheses/doctrine-seo-post-sge]] — Thèse unifiée 4 piliers (8 sources)
 - [[syntheses/vendre-seo-ia-2026]] — 7 principes de vente SEO IA (5 sources)
 - [[syntheses/workflow-complet-consultant-seo-ia]] — Pipeline 9 étapes prospection → livraison (6 sources)
@@ -252,6 +262,7 @@
 - [[syntheses/4-piliers-organikk]] — Réflexion fondatrice des 4 piliers Organikk (1 source)
 - [[syntheses/faq-geo-175-questions]] — FAQ GEO 175 questions, réponses doctrine Organikk (20 sources)
 - [[syntheses/tim-profil-doctrine]] — Profil et doctrine de Tim Boussardon
+- [[syntheses/audit-doctrine-2026]] — Audit de la doctrine 2026 (cas terrain, dont [[entities/golfiller]])
 
 ## Queries (4)
 - [[queries/pseo-2026-05-16-landing-lead-gen-organikk]] — pSEO Organikk : 5 modèles de landing lead-gen sur problématique SEO (45 pages possibles, M1 pain-first prioritaire)
@@ -259,9 +270,11 @@
 - [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] — Wiki persistant optimise-t-il le Grounding Score ? (8 sources)
 - [[queries/transfert-vault-client]] — Transfert d'un vault vers un client (tout sauf la stratégie client)
 
-## Engines / Méthodes opérationnelles (1)
+## Engines / Méthodes opérationnelles (3)
 
 - [[engine-densite-semantique-sans-serp]] — Engine v8 : carte sémantique pure sans scraping SERP (9 phases, 8 livrables, modes Bronze/Silver/Gold + Mode 0 KB Bootstrap)
+- [[methodes/cadrage-boucle-edition-algorithme]] — Cadrage de la boucle d'édition Algorithme
+- [[methodes/ranker-verticale-niche-sans-backlink]] — Ranker une verticale de niche sans backlink
 
 ## Outputs skills
 ### Briefs (5)
@@ -280,9 +293,13 @@
 - [[revues-presse/2026-04-13-claude-code-obsidian-sans-complexite]] — Claude Code + Obsidian setup (validé Tim)
 - [[revues-presse/2026-04-13-algorithme-revue-presse]] — Édition Algorithme + 4e brève A-RAG
 
-## Audits (2)
+## Audits (5)
 - [[audit/2026-05-11-audit]] — Audit vault du 2026-05-11
 - [[audit/2026-05-21-audit-vault]] — Audit santé du vault : liens, orphelines, frontmatter, index
+- [[audit/2026-05-29-audit]] — Audit du 2026-05-29
+- [[audit/2026-06-01-audit]] — Audit du 2026-06-01
+- [[audit/2026-06-06-audit-vault-liens]] — Audit vault + liens 2026-06-06 (keywords, frontmatter, golfiller)
 
-## Propositions (1)
+## Propositions (2)
 - [[propositions/template-retainer-2h-500]] — Template de proposition retainer 2h/mois à 500 €
+- [[propositions/modele-proposition-pdf]] — Modèle de proposition PDF

@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — outil de prospection"
 slug: recherche-2026-05-27-outil-de-prospection
@@ -40,3 +40,10 @@ Cible : éditeurs outils de prospection B2B (cold email, LinkedIn automation, sa
 
 - [ ] DataForSEO + scrapping G2 reviews
 - [ ] Surveiller ban LinkedIn policy 2026
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

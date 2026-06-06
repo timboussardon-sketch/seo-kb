@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — expert SEO"
 slug: recherche-2026-05-27-expert-seo
@@ -51,3 +51,10 @@ Synthèse : 60 Do · 15 Know→Do · 5 Know-Simple · 100% volumes [À SOURCER]
 3. expert SEO pour migration gros catalogue (Do, technique pointue rare)
 4. expert SEO advisory board / fractional CSO (Do, modèle premium émergent)
 5. comment reconnaître un vrai expert SEO 2026 (Know→Do, intent diagnostic)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

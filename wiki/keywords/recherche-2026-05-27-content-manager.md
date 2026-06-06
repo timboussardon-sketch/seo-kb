@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — content manager"
 slug: recherche-2026-05-27-content-manager
@@ -157,3 +157,10 @@ Volumes 100% en [À SOURCER] (Google Ads/DataForSEO non branchés)
 - [ ] Brancher Google Ads ou DataForSEO → remplir volumes [À SOURCER]
 - [ ] Passer à `seo-clustering-mots-cles` pour valider regroupements
 - [ ] Injecter dans HTML `liste-mot-cle-content-manager.html` (Partie 1)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — expert Shopify"
 slug: recherche-2026-05-27-expert-shopify
@@ -53,3 +53,10 @@ Directory `/blog/liste-des-mots-cles-expert-shopify`. Cible : marchand Shopify /
 3. expert Hydrogen headless (Do, niche défendable)
 4. expert Klaviyo Shopify (Do, stack DTC dominante)
 5. alternative à [agence Plus Partner connue] (Do, intent post-déception)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

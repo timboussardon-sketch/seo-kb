@@ -1,6 +1,6 @@
 ---
 title: "Cadrage : SyntheticBrain, boucle d'édition auto-améliorante pour Algorithme"
-type: cadrage
+type: methode
 created: 2026-05-30
 status: draft, en validation avec Tim
 skill-socle: revue-presse-quotidienne

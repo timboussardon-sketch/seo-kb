@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — rédacteur web"
 slug: recherche-2026-05-27-redacteur-web
@@ -152,3 +152,10 @@ Enrichissement de la directory `/blog/liste-des-mots-cles-redacteur-web` sur fus
 - [ ] Brancher Google Ads ou DataForSEO → remplir volumes [À SOURCER]
 - [ ] Passer à `seo-clustering-mots-cles` pour valider regroupements
 - [ ] Injecter dans HTML `liste-mot-cle-redacteur-web.html` (Partie 1)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

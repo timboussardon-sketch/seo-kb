@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — SEO content writer"
 slug: recherche-2026-05-27-seo-content-writer
@@ -156,3 +156,10 @@ Volumes 100% en [À SOURCER] (Google Ads/DataForSEO non branchés)
 - [ ] Brancher Google Ads ou DataForSEO → remplir volumes [À SOURCER]
 - [ ] Passer à `seo-clustering-mots-cles` pour valider regroupements
 - [ ] Injecter dans HTML `liste-mot-cle-seo-content-writer.html` (Partie 1)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

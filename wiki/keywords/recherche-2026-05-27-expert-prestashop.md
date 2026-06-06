@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — expert Prestashop"
 slug: recherche-2026-05-27-expert-prestashop
@@ -55,3 +55,10 @@ Directory `/blog/liste-des-mots-cles-expert-prestashop`. Cible : marchand FR sur
 3. expert Prestashop dev module custom (Do, niche défendable)
 4. expert Prestashop B2B (Do, vertical fort en CA cumulé)
 5. expert Prestashop multilingue EU (Do, marché EU pertinent)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

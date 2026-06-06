@@ -52,11 +52,11 @@ Le skill scan-arxiv est documenté précisément (cohérent avec [[sources/2026-
 
 ## Articulation avec la routine cloud Anthropic
 
-Cohérent avec [[MIGRATION]] §7 qui mentionne la **routine cloud Algorithme** (`trig_01Q9turzWB81Ck2i4YF3gyzN`, cron `7 7 * * *` UTC, lien https://claude.ai/code/routines/trig_01Q9turzWB81Ck2i4YF3gyzN) — la `revue-presse-quotidienne` et `raw-revue-de-presse` sont vraisemblablement les skills exécutés par cette routine.
+Cohérent avec `MIGRATION.md` §7 qui mentionne la **routine cloud Algorithme** (`trig_01Q9turzWB81Ck2i4YF3gyzN`, cron `7 7 * * *` UTC, lien https://claude.ai/code/routines/trig_01Q9turzWB81Ck2i4YF3gyzN) — la `revue-presse-quotidienne` et `raw-revue-de-presse` sont vraisemblablement les skills exécutés par cette routine.
 
 ## Articulation avec le sous-repo revue-de-presse
 
-Cohérent avec [[MIGRATION]] §2 : le sous-repo `~/Documents/seo-kb/raw/revue-de-presse/` est synchronisé toutes les 15 min via LaunchAgent macOS — la routine cloud écrit dans ce sous-repo, le LaunchAgent le synchronise localement.
+Cohérent avec `MIGRATION.md` §2 : le sous-repo `~/Documents/seo-kb/raw/revue-de-presse/` est synchronisé toutes les 15 min via LaunchAgent macOS — la routine cloud écrit dans ce sous-repo, le LaunchAgent le synchronise localement.
 
 ## Apports à la KB
 

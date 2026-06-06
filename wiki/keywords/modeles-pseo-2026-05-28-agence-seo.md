@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Modèles pSEO Spokes — agence SEO"
 slug: modeles-pseo-2026-05-28-agence-seo
@@ -46,3 +46,10 @@ Chaque Spoke pointe vers la Money Page avec ancre contextuelle variée. La Money
 - [ ] Composer le HTML `liste-mot-cle-agence-seo.html` pilote v2 avec les 4 tableaux skills (recherche + clustering + décisionnels + modèles pSEO)
 - [ ] Briefer les Top 3 Spokes via [[skill-brief-contenu]] pour production
 - [ ] Formaliser le maillage Spokes → Money Page via [[maillage-systeme]]
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/programmatique-pseo]]
+- [[concepts/pseo-data-driven-models]]

@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — agence inbound marketing"
 slug: recherche-2026-05-27-agence-inbound-marketing
@@ -52,3 +52,10 @@ Synthèse : 60 Do · 15 Know→Do · 5 Know-Simple · 100% volumes [À SOURCER]
 3. alternative à HubSpot agence Plezi/Brevo (Do, sortie de l'écosystème HubSpot)
 4. agence Allbound (inbound + outbound) (Do, post-déception inbound seul)
 5. agence inbound performance MQL→SQL (Do, anti-vanity leads)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

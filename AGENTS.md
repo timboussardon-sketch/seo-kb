@@ -138,8 +138,9 @@ Chaque page `wiki/` (et `raw/`) commence par :
 
 ```yaml
 ---
-type: source | entity | concept | synthesis | query | brief | cluster | quick-win | doctrine | revue-presse | pseo-strategy | audit | register | moc | decision | proof
+type: source | entity | concept | synthesis | query | brief | cluster | quick-win | doctrine | revue-presse | pseo-strategy | audit | register | moc | decision | proof | proposition | methode | post
 source_type: article | paper | doc-google | gsc-export | client-note | transcript | test-terrain | doctrine  # pour type=source uniquement
+# proposition : propale/template commercial (propositions/) ; methode : fiche méthode (methodes/) ; post : post LinkedIn (posts-linkedin/)
 # register : pages-index vivantes (hypotheses, contradictions, ingest-backlog, decisions/index, revue-hebdo)
 # moc : carte d'entrée / Map of Content (000-home, moc/*)
 # decision : ADR (decisions/NNNN-*)

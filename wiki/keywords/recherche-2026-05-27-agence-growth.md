@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — agence growth"
 slug: recherche-2026-05-27-agence-growth
@@ -52,3 +52,10 @@ Synthèse : 65 Do · 12 Know→Do · 3 Know-Simple · 100% volumes [À SOURCER]
 3. agence growth PLG product-led (Do, doctrine émergente)
 4. alternative à Growth Room (Do, intent post-déception 10-25k€/mois)
 5. agence growth equity / growth at risk (Do, modèle disruptif rare)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

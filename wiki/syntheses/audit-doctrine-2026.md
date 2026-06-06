@@ -1,5 +1,5 @@
 ---
-type: synthese
+type: synthesis
 title: "Audit doctrine SEO Tim 2026 — ce qui dysfonctionne"
 aliases: [audit-doctrine-2026, dysfonctionnements-doctrine]
 tags: [doctrine-tim, audit, meta, 4-piliers, geo, pseo]

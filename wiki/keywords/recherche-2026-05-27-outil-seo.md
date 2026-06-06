@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — outil SEO"
 slug: recherche-2026-05-27-outil-seo
@@ -44,3 +44,10 @@ Cible : éditeurs SaaS (pas utilisateurs finaux) qui veulent gagner des parts de
 - [ ] Brancher DataForSEO → volumes [À SOURCER]
 - [ ] Passer à seo-clustering-mots-cles
 - [ ] Injecter dans `liste-mot-cle-outil-seo.html`
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

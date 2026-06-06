@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Mots-clés décisionnels — agence SEO"
 slug: decisionnels-2026-05-28-agence-seo
@@ -39,5 +39,12 @@ Shortlist priorisée des mots-clés décisionnels parmi les 78 mots-clés ([[rec
 ## Prochaines étapes
 
 - [ ] Brancher Google Ads ou DataForSEO → confirmer volumes des Top 10 Tier 1
-- [ ] Passer à [[seo-modeles-pseo]] pour Spokes décisionnels autour de la Money Page Fusionn
+- [ ] Passer à [[concepts/programmatique-pseo]] pour Spokes décisionnels autour de la Money Page Fusionn
 - [ ] Injecter outputs dans HTML `liste-mot-cle-agence-seo.html` pilote v2 (section dédiée seo-mots-cles-decisionnels)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[keywords/clustering-2026-05-28-agence-seo]]
+- [[concepts/mots-cles-actionnels]]

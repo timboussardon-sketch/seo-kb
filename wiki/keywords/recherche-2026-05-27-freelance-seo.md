@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — freelance SEO"
 slug: recherche-2026-05-27-freelance-seo
@@ -51,3 +51,10 @@ Synthèse : 65 Do · 10 Know→Do · 5 Know-Simple · 100% volumes [À SOURCER]
 3. freelance SEO Malt 5 étoiles Paris (Do, intent plateforme + ville)
 4. alternative agence SEO freelance senior (Do, intent post-burn agence)
 5. freelance SEO pSEO programmatique (Do, ultra-niché, TJM 800€+)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

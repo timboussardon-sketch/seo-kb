@@ -27,6 +27,6 @@ status: living-doc
 
 | ADR | Titre | Statut | Date |
 |---|---|---|---|
-| [[decisions/0001-fermeture-boucles-second-cerveau\|ADR-0001]] | Fermeture des trois boucles ouvertes du second cerveau | `accepted` | 2026-05-16 |
+| [[decisions/0001-fermeture-boucles-second-cerveau|ADR-0001]] | Fermeture des trois boucles ouvertes du second cerveau | `accepted` | 2026-05-16 |
 
 Pages liées : [[index]] · [[log]] · [[hypotheses]] · [[ingest-backlog]]

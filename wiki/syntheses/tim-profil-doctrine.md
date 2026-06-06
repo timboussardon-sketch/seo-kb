@@ -175,7 +175,7 @@ L'approche éthique est la seule qui sort du lot durablement. On ne fait pas du 
 
 ## Mon système — vue d'ensemble
 
-**Vault de connaissance :** ce dépôt (`~/Documents/seo-kb/`). Architecture en trois couches selon [[AGENTS|AGENTS.md]] — `raw/` immuable, `wiki/` domaine de l'agent, `README.md` côté humain. Inspiré du [pattern LLM Wiki de Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+**Vault de connaissance :** ce dépôt (`~/Documents/seo-kb/`). Architecture en trois couches selon `AGENTS.md` — `raw/` immuable, `wiki/` domaine de l'agent, `README.md` côté humain. Inspiré du [pattern LLM Wiki de Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
 **Skills propriétaires** (15 actifs dans Claude Code) :
 
@@ -193,7 +193,7 @@ Matrice complète skills ↔ piliers dans [[4-piliers-organikk]].
 
 **Routine cloud active :** `algorithme-newsletter-quotidien` — édition Algorithme tous les jours à 9h07 Paris, sortie Google Drive `seo-kb/raw/revue-de-presse/`. Modèle Opus 4.7. ID `trig_01Q9turzWB81Ck2i4YF3gyzN`.
 
-**Setup détaillé** dans [[MIGRATION]] (inventaire complet pour reconstruction sur autre machine).
+**Setup détaillé** dans `MIGRATION.md` (inventaire complet pour reconstruction sur autre machine).
 
 ---
 
@@ -203,4 +203,4 @@ Je ne suis pas le bon interlocuteur si tu cherches du trafic décoratif, des pos
 
 ---
 
-**Connecté avec :** [[4-piliers-organikk]] · [[doctrine-seo-post-sge]] · [[anti-ai-writing]] · [[workflow-redaction-8-etapes]] · [[4w-deep-reflection]] · [[surprise-gap]] · [[grounding-score]] · [[AGENTS]]
+**Connecté avec :** [[4-piliers-organikk]] · [[doctrine-seo-post-sge]] · [[anti-ai-writing]] · [[workflow-redaction-8-etapes]] · [[4w-deep-reflection]] · [[surprise-gap]] · [[grounding-score]] · `AGENTS.md`

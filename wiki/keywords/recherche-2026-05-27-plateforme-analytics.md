@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — plateforme analytics"
 slug: recherche-2026-05-27-plateforme-analytics
@@ -40,3 +40,10 @@ Cible : éditeurs analytics (product + web), focus privacy-first vs all-in-one. 
 
 - [ ] DataForSEO
 - [ ] Surveiller Piwik PRO pricing changes
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

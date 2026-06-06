@@ -35,7 +35,7 @@ Structure saine, aucun dossier cassé. Deux problèmes de fond : **dérive de l'
 - `[[cocon-semantique]]` → `[[maillage-systeme]]` dans la query pSEO secteur×ville.
 - 7 liens `[[feedback_*]]` (mémoire hors vault) déliés en texte simple ; `feedback_anti_ai_writing` repointé sur `[[concepts/anti-ai-writing]]`.
 - `[[raw/data/keyword-research-2026-05-02]]` (dossier) → `[[raw/data/keyword-research-2026-05-02/keywords-classified]]` (fichier).
-- Faux positif : `[[decisions/0001-fermeture-boucles-second-cerveau\|ADR-0001]]` est une syntaxe Obsidian valide (échappement de pipe en tableau), pas un lien cassé.
+- Faux positif : `[[decisions/0001-fermeture-boucles-second-cerveau|ADR-0001]]` est une syntaxe Obsidian valide (échappement de pipe en tableau), pas un lien cassé.
 
 ### Notes manquantes créées
 - `concepts/entites-vectorielles` — réclamée par 6 fichiers raw, rédigée depuis le skill `seo-entites-vectorielles`.
@@ -55,4 +55,4 @@ Structure saine, aucun dossier cassé. Deux problèmes de fond : **dérive de l'
 
 ## Pages liées
 
-[[index]] · [[log]] · [[audit/2026-05-11-audit]] · [[AGENTS]] · [[concepts/entites-vectorielles]] · [[entities/gsc]]
+[[index]] · [[log]] · [[audit/2026-05-11-audit]] · `AGENTS.md` · [[concepts/entites-vectorielles]] · [[entities/gsc]]

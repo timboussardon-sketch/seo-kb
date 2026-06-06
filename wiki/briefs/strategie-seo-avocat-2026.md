@@ -1,7 +1,7 @@
 ---
 title: "Stratégie SEO avocat 2026 : capter le client avant le cabinet concurrent"
 slug: strategie-seo-avocat-2026
-type: article-blog
+type: brief
 date: 2026-04-25
 created: 2026-04-25
 auteur: Tim Boussardon (Organikk)

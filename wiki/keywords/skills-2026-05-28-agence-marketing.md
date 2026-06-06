@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Skills mots-clés combinés — agence marketing"
 slug: skills-2026-05-28-agence-marketing
@@ -93,3 +93,10 @@ Money Page = agence marketing 360. Score Business sur 5 (produit des 3 facteurs)
 | comment évaluer la qualité d'une agence marketing avant 90 jours | Étapes du service | 2,6 |
 
 Maillage : chaque page satellite pointe vers la Money Page (ancre « notre accompagnement marketing 360 ») ; la Money Page liste les satellites en cross-sell.
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/pseo-data-driven-models]]
+- [[concepts/programmatique-pseo]]

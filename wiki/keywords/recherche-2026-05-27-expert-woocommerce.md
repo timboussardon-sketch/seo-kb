@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — expert WooCommerce"
 slug: recherche-2026-05-27-expert-woocommerce
@@ -52,3 +52,10 @@ Directory `/blog/liste-des-mots-cles-expert-woocommerce`. Cible : marchand WordP
 3. expert WooCommerce multilingue WPML (Do, niche défendable EU)
 4. expert WooCommerce Subscriptions (Do, business model abonnement)
 5. tarif expert WooCommerce (Do, comparateur)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

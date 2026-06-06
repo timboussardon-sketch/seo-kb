@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — SaaS B2B"
 slug: recherche-2026-05-27-saas-b2b
@@ -39,3 +39,10 @@ Cible : éditeurs SaaS B2B horizontaux (CRM, ERP, marketing auto, comm, support,
 
 - [ ] DataForSEO + benchmarks SaaS Capital
 - [ ] Injecter NRR/churn data dans Partie 2
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

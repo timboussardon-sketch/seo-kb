@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Clustering mots-clés — agence SEO"
 slug: clustering-2026-05-28-agence-seo
@@ -57,10 +57,18 @@ La directory pilier RESTE le hub qui liste les 12 angles. Les 50 clusters devien
 ## Prochaines étapes
 
 - [ ] Brancher Google Ads ou DataForSEO → valider les SERP overlaps réels
-- [ ] Passer à [[seo-mots-cles-decisionnels]] pour isoler les Do parmi les 50 clusters et scorer le potentiel de conversion
+- [ ] Passer à [[concepts/mots-cles-actionnels]] pour isoler les Do parmi les 50 clusters et scorer le potentiel de conversion
 - [ ] Passer à [[skill-entites-vectorielles]] pour Partie 2 de la directory pilier
 - [ ] Passer à [[skill-product-led-seo]] pour Partie 3 (10 outils interactifs)
 - [ ] Passer à [[skill-peurs-objections]] pour nourrir Surprise Gap Partie 2
-- [ ] Passer à [[seo-modeles-pseo]] pour scoring Partie 4 (Proximité × Intention × Faisabilité)
+- [ ] Passer à [[concepts/programmatique-pseo]] pour scoring Partie 4 (Proximité × Intention × Faisabilité)
 - [ ] Passer à [[skill-roadmap-pseo]] pour Partie 5
 - [ ] Injecter outputs dans HTML `liste-mot-cle-agence-seo.html` (pilote v2)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[keywords/recherche-2026-05-27-agence-seo]]
+- [[keywords/decisionnels-2026-05-28-agence-seo]]
+- [[concepts/mots-cles-actionnels]]

@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — agence SEO"
 slug: recherche-2026-05-27-agence-seo
@@ -47,3 +47,11 @@ Synthèse : 62 Do · 12 Know→Do · 4 Know-Simple · 4 Know · 60 Décision · 
 - [ ] Passer à `seo-clustering-mots-cles` pour regrouper en pages (12 listings = 12 sous-pages potentielles autour du pilier)
 - [ ] Passer à `seo-mots-cles-decisionnels` pour scorer les 78 par potentiel de conversion
 - [ ] Injecter dans HTML `liste-mot-cle-agence-seo.html` (Partie 1)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]
+- [[keywords/clustering-2026-05-28-agence-seo]]

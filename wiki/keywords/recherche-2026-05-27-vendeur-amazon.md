@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — vendeur Amazon"
 slug: recherche-2026-05-27-vendeur-amazon
@@ -53,3 +53,10 @@ Directory `/blog/liste-des-mots-cles-vendeur-amazon`. Cible : marchand sur Amazo
 3. consultant PPC Amazon ACoS (Do, KPI bottom-line)
 4. vendeur Amazon brand registry (Do, prérequis Sponsored Brands)
 5. vendeur Amazon vs Shopify (Know→Do, arbitrage récurrent)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

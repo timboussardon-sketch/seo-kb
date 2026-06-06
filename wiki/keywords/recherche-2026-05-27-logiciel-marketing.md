@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — logiciel marketing"
 slug: recherche-2026-05-27-logiciel-marketing
@@ -39,3 +39,10 @@ Cible : éditeurs SaaS marketing automation, email, lifecycle, lead scoring. Mar
 
 - [ ] DataForSEO
 - [ ] Injecter market size dans Partie 2
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

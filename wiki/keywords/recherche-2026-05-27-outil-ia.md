@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — outil IA"
 slug: recherche-2026-05-27-outil-ia
@@ -39,3 +39,10 @@ Cible : éditeurs IA et SaaS qui intègrent du LLM (pas utilisateurs ChatGPT). M
 
 - [ ] DataForSEO + Exploding Topics
 - [ ] Surveillance AI Overview canibalisation
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — e-commerçant"
 slug: recherche-2026-05-27-e-commercant
@@ -61,3 +61,10 @@ Synthèse : ~45 Do · 10 Know→Do · 5 Know. Volumes [À SOURCER] (Google Ads /
 - [ ] Brancher Google Ads / DataForSEO
 - [ ] Passer à `seo-clustering-mots-cles` (12 listings = 12 sous-pages)
 - [ ] Injecter dans `liste-mot-cle-e-commercant.html`
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]

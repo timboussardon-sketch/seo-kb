@@ -48,12 +48,12 @@ Choix : soit corriger les fichiers vers la taxonomie existante, soit étendre AG
 ## P3 — Liens cassés actionnables dans `wiki/` (10)
 
 ```
-decisions/index.md            → [[decisions/0001-...\|ADR-0001]]   (BUG: pipe échappé \| ; la cible existe)
-sources/2026-04-30-scheduled-skills-cron.md → [[MIGRATION]] x2     (fichier racine, pas une page wiki)
+decisions/index.md            → [[decisions/0001-...|ADR-0001]]   (BUG: pipe échappé \| ; la cible existe)
+sources/2026-04-30-scheduled-skills-cron.md → `MIGRATION.md` x2     (fichier racine, pas une page wiki)
 keywords/clustering-2026-05-28-agence-seo.md → [[seo-mots-cles-decisionnels]], [[seo-modeles-pseo]]  (noms de SKILLS, pas des pages)
 keywords/decisionnels-2026-05-28-agence-seo.md → [[seo-modeles-pseo]]
 syntheses/audit-doctrine-2026.md → [[entities/golfiller]]          (ENTITÉ MANQUANTE à créer)
-syntheses/tim-profil-doctrine.md → [[AGENTS|AGENTS.md]], [[AGENTS]], [[MIGRATION]]  (fichiers racine)
+syntheses/tim-profil-doctrine.md → `AGENTS.md`, `AGENTS.md`, `MIGRATION.md`  (fichiers racine)
 ```
 
 ## P4 — Orphelines hors keywords (4 réelles)

@@ -1,5 +1,5 @@
 ---
-type: wiki
+type: query
 category: keywords
 title: "Recherche mots-clés — agence communication"
 slug: recherche-2026-05-27-agence-communication
@@ -52,3 +52,10 @@ Synthèse : 60 Do · 12 Know→Do · 8 Know-Simple · 100% volumes [À SOURCER]
 3. agence RP B2B SaaS (Do, vertical défendable hors mode/luxe)
 4. agence communication pour fondateur sans DirCom (Do, persona précis)
 5. agence communication ROI mesurable (Do, anti-vanity branding)
+
+
+## Voir aussi
+
+- [[keywords/index]]
+- [[concepts/mots-cles-actionnels]]
+- [[concepts/programmatique-pseo]]
