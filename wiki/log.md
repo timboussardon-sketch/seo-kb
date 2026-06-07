@@ -619,17 +619,17 @@ Le skill est l'outillage de la synthèse [[syntheses/process-keyword-research-5-
 - Valider le périmètre M1 (15 slugs) avec Tim, puis scaffolder src/app/seo/[slug]/ + strategies.ts (trafic-en-chute, pas-cite-par-chatgpt)
 - Sourcer les chiffres `[DONNÉE À SOURCER]` avant toute mise en ligne (cas clients + étude conversions LLM)
 
-## [2026-05-16] systeme | Fermeture des 3 boucles + rituel + navigation (refonte second cerveau)
+## [2026-05-16] systeme | Fermeture des 3 boucles + rituel + navigation (refonte système)
 
-- déclencheur : Tim veut le meilleur second cerveau possible — audit système + comblement des manques (docs + routines)
-- décision : [[decisions/0001-fermeture-boucles-second-cerveau]] (ADR-0001)
+- déclencheur : Tim veut le meilleur système possible — audit système + comblement des manques (docs + routines)
+- décision : [[decisions/0001-fermeture-boucles-systeme]] (ADR-0001)
 - hors scope explicite Tim : revue-presse-quotidienne + audit-vault-hygiene (laissés tranquilles)
 
 ### Documents créés (13)
 - registres : [[hypotheses]] (10 hypothèses seedées du vault réel), [[contradictions]] (13 contradictions consolidées du log), [[ingest-backlog]] (backlog P1/P2/P3 + skips documentés)
 - navigation : [[000-home]] + 5 MOCs ([[moc/moc-aeo-geo]], [[moc/moc-maillage]], [[moc/moc-vente-objections]], [[moc/moc-redaction]], [[moc/moc-methode-kb]])
 - boucle preuves : [[preuves/index]], [[preuves/_template]], [[preuves/SETUP-GSC]]
-- décisions : [[decisions/index]], [[decisions/_template]], [[decisions/0001-fermeture-boucles-second-cerveau]]
+- décisions : [[decisions/index]], [[decisions/_template]], [[decisions/0001-fermeture-boucles-systeme]]
 - rituel : [[revue-hebdo/index]]
 
 ### Skills créés (6) — cf. §7bis AGENTS.md

@@ -533,7 +533,7 @@ Cette règle s'applique partout : wiki, briefs, articles, posts LinkedIn, revues
 
 ## 14. Les trois boucles fermées + le rituel
 
-Décision fondatrice : [[decisions/0001-fermeture-boucles-second-cerveau]]. Le système capture et compile bien, mais sans ces boucles il accumule sans se reprendre en main.
+Décision fondatrice : [[decisions/0001-fermeture-boucles-systeme]]. Le système capture et compile bien, mais sans ces boucles il accumule sans se reprendre en main.
 
 ### Boucle capture → traitement
 
@@ -561,6 +561,6 @@ Auto (agent, cron, zéro effort) : sweeps, résurgence, maintenance des registre
 
 ---
 
-**Version** : 2.6 SEO-first — 2026-05-16 (ajout §14 trois boucles + rituel ; nouveaux types `register|moc|decision|proof` en §5.1 ; nouveaux dossiers wiki en §3 ; §7bis skills système ; cf. [[decisions/0001-fermeture-boucles-second-cerveau]])
+**Version** : 2.6 SEO-first — 2026-05-16 (ajout §14 trois boucles + rituel ; nouveaux types `register|moc|decision|proof` en §5.1 ; nouveaux dossiers wiki en §3 ; §7bis skills système ; cf. [[decisions/0001-fermeture-boucles-systeme]])
 **Maintainer humain** : Timothée Boussardon
 **Maintainer LLM** : Claude Code (et tout agent qui lit ce fichier)

@@ -89,7 +89,7 @@ status: draft
 
 ### Compétences acquises
 - Créer ses propres skills Claude (pas juste utiliser ceux de Tim)
-- Construire un second cerveau SEO qui capitalise transversalement
+- Construire un système SEO qui capitalise transversalement
 - Passer de Claude Projets à Claude Cowork (facteur x10 selon Tim)
 - Identifier mots-clés business non couverts par les LLM
 - Intégrer de la data propriétaire dans les contenus (calls, avis, jargon sectoriel)

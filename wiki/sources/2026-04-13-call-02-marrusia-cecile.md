@@ -43,7 +43,7 @@ Cécile = freelance contenu/web, ~6-7 mois d'activité. Travaille avec entrepris
 
 - **Bannir le mot "visibilité"** — associé aux réseaux sociaux, ne parle pas business. Remplacer par "canal de conversion type ads, mais long terme" (cf [[concepts/tabou-visibilite]])
 - Différence Claude classique → Projects → Cowork (local) : "Cowork c'est x10"
-- Concept du **second cerveau qui itère pendant N années** sans repartir de zéro
+- Concept du **système qui itère pendant N années** sans repartir de zéro
 - **Workflow propriétaire** : "C'est tout le temps la même chose. Que j'ai 1 ou 10 clients, c'est tout le temps le même workflow"
 - Méthode bootcamp : 30 jours collectif (Whatsapp + Call vendredi sur cas client) + 30 jours 1V1 (asynchrone)
 - Prix : **590 € TTC** (≈ 245 € / mois)

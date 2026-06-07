@@ -1,7 +1,7 @@
 ---
 name: revue-hebdo
 description: |
-  Rituel de décision hebdomadaire du second cerveau (vendredi). Distinct de la revue de presse, du lint d'hygiène et de l'algorithme-recap-hebdo. Tranche : promotions draft→stable, hypothèse à tester, lot d'ingest, contradiction à fermer, archivage, fil rouge éditorial. Produit une édition dans wiki/revue-hebdo/.
+  Rituel de décision hebdomadaire du système (vendredi). Distinct de la revue de presse, du lint d'hygiène et de l'algorithme-recap-hebdo. Tranche : promotions draft→stable, hypothèse à tester, lot d'ingest, contradiction à fermer, archivage, fil rouge éditorial. Produit une édition dans wiki/revue-hebdo/.
 
   TOUJOURS utiliser ce skill quand l'utilisateur dit : "revue hebdo", "revue de la semaine", "on fait le point", "rituel hebdo", "qu'est-ce qu'on décide cette semaine", ou quand le LaunchAgent com.timboussardon.revue-hebdo se déclenche.
 ---

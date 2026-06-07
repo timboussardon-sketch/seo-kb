@@ -14,7 +14,7 @@ status: living-doc
 
 > À ne pas confondre avec deux choses voisines, laissées hors scope : la revue de presse quotidienne (newsletter Algorithme, skill `revue-presse-quotidienne`), et le lint d'hygiène hebdo (orphelins, frontmatter cassé, skill `audit-vault-hygiene` sur GH Actions). Ni l'`algorithme-recap-hebdo` qui synthétise les 5 revues de presse de la semaine.
 >
-> Ceci est le rendez-vous de décision du second cerveau. Sans lui, le système accumule sans jamais se reprendre en main : du backlog qui gonfle, des hypothèses qui dorment, des drafts jamais promus. C'est le seul moment où on tranche : quoi promouvoir, quoi tester, quoi ingérer, quoi archiver.
+> Ceci est le rendez-vous de décision du système. Sans lui, le système accumule sans jamais se reprendre en main : du backlog qui gonfle, des hypothèses qui dorment, des drafts jamais promus. C'est le seul moment où on tranche : quoi promouvoir, quoi tester, quoi ingérer, quoi archiver.
 >
 > Cadence : vendredi, via le skill `revue-hebdo`. Le mercredi, la résurgence (skill `resurgence-espacee`) prépare le terrain en remontant un concept oublié.
 

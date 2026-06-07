@@ -49,7 +49,7 @@ status: stable
 - Échange **data Audokit** = preuve directe de [[sources/2026-04-13-semrush-llm-conversion-study]] (4x conversion LLM) chez un prospect réel
 - Tim explique que **Fusion = reverse engineering des LLM**, pas invention propriétaire
 - Recommandation **Grok > Perplexity** pour la data
-- Concept second cerveau, itération multi-projets
+- Concept système, itération multi-projets
 
 ## Angle SEO
 

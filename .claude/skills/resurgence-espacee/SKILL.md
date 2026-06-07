@@ -12,7 +12,7 @@ Vault : `/Users/timothee/Code/seo-kb/`. Sortie : note du jour dans `wiki/revue-h
 
 ## OBJECTIF
 
-Un second cerveau qui ne te re-confronte jamais à ses vieilles notes te fait re-découvrir ce que tu savais déjà. Chaque mercredi, on remonte UN concept stable enfoui, on le challenge avec l'état actuel de la KB, et on prépare une décision pour la [[revue-hebdo/index|revue hebdo]] du vendredi.
+Un système qui ne te re-confronte jamais à ses vieilles notes te fait re-découvrir ce que tu savais déjà. Chaque mercredi, on remonte UN concept stable enfoui, on le challenge avec l'état actuel de la KB, et on prépare une décision pour la [[revue-hebdo/index|revue hebdo]] du vendredi.
 
 ## ÉTAPE 1 — SÉLECTIONNER LE CONCEPT
 

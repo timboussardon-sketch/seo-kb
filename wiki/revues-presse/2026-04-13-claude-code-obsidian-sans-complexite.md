@@ -36,7 +36,7 @@ Claude Code + Obsidian va plus loin : tu demandes *"ingère ce rapport PDF"*, Cl
 
 Andrej Karpathy a publié en 2025 un gist sur ce pattern — il l'appelle *LLM Wiki*. Son analogie : Obsidian est l'IDE, l'IA est le programmeur, le wiki est la codebase. Le point clé : **la codebase existe indépendamment du programmeur**. Si tu changes d'IA demain (Claude → Gemini → autre chose), ton wiki reste. Si tu changes d'ordinateur, `git clone` et tout est là. Memory ne t'offre pas ça.
 
-Un humain abandonne un wiki au bout de 3 mois parce que la maintenance scale plus vite que la valeur. L'IA ne s'ennuie pas et touche 15 fichiers en un passage. Combiné avec un artefact que tu possèdes, ça devient un second cerveau exportable.
+Un humain abandonne un wiki au bout de 3 mois parce que la maintenance scale plus vite que la valeur. L'IA ne s'ennuie pas et touche 15 fichiers en un passage. Combiné avec un artefact que tu possèdes, ça devient un système exportable.
 
 
 ## Le setup en vrai

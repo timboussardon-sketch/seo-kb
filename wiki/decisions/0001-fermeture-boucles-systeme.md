@@ -1,6 +1,6 @@
 ---
 type: decision
-title: "ADR-0001 — Fermeture des trois boucles ouvertes du second cerveau"
+title: "ADR-0001 — Fermeture des trois boucles ouvertes du système"
 aliases: [adr-0001, fermeture-boucles]
 tags: [decision, adr, kb, automation, doctrine, moat]
 created: 2026-05-16
@@ -10,7 +10,7 @@ confidence: high
 status: accepted
 ---
 
-# ADR-0001 — Fermeture des trois boucles ouvertes du second cerveau
+# ADR-0001 — Fermeture des trois boucles ouvertes du système
 
 ## Contexte
 

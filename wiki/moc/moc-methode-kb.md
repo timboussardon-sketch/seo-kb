@@ -12,7 +12,7 @@ status: living-doc
 
 # MOC — Méthode KB et système
 
-> Le système qui produit tout le reste. À relire avant de modifier le schéma ou d'ajouter une routine. La décision fondatrice de la dernière refonte : [[decisions/0001-fermeture-boucles-second-cerveau]].
+> Le système qui produit tout le reste. À relire avant de modifier le schéma ou d'ajouter une routine. La décision fondatrice de la dernière refonte : [[decisions/0001-fermeture-boucles-systeme]].
 
 ## Ordre de lecture
 

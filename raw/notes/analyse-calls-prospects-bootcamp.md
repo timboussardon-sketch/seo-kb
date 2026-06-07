@@ -272,7 +272,7 @@ Tim le répète dans quasi chaque call : bannir le mot "visibilité" qui évoque
 
 ### Ce que Tim vend réellement (d'après les calls)
 - Un workflow SEO IA personnalisé (pas des prompts)
-- Un second cerveau Claude Cowork (pas des projets isolés)
+- Un système Claude Cowork (pas des projets isolés)
 - La capacité à créer ses propres skills (pas dépendre de ceux des autres)
 - La réduction de charge mentale (savoir par quoi commencer et terminer)
 - L'amélioration de la prospection/vente (data au prospect, pas "visibilité")

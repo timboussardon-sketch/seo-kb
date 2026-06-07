@@ -35,7 +35,7 @@ C'est sûr que sur les projets de refonte de sites, j'ai envie d'être dessus le
 **Timothée :**  
 C'est le point commun que vous avez tous. Tu vois, ça fait 10 jours que je prends à peu près des calls avec des freelances, c'est le sentiment de toujours recommencer à zéro. J'avais exactement la même chose. En gros, tu prends un projet, et en fait, il y a des patterns communs entre tous ces projets, et justement, Claude permet de relier tous ces points.
 
-Tu vois, que tu aies un client dans l'automobile ou un client dans l'immobilier, ce ne sont pas les mêmes mots-clés, ce n'est pas le même contenu évidemment, mais la structure de l'audit est la même. La manière de trouver tes mots-clés, c'est la même chose. Et en fait, pour éviter à chaque fois de repartir à zéro, il faut construire un second cerveau où tu as tous tes process, ta manière de réfléchir, ta structure de page, etc. OK, super intéressant. Et donc tu rédiges aussi ?
+Tu vois, que tu aies un client dans l'automobile ou un client dans l'immobilier, ce ne sont pas les mêmes mots-clés, ce n'est pas le même contenu évidemment, mais la structure de l'audit est la même. La manière de trouver tes mots-clés, c'est la même chose. Et en fait, pour éviter à chaque fois de repartir à zéro, il faut construire un système où tu as tous tes process, ta manière de réfléchir, ta structure de page, etc. OK, super intéressant. Et donc tu rédiges aussi ?
 
 **Juliette :**  
 Bah maintenant non, plus trop. Je repasse sur ce qui a été rédigé par l'IA, mais là je commence à me rendre compte que si je continue de faire comme ça, à un moment donné le contenu qui est produit ne va plus servir à rien. Donc je vois bien qu'il y a un sujet important... c'est le sujet de l'appel d'aujourd'hui quoi.

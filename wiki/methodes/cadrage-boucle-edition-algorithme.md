@@ -41,7 +41,7 @@ Le premier brouillon de ce cadrage citait des fichiers et des chemins inexistant
 
 ## 2. Ce qui existe déjà (boucle longue, mature)
 
-Le second cerveau de Tim tourne déjà autour de la **doctrine**, avec une vraie vérité-terrain (GSC). Trois boucles sont fermées :
+Le système de Tim tourne déjà autour de la **doctrine**, avec une vraie vérité-terrain (GSC). Trois boucles sont fermées :
 
 1. **Capture → digestion → synthèse** : `raw/revue-de-presse/` → `ingest-backlog-sweep` → `wiki/sources/` → `wiki/concepts/` → `wiki/syntheses/`.
 2. **Décision → action → log** : `revue-hebdo` → `wiki/ingest-backlog.md` → exécution → `wiki/log.md`.

@@ -112,7 +112,7 @@ Cf. skill-workflow-article, [[concepts/anti-ai-writing]], [[concepts/data-propri
 
 ### 9. Itération & capitalisation
 
-**Outil :** Claude Cowork (second cerveau transversal)
+**Outil :** Claude Cowork (système transversal)
 **Process :**
 - Claude analyse les patterns cross-clients (ce qui fonctionne / ne fonctionne pas)
 - Création de skills personnalisés basés sur les résultats

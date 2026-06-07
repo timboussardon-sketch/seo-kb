@@ -29,7 +29,7 @@ C'est Claude + Obsidian.
 
 Voici ce qui se passe :
 
-Claude va se connecter à Obsidian et créer un second cerveau.
+Claude va se connecter à Obsidian et créer un système.
 
 → Un dossier sources : mes articles, exports Google, notes clients, posts LinkedIn.
 

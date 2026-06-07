@@ -198,7 +198,7 @@ C'est la partie commerciale de la méthode. Un SEO bien architecturé qui ne se 
 |---|---|
 | Système SEO IA | Formation |
 | Workflow propriétaire | Cours |
-| Second cerveau | Apprentissage |
+| Système | Apprentissage |
 
 ### Réponses types aux objections
 

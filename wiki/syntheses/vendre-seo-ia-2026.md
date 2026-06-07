@@ -76,7 +76,7 @@ Le consultant doit montrer la plus-value humaine : "L'IA fait 80%, moi je fais l
 Le mot "formation" repousse les praticiens expérimentés (Franck 15 ans, Jamel 10 ans, Christophe 30 ans). Dire :
 - **"Système SEO IA"** ✓
 - **"Workflow propriétaire"** ✓
-- **"Second cerveau"** ✓
+- **"Système"** ✓
 - ~~"Formation SEO"~~ ✗
 - ~~"Cours"~~ ✗
 - ~~"Apprentissage"~~ ✗

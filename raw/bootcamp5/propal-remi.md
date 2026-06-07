@@ -35,7 +35,7 @@ related:
 ## **Objectifs**
 
 * **Cadrer l'IA** : construire un écosystème maîtrisé, en local, où chaque skill et chaque workflow sont définis proprement. Reprendre le contrôle au lieu de subir une IA qui dérive.
-* Se monter un **second cerveau / système propriétaire** (Claude + Obsidian) qui capitalise tout : ton de voix, process, stratégies, data clients. Le 1000ᵉ contenu meilleur que le premier.
+* Se monter un **système / système propriétaire** (Claude + Obsidian) qui capitalise tout : ton de voix, process, stratégies, data clients. Le 1000ᵉ contenu meilleur que le premier.
 * **Écrire moins mais mieux** : garder sa plume, garder la réflexion, et déléguer ce qui n'a pas de valeur ajoutée (exports GSC, pré-analyses, audits, rapports).
 * Gagner du temps sur les tâches à faible valeur pour le réinvestir là où il doit vraiment être présent, voire **libérer une journée par semaine** pour ses propres projets.
 * Apprendre à **créer ses propres skills** (pas juste utiliser ceux des autres). Autonomie totale sur le long terme, indépendant du LLM du moment.
