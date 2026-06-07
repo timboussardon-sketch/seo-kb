@@ -23,7 +23,7 @@ migration:
   writes: new-only
   legacy_root_files_removed: true   # supprimés en un passage supervisé (plus de double mémoire)
   reconciled_cloud_run: "2026-05-30-cloud"
-  stable_runs_done: 12              # +1 run 2026-06-06-v3 (pilier Product-Led SEO, generative UI Search annoncee a I/O attaque la doctrine product-led-seo, reecriture du filtre test-substitution-llm pour inclure l'UI generative; 3 breves Web IQ + Amazon-Perplexity 11 juin + Adobe Q1 2026 AICVC; natif v2, validate.sh passe)
+  stable_runs_done: 13              # +1 run 2026-06-07 (pilier GEO/search IA, deux etiquettes Preferred et Highly Cited dans AI Mode et AI Overviews 27 mai 2026, lien doctrine metriques-visibilite-geo precis; 3 breves bilan SISTRIX core update mai + Mastercard Agent Pay fin juin + ChatGPT 1Md MAU app; natif v2, validate.sh passe)
 
 # Validation : tout .jsonl doit parser ligne par ligne avant commit (voir validate.sh).
 integrity:
