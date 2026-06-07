@@ -26,7 +26,7 @@
     "digitalapplied": 1.12,
     "cmswire": 1.04,
     "searchlab": 1.04,
-    "emarketer": 1.08,
+    "emarketer": 1.12,
     "decrypt": 1.04,
     "martech": 1.04,
     "yext": 1.04,
@@ -38,7 +38,7 @@
     "openai-blog": 1.09,
     "shopify-blog": 1.04,
     "pymnts": 1.04,
-    "digitalcommerce360": 1.04,
+    "digitalcommerce360": 1.08,
     "mediapost": 1.04,
     "9to5google": 1.08,
     "ppc.land": 1.08,
@@ -67,6 +67,17 @@
     "paymentsdive": 1.09,
     "europeanfinancialreview": 1.04,
     "reuters-via-investing": 1.09,
-    "usnews-money": 1.04
+    "usnews-money": 1.04,
+    "modernretail": 1.04,
+    "aiautomationglobal": 1.04,
+    "thenextweb": 1.04,
+    "eutoday": 1.04,
+    "mobileworldlive": 1.04,
+    "techbuzz-ai": 1.04,
+    "thepaypers": 1.04,
+    "businesswire": 1.04,
+    "stripe-blog": 1.09,
+    "cnbc": 1.09,
+    "retaildive": 1.04
   }
 }
