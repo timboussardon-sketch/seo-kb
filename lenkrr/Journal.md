@@ -209,6 +209,25 @@ Refusé de fabriquer → construit la vraie donnée :
 - **Extraction d'entités** (`lib/analysis/entities.ts`, `buildEntityCoverage`) : déterministe, sans LLM. Séquences en Titre majuscule, filtre mots-vides + **récurrence ≥2 pages** (tue le bruit de début de phrase). Couverture = part du vocabulaire d'entités du cluster couverte par page (moy.). `EntityReport {distinctCount, coverage, top[]}` attaché à `semantic.entities`. Alimente le KPI « Couverture d'entités » + chips « entités dominantes ». Testé OK sur input type golfiller (sort Titleist Pro V1, Callaway, Bridgestone).
 
 ### RESTE
-- Commit de toute la session (bets + audit + dashboard + extractions).
 - Précision du typage produit/catégorie : brancher le type CMS quand le connecteur WordPress/Woo est en place (aujourd'hui heuristique URL).
 - Entités : suffisant en heuristique pour le KPI ; passage LLM/NER dédié seulement si Tim veut une précision d'entités fine.
+
+## Boucle d'apprentissage — résolution + réveil (2026-06-08)
+
+Session committée et **déployée** (autonomie publish/deploy/commit). 3 commits sur master : `fc7abbf` (bets+audit+dashboard+extractions), `fa1234d` (resolve-bets), `dfe1bff` (enrichissement réponse). Migration `link_bets` **poussée** sur le Supabase Qadence (tables live).
+
+### `lenkrr-resolve-bets` (edge déployée, --no-verify-jwt)
+Ferme la boucle. Prend les paris échus (pending→J+30, resolved_30→J+90), groupe les fetches GSC par (user|site|pivot|phase) pour économiser les appels, mesure la cible en **diff-in-diff** : `Δajusté = Δcible − médiane(Δ du site sur la même fenêtre)` (soustrait saison + updates Google). Verdict `hit/partial/miss/no_data` (hit si Δposition ajustée ≤ −0,3 ou Δclics ajustés ≥ 1). Écrit `measured` sur le pari, agrège `linking_priors` par bucket (compteurs + moyennes glissantes), **1× à J+30** pour ne pas double-compter (J+90 = confirmation, n'agrège pas). La réponse renvoie `resolvedDetails[]` + `priors[]` pour le ledger. Smoke-test dryRun + live OK (tables vides → « aucun pari »).
+
+### Routine distante = le réveil (la « loop qui prompte l'agent »)
+`trig_011xk7JdVv5ED38Rc5DWqSJG`, cron `0 0 * * *` (08h Manille), repo seo-kb, Sonnet 4.6. Chaque jour : appelle l'edge (anon key publique embarquée, aucun secret service-role côté routine), et si `resolved>0` écrit un ledger `lenkrr/ledgers/<date>.md` (résumé + verdicts + priors triés par win_rate + 1-3 questions au conditionnel) puis commit/push. Si rien à résoudre : n'écrit rien. Règle « zéro chiffre inventé » dans le prompt. Premier run 2026-06-09 00:02 UTC.
+
+### Schéma de la boucle, état
+- log pari (`/api/apply` + `/api/bets/backfill`) ✅
+- résolution GSC diff-in-diff (`lenkrr-resolve-bets`) ✅
+- apprentissage → `linking_priors` ✅
+- ledger + questions (routine) ✅
+- **RETOUR** : lecture des `linking_priors` dans le flux d'analyse → passée à la couche de décision Claude (`decide.ts`). **PAS encore câblé.** Dernière pièce. Touche au comportement de décision → à montrer à Tim avant.
+
+### Bloquant data (inchangé)
+La boucle est **idle tant qu'aucun pari n'existe**. Décision en attente : sur golfiller, maillage à la main → amorcer par `/api/bets/backfill` ; ou maillage par lenkrr → hook `/api/apply`. Sans ça, la routine tourne à vide tous les matins.
