@@ -1,6 +1,6 @@
 # Calibration — score de l'agent dans le temps
 
-Écrit par l'agent 9 après chaque édition. Confronte le travail de l'agent à la réalité. C'est la mesure honnête de « est-ce que l'agent s'améliore ».
+Écrit par l'agent 9 après chaque édition. Confronte le travail de l'agent à la réalité. C'est la mesure honnête de « est-ce que l'agent s'améliore ». Étape d'apprentissage de [[methodes/cadrage-boucle-edition-algorithme]] ; les notes confrontées ici sortent de la grille [[notation]] et nourrissent les [[directives]] de l'édition suivante.
 
 ## Les 4 critères (note /5 par édition)
 

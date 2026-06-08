@@ -48,7 +48,7 @@ Doctrine juste sur le *quoi* (acquisition > trafic, actionnel > volume, data pro
 Corpus entièrement on-page/on-site. Rien sur mentions de marque, entité Knowledge Graph, notoriété, digital PR. Or la citation LLM corrèle avec la notoriété de marque, pas seulement la qualité on-page. Corrigeable sans achat de lien : entité structurée, cohérence NAP, présence sur les corpus ingérés par les LLM.
 
 ## Ce qui tient
-Recentrage trafic → acquisition (en avance). Product-Led SEO (outil = page Do = lead) : meilleur asset, difficilement copiable. Data propriétaire comme source de mots-clés : juste sur le principe. [[entities/golfiller]] prouve le système quand les conditions sont réunies.
+Recentrage trafic → acquisition (en avance). Product-Led SEO (outil = page Do = lead) : meilleur asset, difficilement copiable. Data propriétaire comme source de mots-clés : juste sur le principe. [[entities/golfiller]] prouve le système quand les conditions sont réunies, et la [[methodes/ranker-verticale-niche-sans-backlink|méthode niche sans backlink]] en est la généralisation reproductible.
 
 ## Quick fixes (par effort)
 1. Écrire les deux régimes de production (pilier vs programmatique) avec seuil d'IA respectif.
@@ -58,4 +58,4 @@ Recentrage trafic → acquisition (en avance). Product-Led SEO (outil = page Do 
 5. Ajouter une couche transversale "Autorité hors-site / Entité".
 
 ## Pages liées
-[[concepts/methode-organikk-4-piliers]] · [[sources/process-seo-b2b-2026]] · [[sources/tim-my-rules]] · [[concepts/metriques-visibilite-geo]] · [[concepts/product-led-seo]] · [[concepts/data-proprietaire]] · [[concepts/aeo]]
+[[concepts/methode-organikk-4-piliers]] · [[sources/process-seo-b2b-2026]] · [[sources/tim-my-rules]] · [[concepts/metriques-visibilite-geo]] · [[concepts/product-led-seo]] · [[concepts/data-proprietaire]] · [[concepts/aeo]] · [[methodes/ranker-verticale-niche-sans-backlink]] · [[concepts/test-substitution-llm]] · [[concepts/scam-objection-data-aleatoire]] · [[entities/fg-formation]]

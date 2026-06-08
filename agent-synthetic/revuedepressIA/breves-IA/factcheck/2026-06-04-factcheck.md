@@ -1,6 +1,6 @@
 # Fact-check — Brèves IA 2026-06-04 (édition équilibrée 4 brèves) — 2026-06-04
 
-*Vérification adversariale anti-tunnel. 4 brèves, 8 claims testés. Aucun envoi.*
+*Vérification adversariale anti-tunnel. 4 brèves, 8 claims testés. Aucun envoi.* Étape fact-check de [[methodes/cadrage-boucle-edition-algorithme]].
 
 ## Verdict global
 

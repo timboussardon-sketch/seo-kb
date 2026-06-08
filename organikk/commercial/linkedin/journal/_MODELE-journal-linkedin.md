@@ -1,6 +1,6 @@
 # Journal LinkedIn — {YYYY-MM-DD}
 
-> Routine prospection du jour. Cible : 20-50 mises en relation (invitations + engagements). Rempli via le skill `/linkedin-journal` ou à la main.
+> Routine prospection [[entities/organikk-co]] du jour. Cible : 20-50 mises en relation (invitations + engagements). Rempli via le skill `/linkedin-journal` ou à la main. Les objections notées ici nourrissent [[moc/moc-vente-objections]].
 
 ## Compteurs du jour
 

@@ -11,6 +11,8 @@ confidence: medium
 status: draft
 ---
 
+> Transcript du call de qualification [[entities/bootcamp-seo-ia]] avec [[entities/jamel]] (le profil le plus avancé en IA des prospects). Version curée : [[sources/2026-04-13-call-04-jamel]]. Analyse transverse des calls : [[analyse-calls-prospects-bootcamp]].
+
 **Intervenant 1 :** ...Et donc, moi à la base je suis issu du à la base je suis issu du SEA, euh mais je me suis réorienté vers le SEO et euh je veux me réorienter encore plus sur vers le SEO même si euh si tu regardes LinkedIn dans un an le SEO est mort.
 
 *(Rires)*

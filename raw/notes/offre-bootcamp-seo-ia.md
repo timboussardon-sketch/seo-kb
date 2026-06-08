@@ -13,6 +13,8 @@ status: draft
 
 # Offre Bootcamp SEO IA — Fiche Produit
 
+> Fiche produit du [[entities/bootcamp-seo-ia]], porté par [[entities/organikk-co]]. La trame de vente est détaillée dans [[syntheses/vendre-seo-ia-2026]] ; le contenu pédagogique repose sur la [[concepts/data-proprietaire]], le [[concepts/surprise-gap]] et le [[concepts/passage-ranking]].
+
 ## Informations clés
 
 - **Nom :** Bootcamp SEO IA (4ème édition)

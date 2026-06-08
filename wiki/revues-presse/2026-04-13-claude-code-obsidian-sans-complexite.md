@@ -91,6 +91,8 @@ C'est exactement ce qu'on travaille dans le Bootcamp #4 — démarrage première
 
 **Sources** : [[sources/2026-04-11-karpathy-llm-wiki]] · [[sources/2026-04-13-offre-bootcamp-seo-ia]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]]
 
-**Concepts** : [[concepts/persistent-wiki-vs-rag]] · [[concepts/ingest-workflow]] · [[concepts/query-synthesis]] · [[concepts/obsidian-as-ide]] · [[concepts/tabou-visibilite]] · [[concepts/data-proprietaire]]
+**Concepts** : [[concepts/persistent-wiki-vs-rag]] · [[concepts/ingest-workflow]] · [[concepts/query-synthesis]] · [[concepts/obsidian-as-ide]] · [[concepts/memory-llm-vs-wiki-persistant]] · [[concepts/tabou-visibilite]] · [[concepts/data-proprietaire]]
+
+**Système** : [[moc/moc-methode-kb]] — la carte de la méthode KB que cette édition vulgarise.
 
 **Entities** : [[entities/karpathy]] · [[entities/obsidian]] · [[entities/bootcamp-seo-ia]] · [[entities/organikk-co]]

@@ -72,4 +72,4 @@ Christophe est le **prospect-preuve** : sa data produit Audokit chez ChatGPT **v
 
 ## Pages liées
 
-[[entities/christophe]] · [[entities/audopass]] · [[entities/bootcamp-seo-ia]] · [[entities/fusionn-io]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] · [[sources/2026-04-13-semrush-llm-conversion-study]] · [[sources/2026-04-13-cas-clients-resultats]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/peur-train-ia]] · [[concepts/aeo]]
+[[entities/christophe]] · [[entities/audopass]] · [[entities/bootcamp-seo-ia]] · [[entities/fusionn-io]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] · [[sources/2026-04-13-semrush-llm-conversion-study]] · [[sources/2026-04-13-cas-clients-resultats]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/peur-train-ia]] · [[concepts/aeo]] · [[syntheses/audit-doctrine-2026]] · [[analyse-calls-prospects-bootcamp]]

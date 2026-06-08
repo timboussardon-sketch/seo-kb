@@ -52,3 +52,10 @@ Par temps froid, la balle se comprime moins. Une compression plus basse récupè
 ---
 
 *Page Golfiller. Conseil basé sur la compression et les distances réelles relevées chez nos golfeurs. Les balles d'occasion reconditionnées Golfiller reprennent le modèle et la compression d'origine.*
+
+## Liens
+
+- Projet et compte : [[entities/golfiller]], stratégie SEO [[golfiller-strat]].
+- Ce qui rend la page inimitable : les distances relevées par profil, de la [[concepts/data-proprietaire]] que personne d'autre ne peut afficher.
+- Intention décisionnelle ciblée : une requête « Do » au sens [[concepts/know-simple-know-do]].
+- Méthode appliquée : [[methodes/ranker-verticale-niche-sans-backlink]].

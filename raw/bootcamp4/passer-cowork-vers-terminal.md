@@ -12,6 +12,8 @@ related:
 
 # Passer de Cowork à Obsidian + terminal
 
+> Fiche participant du [[entities/bootcamp-seo-ia]] ([[offre-bootcamp-seo-ia]]) : migration A→Z vers [[entities/obsidian]] + terminal, méthode raw/ + wiki/ de [[entities/karpathy]]. Travailler le vault directement dans son éditeur, c'est [[concepts/obsidian-as-ide]].
+
 Tes skills sont déjà installés (même dossier que Cowork). Tu ne réinstalles rien : tu changes juste de fenêtre. Voici les 5 étapes : 
 
 ## Ce que tu dois faire
@@ -60,7 +62,16 @@ Dans ton terminal, colle :
 (Bloqué ? Tu m'envoies un MP.)
 
 **5. Lance.**
-Ouvre le terminal **dans le dossier `seo-kit`**, tape `claude`, puis `/skills`. Tu vois ta liste de skills → c'est bon, tu es opérationnel.
+Ouvre le **Terminal**. Quand il s'ouvre, tu es dans ton dossier personnel, pas dans `seo-kit`. Il faut d'abord y entrer. Tape ces deux lignes, une par une, en validant avec Entrée à chaque fois :
+
+```bash
+cd ~/Documents/seo-kit
+claude
+```
+
+La première ligne (`cd ~/Documents/seo-kit`) te place dans le bon dossier. La seconde (`claude`) lance Claude. Une fois dedans, tape `/skills` : tu vois ta liste de skills, c'est bon, tu es opérationnel.
+
+**À retenir : à chaque fois que tu ouvres une nouvelle fenêtre de terminal pour travailler, tu retapes `cd ~/Documents/seo-kit` puis `claude`.** C'est le réflexe de départ, deux lignes, à chaque session.
 
 
 Comment ça marche ?
@@ -84,5 +95,5 @@ Comment ça marche : tu déposes un doc dans le terminal, tu dis à Claude « aj
 > 2. Installe Obsidian (obsidian.md) → « Open folder as vault » → ce dossier.
 > 3. Colle dans le Terminal la commande donnée dans la fiche (elle crée le `CLAUDE.md` tout seul).
 > 4. Terminal : `npm install -g @anthropic-ai/claude-code` (bloqué ? MP).
-> 5. Dans le dossier : tape `claude`, puis `/skills` pour vérifier.
+> 5. Ouvre le Terminal et tape ces deux lignes (Entrée après chaque) : `cd ~/Documents/seo-kit` puis `claude`. Ensuite `/skills` pour vérifier. Le `cd ~/Documents/seo-kit` est à retaper à chaque nouvelle fenêtre de terminal.
 > Ensuite : tu jettes tes sources dans `raw/`, Claude les range dans `wiki/`. Tu déposes chaque jour, sinon ça sert à rien. 💪

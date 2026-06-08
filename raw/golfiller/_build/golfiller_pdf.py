@@ -115,6 +115,24 @@ def box(w, head, body):
     ]))
     return t
 
+# ---- Carte skill (façon fiche d'accompagnement, fait ressortir le skill) ---
+def skill_card(cmd, what, when, inp):
+    head=Paragraph("<font name='Courier'><b><font color='#1155CC'>%s</font></b></font>"%cmd, S["h3"])
+    def row(lab, val): return Paragraph("<b>%s</b> %s"%(lab, val), S["box"])
+    inner=[head, Spacer(1,5),
+           row("Ce qu'il fait :", what), Spacer(1,3),
+           row("Quand s'en servir :", when), Spacer(1,3),
+           row("Ce qu'il faut lui donner :", inp)]
+    t=Table([[inner]], colWidths=[CW])
+    t.setStyle(TableStyle([
+        ("BACKGROUND",(0,0),(-1,-1),BOXBG),
+        ("BOX",(0,0),(-1,-1),0.75,GRID),
+        ("LINEBEFORE",(0,0),(0,-1),3,BLUE),
+        ("LEFTPADDING",(0,0),(-1,-1),14),("RIGHTPADDING",(0,0),(-1,-1),12),
+        ("TOPPADDING",(0,0),(-1,-1),10),("BOTTOMPADDING",(0,0),(-1,-1),10),
+    ]))
+    return [CondPageBreak(38*mm), t, Spacer(1,8)]
+
 SHOTS=os.path.join(os.path.dirname(__file__),"shots")
 def shot(name, width_mm, caption):
     """Capture d'écran Fusionn : image centrée + légende, façon image insérée Google Docs."""
@@ -233,108 +251,68 @@ st.append(HRFlowable(width="100%", thickness=0.75, color=GRID, spaceBefore=2, sp
 
 st.append(Paragraph("Objectif et contexte", S["h1"]))
 st.append(P("Golfiller (golfiller.fr), e-commerce de balles de golf d'occasion et reconditionnées. "
-   "Objectif : bâtir une autorité thématique sur une verticale de niche défendable, les balles de golf "
-   "d'occasion, plutôt qu'un affrontement frontal avec les gros acteurs. Résultat : 1re position sur "
-   "« balle de golf », devant Décathlon et Amazon, sans acheter un seul lien."))
+   "Objectif : bâtir une autorité sur une niche défendable, les balles de golf d'occasion, plutôt que de "
+   "viser les mêmes requêtes génériques que les gros acteurs. Résultat : 1re position sur « balle de "
+   "golf », devant Décathlon et Amazon, sans un seul backlink."))
 st.append(P("État : projet pSEO actif sur les requêtes slope et handicap, base de ~40 parcours français "
    "(slope + SSS), calculateur de handicap interactif (formule FFGolf), page HTML sémantique brute "
    "(calculateur + tableau filtrable + sections par parcours). À venir : extension à ~100 parcours, "
    "Phase 2 pSEO (une URL par parcours) si la pilier performe."))
 
 st.append(Paragraph("Analyse GSC : les pages winners", S["h1"]))
-st.append(P("Les trois pages qui sur-performent partagent toutes l'intention « Do » (calculer, comparer, "
-   "consulter). Ce sont des vecteurs multimodaux qu'aucun LLM ne remplace sur la page. Le réflexe "
-   "transférable : lire la GSC, isoler le pattern des winners, le répliquer."))
-# résumé chiffré sous forme de petit tableau (doc-like)
-sumrows=[[Paragraph("Pages winners",S["th"]),Paragraph("Clics cumulés",S["th"]),
-          Paragraph("Impressions (data connue)",S["th"])],
-         [Paragraph("3 — toutes en intention Do",S["td"]),Paragraph("8 798",S["td"]),
-          Paragraph("100 937+",S["td"])]]
-st.append(TABLE(sumrows,[CW*0.40,CW*0.28,CW*0.32]))
-st.append(Spacer(1,8))
-st.append(Paragraph("Clics par page (12 derniers mois)", S["h3"]))
-st.append(HBar(CW,[("Tableau comparatif de compression des balles",5652),
-                   ("Calcul d'index de golf",1816),
-                   ("Quiz « Quelle balle pour vous ? »",1330)]))
-st.append(P("Reconstruction graphique à partir des chiffres GSC cités dans le doc source. Ce n'est pas "
-   "une capture d'écran : positions associées 7,17 / 11,77 / 8,45.","cap"))
-st.append(Spacer(1,6))
-rows=[[Paragraph(x,S["th"]) for x in ["Page","Clics","Position","Impressions","Intention"]]]
-for r in [("Tableau comparatif de compression","5 652","7,17","—","Consulter pour décider"),
-          ("Calcul d'index de golf","1 816","11,77","77 786","Calculer son index"),
-          ("Quiz « Quelle balle pour vous ? »","1 330","8,45","23 151","Profiler / décider"),
-          ("Slope de votre golf","—","—","—","Consulter une valeur")]:
-    rows.append([Paragraph(r[0],S["tdb"])]+[Paragraph(x,S["td"]) for x in r[1:]])
-st.append(TABLE(rows,[CW*0.34,CW*0.12,CW*0.13,CW*0.18,CW*0.23]))
-st.append(Spacer(1,6))
-st.append(box(CW,"Lecture doctrinale",
-   "Les « Do » gagnent parce qu'ils exigent un format (outil, calculateur, tableau) qu'un LLM ne peut pas "
-   "exécuter à la place de l'utilisateur. Les « Know » informationnels se font manger par les AI "
-   "Overviews ; les « Do » résistent. C'est la traduction concrète de l'anti-ChatGPT."))
+st.append(P("Les trois pages qui sur-performent ont un point commun : elles font faire quelque chose à "
+   "l'internaute. Calculer un index, comparer deux balles, consulter un parcours. Ce sont des outils, pas "
+   "des articles. Une IA résume un texte, mais elle ne fait pas tourner un calculateur à la place de "
+   "l'utilisateur. Le réflexe à garder : lire la Search Console, repérer ce qui marche, le répliquer."))
+st.append(box(CW,"Ce que ça veut dire",
+   "Les pages qui demandent une action résistent. Les pages qui ne font qu'informer se font absorber par "
+   "les réponses IA de Google, qui donnent la réponse sans renvoyer de clic. Un calculateur ou un tableau "
+   "interactif n'a pas ce problème : l'utilisateur doit venir sur la page pour s'en servir."))
 
-st.append(Paragraph("La stratégie lue à travers la doctrine", S["h1"]))
-st.append(Paragraph("1. Triade SERP : à quelle phase chaque move agit", S["h3"]))
+st.append(Paragraph("La réflexion derrière la stratégie", S["h1"]))
+st.append(Paragraph("1. Pourquoi les pages-outils gagnent", S["h3"]))
+st.append(P("Les trois pages qui marchent sont des outils, pas des articles. Une IA recopie et résume un "
+   "texte sans difficulté, mais elle ne remplit pas un calculateur ni ne trie un tableau à la place de "
+   "l'internaute. C'est aussi ce que Google met en avant : une page qui règle le besoin sur place, sans "
+   "renvoyer l'internaute chercher ailleurs."))
+st.append(Paragraph("2. Ce qu'une page doit contenir pour être prise au sérieux", S["h3"]))
 st.append(bullets([
-  "<b>Document Ranking.</b> On ne vise pas le head term tenu par les gros. On descend sur la verticale "
-  "« balle de golf occasion » où le filtre d'admission est franchissable.",
-  "<b>Passage Ranking.</b> Chaque page pSEO est faite pour que ses blocs Hn (150-200 mots) soient des "
-  "vecteurs sémantiques denses, évalués seuls. Un tableau ou une section de parcours peut ranker seul.",
-  "<b>Phase générative (citation IA).</b> Ranker ne suffit plus : il faut être cité. C'est là que jouent "
-  "le Surprise Gap et l'Information Gain.",
+  "<b>Le vocabulaire du métier :</b> slope, SSS, index, compression, carry. Sans lui, la page ne parle "
+  "pas le langage du sujet.",
+  "<b>Des chiffres sourcés :</b> données Trackman, PGA Tour, FFGolf, avec leur unité et leur contexte. "
+  "C'est ce qui rend la page crédible pour une IA qui cherche une source fiable à citer.",
+  "<b>Le bon format :</b> une requête « calculer son index » attend un calculateur, pas un paragraphe. "
+  "Une page sans l'outil attendu est incomplète.",
+  "<b>Une donnée ou un angle que personne d'autre n'a.</b>",
 ]))
-st.append(Paragraph("2. Know-Simple / Know / Do : pourquoi le « Do » gagne", S["h3"]))
-st.append(P("Les pages winners sont toutes des « Do ». Une intention « Do » exige un format (outil, "
-   "calculateur, tableau) qu'un LLM ne peut pas exécuter à la place de l'utilisateur. Les « Do » visent "
-   "aussi le « Fully Meets » des Quality Raters."))
-st.append(Paragraph("3. Entités vectorielles + Grounding Score", S["h3"]))
-st.append(bullets([
-  "<b>Entités techniques :</b> le vocabulaire obligatoire (slope, SSS, index, compression, carry).",
-  "<b>Preuves quantitatives :</b> chiffres sourcés (Trackman, PGA Tour, FFGolf) au format chiffre + "
-  "unité + contexte. Elles montent le Confidence Score de l'IA.",
-  "<b>Vecteurs multimodaux :</b> le format attendu par une intention « Do ». Une page « Do » sans outil a "
-  "un vecteur incomplet. C'est le Product-Led SEO.",
-  "<b>Divergence (Haute Surprise) :</b> l'angle ou la data que le corpus n'a pas.",
-]))
-st.append(P("L'objectif n'est pas la proximité vectorielle maximale mais le Grounding Score optimal = "
-   "proximité + divergence. Ni hors-sujet, ni redondant avec ce que le modèle sait déjà."))
-st.append(Paragraph("4. Surprise Gap + Information Gain : ce qui fait citer", S["h3"]))
-st.append(P("Apporter l'information manquante qui force le modèle à inclure la marque dans sa réponse. "
-   "Chez Golfiller, la Haute Surprise vient de la data propriétaire agrégée des clients (distances réelles "
-   "par profil, compression croisée) et d'angles contrariens. Benchmark GEO : citations verbatim sourcées "
-   "= +41 % de visibilité, statistiques = +34 %. Test : si un concurrent recopie l'angle en 5 minutes, ce "
-   "n'en est pas."))
-st.append(Paragraph("5. RRF + micro-intentions et 6. Data propriétaire", S["h3"]))
-st.append(P("Un cluster qui couvre toutes les sous-intentions (slope, index, compression, distance par "
-   "club, choix de balle) améliore le score de fusion. Sans data unique injectée dans les pages, on "
-   "retombe dans le corpus moyen de l'IA, donc dans la commodité. La data propriétaire alimente à la fois "
-   "les preuves quantitatives, la Haute Surprise et les outils interactifs."))
+st.append(P("Le bon dosage n'est pas de répéter ce que tout le monde dit. C'est de coller au sujet tout en "
+   "apportant quelque chose que les autres pages n'ont pas. Ni hors-sujet, ni redondant."))
+st.append(Paragraph("3. Ce qui fait qu'une IA cite la marque", S["h3"]))
+st.append(P("Une IA cite la source qui apporte l'information qu'elle ne trouve pas ailleurs. Chez "
+   "Golfiller, cette information vient de la donnée maison : les distances réelles mesurées par profil de "
+   "joueur, les compressions croisées, agrégées à partir des clients. Repère simple : si un concurrent "
+   "peut recopier l'angle en cinq minutes, ce n'est pas un avantage."))
+st.append(Paragraph("4. Couvrir tout le sujet, avec sa propre donnée", S["h3"]))
+st.append(P("Une page isolée ne suffit pas. Il faut traiter toutes les questions du sujet : le slope, "
+   "l'index, la compression, la distance par club, le choix de balle. Plus l'ensemble est complet, plus "
+   "Google lit le site comme une référence sur la verticale. Et sans donnée propre dans les pages, on "
+   "retombe sur ce que l'IA sait déjà, donc sur du contenu interchangeable. La donnée maison alimente tout "
+   "le reste : les chiffres, l'angle unique, les outils."))
 
-st.append(Paragraph("Opportunités d'outils (vecteurs « Do »)", S["h1"]))
+st.append(Paragraph("Opportunités d'outils à créer", S["h1"]))
 st.append(bullets([
-  "<b>Calculette / simulateur d'index interactif.</b> /calcul-index-golf déjà à 1 816 clics, pos 11,77, "
-  "77 786 impressions. Grappe captable ~20 000 imp/mois.",
+  "<b>Calculette / simulateur d'index interactif.</b> La page /calcul-index-golf est déjà à 1 816 clics "
+  "et 77 786 impressions, en position moyenne 11,77. La rendre interactive la fait monter.",
   "<b>Quiz « Quelle balle pour vous ? ».</b> Page texte (1 330 clics, pos 8,45) à transformer en quiz. "
   "Conversion native, tech la plus simple.",
   "<b>Carte de score interactive / différentiel.</b> Carte digitale trou par trou + calcul auto + PDF.",
-  "<b>Tableau de distance de clubs par profil.</b> Réplique du format « tableau » gagnant, filtrable. "
-  "Haute Surprise : data agrégée clients.",
+  "<b>Tableau de distance de clubs par profil.</b> Réplique du format « tableau » qui gagne déjà, "
+  "filtrable. Sa valeur unique : la donnée agrégée des clients.",
   "<b>Comparateur de balles côte à côte.</b> Rendre dynamique le tableau de compression. Bonus pSEO : "
   "URLs /comparer/pro-v1-vs-pro-v1x.",
 ]))
-st.append(Paragraph("Priorisation", S["h3"]))
-prio=[["Outil","Volume captable","Difficulté","ROI conversion","Prio"],
-      ["Calculette index / handicap","~20k imp","Moyenne","Moyen","1"],
-      ["Quiz « quelle balle »","~5k imp","Faible","Très fort","2"],
-      ["Carte de score digitale","~2k imp","Moyenne","Faible","3"],
-      ["Comparateur balles dynamique","~5k imp","Forte","Fort","4"],
-      ["Tableau distance clubs","~1k imp","Faible","Faible","5"]]
-prows=[[Paragraph(c,S["th"]) for c in prio[0]]]
-for r in prio[1:]:
-    prows.append([Paragraph(r[0],S["tdb"])]+[Paragraph(x,S["td"]) for x in r[1:]])
-st.append(TABLE(prows,[CW*0.32,CW*0.19,CW*0.16,CW*0.21,CW*0.12],highlight=2))
-st.append(Spacer(1,4))
-st.append(P("Recommandation si un seul outil : le quiz « Quelle balle ». Tech simple, conversion directe, "
-   "et il monte le CTR de la page texte existante qui plafonne en position 8,45."))
+st.append(P("Si on ne lance qu'un seul outil : le quiz « Quelle balle pour vous ». C'est le plus simple à "
+   "mettre en place, il convertit directement, et il relance une page de texte qui stagne aujourd'hui."))
 
 st.append(Paragraph("Créer un modèle de page et le lancer en production", S["h1"]))
 st.append(P("La logique pSEO tient en une phrase : <b>1 template + 1 variable qui change = N pages "
@@ -344,18 +322,20 @@ for h,b in [
  ("1. Choisir le modèle (template + variable)",
   "Le template « page parcours » se décline sur la variable « parcours » (base de ~40 parcours français : "
   "slope + SSS). Autres variables activables : la balle (comparateur), le profil (tableau de distances). "
-  "Chaque combinaison vise une micro-intention distincte, ce qui évite la cannibalisation."),
+  "Chaque combinaison vise une question différente, ce qui évite que deux pages se fassent concurrence sur "
+  "la même requête."),
  ("2. Garantir l'unicité réelle, pas le copier-coller",
   "Règle non négociable : plus de 70 % du contenu change entre deux pages, et la transformation porte sur "
-  "le fond (slope, SSS, sections propres au parcours), pas seulement sur la variable. Une génération à "
-  "variable bête se fait downgrader ou désindexer par le Helpful Content en quelques jours."),
- ("3. Injecter la data propriétaire",
-  "La valeur vient des chiffres eux-mêmes (base parcours construite à la main, data clients agrégée), pas "
-  "du commentaire. Stack APIs officielles, zéro scraping interdit. C'est ce qui alimente les preuves "
-  "quantitatives, la Haute Surprise et le calculateur."),
- ("4. Construire en HTML sémantique brut",
-  "Calculateur de handicap (formule FFGolf) + tableau filtrable + sections par parcours, balises natives "
-  "uniquement, zéro CSS ni JS superflu. Objectif : chaque bloc Hn est un passage dense, rankable seul."),
+  "le fond (slope, SSS, sections propres au parcours), pas seulement sur la variable. Des pages générées "
+  "en changeant un seul mot se font rétrograder ou désindexer par Google en quelques jours."),
+ ("3. Injecter sa propre donnée",
+  "La valeur vient des chiffres eux-mêmes (base de parcours construite à la main, données clients "
+  "agrégées), pas du commentaire autour. On s'appuie sur des sources officielles, jamais de récupération "
+  "sauvage. C'est ce qui nourrit à la fois les chiffres, l'angle unique et le calculateur."),
+ ("4. Construire une page simple et propre",
+  "Calculateur de handicap (formule FFGolf), tableau filtrable, sections par parcours, en HTML net, sans "
+  "fioritures. Objectif : chaque section de la page se suffit à elle-même et peut se positionner seule sur "
+  "sa requête."),
  ("5. Lancer par paliers, piloté par la GSC",
   "Pilote d'abord (page pilier + base ~40 parcours), on mesure en Search Console, et on n'étend (Phase 2 : "
   "une URL par parcours, ~100 parcours) que si la pilier performe. Jamais des centaines de pages d'un "
@@ -363,60 +343,79 @@ for h,b in [
 ]:
     st.append(Paragraph(h,S["h3"])); st.append(P(b))
 
-st.append(Paragraph("Les skills à utiliser", S["h1"]))
-st.append(P("Chaque étape, du cadrage du modèle à la page, a son skill. Vous ne les avez pas : ils sont "
-   "donc reproduits ici en intégralité, tels quels. Pour chacun : quand le déclencher, la doctrine, les "
-   "inputs requis, le pipeline complet et les règles. Vous pouvez les appliquer directement, à la main ou "
-   "via votre propre assistant."))
+st.append(Paragraph("Les outils (« skills ») mobilisés", S["h1"]))
+st.append(P("Chaque étape de la stratégie s'appuie sur un outil dédié. Ce sont des assistants spécialisés, "
+   "chacun avec un rôle précis. Voici, dans l'ordre où on les utilise, ce que fait chacun, à quel moment, "
+   "et ce qu'il faut lui fournir pour qu'il travaille."))
 
-SKILL_FILES=[
- ("/seo-programmatique-pseo","seo-programmatique-pseo"),
- ("/seo-modeles-pseo","seo-modeles-pseo"),
- ("/seo-roadmap-pseo","seo-roadmap-pseo"),
- ("/seo-product-led-seo","seo-product-led-seo"),
- ("/seo-entites-vectorielles","seo-entites-vectorielles"),
- ("/seo-preparation-semantique","seo-preparation-semantique"),
- ("/seo-quick-win","seo-quick-win"),
+SKILL_CARDS=[
+ ("/seo-quick-win",
+  "Repère les pages déjà proches du top 3 (positions 3 à 12) qui reçoivent beaucoup d'affichages mais "
+  "peu de clics. Ce sont les gains les plus rapides : on optimise l'existant avant de créer.",
+  "Dès qu'on a les données Search Console du site.",
+  "Un export Search Console (fichier CSV)."),
+ ("/seo-modeles-pseo",
+  "Trouve les pages « business » à créer autour d'une page de vente, à partir des requêtes qu'un client "
+  "tape vraiment quand il est sur le point de décider.",
+  "Pour choisir quelles pages valent le coup, avant d'en produire des centaines.",
+  "La page de vente visée et l'action qu'on attend du visiteur (achat, devis, contact)."),
+ ("/seo-roadmap-pseo",
+  "Met les pages à produire dans l'ordre, sur un plan d'exécution daté et priorisé.",
+  "Une fois les modèles de pages choisis, pour planifier le déploiement.",
+  "La liste des modèles de pages retenus."),
+ ("/seo-entites-vectorielles",
+  "Liste tout ce qu'une page doit contenir pour que Google et les IA la reconnaissent comme experte du "
+  "sujet : le bon vocabulaire, les chiffres, le format attendu, l'angle que personne d'autre n'a.",
+  "Avant de rédiger une page, ou pour auditer une page existante.",
+  "La requête visée (par exemple « calculer son index de golf »)."),
+ ("/seo-preparation-semantique",
+  "Donne la carte complète de ce qu'une page doit couvrir sur un sujet. En mode audit, il prend une page "
+  "existante et liste précisément ce qui lui manque.",
+  "Au moment de cadrer une page, en création comme en correction.",
+  "La requête (création) ou la page existante à auditer (audit)."),
+ ("/seo-product-led-seo",
+  "Conçoit des outils interactifs (calculateur, simulateur, quiz, comparateur) qui captent les requêtes "
+  "où l'internaute veut faire quelque chose, pas seulement lire.",
+  "Pour transformer une page de texte en page-outil (par exemple le quiz « quelle balle pour vous »).",
+  "La thématique et le besoin concret de l'utilisateur."),
+ ("/seo-programmatique-pseo",
+  "Conçoit un système de pages en série : un seul modèle, une variable qui change, et des centaines de "
+  "pages uniques qui se positionnent chacune sur une requête de longue traîne.",
+  "Quand on veut couvrir une verticale à grande échelle (une page par parcours de golf, par exemple).",
+  "La verticale visée et la base de données qui fait varier les pages (les ~40 parcours)."),
 ]
-for cmd, folder in SKILL_FILES:
-    path=os.path.join(SKILLS_DIR, folder, "SKILL.md")
-    try:
-        txt=open(path, encoding="utf-8").read()
-    except Exception:
-        continue
-    st.append(CondPageBreak(70*mm))
-    st.append(HRFlowable(width="100%", thickness=0.75, color=GRID, spaceBefore=10, spaceAfter=6))
-    st.append(Paragraph("<font name='Courier' color='#1155CC'>%s</font>"%cmd, S["h2"]))
-    for f in render_md(txt): st.append(f)
+for cmd, what, when, inp in SKILL_CARDS:
+    for f in skill_card(cmd, what, when, inp): st.append(f)
 
 st.append(Paragraph("Trouver ces mots-clés avec Fusionn", S["h1"]))
-st.append(P("Le repérage des requêtes « Do » n'a rien d'artisanal une fois Fusionn branché. Le réflexe "
-   "transférable du cas Golfiller (lire la donnée, isoler le pattern des winners, le répliquer) est "
-   "précisément ce que l'outil enchaîne, onglet par onglet."))
+st.append(P("Une fois Fusionn branché, repérer les bonnes requêtes ne se fait plus à la main. Ce qu'on a "
+   "fait sur Golfiller (lire la donnée, repérer ce qui marche, le répliquer), l'outil l'enchaîne onglet "
+   "par onglet."))
 # capture : synthèse "Ce qu'il faut retenir"
-for fl in shot("synth_p.png", 150, "Sortie Fusionn : la synthèse « Ce qu'il faut retenir » résume clusters, "
-               "outils et objections en tête de résultats."): st.append(fl)
+for fl in shot("synth_p.png", 150, "Sortie Fusionn : la synthèse « Ce qu'il faut retenir » résume les "
+               "sujets à couvrir, les outils et les objections en tête de résultats."): st.append(fl)
 
 st.append(Paragraph("1. Lancer la recherche sur la verticale", S["h3"]))
-st.append(P("Seed minimal (« balle de golf occasion », « index golf », « slope parcours »). Si la "
-   "propriété GSC golfiller.fr est branchée (sélecteur de propriété), le scoring part de la vraie data "
-   "du site."))
-st.append(Paragraph("2. Onglet Mots-clés → trier le Do du Know", S["h3"]))
-st.append(P("La liste qualifiée arrive avec sa pertinence, son intention et son cluster. On garde le "
-   "décisionnel (calculer, comparer, consulter), on écarte l'informationnel que les AI Overviews vont "
-   "manger."))
-for fl in shot("table_p.png", 152, "Onglet Mots-clés : chaque requête notée en pertinence et taggée "
-               "Do / Know, regroupée par cluster."): st.append(fl)
-st.append(Paragraph("3. Onglet Micro-intentions → couvrir la grappe", S["h3"]))
-st.append(P("Il éclate le sujet en sous-intentions réelles (slope, index, compression, distance par "
-   "club). La matière du RRF et le repérage des trous que personne n'adresse."))
-st.append(Paragraph("4. Onglet Outils → sortir les vecteurs multimodaux", S["h3"]))
-st.append(P("Il propose les formats « Do » associés (calculateur, comparateur, quiz). Le Product-Led "
-   "sorti de force, exactement les opportunités listées plus haut."))
-st.append(Paragraph("5. Onglet Stratégie programmatique → lots de pages", S["h3"]))
-st.append(P("Les playbooks regroupent les pages à produire en lots scorés et priorisés (P0 d'abord). La "
-   "traduction directe de « 1 template + 1 variable = N pages » : une URL par parcours, par balle, par "
-   "profil."))
+st.append(P("Quelques mots de départ suffisent (« balle de golf occasion », « index golf », « slope "
+   "parcours »). Si la propriété Search Console de golfiller.fr est reliée, le classement des requêtes "
+   "part directement des vraies données du site."))
+st.append(Paragraph("2. Onglet Mots-clés : garder ce qui convertit", S["h3"]))
+st.append(P("La liste arrive notée, avec l'intention de chaque requête et son regroupement par sujet. On "
+   "garde celles où l'internaute veut agir (calculer son index, comparer deux balles), on écarte les "
+   "requêtes purement informatives, déjà absorbées par les réponses IA de Google."))
+for fl in shot("table_p.png", 152, "Onglet Mots-clés : chaque requête est notée, étiquetée selon "
+               "l'intention, et regroupée par sujet."): st.append(fl)
+st.append(Paragraph("3. Onglet Micro-intentions : couvrir toutes les sous-questions", S["h3"]))
+st.append(P("Il découpe le sujet en sous-questions réelles : slope, index, compression, distance par "
+   "club. C'est ce qui permet de traiter le sujet en entier et de repérer les angles que personne "
+   "n'a couverts."))
+st.append(Paragraph("4. Onglet Outils : les formats interactifs à créer", S["h3"]))
+st.append(P("Il propose les outils adaptés à chaque requête : calculateur, comparateur, quiz. Ce sont "
+   "exactement les opportunités listées plus haut."))
+st.append(Paragraph("5. Onglet Stratégie programmatique : les lots de pages à produire", S["h3"]))
+st.append(P("Il regroupe les pages à produire en lots, classés par priorité, les plus rentables d'abord. "
+   "C'est la mise en pratique du « 1 modèle + 1 variable = N pages » : une page par parcours, par balle, "
+   "par profil."))
 # capture : navigation du workspace (les onglets, par groupe)
 for fl in shot("nav_p.png", 56, "La navigation du workspace, organisée en trois temps : Comprendre, "
                "Produire, Décider."): st.append(fl)

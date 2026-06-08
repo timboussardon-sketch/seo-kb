@@ -1,6 +1,6 @@
 # Règles de wording et de titraille
 
-Accumulé par l'agent au fil des éditions. Injecté dans la rédaction (agent 6) en complément du skill `ton-de-voix-tim`. Les règles validées par l'engagement réel montent en haut.
+Accumulé par l'agent au fil des éditions. Injecté dans la rédaction (agent 6). La voix de référence est [[voix-synthetic]] (pas celle de Tim), la banque de titres-modèles est [[Titres↑]], et le socle anti-pattern est [[concepts/anti-ai-writing]]. Les règles validées par l'engagement réel montent en haut.
 
 ## Titraille — règle n°1 (Tim, fondatrice)
 

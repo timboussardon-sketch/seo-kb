@@ -13,7 +13,7 @@ illustration: golfiller
 
 # Ranker une verticale de niche sans backlink
 
-Réflexion extraite d'un cas réel (Golfiller, balles de golf d'occasion) et **généralisée pour s'appliquer à n'importe quel site / client**. Le golf n'est qu'une illustration : remplace "balle de golf" par ta thématique, "parcours / index / compression" par tes entités métier.
+Réflexion extraite d'un cas réel ([[entities/golfiller]], balles de golf d'occasion) et **généralisée pour s'appliquer à n'importe quel site / client**. Le golf n'est qu'une illustration : remplace "balle de golf" par ta thématique, "parcours / index / compression" par tes entités métier.
 
 Source du cas : [[golfiller-strat]] (contexte + analyse GSC). Log de travail brut : [[golfiller-conversations]].
 
@@ -24,7 +24,7 @@ On ne bat pas les gros acteurs sur le head term générique. On construit une au
 ## Les 6 leviers réutilisables
 
 ### 1. Positionnement : choisir une verticale, pas le head term
-Ne pas attaquer le mot-clé générique le plus volumineux (déjà tenu par les gros). Descendre d'un cran sur un **sous-segment défendable** où l'on peut devenir une référence. Le but n'est pas "éviter les mots-clés des autres", c'est **bâtir une autorité thématique sur une verticale de marché**. Voir le skill `seo-cluster-aeo`, doctrine des 4 piliers.
+Ne pas attaquer le mot-clé générique le plus volumineux (déjà tenu par les gros). Descendre d'un cran sur un **sous-segment défendable** où l'on peut devenir une référence. Le but n'est pas "éviter les mots-clés des autres", c'est **bâtir une autorité thématique sur une verticale de marché**. Voir le skill `seo-cluster-aeo`, doctrine des [[syntheses/4-piliers-organikk|4 piliers]].
 
 ### 2. Scaler en pSEO template-variable
 Un template = une variable = X pages. Une base de données métier (parcours, villes, modèles, profils…) génère des centaines de pages de longue traîne, chacune sur une micro-requête. Voir [[programmatique-pseo]] (skill `seo-programmatique-pseo`). Phasage : page **pilier** d'abord, puis **Phase 2** (une URL par entité) seulement si la pilier performe.
@@ -36,7 +36,7 @@ Méthode transférable : exporter la GSC, repérer les pages qui sur-performent 
 - **"Know"** (lire / apprendre) : un LLM répond à la place de ta page. Tu te fais manger. À éviter en priorité.
 - **"Do"** (calculer / consulter / comparer / configurer) : l'IA ne peut pas le faire à la place de l'utilisateur sur ta page. Ces requêtes résistent. C'est là qu'il faut produire.
 
-C'est la traduction concrète de l'anti-ChatGPT : on ne crée pas pour des requêtes qu'un AI Overview dévore. Voir le skill `seo-mots-cles-decisionnels`.
+C'est la traduction concrète de l'anti-ChatGPT : on ne crée pas pour des requêtes qu'un AI Overview dévore. On vise les [[concepts/mots-cles-actionnels]]. Voir le skill `seo-mots-cles-decisionnels`. Le même schéma sert de moteur de lead gen : [[methode-lead-gen-seo]].
 
 ### 5. Product-Led : transformer le contenu winner en outil
 Une fois la page "Do" identifiée, ne pas la laisser en texte : en faire un **calculateur, un comparateur dynamique, un quiz/profileur, un tableau filtrable**. Effet double : monte le CTR de la requête existante (donc le ranking) et crée une **conversion native** (reco produit, capture email). Un tableau ou un calculateur bat un article. Voir [[product-led-seo]] (skill `seo-product-led-seo`).

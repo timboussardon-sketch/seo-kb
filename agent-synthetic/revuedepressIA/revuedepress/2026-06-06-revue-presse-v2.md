@@ -12,6 +12,8 @@ _Édition du 2026-06-06 (v2). Pilier de l'info du jour : Actualité SEO. Draft S
 
 ## L'info du jour : la verticale santé entre dans la surface publicitaire d'AI Mode
 
+*Entité : [[entities/google-ai-mode]].*
+
 Google ouvre pour la première fois la diffusion d'annonces de santé à l'intérieur d'AI Mode. Le test est limité aux États-Unis, aux requêtes en anglais, et confirmé par Ginny Marvin, responsable produit Google Ads, dans un échange LinkedIn pendant Google Marketing Live 2026 ([Search Engine Land, 2 juin 2026](https://searchengineland.com/google-begins-testing-healthcare-ads-in-ai-mode-479264), [PPC.land, 1er juin 2026](https://ppc.land/google-breaks-healthcare-ad-ban-in-ai-mode-with-a-small-us-test/), [Search Engine Roundtable](https://www.seroundtable.com/google-healthcare-ads-ai-mode-41420.html)).
 
 Pour comprendre ce que ce test change, il faut rappeler ce qui était bloqué jusqu'ici. Depuis l'apparition des annonces dans les AI Overviews en 2024, Google rangeait la santé avec la finance, le jeu d'argent et le contenu pour adultes : ces verticales étaient écartées des placements à l'intérieur de la réponse IA, parce que le risque de désinformation y est jugé plus élevé que sur les requêtes commerciales ordinaires. Quand AI Overviews a été étendu à 11 pays en décembre 2025, la santé restait exclue ([PPC.land, 1er juin 2026](https://ppc.land/google-breaks-healthcare-ad-ban-in-ai-mode-with-a-small-us-test/)).

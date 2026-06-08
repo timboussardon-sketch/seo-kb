@@ -21,3 +21,10 @@ Site e-commerce de balles de golf d'occasion. Sert de cas de référence interne
 - **Sans backlink acheté** : la position se gagne par densité sémantique et adéquation à l'intention, pas par netlinking.
 
 Cas mobilisé dans [[syntheses/audit-doctrine-2026]] comme preuve terrain de la doctrine pSEO + Product-Led.
+
+## Liens
+
+- [[methodes/ranker-verticale-niche-sans-backlink]] — la méthode générale extraite de ce cas (verticale défendable + pSEO + Do-intent + Product-Led, sans backlink).
+- [[golfiller-strat]] — la note brute de stratégie et l'analyse GSC du site.
+- [[golfiller-conversations]] — le log de travail brut d'où la réflexion est tirée.
+- [[concepts/product-led-seo]] — le levier qui transforme la page Do en outil et porte le ranking.

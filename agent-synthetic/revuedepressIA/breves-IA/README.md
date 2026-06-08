@@ -1,6 +1,6 @@
 # Brèves IA — modèle de newsletter
 
-Deuxième modèle de newsletter, à côté de l'édition Algorithme (`revuedepressIA/{date}-revue-presse.md`).
+Deuxième modèle de newsletter, à côté de l'édition Algorithme (`revuedepressIA/{date}-revue-presse.md`). Même boucle de production et d'apprentissage que l'édition Algorithme : [[methodes/cadrage-boucle-edition-algorithme]].
 
 ## Le format
 
@@ -29,7 +29,7 @@ L'édition Brèves et les deux éditions Algorithme du même jour ne se répète
 
 ## Grille de sélection (seuil minimum 4,5/5)
 
-Une info ne devient une brève que si elle passe la grille. Chaque candidat est noté de 0 à 5 sur les 5 critères, on fait la moyenne, et **on ne retient que les moyennes ≥ 4,5**. Seuil exigeant et assumé : si moins de 10 candidats atteignent 4,5, on élargit la veille pour remonter à 10, jamais on ne descend le seuil.
+Grille commune avec Algorithme, détaillée dans [[notation]]. Une info ne devient une brève que si elle passe la grille. Chaque candidat est noté de 0 à 5 sur les 5 critères, on fait la moyenne, et **on ne retient que les moyennes ≥ 4,5**. Seuil exigeant et assumé : si moins de 10 candidats atteignent 4,5, on élargit la veille pour remonter à 10, jamais on ne descend le seuil.
 
 | Critère | Note 0-5 sur quoi |
 |---|---|

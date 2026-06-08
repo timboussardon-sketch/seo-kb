@@ -87,7 +87,7 @@ scope: recherche mots-clés décisionnels, audience startups SaaS B2B
 | seo pré-seed | Know | `[À SOURCER]` | Faible | Découverte | Niche anglophone/tech FR |
 | seo seed startup | Know | `[À SOURCER]` | Faible | Découverte | Étage de financement |
 | seo series a startup | Know | `[À SOURCER]` | Faible | Découverte | Budget growth qui s'ouvre |
-| product-led seo startup | Know | `[À SOURCER]` | Faible | Découverte | Croise le skill `seo-product-led-seo` |
+| product-led seo startup | Know | `[À SOURCER]` | Faible | Découverte | Croise le skill `seo-product-led-seo` ([[concepts/product-led-seo]]) |
 | seo product-led growth | Know | `[À SOURCER]` | Faible | Découverte | Audience PLG |
 | seo startup budget limité | Know→Do | `[À SOURCER]` | Faible | Évaluation | Pain réel early stage |
 | externaliser le seo startup | Do | `[À SOURCER]` | Faible | Décision | Alternative au recrutement |
@@ -145,3 +145,6 @@ scope: recherche mots-clés décisionnels, audience startups SaaS B2B
 - [[keywords/index]]
 - [[concepts/mots-cles-actionnels]]
 - [[concepts/programmatique-pseo]]
+- [[concepts/aeo]] — l'angle F (visibilité IA / GEO) de cette liste
+- [[concepts/metriques-visibilite-geo]] — comment mesurer la visibilité générative ciblée par les requêtes GEO
+- [[methodes/ranker-verticale-niche-sans-backlink]] — la méthode pour ranker la verticale « consultant SEO startup » sans backlink

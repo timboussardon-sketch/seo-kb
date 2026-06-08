@@ -11,6 +11,8 @@ confidence: medium
 status: draft
 ---
 
+> Transcript (suite) du call de qualification [[entities/bootcamp-seo-ia]] avec [[entities/franck]] (directeur SEO agence, veut déployer un système à son équipe). Version curée : [[sources/2026-04-15-call-10-franck-suite]]. Analyse transverse : [[analyse-calls-prospects-bootcamp]].
+
 **Tim :** ...un petit... un petit récap à la fin.
 
 **Franck :** Ouais, bon bah c’est bien comme ça, justement comme ça je le mettrai dans un... dans mon Google Doc... c’est bien de structurer un peu, c’est important.

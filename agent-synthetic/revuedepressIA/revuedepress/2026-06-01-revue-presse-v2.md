@@ -13,6 +13,8 @@
 
 ## Info du jour : la visibilité auprès des agents devient un problème d'accès et de lisibilité, pas seulement de citation
 
+*Doctrine : [[concepts/agentic-search]].*
+
 Pilier : **Recherche agentique** (comment une marque est trouvée et actionnée par un agent).
 
 Pendant deux ans, la question posée par les moteurs génératifs était : « comment être cité dans la réponse ? ». Une seconde question s'ajoute en 2026 pour les agents qui agissent (qui comparent, ajoutent au panier, paient) : « l'agent a-t-il le droit d'accéder à votre site, et peut-il lire vos données pour agir ? ». Les faits accumulés depuis l'automne 2025 montrent que la réponse dépend de deux conditions distinctes de la citation.

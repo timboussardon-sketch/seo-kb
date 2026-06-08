@@ -22,6 +22,8 @@ status: draft
 
 ## Info du jour | Pilier GEO / search IA
 
+*Entité : [[entities/google-ai-mode]].*
+
 ### Ce que Google a annoncé le 27 mai et ce que ça déplace
 
 Le 27 mai 2026, Google a annoncé deux changements simultanés dans la manière dont AI Mode et AI Overviews exposent les liens cités. Le premier change étend Preferred Sources, fonctionnalité jusqu'ici limitée à Top Stories, à l'ensemble des réponses générées par AI Mode et AI Overviews. Le second étend le label « Highly Cited », introduit en 2022 dans Top Stories, à plus d'articles dans les résultats de recherche classiques ([blog.google](https://blog.google/products-and-platforms/products/search/original-high-quality-content-search/)).

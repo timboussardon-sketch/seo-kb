@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Ma strat SEO pour Golfiller</title>
+<style>
+  :root{
+    --ink:#37352F;          /* texte principal Notion */
+    --ink-soft:#787774;     /* secondaire */
+    --faint:#9B9A97;        /* légendes */
+    --line:#EAE9E5;         /* filets */
+    --bg-callout:#F7F6F3;   /* gris callout */
+    --bg-card:#FBFBFA;
+    --chip:#EFEFEE;
+    --accent:#2E75CC;       /* bleu sobre */
+    --red:#D9480F;          /* code/skill */
+  }
+  *{box-sizing:border-box;}
+  @page{ size:A4; margin:20mm 18mm; }
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    font-size:10.6pt;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1{font-size:27pt;font-weight:700;letter-spacing:-.015em;line-height:1.15;margin:0 0 2px;
+    background:linear-gradient(120deg,#1B3E8F 0%,#2559DD 48%,#5b86f5 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+  .subtitle{font-size:11pt;color:var(--ink-soft);margin:0 0 14px;}
+  h2{font-size:16pt;font-weight:600;letter-spacing:-.01em;margin:30px 0 8px;line-height:1.25;}
+  h3{font-size:12pt;font-weight:600;margin:18px 0 4px;}
+  p{margin:8px 0;}
+  hr{border:none;border-top:1px solid var(--line);margin:14px 0 18px;}
+  strong{font-weight:600;}
+  a{color:var(--accent);text-decoration:none;}
+
+  ul{margin:8px 0;padding-left:0;list-style:none;}
+  ul li{position:relative;padding-left:20px;margin:9px 0;line-height:1.6;}
+  ul li::before{content:"";position:absolute;left:6px;top:.72em;width:4px;height:4px;
+    border-radius:50%;background:var(--ink);}
+
+  code,.kbd{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--chip);
+    border-radius:4px;padding:1px 5px;font-size:.88em;color:var(--red);}
+
+  .callout{display:flex;gap:12px;background:var(--bg-callout);border:1px solid var(--line);
+    border-radius:8px;padding:18px 20px;margin:20px 0;break-inside:avoid;}
+  .callout .ico{font-size:15pt;line-height:1.4;}
+  .callout .body{flex:1;}
+  .callout .body .t{font-weight:600;margin-bottom:5px;}
+  .callout p{margin:3px 0;line-height:1.6;}
+
+  .formula{background:var(--bg-callout);border:1px solid var(--line);border-radius:8px;
+    padding:22px 16px;margin:20px 0;text-align:center;font-size:11.5pt;break-inside:avoid;}
+  .formula b{font-weight:600;}
+  .formula .arrow{color:var(--ink-soft);}
+
+  .skill{border:1px solid var(--line);border-radius:8px;
+    background:var(--bg-card);padding:18px 20px;margin:16px 0;break-inside:avoid;}
+  .skill .cmd{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:10.5pt;font-weight:600;color:var(--red);background:var(--chip);
+    border-radius:5px;padding:3px 9px;margin-bottom:11px;}
+  .skill p{margin:8px 0;font-size:10.2pt;line-height:1.6;}
+  .skill .lab{font-weight:600;}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:10pt;break-inside:avoid;}
+  th{background:var(--bg-callout);text-align:left;font-weight:600;}
+  th,td{padding:8px 12px;border-bottom:1px solid var(--line);}
+  tr:last-child td{border-bottom:none;}
+
+  figure{margin:16px 0;break-inside:avoid;text-align:center;}
+  figure img{max-width:100%;border:1px solid var(--line);border-radius:8px;}
+  figure.small img{max-width:62mm;}
+  figure.pending{border:1px dashed #C9C8C4;border-radius:8px;background:#FBFBFA;
+    padding:26px 20px;color:var(--faint);font-size:9.5pt;}
+  figcaption{font-size:8.8pt;color:var(--faint);margin-top:6px;}
+
+  .author{display:flex;gap:14px;align-items:center;border:1px solid var(--line);
+    border-radius:10px;background:var(--bg-card);padding:14px 16px;margin-top:14px;break-inside:avoid;}
+  .author img{width:54px;height:54px;border-radius:50%;object-fit:cover;}
+  .author .name{font-weight:600;font-size:12pt;}
+  .author .role{color:var(--ink-soft);font-size:9.5pt;margin:1px 0 4px;}
+  .author .links{font-size:9.5pt;}
+  .author .links a{margin-right:14px;}
+
+  /* Carte CTA — design system Organikk */
+  .cta{position:relative;overflow:hidden;background:#F8F9FA;border:1px solid rgba(10,15,30,.06);
+    border-radius:24px;padding:36px 32px;margin:28px 0;text-align:center;break-inside:avoid;
+    box-shadow:0 20px 60px -24px rgba(27,62,143,.18);}
+  .cta::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;
+    background:linear-gradient(90deg,#5A96F3,#4685F0,#1B3E8F);}
+  .cta .h{font-size:17pt;font-weight:700;color:#0A0F1E;letter-spacing:-.01em;margin:0 0 8px;}
+  .cta p{margin:0 0 20px;color:#5a6681;font-size:10.5pt;line-height:1.55;}
+  .cta a.btn{display:inline-block;color:#fff;text-decoration:none;font-weight:600;font-size:11pt;
+    background:linear-gradient(135deg,#5A96F3 0%,#4685F0 45%,#1B3E8F 100%);
+    border-radius:14px;padding:13px 28px;box-shadow:0 10px 24px -10px rgba(70,133,240,.6);}
+
+  section{break-inside:avoid-page;}
+</style>
+</head>
+<body>
+
+  <h1>Je te présente ma strat SEO pour Golfiller</h1>
+  <p class="subtitle">Note de stratégie · Organikk</p>
+  <hr>
+
+  <h2>Objectif et contexte</h2>
+  <p>Golfiller (golfiller.fr), e-commerce de balles de golf d'occasion et reconditionnées. Objectif&nbsp;: bâtir une autorité sur une niche défendable, les balles de golf d'occasion, plutôt que de viser les mêmes requêtes génériques que les gros acteurs. Résultat&nbsp;: 1<sup>re</sup> position sur «&nbsp;balle de golf&nbsp;», devant Décathlon et Amazon, sans un seul backlink.</p>
+  <p>État&nbsp;: projet de pages programmatiques en cours sur les requêtes slope et handicap, base de ~40 parcours français (slope + SSS), calculateur de handicap interactif (formule FFGolf), page construite en HTML propre (calculateur + tableau filtrable + sections par parcours). À venir&nbsp;: extension à ~100 parcours, et une page par parcours si la page pilier tient ses positions.</p>
+
+  <h2>Les positions déjà gagnées</h2>
+  <p>Le point de départ&nbsp;: Golfiller occupe déjà le haut des résultats Google sur ses requêtes les plus disputées, sans un seul backlink.</p>
+  <table>
+    <tr><th>Requête</th><th>Position</th></tr>
+    <tr><td>balle de golf</td><td>1<sup>re</sup></td></tr>
+    <tr><td>achat balle de golf</td><td>1<sup>re</sup></td></tr>
+    <tr><td>balle de golf occasion</td><td>2<sup>e</sup></td></tr>
+  </table>
+
+  <h2>Analyse Search Console&nbsp;: les pages qui gagnent</h2>
+  <p>Les pages qui performent le plus font toutes la même chose&nbsp;: elles font faire quelque chose à l'internaute. Calculer un index, comparer deux balles, consulter un parcours. Ce sont des outils, pas des articles. Une IA résume un texte, mais elle ne fait pas tourner un calculateur à la place de l'utilisateur. Le réflexe à garder&nbsp;: lire la Search Console, repérer ce qui marche, le répliquer.</p>
+  <p>Les chiffres confirment la trajectoire&nbsp;: sur trois mois, le trafic et les positions montent franchement.</p>
+  <figure class="pending">
+    <img src="shots/gsc_perf.png" alt="[ Capture GSC « 3 mois » à insérer ]">
+    <figcaption>Search Console, 3 derniers mois&nbsp;: 9,82&nbsp;k clics, 239&nbsp;k impressions, position moyenne 7,5. La courbe monte sur la période.</figcaption>
+  </figure>
+  <figure class="pending">
+    <img src="shots/gsc_compare.png" alt="[ Capture GSC « Comparer » à insérer ]">
+    <figcaption>Comparaison avec les 3 mois précédents&nbsp;: clics 6,33&nbsp;k&nbsp;→&nbsp;9,82&nbsp;k, impressions 171&nbsp;k&nbsp;→&nbsp;239&nbsp;k, position moyenne 10,1&nbsp;→&nbsp;7,5.</figcaption>
+  </figure>
+  <div class="callout">
+    <div class="ico">💡</div>
+    <div class="body">
+      <div class="t">Ce que ça veut dire</div>
+      <p>Les pages qui demandent une action résistent. Les pages qui ne font qu'informer se font absorber par les réponses IA de Google, qui donnent la réponse sans renvoyer de clic. Un calculateur ou un tableau interactif n'a pas ce problème&nbsp;: l'utilisateur doit venir sur la page pour s'en servir.</p>
+    </div>
+  </div>
+
+  <h2>La réflexion derrière la stratégie</h2>
+
+  <h3>1. Pourquoi les pages-outils gagnent</h3>
+  <p>Les pages qui marchent le mieux sont des outils, pas des articles. Une IA recopie et résume un texte sans difficulté, mais elle ne remplit pas un calculateur ni ne trie un tableau à la place de l'internaute. C'est aussi ce que Google met en avant&nbsp;: une page qui règle le besoin sur place, sans renvoyer l'internaute chercher ailleurs.</p>
+
+  <h3>2. Ce qu'une page doit contenir pour être prise au sérieux</h3>
+  <ul>
+    <li><strong>Le vocabulaire du métier&nbsp;:</strong> slope, SSS, index, compression, carry. Sans lui, la page ne parle pas le langage du sujet.</li>
+    <li><strong>Des chiffres sourcés&nbsp;:</strong> données Trackman, PGA Tour, FFGolf, avec leur unité et leur contexte. C'est ce qui rend la page crédible pour une IA qui cherche une source fiable à citer.</li>
+    <li><strong>Le bon format&nbsp;:</strong> une requête «&nbsp;calculer son index&nbsp;» attend un calculateur, pas un paragraphe. Une page sans l'outil attendu est incomplète.</li>
+    <li><strong>Une donnée ou un angle que personne d'autre n'a.</strong></li>
+  </ul>
+  <p>Le bon dosage n'est pas de répéter ce que tout le monde dit. C'est de coller au sujet tout en apportant quelque chose que les autres pages n'ont pas. Ni hors-sujet, ni redondant.</p>
+
+  <h3>3. Ce qui fait qu'une IA cite la marque</h3>
+  <p>Une IA cite la source qui apporte l'information qu'elle ne trouve pas ailleurs. Chez Golfiller, cette information vient des données maison&nbsp;: les distances réelles mesurées par profil de joueur, les compressions croisées, agrégées à partir des clients. Repère simple&nbsp;: si un concurrent peut recopier l'angle en cinq minutes, ce n'est pas un avantage.</p>
+
+  <h3>4. Couvrir tout le sujet, avec sa propre donnée</h3>
+  <p>Une page isolée ne suffit pas. Il faut traiter toutes les questions du sujet&nbsp;: le slope, l'index, la compression, la distance par club, le choix de balle. Plus l'ensemble est complet, plus le score de fusion de Google progresse. Ce score, le RRF (Reciprocal Rank Fusion), combine plusieurs classements pour décider quoi faire remonter&nbsp;: couvrir toutes les sous-questions le fait grimper, et Google finit par lire le site comme une référence sur la niche. Sans données propres dans les pages, on retombe sur ce que l'IA sait déjà, donc sur du contenu interchangeable. Les données maison alimentent tout le reste&nbsp;: les chiffres, l'angle unique, les outils.</p>
+
+  <h2>Opportunités d'outils à créer</h2>
+  <ul>
+    <li><strong>Calculette / simulateur d'index interactif.</strong> La page <code>/calcul-index-golf</code> est déjà à 1&nbsp;816 clics et 77&nbsp;786 impressions, en position moyenne 11,77. La rendre interactive la fait monter.</li>
+    <li><strong>Quiz «&nbsp;Quelle balle pour vous&nbsp;?&nbsp;».</strong> Page de texte (1&nbsp;330 clics, position 8,45) à transformer en quiz. Conversion directe, et la mise en place la plus simple.</li>
+    <li><strong>Carte de score interactive.</strong> Carte digitale trou par trou, calcul automatique, export PDF.</li>
+    <li><strong>Tableau de distance de clubs par profil.</strong> Réplique du format «&nbsp;tableau&nbsp;» qui gagne déjà, filtrable. Sa valeur unique&nbsp;: la donnée agrégée des clients.</li>
+    <li><strong>Comparateur de balles côte à côte.</strong> Rendre dynamique le tableau de compression, avec une page dédiée par paire de balles (<code>/comparer/pro-v1-vs-pro-v1x</code>).</li>
+  </ul>
+  <p>Si on ne lance qu'un seul outil&nbsp;: le quiz «&nbsp;Quelle balle pour vous&nbsp;». C'est le plus simple à mettre en place, il convertit directement, et il relance une page de texte qui stagne aujourd'hui.</p>
+
+  <h2>Créer un modèle de page et le lancer en production</h2>
+  <p>La logique tient en une ligne&nbsp;:</p>
+  <div class="formula"><b>1 modèle</b> <span class="arrow">+</span> <b>1 variable qui change</b> <span class="arrow">=</span> <b>N pages uniques</b></div>
+  <p>Chaque page vise une requête de longue traîne. Le produit, c'est la combinaison base de données × structure de page, pas le texte écrit à la main.</p>
+
+  <h3>1. Choisir le modèle (modèle + variable)</h3>
+  <p>Le modèle «&nbsp;page parcours&nbsp;» se décline sur la variable «&nbsp;parcours&nbsp;» (base de ~40 parcours français&nbsp;: slope + SSS). Autres variables activables&nbsp;: la balle (comparateur), le profil (tableau de distances). Chaque combinaison vise une question différente, ce qui évite que deux pages se fassent concurrence sur la même requête.</p>
+
+  <h3>2. Rendre chaque page réellement unique</h3>
+  <p>Règle non négociable&nbsp;: plus de 70&nbsp;% du contenu change entre deux pages, et la différence porte sur le fond (slope, SSS, sections propres au parcours), pas seulement sur la variable. Des pages générées en changeant un seul mot se font rétrograder ou désindexer par Google en quelques jours.</p>
+
+  <h3>3. Injecter sa propre donnée</h3>
+  <p>La valeur vient des chiffres eux-mêmes (base de parcours construite à la main, données clients agrégées), pas du commentaire autour. On s'appuie sur des sources officielles, jamais de récupération sauvage. C'est ce qui nourrit à la fois les chiffres, l'angle unique et le calculateur.</p>
+
+  <h3>4. Construire une page simple et propre</h3>
+  <p>Calculateur de handicap (formule FFGolf), tableau filtrable, sections par parcours, en HTML net, sans fioritures. Objectif&nbsp;: chaque section de la page se suffit à elle-même et peut se positionner seule sur sa requête.</p>
+
+  <h3>5. Lancer par paliers, piloté par la Search Console</h3>
+  <p>Pilote d'abord (page pilier + base ~40 parcours), on mesure en Search Console, et on n'étend à une page par parcours (~100 parcours) que si la pilier tient. Jamais des centaines de pages d'un coup&nbsp;: on valide le modèle sur un échantillon, puis on industrialise.</p>
+
+  <h2>Les outils («&nbsp;skills&nbsp;») mobilisés</h2>
+  <p>Chaque étape de la stratégie s'appuie sur un outil dédié. Ce sont des assistants spécialisés, chacun avec un rôle précis. Voici, dans l'ordre où on les utilise, ce que fait chacun, à quel moment, et ce qu'il faut lui fournir pour qu'il travaille.</p>
+
+  <div class="skill"><span class="cmd">/seo-quick-win</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> repère les pages déjà proches du top 3 (positions 3 à 12) qui reçoivent beaucoup d'affichages mais peu de clics. Ce sont les gains les plus rapides&nbsp;: on optimise l'existant avant de créer.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> dès qu'on a les données Search Console du site.</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> un export Search Console (fichier CSV).</p>
+  </div>
+
+  <div class="skill"><span class="cmd">/seo-modeles-pseo</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> trouve les pages «&nbsp;business&nbsp;» à créer autour d'une page de vente, à partir des requêtes qu'un client tape vraiment quand il est sur le point de décider.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> pour choisir quelles pages valent le coup, avant d'en produire des centaines.</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> la page de vente visée et l'action qu'on attend du visiteur (achat, devis, contact).</p>
+  </div>
+
+  <div class="skill"><span class="cmd">/seo-roadmap-pseo</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> met les pages à produire dans l'ordre, sur un plan d'exécution daté et priorisé.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> une fois les modèles de pages choisis, pour planifier le déploiement.</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> la liste des modèles de pages retenus.</p>
+  </div>
+
+  <div class="skill"><span class="cmd">/seo-entites-vectorielles</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> liste tout ce qu'une page doit contenir pour que Google et les IA la reconnaissent comme experte du sujet&nbsp;: le bon vocabulaire, les chiffres, le format attendu, l'angle que personne d'autre n'a.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> avant de rédiger une page, ou pour auditer une page existante.</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> la requête visée (par exemple «&nbsp;calculer son index de golf&nbsp;»).</p>
+  </div>
+
+  <div class="skill"><span class="cmd">/seo-preparation-semantique</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> donne la carte complète de ce qu'une page doit couvrir sur un sujet. En mode audit, il prend une page existante et liste précisément ce qui lui manque.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> au moment de cadrer une page, en création comme en correction.</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> la requête (création) ou la page existante à auditer (audit).</p>
+  </div>
+
+  <div class="skill"><span class="cmd">/seo-product-led-seo</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> conçoit des outils interactifs (calculateur, simulateur, quiz, comparateur) qui captent les requêtes où l'internaute veut faire quelque chose, pas seulement lire.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> pour transformer une page de texte en page-outil (par exemple le quiz «&nbsp;quelle balle pour vous&nbsp;»).</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> la thématique et le besoin concret de l'utilisateur.</p>
+  </div>
+
+  <div class="skill"><span class="cmd">/seo-programmatique-pseo</span>
+    <p><span class="lab">Ce qu'il fait&nbsp;:</span> conçoit un système de pages en série&nbsp;: un seul modèle, une variable qui change, et des centaines de pages uniques qui se positionnent chacune sur une requête de longue traîne.</p>
+    <p><span class="lab">Quand s'en servir&nbsp;:</span> quand on veut couvrir une niche à grande échelle (une page par parcours de golf, par exemple).</p>
+    <p><span class="lab">Ce qu'il faut lui donner&nbsp;:</span> la niche visée et la base de données qui fait varier les pages (les ~40 parcours).</p>
+  </div>
+
+  <h2>Trouver ces mots-clés avec Fusionn</h2>
+  <p>Une fois Fusionn branché, repérer les bonnes requêtes ne se fait plus à la main. Ce qu'on a fait sur Golfiller (lire la donnée, repérer ce qui marche, le répliquer), l'outil l'enchaîne onglet par onglet.</p>
+
+  <h3>1. Lancer la recherche sur la niche</h3>
+  <p>Quelques mots de départ suffisent («&nbsp;balle de golf occasion&nbsp;», «&nbsp;index golf&nbsp;», «&nbsp;slope parcours&nbsp;»). Si la propriété Search Console de golfiller.fr est reliée, le classement des requêtes part directement des vraies données du site.</p>
+
+  <h3>2. Onglet Mots-clés&nbsp;: garder ce qui convertit</h3>
+  <p>La liste arrive notée, avec l'intention de chaque requête et son regroupement par sujet. On garde celles où l'internaute veut agir (calculer son index, comparer deux balles), on écarte les requêtes purement informatives, déjà absorbées par les réponses IA de Google.</p>
+
+  <h3>3. Onglet Micro-intentions&nbsp;: couvrir toutes les sous-questions</h3>
+  <p>Il découpe le sujet en sous-questions réelles&nbsp;: slope, index, compression, distance par club. C'est ce qui permet de traiter le sujet en entier et de repérer les angles que personne n'a couverts.</p>
+
+  <h3>4. Onglet Outils&nbsp;: les formats interactifs à créer</h3>
+  <p>Il propose les outils adaptés à chaque requête&nbsp;: calculateur, comparateur, quiz. Ce sont exactement les opportunités listées plus haut.</p>
+
+  <h3>5. Onglet Stratégie programmatique&nbsp;: les lots de pages à produire</h3>
+  <p>Il regroupe les pages à produire en lots, classés par priorité, les plus rentables d'abord. C'est la mise en pratique du «&nbsp;1 modèle + 1 variable = N pages&nbsp;»&nbsp;: une page par parcours, par balle, par profil.</p>
+  <figure class="small">
+    <img src="shots/nav_p.png" alt="Navigation du workspace Fusionn">
+    <figcaption>La navigation du workspace, organisée en trois temps&nbsp;: Comprendre, Produire, Décider.</figcaption>
+  </figure>
+
+  <div class="cta">
+    <div class="h">Construire votre système SEO</div>
+    <p>Le même travail appliqué à votre activité&nbsp;: repérer les requêtes qui convertissent, créer les pages-outils, industrialiser les modèles.</p>
+    <a class="btn" href="https://organikk.co/systeme-seo-ia/">Découvrir la méthode</a>
+  </div>
+
+  <hr>
+  <div class="author">
+    <img src="shots/tim.png" alt="Timothée Boussardon">
+    <div>
+      <div class="name">Timothée Boussardon</div>
+      <div class="role">Consultant SEO IA · Organikk · organikk.co</div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/timothee-boussardon/">LinkedIn</a>
+        <a href="https://algorithme.substack.com/">Newsletter Algorithme</a>
+        <a href="https://www.youtube.com/@ethicseo">YouTube</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -29,6 +29,7 @@ status: living-doc
 - Capture → traitement : [[ingest-backlog]] (sweep hebdo)
 - Doctrine → validation : [[hypotheses]] + [[contradictions]] (validation mensuelle)
 - Sortie → apprentissage : [[preuves/index]] (manuel)
+- Édition → édition (en cadrage) : [[methodes/cadrage-boucle-edition-algorithme]] — SyntheticBrain, la boucle qui rend Algorithme meilleure d'une édition à l'autre
 - Décision : [[decisions/index]]
 - Rituel : [[revue-hebdo/index]] (vendredi) + résurgence (mercredi)
 

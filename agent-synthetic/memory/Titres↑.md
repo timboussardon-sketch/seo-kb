@@ -1,6 +1,6 @@
 # Titres↑ — banque de titres-modèles
 
-But : tu colles ici des **titres d'articles que tu trouves bons** (les tiens, ceux d'auteurs, de médias, de newsletters). Ils servent de **modèles d'angle et de structure** pour la titraille des brèves et des éditions Algorithme.
+But : tu colles ici des **titres d'articles que tu trouves bons** (les tiens, ceux d'auteurs, de médias, de newsletters). Ils servent de **modèles d'angle et de structure** pour la titraille des brèves et des éditions Algorithme. Règles de forme dans [[wording_rules]], voix dans [[voix-synthetic]], socle anti-pattern [[concepts/anti-ai-writing]].
 
 Règle d'usage (pour l'agent) :
 - On s'inspire du **modèle** : la structure, l'angle, le type de promesse, la longueur, le rythme. **Jamais le titre exact**, jamais le même sujet plaqué.

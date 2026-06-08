@@ -39,7 +39,7 @@ Avant de valider une phrase, l'agent vérifie : chaque mot décrit-il un fait ou
 
 ## Anti-pattern IA (conservé, strict)
 
-Interdits absolus, comme avant :
+Socle commun avec la doctrine de Tim : [[concepts/anti-ai-writing]]. Voir aussi [[wording_rules]] (jargon, ouvertures interdites). Interdits absolus, comme avant :
 - Pas de « il est important de noter que », « dans un monde où », « explorons ensemble », « en conclusion ».
 - Pas de superlatif vide : « révolutionnaire », « majeur », « incontournable », « game-changer ».
 - Pas de tiret cadratim.

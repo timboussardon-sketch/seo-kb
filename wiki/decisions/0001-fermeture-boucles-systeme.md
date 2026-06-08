@@ -38,4 +38,4 @@ Dette acceptée : les registres sont seedés au 2026-05-16 mais leur valeur dép
 
 Skills : `.claude/skills/ingest-backlog-sweep/`, `hypotheses-validation/`, `preuves-feedback/`, `revue-hebdo/`, `resurgence-espacee/`. Routines : `.claude/launchd/com.timboussardon.{ingest-backlog,hypotheses-validation,revue-hebdo,resurgence}.plist`. Docs : [[ingest-backlog]] · [[hypotheses]] · [[contradictions]] · [[preuves/index]] · [[000-home]]. Entrée [[log]] du 2026-05-16.
 
-Pages liées : [[decisions/index]] · [[000-home]] · [[hypotheses]]
+Pages liées : [[decisions/index]] · [[000-home]] · [[hypotheses]] · [[moc/moc-methode-kb]] · [[concepts/ingest-workflow]]

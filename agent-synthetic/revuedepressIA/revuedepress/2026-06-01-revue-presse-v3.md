@@ -12,6 +12,8 @@
 
 ## Info du jour — Le contenu mis à l'échelle par IA perd l'essentiel de son trafic ; la donnée propriétaire et les pages fonctionnelles résistent
 
+*Doctrine : [[concepts/data-proprietaire]].*
+
 Le 13 mai 2026, Lily Ray a publié une analyse de plus de 220 sites identifiés via les pages « cas clients » d'une douzaine de plateformes de génération ou d'automatisation de contenu par IA. Ces sites se déclarent donc eux-mêmes utilisateurs de ces outils. La mesure s'appuie sur des données tierces (Ahrefs et l'indice de visibilité Sistrix), en isolant les sous-dossiers où le contenu assisté par IA a été publié.
 
 Le résultat : 54 % de ces sites ont perdu au moins 30 % de leur pic de trafic organique, 39 % au moins 50 %, et 22 % au moins 75 % ([Lily Ray, Substack, 13 mai 2026](https://lilyraynyc.substack.com/p/it-works-until-it-doesnt-ai-content-risks)). Le calendrier décrit est régulier d'un site à l'autre : forte progression du nombre de pages sur 6 à 12 mois, pic de trafic dans les 3 à 6 mois qui suivent le pic de production, puis recul prononcé l'année suivante, souvent en dessous du niveau de départ. Le motif touche des secteurs variés : cybersécurité, voyage, marketing, SaaS, santé, services B2B, crypto, biens de consommation. Lily Ray reprend le terme de l'analyste Glenn Gabe, « Mount AI », pour désigner cette séquence de hausse rapide suivie d'une baisse de forme comparable une fois que les systèmes de Google ont accumulé assez de signaux.

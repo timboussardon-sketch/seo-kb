@@ -76,10 +76,19 @@
     ],
     "backrefs": [
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/posts-linkedin/_index-batch-2026-06-01.md",
+      "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-claude-remplace-consultant.md",
+      "raw/articles/posts-linkedin/post-linkedin-guide-complet-systeme-autonome.md",
+      "raw/articles/posts-linkedin/post-linkedin-indexation-hebdo.md",
+      "raw/articles/posts-linkedin/post-linkedin-these-80-pourcent-consultant.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/organikk/pré-call/proximit-call-damien.md",
+      "raw/organikk/pré-call/proximit-resume-call-client.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
-      "wiki/index.md"
+      "wiki/index.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/80-pourcent-pattern-strategie.md",
@@ -109,12 +118,22 @@
     "backrefs": [
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
       "raw/articles/organikk-blog/audit-seo-claude.md",
       "raw/articles/organikk-blog/process-seo-b2b-2026.md",
+      "raw/articles/posts-linkedin/post-linkedin-audit-semantique-sans-outil.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/propal-remi.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
+      "raw/organikk/_MODELE-discours-commercial.md",
+      "raw/organikk/pré-call/centrale-directe-call.md",
+      "raw/organikk/pré-call/centrale-directe.md",
+      "raw/organikk/pré-call/pangaea-sports.md",
+      "raw/organikk/pré-call/proximit.md",
       "raw/papers/semrush-llm-conversion-study.md",
       "wiki/000-home.md",
       "wiki/concepts/5-types-ancres.md",
@@ -139,6 +158,7 @@
       "wiki/entities/semrush.md",
       "wiki/entities/sge.md",
       "wiki/index.md",
+      "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/sources/2026-04-11-algorithme-linkedin-2e-source-ia.md",
@@ -200,10 +220,17 @@
       "mle-star"
     ],
     "backrefs": [
+      "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse-v2.md",
       "raw/agents/qadence-seo-agent/README.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
       "raw/articles/organikk-blog/audit-seo-claude.md",
       "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
@@ -240,7 +267,8 @@
       "wiki/sources/2026-04-30-scheduled-skills-cron.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/faq-geo-175-questions.md",
-      "wiki/syntheses/tim-profil-doctrine.md"
+      "wiki/syntheses/tim-profil-doctrine.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/agentic-search.md",
@@ -391,10 +419,19 @@
     ],
     "backrefs": [
       "AGENTS.md",
+      "agent-synthetic/memory/Titres↑.md",
+      "agent-synthetic/memory/voix-synthetic.md",
+      "agent-synthetic/memory/wording_rules.md",
+      "content-brain/_template/memory/score-grid.md",
+      "content-brain/_template/memory/wording_rules.md",
+      "content-brain/golfiller/memory/score-grid.md",
+      "content-brain/golfiller/memory/wording_rules.md",
+      "newsletter-IA/_MODELE-newsletter-IA.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
       "raw/articles/organikk-blog/semrush-contenu-ia.md",
       "raw/articles/organikk-blog/strategie-seo-agence-immobiliere-lyon.md",
+      "raw/articles/posts-linkedin/post-linkedin-guide-complet-systeme-autonome.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-03.md",
       "raw/journal/2026-06-04.md",
@@ -503,6 +540,7 @@
       "prospect-arnaud"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
       "wiki/index.md",
       "wiki/moc/moc-vente-objections.md",
       "wiki/sources/2026-04-13-call-01-arnaud.md"
@@ -566,6 +604,7 @@
     "backrefs": [
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
       "wiki/concepts/4w-deep-reflection.md",
       "wiki/concepts/cercle-vicieux-temps-structure.md",
       "wiki/concepts/peur-train-ia.md",
@@ -596,7 +635,8 @@
       "wiki/sources/2026-04-13-call-09-julien.md",
       "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
       "wiki/sources/2026-04-15-call-10-franck-suite.md",
-      "wiki/sources/2026-04-15-call-13-caroline.md"
+      "wiki/sources/2026-04-15-call-13-caroline.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/avatar-freelance-sans-systeme.md",
@@ -695,6 +735,24 @@
       "bootcamp-4"
     ],
     "backrefs": [
+      "organikk/commercial/PLAYBOOK.md",
+      "raw/bootcamp4/fiche-skills-terminal.md",
+      "raw/bootcamp4/guide-cowork-vers-terminal.md",
+      "raw/bootcamp4/passer-cowork-vers-terminal.md",
+      "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/calls-prospects.md",
+      "raw/bootcamp5/propal-remi.md",
+      "raw/journal/2026-05-16.md",
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/notes/offre-bootcamp-seo-ia.md",
+      "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "raw/transcripts/call-04-jamel.md",
+      "raw/transcripts/call-05-dev-web.md",
+      "raw/transcripts/call-06-juliette.md",
+      "raw/transcripts/call-07-christophe.md",
+      "raw/transcripts/call-09-julien.md",
+      "raw/transcripts/call-10-franck-suite.md",
+      "raw/transcripts/call-13-caroline.md",
       "wiki/concepts/avatar-freelance-sans-systeme.md",
       "wiki/concepts/cercle-vicieux-temps-structure.md",
       "wiki/concepts/peur-train-ia.md",
@@ -732,7 +790,8 @@
       "wiki/sources/2026-04-30-drive-accompagnement-templates.md",
       "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
       "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
-      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md"
+      "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/bootcamp-seo-ia.md",
@@ -769,6 +828,7 @@
       "prospect-13"
     ],
     "backrefs": [
+      "raw/transcripts/call-13-caroline.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-vente-objections.md",
@@ -801,6 +861,7 @@
       "pas-le-temps-de-structurer"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
       "wiki/concepts/avatar-freelance-sans-systeme.md",
       "wiki/concepts/peur-train-ia.md",
       "wiki/entities/juliette.md",
@@ -841,6 +902,11 @@
       "openai-search"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-04-breves.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-05-breves.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-06-breves-v3.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-07-breves-v2.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-07-breves.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
@@ -889,10 +955,13 @@
       "prospect-07"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/transcripts/call-07-christophe.md",
       "wiki/entities/audopass.md",
       "wiki/index.md",
       "wiki/moc/moc-vente-objections.md",
-      "wiki/sources/2026-04-13-call-07-christophe.md"
+      "wiki/sources/2026-04-13-call-07-christophe.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/christophe.md",
@@ -1010,10 +1079,24 @@
     "backrefs": [
       ".agents/skills/hypotheses-validation/SKILL.md",
       ".agents/skills/resurgence-espacee/SKILL.md",
+      "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/notes/appliquer-la-mecanique-a-la-prod-seo.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v3.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
+      "content-brain/_template/memory/score-grid.md",
+      "content-brain/golfiller/memory/score-grid.md",
+      "content-brain/golfiller/outputs/2026-06-03-quelle-balle-de-golf-choisir.md",
+      "newsletter-IA/_MODELE-newsletter-IA.md",
+      "organikk/commercial/PLAYBOOK.md",
       "raw/agents/qadence-seo-agent/README.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
+      "raw/articles/brouillons/golfiller-conversations.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
@@ -1029,8 +1112,16 @@
       "raw/articles/organikk-blog/strategie-seo-avocat-paris.md",
       "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
       "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/articles/posts-linkedin/_index-batch-2026-06-01.md",
+      "raw/articles/posts-linkedin/post-linkedin-3-skills-recherche-mots-cles.md",
+      "raw/articles/posts-linkedin/post-linkedin-claude-remplace-consultant.md",
+      "raw/articles/posts-linkedin/post-linkedin-guide-complet-systeme-autonome.md",
+      "raw/articles/posts-linkedin/post-linkedin-seo-kb-obsidian.md",
+      "raw/articles/posts-linkedin/post-linkedin-site-ia-100-pagespeed.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/calls-prospects.md",
+      "raw/fusionn/etude utilisation fusionn.md",
       "raw/golfiller/golfiller-strat.md",
       "raw/journal/2026-05-12.md",
       "raw/journal/2026-05-16.md",
@@ -1038,7 +1129,18 @@
       "raw/journal/2026-05-22.md",
       "raw/journal/2026-05-23.md",
       "raw/journal/2026-06-01.md",
+      "raw/notes/offre-bootcamp-seo-ia.md",
       "raw/notes/skill-kw-research-workflow.md",
+      "raw/organikk/_MODELE-discours-commercial.md",
+      "raw/organikk/clients/fgformation-personas-problematiques.md",
+      "raw/organikk/pré-call/_MODELE-pre-call.md",
+      "raw/organikk/pré-call/centrale-directe-resume-call-romain.md",
+      "raw/organikk/pré-call/centrale-directe.md",
+      "raw/organikk/pré-call/pangaea-sports.md",
+      "raw/organikk/pré-call/proximit-call-damien.md",
+      "raw/organikk/pré-call/proximit-propale-1-1.md",
+      "raw/organikk/pré-call/proximit-resume-call-client.md",
+      "raw/organikk/pré-call/proximit.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "raw/papers/google-quality-raters-guidelines-2026.md",
       "raw/papers/semrush-llm-conversion-study.md",
@@ -1082,6 +1184,7 @@
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/methodes/cadrage-boucle-edition-algorithme.md",
       "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
@@ -1197,6 +1300,8 @@
       "le-freelance"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/transcripts/call-05-dev-web.md",
       "wiki/index.md",
       "wiki/moc/moc-vente-objections.md",
       "wiki/sources/2026-04-13-call-05-dev-web.md"
@@ -1260,6 +1365,7 @@
       "eat"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
@@ -1336,6 +1442,10 @@
       "cartographie-entites-vectorielles"
     ],
     "backrefs": [
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-audit-semantique-sans-outil.md",
+      "raw/articles/posts-linkedin/post-linkedin-methode-claude-semantique.md",
       "raw/etudes-seo/etude-geo-aggarwal-2024.md",
       "raw/etudes-seo/etude-raid-gseo-2025.md",
       "raw/etudes-seo/etude-sageo-arena-2025.md",
@@ -1348,7 +1458,8 @@
       "wiki/audit/2026-05-21-audit-vault.md",
       "wiki/audit/2026-05-29-audit.md",
       "wiki/index.md",
-      "wiki/log.md"
+      "wiki/log.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/entites-vectorielles.md",
@@ -1383,11 +1494,18 @@
       "fgformation"
     ],
     "backrefs": [
+      "raw/journal/2026-06-06.md",
+      "raw/organikk/clients/fgformation-modeles-pseo.md",
+      "raw/organikk/clients/fgformation-mots-cles-decisionnels.md",
+      "raw/organikk/clients/fgformation-mots-cles.md",
+      "raw/organikk/clients/fgformation-personas-problematiques.md",
+      "raw/organikk/clients/fgformation.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/bootcamp-seo-ia.md",
       "wiki/index.md",
       "wiki/log.md",
-      "wiki/moc/moc-maillage.md"
+      "wiki/moc/moc-maillage.md",
+      "wiki/syntheses/audit-doctrine-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/fg-formation.md",
@@ -1421,6 +1539,8 @@
       "prospect-08"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/transcripts/call-10-franck-suite.md",
       "wiki/contradictions.md",
       "wiki/entities/jumpto.md",
       "wiki/index.md",
@@ -1463,6 +1583,7 @@
     "backrefs": [
       "raw/agents/qadence-seo-agent/README.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
@@ -1544,6 +1665,14 @@
       "fusionn-ai"
     ],
     "backrefs": [
+      "fusionn/Audit-2026-05-30-global-ux-ui-tech.md",
+      "fusionn/Historique.md",
+      "fusionn/rapports-emails/2026-06-01-rapport-emails.md",
+      "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
+      "raw/fusionn/etude utilisation fusionn.md",
+      "raw/journal/2026-05-27.md",
+      "raw/journal/2026-06-01.md",
+      "raw/journal/2026-06-06.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "wiki/audit/2026-05-29-audit.md",
       "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
@@ -1627,8 +1756,23 @@
       "golfiller.fr"
     ],
     "backrefs": [
+      "content-brain/golfiller/derived/dashboard.md",
+      "content-brain/golfiller/memory/directives.md",
+      "content-brain/golfiller/memory/questions.md",
+      "content-brain/golfiller/memory/score-grid.md",
+      "content-brain/golfiller/memory/wording_rules.md",
+      "content-brain/golfiller/outputs/2026-06-03-quelle-balle-de-golf-choisir.md",
+      "raw/articles/brouillons/golfiller-conversations.md",
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-top1-balle-de-golf.md",
+      "raw/golfiller/golfiller-strat.md",
+      "raw/journal/2026-06-03.md",
+      "raw/organikk/pré-call/centrale-directe.md",
+      "raw/organikk/pré-call/pangaea-sports.md",
+      "raw/organikk/pré-call/proximit.md",
       "wiki/audit/2026-06-06-audit-vault-liens.md",
       "wiki/index.md",
+      "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/syntheses/audit-doctrine-2026.md"
     ],
     "confidence": "medium",
@@ -1636,7 +1780,11 @@
     "outlinks": [
       "programmatique-pseo",
       "pseo-data-driven-models",
-      "audit-doctrine-2026"
+      "audit-doctrine-2026",
+      "ranker-verticale-niche-sans-backlink",
+      "golfiller-strat",
+      "golfiller-conversations",
+      "product-led-seo"
     ],
     "status": "stable",
     "tags": [
@@ -1655,6 +1803,11 @@
       "ai-mode"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-03-breves-v2.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-04-breves-v2.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-06-breves.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
@@ -1736,13 +1889,18 @@
     "backrefs": [
       ".agents/skills/resurgence-espacee/SKILL.md",
       "AGENTS.md",
+      "content-brain/_template/memory/score-grid.md",
+      "content-brain/golfiller/memory/score-grid.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
       "raw/articles/organikk-blog/agent-seo-ia-simple.md",
       "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
+      "raw/articles/posts-linkedin/post-linkedin-audit-semantique-sans-outil.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/propal-remi.md",
       "raw/etudes-seo/etude-core-ranking-2025.md",
       "raw/etudes-seo/etude-geo-aggarwal-2024.md",
       "raw/etudes-seo/etude-raid-gseo-2025.md",
@@ -1868,6 +2026,12 @@
     ],
     "backrefs": [
       "AGENTS.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse.md",
+      "lenkrr/Journal.md",
+      "raw/articles/posts-linkedin/post-linkedin-indexation-hebdo.md",
+      "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
+      "raw/organikk/pré-call/centrale-directe-call.md",
       "wiki/audit/2026-05-11-audit.md",
       "wiki/audit/2026-05-21-audit-vault.md",
       "wiki/index.md",
@@ -1900,12 +2064,15 @@
       "gain-information"
     ],
     "backrefs": [
+      "agent-synthetic/memory/notation.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/organikk-blog/information-gain-geo.md",
       "raw/articles/organikk-blog/semrush-contenu-ia.md",
       "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/articles/posts-linkedin/post-linkedin-audit-semantique-sans-outil.md",
+      "raw/articles/posts-linkedin/post-linkedin-methode-claude-semantique.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/golfiller/golfiller-strat.md",
       "raw/papers/titans-architecture-google-deepmind.md",
@@ -2050,6 +2217,7 @@
       "wiki/concepts/obsidian-as-ide.md",
       "wiki/concepts/persistent-wiki-vs-rag.md",
       "wiki/concepts/query-synthesis.md",
+      "wiki/decisions/0001-fermeture-boucles-systeme.md",
       "wiki/entities/karpathy.md",
       "wiki/index.md",
       "wiki/log.md",
@@ -2107,10 +2275,13 @@
       "prospect-jamel"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/transcripts/call-04-jamel.md",
       "wiki/entities/perplexity.md",
       "wiki/index.md",
       "wiki/moc/moc-vente-objections.md",
-      "wiki/sources/2026-04-13-call-04-jamel.md"
+      "wiki/sources/2026-04-13-call-04-jamel.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/jamel.md",
@@ -2142,6 +2313,8 @@
       "webmaster-wordpress-paris"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/transcripts/call-09-julien.md",
       "wiki/index.md",
       "wiki/moc/moc-vente-objections.md",
       "wiki/sources/2026-04-13-call-09-julien.md"
@@ -2176,6 +2349,8 @@
       "prospect-06"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/transcripts/call-06-juliette.md",
       "wiki/index.md",
       "wiki/moc/moc-vente-objections.md",
       "wiki/sources/2026-04-13-call-06-juliette.md"
@@ -2243,6 +2418,8 @@
       "andrej-karpathy"
     ],
     "backrefs": [
+      "raw/bootcamp4/guide-cowork-vers-terminal.md",
+      "raw/bootcamp4/passer-cowork-vers-terminal.md",
       "wiki/concepts/ingest-workflow.md",
       "wiki/concepts/obsidian-as-ide.md",
       "wiki/concepts/persistent-wiki-vs-rag.md",
@@ -2280,11 +2457,18 @@
       "ksk-do"
     ],
     "backrefs": [
+      "content-brain/_template/memory/score-grid.md",
+      "content-brain/golfiller/memory/score-grid.md",
+      "content-brain/golfiller/outputs/2026-06-03-quelle-balle-de-golf-choisir.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/golfiller-conversations.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/propal-remi.md",
       "raw/golfiller/golfiller-strat.md",
+      "raw/organikk/clients/fgformation-mots-cles.md",
       "wiki/briefs/maillage-interne-claude.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/programmatique-pseo.md",
@@ -2370,6 +2554,14 @@
       "maillage-architecture"
     ],
     "backrefs": [
+      "lenkrr/Journal.md",
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-indexation-hebdo.md",
+      "raw/articles/posts-linkedin/post-linkedin-maillage-62-liens-30min.md",
+      "raw/articles/posts-linkedin/post-linkedin-maillage-interne-skill.md",
+      "raw/organikk/pré-call/proximit-call-damien.md",
+      "raw/organikk/pré-call/proximit-propale.md",
       "wiki/audit/2026-05-21-audit-vault.md",
       "wiki/briefs/maillage-interne-claude.md",
       "wiki/concepts/5-types-ancres.md",
@@ -2417,11 +2609,13 @@
       "cecile"
     ],
     "backrefs": [
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-vente-objections.md",
       "wiki/sources/2026-04-13-call-02-marrusia-cecile.md",
-      "wiki/sources/2026-04-13-call-03-cecile-suite.md"
+      "wiki/sources/2026-04-13-call-03-cecile-suite.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/marrusia-cecile.md",
@@ -2463,6 +2657,7 @@
       "wiki/log.md",
       "wiki/moc/moc-methode-kb.md",
       "wiki/queries/transfert-vault-client.md",
+      "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
       "wiki/sources/2026-04-15-call-13-caroline.md",
       "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md"
     ],
@@ -2527,9 +2722,12 @@
       "4-piliers-organikk"
     ],
     "backrefs": [
+      "newsletter-IA/_MODELE-newsletter-IA.md",
+      "organikk/commercial/PLAYBOOK.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/propal-remi.md",
       "raw/journal/2026-05-05.md",
       "raw/journal/2026-05-06.md",
       "raw/journal/2026-05-07.md",
@@ -2550,6 +2748,7 @@
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
       "wiki/syntheses/4-piliers-organikk.md",
@@ -2599,8 +2798,16 @@
     ],
     "backrefs": [
       ".agents/skills/preuves-feedback/SKILL.md",
+      "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/directives.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-citations-multimoteurs.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
       "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
       "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
       "wiki/concepts/answer-first-pattern.md",
       "wiki/concepts/grounding-score.md",
       "wiki/concepts/information-gain.md",
@@ -2608,6 +2815,7 @@
       "wiki/entities/geo-bench.md",
       "wiki/entities/sageo-arena-benchmark.md",
       "wiki/index.md",
+      "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
       "wiki/preuves/index.md",
       "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
@@ -2724,6 +2932,10 @@
     "backrefs": [
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
+      "raw/articles/posts-linkedin/_index-batch-2026-06-01.md",
+      "raw/articles/posts-linkedin/post-linkedin-3-skills-recherche-mots-cles.md",
+      "raw/articles/posts-linkedin/post-linkedin-site-ia-100-pagespeed.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/fusionn/etude utilisation fusionn.md",
       "raw/journal/2026-05-05.md",
@@ -2733,7 +2945,12 @@
       "raw/journal/2026-05-14.md",
       "raw/journal/2026-05-16.md",
       "raw/journal/2026-05-19.md",
+      "raw/journal/2026-06-05.md",
       "raw/notes/skill-kw-research-workflow.md",
+      "raw/organikk/clients/fgformation-modeles-pseo.md",
+      "raw/organikk/clients/fgformation-mots-cles-decisionnels.md",
+      "raw/organikk/clients/fgformation-mots-cles.md",
+      "raw/organikk/clients/fgformation.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "wiki/concepts/80-pourcent-pattern-strategie.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
@@ -2741,6 +2958,7 @@
       "wiki/concepts/modele-page-variable-prix.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/concepts/scam-objection-data-aleatoire.md",
+      "wiki/dashboard.md",
       "wiki/entities/gsc.md",
       "wiki/entities/organikk-co.md",
       "wiki/index.md",
@@ -2772,6 +2990,7 @@
       "wiki/keywords/recherche-2026-05-27-vendeur-amazon.md",
       "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
+      "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
       "wiki/revue-hebdo/2026-W20.md",
       "wiki/revue-hebdo/2026-W21.md",
@@ -2969,6 +3188,10 @@
       "obsidian-md"
     ],
     "backrefs": [
+      "raw/bootcamp4/fiche-skills-terminal.md",
+      "raw/bootcamp4/guide-cowork-vers-terminal.md",
+      "raw/bootcamp4/passer-cowork-vers-terminal.md",
+      "raw/bootcamp5/calls-prospects.md",
       "wiki/concepts/cli-tools-optional.md",
       "wiki/concepts/obsidian-as-ide.md",
       "wiki/concepts/query-synthesis.md",
@@ -3007,6 +3230,9 @@
       "MIGRATION.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/bootcamp4/fiche-skills-terminal.md",
+      "raw/bootcamp4/guide-cowork-vers-terminal.md",
+      "raw/bootcamp4/passer-cowork-vers-terminal.md",
       "wiki/concepts/memory-llm-vs-wiki-persistant.md",
       "wiki/concepts/persistent-wiki-vs-rag.md",
       "wiki/entities/karpathy.md",
@@ -3044,7 +3270,14 @@
       "site-tim"
     ],
     "backrefs": [
+      "lenkrr/Journal.md",
+      "organikk/commercial/PLAYBOOK.md",
+      "organikk/commercial/linkedin/journal/_MODELE-journal-linkedin.md",
+      "organikk/commercial/linkedin/pipeline.md",
+      "raw/articles/posts-linkedin/post-linkedin-site-ia-100-pagespeed.md",
       "raw/journal/2026-05-14.md",
+      "raw/notes/offre-bootcamp-seo-ia.md",
+      "raw/organikk/pré-call/proximit-propale-1-1.md",
       "wiki/concepts/maillage-systeme.md",
       "wiki/concepts/methode-organikk-4-piliers.md",
       "wiki/concepts/pseo-data-driven-models.md",
@@ -3106,6 +3339,8 @@
       "passage-indexing"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu-light.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
@@ -3120,6 +3355,7 @@
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "raw/notes/offre-bootcamp-seo-ia.md",
       "raw/papers/miras-architecture.md",
       "wiki/briefs/check-indexation-claude.md",
       "wiki/concepts/answer-first-pattern.md",
@@ -3180,6 +3416,9 @@
       "perplexity-ai"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-06-breves-v2.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-05-revue-presse.md",
+      "raw/organikk/pré-call/centrale-directe.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
@@ -3236,7 +3475,7 @@
       "wiki/concepts/obsidian-as-ide.md",
       "wiki/concepts/query-synthesis.md",
       "wiki/concepts/weight-decay.md",
-      "wiki/decisions/0001-fermeture-boucles-second-cerveau.md",
+      "wiki/decisions/0001-fermeture-boucles-systeme.md",
       "wiki/entities/karpathy.md",
       "wiki/entities/notebooklm.md",
       "wiki/entities/obsidian.md",
@@ -3245,6 +3484,7 @@
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/methodes/cadrage-boucle-edition-algorithme.md",
       "wiki/moc/moc-methode-kb.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
       "wiki/queries/transfert-vault-client.md",
@@ -3288,6 +3528,7 @@
     "backrefs": [
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
       "wiki/concepts/avatar-freelance-sans-systeme.md",
       "wiki/entities/christophe.md",
       "wiki/entities/franck.md",
@@ -3356,8 +3597,11 @@
       "product-led"
     ],
     "backrefs": [
+      "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
+      "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
@@ -3370,8 +3614,16 @@
       "raw/articles/organikk-blog/strategie-seo-hotel-paris.md",
       "raw/articles/organikk-blog/strategie-seo-paysagiste-paris.md",
       "raw/articles/organikk-blog/strategie-seo-serrurier-lyon.md",
+      "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
+      "raw/journal/2026-06-01.md",
       "raw/notes/prompt-pseo-non-produit.md",
       "raw/notes/prompt-pseo-produit-service.md",
+      "raw/organikk/clients/fgformation-modeles-pseo.md",
+      "raw/organikk/clients/fgformation-mots-cles-decisionnels.md",
+      "raw/organikk/clients/fgformation.md",
+      "raw/organikk/pré-call/centrale-directe.md",
+      "raw/organikk/pré-call/pangaea-sports.md",
+      "raw/organikk/pré-call/proximit.md",
       "wiki/audit/2026-06-01-audit.md",
       "wiki/concepts/entites-vectorielles.md",
       "wiki/concepts/know-simple-know-do.md",
@@ -3379,7 +3631,9 @@
       "wiki/concepts/programmatique-pseo.md",
       "wiki/concepts/test-substitution-llm.md",
       "wiki/entities/fg-formation.md",
+      "wiki/entities/golfiller.md",
       "wiki/index.md",
+      "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
       "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
@@ -3430,13 +3684,17 @@
     "backrefs": [
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
       "raw/articles/organikk-blog/audit-seo-claude.md",
       "raw/articles/organikk-blog/creer-bot-ia-seo.md",
       "raw/articles/organikk-blog/process-seo-b2b-2026.md",
       "raw/articles/organikk-blog/roadmap-seo-2026.md",
+      "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
+      "raw/articles/posts-linkedin/post-linkedin-top1-balle-de-golf.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/propal-remi.md",
       "raw/journal/2026-05-05.md",
       "raw/journal/2026-05-06.md",
       "raw/journal/2026-05-07.md",
@@ -3444,6 +3702,7 @@
       "raw/journal/2026-05-15.md",
       "raw/notes/prompt-pseo-non-produit.md",
       "raw/notes/prompt-pseo-produit-service.md",
+      "raw/organikk/clients/fgformation-modeles-pseo.md",
       "wiki/audit/2026-06-01-audit.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/maillage-systeme.md",
@@ -3553,6 +3812,12 @@
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/golfiller/golfiller-strat.md",
+      "raw/organikk/_MODELE-discours-commercial.md",
+      "raw/organikk/clients/fgformation.md",
+      "raw/organikk/pré-call/centrale-directe-call.md",
+      "raw/organikk/pré-call/centrale-directe.md",
+      "raw/organikk/pré-call/pangaea-sports.md",
+      "raw/organikk/pré-call/proximit.md",
       "wiki/concepts/modele-page-variable-prix.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/golfiller.md",
@@ -3795,6 +4060,12 @@
       "regle-ia-filtre-prestation"
     ],
     "backrefs": [
+      "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
+      "raw/articles/posts-linkedin/_index-batch-2026-06-01.md",
+      "raw/articles/posts-linkedin/post-linkedin-3-skills-recherche-mots-cles.md",
+      "raw/articles/posts-linkedin/post-linkedin-claude-remplace-consultant.md",
+      "raw/articles/posts-linkedin/post-linkedin-these-80-pourcent-consultant.md",
+      "raw/articles/posts-linkedin/post-linkedin-top1-balle-de-golf.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "wiki/index.md",
@@ -3875,6 +4146,7 @@
     "backrefs": [
       "raw/articles/organikk-blog/agent-seo-ia-simple.md",
       "raw/articles/organikk-blog/mots-cles-seo-2026.md",
+      "raw/articles/posts-linkedin/post-linkedin-audit-semantique-sans-outil.md",
       "raw/golfiller/golfiller-strat.md",
       "raw/journal/2026-05-16.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
@@ -3945,8 +4217,11 @@
     "backrefs": [
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/organikk/_MODELE-discours-commercial.md",
+      "raw/organikk/clients/fgformation-personas-problematiques.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
-      "wiki/index.md"
+      "wiki/index.md",
+      "wiki/syntheses/audit-doctrine-2026.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/scam-objection-data-aleatoire.md",
@@ -4008,6 +4283,7 @@
       "semrush"
     ],
     "backrefs": [
+      "raw/organikk/clients/fgformation-mots-cles.md",
       "wiki/entities/gsc.md",
       "wiki/index.md",
       "wiki/log.md",
@@ -4106,6 +4382,8 @@
     ],
     "backrefs": [
       "AGENTS.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-03-breves.md",
+      "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
       "wiki/concepts/confidence-score.md",
       "wiki/concepts/triade-serp.md",
       "wiki/entities/google-ai-mode.md",
@@ -4193,12 +4471,18 @@
     ],
     "backrefs": [
       ".agents/skills/resurgence-espacee/SKILL.md",
+      "agent-synthetic/memory/notation.md",
+      "content-brain/_template/memory/score-grid.md",
+      "content-brain/golfiller/memory/score-grid.md",
+      "raw/articles/brouillons/golfiller-conversations.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
       "raw/articles/organikk-blog/grok-seo-pipeline-data.md",
       "raw/articles/organikk-blog/information-gain-geo.md",
+      "raw/articles/posts-linkedin/post-linkedin-methode-claude-semantique.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
+      "raw/bootcamp5/propal-remi.md",
       "raw/etudes-seo/etude-core-ranking-2025.md",
       "raw/etudes-seo/etude-geo-aggarwal-2024.md",
       "raw/etudes-seo/etude-raid-gseo-2025.md",
@@ -4210,6 +4494,7 @@
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "raw/notes/offre-bootcamp-seo-ia.md",
       "raw/notes/prompt-pseo-non-produit.md",
       "raw/notes/prompt-pseo-produit-service.md",
       "raw/papers/titans-architecture-google-deepmind.md",
@@ -4391,6 +4676,9 @@
       "AGENTS.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-05.md",
+      "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/organikk/_MODELE-discours-commercial.md",
+      "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/answer-first-pattern.md",
@@ -4414,7 +4702,9 @@
       "wiki/sources/2026-04-13-offre-bootcamp-seo-ia.md",
       "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
       "wiki/sources/2026-04-25-tim-ton-de-voix-extraction-terrain.md",
-      "wiki/syntheses/faq-geo-175-questions.md"
+      "wiki/syntheses/faq-geo-175-questions.md",
+      "wiki/syntheses/vendre-seo-ia-2026.md",
+      "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/tabou-visibilite.md",
@@ -4447,6 +4737,7 @@
       "substitution-test"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/fully-meets.md",
@@ -4465,6 +4756,7 @@
       "wiki/sources/2026-04-13-victoria-garden-pseo.md",
       "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
       "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
+      "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
@@ -4555,6 +4847,7 @@
       "document-passage-generation"
     ],
     "backrefs": [
+      "content-brain/golfiller/memory/score-grid.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
@@ -4562,6 +4855,9 @@
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/golfiller/golfiller-strat.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
+      "raw/organikk/clients/fgformation-mots-cles.md",
+      "raw/organikk/pré-call/centrale-directe.md",
+      "raw/organikk/pré-call/pangaea-sports.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/arbitrage-plateforme-publication.md",
       "wiki/concepts/entites-vectorielles.md",

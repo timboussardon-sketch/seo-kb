@@ -35,7 +35,7 @@ Livrable interne à remettre au prospect en fin de premier call de 30 min. Sert 
 
 ## Pourquoi ce livrable
 
-Le premier call dure 30 min. Il est gratuit. À la fin du call, le prospect a une roadmap claire de ce qu'on ferait chez lui pendant 90 jours. C'est le levier de closing principal : la roadmap est tangible, datée, chiffrée. Elle remplace le devis classique générique. Le prospect repart avec un asset, pas une simple proposition commerciale.
+Le premier call dure 30 min. Il est gratuit. À la fin du call, le prospect a une roadmap claire de ce qu'on ferait chez lui pendant 90 jours. C'est le levier de closing principal de la doctrine [[syntheses/vendre-seo-ia-2026|Vendre du SEO en 2026]] : la roadmap est tangible, datée, chiffrée. Elle remplace le devis classique générique. Le prospect repart avec un asset, pas une simple proposition commerciale.
 
 **Le pari :** le prospect qui reçoit une roadmap personnalisée à la fin d'un call gratuit signe 2 à 3 fois plus que celui qui reçoit un devis générique.
 
@@ -82,7 +82,7 @@ Le premier call dure 30 min. Il est gratuit. À la fin du call, le prospect a un
 
 ### Mois 1 · Fondations
 
-**Semaine 1 · Audit positionnement et data propriétaire**
+**Semaine 1 · Audit positionnement et [[concepts/data-proprietaire|data propriétaire]]**
 - Extraction GSC complète sur 16 mois
 - Récupération des 30 à 50 calls commerciaux les plus récents, extraction des verbatims prospects
 - Définition des 10 à 15 requêtes business prioritaires sur la base de la matière interne
@@ -184,7 +184,7 @@ Le neuvième skill (`seo-programmatique-pseo`) arrive en mois 4-6 si la stack es
 - 8 à 12 pages en top 10 GSC (vs 0 à 2 aujourd'hui)
 - Impressions mensuelles multipliées par 3 à 5
 - 5 à 10 leads attribués au SEO par mois (vs 0 aujourd'hui)
-- 1 outil interactif Product-Led en ligne avec capture email
+- 1 outil interactif [[concepts/product-led-seo|Product-Led]] en ligne avec capture email
 - 1 cocon sémantique complet (1 pilier + 15 satellites)
 - 8 skills propriétaires installés et calibrés chez toi
 - 1 plan d'action mois 4-12 prêt à dérouler
@@ -283,3 +283,12 @@ Cibles indicatives basées sur les patterns observés sur les profils similaires
 - Pattern de production des assets publics : [[modele-strategie]], [[modele-mots-clés]]
 - Skills propriétaires utilisés : [[skill-quick-win]], [[skill-entites-vectorielles]], [[skill-cluster-aeo]], [[skill-brief-contenu]], [[skill-product-led-seo]], [[skill-cannibalisation]], [[skill-maillage-interne]], [[skill-programmatique-pseo]]
 - Logique de premier call : à compléter avec les transcripts des calls Tim quand dispo
+
+---
+
+## Liens
+
+- [[_MODELE-pre-call]] — le moule de préparation amont du call que cette roadmap conclut
+- [[_MODELE-discours-commercial]] — la trame de discours déroulée pendant le call
+- [[moc/moc-vente-objections|MOC Vente & objections]] — les freins à lever avant le closing
+- [[concepts/methode-organikk-4-piliers|Méthode Organikk 4 piliers]] — le cadre que la roadmap 90 jours décline

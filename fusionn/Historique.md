@@ -1,6 +1,11 @@
 # Historique — Fusionn
 
-Journal du travail sur Fusionn (repo `~/Code/newFusionn`). Entrée la plus récente en haut.
+Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entrée la plus récente en haut.
+
+## Liens
+
+- Produit : [[entities/fusionn-io]].
+- Donnée de référence pour la promesse AI Overviews du produit : [[etude-ctr-ai-overviews-gsc]].
 
 ---
 

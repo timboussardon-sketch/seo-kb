@@ -10,6 +10,8 @@ status: draft
 
 Parce que l'on vit dans l'ère du bruit, je sélectionne pour vous ce que je considère comme les meilleures infos SEO / IA du mois pour vous aider à préparer l'évolution du marché.
 
+*Doctrine : [[concepts/metriques-visibilite-geo]].*
+
 ---
 
 ## L'info du jour : une citation par moteur, et c'est tout

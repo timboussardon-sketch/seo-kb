@@ -1,6 +1,6 @@
 # Directives pour la prochaine production (projet __PROJECT__)
 
-> Écrit par la phase APPRENDRE à la fin de chaque contenu. Lu par le briefing au début du suivant. Garder court et actionnable.
+> Écrit par la phase APPRENDRE à la fin de chaque contenu. Lu par le briefing au début du suivant. Garder court et actionnable. Le gate vit dans [[score-grid]], les règles de voix dans [[wording_rules]], les arbitrages ouverts dans [[questions]].
 
 ## Amorçage
 - Pas encore d'historique. Première production sans biais de boucle.

@@ -41,3 +41,7 @@ Une base de connaissances SEO sur mon Mac. Lisible dans Obsidian. Chaque contenu
 
 ---
 ps : pour ceux qui veulent, je peux faire une vidéo sur le sujet avec tout le process (version simplifiée)
+
+## Liens
+
+Le système décrit (sources brutes → notes reliées → config) est exactement la méthode KB : voir [[moc/moc-methode-kb]]. C'est ce qui rend la [[concepts/data-proprietaire]] exploitable par Claude, brique du [[syntheses/workflow-complet-consultant-seo-ia|système consultant]]. Batch : [[_index-batch-2026-06-01]].

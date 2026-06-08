@@ -1,6 +1,6 @@
 # Notation des infos — grille de sélection (Brèves + Algorithme)
 
-Définie avec Tim le 2026-06-03. Sert à choisir les meilleures infos, pas seulement des infos « publiables ». Lue avant la sélection, appliquée à chaque candidat, loggée dans `ledgers/breves_scores.jsonl`.
+Définie avec Tim le 2026-06-03. Sert à choisir les meilleures infos, pas seulement des infos « publiables ». Lue avant la sélection, appliquée à chaque candidat, loggée dans `ledgers/breves_scores.jsonl`. C'est la porte de sélection de l'étape de cadrage [[methodes/cadrage-boucle-edition-algorithme]] ; voir aussi [[calibration]] pour la confrontation des notes aux verdicts de Tim, et [[directives]] pour le périmètre.
 
 ## Portes (binaires — si une échoue, rejet direct, pas de note)
 
@@ -15,7 +15,7 @@ Définie avec Tim le 2026-06-03. Sert à choisir les meilleures infos, pas seule
 |---|---|---|---|
 | **Solidité** (vérifié + sourcé) | Qualité de la preuve | Source primaire + recoupée par 2 sources indépendantes | Mono-source secondaire / relevé d'agence non confirmé |
 | **Envie d'en savoir plus** | Le hook, la tension | On veut lire la suite | Annonce plate, déjà digérée |
-| **Original** | Fait ou nuance neuf | Personne ne l'a dit comme ça | Repris partout depuis 3 jours |
+| **Original** | Fait ou nuance neuf (proche de l'[[concepts/information-gain]] / [[concepts/surprise-gap]]) | Personne ne l'a dit comme ça | Repris partout depuis 3 jours |
 | **Doctrine / orienté SEO-IA** | Lien aux 4 piliers + cœur search | Change comment on est trouvé/cité, colle à la doctrine | Périphérique, lien décoratif |
 
 **Précisions calibrées (retour Tim 2026-06-03) :**

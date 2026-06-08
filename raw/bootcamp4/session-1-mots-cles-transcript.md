@@ -53,7 +53,7 @@ nouveautes_vs_kb:
 
 # Session 1 · Mots-clés · Transcript brut
 
-> Transcript pixel-perfect du premier call bootcamp 4, session 1. Speech-to-text non corrigé. Pour la synthèse structurée, voir [[session-1-mots-cles-prep]]. Pour les nouveautés repérées qui n'étaient pas encore dans le vault, voir [[session-1-mots-cles-nouveautes]].
+> Transcript pixel-perfect du premier call [[entities/bootcamp-seo-ia]] ([[offre-bootcamp-seo-ia]]), session 1. Speech-to-text non corrigé. Pour la synthèse structurée, voir [[session-1-mots-cles-prep]]. Pour les nouveautés repérées qui n'étaient pas encore dans le vault, voir [[session-1-mots-cles-nouveautes]].
 
 ## Concepts traversés (wikilinks)
 

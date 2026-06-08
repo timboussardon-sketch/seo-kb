@@ -1,6 +1,6 @@
 # Dashboard golfiller — prédictions vs réalisé
 
-Régénéré à chaque production et à chaque pull GSC. `open` = en attente de la GSC à l'échéance.
+Vue calculée du projet [[entities/golfiller]]. Régénéré à chaque production et à chaque pull GSC. `open` = en attente de la GSC à l'échéance.
 
 | Prédiction | Page | Baseline | Pari | Échéance | Statut |
 |---|---|---|---|---|---|

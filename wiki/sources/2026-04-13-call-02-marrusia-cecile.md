@@ -67,4 +67,4 @@ Cécile incarne la **variante débutante** du bootcamp : 7-12 mois d'activité, 
 
 ## Pages liées
 
-[[entities/marrusia-cecile]] · [[entities/bootcamp-seo-ia]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/tabou-visibilite]] · [[concepts/data-proprietaire]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] · [[sources/2026-04-13-call-03-cecile-suite]]
+[[entities/marrusia-cecile]] · [[entities/bootcamp-seo-ia]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/tabou-visibilite]] · [[concepts/data-proprietaire]] · [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] · [[sources/2026-04-13-call-03-cecile-suite]] · [[syntheses/vendre-seo-ia-2026]] · [[analyse-calls-prospects-bootcamp]]

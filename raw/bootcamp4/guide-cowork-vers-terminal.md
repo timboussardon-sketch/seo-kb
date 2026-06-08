@@ -13,6 +13,8 @@ status: draft
 
 # Passer de Cowork à Obsidian + Terminal
 
+> Guide de migration du [[entities/bootcamp-seo-ia]] ([[offre-bootcamp-seo-ia]]) : on passe de Claude Cowork à [[entities/obsidian]] + Terminal. La logique `raw/` + `wiki/` vient du pattern LLM Wiki de [[entities/karpathy]] ; tenir le vault dans son IDE, c'est [[concepts/obsidian-as-ide]].
+
 Tu changes juste de fenêtre de discussion. Tes skills arrivent avec le kit que tu télécharges, une commande les place au bon endroit, et le terminal les voit. Tu ne touches pas à Cowork.
 
 Compte 15 minutes. Suis les étapes dans l'ordre.

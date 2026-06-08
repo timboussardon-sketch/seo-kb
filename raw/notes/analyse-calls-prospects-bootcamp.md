@@ -14,11 +14,13 @@ status: draft
 # Analyse des Calls Prospects — Bootcamp SEO IA #4
 ## Basé sur 10 profils / 9+ calls d'exploration
 
+> Synthèse des calls de qualification du [[entities/bootcamp-seo-ia]]. Elle nourrit [[syntheses/vendre-seo-ia-2026]] et s'appuie sur les transcripts curés [[sources/2026-04-13-call-04-jamel]], [[sources/2026-04-13-call-05-dev-web]], [[sources/2026-04-13-call-06-juliette]], [[sources/2026-04-13-call-07-christophe]] et [[sources/2026-04-13-call-09-julien]]. Les patterns clés sont l'[[concepts/avatar-freelance-sans-systeme]], le [[concepts/cercle-vicieux-temps-structure]], la [[concepts/peur-train-ia]] et le [[concepts/tabou-visibilite]].
+
 ---
 
 ## FICHES INDIVIDUELLES PAR CALL
 
-### CALL 1 — Arnaud
+### CALL 1 — [[entities/arnaud|Arnaud]]
 **Profil :** Consultant SEO + créateur de sites WordPress, 10+ ans d'expérience. Sites de voyage en train (5-6 actifs, 10-15 en projet). Clients typiques : 65-80 ans (voyageurs train de luxe).
 **Rapport à l'IA :** Utilise Claude + Elementor. Sait que l'IA a changé la donne (passe de 2-3 mois par site à 1 semaine). Process non optimal, submergé d'infos LinkedIn.
 **Douleur principale :** "Mon process n'est pas optimal, je suis submergé." Travaille de 6h à 22h en bidouillant sans workflow.
@@ -32,7 +34,7 @@ status: draft
 
 ---
 
-### CALL 2 — Marrusia (Cécile)
+### CALL 2 — [[entities/marrusia-cecile|Marrusia (Cécile)]]
 **Profil :** Freelance création contenu/web, ~6 mois d'expérience. Travaille avec petites boîtes locales/familiales/PME. Clients via bouche-à-oreille + prospection Instagram (récente, 2 clients signés en 1 mois).
 **Rapport à l'IA :** Utilise Claude en classique (pas Projets, pas Cowork). Pas d'abonnement payant, hésite à le prendre. Limitée dans ses performances.
 **Douleur principale :** Ne sait pas vendre le SEO, ne se positionne pas comme spécialiste. Clients ne comprennent pas "visibilité". Budget serré (chaque dépense est énorme).
@@ -62,7 +64,7 @@ status: draft
 
 ---
 
-### CALL 4 — Jamel
+### CALL 4 — [[entities/jamel|Jamel]]
 **Profil :** Consultant SEO, ex-SEA/journaliste, 10+ ans. Se réoriente à fond vers le SEO depuis le SEA ("le SEA devient redondant, les algos font trois quarts du taf à ta place"). Travaille en silos, hub, maillage interne. Refuse les clients "premier sur Google en 3 semaines".
 **Rapport à l'IA :** Utilise Claude + Manus + Perplexity. Crée des skills. A déjà fait un setup similaire à Tim pour un client (contexte entreprise, architecture, planning éditorial). Utilise Perplexity pour sourcer articles (E-A-T).
 **Niveau :** Le plus avancé en IA de tous les prospects. Process partiellement structuré. Crée déjà des bios, signe articles, pousse clients sur LinkedIn pour autorité.
@@ -77,7 +79,7 @@ status: draft
 
 ---
 
-### CALL 5 — Dev Web (anonyme)
+### CALL 5 — [[entities/dev-web-anon|Dev Web (anonyme)]]
 **Profil :** 15 ans développeur web (salarié télétravail), freelance depuis début 2024. Fait sites + SEO. Formé SEO en 2024. Pas de fibre rédactionnelle.
 **Rapport à l'IA :** Claude en Projets par client (personas, positionnement, textes existants). Utilise MCP (Quick, HelloScan). Copie le process de Déborah (formation) sans se l'être approprié. Allers-retours Claude ↔ TOT SEO.
 **Douleur principale :** "Je copie les process des autres mais je me les suis pas appropriés." Pas de retour d'XP suffisant pour savoir si ses contenus rankent. Pas de plaisir dans la rédac.
@@ -91,7 +93,7 @@ status: draft
 
 ---
 
-### CALL 6 — Juliette
+### CALL 6 — [[entities/juliette|Juliette]]
 **Profil :** Freelance strat digitale. A commencé par SEA/Ads, puis SEO (blog), puis sites internet (Webflow). Fait tout elle-même. Remplie jusqu'à fin d'année. Multi-services.
 **Rapport à l'IA :** Claude (Projets avec contexte client), Gemini. A commencé à se renseigner sur Claude Cowork mais pas mis en place. Teste des outils SEO sans creuser.
 **Douleur principale :** "J'ai pas le temps !" Atteint ses limites en temps. Demande de SEO/blog croissante mais refuse d'en prendre plus. Bricole sans stratégie long terme.
@@ -108,7 +110,7 @@ status: draft
 
 ---
 
-### CALL 7 — Christophe
+### CALL 7 — [[entities/christophe|Christophe]]
 **Profil :** 56 ans. Cofondateur Audopass (carnet entretien numérique auto) + Audokit (Shopify accessoires auto). Ex-fondateur agence webmarketing (1999-2010). 30+ ans internet. Basé en Espagne.
 **Rapport à l'IA :** Abonné à quasi tout (Claude, ChatGPT, Gemini, Perplexity, Manus, etc.). "J'adore les outils." Plein d'outils SEO (Haloscan, Quick, Fusion, Advanced Web Ranking, NeuronWriter...). Claude Cowork utilisé mais PAS Claude Code. Quelques skills très légers.
 **Douleur principale :** SEO = 10% de son temps. A un produit qui convertit via ChatGPT (double vérification tracking + client) mais n'arrive pas à répliquer sur les autres produits. Veut vendre du publi-rédactionnel aux groupes auto (Norauto, Feu Vert, Speedy...).
@@ -125,7 +127,7 @@ status: draft
 
 ---
 
-### CALL 8 — Franck
+### CALL 8 — [[entities/franck|Franck]]
 **Profil :** Directeur SEO agence Jumpto (BU SEO), 15-16 ans de SEO. 15 ans chez l'annonceur (rachat de crédits, mutuelle, prêt immobilier, comparateurs énergie, travel). Thématiques ultra-concurrentielles. Génération de leads.
 **Rapport à l'IA :** En retard. Submergé par le taf agence, plus de temps pour R&D (chose qu'il faisait "à foison" avant).
 **Douleur principale :** "Il y a un train qui est en train de passer très, très vite et malheureusement, je ne le prends pas tant que ça." Veut créer un système SEO IA pour augmenter la productivité de son équipe agence.
@@ -139,7 +141,7 @@ status: draft
 
 ---
 
-### CALL 9 — Julien
+### CALL 9 — [[entities/julien|Julien]]
 **Profil :** Créateur sites WordPress + accompagnement SEO technique (90% de l'activité). Ne fait plus de SEO off-site/linking. Clients via SEO de son propre site ("Webmaster WordPress Paris") + Malt, LinkedIn, Jovore.
 **Rapport à l'IA :** Perplexity (multi-modèles), crée contenu manuellement depuis longtemps. L'IA = ajout d'idées, jamais copier-coller. Pas de workflow IA. Utilise Fusion (l'outil de Tim).
 **Douleur principale :** "Je suis en train de rater le train." Pas de temps pour s'auto-former, focus prod. Besoin de structurer pour proposer une nouvelle presta à ses clients.

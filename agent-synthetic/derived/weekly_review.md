@@ -1,6 +1,6 @@
 # Revue hebdo SyntheticBrain (vue dérivée)
 
-Synthèse calculée par l'agent 9 à partir des ledgers, présentée à Tim à la revue du vendredi. Vue dérivée, pas une source de vérité : tout vient des `ledgers/`.
+Synthèse calculée par l'agent 9 à partir des ledgers, présentée à Tim à la revue du vendredi. Vue dérivée, pas une source de vérité : tout vient des `ledgers/`. Vue de la revue hebdo de [[methodes/cadrage-boucle-edition-algorithme]] ; les piliers récurrents renvoient à [[concepts/agentic-search]], [[concepts/product-led-seo]], [[concepts/metriques-visibilite-geo]] et [[concepts/data-proprietaire]]. Les arbitrages tranchés ici repartent dans [[directives]].
 
 ## Semaine en cours (au 2026-06-02)
 

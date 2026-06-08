@@ -139,7 +139,7 @@ LE quick win actuel. 5 cohortes par type de ressource. Outil : Loops, Customer.i
 
 ## Doctrine derrière (cohérence produit ↔ commercial)
 
-Fusionn vend un outil de keyword research **anti-vanity-trafic, pro-décisionnel**. La stratégie commerciale doit l'incarner :
+Fusionn vend un outil de keyword research **anti-vanity-trafic** ([[concepts/tabou-visibilite|tabou de la visibilité]]), **pro-décisionnel**. La stratégie commerciale doit l'incarner :
 
 | Doctrine produit | Application commerciale |
 |---|---|
@@ -168,4 +168,5 @@ Fusionn vend un outil de keyword research **anti-vanity-trafic, pro-décisionnel
 - Produit : [[fusionn-io]]
 - Doctrines mobilisées : [[data-proprietaire]] · [[mots-cles-actionnels]] · [[anti-ai-writing]] · [[80-pourcent-pattern-strategie]] · [[purete-vectorielle]]
 - Stratégie produit Tim : [[tim-profil-doctrine]] · [[methode-organikk-4-piliers]]
-- Programmes : bootcamp 4 (semaine du 2026-05-25)
+- Doctrine commerciale : [[syntheses/vendre-seo-ia-2026|Vendre du SEO en 2026]]
+- Programmes : [[entities/bootcamp-seo-ia|bootcamp 4]] (semaine du 2026-05-25)

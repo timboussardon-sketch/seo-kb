@@ -14,7 +14,7 @@ related:
 
 # Calls Bootcamp 5
 
-Doc qui regroupe les calls de qualification des prospects pour le [[cadrage|Bootcamp 5]]. Un call par section : résumé structuré en tête, transcript brut en dessous.
+Doc qui regroupe les calls de qualification des prospects pour le [[cadrage|Bootcamp 5]] (5ᵉ édition du [[entities/bootcamp-seo-ia]], [[offre-bootcamp-seo-ia]]). Un call par section : résumé structuré en tête, transcript brut en dessous. Même logique de vente que [[syntheses/vendre-seo-ia-2026]] : un système propriétaire (Claude + [[entities/obsidian]]) bâti sur la [[concepts/data-proprietaire]], pas de l'automatisation à 100 %.
 
 ---
 

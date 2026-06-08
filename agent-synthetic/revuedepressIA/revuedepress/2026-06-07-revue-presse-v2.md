@@ -22,6 +22,8 @@ status: draft
 
 ## Info du jour | Pilier Recherche agentique
 
+*Doctrine : [[concepts/agentic-search]].*
+
 ### Premiers chiffres business mesurés sur un agent retailer embarqué dans ChatGPT
 
 Walmart a tenu sa conférence Q1 FY2027 le 22 mai 2026. Le CEO John Furner et David Guggina, président de Walmart U.S., ont annoncé que les utilisateurs actifs hebdomadaires de Sparky, l'agent IA conversationnel de Walmart, ont augmenté de plus de 100 % sur un seul trimestre. Les unités achetées via Sparky ont été multipliées par plus de quatre sur la même période. Furner a précisé que la valeur moyenne du panier des utilisateurs Sparky reste environ 35 % supérieure à celle des utilisateurs non-Sparky ([Digital Commerce 360](https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/), [Modern Retail](https://www.modernretail.co/technology/walmart-says-ai-users-build-35-bigger-baskets-than-others/)).

@@ -22,7 +22,7 @@ tags:
 
 # Méthode Lead Gen SEO
 
-Doc de synthèse compilant tout ce que la KB contient sur la conversion du SEO en canal d'acquisition (et non plus de visibilité). Sert de socle pour les futurs articles piliers, briefs commerciaux, slides bootcamp.
+Doc de synthèse compilant tout ce que la KB contient sur la conversion du SEO en canal d'acquisition (et non plus de visibilité). Sert de socle pour les futurs articles piliers, briefs commerciaux, slides bootcamp. Synthèses voisines : [[syntheses/vendre-seo-ia-2026]], [[syntheses/workflow-complet-consultant-seo-ia]].
 
 ## 0. Thèse de fond
 
@@ -64,7 +64,7 @@ Source : [[process-seo-b2b-2026]]
 
 ## 2. Framework éditorial : Know-Simple / Know / Do
 
-Remplace TOFU/MOFU/BOFU. Pensée linéaire en funnel devient atomes d'intention lisibles par les agents IA.
+Cadre : [[concepts/know-simple-know-do]]. Remplace TOFU/MOFU/BOFU. Pensée linéaire en funnel devient atomes d'intention lisibles par les agents IA.
 
 | Intention | Description | Format type | Schema | CTA |
 |---|---|---|---|---|
@@ -82,7 +82,7 @@ Source : [[know-simple-know-do]]
 
 ## 3. Product-Led SEO : les pages "Do" qui captent
 
-Le produit (outil, calculateur, template) génère le trafic ET la conversion, à la place du texte passif. C'est le format que Google note "Fully Meets" sur l'échelle Quality Raters.
+Cadre : [[concepts/product-led-seo]]. Le produit (outil, calculateur, template) génère le trafic ET la conversion, à la place du texte passif. C'est le format que Google note [[concepts/fully-meets|"Fully Meets"]] sur l'échelle Quality Raters.
 
 ### Typologie de mots-clés à attaquer
 
@@ -124,7 +124,7 @@ Source : [[skill-product-led-seo]]
 
 ## 4. Cartographie d'entités vectorielles (Grounding Score)
 
-Pour qu'une page rank, elle doit être alignée mathématiquement avec l'intention de recherche dans l'espace vectoriel des LLM. Donc on cartographie les entités attendues.
+Cadres : [[concepts/entites-vectorielles]] et [[concepts/grounding-score]]. Pour qu'une page rank, elle doit être alignée mathématiquement avec l'intention de recherche dans l'espace vectoriel des LLM. Donc on cartographie les entités attendues.
 
 ### 4 catégories à mapper
 
@@ -219,6 +219,8 @@ C'est la partie commerciale de la méthode. Un SEO bien architecturé qui ne se 
 Source : [[analyse-calls-prospects-bootcamp]] + [[vendre-seo-ia-2026]]
 
 ## 8. Architecture Organikk : 4 piliers de la méthode
+
+Cadre : [[concepts/methode-organikk-4-piliers]] (synthèse [[syntheses/4-piliers-organikk]]). Le pilier AEO renvoie à [[concepts/aeo]] et [[concepts/agentic-search]] ; le carburant transverse reste la [[concepts/data-proprietaire]].
 
 | Pilier | Question | Concept | KPI |
 |---|---|---|---|

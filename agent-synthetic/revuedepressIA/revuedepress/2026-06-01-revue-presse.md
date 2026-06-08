@@ -12,6 +12,8 @@
 
 ## Info du jour : le core update de mai arrive en fin de déploiement, et c'est trop tôt pour en lire l'impact
 
+*Entité : [[entities/gsc]].*
+
 Google a lancé le core update de mai 2026 le 21 mai. Le déploiement annoncé prend jusqu'à deux semaines, ce qui place sa fin autour du 4 juin, donc dans les prochains jours. C'est confirmé par [Search Engine Land](https://searchengineland.com/google-may-2026-core-update-rolling-out-now-478430), [Search Engine Journal](https://www.searchenginejournal.com/google-begins-rolling-out-may-2026-core-update/575589/), [Search Engine Roundtable](https://www.seroundtable.com/google-may-2026-core-update-landed-41380.html) et, côté francophone, [Abondance](https://www.abondance.com/20260521-2298953-google-core-update-mai-2026.html).
 
 Trois faits méritent d'être notés, parce qu'ils décrivent comment Google conduit cet update plutôt que ses effets supposés.

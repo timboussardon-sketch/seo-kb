@@ -17,7 +17,7 @@ Stratégie Golfiller croisée avec la doctrine Obsidian. Le cas concret (balles 
 
 ## Objectif et contexte
 
-Golfiller (golfiller.fr), e-commerce de balles de golf d'occasion / reconditionnées. Objectif : autorité thématique sur une verticale de niche défendable, les balles de golf d'occasion, plutôt qu'un affrontement frontal avec les gros acteurs. Résultat : première position sur "balle de golf", devant Décathlon et Amazon, sans acheter un seul lien.
+[[entities/golfiller|Golfiller]] (golfiller.fr), e-commerce de balles de golf d'occasion / reconditionnées. Objectif : autorité thématique sur une verticale de niche défendable, les balles de golf d'occasion, plutôt qu'un affrontement frontal avec les gros acteurs. Résultat : première position sur "balle de golf", devant Décathlon et Amazon, sans acheter un seul lien.
 
 État : projet pSEO actif sur les requêtes slope / handicap, base de ~40 parcours français (slope + SSS), calculateur de handicap interactif (formule FFGolf), page HTML sémantique brute (calculateur + tableau filtrable + sections par parcours). À venir : extension à ~100 parcours, Phase 2 pSEO (une URL par parcours) si la pilier performe.
 

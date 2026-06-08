@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Bootcamp SEO #4 — Passer de Cowork à Obsidian + Terminal</title>
+<style>
+  :root{
+    --ink:#16181d; --muted:#5b6472; --line:#e6e8ec; --bg:#ffffff;
+    --brand:#FF371C; --brand-soft:#fff1ef;
+    --term-bg:#1b1e27; --term-head:#2a2e3a; --term-text:#e7ebf0;
+    --green:#5ad17f; --blue:#6cb6ff; --yellow:#e8c468; --grey:#8b93a3; --pink:#ff8fa3;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--bg); font-size:13.5px; line-height:1.55;
+  }
+  @page{ size:A4; margin:15mm 14mm 16mm; }
+
+  /* Cover header */
+  .cover{
+    border-radius:16px; padding:30px 32px; margin-bottom:26px;
+    background:linear-gradient(135deg,#16181d 0%,#262a36 100%); color:#fff;
+  }
+  .cover .kicker{ font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#b9c0cc; margin:0 0 8px; }
+  .cover h1{ font-size:26px; line-height:1.2; margin:0 0 12px; font-weight:700; }
+  .cover p{ margin:0; color:#d7dbe2; max-width:60ch; }
+  .cover .brandtag{ display:inline-block; margin-top:16px; font-size:11px; color:#fff;
+    background:var(--brand); padding:4px 10px; border-radius:999px; font-weight:600; letter-spacing:.04em;}
+
+  .note{
+    background:var(--brand-soft); border:1px solid #ffd9d2; border-left:4px solid var(--brand);
+    border-radius:10px; padding:12px 16px; margin:0 0 26px; color:#7a2417; font-size:12.5px;
+  }
+
+  /* Steps */
+  .step{ break-inside:avoid; page-break-inside:avoid; margin:0 0 22px; padding-bottom:18px; border-bottom:1px solid var(--line); }
+  .step:last-of-type{ border-bottom:none; }
+  .step-head{ display:flex; align-items:center; gap:12px; margin:0 0 10px; }
+  .num{
+    flex:0 0 auto; width:30px; height:30px; border-radius:9px; background:var(--ink); color:#fff;
+    font-weight:700; font-size:15px; display:flex; align-items:center; justify-content:center;
+  }
+  .step-head h2{ font-size:16.5px; margin:0; font-weight:680; }
+  .step p{ margin:6px 0; }
+  .step .sub{ color:var(--muted); }
+  a{ color:#0b62d6; text-decoration:none; }
+  b,strong{ font-weight:680; }
+  .pill{ background:#eef0f3; border-radius:6px; padding:1px 7px; font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px; }
+
+  /* OS callout (command to copy) */
+  .oslabel{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:12px 0 5px; }
+  .copy{
+    background:#f6f7f9; border:1px solid var(--line); border-radius:8px; padding:10px 13px;
+    font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px; color:#1d2330; white-space:pre-wrap; word-break:break-word;
+  }
+
+  /* Terminal window */
+  .term{ border-radius:11px; overflow:hidden; margin:12px 0 4px; box-shadow:0 6px 18px rgba(16,18,24,.16); break-inside:avoid; }
+  .term-bar{ background:var(--term-head); padding:9px 13px; display:flex; align-items:center; gap:7px; }
+  .dot{ width:11px; height:11px; border-radius:50%; display:inline-block; }
+  .d1{ background:#ff5f56; } .d2{ background:#ffbd2e; } .d3{ background:#27c93f; }
+  .term-title{ color:#aeb6c4; font-size:11px; margin-left:8px; font-family:"SF Mono",Menlo,Consolas,monospace; }
+  .term-body{
+    background:var(--term-bg); color:var(--term-text); padding:14px 16px;
+    font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px; line-height:1.7; white-space:pre-wrap;
+  }
+  .prompt{ color:var(--green); } .promptwin{ color:var(--blue); }
+  .cmd{ color:#fff; } .out{ color:var(--grey); } .ok{ color:var(--green); } .cmt{ color:#6b7280; font-style:italic; }
+  .banner{ color:var(--brand); }
+  .skill{ color:var(--blue); }
+
+  .tip{ font-size:12px; color:var(--muted); margin-top:8px; }
+  .how{ background:#0f1115; color:#e7ebf0; border-radius:12px; padding:20px 24px; margin-top:26px; break-inside:avoid; }
+  .how h2{ margin:0 0 10px; font-size:16px; color:#fff; }
+  .how p{ margin:6px 0; color:#c7ccd6; }
+  .how .mono{ font-family:"SF Mono",Menlo,Consolas,monospace; color:var(--green); }
+  .aside{ border:1px dashed #cfd4dc; border-radius:10px; padding:14px 16px; margin-top:18px; font-size:12.5px; color:#3b424e; break-inside:avoid; }
+  .aside h3{ margin:0 0 6px; font-size:13.5px; }
+  footer{ margin-top:24px; text-align:center; color:#9aa1ac; font-size:11px; }
+</style>
+</head>
+<body>
+
+  <div class="cover">
+    <p class="kicker">Bootcamp SEO #4 · Organikk</p>
+    <h1>Passer de Cowork à Obsidian + Terminal</h1>
+  </div>
+
+  <!-- 1 -->
+  <div class="step">
+    <div class="step-head"><div class="num">1</div><h2>Récupère ton dossier de travail</h2></div>
+    <p>Télécharge ton dossier <b>seo-kit</b> depuis ton dashboard bootcamp :<br>
+    <a href="https://organikk.co/dashboard-bootcamp-organikk-private-2026/">organikk.co/dashboard-bootcamp-organikk-private-2026</a></p>
+    <p class="sub">Dézippe-le dans <span class="pill">Documents</span> pour obtenir <span class="pill">Documents/seo-kit</span>. Vérifie qu'à l'intérieur tu as bien les dossiers <span class="pill">raw/</span> <span class="pill">wiki/</span> <span class="pill">skills/</span> et le fichier <span class="pill">CLAUDE.md</span>.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="step">
+    <div class="step-head"><div class="num">2</div><h2>Installe Obsidian (pour lire tes notes)</h2></div>
+    <p>Télécharge-le gratuitement sur <a href="https://obsidian.md">obsidian.md</a>.</p>
+    <p class="sub">Ouvre-le, puis « <b>Open folder as vault</b> » et choisis ton dossier <span class="pill">Documents/seo-kit</span>.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="step">
+    <div class="step-head"><div class="num">3</div><h2>Installe Node.js (nécessaire pour le terminal)</h2></div>
+    <p>Va sur <a href="https://nodejs.org">nodejs.org</a>, télécharge la version <b>LTS</b>, installe-la (tu cliques « Suivant » jusqu'au bout).</p>
+    <p class="sub">Pour vérifier, ouvre ton terminal et tape <span class="pill">node --version</span> :</p>
+    <div class="term">
+      <div class="term-bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="term-title">terminal — toi</span></div>
+<div class="term-body"><span class="prompt">~ %</span> <span class="cmd">node --version</span>
+<span class="out">v20.11.1</span>
+<span class="prompt">~ %</span> <span class="cmt"># un numéro s'affiche = c'est bon</span></div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="step">
+    <div class="step-head"><div class="num">4</div><h2>Installe Claude Code</h2></div>
+    <p>Ouvre ton <b>Terminal</b> — Mac : Spotlight (la loupe) puis « Terminal ». Windows : menu Démarrer puis « PowerShell ».</p>
+    <p class="sub">Colle cette ligne, puis Entrée :</p>
+    <div class="copy">npm install -g @anthropic-ai/claude-code</div>
+    <div class="term">
+      <div class="term-bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="term-title">terminal — toi</span></div>
+<div class="term-body"><span class="prompt">~ %</span> <span class="cmd">npm install -g @anthropic-ai/claude-code</span>
+
+<span class="out">added 248 packages in 12s</span>
+<span class="prompt">~ %</span> </div>
+    </div>
+    <p class="tip">Bloqué ? Tu m'envoies un MP.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="step">
+    <div class="step-head"><div class="num">5</div><h2>Mets tes skills au bon endroit</h2></div>
+    <p>Le terminal lit toujours tes skills dans <span class="pill">.claude/skills</span>. On y copie ceux du kit. Colle <b>la ligne qui correspond à ton ordi</b>.</p>
+
+    <div class="oslabel">🍏 Mac</div>
+    <div class="copy">mkdir -p ~/.claude && cp -R ~/Documents/seo-kit/skills ~/.claude/skills</div>
+
+    <div class="oslabel">🪟 Windows (PowerShell)</div>
+    <div class="copy">New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude" | Out-Null
+Copy-Item -Recurse -Force "$env:USERPROFILE\Documents\seo-kit\skills" "$env:USERPROFILE\.claude\skills"</div>
+
+    <p class="tip"><b>Important :</b> la commande n'affiche aucun message quand elle réussit. Pas de message = c'est bon. Vérifie ensuite avec <span class="pill">ls ~/.claude/skills</span> :</p>
+    <div class="term">
+      <div class="term-bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="term-title">terminal — toi</span></div>
+<div class="term-body"><span class="prompt">~ %</span> <span class="cmd">ls ~/.claude/skills</span>
+<span class="skill">seo-recherche-mots-cles</span>   <span class="skill">seo-clustering-mots-cles</span>
+<span class="skill">seo-brief-contenu</span>        <span class="skill">maillage-systeme</span>
+<span class="skill">seo-mots-cles-decisionnels</span> <span class="skill">indexation-check</span>
+<span class="out">...</span>
+<span class="prompt">~ %</span> </div>
+    </div>
+    <p class="tip">Le dossier doit s'appeler exactement <b>skills</b> et être dans <b>.claude</b>.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="step">
+    <div class="step-head"><div class="num">6</div><h2>Crée le fichier CLAUDE.md (la notice que Claude lit tout seul)</h2></div>
+    <p>S'il est déjà dans ton kit (vérifié à l'étape 1), tu sautes cette étape.</p>
+
+    <div class="oslabel">🍏 Mac — colle ce bloc en entier dans le terminal, puis Entrée</div>
+    <p class="sub">Il crée le fichier au bon endroit, tout seul. Tu colles depuis <span class="pill">cat &gt;</span> jusqu'à <span class="pill">EOF</span> compris.</p>
+    <div class="copy">cat > ~/Documents/seo-kit/CLAUDE.md << 'EOF'
+# Méthode de travail : vault raw/ + wiki/
+
+Tu maintiens une base de connaissance personnelle en markdown (pattern « LLM Wiki » de Karpathy).
+Si les dossiers `raw/` et `wiki/` n'existent pas encore, crée-les.
+
+## Les deux dossiers
+- `raw/` = mes sources brutes (articles, transcripts de calls, notes, idées). Tu LIS raw/, tu ne le modifies JAMAIS. C'est la source de vérité.
+- `wiki/` = les notes distillées. C'est TON domaine : tu écris et tu mets à jour ces pages. Moi je les lis, je ne les écris pas.
+
+## Boucle d'ingest (quand je dépose une source et te dis « ingère-la »)
+1. Lis la source dans raw/.
+2. Résume-moi les points clés.
+3. Crée ou mets à jour la page concernée dans wiki/ (résumé, fiche d'entité, concept).
+4. Relie les pages avec des wikilinks [[nom-de-page]].
+5. Tiens à jour wiki/index.md (catalogue) et wiki/log.md (journal des ajouts).
+
+## Règles
+- raw/ est immuable : tu lis, tu n'écris jamais dedans. Tout ce que tu produis va dans wiki/.
+- Chaque fichier commence par un frontmatter (title, type, date, tags).
+- Une bonne réponse à une question se classe dans wiki/, elle ne meurt pas dans le chat.
+
+Référence : https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+EOF</div>
+    <div class="term">
+      <div class="term-bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="term-title">terminal — toi</span></div>
+<div class="term-body"><span class="prompt">~ %</span> <span class="cmd">cat > ~/Documents/seo-kit/CLAUDE.md << 'EOF'</span>
+<span class="out">heredoc&gt;</span> <span class="cmt"># (tu colles tout le bloc, il se remplit ligne par ligne)</span>
+<span class="out">heredoc&gt;</span> <span class="cmd">EOF</span>
+<span class="prompt">~ %</span> <span class="cmt"># fichier CLAUDE.md créé ✓</span></div>
+    </div>
+
+    <div class="oslabel">🪟 Windows — via Obsidian</div>
+    <p class="sub">La commande <span class="pill">cat</span> ne marche pas sur PowerShell. Dans <b>Obsidian</b> (déjà ouvert), crée une note à la <b>racine</b> de seo-kit, nomme-la <span class="pill">CLAUDE</span> (Obsidian ajoute <span class="pill">.md</span>), et colle dedans le même texte que dans le bloc ci-dessus (de <span class="pill">#&nbsp;Méthode de travail</span> jusqu'à la ligne <span class="pill">Référence&nbsp;:</span>, sans les lignes <span class="pill">cat&nbsp;&gt;</span> ni <span class="pill">EOF</span>).</p>
+    <p class="tip">Vérifie que <span class="pill">CLAUDE.md</span> est bien à la <b>racine</b> de seo-kit (pas dans un sous-dossier).</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="step">
+    <div class="step-head"><div class="num">7</div><h2>Lance et vérifie</h2></div>
+    <p>Place-toi dans ton dossier puis lance Claude, et tape <span class="pill">/skills</span> :</p>
+    <div class="term">
+      <div class="term-bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="term-title">terminal — seo-kit</span></div>
+<div class="term-body"><span class="prompt">~ %</span> <span class="cmd">cd ~/Documents/seo-kit</span>
+<span class="prompt">seo-kit %</span> <span class="cmd">claude</span>
+
+  <span class="banner">✳  Claude Code</span>  <span class="out">v2.x — dossier : seo-kit</span>
+
+<span class="prompt">&gt;</span> <span class="cmd">/skills</span>
+
+<span class="out">Available skills :</span>
+  <span class="skill">seo-recherche-mots-cles</span>
+  <span class="skill">seo-clustering-mots-cles</span>
+  <span class="skill">seo-brief-contenu</span>
+  <span class="skill">maillage-systeme</span>
+  <span class="out">...</span>
+</div>
+    </div>
+    <p class="tip"><span class="ok" style="color:#1a9c4f">●</span> Tu vois ta liste → tu es opérationnel. Liste vide ? Reprends l'étape 5.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="step">
+    <div class="step-head"><div class="num">8</div><h2>Pour relancer une session plus tard</h2></div>
+    <p>À chaque nouvelle fenêtre de terminal, tu retapes simplement :</p>
+    <div class="term">
+      <div class="term-bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="term-title">terminal — toi</span></div>
+<div class="term-body"><span class="prompt">~ %</span> <span class="cmd">cd ~/Documents/seo-kit</span>
+<span class="prompt">seo-kit %</span> <span class="cmd">claude</span></div>
+    </div>
+  </div>
+
+  <div class="how">
+    <h2>Comment ça marche ?</h2>
+    <p>Ton dossier a deux parties : <span class="mono">raw/</span> = tes sources brutes (tu y jettes tout), <span class="mono">wiki/</span> = les notes propres (c'est Claude qui les écrit).</p>
+    <p>Tu n'as rien à expliquer à Claude : dès que tu lances <span class="mono">claude</span> dans seo-kit, il lit tout seul le <span class="mono">CLAUDE.md</span>, le mode d'emploi du dossier, et sait déjà comment maintenir raw/ et wiki/.</p>
+  </div>
+
+  <div class="aside">
+    <h3>Cas à part — Google Drive (dossier vu comme « vide »)</h3>
+    Si ton dossier de travail est dans Google Drive et apparaît vide alors que les fichiers sont là : Google Drive en mode « Diffuser / Stream » monte un lecteur virtuel (G:) que le terminal ne sait pas lire. Solution : passe Google Drive en mode « Reproduire / Mirror » (vrai dossier local), ou plus simple, garde ton dossier de travail hors de Google Drive, dans Documents.
+  </div>
+
+  <footer>Organikk — Bootcamp SEO #4 · Guide de passage Cowork → Terminal</footer>
+
+</body>
+</html>

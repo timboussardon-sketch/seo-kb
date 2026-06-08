@@ -188,3 +188,10 @@ Rien n'est envoyé. SyntheticBrain produit le draft dans `raw/revue-de-presse/` 
 2. Fact-check + calibration : agents 3 et 4 avec verdict et prédictions datées.
 3. Fiabilisation cron 2x/jour.
 4. Engagement lecteur (data réelle) puis, plus tard, envoi.
+
+## Liens
+
+- [[decisions/0001-fermeture-boucles-systeme]] — l'ADR qui a fermé les trois boucles du système ; SyntheticBrain ajoute la quatrième (édition vers édition).
+- [[moc/moc-methode-kb]] — la carte du système KB dans lequel cette boucle s'inscrit.
+- [[concepts/persistent-wiki-vs-rag]] — pourquoi la mémoire reste en markdown versionné (registres) plutôt qu'en RAG, choix « données seulement » de la section 5.
+- [[concepts/data-proprietaire]] — l'engagement lecteur et les sources pondérées sont la data propriétaire qui empêche l'agent de retomber dans la moyenne.

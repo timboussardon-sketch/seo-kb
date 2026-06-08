@@ -12,6 +12,8 @@ _Édition du 2026-06-06. Pilier de l'info du jour : recherche agentique. Draft S
 
 ## L'info du jour : la vérification des agents IA passe de l'adresse IP à la signature
 
+*Doctrine : [[concepts/agentic-search]].*
+
 Aujourd'hui, quand un site veut autoriser ou bloquer un robot, il se fie à deux signaux : le nom que le robot déclare (son User-Agent) et son adresse IP. Les deux se falsifient. N'importe quel script peut se présenter comme « Googlebot » ou « GPTBot ». La vérification sérieuse demande des recoupements manuels (plages d'IP officielles, requêtes DNS inverses), que peu de sites tiennent à jour.
 
 **Web Bot Auth** change la méthode. Le robot signe chacune de ses requêtes avec une clé privée. Il publie la clé publique correspondante à une adresse connue de son domaine. Le serveur qui reçoit la requête vérifie la signature avec cette clé publique. Si elle correspond, l'identité du robot est prouvée par un calcul, pas par une déclaration. Le mécanisme s'appuie sur la norme de signature des requêtes HTTP ([RFC 9421](https://www.rfc-editor.org/rfc/rfc9421.html)).

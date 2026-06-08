@@ -2,7 +2,7 @@
 
 ## En résumé (au 2026-06-02)
 
-**lenkrr** est le nouveau produit né du pivot de Qadence : un SaaS qui analyse le maillage interne d'un site puis applique les liens lui-même, en exécutant la doctrine des skills `maillage-interne-gsc` et `maillage-systeme`.
+**lenkrr** est le nouveau produit né du pivot de Qadence : un SaaS qui analyse le maillage interne d'un site puis applique les liens lui-même, en exécutant la doctrine des skills `maillage-interne-gsc` et `maillage-systeme`. La doctrine qu'il met en code, c'est le [[concepts/maillage-systeme]] ; vue d'ensemble dans [[moc/moc-maillage]].
 
 État : **Phases 0, 1, 2 et 3 terminées et committées**. Le repo tourne en local sur http://localhost:3000, en accès direct. Chaîne complète : connecter un site (WordPress ou Git) → analyser (architecture en piliers + hubs, intentions, audit orphelines/dead-ends) → plan de liens priorisé (score d'urgence + 3 ancres + passage, ancres affinées par Gemini via l'edge function `lenkrr-anchors` déployée sur le projet Qadence). Prochaine étape : Phase 4 (write-back gated : appliquer les liens en révision WordPress / Pull Request Git). C'est la phase outward-facing à valider explicitement avec Tim avant de coder l'application réelle.
 
@@ -15,7 +15,7 @@ Repo : `/Users/timothee/Code/lenkrr`. Plan détaillé : `~/.claude/plans/staged-
 - SaaS multi-tenant, deux audiences : no-tech (web app guidée) et tech (serveur MCP, plus tard).
 - Connecteurs multi dès le départ : WordPress (REST API) + repo Git (Next.js / MDX), derrière une interface commune `SiteConnector`.
 - Stack : Next.js 15 + React 19, Supabase (Auth + Postgres + Edge Functions Deno), Gemini.
-- Lecture du site : API du CMS + GSC par-dessus (comportemental).
+- Lecture du site : API du CMS + [[entities/gsc]] par-dessus (comportemental).
 - Profondeur : application auto des liens, mais derrière une porte d'approbation groupée (sur Git, la PR fait office de porte).
 - Onboarding WordPress : plugin maison + application password (les deux).
 - Comptes multi-tenant en v1, facturation Stripe après validation.
@@ -72,7 +72,7 @@ Repo : `/Users/timothee/Code/lenkrr`. Plan détaillé : `~/.claude/plans/staged-
 - `AnalysisPanel` : bouton « Appliquer (PR) » par proposition (sites Git), lien vers la PR ouverte.
 - **Connecteur `nextdata` construit** (pour Organikk) : `lib/connectors/github.ts` (client GitHub partagé), `nextdata-parse.ts` (parseur du Record d'articles, brace-matching respectant les strings), `NextDataConnector` (une entrée = une page ; applyEdit réécrit le champ `content` avec échappement du quote TS + PR). Parseur vérifié sur le vrai `articles.ts` : 19 articles, 36 liens internes, **671/671 paragraphes verbatim**. Onglet UI « Next.js (data) » ajouté.
 - **Coordonnées Organikk** : repo `timboussardon-sketch/organikk-next`, branche `main`, fichier `src/data/articles.ts`, préfixe route `blog`, site `https://organikk.co`. Repo **privé** (404 sans token).
-- **TEST RÉEL ORGANIKK VALIDÉ (2026-06-03)** : token classique fourni → analyse `organikk-next` (19 articles, 35 liens internes, 3 orphelines, 2 piliers, 25 propositions toutes enrichies Gemini) → PR #4 ouverte avec lien markdown relatif correct `[ancre](/blog/audit-seo-claude)`, 1 paragraphe modifié, TS valide (quotes équilibrées), branche dédiée, jamais de merge auto. À relire/merger par Tim.
+- **TEST RÉEL ORGANIKK VALIDÉ (2026-06-03)** : sur le site de [[entities/organikk-co]], token classique fourni → analyse `organikk-next` (19 articles, 35 liens internes, 3 orphelines, 2 piliers, 25 propositions toutes enrichies Gemini) → PR #4 ouverte avec lien markdown relatif correct `[ancre](/blog/audit-seo-claude)`, 1 paragraphe modifié, TS valide (quotes équilibrées), branche dédiée, jamais de merge auto. À relire/merger par Tim.
 - **2 bugs trouvés et corrigés par le test réel** : (1) `ECONNRESET` réseau sur les gros PUT GitHub → `fetchRetry` (retry transitoire) dans le client GitHub ; (2) Gemini insérait parfois le TEXTE de l'ancre sans la syntaxe markdown `[..](..)` → garde-fou dans `/api/apply` qui refuse la PR si le lien n'est pas réellement présent, + insertion en chemin relatif + prompt durci.
 - **Persistance réparée (2026-06-03)** : le `saved:False` avait 2 causes empilées — (1) `sites.type` rejetait `nextdata` (contrainte `check` élargie via migration `20260603000001`) ; (2) l'insert du run tombait sur `fetch failed`/ECONNRESET, le client Supabase ne réessayait pas → `admin` client configuré avec un `fetch` à retry. Analyse Organikk désormais persistée en entier (site + run + 20 pages avec intent/inbound/statut + 26 propositions). Reste : write-back WordPress (révision) pas encore implémenté.
 
@@ -131,3 +131,84 @@ Refait tout le flux OAuth + impact étape par étape pour localiser le blocage s
 ## Règle de travail
 
 Avancer phase par phase sans rien casser : le build doit rester vert, les écrans rendre en 200, et ne jamais écraser les fonctions de Qadence sur le projet Supabase partagé.
+
+## Historique des analyses + sites mémorisés + plein écran analyse (2026-06-06)
+
+Trois demandes de Tim, traitées ensemble (working tree, par-dessus le refactor `components/result/` en cours qui compile). **Aucune migration** : on réutilise `sites.config` (jsonb) et `runs.output_data` (jsonb) existants.
+
+- **Persistance enrichie** (`lib/db/persist.ts`) : `runs.output_data` stocke désormais le **report complet** (et non plus seulement `report.stats`), donc une analyse se recharge sans relancer le crawl. `sites.config` mémorise la connexion **sans secrets** (`{analyzeCfg, applyCfg}`, tokens/app passwords retirés — réinjectés serveur à chaque run/apply). Le type de site stocké vient de `applyCfg` (toujours git/nextdata/wordpress), jamais `'crawl'` : **bug corrigé** au passage — un crawl posait `type:'crawl'` qui violait la contrainte `sites_type_check`, donc les analyses crawl ne se persistaient probablement pas avant.
+- **Transport applyCfg** : l'UI joint la cible de write-back via la clé `__apply` dans le body de `/api/analyze` (rétro-compatible MCP qui poste un cfg nu). Câblé dans `AnalysisContext.runAnalysis`.
+- **Lecture** (`lib/db/history.ts`, client service-role + `LENKRR_USER_ID`) : `listRuns()`, `getRun(id)` (garde-fou : un vieux run sans report complet → null), `listSites()` (filtre les sites sans `analyzeCfg`), `getSite(id)`.
+- **Onglet Historique** : `/app/analyses` liste les runs (date, site, pages/propositions) → `/app/analyses/[runId]` recharge le report dans `ResultWorkspace`. L'onglet « Analyses » existait déjà en placeholder.
+- **Mes sites mémorisés** : `/app` liste les sites connectés (sinon Dashboard de connexion) avec « Analyser ce site » (→ `/connect?site=<id>`) + « Connecter un autre site ». Nouvelle route `GET /api/sites/[id]`.
+- **Plein écran analyse** (`ConnectClient`) : dès que l'analyse tourne ou qu'un report est présent, tout le bloc de connexion (titre, sélecteur WP/GitHub, formulaire « Connecté · 1 site ») disparaît au profit du workspace ; lien « ← Analyser un autre site » pour revenir. Auto-lancement depuis `?site=<id>` (fetch config + `runAnalysis`, URL nettoyée pour éviter la relance au refresh).
+- **Validé end-to-end en local** (port 3000) : `tsc` + `next build` verts ; crawl réel organikk.co (100 pages, 99 propositions) → persisté (site `nextdata` + run avec report complet + config sans secrets) → `/app/analyses/[runId]` recharge le workspace sans relancer, le run apparaît dans la liste, `/api/sites/[id]` renvoie bien `{analyzeCfg, applyCfg}` sans token.
+- **Limite connue** : les runs antérieurs au 2026-06-06 ne stockaient que les stats → ils apparaissent dans la liste mais affichent « Analyse introuvable » au clic (pas de report complet à recharger). Seules les analyses lancées depuis ce changement sont rechargeables.
+- **Écran Impact refait (page-centric)** : remplacé les catégories + compteurs + score abstrait (Impact/Confiance/P1/P2) par un compte rendu en **pages nommées** (`buildPagePlan`), groupées en « stratégiques à renforcer » / « orphelines à récupérer » / « culs-de-sac à corriger », chacune avec objectif métier + sources réelles (Depuis/Vers) + nombre de liens. Répond aux 3 questions du SEO (qu'est-ce qui ne va pas / quelles pages / quoi faire) en voir→comprendre→agir. Carte cliquable → Plan d'action. Icônes fonctionnelles plutôt que les émojis du brief, pour rester dans le design system gris/blanc.
+- **Codemod icônes** : tout le repo a migré de `lucide-react` vers `@phosphor-icons/react/ssr` pendant la session (mes fichiers alignés dessus).
+- **Commité sur `master`** : `bda3587` (build + tsc verts). Le commit regroupe la feature historique/sites/plein écran + l'Impact page-centric + le refactor `components/result/` qui était en cours + le codemod phosphor (tout intriqué, validé par Tim « ok »).
+
+## Espace de travail à onglets + audit sémantique (2026-06-06)
+
+Virage produit : passer d'un rapport en 3 étapes à un **espace de travail permanent à onglets**, chaque onglet = une responsabilité. Modèle cible : **IA explique → IA détecte → IA propose → Humain valide**.
+
+- **Workspace à onglets** (`SiteWorkspace.tsx`, remplace `ResultWorkspace`) : sidebar verticale gauche (Dashboard / Audit / Opportunités / Pages / Architecture / Déploiement), état des décisions partagé entre onglets (onglets côté client). Réutilisé après analyse ET depuis l'Historique. Historique reste dans la nav globale.
+- **Dashboard graphique** (`DashboardView.tsx`) : graphiques SVG maison, zéro dépendance (jauge de score avant/après, donut santé des pages, barres intentions, histogramme liens entrants, barres clusters, avant/après du plan).
+- **Plan d'action** itéré 3× (« illisible ») : stepper → maître-détail → tableaux → **cartes par page** (conclusion d'abord : page + statut + +N liens + « pourquoi » + Valider ; tableau de liens replié derrière « Voir les recommandations détaillées »).
+- **Transparence des signaux** (`explainProposal` dans `lib/maillage.ts`) : chaque lien expose la règle du skill (Hub→Satellite, Know→Do…), le cosinus, l'intention cible (+poids), l'autorité source, le score. Le cosinus n'est QU'UN signal ; on montre tout le calcul de `propose.ts`.
+- **Audit sémantique** : embeddings calculés à CHAQUE analyse (avant : repli seulement). `engine.ts` exporte un bloc `semantic` (cohésion/cluster, pages mal classées, quasi-doublons cosinus>0,9, clusters sans hub) + une `explanation`. Onglet Audit = incohérences ; Architecture = explication + cohésion.
+- **Explication rédigée par l'IA** : edge function `lenkrr-explain` (Gemini `gemini-3.5-flash`, déployée sur le projet Qadence), ancrée sur les faits calculés (zéro chiffre inventé), appelée dans `/api/analyze` avec **repli auto** sur `computeExplanation` si le LLM échoue.
+
+### RÈGLE GÉNÉRALE du crawl (correctif)
+- **Bug (trouvé par Tim)** : page wiki « Fully Meets » marquée orpheline alors qu'elle a du maillage (« Concepts voisins », « Aller plus loin »). Cause : `crawl.ts` ne gardait que le **premier `<main>`/`<article>`** (regex non-greedy) → 3 liens sur 61, maillage hors `<main>` perdu, fausses orphelines en masse.
+- **Règle posée** (`stripChrome` dans `lib/analysis/crawl.ts`) : on NE restreint plus au `<main>`. On retire le chrome (`script/style/head/header/nav/footer`) et on garde tout le reste. L'audit compte **tous les liens internes éditoriaux** (y compris « Concepts voisins » / « Aller plus loin » / « Voir aussi ») ; les liens de nav répétés survivants sont écartés par le filtre template (>50 % des pages). Vaut pour **tout site crawlé**.
+- **Validé** : « Fully Meets » repasse en `ok` (4 entrants / 7 sortants), orphelines 21 → 14, 532 liens internes capturés. Run `435fe8de`.
+
+### À COMMITTER
+- Tout ce bloc est **non commité** (build + tsc verts). La feature historique/sites du début de session est déjà dans `bda3587`. Edge `lenkrr-explain` déjà déployée.
+- Seules les analyses lancées après ce travail ont le bloc `semantic` + `explanation` (vieux runs antérieurs).
+
+## Boucle d'apprentissage (« brain ») — Sprint 1 / fondation (2026-06-08)
+
+Virage : passer lenkrr d'open-loop (analyse→proposition→application→mesure ponctuelle) à une **boucle fermée** façon content-brain. Décisions cadrées avec Tim : apprentissage en **ledger + priors relus par lui** (le moteur `propose.ts` reste figé, les priors redescendent comme contexte de re-ranking), **pilote golfiller.fr seul**.
+
+Modèle : analyse → proposition → application → **prédiction datée** (chaque lien posé = un pari, resolve_by J+30/J+90) → résolution GSC en **diff-in-diff** (delta cible moins delta d'un panel de pages témoins, pour soustraire saisonnalité/updates) → apprentissage (ledger + table de priors par bucket) → le prochain briefing lit les priors. On n'apprend que sur des **agrégats** de buckets, jamais sur un pari isolé (bruit GSC).
+
+### Fait ce sprint (build + tsc verts, NON commité, migration NON poussée)
+- **Migration `20260608000001_link_bets.sql`** (additive, idempotente, RLS owner + bypass service-role) :
+  - `link_bets` : un pari par lien posé. Self-contained pour la résolution (`gsc_site`, `target_url`, `applied_at` = pivot). Dimensions de bucket en **texte souple** (pas de check strict, pour ne pas rejeter un import comme l'avait fait la contrainte `nextdata`) : `rule` (= nature du lien), `target_intent`, `anchor_kind`, `source_authority`. Prédiction `expected` (jsonb). `resolve_by_30/90`, `status` (pending/resolved_30/resolved_90/unmeasurable/expired), `verdict_30/90` (hit/partial/miss/no_data), `measured` (jsonb diff-in-diff). Index de file de résolution `(status, resolve_by_30)`.
+  - `linking_priors` : agrégat `unique(site_id, bucket_key)`, `bucket_key = rule|target_intent|anchor_kind|source_authority`. `n_bets/n_hits/n_miss`, `win_rate`, `avg_position_delta` (négatif = la cible monte), `avg_clicks_delta`.
+- **`lib/db/bets.ts`** : `logBet()` best-effort (service-role, `LENKRR_USER_ID`), calcule `resolve_by_30/90`, + helper `bucketKey()`.
+- **`/api/apply` câblé** : `ApplyBody.bet?` optionnel (gscSite, sourceUrl, rule, targetIntent, sourceAuthority, expected, siteId/runId/proposalId). Log du pari après application réussie ; `gsc_site` fourni par l'UI sinon **dérivé** de l'URL publique (`sc-domain:<host>`). `anchor_kind`/`anchor_text` repris de l'ancre réellement choisie par Gemini.
+- **`/api/bets/backfill`** : importe une liste de liens DÉJÀ posés à la main → paris datés. Amorce la boucle sur golfiller sans attendre que lenkrr pose les liens lui-même.
+
+### RESTE (prochain sprint)
+- **Pousser la migration** sur la base Qadence partagée (`supabase db push`) — outward-facing, à valider avec Tim avant.
+- **Résolution** : edge function `lenkrr-resolve-bets` (réutilise `lenkrr-impact` + panel témoin → diff-in-diff → verdict → maj priors → ledger).
+- **Réveil** : routine distante quotidienne qui tape `lenkrr-resolve-bets` (file des paris échus).
+- **Ledger** : `seo-kb/lenkrr/ledgers/<date>.md` (verdicts + buckets gagnants/perdants + questions).
+- **Retour** : lecture de `linking_priors` dans le flux d'analyse, passée à la couche de décision Claude.
+- **Question ouverte** : comment les liens arrivent-ils sur golfiller (write-back lenkrr vs pose manuelle) → décide hook `/api/apply` vs amorçage par `/api/bets/backfill`. La fondation supporte les deux.
+
+## Refonte Audit + Dashboard + KPI sémantiques + extractions backend (2026-06-08)
+
+Même session. Build + tsc + `next build` verts, dev sur :3001. **NON commité.**
+
+### Audit — pills anti-scroll (`components/result/AuditView.tsx`)
+Trois `ProblemCard` empilées (orphelines, culs-de-sac, hubs + sémantiques) scrollaient à l'infini sur un gros site. Remplacé par un contrôle segmenté (pills, une catégorie à la fois, avec compteur) + pages rendues en **chips** qui s'enroulent dans un conteneur à hauteur bornée (`maxHeight 420, overflow-y auto`). Les tables sémantiques (mal classées, doublons) passent aussi en scroll borné.
+
+### Dashboard — refonte « panneau d'instrumentation » (`components/result/DashboardView.tsx`)
+Demande Tim : ultra-détaillé point par point + rendu ultra-moderne sans pattern IA. DA respectée (monochrome, Inter + JetBrains Mono, hairlines). Modules numérotés en mono (01→08), grille 12 colonnes asymétrique (`.dash-grid` ajouté à globals.css), chiffres tabulaires mono, révélation décalée. Diagnostic = score global + ses 3 composantes réelles (connectivité/fluidité/densité, mêmes formules que `maillageScore`). Modules : santé structurelle (donut + stack + %), couverture crawl, liens entrants, **profondeur de clic** (nouveau), intentions × conversion (inbound moyen Do vs site), clusters avec **cohésion sémantique par pilier**, cohérence sémantique, projection du plan (par nature + priorité + avant/après).
+
+### KPI sémantiques (module « Signaux sémantiques & autorité »)
+Tous **dérivés du rapport, zéro chiffre inventé** : Similarité cosinus (moy. `relatedness` des liens), Distance sémantique (1−cos), Cohérence des ancres (diversification ≤1 exacte/cible + % affinées IA), **Link Gap Score** (% pages en déficit = orphelines+culs-de-sac+hubs sous-maillés), **Topical Authority Flow** (autorité des hubs ÷ page moyenne, ×N).
+
+### Extractions backend ajoutées (pour rendre réels les 2 KPI manquants)
+Refusé de fabriquer → construit la vraie donnée :
+- **Typage de page** (`classifyPageType` dans `classify.ts`, type `PageType`) : home/product/category/transactional/editorial/other, heuristique URL+titre déterministe. Champ `pageType` ajouté à `AnalyzedPage` (engine.ts ET AnalysisPanel.tsx). Alimente « Répartition du maillage vers » (transactionnelles/informationnelles/catégories/produits, par type de la cible des liens proposés). Limite assumée : un produit sans signal d'URL retombe en `other` (précision parfaite = lecture du type côté CMS/Woo).
+- **Extraction d'entités** (`lib/analysis/entities.ts`, `buildEntityCoverage`) : déterministe, sans LLM. Séquences en Titre majuscule, filtre mots-vides + **récurrence ≥2 pages** (tue le bruit de début de phrase). Couverture = part du vocabulaire d'entités du cluster couverte par page (moy.). `EntityReport {distinctCount, coverage, top[]}` attaché à `semantic.entities`. Alimente le KPI « Couverture d'entités » + chips « entités dominantes ». Testé OK sur input type golfiller (sort Titleist Pro V1, Callaway, Bridgestone).
+
+### RESTE
+- Commit de toute la session (bets + audit + dashboard + extractions).
+- Précision du typage produit/catégorie : brancher le type CMS quand le connecteur WordPress/Woo est en place (aujourd'hui heuristique URL).
+- Entités : suffisant en heuristique pour le KPI ; passage LLM/NER dédié seulement si Tim veut une précision d'entités fine.

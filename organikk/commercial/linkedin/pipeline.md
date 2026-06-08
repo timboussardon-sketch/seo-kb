@@ -1,7 +1,8 @@
-# Pipeline commercial LinkedIn — Organikk (accompagnement async)
+# Pipeline commercial LinkedIn — [[entities/organikk-co]] (accompagnement async)
 
 > Suivi prospect par prospect + métriques. Source de vérité du funnel. Mis à jour à chaque journal (`/linkedin-journal`).
 > Étapes : Ciblé → Invité → Connecté → Engagé → Qualifié → Loom envoyé → Proposition → Client. Sortie : Perdu / Pas maintenant (+ raison).
+> Doctrine de vente : [[syntheses/vendre-seo-ia-2026]] ; objections types : [[moc/moc-vente-objections]].
 
 ## Métriques (cumul)
 

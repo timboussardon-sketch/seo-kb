@@ -15,6 +15,8 @@ status: draft
 
 _Bootcamp SEO #4 · pour Cowork (app de bureau) + Terminal (Claude Code)_
 
+> Fiche pédagogique du [[entities/bootcamp-seo-ia]] ([[offre-bootcamp-seo-ia]]). Le passage au terminal + [[entities/obsidian]] est la brique technique du système ([[concepts/obsidian-as-ide]]).
+
 ## Le principe en 2 phrases
 
 Tes skills doivent vivre dans **un seul dossier**. On fait ensuite un raccourci spécial (un « lien symbolique ») pour que le Terminal et Cowork regardent tous les deux ce même dossier. Tu ajoutes un skill une fois, les deux le voient. Tu n'installes jamais rien deux fois.

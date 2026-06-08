@@ -38,7 +38,7 @@ status: stable
 - Ne PAS dire "visibilité". Dire "mots-clés business", "conversion", "leads qualifiés"
 - Donner la transparence : voici exactement ce que je vais faire
 
-**Résultat :** Closing 10% → 50%. Le prospect comprend la valeur concrète. Cf. [[syntheses/vendre-seo-ia-2026]].
+**Résultat :** Closing 10% → 50%. Le prospect comprend la valeur concrète. Cf. [[syntheses/vendre-seo-ia-2026]], [[concepts/tabou-visibilite]].
 
 ### 3. Audit SEO
 
@@ -59,8 +59,8 @@ status: stable
 **Process :**
 - Identifier les mots-clés transactionnels / actionnels (pas informationnels)
 - Trouver les mots-clés **non cités sur les LLM mais cliqués** par les utilisateurs
-- Mapper les entités vectorielles (relations sémantiques Roi-Reine) → cf. skill-entites-vectorielles
-- Créer les clusters AEO (MECE, 3 types d'intention) → cf. skill-cluster-aeo
+- Mapper les [[concepts/entites-vectorielles]] (relations sémantiques Roi-Reine) → cf. skill-entites-vectorielles
+- Créer les clusters [[concepts/aeo]] (MECE, 3 types d'intention) → cf. skill-cluster-aeo, [[concepts/agentic-search]]
 
 **Résultat :** Liste de 30-40 mots-clés business priorisés, avec mapping sémantique.
 

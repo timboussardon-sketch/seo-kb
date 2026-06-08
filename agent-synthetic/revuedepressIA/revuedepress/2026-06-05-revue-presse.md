@@ -1,5 +1,7 @@
 # INFO 1 : Perplexity gagne du terrain, surtout aux États-Unis
 
+*Entité : [[entities/perplexity]].*
+
 
 Perplexity représente désormais environ 15 % du trafic envoyé par les IA, avec une part proche de 20 % aux États-Unis.
 

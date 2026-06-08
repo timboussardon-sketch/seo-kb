@@ -11,6 +11,8 @@ confidence: medium
 status: draft
 ---
 
+> Transcript du call de qualification [[entities/bootcamp-seo-ia]] avec [[entities/juliette]] (strat digitale SEA→SEO→Webflow, débordée, « j'ai pas le temps »). Version curée : [[sources/2026-04-13-call-06-juliette]]. Analyse transverse : [[analyse-calls-prospects-bootcamp]].
+
 ## **Gemini a dit**
 
 Voici le script complet et structuré de ton appel. J'ai nettoyé la transcription (hésitations mineures, répétitions, erreurs de dictée) pour la rendre plus fluide à la lecture, et j'ai identifié les interlocuteurs (Juliette et toi) pour plus de clarté :

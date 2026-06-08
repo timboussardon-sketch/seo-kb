@@ -13,6 +13,8 @@ related:
   - "[[cadrage]]"
 ---
 
+> Propal du [[entities/bootcamp-seo-ia]] ([[offre-bootcamp-seo-ia]]) pour le prospect Rémi (call : [[calls-prospects]]). Argumentaire aligné sur [[syntheses/vendre-seo-ia-2026]], doctrine structurée par la [[concepts/methode-organikk-4-piliers]].
+
 **Infos de Rémi**
 
 ## **Contexte**
@@ -76,10 +78,10 @@ Pour assurer ta place : [lien Stripe](https://buy.stripe.com/8x2fZhajof4j3C34Hqe
 
 ### **Doctrine : les 4 piliers (15 min)**
 
-* SURPRISE GAP : ce que personne n'a dit > ce que tout le monde dit mieux
-* GROUNDING SCORE : aligner le vecteur de page avec le vecteur de requête
-* pSEO : 1 template + 1 variable = N pages longue traîne
-* AEO : framework Know-Simple / Know / Do (remplace TOFU / MOFU / BOFU)
+* [[concepts/surprise-gap|SURPRISE GAP]] : ce que personne n'a dit > ce que tout le monde dit mieux
+* [[concepts/grounding-score|GROUNDING SCORE]] : aligner le vecteur de page avec le vecteur de requête
+* [[concepts/programmatique-pseo|pSEO]] : 1 template + 1 variable = N pages longue traîne
+* [[concepts/aeo|AEO]] : framework [[concepts/know-simple-know-do|Know-Simple / Know / Do]] (remplace TOFU / MOFU / BOFU)
 
 ### **Workflow recherche de mots-clés business (30 min)**
 

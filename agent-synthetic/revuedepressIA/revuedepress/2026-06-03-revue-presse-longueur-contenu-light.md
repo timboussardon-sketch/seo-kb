@@ -14,6 +14,8 @@ Parce que l'on vit dans l'ère du bruit, je sélectionne pour vous les meilleure
 
 ## L'info du jour : la longueur ne fait pas la citation
 
+*Doctrine : [[concepts/passage-ranking]].*
+
 On a vendu pendant des années une idée simple : plus l'article est long, mieux il se classe. Plusieurs analyses sorties ce mois-ci sur l'AI Overview de Google (le résumé généré en haut des résultats) cassent cette idée pour les réponses IA.
 
 Le lien entre le nombre de mots et le fait d'être cité est quasiment nul. Plus de la moitié des pages citées font moins de 1000 mots, et l'IA reprend surtout des passages courts, deux ou trois phrases. Ce qui compte, c'est de répondre clairement à un endroit précis, pas d'écrire long.

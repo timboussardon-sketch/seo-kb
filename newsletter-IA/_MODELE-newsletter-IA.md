@@ -4,8 +4,9 @@
 > Dossier : `seo-kb/newsletter-IA/`. Les éditions se déposent ici, datées.
 > Gabarit standard de toute édition. Décidé le 2026-06-06.
 > Principe : une édition = un dossier cohérent autour d'UN sujet. Les 3 blocs convergent.
-> Voix : tutoiement, anti-IA writing, positions tranchées, jamais de tiret cadratin.
+> Voix : tutoiement, [[concepts/anti-ai-writing]], positions tranchées, jamais de tiret cadratin.
 > Règle d'or des brèves : jamais une info sans son « pourquoi ça compte ».
+> Boucle d'édition (briefing → production → apprentissage) calquée sur [[methodes/cadrage-boucle-edition-algorithme]].
 
 ---
 
@@ -41,7 +42,7 @@ Sources des brèves (liens réels en bas)
 ## Rôle de chaque bloc
 
 1. **Sujet du jour** = l'ancre + ta voix. Crée l'attachement à l'auteur. C'est là que tu tranches.
-2. **Test de la semaine** = ce qui te distingue des agrégateurs IA. Toujours une donnée réelle, jamais un exemple type quand tu as la vraie data sous la main.
+2. **Test de la semaine** = ce qui te distingue des agrégateurs IA. Toujours une donnée réelle, ta [[concepts/data-proprietaire]], jamais un exemple type quand tu as la vraie data sous la main.
 3. **Brèves** = le contexte utile. L'interprétation est le produit, pas l'info nue.
 
 ## Le liant : l'édition thématique
@@ -103,7 +104,7 @@ Et avant d'automatiser quoi que ce soit, je mets à plat mes process : je les do
 Le niveau au-dessus : tes propres Skills, assemblés en Workflows.
 **Skill = une tâche récurrente. Workflow = un ensemble de tâches qui forment un process complet.**
 
-J'ai découpé mes 6 ans de terrain en **4 workflows**. Rien n'est inventé par Claude :
+J'ai découpé mes 6 ans de terrain en **4 workflows** ([[concepts/methode-organikk-4-piliers]]). Rien n'est inventé par Claude :
 
 1. **Mots-clés**
 2. **Contenu**

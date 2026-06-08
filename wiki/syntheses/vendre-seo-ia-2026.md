@@ -25,7 +25,7 @@ Le mot "visibilité" évoque les réseaux sociaux dans la tête des clients. Il 
 - **"Conversion"** — visiteur → client
 - **"Leads qualifiés"** — trafic à intention transactionnelle
 
-Source : Tim le répète dans les calls 3, 5, 6. Cécile et Dev web confirment que leurs clients "ne comprennent pas ce que visibilité veut dire".
+Source : Tim le répète dans les calls 3, 5, 6. [[entities/marrusia-cecile|Cécile]] et le [[sources/2026-04-13-call-05-dev-web|Dev web]] confirment que leurs clients "ne comprennent pas ce que visibilité veut dire". C'est le [[concepts/tabou-visibilite]].
 
 ### 2. Donner la data AVANT la signature
 
@@ -38,7 +38,7 @@ Pas de "visibilité" abstraite. De la data concrète sur laquelle le prospect pe
 
 ### 3. La règle 80/20 du contenu
 
-Ce qui ranke en 2026 : **80% consensus + 20% data propriétaire**. Le consensus (ce que tout le monde dit) est nécessaire mais insuffisant. Les 20% qui font la différence :
+Ce qui ranke en 2026 : **80% consensus + 20% data propriétaire** ([[concepts/80-pourcent-pattern-strategie]]). Le consensus (ce que tout le monde dit) est nécessaire mais insuffisant. Les 20% qui font la différence :
 - Calls clients (verbatims, jargon sectoriel)
 - Avis clients (formulations, pain points)
 - Data interne (chiffres, cas d'usage, résultats)
@@ -73,7 +73,7 @@ Le consultant doit montrer la plus-value humaine : "L'IA fait 80%, moi je fais l
 
 ### 7. Vendre un système, pas une formation
 
-Le mot "formation" repousse les praticiens expérimentés (Franck 15 ans, Jamel 10 ans, Christophe 30 ans). Dire :
+Le mot "formation" repousse les praticiens expérimentés (Franck 15 ans, [[entities/jamel|Jamel]] 10 ans, [[entities/christophe|Christophe]] 30 ans). Dire :
 - **"Système SEO IA"** ✓
 - **"Workflow propriétaire"** ✓
 - **"Système"** ✓
@@ -85,4 +85,4 @@ Le mot "formation" repousse les praticiens expérimentés (Franck 15 ans, Jamel 
 
 ## Pages liées
 
-[[syntheses/doctrine-seo-post-sge]] · [[concepts/data-proprietaire]] · [[concepts/surprise-gap]] · [[concepts/aeo]] · [[concepts/e-e-a-t]]
+[[syntheses/doctrine-seo-post-sge]] · [[concepts/data-proprietaire]] · [[concepts/surprise-gap]] · [[concepts/aeo]] · [[concepts/e-e-a-t]] · [[concepts/avatar-freelance-sans-systeme]] · [[concepts/tabou-visibilite]] · [[entities/bootcamp-seo-ia]] · [[analyse-calls-prospects-bootcamp]] · [[offre-bootcamp-seo-ia]]

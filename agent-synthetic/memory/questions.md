@@ -4,7 +4,7 @@
 - **Urgent** : remonté à Tim tout de suite (en bas du draft).
 - **Hebdo** : groupé, présenté à la revue hebdo du vendredi.
 
-L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui demande un arbitrage humain.
+L'agent répond lui-même à ce qu'il peut tester ; il garde pour Tim ce qui demande un arbitrage humain. C'est la sortie « auto-interrogation » de [[methodes/cadrage-boucle-edition-algorithme]] ; les arbitrages tranchés repartent dans [[directives]] et, pour la doctrine, vers la couche curée (`wiki/`).
 
 ## Urgent (à trancher vite)
 
@@ -126,3 +126,17 @@ Toute skill créée ou modifiée par l'agent est tracée ici, avec le commit git
 - **SISTRIX promue exploit ?** Premier hit utile après 6 directives où l'ingestion d'une source de mesure de visibilité était demandée. Le bilan du core update de mai sera consolidé après le 9-11 juin. Si la qualité du signal SISTRIX se confirme sur ce bilan, je propose le passage exploit à la revue hebdo. Ok pour cette procédure ?
 - **Éviter le mono-Google d'édition.** Ce run contient 3 sujets Google (info du jour AI Mode santé, brève core update, brève spam policies). Compensé par 1 brève non-Google (Cloudflare bots > humains). Faut-il durcir la règle (max 2 sujets Google par édition) ou laisser au cas par cas ? Recommandation agent : règle souple, signaler dans le log de run si ratio > 75 %.
 - **Famille Tim aimée vs technique/infra.** L'info du jour de v1 (Web Bot Auth) était dans la famille technique sous-pondérée. Celle de v2 (ouverture pub santé AI Mode) est dans la famille aimée (bascule de marché publicitaire). Sur une journée à deux éditions, faire diverger les piliers a évité la saturation. À garder comme règle implicite ?
+
+## Audit Agentic Design Patterns (2026-06-07) — propositions hors run
+
+> Source : audit du livre *Agentic Design Patterns* (A. Gulli) + repo `atlas-agents`, demandé par Tim. Écrit par Claude hors run, pas par l'agent 10. Trois patterns évalués (Evaluation, Exception Handling, Resource-Aware) ; seul le premier a été implémenté (additif, non cassant), les deux autres sont proposés ici car ils touchent le prompt figé.
+
+- **DÉJÀ FAIT (non cassant, additif) — `eval_health.py`.** Nouvel outil à la racine `agent-synthetic/`, LECTURE SEULE sur `ledgers/`, écrit uniquement dans `derived/eval_health.{json,md}` (vues régénérables, validées par `validate.sh`). Détecte la dérive que `calibration.md` ne voit pas : tendance `note_globale`, confiance moyenne des claims, prédictions en retard, lignes JSONL cassées → statut OK/WATCH/ESCALATE. Premier passage : **WATCH** (confiance moyenne des claims récents 0,653 < seuil 0,70). Limite connue : `note_globale` n'est loggé que sur 3 runs/14 (le reste vit dans `calibration.md` en markdown) — à terme, logguer `note_globale` systématiquement dans `runs.jsonl` rendrait la dérive bien plus fiable. Ne touche ni au skill ni aux ledgers.
+
+- **DIFF SKILL PROPOSÉ (ch.12 Exception Handling) — câbler l'escalade.** À la clôture du run (ou agent 7), lancer `./eval_health.py` ; si `status == ESCALATE`, le draft passe en review humaine obligatoire (mention en tête du draft + entrée dans la section « Urgent » ci-dessus), pas d'auto-commit tant que non levé. Seuils dans `eval_health.py`. Bénéfice : le système te remet dans la boucle exactement quand la qualité décroche, au lieu de continuer à produire. À valider — je ne touche pas au prompt sans accord.
+
+- **DIFF SKILL PROPOSÉ (ch.16 Resource-Aware) — router de modèle.** Quand l'agent 1 (veille) et l'agent 4 (fact-check) parallélisent via sous-agents Task, router les sous-tâches de commodité (scan exploit, dédup contre `said_index`, formatage) sur **Haiku**, et garder **Opus** pour le verdict du fact-check (agent 4) et la calibration (agent 9). Le classifieur de routing lui-même tourne sur Haiku. N'affecte pas le modèle de la session principale ; gain de coût sans perte sur le jugement. Pattern d'implémentation pillable : `atlas-agents/ch07_model_portability/online/model_router.py` (fallback + circuit breaker, ~130 lignes). À valider.
+
+- **DIFF SKILL PROPOSÉ (ch.19 Evaluation) — logger `note_globale` en numérique dans `runs.jsonl`.** Aujourd'hui la note vit surtout dans `calibration.md` (markdown) ; `eval_health.py` ne la lit que sur 3 runs/14, donc la détection de dérive est partielle. Ajouter à l'agent 9 : écrire `note_globale` (float) dans la ligne `runs.jsonl` du run, systématiquement. Une ligne de plus, et la dérive devient fiable. Couplé : `eval_health.py` v2 ajoute déjà un rapport de complétude de schéma (advisory) — il a détecté 12 claims et 2 prédictions sans champ `claim` propre, à vérifier (lignes de calibration/meta ?). À valider.
+
+- **NOMMAGE (consigne Tim).** La future couche « le système apprend sur Tim et son travail » s'appelle **`syntheticmemory`**. Ne jamais l'appeler « tim brain » ni « second cerveau ». La brique d'implémentation candidate : `atlas-agents/ch11_memory/memory_agent.py` (extraction auto de mémoires par un petit modèle, séparant préférence/fait) — garder la logique, brancher sur les JSONL, jeter ChromaDB.

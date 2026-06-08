@@ -1,18 +1,19 @@
-# Playbook commercial — Accompagnement SEO async (Organikk)
+# Playbook commercial — Accompagnement SEO async ([[entities/organikk-co]])
 
 > Process commercial complet, piloté par la prospection LinkedIn. Objectif quotidien : ajouter 20 à 50 SEO / consultants par jour, les faire entrer dans un funnel 100% asynchrone, closing sans aucun call.
 > Voix Tim partout dans les messages : tutoiement, direct, anti-bullshit, exemples concrets, zéro tiret cadratin, zéro IA writing.
 > Décidé le 2026-06-06. Raccord : [[reference_discours_commercial]] (variante call, fallback), format pré-call dans `raw/organikk/pré-call/`.
+> Doctrine de vente posée dans [[syntheses/vendre-seo-ia-2026]] ; les objections et leurs réponses dans [[moc/moc-vente-objections]].
 
 ---
 
 ## 0. L'offre
 
-**Un accompagnement système SEO 100% asynchrone.** Dérivé du bootcamp, mais sans aucun call collectif. Le membre a accès à tout (les workflows, les skills, la méthode), et on échange via Loom + WhatsApp. Pas de call, pas d'agenda à caler, il avance à son rythme.
+**Un accompagnement système SEO 100% asynchrone.** Dérivé du [[entities/bootcamp-seo-ia]], mais sans aucun call collectif. Le membre a accès à tout (les workflows, les skills, la méthode), et on échange via Loom + WhatsApp. Pas de call, pas d'agenda à caler, il avance à son rythme.
 
-Ce qu'on vend vraiment : la méthode pour bâtir son propre système SEO augmenté par l'IA (les 4 workflows : Mots-clés, Contenu, Production, Technique), au lieu de tester au hasard des workflows qui répondent n'importe quoi. 6 ans de terrain posés dans un système qu'il garde.
+Ce qu'on vend vraiment : la méthode pour bâtir son propre système SEO augmenté par l'IA (les 4 workflows : Mots-clés, Contenu, Production, Technique, soit la [[concepts/methode-organikk-4-piliers]]), au lieu de tester au hasard des workflows qui répondent n'importe quoi. 6 ans de terrain posés dans un système qu'il garde.
 
-Pour qui : un SEO ou consultant qui sent que l'IA va exécuter 80% du travail et qui veut être dans les 20% qui comptent (vision, décisions, data propriétaire), pas se faire remplacer.
+Pour qui : un SEO ou consultant qui sent que l'IA va exécuter 80% du travail et qui veut être dans les 20% qui comptent (vision, décisions, [[concepts/data-proprietaire]]), pas se faire remplacer.
 
 Prix / format précis : **[À DÉFINIR avec Tim]** (ticket, durée d'accès, ce qui est inclus). Je ne l'invente pas.
 
