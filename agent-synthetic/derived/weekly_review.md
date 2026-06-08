@@ -90,3 +90,19 @@ Aucun appliqué. Piste récurrente : garde-fou « vérifier la date de la source
 **Sources** : passages exploit à arbitrer — ahrefs, abondance, getpassionfruit, digitalapplied, lilyraynyc, emarketer, martech, google-cloud-blog, openai-blog, 9to5google (toutes à plusieurs hits ou à forte autorité). Directive Sistrix/Mozcast toujours non tenue.
 
 **Prédictions à échéance proche** : P-2026-06-01-1 (profil des perdants core update, 2026-06-30).
+
+## Mise à jour 2026-06-08-v2 (deuxième édition du jour)
+
+**Piliers d'info du jour de la semaine élargie** : Actualité (0601 matin) → agentique (0601-v2) → Product-Led (0601-v3) → GEO (0602 matin) → agentique (0602-v2) → GEO (0603) → agentique (0606 Web Bot Auth) → Actualité SEO (0606-v2 santé AI Mode) → Product-Led SEO (0606-v3 UI générative) → GEO (0607 Preferred + Highly Cited) → Recherche agentique (0607-v2 Walmart Sparky) → Actualité SEO (0608 CNN-Perplexity) → **Product-Led SEO (0608-v2 Averi 12 mois GSC)**. Treize éditions sur huit jours. Distribution équilibrée : Actualité 3, agentique 5, GEO 3, Product-Led 3. Pas de sur-représentation Google.
+
+**Fait marquant 0608-v2** : étude Averi publiée le 8 juin 2026 sur 12 mois de Google Search Console d'un SaaS B2B (711 pages, 12 638 816 impressions, 30 254 clics). 97,7 % des pages sous 1 % de CTR. Deux pages nominalement identifiées (« AirOps alternatives », « /customers ») relèvent du Product-Led au sens marketing large, pas du Product-Led strict de la doctrine de Tim (page-fonctionnalité interactive). Lecture doctrinale : le filtre 80 % du test de substitution LLM reçoit un appui empirique indirect, mais l'étude ne mesure pas explicitement de pages-fonctionnalité au sens strict. Distinction à formaliser dans la fiche [[concepts/product-led-seo]] en revue hebdo.
+
+**Audience 11 juin Amazon-Perplexity** : confirmée au 9e Circuit à Seattle. Amici déposés 29 avril (News/Media Alliance + Digital Content Next 259M visiteurs uniques, en soutien d'Amazon) et ACLU/Mozilla (en soutien de Perplexity, Premier Amendement). Plaidoirie sans décision attendue ce jour-là. À surveiller pour brève d'édition post-11-juin.
+
+**Core update mai** : motif consolidé partiellement par Aleyda Solis sur SISTRIX (3 juin) et DigitalApplied sur Wiredboard cross-tool. P-2026-06-06-v2-2 passée à `resolved-partial`. Pour résolution complète : 3e source indépendante hors SISTRIX/Wiredboard après le 9 juin (Semrush Sensor direct, Mozcast direct, AccuRanker bilan dédié, Wincher). Échéance P-2026-06-01-1 à 22 jours.
+
+**Sources** : passages exploit à arbitrer (mis à jour) — averi (étude data primaire 8 juin), aleydasolis.com (analyse SISTRIX), ppc.land (couverture juridique IA), 9to5google, productledseo.com (pilier Product-Led SEO de référence). Directive Sistrix tenue depuis 0606-v2. Directive Semrush Sensor/Mozcast/Wincher/AccuRanker toujours non tenue (8 répétitions).
+
+**Prédictions à échéance proche** : P-2026-06-01-1 (profil des perdants core update, 2026-06-30, à 22 jours), P-2026-05-30-1 (Expert Advice AIO, 2026-07-15, à 37 jours), P-2026-06-01-v2-2 (appel Amazon-Perplexity non tranché au fond, 2026-09-30, audience 11 juin).
+
+**Prédictions nouvelles ajoutées** : P-2026-06-08-v2-1 (différenciation empirique pages-fonctionnalité PLS strict vs pages-marketing produit, 2026-12-31). Test concret de la doctrine Product-Led SEO.

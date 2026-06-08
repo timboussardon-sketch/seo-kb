@@ -20,7 +20,7 @@
     "theseocommunity": 1.04,
     "getpassionfruit": 1.16,
     "ahrefs": 1.08,
-    "averi": 1.08,
+    "averi": 1.12,
     "tryprofound": 1.04,
     "abondance": 1.04,
     "digitalapplied": 1.16,
@@ -46,7 +46,7 @@
     "retail-systems": 1.04,
     "ietf-datatracker": 1.09,
     "cloudflare-blog": 1.09,
-    "variety": 1.04,
+    "variety": 1.13,
     "apptopia": 1.04,
     "sistrix": 1.13,
     "piunikaweb": 1.04,
@@ -79,10 +79,14 @@
     "stripe-blog": 1.09,
     "cnbc": 1.09,
     "retaildive": 1.04,
-    "variety": 1.13,
     "npr": 1.09,
     "aljazeera": 1.09,
     "thewrap": 1.04,
-    "aleydasolis.com": 1.04
+    "aleydasolis.com": 1.04,
+    "productledseo.com": 1.04,
+    "semrush-newsroom": 1.04,
+    "justia-dockets": 1.04,
+    "newsmediaalliance": 1.04,
+    "aclu": 1.04
   }
 }
