@@ -745,3 +745,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - AGENTS.md §5.1 étendu: proposition, methode, post
 - index.md + log.md typés register; orphelines raccrochées au catalogue
 - raw bootcamp4 backfillé; 2 canvas vides supprimés; ./kb rebuild
+
+## [2026-06-08] backlog | sweep — 110 en backlog (P1:44 P2:29 P3:37) + 21 drive-accompagnement parké C-006
+- aucun ingest depuis le sweep 2026-05-18 → +70 fichiers (bootcamp4/5, terrain commercial Organikk, Fusionn, Golfiller, batch 13 posts LinkedIn)
+- sorti du backlog: raw/acquisition/modele-roadmap-premier-call.md (supprimé de raw/, vérifié git)
+- prochain lot proposé: keywords-cleaned + keywords-classified (oldest P1, data mots-clés), raw/organikk/pré-call/proximit-propale.md (+ proximit-resume-call-client) (moat commercial le plus frais)
+- à surveiller: raw/etudes-seo/etude-ctr-ai-overviews-gsc.md (étude externe valeur élevée, P3 mais à ingérer comme source)
+- nouveaux skips: aucun (bloc docs skills/guides bootcamp4 = candidat skip groupé, à trancher par Tim)
