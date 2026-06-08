@@ -4,7 +4,8 @@ slug: pre-call-pangaea-sports
 title: "Pré-call — Pangaea Sports (pangaea-sports.com)"
 prospect: Pangaea Sports
 date: 2026-06-08
-statut: prêt pour le call
+statut: call fait (2026-06-08) — à envoyer résumé + roadmap + audit
+lien_call: "[[pangaea-sports-call]]"
 tags: [acquisition, pre-call, pseo, pangaea-sports, voyage-sportif, hospitalite]
 ---
 
@@ -12,7 +13,13 @@ tags: [acquisition, pre-call, pseo, pangaea-sports, voyage-sportif, hospitalite]
 
 ## La strat en une ligne
 
-Trois mouvements : **(1) viser le B2B** (hospitalité et séminaires sportifs d'entreprise, la marge, presque pas référencée) ; **(2) jouer les sports de niche** (golf, F1, rugby, NASCAR : décisionnel, données propriétaires, anti AI Overview) plutôt que le foot le plus concurrentiel ; **(3) une page par événement** (Roland-Garros, GP F1, 6 Nations, opens de golf, Wimbledon, NBA) déclinée année après année et croisée B2C / B2B.
+Trois mouvements : **
+
+(1) viser le B2B** (hospitalité et séminaires sportifs d'entreprise, la marge, presque pas référencée) ;
+
+ **(2) jouer les sports de niche** (golf, F1, rugby, NASCAR : décisionnel, données propriétaires, anti AI Overview) plutôt que le foot le plus concurrentiel ; **
+ 
+ (3) une page par événement** (Roland-Garros, GP F1, 6 Nations, opens de golf, Wimbledon, NBA) déclinée année après année et croisée B2C / B2B.
 
 ---
 
