@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-06-07",
+  "updated": "2026-06-08",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -19,11 +19,11 @@
     "similarweb-geo": 1.08,
     "theseocommunity": 1.04,
     "getpassionfruit": 1.16,
-    "ahrefs": 1.04,
+    "ahrefs": 1.08,
     "averi": 1.08,
     "tryprofound": 1.04,
     "abondance": 1.04,
-    "digitalapplied": 1.12,
+    "digitalapplied": 1.16,
     "cmswire": 1.04,
     "searchlab": 1.04,
     "emarketer": 1.12,
@@ -41,7 +41,7 @@
     "digitalcommerce360": 1.08,
     "mediapost": 1.04,
     "9to5google": 1.08,
-    "ppc.land": 1.08,
+    "ppc.land": 1.12,
     "paypal-newsroom": 1.09,
     "retail-systems": 1.04,
     "ietf-datatracker": 1.09,
@@ -78,6 +78,11 @@
     "businesswire": 1.04,
     "stripe-blog": 1.09,
     "cnbc": 1.09,
-    "retaildive": 1.04
+    "retaildive": 1.04,
+    "variety": 1.13,
+    "npr": 1.09,
+    "aljazeera": 1.09,
+    "thewrap": 1.04,
+    "aleydasolis.com": 1.04
   }
 }
