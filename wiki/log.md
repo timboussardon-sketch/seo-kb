@@ -760,3 +760,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - playbook reproductible créé: [[methodes/onboarding-client-systeme-ia]]
 - fix prod: questionnaire espace-leexi basculé Netlify Forms (POST 404) → Supabase client_questionnaire + admin.html
 - évolution de [[queries/transfert-vault-client]] (snapshot figé → pack vivant)
+
+## [2026-06-09] client | Leexi — dossier data complet (brief + 4 analyses + GSC)
+- brief client canonique (suite IA souveraine, Leexi One sept 2026) ; audit thématique ; étude marché (deep-research 24 sources) ; étude RGPD/souveraineté ; analyse GSC + approfondie
+- finding majeur: SEO hors-marque leexi.ai -43% en 6 mois (marque +45%), cause = refonte cassée (migration sans 301/canonical + cannibalisation), souveraineté = 0 clic
+- tout dans le vault leexi-seo (journal: leexi-seo/Journal.md), data brute dans data/gsc/
