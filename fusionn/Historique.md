@@ -9,6 +9,21 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-09 · Agent Opportunités : restructure (charte business + gates de pertinence) — DÉPLOYÉ
+
+- Retour Tim : « pages à créer » absurdes (« manifestation seoul », « anssi certification cspn », « quality rater jobs work from home », « training seoul ») et cannibalisations de marque (« organikk.co », « timothée boussardon »). « Est-ce un vrai agent ? a-t-il un skill / un agent.md ? »
+- **Diagnostic** : `run-opportunity-scan` est bien un agent Gemini function-calling (6 outils) MAIS sans contexte business — il seedait sur les **impressions GSC brutes** (le site matche par accident « manifesto seoul » via `/manifeste`, « quality rater jobs » via la page rater, « seoul » contient « seo »), et le seul garde-fou était `check_covered` (déjà couvert ?), pas la pertinence. Pas d'AGENTS.md, prompt inline de 20 lignes.
+- **Restructure complète** (`index.ts`, ~250 lignes) :
+  - **Charte business auto-dérivée** par run (`buildCharter`) : home scrapée + requêtes à CLICS → summary, ICP, in_scope, exclude_terms, brand_terms. Zéro saisie user.
+  - **3 gates** : (1) seeding par les clics au lieu des impressions ; (2) charte injectée dans le system prompt du gap-hunter ; (3) double filet sortie = `relevanceGate` (LLM, fail-open) sur les gaps + `charterReject` (déterministe : marque en sous-chaîne + hors-sujet en mot entier) sur TOUT.
+  - **Cannibalisation** : vraie dispute seulement (2e page ≥30 % des impressions de la 1re + les 2 pages ≤ position 25). Marque écartée par la charte.
+  - **Réconciliation `persist`** : suppression des opportunités auto encore ouvertes (`new`/`seen`) non re-détectées → fini l'accumulation ; `dismissed`/`actioned` préservées. Nettoie le bruit existant au prochain scan.
+  - **Front** (`OpportunitiesView.tsx`) : la carte cannibalisation montre les pages en concurrence (chemin + position + impressions).
+  - **`AGENT.md`** créé dans le dossier de la fonction : contrat explicite (mission, charte, 3 gates, réconciliation, règles invariantes).
+- Edge function **déployée** (`supabase functions deploy run-opportunity-scan`, projet fwhfnzbtlddzfxbsejyf). Front commité/poussé (`4fda947`). Le bruit existant disparaît au prochain passage du cron `cron-opportunity-radar`.
+
+---
+
 ## 2026-06-09 · Onglet Opportunités : scope par propriété GSC + DA Fusionn — DÉPLOYÉ
 
 - Retour Tim : l'onglet Opportunités mélangeait tous les sites dans les résultats, et avait une palette « IA » (violet + arc-en-ciel hors-tokens).
