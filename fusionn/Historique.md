@@ -9,7 +9,12 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
-## 2026-06-06 · 1 seule requête gratuite à vie, de partout + wording — DÉPLOYÉ (sauf 1 migration)
+## 2026-06-09 · « Bonjour <prénom> » affiché une seule fois (entrées site / mot-clé / contexte) — DÉPLOYÉ
+
+- Retour Tim : le « Bonjour Tim » se répétait à chaque changement d'entrée (Mon site / Un mot-clé / Par contexte), lourd.
+- Fix dans `Compte.tsx` : flag `heroTouched` (false à l'arrivée, true au 1er clic sur le sélecteur d'entrée) → `heroGreetingName` passé aux 3 panels seulement tant qu'on n'a pas touché le sélecteur. Le « Bonjour <prénom> » n'apparaît donc qu'une fois, à l'arrivée sur l'onglet par défaut « Mon site ».
+- Les 3 hero panels (`SiteAuditPanel`, `KeywordHeroPanel`, `ContextHeroPanel`) affichent la **question seule** quand il n'y a pas de prénom : « Sur quoi allons-nous travailler ? » / « Quel mot-clé veut-on travailler ? » / « Partez de vos documents. » (plus de « Bonjour, » orphelin).
+- Type-check vert, vérifié en local (localhost). Le « Bonjour <prénom> ! » du chat conversationnel (post-lancement) n'est PAS touché, laissé tel quel.
 
 - **Demande Tim** : « 1 seul requête gratuit. De partout. Wording aussi. » Décisions cadrées : **chaque fonction plafonnée à 1** (pas un crédit unique partagé) et **à vie** (plus de reset mensuel/quotidien).
 - **Constat** : le « gratuit » était éclaté en 4+ quotas séparés (recherches 3 total, Hn 5/mois, sémantique 5/mois, geo 5/mois, chat 5/jour), chacun avec sa constante front, sa fonction edge et parfois une fonction SQL.
