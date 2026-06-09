@@ -231,3 +231,25 @@ Ferme la boucle. Prend les paris échus (pending→J+30, resolved_30→J+90), gr
 
 ### Bloquant data (inchangé)
 La boucle est **idle tant qu'aucun pari n'existe**. Décision en attente : sur golfiller, maillage à la main → amorcer par `/api/bets/backfill` ; ou maillage par lenkrr → hook `/api/apply`. Sans ça, la routine tourne à vide tous les matins.
+
+## Boucle d'apprentissage — le RETOUR câblé (2026-06-09)
+
+Session committée (`5574fef` sur master) et edge **déployée**. Dernière pièce de la boucle fermée : les priors mesurés redescendent dans la décision.
+
+### Ce qui a été fait
+- **`lib/db/priors.ts`** (nouveau) : `loadPriors(siteId?)` lit `linking_priors` pour `LENKRR_USER_ID`. Garde-fou doctrine : un bucket n'est exposé que s'il a **≥ 2 paris résolus** (`n_hits + n_miss`, jamais un pari isolé = bruit GSC), tri par `win_rate` desc, plafonné à 24. Best-effort, `[]` si persistance off.
+- **`engine.ts`** : `const priors = await loadPriors()` juste avant `decidePlan`, passé dans ses args. Pas de `siteId` à ce stade (le site n'est persité qu'**après** l'analyse, dans `persistAnalysis`), donc priors au niveau compte (pilote mono-site golfiller). `loadPriors` accepte déjà un `siteId` pour scoper plus tard.
+- **`decide.ts`** : champ `priors?: LinkingPrior[]` ajouté aux args, transmis tel quel à l'edge (`body: JSON.stringify(args)`).
+- **`lenkrr-plan` (edge)** : reçoit `priors`, et **n'injecte le bloc dans le prompt QUE si non vide**. Format compact par bucket (`règle | intention | ancre | autorité`, n_résolus, win_rate, delta_position_moyen, delta_clics_moyen) + une consigne : signal empirique qui module la priorisation, la doctrine reste première, zéro chiffre inventé, pas d'extrapolation d'un bucket absent.
+
+### Sûreté
+Prompt **byte-identique** tant que la boucle n'a rien appris (0 prior aujourd'hui) : le `system` caché ne bouge pas, et le bloc priors est conditionnel. Zéro régression de décision. L'effet n'apparaît qu'à **J+30**, quand les premiers paris se résolvent. tsc + `next build` verts, edge déployée, smoke test (payload sans priors → validation `400` attendue) OK.
+
+### Schéma de la boucle — COMPLET
+- log pari (`/api/apply` + `/api/bets/backfill`) ✅
+- résolution GSC diff-in-diff (`lenkrr-resolve-bets`) ✅
+- apprentissage → `linking_priors` ✅
+- ledger + questions (routine) ✅
+- **RETOUR** : priors → décision Claude (`decide.ts` → edge `lenkrr-plan`) ✅ **(ce sprint)**
+
+La boucle est désormais fermée de bout en bout. Le seul reste, c'est l'amorçage : **tant qu'aucun pari n'est posé** (décision golfiller `/api/bets/backfill` vs hook `/api/apply`), `linking_priors` reste vide et le RETOUR ne fait rien. C'est le prochain blocage à lever pour que tout s'allume.
