@@ -5,7 +5,7 @@ title: "My Voice — Ton de voix Timothée Boussardon"
 aliases: []
 tags: []
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-06-09
 sources: 0
 confidence: medium
 status: draft
@@ -109,3 +109,37 @@ Remplacer toute formulation imagée par la description explicite du fait.
 - Interdit : "Google a posé les rails pour les agents IA." Attendu : "Google a déployé plusieurs briques techniques qui rendent les agents IA plus faciles à intégrer dans les produits et les workflows."
 - Interdit : "OpenAI a ouvert la voie." Attendu : "OpenAI a introduit des capacités ensuite reprises ou étendues par d'autres acteurs."
 N'interdit pas les exemples concrets et littéraux (cas client réel, chiffre, situation décrite telle quelle), qui restent au cœur du style.
+
+## Observations terrain (corpus incrémental)
+
+> Chaque nouveau call ou vidéo de Tim s'ajoute ici : nouveaux marqueurs de voix, expressions, vocabulaire, manière d'aborder un sujet. Append-only, daté. On n'écrase pas les entrées précédentes, on cumule. Les patterns déjà cartographiés plus haut ne sont pas redits — seulement ce que la source ajoute ou nuance.
+
+### 2026-06-09 — Vidéo « J'ai fait confiance à l'IA… ça m'a presque coûté mon SEO » ([[video-erreur-ia-137-pages]])
+
+**Manière d'aborder un sujet (oral / vidéo pédago)**
+- **Aveu d'erreur en ouverture, sur lui-même.** Il ne se met pas en posture d'expert infaillible : « j'ai fait une grosse erreur », « je sais pas pourquoi je suis parti sur autant de pages », « j'aurais jamais dû faire ça », « je suis tombé dans ce piège-là ». La leçon passe par sa propre faute, pas par celle des autres. C'est un move de crédibilité, pas de faiblesse.
+- **Démonstration en live, co-construite avec le spectateur.** « comme ça je te montre ma réflexion », « on va le trouver ensemble », « j'ai je découvre hein » (il assume chercher en direct, sans script). Il pense à voix haute plutôt que de présenter une conclusion finie.
+- **Répétition assumée comme outil pédago.** « Je répète, je vais pas le répéter tout le temps mais voilà », « je le répète mais ». Il martèle la même thèse (autorité thématique, 1-5 mots-clés) sous plusieurs angles dans la même vidéo — la spirale convergente, version orale.
+- **Réassurance face à la technique.** « Ça fait un petit peu peur comme ça sur un terminal mais c'est extrêmement simple à comprendre hein. » Désamorce l'intimidation avant qu'elle bloque (cohérent avec « je veux pas vous noyer »).
+
+**Phrases / maximes nouvelles (forward-looking, signature)**
+- « Demain les boîtes ne payeront plus jamais pour du TJM. Elles payeront pour votre système. »
+- « Est-ce que tu travailles une offre TJM ou est-ce que tu travailles un système ? Moi je mise tout sur le système. »
+- « Tout ce que je fais doit nourrir mon système. » (data propriétaire = carburant, mais dit sans métaphore)
+- « Créer du contenu pour créer du contenu, ça ne sert à rien. »
+- « On ne construit plus un cluster autour d'un seul mot clé. »
+- « Le volume ne m'intéresse pas. On va regarder s'il y a de la demande. »
+- « Plus vous êtes précis sur le besoin du client, plus il fera remonter votre site. » (niche > volume)
+
+**Vocabulaire / tics récurrents confirmés ou nouveaux**
+- Closing vidéo signature : **« Voilà. Donc j'espère que cette vidéo a été utile. (…) God bless. »** — le « God bless » en sortie est un marqueur perso à connaître.
+- « **Voilà.** » comme ponctuation de fin de raisonnement (omniprésent, sert de point final oral).
+- « **OK ?** » en fin de phrase comme check de compréhension adressé au spectateur.
+- « **Globalement** » / « **en fait** » / « **du coup** » / « **hein** » / « **Bref** » : tics oraux de liaison (à raboter fortement à l'écrit).
+- « **Le mot clé me fait pas rêver** » — façon à lui de disqualifier une piste : jugement à l'instinct, formulé simplement.
+- Anglicismes métier intégrés naturellement : *funnel*, *skills*, *workflow*, *cluster*, *score business*, *SAS/tech/B2B*.
+
+**Méthode de travail visible (utile pour reproduire son raisonnement)**
+- Choix de mot-clé à l'instinct d'abord, puis confirmation : Keyword Planner (data Google fraîche) → outil sans géoloc (qui se positionne déjà ?) → Google Trends (la demande, pas le volume) → ChatGPT (s'il propose des sites = il y a demande) → Fusionn/Claude skills (pré-analyse clusterisée).
+- Critère de sélection : **niche défendable + prospect qualifié**, jamais le head term générique (« agence SEO » / « consultant SEO » = entre pairs, pas de clients).
+- Toujours enregistrer les calls → nourrir le système (pré-call + post-call générés).
