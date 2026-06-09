@@ -117,6 +117,8 @@
       "answer-engine-optimization"
     ],
     "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
@@ -222,8 +224,12 @@
     ],
     "backrefs": [
       "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/memory/calibration.md",
       "agent-synthetic/memory/directives.md",
+      "agent-synthetic/memory/questions.md",
+      "agent-synthetic/revuedepressIA/2026-06-08-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse-v2.md",
@@ -364,6 +370,7 @@
       "passage-ancre"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "wiki/concepts/agentic-search.md",
@@ -455,6 +462,7 @@
       "wiki/index.md",
       "wiki/ingest-backlog.md",
       "wiki/log.md",
+      "wiki/methodes/onboarding-client-systeme-ia.md",
       "wiki/moc/moc-redaction.md",
       "wiki/queries/pseo-2026-05-16-landing-lead-gen-organikk.md",
       "wiki/sources/2026-03-31-tim-profil-et-regles.md",
@@ -1086,6 +1094,7 @@
       ".agents/skills/hypotheses-validation/SKILL.md",
       ".agents/skills/resurgence-espacee/SKILL.md",
       "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/memory/questions.md",
       "agent-synthetic/notes/appliquer-la-mecanique-a-la-prod-seo.md",
       "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
@@ -1136,6 +1145,7 @@
       "raw/journal/2026-05-22.md",
       "raw/journal/2026-05-23.md",
       "raw/journal/2026-06-01.md",
+      "raw/journal/2026-06-09.md",
       "raw/notes/offre-bootcamp-seo-ia.md",
       "raw/notes/skill-kw-research-workflow.md",
       "raw/organikk/_MODELE-discours-commercial.md",
@@ -1193,6 +1203,7 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/methodes/cadrage-boucle-edition-algorithme.md",
+      "wiki/methodes/onboarding-client-systeme-ia.md",
       "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
@@ -2748,6 +2759,7 @@
       "raw/journal/2026-05-14.md",
       "raw/journal/2026-05-15.md",
       "raw/journal/2026-05-19.md",
+      "raw/journal/2026-06-09.md",
       "raw/notes/skill-kw-research-workflow.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "raw/transcripts/video-erreur-ia-137-pages.md",
@@ -2761,6 +2773,7 @@
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/methodes/onboarding-client-systeme-ia.md",
       "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
@@ -2815,6 +2828,7 @@
       "agent-synthetic/memory/calibration.md",
       "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-citations-multimoteurs.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse-v2.md",
@@ -3354,6 +3368,7 @@
       "passage-indexing"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu-light.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
@@ -3613,6 +3628,9 @@
     ],
     "backrefs": [
       "agent-synthetic/derived/weekly_review.md",
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/questions.md",
+      "agent-synthetic/revuedepressIA/2026-06-08-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
@@ -4754,6 +4772,9 @@
       "substitution-test"
     ],
     "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/questions.md",
+      "agent-synthetic/revuedepressIA/2026-06-08-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",

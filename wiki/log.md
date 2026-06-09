@@ -752,3 +752,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - prochain lot proposé: keywords-cleaned + keywords-classified (oldest P1, data mots-clés), raw/organikk/pré-call/proximit-propale.md (+ proximit-resume-call-client) (moat commercial le plus frais)
 - à surveiller: raw/etudes-seo/etude-ctr-ai-overviews-gsc.md (étude externe valeur élevée, P3 mais à ingérer comme source)
 - nouveaux skips: aucun (bloc docs skills/guides bootcamp4 = candidat skip groupé, à trancher par Tim)
+
+## [2026-06-09] methode | Leexi = 1er client système IA complet (repo dédié + pack vivant)
+- dossier client: raw/organikk/clients/leexi/ (fiche maître + transcript rapatrié)
+- architecture 3 repos: seo-kb privé / leexi-seo transférable / organikk-seo-pack doctrine vivante (submodule)
+- 8 skills portés génériciss + synchronisés (.claude/skills symlink), voix sur $VOIX_DIR
+- playbook reproductible créé: [[methodes/onboarding-client-systeme-ia]]
+- fix prod: questionnaire espace-leexi basculé Netlify Forms (POST 404) → Supabase client_questionnaire + admin.html
+- évolution de [[queries/transfert-vault-client]] (snapshot figé → pack vivant)

@@ -50,7 +50,7 @@ Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non
 - **Terrain commercial Organikk** (2026-06-04 → 06-07, 16 fichiers) : `pré-call/` (9 — calls + résumés + propales réels : centrale-directe, proximit/Damien, propales 1-1), `clients/fgformation-*` (5 — livrables client : mots-clés décisionnels, modèles pSEO, personas), `_MODELE-discours-commercial`, `strategie-commerciale-fusionn-2026-05-23` — le moat commercial le plus frais, alimente [[syntheses/workflow-complet-consultant-seo-ia]] et le discours d'acquisition.
 - **Fusionn** : `etude utilisation fusionn.md` (2026-06-04) — data terrain produit.
 - **Golfiller** : `golfiller-strat.md` (2026-06-02) — stratégie SEO client, cas terrain.
-- `raw/transcripts/call-leexi-ai.md` (2026-05-21) — transcript terrain non ingéré.
+- `raw/organikk/clients/leexi/leexi-call-2026-05-21.md` (2026-05-21) — transcript terrain non ingéré (dossier client `clients/leexi/`, fiche maître `leexi.md`).
 
 ## Priorité 2 — Contenu publié non bouclé (boucle preuves) — 29
 
