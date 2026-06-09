@@ -9,6 +9,16 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-09 · Onglet Opportunités : scope par propriété GSC + DA Fusionn — DÉPLOYÉ
+
+- Retour Tim : l'onglet Opportunités mélangeait tous les sites dans les résultats, et avait une palette « IA » (violet + arc-en-ciel hors-tokens).
+- **Bug du mélange** (`OpportunitiesView.tsx`) : la requête chargeait TOUTES les opportunités de toutes les watchlists (`limit 800`, aucun filtre par site), puis défaultait sur « le site avec le plus de lignes ». Avec les 20+ propriétés GSC de Tim → mélange + troncature.
+- **Fix** : 2 effets séparés. (1) charge les watchlists `type=account` une fois et défaute sur la propriété GSC active lue dans `localStorage['fusionn_gsc_property']` (helper `getSelectedGscProperty`, match via `domainOf`). (2) charge opportunités + runs **scopés** `.eq('watchlist_id', siteId)` (limit 400/10). Une seule propriété à la fois, plus de fuite. Sélecteur de site reste pour switcher (override local, non persisté — choix Tim).
+- **DA** : palette `ACTIONS`/`INTENT` passée des hex hors-tokens (violet `#7c3aed`, `#1f9d63`, `#2559DD`, `#0891b2`...) aux tokens `--ws-warning/success/danger/brand` + gris neutres. `creer_page` = rouge brand (action héro). Pastille « Actif », icône run, badge intention : tokens. Plus aucun hex hors-token.
+- Type-check vert sur le fichier (erreurs TS restantes = préexistantes ailleurs), vérifié en local (localhost:5175/compte). Commit `ee710e2`.
+
+---
+
 ## 2026-06-09 · « Bonjour <prénom> » affiché une seule fois (entrées site / mot-clé / contexte) — DÉPLOYÉ
 
 - Retour Tim : le « Bonjour Tim » se répétait à chaque changement d'entrée (Mon site / Un mot-clé / Par contexte), lourd.
