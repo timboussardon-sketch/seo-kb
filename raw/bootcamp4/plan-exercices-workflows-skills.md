@@ -31,7 +31,7 @@ Repris de la fiche Cowork (étapes numérotées, blocs de code, vérification in
 
 ```
 # Exercice — [Skill ou Workflow] : [titre 5 mots max]
-Niveau · Pré-requis (skill installé, export GSC fourni...)
+Pré-requis (skill installé, export GSC fourni...)
 
 ## Le cas
 2-3 phrases : la situation, les données fournies (du cas fil rouge).

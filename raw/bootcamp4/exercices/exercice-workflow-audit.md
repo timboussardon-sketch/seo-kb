@@ -12,7 +12,7 @@ related:
 
 # Exercice — Workflow audit : auditer un site
 
-**Niveau** : intermédiaire · **Pré-requis** : skills `indexation-check`, `seo-quick-win`, `seo-cannibalisation`, `maillage-systeme`, `maillage-interne-gsc`, `audit-engine-pipeline` installés. Un accès GSC + le sitemap.xml de ton client. (`seo-core-web-vitals` en plus si tu es sur terminal.)
+**Pré-requis** : skills `indexation-check`, `seo-quick-win`, `seo-cannibalisation`, `maillage-systeme`, `maillage-interne-gsc`, `audit-engine-pipeline` installés. Un accès GSC + le sitemap.xml de ton client. (`seo-core-web-vitals` en plus si tu es sur terminal.)
 
 ## Le cas
 

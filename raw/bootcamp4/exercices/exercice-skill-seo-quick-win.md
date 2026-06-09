@@ -10,7 +10,7 @@ created: 2026-06-09
 
 # Exercice — seo-quick-win : tes 10 gains rapides
 
-**Niveau** : débutant · **Pré-requis** : le skill `seo-quick-win` installé, un export GSC de ton client.
+**Pré-requis** : le skill `seo-quick-win` installé, un export GSC de ton client.
 
 ## Le cas
 

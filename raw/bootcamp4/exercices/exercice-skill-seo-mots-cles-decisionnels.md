@@ -10,7 +10,7 @@ created: 2026-06-09
 
 # Exercice — seo-mots-cles-decisionnels : garder ceux qui convertissent
 
-**Niveau** : débutant · **Pré-requis** : le skill `seo-mots-cles-decisionnels` installé. Une liste de mots-clés (ou une thématique) et le point de conversion de ton client (démo, devis, achat, contact).
+**Pré-requis** : le skill `seo-mots-cles-decisionnels` installé. Une liste de mots-clés (ou une thématique) et le point de conversion de ton client (démo, devis, achat, contact).
 
 ## Le cas
 

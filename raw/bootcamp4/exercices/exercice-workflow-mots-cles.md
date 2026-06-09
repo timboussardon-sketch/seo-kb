@@ -13,11 +13,11 @@ related:
 
 # Exercice — Workflow mots-clés : trouver tes mots-clés avec le contexte
 
-**Niveau** : intermédiaire · **Pré-requis** : skills `seo-recherche-mots-cles`, `seo-clustering-mots-cles`, `seo-mots-cles-decisionnels` installés. Un accès Google Keyword Planner + Search Console. 2 ou 3 calls clients (ou des verbatims) de ton client.
+**Pré-requis** : skills `seo-recherche-mots-cles`, `seo-clustering-mots-cles`, `seo-mots-cles-decisionnels` installés. Un accès Google Keyword Planner + Search Console. 2 ou 3 calls clients (ou des verbatims) de ton client.
 
 ## Le cas
 
-Le réflexe de débutant, c'est de taper un mot dans Keyword Planner et de prendre les gros volumes. C'est exactement ce qu'on ne fait pas. Un bon mot-clé ne se trouve pas dans un outil, il se construit à partir du **contexte** de ton client : ce que ses clients disent vraiment, les objections en call, ce qui se cherche sur Reddit. L'outil donne le volume, le contexte donne l'angle.
+Le réflexe naturel, c'est de taper un mot dans Keyword Planner et de prendre les gros volumes. C'est exactement ce qu'on ne fait pas. Un bon mot-clé ne se trouve pas dans un outil, il se construit à partir du **contexte** de ton client : ce que ses clients disent vraiment, les objections en call, ce qui se cherche sur Reddit. L'outil donne le volume, le contexte donne l'angle.
 
 Cet exercice te fait passer d'une thématique à une liste de mots-clés qualifiés, en injectant du contexte à chaque étape.
 

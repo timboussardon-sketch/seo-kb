@@ -10,7 +10,7 @@ created: 2026-06-09
 
 # Exercice — seo-clustering-mots-cles : transformer une liste en pages
 
-**Niveau** : débutant · **Pré-requis** : le skill `seo-clustering-mots-cles` installé. Une liste brute de mots-clés (la sortie de `seo-recherche-mots-cles`, ou un export Keyword Planner).
+**Pré-requis** : le skill `seo-clustering-mots-cles` installé. Une liste brute de mots-clés (la sortie de `seo-recherche-mots-cles`, ou un export Keyword Planner).
 
 ## Le cas
 

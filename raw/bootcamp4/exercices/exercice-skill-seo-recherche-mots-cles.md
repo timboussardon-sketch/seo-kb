@@ -10,7 +10,7 @@ created: 2026-06-09
 
 # Exercice — seo-recherche-mots-cles : d'une thématique à une liste qualifiée
 
-**Niveau** : débutant · **Pré-requis** : le skill `seo-recherche-mots-cles` installé. Une thématique de ton client et, si tu en as, 1 ou 2 verbatims (call, avis, mail).
+**Pré-requis** : le skill `seo-recherche-mots-cles` installé. Une thématique de ton client et, si tu en as, 1 ou 2 verbatims (call, avis, mail).
 
 ## Le cas
 
