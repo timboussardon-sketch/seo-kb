@@ -1,32 +1,31 @@
 ---
-title: "Exercice capstone — Workflow 3 : auditer un site"
+title: "Exercice — Workflow audit : auditer un site"
 bootcamp: 4
-type: exercice-capstone
+type: exercice-workflow
 session: 3
 workflow: audit-8-phases
 cowork: partiel
-duree: "3h30 à 5h"
 created: 2026-06-09
 related:
   - "[[workflow-audit-bootcamp4]]"
 ---
 
-# Exercice capstone — Workflow 3 : auditer un site
+# Exercice — Workflow audit : auditer un site
 
-**Niveau** : intermédiaire · **Durée** : 3h30 à 5h (étalable) · **Pré-requis** : skills `indexation-check`, `seo-quick-win`, `seo-cannibalisation`, `maillage-systeme`, `maillage-interne-gsc`, `audit-engine-pipeline` installés. Un accès GSC + le sitemap.xml de ton client. (`seo-core-web-vitals` en plus si tu es sur terminal.)
+**Niveau** : intermédiaire · **Pré-requis** : skills `indexation-check`, `seo-quick-win`, `seo-cannibalisation`, `maillage-systeme`, `maillage-interne-gsc`, `audit-engine-pipeline` installés. Un accès GSC + le sitemap.xml de ton client. (`seo-core-web-vitals` en plus si tu es sur terminal.)
 
 ## Le cas
 
-Ton client te demande « pourquoi mon SEO stagne ? ». Tu vas répondre avec un audit complet, 100% data Google, sans aucun outil payant. Le but n'est pas un PDF de 40 pages : c'est un plan d'action priorisé en 3 horizons que le client peut suivre.
+Ton client te demande « pourquoi mon SEO stagne ? ». Tu vas répondre avec un audit complet, 100% data Google, sans aucun outil payant. Le but n'est pas un PDF de 40 pages : c'est un plan d'action priorisé en 3 horizons que le client peut suivre. Et tu le fais en faisant tourner le workflow, pas à la main.
 
 ## Ce que tu dois faire
 
 **1. Réunis tes 3 entrées.**
-- Export GSC (Requêtes + Pages, 6 mois, CSV).
+- Export GSC (Requêtes + Pages, CSV).
 - L'URL du `sitemap.xml` de ton client.
 - L'adresse du site (pour le crawl des liens et la structure Hn).
 
-**2. Lance l'orchestrateur.**
+**2. Lance l'orchestrateur du workflow.**
 Dans Claude, dépose tes fichiers et colle :
 
 ```text
@@ -65,10 +64,11 @@ Horizon 3 — Mois 2-3 (croissance)
 
 ## Vérifier que tu as réussi
 
+- [ ] Tu as bien fait tourner le workflow (chaque phase a produit son livrable), tu n'as pas improvisé à la main.
 - [ ] Les anomalies critiques sont en tête, pas noyées en ligne 47.
 - [ ] Chaque reco quick win a un impact chiffré en clics (pas « améliorer le SEO »).
 - [ ] Le plan est en 3 horizons, priorisé par impact, pas une liste à plat.
-- [ ] Tu distingues « non indexée » et « non testable » (rate-limit Google), tu ne confonds pas les deux.
+- [ ] Tu distingues « non indexée » et « non testable » (rate-limit Google).
 - [ ] Le rapport tient en une synthèse lisible par un dirigeant, pas un dump technique.
 
 ## Le piège
@@ -81,4 +81,4 @@ L'orchestrateur enchaîne des skills spécialisés, chacun sur une dimension (in
 
 ## Version WhatsApp
 
-> Capstone audit : réunis ton export GSC (6 mois) + le sitemap.xml de ton client. Dans Claude : « lance audit-engine-pipeline, déroule les 8 phases en t'arrêtant après chacune ». Tu sors un rapport en 3 horizons (quick wins → fondations → croissance), anomalies critiques en tête. Piège : prioriser, pas tout corriger d'un coup. Cowork sans terminal = phase Core Web Vitals sautée, prends un PageSpeed public à la place. 💪
+> Exo audit : réunis ton export GSC + le sitemap.xml de ton client. Dans Claude : « lance audit-engine-pipeline, déroule les 8 phases en t'arrêtant après chacune ». Tu sors un rapport en 3 horizons (quick wins → fondations → croissance), anomalies critiques en tête. Piège : prioriser, pas tout corriger d'un coup. Cowork sans terminal = phase Core Web Vitals sautée, prends un PageSpeed public à la place. 💪

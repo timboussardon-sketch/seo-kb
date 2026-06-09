@@ -5,13 +5,12 @@ type: exercice
 session: 3
 skill: seo-quick-win
 cowork: oui
-duree: 15 min
 created: 2026-06-09
 ---
 
 # Exercice — seo-quick-win : tes 10 gains rapides
 
-**Niveau** : débutant · **Durée** : ~15 min · **Pré-requis** : le skill `seo-quick-win` installé, un export GSC de ton client (3 à 6 mois).
+**Niveau** : débutant · **Pré-requis** : le skill `seo-quick-win` installé, un export GSC de ton client.
 
 ## Le cas
 

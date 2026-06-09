@@ -16,7 +16,14 @@ related:
 
 On a tout le matériel : 4 workflows (sessions 1 à 4), ~23 skills documentés, un dashboard React, et le gabarit pédagogique de [[passer-cowork-vers-terminal]]. Ce qui manque, ce sont des exercices que le participant fait lui-même, avec un cas réel et un résultat attendu visible (le « screen »).
 
-Le plan : un gabarit d'exercice unique (dérivé de la fiche Cowork), un cas fil rouge partagé (mêmes données pour tous), 4 exercices « workflow » (capstones de session) + un micro-exercice par skill, et un pilote de 2 exercices à valider avant de produire le reste.
+Le plan : un gabarit d'exercice unique (dérivé de la fiche Cowork), un exercice par workflow et un exercice par skill, chacun faisant **utiliser** réellement le skill ou le workflow (lancer le skill, dérouler le workflow), et un pilote à valider avant de produire le reste.
+
+## Décisions actées (2026-06-09)
+
+- **Screens simulés** : sessions terminal et outputs de skills montrés en bloc de code, pas de vraies captures (je les génère seul).
+- **Chacun sur son client** : pas de cas partagé. Le « screen » montre un exemple illustratif, le participant applique sur ses propres données.
+- **Pas de capstone, pas de durées affichées** : un exercice par workflow et par skill, sans estimation de temps.
+- **But explicite** : chaque exercice fait tourner le skill ou le workflow, c'est l'objectif.
 
 ## 1. Le gabarit d'un exercice
 
@@ -24,7 +31,7 @@ Repris de la fiche Cowork (étapes numérotées, blocs de code, vérification in
 
 ```
 # Exercice — [Skill ou Workflow] : [titre 5 mots max]
-Niveau · Durée ~X min · Pré-requis (skill installé, export GSC fourni...)
+Niveau · Pré-requis (skill installé, export GSC fourni...)
 
 ## Le cas
 2-3 phrases : la situation, les données fournies (du cas fil rouge).
@@ -60,26 +67,22 @@ La fiche Cowork de référence n'a aucune capture : elle marche au texte + blocs
 
 Ma reco : par défaut, **zéro vraie capture** (sessions simulées en bloc de code + outputs exemples), exactement comme la fiche Cowork qui marche très bien sans. On ajoute de vraies captures seulement là où l'interface est incontournable (ex : où cliquer dans GSC). À toi de confirmer.
 
-## 3. Le cas fil rouge (décision clé)
+## 3. Le « screen » sans cas partagé
 
-Pour que tous les participants travaillent sur la même base et puissent comparer leur résultat au corrigé, il faut un seul cas partagé : un site exemple avec son export GSC, son sitemap, quelques verbatims. Options :
-- Réutiliser/enrichir le `dataset-5-etapes.html` déjà dans le dashboard.
-- Créer un cas anonymisé dédié (un SaaS fictif crédible) avec data réaliste.
-
-Sans cas fil rouge, chaque participant part de son propre client et il n'y a pas de corrigé comparable. À cadrer.
+Décision actée : chaque participant travaille sur son propre client, pas de cas commun. Conséquence pour le gabarit : le bloc « Ce que tu dois obtenir » montre un exemple illustratif (site fictif) qui sert de standard d'auto-évaluation, et le participant exécute le skill ou le workflow sur ses propres données. Pas de corrigé identique pour tous, mais un résultat-cible visible.
 
 ## 4. Inventaire des exercices
 
-### 4 exercices « workflow » (capstones de session, 30-45 min)
+### Un exercice par workflow (le participant fait tourner le workflow de bout en bout)
 
 | # | Workflow | Ce que le participant produit |
 |---|---|---|
-| W1 | Du mot-clé au vecteur (S1) | Le Google Sheet 5 critères scoré, à partir de la thématique du cas |
+| W1 | Du mot-clé au vecteur (S1) | Le Google Sheet 5 critères scoré, à partir de sa thématique |
 | W2 | Rédiger une page incarnée (S2) | Un article avec arrêt à 50% + relecture + fact-check, scoré OpenDecoder |
-| W3 | Auditer un site (S3) | Le rapport client en 3 horizons (8 phases sur le cas) |
-| W4 | Installer le système (S4) | Roadmap 90j + todo automatique + revue de presse branchée |
+| W3 | Auditer un site (S3) | Le rapport client en 3 horizons (les 8 phases) |
+| W4 | Installer le système (S4) | Roadmap + todo automatique + revue de presse branchée |
 
-### Micro-exercices par skill (10-15 min chacun)
+### Un exercice par skill (le participant fait tourner le skill)
 
 | Session | Skill | Exercice (ce qu'on teste) | Cowork ? |
 |---|---|---|---|
@@ -107,7 +110,7 @@ Sans cas fil rouge, chaque participant part de son propre client et il n'y a pas
 | S4 | todo | transcripts → todo datée | terminal |
 | S4 | revue-presse-quotidienne | thématique → brief sourcé | via Action |
 
-Note : `audit-engine-pipeline` et `article-engine-pipeline` sont les orchestrateurs, donc couverts par les capstones W3 et W2. Les exercices terminal-only (core-web-vitals, todo) sont marqués pour ne pas piéger les participants Cowork.
+Note : `audit-engine-pipeline` et `article-engine-pipeline` sont les orchestrateurs : ce sont eux que le participant lance dans les exercices workflow W3 et W2. Les exercices terminal-only (core-web-vitals, todo) sont marqués pour ne pas piéger les participants Cowork.
 
 ## 5. Où ça vit
 
@@ -117,16 +120,12 @@ Note : `audit-engine-pipeline` et `article-engine-pipeline` sont les orchestrate
 
 ## 6. Plan de build (phasé)
 
-1. **Pilote (2 exercices, à valider d'abord)** : 1 capstone (W3 audit, le plus visuel) + 1 micro-skill (seo-quick-win, output très parlant). On fige le gabarit et le rendu sur ces deux-là.
-2. **Cas fil rouge** : créer/figer le jeu de données partagé.
-3. **Batch S1** puis **S2**, **S3**, **S4** : les micro-exercices par session.
-4. **Capstones** W1, W2, W4.
-5. **Intégration dashboard** + mise à jour du zip.
+1. **Pilote (à valider d'abord)** : l'exercice workflow audit (W3) + l'exercice skill `seo-quick-win`. On fige le gabarit et le rendu sur ces deux-là.
+2. **Batch S1** puis **S2**, **S3**, **S4** : les exercices skill par session.
+3. **Exercices workflow** W1, W2, W4.
+4. **Intégration dashboard** + mise à jour du zip.
 
-## 7. Décisions à trancher avant de lancer
+## 7. Reste à trancher
 
-1. **Screens** : sessions simulées en bloc de code (reco) ou vraies captures que tu fournis ?
-2. **Cas fil rouge** : enrichir `dataset-5-etapes` ou créer un SaaS fictif dédié ?
-3. **Granularité** : un exercice par skill (23) + 4 capstones, ou seulement les 4 capstones + quelques skills clés ?
-4. **Rendu** : pages HTML dans le dashboard, ou d'abord les markdown sources (plus rapide à produire et relire) ?
-5. **Go pilote** : je produis les 2 exercices pilotes pour valider le format ?
+1. **Rendu** : on commence par les markdown sources (plus rapide à produire et relire), puis on intègre au dashboard ? Ou on vise directement les pages HTML du dashboard ?
+2. **Go batch** : une fois le pilote validé, je déroule les exercices S1 → S4 (skills + workflows).
