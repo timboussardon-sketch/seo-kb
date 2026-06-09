@@ -23,7 +23,18 @@ Cet exercice te fait passer d'une thématique à une liste de mots-clés qualifi
 
 ## Ce que tu dois faire
 
-L'exercice a 6 étapes. Les étapes 1-2 récupèrent la matière, les étapes 3-4 ajoutent le contexte (le plus important), les étapes 5-6 sortent et trient les mots-clés.
+D'abord tu poses tes 3 à 5 mots-clés business. Ensuite seulement tu lances les 6 étapes : les 1-2 récupèrent la matière, les 3-4 ajoutent le contexte (le plus important), les 5-6 sortent et trient.
+
+**Commence par : tes 3 à 5 mots-clés business.**
+Avant d'ouvrir le moindre outil, écris les 3 à 5 mots-clés qui font vivre le business de ton client : ce qu'il vend, ce sur quoi un prospect prêt à payer tape. Pas 50, pas une thématique vague. 3 à 5, précis, business. C'est ton ancre, tout le reste tourne autour. Ensuite seulement, tu lances le workflow.
+
+```
+SCREEN — tes 3 à 5 mots-clés business (exemple : SaaS de facturation)
+1. logiciel de facturation auto-entrepreneur
+2. logiciel devis et facture
+3. logiciel facturation électronique
+(ceux qui amènent un client, pas du trafic)
+```
 
 **1. La matière brute (Keyword Planner).**
 Va sur Google Keyword Planner, tape ta thématique, exporte les idées + volumes. Tu obtiens une liste large, encore générique.
@@ -113,6 +124,7 @@ Les ⭐ sont tes pages prioritaires : intention d'achat + portées par ton conte
 
 ## Vérifier que tu as réussi
 
+- [ ] Tu es parti de 3 à 5 mots-clés business clairs, pas d'une thématique vague.
 - [ ] Tu as injecté du contexte réel (Reddit + calls), pas juste un export d'outil.
 - [ ] Chaque mot-clé a une intention (Do / Know / Know-Simple).
 - [ ] Aucun volume inventé : `[À SOURCER]` partout où tu n'as pas la vraie donnée.
@@ -129,4 +141,4 @@ Les outils (Keyword Planner, GSC) donnent le volume et la demande mesurée. Redd
 
 ## Version WhatsApp
 
-> Exo mots-clés avec contexte : 1) Keyword Planner (volume) 2) GSC (tes impressions sous-cliquées) 3) Reddit/Grok (« comment les gens parlent vraiment du problème », pain points + verbatims) 4) tes calls clients (objections, vocabulaire) 5) « lance seo-recherche-mots-cles avec ce contexte » 6) « clustering puis mots-cles-decisionnels ». Piège : ne prends pas juste les gros volumes, c'est le contexte (Reddit + calls) qui fait la différence. Jamais de volume inventé → [À SOURCER]. 💪
+> Exo mots-clés avec contexte : d'abord pose tes 3 à 5 mots-clés business (ce qui amène un client), PUIS lance le workflow. 1) Keyword Planner (volume) 2) GSC (tes impressions sous-cliquées) 3) Reddit/Grok (« comment les gens parlent vraiment du problème », pain points + verbatims) 4) tes calls clients (objections, vocabulaire) 5) « lance seo-recherche-mots-cles avec ce contexte » 6) « clustering puis mots-cles-decisionnels ». Piège : ne prends pas juste les gros volumes, c'est le contexte (Reddit + calls) qui fait la différence. Jamais de volume inventé → [À SOURCER]. 💪
