@@ -1,0 +1,28 @@
+# Manifest de boucle (Loop Kit). Un par skill/projet qui apprend.
+# Le skill lit ce fichier EN PREMIER pour savoir quelle memoire fait foi.
+# Calque sur agent-synthetic/manifest.yml et content-brain/_template/manifest.yml.
+
+schema_version: 1
+loop: "seo-quick-win"          # remplace au bootstrap (nom du skill/projet)
+cadence: "hebdomadaire"         # quotidienne | hebdomadaire | mensuelle | a-la-demande
+
+source_of_truth:
+  outputs: outputs/            # livrables produits + pointeur (URL/chemin)
+  memory: memory/              # interpretations durables, ne changent qu'apres revue humaine
+  event_ledgers: ledgers/      # faits observes, append-only
+  derived_views: derived/      # vues calculees a partir des ledgers
+
+integrity:
+  jsonl_validation: required
+  validator: ../_loop-kit/validate.sh   # usage : ../_loop-kit/validate.sh <chemin_du_brain>
+
+ledgers:
+  runs.jsonl:        { capture_mode_field: required }  # native | reconstructed_from_run
+  claims.jsonl:      { capture_mode_field: required }  # 1 ligne par fait/chiffre (>=2 sources, primaire)
+  predictions.jsonl: {}                                # 1 ligne par pari, resolve_by J+30 / J+90
+  mistakes.jsonl:    {}                                # ce qui a sous-performe -> doctrine d'erreurs empirique
+  said_index.jsonl:  {}                                # angles/sujets deja couverts -> anti-redite
+
+# Regle d'or de la boucle : AUTONOME SUR LA DATA, SUPERVISE SUR LE CODE.
+# Le brain ecrit librement ses ledgers/derived. Tout changement de skill passe par memory/questions.md, Tim valide.
+learning_rule: data-autonome-code-supervise

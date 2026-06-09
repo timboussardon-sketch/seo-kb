@@ -52,6 +52,26 @@ Quand un jalon final (J+90) est rempli : pose le verdict (`concluante` / `non-co
 
 Termine par : `GSC watcher [date] : N fiches mises à jour (baseline:a J+30:b J+90:c) — M verdicts — hypothèses touchées : …`
 
+## ÉTAPE 6 — RÉSOUDRE LES PRÉDICTIONS DES BRAINS (content-brain + loops)
+
+En plus des fiches preuves, ce skill résout les prédictions datées des brains qui ont la GSC comme source de vérité.
+
+Cibles : `content-brain/*/ledgers/predictions.jsonl` et `loops/*/ledgers/predictions.jsonl` (seulement les boucles dont `memory/directives.md` déclare la GSC en source).
+
+Pour chaque prédiction `status:"open"` dont `resolve_by` ≤ date de l'export :
+1. Apparier `target_query` et/ou `page` aux lignes de l'export (même logique qu'ÉTAPE 3).
+2. Calculer la valeur réelle (position moyenne, clics, impressions, CTR) sur la fenêtre de l'export.
+3. Comparer au `claim` falsifiable et à `baseline`, poser un `verdict` :
+   - `hit` : claim vérifié.  `partial` : amélioration réelle mais sous le seuil.  `miss` : pas d'amélioration ou régression.  `no_data` : URL/requête absente de l'export (page non indexée ou trafic nul), ne jamais inventer.
+4. Mettre la prédiction à jour EN PLACE (seule mutation autorisée du ledger) : `status:"resolved"` + `measured:{...}` + `verdict` + `resolved_at` (= date de l'export).
+5. Si `miss` ou `partial` : append une ligne dans `mistakes.jsonl` du même brain (ce qui a sous-performé + hypothèse à revoir).
+6. Régénérer la santé : `../_loop-kit/eval_health.py <brain>` puis gate `../_loop-kit/validate.sh <brain>`.
+7. Si un verdict remet en cause une directive : NE PAS éditer le skill, écrire le diff proposé dans `<brain>/memory/questions.md` (règle d'or : autonome sur la data, supervisé sur le code).
+
+Idempotent : une prédiction déjà `resolved` est ignorée ; `no_data` reste `open` (re-tentée au prochain export) mais loggée.
+
+Termine aussi par : `GSC watcher predictions [date] : K brains, R résolues (hit:a partial:b miss:c no_data:d)`
+
 ## CONTRAINTES
 
 - Lecture seule sur `raw/data/exports-gsc/`. Jamais réécrire un export.
