@@ -773,3 +773,22 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - signal pSEO: page tarifs parcours = 1 346 requêtes distinctes, 388 parcours nommés
 - skill déclenché: seo-modeles-pseo → [[clusters/modeles-pseo-2026-06-10-golfiller]] (7 modèles scorés, top 3: avis modèle, prix, fiches parcours)
 - cannibalisation détectée: calcul-index-golf vs calculateur-score-differentiel (famille « calcul index golf »)
+
+## [2026-06-10] query | Golfiller analyse GSC 6 mois comparée
+- source: [[sources/2026-06-10-golfiller-gsc-6mois]] (4 CSV dans raw/data/exports-gsc/golfiller-2026-06-10/)
+- output: [[queries/2026-06-10-golfiller-gsc-6mois]]
+- skill déclenché: analyse GSC (winners/losers + striking distance + CTR)
+- findings: -23% clics (saisonnier calendrier avent -2852 + comparatif -1371), branded 43% (↑ vs 29% en 90j), pages pSEO décollent de 0, érosion non-branded pluriel (balles de golf 9,6→17,6), opportunité mère « balle de golf » pos 8,5 / 26 574 imp
+- pages créées: 2 / mises à jour: index.md
+
+## [2026-06-10] query | Golfiller entités vectorielles page « balle de golf »
+- output: [[queries/entites-2026-06-10-golfiller-balle-de-golf]]
+- skill déclenché: seo-entites-vectorielles
+- contexte: défense pluriel (9,6->17,6) + gisement « balle de golf » pos 8,5 / 26 574 imp
+
+## [2026-06-10] query | Golfiller — dataset sourcé vitesse de swing / distance par club
+- collecte web multi-sources (14 URLs ouvertes), data mesurée uniquement (TrackMan 2023-2024, Shot Scope, Arccos, USGA/R&A 2024 Distance Report)
+- output: [[queries/2026-06-10-golfiller-dataset-vitesse-distance]]
+- table déclarative (vitesses par âge HackMotion) écartée du publiable, confidence low
+- règle système actée par Tim: jamais de scraping sans citation, bloc Sources obligatoire en fin de page publiée
+- skill déclenché: none (recherche data, modèle déjà cadré dans [[clusters/modeles-pseo-2026-06-10-golfiller]])

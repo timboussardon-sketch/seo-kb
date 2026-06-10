@@ -101,7 +101,9 @@ status: stable
 ### Doc Google (1)
 - [[sources/2026-04-13-google-quality-raters-guidelines-2026]] — QRG 2026, E-E-A-T, Fully Meets, p.42 effort-less
 
-### GSC Exports (0)
+### GSC Exports (1)
+- [[sources/2026-06-10-golfiller-gsc-6mois]] — Golfiller, export GSC 6 mois avec comparaison (4 fichiers, raw/data/exports-gsc/)
+
 ### Client Notes (2)
 - [[sources/2026-04-13-victoria-garden-pseo]] — Stratégie pSEO Victoria Garden Bordeaux (5 modèles validés via test substitution LLM, 3 pages déjà livrées)
 - [[sources/2026-04-30-fg-formation-pseo-cas-client]] — FG Formation : 5 modèles pSEO Qualiopi/OPCO, angle B2B inversé
@@ -264,8 +266,9 @@ status: stable
 - [[syntheses/tim-profil-doctrine]] — Profil et doctrine de Tim Boussardon
 - [[syntheses/audit-doctrine-2026]] — Audit de la doctrine 2026 (cas terrain, dont [[entities/golfiller]])
 
-## Queries (5)
+## Queries (6)
 - [[queries/2026-06-10-golfiller-gsc-90j]] — Golfiller, analyse GSC 90 jours (winners Do, 1 346 requêtes sur la page tarifs, 388 parcours nommés)
+- [[queries/2026-06-10-golfiller-gsc-6mois]] — Golfiller, analyse GSC 6 mois comparée (branded +43 %, pSEO décolle, érosion du non-branded pluriel, striking distance « balle de golf »)
 - [[queries/pseo-2026-05-16-landing-lead-gen-organikk]] — pSEO Organikk : 5 modèles de landing lead-gen sur problématique SEO (45 pages possibles, M1 pain-first prioritaire)
 - [[queries/pseo-2026-05-13-organikk-secteur-ville]] — pSEO Organikk : modèle métier local × ville (stratégie SEO {secteur} {ville})
 - [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] — Wiki persistant optimise-t-il le Grounding Score ? (8 sources)
