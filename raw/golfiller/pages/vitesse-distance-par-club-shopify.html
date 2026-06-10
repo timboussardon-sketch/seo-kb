@@ -1,222 +1,317 @@
-<!-- Golfiller — Vitesse de swing et distance par club (bloc autonome, CSS scopé .gfl-vds) -->
+<!-- Golfiller — Vitesse de swing et distance par club (template Golfiller pixel perfect) -->
 <style>
-  .gfl-vds { --ink:#1a1d23; --soft:#5c6470; --line:#e6e8ec; --bg:#ffffff; --bg-soft:#f5f7fa;
-    --blue:#1f5fbf; --blue-dark:#16489a; --green:#1e7a46; }
-  .gfl-vds * { box-sizing:border-box; }
-  .gfl-vds { margin:0; font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; color:var(--ink);
-    background:var(--bg); line-height:1.65; font-size:16px; }
-  .gfl-vds .wrap { max-width:820px; margin:0 auto; padding:40px 20px 60px; }
-  .gfl-vds h1 { font-size:30px; line-height:1.2; letter-spacing:-.01em; margin:0 0 10px; }
-  .gfl-vds h2 { font-size:22px; margin:42px 0 10px; letter-spacing:-.01em; }
-  .gfl-vds p { margin:10px 0; }
-  .gfl-vds .lede { color:var(--soft); font-size:17px; }
-  .gfl-vds table { width:100%; border-collapse:collapse; margin:16px 0 6px; font-size:14.5px; }
-  .gfl-vds th, .gfl-vds td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); }
-  .gfl-vds th { background:var(--bg-soft); font-weight:600; }
-  .gfl-vds td .alt { color:var(--soft); font-size:12.5px; }
-  .gfl-vds .note { font-size:13px; color:var(--soft); margin:4px 0 0; }
-  .gfl-vds a { color:var(--blue); }
-  .gfl-vds .calc { background:var(--bg-soft); border:1px solid var(--line); border-radius:16px; padding:24px; margin:26px 0; }
-  .gfl-vds .calc h2 { margin:0 0 6px; font-size:20px; }
-  .gfl-vds .calc label { font-weight:600; font-size:14.5px; display:block; margin:14px 0 6px; }
-  .gfl-vds .calc input { width:140px; font-size:18px; padding:10px 12px; border:1px solid var(--line); border-radius:10px; }
-  .gfl-vds .calc button { font-size:15px; font-weight:600; color:#fff; background:var(--blue); border:none;
-    border-radius:10px; padding:11px 22px; margin-left:10px; cursor:pointer; }
-  .gfl-vds .calc button:hover { background:var(--blue-dark); }
-  .gfl-vds .result { display:none; margin-top:16px; background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
-  .gfl-vds .result .speed { font-size:26px; font-weight:700; color:var(--blue); }
-  .gfl-vds .result .profile { margin:6px 0 2px; }
-  .gfl-vds .result .reco { margin-top:10px; padding-top:10px; border-top:1px solid var(--line); }
-  .gfl-vds .cta { display:inline-block; margin-top:8px; font-weight:600; color:#fff; background:var(--green);
-    border-radius:10px; padding:10px 18px; text-decoration:none; }
-  .gfl-vds .filter { margin:8px 0 0; font-size:14.5px; }
-  .gfl-vds .filter select { font-size:15px; padding:8px 10px; border:1px solid var(--line); border-radius:10px; }
-  .gfl-vds td.hl, .gfl-vds th.hl { background:#e9f1fd; font-weight:600; }
-  .gfl-vds .sources { margin-top:48px; padding-top:18px; border-top:1px solid var(--line); }
-  .gfl-vds .sources h2 { font-size:18px; margin:0 0 8px; }
-  .gfl-vds .sources ol { padding-left:20px; font-size:13.5px; color:var(--soft); }
-  .gfl-vds .sources li { margin:6px 0; }
-  .gfl-vds .maillage { background:var(--bg-soft); border-radius:12px; padding:14px 18px; margin:24px 0; font-size:15px; }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+/* ===== BASE ===== */
+.golf-page { max-width: 900px; margin: 0 auto; font-family: 'Source Sans 3', -apple-system, sans-serif; color: #333; line-height: 1.6; }
+.golf-page h1 { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 2.6rem; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1; margin-bottom: 16px; color: #111; }
+.golf-page h2 { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.02em; margin-top: 48px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #111; color: #111; }
+.golf-page h3 { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.02em; margin-top: 28px; margin-bottom: 10px; color: #111; }
+.golf-page h4 { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.02em; margin-top: 22px; margin-bottom: 8px; color: #111; }
+.golf-page p { margin-bottom: 14px; line-height: 1.65; font-size: 15px; }
+.golf-page ul, .golf-page ol { margin: 8px 0 16px 22px; }
+.golf-page ul li, .golf-page ol li { margin-bottom: 6px; font-size: 15px; line-height: 1.6; }
+.golf-page a { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+.golf-page a:hover { color: #4ECDC4; }
+.golf-page strong { color: #111; font-weight: 700; }
+.golf-page em { font-style: italic; }
+
+/* ===== TABLEAUX ===== */
+.golf-page table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 14px 0 20px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.golf-page thead tr { background: #4ECDC4; }
+.golf-page th { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 10px 12px; text-align: center; color: #fff; }
+.golf-page th:first-child { text-align: left; padding-left: 14px; }
+.golf-page th.th-prix { background: #F5E137; color: #111; }
+.golf-page tbody tr { border-bottom: 1px solid #eee; }
+.golf-page tbody tr:nth-child(odd) { background: #fff; }
+.golf-page tbody tr:nth-child(even) { background: #f9f9f7; }
+.golf-page tbody tr:hover { background: #f0f0ee; }
+.golf-page td { padding: 11px 12px; text-align: center; font-size: 13px; color: #333; font-variant-numeric: tabular-nums; }
+.golf-page td:first-child { text-align: left; padding-left: 14px; font-weight: 600; color: #111; }
+.golf-page td.cell-prix { background: #F5E137; font-weight: 700; color: #111; }
+.golf-page .table-wrap { overflow-x: auto; margin: 16px 0 24px; -webkit-overflow-scrolling: touch; }
+.golf-page .full-table { min-width: 720px; }
+
+/* ===== ENCARTS ===== */
+.golf-page .info-box { background: #F5E137; padding: 16px 18px; border-radius: 8px; margin: 22px 0; font-size: 14px; line-height: 1.6; }
+.golf-page .info-box strong { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1rem; display: block; margin-bottom: 6px; letter-spacing: 0.02em; }
+.golf-page .method-box { background: #fff; padding: 16px 18px; border-radius: 8px; margin: 14px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+.golf-page .method-box strong { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1rem; display: block; margin-bottom: 6px; letter-spacing: 0.02em; }
+.golf-page .rule-box { background: #fff; padding: 16px 18px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.04); border-top: 3px solid #4ECDC4; }
+.golf-page .rule-box strong { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1rem; display: block; margin-bottom: 6px; letter-spacing: 0.02em; }
+.golf-page .top-card { background: #fff; padding: 16px 18px; border-radius: 8px; margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+.golf-page .top-card .rank { display: inline-block; background: #111; color: #F5E137; font-family: 'Bebas Neue', Impact, sans-serif; padding: 3px 10px; border-radius: 4px; font-size: 0.85rem; letter-spacing: 0.04em; margin-right: 8px; vertical-align: middle; }
+.golf-page .top-card.gold .rank { background: #F5E137; color: #111; }
+.golf-page .top-card.silver .rank { background: #BFC1C2; color: #111; }
+.golf-page .top-card.bronze .rank { background: #CD7F32; color: #fff; }
+.golf-page .top-card h4 { display: inline-block; margin: 0; vertical-align: middle; }
+.golf-page .top-card p { margin: 8px 0 0; font-size: 14px; }
+.golf-page .top-card .price-line { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-size: 13px; }
+
+/* ===== BOUTON CTA ===== */
+.golf-page .cta-link { display: inline-block; background: #111; color: #F5E137 !important; text-decoration: none !important; padding: 10px 18px; border-radius: 4px; font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; font-size: 14px; margin: 10px 0; transition: background 0.15s; }
+.golf-page .cta-link:hover { background: #333; color: #F5E137 !important; }
+
+/* ===== FAQ MINIMALISTE (volets déroulants) ===== */
+.golf-page details { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+.golf-page details:first-of-type { border-top: 1px solid #e5e5e5; }
+.golf-page details summary { font-weight: 600; color: #111; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 15px; gap: 14px; }
+.golf-page details summary::-webkit-details-marker { display: none; }
+.golf-page details summary::after { content: '+'; font-size: 22px; font-weight: 400; color: #111; transition: transform 0.2s; line-height: 1; flex-shrink: 0; }
+.golf-page details[open] summary::after { content: '−'; }
+.golf-page details summary:hover { color: #4ECDC4; }
+.golf-page details p { margin: 12px 0 0; color: #555; font-size: 14px; line-height: 1.6; }
+
+/* ===== FILTRES (boutons toggle) ===== */
+.golf-page .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 20px 0; }
+.golf-page .filter-btn { padding: 9px 16px; background: #fff; border: 2px solid #111; font-family: 'Bebas Neue', Impact, sans-serif; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: #111; cursor: pointer; border-radius: 4px; transition: all 0.15s; }
+.golf-page .filter-btn:hover { background: #f0f0ee; }
+.golf-page .filter-btn.on { background: #111; color: #F5E137; }
+
+/* ===== UTILITAIRES ===== */
+.golf-page .source-note { font-size: 12px; color: #888; line-height: 1.6; font-style: italic; margin-top: 16px; }
+.golf-page .prive { color: #888; font-style: italic; }
 </style>
-<div class="gfl-vds"><div class="wrap">
 
-<p class="lede">Du PGA Tour au joueur d'index 25, voici les vitesses de swing et les distances réellement mesurées, club par club, converties en km/h et en mètres. Et un calculateur pour situer votre propre vitesse à partir de votre fer 7.</p>
+<div class="golf-page">
 
-<div class="calc">
-  <h2>Estimez votre vitesse de swing</h2>
-  <p>Indiquez la distance totale que vous faites au fer 7 (roule comprise), en mètres.</p>
-  <label for="fer7">Votre distance au fer 7</label>
-  <input type="number" id="fer7" min="60" max="200" placeholder="ex : 140"> <span>mètres</span>
-  <button onclick="estimer()">Calculer</button>
-  <div class="result" id="res">
-    <div class="speed" id="res-speed"></div>
-    <div class="profile" id="res-profile"></div>
-    <div class="reco" id="res-reco"></div>
+  <h1>Vitesse de swing et distance par club : les tableaux de référence</h1>
+
+  <p>Du PGA Tour au joueur d'index 25, voici les <strong>vitesses de swing et les distances réellement mesurées</strong>, club par club, converties en km/h et en mètres. Et un calculateur pour situer votre propre vitesse à partir de votre fer 7.</p>
+
+  <!-- ===== CALCULATEUR ===== -->
+  <div class="rule-box">
+    <strong>Estimez votre vitesse de swing</strong>
+    <p>Indiquez la distance totale que vous faites au fer 7 (roule comprise), en mètres.</p>
+    <p><input type="number" id="gfl-fer7" min="60" max="200" placeholder="ex : 140" style="width:130px; font-size:16px; padding:9px 12px; border:2px solid #111; border-radius:4px; font-family:'Source Sans 3',sans-serif;"> mètres
+    <button type="button" class="filter-btn on" id="gfl-go">Calculer</button></p>
+    <div class="info-box" id="gfl-res" style="display:none; margin:14px 0 0;">
+      <strong id="gfl-res-speed"></strong>
+      <span id="gfl-res-profile"></span>
+      <p id="gfl-res-reco" style="margin:10px 0 0;"></p>
+    </div>
+    <p class="source-note" style="margin-top:10px;">Estimation construite sur les références TrackMan (vitesse par niveau) et Shot Scope (distance par club et par index), détaillées dans les tableaux ci-dessous.</p>
   </div>
-  <p class="note">Estimation construite sur les références TrackMan (vitesse par niveau) et Shot Scope (distance par club et par index), détaillées dans les tableaux ci-dessous.</p>
+
+  <div class="info-box">
+    <strong>Ce que vaut chaque km/h de vitesse</strong>
+    La vitesse de swing est le premier déterminant de la distance : les mesures TrackMan donnent <strong>2,5 à 3 yards gagnés au driver par mph</strong> de vitesse de club supplémentaire. Sur le PGA Tour 2025, le ratio constaté est de 2,6 yards par mph : 187 km/h de moyenne pour 277 mètres de drive. C'est pour cela que la compression de votre balle doit suivre votre vitesse : une balle trop dure pour votre swing vous coûte de la distance.
+  </div>
+
+  <!-- ===== PGA ===== -->
+  <h2>PGA Tour : vitesse et distance par club</h2>
+  <p>Moyennes mesurées par TrackMan sur le PGA Tour (saison 2024). Les distances sont des <strong>carrys</strong>, sans la roule.</p>
+  <div class="table-wrap">
+  <table class="full-table">
+    <thead>
+      <tr><th>Club</th><th>Vitesse de club</th><th>Vitesse de balle</th><th>Carry</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Driver</td><td>185 km/h (115 mph)</td><td>275 km/h (171 mph)</td><td>258 m (282 yd)</td></tr>
+      <tr><td>Bois 3</td><td>177 km/h (110 mph)</td><td>261 km/h (162 mph)</td><td>228 m (249 yd)</td></tr>
+      <tr><td>Bois 5</td><td>171 km/h (106 mph)</td><td>251 km/h (156 mph)</td><td>216 m (236 yd)</td></tr>
+      <tr><td>Hybride</td><td>164 km/h (102 mph)</td><td>240 km/h (149 mph)</td><td>211 m (231 yd)</td></tr>
+      <tr><td>Fer 3</td><td>161 km/h (100 mph)</td><td>233 km/h (145 mph)</td><td>199 m (218 yd)</td></tr>
+      <tr><td>Fer 4</td><td>158 km/h (98 mph)</td><td>225 km/h (140 mph)</td><td>191 m (209 yd)</td></tr>
+      <tr><td>Fer 5</td><td>154 km/h (96 mph)</td><td>217 km/h (135 mph)</td><td>182 m (199 yd)</td></tr>
+      <tr><td>Fer 6</td><td>151 km/h (94 mph)</td><td>209 km/h (130 mph)</td><td>172 m (188 yd)</td></tr>
+      <tr><td>Fer 7</td><td>148 km/h (92 mph)</td><td>198 km/h (123 mph)</td><td>161 m (176 yd)</td></tr>
+      <tr><td>Fer 8</td><td>143 km/h (89 mph)</td><td>190 km/h (118 mph)</td><td>150 m (164 yd)</td></tr>
+      <tr><td>Fer 9</td><td>140 km/h (87 mph)</td><td>180 km/h (112 mph)</td><td>139 m (152 yd)</td></tr>
+      <tr><td>Pitching wedge</td><td>135 km/h (84 mph)</td><td>167 km/h (104 mph)</td><td>130 m (142 yd)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="source-note">Recoupement officiel : l'USGA et le R&amp;A mesurent 275 m de drive moyen sur le PGA Tour en 2024, et 48 % des drives au-delà de 274 m.</p>
+
+  <!-- ===== LPGA ===== -->
+  <h2>LPGA Tour : vitesse et distance par club</h2>
+  <p>Mêmes mesures TrackMan côté LPGA (saison 2023). À vitesse plus faible, les joueuses du LPGA gardent un rendement remarquable : un drive moyen de 237 m mesuré en 2024, avec un <strong>angle d'attaque positif</strong> au driver là où les joueurs du PGA frappent légèrement vers le bas.</p>
+  <div class="table-wrap">
+  <table class="full-table">
+    <thead>
+      <tr><th>Club</th><th>Vitesse de club</th><th>Vitesse de balle</th><th>Carry</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Driver</td><td>154 km/h (96 mph)</td><td>230 km/h (143 mph)</td><td>204 m (223 yd)</td></tr>
+      <tr><td>Bois 3</td><td>148 km/h (92 mph)</td><td>217 km/h (135 mph)</td><td>183 m (200 yd)</td></tr>
+      <tr><td>Bois 5</td><td>145 km/h (90 mph)</td><td>209 km/h (130 mph)</td><td>173 m (189 yd)</td></tr>
+      <tr><td>Hybride</td><td>140 km/h (87 mph)</td><td>201 km/h (125 mph)</td><td>163 m (178 yd)</td></tr>
+      <tr><td>Fer 4</td><td>132 km/h (82 mph)</td><td>190 km/h (118 mph)</td><td>160 m (175 yd)</td></tr>
+      <tr><td>Fer 5</td><td>130 km/h (81 mph)</td><td>183 km/h (114 mph)</td><td>152 m (166 yd)</td></tr>
+      <tr><td>Fer 6</td><td>129 km/h (80 mph)</td><td>179 km/h (111 mph)</td><td>142 m (155 yd)</td></tr>
+      <tr><td>Fer 7</td><td>126 km/h (78 mph)</td><td>171 km/h (106 mph)</td><td>131 m (143 yd)</td></tr>
+      <tr><td>Fer 8</td><td>122 km/h (76 mph)</td><td>164 km/h (102 mph)</td><td>122 m (133 yd)</td></tr>
+      <tr><td>Fer 9</td><td>119 km/h (74 mph)</td><td>153 km/h (95 mph)</td><td>112 m (123 yd)</td></tr>
+      <tr><td>Pitching wedge</td><td>116 km/h (72 mph)</td><td>142 km/h (88 mph)</td><td>101 m (111 yd)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- ===== AMATEURS ===== -->
+  <h2>La vitesse de swing des amateurs, par niveau</h2>
+  <p>Vitesses de club au driver mesurées par TrackMan. La moyenne des golfeurs hommes se situe à <strong>150 km/h (93,4 mph)</strong>, et plus de 40 % des golfeurs mesurés swinguent entre 146 et 161 km/h.</p>
+
+  <h3>Hommes</h3>
+  <table>
+    <thead><tr><th>Profil</th><th>Vitesse driver</th></tr></thead>
+    <tbody>
+      <tr><td>Scratch ou mieux</td><td>177 km/h (110 mph)</td></tr>
+      <tr><td>Handicap 5</td><td>163 km/h (101 mph)</td></tr>
+      <tr><td>Handicap 10</td><td>153 km/h (95 mph)</td></tr>
+      <tr><td>Golfeur moyen (index 14,5)</td><td>151 km/h (94 mph)</td></tr>
+      <tr><td>Bogey golfer (~18-20)</td><td>148 km/h (92 mph)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Femmes</h3>
+  <table>
+    <thead><tr><th>Profil</th><th>Vitesse driver</th></tr></thead>
+    <tbody>
+      <tr><td>Scratch ou mieux</td><td>145 km/h (90 mph)</td></tr>
+      <tr><td>Handicap 5</td><td>140 km/h (87 mph)</td></tr>
+      <tr><td>Handicap 10</td><td>134 km/h (83 mph)</td></tr>
+      <tr><td>Handicap 15</td><td>127 km/h (79 mph)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule-box">
+    <strong>Pourquoi certaines valeurs manquent</strong>
+    TrackMan ne publie pas de vitesse mesurée au-delà du bogey golfer chez les hommes ni au-delà de l'index 15 chez les femmes. Nous n'extrapolons pas ces valeurs : sur cette page, chaque chiffre vient d'une mesure publiée.
+  </div>
+
+  <!-- ===== SHOT SCOPE ===== -->
+  <h2>La distance par club selon votre index</h2>
+  <p>Distances <strong>totales</strong> (roule comprise), en mètres, mesurées par Shot Scope sur des centaines de milliers de golfeurs équipés de capteurs. Entre un scratch et un index 25, l'écart au driver atteint 74 mètres. Sélectionnez votre index pour surligner votre colonne.</p>
+
+  <div class="filters" id="gfl-filters">
+    <button type="button" class="filter-btn on" data-col="-1">Tout</button>
+    <button type="button" class="filter-btn" data-col="0">Scratch</button>
+    <button type="button" class="filter-btn" data-col="1">Index 5</button>
+    <button type="button" class="filter-btn" data-col="2">Index 10</button>
+    <button type="button" class="filter-btn" data-col="3">Index 15</button>
+    <button type="button" class="filter-btn" data-col="4">Index 20</button>
+    <button type="button" class="filter-btn" data-col="5">Index 25</button>
+  </div>
+
+  <div class="table-wrap">
+  <table class="full-table" id="gfl-ss">
+    <thead>
+      <tr><th>Club</th><th data-col="0">Scratch</th><th data-col="1">Index 5</th><th data-col="2">Index 10</th><th data-col="3">Index 15</th><th data-col="4">Index 20</th><th data-col="5">Index 25</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Driver</td><td data-col="0">261</td><td data-col="1">239</td><td data-col="2">237</td><td data-col="3">216</td><td data-col="4">206</td><td data-col="5">187</td></tr>
+      <tr><td>Bois 3</td><td data-col="0">239</td><td data-col="1">214</td><td data-col="2">208</td><td data-col="3">197</td><td data-col="4">178</td><td data-col="5">163</td></tr>
+      <tr><td>Hybride</td><td data-col="0">217</td><td data-col="1">198</td><td data-col="2">196</td><td data-col="3">180</td><td data-col="4">165</td><td data-col="5">148</td></tr>
+      <tr><td>Fer 4</td><td data-col="0">204</td><td data-col="1">184</td><td data-col="2">182</td><td data-col="3">170</td><td data-col="4">155</td><td data-col="5">138</td></tr>
+      <tr><td>Fer 5</td><td data-col="0">183</td><td data-col="1">167</td><td data-col="2">171</td><td data-col="3">155</td><td data-col="4">148</td><td data-col="5">131</td></tr>
+      <tr><td>Fer 6</td><td data-col="0">169</td><td data-col="1">157</td><td data-col="2">156</td><td data-col="3">148</td><td data-col="4">138</td><td data-col="5">125</td></tr>
+      <tr><td>Fer 7</td><td data-col="0">163</td><td data-col="1">150</td><td data-col="2">147</td><td data-col="3">141</td><td data-col="4">134</td><td data-col="5">121</td></tr>
+      <tr><td>Fer 8</td><td data-col="0">152</td><td data-col="1">140</td><td data-col="2">137</td><td data-col="3">134</td><td data-col="4">126</td><td data-col="5">112</td></tr>
+      <tr><td>Fer 9</td><td data-col="0">142</td><td data-col="1">127</td><td data-col="2">128</td><td data-col="3">124</td><td data-col="4">118</td><td data-col="5">99</td></tr>
+      <tr><td>Pitching wedge</td><td data-col="0">129</td><td data-col="1">115</td><td data-col="2">116</td><td data-col="3">111</td><td data-col="4">99</td><td data-col="5">82</td></tr>
+      <tr><td>Gap wedge</td><td data-col="0">115</td><td data-col="1">100</td><td data-col="2">101</td><td data-col="3">95</td><td data-col="4">86</td><td data-col="5">72</td></tr>
+      <tr><td>Sand wedge</td><td data-col="0">96</td><td data-col="1">79</td><td data-col="2">90</td><td data-col="3">77</td><td data-col="4">78</td><td data-col="5">73</td></tr>
+      <tr><td>Lob wedge</td><td data-col="0">79</td><td data-col="1">65</td><td data-col="2">72</td><td data-col="3">69</td><td data-col="4">71</td><td data-col="5">45</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="source-note">Métrique P-Avg de Shot Scope : moyenne calculée après retrait des 10 % de coups extrêmes.</p>
+
+  <!-- ===== OFFICIEL ===== -->
+  <h2>Les chiffres officiels du golf mondial</h2>
+  <p>Le Distance Report 2024 de l'USGA et du R&amp;A, la référence officielle, mesure le drive moyen des amateurs hommes à <strong>197 m</strong> (de 219 m sous l'index 6 à 161 m au-delà de l'index 21) et celui des amatrices à <strong>135 m</strong>. Les données Arccos 2024, sur plus d'un milliard de coups trackés, confirment l'ordre de grandeur : 205 m pour les hommes, 161 m pour les femmes. Et les pros de plus de 50 ans du PGA Tour Champions drivent encore à 255 m de moyenne : la vitesse baisse avec l'âge, la distance aussi, d'où l'intérêt d'ajuster sa balle plutôt que de forcer son swing.</p>
+
+  <p>Pour aller plus loin : <a href="https://golfiller.fr/blogs/infos/tableau-comparatif-de-compression-de-balles">le tableau de compression des balles</a> pour choisir la balle adaptée à votre vitesse, et <a href="https://golfiller.fr/blogs/infos/calcul-index-golf">le calcul de votre index</a> pour situer votre niveau.</p>
+
+  <a class="cta-link" href="https://golfiller.fr/collections/all">Voir les lots de balles reconditionnées</a>
+
+  <!-- ===== FAQ ===== -->
+  <h2>Questions fréquentes</h2>
+
+  <details>
+    <summary>Quelle est la vitesse de swing moyenne au golf ?</summary>
+    <p>150 km/h (93,4 mph) au driver chez les golfeurs hommes, toutes catégories confondues, d'après les mesures TrackMan. Plus de 40 % des golfeurs mesurés se situent entre 146 et 161 km/h. Chez les joueuses, les valeurs mesurées vont de 127 km/h (index 15) à 145 km/h (scratch).</p>
+  </details>
+
+  <details>
+    <summary>À quelle vitesse part une balle de golf ?</summary>
+    <p>La vitesse de balle vaut environ 1,48 fois la vitesse de club au driver quand le contact est centré (le « smash factor » mesuré par TrackMan sur le tour). Un drive du PGA Tour part à 275 km/h, un drive du LPGA à 230 km/h, et celui d'un golfeur moyen à 94 mph de club part autour de 224 km/h si la frappe est centrée.</p>
+  </details>
+
+  <details>
+    <summary>Quelle vitesse de swing pour un senior ?</summary>
+    <p>Il n'existe pas de table publique mesurée par tranche d'âge. Le repère le plus fiable vient des pros de plus de 50 ans du PGA Tour Champions, qui drivent à 255 m de moyenne en 2024. La perte de distance avec l'âge est réelle mais se compense en partie par une balle adaptée à sa vitesse plutôt qu'une balle de joueur de tour.</p>
+  </details>
+
+  <details>
+    <summary>Quelle balle de golf pour ma vitesse de swing ?</summary>
+    <p>Notre repère : en dessous de 137 km/h de vitesse de club au driver, une balle basse compression vous rend de la distance et du toucher ; entre 137 et 153 km/h, une compression moyenne est le meilleur compromis ; au-delà, vous pouvez exploiter une balle haute compression. La valeur exacte de chaque modèle est dans notre <a href="https://golfiller.fr/blogs/infos/tableau-comparatif-de-compression-de-balles">tableau comparatif de compression</a>.</p>
+  </details>
+
+  <!-- ===== SOURCES ===== -->
+  <p class="source-note">Sources : TrackMan, « Tour Averages » 2024 et « What is Club Speed? » (trackman.com, 2024) · Golf Monthly, données TrackMan PGA 2024 (février 2025) et LPGA 2023 (mai 2024) · Shot Scope, distances totales par club et par index, via Golf Monthly (mai 2026) et GolfMagic (juillet 2025) · USGA / R&amp;A, « 2024 Distance Report » (2025) · Arccos, drives moyens 2023-2024, via Golf.com (mai 2025) · Golf.com, vitesses par handicap, données TrackMan (2021) · Stats PGA Tour saison 2025 via Swing Man Golf. Conversions : 1 mph = 1,609 km/h ; 1 yard = 0,914 m, valeurs arrondies.</p>
+
 </div>
 
-<h2>Ce que vaut chaque km/h de vitesse</h2>
-<p>La vitesse de swing est le premier déterminant de la distance. Les mesures TrackMan donnent jusqu'à 2,7 mètres gagnés au driver pour chaque km/h et demi de vitesse de club supplémentaire (1 mph = environ 2,5 à 3 yards). Sur le PGA Tour 2025, le ratio constaté est de 2,6 yards par mph : 187 km/h de moyenne pour 277 mètres de drive. C'est pour cela que la compression de votre balle doit suivre votre vitesse : une balle trop dure pour votre swing vous coûte de la distance, une balle adaptée vous en rend. Le détail est dans notre <a href="https://golfiller.fr/blogs/infos/tableau-comparatif-de-compression-de-balles">tableau comparatif de compression</a>.</p>
-
-<h2>PGA Tour : vitesse et distance par club</h2>
-<p>Moyennes mesurées par TrackMan sur le PGA Tour (saison 2024). Les distances sont des carrys, sans la roule.</p>
-<table>
-<thead><tr><th>Club</th><th>Vitesse de club</th><th>Vitesse de balle</th><th>Carry</th></tr></thead>
-<tbody>
-<tr><td>Driver</td><td>185 km/h <span class='alt'>(115 mph)</span></td><td>275 km/h <span class='alt'>(171 mph)</span></td><td>258 m <span class='alt'>(282 yd)</span></td></tr>
-<tr><td>Bois 3</td><td>177 km/h <span class='alt'>(110 mph)</span></td><td>261 km/h <span class='alt'>(162 mph)</span></td><td>228 m <span class='alt'>(249 yd)</span></td></tr>
-<tr><td>Bois 5</td><td>171 km/h <span class='alt'>(106 mph)</span></td><td>251 km/h <span class='alt'>(156 mph)</span></td><td>216 m <span class='alt'>(236 yd)</span></td></tr>
-<tr><td>Hybride</td><td>164 km/h <span class='alt'>(102 mph)</span></td><td>240 km/h <span class='alt'>(149 mph)</span></td><td>211 m <span class='alt'>(231 yd)</span></td></tr>
-<tr><td>Fer 3</td><td>161 km/h <span class='alt'>(100 mph)</span></td><td>233 km/h <span class='alt'>(145 mph)</span></td><td>199 m <span class='alt'>(218 yd)</span></td></tr>
-<tr><td>Fer 4</td><td>158 km/h <span class='alt'>(98 mph)</span></td><td>225 km/h <span class='alt'>(140 mph)</span></td><td>191 m <span class='alt'>(209 yd)</span></td></tr>
-<tr><td>Fer 5</td><td>154 km/h <span class='alt'>(96 mph)</span></td><td>217 km/h <span class='alt'>(135 mph)</span></td><td>182 m <span class='alt'>(199 yd)</span></td></tr>
-<tr><td>Fer 6</td><td>151 km/h <span class='alt'>(94 mph)</span></td><td>209 km/h <span class='alt'>(130 mph)</span></td><td>172 m <span class='alt'>(188 yd)</span></td></tr>
-<tr><td>Fer 7</td><td>148 km/h <span class='alt'>(92 mph)</span></td><td>198 km/h <span class='alt'>(123 mph)</span></td><td>161 m <span class='alt'>(176 yd)</span></td></tr>
-<tr><td>Fer 8</td><td>143 km/h <span class='alt'>(89 mph)</span></td><td>190 km/h <span class='alt'>(118 mph)</span></td><td>150 m <span class='alt'>(164 yd)</span></td></tr>
-<tr><td>Fer 9</td><td>140 km/h <span class='alt'>(87 mph)</span></td><td>180 km/h <span class='alt'>(112 mph)</span></td><td>139 m <span class='alt'>(152 yd)</span></td></tr>
-<tr><td>Pitching wedge</td><td>135 km/h <span class='alt'>(84 mph)</span></td><td>167 km/h <span class='alt'>(104 mph)</span></td><td>130 m <span class='alt'>(142 yd)</span></td></tr>
-</tbody>
-</table>
-<p class="note">Recoupement officiel : l'USGA et le R&A mesurent 275 m de drive moyen sur le PGA Tour en 2024, et 48 % des drives au-delà de 274 m.</p>
-
-<h2>LPGA Tour : vitesse et distance par club</h2>
-<p>Mêmes mesures TrackMan côté LPGA (saison 2023). À vitesse plus faible, les joueuses du LPGA gardent un rendement remarquable : un drive moyen de 237 m mesuré en 2024, avec un angle d'attaque positif au driver là où les joueurs du PGA frappent légèrement vers le bas.</p>
-<table>
-<thead><tr><th>Club</th><th>Vitesse de club</th><th>Vitesse de balle</th><th>Carry</th></tr></thead>
-<tbody>
-<tr><td>Driver</td><td>154 km/h <span class='alt'>(96 mph)</span></td><td>230 km/h <span class='alt'>(143 mph)</span></td><td>204 m <span class='alt'>(223 yd)</span></td></tr>
-<tr><td>Bois 3</td><td>148 km/h <span class='alt'>(92 mph)</span></td><td>217 km/h <span class='alt'>(135 mph)</span></td><td>183 m <span class='alt'>(200 yd)</span></td></tr>
-<tr><td>Bois 5</td><td>145 km/h <span class='alt'>(90 mph)</span></td><td>209 km/h <span class='alt'>(130 mph)</span></td><td>173 m <span class='alt'>(189 yd)</span></td></tr>
-<tr><td>Hybride</td><td>140 km/h <span class='alt'>(87 mph)</span></td><td>201 km/h <span class='alt'>(125 mph)</span></td><td>163 m <span class='alt'>(178 yd)</span></td></tr>
-<tr><td>Fer 4</td><td>132 km/h <span class='alt'>(82 mph)</span></td><td>190 km/h <span class='alt'>(118 mph)</span></td><td>160 m <span class='alt'>(175 yd)</span></td></tr>
-<tr><td>Fer 5</td><td>130 km/h <span class='alt'>(81 mph)</span></td><td>183 km/h <span class='alt'>(114 mph)</span></td><td>152 m <span class='alt'>(166 yd)</span></td></tr>
-<tr><td>Fer 6</td><td>129 km/h <span class='alt'>(80 mph)</span></td><td>179 km/h <span class='alt'>(111 mph)</span></td><td>142 m <span class='alt'>(155 yd)</span></td></tr>
-<tr><td>Fer 7</td><td>126 km/h <span class='alt'>(78 mph)</span></td><td>171 km/h <span class='alt'>(106 mph)</span></td><td>131 m <span class='alt'>(143 yd)</span></td></tr>
-<tr><td>Fer 8</td><td>122 km/h <span class='alt'>(76 mph)</span></td><td>164 km/h <span class='alt'>(102 mph)</span></td><td>122 m <span class='alt'>(133 yd)</span></td></tr>
-<tr><td>Fer 9</td><td>119 km/h <span class='alt'>(74 mph)</span></td><td>153 km/h <span class='alt'>(95 mph)</span></td><td>112 m <span class='alt'>(123 yd)</span></td></tr>
-<tr><td>Pitching wedge</td><td>116 km/h <span class='alt'>(72 mph)</span></td><td>142 km/h <span class='alt'>(88 mph)</span></td><td>101 m <span class='alt'>(111 yd)</span></td></tr>
-</tbody>
-</table>
-
-<h2>La vitesse de swing des amateurs, par niveau</h2>
-<p>Vitesses de club au driver mesurées par TrackMan. La moyenne des golfeurs hommes se situe à 150 km/h (93.4 mph), et plus de 40 % des golfeurs mesurés swinguent entre 146 et 161 km/h.</p>
-<table>
-<thead><tr><th>Profil hommes</th><th>Vitesse driver</th></tr></thead>
-<tbody>
-<tr><td>Scratch ou mieux</td><td>177 km/h <span class='alt'>(110 mph)</span></td></tr>
-<tr><td>Handicap 5</td><td>163 km/h <span class='alt'>(101 mph)</span></td></tr>
-<tr><td>Handicap 10</td><td>153 km/h <span class='alt'>(95 mph)</span></td></tr>
-<tr><td>Golfeur moyen (index 14,5)</td><td>151 km/h <span class='alt'>(94 mph)</span></td></tr>
-<tr><td>Bogey golfer (~18-20)</td><td>148 km/h <span class='alt'>(92 mph)</span></td></tr>
-</tbody>
-</table>
-<table>
-<thead><tr><th>Profil femmes</th><th>Vitesse driver</th></tr></thead>
-<tbody>
-<tr><td>Scratch ou mieux</td><td>145 km/h <span class='alt'>(90 mph)</span></td></tr>
-<tr><td>Handicap 5</td><td>140 km/h <span class='alt'>(87 mph)</span></td></tr>
-<tr><td>Handicap 10</td><td>134 km/h <span class='alt'>(83 mph)</span></td></tr>
-<tr><td>Handicap 15</td><td>127 km/h <span class='alt'>(79 mph)</span></td></tr>
-</tbody>
-</table>
-<p class="note">TrackMan ne publie pas de vitesse mesurée au-delà du bogey golfer chez les hommes ni au-delà de l'index 15 chez les femmes : nous n'extrapolons pas ces valeurs.</p>
-
-<h2>La distance par club selon votre index</h2>
-<p>Distances totales (roule comprise) mesurées par Shot Scope sur des centaines de milliers de golfeurs équipés de capteurs. Entre un scratch et un index 25, l'écart au driver atteint 74 mètres. Sélectionnez votre index pour vous situer.</p>
-<div class="filter"><label for="hcp">Votre index : </label>
-<select id="hcp" onchange="highlight()">
-  <option value="-1">Tous</option>
-  <option value="0">Scratch</option><option value="1">Index 5</option><option value="2">Index 10</option>
-  <option value="3">Index 15</option><option value="4">Index 20</option><option value="5">Index 25</option>
-</select></div>
-<table id="ss">
-<thead><tr><th>Club</th><th data-col='0'>Scratch</th><th data-col='1'>Index 5</th><th data-col='2'>Index 10</th><th data-col='3'>Index 15</th><th data-col='4'>Index 20</th><th data-col='5'>Index 25</th></tr></thead>
-<tbody>
-<tr><td>Driver</td><td data-col='0'>261 m</td><td data-col='1'>239 m</td><td data-col='2'>237 m</td><td data-col='3'>216 m</td><td data-col='4'>206 m</td><td data-col='5'>187 m</td></tr>
-<tr><td>Bois 3</td><td data-col='0'>239 m</td><td data-col='1'>214 m</td><td data-col='2'>208 m</td><td data-col='3'>197 m</td><td data-col='4'>178 m</td><td data-col='5'>163 m</td></tr>
-<tr><td>Hybride</td><td data-col='0'>217 m</td><td data-col='1'>198 m</td><td data-col='2'>196 m</td><td data-col='3'>180 m</td><td data-col='4'>165 m</td><td data-col='5'>148 m</td></tr>
-<tr><td>Fer 4</td><td data-col='0'>204 m</td><td data-col='1'>184 m</td><td data-col='2'>182 m</td><td data-col='3'>170 m</td><td data-col='4'>155 m</td><td data-col='5'>138 m</td></tr>
-<tr><td>Fer 5</td><td data-col='0'>183 m</td><td data-col='1'>167 m</td><td data-col='2'>171 m</td><td data-col='3'>155 m</td><td data-col='4'>148 m</td><td data-col='5'>131 m</td></tr>
-<tr><td>Fer 6</td><td data-col='0'>169 m</td><td data-col='1'>157 m</td><td data-col='2'>156 m</td><td data-col='3'>148 m</td><td data-col='4'>138 m</td><td data-col='5'>125 m</td></tr>
-<tr><td>Fer 7</td><td data-col='0'>163 m</td><td data-col='1'>150 m</td><td data-col='2'>147 m</td><td data-col='3'>141 m</td><td data-col='4'>134 m</td><td data-col='5'>121 m</td></tr>
-<tr><td>Fer 8</td><td data-col='0'>152 m</td><td data-col='1'>140 m</td><td data-col='2'>137 m</td><td data-col='3'>134 m</td><td data-col='4'>126 m</td><td data-col='5'>112 m</td></tr>
-<tr><td>Fer 9</td><td data-col='0'>142 m</td><td data-col='1'>127 m</td><td data-col='2'>128 m</td><td data-col='3'>124 m</td><td data-col='4'>118 m</td><td data-col='5'>99 m</td></tr>
-<tr><td>Pitching wedge</td><td data-col='0'>129 m</td><td data-col='1'>115 m</td><td data-col='2'>116 m</td><td data-col='3'>111 m</td><td data-col='4'>99 m</td><td data-col='5'>82 m</td></tr>
-<tr><td>Gap wedge</td><td data-col='0'>115 m</td><td data-col='1'>100 m</td><td data-col='2'>101 m</td><td data-col='3'>95 m</td><td data-col='4'>86 m</td><td data-col='5'>72 m</td></tr>
-<tr><td>Sand wedge</td><td data-col='0'>96 m</td><td data-col='1'>79 m</td><td data-col='2'>90 m</td><td data-col='3'>77 m</td><td data-col='4'>78 m</td><td data-col='5'>73 m</td></tr>
-<tr><td>Lob wedge</td><td data-col='0'>79 m</td><td data-col='1'>65 m</td><td data-col='2'>72 m</td><td data-col='3'>69 m</td><td data-col='4'>71 m</td><td data-col='5'>45 m</td></tr>
-</tbody>
-</table>
-<p class="note">Métrique P-Avg de Shot Scope : moyenne calculée après retrait des 10 % de coups extrêmes.</p>
-
-<h2>Les chiffres officiels du golf mondial</h2>
-<p>Le Distance Report 2024 de l'USGA et du R&A, la référence officielle, mesure le drive moyen des amateurs hommes à 197 m (de 219 m sous l'index 6 à 161 m au-delà de l'index 21) et celui des amatrices à 135 m. Les données Arccos 2024, sur plus d'un milliard de coups trackés, confirment l'ordre de grandeur : 205 m pour les hommes, 161 m pour les femmes. Et les pros de plus de 50 ans du PGA Tour Champions drivent encore à 255 m de moyenne : la vitesse baisse avec l'âge, la distance aussi, d'où l'intérêt d'ajuster sa balle plutôt que de forcer son swing.</p>
-
-<div class="maillage">Pour aller plus loin : <a href="https://golfiller.fr/blogs/infos/tableau-comparatif-de-compression-de-balles">le tableau de compression des balles</a> pour choisir la balle adaptée à votre vitesse, <a href="https://golfiller.fr/blogs/infos/calcul-index-golf">le calcul de votre index</a> pour situer votre niveau, et <a href="https://golfiller.fr/collections/all">les lots de balles reconditionnées</a> pour jouer la bonne balle sans payer le prix du neuf.</div>
-
-<div class="sources">
-<h2>Sources</h2>
-<ol>
-<li>TrackMan, « Introducing Updated Tour Averages » et « What is Club Speed? », 2024 : trackman.com/blog/golf/what-is-club-speed</li>
-<li>Golf Monthly, « How Far Do PGA Tour Players Hit Every Club In The Bag? », données TrackMan 2024, février 2025 : golfmonthly.com/tour/how-far-pga-tour-players-hit-every-club-in-the-bag</li>
-<li>Golf Monthly, « How Far Do LPGA Tour Players Hit Every Club In the Bag? », données TrackMan 2023, mai 2024 : golfmonthly.com/features/the-game/how-far-lpga-tour-players-hit-every-club-in-the-bag</li>
-<li>Shot Scope, distances totales par club et par index, via Golf Monthly (mai 2026) et GolfMagic (juillet 2025)</li>
-<li>USGA / R&A, « 2024 Distance Report : A Review of Driving Distance », 2025 : randa.org</li>
-<li>Arccos, drives moyens 2023-2024, via Golf.com, « How far golfers actually hit their drives, according to data », mai 2025</li>
-<li>Golf.com, « Here's how fast golfers swing their driver, based on handicap », données TrackMan, février 2021</li>
-<li>Stats PGA Tour saison 2025 (vitesse et distance moyennes), via Swing Man Golf, « Average Golf Swing Speed Chart »</li>
-</ol>
-<p class="note">Conversions : 1 mph = 1,609 km/h ; 1 yard = 0,914 m. Valeurs arrondies au km/h et au mètre.</p>
-</div>
-
-</div></div>
 <script>
-// Ancres [distance totale fer 7 en mètres, vitesse driver en mph] : TrackMan × Shot Scope
-var ANCHORS = [[163, 110], [150, 101], [147, 95], [141, 94], [134, 92]];
-var MPH_KMH = 1.609344;
-function estimer() {
-  var d = parseFloat(document.getElementById('fer7').value);
-  var res = document.getElementById('res');
-  var sp = document.getElementById('res-speed');
-  var pr = document.getElementById('res-profile');
-  var rc = document.getElementById('res-reco');
-  if (!d || d < 40 || d > 220) { res.style.display='block'; sp.textContent=''; pr.textContent='Entrez une distance entre 40 et 220 mètres.'; rc.innerHTML=''; return; }
-  res.style.display='block';
-  var max = ANCHORS[0], min = ANCHORS[ANCHORS.length-1];
-  var mph;
-  if (d >= max[0]) {
-    sp.textContent = '≈ ' + Math.round(max[1]*MPH_KMH) + ' km/h ou plus';
-    pr.textContent = 'Niveau scratch ou mieux : vous êtes au-delà des références amateurs publiées.';
-    mph = max[1];
-  } else if (d <= min[0]) {
-    sp.textContent = 'Sous ' + Math.round(min[1]*MPH_KMH) + ' km/h';
-    pr.textContent = 'En dessous des références mesurées publiées (TrackMan s\'arrête au bogey golfer) : pas d\'extrapolation chiffrée.';
-    mph = 80; // déclenche la reco basse compression, sans afficher de vitesse inventée
-  } else {
-    for (var i = 0; i < ANCHORS.length-1; i++) {
-      var hi = ANCHORS[i], lo = ANCHORS[i+1];
-      if (d <= hi[0] && d >= lo[0]) {
-        var t = (d - lo[0]) / (hi[0] - lo[0]);
-        mph = lo[1] + t * (hi[1] - lo[1]);
-        break;
-      }
-    }
-    sp.textContent = '≈ ' + Math.round(mph*MPH_KMH) + ' km/h (' + Math.round(mph) + ' mph) au driver';
-    var profil = mph >= 105 ? 'proche du scratch' : mph >= 97 ? 'proche d\'un index 5' : mph >= 94.5 ? 'proche d\'un index 10' : mph >= 93 ? 'dans la moyenne des golfeurs (index 14,5)' : 'proche du bogey golfer';
-    pr.textContent = 'Profil de vitesse : ' + profil + '.';
-  }
-  var reco, lien, lienTxt;
-  if (mph < 85) { reco = 'À cette vitesse, une balle basse compression vous rendra de la distance et du toucher.'; lien = 'https://golfiller.fr/collections/all'; lienTxt = 'Voir les lots de balles soft'; }
-  else if (mph < 95) { reco = 'À cette vitesse, une balle de compression moyenne est le meilleur compromis distance-contrôle.'; lien = 'https://golfiller.fr/collections/all'; lienTxt = 'Voir les lots confirmés'; }
-  else { reco = 'À cette vitesse, vous pouvez exploiter une balle haute compression, celle des joueurs de tour.'; lien = 'https://golfiller.fr/collections/all'; lienTxt = 'Voir les lots pros'; }
-  rc.innerHTML = reco + ' Vérifiez la valeur exacte de chaque modèle dans le <a href="https://golfiller.fr/blogs/infos/tableau-comparatif-de-compression-de-balles">tableau de compression</a>.<br><a class="cta" href="' + lien + '">' + lienTxt + '</a>';
-}
-function highlight() {
-  var v = document.getElementById('hcp').value;
-  document.querySelectorAll('#ss [data-col]').forEach(function(el) {
-    el.classList.toggle('hl', el.getAttribute('data-col') === v);
+document.addEventListener('DOMContentLoaded', function() {
+  /* ===== Filtres index : surligne la colonne choisie ===== */
+  var btns = document.querySelectorAll('#gfl-filters .filter-btn');
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btns.forEach(function(b) { b.classList.remove('on'); });
+      this.classList.add('on');
+      var col = this.getAttribute('data-col');
+      document.querySelectorAll('#gfl-ss [data-col]').forEach(function(el) {
+        var on = el.getAttribute('data-col') === col;
+        if (el.tagName === 'TH') { el.classList.toggle('th-prix', on); }
+        else { el.classList.toggle('cell-prix', on); }
+      });
+    });
   });
-}
+
+  /* ===== Calculateur vitesse de swing =====
+     Ancres [distance totale fer 7 en mètres, vitesse driver en mph] : TrackMan x Shot Scope */
+  var ANCHORS = [[163, 110], [150, 101], [147, 95], [141, 94], [134, 92]];
+  var MPH_KMH = 1.609344;
+  document.getElementById('gfl-go').addEventListener('click', function() {
+    var d = parseFloat(document.getElementById('gfl-fer7').value);
+    var res = document.getElementById('gfl-res');
+    var sp = document.getElementById('gfl-res-speed');
+    var pr = document.getElementById('gfl-res-profile');
+    var rc = document.getElementById('gfl-res-reco');
+    res.style.display = 'block';
+    if (!d || d < 40 || d > 220) { sp.textContent = ''; pr.textContent = 'Entrez une distance entre 40 et 220 mètres.'; rc.innerHTML = ''; return; }
+    var max = ANCHORS[0], min = ANCHORS[ANCHORS.length - 1];
+    var mph;
+    if (d >= max[0]) {
+      sp.textContent = '\u2248 ' + Math.round(max[1] * MPH_KMH) + ' km/h ou plus';
+      pr.textContent = 'Niveau scratch ou mieux : vous êtes au-delà des références amateurs publiées.';
+      mph = max[1];
+    } else if (d <= min[0]) {
+      sp.textContent = 'Sous ' + Math.round(min[1] * MPH_KMH) + ' km/h';
+      pr.textContent = 'En dessous des références mesurées publiées : pas d\'extrapolation chiffrée.';
+      mph = 80; /* déclenche la reco basse compression, sans afficher de vitesse inventée */
+    } else {
+      for (var i = 0; i < ANCHORS.length - 1; i++) {
+        var hi = ANCHORS[i], lo = ANCHORS[i + 1];
+        if (d <= hi[0] && d >= lo[0]) {
+          var t = (d - lo[0]) / (hi[0] - lo[0]);
+          mph = lo[1] + t * (hi[1] - lo[1]);
+          break;
+        }
+      }
+      sp.textContent = '\u2248 ' + Math.round(mph * MPH_KMH) + ' km/h (' + Math.round(mph) + ' mph) au driver';
+      var profil = mph >= 105 ? 'proche du scratch' : mph >= 97 ? 'proche d\'un index 5' : mph >= 94.5 ? 'proche d\'un index 10' : mph >= 93 ? 'dans la moyenne des golfeurs (index 14,5)' : 'proche du bogey golfer';
+      pr.textContent = 'Profil de vitesse : ' + profil + '.';
+    }
+    var reco, lien, lienTxt;
+    if (mph < 85) { reco = 'À cette vitesse, une balle basse compression vous rendra de la distance et du toucher.'; lien = 'https://golfiller.fr/collections/all'; lienTxt = 'Voir les lots de balles soft'; }
+    else if (mph < 95) { reco = 'À cette vitesse, une balle de compression moyenne est le meilleur compromis distance-contrôle.'; lien = 'https://golfiller.fr/collections/all'; lienTxt = 'Voir les lots confirmés'; }
+    else { reco = 'À cette vitesse, vous pouvez exploiter une balle haute compression, celle des joueurs de tour.'; lien = 'https://golfiller.fr/collections/all'; lienTxt = 'Voir les lots pros'; }
+    rc.innerHTML = reco + ' Vérifiez la valeur exacte de chaque modèle dans le <a href="https://golfiller.fr/blogs/infos/tableau-comparatif-de-compression-de-balles">tableau de compression</a>.<br><a class="cta-link" href="' + lien + '">' + lienTxt + '</a>';
+  });
+});
 </script>
 <!-- /Golfiller vitesse-distance -->

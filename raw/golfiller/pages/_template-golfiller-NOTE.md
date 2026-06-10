@@ -1,0 +1,3 @@
+# Template Golfiller (design officiel)
+
+Le gabarit pixel-perfect fourni par Tim le 2026-06-10 : Bebas Neue + Source Sans 3, turquoise #4ECDC4, jaune #F5E137, noir #111, wrapper `.golf-page`. Composants : tableaux (thead turquoise, colonne prix jaune `th-prix`/`cell-prix`, `.table-wrap` + `.full-table` pour le scroll mobile), encarts `.info-box` (jaune) / `.method-box` (blanc) / `.rule-box` (accent turquoise), cartes `.top-card` gold/silver/bronze, CTA `.cta-link`, FAQ `<details>`, filtres `.filter-btn`, note `.source-note`. JS en addEventListener + DOMContentLoaded (compat Shopify). Règle : conserver le CSS tel quel, ne modifier que le contenu HTML. Le CSS de référence est dans n'importe quelle page produite (ex. vitesse-distance-par-club-shopify.html).
