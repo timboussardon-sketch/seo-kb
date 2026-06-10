@@ -9,6 +9,18 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-10 · Agent Opportunités : doctrine problématique ENRICHIE (anatomie + tests + garde-fou) — DÉPLOYÉ
+
+- Retour Tim : « creuse là-dessus pour avoir les meilleures réponses possibles » (sur la doctrine 4→24 mots).
+- 2 recherches parallèles : (a) doctrine propriétaire de Tim minée dans la KB/calls/skills — test de requêtabilité (`seo-modeles-pseo`), modificateurs décisionnels Do, génération par intention, Know-Simple/Know/Do, exemples acceptés/rejetés qualiopi, test substitution ChatGPT ; (b) patterns réels moteurs IA (Semrush AI Mode 7,22 mots ; 8+ mots = ~57 % de déclenchement AI Overview ; vocal ~29 mots ; anatomie persona+situation+obstacle+résultat+contrainte+comparaison ; anti keyword-stuffing).
+- **Implémentation** :
+  - Constante `PROBLEMATIQUE_DOCTRINE` (anatomie, 2 tests durs requêtabilité + substitution, modificateurs Do, 6 gabarits, exemples ACCEPTÉ/REJETÉ, longueur 8-24 mots, ≤3 contraintes) injectée dans le gap-hunter ET l'enrichissement déterministe.
+  - Garde-fou déterministe `looksLikeProblematique` : écarte les « problématiques » qui restent des mots-clés collés (< 5 mots, ou 5-7 mots sans mot-outil/préposition). Ex. rejeté « prix accompagnement qualiopi audit », accepté « prix d'un accompagnement qualiopi pour un audit de surveillance ».
+  - `AGENT.md` enrichi.
+- Edge function déployée. Commit `47ffc69`. Sources-clés : `seo-modeles-pseo/SKILL.md`, `leexi-seo/.../call-decouverte-2026-05-21.md:135`, `wiki/concepts/know-simple-know-do.md`.
+
+---
+
 ## 2026-06-10 · Agent Opportunités : doctrine « 4 → 24 mots » (problématique, pas mot-clé) — DÉPLOYÉ
 
 - Retour Tim : « pourquoi on n'a pas de prompt et uniquement des mots-clés ? notre doctrine c'est passer de 4 à 24 mots. Qu'est-ce qui bloque ? »
