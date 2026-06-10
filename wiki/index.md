@@ -264,7 +264,8 @@ status: stable
 - [[syntheses/tim-profil-doctrine]] — Profil et doctrine de Tim Boussardon
 - [[syntheses/audit-doctrine-2026]] — Audit de la doctrine 2026 (cas terrain, dont [[entities/golfiller]])
 
-## Queries (4)
+## Queries (5)
+- [[queries/2026-06-10-golfiller-gsc-90j]] — Golfiller, analyse GSC 90 jours (winners Do, 1 346 requêtes sur la page tarifs, 388 parcours nommés)
 - [[queries/pseo-2026-05-16-landing-lead-gen-organikk]] — pSEO Organikk : 5 modèles de landing lead-gen sur problématique SEO (45 pages possibles, M1 pain-first prioritaire)
 - [[queries/pseo-2026-05-13-organikk-secteur-ville]] — pSEO Organikk : modèle métier local × ville (stratégie SEO {secteur} {ville})
 - [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] — Wiki persistant optimise-t-il le Grounding Score ? (8 sources)
@@ -283,7 +284,8 @@ status: stable
 - [[briefs/reddit-pour-geo-2026]] — Utiliser Reddit pour améliorer son GEO sans se faire bannir
 - [[briefs/strategie-seo-avocat-2026]] — Stratégie SEO avocat 2026 : capter le client avant le cabinet concurrent
 - [[briefs/strategie-seo-hotellerie-2026]] — Stratégie SEO hôtellerie 2026 : récupérer la réservation directe
-### Clusters (0)
+### Clusters (1)
+- [[clusters/modeles-pseo-2026-06-10-golfiller]] — Golfiller : 7 modèles de pages pSEO scorés depuis la GSC (avis modèle, prix, fiches parcours)
 ### Quick Wins (0)
 ### Cannibalisation (0)
 ### Maillage (0)

@@ -765,3 +765,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - brief client canonique (suite IA souveraine, Leexi One sept 2026) ; audit thématique ; étude marché (deep-research 24 sources) ; étude RGPD/souveraineté ; analyse GSC + approfondie
 - finding majeur: SEO hors-marque leexi.ai -43% en 6 mois (marque +45%), cause = refonte cassée (migration sans 301/canonical + cannibalisation), souveraineté = 0 clic
 - tout dans le vault leexi-seo (journal: leexi-seo/Journal.md), data brute dans data/gsc/
+
+## [2026-06-10] client | Golfiller — fiche client + analyse GSC 90j + modèles pSEO
+- fiche client créée: raw/organikk/clients/golfiller.md (statut: en cours)
+- pull GSC API via google_connections Fusionn (fonction edge admin-gsc-export, secret dédié)
+- analyse: [[queries/2026-06-10-golfiller-gsc-90j]] — 5 480 clics / 113 965 imp top 1000, winners 100% Do
+- signal pSEO: page tarifs parcours = 1 346 requêtes distinctes, 388 parcours nommés
+- skill déclenché: seo-modeles-pseo → [[clusters/modeles-pseo-2026-06-10-golfiller]] (7 modèles scorés, top 3: avis modèle, prix, fiches parcours)
+- cannibalisation détectée: calcul-index-golf vs calculateur-score-differentiel (famille « calcul index golf »)
