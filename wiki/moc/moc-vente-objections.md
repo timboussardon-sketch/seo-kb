@@ -24,6 +24,7 @@ status: living-doc
 6. [[syntheses/workflow-complet-consultant-seo-ia]] — prospection → livraison de bout en bout
 7. [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] — avatar + 6 douleurs + objections, 9 calls
 8. [[concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas]] — le filtre sur les prestations
+9. [[concepts/objection-confidentialite-rgpd]] — la réponse en deux phrases à « et la confidentialité ? » (entraînement par type de compte, DPA, brut en local)
 
 ## Prospects (matière terrain)
 

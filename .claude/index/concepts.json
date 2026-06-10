@@ -232,6 +232,7 @@
       "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-09-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-10-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
@@ -1180,6 +1181,7 @@
       "wiki/concepts/maillage-systeme.md",
       "wiki/concepts/methode-organikk-4-piliers.md",
       "wiki/concepts/mots-cles-actionnels.md",
+      "wiki/concepts/objection-confidentialite-rgpd.md",
       "wiki/concepts/product-led-seo.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/concepts/pseo-data-driven-models.md",
@@ -3239,6 +3241,37 @@
     "title": "NotebookLM",
     "type": "entity"
   },
+  "objection-confidentialite-rgpd": {
+    "aliases": [
+      "objection-confidentialite",
+      "objection-rgpd",
+      "argumentaire-rgpd"
+    ],
+    "backrefs": [
+      "wiki/log.md",
+      "wiki/moc/moc-vente-objections.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/objection-confidentialite-rgpd.md",
+    "outlinks": [
+      "data-proprietaire",
+      "2026-06-10-anthropic-politique-donnees",
+      "moc-vente-objections",
+      "scam-objection-data-aleatoire",
+      "vendre-seo-ia-2026"
+    ],
+    "status": "stable",
+    "tags": [
+      "vente",
+      "objections",
+      "rgpd",
+      "confidentialite",
+      "claude",
+      "data-proprietaire"
+    ],
+    "title": "Objection « et la confidentialité / RGPD ? »",
+    "type": "concept"
+  },
   "obsidian": {
     "aliases": [
       "obsidian-md"
@@ -4291,6 +4324,7 @@
       "raw/organikk/_MODELE-discours-commercial.md",
       "raw/organikk/clients/fgformation-personas-problematiques.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/objection-confidentialite-rgpd.md",
       "wiki/index.md",
       "wiki/syntheses/audit-doctrine-2026.md"
     ],

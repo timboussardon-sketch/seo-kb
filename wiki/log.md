@@ -813,3 +813,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 ## [2026-06-10] client | Alexia — résumé de call validé et archivé (version envoyée)
 - résumé final validé par Tim, envoyé à Adrien + Alexia avec la facture corrigée : [[alexia-resume-call-envoye]]
 - next acté : à réception du paiement, ouvrir le drive + installer les skills dans Claude (abonnement inchangé pour le moment)
+
+## [2026-06-10] concept | Objection confidentialité / RGPD — argumentaire standard
+- nouvelle page [[concepts/objection-confidentialite-rgpd]] : réponse en 2 phrases + détail (entraînement par type de compte, DPA, minimisation, brut en local), vérifiée sur les pages officielles Anthropic
+- reliée à [[moc/moc-vente-objections]] (ordre de lecture, point 9)
+- même point ajouté aux deux guides 0→1 (md + HTML) et en mémoire système
