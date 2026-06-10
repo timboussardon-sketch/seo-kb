@@ -9,6 +9,16 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-10 · Opportunités : findings de crawl ne polluent plus les Quick wins — DÉPLOYÉ
+
+- Retour Tim (capture) : « Pousser "timothée boussardon" en page 1 » et « Pousser "2 pages au contenu fin (< 250 mots)" en page 1 » → « ça ne sert strictement à rien ».
+- Bug : `scanCrawlFindings` faisait `keyword = suggested_keyword || title`. Pour un finding `thin` (mappé en `optimiser_page`), le `suggested_keyword` est vide → le **titre descriptif** (« 2 pages au contenu fin ») devenait le mot-clé d'un faux Quick win. Idem orphan/dead_end → « Mailler vers "1 page orpheline" ».
+- Fix : `thin` retiré de CRAWL_ACTION (pas de bucket sensé). Findings structurels orphan/dead_end → reco centrée PAGE (`crawlStructuralReco`), jamais le titre comme mot-clé. Candidat crawl créé seulement s'il porte une vraie requête (`suggested_keyword`) ou, pour le maillage, une URL.
+- « timothée boussardon » (marque) = données périmées d'un vieux scan ; `charterReject` le filtre déjà. **Vérifié au re-scan organikk.co : 0 requête de marque, 0 faux mot-clé crawl** ; restent 2 opportunités propres (cannibalisation + maillage) avec problématique en titre.
+- Commit `6ee55ec`. (organikk.co = site brand-heavy → peu d'opportunités décisionnelles, normal.)
+
+---
+
 ## 2026-06-10 · Agent Opportunités : génération des problématiques RÉPARÉE + vérifiée en prod — DÉPLOYÉ
 
 - Suite de « go » (Tim veut voir le résultat réel). Premier scan forcé → 0 problématique, 0 page à créer, marque non filtrée. Débogage long (réseau très instable toute la session).
