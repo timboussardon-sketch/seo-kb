@@ -9,6 +9,21 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-10 · Agent Opportunités : doctrine « 4 → 24 mots » (problématique, pas mot-clé) — DÉPLOYÉ
+
+- Retour Tim : « pourquoi on n'a pas de prompt et uniquement des mots-clés ? notre doctrine c'est passer de 4 à 24 mots. Qu'est-ce qui bloque ? »
+- **Diagnostic** (4 verrous) : (1) sources de l'agent = GSC + Google Suggest = requêtes courtes de l'ère 4 mots ; les prompts de 24 mots vivent dans ChatGPT/Perplexity, pas dans Google. (2) Le seul signal long (titres Reddit/YouTube) était **compressé exprès** en mot-clé (ligne « reformule en requête courte »). (3) L'agent ne lit jamais la data propriétaire (calls/tickets/`documents`) où vivent les vraies problématiques. (4) Modèle centré mot-clé (champ `keyword` court, pas de champ problématique).
+- **Reframe (choix Tim : reframe agent d'abord)** :
+  - L'unité devient la **problématique longue** (`recommendation.query`, 12-24 mots, langage naturel) ; le mot-clé court = simple label.
+  - `submit_gaps` exige `problematique` + `keyword` ; system prompt porte la doctrine « 4 → 24 mots » et interdit de compresser Reddit/YouTube.
+  - `enrichRecos` dérive aussi la `query` longue pour les opportunités déterministes (quick wins, titles, déclins).
+  - Dédup des gaps sur la problématique (plus sur le mot-clé).
+  - Front : problématique en **titre**, mot-clé en **label** (choix Tim).
+- **Limite restante (palier suivant)** : brancher la data propriétaire (`documents`, calls) dans l'agent — c'est là que vivent les vraies requêtes de 24 mots. Non fait (Tim a choisi le reframe d'abord).
+- Edge function déployée. Front commité/poussé (`7f34869`). Nouveau format au prochain scan `cron-opportunity-radar`.
+
+---
+
 ## 2026-06-09 · Agent Opportunités : restructure (charte business + gates de pertinence) — DÉPLOYÉ
 
 - Retour Tim : « pages à créer » absurdes (« manifestation seoul », « anssi certification cspn », « quality rater jobs work from home », « training seoul ») et cannibalisations de marque (« organikk.co », « timothée boussardon »). « Est-ce un vrai agent ? a-t-il un skill / un agent.md ? »
