@@ -809,3 +809,7 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - source : [[alexia-call-cadrage]] (Downloads/Alexia.md rapatrié)
 - corpus voix : entrée datée ajoutée dans raw/notes/tim-my-voice.md (système vs outils, vecteurs sémantiques, emails qualifiés, limite 1000 pages)
 - next : facture à renvoyer, résumé de call à envoyer, espace Notion à recevoir, choix des 4-5 clients, point mercredi
+
+## [2026-06-10] client | Alexia — résumé de call validé et archivé (version envoyée)
+- résumé final validé par Tim, envoyé à Adrien + Alexia avec la facture corrigée : [[alexia-resume-call-envoye]]
+- next acté : à réception du paiement, ouvrir le drive + installer les skills dans Claude (abonnement inchangé pour le moment)
