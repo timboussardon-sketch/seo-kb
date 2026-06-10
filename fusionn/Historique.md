@@ -9,6 +9,17 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-10 · Agent Opportunités : génération des problématiques RÉPARÉE + vérifiée en prod — DÉPLOYÉ
+
+- Suite de « go » (Tim veut voir le résultat réel). Premier scan forcé → 0 problématique, 0 page à créer, marque non filtrée. Débogage long (réseau très instable toute la session).
+- **Cause racine trouvée** : `gemini-2.5-flash` **pense** (thinking) avant de répondre et bouffe le budget de tokens → JSON tronqué (`finishReason: MAX_TOKENS`, préambule « Here is the JSON requested ») → `parseJSON` échoue → charte en fallback, agent 0 gap, enrichissement sans `query`. Intermittent (parfois flash pense peu → JSON valide). Cf. note mémoire « Flash JSON malformé / thinking coupé ».
+- **Fixes** : (1) `thinkingConfig:{thinkingBudget:0}` sur tous les appels Gemini JSON (charte, relevanceGate, enrichissement). (2) `huntGaps` réécrit en **single-call** : fetch déterministe Suggest+Reddit+YouTube → 1 appel JSON no-thinking qui génère les problématiques (la boucle function-calling produisait 0 gap : flash orchestre mal ses outils sur un prompt doctrine long). Code FC mort supprimé (GAP_TOOLS, callGeminiFC, listSitemap). (3) enrichissement 2048→6144 tokens.
+- **Vérifié en prod** (scan réel sur croisiere-evasion.fr, site client à trafic décisionnel) : 46 opportunités, 8 `creer_page` + quick wins, **20/25 avec problématique 24 mots en titre + mot-clé en label**. Ex. « Est-ce qu'une croisière à la cabine vaut le coup pour un particulier seul qui veut juste se détendre ? », « Comment passer d'une simple sortie journée à une mini-croisière sans contraintes logistiques ? ». Charte auto-dérivée nickel, marque (« timothée boussardon ») filtrée. Pile la doctrine 4→24 mots.
+- **Note infra** : `RADAR_CRON_SECRET` a été roté vers une valeur connue (synchronisée edge + GitHub secret) pour pouvoir déclencher le worker en direct pendant le debug. Le cron GitHub quotidien reste fonctionnel (les deux côtés ont la nouvelle valeur). Constat au passage : sur organikk.co l'agent renvoie 0 gap, c'est NORMAL (le site ne reçoit des clics que sur sa propre marque → aucun seed décisionnel).
+- Commit `2370c1d`.
+
+---
+
 ## 2026-06-10 · Agent Opportunités : doctrine problématique ENRICHIE (anatomie + tests + garde-fou) — DÉPLOYÉ
 
 - Retour Tim : « creuse là-dessus pour avoir les meilleures réponses possibles » (sur la doctrine 4→24 mots).
