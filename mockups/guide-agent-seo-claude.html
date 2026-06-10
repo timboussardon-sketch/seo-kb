@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>De 0 à 1 · Construire ton agent SEO avec Claude</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#FAF8F1;
+    --paper-2:#F3F0E7;
+    --ink:#211D15;
+    --ink-2:#3d3729;
+    --gray:#6e6757;
+    --coral:#C2553A;
+    --coral-dark:#A8472F;
+    --line:rgba(33,29,21,.14);
+    --line-soft:rgba(33,29,21,.08);
+    --dark:#211D15;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:#fff; color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif;
+    font-size:16.5px; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    background:var(--paper);
+    max-width:880px; margin:0 auto 28px;
+    padding:72px 76px 84px;
+    min-height:600px;
+  }
+  @media(max-width:720px){ .page{padding:44px 26px 56px;} }
+
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--coral); font-weight:500;
+  }
+  .eyebrow a{color:var(--coral); text-decoration:underline; text-underline-offset:4px;}
+  h1,h2,h3,h4{font-family:'Bitter',Georgia,serif; margin:0;}
+
+  /* ── Couverture ── */
+  .cover{display:flex; flex-direction:column; justify-content:center; min-height:88vh;}
+  .cover h1{
+    color:var(--coral); font-size:clamp(44px,7vw,68px); line-height:1.08;
+    font-weight:700; letter-spacing:-.01em; margin:22px 0 0;
+  }
+  .cover .lede{
+    font-style:italic; font-size:21px; color:var(--ink-2);
+    max-width:540px; margin:42px 0 0;
+  }
+  .cover .byline{
+    margin-top:90px; padding-top:22px; border-top:1px solid var(--line);
+    font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--ink-2);
+  }
+  .cover .byline a{color:var(--coral); text-decoration:underline; text-underline-offset:4px;}
+
+  /* ── Sommaire ── */
+  .toc h1{color:var(--coral); font-size:46px; font-weight:700; padding-bottom:16px; border-bottom:2px solid var(--ink); margin-bottom:34px;}
+  .toc-item{padding:13px 0; border-bottom:1px solid var(--line-soft);}
+  .toc-item b{font-family:'Bitter',serif; font-size:18px; font-weight:700;}
+  .toc-item span{display:block; font-style:italic; color:var(--gray); font-size:15px; margin-top:2px;}
+
+  /* ── Chapitres ── */
+  .ch-eyebrow{font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.3em; text-transform:uppercase; color:var(--coral); font-weight:500;}
+  .ch-title{color:var(--coral); font-size:clamp(34px,5vw,48px); font-weight:700; line-height:1.1; margin:10px 0 0;}
+  .ch-lede{font-style:italic; font-size:19.5px; line-height:1.55; color:var(--ink-2); max-width:600px; margin:26px 0 0;}
+  .ch-gap{height:54px;}
+
+  h2.sec{font-size:26px; font-weight:700; margin:46px 0 14px;}
+  h3.sub{font-size:19px; font-weight:700; margin:32px 0 10px;}
+  p{margin:0 0 16px;}
+  .ital-note{font-style:italic; color:var(--coral); margin:26px 0 0; font-size:16px;}
+
+  ul.clean{margin:0 0 16px; padding-left:22px;}
+  ul.clean li{margin-bottom:8px;}
+  ul.clean li b{font-weight:600;}
+
+  /* ── Encadré sombre ── */
+  .callout{
+    background:var(--dark); color:#EFEAD9; border-radius:10px;
+    padding:24px 28px; margin:30px 0; font-size:16px; line-height:1.65;
+  }
+  .callout b{color:#fff; font-weight:700;}
+
+  /* ── Bloc code / diagramme ── */
+  .codebox{
+    background:var(--paper-2); border:1px solid var(--line-soft); border-radius:10px;
+    padding:22px 24px; margin:24px 0 8px; overflow-x:auto;
+  }
+  .codebox pre{
+    margin:0; font-family:'JetBrains Mono',monospace; font-size:12.5px; line-height:1.62;
+    color:var(--ink-2); white-space:pre;
+  }
+  .caption{
+    font-style:italic; color:var(--gray); font-size:14.5px; line-height:1.5;
+    margin:10px 0 26px; padding-left:26px;
+  }
+  code.inline{
+    font-family:'JetBrains Mono',monospace; font-size:13px;
+    background:var(--paper-2); border:1px solid var(--line-soft);
+    padding:1px 7px; border-radius:5px; white-space:nowrap;
+  }
+
+  /* ── Tables ── */
+  table{width:100%; border-collapse:collapse; margin:18px 0 26px; font-size:15.5px;}
+  thead th{
+    font-family:'Bitter',serif; font-weight:700; text-align:left;
+    padding:10px 14px 10px 0; border-bottom:2px solid var(--ink);
+  }
+  tbody td{padding:11px 14px 11px 0; border-bottom:1px solid var(--line-soft); vertical-align:top;}
+  tbody td:first-child{font-weight:600;}
+
+  /* ── Skill heading ── */
+  .skill-h{font-family:'Bitter',serif; font-size:23px; font-weight:700; margin:44px 0 12px;}
+  .skill-h code{
+    font-family:'JetBrains Mono',monospace; font-size:18px; font-weight:500;
+    background:var(--paper-2); padding:3px 10px; border-radius:6px; border:1px solid var(--line-soft);
+  }
+
+  .footer-note{
+    margin-top:70px; padding-top:20px; border-top:1px solid var(--line);
+    font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--gray);
+  }
+
+  /* ── CTA · DA Organikk ── */
+  .cta-org{
+    background:#fbfcff; border:1px solid rgba(10,15,30,.08); border-radius:22px;
+    padding:34px 36px; margin:30px 0;
+    font-family:'Inter',system-ui,sans-serif; color:#0A0F1E;
+    box-shadow:0 20px 60px -32px rgba(12,26,70,.25);
+  }
+  .cta-org .tag{
+    font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:#2559DD; font-weight:600;
+  }
+  .cta-org h3{
+    font-family:'Inter',sans-serif; font-size:26px; font-weight:600;
+    letter-spacing:-.022em; line-height:1.2; margin:10px 0 12px;
+  }
+  .cta-org h3 em{
+    font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; color:#2559DD;
+  }
+  .cta-org p{font-size:16px; line-height:1.6; color:#5a6681; margin:0 0 24px; max-width:560px;}
+  .cta-org .btn{
+    display:inline-block; padding:13px 26px; border-radius:999px;
+    background:linear-gradient(135deg,#2f66e8 0%,#2559DD 45%,#0b1f5c 100%);
+    color:#fff; font-size:15px; font-weight:600; text-decoration:none;
+    box-shadow:0 14px 30px -14px rgba(37,89,221,.55);
+  }
+  /* ── CTA · DA Fusionn ── */
+  .cta-fus-wrap{background:#F4F5F7; border-radius:22px; padding:22px; margin:30px 0;}
+  .cta-fus{
+    background:#fff; border:1px solid rgba(10,15,30,.07); border-radius:16px;
+    padding:30px 32px; font-family:'Inter',system-ui,sans-serif; color:#1A1A1A;
+    box-shadow:0 6px 24px -16px rgba(10,15,30,.18);
+  }
+  .cta-fus .tag{
+    font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:#FF371C; font-weight:600;
+  }
+  .cta-fus h3{
+    font-family:'Inter',sans-serif; font-size:24px; font-weight:600;
+    letter-spacing:-.02em; line-height:1.25; margin:10px 0 12px;
+  }
+  .cta-fus p{font-size:15.5px; line-height:1.6; color:#5a6068; margin:0 0 22px; max-width:560px;}
+  .cta-fus .btn{
+    display:inline-block; padding:12px 24px; border-radius:12px;
+    background:#FF371C; color:#fff; font-size:15px; font-weight:600; text-decoration:none;
+    box-shadow:0 12px 26px -14px rgba(255,55,28,.5);
+  }
+
+  /* ── Écrans (fenêtres simulées) ── */
+  .screen{border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:26px 0 8px; background:#fff; box-shadow:0 16px 36px -24px rgba(33,29,21,.28);}
+  .sbar{display:flex; align-items:center; gap:7px; padding:10px 14px; background:#ECE7DA; border-bottom:1px solid var(--line-soft);}
+  .sbar i{width:10px; height:10px; border-radius:50%; display:inline-block;}
+  .sbar .r{background:#DF604B;} .sbar .y{background:#E2B23E;} .sbar .g{background:#5AA45F;}
+  .sbar span{margin-left:6px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.1em; color:var(--gray); text-transform:uppercase;}
+  .sbody{display:flex; min-height:210px;}
+  .scol{padding:14px 16px; font-family:'JetBrains Mono',monospace; font-size:11.5px; line-height:1.85; color:var(--ink-2);}
+  .scol.side{width:200px; flex-shrink:0; background:#F6F3EA; border-right:1px solid var(--line-soft);}
+  .scol.main{flex:1;}
+  .slabel{font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--gray); margin-bottom:6px;}
+  .schip{display:block; background:#EDE9DC; border:1px solid var(--line-soft); border-radius:6px; padding:2px 9px; font-size:10.5px; margin:4px 0; width:fit-content;}
+  .sbubble{background:#F3F0E7; border:1px solid var(--line-soft); border-radius:10px; padding:10px 14px; margin:9px 0; font-family:'Source Serif 4',serif; font-size:13.5px; line-height:1.55; max-width:420px;}
+  .sbubble.user{background:#211D15; color:#EFEAD9; margin-left:auto;}
+  .term{background:#211D15; border-radius:12px; overflow:hidden; margin:26px 0 8px;}
+  .term .sbar{background:#2E2920; border-bottom:1px solid rgba(255,255,255,.06);}
+  .term .sbar span{color:#A89F89;}
+  .term pre{margin:0; padding:16px 18px; font-family:'JetBrains Mono',monospace; font-size:12px; line-height:1.75; color:#D9D2BE; white-space:pre-wrap;}
+  .term .c{color:#8FB573;} .term .p{color:#E0A458;}
+
+  @media print{
+    body{background:#fff;}
+    .page{margin:0; max-width:none; page-break-after:always; min-height:auto; padding:60px 64px;}
+    .page:last-child{page-break-after:auto;}
+    .codebox, .callout, .caption{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════ COUVERTURE ════════════════ -->
+<div class="page cover">
+  <span class="eyebrow"><a href="https://organikk.co">organikk.co</a> &nbsp;·&nbsp; guide agent</span>
+  <h1>De 0 à 1<br/>pour construire<br/>ton agent SEO<br/>sur Claude</h1>
+  <p class="lede">Le guide complet pour passer du chatbot à l'agent : la mémoire, les skills, les boucles d'apprentissage et les routines qui tournent sans toi.</p>
+  <div class="byline">Timothée Boussardon &nbsp;·&nbsp; <a href="https://organikk.co">organikk.co</a></div>
+</div>
+
+<!-- ════════════════ SOMMAIRE ════════════════ -->
+<div class="page toc">
+  <h1>Sommaire</h1>
+
+  <div class="toc-item"><b>Introduction</b><span>Pour qui, ce que tu sauras à la fin, comment lire ce guide.</span></div>
+  <div class="toc-item"><b>Chapitre 1 · De l'assistant à l'agent</b><span>Les 4 composants d'un agent, pourquoi le construire, la commodité.</span></div>
+  <div class="toc-item"><b>Chapitre 2 · De Claude Cowork à Obsidian</b><span>Le passage au Terminal en 7 étapes (15 minutes), les vraies commandes.</span></div>
+  <div class="toc-item"><b>Chapitre 3 · Le socle : le vault et la doctrine</b><span>La structure raw/wiki, le fichier AGENTS.md intégral.</span></div>
+  <div class="toc-item"><b>Chapitre 4 · La data propriétaire</b><span>Quoi collecter, le workflow d'ingestion en 5 étapes, retrouver l'info.</span></div>
+  <div class="toc-item"><b>Chapitre 5 · Les skills de l'agent</b><span>Anatomie, un SKILL.md intégral prêt à copier, le catalogue des 9.</span></div>
+  <div class="toc-item"><b>Chapitre 6 · La voix</b><span>Le corpus my-voice.md, la checklist anti-IA writing, la règle des 80.</span></div>
+  <div class="toc-item"><b>Chapitre 7 · Les workflows et le contrôle qualité</b><span>Le workflow mots-clés, l'audit complet en 8 phases, le contrôle avant publication.</span></div>
+  <div class="toc-item"><b>Chapitre 8 · Les trois boucles</b><span>Capture, validation, apprentissage, et la boucle de production schématisée pas à pas.</span></div>
+  <div class="toc-item"><b>Chapitre 9 · Les routines</b><span>Le menu des 9 automatisations possibles, et le code pour les poser.</span></div>
+  <div class="toc-item"><b>Chapitre 10 · Manager ton agent</b><span>Les points de contrôle, les corrections qui deviennent des règles, les modèles.</span></div>
+  <div class="toc-item"><b>Chapitre 11 · Les règles non négociables</b><span>Sept règles à ne jamais casser.</span></div>
+  <div class="toc-item"><b>FAQ · Les questions qui reviennent</b><span>Les vrais blocages, anonymisés.</span></div>
+  <div class="toc-item"><b>Aller plus loin</b><span>Le système installé en 1:1, et l'agent mot-clé prêt à l'emploi.</span></div>
+</div>
+
+<!-- ════════════════ INTRODUCTION ════════════════ -->
+<div class="page">
+  <h1 class="ch-title" style="font-size:42px;">Introduction</h1>
+  <div style="height:14px;border-bottom:2px solid var(--ink);margin-bottom:34px;"></div>
+
+  <p>Ce guide t'apprend à transformer Claude en agent SEO. Pas un chat à qui tu poses des questions le matin : un système qui a ta mémoire, tes process, ta data, qui tourne tout seul à heures fixes et qui apprend de ce qu'il publie.</p>
+  <p>C'est la suite logique de mon premier guide (le système SEO sur Claude, les 9 skills). Le premier posait les compétences. Celui-ci pose tout ce qu'il y a autour : la mémoire persistante, les boucles d'apprentissage, les routines automatiques. C'est la différence entre un Claude qui exécute bien et un agent qui progresse de mission en mission.</p>
+  <p>Mon agent fait 80% de mon SEO depuis des mois. Les 20% qui restent, c'est moi. Et c'est exactement ces 20% qu'on facture.</p>
+
+  <h2 class="sec">Pour qui</h2>
+  <p>Consultants SEO, freelances, marketers in-house qui ont déjà mis un pied dans Claude et qui veulent passer au niveau au-dessus. Si tu n'as jamais utilisé Claude pour ton SEO, commence par le premier guide. Si tu cherches un prompt magique, ce n'est pas ici : un agent demande de la discipline, et je préfère te le dire en introduction.</p>
+
+  <h2 class="sec">Ce que tu sauras à la fin</h2>
+  <ul class="clean">
+    <li>La différence réelle entre un assistant et un agent (4 composants)</li>
+    <li>Passer de Claude Cowork à Obsidian + Claude Code sans rien perdre</li>
+    <li>Monter le vault : la structure de dossiers qui sert de mémoire, avec la règle raw/wiki</li>
+    <li>Écrire ta doctrine : le fichier AGENTS.md intégral, prêt à adapter</li>
+    <li>Nourrir l'agent de ta data propriétaire avec un workflow d'ingestion en 5 étapes</li>
+    <li>L'anatomie d'un skill d'agent et un SKILL.md complet prêt à copier</li>
+    <li>Les trois boucles qui font que le système apprend (avec la fiche preuve intégrale)</li>
+    <li>Les routines automatiques : cron, GitHub Actions et tâches planifiées, code inclus</li>
+    <li>Le rôle qui te reste : manager, avec les points de contrôle précis</li>
+  </ul>
+
+  <h2 class="sec">Comment lire ce guide</h2>
+  <p>Les chapitres 1 à 4 posent les fondations : le principe, le passage de Cowork au local, le vault, la data. Tu les lis en linéaire. Les chapitres 5 à 9 sont les briques opérationnelles : les skills, la voix, les workflows, les boucles, les routines. Tu les montes dans l'ordre, mais tu peux produire dès le chapitre 5. Le chapitre 11 est ta ligne rouge, à garder ouverte en permanence.</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 1 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 1</span>
+  <h1 class="ch-title">De l'assistant à l'agent</h1>
+  <p class="ch-lede">Un assistant répond et oublie. Un agent se souvient, exécute ta méthode, tourne sans toi et se corrige avec tes résultats réels. La différence tient en 4 composants.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Les 4 composants</h2>
+  <p>Quand tu ouvres Claude et que tu poses une question, tu utilises un assistant. Il est bon, mais il repart de zéro à chaque conversation. Tu re-expliques ton client, ton secteur, tes règles. Le résultat dépend de ton prompt du jour.</p>
+  <p>Un agent, c'est le même Claude, plus quatre choses que tu construis autour :</p>
+
+  <div class="codebox"><pre>
+Les 4 composants d'un agent
+─────────────────────────────────────────────────────
+
+ 1. MÉMOIRE        un vault de fichiers markdown
+        |          que l'agent relit à chaque session
+        ▼
+ 2. COMPÉTENCES    tes skills : la méthode encodée,
+        |          versionnée, exécutable à l'infini
+        ▼
+ 3. ROUTINES       des tâches qui se lancent toutes
+        |          seules, à heures fixes, sans toi
+        ▼
+ 4. BOUCLES        ce qui est publié revient mesuré,
+                   et la mesure corrige les décisions
+─────────────────────────────────────────────────────
+ Assistant = Claude seul.  Agent = Claude + ces 4 étages.
+</pre></div>
+  <p class="caption">Les 4 étages, dans l'ordre où tu les construis. Chaque chapitre de ce guide en pose un.</p>
+
+  <p>Et pour ne pas tout confondre, l'échelle complète. Chaque mot du guide désigne un cran d'autonomie différent :</p>
+
+  <div class="codebox"><pre>
+L'échelle d'autonomie
+─────────────────────────────────────────────────────────
+ SKILL      une compétence isolée. Fait UNE chose précise
+            (les gains rapides, le maillage…)        ch. 5
+     ↓
+ WORKFLOW   des skills enchaînés. Livre un résultat
+            complet (l'audit en 8 phases…)           ch. 7
+     ↓
+ BOUCLE     un circuit fermé : ce qui sort revient
+            corriger ce qui entre. Le système ne
+            produit plus seulement, il APPREND        ch. 8
+     ↓
+ ROUTINE    ce qui lance tout ça à heure fixe,
+            sans toi                                  ch. 9
+─────────────────────────────────────────────────────────
+ Un skill exécute. Un workflow livre. Une boucle apprend.
+ Une routine tourne. L'agent, c'est les quatre ensemble.
+</pre></div>
+  <p class="caption">L'erreur classique : s'arrêter aux skills et croire qu'on a un agent. Sans les boucles, le système produit mais n'apprend pas. Sans les routines, il n'existe que quand tu l'ouvres.</p>
+
+  <h2 class="sec">Pourquoi le construire</h2>
+  <p>Un outil SEO te vend de la commodité : du volume de mots-clés que tout le monde a, des scores que tout le monde regarde. Personne ne paie pour la commodité. Et demain, le skill nu sera gratuit : des acteurs du marché vendent déjà des skills SEO préfabriqués, le signal est clair.</p>
+  <p>Ce qui restera payant, c'est le contexte que tu injectes (ta data propriétaire) et l'arbitrage humain en sortie. L'agent, c'est ce qui transforme ces deux choses en production à grande échelle. Il est incopiable, parce que sa matière première, c'est toi.</p>
+
+  <div class="callout"><b>Le piège à éviter dès maintenant.</b> Un agent SEO, ce n'est pas Claude tout seul. Si t'es pas bon en SEO, Claude ne sera pas bon. L'agent amplifie ta méthode, il ne la remplace pas. Tout ce guide repose sur cette position : tu restes manager, l'agent exécute.</div>
+
+  <h2 class="sec">Ce qu'il te faut</h2>
+  <p>Claude Code (l'outil en ligne de commande d'Anthropic, là où l'agent peut lire et écrire des fichiers), un abonnement Claude (Pro suffit pour démarrer), git installé, et plusieurs sessions devant toi. Tu ne montes pas un agent en une après-midi. Tu le montes étage par étage, en produisant dès le premier (et c'est tant mieux : un système parfait qui n'a jamais produit une page ne vaut rien).</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 2 · COWORK → OBSIDIAN ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 2</span>
+  <h1 class="ch-title">De Claude Cowork à Obsidian</h1>
+  <p class="ch-lede">Le premier guide tournait sur Claude Cowork. L'agent, lui, vit dans un dossier sur ton PC, ouvert par deux fenêtres : Obsidian pour toi, Claude Code pour lui.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Cowork, le bon point de départ</h2>
+  <p>Si tu as suivi le premier guide, tu travailles dans Claude Cowork : ton dossier de travail local, tes trois fichiers d'identité, tes 9 skills posés en glisser-déposer. C'était le bon choix pour démarrer : zéro technique, le contexte persiste, les skills se déclenchent tout seuls quand ta demande matche.</p>
+
+  <div class="screen">
+    <div class="sbar"><i class="r"></i><i class="y"></i><i class="g"></i><span>Claude Cowork · projet SEO</span></div>
+    <div class="sbody">
+      <div class="scol side">
+        <div class="slabel">Compétences</div>
+        <span class="schip">seo-quick-win</span>
+        <span class="schip">seo-brief-contenu</span>
+        <span class="schip">seo-cannibalisation</span>
+        <span class="schip">maillage-systeme</span>
+        <span class="schip">+ 5 autres…</span>
+      </div>
+      <div class="scol main">
+        <div class="sbubble user">Analyse ma Search Console</div>
+        <div class="sbubble">Compétence <b>seo-quick-win</b> activée. Je pars de ton export et je sors le tableau des gains rapides : les pages proches du top 3 dont le taux de clic ne suit pas…</div>
+      </div>
+    </div>
+  </div>
+  <p class="caption">Claude Cowork : tes compétences à gauche, la conversation à droite. C'est l'étage assistant, et il marche très bien.</p>
+
+  <h2 class="sec">Pourquoi l'agent passe au local</h2>
+  <p>Un agent demande quatre choses que Cowork ne fait pas :</p>
+  <ul class="clean">
+    <li><b>Le volume.</b> Un agent lit et écrit des dizaines de fichiers par session, et ton vault en comptera des centaines. Cowork n'est pas fait pour traiter autant de fichiers à la fois.</li>
+    <li><b>Les routines.</b> Rien ne tourne à heure fixe dans Cowork. L'agent, si (chapitre 9).</li>
+    <li><b>L'historique.</b> Avec git, chaque modification est enregistrée. Tu peux revenir en arrière sur tout, toujours.</li>
+    <li><b>La navigation.</b> Obsidian t'affiche tes notes et les liens entre elles. Tu vois ton savoir au lieu de le deviner.</li>
+  </ul>
+</div>
+
+<div class="page">
+  <h2 class="sec" style="margin-top:0;">Le même dossier, deux fenêtres</h2>
+  <p>Le passage tient en une phrase : ton dossier de travail Cowork devient ton vault, et tu l'ouvres avec deux outils en même temps. Obsidian, c'est ta fenêtre : tu lis, tu navigues, tu corriges. Claude Code, c'est la sienne : il lit, il écrit, il exécute les skills, il automatise. Aucune synchronisation à gérer, c'est le même dossier sur ton disque.</p>
+
+  <div class="screen">
+    <div class="sbar"><i class="r"></i><i class="y"></i><i class="g"></i><span>Obsidian · mon-vault</span></div>
+    <div class="sbody">
+      <div class="scol side">
+        <div class="slabel">Fichiers</div>
+mon-vault/<br/>
+&nbsp;▸ raw/<br/>
+&nbsp;▾ wiki/<br/>
+&nbsp;&nbsp;&nbsp;▸ sources/<br/>
+&nbsp;&nbsp;&nbsp;▸ concepts/<br/>
+&nbsp;&nbsp;&nbsp;▸ preuves/<br/>
+&nbsp;&nbsp;&nbsp;hypotheses.md<br/>
+&nbsp;&nbsp;&nbsp;log.md<br/>
+&nbsp;AGENTS.md
+      </div>
+      <div class="scol main">
+        <div class="slabel">wiki/concepts/grounding-score.md</div>
+        # Grounding Score<br/>
+        Ce que la page doit contenir pour coller à<br/>
+        l'intention. Lié : [[entites-vectorielles]],<br/>
+        [[brief-contenu]], [[preuves/2026-06-page-x]]<br/>
+        <span style="color:var(--gray)">12 liens entrants · maj 2026-06-08</span>
+      </div>
+    </div>
+  </div>
+  <p class="caption">Obsidian sur le vault : l'arborescence à gauche, la note et ses liens à droite. C'est ta fenêtre de lecture et de contrôle.</p>
+
+  <div class="term">
+    <div class="sbar"><i class="r"></i><i class="y"></i><i class="g"></i><span>Terminal · Claude Code</span></div>
+    <pre><span class="c">$</span> cd ~/mon-vault
+<span class="c">$</span> claude
+<span class="p">&gt;</span> Lis AGENTS.md puis ingère raw/notes/call-prospect.md
+<span class="c">●</span> Lu. Fiche créée : wiki/sources/2026-06-call-prospect.md
+<span class="c">●</span> 2 concepts mis à jour · 1 conflit signalé · log.md à jour</pre>
+  </div>
+  <p class="caption">Claude Code sur le même dossier : tu donnes la consigne en français, il travaille dans les fichiers. C'est la fenêtre de l'agent.</p>
+
+  <div class="callout"><b>Rien à jeter.</b> Tes trois fichiers d'identité (about-me, my-voice, my-rules) deviennent les premiers fichiers du vault, tes 9 skills se déplacent tels quels. Tu changes juste de fenêtre de discussion. Tout ce que tu as construit dans le premier guide sert de fondation à celui-ci.</div>
+</div>
+
+<div class="page">
+  <h2 class="sec" style="margin-top:0;">Le passage, étape par étape (15 minutes)</h2>
+  <p>Suis les étapes dans l'ordre. Tu ne touches pas à Cowork.</p>
+
+  <h3 class="sub">1 · Ton dossier de travail au bon endroit</h3>
+  <p>Ton dossier de travail (celui du premier guide) doit vivre dans <code class="inline">Documents</code>, sur ton disque interne. Pas dans un dossier synchronisé iCloud, Google Drive ou OneDrive : les synchronisations cassent la lecture des fichiers quand Claude en ouvre plusieurs en parallèle.</p>
+
+  <h3 class="sub">2 · Installe Obsidian (pour VOIR tes notes)</h3>
+  <p>Télécharge-le gratuitement sur <b>obsidian.md</b>. Ouvre-le → « Open folder as vault » → choisis ton dossier de travail. C'est tout : tu vois maintenant tes fichiers et les liens entre eux.</p>
+
+  <h3 class="sub">3 · Installe Node.js (nécessaire pour la suite)</h3>
+  <p>Va sur <b>nodejs.org</b>, télécharge la version LTS, installe-la (tu cliques « Suivant » jusqu'au bout).</p>
+
+  <h3 class="sub">4 · Installe Claude Code (pour PILOTER Claude)</h3>
+  <p>Ouvre ton Terminal (Mac : Spotlight → « Terminal » · Windows : menu Démarrer → « PowerShell »). Colle cette ligne, puis Entrée :</p>
+  <div class="codebox"><pre>npm install -g @anthropic-ai/claude-code</pre></div>
+
+  <h3 class="sub">5 · Mets tes skills au bon endroit</h3>
+  <p>Le Terminal lit toujours tes skills dans un dossier précis : <code class="inline">.claude/skills</code> à la racine de ton profil. Cowork range les siens ailleurs, et les deux ne se parlent pas : c'est LE blocage classique. La solution propre, un raccourci (lien symbolique) pour que les deux regardent le même dossier. Tu ajoutes un skill une fois, les deux le voient :</p>
+  <div class="codebox"><pre>
+# Mac · si un dossier .claude/skills existe déjà, on le met de côté
+mv ~/.claude/skills ~/.claude/skills-ancien 2>/dev/null
+
+# puis on crée le lien (remplace par le chemin de TON dossier de skills)
+ln -s ~/Documents/Cowork/Skills ~/.claude/skills
+
+# on vérifie : tu dois voir la liste de tes dossiers de skills
+ls ~/.claude/skills</pre></div>
+  <p class="caption">Sur Windows : PowerShell en administrateur, puis New-Item -ItemType SymbolicLink. Si ça refuse, active le Mode développeur dans les Paramètres et recommence.</p>
+
+  <h3 class="sub">6 · Crée le fichier CLAUDE.md (la notice que Claude lira tout seul)</h3>
+  <p>Dans Obsidian, crée une note nommée <code class="inline">CLAUDE</code> à la racine du dossier, et colles-y ta doctrine. C'est le fichier AGENTS.md du chapitre 3 : la version de départ complète y est, prête à copier.</p>
+
+  <h3 class="sub">7 · Lance et vérifie</h3>
+  <div class="codebox"><pre>
+cd ~/Documents/ton-dossier
+claude</pre></div>
+  <p>Une fois Claude lancé, tape <code class="inline">/skills</code>. Tu vois ta liste de skills : tu es opérationnel. Liste vide ? Reprends l'étape 5, le dossier doit s'appeler exactement <code class="inline">skills</code> dans <code class="inline">.claude</code>.</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 3 · LE SOCLE ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 3</span>
+  <h1 class="ch-title">Le socle : le vault et la doctrine</h1>
+  <p class="ch-lede">La mémoire de ton agent, c'est un dossier de fichiers texte versionné en git. Deux couches, une règle d'or, et un fichier de doctrine lu à chaque session.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Pourquoi des fichiers markdown</h2>
+  <p>Pas une base de données, pas un SaaS de plus. Des fichiers texte que tu peux lire toi-même dans n'importe quel éditeur (Obsidian si tu veux naviguer dedans confortablement), versionnés en git pour ne jamais rien perdre. Claude Code lit et écrit ces fichiers nativement. C'est toute la différence avec le chat : l'agent lit ce qui est là, sans que tu aies à coller à chaque fois.</p>
+
+  <h2 class="sec">La structure : deux couches</h2>
+
+  <div class="codebox"><pre>
+mon-vault/
+├── AGENTS.md              → ta doctrine (lue à chaque session)
+├── raw/                   → sources brutes, IMMUABLES
+│   ├── articles/          → veille, clippings
+│   ├── data/              → exports Search Console, crawls
+│   ├── clients/           → notes client, briefs reçus
+│   └── notes/             → tes notes, tes transcripts de calls
+└── wiki/                  → ce que l'agent digère et structure
+    ├── index.md           → le catalogue de toutes les pages
+    ├── log.md             → le journal, en ajout seul
+    ├── hypotheses.md      → les convictions pas encore prouvées
+    ├── contradictions.md  → les pages qui se contredisent
+    ├── ingest-backlog.md  → le retard de digestion, trié
+    ├── sources/           → une fiche par source ingérée
+    ├── concepts/          → tes concepts SEO (un fichier chacun)
+    ├── briefs/            → les briefs produits
+    └── preuves/           → contenu publié ↔ résultat mesuré
+</pre></div>
+  <p class="caption">La structure complète du vault. Les registres (hypotheses, contradictions, ingest-backlog, preuves) servent aux boucles du chapitre 8 : tu les crées vides dès maintenant.</p>
+
+  <div class="callout"><b>Règle non négociable.</b> <code style="color:#EFEAD9">raw/</code> est en lecture seule. L'agent y pioche, il n'y touche jamais. Tout ce qu'il produit va dans <code style="color:#EFEAD9">wiki/</code>. C'est la séparation entre ta matière première et le savoir traité, et c'est ce qui t'évite de polluer tes sources.</div>
+
+  <h2 class="sec">La doctrine : le fichier AGENTS.md</h2>
+  <p>À la racine, un fichier que Claude lit au démarrage de chaque session. C'est lui qui empêche l'agent de retomber dans le corpus moyen. Voici le mien, en version de départ, prêt à adapter :</p>
+
+  <div class="codebox"><pre>
+# AGENTS.md · doctrine de l'agent SEO
+
+Tu lis ce fichier au début de CHAQUE session, puis tu l'appliques.
+
+## Mission
+Construire et maintenir un système SEO orienté conversion.
+On vise le lead qualifié, pas le trafic.
+
+## Doctrine SEO (s'applique à TOUT ce que tu produis)
+- Conversion, pas visibilité. Une page existe pour récupérer
+  un email qualifié (devis, simulateur, rdv).
+- Mots-clés business uniquement : décisionnel et transactionnel.
+  L'informationnel, les IA le mangent déjà.
+- Originalité, pas copie. On donne l'information que les
+  autres ne donnent pas.
+- Le volume n'est pas un critère de choix pertinent.
+
+## Règles dures
+1. ZÉRO chiffre inventé. Pas de source = pas d'affirmation.
+   Une donnée manquante s'écrit "à sourcer", jamais un nombre
+   plausible.
+2. raw/ est immuable. Lecture seule, toujours.
+3. Tout output va dans un fichier de wiki/, jamais en réponse
+   volatile dans le chat.
+4. Chaque page de wiki/ cite ses sources et pointe vers au
+   moins 2 autres pages du vault.
+5. Chaque action s'enregistre dans wiki/log.md :
+   ## [AAAA-MM-JJ] action | titre court
+6. Si une nouvelle source contredit une page existante :
+   ne pas écraser. Noter le conflit dans wiki/contradictions.md.
+7. Anti-IA writing strict sur toute rédaction
+   (voir raw/notes/my-voice.md et la checklist).
+
+## Ce que tu ne décides jamais seul
+- Publier un contenu (le contrôle qualité doit passer ET je valide).
+- Modifier la doctrine ou un skill.
+- Trancher une hypothèse (ça passe par une fiche preuve, data réelle).
+</pre></div>
+  <p class="caption">Ta doctrine v1. Courte volontairement : chaque règle qui s'y trouve est appliquée, chaque règle de remplissage sera ignorée. Elle grossira avec tes corrections (chapitre 9).</p>
+
+  <p>Ce que tu as à la fin de ce chapitre : un agent qui connaît tes règles avant d'écrire une seule ligne. Initialise le git (<code class="inline">git init</code>, un enregistrement par session de travail) et passe au chapitre 4.</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 3 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 4</span>
+  <h1 class="ch-title">La data propriétaire</h1>
+  <p class="ch-lede">Sans data propriétaire en entrée, l'agent te sort le corpus moyen de Claude. Donc de la commodité. La data, c'est ce qui rend ta production originale et difficile à copier.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Ce que tu collectes</h2>
+  <table>
+    <thead><tr><th>Source</th><th>Ce que ça donne à l'agent</th></tr></thead>
+    <tbody>
+      <tr><td>Calls commerciaux (transcrits)</td><td>Le vocabulaire exact de tes prospects, leurs objections réelles, les questions posées avant d'acheter</td></tr>
+      <tr><td>Tickets SAV, mails clients</td><td>Les vraies frictions, formulées avec les vrais mots</td></tr>
+      <tr><td>Avis clients</td><td>Ce qu'ils ont aimé, dit comme eux le disent</td></tr>
+      <tr><td>Search Console</td><td>Tes vraies requêtes, celles où tu apparais déjà sans le savoir</td></tr>
+      <tr><td>Anciennes missions (audits, briefs)</td><td>Tout ce que tu as déjà appris une fois, réutilisable</td></tr>
+    </tbody>
+  </table>
+  <p>Tu anonymises ce qui doit l'être avant de déposer dans <code class="inline">raw/</code>. Et si tu n'as rien d'exploitable, tu ne produis pas : tu commences par aller chercher la data. C'est le pré-requis, pas une option. Je le redis depuis longtemps : vous n'êtes plus des SEO qui créent des pages, vous êtes des SEO qui récupèrent la data.</p>
+
+  <h2 class="sec">Le workflow d'ingestion</h2>
+  <p>Déposer un fichier ne suffit pas. L'agent doit le digérer, et la digestion suit toujours le même chemin (tu peux l'encoder en skill, voir chapitre 5) :</p>
+
+  <div class="codebox"><pre>
+Ingestion d'une source · le chemin obligatoire
+─────────────────────────────────────────────────────
+
+ raw/notes/call-prospect-X.md       (la source, immuable)
+        |
+        |  1. LIRE le fichier en entier
+        ▼
+ wiki/sources/2026-06-call-X.md     2. FICHE structurée :
+        |                              contexte, chiffres clés,
+        |                              limites, implications SEO
+        ▼
+ wiki/concepts/*.md                 3. RELIER : maj des concepts
+        |                              touchés + signaler toute
+        |                              contradiction
+        ▼
+ wiki/log.md                        4. JOURNALISER une ligne
+        |
+        ▼
+ résumé inline                      5. REPORTER : 5 bullets +
+                                       "quel angle SEO creuser ?"
+</pre></div>
+  <p class="caption">Une source à la fois. C'est lent au début, et c'est le but : chaque source digérée enrichit le réseau, et le réseau rend les productions suivantes meilleures.</p>
+
+  <h2 class="sec">Retrouver l'info</h2>
+  <p>Au début, la recherche texte suffit : l'agent fouille le vault par simple recherche de mots. Quand le vault dépasse quelques centaines de fichiers, tu ajoutes un index de recherche sémantique en local (gratuit, ça tourne sur ton PC, rien à payer). L'idée à retenir est plus importante que l'outil : l'agent doit répondre à « qu'est-ce qu'on sait déjà sur X » avant de produire quoi que ce soit sur X. C'est ce qui fait que ton centième brief est meilleur que ton premier.</p>
+
+  <div class="callout"><b>Le vrai sujet.</b> La data non digérée, c'est de la data qui n'existe pas pour l'agent. Ton dossier raw/ se remplira toujours plus vite qu'il ne se digère, c'est normal et c'est dangereux. La boucle qui rend ce retard visible arrive au chapitre 8.</div>
+
+  <h2 class="sec">Où va ta data (confidentialité et RGPD)</h2>
+  <p>La question arrive toujours, autant y répondre avant qu'on te la pose. Claude Code envoie tes requêtes aux serveurs d'Anthropic : tout ce que l'agent lit pour travailler y passe le temps du traitement. Ce qui compte, c'est ce qu'Anthropic a le droit d'en faire, et ça dépend de ton type de compte.</p>
+  <p>Sur un <b>compte pro</b> (API, Team, Enterprise), tes données ne servent jamais à entraîner les modèles : c'est le réglage par défaut des conditions commerciales, rien à configurer. Sur un <b>compte perso</b> (Free, Pro, Max), il existe depuis septembre 2025 un réglage « Help improve Claude » dans claude.ai → Settings → Privacy. S'il est activé, tes conversations et tes sessions de code servent à l'entraînement et sont conservées 5 ans. Désactive-le : plus d'entraînement, conservation 30 jours. C'est la première chose à vérifier avant de déposer de la data client dans ton vault.</p>
+  <p>Et ne confonds pas entraînement et RGPD, ce sont deux sujets. Si tu traites de la data client (calls enregistrés, mails, tickets SAV), trois réflexes : informer les participants quand tu enregistres un call, c'est la base et c'est en amont de tout outil ; préférer un compte pro, parce qu'Anthropic fournit alors un contrat de sous-traitance (le DPA) qui cadre juridiquement le traitement ; et ne garder dans le vault que ce qui sert, anonymisé quand c'est possible.</p>
+
+  <div class="callout"><b>Le gros avantage du vault.</b> Le brut reste chez toi, en local, dans tes fichiers. Rien ne dort dans un outil cloud. Tu n'envoies à Anthropic que ce qui sert au traitement en cours, et sur un compte pro, ça n'entraîne jamais leurs modèles.</div>
+</div>
+
+<!-- ════════════════ CHAPITRE 4 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 5</span>
+  <h1 class="ch-title">Les skills de l'agent</h1>
+  <p class="ch-lede">Un skill, c'est ta méthode encodée une fois, versionnée, exécutée à l'identique à chaque fois. La différence avec un prompt : le prompt dérive, le skill s'améliore.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Anatomie d'un skill d'agent</h2>
+  <p>Un dossier dans <code class="inline">~/.claude/skills/</code>, avec un fichier <code class="inline">SKILL.md</code>. Claude le charge automatiquement quand ta demande matche sa description. Chaque skill contient sept sections :</p>
+
+  <div class="codebox"><pre>
+SKILL.md · anatomie du fichier
+─────────────────────────────────────────────
+
+ ┌─────────────────────────────────┐
+ │ ---                             │   en-tête du fichier
+ │ name: mon-skill                 │   · name = nom du dossier
+ │ description: |                  │   · description = ce qui
+ │   Ce que fait le skill…         │     déclenche le skill
+ │   TOUJOURS utiliser quand : …   │     (Claude la lit pour
+ │ ---                             │     décider d'activer)
+ ├─────────────────────────────────┤
+ │ # Skill · Mon Skill             │
+ │ ## Quand déclencher             │   corps markdown
+ │ ## Input requis                 │   · 7 sections types
+ │ ## Pipeline (N étapes)          │   · le « comment »
+ │ ## Output obligatoire           │     étape par étape
+ │ ## Règles absolues              │
+ │ ## Concepts liés                │
+ └─────────────────────────────────┘
+</pre></div>
+  <p class="caption">L'anatomie d'un skill. Deux champs YAML pour le déclenchement automatique, des sections markdown pour la procédure. La section « Règles absolues » est celle qui protège ta crédibilité.</p>
+
+  <h2 class="sec">Un SKILL.md intégral, prêt à copier</h2>
+  <p>Le skill d'ingestion, celui qui exécute le workflow du chapitre 4. Crée le dossier <code class="inline">~/.claude/skills/ingest-source/</code> et colle ceci dans <code class="inline">SKILL.md</code> :</p>
+
+  <div class="codebox"><pre>
+---
+name: ingest-source
+description: |
+  Ingestion d'une source dans le vault : lit un fichier de raw/,
+  crée la fiche structurée dans wiki/sources/, met à jour les
+  concepts touchés, journalise dans wiki/log.md.
+
+  TOUJOURS utiliser quand l'utilisateur dit : "ingère",
+  "digère ce fichier", "ajoute cette source au vault",
+  "traite raw/...".
+---
+
+# Skill · Ingestion d'une source
+
+## Quand déclencher
+Un fichier de raw/ à digérer. Une source à la fois, jamais
+plusieurs d'un coup sans demande explicite.
+
+## Input requis
+| Source | Obligatoire |
+|--------|-------------|
+| Chemin du fichier dans raw/ | Oui |
+| Angle de lecture souhaité   | Recommandé |
+
+## Pipeline (5 étapes)
+1. Lire le fichier EN ENTIER. Pas de survol.
+2. Créer wiki/sources/AAAA-MM-JJ-nom-court.md :
+   contexte, méthode, chiffres clés (sourcés), limites,
+   implications SEO. Citations exactes courtes seulement.
+3. Pour chaque concept touché : si la page wiki/concepts/
+   existe, l'enrichir ; sinon la créer avec 2 liens sortants.
+   Si la source CONTREDIT une page existante : ne pas écraser,
+   noter le conflit dans wiki/contradictions.md.
+4. Mettre à jour wiki/index.md.
+5. Append dans wiki/log.md :
+   ## [AAAA-MM-JJ] ingest | titre de la source
+
+## Output obligatoire
+La fiche source + un résumé inline en 5 bullets terminé par :
+"quel angle SEO veux-tu creuser ?"
+
+## Règles absolues
+- raw/ reste intact. Lecture seule.
+- Aucun chiffre repris sans sa source.
+- Une source à la fois.
+
+## Concepts liés
+data-proprietaire · ingest-backlog · contradictions
+</pre></div>
+  <p class="caption">Le premier skill système de ton agent. Les skills SEO (recherche, clustering, brief…) suivent exactement la même anatomie.</p>
+</div>
+
+<div class="page">
+  <h2 class="sec" style="margin-top:0;">Le catalogue : les 9 skills SEO</h2>
+  <p>Le détail et le fichier intégral de chacun sont dans l'article dédié : <a href="https://organikk.co/blog/9-skills-seo-claude/" style="color:var(--coral);">organikk.co/blog/9-skills-seo-claude</a>. Ici, leur place dans l'agent :</p>
+
+  <table>
+    <thead><tr><th>Skill</th><th>Ce qu'il fait</th></tr></thead>
+    <tbody>
+      <tr><td class="mono" style="font-size:13.5px">seo-quick-win</td><td>Les pages coincées entre la position 3 et la position 12, beaucoup d'impressions, un taux de clic qui ne suit pas : on vide ce retard avant de créer du contenu</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-cannibalisation</td><td>Deux pages du site en compétition sur les mêmes requêtes : détecte le conflit, le classe, donne l'action (fusion, différenciation, ou rien)</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">maillage-systeme</td><td>Les liens entre tes pages : piliers, pages centrales, pages orphelines</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-programmatique-pseo</td><td>1 modèle + 1 variable = des centaines de pages</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-entites-vectorielles</td><td>Les termes qu'une page doit contenir pour coller à l'intention visée</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-cluster-aeo</td><td>L'architecture de contenu autour d'un mot-clé pilier, pensée pour les moteurs de réponse</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-product-led-seo</td><td>Les outils (calculateur, simulateur) qui captent les requêtes d'achat</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-peurs-objections</td><td>Les freins de tes prospects, pour du contenu qui convertit</td></tr>
+      <tr><td class="mono" style="font-size:13.5px">seo-brief-contenu</td><td>Le plan de page calé sur ce que les autres n'ont pas dit</td></tr>
+    </tbody>
+  </table>
+
+  <p>Auxquels l'agent ajoute ses skills système, ceux qui font tourner le système lui-même : <code class="inline">ingest-source</code> (ci-dessus, l'encodage du workflow d'ingestion du chapitre 4), <code class="inline">preuves-feedback</code> et <code class="inline">revue-hebdo</code> (chapitre 8).</p>
+
+  <h2 class="sec">L'ordre d'installation</h2>
+  <p>Tu n'as pas besoin de tout le premier jour. L'ordre qui marche : <code class="inline">ingest-source</code> d'abord (pour nourrir le vault), puis <code class="inline">seo-quick-win</code>, le skill que je lance en premier dès qu'un client me donne accès à sa Search Console : avant de penser à créer du nouveau contenu, on vide le retard d'opportunités déjà présentes. Tu le fais tourner sur un vrai projet, et tu ajoutes les autres quand le besoin arrive.</p>
+
+  <div class="callout"><b>Ma règle.</b> Un skill mal écrit produit du mauvais travail à grande échelle. Tu construis les skills un par un, avec soin, et tu les corriges à chaque fois qu'un output te déçoit. La correction d'aujourd'hui, c'est la règle de demain (chapitre 10).</div>
+</div>
+
+<!-- ════════════════ CHAPITRE 5 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 6</span>
+  <h1 class="ch-title">La voix</h1>
+  <p class="ch-lede">L'agent épouse tes expressions et ton de voix. Deux fichiers suffisent.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Le corpus : my-voice.md</h2>
+  <p>Un fichier (ou un dossier) dans <code class="inline">raw/notes/</code> avec tes propres textes : tes posts qui ont marché, tes mails, tes passages de newsletter. Plus tes règles : ce que tu dis, ce que tu ne dis jamais, tes expressions. L'agent le lit avant chaque rédaction et calque le style. Tu peux laisser Claude générer une première version à partir de tes contenus existants : tu l'ouvres, tu corriges, tu valides.</p>
+
+  <h2 class="sec">La checklist anti-IA writing</h2>
+  <p>Une liste de contrôle que l'agent passe sur chaque texte avant de te le rendre. À coller dans <code class="inline">raw/notes/anti-ia-writing.md</code> et à référencer dans la doctrine :</p>
+
+  <div class="codebox"><pre>
+# Checklist anti-IA writing · à passer sur CHAQUE texte
+
+Vocabulaire interdit
+- crucial, pivotal, révolutionnaire, incontournable,
+  "dans un monde en pleine évolution", "il est important
+  de noter", "n'oublions pas que"
+
+Structures interdites
+- la règle de 3 systématique (3 raisons, 3 étapes, 3 avantages)
+- la conclusion-résumé qui répète ce qui vient d'être dit
+- la méta-intro ("dans cet article, nous allons voir…")
+- le bold sur les premiers mots de chaque paragraphe
+- les bullets décoratifs qui remplacent la prose
+
+Style
+- pas de métaphore décorative : décrire le fait, littéralement
+- phrases courtes alternées avec des plus longues
+- le POURQUOI avant le comment
+- une position tranchée par texte, assumée
+
+Si une case échoue → on reprend le passage AVANT livraison.
+</pre></div>
+  <p class="caption">La checklist v1. Tu la nourris à chaque fois que tu repères un tic d'IA dans une sortie : c'est un fichier vivant.</p>
+
+  <div class="callout"><b>La règle des 80.</b> Le standard de rédaction jusqu'à 100, tu ne l'atteins pas avec l'IA seule. L'agent te monte à 80, proprement, dans ta voix. Les 20 derniers, c'est ta relecture. C'est non négociable.</div>
+
+  <p>Et quand tu installes l'agent chez un client : tu refais cette étape avec SA voix. Son corpus, ses règles, même méthode. C'est ce qui rend le système réutilisable sans donner ton style.</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 6 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 7</span>
+  <h1 class="ch-title">Les workflows et le contrôle qualité</h1>
+  <p class="ch-lede">Un agent qui sait faire neuf tâches séparées, c'est bien. Un agent qui les enchaîne dans le bon ordre sans que tu pilotes chaque étape, c'est l'autonomie.</p>
+  <div class="ch-gap"></div>
+
+  <p>Un skill fait une chose précise. Un workflow enchaîne plusieurs skills pour livrer un résultat complet : une brique nourrit la suivante. Ce que tu as, ce n'est pas une pile de skills isolés, c'est une chaîne : trouver → préparer → rédiger → auditer → baliser → optimiser → planifier. Voici les deux workflows de référence, calibrés sur des dizaines de projets.</p>
+
+  <h2 class="sec">Workflow 1 · Les mots-clés (3 skills enchaînés)</h2>
+  <p>Il répond à « qu'est-ce qu'on crée maintenant ». Trois skills qui transforment une thématique en pages qui rankent et qui convertissent :</p>
+
+  <div class="codebox"><pre>
+Le workflow mots-clés
+─────────────────────────────────────────────────────────
+ seo-recherche-mots-cles
+   thématique → 50-150 mots-clés qualifiés
+   (intention + volume + difficulté)
+        ↓
+ seo-clustering-mots-cles
+   la liste → des groupes exploitables (1 groupe = 1 page)
+        ↓
+ seo-mots-cles-decisionnels
+   les groupes → les requêtes qui convertissent vraiment
+        ↓
+ seo-brief-contenu / seo-cluster-aeo → la rédaction
+─────────────────────────────────────────────────────────
+ La recherche sort la matière, le regroupement la découpe
+ en pages, le décisionnel isole ce qui rapporte. La sortie
+ repart dans le moteur de rédaction.
+</pre></div>
+  <p class="caption">Règle stricte sur toute la chaîne : l'agent n'invente jamais un volume ni une difficulté. Il structure et qualifie l'intention ; les chiffres viennent de la Search Console ou d'un outil, jamais de sa tête.</p>
+
+  <h2 class="sec">Workflow 2 · L'audit SEO complet (8 phases)</h2>
+  <p>Il répond à « qu'est-ce qui ne va pas sur ce site ». 100% données Google et structure du site : Claude Pro à 20 €/mois, la Search Console, Chrome et Lighthouse. Aucun outil payant tiers. Une phase nourrit la suivante.</p>
+
+  <table>
+    <thead><tr><th>Phase</th><th>Skill</th><th>Durée</th></tr></thead>
+    <tbody>
+      <tr><td>0 · Positionnement</td><td>aucun (prompt + Search Console)</td><td>20-30 min</td></tr>
+      <tr><td>1 · Indexation</td><td><span class="mono" style="font-size:13px">indexation-check</span></td><td>15-25 min</td></tr>
+      <tr><td>1bis · Vitesse des pages</td><td><span class="mono" style="font-size:13px">seo-core-web-vitals</span></td><td>10-15 min</td></tr>
+      <tr><td>2 · Gains rapides</td><td><span class="mono" style="font-size:13px">seo-quick-win</span></td><td>15-20 min</td></tr>
+      <tr><td>3 · Structure des pages</td><td>aucun (prompt + crawl)</td><td>variable</td></tr>
+      <tr><td>4 · Cannibalisations</td><td><span class="mono" style="font-size:13px">seo-cannibalisation</span></td><td>15-20 min</td></tr>
+      <tr><td>5 · Maillage (2 passes)</td><td><span class="mono" style="font-size:13px">maillage-systeme</span> puis <span class="mono" style="font-size:13px">maillage-interne-gsc</span></td><td>25-40 min</td></tr>
+      <tr><td>6 · Synthèse + plan d'action</td><td>aucun (synthèse)</td><td>20-30 min</td></tr>
+    </tbody>
+  </table>
+  <p class="caption">Budget total : 3,5 à 5 heures, étalable. La phase 1bis (vitesse) tourne uniquement côté Terminal. Le rapport se termine sur un horizon « mois 2-3 : nouvelles pages sur les manques », et c'est là que le workflow mots-clés prend le relais.</p>
+</div>
+
+<div class="page">
+  <h2 class="sec" style="margin-top:0;">Le contrôle qualité</h2>
+  <p>C'est le point de contrôle où le contenu est vérifié avant de sortir. Il tient en quatre critères, et chacun se vérifie par un oui ou par un non :</p>
+
+  <div class="codebox"><pre>
+CONTRÔLE QUALITÉ · 4 critères, tous obligatoires
+─────────────────────────────────────────────────────
+ [ ] 1. Chaque affirmation chiffrée a sa source
+        (zéro "à sourcer" restant dans le texte publié)
+ [ ] 2. La checklist anti-IA writing passe
+ [ ] 3. La page répond à l'intention visée du brief
+        (pas au mot-clé : à l'INTENTION)
+ [ ] 4. La page propose une action concrète
+        (formulaire, simulateur, devis, rdv)
+
+ 4/4 → publiable (après TA validation)
+ sinon → retour en rédaction, avec le critère raté
+</pre></div>
+  <p class="caption">Une page qui rate un critère ne sort pas. Même produite à 3h du matin par une routine.</p>
+
+  <p>On ne crée pas un article par un article. On crée une cohérence sémantique pour le client. L'agent tient cette cohérence sur des centaines de pages, ce qu'aucun humain ne tient à la main : c'est précisément pour ça que le contrôle doit être écrit noir sur blanc, pas dans ta tête.</p>
+
+  <div class="callout"><b>Ma règle.</b> Tant que tu débutes, garde tes skills isolés et enchaîne-les à la main. Tu ne transformes un enchaînement en automatisme que quand il a tourné sans accroc 5 fois de suite. Pas avant. Automatiser une méthode pas encore stable, c'est figer une erreur et la rejouer en boucle.</div>
+</div>
+
+<!-- ════════════════ CHAPITRE 7 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 8</span>
+  <h1 class="ch-title">Les trois boucles</h1>
+  <p class="ch-lede">C'est l'étage que tout le monde saute, et c'est celui qui sépare un agent qui produit d'un agent qui progresse. Un système qui capture et produit sans jamais se relire, ça grossit, ça ne s'améliore pas.</p>
+  <div class="ch-gap"></div>
+
+  <div class="codebox"><pre>
+Les 3 boucles fermées de l'agent
+─────────────────────────────────────────────────────────
+
+ BOUCLE 1 · capture → traitement
+ raw/ se remplit ──→ tri hebdo ──→ retard listé ──→ ingestion
+                                          │
+ BOUCLE 2 · doctrine → validation         │
+ hypothèses ──→ confrontées aux sources ──┘
+      ▲              │
+      │              ▼ statuts : ouverte / en test /
+      │                validée / invalidée
+      │
+ BOUCLE 3 · sortie → apprentissage
+ page publiée ──→ fiche preuve + prédiction datée
+      │                    │
+      │              J+30 / J+90 : la Search Console tranche
+      │                    │
+      └──── le verdict corrige la doctrine ◄──────┘
+─────────────────────────────────────────────────────────
+ Sans la boucle 3, "ma méthode marche" reste un argument
+ commercial. Avec, c'est un fait mesuré.
+</pre></div>
+  <p class="caption">Les trois boucles et leur point commun : tout finit par corriger la doctrine. C'est le contraire d'un système qui empile.</p>
+
+  <h2 class="sec">Boucle 1 · capture → traitement</h2>
+  <p>Ton dossier <code class="inline">raw/</code> se remplit plus vite qu'il ne se digère. La boucle : une fois par semaine, l'agent compare ce qui est dans <code class="inline">raw/</code> avec ce qui a été ingéré dans <code class="inline">wiki/sources/</code>, et écrit la liste du retard dans <code class="inline">wiki/ingest-backlog.md</code>, triée par priorité (la data terrain d'abord, la veille ensuite). Tu décides quoi ingérer, il ingère.</p>
+
+  <h2 class="sec">Boucle 2 · doctrine → validation</h2>
+  <p>Ta doctrine contient des convictions. Certaines sont prouvées, d'autres sont des paris. Deux registres les rendent honnêtes : <code class="inline">wiki/hypotheses.md</code> (chaque conviction non prouvée, avec son statut) et <code class="inline">wiki/contradictions.md</code> (deux pages du vault qui disent l'inverse, repérées à l'ingestion). Une fois par mois, l'agent confronte les hypothèses aux sources ingérées depuis la dernière revue et fait avancer les statuts.</p>
+
+  <div class="callout"><b>Règle dure.</b> Une hypothèse ne passe jamais « validée » sur un ressenti. Elle passe validée sur une fiche preuve adossée à de la data réelle. Sinon tu construis une doctrine qui a l'air solide et qui n'est que de l'opinion empilée.</div>
+</div>
+
+<div class="page">
+  <h2 class="sec" style="margin-top:0;">Boucle 3 · sortie → apprentissage</h2>
+  <p>La plus rentable des trois. Chaque contenu publié doit revenir mesuré. Le mécanisme tient dans un fichier, la fiche preuve, créée à la publication :</p>
+
+  <div class="codebox"><pre>
+# wiki/preuves/2026-06-10-page-simulateur-x.md
+
+## Le pari
+- Page : /simulateur-x
+- Mot-clé visé : "simulateur x prix"  (décisionnel)
+- Hypothèse testée : "une page outil capte plus d'emails
+  qu'une page éditoriale sur la même requête"
+  → wiki/hypotheses.md #12
+
+## Prédictions datées
+- J+30 : la page reçoit ses premières impressions sur la
+  requête visée, position ≤ 20
+- J+90 : ≥ 1 lead attribuable à la page
+
+## Mesures (remplies par la boucle, jamais à la main)
+- J+30 [date] : position réelle, impressions, clics → verdict
+- J+90 [date] : leads, position → verdict
+
+## Verdict final
+- hypothèse #12 : confirmée / infirmée / non concluant
+- ce qu'on en tire pour la doctrine :
+</pre></div>
+  <p class="caption">La fiche preuve intégrale. La routine Search Console du chapitre 9 vient remplir les mesures à J+30 et J+90. Jamais un chiffre à la main, jamais un chiffre inventé.</p>
+
+  <p>Au bout de quelques cycles, l'agent ne décide plus seulement avec ta doctrine : il décide avec ta doctrine corrigée par tes résultats réels. Le SEO, ce sont des tâches mathématiques que l'on répète jusqu'à trouver des patterns. Cette boucle, c'est ce qui trouve les patterns à ta place.</p>
+</div>
+
+<div class="page">
+  <h2 class="sec" style="margin-top:0;">La boucle appliquée à la production</h2>
+  <p>Le cas concret, celui que j'utilise sur tout ce qui se publie : on enveloppe le workflow de rédaction dans une boucle. Chaque page produite nourrit la suivante. C'est la différence entre écrire 100 pages et écrire 100 fois la même page.</p>
+
+  <div class="codebox"><pre>
+La boucle de production · chaque page apprend de la précédente
+──────────────────────────────────────────────────────────────
+          ┌─────────────────────────────────────────────┐
+          ▼                                             │
+ 1. BRIEFING        l'agent relit la mémoire du projet :│
+          │         ce qui a marché, les règles apprises│
+          ▼                                             │
+ 2. PRODUCTION      le workflow rédaction, dans ta voix │
+          │                                             │
+          ▼                                             │
+ 3. VÉRIFICATION    chaque affirmation chiffrée est     │
+          │         contrôlée : 2 sources, dont la      │
+          │         source d'origine. Les faits sont    │
+          │         séparés des interprétations         │
+          ▼                                             │
+ 4. CONTRÔLE        les 4 critères du chapitre 7.       │
+          │         Ça passe, ou ça ne sort pas         │
+          ▼                                             │
+ 5. PUBLICATION     + la prédiction datée (J+30 / J+90) │
+          │                                             │
+          ▼                                             │
+ 6. MESURE          la Search Console tranche           │
+          │                                             │
+          ▼                                             │
+ 7. APPRENTISSAGE   le verdict et tes corrections       │
+          │         deviennent des règles durables ─────┘
+          ▼
+   la page suivante démarre plus haut que la précédente
+</pre></div>
+  <p class="caption">Les étapes 1 à 5, l'agent les déroule seul. La 6 vient de la routine Search Console. La 7 réécrit la mémoire du projet : c'est elle qui ferme la boucle. La 100e page est meilleure que la 1re, pas parce que le modèle a changé, parce que la mémoire s'est remplie.</p>
+
+  <div class="callout"><b>Ce qui fait tenir la boucle.</b> Une affirmation n'entre dans une page que vérifiée. Une hypothèse ne se valide que par une mesure. Une correction ne reste pas une correction, elle devient une règle. Retire un de ces trois verrous et la boucle tourne quand même, mais elle apprend tes erreurs au lieu de tes réussites.</div>
+
+  <h2 class="sec">Le rituel : 15 minutes le vendredi</h2>
+  <p>Les boucles produisent des propositions. Quelqu'un doit trancher, et ce quelqu'un c'est toi. Un rendez-vous hebdomadaire, ordre du jour fixe :</p>
+
+  <div class="codebox"><pre>
+Revue hebdo · ordre du jour (préparé par l'agent)
+─────────────────────────────────────────────────────
+ 1. Preuves rentrées cette semaine (J+30 / J+90)
+    → verdicts à valider
+ 2. Hypothèses qui ont bougé
+    → promotions / invalidations à trancher
+ 3. Contradictions ouvertes
+    → laquelle fermer cette semaine
+ 4. Backlog d'ingest
+    → le lot de la semaine prochaine
+ 5. UNE décision d'orientation (pas plus)
+</pre></div>
+  <p class="caption">L'agent propose à 95%, tu arbitres les 5% de jugement irréductible. Si le rituel te prend une heure, c'est que les boucles sont mal réglées.</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 8 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 9</span>
+  <h1 class="ch-title">Les routines</h1>
+  <p class="ch-lede">Tout ce qui précède peut se lancer à la main. Les routines, c'est ce qui le lance à ta place, à heures fixes. C'est l'étage qui transforme l'assistant en agent.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Le principe : Claude sans interface</h2>
+  <p>Claude Code sait tourner sans écran, avec une consigne passée en argument. C'est la brique de toutes les routines :</p>
+
+  <div class="codebox"><pre>
+# La commande de base : Claude exécute et s'arrête
+claude -p "Lis AGENTS.md puis fais le tri du backlog :
+compare raw/ et wiki/sources/, mets à jour
+wiki/ingest-backlog.md, enregistre."
+</pre></div>
+  <p class="caption">L'option -p lance Claude sans interface : il lit la consigne, travaille dans le dossier, rend la main. Tout ce qu'une routine fait passe par là.</p>
+
+  <h2 class="sec">Les 3 façons de planifier</h2>
+  <table>
+    <thead><tr><th>Méthode</th><th>Où ça tourne</th><th>Pour qui</th></tr></thead>
+    <tbody>
+      <tr><td>cron / launchd</td><td>Ton PC (allumé)</td><td>Le plus simple pour démarrer</td></tr>
+      <tr><td>GitHub Actions</td><td>Le cloud, sur ton GitHub</td><td>PC éteint, vault déjà sur GitHub</td></tr>
+      <tr><td>Tâches planifiées Claude</td><td>Le cloud Anthropic</td><td>Le quotidien, zéro technique à gérer</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Façon 1 · en local (cron)</h3>
+  <div class="codebox"><pre>
+# crontab -e : le tri du backlog, chaque lundi à 8h
+0 8 * * 1  cd ~/mon-vault && claude -p "Lis AGENTS.md puis \
+fais le tri du backlog d'ingest. Enregistre le résultat." \
+>> ~/mon-vault/.logs/tri-backlog.log 2>&1
+</pre></div>
+  <p class="caption">Une ligne par routine. Sur Mac, launchd fait la même chose avec un fichier .plist (même logique, syntaxe XML). Le >> log est obligatoire : une routine sans journal est une routine que tu ne peux pas déboguer.</p>
+
+  <h3 class="sub">Façon 2 · GitHub Actions</h3>
+  <div class="codebox"><pre>
+# .github/workflows/tri-backlog.yml
+name: tri-backlog
+on:
+  schedule:
+    - cron: "0 8 * * 1"   # lundi 8h UTC
+jobs:
+  tri:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude -p "Lis AGENTS.md puis fais le tri du
+          backlog d'ingest. Mets à jour wiki/ingest-backlog.md."
+      - name: Commit
+        run: |
+          git config user.name "agent"
+          git add -A && git commit -m "tri backlog" || true
+          git push
+</pre></div>
+  <p class="caption">Le même tri, PC éteint. La clé API va dans les secrets du dépôt GitHub, jamais dans le fichier.</p>
+</div>
+
+<div class="page">
+  <h3 class="sub" style="margin-top:0;">Façon 3 · les tâches planifiées de Claude</h3>
+  <p>Depuis Claude Code, tu demandes simplement : « planifie une tâche quotidienne qui fait X sur ce vault ». La routine tourne dans le cloud d'Anthropic, sur ton vault hébergé sur GitHub, à l'horaire que tu donnes. Zéro technique à gérer. C'est ce que j'utilise pour le quotidien.</p>
+
+  <h2 class="sec">Tout ce que tu peux automatiser (le menu)</h2>
+  <p>Ce menu est celui qui tourne chez moi. Chaque ligne est une routine indépendante : tu en poses une, elle écrit dans le vault, tu lis le résultat quand tu veux.</p>
+  <table>
+    <thead><tr><th>Automatisation</th><th>Cadence</th><th>Ce que ça fait</th></tr></thead>
+    <tbody>
+      <tr><td>Veille quotidienne</td><td>Chaque matin</td><td>Un brief sourcé sur ta thématique : chiffres, études, ce qui a bougé. C'est le système qui fait tourner ma newsletter, et il se rebranche sur la thématique d'un client</td></tr>
+      <tr><td>Pull Search Console</td><td>Le 1er du mois, 7h</td><td>Récupère la data, remplit les fiches preuves J+30 / J+90</td></tr>
+      <tr><td>Audit d'indexation</td><td>Mensuel</td><td>Sitemap complet : quelles pages Google ignore, et pourquoi</td></tr>
+      <tr><td>Tri du backlog</td><td>Lundi, 8h</td><td>La liste de la data non digérée, triée</td></tr>
+      <tr><td>Revue des hypothèses</td><td>Le 1er du mois, 8h30</td><td>Confronte la doctrine aux sources du mois</td></tr>
+      <tr><td>Résurgence</td><td>Mercredi, 9h</td><td>Remonte un concept oublié du vault : toujours juste ? à challenger ?</td></tr>
+      <tr><td>Revue hebdo</td><td>Vendredi, 17h30</td><td>Prépare l'ordre du jour du rituel (toi tu arbitres)</td></tr>
+      <tr><td>Le point du jour</td><td>Chaque soir</td><td>Un email : ce que l'agent a fait aujourd'hui, et la santé du système</td></tr>
+      <tr><td>Le point de la semaine</td><td>Samedi midi</td><td>Un email : tout ce qui a été produit cette semaine</td></tr>
+    </tbody>
+  </table>
+  <p>Tu n'en poses pas neuf le premier mois. Tu commences par deux : le tri du backlog et le pull Search Console. Le reste vient quand le vault tourne et que tu sais ce qui te fait gagner du temps.</p>
+
+  <div class="callout"><b>Deux règles de sécurité</b>, apprises en me plantant. Un : une routine n'invente jamais un chiffre. Si elle n'a pas la donnée, elle écrit « rien à signaler » et s'arrête. Une routine qui hallucine en silence à 3h du matin, c'est pire que pas de routine. Deux : une routine écrit toujours un journal de ce qu'elle a fait. Quand un résultat te surprend, tu remontes le log au lieu de deviner.</div>
+
+  <h2 class="sec">Brancher la Search Console</h2>
+  <p>La seule routine qui demande un vrai branchement technique : un compte de service Google avec accès à ta propriété Search Console, et un script qui dépose l'export mensuel dans <code class="inline">raw/data/</code>. Une fois posé, la boucle 3 du chapitre 8 tourne toute seule : l'export arrive, l'agent met à jour les fiches preuves, les verdicts tombent. En attendant le branchement, l'export manuel mensuel depuis l'interface Search Console fait exactement le même travail (5 minutes par mois, et tu démarres aujourd'hui).</p>
+</div>
+
+<!-- ════════════════ CHAPITRE 9 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 10</span>
+  <h1 class="ch-title">Manager ton agent</h1>
+  <p class="ch-lede">À ce stade, l'agent connaît tes règles, il est nourri de ta data, il exécute tes skills dans ta voix, il tourne à heures fixes et il apprend de ses résultats. Ton rôle change : tu n'exécutes plus, tu manages.</p>
+  <div class="ch-gap"></div>
+
+  <h2 class="sec">Tenir tes positions</h2>
+  <p>Si Claude affirme « c'est comme ça qu'on fait en SEO » et que ton expérience dit l'inverse, c'est toi qui as raison. Tu le brides, tu lui redonnes le contexte, tu corriges la doctrine. Soyez manager, soyez certains de vos positions. Le jour où tu valides sans lire, le système dérive et tu ne le vois pas.</p>
+
+  <h2 class="sec">Transformer chaque correction en règle</h2>
+  <p>Tu reformules un titre une fois, c'est de la relecture. Tu le reformules trois fois pour la même raison, c'est une règle qui manque. Le réflexe à prendre :</p>
+
+  <div class="codebox"><pre>
+Le cycle correction → règle durable
+─────────────────────────────────────────────────────
+ 1. Tu corriges un output                (relecture)
+ 2. Même correction une 2e fois ?        (signal)
+ 3. Tu écris la règle :
+    · tic d'écriture   → anti-ia-writing.md
+    · erreur de méthode → le SKILL.md concerné
+    · principe général  → AGENTS.md
+ 4. L'erreur disparaît POUR TOUJOURS
+─────────────────────────────────────────────────────
+ C'est le seul moment où la doctrine a le droit de
+ grossir : jamais par anticipation, toujours par
+ correction vécue.
+</pre></div>
+  <p class="caption">La doctrine et les skills grossissent par l'usage, pas par la théorie. C'est ce qui les garde appliqués.</p>
+
+  <h2 class="sec">Valider aux gates, pas à chaque étape</h2>
+  <p>Tu n'es pas là pour relire chaque paragraphe. Tu es là à trois moments : le brief avant la rédaction, le contrôle qualité avant la publication, et le rituel du vendredi. Trois points de contrôle, le reste est délégué. Si tu te surprends à micro-manager une étape, c'est que le skill de cette étape est mal écrit : corrige le skill, pas l'output.</p>
+
+  <h2 class="sec">Doser les modèles</h2>
+  <p>Le gros modèle pour ce qui demande du jugement : la stratégie, les briefs, l'arbitrage des conflits, le contrôle qualité. Des modèles moins chers pour le volume : les déclinaisons, les reformulations, les tâches mécaniques. C'est ton premier poste d'économie quand le système monte en charge, et ça se règle par routine (chaque routine déclare son modèle).</p>
+
+  <div class="callout"><b>Le vrai sujet.</b> Tu ne paies plus un seul outil de volume. Pas par principe : parce que le volume ne t'a jamais ramené un client. Ce qui te ramène des clients, c'est ta data et ta méthode, et l'agent les exécute à une échelle que tu ne tenais pas seul.</div>
+</div>
+
+<!-- ════════════════ CHAPITRE 10 ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Chapitre 11</span>
+  <h1 class="ch-title">Les règles non négociables</h1>
+  <p class="ch-lede">Sept règles à ne jamais casser. Garde cette page ouverte tant que ton agent tourne.</p>
+  <div class="ch-gap"></div>
+
+  <table>
+    <thead><tr><th style="width:36px;">#</th><th>La règle</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Zéro chiffre inventé.</b> Pas de source, pas d'affirmation. Un seul volume halluciné dans un livrable client et ta crédibilité est morte. La règle se met dans la doctrine ET dans chaque skill : double verrou.</td></tr>
+      <tr><td>2</td><td><b>raw/ est immuable.</b> L'agent lit, il ne modifie jamais. Ta matière première ne se pollue pas.</td></tr>
+      <tr><td>3</td><td><b>Tout output va dans un fichier.</b> Une réponse dans le chat disparaît avec la conversation. Une méthode qui vit dans un fichier versionné s'améliore à chaque mission.</td></tr>
+      <tr><td>4</td><td><b>Pas de data propriétaire, pas de production.</b> L'agent sans data, c'est un générateur de contenu générique avec une belle architecture autour. La commodité, en plus cher.</td></tr>
+      <tr><td>5</td><td><b>Une hypothèse ne se valide que par une preuve mesurée.</b> Jamais au ressenti. Sans fiches preuves, tu ne sais pas si ta méthode marche : tu sais juste qu'elle produit. Ce n'est pas pareil.</td></tr>
+      <tr><td>6</td><td><b>Le contrôle qualité est bloquant.</b> Une page qui rate un critère ne sort pas, même produite par une routine à 3h du matin. Et c'est toi qui valides la publication, toujours.</td></tr>
+      <tr><td>7</td><td><b>Tu restes manager.</b> L'agent propose à 95%, tu arbitres les 5% de jugement. Le jour où tu valides sans lire, le système dérive en silence.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout"><b>Et la huitième, en filigrane de toutes les autres.</b> Tu produis dès le premier étage. Tout construire avant de produire, c'est le piège classique : le système parfait qui n'a jamais sorti une page ne vaut rien. Tu poses le socle, trois skills, et tu lances un vrai projet. Le reste se construit en marchant.</div>
+</div>
+
+<!-- ════════════════ FAQ ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">FAQ</span>
+  <h1 class="ch-title">Les questions qui reviennent</h1>
+  <div class="ch-gap"></div>
+
+  <h3 class="sub">« Il me faut savoir coder ? »</h3>
+  <p>Non. Tout le système, c'est des fichiers markdown et des consignes en français. Les seules lignes techniques de ce guide (cron, GitHub Actions), tu les copies telles quelles, et tu peux même demander à Claude de les poser pour toi. Il suffit de savoir ce que tu sais, de le formaliser, et de le donner à une IA qui ne l'oubliera pas.</p>
+
+  <h3 class="sub">« Combien ça coûte à faire tourner ? »</h3>
+  <p>Un abonnement Claude. Pro à 20 €/mois suffit pour démarrer, Max si les routines tournent beaucoup. C'est l'unique coût fixe, à comparer à ce que tu paies aujourd'hui en outils de volume. Le dosage des modèles (chapitre 10) est ton levier quand ça monte en charge.</p>
+
+  <h3 class="sub">« Combien de temps avant que les boucles servent ? »</h3>
+  <p>Les boucles 1 et 2 servent dès la deuxième semaine (le backlog et les hypothèses se remplissent vite). La boucle 3 a un délai incompressible : les premières fiches preuves rendent leur verdict à J+30. C'est le rythme du SEO, pas celui de l'agent. Tu poses les fiches dès la première publication et tu laisses la Search Console trancher.</p>
+
+  <h3 class="sub">« Je peux installer ça chez mes clients ? »</h3>
+  <p>Oui, et c'est un modèle qui change la relation : tu n'es plus un prestataire qui livre des documents, tu installes un système que le client garde. Sa voix, sa data, tes skills et ta méthode. La presta finit, le système reste. La phrase pour le vendre : « Je ne vous vends pas des promesses de position. Je vous installe un système que vous gardez, qui automatise la préparation, la rédaction, le balisage et le suivi de votre SEO. Le trafic, c'est ce qui en sort, pas ce que je facture. »</p>
+
+  <h3 class="sub">« Mes skills marchent dans Cowork mais pas dans le Terminal »</h3>
+  <p>C'est le blocage le plus fréquent du passage au local, et j'ai vu les deux causes en vrai au bootcamp. Un : Cowork et Claude Code ne lisent pas les skills au même endroit, il faut relier les deux dossiers (demande à Claude Code : « relie mon dossier de skills Cowork au tien », il pose le lien). Deux : ton dossier de travail est dans un dossier synchronisé iCloud, Google Drive ou OneDrive, et la synchronisation casse la lecture des fichiers. Le vault vit sur ton disque interne, pas dans un dossier synchronisé.</p>
+
+  <h3 class="sub">« Par quoi je commence lundi matin ? »</h3>
+  <p>Le passage à Obsidian et Claude Code (chapitre 2, une heure), le vault et la doctrine (chapitre 3), le skill d'ingestion du chapitre 5, et tu ingères tes trois premières sources de data. C'est tout. Le reste suit.</p>
+</div>
+
+<!-- ════════════════ ALLER PLUS LOIN ════════════════ -->
+<div class="page">
+  <span class="ch-eyebrow">Aller plus loin</span>
+  <h1 class="ch-title">On construit ton agent ensemble</h1>
+  <div class="ch-gap"></div>
+
+  <p>Ce guide te donne le plan complet. Deux raccourcis si tu veux aller plus vite.</p>
+
+  <div class="cta-org">
+    <span class="tag">Organikk · Accompagnement</span>
+    <h3>Je t'installe le système, <em>en 1:1</em>.</h3>
+    <p>Je monte ce système avec toi : on construit ton vault, on installe tes skills et tes routines, et on cale le tout sur ta data. Tu me juges sur les leads que ça ramène, pas sur le trafic. À la fin de l'accompagnement, c'est toi qui pilotes et le système reste chez toi.</p>
+    <a class="btn" href="https://organikk.co/systeme">Découvrir l'accompagnement&nbsp;→</a>
+  </div>
+
+  <div class="cta-fus-wrap">
+    <div class="cta-fus">
+      <span class="tag">Fusionn · Agent mot-clé</span>
+      <h3>Fusionn repère vos meilleurs mots-clés.</h3>
+      <p>Fusionn est un agent conversationnel qui repère vos meilleurs mots-clés. Vous lui donnez votre site, il analyse vos pages et votre Search Console, puis il vous dit quels mots-clés business viser et quelles pages créer en priorité. Chaque analyse est conservée dans votre Historique.</p>
+      <a class="btn" href="https://fusionn.co">Analyser votre site&nbsp;→</a>
+    </div>
+  </div>
+
+  <p style="margin-top:46px;">Demain, tout le monde sera capable d'ouvrir Claude et de lui demander un article. Ça, c'est la commodité, et personne ne la paiera. Ce qui restera cher, c'est l'agent calé sur une data que les autres n'ont pas, corrigé par des résultats mesurés, piloté par quelqu'un qui sait dire non.</p>
+  <p>Construis le tien. Étage par étage, en produisant dès le premier. N'aie pas peur de l'avenir, prépare-le.</p>
+
+  <div class="footer-note">Timothée Boussardon · organikk.co · guide agent · 2026</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>De 0 à 1 : le système SEO d'Organikk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#fbfcff; --ink:#0A0F1E; --ink2:#1b2439; --muted:#5a6681; --muted2:#8590a8;
+    --line:rgba(10,15,30,.08); --line2:rgba(10,15,30,.12);
+    --blue:#2559DD; --blue-light:#5b86f5; --blue-deep:#0b1f5c; --blue-soft:#eef2ff; --blue-softer:#f5f7ff;
+    --shadow:0 18px 50px -28px rgba(12,26,70,.22); --shadow-sm:0 6px 22px -14px rgba(12,26,70,.18);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(60% 40% at 80% -5%, rgba(70,133,240,.08), transparent 70%),
+      linear-gradient(rgba(10,15,30,.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(10,15,30,.022) 1px, transparent 1px);
+    background-size:auto, 32px 32px, 32px 32px;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:0 24px;}
+  .serif{font-family:'Instrument Serif',serif; font-style:italic; color:var(--blue); font-weight:400;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--blue); font-weight:500;
+  }
+
+  /* Hero */
+  header.hero{padding:96px 0 56px;}
+  header.hero h1{
+    font-size:clamp(36px,6vw,60px); line-height:1.06; letter-spacing:-.03em;
+    font-weight:600; margin:14px 0 0;
+  }
+  header.hero p.lede{
+    max-width:620px; font-size:19px; color:var(--muted); line-height:1.55; margin:26px 0 0;
+  }
+
+  /* Résumé callout */
+  .callout{
+    background:var(--blue-softer); border:1px solid rgba(70,133,240,.18);
+    border-radius:18px; padding:26px 28px; margin:8px 0 0;
+    box-shadow:var(--shadow-sm);
+  }
+  .callout .eyebrow{margin-bottom:10px; display:block;}
+  .callout p{margin:0; font-size:17px; color:var(--ink2);}
+
+  section{padding:52px 0 0;}
+  h2{
+    font-size:clamp(25px,3.2vw,33px); letter-spacing:-.025em; line-height:1.2;
+    font-weight:600; margin:0 0 8px;
+  }
+  h3{font-size:21px; letter-spacing:-.02em; font-weight:600; margin:30px 0 10px;}
+  p{margin:0 0 16px;}
+  .section-intro{color:var(--muted); max-width:680px; margin-bottom:22px;}
+
+  /* Piliers */
+  .pillars{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px;}
+  .pillar{
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:20px 22px;
+    box-shadow:var(--shadow-sm);
+  }
+  .pillar .n{font-family:'Instrument Serif',serif; font-style:italic; font-size:30px; color:var(--blue); line-height:1;}
+  .pillar h4{margin:8px 0 6px; font-size:17px; font-weight:600;}
+  .pillar p{margin:0; font-size:15px; color:var(--muted); line-height:1.5;}
+
+  /* Phase */
+  .phase{
+    background:#fff; border:1px solid var(--line); border-radius:20px;
+    padding:28px 30px; margin-bottom:16px; box-shadow:var(--shadow-sm);
+    position:relative; overflow:hidden;
+  }
+  .phase::after{
+    content:''; position:absolute; top:-70px; right:-50px; width:170px; height:170px;
+    background:radial-gradient(circle, rgba(70,133,240,.09), transparent 65%); pointer-events:none;
+  }
+  .phase .ph-k{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); font-weight:500;}
+  .phase h3{margin:6px 0 10px; font-size:23px;}
+  .phase > p{color:var(--ink2); font-size:16px;}
+  .skills{list-style:none; padding:0; margin:14px 0 0; display:flex; flex-direction:column; gap:10px;}
+  .skills li{font-size:15.5px; color:var(--ink2); line-height:1.5;}
+  code.skill{
+    font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:500;
+    background:var(--blue-soft); color:var(--blue-deep); border:1px solid rgba(70,133,240,.18);
+    padding:2px 8px; border-radius:7px; white-space:nowrap;
+  }
+  .can{
+    margin-top:16px; padding-top:14px; border-top:1px solid var(--line);
+    font-size:15px; color:var(--muted);
+  }
+  .can b{color:var(--blue-deep); font-weight:600;}
+
+  /* Workflows */
+  .flow{
+    background:#0c1430; color:#e7ecff; border-radius:16px; padding:20px 22px; margin:12px 0;
+    font-family:'JetBrains Mono',monospace; font-size:13.5px; line-height:1.7; overflow-x:auto;
+  }
+  .flow .ttl{display:block; color:#9fb6ff; margin-bottom:8px; font-size:12px; letter-spacing:.08em; text-transform:uppercase;}
+  .flow .arr{color:var(--blue-light);}
+
+  /* Table */
+  table{width:100%; border-collapse:collapse; margin-top:14px; font-size:15px; background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden;}
+  th,td{padding:13px 16px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top;}
+  thead th{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--muted2); font-weight:500; background:var(--blue-softer);}
+  tbody tr:last-child td{border-bottom:none;}
+  td:first-child{font-weight:600; color:var(--ink); white-space:nowrap;}
+
+  /* Final */
+  .final{
+    background:linear-gradient(135deg,#ffffff,#eef2ff); border:1px solid rgba(70,133,240,.2);
+    border-radius:22px; padding:34px 32px; margin:24px 0 0; box-shadow:var(--shadow);
+  }
+  .final h2{margin-top:0;}
+  footer{padding:60px 0 90px; color:var(--muted2); font-size:13px;}
+
+  @media(max-width:680px){
+    .pillars{grid-template-columns:1fr;}
+    header.hero{padding:64px 0 40px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Organikk · Guide</span>
+    <h1>De 0 à 1 : le système SEO, <span class="serif">de l'idée à l'autonomie</span>.</h1>
+    <p class="lede">Le guide complet de nos skills et de ce qu'on peut faire en SEO avec. On part d'un site qui n'a rien, on arrive à un système qui produit du lead en autonomie.</p>
+  </header>
+
+  <div class="callout">
+    <span class="eyebrow">En résumé</span>
+    <p>Un projet SEO suit un parcours en 7 phases : cadrage → mots-clés → architecture → production → technique → maillage → suivi, avec une couche GEO qui traverse tout. La règle au-dessus de tout : on ne fait pas de la visibilité, on fait de la conversion. On vise le lead, pas le trafic. Et chaque page se construit sur la data propriétaire du client, jamais sur un prompt générique.</p>
+  </div>
+
+  <section>
+    <h2>La philosophie <span class="serif">avant les outils</span>.</h2>
+    <p class="section-intro">Quatre principes qui décident de tout ce qui suit. Le reste, ce sont des skills qui exécutent cette doctrine.</p>
+    <div class="pillars">
+      <div class="pillar"><div class="n">1</div><h4>Conversion, pas visibilité</h4><p>Une page récupère un e-mail qualifié, elle ne monte pas dans une position moyenne.</p></div>
+      <div class="pillar"><div class="n">2</div><h4>Décisionnel et transactionnel</h4><p>L'informationnel se fait manger par les LLM. On va chercher les requêtes Do.</p></div>
+      <div class="pillar"><div class="n">3</div><h4>Originalité, pas copie</h4><p>On donne l'information que les autres ne donnent pas. C'est ce que Google et l'IA veulent servir.</p></div>
+      <div class="pillar"><div class="n">4</div><h4>80/20</h4><p>L'IA fait 80 % du travail. On facture les 20 % qui font ranker : stratégie, data, jugement.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Le parcours <span class="serif">de 0 à 1</span>.</h2>
+
+    <div class="phase">
+      <span class="ph-k">Phase 0 · Cadrage</span>
+      <h3>On cadre avant tout skill</h3>
+      <p>La money page, le point de conversion, la data disponible (calls, tickets SAV, CRM, avis), le secteur. Sans data exploitable en entrée, le système ne tourne pas. C'est le pré-requis non négociable.</p>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 1 · Mots-clés business</span>
+      <h3>D'une thématique floue à des requêtes qui convertissent</h3>
+      <ul class="skills">
+        <li><code class="skill">seo-recherche-mots-cles</code> from scratch, d'une thématique à une liste exhaustive (intention, volume, difficulté).</li>
+        <li><code class="skill">seo-clustering-mots-cles</code> regroupe la liste par partage de SERP. 1 cluster = 1 page.</li>
+        <li><code class="skill">seo-mots-cles-decisionnels</code> isole les requêtes qui convertissent, écarte l'informationnel.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> sortir, pour un nouveau client, une carte complète de ses requêtes business priorisées en une session.</div>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 2 · Architecture de contenu</span>
+      <h3>Des mots-clés à une structure de pages qui tient debout</h3>
+      <ul class="skills">
+        <li><code class="skill">seo-cluster-aeo</code> cocon sémantique pour moteurs de réponse (Know-Simple / Know / Do).</li>
+        <li><code class="skill">seo-modeles-pseo</code> modèles de pages décisionnelles (Proximité × Intention × Faisabilité).</li>
+        <li><code class="skill">seo-programmatique-pseo</code> 1 template + 1 variable = des centaines de pages, sans thin content.</li>
+        <li><code class="skill">seo-roadmap-pseo</code> séquence tout ça en plan d'exécution.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> transformer une offre en architecture de plusieurs centaines de pages, chacune calée sur une requête réelle.</div>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 3 · Brief et sémantique</span>
+      <h3>Préparer le terrain pour ranker mathématiquement</h3>
+      <ul class="skills">
+        <li><code class="skill">seo-brief-contenu</code> structure Hn optimisée Passage Ranking, basée sur ce que les autres n'ont pas dit.</li>
+        <li><code class="skill">seo-entites-vectorielles</code> les entités à inclure pour aligner la page (Grounding Score, gap).</li>
+        <li><code class="skill">seo-preparation-semantique</code> la préparation amont du terrain sémantique.</li>
+        <li><code class="skill">seo-peurs-objections</code> les freins de l'audience, pour la conversion et les verbatims Haute Surprise.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> donner à la rédaction une cible précise, pas un sujet vague.</div>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 4 · Production</span>
+      <h3>Rédiger dans la voix du client, avec un contrôle qualité dur</h3>
+      <ul class="skills">
+        <li><code class="skill">ton-de-voix-tim</code> voix anti-IA-writing stricte, paramétrable par client.</li>
+        <li><code class="skill">seo-workflow-article</code> les 8 étapes de rédaction (Surprise Gap, Ancrage, Données…).</li>
+        <li><code class="skill">article-engine-pipeline</code> le bout en bout, décodage RRF en amont, fact-check en aval.</li>
+        <li><code class="skill">content-brain</code> la boucle qui apprend, logge les claims, pose les prédictions J+30/J+90, bloque la publi hors gate.</li>
+        <li><code class="skill">seo-product-led-seo</code> les outils interactifs (calculateurs, simulateurs) qui décrochent le Fully Meets.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> produire du contenu qui parle comme les acheteurs du client et s'améliore à chaque page.</div>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 5 · Technique</span>
+      <h3>Pour que le contenu soit indexable et citable</h3>
+      <ul class="skills">
+        <li><code class="skill">seo-donnees-structurees</code> JSON-LD automatique (graphe d'entité + schémas par page) sur Next.js.</li>
+        <li><code class="skill">seo-core-web-vitals</code> audit LCP / CLS / TBT mobile-first, plan priorisé.</li>
+        <li><code class="skill">indexation-check</code> audit d'indexation sans outil payant.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> t'assurer que les pages sont vues, comprises et servies, pas perdues.</div>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 6 · Maillage et cannibalisation</span>
+      <h3>Relier les pages, régler les conflits</h3>
+      <ul class="skills">
+        <li><code class="skill">maillage-systeme</code> piliers, hub / satellite, ancres, orphelines et dead-end, sans la GSC.</li>
+        <li><code class="skill">maillage-interne-gsc</code> le maillage piloté par la data Search Console.</li>
+        <li><code class="skill">seo-cannibalisation</code> repère les pages en compétition et tranche (301, fusion, différenciation).</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> faire circuler le jus de lien et empêcher tes pages de se plomber, à l'échelle de milliers d'URLs.</div>
+    </div>
+
+    <div class="phase">
+      <span class="ph-k">Phase 7 · Suivi et apprentissage</span>
+      <h3>Le contenu publié revient mesuré</h3>
+      <ul class="skills">
+        <li><code class="skill">seo-quick-win</code> repère les opportunités GSC (position 3-12, CTR faible) qui rapportent vite.</li>
+        <li><b>Les boucles GSC</b> fiches preuves reliant chaque contenu à l'hypothèse qu'il teste, mesurées à J+30 et J+90.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> savoir ce qui convertit vraiment et nourrir le système avec du réel.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>La couche <span class="serif">GEO</span>, qui traverse tout.</h2>
+    <p class="section-intro">Le moteur n'est plus Google seul. ChatGPT, Perplexity, les AI Overviews. Une bonne stratégie travaille tous ces moteurs avec la même base de contenu.</p>
+    <div class="phase">
+      <ul class="skills">
+        <li><code class="skill">seo-geo-audit</code> note un texte sur 7 scores algorithmiques (Surprise, Grounding, Content Effort, RRF, RAG Structurer, Freshness, Action Engine).</li>
+        <li><code class="skill">seo-cluster-aeo</code> l'architecture pensée pour les moteurs de réponse, pas seulement pour les liens bleus.</li>
+        <li><code class="skill">kb-semantic-search</code> la mémoire du système : chaque mission enrichit ce qu'on installe à la suivante.</li>
+      </ul>
+      <div class="can"><b>Ce que tu peux faire :</b> vérifier qu'un contenu survivra aux filtres IA et sera cité, pas juste indexé.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Et la confidentialité <span class="serif">de la data</span> ?</h2>
+    <p class="section-intro">Le système se nourrit de data client (calls, mails, tickets SAV), donc la question est légitime. Trois points qui la règlent.</p>
+    <div class="phase">
+      <p><b>1. Sur un compte pro (API, Team, Enterprise), Anthropic n'entraîne jamais ses modèles sur vos données.</b> C'est le défaut des conditions commerciales, rien à configurer. Sur un compte perso (Free, Pro, Max), il faut désactiver « Help improve Claude » dans claude.ai → Settings → Privacy, sinon les sessions servent à l'entraînement et sont conservées 5 ans (30 jours une fois désactivé).</p>
+      <p><b>2. Le RGPD est un sujet distinct de l'entraînement.</b> Pour la data client : informer les participants quand un call est enregistré, et passer par un compte pro, qui ouvre droit au contrat de sous-traitance d'Anthropic (le DPA).</p>
+      <p><b>3. Le brut reste en local.</b> La base de connaissances vit dans des fichiers sur ton PC, pas dans un outil cloud. On n'envoie que ce qui sert au traitement en cours, anonymisé quand c'est possible.</p>
+      <div class="can"><b>Ce que tu peux faire :</b> répondre à l'objection confidentialité d'un client en deux phrases, réglages et contrat à l'appui.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Les workflows types <span class="serif">(comment on enchaîne)</span>.</h2>
+
+    <div class="flow"><span class="ttl">Nouveau client, de zéro</span>
+      seo-recherche-mots-cles <span class="arr">→</span> clustering <span class="arr">→</span> decisionnels <span class="arr">→</span> cluster-aeo / modeles-pseo <span class="arr">→</span> brief-contenu <span class="arr">→</span> article-engine-pipeline (dans content-brain) <span class="arr">→</span> donnees-structurees <span class="arr">→</span> maillage-systeme <span class="arr">→</span> suivi GSC
+    </div>
+
+    <div class="flow"><span class="ttl">Money page + pages satellites</span>
+      seo-modeles-pseo <span class="arr">→</span> mots-cles-decisionnels <span class="arr">→</span> brief-contenu + peurs-objections <span class="arr">→</span> production <span class="arr">→</span> product-led-seo (outil de capture)
+    </div>
+
+    <div class="flow"><span class="ttl">Site existant qui stagne</span>
+      indexation-check <span class="arr">→</span> cannibalisation <span class="arr">→</span> maillage-interne-gsc <span class="arr">→</span> quick-win <span class="arr">→</span> réécriture ciblée
+    </div>
+
+    <div class="flow"><span class="ttl">Vérifier qu'un contenu sera cité par l'IA</span>
+      seo-geo-audit <span class="arr">→</span> corrections <span class="arr">→</span> entites-vectorielles (combler le gap)
+    </div>
+  </section>
+
+  <section>
+    <h2>Le tableau <span class="serif">récap</span>.</h2>
+    <table>
+      <thead><tr><th>Phase</th><th>Skills</th><th>Ce que tu fais</th></tr></thead>
+      <tbody>
+        <tr><td>Mots-clés</td><td>recherche, clustering, decisionnels</td><td>Carte des requêtes business priorisées</td></tr>
+        <tr><td>Architecture</td><td>cluster-aeo, modeles-pseo, programmatique-pseo, roadmap-pseo</td><td>Structure de pages à l'échelle</td></tr>
+        <tr><td>Brief</td><td>brief-contenu, entites-vectorielles, preparation-semantique, peurs-objections</td><td>Cible sémantique précise</td></tr>
+        <tr><td>Production</td><td>workflow-article, article-engine-pipeline, content-brain, ton-de-voix, product-led-seo</td><td>Contenu original dans la voix du client</td></tr>
+        <tr><td>Technique</td><td>donnees-structurees, core-web-vitals, indexation-check</td><td>Pages vues et comprises</td></tr>
+        <tr><td>Maillage</td><td>maillage-systeme, maillage-interne-gsc, cannibalisation</td><td>Jus de lien qui circule, zéro conflit</td></tr>
+        <tr><td>Suivi</td><td>quick-win, boucles GSC</td><td>Mesure réelle, apprentissage</td></tr>
+        <tr><td>GEO</td><td>geo-audit, cluster-aeo</td><td>Citation par les moteurs IA</td></tr>
+        <tr><td>Mémoire</td><td>kb-semantic-search</td><td>Système cumulatif</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="final">
+    <h2>Le passage à 1 : <span class="serif">l'autonomie</span>.</h2>
+    <p style="margin-bottom:0;color:var(--ink2);">Le but n'est pas de rester indispensable. À la fin, le client (ou le freelance qu'on équipe) pilote le système lui-même : les skills tournent dans sa voix, sur sa data, avec ses boucles de suivi. On a installé une machine, pas livré un bouquet de Google Docs. C'est ça, le 1.</p>
+  </div>
+
+  <footer>Organikk · Guide de 0 à 1 · généré le 10/06/2026</footer>
+
+</div>
+</body>
+</html>
