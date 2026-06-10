@@ -143,3 +143,23 @@ N'interdit pas les exemples concrets et littéraux (cas client réel, chiffre, s
 - Choix de mot-clé à l'instinct d'abord, puis confirmation : Keyword Planner (data Google fraîche) → outil sans géoloc (qui se positionne déjà ?) → Google Trends (la demande, pas le volume) → ChatGPT (s'il propose des sites = il y a demande) → Fusionn/Claude skills (pré-analyse clusterisée).
 - Critère de sélection : **niche défendable + prospect qualifié**, jamais le head term générique (« agence SEO » / « consultant SEO » = entre pairs, pas de clients).
 - Toujours enregistrer les calls → nourrir le système (pré-call + post-call générés).
+
+## [2026-06-10] Call cadrage Alexia/Adrien (agence e-commerce)
+
+Source : [[alexia-call-cadrage]]. Formulations de Tim, verbatim ou quasi :
+
+- « Tu me parles beaucoup d'outils. Ce que je vends, c'est vraiment un système. C'est même au-delà de l'outil, j'utilise pratiquement plus d'outils. »
+- « J'ai killé quasiment 90 % de mes outils. » (SEMrush, Screaming Frog, Lowscan cités)
+- « Aujourd'hui les mots-clés, c'est les vecteurs sémantiques. Et des vecteurs sémantiques, c'est une suite mathématique, donc c'est un skill que tu peux recréer. »
+- « Ce que fait Screaming Frog, je l'ai pas codé, je l'ai recréé en skill. C'est simplement une suite mathématique. »
+- Sur les limites, en toute transparence : « En dessous de 1 000 pages c'est exceptionnel, au-dessus de 1 000 pages il faut garder les outils traditionnels. Screaming Frog est certainement bien meilleur au-delà de 1 000 pages. »
+- « Moi en SEO je vends pas du chiffre d'affaires, je vends des e-mails qualifiés. J'ai pas la main sur ce qui se passe une fois qu'il a les e-mails. »
+- « La technique c'est même pas 10 % du SEO. Regarder si t'es indexé ou pas c'est ultra important, mais le faire toi-même ça n'a aucun intérêt. »
+- « Les mots-clés sur SEMrush qui ont un CPC, tu les as déjà sur Keyword Planner. Ceux qui n'ont pas de CPC, c'est de l'informationnel, et c'est mangé par les IA. »
+- Data propriétaire : « Enregistrer les calls, demander les tickets SAV, extraire la data des e-mails pour trouver les mots-clés. » Si le client écrit « je veux robe noire » dans un e-mail, le système l'extrait.
+- Multi-plateformes : « Le triptyque c'est YouTube, LinkedIn en articles longs parce que c'est le plus cité par les LLM, et Reddit, mais Reddit c'est des niches très spécifiques type SaaS, l'e-commerce c'est compliqué. Dès que j'ai un contenu : newsletter Substack, LinkedIn article long, une vidéo si possible. »
+- Posture d'entrée chez un client/agence : « On fait une rencontre entre mes pratiques et les siennes. On n'est pas là pour tout casser. » / « Je vous donne pas un truc parfait, c'est du sur mesure, basé sur ce qu'Alexia aime faire et n'aime pas faire. »
+- Preuve récurrente : « On est premier sur balle de golf devant Décathlon, devant Amazon. »
+- Cadre accompagnement : S1 setup, puis un workflow par semaine (audit, mots-clés, rédaction, suivi), mois 1 en 1:1 hebdo, mois 2-6 en async WhatsApp/e-mail. « Une fois que la facture est payée, c'est le début de l'accompagnement. »
+
+Concepts mobilisés : [[data-proprietaire]] · [[entites-vectorielles]] · [[know-simple-know-do]] (informationnel mangé par les IA) · [[entities/golfiller]]

@@ -803,3 +803,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - data : 100 % depuis [[queries/2026-06-10-golfiller-dataset-vitesse-distance]], zéro extrapolation
 - fiche client mise à jour (section Articles produits) : raw/organikk/clients/golfiller.md
 - avant publication : handles collections + publier dans l'URL vitesse-de-swing existante (anti-cannibalisation)
+
+## [2026-06-10] client | Alexia — call de cadrage avec Adrien archivé + résumé
+- nouveau dossier client : raw/organikk/clients/alexia/ ; transcript verbatim + résumé structuré (scope, hors scope reporting, 4-5 clients représentatifs, alerting SEO demandé, limite 1000 pages actée)
+- source : [[alexia-call-cadrage]] (Downloads/Alexia.md rapatrié)
+- corpus voix : entrée datée ajoutée dans raw/notes/tim-my-voice.md (système vs outils, vecteurs sémantiques, emails qualifiés, limite 1000 pages)
+- next : facture à renvoyer, résumé de call à envoyer, espace Notion à recevoir, choix des 4-5 clients, point mercredi
