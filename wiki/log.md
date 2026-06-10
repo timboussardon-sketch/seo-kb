@@ -792,3 +792,14 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - table déclarative (vitesses par âge HackMotion) écartée du publiable, confidence low
 - règle système actée par Tim: jamais de scraping sans citation, bloc Sources obligatoire en fin de page publiée
 - skill déclenché: none (recherche data, modèle déjà cadré dans [[clusters/modeles-pseo-2026-06-10-golfiller]])
+
+## [2026-06-10] brief | Golfiller page usage « balle de golf pour la distance »
+- output: [[briefs/2026-06-10-balle-golf-distance]]
+- skill déclenché: seo-brief-contenu
+
+## [2026-06-10] client | Golfiller — article vitesse/distance par club produit (template officiel)
+- article complet livré : calculateur fer 7 → vitesse → compression, 4 tableaux km/h-mètres, FAQ, bloc sources
+- design : template Golfiller fourni par Tim (.golf-page, Bebas Neue, #4ECDC4/#F5E137), gardé en référence dans raw/golfiller/pages/
+- data : 100 % depuis [[queries/2026-06-10-golfiller-dataset-vitesse-distance]], zéro extrapolation
+- fiche client mise à jour (section Articles produits) : raw/organikk/clients/golfiller.md
+- avant publication : handles collections + publier dans l'URL vitesse-de-swing existante (anti-cannibalisation)

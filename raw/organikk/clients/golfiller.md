@@ -35,6 +35,14 @@ ouvert: 2026-06-10
 2. **Phase 2 pSEO parcours** (prévu dans [[golfiller-strat]]) : passer de la page unique à une URL par parcours, base de ~40 parcours à étendre vers ~100.
 3. **5 outils « Do »** déjà priorisés dans la stratégie source (calculette index, quiz balle, carte de score, tableau distances, comparateur).
 
-## 4. Accès data
+## 4. Articles produits
+
+| Date | Article | Modèle | Statut | Fichiers |
+|---|---|---|---|---|
+| 2026-06-10 | Vitesse de swing et distance par club : les tableaux de référence | Donnée par club ([[modeles-pseo-2026-06-10-golfiller]]) | Prêt à publier (HTML livré à Tim) | `raw/golfiller/pages/vitesse-distance-par-club-shopify.html` (+ version standalone) |
+
+Détail de l'article vitesse/distance : design = template officiel Golfiller (`.golf-page`, Bebas Neue, turquoise/jaune, voir `raw/golfiller/pages/_template-golfiller-NOTE.md`). Contenu : calculateur fer 7 → vitesse de swing → compression recommandée, 4 tableaux convertis km/h et mètres (PGA 2024, LPGA 2023, amateurs par index H/F, Shot Scope 13 clubs × 6 index avec filtres), FAQ 4 questions, bloc sources en fin de page. Toute la data vient du dataset sourcé [[2026-06-10-golfiller-dataset-vitesse-distance]] (TrackMan, Shot Scope, Arccos, USGA/R&A), zéro chiffre extrapolé. Reste à faire avant publication : remplacer les 3 liens `collections/all` par les handles réels des lots (soft / confirmés / pros), publier de préférence dans l'article vitesse-de-swing existant (même URL, déjà pos 4,8) pour éviter une cannibalisation, retirer le H1 si Shopify affiche déjà le titre.
+
+## 5. Accès data
 
 - GSC branchée via les `google_connections` Fusionn (propriété `https://golfiller.fr/`). Export à la demande par la fonction edge `admin-gsc-export` (projet Supabase fusionn).
