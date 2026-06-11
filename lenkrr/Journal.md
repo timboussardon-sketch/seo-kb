@@ -21,6 +21,8 @@ Grosse session « on fait tout » : les 5 restes du backlog traités d'un coup.
 
 Commits : `c4fa5ec` (GSC+Impact), `f16bb7b` (wiki), `afdacc0` (rebrand), `fe1efba` (gate), `44c7648` (billing).
 
+État final vérifié en prod (Railway, deploy SUCCESS) : landing et `/abonnement` en 200, `/app` redirige vers le login, API en 401 sans session. Dev local : http://localhost:3000.
+
 ## En résumé (au 2026-06-02)
 
 **lenkrr** est le nouveau produit né du pivot de Qadence : un SaaS qui analyse le maillage interne d'un site puis applique les liens lui-même, en exécutant la doctrine des skills `maillage-interne-gsc` et `maillage-systeme`. La doctrine qu'il met en code, c'est le [[concepts/maillage-systeme]] ; vue d'ensemble dans [[moc/moc-maillage]].
