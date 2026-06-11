@@ -16,7 +16,13 @@ Données : exports GSC du 2026-06-11, périodes comparées « 3 derniers mois »
 
 ## En résumé
 
-Le trafic monte mais il change de nature, et c'est le vrai sujet de cet audit. Les clics progressent de 2 808 à 4 130 (+47 %) pendant que les impressions chutent de 374 000 à 243 000 (-35 %) : le site est mieux classé (position pondérée 18,8 → 10,0) sur un périmètre plus étroit. Derrière ce global, trois mouvements opposés. Un, la marque recule : -41 % de clics marque, et « victoria garden bordeaux » glisse de la position 1,8 à 4,8 sur son propre nom. Deux, le hors-marque explose (×4,3) mais il est porté par l'éditorial événementiel, pas par les pages qui vendent : le trafic commercial baisse de 13 %. Trois, la page money `appart-hotel-bordeaux-centre` a perdu 555 clics malgré une position qui s'améliore, parce que ses impressions se sont effondrées de 121 000 à 33 000. Le plan : reprendre la marque, convertir le nouveau trafic événementiel en réservations par le maillage, et pousser les quick wins chiffrés (+1 500 clics/3 mois de potentiel identifié, détail dans [[quick-wins/2026-06-11-victoriagarden]]).
+Le global a l'air excellent : clics +47 % (2 808 → 4 130), position pondérée 18,8 → 10,0. Mais en séparant marque / hors-marque et commercial / éditorial, trois mouvements opposés.
+
+1. **La marque recule, c'est l'alerte n°1.** -41 % de clics marque. « victoria garden bordeaux » passe de la position 1,8 à 4,8, « victoria garden pau » de 1,8 à 6,1. Le site n'est plus premier sur son propre nom : quelqu'un intercepte de la réservation directe (schéma classique des OTA dans l'hôtellerie, relevé SERP manuel à faire pour confirmer).
+2. **Le hors-marque explose (×4,3) mais c'est du Know.** 70 nouvelles pages, et les locomotives sont éditoriales : `/evenements-bordeaux-2026/` fait 1 181 clics à elle seule. Pendant ce temps, le trafic des pages commerciales baisse de 13 %. Le trafic monte, les réservations potentielles non, tant que ces pages ne maillent pas vers la résa.
+3. **La page money s'est vidée.** `/destination/appart-hotel-bordeaux-centre/` gagne 15 places (25,3 → 9,8) et perd quand même 555 clics : ses impressions se sont effondrées de 121 000 à 33 000. À élucider en priorité avec l'export requêtes de cette page.
+
+Côté opportunités : ~+1 500 clics/trimestre sans créer de page, détaillés dans [[quick-wins/2026-06-11-victoriagarden]] (boulangeries de Pau +438, Bordeaux centre +273, monuments +205, fiches actions title/méta/FAQ et densification atomique incluses). Première action à valider : le relevé SERP marque, pour savoir qui est passé devant et sur quel format.
 
 ## 1. Les chiffres globaux
 
