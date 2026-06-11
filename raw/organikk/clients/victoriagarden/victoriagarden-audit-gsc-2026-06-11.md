@@ -79,6 +79,8 @@ Le trafic total monte de 47 %, mais le trafic commercial baisse de 13 %. La croi
 
 Le cas qui résume tout : `/destination/appart-hotel-bordeaux-centre/` passe de la position 25,3 à 9,8 (excellente progression) et perd pourtant 555 clics, parce que ses impressions tombent de 121 462 à 32 893. La requête « appart hotel bordeaux » elle-même perd la moitié de ses impressions (10 546 → 5 606). La page rankait l'an dernier, loin mais sur un univers de requêtes très large ; cet univers s'est contracté. À creuser en priorité dans GSC (liste des requêtes de cette page N-1 vs maintenant) pour départager : perte de couverture sur des requêtes larges, baisse de demande, ou AI Overviews qui absorbe les variantes informationnelles.
 
+Élément de contexte important (relevé manuel Tim, 2026-06-11) : l'établissement est **3e sur « appart hotel bordeaux » et 2e sur « appart hotel pau » dans le pack local**. Une partie des clics de ces requêtes passe donc par la fiche Google Business, pas par le lien organique que mesure la GSC : ça explique en partie le CTR organique faible en position 8 (le pack capte les clics au-dessus), et ça fait de la fiche GBP (avis, photos, lien de réservation directe) un levier au même rang que la page web sur ces deux requêtes.
+
 ## 5. Les quick wins (potentiel chiffré : ~+1 500 clics/3 mois)
 
 Détail complet, tableau et fiches actions dans [[victoriagarden-quick-wins-2026-06-11]]. Les cinq plus gros :

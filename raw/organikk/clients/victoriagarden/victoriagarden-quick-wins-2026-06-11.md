@@ -39,7 +39,7 @@ Priorité business : les lignes Do d'abord (2, 4, 8, 9, 10), puis les grosses li
 
 ### → /destination/appart-hotel-bordeaux-centre/ (+273 clics, Do, priorité 1)
 
-Requêtes principales : « appart hotel bordeaux » (5 606 impressions, CTR 0,6 %), « appart hotel bordeaux centre » (1 029 impressions, CTR 0,6 %).
+Requêtes principales : « appart hotel bordeaux » (5 606 impressions, CTR 0,6 %), « appart hotel bordeaux centre » (1 029 impressions, CTR 0,6 %). Contexte : l'établissement est 3e dans le pack local sur « appart hotel bordeaux » (et 2e sur Pau, relevé Tim 2026-06-11) ; le CTR organique faible s'explique en partie par les clics que le pack capte au-dessus, donc travailler la fiche Google Business en parallèle du title.
 
 Action 1 : Title + méta. Le CTR à 0,6 % sur la requête principale en position 8 dit que le titre ne donne aucune raison de cliquer face aux OTA. Mettre la promesse différenciante en tête : réservation directe, le quartier, la cuisine équipée. Vérifier que la méta affiche une vraie proposition et pas une coupe automatique.
 Action 2 : Densification atomique en haut de page.
