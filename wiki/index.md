@@ -281,7 +281,8 @@ status: stable
 - [[methodes/ranker-verticale-niche-sans-backlink]] — Ranker une verticale de niche sans backlink
 
 ## Outputs skills
-### Briefs (5)
+### Briefs (6)
+- [[briefs/2026-06-10-balle-golf-distance]] — Golfiller, page usage « balle de golf pour la distance » (template directory usage/besoin)
 - [[briefs/check-indexation-claude]] — Créer un check d'indexation automatique avec Claude Code
 - [[briefs/maillage-interne-claude]] — Auditer et construire le maillage interne d'un site avec Claude
 - [[briefs/reddit-pour-geo-2026]] — Utiliser Reddit pour améliorer son GEO sans se faire bannir

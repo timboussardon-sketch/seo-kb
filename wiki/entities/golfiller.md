@@ -28,3 +28,8 @@ Cas mobilisé dans [[syntheses/audit-doctrine-2026]] comme preuve terrain de la 
 - [[golfiller-strat]] — la note brute de stratégie et l'analyse GSC du site.
 - [[golfiller-conversations]] — le log de travail brut d'où la réflexion est tirée.
 - [[concepts/product-led-seo]] — le levier qui transforme la page Do en outil et porte le ranking.
+
+## Articles produits
+
+- « Balle de golf pour la distance » (template usage) — brief [[briefs/2026-06-10-balle-golf-distance]], draft markdown + version HTML/CSS prête à coller (Shopify) dans `content-brain/golfiller/outputs/2026-06-10-balle-golf-distance.{md,html}`. Data : table distance/vitesse + prix catalogue réels.
+- Set « modèle directory usage/besoin » complet en HTML/CSS prêt Shopify : distance, contrôle, vent, durabilité, budget (`content-brain/golfiller/outputs/2026-06-10-balle-golf-*.html`). Sélection catalogue réelle par besoin, CSS scopé `.gf-article`, cross-links anti-cannibalisation.

@@ -88,15 +88,18 @@
   .pct{ font-size:40px; font-weight:600; letter-spacing:-.04em; line-height:1; color:var(--blue-deep); margin-bottom:10px; }
   .pct.red{ color:var(--accent); }
 
-  /* steps (déroulé) */
-  .weeks{ display:flex; flex-direction:column; gap:13px; }
-  .week{ display:grid; grid-template-columns:58px 1fr; gap:20px; align-items:start; padding:20px 24px; border-radius:20px; background:var(--card); border:1px solid var(--line); box-shadow:0 14px 34px -26px rgba(27,62,143,.16); }
-  .week-num{ width:58px; height:58px; border-radius:15px; display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:22px; font-weight:600;
-    background:linear-gradient(135deg, rgba(70,133,240,.13), rgba(127,169,245,.05)); border:1px solid rgba(70,133,240,.25);
-    color:transparent; background-image:linear-gradient(135deg,#4685F0,#1B3E8F); -webkit-background-clip:text; -webkit-text-fill-color:transparent; box-shadow:inset 0 1px 0 rgba(255,255,255,.85); }
-  .week-body .lbl{ font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted-2); font-weight:600; }
-  .week-body h3{ font-size:17.5px; font-weight:600; letter-spacing:-.022em; color:var(--ink); margin:5px 0 8px; line-height:1.2; }
-  .week-body p{ font-size:13.5px; line-height:1.58; color:var(--ink-2); }
+  /* déroulé — timeline verticale minimaliste */
+  .flow-lead{ font-size:15px; line-height:1.6; color:var(--muted); margin:2px 0 30px; max-width:54ch; }
+  .flow{ position:relative; }
+  .flow::before{ content:""; position:absolute; left:5px; top:7px; bottom:9px; width:1.5px; border-radius:2px;
+    background:linear-gradient(180deg,#4685F0 0%, rgba(70,133,240,.12) 100%); }
+  .step{ position:relative; padding:0 0 30px 34px; }
+  .step:last-child{ padding-bottom:0; }
+  .step::before{ content:""; position:absolute; left:0; top:4px; width:11px; height:11px; border-radius:50%;
+    background:#fff; border:2px solid #4685F0; box-shadow:0 0 0 4px #fff; }
+  .step .lbl{ font-family:var(--mono); font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); font-weight:600; }
+  .step h3{ font-size:18px; font-weight:600; letter-spacing:-.022em; color:var(--ink); margin:5px 0 7px; line-height:1.2; }
+  .step p{ font-size:13.5px; line-height:1.62; color:var(--ink-2); max-width:60ch; }
 
   /* proof quote */
   .proof{ margin-top:16px; padding:22px 26px 22px 30px; border-radius:18px; position:relative;
@@ -214,40 +217,29 @@
   <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="rh-meta">Accompagnement 1:1 · Proximit</div></div>
 
   <div class="kicker-strip"><span class="kicker-num">05</span><span class="kicker-line"></span></div>
-  <h2 class="sec grad">Le déroulé sur 30 jours</h2>
+  <h2 class="sec grad">Du premier appel<br><span class="serif">au système autonome</span></h2>
+  <p class="flow-lead">Quatre temps sur 30 jours, de ta bidouille actuelle à un écosystème d'agents que tu manages.</p>
 
-  <div class="weeks">
-    <div class="week">
-      <div class="week-num">01</div>
-      <div class="week-body">
-        <span class="lbl">D'abord</span>
-        <h3>On met tes process à plat</h3>
-        <p>Ta réflexion SEO d'abord, puis les tâches du quotidien&nbsp;: audit, recherche de mots-clés, suivi client. On part de tes façons de faire, on les confronte aux miennes, on garde le meilleur des deux.</p>
-      </div>
+  <div class="flow">
+    <div class="step">
+      <span class="lbl">D'abord</span>
+      <h3>On met tes process à plat</h3>
+      <p>Ta réflexion SEO d'abord, puis les tâches du quotidien&nbsp;: audit, recherche de mots-clés, suivi client. On part de tes façons de faire, on les confronte aux miennes, on garde le meilleur des deux.</p>
     </div>
-    <div class="week">
-      <div class="week-num">02</div>
-      <div class="week-body">
-        <span class="lbl">Ensuite</span>
-        <h3>On construit l'agent senior</h3>
-        <p>Il gère tes workflows, le workflow audit par exemple. On le branche sur ta data&nbsp;: ton ton de voix, ton cocon, tes études de cas clients, pour qu'il ne reparte pas d'une page blanche.</p>
-      </div>
+    <div class="step">
+      <span class="lbl">Ensuite</span>
+      <h3>On construit l'agent senior</h3>
+      <p>Il gère tes workflows, le workflow audit par exemple. On le branche sur ta data&nbsp;: ton ton de voix, ton cocon, tes études de cas clients, pour qu'il ne reparte pas d'une page blanche.</p>
     </div>
-    <div class="week">
-      <div class="week-num">03</div>
-      <div class="week-body">
-        <span class="lbl">Puis</span>
-        <h3>Les agents juniors, que tu manages</h3>
-        <p>Un agent par tâche, en boucle d'amélioration (10, 15, 20 itérations, il devient meilleur que sur la première). Tu manages une team d'agents juniors qui travaillent pour l'agent senior. Ta boîte gagne l'équivalent d'un consultant en plus, sans recruter.</p>
-      </div>
+    <div class="step">
+      <span class="lbl">Puis</span>
+      <h3>Les agents juniors, que tu manages</h3>
+      <p>Un agent par tâche, en boucle d'amélioration (10, 15, 20 itérations, il devient meilleur que sur la première). Tu manages une team d'agents juniors qui travaillent pour l'agent senior. Ta boîte gagne l'équivalent d'un consultant en plus, sans recruter.</p>
     </div>
-    <div class="week">
-      <div class="week-num">04</div>
-      <div class="week-body">
-        <span class="lbl">On commence par là</span>
-        <h3>Le pôle tourisme en premier</h3>
-        <p>Ta data propriétaire (le CRM tourisme, la base type LEI), une intention B2B, le plus défendable face à l'IA générative, et aligné avec la refonte de proximit.fr. On recadre l'ordre&nbsp;: tourisme d'abord, les autres pôles ensuite.</p>
-      </div>
+    <div class="step">
+      <span class="lbl">On commence par là</span>
+      <h3>Le pôle tourisme en premier</h3>
+      <p>Ta data propriétaire (le CRM tourisme, la base type LEI), une intention B2B, le plus défendable face à l'IA générative, et aligné avec la refonte de proximit.fr. On recadre l'ordre&nbsp;: tourisme d'abord, les autres pôles ensuite.</p>
     </div>
   </div>
 

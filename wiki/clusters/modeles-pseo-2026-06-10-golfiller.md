@@ -38,6 +38,18 @@ Toutes les requêtes du tableau sont tapées telles quelles dans la GSC : le fil
 2. **Page prix.** 1 700+ impressions sur la grappe prix/combien, pos 5 à 10, intention d'achat maximale, et c'est l'argument structurel de Golfiller (l'écart neuf/occasion). Une seule page à produire.
 3. **Fiches parcours (industrialisation).** Score conversion plus faible mais c'est le moteur d'autorité thématique : 1 346 requêtes et 388 parcours nommés prouvés sur une seule page. C'est la Phase 2 déjà prévue dans [[golfiller-strat]] : démarrer sur les ~40 parcours dont la donnée slope/SSS existe, étendre vers 100. Le « classement slope golf france » (pos 5) sert de page mère de la grappe.
 
+## Modèle additionnel — Balle par usage/besoin (2026-06-10, scrape blog + GSC non couvert)
+
+Identifié en relisant le blog (qui couvre déjà parcours, compression, spin, vitesse, slope) puis en cherchant les familles de requêtes GSC NON couvertes. Source : [[queries/2026-06-10-golfiller-gsc-6mois]].
+
+| Modèle | Requête réelle | Variable | Intention | P×I×F | Score | Gabarit | Ancre |
+|---|---|---|---|---|---|---|---|
+| Best-for / Usage | « meilleur balle de golf pour la distance » (265 imp, pos 14,5), « ...pour le contrôle », « balles de golf pour débutants » (167 imp, pos 12,8) | besoin technique (distance, contrôle/spin, toucher, durabilité, petit budget, vent) | Choisir LA balle pour SON besoin | 5×4×4 | 7 | Page par besoin : critère technique (compression/spin du tableau existant) + 3 modèles reco dispo en occasion + CTA fiche | « ces balles d'occasion » |
+
+GSC : ~1 069 imp sur la grappe usage, toutes en position 9 à 15, aucune page dédiée. Demande Do non captée.
+
+**Frontière anti-cannibalisation avec le modèle « Best option / profil » (déjà au tableau ci-dessus) :** le modèle profil segmente par JOUEUR (senior, débutant, femme, joueur moyen), le modèle usage segmente par BESOIN technique (distance, contrôle, vent, durabilité, budget). On ne crée pas deux pages sur la même intention : « débutant » reste sur la page profil, « pour la distance / le contrôle » va sur la page usage. Une page = un axe, maillage croisé entre les deux, cf. [[concepts/cannibalisation]].
+
 ## Maillage
 
 Chaque Spoke pointe vers la Money Page occasion avec son ancre du tableau. La Money Page liste les Spokes avis et profils en cross-sell. Les fiches parcours maillent entre elles par région et remontent vers la page mère classement slope, selon [[concepts/maillage-interne]]. Prérequis avant production : trancher la cannibalisation calcul index relevée dans [[2026-06-10-golfiller-gsc-90j]].
