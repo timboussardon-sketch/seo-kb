@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accompagnement 1:1 · Catherine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0F1E; --ink-2:#1b2439; --muted:#5a6681; --muted-2:#8590a8;
+    --line:rgba(10,15,30,.07); --line-2:rgba(10,15,30,.12);
+    --blue:#4685F0; --blue-light:#7FA9F5; --blue-deep:#1B3E8F; --blue-soft:#eaf1ff; --blue-softer:#f4f8ff;
+    --accent:#FF371C; --accent-soft:rgba(255,55,28,.08); --accent-line:rgba(255,55,28,.20);
+    --card:#F8F9FA;
+    --grad-title:linear-gradient(120deg,#1B3E8F 0%,#2559DD 48%,#5b86f5 100%);
+    --grad-blue:linear-gradient(135deg,#5A96F3 0%,#4685F0 45%,#1B3E8F 100%);
+    --mono:"Inter",ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  @page{ size:A4; margin:0; }
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Inter",system-ui,sans-serif; color:var(--ink-2); letter-spacing:-.011em; -webkit-font-smoothing:antialiased; background:#fff; }
+  .page{ position:relative; width:210mm; min-height:297mm; padding:19mm 18mm 16mm; background:#fff; overflow:hidden; page-break-after:always; display:flex; flex-direction:column; }
+  .page:last-child{ page-break-after:auto; }
+
+  .rh{ display:flex; justify-content:space-between; align-items:center; padding-bottom:14px; border-bottom:1px solid var(--line); margin-bottom:28px; }
+  .wm{ font-size:17px; font-weight:600; letter-spacing:-.03em; color:var(--ink); }
+  .wm b{ color:var(--blue); font-weight:600; }
+  .rh-meta{ font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted-2); }
+
+  h1,h2,h3{ font-weight:500; letter-spacing:-.028em; line-height:1.05; }
+  .grad{ color:#2559DD; background:var(--grad-title); -webkit-background-clip:text; -webkit-text-fill-color:transparent; width:fit-content; }
+  .serif{ font-family:"Instrument Serif",serif; font-style:italic; font-weight:400; letter-spacing:-.01em; }
+
+  h2.sec{ font-size:29px; margin-bottom:16px; }
+  p{ font-size:14px; line-height:1.66; color:var(--ink-2); }
+  .lead{ font-size:15.5px; line-height:1.64; color:var(--ink-2); }
+  strong{ font-weight:600; color:var(--ink); }
+
+  /* COVER */
+  .cover{ justify-content:space-between; }
+  .cover-grid{ position:absolute; inset:0; z-index:0; pointer-events:none;
+    background:
+      linear-gradient(transparent 0 calc(100% - 1px), var(--line) calc(100% - 1px) 100%) 0 0/100% 30mm,
+      linear-gradient(90deg, transparent 0 calc(100% - 1px), var(--line) calc(100% - 1px) 100%) 0 0/30mm 100%;
+    -webkit-mask-image:radial-gradient(ellipse at 50% 32%, #000 18%, transparent 70%); mask-image:radial-gradient(ellipse at 50% 32%, #000 18%, transparent 70%); }
+  .cover > *{ position:relative; z-index:1; }
+  .cover-top{ display:flex; justify-content:space-between; align-items:center; }
+  .cover-mid{ margin-top:auto; margin-bottom:auto; }
+  .cover-tag{ font-family:var(--mono); font-size:11px; letter-spacing:.20em; text-transform:uppercase; color:var(--blue); font-weight:600; margin-bottom:22px; }
+  h1.title{ font-size:74px; line-height:.98; letter-spacing:-.04em; }
+  h1.title .serif{ font-size:62px; }
+  .subtitle{ margin-top:22px; font-size:21px; color:var(--ink-2); font-weight:450; letter-spacing:-.02em; }
+  .subtitle b{ color:var(--ink); font-weight:600; }
+  .chips{ margin-top:30px; display:flex; gap:12px; flex-wrap:wrap; }
+  .chip{ display:inline-flex; align-items:center; gap:8px; padding:11px 17px; border-radius:13px; background:var(--card); border:1px solid var(--line); font-size:13.5px; font-weight:500; color:var(--ink-2); box-shadow:0 8px 24px -16px rgba(27,62,143,.18); }
+  .chip.price{ background:var(--accent-soft); border-color:var(--accent-line); color:var(--accent); font-weight:600; }
+  .chip .dot{ width:7px; height:7px; border-radius:50%; background:linear-gradient(135deg,#4685F0,#1B3E8F); }
+  .cover-foot{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .cover-foot .ref{ font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2); }
+  .cover-note{ max-width:330px; font-size:12.5px; line-height:1.55; color:var(--muted); }
+
+  /* blocks */
+  .kicker-strip{ display:flex; align-items:baseline; gap:14px; margin-bottom:13px; }
+  .kicker-num{ font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:.04em; color:var(--blue); }
+  .kicker-line{ flex:1; height:1px; background:var(--line-2); }
+  .block{ margin-bottom:6px; }
+  .gap{ margin-top:30px; }
+
+  .resume-card{ padding:24px 26px; border-radius:22px;
+    background:linear-gradient(160deg, rgba(244,249,255,.9) 0%, rgba(233,241,255,.7) 100%);
+    border:1px solid rgba(70,133,240,.16); box-shadow:inset 0 1px 0 rgba(255,255,255,.9), 0 18px 40px -26px rgba(14,42,120,.18); }
+  .resume-card p+p{ margin-top:12px; }
+  .price-inline{ color:var(--accent); font-weight:700; }
+
+  /* plain prose card */
+  .pcard{ padding:24px 26px; border-radius:20px; background:var(--card); border:1px solid var(--line); box-shadow:0 14px 34px -26px rgba(27,62,143,.15); }
+  .pcard p+p{ margin-top:12px; }
+
+  /* split panels */
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+  .panel{ padding:24px 26px; border-radius:20px; background:var(--card); border:1px solid var(--line); box-shadow:0 14px 34px -26px rgba(27,62,143,.15); }
+  .panel.angle{ background:linear-gradient(160deg, rgba(232,242,253,.9) 0%, rgba(216,232,252,.72) 100%); border-color:rgba(70,133,240,.26); }
+  .panel .t{ font-family:var(--mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--blue); font-weight:600; margin-bottom:12px; }
+  .panel h3{ font-size:18px; font-weight:600; letter-spacing:-.022em; color:var(--ink); margin-bottom:10px; line-height:1.22; }
+  .panel p{ font-size:13.5px; line-height:1.6; color:var(--ink-2); }
+  .pct{ font-size:40px; font-weight:600; letter-spacing:-.04em; line-height:1; color:var(--blue-deep); margin-bottom:10px; }
+  .pct.red{ color:var(--accent); }
+
+  /* déroulé — timeline verticale minimaliste */
+  .flow-lead{ font-size:15px; line-height:1.6; color:var(--muted); margin:2px 0 30px; max-width:54ch; }
+  .flow{ position:relative; }
+  .flow::before{ content:""; position:absolute; left:5px; top:7px; bottom:9px; width:1.5px; border-radius:2px;
+    background:linear-gradient(180deg,#4685F0 0%, rgba(70,133,240,.12) 100%); }
+  .step{ position:relative; padding:0 0 30px 34px; }
+  .step:last-child{ padding-bottom:0; }
+  .step::before{ content:""; position:absolute; left:0; top:4px; width:11px; height:11px; border-radius:50%;
+    background:#fff; border:2px solid #4685F0; box-shadow:0 0 0 4px #fff; }
+  .step .lbl{ font-family:var(--mono); font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); font-weight:600; }
+  .step h3{ font-size:18px; font-weight:600; letter-spacing:-.022em; color:var(--ink); margin:5px 0 7px; line-height:1.2; }
+  .step p{ font-size:13.5px; line-height:1.62; color:var(--ink-2); max-width:60ch; }
+
+  /* proof quote */
+  .proof{ margin-top:16px; padding:22px 26px 22px 30px; border-radius:18px; position:relative;
+    background:rgba(255,255,255,.5); border:1px solid rgba(70,133,240,.16); box-shadow:0 12px 30px -22px rgba(27,62,143,.16); }
+  .proof::before{ content:""; position:absolute; left:0; top:18px; bottom:18px; width:3px; border-radius:3px; background:linear-gradient(180deg,#4685F0,#1B3E8F); }
+  .proof p{ font-size:14.5px; line-height:1.6; color:var(--ink); }
+  .proof .who{ margin-top:9px; font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted-2); }
+
+  /* repars */
+  .repars{ display:grid; grid-template-columns:1fr 1fr; gap:11px 24px; list-style:none; }
+  .repars li{ position:relative; padding:13px 16px 13px 38px; border-radius:13px; background:rgba(255,255,255,.5); border:1px solid rgba(70,133,240,.14); font-size:13px; line-height:1.5; color:var(--ink); box-shadow:0 8px 22px -18px rgba(27,62,143,.16); }
+  .repars li::before{ content:"›"; position:absolute; left:16px; top:11px; color:var(--blue); font-size:16px; font-weight:700; }
+
+  /* invest */
+  .invest{ padding:24px 26px; border-radius:22px; background:var(--card); border:1px solid var(--line); box-shadow:0 16px 38px -26px rgba(27,62,143,.16); }
+  .invest-head{ display:flex; align-items:baseline; gap:14px; margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid var(--line); }
+  .invest-amount{ font-size:36px; font-weight:600; letter-spacing:-.035em; color:var(--accent); line-height:1; }
+  .invest-amount span{ font-size:15px; color:var(--muted); font-weight:500; margin-left:6px; }
+  .invest-head .meta{ font-size:13px; color:var(--muted); }
+  .invest ul{ list-style:none; display:flex; flex-direction:column; gap:10px; }
+  .invest li{ position:relative; padding-left:18px; font-size:13.5px; line-height:1.58; color:var(--ink-2); }
+  .invest li::before{ content:""; position:absolute; left:0; top:.62em; width:5px; height:5px; border-radius:50%; background:var(--blue); }
+  .invest li b{ color:var(--ink); }
+
+  .signoff{ margin-top:auto; padding-top:24px; }
+  .sign-rule{ height:1px; background:var(--line-2); margin-bottom:18px; }
+  .sign-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .sign-name{ font-size:22px; font-weight:600; letter-spacing:-.02em; color:var(--ink); }
+  .sign-name .serif{ font-size:24px; color:var(--blue); }
+  .sign-sub{ font-size:12.5px; color:var(--muted); margin-top:3px; }
+  .sign-brand{ text-align:right; }
+  .sign-brand .b{ font-size:17px; font-weight:600; color:var(--ink); letter-spacing:-.02em; }
+  .sign-brand .b b{ color:var(--blue); }
+  .sign-brand .u{ font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2); margin-top:4px; }
+
+  .footer-line{ position:absolute; left:18mm; right:18mm; bottom:10mm; display:flex; justify-content:space-between; font-family:var(--mono); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted-2); padding-top:10px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 — COVER -->
+<section class="page cover">
+  <div class="cover-grid"></div>
+  <div class="cover-top">
+    <div class="wm">Organi<b>kk</b></div>
+    <div class="rh-meta">Proposition d'accompagnement</div>
+  </div>
+  <div class="cover-mid">
+    <div class="cover-tag">Format individuel, en direct avec Tim</div>
+    <h1 class="title grad">Accompagnement 1:1<br><span class="serif">ton système SEO</span></h1>
+    <div class="subtitle">Pour <b>Catherine</b></div>
+    <div class="chips">
+      <span class="chip"><span class="dot"></span>Sortir de l'éparpillement SEO et GEO</span>
+      <span class="chip price">1&nbsp;500&nbsp;€ HT</span>
+    </div>
+  </div>
+  <div class="cover-foot">
+    <div class="cover-note">On met tes process à plat, on les donne à l'IA pour qu'elle les fasse mieux, et tu repars avec ton système construit sur ta data. Celui que tu gardes, et que tu peux remettre à tes propres clients.</div>
+    <div class="ref">11.06.2026 · Réf. CAT&#8202;/&#8202;1-1</div>
+  </div>
+</section>
+
+<!-- PAGE 2 — OÙ TU EN ES + CE QUE JE VENDS -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="rh-meta">Accompagnement 1:1 · Catherine</div></div>
+
+  <div class="kicker-strip"><span class="kicker-num">01</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Où tu en es</h2>
+  <div class="resume-card">
+    <p class="lead">Tu travailles sur deux fronts : l'agence (événements de bienfaisance pour les organismes, SEO pour les entreprises) et tes propres clients, et c'est ce côté-là qui pousse le plus.</p>
+    <p>Tu ne pars pas de zéro. Tu as coupé SEMrush (250&nbsp;$ CAD par mois), tu as un ChatGPT bien entraîné, tu utilises déjà Claude, et tes résultats sont là (ton client en nettoyage de conduits de ventilation tourne très bien en leads). Ce qui manque, c'est le cadre&nbsp;: avec les mises à jour Google et le GEO, tu ne sais plus quoi prendre en premier sur un nouveau client, et tes rapports te coûtent un travail fou.</p>
+  </div>
+
+  <div class="kicker-strip gap"><span class="kicker-num">02</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Ce que je vends</h2>
+  <div class="pcard">
+    <p class="lead">Ce que je vends, ce ne sont pas mes process. C'est la rencontre entre tes process et les miens, on garde le meilleur des deux.</p>
+    <p>Je t'apporte 80&nbsp;% du système&nbsp;: mes skills et mes process SEO. Les 20&nbsp;% restants, c'est ton contexte&nbsp;: ton ton de voix, ta vision, tes façons de faire. Et je te challenge au passage, étape par étape, pour que tu comprennes comment le système trouve tes mots-clés et audite tes sites&nbsp;: tu pilotes, tu n'es pas pilotée.</p>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>1 500 € HT · 30 jours</span></div>
+</section>
+
+<!-- PAGE 3 — LE SYSTÈME + 80/20 -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="rh-meta">Accompagnement 1:1 · Catherine</div></div>
+
+  <div class="kicker-strip"><span class="kicker-num">03</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Le système, le double de Catherine</h2>
+  <div class="pcard">
+    <p class="lead">Le même second cerveau que je t'ai montré à l'écran, Obsidian plus Claude, tout en local sur ton ordinateur&nbsp;: si demain un autre modèle est meilleur, tu rebranches, tu ne perds rien.</p>
+    <p>Tes stratégies, tes cas clients, tes calls, tes contenus&nbsp;: tout connecté. À chaque nouveau client, le système ressort ce qui a marché sur les cas similaires et te dit par où commencer. Ton ton de voix appris, le maillage interne automatique, et un système qui se nourrit à chaque ajout au lieu de repartir de zéro. Ça enlève une charge mentale énorme.</p>
+  </div>
+
+  <div class="kicker-strip gap"><span class="kicker-num">04</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">La doctrine du 80/20</h2>
+  <div class="split">
+    <div class="panel angle">
+      <div class="pct">70 à 80&nbsp;%</div>
+      <div class="t">Ce que fait l'IA</div>
+      <p>Le scraping, les rapports clients envoyés par e-mail chaque semaine, l'audit d'indexation qui tourne tout seul et t'alerte avant le client, les pré-calls, les to-do lists, l'informationnel. 7 skills mots-clés, 8 skills audit.</p>
+    </div>
+    <div class="panel">
+      <div class="pct red">20&nbsp;%</div>
+      <div class="t">Ce que tu gardes</div>
+      <p>Les intros, les titres, les CTA, les mots-clés business cœur, la relation client. Tu restes la tête, le système c'est les mains. L'idée n'est pas de te remplacer, c'est de t'assister là où tu en as besoin.</p>
+    </div>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Le SEO n'a pas tant changé, la part d'IA si</span></div>
+</section>
+
+<!-- PAGE 4 — LE DÉROULÉ 30 JOURS -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="rh-meta">Accompagnement 1:1 · Catherine</div></div>
+
+  <div class="kicker-strip"><span class="kicker-num">05</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Du premier appel<br><span class="serif">à ton autonomie</span></h2>
+  <p class="flow-lead">Quatre temps&nbsp;: un mois rapproché en calls hebdo, puis un suivi à distance jusqu'à pleine autonomie.</p>
+
+  <div class="flow">
+    <div class="step">
+      <span class="lbl">D'abord</span>
+      <h3>On met tes process à plat</h3>
+      <p>Ta réflexion SEO d'abord, puis les tâches du quotidien&nbsp;: audit, recherche de mots-clés, rédaction, rapports. On part de tes façons de faire, on les confronte aux miennes, on garde le meilleur des deux.</p>
+    </div>
+    <div class="step">
+      <span class="lbl">Ensuite</span>
+      <h3>On installe ton système</h3>
+      <p>Claude + Obsidian, ton vault, tes fichiers de contexte, et mes skills&nbsp;: 7 pour les mots-clés (Search Console, mots-clés que les IA ne peuvent pas capter, programmatique), 8 pour l'audit. Branchés sur ta data&nbsp;: tickets, calls, contenus existants.</p>
+    </div>
+    <div class="step">
+      <span class="lbl">Puis</span>
+      <h3>Les routines qui tournent sans que tu cliques</h3>
+      <p>L'audit d'indexation chaque semaine ou chaque mois, le rapport envoyé par e-mail à chacun de tes clients, les alertes avant que le client ne voie le problème. C'est la fin des rapports refaits à la main, et tes clients sont rassurés sans que tu y passes tes soirées.</p>
+    </div>
+    <div class="step">
+      <span class="lbl">Et ensuite</span>
+      <h3>L'autonomie, avec les mises à jour</h3>
+      <p>Suivi asynchrone jusqu'à pleine autonomie. Mes skills se mettent à jour automatiquement chez toi, et tu peux ajouter tes propres briques (marketing, blog si tes clients y tiennent). Le système est à toi, définitivement.</p>
+    </div>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Mois 1 en calls hebdo, puis suivi à distance</span></div>
+</section>
+
+<!-- PAGE 5 — LE BOT QUE TU REVENDS -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="rh-meta">Accompagnement 1:1 · Catherine</div></div>
+
+  <div class="kicker-strip"><span class="kicker-num">06</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Le bot que tu revends</h2>
+  <div class="pcard">
+    <p class="lead">À la fin, tu repars avec le système construit sur ta data. Et comme tu as tes propres clients, tu peux faire ce que je fais&nbsp;: le décliner sur leur data et le leur remettre en fin de prestation.</p>
+    <p>Un client satisfait qui reçoit ses rapports chaque semaine est un client qui reste. Et un système vendu une fois rembourse l'accompagnement. Côté discours commercial, tu passes du trafic au lead&nbsp;: tes prospects savent juger des leads, pas des courbes de trafic.</p>
+  </div>
+
+  <div class="proof">
+    <p>Je bosse avec une consultante qui gère 17 clients SEO par mois. Sans système, c'était impossible. Avec, elle gagne un temps fou&nbsp;: rapports automatiques, contrôle, contenu. Ça transforme le métier.</p>
+    <div class="who">Cas réel · accompagnement Organikk</div>
+  </div>
+
+  <div class="kicker-strip gap"><span class="kicker-num">07</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Ce avec quoi tu repars</h2>
+  <ul class="repars">
+    <li>Tes process SEO mis à plat et donnés à l'IA pour qu'elle les fasse mieux.</li>
+    <li>Ton second cerveau Claude + Obsidian, en local, branché sur ta data.</li>
+    <li>7 skills mots-clés et 8 skills audit, mis à jour automatiquement.</li>
+    <li>Les rapports clients automatiques (indexation, Search Console) par e-mail.</li>
+    <li>Le système que tu peux décliner et remettre à tes propres clients.</li>
+    <li>De quoi ajouter tes propres briques toi-même, sans moi.</li>
+  </ul>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Le bot remis au client = ta marge</span></div>
+</section>
+
+<!-- PAGE 6 — INVESTISSEMENT + LOCAL + SUITE -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="rh-meta">Accompagnement 1:1 · Catherine</div></div>
+
+  <div class="kicker-strip"><span class="kicker-num">08</span><span class="kicker-line"></span></div>
+  <h2 class="sec grad">Investissement</h2>
+  <div class="invest">
+    <div class="invest-head">
+      <div class="invest-amount">1&nbsp;500&nbsp;€<span>HT</span></div>
+      <div class="meta">équivalent en dollars canadiens et taxes&nbsp;: on cale ça ensemble</div>
+    </div>
+    <ul>
+      <li>À mettre en face de ton ancien SEMrush&nbsp;: environ <b>six mois d'abonnement</b>, pour un système qui t'appartient définitivement au lieu d'un outil que tu loues.</li>
+      <li>Un seul client signé en plus, ou un mois de rétention gagné sur un client existant, et l'accompagnement est <b>remboursé</b>.</li>
+      <li>Chez moi, ce système rend environ <b>50&nbsp;heures par mois</b> (rédaction + freelance). Je ne te promets pas mes chiffres&nbsp;: je t'installe le même système, calé sur toi.</li>
+    </ul>
+  </div>
+
+  <div class="split gap">
+    <div class="panel">
+      <div class="t">Le local, et tes outils</div>
+      <p>Tout tourne en local sur ton poste, ta data reste chez toi. On garde Google Keyword Planner (gratuit, data Google), et si certains de tes clients tiennent à leurs rapports habituels, on ne casse rien&nbsp;: on ajoute.</p>
+    </div>
+    <div class="panel angle">
+      <div class="t">La suite</div>
+      <p>Tu m'as dit être convaincue mais vouloir prendre le temps&nbsp;: prends-le. Quand tu es prête, on cale l'équivalent en dollars et la date de départ. À réception du paiement, j'ouvre ton espace et on installe (ton abonnement Claude actuel suffit pour commencer).</p>
+    </div>
+  </div>
+
+  <div class="signoff">
+    <div class="sign-rule"></div>
+    <div class="sign-row">
+      <div>
+        <div class="sign-name"><span class="serif">Tim</span> Boussardon</div>
+        <div class="sign-sub">Consultant SEO et IA · Organikk</div>
+      </div>
+      <div class="sign-brand">
+        <div class="b">Organi<b>kk</b></div>
+        <div class="u">organikk.co</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Proposition au 11.06.2026</span></div>
+</section>
+
+</body>
+</html>
