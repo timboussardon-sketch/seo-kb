@@ -818,3 +818,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - nouvelle page [[concepts/objection-confidentialite-rgpd]] : réponse en 2 phrases + détail (entraînement par type de compte, DPA, minimisation, brut en local), vérifiée sur les pages officielles Anthropic
 - reliée à [[moc/moc-vente-objections]] (ordre de lecture, point 9)
 - même point ajouté aux deux guides 0→1 (md + HTML) et en mémoire système
+
+## [2026-06-11] client | Victoria Garden — audit GSC complet (évolution 3 mois vs N-1)
+- source: [[sources/2026-06-11-victoriagarden-gsc-export]] (137 pages, 1 645 requêtes, bruts dans raw/data/exports-gsc/victoriagarden-2026-06-11/)
+- audit: [[queries/2026-06-11-victoriagarden-audit-gsc]] — clics +47% mais marque -41% et commercial -13%, croissance portée par l'événementiel (Know)
+- quick wins: [[quick-wins/2026-06-11-victoriagarden]] — top 10, ~+1 500 clics/3 mois, fiches actions
+- skill déclenché: seo-quick-win (boucle: run + claims + prédiction J+90 loggés, gate OK)
+- tracker prestation créé: prestation/clients/victoriagarden.md

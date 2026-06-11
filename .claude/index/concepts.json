@@ -234,6 +234,7 @@
       "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-10-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-10-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse-v2.md",
@@ -1150,6 +1151,7 @@
       "raw/journal/2026-05-23.md",
       "raw/journal/2026-06-01.md",
       "raw/journal/2026-06-09.md",
+      "raw/journal/2026-06-11.md",
       "raw/notes/offre-bootcamp-seo-ia.md",
       "raw/notes/skill-kw-research-workflow.md",
       "raw/notes/tim-my-voice.md",
@@ -2524,6 +2526,7 @@
       "wiki/moc/moc-maillage.md",
       "wiki/queries/2026-06-10-golfiller-gsc-6mois.md",
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md",
+      "wiki/queries/2026-06-11-victoriagarden-audit-gsc.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
@@ -3248,6 +3251,7 @@
       "argumentaire-rgpd"
     ],
     "backrefs": [
+      "raw/journal/2026-06-11.md",
       "wiki/log.md",
       "wiki/moc/moc-vente-objections.md"
     ],
@@ -4530,6 +4534,8 @@
       "title-meta-geo"
     ],
     "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
@@ -4782,6 +4788,8 @@
     ],
     "backrefs": [
       "AGENTS.md",
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-05.md",
       "raw/notes/analyse-calls-prospects-bootcamp.md",
