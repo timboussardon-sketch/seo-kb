@@ -163,3 +163,23 @@ Source : [[alexia-call-cadrage]]. Formulations de Tim, verbatim ou quasi :
 - Cadre accompagnement : S1 setup, puis un workflow par semaine (audit, mots-clés, rédaction, suivi), mois 1 en 1:1 hebdo, mois 2-6 en async WhatsApp/e-mail. « Une fois que la facture est payée, c'est le début de l'accompagnement. »
 
 Concepts mobilisés : [[data-proprietaire]] · [[entites-vectorielles]] · [[know-simple-know-do]] (informationnel mangé par les IA) · [[entities/golfiller]]
+
+## [2026-06-11] Call découverte Catherine (consultante/agence, Canada)
+
+Source : [[catherine-call-decouverte]]. Formulations de Tim, verbatim ou quasi :
+
+- « Je fais que du système. Dès que je fais quelque chose, ça doit nourrir mon système. Si ça nourrit pas mon système, pour moi c'est une perte de temps. »
+- Échelle de la vision tarifaire, posée en trois crans : « demain les boîtes ne te paieront plus à l'heure, puis plus au forfait : elles te paieront ton système. Comme un produit qu'elles ajouteront à leur système global, une brique SEO. »
+- « La pièce maîtresse d'un système, c'est pas le modèle, c'est la manière dont tu utilises le modèle. »
+- « Mon expérience doit driver l'IA, c'est pas l'IA qui doit driver le résultat. Les boîtes qui achètent l'IA, je pense qu'elles se trompent. »
+- « J'aime bien demander à Claude de trouver les mots-clés que Claude ne peut pas donner » : exemple canonique « réserver une démo » (clic obligatoire), vs l'informationnel « qui reste dans Claude, sans clic ». Skill mots-clés anti-IA assumé comme nouveau réflexe.
+- « Il faut que tu sois la tête, et lui les mains. » / « Le manager des agents, pas des agents qui te managent. » / « Il prend un peu des ailes parfois, toi tu gardes le cap et la vision. »
+- Personnalisation du second cerveau au prénom du prospect : « c'est le double de Catherine ». (Move commercial : nommer le système d'après la personne.)
+- « Tu nourris ton système, un peu comme un Tamagotchi » suivi immédiatement du garde-fou « faut pas humaniser l'IA, c'est qu'une machine, c'est pas intelligent ».
+- « Aujourd'hui c'est 5 % des consultants qui ont un système, demain tout le monde aura ça. » / « Si tu comprends pas le système, dans six mois t'es obsolète. »
+- Ce qu'il garde vs ce qu'il donne, en liste nette : « les intros, les titres, les CTA, les 5 mots-clés business cœur, je les garde. L'informationnel, le scraping, les rapports, je les donne. »
+- Preuves personnelles données avec prudence : « ~50 heures gagnées par mois (25 rédaction + 25 freelance) », « passé de quasiment 10 à 50 % de taux de closing, alors c'est pas que l'IA, c'est tout un système ».
+- Honnêteté de vente caractéristique : « tu passes par moi ou pas, mais il faut que tu le fasses » + conseil de le faire seule avec Claude + Obsidian si elle ne signe pas.
+- Adaptation Canada : reformule TJM (« je sais pas si on dit ça au Canada »), prix en € avec conversion laissée ouverte, reprend ses mots (« il se garroche »).
+
+Concepts mobilisés : [[concepts/know-simple-know-do]] · [[data-proprietaire]] · second cerveau · skills anti-IA

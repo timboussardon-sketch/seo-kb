@@ -825,3 +825,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - quick wins: [[victoriagarden-quick-wins-2026-06-11]] — top 10, ~+1 500 clics/3 mois, fiches actions
 - skill déclenché: seo-quick-win (boucle: run + claims + prédiction J+90 loggés, gate OK)
 - tracker prestation créé: prestation/clients/victoriagarden.md
+
+## [2026-06-11] prospect | Catherine (Canada) — call découverte archivé + proposition rédigée
+- transcript intégral + fiche : raw/organikk/clients/catherine/2026-06-11-call-decouverte.md
+- résumé email + proposition (gabarit Alexia, brouillon à valider par Tim) : raw/organikk/clients/catherine/2026-06-11-resume-call-proposition.md
+- corpus de voix nourri (entrée datée dans raw/notes/tim-my-voice.md) : système/Tamagotchi, mots-clés anti-IA, tête/mains
+- tarif énoncé : 1 500 € HT, conversion CAD + taxes à trancher avant envoi
