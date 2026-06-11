@@ -7,3 +7,8 @@
 - **Anti-cannibalisation** : cette page est un UPGRADE de la page existante « Quelle balle pour vous » (pos 8,45). La publier en doublon cannibaliserait la position. Décision à prendre : remplacer la page existante ou 301. Loggé dans said_index.
 - **Prochaine cible candidate (data GSC réelle dispo)** : le calculateur d'index (/calcul-index-golf, 1 816 clics, pos 11,77, 77 786 impressions) reste la plus grosse grappe captable, intention « Do » pure. Bon candidat pour la page suivante, avec la formule FFGolf comme socle vérifiable.
 - **Méthode confirmée** : partir d'une page GSC existante qui plafonne (pos 8-12) et la réécrire en page décisionnelle answer-first donne une prédiction nette et mesurable à J+30. Préférer ça à une création from scratch tant qu'il reste des pages sous-exploitées en GSC. C'est l'application de [[methodes/ranker-verticale-niche-sans-backlink]] sur une verticale niche.
+
+## Après la page balle-golf-distance (2026-06-10)
+- **Même bloqueur data que le 2026-06-03** : les distances réelles par balle × tranche de vitesse (relevés clients) manquent. Marquées [À SOURCER] dans le corps, claim écarté (golfiller-2026-06-10-013). C'est le cœur de Haute Surprise du modèle usage : récupérer ces distances avant publication. Priorité data n°1 du projet.
+- **Modèle usage validé** : page par BESOIN technique (distance), distincte de l'axe PROFIL (quelle-balle-de-golf-choisir). Garde-fou cannib : ne pas refaire l'explainer compression général, cross-linker. Réplicable : contrôle, vent, durabilité, budget.
+- **Catalogue = data propriétaire exploitable** : prix occasion réels (claim 012) scrapés du site, suffisent à rendre la sélection non copiable même sans les distances. Toujours scraper le catalogue avant d'écrire une page produit.
