@@ -157,3 +157,37 @@ Toute skill créée ou modifiée par l'agent est tracée ici, avec le commit git
 - **Source à revoir** : techtimes a maintenant 2 hits utiles (Apple WWDC 0609 single-source chiffres techniques + Aria ChatGPT 0610 single-source target date). À traiter avec prudence systématique : les détails techniques ou les dates précises non corroborées par d'autres sources doivent être marquées uncertain.
 - **Donnée à confirmer** : la date précise « cible 9 juin » du déploiement Aria (TechTimes single-source) reste uncertain dans le corps. Si OpenAI confirme officiellement, mettre à jour la confiance du claim C-2026-06-10-3.
 - **Sources primaires bloquées en cloud** : openai.com et seroundtable.com retournent 403 Forbidden côté WebFetch ce run. Travail effectué via les reprises de presse (SEL, Optimixed). À surveiller : si la fréquence augmente, prévoir un protocole de contournement (cache, MCP fetch) ou marquer plus de claims comme uncertain.
+
+## Questions remontées au run 2026-06-11
+
+### Question doctrine — fiche dédiée au double opt-out côté éditeur ?
+
+L'info du jour 2026-06-11 (mise à jour documentation Applebot Apple) met en relief un mécanisme à deux étages côté publisher : (a) bloquer l'usage d'une page comme contexte de génération de réponse (Apple : `nosnippet` ; Google : `nosnippet` ; OpenAI : équivalent), (b) bloquer l'usage des contenus dans l'entraînement des modèles fondation (Apple : `Applebot-Extended` dans robots.txt ; Google : `Google-Extended` ; OpenAI : `GPTBot` disallow). Ces deux leviers existent éparse depuis 2023-2024 mais sont rarement traités comme un objet doctrine cohérent.
+
+Proposition : créer une fiche `wiki/concepts/double-opt-out-editeur-ia.md` qui consolide :
+- le mapping moteur de réponse / training-only opt-out / context-only opt-out
+- le périmètre de chaque levier (page vs site)
+- la question de la rétroactivité (les pages déjà ingérées sont-elles exclues ?)
+- la question ouverte du routage cross-moteur (Siri AI vers Gemini : qui gouverne ?)
+
+Question pour Tim en revue hebdo : valider la création de la fiche, ou la considérer prématurée tant que le routage cross-moteur n'est pas tranché par Apple/Google.
+
+### Question méthode — fiche preuve interne pour le double opt-out
+
+Si une fiche concept est créée, la suivre par une fiche preuve `wiki/preuves/` qui mesure sur le périmètre d'un client : pages avec `nosnippet`, pages avec `Disallow: Applebot-Extended`, conséquence mesurée sur la part de citation Apple Search et Siri AI (impressions, clics). Demande à Tim : la doctrine accepte-t-elle de réserver une fiche preuve à un site test avant qu'un client réel ne l'expérimente ?
+
+### Question source — `simonwillison` candidat exploit en revue hebdo
+
+Simon Willison a été ajouté en explore le 10 juin sur Claude Fable 5 (trust initial 0.85). Référence reconnue sur la revue technique des modèles LLM. La source n'a pas servi ce run mais reste à surveiller. Proposition : si un 2e hit utile sort dans les 10 prochains jours, promotion exploit.
+
+### Question source — `theblock` candidat exploit en revue hebdo
+
+The Block a été ajouté en explore le 10 juin sur Mastercard AP4M (trust initial 0.75). Référence sur les paiements crypto. À surveiller, promotion exploit si 2e hit utile sort dans le périmètre payments-search.
+
+### Question sujet — Google reviews replies rejection study
+
+Étude tierce publiée 4-5 juin (12 752 réponses rejetées, 92.6% sur 5-star reviews, sharp increase à partir de 2024). Le sujet est local SEO pertinent mais hors fil narratif des dernières éditions. Question pour Tim : doit-on créer une brève dédiée si une 2e étude tierce confirme le motif sur un autre périmètre, ou le sujet est-il systématiquement écarté ?
+
+### Question process — résolution de prédiction en mode partial vs full
+
+P-2026-06-06-v2-2 est passée de `resolved-partial` (8 juin) à `resolved` (11 juin) en 3 jours, sans intervention humaine. Le passage a été décidé par l'agent sur la base de 3 indicateurs concordants. Question pour Tim : valider que ce passage automatique full est acceptable, ou imposer un passage manuel pour toute résolution full d'une prédiction écrite par Tim.

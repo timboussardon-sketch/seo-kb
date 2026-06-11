@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-06-10",
+  "updated": "2026-06-11",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -108,6 +108,13 @@
     "everything-pr": 1.04,
     "gncrypto": 1.0,
     "simonwillison": 1.04,
-    "theblock": 1.04
+    "theblock": 1.04,
+    "apple-support-119829": 1.09,
+    "swipeinsight": 1.04,
+    "hulkapps": 1.0,
+    "espial-solutions": 1.0,
+    "seo-kreativ": 1.04,
+    "sparktoro": 1.09,
+    "law360": 0.82
   }
 }
