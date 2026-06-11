@@ -16,13 +16,30 @@ status: draft
 
 Tu paies des outils SEO qui ressortent à tout le monde les mêmes mots-clés. Tu repars de zéro à chaque nouveau client. Et tu sens bien que Claude pourrait faire le gros du boulot, sauf que tu ne sais pas par où le prendre.
 
-Ce guide règle ça. On ne va pas faire un chatbot à qui tu poses des questions le matin. On va construire un agent : un système qui a ta mémoire, tes process, ta data, qui tourne tout seul à heures fixes et qui apprend de ce qu'il publie. Je l'utilise tous les jours, c'est lui qui fait 80% de mon SEO. Les 20% qui restent, c'est moi. Et c'est exactement ces 20% qu'on facture.
+Ce guide règle ça. Demain, les boîtes ne paieront plus pour du TJM. Elles paieront pour ton système. Moi je mise tout sur le système : le mien fait 80% de mon SEO depuis des mois. Les 20% qui restent, c'est moi (la stratégie, la data propriétaire, le jugement). Et c'est exactement ces 20% qu'on facture. On va donc construire un agent : le même Claude, mais avec ta mémoire, tes process et ta data. Il tourne en automatique à heures fixes et il apprend de ce qu'il publie. Un consultant junior dispo 24h/24 : tu pilotes, lui exécute.
+
+Tu vas faire deux passages dans ce guide : du chatbot à l'agent, et de Claude Cowork au terminal + Obsidian.
 
 Une précision tout de suite, parce que c'est le piège : un agent SEO, ce n'est pas Claude tout seul. Si t'es pas bon en SEO, Claude ne sera pas bon. L'agent amplifie ta méthode, il ne la remplace pas. Tu restes manager.
 
 ## En résumé
 
-Un agent SEO complet, c'est six étages, posés dans cet ordre : un socle (Claude Code + un vault + ta doctrine), de la matière première (ta data propriétaire), des compétences (tes skills), une voix (la tienne, pas celle de Claude), des boucles (ce qui fait que le système apprend) et des routines (ce qui tourne sans toi). Ce guide les construit un par un. À la fin, tu as un système calé sur toi, impossible à copier, qui travaille la nuit et qui s'améliore de mission en mission.
+Un agent SEO complet, c'est six composants, posés dans cet ordre : un socle (Claude Code + un vault + ta doctrine), de la matière première (ta data propriétaire), des compétences (tes skills), une voix (la tienne, pas celle de Claude), des boucles (ce qui fait que le système apprend) et des routines (ce qui tourne en automatique). Ce guide les construit un par un. À la fin, tu as un système calé sur toi, impossible à copier, qui travaille la nuit et qui s'améliore de mission en mission.
+
+## Avant de démarrer
+
+Quelques définitions avant de démarrer, parce que personne ne naît en sachant ce qu'est un vault :
+
+- **Chatbot** : la fenêtre de chat de Claude. Tu poses une question, il répond, il oublie.
+- **Agent** : Claude + ta mémoire + tes skills + des routines + des boucles. Il agit sur tes fichiers et progresse de mission en mission.
+- **Cowork** : l'application de bureau de Claude. C'est encore le chatbot, en mieux outillé.
+- **Terminal** : la fenêtre de commandes de ton PC. C'est là que tourne Claude Code, la version de Claude qui agit au lieu de seulement répondre.
+- **Obsidian** : une application gratuite pour lire et organiser des notes en fichiers texte.
+- **Vault** : le mot d'Obsidian pour ton dossier de notes. Un simple dossier de fichiers texte sur ton PC : c'est la mémoire de ton agent.
+- **Skill** : ta méthode encodée dans un fichier, écrite une fois, exécutable à l'infini.
+- **Routine** : une tâche qui se lance toute seule, à heure fixe, en automatique.
+- **Boucle** : ce qui est publié revient mesuré, et la mesure corrige les décisions suivantes. C'est ce qui fait que le système apprend.
+- **Cran d'autonomie** : la part du travail qui se fait en automatique. Un skill s'exécute quand tu le demandes, une routine se lance toute seule. Du skill à la routine, tu interviens de moins en moins.
 
 ---
 
@@ -34,7 +51,7 @@ Un assistant, tu lui poses une question, il répond, il oublie. Un agent, c'est 
 
 Pourquoi le construire plutôt que payer un outil : un outil te vend de la commodité. Du volume de mots-clés que tout le monde a, des scores que tout le monde regarde. Personne ne paie pour la commodité. Ton avantage, c'est ce que l'outil n'a pas : ta data et ta méthode. L'agent, c'est ce qui transforme les deux en production à grande échelle.
 
-Ce qu'il te faut au départ : Claude Code (l'outil en ligne de commande d'Anthropic), un abonnement Claude, git installé, et de la discipline. Je préfère être honnête : tu ne montes pas ça en une après-midi. Tu le montes en plusieurs sessions, étage par étage. Mais une fois posé, ça te suit de client en client (et c'est tant mieux).
+Ce qu'il te faut au départ : Claude Code (l'outil en ligne de commande d'Anthropic), un abonnement Claude, git installé, et de la discipline. Je préfère être honnête : tu ne montes pas ça en une après-midi. Tu le montes en plusieurs sessions, composant par composant. Mais une fois posé, ça te suit de client en client (et c'est tant mieux).
 
 ---
 
@@ -213,16 +230,34 @@ L'objectif : que l'agent enchaîne, pas qu'il fasse des tâches isolées.
 
 Un agent qui sait faire neuf tâches séparées, c'est bien. Un agent qui les enchaîne dans le bon ordre sans que tu pilotes chaque étape, c'est l'autonomie. Tu décris les enchaînements types une fois, dans ta doctrine, et il les déroule.
 
-**Nouveau projet, de zéro :**
-recherche de mots-clés → clustering → décisionnels → architecture de pages → brief → rédaction (dans la voix) → maillage → suivi.
+## Les 4 workflows
 
-**Site existant qui stagne :**
-audit d'indexation → cannibalisation → maillage depuis la Search Console → opportunités rapides (pages en position 3 à 12 avec un CTR faible) → réécriture ciblée.
+Mon système tient en quatre workflows, calibrés sur des dizaines de projets : l'audit, les mots-clés, la rédaction, le suivi. C'est le rythme que j'applique chez mes clients : la première semaine pose le socle, ensuite un workflow par semaine. Au bout d'un mois, le cycle complet a tourné une fois.
 
-**Contenu à faire citer par les IA :**
-audit GEO → corrections → vérification des entités manquantes.
+```
+Les 4 workflows · un par semaine
+─────────────────────────────────────────────────────────
+ 1. AUDIT        « qu'est-ce qui ne va pas sur ce site »
+    Search Console + crawl → plan d'action priorisé
+        ↓
+ 2. MOTS-CLÉS    « qu'est-ce qu'on crée maintenant »
+    thématique → pages à créer, triées par conversion
+        ↓
+ 3. RÉDACTION    « on prépare la page »
+    brief + contenu pré-rempli dans ta voix → toi
+        ↓
+ 4. SUIVI        « qu'est-ce que ça a donné »
+    la Search Console mesure → corrections, gains rapides
+        │
+        └──→ ce que le suivi trouve repart en 1 ou en 2
+─────────────────────────────────────────────────────────
+ L'agent enchaîne les skills à l'intérieur de chaque
+ workflow. Toi, tu valides entre deux workflows.
+```
 
-Avec, au milieu de chaque workflow de production, une **quality gate** : un point de contrôle où le contenu est vérifié avant de sortir. Les critères chez moi : chaque affirmation chiffrée a sa source, la checklist anti-IA writing passe, la page répond à l'intention visée, et elle propose une action concrète (formulaire, simulateur, devis). Une page qui rate un critère ne sort pas. Même produite à 3h du matin par une routine.
+L'audit répond à « qu'est-ce qui ne va pas sur ce site » : 100% données Google et structure du site, 8 phases, de l'indexation au plan d'action priorisé. Les mots-clés répondent à « qu'est-ce qu'on crée maintenant » : recherche → clustering → décisionnels, et la sortie repart dans les skills de rédaction. La rédaction part d'un groupe de mots-clés et prépare la page : l'agent ne rédige pas à ta place, il t'aide à rédiger. Il crée le brief, y reprend ton ton de voix et les objections de tes prospects, et pré-remplit le contenu ; la rédaction finale, c'est toi, puis le contrôle qualité. Le suivi répond à « qu'est-ce que ça a donné » : une fois par mois, la Search Console ressort les gains rapides, les pages qui se mangent entre elles, les liens internes à renforcer, et chaque page publiée a sa fiche preuve à J+30 et J+90. Ce que le suivi trouve repart dans l'audit ou les mots-clés du mois suivant.
+
+Avec, au milieu de chaque workflow de production, un contrôle qualité : un point de contrôle où le contenu est vérifié avant de sortir. Les critères chez moi : chaque affirmation chiffrée a sa source, la checklist anti-IA writing passe, la page répond à l'intention visée, et elle propose une action concrète (formulaire, simulateur, devis). Une page qui rate un critère ne sort pas. Même produite à 3h du matin par une routine.
 
 On ne crée pas un article par un article. On crée une cohérence sémantique pour le client. L'agent tient cette cohérence sur des centaines de pages, ce qu'aucun humain ne tient à la main.
 
@@ -232,7 +267,7 @@ On ne crée pas un article par un article. On crée une cohérence sémantique p
 
 L'objectif : que le système se corrige tout seul au lieu d'accumuler.
 
-C'est l'étage que tout le monde saute, et c'est celui qui sépare un agent qui produit d'un agent qui progresse. Un système qui capture et produit sans jamais se relire, ça grossit, ça ne s'améliore pas. Trois boucles à fermer.
+C'est la partie que tout le monde saute, et c'est celle qui sépare un agent qui produit d'un agent qui progresse. Un système qui capture et produit sans jamais se relire, ça grossit, ça ne s'améliore pas. Trois boucles à fermer.
 
 ## Boucle 1 : capture → traitement
 
@@ -260,7 +295,7 @@ Les boucles produisent des propositions. Quelqu'un doit trancher, et ce quelqu'u
 
 ---
 
-# Phase 7 : les routines (ce qui tourne sans toi)
+# Phase 7 : les routines (ce qui tourne en automatique)
 
 L'objectif : que le système vive même quand tu ne l'ouvres pas.
 
@@ -310,13 +345,13 @@ Six pièges, vus en vrai (parfois chez moi) :
 3. **Laisser passer les chiffres inventés.** Un seul volume de recherche halluciné dans un livrable client et ta crédibilité est morte. La règle « pas de source, pas de chiffre » se met dans la doctrine ET dans chaque skill. Double verrou.
 4. **Faire confiance sans boucle de preuve.** Sans fiches preuves, tu ne sais pas si ta méthode marche, tu sais juste qu'elle produit. Ce n'est pas pareil.
 5. **L'agent qui décide de tout.** Le jour où tu valides sans lire, le système dérive et tu ne le vois pas. Les gates existent pour ça.
-6. **Garder les skills dans le chat.** Une méthode qui vit dans tes prompts disparaît avec la conversation. Une méthode qui vit dans un fichier versionné s'améliore à chaque mission.
+6. **Garder les skills dans le chat.** Une méthode qui reste dans tes prompts disparaît avec la conversation. Une méthode posée dans un fichier versionné s'améliore à chaque mission.
 
 ---
 
 # Le récap
 
-| Étage | Ce que tu poses | Ce que tu obtiens |
+| Composant | Ce que tu poses | Ce que tu obtiens |
 |---|---|---|
 | 0 | Le principe | Tu sais ce que tu construis et pourquoi |
 | 1 | Claude Code + vault + doctrine | Un agent qui connaît tes règles |
@@ -325,7 +360,7 @@ Six pièges, vus en vrai (parfois chez moi) :
 | 4 | Le corpus de voix + anti-IA writing | Une prod qui ne sent pas l'IA |
 | 5 | Les workflows + quality gates | Des chaînes contrôlées, pas des tâches isolées |
 | 6 | Les 3 boucles + le rituel | Un système qui se corrige avec du réel |
-| 7 | Les routines | Un système qui vit sans toi |
+| 7 | Les routines | Un système qui tourne en automatique |
 | 8 | Le management | Toi qui arbitres, l'agent qui exécute |
 
 ---
@@ -334,4 +369,4 @@ Six pièges, vus en vrai (parfois chez moi) :
 
 Demain, tout le monde sera capable d'ouvrir Claude et de lui demander un article. Ça, c'est la commodité, et personne ne la paiera. Ce qui restera cher, c'est l'agent calé sur une data que les autres n'ont pas, corrigé par des résultats mesurés, piloté par quelqu'un qui sait dire non.
 
-Construis le tien. Étage par étage, en produisant dès le premier. N'aie pas peur de l'avenir, prépare-le.
+Construis le tien. Composant par composant, en produisant dès le premier. N'aie pas peur de l'avenir, prépare-le.
