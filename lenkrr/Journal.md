@@ -1,4 +1,25 @@
-# lenkrr : Journal de développement
+# leenq (ex-lenkrr) : Journal de développement
+
+## Renommage + mise en prod (2026-06-11)
+
+Grosse session « on fait tout » : les 5 restes du backlog traités d'un coup.
+
+- **Rebrand lenkrr → leenq** (décision Tim, domaine cible leenq.co) : tout le user-facing renommé (UI, landing, PR, app passwords WP, user-agents, branches `leenq/*`), repo GitHub renommé `timboussardon-sketch/leenq` (redirections actives), dossier local `~/Code/leenq`. Les identifiants INTERNES restent lenkrr (edges `lenkrr-*`, tables, `LENKRR_USER_ID`) pour ne rien casser.
+- **PROD = Railway** (décision Tim ; Netlify écarté : functions ~26 s vs `/api/analyze` 5 min ; Vercel refusé) : projet `leenq`, auto-deploy sur push `master`, **https://web-production-023b.up.railway.app**, 8 env vars posées. Piège machine : l'API Railway coupe les clients TLS du CLI et de Python, **seul curl passe** → tout pilotage en GraphQL v2 + curl (token dans `~/.config/leenq/railway.token`).
+- **Gate d'auth prod** (`middleware.ts`) : `LEENQ_AUTH_GATE=1` sur Railway → tout sauf `/`, `/login`, `/auth`, `/abonnement`, webhook Stripe exige une session du propriétaire (id `LENKRR_USER_ID` ou email `LEENQ_OWNER_EMAIL`). API → 401, pages → redirect login. Vérifié en prod. Local inchangé (accès direct).
+- **Bouton « Connecter GSC »** : Réglages → carte Search Console (`components/GscConnect.tsx`, `/api/gsc/connect|status`), le callback edge redirige désormais vers `/app/reglages` (redéployé). Statut lu en service-role (connecté, email, propriétés).
+- **Écran Impact** (`/app/impact`, nav) : liste les paris `link_bets` (lien, ancre, règle, date, PR/révision), verdicts J+30/J+90 + deltas ajustés stockés, bouton « Mesurer » à la demande via `lenkrr-impact` (fenêtres 28 j avant/après). Pont depuis l'écran Publier.
+- **Write-back wiki.ts** : nouveau chemin STRUCTUREL déterministe (sans LLM) pour les sources « array » : `parseWikiConcepts` (slices verbatim), `prepareStructuralEdit` (ajout du slug cible dans `related[]`/`articles[]`, idempotent), branche dédiée dans `applyEdit` (remplacement de code verbatim, garde-fou « seulement un array de maillage »). **Validé en réel : PR #9 sur organikk-next**, diff d'une ligne (grounding-score → fully-meets).
+- **Write-back WordPress VALIDÉ EN LIVE** : WP local monté sans Docker (PHP Homebrew + plugin SQLite, `~/.cache/lenkrr-wp`, port 8787, `php -S`). Leçon : sans HTTPS, les application passwords exigent `WP_ENVIRONMENT_TYPE=local` (le 401 initial n'était pas un bug). Chaîne complète analyze (6 pages, 9 propositions) → prepare → apply : 2 liens `<a href>` insérés dans les bons paragraphes du hub + 2 révisions réversibles.
+- **Stripe squelette « prêt à vendre »** (décisions Tim : plan unique **39 €/mois**, squelette d'abord, multi-tenant plus tard) : table `leenq_subscriptions` (migration poussée), `lib/billing.ts`, routes checkout / portail / webhook (signature vérifiée), page `/abonnement` hors nav. Tout dégrade proprement tant que `STRIPE_SECRET_KEY` / `STRIPE_PRICE_ID` / `STRIPE_WEBHOOK_SECRET` ne sont pas posés. `LEENQ_BILLING=1` réservé à l'après-multi-tenant.
+
+### Manips Tim restantes (notées aussi en mémoire)
+1. Acheter **leenq.co** (dashboard Netlify, ~15 $/an) → ensuite je câble DNS Netlify → Railway + domaine custom.
+2. **OAuth App GitHub de prod** (l'actuelle pointe sur localhost) : callback `https://web-production-023b.up.railway.app/api/github/callback` (puis leenq.co), poser les nouveaux CLIENT_ID/SECRET sur Railway.
+3. **Allowlist auth Supabase** (dashboard, la Management API refuse le token CLI) : ajouter l'URL prod aux redirect URLs pour le login Google en prod.
+4. **Stripe** : créer une clé restreinte + me la passer (méthode fichier local) → je crée produit + price 39 € + webhook moi-même.
+
+Commits : `c4fa5ec` (GSC+Impact), `f16bb7b` (wiki), `afdacc0` (rebrand), `fe1efba` (gate), `44c7648` (billing).
 
 ## En résumé (au 2026-06-02)
 
