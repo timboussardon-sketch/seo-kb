@@ -2140,3 +2140,16 @@ Vérif via vrai JWT utilisateur (user de test créé/supprimé). Résultats :
 - **reddit-keywords** : 403 Reddit pré-existant (IP datacenter bloquée) — plante avant le LLM, besoin `REDDIT_CLIENT_ID`/`REDDIT_CLIENT_SECRET`. Hors périmètre migration.
 
 Tout déployé, commité, poussé. Données de test nettoyées, user de test supprimé.
+
+## 2026-06-11 · Radar d'opportunités : 504 du cron quotidien (run GH Actions rouge)
+
+**Symptôme** : workflow `Opportunity Radar` rouge (curl 504 après 2m33), job digest skipped (normal, il ne part que le lundi 7h).
+
+**Cause** : `cron-opportunity-radar` attendait la FIN de chaque scan (lots de 12 séquentiels). Avec 123 watchlists actives dues et les scans v2 (boucle agentique Gemini) qui durent des minutes, le planificateur explosait le timeout gateway (150 s).
+
+**Correctifs (déployés en `--no-verify-jwt`, commit `b721b93` + suivant) :**
+- `run-opportunity-scan` répond **202 immédiatement** et scanne en tâche de fond (`EdgeRuntime.waitUntil`). Personne d'autre que le cron ne l'appelle, rien à adapter côté UI.
+- `cron-opportunity-radar` : fan-out **synchrone** par lots de 12 avec pause 2 s (≈35 s pour 120 watchlists, loin des 150 s). La variante « fan-out en tâche de fond » a été testée puis abandonnée : l'instance est tuée ~50 s après la réponse (60 scans sur 123 déclenchés).
+- `persist()` : insert → **upsert** `onConflict (watchlist_id, dedup_key), ignoreDuplicates` (3 erreurs duplicate key constatées quand deux scans de la même watchlist se chevauchent).
+
+**Validation** : 3 vagues forcées (PATCH last_run_at=null + workflow_dispatch) → workflows verts en 10-28 s, 90 scans done, 0 erreur après l'upsert. Limite connue : sous forte concurrence le worker refuse une partie des déclenchements (réponses non-2xx ignorées par le cron) ; les watchlists restent « dues » et sont rattrapées au run suivant, auto-cicatrisant au quotidien.
