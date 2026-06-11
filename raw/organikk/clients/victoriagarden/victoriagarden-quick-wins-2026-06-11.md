@@ -12,7 +12,7 @@ status: stable
 
 # Quick wins Victoria Garden
 
-Issu de l'audit complet [[queries/2026-06-11-victoriagarden-audit-gsc]]. Filtre : positions 3,0 à 15,0, marque exclue, tri par potentiel (gap CTR × impressions). CTR attendus : position 4 ≈ 7 %, 5 ≈ 5 %, 6-10 ≈ 3 %, 11-15 ≈ 1 %.
+Issu de l'audit complet [[victoriagarden-audit-gsc-2026-06-11]]. Filtre : positions 3,0 à 15,0, marque exclue, tri par potentiel (gap CTR × impressions). CTR attendus : position 4 ≈ 7 %, 5 ≈ 5 %, 6-10 ≈ 3 %, 11-15 ≈ 1 %.
 
 ## En résumé
 
@@ -76,4 +76,4 @@ Action 3 : Maillage retour vers les appartements Bordeaux (« dormir à 10 minut
 
 Aucun volume inventé : toutes les impressions et positions viennent de l'export GSC du 2026-06-11. Les chiffres entre crochets sont à sourcer chez le client avant publication. Pas de nouvelle page proposée tant que ces quick wins ne sont pas épuisés.
 
-Sources : `raw/data/exports-gsc/victoriagarden-2026-06-11/` · [[queries/2026-06-11-victoriagarden-audit-gsc]] · [[concepts/intention-recherche]]
+Sources : `raw/data/exports-gsc/victoriagarden-2026-06-11/` · [[victoriagarden-audit-gsc-2026-06-11]] · [[concepts/intention-recherche]]

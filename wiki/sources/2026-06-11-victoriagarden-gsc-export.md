@@ -17,4 +17,4 @@ Deux fichiers déposés par Tim, copiés en immuable dans `raw/data/exports-gsc/
 
 Chiffres clés : clics 2 808 → 4 130, impressions 373 726 → 242 686, position pondérée 18,8 → 10,0 ; marque -41 % de clics, hors-marque ×4,3 ; trafic commercial 2 113 → 1 833 clics.
 
-Exploitation : audit complet [[queries/2026-06-11-victoriagarden-audit-gsc]] et quick wins [[quick-wins/2026-06-11-victoriagarden]].
+Exploitation : audit complet [[victoriagarden-audit-gsc-2026-06-11]] et quick wins [[victoriagarden-quick-wins-2026-06-11]].

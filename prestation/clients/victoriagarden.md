@@ -17,7 +17,7 @@ Prochaine action : valider le plan d'action de l'audit avec Tim (priorité 1 = r
 ## Journal des étapes faites
 | Date | Étape (roadmap) | Ce qui a été fait | Output | Skill |
 |---|---|---|---|---|
-| 2026-06-11 | Audit existant | Audit GSC complet évolution 3 mois vs N-1 : marque -41 %, hors-marque ×4,3 porté par l'événementiel, commercial -13 %, top 10 quick wins chiffrés (+1 500 clics/3 mois) | [[queries/2026-06-11-victoriagarden-audit-gsc]] · [[quick-wins/2026-06-11-victoriagarden]] | seo-quick-win |
+| 2026-06-11 | Audit existant | Audit GSC complet évolution 3 mois vs N-1 : marque -41 %, hors-marque ×4,3 porté par l'événementiel, commercial -13 %, top 10 quick wins chiffrés (+1 500 clics/3 mois) | [[victoriagarden-audit-gsc-2026-06-11]] · [[victoriagarden-quick-wins-2026-06-11]] | seo-quick-win |
 
 ## Spécificités client
 - Le pattern « pages événements 2026 » fonctionne très fort ici (1 181 clics sur /evenements-bordeaux-2026/ en un trimestre) : à capitaliser dans la roadmap maître si ça se confirme à J+90.

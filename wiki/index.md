@@ -269,7 +269,6 @@ status: stable
 
 ## Queries (6)
 - [[queries/2026-06-10-golfiller-gsc-90j]] — Golfiller, analyse GSC 90 jours (winners Do, 1 346 requêtes sur la page tarifs, 388 parcours nommés)
-- [[queries/2026-06-11-victoriagarden-audit-gsc]] — Victoria Garden : audit GSC évolution 3 mois vs N-1 (audit)
 - [[queries/2026-06-10-golfiller-gsc-6mois]] — Golfiller, analyse GSC 6 mois comparée (branded +43 %, pSEO décolle, érosion du non-branded pluriel, striking distance « balle de golf »)
 - [[queries/pseo-2026-05-16-landing-lead-gen-organikk]] — pSEO Organikk : 5 modèles de landing lead-gen sur problématique SEO (45 pages possibles, M1 pain-first prioritaire)
 - [[queries/pseo-2026-05-13-organikk-secteur-ville]] — pSEO Organikk : modèle métier local × ville (stratégie SEO {secteur} {ville})
@@ -292,8 +291,7 @@ status: stable
 - [[briefs/strategie-seo-hotellerie-2026]] — Stratégie SEO hôtellerie 2026 : récupérer la réservation directe
 ### Clusters (1)
 - [[clusters/modeles-pseo-2026-06-10-golfiller]] — Golfiller : 7 modèles de pages pSEO scorés depuis la GSC (avis modèle, prix, fiches parcours)
-### Quick Wins (1)
-- [[quick-wins/2026-06-11-victoriagarden]] — Victoria Garden, top 10 (+1 500 clics/3 mois)
+### Quick Wins (0)
 ### Cannibalisation (0)
 ### Maillage (0)
 ### Posts LinkedIn (1)

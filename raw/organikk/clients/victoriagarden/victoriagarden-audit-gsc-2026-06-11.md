@@ -22,7 +22,7 @@ Le global a l'air excellent : clics +47 % (2 808 → 4 130), position pondérée
 2. **Le hors-marque explose (×4,3) mais c'est du Know.** 70 nouvelles pages, et les locomotives sont éditoriales : `/evenements-bordeaux-2026/` fait 1 181 clics à elle seule. Pendant ce temps, le trafic des pages commerciales baisse de 13 %. Le trafic monte, les réservations potentielles non, tant que ces pages ne maillent pas vers la résa.
 3. **La page money s'est vidée.** `/destination/appart-hotel-bordeaux-centre/` gagne 15 places (25,3 → 9,8) et perd quand même 555 clics : ses impressions se sont effondrées de 121 000 à 33 000. À élucider en priorité avec l'export requêtes de cette page.
 
-Côté opportunités : ~+1 500 clics/trimestre sans créer de page, détaillés dans [[quick-wins/2026-06-11-victoriagarden]] (boulangeries de Pau +438, Bordeaux centre +273, monuments +205, fiches actions title/méta/FAQ et densification atomique incluses). Première action à valider : le relevé SERP marque, pour savoir qui est passé devant et sur quel format.
+Côté opportunités : ~+1 500 clics/trimestre sans créer de page, détaillés dans [[victoriagarden-quick-wins-2026-06-11]] (boulangeries de Pau +438, Bordeaux centre +273, monuments +205, fiches actions title/méta/FAQ et densification atomique incluses). Première action à valider : le relevé SERP marque, pour savoir qui est passé devant et sur quel format.
 
 ## 1. Les chiffres globaux
 
@@ -81,7 +81,7 @@ Le cas qui résume tout : `/destination/appart-hotel-bordeaux-centre/` passe de 
 
 ## 5. Les quick wins (potentiel chiffré : ~+1 500 clics/3 mois)
 
-Détail complet, tableau et fiches actions dans [[quick-wins/2026-06-11-victoriagarden]]. Les cinq plus gros :
+Détail complet, tableau et fiches actions dans [[victoriagarden-quick-wins-2026-06-11]]. Les cinq plus gros :
 
 | Page | Position | Impressions/3 mois | CTR réel vs attendu | Potentiel |
 |---|---|---|---|---|
@@ -99,7 +99,7 @@ Trois pages produits ont décroché : `/apartment/studio-double-appart-hotel-pau
 
 1. **Marque (cette semaine).** Relevé SERP manuel sur « victoria garden bordeaux / pau / bordeaux centre » : qui est passé devant, et sur quel format (OTA, fiche Google Business, agrégateur). Renforcer les pages de marque (title, schéma Organization/Hotel, avis) et l'entité.
 2. **Money page Bordeaux centre.** Export GSC des requêtes de la page N-1 vs maintenant pour expliquer les -88 000 impressions, puis recouvrir les requêtes perdues (sections, FAQ).
-3. **Quick wins.** Dérouler les fiches de [[quick-wins/2026-06-11-victoriagarden]], en commençant par les deux pages à plus de 17 000 impressions.
+3. **Quick wins.** Dérouler les fiches de [[victoriagarden-quick-wins-2026-06-11]], en commençant par les deux pages à plus de 17 000 impressions.
 4. **Convertir l'événementiel.** Maillage systématique événements → page de réservation de la ville + bloc de capture sur les 5 pages locomotives. Sans ça, les 2 079 clics éditoriaux restent du trafic, pas des réservations.
 5. **Fiches appartement.** Re-maillage et réenrichissement des 3 fiches en perte.
 6. **Mesure.** Fiche preuve à J+30 et J+90 sur chaque action (boucle sortie → apprentissage).
