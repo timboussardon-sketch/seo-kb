@@ -20,7 +20,7 @@ Prochaine action : arbitrage Bloc 1 (réparer la refonte : 301, canonicals, déd
 | 2026-05-21 | 2 | call découverte + dossier prospect | `raw/organikk/clients/leexi/` | aucun (gabarit pré-call) |
 | 2026-06-09 | 1 | système livrable posé : repo transférable, pack submodule, 8 skills sync, questionnaire Supabase auto-pull, vault Obsidian navigable | repo `~/Code/leexi-seo` | aucun |
 | 2026-06-09 | 1 | brief client canonique reçu et structuré | `leexi-seo` [[leexi-brief]] | aucun |
-| 2026-06-09 | 3 | analyses GSC (synthèse + approfondie) : −43 % hors-marque en 6 mois, cause racine = refonte sans 301, souveraineté = 0 clic, 400k impressions gâchées | [[analyse-gsc-leexi]] + [[analyse-gsc-approfondie-leexi]] | analyse GSC |
+| 2026-06-09 | 3 | analyses GSC (synthèse + approfondie) : −43 % hors-marque en 6 mois, cause racine = refonte sans 301, souveraineté = 0 clic, 400k impressions sous-exploitées | [[analyse-gsc-leexi]] + [[analyse-gsc-approfondie-leexi]] | analyse GSC |
 | 2026-06-09 | 6 (amorce) | audit thématique + étude marché notetakers FR + étude RGPD/souveraineté | [[audit-thematique-leexi]] · [[etude-marche-notetakers-fr]] · [[etude-rgpd-souverainete-leexi]] | deep-research |
 | 2026-06-09 | 14 | espace client HTML (DA Leexi, devenu le format standard) | `organikk-next/public/espace-leexi/` | aucun |
 | 2026-06-12 | 3 | rapport de restitution GSC sur Google Doc, intro « En résumé : les 5 points à retenir », jargon traduit | [Google Doc](https://docs.google.com/document/d/1f1s1uODFYKQxdOZ8SKPpwvazVvb1SLJPMYfXWDELz3s/) | aucun |
