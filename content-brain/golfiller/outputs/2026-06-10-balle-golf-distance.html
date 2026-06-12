@@ -17,7 +17,13 @@
 .gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
 .gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
 .gf-article tbody tr:nth-child(even){background:#fafcfb}
-.gf-article .gf-faq h3{font-size:17px;margin:22px 0 6px;color:var(--gf-ink)}
+.gf-article .gf-faq{border-top:1px solid var(--gf-line)}
+.gf-article .gf-faq details{border-bottom:1px solid var(--gf-line)}
+.gf-article .gf-faq summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 2px;font-size:17px;font-weight:600;color:var(--gf-ink)}
+.gf-article .gf-faq summary::-webkit-details-marker{display:none}
+.gf-article .gf-faq summary::after{content:"+";flex:none;font-weight:400;font-size:20px;line-height:1;color:var(--gf-muted);transition:transform .2s ease}
+.gf-article .gf-faq details[open] summary::after{transform:rotate(45deg)}
+.gf-article .gf-faq details p{margin:0;padding:0 2px 16px;color:var(--gf-muted)}
 .gf-article .gf-cta{display:inline-block;margin:6px 0 8px;background:var(--gf-accent);color:#fff;padding:12px 22px;border-radius:10px;font-weight:600;border:0}
 .gf-article .gf-cta:hover{background:#196637}
 .gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
@@ -28,13 +34,7 @@
 <article class="gf-article">
   <h1>La balle de golf qui vous fait gagner le plus de distance (selon votre vitesse de swing)</h1>
 
-  <p class="gf-lead">La balle « la plus longue » du marché n'existe pas. Celle qui vous fait gagner des mètres dépend d'un seul chiffre : votre vitesse de swing. Une balle pensée pour un swing à 110 mph vous coûtera de la distance si vous swinguez à 85. C'est l'inverse de ce que dit le marketing, et c'est vérifiable.</p>
-
-  <p>Si votre vitesse de swing au driver est inférieure à 90 mph, vous gagnez en distance avec une balle de <strong>compression basse</strong> (sous 70). Une balle basse compression se déforme davantage à l'impact même avec un swing modéré, et restitue plus d'énergie. Au-dessus de 100 mph, l'effet s'inverse et une compression haute reprend l'avantage.</p>
-
-  <h2>Pourquoi votre vitesse de swing décide, pas la marque</h2>
-  <p>Une balle dure ne vole pas plus loin par principe. Elle vole plus loin pour celui qui frappe assez fort pour la comprimer. En dessous de cette vitesse, la balle reste trop dure, l'énergie n'est pas restituée, et la distance se perd. C'est pour ça qu'une balle vendue comme balle de distance peut vous faire reculer.</p>
-  <p>La bonne question n'est donc pas « quelle est la balle la plus longue », mais « quelle balle correspond à ma vitesse de swing ». Pour le choix complet par niveau, voyez notre guide <a href="/blogs/infos/comment-choisir-sa-balle-de-golf-le-guide-pour-baisser-votre-index">comment choisir sa balle de golf</a>. Ici, on ne regarde qu'un objectif : la distance.</p>
+  <p class="gf-lead">Si votre vitesse de swing au driver est inférieure à 90 mph, vous gagnez en distance avec une balle de <strong>compression basse</strong> (sous 70). Une balle basse compression se déforme davantage à l'impact même avec un swing modéré, et restitue plus d'énergie. Au-dessus de 100 mph, l'effet s'inverse et une compression haute reprend l'avantage. Pour le choix complet par niveau, voyez notre guide <a href="/blogs/infos/comment-choisir-sa-balle-de-golf-le-guide-pour-baisser-votre-index">comment choisir sa balle de golf</a> : ici, on ne regarde que la distance.</p>
 
   <h2>Les leviers qui font vraiment voler une balle</h2>
   <p>Trois choses comptent pour la distance, le reste est secondaire.</p>
@@ -65,6 +65,7 @@
   </div>
   <p>Deux précisions de lecture. La compression d'un même modèle peut varier d'une génération à l'autre : la Srixon Q-Star Tour est donnée entre 75 et 90 selon l'année, d'où la fourchette. Et la Wilson Ultra est un cas à part : c'est une 2 pièces orientée distance, mais sa compression de 100 demande un swing rapide pour donner son maximum.</p>
   <p>Golfiller propose aussi des lots Mix (TaylorMade, Srixon, Nike, Vice) dès 9,99 €. Ce sont des modèles mélangés, donc sans compression unique : pratiques pour s'entraîner ou tester plusieurs sensations, pas pour appliquer la logique de ce tableau.</p>
+  <p><a class="gf-cta" href="/collections/all">Voir les balles de golf d'occasion</a></p>
 
   <h2>Combien de mètres vous pouvez attendre, selon votre vitesse</h2>
   <p>Avant de changer de balle, situez-vous. Voici la distance moyenne attendue au driver par vitesse de swing.</p>
@@ -83,21 +84,24 @@
   </div>
   <p>Repères pour vous situer : un homme amateur moyen tourne autour de 93 mph (environ 196 m de drive), un senior entre 80 et 90 mph, une femme amateure entre 75 et 80 mph. Si vous êtes sous 90 mph, votre levier de distance est la compression basse, pas la balle des pros.</p>
 
-  <h2>La distance ne se paie pas au prix du neuf</h2>
-  <p>Une balle reconditionnée vole comme une balle neuve. La compression et le noyau ne changent pas avec un nettoyage et un contrôle d'état : ce qui détermine la distance, c'est la structure de la balle, pas son aspect cosmétique. Une Wilson DX2 Soft d'occasion à 9,99 € vous donne la même distance qu'une neuve, et les prix démarrent à 7,99 € avec la Srixon Tour Special.</p>
-  <p>Autrement dit, vous pouvez tester la balle qui correspond à votre swing sans payer le tarif du neuf, et changer si elle ne vous convient pas.</p>
-  <p><a class="gf-cta" href="/collections/all">Voir les balles de golf d'occasion</a></p>
-
   <h2>Questions fréquentes</h2>
   <div class="gf-faq">
-    <h3>Quelle balle de golf pour gagner de la distance avec un swing lent ?</h3>
-    <p>Une balle de compression basse, sous 70. La Wilson DX2 Soft (compression 29) est l'exemple type pour un swing sous 90 mph, et la Srixon AD333 (compression 68) le bon compromis pour un swing lent à modéré.</p>
-    <h3>Une balle dure tape-t-elle plus loin ?</h3>
-    <p>Seulement si vous swinguez assez vite pour la comprimer (au-delà de 100 mph environ). En dessous, une balle dure vous fait perdre de la distance.</p>
-    <h3>Les balles d'occasion perdent-elles en distance ?</h3>
-    <p>Non. La distance dépend de la compression et du noyau, qui ne bougent pas au reconditionnement. Une balle d'occasion contrôlée vole comme une neuve.</p>
-    <h3>Comment connaître ma vitesse de swing ?</h3>
-    <p>À défaut de radar, partez de votre distance moyenne au driver : environ 146 m de carry correspond à 80 mph, 174 m à 90 mph, 201 m à 100 mph. Le détail par profil et par club est dans notre page <a href="/blogs/infos/vitesse-de-swing-au-golf-tableaux-par-profil-par-club-et-du-top-10-mondial">vitesse de swing au golf</a>.</p>
+    <details>
+      <summary>Quelle balle de golf pour gagner de la distance avec un swing lent ?</summary>
+      <p>Une balle de compression basse, sous 70. La Wilson DX2 Soft (compression 29) est l'exemple type pour un swing sous 90 mph, et la Srixon AD333 (compression 68) le bon compromis pour un swing lent à modéré.</p>
+    </details>
+    <details>
+      <summary>Une balle dure tape-t-elle plus loin ?</summary>
+      <p>Seulement si vous swinguez assez vite pour la comprimer (au-delà de 100 mph environ). En dessous, une balle dure vous fait perdre de la distance.</p>
+    </details>
+    <details>
+      <summary>Les balles d'occasion perdent-elles en distance ?</summary>
+      <p>Non. La distance dépend de la compression et du noyau, qui ne bougent pas au reconditionnement. Une balle d'occasion contrôlée vole comme une neuve.</p>
+    </details>
+    <details>
+      <summary>Comment connaître ma vitesse de swing ?</summary>
+      <p>À défaut de radar, partez de votre distance moyenne au driver : environ 146 m de carry correspond à 80 mph, 174 m à 90 mph, 201 m à 100 mph. Le détail par profil et par club est dans notre page <a href="/blogs/infos/vitesse-de-swing-au-golf-tableaux-par-profil-par-club-et-du-top-10-mondial">vitesse de swing au golf</a>.</p>
+    </details>
   </div>
 
   <div class="gf-sources">
