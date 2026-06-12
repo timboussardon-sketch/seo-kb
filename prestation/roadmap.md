@@ -26,6 +26,7 @@ Output : doc pré-call. Skills : aucun (gabarit pré-call). Statut : éprouvé.
 **3. Analyse GSC (la première vraie passe data)**
 Export pages + requêtes, en 90 jours ET en 6 mois comparé. En sortir : winners/losers, part branded vs non-branded, striking distance (pos 5-15, fortes impressions), CTR faible en bonne position, érosion de position, signaux pSEO (long tail sur une URL).
 Input : 4 CSV GSC. Output : `wiki/queries/<date>-<slug>-gsc-*.md` + CSV dans `raw/data/exports-gsc/`. Skills : analyse GSC + [[maillage-interne-gsc]] + [[seo-cannibalisation]]. Statut : éprouvé (golfiller).
+Restitution client : Google Doc qui ouvre sur « En résumé : les 3 à 5 points à retenir », jargon traduit en langage métier, chiffres uniquement issus de la data (éprouvé Leexi 2026-06-12).
 
 **4. Audit d'indexation**
 Vérifier statut HTTP, blocages, noindex, sitemap, maillage entrant, contenu, indexation estimée. Distinguer non indexée vs non testable.
@@ -85,5 +86,6 @@ Statut : doctrine.
 
 ## Index clients
 - [[prestation/clients/golfiller]] — e-commerce balles occasion, à l'étape 11 (brief Hn page usage ; modèles directory usage/besoin ajouté)
+- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, fin de phase 1 (GSC diagnostiquée : refonte cassée, −43 % hors-marque) ; arbitrage réparation refonte vs territoire souveraineté en cours
 
 Pages liées : [[golfiller-strat]] · [[clusters/modeles-pseo-2026-06-10-golfiller]] · [[queries/2026-06-10-golfiller-gsc-6mois]] · [[concepts/product-led-seo]] · [[concepts/know-simple-know-do]]

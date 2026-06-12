@@ -49,3 +49,13 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - création prestation/emails.md (modèles d'emails vivants)
 - §1 premier email (envoi dashboard + 3 docs contexte + vidéo) = exemple Alexia verbatim
 - roadmap.md étape 1 enrichie : renvoi vers emails.md §1
+
+## [2026-06-12] leexi | tracker | création du tracker prestation (reprise client)
+- état consolidé depuis leexi-seo/Journal.md (session 1 du 2026-06-09)
+- étapes 1-3 faites + amorce 6 + étape 14 (espace client DA Leexi)
+- en attente d'arbitrage : Bloc 1 réparation refonte vs Bloc 3 souveraineté
+
+## [2026-06-12] leexi | étape 3 | restitution GSC en Google Doc (5 points clés en intro)
+- doc : https://docs.google.com/document/d/1f1s1uODFYKQxdOZ8SKPpwvazVvb1SLJPMYfXWDELz3s/
+- roadmap.md étape 3 enrichie : format de restitution Google Doc + En résumé
+- arbitrage bloc 1 (refonte) vs bloc 3 (souveraineté) toujours en attente
