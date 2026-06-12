@@ -64,6 +64,6 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - même contenu que le Google Doc, en DA Leexi (tiles, sections numérotées, plan 4 blocs)
 - déployé sur organikk.co (noindex)
 
-## [2026-06-12] leexi | étape 6 | recherche mots-clés 4 territoires (data réelle Suggest + GSC)
+## [2026-06-12] leexi | étape 6 | recherche mots-clés 4 clusters (data réelle Suggest + GSC)
 - output: leexi-seo/production/recherche-mots-cles-2026-06-12.md + onglet Mots-clés espace client (Live)
 - skill: seo-recherche-mots-cles ; suite: seo-clustering-mots-cles

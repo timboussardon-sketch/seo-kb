@@ -26,7 +26,7 @@ Prochaine action : clustering (1 cluster = 1 page) + priorisation, et toujours l
 | 2026-06-12 | 3 | rapport de restitution GSC sur Google Doc, intro « En résumé : les 5 points à retenir », jargon traduit | [Google Doc](https://docs.google.com/document/d/1iVnT2wtNeS617iYQIXTCCuRi8kkdDYANNwEJChRR99E/) | aucun |
 | 2026-06-12 | 3 + 14 | onglet Audit de l'espace client alimenté avec le diagnostic GSC (tiles KPI, 5 points, tables, plan 4 blocs), badge passé en Live | `organikk-next/public/espace-leexi/` | aucun |
 
-| 2026-06-12 | 6 | recherche de mots-clés 4 territoires (cadrage Tim) : problématiques avant/pendant/après réunion × 3 personas, bas de funnel, 1 page par fonctionnalité + outils gratuits, RGPD/souveraineté ; 425 suggestions Google Suggest FR + croisement GSC, zéro volume inventé | `leexi-seo/production/recherche-mots-cles-2026-06-12.md` + onglet Mots-clés de l'espace client | seo-recherche-mots-cles |
+| 2026-06-12 | 6 | recherche de mots-clés 4 clusters (cadrage Tim) : problématiques avant/pendant/après réunion × 3 personas, bas de funnel, 1 page par fonctionnalité + outils gratuits, RGPD/souveraineté ; 425 suggestions Google Suggest FR + croisement GSC, zéro volume inventé | `leexi-seo/production/recherche-mots-cles-2026-06-12.md` + onglet Mots-clés de l'espace client | seo-recherche-mots-cles |
 
 ## Spécificités client
 - 1er cas du « système client livrable » 3 repos : seo-kb (privé) / leexi-seo (transférable) / organikk-seo-pack (doctrine vivante en submodule). Tout livrable vit dans le repo client, jamais ailleurs.
