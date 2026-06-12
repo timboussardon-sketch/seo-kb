@@ -83,3 +83,9 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 
 ## [2026-06-12] leexi | étape 14 | email de livraison de jalon (brouillon Gmail) + modèle capitalisé (emails.md §2)
 - annonce : semaine du 15 juin = liste des 50 meilleurs mots-clés + stratégie étape par étape
+
+## [2026-06-12] leexi | playbook | passe de capitalisation complète de la session
+- étape 6 passée éprouvée (méthode clusters + Suggest + GSC + filtre matrice pSEO)
+- étape 13 : brique assistant RAG client (export-kb-chat.py) éprouvée
+- étape 14 : DA = site public (fzn), points de statut, email premier rapport §2, alimentation des onglets
+- étape 3 : restitution = Google Doc + onglet Audit

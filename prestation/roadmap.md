@@ -6,7 +6,7 @@
 >
 > Statut d'une étape : **éprouvé** (déjà fait sur un vrai client) ou **doctrine** (prévu, pas encore validé terrain). MAJ par le skill, jamais à la main de mémoire.
 
-Dernière mise à jour : 2026-06-10 (golfiller étape 10)
+Dernière mise à jour : 2026-06-12 (leexi étapes 3, 6, 13, 14)
 
 ---
 
@@ -26,7 +26,7 @@ Output : doc pré-call. Skills : aucun (gabarit pré-call). Statut : éprouvé.
 **3. Analyse GSC (la première vraie passe data)**
 Export pages + requêtes, en 90 jours ET en 6 mois comparé. En sortir : winners/losers, part branded vs non-branded, striking distance (pos 5-15, fortes impressions), CTR faible en bonne position, érosion de position, signaux pSEO (long tail sur une URL).
 Input : 4 CSV GSC. Output : `wiki/queries/<date>-<slug>-gsc-*.md` + CSV dans `raw/data/exports-gsc/`. Skills : analyse GSC + [[maillage-interne-gsc]] + [[seo-cannibalisation]]. Statut : éprouvé (golfiller).
-Restitution client : Google Doc qui ouvre sur « En résumé : les 3 à 5 points à retenir », jargon traduit en langage métier, chiffres uniquement issus de la data (éprouvé Leexi 2026-06-12).
+Restitution client : Google Doc qui ouvre sur « En résumé : les 3 à 5 points à retenir », jargon traduit en langage métier, chiffres uniquement issus de la data, PUIS le même diagnostic dans l'onglet Audit de l'espace client (tiles KPI, plan d'action ordonné par Tim) (éprouvé Leexi 2026-06-12).
 
 **4. Audit d'indexation**
 Vérifier statut HTTP, blocages, noindex, sitemap, maillage entrant, contenu, indexation estimée. Distinguer non indexée vs non testable.
@@ -40,7 +40,8 @@ Skills : `seo-core-web-vitals`, `seo-donnees-structurees`. Statut : doctrine.
 
 **6. Mots-clés business et décisionnels**
 Recherche from scratch → clustering par SERP (1 cluster = 1 page) → isolement des mots-clés décisionnels (qui convertissent).
-Skills : `seo-recherche-mots-cles` → `seo-clustering-mots-cles` → `seo-mots-cles-decisionnels`. Statut : doctrine.
+Méthode apprise (leexi) : cadrer les clusters AVEC le client (4 chez Leexi : problématiques par persona, intention d'achat, 1 page par fonctionnalité + outils gratuits, conformité/souveraineté), puis grounding data réel : scrape Google Suggest FR sur 60-80 seeds (vraies requêtes tapées), croisement avec la GSC (clics réels), confrontation d'une éventuelle matrice pSEO externe au filtre de requêtabilité humaine (exclusions documentées : géolocalisation pour un SaaS, pages prix/support d'outils tiers). Vocabulaire : « cluster », jamais « territoire ». Zéro volume inventé ([À SOURCER] sinon).
+Skills : `seo-recherche-mots-cles` → `seo-clustering-mots-cles` → `seo-mots-cles-decisionnels`. Statut : éprouvé (leexi : 4 clusters, ~95 mots-clés qualifiés, cf. `leexi-seo/production/recherche-mots-cles-2026-06-12.md`).
 
 **7. Architecture : piliers, clusters AEO, maillage**
 Piliers business (3 à 5), cluster/cocon sémantique Know-Simple/Know/Do, plan de maillage (hub/satellite, ancres, orphelines).
@@ -72,11 +73,14 @@ Skills : `content-brain` (enveloppe `article-engine-pipeline`), `ton-de-voix-tim
 
 **13. Mise en place du système SEO-IA propriétaire**
 Bot construit sur la data + le ton de voix du client, skills, mémoire. Le système produit articles, newsletters, posts, supports commerciaux.
-Statut : doctrine.
+Brique éprouvée (leexi) : l'assistant de l'espace client est connecté au vault Obsidian du client (RAG pgvector `kb_chunks.project`, edge functions kb-chat/kb-ingest paramétrées, prompt vouvoiement). Mise en place pour un nouveau client : copier `leexi-seo/scripts/export-kb-chat.py` dans le repo client (changer PROJECT), lancer l'export, widget de l'espace passe `project:'<slug>'`. Relancer l'export après toute session qui modifie le vault.
+Statut : doctrine (brique assistant : éprouvée leexi).
 
 **14. Roadmap 30/60/90 livrée + dashboard client**
-Calendrier 2 phases, section « mots-clés rejetés » qui protège le budget. Espace client HTML en DA Leexi (sidebar + sections numérotées), hébergé noindex, PDF du même HTML.
-Réf : `public/espace-leexi/index.html`. Statut : éprouvé (Leexi).
+Calendrier 2 phases, section « mots-clés rejetés » qui protège le budget. Espace client HTML (sidebar + sections numérotées), hébergé noindex, PDF du même HTML via @media print.
+Règles posées le 2026-06-12 (leexi) : même DA que le site public organikk.co (palette fzn : fond #F4F5F7, cartes blanches, accent #4685F0, typo Geist stricte) ; statuts d'onglets = petits points 7 px vert/jaune, jamais de badges texte ; chaque livrable validé alimente son onglet (Audit, Mots-clés...) en version simplifiée pour le client ; widget assistant connecté au vault du client (cf. étape 13).
+Fin de semaine 1 : email « premier rapport » au client (modèle verbatim : `prestation/emails.md` §2) : ce qui est en ligne, un chiffre central par onglet, l'assistant, la prochaine étape datée.
+Réf : `public/espace-leexi/index.html` (à cloner pour tout nouvel espace). Statut : éprouvé (Leexi).
 
 **15. Suivi par preuves, onboarding du bot, passage en autonomie**
 GSC à J+30 / J+90 sur les pages publiées, preuves mesurées. Onboarding du bot, montée en compétence, le client repart avec son système (« le système me remplace »).
@@ -86,6 +90,6 @@ Statut : doctrine.
 
 ## Index clients
 - [[prestation/clients/golfiller]] — e-commerce balles occasion, à l'étape 11 (brief Hn page usage ; modèles directory usage/besoin ajouté)
-- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, fin de phase 1 (GSC diagnostiquée : refonte cassée, −43 % hors-marque) ; arbitrage réparation refonte vs cluster souveraineté en cours
+- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, étape 6 faite (4 clusters, ~95 mots-clés) ; espace client complet (audit + mots-clés + assistant RAG) ; semaine du 15 juin : les 50 meilleurs mots-clés + stratégie étape par étape
 
 Pages liées : [[golfiller-strat]] · [[clusters/modeles-pseo-2026-06-10-golfiller]] · [[queries/2026-06-10-golfiller-gsc-6mois]] · [[concepts/product-led-seo]] · [[concepts/know-simple-know-do]]
