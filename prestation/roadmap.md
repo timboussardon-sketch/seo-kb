@@ -86,6 +86,6 @@ Statut : doctrine.
 
 ## Index clients
 - [[prestation/clients/golfiller]] — e-commerce balles occasion, à l'étape 11 (brief Hn page usage ; modèles directory usage/besoin ajouté)
-- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, fin de phase 1 (GSC diagnostiquée : refonte cassée, −43 % hors-marque) ; arbitrage réparation refonte vs territoire souveraineté en cours
+- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, fin de phase 1 (GSC diagnostiquée : refonte cassée, −43 % hors-marque) ; arbitrage réparation refonte vs cluster souveraineté en cours
 
 Pages liées : [[golfiller-strat]] · [[clusters/modeles-pseo-2026-06-10-golfiller]] · [[queries/2026-06-10-golfiller-gsc-6mois]] · [[concepts/product-led-seo]] · [[concepts/know-simple-know-do]]
