@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Proposition SEO · Ears 360 · Organikk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0F1E; --ink-2:#293247; --muted:#5a6681; --muted-2:#8a93a8;
+    --line:rgba(10,15,30,.08); --line-2:rgba(10,15,30,.13);
+    --paper:#ffffff; --bg-2:#f6f8fc;
+    --blue:#2559DD; --blue-deep:#1B3E8F; --blue-soft:#eef3fe; --blue-line:rgba(37,89,221,.22);
+    --green:#1f9d63; --red:#d23a22;
+    --font:'Geist', system-ui, sans-serif;
+    --mono:'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  @page{ size:A4; margin:0; }
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:var(--font); color:var(--ink-2); letter-spacing:-.011em; -webkit-font-smoothing:antialiased; background:#fff; line-height:1.6; }
+  .page{ position:relative; width:210mm; min-height:297mm; padding:17mm 17mm 18mm; background:#fff; overflow:hidden; page-break-after:always; display:flex; flex-direction:column; }
+  .page:last-child{ page-break-after:auto; }
+
+  .mono{ font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2); font-weight:600; }
+
+  .rh{ display:flex; justify-content:space-between; align-items:center; padding-bottom:12px; border-bottom:1px solid var(--line); margin-bottom:24px; }
+  .wm{ font-size:16px; font-weight:600; letter-spacing:-.03em; color:var(--ink); }
+  .wm b{ color:var(--blue); font-weight:600; }
+
+  h1,h2,h3{ font-weight:600; letter-spacing:-.028em; line-height:1.1; color:var(--ink); }
+  p{ font-size:13px; line-height:1.66; color:var(--ink-2); }
+  .lead{ font-size:14.5px; line-height:1.62; }
+  strong{ font-weight:600; color:var(--blue-deep); }
+
+  /* section header */
+  .sec-h{ display:flex; align-items:baseline; gap:12px; margin:21px 0 12px; }
+  .sec-h .n{ font-family:var(--mono); font-size:11px; font-weight:700; color:var(--blue); }
+  .sec-h h2{ font-size:17px; font-weight:600; letter-spacing:-.025em; color:var(--blue-deep); }
+  .sec-h .rule{ flex:1; height:1px; background:var(--line); }
+  .sec-h.first{ margin-top:0; }
+  .note{ font-size:11.5px; color:var(--muted); line-height:1.55; margin-bottom:12px; }
+
+  /* cover */
+  .cover{ justify-content:space-between; }
+  .cover-grid{ position:absolute; inset:0; z-index:0; pointer-events:none;
+    background:
+      linear-gradient(transparent 0 calc(100% - 1px), var(--line) calc(100% - 1px) 100%) 0 0/100% 30mm,
+      linear-gradient(90deg, transparent 0 calc(100% - 1px), var(--line) calc(100% - 1px) 100%) 0 0/30mm 100%;
+    -webkit-mask-image:radial-gradient(ellipse at 50% 30%, #000 16%, transparent 70%); mask-image:radial-gradient(ellipse at 50% 30%, #000 16%, transparent 70%); }
+  .cover > *{ position:relative; z-index:1; }
+  .cover-top{ display:flex; justify-content:space-between; align-items:center; }
+  .cover-mid{ margin-top:auto; margin-bottom:auto; }
+  .cover-kicker{ font-family:var(--mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); font-weight:700; margin-bottom:20px; }
+  h1.title{ font-size:54px; line-height:1.02; letter-spacing:-.04em; max-width:11em; }
+  .subtitle{ margin-top:22px; font-size:16.5px; line-height:1.55; color:var(--ink-2); font-weight:450; max-width:34em; }
+  .subtitle b{ color:var(--ink); font-weight:600; }
+  .chips{ margin-top:28px; display:flex; gap:10px; flex-wrap:wrap; }
+  .chip{ display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border-radius:12px; background:var(--bg-2); border:1px solid var(--line-2); font-size:12.5px; font-weight:500; color:var(--ink-2); }
+  .chip .dot{ width:7px; height:7px; border-radius:50%; background:linear-gradient(135deg,#2559DD,#1B3E8F); }
+  .chip.price{ background:var(--blue-soft); border-color:var(--blue-line); color:var(--blue-deep); font-weight:600; }
+  .cover-foot{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; }
+  .cover-note{ max-width:340px; font-size:11.5px; line-height:1.55; color:var(--muted); }
+
+  /* tiles */
+  .grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .grid-4{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .tile{ background:var(--paper); border:1px solid var(--line); border-radius:13px; padding:13px 14px 11px; }
+  .tile .k{ font-size:18px; font-weight:600; letter-spacing:-.03em; color:var(--blue-deep); line-height:1.08; }
+  .tile .l{ font-size:10.5px; line-height:1.5; color:var(--muted); margin-top:7px; }
+
+  /* card / prose */
+  .card{ background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:15px 18px; }
+  .resume{ padding:17px 20px; border-radius:14px; background:var(--blue-soft); border:1px solid var(--blue-line); }
+  .resume p+p, .card p+p{ margin-top:10px; }
+
+  /* table */
+  .tbl-wrap{ border:1px solid var(--line-2); border-radius:12px; overflow:hidden; }
+  table{ width:100%; border-collapse:collapse; }
+  th{ font-family:var(--mono); font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted-2);
+    font-weight:700; text-align:left; padding:8px 12px; background:var(--bg-2); border-bottom:1px solid var(--line-2); }
+  td{ padding:7px 12px; border-bottom:1px solid var(--line); font-size:10.5px; line-height:1.45; color:var(--ink-2); vertical-align:top; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:nth-child(even){ background:#fcfdff; }
+  td.dim{ font-weight:600; color:var(--ink); }
+  td.mut{ color:var(--muted); }
+  .vol{ display:inline-block; font-family:var(--mono); font-size:10px; font-weight:700; color:var(--blue-deep);
+    white-space:nowrap; padding:3px 7px; border-radius:7px; background:var(--blue-soft); border:1px solid var(--blue-line); }
+
+  /* panels */
+  .panel{ padding:15px 17px; border-radius:13px; border:1px solid; }
+  .panel.ok{ background:#f4f8ff; border-color:var(--blue-line); }
+  .panel.ko{ background:#fff6f4; border-color:rgba(210,58,34,.2); }
+  .p-label{ font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; display:block; margin-bottom:12px; }
+  .panel.ok .p-label{ color:var(--blue-deep); }
+  .panel.ko .p-label{ color:var(--red); }
+  .clist{ list-style:none; display:flex; flex-direction:column; gap:8px; }
+  .clist li{ display:flex; gap:9px; font-size:10.5px; line-height:1.48; color:var(--ink-2); }
+  .clist li b{ color:var(--ink); font-weight:600; }
+  .dot-i{ flex-shrink:0; width:16px; height:16px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+  .dot-i svg{ width:9px; height:9px; stroke:currentColor; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .dot-i.v{ background:var(--blue-soft); color:var(--blue); }
+  .dot-i.x{ background:rgba(210,58,34,.12); color:var(--red); }
+
+  /* callout */
+  .callout{ padding:15px 18px; border-radius:13px; background:var(--blue-soft); border:1px solid var(--blue-line); }
+  .callout .p-label{ color:var(--blue-deep); }
+  .callout p{ font-size:12px; line-height:1.62; color:var(--ink); }
+
+  /* deliverables */
+  .deliver{ border:1px solid var(--line-2); border-radius:12px; overflow:hidden; }
+  .d-row{ display:flex; gap:13px; align-items:baseline; padding:8px 13px; border-bottom:1px solid var(--line); }
+  .d-row:last-child{ border-bottom:none; }
+  .d-row:nth-child(even){ background:#fcfdff; }
+  .d-n{ font-family:var(--mono); font-size:10px; font-weight:700; color:var(--blue); flex-shrink:0; }
+  .d-t{ font-size:11px; line-height:1.5; color:var(--ink-2); }
+  .d-t b{ color:var(--ink); font-weight:600; }
+
+  /* months */
+  .month{ background:var(--paper); border:1px solid var(--line); border-radius:13px; padding:16px; }
+  .m-head{ padding-bottom:9px; margin-bottom:9px; border-bottom:1px dashed var(--blue-line); }
+  .m-tag{ font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--blue); }
+  .m-title{ margin-top:3px; font-size:12.5px; font-weight:600; letter-spacing:-.015em; color:var(--ink); }
+  .m-list{ list-style:none; display:flex; flex-direction:column; gap:6px; }
+  .m-list li{ position:relative; padding-left:13px; font-size:10px; line-height:1.45; color:var(--ink-2); }
+  .m-list li::before{ content:""; position:absolute; left:0; top:.5em; width:4px; height:4px; border-radius:50%; background:var(--blue); }
+
+  /* price */
+  .price{ display:grid; grid-template-columns:1.5fr 1fr; border:1px solid var(--blue-line); border-radius:15px; overflow:hidden; }
+  .price-l{ padding:20px 22px; background:#fff; }
+  .price-r{ padding:20px 22px; color:#fff; background:linear-gradient(160deg,#1B3E8F,#2559DD); display:flex; flex-direction:column; justify-content:center; }
+  .price-amt{ font-size:34px; font-weight:600; letter-spacing:-.04em; line-height:1; }
+  .price-unit{ font-size:11px; font-weight:500; color:rgba(255,255,255,.85); margin-left:7px; }
+  .price-x{ margin-top:11px; font-size:11px; line-height:1.5; color:rgba(255,255,255,.85); }
+  .price-modal{ margin-top:13px; padding-top:11px; border-top:1px solid var(--line); font-size:11px; line-height:1.55; color:var(--muted); }
+
+  .gap{ margin-top:18px; }
+
+  /* sign */
+  .signoff{ margin-top:auto; padding-top:10px; }
+  .sign-rule{ height:1px; background:var(--line-2); margin-bottom:16px; }
+  .sign-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .sign-name{ font-size:16px; font-weight:600; letter-spacing:-.02em; color:var(--ink); }
+  .sign-sub{ font-size:11.5px; color:var(--muted); margin-top:3px; }
+  .sign-mail{ font-family:var(--mono); font-size:10.5px; color:var(--blue); margin-top:5px; }
+  .sign-brand{ text-align:right; }
+  .sign-brand .b{ font-size:15px; font-weight:600; color:var(--ink); letter-spacing:-.02em; }
+  .sign-brand .b b{ color:var(--blue); }
+  .sign-brand .u{ font-family:var(--mono); font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2); margin-top:3px; }
+
+  .footer-line{ position:absolute; left:17mm; right:17mm; bottom:9mm; display:flex; justify-content:space-between; font-family:var(--mono); font-size:8.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted-2); padding-top:8px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 · COVER -->
+<section class="page cover">
+  <div class="cover-grid"></div>
+  <div class="cover-top">
+    <div class="wm">Organi<b>kk</b></div>
+    <div class="mono">Proposition commerciale · SEO</div>
+  </div>
+  <div class="cover-mid">
+    <div class="cover-kicker">Mission SEO · 3 mois · Done-for-you</div>
+    <h1 class="title">Capter la demande créée par M6, et la garder</h1>
+    <p class="subtitle">Depuis votre passage dans <b>Qui veut être mon associé</b>, des milliers de personnes tapent votre nom dans Google, suivi de « avis », « danger », « en pharmacie ». Aujourd'hui ce sont Trustpilot, Amazon et les sites de pharmacies qui leur répondent. Cette proposition reprend cette demande, puis construit la couche SEO qui manque à <b>ears-360.com</b>.</p>
+    <div class="chips">
+      <span class="chip price">1&nbsp;850&nbsp;€ HT / mois · sans engagement</span>
+      <span class="chip"><span class="dot"></span>3 mois · full remote</span>
+      <span class="chip"><span class="dot"></span>~100 à 150 pages décisionnelles</span>
+    </div>
+  </div>
+  <div class="cover-foot">
+    <div class="cover-note">Le KPI n'est pas le trafic : ce sont les ventes directes sur votre site et les positions reprises aux plateformes. Tout est produit, intégré et mesuré pour vous, puis le système vous est transmis.</div>
+    <div class="mono">12.06.2026 · Réf. E360&#8202;/&#8202;SEO</div>
+  </div>
+</section>
+
+<!-- PAGE 2 · SYNTHÈSE -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="mono">Proposition SEO · Ears 360</div></div>
+
+  <div class="sec-h first"><span class="n">01</span><h2>Synthèse</h2><span class="rule"></span></div>
+  <div class="resume">
+    <p class="lead">Ears 360 a tout ce qui se mérite en années : un dispositif médical certifié CE, une butée de sécurité brevetée, une fabrication française, plus de 500 pharmaciens qui recommandent le produit et un passage en finale d'une émission de prime time. Il ne manque qu'une chose : des pages pour que Google et les moteurs IA s'en servent.</p>
+    <p>La diffusion du 26 février 2026 a déclenché une vague de recherches sur votre nom : « ears 360 avis », « avis orl », « danger », « en pharmacie », « leclerc » (relevé Google Suggest du 12 juin). Neuf intentions de recherche, zéro page dédiée sur votre site. Chaque clic part vers un revendeur, une plateforme d'avis ou un site de coupons, avec la marge qui va avec.</p>
+    <p>La mission tient en une phrase : <strong>reprendre la demande sur votre nom, puis déplier les pages décisionnelles que votre data rend possibles</strong>, les adresses de vos 150 points de vente, votre étude clients chiffrée, votre brevet, vos pharmaciens.</p>
+  </div>
+
+  <div class="grid-4 gap">
+    <div class="tile"><div class="k">26.02.2026</div><div class="l">Finale de Qui veut être mon associé, M6. La demande sur votre nom est déjà payée.</div></div>
+    <div class="tile"><div class="k">9 / 0</div><div class="l">9 intentions de recherche sur votre nom relevées dans Google Suggest, 0 page pour y répondre.</div></div>
+    <div class="tile"><div class="k">150+</div><div class="l">points de vente déjà listés sur votre site : la matière de 80 à 120 pages locales.</div></div>
+    <div class="tile"><div class="k">0</div><div class="l">article publié. Le blog est vide depuis 2023, toute la couche d'acquisition reste à construire.</div></div>
+  </div>
+
+  <div class="sec-h"><span class="n">02</span><h2>Ce que montre l'audit</h2><span class="rule"></span></div>
+  <p class="note">Relevé du 12 juin 2026 : sitemaps du site, pages publiques, Google Suggest France. Aucun chiffre estimé, tout est sourcé.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:26%">Dimension</th><th style="width:36%">État actuel</th><th>Lecture</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Volume du site</td><td>5 produits, 16 pages statiques, 1 collection</td><td class="mut">Un site vitrine, sans couche d'acquisition organique</td></tr>
+        <tr><td class="dim">Blog</td><td>Vide, gabarit d'origine, dernière trace en 2023</td><td class="mut">Aucune page pour exister sur les requêtes du métier</td></tr>
+        <tr><td class="dim">Recherches sur votre nom</td><td>avis · danger · en pharmacie · leclerc · qvema · code promo</td><td class="mut">Trustpilot, Amazon et les e-shops de pharmacies répondent à votre place</td></tr>
+        <tr><td class="dim">Hygiène technique</td><td>3 URL produits en double, 2 store locators, lien « Notre Histoire » en 404 dans le menu</td><td class="mut">Autorité diluée, correctifs dès la première semaine</td></tr>
+        <tr><td class="dim">Store locator</td><td>150+ adresses complètes sur une page unique</td><td class="mut">La data d'un modèle de pages locales, jamais dépliée</td></tr>
+        <tr><td class="dim">FAQ</td><td>Riche : sécurité, cérumen, entretien, matériaux, prix</td><td class="mut">Chaque question est l'embryon d'une page décisionnelle</td></tr>
+        <tr><td class="dim">Data propriétaire</td><td>Étude clients 91 / 89 / 93 %, brevet, 500+ pharmaciens</td><td class="mut">Inexploitée en ligne, c'est le carburant des pages</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Proposition SEO · Ears 360 · p. 2</span></div>
+</section>
+
+<!-- PAGE 3 · FORCES / FAIBLESSES + OPPORTUNITÉ -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="mono">Proposition SEO · Ears 360</div></div>
+
+  <div class="sec-h first"><span class="n">03</span><h2>Vos atouts, ce qui fuit</h2><span class="rule"></span></div>
+  <div class="grid-2">
+    <div class="panel ok">
+      <span class="p-label">Ce que vous avez déjà</span>
+      <ul class="clist">
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Une légitimité santé rare.</b> Dispositif médical CE, butée brevetée, fabrication française : exactement ce que Google exige sur les sujets santé.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>500+ pharmaciens, 150+ points de vente.</b> Un réseau de preuve et de distribution que personne d'autre n'a sur ce segment.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Une notoriété TV récente.</b> La demande existe, elle est datée, mesurable, et encore chaude.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Une étude clients chiffrée.</b> 91 % de nettoyage jugé plus agréable, 89 % de baisse des bouchons, 93 % d'oreilles plus propres : de la matière que les moteurs IA citent.</span></li>
+      </ul>
+    </div>
+    <div class="panel ko">
+      <span class="p-label">Ce qui fuit aujourd'hui</span>
+      <ul class="clist">
+        <li><span class="dot-i x"><svg viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>La vente part chez les revendeurs.</b> Sur « ears 360 en pharmacie » ou « leclerc », l'acheteur atterrit chez Apothical, Pharmabest ou Amazon.</span></li>
+        <li><span class="dot-i x"><svg viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>L'objection « danger » reste sans réponse.</b> Personne ne traite « ears 360 danger » ni « avis orl », alors que vous avez les meilleurs arguments du segment.</span></li>
+        <li><span class="dot-i x"><svg viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Zéro contenu décisionnel.</b> « alternative coton tige », « cure oreille silicone », « coton tige réutilisable pharmacie » : la demande générique va ailleurs.</span></li>
+        <li><span class="dot-i x"><svg viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Des doublons qui diluent.</b> URL produits en double et page 404 dans le menu : l'autorité du site se disperse au lieu de porter le produit phare.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout gap">
+    <span class="p-label">L'opportunité</span>
+    <p>Le segment du nettoyage d'oreille réutilisable est tenu par des acteurs du zéro-déchet, et Google Suggest révèle leur faille : les gens cherchent « oriculi danger » et « oriculi avis orl ». Vous êtes le seul acteur avec un brevet de sécurité, un marquage CE de dispositif médical et un réseau de pharmaciens. <strong>On n'attaque pas écolo contre écolo. On attaque dispositif médical contre bout de bambou.</strong> Cette légitimité est aussi ce qui fait citer une source par ChatGPT, Perplexity et les AI Overviews de Google sur un sujet santé.</p>
+  </div>
+
+  <div class="sec-h"><span class="n">04</span><h2>Le principe de la stratégie</h2><span class="rule"></span></div>
+  <div class="card">
+    <p class="lead">On ne court pas après le trafic. On cible les requêtes où la personne est en train de choisir, de vérifier ou d'acheter, et chaque page se termine sur une action : acheter en ligne ou trouver sa pharmacie.</p>
+    <p>Trois couches, dans cet ordre. <strong>D'abord votre nom</strong> : les pages avis, où acheter et sécurité, parce que cette demande est déjà payée par la TV. <strong>Ensuite le décisionnel générique</strong> : le pilier « alternative au coton-tige », vos comparatifs, les pages par profil et par situation. <strong>Enfin la couche citation IA</strong> : les contenus answer-first nourris de votre étude et de vos pharmaciens, pour être la source que les moteurs génératifs citent.</p>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Proposition SEO · Ears 360 · p. 3</span></div>
+</section>
+
+<!-- PAGE 4 · LES MODÈLES DE PAGES -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="mono">Proposition SEO · Ears 360</div></div>
+
+  <div class="sec-h first"><span class="n">05</span><h2>Les 6 modèles de pages</h2><span class="rule"></span></div>
+  <p class="note">Plutôt que d'attaquer un mot-clé à la fois, on construit des modèles déclinables : un gabarit, une variable, des dizaines de pages. Chaque exemple de requête ci-dessous vient du relevé Google Suggest du 12 juin 2026.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:22%">Modèle</th><th style="width:40%">Exemples de requêtes captées</th><th style="width:11%">Pages</th><th>Logique business</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Triptyque du nom</td><td class="mut">ears 360 avis · avis orl · danger · qvema</td><td><span class="vol">3-4</span></td><td class="mut">Reprendre la demande créée par la TV avant qu'elle ne refroidisse</td></tr>
+        <tr><td class="dim">Où acheter × ville</td><td class="mut">ears 360 en pharmacie · cure oreille pharmacie + [ville]</td><td><span class="vol">80-120</span></td><td class="mut">Vos 150 points de vente deviennent autant de portes d'entrée, et un argument pour vos pharmacies</td></tr>
+        <tr><td class="dim">Pilier alternative au coton-tige</td><td class="mut">alternative coton tige · meilleure alternative · coton tige écologique</td><td><span class="vol">7-8</span></td><td class="mut">Votre positionnement mot pour mot, avec comparatifs silicone, bambou, inox</td></tr>
+        <tr><td class="dim">Réassurance × objection</td><td class="mut">danger · profondeur · cérumen · entretien · appareils auditifs</td><td><span class="vol">4-6</span></td><td class="mut">Répondre soi-même aux objections, avec le brevet et la certification CE</td></tr>
+        <tr><td class="dim">Produit × profil</td><td class="mut">cure oreille enfant · bébé · porteur d'appareil auditif</td><td><span class="vol">6-8</span></td><td class="mut">Le bon produit par profil, l'angle parental et sécurité</td></tr>
+        <tr><td class="dim">Anti-bruit × situation</td><td class="mut">bouchon anti bruit pour dormir · concert · moto</td><td><span class="vol">8-10</span></td><td class="mut">Oriente vers Silence ou Control, panier moyen supérieur</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout gap">
+    <span class="p-label">La pièce de conversion · le test interactif</span>
+    <p>Un test de 60 secondes, « Quelle solution pour vos oreilles ? » : profil, sensibilité, usage du coton-tige, port d'appareil auditif. Il oriente vers Clean, Silence ou Control et affiche l'économie personnalisée face aux cotons-tiges jetables, calculée depuis vos propres chiffres. Résultat partiel offert, fiche complète contre un email. <strong>C'est la machine à capter l'acheteur indécis</strong>, lisible aussi par les agents IA qui achètent à la place des gens.</p>
+  </div>
+
+  <div class="sec-h"><span class="n">06</span><h2>La méthode</h2><span class="rule"></span></div>
+  <div class="grid-2">
+    <div class="panel ok">
+      <span class="p-label">Ce que je prends en charge</span>
+      <ul class="clist">
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Audit complet, recherche de mots-clés avec volumes sourcés, rédaction, maillage, intégration sur votre Shopify, suivi des positions. Aucun rédacteur à mobiliser chez vous.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un système de production construit sur votre data pendant la mission, puis transmis et documenté. <b>Vous repartez avec un actif, pas une dépendance.</b></span></li>
+      </ul>
+    </div>
+    <div class="panel ok">
+      <span class="p-label">Demandé côté Ears 360</span>
+      <ul class="clist">
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Accès Search Console et Shopify.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>La méthodologie de votre étude clients, pour la publier proprement.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Les niveaux d'atténuation de Silence et Control.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>5 à 10 citations signées de vos pharmaciens partenaires.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un point de 30 minutes par semaine.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Proposition SEO · Ears 360 · p. 4</span></div>
+</section>
+
+<!-- PAGE 5 · LIVRABLES + PLANNING -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="mono">Proposition SEO · Ears 360</div></div>
+
+  <div class="sec-h first"><span class="n">07</span><h2>Livrables</h2><span class="rule"></span></div>
+  <p class="note">Ce que vous avez en main à la fin des 3 mois.</p>
+  <div class="deliver">
+    <div class="d-row"><span class="d-n">01</span><span class="d-t"><b>Audit SEO initial complet</b> : technique, doublons corrigés, 404 réparées, cartographie des mots-clés avec volumes sourcés.</span></div>
+    <div class="d-row"><span class="d-n">02</span><span class="d-t"><b>Le triptyque du nom en ligne</b> : pages avis, où acheter, sécurité et avis des professionnels.</span></div>
+    <div class="d-row"><span class="d-n">03</span><span class="d-t"><b>Le pilier « alternative au coton-tige »</b> et ses comparatifs publiés.</span></div>
+    <div class="d-row"><span class="d-n">04</span><span class="d-t"><b>80 à 120 pages « où acheter » par ville</b>, construites depuis vos points de vente réels.</span></div>
+    <div class="d-row"><span class="d-n">05</span><span class="d-t"><b>Maillage interne et données structurées</b> (produit, FAQ, points de vente) pour la citation par les moteurs IA.</span></div>
+    <div class="d-row"><span class="d-n">06</span><span class="d-t"><b>Le test interactif</b> « Quelle solution pour vos oreilles ? » conçu et mis en ligne.</span></div>
+    <div class="d-row"><span class="d-n">07</span><span class="d-t"><b>Le système de production transmis</b> : documentation et session de formation, pour continuer sans moi.</span></div>
+    <div class="d-row"><span class="d-n">08</span><span class="d-t"><b>Rapport de fin de mission</b> : positions reprises, pages indexées, ventes attribuées, recommandations phase 2.</span></div>
+  </div>
+
+  <div class="sec-h"><span class="n">08</span><h2>Planning sur 3 mois</h2><span class="rule"></span></div>
+  <p class="note">Une phase nourrit la suivante : reprendre le nom, puis produire, puis étendre et transmettre.</p>
+  <div class="grid-3">
+    <div class="month">
+      <div class="m-head"><span class="m-tag">Mois 1</span><div class="m-title">Reprendre votre nom</div></div>
+      <ul class="m-list">
+        <li>Lecture Search Console : l'impact exact du passage TV, la base de référence.</li>
+        <li>Correctifs techniques : doublons, canoniques, lien 404 du menu.</li>
+        <li>Publication du triptyque du nom : avis, où acheter, sécurité.</li>
+        <li>Cartographie des mots-clés avec volumes sourcés.</li>
+        <li>Gabarits des modèles ville et réassurance.</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-head"><span class="m-tag">Mois 2</span><div class="m-title">Produire</div></div>
+      <ul class="m-list">
+        <li>Pilier « alternative au coton-tige » + comparatifs.</li>
+        <li>Pages réassurance complètes : danger, cérumen, enfants, appareils auditifs.</li>
+        <li>Pilote « où acheter » sur 20 à 30 villes.</li>
+        <li>Données structurées et maillage croisé vers les fiches produits.</li>
+        <li>Contrôle d'indexation systématique.</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-head"><span class="m-tag">Mois 3</span><div class="m-title">Étendre et transmettre</div></div>
+      <ul class="m-list">
+        <li>Extension du modèle gagnant, mesuré en Search Console.</li>
+        <li>Pages anti-bruit par situation : Silence et Control.</li>
+        <li>Mise en ligne du test interactif.</li>
+        <li>Transmission du système : documentation + formation.</li>
+        <li>Bilan : positions, indexation, ventes attribuées, reco phase 2.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Proposition SEO · Ears 360 · p. 5</span></div>
+</section>
+
+<!-- PAGE 6 · TARIF + RÉSULTATS + SUITE -->
+<section class="page">
+  <div class="rh"><div class="wm">Organi<b>kk</b></div><div class="mono">Proposition SEO · Ears 360</div></div>
+
+  <div class="sec-h first"><span class="n">09</span><h2>Tarification</h2><span class="rule"></span></div>
+  <div class="price">
+    <div class="price-l">
+      <span class="p-label" style="color:var(--blue-deep)">La mission couvre</span>
+      <ul class="clist">
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>La stratégie complète : audit, mots-clés, maillage, suivi des positions.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>La production de toutes les pages, intégrées sur votre Shopify.</span></li>
+        <li><span class="dot-i v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Le système de production, livré, documenté et transmis.</span></li>
+      </ul>
+      <p class="price-modal">Après la mission : 500&nbsp;€ HT / mois en suivi jusqu'à votre pleine autonomie. Je monitore, j'améliore le système, j'accompagne votre équipe. Deux paliers, pas d'intermédiaire.</p>
+    </div>
+    <div class="price-r">
+      <div><span class="price-amt">1&nbsp;850&nbsp;€</span><span class="price-unit">HT / mois</span></div>
+      <div class="price-x">Sans engagement de durée. La mission peut s'arrêter à la fin de n'importe quel mois.</div>
+    </div>
+  </div>
+
+  <div class="sec-h"><span class="n">10</span><h2>Résultats attendus</h2><span class="rule"></span></div>
+  <div class="grid-3">
+    <div class="tile"><div class="k">Votre nom repris</div><div class="l">Vos pages devant les plateformes sur « ears 360 avis », « danger » et « en pharmacie », visé sous 8 semaines : ces requêtes sont sans opposition réelle.</div></div>
+    <div class="tile"><div class="k">100-150</div><div class="l">pages décisionnelles publiées et indexées, plus le test interactif en ligne.</div></div>
+    <div class="tile"><div class="k">KPI partagés</div><div class="l">Production + ventes attribuées au SEO, en fourchette fixée ensemble au kick-off sur la base de votre Search Console. Jamais un chiffre sorti du chapeau.</div></div>
+  </div>
+  <p class="note gap" style="margin-bottom:0"><strong style="color:var(--blue-deep)">Engagement de résultat partagé</strong> : si la fourchette convenue n'est pas atteinte à l'échéance fixée, je continue sans facturer jusqu'à l'atteindre. C'est pour ça que le niveau visé se définit ensemble, sur vos chiffres réels, pas avant de les avoir vus.</p>
+
+  <div class="sec-h"><span class="n">11</span><h2>Hors périmètre</h2><span class="rule"></span></div>
+  <div class="deliver">
+    <div class="d-row"><span class="d-n">·</span><span class="d-t"><b>Refonte majeure du thème Shopify</b> : à évaluer après audit si nécessaire, devis séparé.</span></div>
+    <div class="d-row"><span class="d-n">·</span><span class="d-t"><b>Campagnes payantes Google Ads et Meta</b> : hors mission, le SEO les complète sans les remplacer.</span></div>
+    <div class="d-row"><span class="d-n">·</span><span class="d-t"><b>Marchés hors France</b> : la Belgique, le Luxembourg et le Maroc figurent déjà dans votre distribution, recommandés en phase 2.</span></div>
+    <div class="d-row"><span class="d-n">·</span><span class="d-t"><b>Production vidéo</b> : recommandée en phase 2, à partir des pages qui auront fait leurs preuves.</span></div>
+  </div>
+
+  <div class="sec-h"><span class="n">12</span><h2>Prochaine étape</h2><span class="rule"></span></div>
+  <div class="card">
+    <p><strong>Un appel de 30 minutes</strong> pour lire ensemble votre Search Console et mesurer l'impact exact du passage TV. Les accès ouverts, le premier livrable, l'audit complet et le triptyque du nom, arrive sous 2 semaines.</p>
+  </div>
+
+  <div class="signoff">
+    <div class="sign-rule"></div>
+    <div class="sign-row">
+      <div>
+        <div class="sign-name">Timothée Boussardon</div>
+        <div class="sign-sub">Consultant SEO et IA · Organikk</div>
+        <div class="sign-mail">tim.boussardon@gmail.com</div>
+      </div>
+      <div class="sign-brand">
+        <div class="b">Organi<b>kk</b></div>
+        <div class="u">organikk.co</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-line"><span>Organikk · Timothée Boussardon</span><span>Proposition au 12.06.2026 · p. 6</span></div>
+</section>
+
+</body>
+</html>
