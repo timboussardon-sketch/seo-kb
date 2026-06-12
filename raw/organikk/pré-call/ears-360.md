@@ -14,7 +14,7 @@ tags: [acquisition, pre-call, pseo, ears-360, e-commerce, sante, dtc]
 
 Ears 360 (SASU 360 Design and product, Levallois-Perret, dirigeant Youcef Abdaoui) vend en D2C un cure-oreille réutilisable en silicone breveté (Clean, 24,90 €) plus deux réducteurs de bruit (Silence 29,90 €, Control 49,90 €), fabriqué dans les Yvelines, certifié CE dispositif médical, distribué dans 150+ points de vente et recommandé par 500+ pharmaciens. État SEO en une ligne : un Shopify vitrine de 5 produits réels, 16 pages statiques, un blog vide depuis 2023, zéro couche d'acquisition organique. Le signal majeur : le passage en finale de « Qui veut être mon associé » (M6, 26 février 2026) a créé une vague de recherches branded que Google Suggest confirme (« ears 360 avis », « ears 360 avis orl », « ears 360 danger », « ears 360 en pharmacie », « ears 360 leclerc », « ears 360 qvema ») et que le site ne capte pas : ce sont Trustpilot, Amazon et les e-shops de pharmacies (Apothical, Pharmabest) qui rankent à leur place, avec leur marge. L'opportunité : verrouiller d'abord la SERP branded (avis, où acheter, réassurance ORL), puis dérouler un pSEO multi-axes sur trois pôles (hygiène de l'oreille décisionnel, où-acheter × ville depuis la data du store locator, réduction de bruit × situation). On démarre par le branded et le modèle où-acheter parce que la data existe déjà, que l'effort est faible et que la fenêtre post-M6 est encore chaude. Hook du call : « depuis M6, des milliers de gens tapent votre nom suivi de avis, danger et pharmacie ; aujourd'hui ce sont vos revendeurs et Trustpilot qui leur répondent, pas vous ». Sortie visée : roadmap 90 jours + accompagnement.
 
-Sources : ears-360.com (accueil, FAQ, mentions légales, où-nous-trouver, blogs/news), sitemaps Shopify relevés le 2026-06-12, Google Suggest FR relevé le 2026-06-12 (10 seeds), tarbesinfo.fr et infos-nantes.fr (annonce QVEMA ép. 8 du 2026-02-26), fr.trustpilot.com/review/ears-360.com, reutilisables.com et orinko.org (paysage oriculi). GSC non disponible (prospect non connecté), à récupérer au call. Tous les volumes de recherche : [À SOURCER].
+Sources : ears-360.com (accueil, FAQ, mentions légales, où-nous-trouver, blogs/news), sitemaps Shopify relevés le 2026-06-12, Google Suggest FR relevé le 2026-06-12 (15 seeds), tarbesinfo.fr et infos-nantes.fr (annonce QVEMA ép. 8 du 2026-02-26), fr.trustpilot.com/review/ears-360.com, reutilisables.com et orinko.org (paysage oriculi). GSC non disponible (prospect non connecté), à récupérer au call. Tous les volumes de recherche : [À SOURCER].
 
 ---
 
@@ -38,7 +38,7 @@ Sources : ears-360.com (accueil, FAQ, mentions légales, où-nous-trouver, blogs
 
 **Premier terrain : la SERP branded post-M6.** C'est la niche la plus défendable qui existe, leur propre nom, et ils ne l'occupent pas. Google Suggest sur « ears 360 » sort : avis, amazon, en pharmacie, code promo, avis orl, danger, leclerc, parapharmacie leclerc, qvema. Neuf intentions, zéro page dédiée sur le site. Intention 100 % décisionnelle, faisabilité maximale, et c'est anti-IA par construction : un AI Overview sur « ears 360 avis orl » devra citer la source qui détient les avis de pharmaciens et l'étude clients, c'est-à-dire eux s'ils la publient.
 
-**Deuxième terrain : le décisionnel « anti coton-tige » via l'angle sécurité.** Le marché générique (« coton tige réutilisable », « cure oreille ») est tenu par des acteurs zéro-déchet (oriculi bambou type Lamazuna, Orinko) et des marchands. Mais Suggest révèle la faille : « oriculi danger », « oriculi avis orl », « nettoyer ses oreilles sans danger ». Ears 360 est le seul du segment avec un brevet de butée de sécurité, un marquage CE dispositif médical et 500 pharmaciens. Sur un sujet santé (YMYL), cette légitimité E-E-A-T est exactement ce que Google et les moteurs génératifs cherchent. On n'attaque pas « écolo contre écolo », on attaque « dispositif médical contre bout de bambou ».
+**Deuxième terrain : le décisionnel « anti coton-tige » via l'angle sécurité.** Le marché générique (« coton tige réutilisable », « cure oreille », « alternative coton tige ») est tenu par des acteurs zéro-déchet (oriculi bambou type Lamazuna, Orinko), LastSwab sur le réutilisable et des marchands. La requête « alternative coton tige » est le pilier naturel : c'est mot pour mot le positionnement du site (« la fin du coton-tige jetable ») et même le slug de leur page produit, sans aucune page dédiée pour la porter. Suggest la décline en intentions nettes : « alternative coton tige pharmacie », « meilleure alternative coton tige », « alternative au coton tige pour les oreilles », « solution remplacement coton tige ». Et Suggest révèle aussi la faille du segment : « oriculi danger », « oriculi avis orl », « nettoyer ses oreilles sans danger ». Ears 360 est le seul du segment avec un brevet de butée de sécurité, un marquage CE dispositif médical et 500 pharmaciens. Sur un sujet santé (YMYL), cette légitimité E-E-A-T est exactement ce que Google et les moteurs génératifs cherchent. On n'attaque pas « écolo contre écolo », on attaque « dispositif médical contre bout de bambou ».
 
 **Troisième terrain : la réduction de bruit, panier supérieur.** « bouchon anti bruit pour dormir / moto / enfant / pharmacie », « réducteur de bruit oreille loop », « reducteur bruit oreille concert » sortent en Suggest. Le segment est dominé par un acteur majeur (Loop) et Quies/Alpine, mais les requêtes par situation restent prenables et Control à 49,90 € relève le panier moyen.
 
@@ -77,6 +77,11 @@ Signal clé : la page « Où nous trouver ? » contient déjà les adresses comp
 | ears 360 en pharmacie / leclerc / parapharmacie leclerc | Do, Local | [À SOURCER] | Faible | Achat | Revendeurs rankent à leur place |
 | ears 360 qvema | Know-Simple, Marque | [À SOURCER] | Très faible | Découverte | Page « vu sur M6 » |
 | ears 360 code promo | Do, Marque | [À SOURCER] | Faible | Achat | Sites de coupons captent la fin de funnel |
+| alternative coton tige (+ pharmacie, meilleure, pour les oreilles) | Do, Comparatif | [À SOURCER] | Moyenne | Décision | Le pilier : leur positionnement mot pour mot, aucune page dédiée |
+| solution remplacement coton tige | Do | [À SOURCER] | Faible | Décision | Variante du pilier |
+| coton tige écologique / bio / biodégradable / recyclable | Know commercial | [À SOURCER] | Moyenne | Considération | Cluster éco : capter puis basculer vers le réutilisable |
+| coton tige réutilisable avis | Do, Évaluation | [À SOURCER] | Moyenne | Décision | Croise avec la page avis maison |
+| coton tige réutilisable lastswab | Do, Comparatif | [À SOURCER] | Faible | Décision | Comparatif honnête vs l'acteur danois du segment |
 | coton tige réutilisable pharmacie | Do | [À SOURCER] | Moyenne | Achat | Cœur d'offre exact |
 | coton tige réutilisable silicone / spirale | Do | [À SOURCER] | Moyenne | Achat | Leur différenciation produit littérale |
 | cure oreille silicone / spirale | Do | [À SOURCER] | Moyenne | Achat | Variante lexicale du même besoin |
@@ -99,7 +104,10 @@ Synthèse : la demande existe sur trois pôles distincts, le branded est en fric
 | ears 360 avis | Do, Marque | 10 | /pages/avis | Étude clients 91/89/93 % + avis vérifiés + verdict ORL/pharmaciens | Acheter |
 | ears 360 en pharmacie (+ leclerc) | Do, Local | 10 | /pages/ou-acheter (hub) | Store locator restructuré + réponse enseigne par enseigne | Trouver ma pharmacie / Acheter en ligne |
 | ears 360 danger / avis orl | Do, Marque | 9 | /pages/securite-avis-orl | Butée brevetée + CE + parole de professionnels | Acheter |
+| alternative coton tige (+ pharmacie) | Do, Comparatif | 8 | /alternative-coton-tige (Money Page pilier) | Panorama des solutions + verdict sécurité + maillage vers Clean | Acheter |
+| meilleure alternative coton tige | Do, Comparatif | 8 | Même Money Page (variante captée) | Answer-first, verdict en 2 phrases | Acheter |
 | coton tige réutilisable pharmacie | Do | 8 | Page produit Clean renforcée + spoke | Comparatif honnête des options en pharmacie | Acheter |
+| coton tige réutilisable lastswab / avis | Do, Comparatif | 7 | Spoke comparatif | Tableau spirale vs embout classique, CE vs non-CE | Acheter |
 | cure oreille enfant / bébé | Do | 6 | Spoke dédié | Guide parental, quel âge, sécurité butée | Acheter |
 | cure oreille silicone vs bambou vs inox | Do, Comparatif | 6 | Spoke comparatif matériaux | Tableau + verdict sécurité | Acheter |
 | bouchon anti bruit pour dormir | Do | 5 | Spoke Silence | Page situation + critères de choix | Acheter Silence |
@@ -131,9 +139,11 @@ Le principe : l'autorité vient du croisement de plusieurs axes par pôle, pas d
 - URL : /anti-bruit/[situation]. ~8-10 pages orientant vers Silence ou Control selon le besoin.
 - Donnée par page : atténuation en dB par produit [À SOURCER auprès du client], critères passif vs ajustable.
 
-**M5 : Comparatifs × alternative** (intention « ears 360 vs oriculi », « cure oreille silicone vs bambou », « alternative coton tige »)
-- URL : /comparatif/[duel]. ~5-6 pages, comparatifs honnêtes et sourcés.
-- Donnée par page : matériaux, sécurité, certification, durée de vie, prix à l'usage (le calcul 80 €/5 ans de leur FAQ).
+**M5 : Pilier « alternative au coton-tige » + comparatifs × alternative** (intention « alternative coton tige », « meilleure alternative coton tige », « ears 360 vs oriculi », « coton tige réutilisable lastswab », « cure oreille silicone vs bambou », « coton tige écologique »)
+- URL : /alternative-coton-tige (Money Page pilier) + /comparatif/[duel] en spokes. ~7-8 pages.
+- La Money Page passe en revue toutes les alternatives (réutilisable silicone, oriculi bambou, oriculi inox, poire, spray, coton-tige bio jetable) avec un verdict par critère : sécurité, certification, durée de vie, prix à l'usage (le calcul 80 €/5 ans de leur FAQ). Le cluster éco (« coton tige écologique / bio / biodégradable ») se rabat dessus : on capte l'intention écologique et on montre que le bio jetable reste du jetable.
+- Spokes : vs oriculi, vs LastSwab, vs coton-tige bio, silicone vs bambou vs inox. Comparatifs honnêtes et sourcés.
+- Donnée par page : matériaux, sécurité (butée brevetée vs rien), certification CE dispositif médical vs accessoire, durée de vie, prix à l'usage.
 
 ### Priorisation
 
@@ -142,11 +152,11 @@ Le principe : l'autorité vient du croisement de plusieurs axes par pôle, pas d
 | Branded (avis + où-acheter hub + sécurité) | 3-4 | Faible | Très faible | Très forte | Fortes | 1 |
 | M1 où-acheter × ville | ~80-120 | Moyen | Faible | Forte | Fortes (store locator) | 2 |
 | M2 réassurance × objection | 4-6 | Faible | Faible | Forte | Fortes (brevet, CE, étude) | 2 |
-| M5 comparatifs | 5-6 | Moyen | Moyenne | Forte | Moyennes | 3 |
+| M5 pilier alternative coton-tige + comparatifs | 7-8 | Moyen | Moyenne | Forte | Fortes (FAQ, brevet, calcul 80 €/5 ans) | 2 |
 | M3 produit × profil | 6-8 | Moyen | Moyenne | Forte | Moyennes | 4 |
 | M4 anti-bruit × situation | 8-10 | Moyen | Forte | Forte | Faibles (dB à sourcer) | 5 |
 
-Reco : démarrer par le triptyque branded + M2 (deux semaines de travail, données déjà sur le site), enchaîner M1 qui industrialise une data déjà possédée, garder M4 pour la phase 2 une fois les specs d'atténuation récupérées.
+Reco : démarrer par le triptyque branded + M2 (deux semaines de travail, données déjà sur le site), enchaîner en parallèle la Money Page « alternative au coton-tige » (M5, le pilier générique du pôle hygiène) et M1 qui industrialise une data déjà possédée, garder M4 pour la phase 2 une fois les specs d'atténuation récupérées.
 
 **Outil Product-Led (chemin vers le lead, insight #4).** Un test interactif « Quelle solution pour vos oreilles ? » (60 secondes : profil, sensibilité, usage coton-tige, port d'appareil auditif) qui oriente vers Clean, Silence ou Control et affiche l'économie personnalisée vs cotons-tiges jetables (leur propre calcul des 80 €/5 ans). Résultat partiel gratuit, email pour la fiche conseil complète. Surprise Gap : les chiffres de l'étude clients et la data pharmaciens, introuvables ailleurs. Version agent-friendly pour l'Agentic Search (le sitemap agentic_discovery de Shopify est déjà là).
 
@@ -159,7 +169,7 @@ Anti-thin, données terrain (zéro chiffre inventé, étude clients et adresses 
 ## 5. Roadmap 90 jours
 
 - Sem. 1-2 : lecture GSC (impact QVEMA, part branded), cadrage des variables, liste de requêtes complète par axe via seo-recherche-mots-cles + seo-mots-cles-decisionnels avec volumes réels (Keyword Planner/Ahrefs), publication du triptyque branded (avis, où-acheter hub, sécurité/ORL), nettoyage des doublons produits et store locators.
-- Sem. 3-4 : seo-entites-vectorielles + seo-cluster-aeo sur le pilier « hygiène de l'oreille sans coton-tige », templates M1 et M2, collecte des verbatims pharmaciens (5-10 citations signées) et de la méthodo de l'étude 91/89/93 %.
+- Sem. 3-4 : seo-entites-vectorielles + seo-cluster-aeo sur le pilier « alternative au coton-tige », publication de la Money Page pilier (M5), templates M1 et M2, collecte des verbatims pharmaciens (5-10 citations signées) et de la méthodo de l'étude 91/89/93 %.
 - Sem. 5-8 : pilote M1 sur 20-30 villes + M2 complet, maillage croisé vers les pages produits, soumission sitemap, contrôle indexation (skill indexation-check).
 - Sem. 9-12 : mesure GSC (indexation, impressions, positions par modèle), extension du modèle gagnant, lancement du test interactif Product-Led, premiers comparatifs M5.
 
