@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-06-11",
+  "updated": "2026-06-12",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -115,6 +115,21 @@
     "espial-solutions": 1.0,
     "seo-kreativ": 1.04,
     "sparktoro": 1.09,
-    "law360": 0.82
+    "law360": 0.86,
+    "courthousenews.com": 1.09,
+    "jonesday.com": 1.09,
+    "heise.de": 1.09,
+    "the-decoder.com": 1.04,
+    "siliconrepublic.com": 1.04,
+    "derivatex.agency": 1.04,
+    "tryprofound.com": 1.04,
+    "metricusapp.com": 1.04,
+    "investor.visa.com": 1.13,
+    "axios.com": 1.09,
+    "siliconangle.com": 1.04,
+    "forrester.com": 1.09,
+    "mealeys.com": 1.09,
+    "ppc.land": 1.2,
+    "fortune": 1.08
   }
 }
