@@ -30,12 +30,38 @@ Exemple réel (Alexia, 2026-06-11) :
 
 ## §2 — Premier rapport semaine 1 (nouvelle prestation SEO)
 
-Quand : fin de la première semaine d'une nouvelle prestation, quand l'audit et la stratégie mots-clés viennent d'être mis en ligne sur l'espace client. C'est LE modèle du premier rapport : il montre que le travail a commencé, donne les chiffres qui comptent et fixe le rendez-vous de la semaine 2. Structure (exemple Leexi 2026-06-12, verbatim dans le brouillon Gmail) :
-1. Une phrase d'ouverture : ce qui est en ligne, en version simplifiée et lisible.
-2. Le lien de l'espace, seul sur sa ligne.
-3. Un paragraphe par onglet livré : le point central en chiffres (jamais la liste exhaustive), et la phrase de confiance « tout est chiffré depuis votre Search Console, rien n'est estimé ».
-4. Une ligne sur l'assistant de l'espace (« il répond sur votre système, testez-le »).
-5. L'annonce datée de la prochaine étape (« la semaine prochaine, j'attaque... »).
-6. Clôture qui invite la critique : « si un point ne vous parle pas, dites-le-moi : c'est fait pour être lu. »
+Quand : fin de la première semaine d'une nouvelle prestation, quand l'audit et la stratégie mots-clés viennent d'être mis en ligne sur l'espace client. C'est LE modèle du premier rapport : il montre que le travail a commencé, donne les chiffres qui comptent et fixe le rendez-vous de la semaine 2.
+
+Structure :
+1. Ouverture chaleureuse courte (« J'espère que vous allez bien, »).
+2. Ce qui est en ligne, en version simplifiée et lisible.
+3. Le lien de l'espace, introduit par « Juste ici : », seul sur sa ligne.
+4. Un paragraphe par onglet livré : le point central en chiffres (jamais la liste exhaustive) + la phrase de confiance « tout est chiffré à partir de votre Search Console, rien n'est estimé ».
+5. Une ligne sur l'assistant de l'espace (« il répond sur votre système, testez-le »).
+6. L'annonce datée de la prochaine étape (« la semaine prochaine, j'attaque... »).
+7. Clôture qui invite la critique ET demande plus de contexte : « si vous avez également d'autres contenus pour le contexte, je prends :) ».
+8. Signature : « Excellente journée ».
 
 Ton : vouvoiement client, direct, zéro jargon, aucun chiffre hors de ceux des livrables.
+
+Modèle verbatim (version finale de Tim, envoyée à Leexi le 2026-06-12) :
+
+> Bonjour {Prénom 1}, bonjour {Prénom 2},
+>
+> J'espère que vous allez bien,
+>
+> Deux nouveautés sur votre espace : l'audit Search Console et la stratégie mots-clés sont en ligne, dans une version simplifiée et lisible.
+>
+> Juste ici : {URL de l'espace client}
+>
+> Dans l'onglet Audit : le diagnostic complet de vos 6 derniers mois. Le point central : {le chiffre directeur et sa lecture, ex. : votre croissance SEO (+28 % de clics) est portée par les recherches de marque (+45 %), tandis que le hors-marque, celui qui amène de nouveaux prospects, recule de 43 %}. La cause est identifiée ({cause}) et c'est récupérable. Tout est chiffré à partir de votre Search Console, rien n'est estimé.
+>
+> Dans l'onglet Mots-clés : la stratégie en {N} clusters ({liste des clusters}). Chaque mot-clé listé est réellement tapé : soit relevé dans vos données, soit collecté sur Google. Vos deux mots-clés prioritaires servent d'ancrage à l'ensemble.
+>
+> Au passage : l'assistant en bas à droite de l'espace répond à vos questions directement sur votre système (audit, stratégie, mots-clés). Testez-le.
+>
+> La semaine prochaine, j'attaque la liste des 50 meilleurs mots-clés et la stratégie étape par étape.
+>
+> Si un point de l'audit ne vous paraît pas clair, ne surtout pas hésiter à me le dire, et si vous avez également d'autres contenus pour le contexte, je prends :)
+>
+> Excellente journée
