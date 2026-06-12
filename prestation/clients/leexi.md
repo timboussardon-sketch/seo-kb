@@ -7,8 +7,8 @@
 - Offre : système livrable (repo transférable `~/Code/leexi-seo` + pack doctrine en submodule)
 
 ## Où on en est
-Étape courante : fin de phase 1 (diagnostic data fait) → entrée en phase 2 (stratégie)
-Prochaine action : arbitrage Bloc 1 (réparer la refonte : 301, canonicals, dédoublonnage, maillage) vs Bloc 3 (ouvrir le territoire souveraineté FR), cf. [[Journal]] du repo leexi-seo
+Étape courante : 6 (mots-clés business, recherche faite)
+Prochaine action : clustering (1 cluster = 1 page) + priorisation, et toujours l'arbitrage Bloc 1 (réparation refonte) en parallèle
 
 ## Accès et data
 - GSC : oui (4 exports dans `leexi-seo/data/gsc/`, manque l'export requête × page) · GA4 : non
@@ -25,6 +25,8 @@ Prochaine action : arbitrage Bloc 1 (réparer la refonte : 301, canonicals, déd
 | 2026-06-09 | 14 | espace client HTML (DA Leexi, devenu le format standard) | `organikk-next/public/espace-leexi/` | aucun |
 | 2026-06-12 | 3 | rapport de restitution GSC sur Google Doc, intro « En résumé : les 5 points à retenir », jargon traduit | [Google Doc](https://docs.google.com/document/d/1iVnT2wtNeS617iYQIXTCCuRi8kkdDYANNwEJChRR99E/) | aucun |
 | 2026-06-12 | 3 + 14 | onglet Audit de l'espace client alimenté avec le diagnostic GSC (tiles KPI, 5 points, tables, plan 4 blocs), badge passé en Live | `organikk-next/public/espace-leexi/` | aucun |
+
+| 2026-06-12 | 6 | recherche de mots-clés 4 territoires (cadrage Tim) : problématiques avant/pendant/après réunion × 3 personas, bas de funnel, 1 page par fonctionnalité + outils gratuits, RGPD/souveraineté ; 425 suggestions Google Suggest FR + croisement GSC, zéro volume inventé | `leexi-seo/production/recherche-mots-cles-2026-06-12.md` + onglet Mots-clés de l'espace client | seo-recherche-mots-cles |
 
 ## Spécificités client
 - 1er cas du « système client livrable » 3 repos : seo-kb (privé) / leexi-seo (transférable) / organikk-seo-pack (doctrine vivante en submodule). Tout livrable vit dans le repo client, jamais ailleurs.
