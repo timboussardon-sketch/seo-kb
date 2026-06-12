@@ -56,7 +56,7 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - en attente d'arbitrage : Bloc 1 réparation refonte vs Bloc 3 souveraineté
 
 ## [2026-06-12] leexi | étape 3 | restitution GSC en Google Doc (5 points clés en intro)
-- doc : https://docs.google.com/document/d/1f1s1uODFYKQxdOZ8SKPpwvazVvb1SLJPMYfXWDELz3s/
+- doc : https://docs.google.com/document/d/1iVnT2wtNeS617iYQIXTCCuRi8kkdDYANNwEJChRR99E/
 - roadmap.md étape 3 enrichie : format de restitution Google Doc + En résumé
 - arbitrage bloc 1 (refonte) vs bloc 3 (souveraineté) toujours en attente
 

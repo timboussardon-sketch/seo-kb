@@ -23,7 +23,7 @@ Prochaine action : arbitrage Bloc 1 (réparer la refonte : 301, canonicals, déd
 | 2026-06-09 | 3 | analyses GSC (synthèse + approfondie) : −43 % hors-marque en 6 mois, cause racine = refonte sans 301, souveraineté = 0 clic, 400k impressions sous-exploitées | [[analyse-gsc-leexi]] + [[analyse-gsc-approfondie-leexi]] | analyse GSC |
 | 2026-06-09 | 6 (amorce) | audit thématique + étude marché notetakers FR + étude RGPD/souveraineté | [[audit-thematique-leexi]] · [[etude-marche-notetakers-fr]] · [[etude-rgpd-souverainete-leexi]] | deep-research |
 | 2026-06-09 | 14 | espace client HTML (DA Leexi, devenu le format standard) | `organikk-next/public/espace-leexi/` | aucun |
-| 2026-06-12 | 3 | rapport de restitution GSC sur Google Doc, intro « En résumé : les 5 points à retenir », jargon traduit | [Google Doc](https://docs.google.com/document/d/1f1s1uODFYKQxdOZ8SKPpwvazVvb1SLJPMYfXWDELz3s/) | aucun |
+| 2026-06-12 | 3 | rapport de restitution GSC sur Google Doc, intro « En résumé : les 5 points à retenir », jargon traduit | [Google Doc](https://docs.google.com/document/d/1iVnT2wtNeS617iYQIXTCCuRi8kkdDYANNwEJChRR99E/) | aucun |
 | 2026-06-12 | 3 + 14 | onglet Audit de l'espace client alimenté avec le diagnostic GSC (tiles KPI, 5 points, tables, plan 4 blocs), badge passé en Live | `organikk-next/public/espace-leexi/` | aucun |
 
 ## Spécificités client
