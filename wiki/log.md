@@ -831,3 +831,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - résumé email + proposition (gabarit Alexia, brouillon à valider par Tim) : raw/organikk/clients/catherine/2026-06-11-resume-call-proposition.md
 - corpus de voix nourri (entrée datée dans raw/notes/tim-my-voice.md) : système/Tamagotchi, mots-clés anti-IA, tête/mains
 - tarif énoncé : 1 500 € HT, conversion CAD + taxes à trancher avant envoi
+
+## [2026-06-12] revue-presse | Search Console mesure les réponses IA
+- output: raw/revue-de-presse/2026-06-12-revue-presse.md
+- info du jour: rapports Generative AI performance GSC (3 juin, impressions only, opt-out 17 juin)
+- brèves: spam policies citations IA / Perplexity 200M$ + appel Amazon / DCN vs Common Crawl / Applebot Siri
+- pilier dominant: SEO
+- skill déclenché: revue-presse-quotidienne + ton-de-voix-tim
