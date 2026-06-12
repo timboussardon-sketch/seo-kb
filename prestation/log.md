@@ -59,3 +59,7 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - doc : https://docs.google.com/document/d/1f1s1uODFYKQxdOZ8SKPpwvazVvb1SLJPMYfXWDELz3s/
 - roadmap.md étape 3 enrichie : format de restitution Google Doc + En résumé
 - arbitrage bloc 1 (refonte) vs bloc 3 (souveraineté) toujours en attente
+
+## [2026-06-12] leexi | étape 3+14 | diagnostic GSC publié dans l'onglet Audit de l'espace client
+- même contenu que le Google Doc, en DA Leexi (tiles, sections numérotées, plan 4 blocs)
+- déployé sur organikk.co (noindex)

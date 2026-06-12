@@ -24,6 +24,7 @@ Prochaine action : arbitrage Bloc 1 (réparer la refonte : 301, canonicals, déd
 | 2026-06-09 | 6 (amorce) | audit thématique + étude marché notetakers FR + étude RGPD/souveraineté | [[audit-thematique-leexi]] · [[etude-marche-notetakers-fr]] · [[etude-rgpd-souverainete-leexi]] | deep-research |
 | 2026-06-09 | 14 | espace client HTML (DA Leexi, devenu le format standard) | `organikk-next/public/espace-leexi/` | aucun |
 | 2026-06-12 | 3 | rapport de restitution GSC sur Google Doc, intro « En résumé : les 5 points à retenir », jargon traduit | [Google Doc](https://docs.google.com/document/d/1f1s1uODFYKQxdOZ8SKPpwvazVvb1SLJPMYfXWDELz3s/) | aucun |
+| 2026-06-12 | 3 + 14 | onglet Audit de l'espace client alimenté avec le diagnostic GSC (tiles KPI, 5 points, tables, plan 4 blocs), badge passé en Live | `organikk-next/public/espace-leexi/` | aucun |
 
 ## Spécificités client
 - 1er cas du « système client livrable » 3 repos : seo-kb (privé) / leexi-seo (transférable) / organikk-seo-pack (doctrine vivante en submodule). Tout livrable vit dans le repo client, jamais ailleurs.
