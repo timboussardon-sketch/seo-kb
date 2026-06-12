@@ -4,14 +4,16 @@ title: "Post LinkedIn — Workflow recherche mots-clés en 5 étapes (2026)"
 aliases: [post-kw-research-workflow, post-workflow-mots-cles-2026]
 tags: [post-linkedin, mots-cles-actionnels, kw-research, doctrine-tim, workflow, b2b]
 created: 2026-05-05
-updated: 2026-05-05
-status: draft
+updated: 2026-06-12
+status: archived
 source_concept: [[concepts/mots-cles-actionnels]]
 source_synthesis: [[syntheses/process-keyword-research-5-etapes]]
 source_skill: [[raw/notes/skill-kw-research-workflow]]
 ---
 
 # Post LinkedIn — Workflow recherche mots-clés en 5 étapes
+
+> **Archivé le 2026-06-12** (décision [[revue-hebdo/2026-W24]] point 5). Draft jamais publié, dépassé par le batch LinkedIn du 2026-06-01 qui couvre le sujet (dont `post-linkedin-3-skills-recherche-mots-cles`, en backlog P2). Conservé comme spec de format ; la doctrine vit dans [[concepts/mots-cles-actionnels]] et [[syntheses/process-keyword-research-5-etapes]].
 
 > Format LinkedIn court (≈ 200 mots), voix Tim, pas de hashtag, pas d'emoji, pas de règle de 3 décorative. Hook sur la frustration / opinion tranchée → 5 étapes en deux lignes chacune → punchline data propriétaire en clôture.
 

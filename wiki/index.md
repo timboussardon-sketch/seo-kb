@@ -294,8 +294,7 @@ status: stable
 ### Quick Wins (0)
 ### Cannibalisation (0)
 ### Maillage (0)
-### Posts LinkedIn (1)
-- [[posts-linkedin/2026-05-05-workflow-kw-research-5-etapes]] — Workflow recherche mots-clés 5 étapes (voix Tim, ≈200 mots)
+### Posts LinkedIn (0)
 ### Revues de presse (2)
 - [[revues-presse/2026-04-13-claude-code-obsidian-sans-complexite]] — Claude Code + Obsidian setup (validé Tim)
 - [[revues-presse/2026-04-13-algorithme-revue-presse]] — Édition Algorithme + 4e brève A-RAG

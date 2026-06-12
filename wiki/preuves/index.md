@@ -4,7 +4,7 @@ title: Banque de preuves
 aliases: [preuves, banque-preuves, proof-bank, boucle-preuves]
 tags: [meta, preuves, validation, terrain, moat, gsc]
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-06-12
 sources: 0
 confidence: high
 status: living-doc
@@ -42,6 +42,7 @@ status: living-doc
 | Fiche | Contenu | Hypothèse | Publié | Statut |
 |---|---|---|---|---|
 | [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] | 5 pages pSEO secteur×ville Organikk | [[hypotheses#H-007]] | ≤ 2026-05-13 | `en-cours` |
+| [[preuves/2026-06-12-golfiller-instrumentation-client]] | 2 pages Golfiller instrumentées (ledger content-brain + exports GSC) | [[hypotheses#H-009]] | 2026-06-10 | `en-cours` |
 
 ## Données minimales par fiche
 
