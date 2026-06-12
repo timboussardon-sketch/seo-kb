@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-06-12
 sources: 0
 confidence: high
 status: living-doc
@@ -38,7 +38,7 @@ status: living-doc
 | H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — |
 | H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `en-test` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] |
 | H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
-| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | — |
+| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `en-test` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] |
 | H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
 
 ## Détail
@@ -100,6 +100,8 @@ Test : A/B sur pages Organikk, présence vs absence du bloc answer-first, mesure
 Énoncé : les preuves chiffrées du discours commercial (1h30→45min de rédaction, closing 10→50%, top 2 sur balle de golf, [[sources/2026-04-13-cas-clients-resultats]]) tiennent sur un échantillon mesuré, pas seulement auto-rapporté. `confidence: medium` par défaut sur la source.
 
 Test : instrumenter sur les prochains clients (Victoria Garden, FG Formation) une mesure tierce avant/après, archivée dans [[preuves/index]]. C'est ce qui transforme un argument de vente en preuve opposable.
+
+Statut `en-test` depuis le 2026-06-12 (décision [[revue-hebdo/2026-W24]] point 2). Fiche : [[preuves/2026-06-12-golfiller-instrumentation-client]]. Le test ne porte pas sur les chiffres historiques du discours (1h30→45min, closing) — invérifiables rétroactivement — mais sur le mécanisme qui les rend opposables à l'avenir : 3 prédictions datées dans le ledger content-brain Golfiller, baselines GSC capturées avant intervention (export `golfiller-2026-06-10`), résolution par la data aux échéances 2026-07-03 / 2026-09-01 / 2026-09-08. Premier cas où la baseline existe avant la décision de revue, pas après.
 
 ### H-010 — Fidélité du scoring à OpenDecoder
 

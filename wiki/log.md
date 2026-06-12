@@ -838,3 +838,15 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - brèves: spam policies citations IA / Perplexity 200M$ + appel Amazon / DCN vs Common Crawl / Applebot Siri
 - pilier dominant: SEO
 - skill déclenché: revue-presse-quotidienne + ton-de-voix-tim
+
+## [2026-06-12] revue-hebdo | Semaine W24 — 7 décisions, 7 mouvements de registre exécutés en séance
+- W23 sautée (pas d'édition le 2026-06-05), carry-over check sur W22
+- promotions: 0 exécutée, 2 recos draft→stable à valider (methodes/ranker-verticale-niche-sans-backlink, methodes/cadrage-boucle-edition-algorithme)
+- hypothèse en test: H-009 → en-test, fiche [[preuves/2026-06-12-golfiller-instrumentation-client]] créée en séance (baselines GSC golfiller-2026-06-10, échéances 2026-07-03 / 2026-09-01 / 2026-09-08)
+- H-007: dernière fenêtre, export Organikk avant 2026-06-15 sinon en-test → ouvert en W25 (conditionnel pré-arbitré)
+- lot ingest W25: golfiller-strat.md + etude-ctr-ai-overviews-gsc.md ; binôme keyword-research 2026-05-02 → skip documenté (4ᵉ non-exécution, conditionnel W22)
+- contradictions: C-012 fermée (acceptée), C-007 acceptée (sortie du circuit), C-002 requalifiée ouverte (long terme)
+- archivage: posts-linkedin/2026-05-05-workflow-kw-research-5-etapes draft → archived, retiré de l'index
+- résurgence: 4 mercredis muets, ticket ops inchangé
+- fil rouge: instrumentation client (Golfiller ledger + 2 exports GSC en 24h) ; sélection mots-clés sort du suivi rituel (résolu hors wiki)
+- output: [[revue-hebdo/2026-W24]]

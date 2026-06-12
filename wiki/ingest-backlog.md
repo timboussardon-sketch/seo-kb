@@ -4,7 +4,7 @@ title: Backlog d'ingest
 aliases: [ingest-backlog, backlog, raw-non-traite, file-ingest]
 tags: [meta, ingest, capture, pipeline, backlog]
 created: 2026-05-16
-updated: 2026-06-08
+updated: 2026-06-12
 last_sweep: 2026-06-08
 sources: 0
 confidence: high
@@ -27,8 +27,6 @@ Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non
 
 | Fichier raw | Date | Pourquoi prioritaire |
 |---|---|---|
-| `raw/data/keyword-research-2026-05-02/keywords-cleaned.md` | 2026-05-02 | Recherche de mots-clés brute = data terrain. Croise [[concepts/mots-cles-actionnels]] |
-| `raw/data/keyword-research-2026-05-02/keywords-classified.md` | 2026-05-02 | Idem, classifiée par intention. Matière directe pour modèle mots-clés |
 | `raw/bootcamp4/session-1-mots-cles-prep.md` | 2026-05-07 | Préparation pédagogique bootcamp 4 session 1 |
 | `raw/bootcamp4/sequencage-semaine-2.md` | 2026-05-12 | Séquençage semaine 2, structure pédagogique |
 | `raw/bootcamp4/session-1-mots-cles-nouveautes.md` | 2026-05-12 | Nouveautés pédagogiques mots-clés |
@@ -123,6 +121,7 @@ Reportés depuis [[log]]. Le sweep hebdo doit les ignorer sauf décision explici
 - `raw/notes/archive/` — versions antérieures des skills, non doctrinal
 - `raw/articles/lost-from-old-site/` — faible valeur ajoutée
 - Fichiers vides (`raw/todo/todo-2026-04-25.md` 0 octet)
+- `raw/data/keyword-research-2026-05-02/` (binôme `keywords-cleaned.md` + `keywords-classified.md`) — skip acté [[revue-hebdo/2026-W24]] en application du conditionnel [[revue-hebdo/2026-W22]] point 3 : 4 reconductions (W20→W24) sans ingest, la doctrine de sélection des mots-clés s'est consolidée entre-temps via Fusionn et le terrain client. Ce binôme ne passe pas par le rituel ; ré-ingest seulement si un travail réel le réclame.
 
 ## Méthode du sweep hebdo
 
