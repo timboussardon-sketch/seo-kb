@@ -27,3 +27,15 @@ Exemple réel (Alexia, 2026-06-11) :
 > Demain, on attaque les skills, puis la semaine prochaine ce sera notre premier call.
 >
 > C'est OK pour toi ? :)
+
+## §2 — Email de livraison de jalon (audit + stratégie en ligne, annonce de la suite)
+
+Quand : un ou plusieurs onglets de l'espace client viennent d'être alimentés. Structure (exemple Leexi 2026-06-12, verbatim dans le brouillon Gmail) :
+1. Une phrase d'ouverture : ce qui est en ligne, en version simplifiée et lisible.
+2. Le lien de l'espace, seul sur sa ligne.
+3. Un paragraphe par onglet livré : le point central en chiffres (jamais la liste exhaustive), et la phrase de confiance « tout est chiffré depuis votre Search Console, rien n'est estimé ».
+4. Une ligne sur l'assistant de l'espace (« il répond sur votre système, testez-le »).
+5. L'annonce datée de la prochaine étape (« la semaine prochaine, j'attaque... »).
+6. Clôture qui invite la critique : « si un point ne vous parle pas, dites-le-moi : c'est fait pour être lu. »
+
+Ton : vouvoiement client, direct, zéro jargon, aucun chiffre hors de ceux des livrables.

@@ -30,6 +30,8 @@ Prochaine action : plan arrêté par Tim le 2026-06-12 : 1) optimiser les 20 mei
 
 | 2026-06-12 | 14 | assistant de l'espace client connecté au vault Obsidian du client : RAG scopé par projet (kb_chunks.project), 109 chunks leexi ingérés, prompt vouvoiement, widget branché | `leexi-seo/scripts/export-kb-chat.py` + edge functions kb-chat/kb-ingest | aucun |
 
+| 2026-06-12 | 14 | email de livraison (audit + stratégie mots-clés en ligne, annonce des 50 mots-clés la semaine du 15 juin) : brouillon Gmail prêt, modèle capitalisé en §2 d'emails.md | brouillon Gmail r6085825889555304583 | aucun |
+
 ## Spécificités client
 - Relancer `python3 scripts/export-kb-chat.py` (repo leexi-seo) après toute session qui modifie le vault, pour que l'assistant de l'espace reste à jour.
 - 1er cas du « système client livrable » 3 repos : seo-kb (privé) / leexi-seo (transférable) / organikk-seo-pack (doctrine vivante en submodule). Tout livrable vit dans le repo client, jamais ailleurs.

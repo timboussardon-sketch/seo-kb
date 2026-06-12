@@ -80,3 +80,6 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 ## [2026-06-12] leexi | étape 14 | assistant de l'espace connecté au vault client (RAG scopé project=leexi)
 - kb_chunks.project + match filtré + prompt client vouvoiement ; 109 chunks (16 fichiers)
 - règle durable : un assistant d'espace client répond sur le vault DU client, sinon pas de widget
+
+## [2026-06-12] leexi | étape 14 | email de livraison de jalon (brouillon Gmail) + modèle capitalisé (emails.md §2)
+- annonce : semaine du 15 juin = liste des 50 meilleurs mots-clés + stratégie étape par étape
