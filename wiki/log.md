@@ -864,3 +864,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - leexi-seo : 2 wikilinks vers le vault privé retirés du call de découverte (repo transférable)
 - ./kb rebuild fait (5 584 chunks)
 - non tranché (décision Tim) : convention de slug pour les collisions clients (leexi/golfiller) + doublon quotidien revue-presse écrit à 2 endroits par la routine
+
+## [2026-06-12] audit | Audit des automatisations (16 inventoriées, vérifiées par leurs outputs)
+- output: [[2026-06-12-audit-automatisations]]
+- cassées : GH Actions seo-kb (claude --print sans prompt, ~3 sem.), résurgence (exit 1 depuis le 16 mai), pg_cron lifecycle zombie (401 horaire), doublons breves_wall
+- 8 nouvelles automatisations proposées (health check méta, export RAG auto, rebuild post-pull, purge -vN, draft jeudi LinkedIn, indexation-check mensuel, résolution prédictions, relance questionnaire)
