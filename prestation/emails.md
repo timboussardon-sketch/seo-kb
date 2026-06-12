@@ -28,9 +28,9 @@ Exemple réel (Alexia, 2026-06-11) :
 >
 > C'est OK pour toi ? :)
 
-## §2 — Email de livraison de jalon (audit + stratégie en ligne, annonce de la suite)
+## §2 — Premier rapport semaine 1 (nouvelle prestation SEO)
 
-Quand : un ou plusieurs onglets de l'espace client viennent d'être alimentés. Structure (exemple Leexi 2026-06-12, verbatim dans le brouillon Gmail) :
+Quand : fin de la première semaine d'une nouvelle prestation, quand l'audit et la stratégie mots-clés viennent d'être mis en ligne sur l'espace client. C'est LE modèle du premier rapport : il montre que le travail a commencé, donne les chiffres qui comptent et fixe le rendez-vous de la semaine 2. Structure (exemple Leexi 2026-06-12, verbatim dans le brouillon Gmail) :
 1. Une phrase d'ouverture : ce qui est en ligne, en version simplifiée et lisible.
 2. Le lien de l'espace, seul sur sa ligne.
 3. Un paragraphe par onglet livré : le point central en chiffres (jamais la liste exhaustive), et la phrase de confiance « tout est chiffré depuis votre Search Console, rien n'est estimé ».
