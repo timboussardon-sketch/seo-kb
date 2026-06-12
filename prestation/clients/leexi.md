@@ -28,7 +28,10 @@ Prochaine action : plan arrêté par Tim le 2026-06-12 : 1) optimiser les 20 mei
 
 | 2026-06-12 | 6 | recherche de mots-clés 4 clusters (cadrage Tim) : problématiques avant/pendant/après réunion × 3 personas, bas de funnel, 1 page par fonctionnalité + outils gratuits, RGPD/souveraineté ; 425 suggestions Google Suggest FR + croisement GSC, zéro volume inventé | `leexi-seo/production/recherche-mots-cles-2026-06-12.md` + onglet Mots-clés de l'espace client | seo-recherche-mots-cles |
 
+| 2026-06-12 | 14 | assistant de l'espace client connecté au vault Obsidian du client : RAG scopé par projet (kb_chunks.project), 109 chunks leexi ingérés, prompt vouvoiement, widget branché | `leexi-seo/scripts/export-kb-chat.py` + edge functions kb-chat/kb-ingest | aucun |
+
 ## Spécificités client
+- Relancer `python3 scripts/export-kb-chat.py` (repo leexi-seo) après toute session qui modifie le vault, pour que l'assistant de l'espace reste à jour.
 - 1er cas du « système client livrable » 3 repos : seo-kb (privé) / leexi-seo (transférable) / organikk-seo-pack (doctrine vivante en submodule). Tout livrable vit dans le repo client, jamais ailleurs.
 - Croissance GSC globale (+28 %) en trompe-l'œil : marque +45 % masque un hors-marque à −43 %. Toujours séparer branded/non-branded avant de conclure.
 - Souveraineté = argument commercial n°1 mais 0 clic SEO : terrain vierge, dépend de faits de conformité validés juriste avant publication.

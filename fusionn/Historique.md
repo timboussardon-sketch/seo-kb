@@ -2159,3 +2159,9 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - **generate-pseo-strategy** : le playbook 1 « Géolocalisation » est retiré du prompt. 7 playbooks au lieu de 8 (Comparatif, Use Case, Prix, Tutoriel, Intégration, Temporalité, Problème/Solution), renumérotés, exemple JSON et plan 6 mois mis à jour. Règle stricte ajoutée : interdiction de proposer un playbook ou des mots-clés localisés « [requête] + [ville] », même si l'activité a une composante locale. Edge function redéployée.
 - **Bouton « Tout télécharger »** : restauré dans la barre de mode du workspace (il avait été retiré le 30 mai avec « Copier le brief » et « Rechercher »), mais en export CSV au lieu d'Excel : un zip contenant un CSV par onglet (séparateur `;`, BOM UTF-8 pour Excel FR) + un `00-sommaire.csv` (mot-clé, contexte, date, liste des fichiers). Implémentation : `src/lib/csvGenerator.ts` (JSZip, nouvelle dépendance), réutilise `buildAllSections()` extrait de `xlsxGenerator.ts` (refactor partagé Excel/CSV, l'export Excel reste intact).
 - Build vert, commit `0de4243` poussé (auto-deploy Netlify).
+
+## 2026-06-12 — kb-chat multi-corpus (espaces clients)
+- `kb_chunks` : colonne `project` (défaut `seo-kb`, index) ; `match_kb_chunks(query_embedding, match_count, filter_project)` remplace la version non filtrée (ancienne signature supprimée).
+- `kb-ingest` : paramètre `project` (slug validé), reset scopé au projet.
+- `kb-chat` : paramètre `project` ; prompt client dédié (vouvoiement, corpus = vault Obsidian du client) quand project ≠ seo-kb ; déployés en `--no-verify-jwt`.
+- 1er corpus client : leexi (109 chunks, 16 fichiers, script `leexi-seo/scripts/export-kb-chat.py`). Testé : « le meilleur mot clé ? » répond depuis la recherche mots-clés Leexi, plus depuis la base de Tim.

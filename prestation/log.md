@@ -76,3 +76,7 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 ## [2026-06-12] leexi | plan | ordre d'exécution arrêté par Tim
 - 1) optimisation des 20 meilleures pages business, 2) mots-clés proches de l'intention d'achat, 3) modèles programmatique SEO
 - remplace le plan en 4 blocs du diagnostic ; réparations refonte absorbées par l'étape 1
+
+## [2026-06-12] leexi | étape 14 | assistant de l'espace connecté au vault client (RAG scopé project=leexi)
+- kb_chunks.project + match filtré + prompt client vouvoiement ; 109 chunks (16 fichiers)
+- règle durable : un assistant d'espace client répond sur le vault DU client, sinon pas de widget
