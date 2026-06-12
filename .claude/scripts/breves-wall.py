@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Publie les brèves IA sur le wall d'actualités d'organikk.co.
 
-Pipeline : parse les éditions de agent-synthetic/revuedepressIA/breves-IA/,
-condense chaque brève en UNE ligne (via `claude -p`, couvert par l'abonnement),
-et upsert dans la table Supabase `breves_wall` (projet Fusionn). La page
-/actualites d'organikk lit cette table côté navigateur : aucune build Netlify.
+Pipeline : parse les éditions de agent-synthetic/revuedepressIA/breves-IA/ et
+upsert dans la table Supabase `breves_wall` (projet Fusionn). Les brèves passent
+VERBATIM : le titre et le corps sont exactement ceux de l'édition Obsidian,
+aucune réécriture (règle de Tim, 2026-06-12). La page /actualites d'organikk
+lit cette table côté navigateur : aucune build Netlify.
 
 Lancé par launchd (com.tim.breves-wall) après l'auto-pull de midi, ou à la main :
-    python3 .claude/scripts/breves-wall.py [--backfill N]
+    python3 .claude/scripts/breves-wall.py [--backfill N] [--force]
+    (--force : republie aussi les éditions déjà présentes, p.ex. après un
+     changement de format)
 """
 import json
 import re
@@ -20,7 +23,6 @@ VAULT = Path(__file__).resolve().parents[2]
 BREVES_DIR = VAULT / 'agent-synthetic' / 'revuedepressIA' / 'breves-IA'
 SUPABASE_URL = 'https://fwhfnzbtlddzfxbsejyf.supabase.co'
 PROJECT_REF = 'fwhfnzbtlddzfxbsejyf'
-MAX_LINE = 120
 
 def service_key() -> str:
     import time
@@ -79,45 +81,25 @@ def parse_edition(path: Path):
         out.append((pos, title, clean_body(m.group(3)), src.group(2), src.group(1)))
     return out
 
-def condense(titles: list[str]) -> list[str]:
-    """Une ligne ultra courte par titre, via claude -p. Fallback : troncature."""
-    numbered = '\n'.join(f'{i+1}. {t}' for i, t in enumerate(titles))
-    prompt = (
-        "Condense chacune de ces brèves search/IA en UNE ligne de "
-        f"{MAX_LINE} caractères maximum, factuelle, en français, qui garde l'acteur, "
-        "le fait et le chiffre clé s'il y en a un. Aucun chiffre inventé, aucun tiret cadratin. "
-        "Réponds UNIQUEMENT avec un tableau JSON de chaînes, dans le même ordre, sans rien d'autre.\n\n"
-        + numbered
-    )
-    try:
-        out = subprocess.run(['claude', '-p', prompt], capture_output=True, text=True, timeout=300).stdout.strip()
-        out = re.sub(r'^```(json)?|```$', '', out, flags=re.M).strip()
-        lines = json.loads(out)
-        if isinstance(lines, list) and len(lines) == len(titles):
-            return [str(l)[:MAX_LINE + 20] for l in lines]
-    except Exception as e:
-        print(f'  condensation claude -p en échec ({e}), fallback troncature', file=sys.stderr)
-    return [t[:MAX_LINE].rsplit(' ', 1)[0] + '…' if len(t) > MAX_LINE else t for t in titles]
-
 def main():
     backfill = int(sys.argv[sys.argv.index('--backfill') + 1]) if '--backfill' in sys.argv else 1
+    force = '--force' in sys.argv
     key = service_key()
     done = {r['edition'] for r in rest('GET', '/breves_wall?select=edition', key)}
     editions = sorted(p for p in BREVES_DIR.glob('*-breves*.md'))[-backfill:]
     total = 0
     for path in editions:
         edition = path.stem
-        if edition in done:
+        if edition in done and not force:
             continue
         date = re.match(r'(\d{4}-\d{2}-\d{2})', edition).group(1)
         items = parse_edition(path)
         if not items:
             print(f'{edition} : aucune brève parsée, on saute')
             continue
-        lines = condense([t for _, t, _, _, _ in items])
         rows = [
-            {'edition': edition, 'edition_date': date, 'position': pos, 'line': line, 'body': body, 'url': url, 'source': source}
-            for (pos, _, body, url, source), line in zip(items, lines)
+            {'edition': edition, 'edition_date': date, 'position': pos, 'line': title, 'body': body, 'url': url, 'source': source}
+            for (pos, title, body, url, source) in items
         ]
         rest('POST', '/breves_wall?on_conflict=edition,position', key, rows)
         print(f'{edition} : {len(rows)} lignes publiées')
