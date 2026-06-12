@@ -850,3 +850,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - résurgence: 4 mercredis muets, ticket ops inchangé
 - fil rouge: instrumentation client (Golfiller ledger + 2 exports GSC en 24h) ; sélection mots-clés sort du suivi rituel (résolu hors wiki)
 - output: [[revue-hebdo/2026-W24]]
+
+## [2026-06-12] audit | Audit hygiène du vault (à la demande)
+- output: [[2026-06-12-audit]]
+- 733 fichiers, 5 923 wikilinks : 103 cassés (60 réels), 216 orphelins (~150 structurels), 10 collisions, 0 frontmatter
+- priorités : concepts/cannibalisation à créer, brouillons -v2/-v3 revuedepressIA à purger, convention slugs clients
+- bonus : vault leexi-seo contrôlé (2 cassés = références seo-kb dans un repo transférable)
