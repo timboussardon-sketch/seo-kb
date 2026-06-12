@@ -72,3 +72,7 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - retenus : comparatifs/migration, intégrations, problématiques, cas d'usage métier, outils gratuits, sécurité C4, tutoriels vidéo
 - écartés : géolocalisation (requêtabilité humaine), prix/support d'outils tiers (impressions sous-exploitées)
 - output : section 05 onglet Mots-clés + production/recherche-mots-cles-2026-06-12.md
+
+## [2026-06-12] leexi | plan | ordre d'exécution arrêté par Tim
+- 1) optimisation des 20 meilleures pages business, 2) mots-clés proches de l'intention d'achat, 3) modèles programmatique SEO
+- remplace le plan en 4 blocs du diagnostic ; réparations refonte absorbées par l'étape 1

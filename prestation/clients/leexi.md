@@ -8,7 +8,7 @@
 
 ## Où on en est
 Étape courante : 6 (mots-clés business, recherche faite)
-Prochaine action : clustering (1 cluster = 1 page) + priorisation, et toujours l'arbitrage Bloc 1 (réparation refonte) en parallèle
+Prochaine action : plan arrêté par Tim le 2026-06-12 : 1) optimiser les 20 meilleures pages business, 2) mots-clés proches de l'intention d'achat, 3) programmatique SEO (modèles). Démarrer par l'étape 1
 
 ## Accès et data
 - GSC : oui (4 exports dans `leexi-seo/data/gsc/`, manque l'export requête × page) · GA4 : non
