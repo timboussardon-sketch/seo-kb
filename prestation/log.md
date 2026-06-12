@@ -67,3 +67,8 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 ## [2026-06-12] leexi | étape 6 | recherche mots-clés 4 clusters (data réelle Suggest + GSC)
 - output: leexi-seo/production/recherche-mots-cles-2026-06-12.md + onglet Mots-clés espace client (Live)
 - skill: seo-recherche-mots-cles ; suite: seo-clustering-mots-cles
+
+## [2026-06-12] leexi | étape 6+8 | matrice pSEO (CSV Tim) confrontée à la data + réconciliation modèles×clusters
+- retenus : comparatifs/migration, intégrations, problématiques, cas d'usage métier, outils gratuits, sécurité C4, tutoriels vidéo
+- écartés : géolocalisation (requêtabilité humaine), prix/support d'outils tiers (impressions sous-exploitées)
+- output : section 05 onglet Mots-clés + production/recherche-mots-cles-2026-06-12.md
