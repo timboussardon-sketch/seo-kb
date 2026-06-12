@@ -31,6 +31,13 @@ def main() -> int:
     tok = token()
     bw = api("/accounts/tim-boussardon/bandwidth", tok)
     start = bw["period_start_date"][:10]
+    # Recharge de crédits : la baseline repart de la date du top up si plus récente.
+    import os
+    base_file = os.path.expanduser("~/.config/seo-kb/netlify-budget-baseline")
+    if os.path.exists(base_file):
+        override = open(base_file).read().strip()[:10]
+        if override > start:
+            start = override
     sites = [s for s in api("/sites?per_page=100", tok) if s.get("build_settings", {}).get("repo_url")]
     total = 0
     lines = []
