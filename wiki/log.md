@@ -875,3 +875,7 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - verdict proposé: à mettre à jour (opérationnalisation 4 piliers non répercutée, confidence high→medium tant que H-003 ouvert, sources 6→11)
 - confirmations depuis updated: [[sources/2026-04-15-opendecoder-seo-scoring-system]] · [[sources/2026-04-25-scan-arxiv-25-avril]]
 - contradiction: N
+
+## [2026-06-12] maintenance | Réparations automatisations + 7 nouvelles mises en place
+- réparé : pg_cron zombie, doublons breves_wall (+contrainte), résurgence (OK ce soir), GH Actions migrées en launchd local
+- nouveaux agents : health-check lundi, autopull étendu (rebuild+exports RAG), purge-drafts dimanche, jeudi-recap, indexation-check mensuel, predictions-resolve mensuel, audit-vault + algorithme-recap locaux

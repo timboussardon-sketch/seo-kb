@@ -62,3 +62,11 @@ L'édition 2026-06-11 existe en double sur au moins les positions 2, 6, 8, 10 (c
 ## Liens
 
 [[2026-06-12-audit]] · [[concepts/cannibalisation]]
+
+## 🔧 Réparations et mises en place (soir du 2026-06-12)
+
+- **pg_cron zombie supprimé** (`cron.unschedule('lifecycle-emails-daily')`) ; **breves_wall dédupliquée** (90 lignes uniques) + contrainte unique (edition_date, position).
+- **Résurgence réparée** : le 401 était transitoire (auth CLI), run manuel OK, résurgence du 2026-06-12 générée et poussée. Le launchd du mercredi reprendra normalement.
+- **GH Actions** : cause racine = secret `ANTHROPIC_API_KEY` absent du repo (en plus du prompt `--print` cassé, corrigé via stdin + bump Node 24). Décision : migration vers le pattern launchd local qui marche (abonnement, pas de crédits API) : `com.tim.audit-vault` (dim. 8h) et `com.tim.algorithme-recap` (dim. 9h) ; les workflows GH passent en déclenchement manuel uniquement.
+- **Nouvelles automatisations actives** : `com.tim.health-automations` (lun. 8h15, rapport dans wiki/ops/ + notification macOS, branchera ops-alert si `~/.config/seo-kb/ops-alert.env` est déposé) ; autopull de midi étendu (rebuild ./kb + export RAG bootcamp + exports RAG clients si HEAD a bougé) ; `com.tim.purge-drafts` (dim. 11h50) ; `com.tim.jeudi-recap` (jeu. 7h, draft 4 infos LinkedIn) ; `com.tim.indexation-check` (le 5 du mois, 3 sites) ; `com.tim.predictions-resolve` (le 3 du mois, ledgers content-brain via GSC).
+- Non retenue (décision Tim) : la relance questionnaire client (proposition 8).

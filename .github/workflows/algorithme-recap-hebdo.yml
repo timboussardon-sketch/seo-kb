@@ -1,10 +1,10 @@
 name: Algorithme Recap Hebdo
 
 on:
-  schedule:
+  # schedule:  # désactivé le 2026-06-12 : remplacé par launchd local (pas de secret API sur le repo)
     # Dimanche 18:00 UTC = 20h Paris été / 19h Paris hiver
     # Tourne après la revue du dimanche (qui sort à 07:00 UTC)
-    - cron: "0 18 * * 0"
+  #   - cron: "0 18 * * 0"
   workflow_dispatch: {}
 
 permissions:
