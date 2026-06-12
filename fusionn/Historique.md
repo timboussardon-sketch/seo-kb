@@ -2153,3 +2153,9 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - `persist()` : insert → **upsert** `onConflict (watchlist_id, dedup_key), ignoreDuplicates` (3 erreurs duplicate key constatées quand deux scans de la même watchlist se chevauchent).
 
 **Validation** : 3 vagues forcées (PATCH last_run_at=null + workflow_dispatch) → workflows verts en 10-28 s, 90 scans done, 0 erreur après l'upsert. Limite connue : sous forte concurrence le worker refuse une partie des déclenchements (réponses non-2xx ignorées par le cron) ; les watchlists restent « dues » et sont rattrapées au run suivant, auto-cicatrisant au quotidien.
+
+## [2026-06-12] pSEO sans géolocalisation + retour du bouton « Tout télécharger » (CSV)
+
+- **generate-pseo-strategy** : le playbook 1 « Géolocalisation » est retiré du prompt. 7 playbooks au lieu de 8 (Comparatif, Use Case, Prix, Tutoriel, Intégration, Temporalité, Problème/Solution), renumérotés, exemple JSON et plan 6 mois mis à jour. Règle stricte ajoutée : interdiction de proposer un playbook ou des mots-clés localisés « [requête] + [ville] », même si l'activité a une composante locale. Edge function redéployée.
+- **Bouton « Tout télécharger »** : restauré dans la barre de mode du workspace (il avait été retiré le 30 mai avec « Copier le brief » et « Rechercher »), mais en export CSV au lieu d'Excel : un zip contenant un CSV par onglet (séparateur `;`, BOM UTF-8 pour Excel FR) + un `00-sommaire.csv` (mot-clé, contexte, date, liste des fichiers). Implémentation : `src/lib/csvGenerator.ts` (JSZip, nouvelle dépendance), réutilise `buildAllSections()` extrait de `xlsxGenerator.ts` (refactor partagé Excel/CSV, l'export Excel reste intact).
+- Build vert, commit `0de4243` poussé (auto-deploy Netlify).
