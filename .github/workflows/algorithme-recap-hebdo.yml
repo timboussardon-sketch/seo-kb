@@ -18,14 +18,14 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Install Claude Code CLI
         run: npm install -g @anthropic-ai/claude-code
@@ -49,10 +49,9 @@ jobs:
       - name: Generate recap
         if: steps.check.outputs.exists == 'false'
         run: |
-          claude --print \
+          printf '%s' "Lance le skill algorithme-recap-hebdo. Date du jour : ${{ steps.week.outputs.today }}. Numéro de semaine ISO : ${{ steps.week.outputs.week }}. Output : wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md." | claude --print \
             --permission-mode acceptEdits \
-            --allowed-tools "Read,Write,Edit,Bash,Glob,Grep" \
-            "Lance le skill algorithme-recap-hebdo. Date du jour : ${{ steps.week.outputs.today }}. Numéro de semaine ISO : ${{ steps.week.outputs.week }}. Output : wiki/syntheses/algorithme-week-${{ steps.week.outputs.week }}.md."
+            --allowed-tools "Read,Write,Edit,Bash,Glob,Grep"
 
       - name: Verify output exists
         if: steps.check.outputs.exists == 'false'
