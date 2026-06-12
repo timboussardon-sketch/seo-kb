@@ -2165,3 +2165,10 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - `kb-ingest` : paramètre `project` (slug validé), reset scopé au projet.
 - `kb-chat` : paramètre `project` ; prompt client dédié (vouvoiement, corpus = vault Obsidian du client) quand project ≠ seo-kb ; déployés en `--no-verify-jwt`.
 - 1er corpus client : leexi (109 chunks, 16 fichiers, script `leexi-seo/scripts/export-kb-chat.py`). Testé : « le meilleur mot clé ? » répond depuis la recherche mots-clés Leexi, plus depuis la base de Tim.
+
+## [2026-06-12] Lifecycle emails : requalification selon l'avancée du compte
+
+- Demande Tim : un email en file doit refléter l'état RÉEL du compte à l'envoi (cas vu : un inscrit fait son analyse entre l'enqueue et le run, et reçoit quand même l'email d'activation).
+- `enqueue_lifecycle_emails()` ajoute désormais une passe (0) de requalification : suppression des `pending` dont le segment ne tient plus (activation si ≥1 analyse, nudge_1 si ≠1, nudge_2 si ≠2, réengagement si analyse <14j, premium_click si abonné, premium_onboarding si plus abonné). DELETE et pas `skipped` : l'unicité (user, sequence) permet ainsi une remise en file future légitime.
+- Incident en route : la migration 20260612120000 a écrasé le RPC prod avec l'ancienne segmentation `search_history` (la prod tournait sur `site_crawls done` depuis 20260530200000) → 46 mises en file erronées. Correctif 20260612130000 : purge totale des `pending` + redéfinition sur la bonne base. Rien n'est parti à tort (les envois n'ont lieu qu'au run quotidien).
+- Vérif post-fix : 0 pending, RPC insère 0 (état stable). Les 10 envois de la semaine étaient légitimes.
