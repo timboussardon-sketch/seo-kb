@@ -59,8 +59,15 @@ def rest(method: str, path: str, key: str, body=None):
                 raise
             time.sleep(3 * (attempt + 1))
 
+def clean_body(raw: str) -> str:
+    """Texte de la brève en clair : sans la ligne Sources, sans markdown."""
+    body = re.split(r'\n\*Sources\s*:', raw)[0]
+    body = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', body)
+    body = body.replace('**', '').replace('*', '')
+    return re.sub(r'\s+', ' ', body).strip()
+
 def parse_edition(path: Path):
-    """Retourne [(position, titre, url, source)] pour une édition."""
+    """Retourne [(position, titre, body, url, source)] pour une édition."""
     text = path.read_text(encoding='utf-8')
     out = []
     for m in re.finditer(r'\*\*(\d+)\.\s+(.+?)\*\*(.*?)(?=\n---|\Z)', text, re.S):
@@ -69,7 +76,7 @@ def parse_edition(path: Path):
         src = re.search(r'\*Sources\s*:\s*\[([^\]]+)\]\((https?://[^)]+)\)', m.group(3))
         if not src:
             continue
-        out.append((pos, title, src.group(2), src.group(1)))
+        out.append((pos, title, clean_body(m.group(3)), src.group(2), src.group(1)))
     return out
 
 def condense(titles: list[str]) -> list[str]:
@@ -107,10 +114,10 @@ def main():
         if not items:
             print(f'{edition} : aucune brève parsée, on saute')
             continue
-        lines = condense([t for _, t, _, _ in items])
+        lines = condense([t for _, t, _, _, _ in items])
         rows = [
-            {'edition': edition, 'edition_date': date, 'position': pos, 'line': line, 'url': url, 'source': source}
-            for (pos, _, url, source), line in zip(items, lines)
+            {'edition': edition, 'edition_date': date, 'position': pos, 'line': line, 'body': body, 'url': url, 'source': source}
+            for (pos, _, body, url, source), line in zip(items, lines)
         ]
         rest('POST', '/breves_wall?on_conflict=edition,position', key, rows)
         print(f'{edition} : {len(rows)} lignes publiées')
