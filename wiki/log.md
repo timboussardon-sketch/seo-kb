@@ -869,3 +869,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - output: [[2026-06-12-audit-automatisations]]
 - cassées : GH Actions seo-kb (claude --print sans prompt, ~3 sem.), résurgence (exit 1 depuis le 16 mai), pg_cron lifecycle zombie (401 horaire), doublons breves_wall
 - 8 nouvelles automatisations proposées (health check méta, export RAG auto, rebuild post-pull, purge -vN, draft jeudi LinkedIn, indexation-check mensuel, résolution prédictions, relance questionnaire)
+
+## [2026-06-12] resurgence | [[concepts/grounding-score]] — verdict proposé
+- note: [[revue-hebdo/resurgence-2026-06-12]]
+- verdict proposé: à mettre à jour (opérationnalisation 4 piliers non répercutée, confidence high→medium tant que H-003 ouvert, sources 6→11)
+- confirmations depuis updated: [[sources/2026-04-15-opendecoder-seo-scoring-system]] · [[sources/2026-04-25-scan-arxiv-25-avril]]
+- contradiction: N
