@@ -200,7 +200,8 @@ status: stable
 - [[concepts/entites-vectorielles]] — Cartographie sémantique pour alignement cosinus (1 source)
 - [[concepts/purete-vectorielle]] — Une page = une intention (3 sources)
 
-### SEO technique (3)
+### SEO technique (4)
+- [[concepts/cannibalisation]] — Pages en conflit sur la même intention, types et remèdes (2 sources)
 - [[concepts/weight-decay]] — Forgetting gate / biais de récence (2 sources)
 - [[concepts/passage-ranking]] — Ranker un passage spécifique (1 source)
 - [[concepts/rrf]] — Reciprocal Rank Fusion (stub)

@@ -119,7 +119,7 @@
     "backrefs": [
       "agent-synthetic/memory/calibration.md",
       "agent-synthetic/revuedepressIA/2026-06-09-revue-presse-v2.md",
-      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
@@ -229,12 +229,14 @@
       "agent-synthetic/memory/directives.md",
       "agent-synthetic/memory/questions.md",
       "agent-synthetic/revuedepressIA/2026-06-08-revue-presse-v2.md",
-      "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-09-revue-presse-v2.md",
-      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-10-revue-presse-v2.md",
-      "agent-synthetic/revuedepressIA/2026-06-10-revue-presse.md",
-      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-12-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse-v2.md",
@@ -375,7 +377,7 @@
       "passage-ancre"
     ],
     "backrefs": [
-      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "wiki/concepts/agentic-search.md",
@@ -391,6 +393,7 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-redaction.md",
+      "wiki/preuves/2026-06-12-golfiller-instrumentation-client.md",
       "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
       "wiki/sources/2026-04-13-sageo-arena-2025.md",
       "wiki/sources/2026-04-13-searchllm-2026.md",
@@ -840,6 +843,42 @@
     "title": "Bootcamp SEO IA (produit Tim)",
     "type": "entity"
   },
+  "cannibalisation": {
+    "aliases": [
+      "cannibalisation",
+      "keyword cannibalism",
+      "cannibalisation de mots-clés"
+    ],
+    "backrefs": [
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-29-audit.md",
+      "wiki/audit/2026-06-12-audit.md",
+      "wiki/briefs/2026-06-10-balle-golf-distance.md",
+      "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
+      "wiki/index.md",
+      "wiki/queries/2026-06-10-golfiller-gsc-90j.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/cannibalisation.md",
+    "outlinks": [
+      "analyse-gsc-approfondie-leexi",
+      "modeles-pseo-2026-06-10-golfiller",
+      "know-simple-know-do",
+      "gsc",
+      "golfiller"
+    ],
+    "status": "stable",
+    "tags": [
+      "seo",
+      "cannibalisation",
+      "gsc",
+      "architecture"
+    ],
+    "title": "Cannibalisation SEO",
+    "type": "concept"
+  },
   "caroline": {
     "aliases": [
       "caroline-prospect",
@@ -920,11 +959,11 @@
       "openai-search"
     ],
     "backrefs": [
-      "agent-synthetic/revuedepressIA/breves-IA/2026-06-04-breves.md",
       "agent-synthetic/revuedepressIA/breves-IA/2026-06-05-breves.md",
       "agent-synthetic/revuedepressIA/breves-IA/2026-06-06-breves-v3.md",
       "agent-synthetic/revuedepressIA/breves-IA/2026-06-07-breves-v2.md",
-      "agent-synthetic/revuedepressIA/breves-IA/2026-06-07-breves.md",
+      "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-04-breves.md",
+      "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-07-breves.md",
       "raw/transcripts/video-erreur-ia-137-pages.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/pseo-data-driven-models.md",
@@ -1101,7 +1140,7 @@
       "agent-synthetic/derived/weekly_review.md",
       "agent-synthetic/memory/questions.md",
       "agent-synthetic/notes/appliquer-la-mecanique-a-la-prod-seo.md",
-      "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v3.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
@@ -1216,6 +1255,7 @@
       "wiki/moc/moc-aeo-geo.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
       "wiki/preuves/2026-05-16-pseo-secteur-ville-data-proprietaire.md",
+      "wiki/preuves/2026-06-12-golfiller-instrumentation-client.md",
       "wiki/preuves/_template.md",
       "wiki/preuves/index.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
@@ -1809,12 +1849,15 @@
       "wiki/audit/2026-06-06-audit-vault-liens.md",
       "wiki/briefs/2026-06-10-balle-golf-distance.md",
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
+      "wiki/concepts/cannibalisation.md",
       "wiki/index.md",
       "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
+      "wiki/preuves/2026-06-12-golfiller-instrumentation-client.md",
       "wiki/queries/2026-06-10-golfiller-dataset-vitesse-distance.md",
       "wiki/queries/2026-06-10-golfiller-gsc-6mois.md",
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md",
       "wiki/queries/entites-2026-06-10-golfiller-balle-de-golf.md",
+      "wiki/revue-hebdo/2026-W24.md",
       "wiki/sources/2026-06-10-golfiller-gsc-6mois.md",
       "wiki/syntheses/audit-doctrine-2026.md"
     ],
@@ -1847,9 +1890,9 @@
       "ai-mode"
     ],
     "backrefs": [
-      "agent-synthetic/revuedepressIA/breves-IA/2026-06-03-breves-v2.md",
       "agent-synthetic/revuedepressIA/breves-IA/2026-06-04-breves-v2.md",
-      "agent-synthetic/revuedepressIA/breves-IA/2026-06-06-breves.md",
+      "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-03-breves-v2.md",
+      "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-06-breves.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
       "wiki/concepts/aeo.md",
@@ -2078,6 +2121,7 @@
       "raw/organikk/pré-call/centrale-directe-call.md",
       "wiki/audit/2026-05-11-audit.md",
       "wiki/audit/2026-05-21-audit-vault.md",
+      "wiki/concepts/cannibalisation.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-03-13-algorithme-agents-seo-consultants.md",
@@ -2520,6 +2564,7 @@
       "wiki/briefs/maillage-interne-claude.md",
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/cannibalisation.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/organikk-co.md",
       "wiki/index.md",
@@ -2857,10 +2902,12 @@
       "agent-synthetic/memory/calibration.md",
       "agent-synthetic/memory/directives.md",
       "agent-synthetic/memory/questions.md",
-      "agent-synthetic/revuedepressIA/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-09-revue-presse-v2.md",
-      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
-      "agent-synthetic/revuedepressIA/2026-06-10-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-12-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-citations-multimoteurs.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse-v2.md",
@@ -2924,6 +2971,7 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
+      "wiki/revue-hebdo/2026-W24.md",
       "wiki/sources/2026-04-12-organikk-glossaire-scrape.md",
       "wiki/sources/2026-04-13-miras-architecture.md",
       "wiki/syntheses/4-piliers-organikk.md",
@@ -3023,7 +3071,6 @@
       "wiki/entities/gsc.md",
       "wiki/entities/organikk-co.md",
       "wiki/index.md",
-      "wiki/ingest-backlog.md",
       "wiki/keywords/clustering-2026-05-28-agence-seo.md",
       "wiki/keywords/decisionnels-2026-05-28-agence-seo.md",
       "wiki/keywords/index.md",
@@ -3056,6 +3103,7 @@
       "wiki/revue-hebdo/2026-W20.md",
       "wiki/revue-hebdo/2026-W21.md",
       "wiki/revue-hebdo/2026-W22.md",
+      "wiki/revue-hebdo/2026-W24.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
     "confidence": "high",
@@ -3432,7 +3480,7 @@
       "passage-indexing"
     ],
     "backrefs": [
-      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu-light.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
@@ -3511,7 +3559,7 @@
       "perplexity-ai"
     ],
     "backrefs": [
-      "agent-synthetic/revuedepressIA/breves-IA/2026-06-06-breves-v2.md",
+      "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-06-breves-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-05-revue-presse.md",
       "raw/organikk/pré-call/centrale-directe.md",
       "wiki/concepts/aeo.md",
@@ -3696,7 +3744,7 @@
       "agent-synthetic/memory/calibration.md",
       "agent-synthetic/memory/questions.md",
       "agent-synthetic/revuedepressIA/2026-06-08-revue-presse-v2.md",
-      "agent-synthetic/revuedepressIA/2026-06-10-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "prestation/roadmap.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
@@ -4491,7 +4539,7 @@
     ],
     "backrefs": [
       "AGENTS.md",
-      "agent-synthetic/revuedepressIA/breves-IA/2026-06-03-breves.md",
+      "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-03-breves.md",
       "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
       "wiki/concepts/confidence-score.md",
       "wiki/concepts/triade-serp.md",
@@ -4535,7 +4583,8 @@
     ],
     "backrefs": [
       "agent-synthetic/memory/calibration.md",
-      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
@@ -4789,7 +4838,7 @@
     "backrefs": [
       "AGENTS.md",
       "agent-synthetic/memory/calibration.md",
-      "agent-synthetic/revuedepressIA/2026-06-11-revue-presse.md",
+      "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-05.md",
       "raw/notes/analyse-calls-prospects-bootcamp.md",

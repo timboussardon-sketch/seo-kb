@@ -25,7 +25,7 @@ Output : doc pré-call. Skills : aucun (gabarit pré-call). Statut : éprouvé.
 
 **3. Analyse GSC (la première vraie passe data)**
 Export pages + requêtes, en 90 jours ET en 6 mois comparé. En sortir : winners/losers, part branded vs non-branded, striking distance (pos 5-15, fortes impressions), CTR faible en bonne position, érosion de position, signaux pSEO (long tail sur une URL).
-Input : 4 CSV GSC. Output : `wiki/queries/<date>-<slug>-gsc-*.md` + CSV dans `raw/data/exports-gsc/`. Skills : analyse GSC + [[maillage-interne-gsc]] + [[seo-cannibalisation]]. Statut : éprouvé (golfiller).
+Input : 4 CSV GSC. Output : `wiki/queries/<date>-<slug>-gsc-*.md` + CSV dans `raw/data/exports-gsc/`. Skills : analyse GSC + `maillage-interne-gsc` + [[seo-cannibalisation]]. Statut : éprouvé (golfiller).
 Restitution client : Google Doc qui ouvre sur « En résumé : les 3 à 5 points à retenir », jargon traduit en langage métier, chiffres uniquement issus de la data, PUIS le même diagnostic dans l'onglet Audit de l'espace client (tiles KPI, plan d'action ordonné par Tim) (éprouvé Leexi 2026-06-12).
 
 **4. Audit d'indexation**

@@ -856,3 +856,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - 733 fichiers, 5 923 wikilinks : 103 cassés (60 réels), 216 orphelins (~150 structurels), 10 collisions, 0 frontmatter
 - priorités : concepts/cannibalisation à créer, brouillons -v2/-v3 revuedepressIA à purger, convention slugs clients
 - bonus : vault leexi-seo contrôlé (2 cassés = références seo-kb dans un repo transférable)
+
+## [2026-06-12] maintenance | Traitement de l'audit du jour (P1 + P2 + quick wins)
+- 16 brouillons -vN archivés dans agent-synthetic/revuedepressIA/_archive/ (et breves-IA/_archive/) : seule la version finale de chaque édition reste indexée
+- créé : [[concepts/cannibalisation]] (types de conflit, remèdes, déclencheurs, doctrine) + entrée index
+- quick wins : [[ton-de-voix-tim]] → backticks dans _loop-kit/_template/ (3 fichiers), [[maillage-interne-gsc]] → backticks dans prestation/roadmap.md
+- leexi-seo : 2 wikilinks vers le vault privé retirés du call de découverte (repo transférable)
+- ./kb rebuild fait (5 584 chunks)
+- non tranché (décision Tim) : convention de slug pour les collisions clients (leexi/golfiller) + doublon quotidien revue-presse écrit à 2 endroits par la routine
