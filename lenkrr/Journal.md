@@ -331,3 +331,22 @@ fgformation est sous **Elementor** : il rend depuis `_elementor_data` et IGNORE 
 ### RESTE
 - Fix A (diversification) : à appliquer dans engine.ts une fois la réécriture de l'autre agent commitée.
 - Support page builder (Elementor) : décision produit — soit on écrit dans `_elementor_data` (gros), soit on assume « leenq n'édite que le contenu classique ».
+
+## Corrections core du moteur de maillage — faites et vérifiées (2026-06-13)
+
+Suite au ratage fgformation, Tim a dit « fait le » : j'ai appliqué les corrections P0 sur le moteur (sur la base WIP de l'autre agent, qu'il a autorisé à embarquer car couplé). Commit `8d06464`.
+
+### Fait (engine.ts), vérifié sur fgformation (run connecteur, 215 pages)
+- **Plafond** `MAX_ANALYZE` 100 → 600 : fini la troncature des sites 200+ pages.
+- **dead_end** basé sur `hostInternalOut` (vrais liens internes, même vers pages hors lot), plus sur les seules arêtes du lot.
+- **Diversification d'ancres** dans le générateur issu du plan : 1 exact/cible puis partiel (titre raccourci distinct)/sémantique en rotation.
+- **Résultat avant→après** : analysées 100/215→**215/215**, arêtes **36→482**, page test `devenir-…-sans-diplome` `outbound:0`(fausse orpheline)→**`outbound:2 inbound:1 OK`**, ancres 9×exact→**20/18/12**.
+
+### Reste (non bloquant)
+- P1 libellé de page quand `<title>` dupliqué (crawl.ts) — laissé : fichier le plus en mouvement chez l'autre agent, cosmétique côté connecteur.
+- P1 crawl des sites rendus côté client + état des embeddings.
+- Sites > 600 pages : prévoir pagination/streaming.
+- orphan/inbound ne voit que les sources éditoriales du lot (une page liée seulement depuis la nav reste « orpheline ») — limite doctrine assumée.
+
+### Note couplage
+Le commit `8d06464` embarque la réécriture moteur en cours de l'autre agent (analyzeCrawl light + crawl.ts/net.ts/analyze route), indissociable d'engine.ts au commit. Build type-check + run connecteur OK. Relevé complet et à jour dans `leenq/docs/core-fixes.md`.
