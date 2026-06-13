@@ -276,3 +276,36 @@ Prompt **byte-identique** tant que la boucle n'a rien appris (0 prior aujourd'hu
 - **RETOUR** : priors → décision Claude (`decide.ts` → edge `lenkrr-plan`) ✅ **(ce sprint)**
 
 La boucle est désormais fermée de bout en bout. Le seul reste, c'est l'amorçage : **tant qu'aucun pari n'est posé** (décision golfiller `/api/bets/backfill` vs hook `/api/apply`), `linking_priors` reste vide et le RETOUR ne fait rien. C'est le prochain blocage à lever pour que tout s'allume.
+
+## Amorçage de la boucle → pivot fgformation + connexion WordPress robuste (2026-06-13)
+
+Objectif de départ : amorcer la boucle d'apprentissage (la faire tourner sur de la vraie donnée). Le travail a dévié, à raison, vers la **fiabilité de la connexion WordPress**, prérequis réel.
+
+### Correctif boucle : `gsc_site` du pari (commit `697c2c0`, poussé)
+Bug qui aurait cassé l'amorçage **en silence** : `/api/apply-plan` enregistrait le pari avec un `sc-domain:<host>` fabriqué, alors que `lenkrr-resolve-bets` interroge l'API GSC avec `gsc_site` **verbatim**. Si la propriété connectée est en **URL-prefix** (`https://host/`, cas de fgformation et golfiller), l'appel échoue → pari `no_data` à vie → priors jamais alimentés. Nouveau `resolveGscSite()` (`lib/db/gsc.ts`) choisit la propriété réellement connectée pour l'hôte (URL-prefix puis sc-domain), repli sur le fabriqué en dernier recours. Câblé `/api/apply-plan` (WordPress) et `/api/apply` (Git).
+
+### Pivot d'amorçage : golfiller → fgformation
+- **golfiller écarté** : Shopify → leenq peut crawler mais pas écrire (write-back = Git/WordPress). Backfiller le maillage existant fausserait les priors (un lien déjà en place n'a pas de fenêtre avant/après). Et son sitemap est **cassé** (boucle de redirection `/sitemap.xml` ↔ `/sitemap_index.xml`, conflit AIOSEO/Yoast/RankMath) — vrai problème SEO client à part.
+- **fgformation retenu** : WordPress → leenq écrit lui-même (révision) et logge le pari automatiquement via `/api/apply-plan`. Propriété GSC `https://fgformation.fr/` **déjà connectée** sous `LENKRR_USER_ID` → résolution J+30 OK. `link_bets` toujours vide.
+- **Friction rencontrée** : login wp-admin masqué (wp-login.php 404, plugin de sécurité), one-click → 403. J'avais donné l'URL `/api/wordpress/login` brute qui court-circuite le pré-vol → mur.
+
+### Connexion WordPress robuste (commit `e11f3ac`, poussé) — décision Tim : « robuste complet », retirer provisionViaLogin du primaire
+Une entrée (URL) → leenq sonde → route vers la méthode qui marchera, jamais de mur ni de spinner infini.
+- `lib/wordpress-capabilities.ts` : `probeWordpress(site)` → profil {isWordpress, appPasswords, loginAccessible, authTransportConfirmed, recommendedMethod ∈ oneclick|manual|blocked, blockers+remèdes}.
+- **Calibrage important** : le discriminateur d'acheminement du header `Authorization` (Basic auth bidon) ne peut que **confirmer** que le transport marche (`invalid_username`/`incorrect_password` = header arrivé). Un **utilisateur inexistant** donne le même `rest_not_logged_in` qu'un header strippé (testé sur ma.tt, wptavern, techcrunch). Donc on ne **bloque jamais** sur ce signal. La détection **certaine** du stripping se fait à `verify()` avec de vrais identifiants → remède `.htaccess`.
+- **NB fgformation** : sa réponse `rest_not_logged_in` au Basic bidon est **ambiguë**, pas une preuve de stripping. On saura seulement en tentant de vrais identifiants. La sonde le route en `manual` (login masqué), pas en `blocked`.
+- `verify()` décodé (`lib/connectors/wordpress.ts`, type `VerifyResult` + `decodeAuthFailure`) : rest_not_logged_in→transport strippé, incorrect_password→mauvais secret, 403→pare-feu.
+- `/api/wordpress/login` **pré-vole** (ne redirige vers authorize-application.php que si oneclick viable, sinon renvoie `/connect?method=manual|blocked&reason=`).
+- `/api/wordpress/health` : santé d'une connexion stockée (app password révoqué).
+- UI `WordPressConnect.tsx` réécrite : fetchs bornés (AbortController+timeout, plus de « Vérification… » infinie), routage auto, remèdes affichés, santé par site + reconnexion. `provisionViaLogin` retiré du primaire (route/lib conservées, non câblées).
+- `lib/wordpress-remedies.ts` : remèdes partagés serveur/client (module pur, pas de Buffer côté bundle).
+- Vérifié en local (:3000) : tsc + `next build` verts, sonde/routage testés sur fgformation (→manual), ma.tt (→oneclick), techcrunch (→oneclick). `/connect` rend en 200, health gère réseau/révoqué sans crash.
+
+### RESTE pour l'amorçage (inchangé, débloqué par la connexion robuste)
+1. **Connecter fgformation** : créer un app password (profil WP, login masqué → URL custom) → le manuel décodé. Si `verify()` renvoie `auth_transport_blocked`, appliquer le remède `.htaccess` AVANT d'aller plus loin.
+2. Lancer l'analyse fgformation via le connecteur WP → plan de liens.
+3. Appliquer une 1re cohorte (révision) → paris datés sur `https://fgformation.fr/`.
+4. Vérifier `link_bets` peuplé → routine résout à J+30 → priors → ledger.
+
+### Note repo
+Pendant la session, des fichiers **non liés** étaient modifiés dans le working tree par un travail parallèle (onboarding, FreeAnalysis, HeroAnalyze, MaillageLoader, crawl.ts, engine.ts, middleware, globals.css…). Laissés **intacts** : mes deux commits ne contiennent que leurs fichiers respectifs.
