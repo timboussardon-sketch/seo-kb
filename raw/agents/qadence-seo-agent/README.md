@@ -2,17 +2,22 @@
 type: agent-source
 slug: qadence-seo-agent
 title: "Qadence — agent SEO connecté GSC (Supabase Edge Function)"
-source_local: "/Users/boussardontimothee/Downloads/Cursor/qadence/supabase/functions/seo-agent/index.ts"
-source_repo: "qadence (Cursor workspace)"
+source_local: "~/Code/qadence/supabase/functions/seo-agent/ (repo timboussardon-sketch/qadence)"
+source_repo: "qadence (GitHub timboussardon-sketch/qadence)"
 runtime: "Deno / Supabase Edge Function"
 date_added: 2026-04-30
+updated: 2026-06-13
 language: typescript
-loc: 2643
+loc: 560
 ---
 
 # Qadence — agent SEO connecté GSC
 
-Edge Function Supabase (Deno + `@supabase/supabase-js`) qui orchestre un [[agentic-search|agent SEO]] augmentant le consultant. Le code complet (system prompt + dispatcher + tool implementations) est dans [`index.ts`](./index.ts).
+> **MISE À JOUR 2026-06-13 — agent reconstruit SOUS CLAUDE.** L'agent ne tourne plus sous Gemini. Le snapshot actuel est dans [`snapshot-2026-06-13-claude/`](./snapshot-2026-06-13-claude/) (`index.ts` + `claude.ts` + `gsc.ts`, ~560 lignes). Le gros `index.ts` (2643 lignes, Gemini, avril) est **conservé pour historique mais périmé**. Tout le reste de cette fiche décrit l'ancienne architecture Gemini.
+>
+> **Architecture Claude (résumé)** : edge `seo-agent` = boucle Claude Messages API (tool-use + streaming SSE) dans `claude.ts` ; GSC dans `gsc.ts` (résolveur tolérant à la fragmentation des sessions). 4 outils : `search_kb` (vault Obsidian via edge `kb-search` → `kb_chunks` pgvector sur le Supabase Fusionn), `gsc_query` (GSC réelle), `load_skill` (doctrine = table `skills`, synchro depuis `~/.claude/skills` via `seo-kb/qadence/sync-skills.py`), `update_memory`. Voix `ton_de_voix_tim` en système. Front = Vite/React (`src/`), plus Next.js. Détail vivant : [[entities/qadence-seo-agent]] + `seo-kb/qadence/Journal.md`.
+
+Edge Function Supabase (Deno + `@supabase/supabase-js`) qui orchestre un [[agentic-search|agent SEO]] augmentant le consultant. **[Section historique Gemini ci-dessous — périmée.]**
 
 ## Ce que fait l'agent
 

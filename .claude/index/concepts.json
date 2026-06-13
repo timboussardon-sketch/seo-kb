@@ -4076,6 +4076,8 @@
       "veilleur"
     ],
     "backrefs": [
+      "qadence/Journal.md",
+      "raw/agents/qadence-seo-agent/README.md",
       "raw/fusionn/README.md",
       "wiki/entities/organikk-co.md",
       "wiki/index.md",

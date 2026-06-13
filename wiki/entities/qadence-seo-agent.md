@@ -38,6 +38,9 @@ Supabase : projet `ytgbnqqmcnhmscbvhoin` (« Radarr »), partagé avec [[project
 
 ## Architecture (snapshot v112, 2026-05-08 — PÉRIMÉ, ère Gemini)
 
+> ⚠️ Tout le bloc qui suit (Architecture, agents cron, Tools, Skills, Tables, Patterns, Garde-fous, TODOs) décrit l'**architecture Gemini d'avril-mai 2026, conservée pour historique**. Pour l'état réel, voir « Refonte sous Claude (2026-06-13) » plus haut. Snapshot code à jour : `raw/agents/qadence-seo-agent/snapshot-2026-06-13-claude/`.
+
+
 | Couche | Stack |
 |---|---|
 | Frontend | Next.js 15 App Router · React 19 · Netlify (`qadence.io`) |

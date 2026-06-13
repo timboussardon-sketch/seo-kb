@@ -2,6 +2,20 @@
 
 Repo : `~/Code/qadence` (GitHub privé `timboussardon-sketch/qadence`). Supabase partagé `ytgbnqqmcnhmscbvhoin` (« Radarr »). Front `src/` (Vite/React) sur Netlify (qadence.io). Vault RAG sur Supabase Fusionn `fwhfnzbtlddzfxbsejyf`.
 
+## État actuel — point de départ (2026-06-13)
+
+Ce qui est **live en prod** et sert de base à la prochaine session :
+- **Agent** : edge `seo-agent` sous Claude (Messages API, streaming SSE). Outils : `search_kb` (vault Obsidian via `kb-search` → `kb_chunks`), `gsc_query` (GSC réelle, résolveur tolérant à la fragmentation des sessions), `load_skill` (doctrine table `skills`), `update_memory`. Voix `ton_de_voix_tim`.
+- **Doctrine** : table `skills` = `~/.claude/skills/seo-*` verbatim, synchro par `qadence/sync-skills.py` (audit : 26 slugs identiques 100 %).
+- **Front** (Vite/React, design Google-mono) : chat + `SkillLauncher` (« + Skills » top bar), `AccountPage` plein écran (Profil/Abonnement/Connexions/Stats), GSC multi-comptes (`gsc-properties`), espace compte + déconnexion.
+- **Déploiement** : backend via `supabase functions deploy … --project-ref ytgbnqqmcnhmscbvhoin` (live direct) ; front via `npm run build` + `netlify deploy --prod --site=0584c0db-0d72-48bd-b7f5-24a231b54959`.
+
+**Prochaines étapes** (non faites) : relier le site Netlify ↔ repo GitHub (auto-deploy) ; agents autonomes (watcher/quickwin/cannibal/cocon) sous Claude pas branchés ; borne GSC gros comptes (edge 150s) ; 9 skills `proprietary` encore en stubs (audit_gsc, faq_*, structure_hn…).
+
+Snapshot code figé : `raw/agents/qadence-seo-agent/snapshot-2026-06-13-claude/`. Connaissance vault : [[entities/qadence-seo-agent]].
+
+---
+
 ## Refonte « qadence = mon système SEO sous Claude » (2026-06-13)
 
 Virage majeur : qadence ne tournait plus côté IA (modèles `gemini-3.1-flash/pro` → **404 model not found**, clé Gemini de qadence HS). Décision de Tim : reconstruire la couche agents **sous Claude** et faire que qadence réponde **avec sa doctrine, ses skills, ses boucles et son vault Obsidian** — « comme si le user était branché sur mon Obsidian ».
