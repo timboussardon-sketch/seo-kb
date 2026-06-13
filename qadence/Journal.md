@@ -73,3 +73,13 @@ Commit + push main + déploiement prod qadence.io. Design Google-mono.
 - Lecture anon de la table `skills` (RLS le permet). Labels nettoyés (retire « Seo », GSC/GEO/pSEO/RRF en capitales), groupés « Skills SEO » / « Méthodes propriétaires », recherche live.
 - Clic = envoie au chat `Lance le skill « X » (load_skill, slug: name) puis applique sa méthode pas à pas sur <domain>` → l'agent charge le skill et l'exécute.
 - Commit + push + déploiement prod qadence.io.
+
+## 2026-06-13 (suite) — Audit doctrine agent ↔ Obsidian + synchro permanente
+**Audit** : confronté la table `skills` (base doctrinale de l'agent qadence) à la source `~/.claude/skills`.
+- ✅ 20 skills SEO + `ton_de_voix_tim` = IDENTIQUES à 100 % (verbatim) aux SKILL.md.
+- ✅ 4 alias propriétaires (maillage_interne, objections_clients, score_geo, score_semantique) = byte-identiques à leur doctrine SEO.
+- ⚠️ 11 entrées `proprietary` étaient des stubs génériques ~700 car. (rappel de principes + search_kb, pas la méthode complète) ; 3 exposées dans load_skill.
+**Correctifs** :
+- Nouveau `qadence/sync-skills.py` : synchro idempotente table `skills` ← SKILL.md (26 slugs mappés, alias inclus), `--dry-run` dispo. Créds dans `~/.config/seo-kb/qadence-skills.env` (hors repo, chmod 600). À relancer après modif d'un SKILL.md / `./kb rebuild`.
+- Upgradé les 2 stubs exposés : `content_gaps` ← seo-cluster-aeo (724→2344), `strategie_seo` ← seo-roadmap-pseo (707→16180). Vérifié en base.
+- Stubs restants (audit_gsc, analyse_gsc_complete, cohortes_gsc, faq_*, intention_recherche, query_requete, structure_hn*) laissés tels quels : pas de skill source 1:1, grounded par search_kb + gsc_query.
