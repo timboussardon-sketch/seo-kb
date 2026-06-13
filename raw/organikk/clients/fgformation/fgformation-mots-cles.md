@@ -192,6 +192,51 @@ relié: [[fgformation]]
 4. `seo-modeles-pseo` : transformer les blocs récurrents en modèles de pages scalables (arbre F vs arbre OF).
 5. `seo-product-led-seo` : quiz « Qualiopi est-il fait pour moi ? » décliné par persona (lead magnet).
 
+## VAGUE 2 — 2026-06-13 (nouveaux calls, anonymisés)
+
+> Mêmes règles que la vague 1 (volumes `[À SOURCER]`, difficulté = proxy déclaratif, axe F/OF/PME). Ces blocs **complètent** les P1-P9 et ouvrent **P10**. Les 2 requêtes prioritaires du client sont repérées par ⭐.
+
+### P10 — Entreprise / éditeur qui rend sa formation finançable `[Axe PME]` (alimente « qualiopi pour PME »)
+
+| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
+|---|---|---|---|---|---|
+| ⭐ qualiopi pour pme | Do | [À SOURCER] | Moyenne | Décision | **Money page PME**. Angle : financer la formation des salariés via OPCO. Doctrine 4 piliers en tête. |
+| qualiopi pour financer la formation de ses salariés | Do | [À SOURCER] | Faible | Décision | Reformulation intention réelle. CTA devis. |
+| former ses clients avec une prise en charge opco | Do | [À SOURCER] | Faible | Décision | Verbatim éditeurs SaaS (caisse, conformité, data). |
+| qualiopi pour une entreprise informatique / prestataire it | Do | [À SOURCER] | Faible | Décision | Cas MSP/IT (Samir). SERP vierge. |
+| qualiopi pour un éditeur de logiciel | Do | [À SOURCER] | Faible | Décision | Facturer la formation à son outil. |
+| facturer l'onboarding comme une formation finançable | Know | [À SOURCER] | Faible | Problème | Verbatim « on appelle ça accompagnement, on veut le marketer ». |
+| transformer un accompagnement produit en formation opco | Know | [À SOURCER] | Faible | Problème | |
+| qualiopi quand on a déjà iso 27001 / iso 9001 | Know | [À SOURCER] | Faible | Problème | Rassure les structures déjà certifiées. |
+| créer une activité de formation dans son entreprise | Do | [À SOURCER] | Moyenne | Décision | Business unit formation. |
+| qualiopi formation anti-blanchiment lcb-ft obligatoire | Do | [À SOURCER] | Faible | Décision | Formation réglementaire annuelle (professions assujetties). |
+| qualiopi pour un cabinet d'avocats | Do | [À SOURCER] | Faible | Décision | Cas cabinet (droit social), recoupe P7. |
+| qualiopi pour un studio / une agence qui forme à l'ia | Do | [À SOURCER] | Faible | Décision | Recoupe P6 (IA). |
+
+### P1 bis — Nouvelles situations formateur (Vague 2) `[Axe F]`
+
+| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
+|---|---|---|---|---|---|
+| ⭐ qualiopi pour formateur sous-traitant | Know | [À SOURCER] | Moyenne | Problème | **Page pivot Arbre A**. SERP informationnelle. Vérité : pas obligatoire hors CPF → pivot « passer en direct ». |
+| dans quel ordre faire siret nda et qualiopi | Know | [À SOURCER] | Faible | Problème | Confusion fréquente (Yasmine). Page pédagogique. |
+| qualiopi quand on est demandeur d'emploi | Know | [À SOURCER] | Faible | Problème | Petit budget, financement France Travail. |
+| financer sa certification quand on a peu de trésorerie | Know | [À SOURCER] | Faible | Problème | |
+| organisme de portage cpf en faillite que faire | Know | [À SOURCER] | Faible | Problème | Verbatim « 30 000 € d'ardoise ». Très spécifique, SERP vierge. |
+| internaliser le cpf après un portage raté | Do | [À SOURCER] | Faible | Décision | Reprendre la main sur EDOF. |
+| passer qualiopi pour le bilan de compétences ou la formation | Know | [À SOURCER] | Faible | Problème | Arbitrage double certif. |
+| qualiopi est-ce rentable si je ne vends pas | Know | [À SOURCER] | Faible | Problème | Verbatim « la certif ne m'a pas fait travailler ». |
+| faut-il garder ou abandonner qualiopi | Know | [À SOURCER] | Faible | Problème | Angle ROI / décision. |
+| financement fipu formation prévention | Know | [À SOURCER] | Faible | Problème | FIPU ~70 % (PRAP, gestes & postures). Peu couvert. |
+| prise en charge opco pour un artisan | Know | [À SOURCER] | Faible | Problème | Barèmes, fenêtre de financement. |
+| qualiopi pour formateur en [métier] | Do | [À SOURCER] | Faible | Décision | **Modèle scalable** : coiffure, imprimerie, FLE, automobile, HSE, RSE événementiel, sport… (cf. modèle pSEO arbre A). |
+
+### Synthèse Vague 2
+- **~24 requêtes ajoutées** : 12 sur P10 (PME/entreprise, cœur de la 2e money page prioritaire), 12 sur les nouvelles situations formateur.
+- Les **2 mots-clés prioritaires client** (⭐) sont posés : `qualiopi pour formateur sous-traitant` (Arbre A, pivot) et `qualiopi pour pme` (Arbre B/PME, money page).
+- Le **modèle scalable `qualiopi pour formateur en [métier]`** est confirmé par la diversité des secteurs (≈ +6 métiers nouveaux), il alimente le décompte ~100 pages.
+- Toujours `[À SOURCER]` : brancher GSC FG + Ahrefs/Semrush.
+
 ## Journal
 
 - **2026-06-06** : recherche mots-clés depuis les 14 calls (skill seo-recherche-mots-cles). ~130 requêtes, 9 blocs personas, top 12 décisionnel. Volumes à sourcer. Prochain : clustering + sourcing GSC.
+- **2026-06-13** : Vague 2 — ~24 requêtes ajoutées depuis ~25 nouveaux calls anonymisés. Ouverture P10 (PME/entreprise), nouvelles situations formateur, repérage des 2 mots-clés prioritaires client. Volumes toujours à sourcer.

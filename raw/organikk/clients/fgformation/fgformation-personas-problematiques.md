@@ -180,6 +180,43 @@ Brancher cette matière dans le workflow mots-clés :
 
 ---
 
+## VAGUE 2 — 2026-06-13 (nouveaux calls + coachings, anonymisés)
+
+> ~25 appels supplémentaires décortiqués (RDV découverte, coachings, R1, audits blancs), scrapés du Drive et anonymisés (dossier `calls/`). Ils **confirment et élargissent** les 9 personas, et font émerger **un 10e persona absent du premier lot** : l'entreprise/éditeur qui structure une activité de formation pour la rendre finançable. Les 2 mots-clés prioritaires donnés par le client (« qualiopi pour formateur sous-traitant », « qualiopi pour PME ») se rattachent respectivement à P1 et à ce nouveau P10.
+
+### P10. L'entreprise / l'éditeur qui structure une activité de formation pour la rendre finançable `[Axe PME / entreprise]`
+*Calls : prestataire IT/MSP (Samir A.), studio dev RV-RA → formation IA (Thomas M.), cabinet d'avocats (Claire P.), éditeur SaaS caisse (Jean-François), éditeur SaaS conformité LCB-FT (Jean-Jacques), plateforme e-learning data B2B (Barbara D.), consultant RSE adossé à un OF (Antoine).*
+- **Qui** : une entreprise déjà établie (souvent éditeur de logiciel, prestataire de services, cabinet, studio) qui forme déjà ses clients ou ses pairs « en accompagnement » sans l'avoir structuré, et veut en faire **une vraie ligne de formation finançable**.
+- **Déclencheur** : la demande client de **financement OPCO** monte (« si vous êtes Qualiopi, ça m'intéresse / mon OPCO peut prendre en charge ») ; parfois une **obligation réglementaire annuelle** (formation anti-blanchiment pour les professions assujetties) ; parfois la mise à niveau face aux confrères (« nos confrères sont tous Qualiopi »).
+- **Douleurs** : ne distingue pas son accompagnement technique de la formation ; pas de NDA ni de BPF ; pas de KPI (combien de clients perdus faute de financement ?) ; veut du **clé en main** mais sans usine à gaz ; décideur = Codir/associé, ROI à prouver ; ne sait pas qu'il faut le NDA avant Qualiopi.
+- **Ce qu'il cherche** : rendre sa formation **finançable OPCO**, crédibilité, monétiser un onboarding/accompagnement aujourd'hui offert, ouvrir un canal de revenus complémentaire. **C'est le cœur de la requête « qualiopi pour PME ».**
+
+### Élargissements des personas existants (Vague 2)
+- **P1 (sous-traitant → direct)** confirmé et élargi à de **nouveaux métiers** : automobile, HSE/sécurité (DOM), arts graphiques/imprimerie, coiffure, FLE, RSE événementiel, sport, holistique/esthétique, management/coaching/facilitation. Le modèle scalable `formateur en [thématique]` se confirme. Nouveau verbatim choc commission : *« il prend 50 % »* (vs portage normal 15-20 %).
+- **Nouvelles situations P1** à transformer en pages :
+  - **Ordre des démarches** SIRET → NDA → Qualiopi (confusion fréquente : on croit qu'il faut Qualiopi pour avoir le SIRET/NDA).
+  - **Qualiopi pour demandeur d'emploi / petit budget** (trésorerie nulle avant le 1er financement).
+  - **OF de portage CPF en faillite** : ardoise subie, volonté d'internaliser le CPF/EDOF après un portage raté.
+  - **Rentabilité / abandon de Qualiopi** quand on a la certif mais zéro vente (« la certif ne m'a pas fait travailler plus »). Angle ROI + « faut-il garder Qualiopi ».
+- **Financements moins connus à couvrir** : **FIPU** (Fonds d'investissement pour la prévention de l'usure professionnelle, ~70 %) pour les formations prévention/gestes & postures ; **barèmes OPCO artisan** ; **France Travail** pour les créateurs demandeurs d'emploi.
+- **P5 (audit de surveillance)** et **P3 (création OF / CPF-EDOF)** confirmés par de nouveaux cas (bilan de compétences, FLE, dermopigmentation, data e-learning).
+- **Holistique = non finançable** : à dire cash (médecine non conventionnelle hors champ formation pro finançable).
+
+### Banque de verbatims — ajouts Vague 2 (anonymisés)
+- *« Pour jouer avec les OPCO dans la cour des grands, il faut faire Qualiopi, sinon ils ne te regardent pas. »*
+- *« Il prend 50 %. »* (commission donneur d'ordre) · *« en direct c'est 1000 à 2000 € la journée, en sous-traitance 400 à 700 €. »*
+- *« On a même du mal à appeler ça formation, on est plutôt dans l'accompagnement. L'idée, c'est de pouvoir le marketer, passer à un autre niveau. »* (P10)
+- *« Les gens, quand ce n'est pas leur argent, ils s'en foutent que ça coûte 2000 € ; c'est le reste à charge de 500 € qui bloque. »*
+- *« J'ai mon fournisseur [OF de portage] qui fait faillite, 30 000 € de bilans en ardoise. »*
+- *« La certification ne m'a pas permis de travailler plus. »* (ROI Qualiopi nul)
+- *« Du côté administratif, j'ai tout à apprendre, je ne veux pas me mettre en difficulté. »* (création, ordre des démarches)
+- *« Nos confrères sont plus ou moins tous Qualiopi, on veut se mettre à la page. »* (P10, cabinet)
+
+> Détails appel par appel : voir `calls/SYNTHESE-appels-anonymisee.md` (vague 1) + les transcripts `calls/rdv-*.md` (vague 2).
+
+---
+
 ## Journal
 
 - **2026-06-06** : extraction des 14 calls réels (3 agents en parallèle). 9 personas consolidés, ~45 problématiques candidates regroupées en 9 blocs, banque de verbatims. Prêt à alimenter la recherche de mots-clés.
+- **2026-06-13** : Vague 2 — ~25 appels supplémentaires (scrape Drive anonymisé). Nouveau persona **P10 (entreprise/éditeur qui structure sa formation finançable = cœur de « qualiopi pour PME »)**, élargissement P1 à de nouveaux métiers, nouvelles situations (ordre démarches, demandeur d'emploi, portage CPF en faillite, ROI/abandon Qualiopi, FIPU). Verbatims ajoutés.

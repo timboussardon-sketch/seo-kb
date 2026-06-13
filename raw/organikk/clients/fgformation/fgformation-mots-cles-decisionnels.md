@@ -98,6 +98,47 @@ relié: [[fgformation]]
 - `seo-modeles-pseo` : transformer le top en modèles scalables (1 template arbre A, 1 template arbre B).
 - `seo-product-led-seo` : spécifier le quiz diagnostic.
 
+## VAGUE 2 — 2026-06-13 (nouveaux calls, anonymisés)
+
+> Scoring décisionnel des requêtes issues des ~25 nouveaux appels. Même barème (proximité × intention × faisabilité, /10). Ajout d'un **3e arbre PME/entreprise** (persona P10). Les 2 requêtes prioritaires du client sont marquées ⭐.
+
+### Arbre A — Formateur indépendant (ajouts Vague 2)
+
+| Mot-clé | Étage | Score /10 | Page cible | Format | CTA |
+|---|---|---|---|---|---|
+| ⭐ qualiopi pour formateur sous-traitant | Know → Do | **9** | Money page Arbre A | Page « pas obligatoire hors CPF » → pivot passer en direct + preuve commission | RDV diagnostic |
+| organisme de portage cpf en faillite que faire | Do — Achat (urgence) | **8** | Landing « reprendre la main CPF » | Problème→solution (internaliser EDOF) | RDV |
+| dans quel ordre faire siret nda et qualiopi | Know commercial | **6** | Article pédagogique (hub) | Guide étapes + maillage | Maillage → landings |
+| qualiopi pour formateur en [métier] | Do — Achat | **7** | Modèle scalable (coiffure, imprimerie, FLE, auto, HSE…) | Template + variable métier | Devis |
+| qualiopi pour demandeur d'emploi / petit budget | Do — Achat | **5** | Landing création petit budget | Page + financement France Travail | RDV |
+| financement fipu formation prévention | Know → Do | **5** | Article FIPU + offre | Page niche (PRAP/gestes & postures) | RDV |
+| faut-il garder ou abandonner qualiopi | Know commercial | **4** | Article ROI | Démonstration rentabilité | Maillage → diagnostic |
+
+### Arbre C — PME / entreprise `[nouveau, persona P10]`
+
+| Mot-clé | Étage | Score /10 | Page cible | Format | CTA |
+|---|---|---|---|---|---|
+| ⭐ qualiopi pour pme | Do — Achat | **9** | **Money page PME** | Page « financer la formation de vos équipes via l'OPCO » + doctrine 4 piliers | Devis / RDV |
+| qualiopi pour financer la formation de ses salariés | Do — Achat | **8** | Money page PME (variante) | Page bénéfice (reste à charge minimal) | Devis |
+| former ses clients avec une prise en charge opco | Do — Achat | **8** | Landing éditeur/prestataire | Page « monétiser l'accompagnement » | RDV |
+| qualiopi pour une entreprise informatique / prestataire it | Do — Achat | **7** | Landing secteur IT/MSP | Page cas + financement | Devis |
+| qualiopi pour un cabinet d'avocats | Do — Achat | **7** | Landing professions réglementées (recoupe P7) | Page niche | RDV diagnostic |
+| qualiopi formation lcb-ft obligatoire | Do — Achat | **7** | Landing formation réglementaire obligatoire | Page obligation annuelle + offre | Devis |
+| qualiopi pour un studio / agence formation ia | Do — Achat | **6** | Landing IA (recoupe P6) | Page marché chaud | Devis |
+| facturer l'onboarding comme une formation finançable | Know commercial | **5** | Article hook PME | Démonstration + CTA | Maillage → money page PME |
+| qualiopi quand on a déjà iso 27001 | Know | **4** | Article réassurance | FAQ / objection | Maillage |
+
+**Top 3 Arbre C (PME) :**
+1. **qualiopi pour pme** (9) — money page prioritaire client. Intention = financer la formation des équipes via OPCO.
+2. **former ses clients avec une prise en charge opco** (8) — éditeurs/prestataires qui veulent monétiser leur accompagnement (cas SaaS, IT, data).
+3. **qualiopi formation LCB-FT obligatoire** (7) — besoin récurrent et réglementaire (professions assujetties), CTA direct.
+
+### Synthèse stratégique Vague 2
+- Les **2 money pages prioritaires du client** sont posées et scorées : `qualiopi pour formateur sous-traitant` (Arbre A, 9, angle « pas obligatoire → passer en direct ») et `qualiopi pour pme` (Arbre C, 9, angle « financer ses équipes via OPCO »).
+- **P10 / Arbre C est un vrai gisement** : SERP peu travaillées, intention de devis claire (entreprise qui veut financer), et il branche le modèle `former ses clients/salariés` (éditeurs SaaS, IT, cabinets).
+- Le **modèle scalable `formateur en [métier]`** se renforce (≈ +6 secteurs), il porte le volume de l'Arbre A.
+
 ## Journal
 
 - **2026-06-06** : scoring décisionnel des ~130 requêtes (skill seo-mots-cles-decisionnels). 2 arbres séparés, top 3 chacun, ordre d'attaque 6 landings. Les pépites sont les situations précises (NDA, certif perdue, OF interne, audit surveillance), pas la tête « accompagnement Qualiopi ».
+- **2026-06-13** : Vague 2 — scoring des requêtes des ~25 nouveaux calls. Ajout **Arbre C (PME/entreprise, P10)** avec money page `qualiopi pour pme` (9). Les 2 mots-clés prioritaires client posés et scorés. Nouvelles pépites Arbre A (portage CPF en faillite, modèle `formateur en [métier]`).
