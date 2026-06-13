@@ -2,9 +2,9 @@
 type: entity
 title: "Qadence (qadence.io)"
 aliases: [qadence, qadence-io, qadence-seo-agent, qadence-agent, watcher, scorer, botbeat, veilleur]
-tags: [agent, produit-tim, supabase, edge-function, deno, nextjs, netlify, gemini, gsc, opendecoder, dispatcher, organikk]
+tags: [agent, produit-tim, supabase, edge-function, deno, vite, react, netlify, claude, claude-api, vault-rag, gemini-legacy, gsc, opendecoder, dispatcher, organikk]
 created: 2026-04-30
-updated: 2026-05-08
+updated: 2026-06-13
 sources: 2
 confidence: high
 status: stable
@@ -18,7 +18,25 @@ Plateforme SEO agentique de Tim. Frontend `qadence.io` + API `api.qadence.io`. P
 
 Distinct de [[entities/organikk-co]] (laboratoire public + acquisition) : Qadence = produit SaaS agentique, sortie commerciale de la doctrine 4 piliers ([[concepts/methode-organikk-4-piliers]]).
 
-## Architecture (snapshot v112, 2026-05-08)
+## Refonte majeure — agent sous Claude (2026-06-13)
+
+Bascule complète de la couche IA **Gemini → Claude** (les modèles `gemini-3.1-*` renvoyaient 404 ; décision de Tim : reconstruire sous Claude et faire que l'agent réponde *avec sa doctrine, ses skills et son vault Obsidian*). Le snapshot Gemini plus bas est conservé pour historique mais **périmé**. Détail session par session : journal de dev `qadence/Journal.md`.
+
+**Architecture runtime actuelle**
+- **Front** : SPA **Vite + React** (`src/`, repo `~/Code/qadence`, GitHub `timboussardon-sketch/qadence`) sur Netlify (`qadence.io`). Fini Next.js.
+- **Agent conversationnel** : edge function `seo-agent` réécrite sous **Claude Messages API** (boucle tool-use + streaming SSE, contrat front inchangé). Outils : `search_kb` (vault), `gsc_query` (GSC réelle), `load_skill` (doctrine), `update_memory`. Ancien Gemini gardé en `seo-agent-gemini-legacy` (rollback).
+- **Vault Obsidian branché en direct** : `search_kb` interroge la table `kb_chunks` (pgvector, embeddings `gemini-embedding-001`) du Supabase Fusionn via l'edge `kb-search`. L'agent répond donc avec le second cerveau de Tim, pas du SEO générique — opérationnalise [[concepts/persistent-wiki-vs-rag]].
+- **Doctrine = table `skills`** alimentée verbatim depuis `~/.claude/skills/seo-*` (script `qadence/sync-skills.py`). Audit de correspondance fait le 2026-06-13 : 26 slugs = doctrine identique à 100 %. Voix `ton_de_voix_tim` en système.
+
+**Nouvelles capacités (front)**
+- **Espace compte** plein écran (`AccountPage`) : Profil · Abonnement (portail Stripe via edge `stripe-portal`) · Connexions · Statistiques.
+- **GSC multi-comptes / multi-sites** : edge `gsc-properties` (propriétés groupées par compte Google), sélecteur de propriété par projet, bouton « connecter un autre compte ». Résolveur GSC tolérant à la fragmentation des sessions anonymes (token résolu par site/domaine, plus seulement par `user_id`).
+- **Lanceur de skills** dans la barre du haut (`SkillLauncher`) : liste les 36 skills doctrine, clic = `load_skill` + exécution.
+- Design **« Google mono »** : Roboto / Roboto Mono, palette monochrome Google, accent bleu unique `#1A73E8`, échelle/grille/radius des règles Fusionn.
+
+Supabase : projet `ytgbnqqmcnhmscbvhoin` (« Radarr »), partagé avec [[project_lenkrr|leenq]] + Fusionn.
+
+## Architecture (snapshot v112, 2026-05-08 — PÉRIMÉ, ère Gemini)
 
 | Couche | Stack |
 |---|---|

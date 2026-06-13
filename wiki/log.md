@@ -879,3 +879,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 ## [2026-06-12] maintenance | Réparations automatisations + 7 nouvelles mises en place
 - réparé : pg_cron zombie, doublons breves_wall (+contrainte), résurgence (OK ce soir), GH Actions migrées en launchd local
 - nouveaux agents : health-check lundi, autopull étendu (rebuild+exports RAG), purge-drafts dimanche, jeudi-recap, indexation-check mensuel, predictions-resolve mensuel, audit-vault + algorithme-recap locaux
+
+## [2026-06-13] update | Qadence reconstruit sous Claude + vault RAG
+- entité MAJ: [[entities/qadence-seo-agent]] (Gemini→Claude, Next.js→Vite, snapshot Gemini marqué périmé)
+- agent seo-agent réécrit sous Claude Messages API (streaming SSE), vault branché via kb-search (kb_chunks pgvector)
+- doctrine = table skills synchronisée verbatim depuis ~/.claude/skills (script qadence/sync-skills.py) — audit: 26 slugs identiques 100%
+- front: espace compte plein écran, GSC multi-comptes (gsc-properties), lanceur de skills, design Google-mono
+- fix: résolveur GSC tolérant à la fragmentation des sessions anonymes (token par site/domaine)
+- journal dev détaillé: qadence/Journal.md
