@@ -66,3 +66,10 @@ Virage majeur : qadence ne tournait plus côté IA (modèles `gemini-3.1-flash/p
 - App.jsx : state `view` chat|account ; bouton « Mon compte » sidebar.
 Commit + push main + déploiement prod qadence.io. Design Google-mono.
 **Reste** : connecter le site Netlify au repo GitHub pour l'auto-deploy (étape dashboard).
+
+## 2026-06-13 (suite) — Lanceur de skills dans la barre du haut
+- Composant `SkillLauncher.jsx` : bouton « + Skills » dans la top bar de Chat.
+- Liste les skills actifs `skill_type in (seo, proprietary)` = 36 skills doctrine (exclut les 6 hooks `behavior` et la `voice ton_de_voix_tim`, qui sont des règles d'exécution).
+- Lecture anon de la table `skills` (RLS le permet). Labels nettoyés (retire « Seo », GSC/GEO/pSEO/RRF en capitales), groupés « Skills SEO » / « Méthodes propriétaires », recherche live.
+- Clic = envoie au chat `Lance le skill « X » (load_skill, slug: name) puis applique sa méthode pas à pas sur <domain>` → l'agent charge le skill et l'exécute.
+- Commit + push + déploiement prod qadence.io.
