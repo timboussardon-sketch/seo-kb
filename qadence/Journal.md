@@ -44,3 +44,12 @@ Virage majeur : qadence ne tournait plus côté IA (modèles `gemini-3.1-flash/p
 - **Agents autonomes** (watcher/quickwin/cannibal/cocon) sous Claude + tables `agents`/`agent_runs` + pg_cron + **décision coût** (pilote vs 143 users). Pas branchés dans le front actuel.
 - **Squad** (Indigo/Ambre/Jade/Carmin) sous Claude (déjà couvert par le conversationnel via load_skill).
 - Finitions : outils fetch_serp/score_content au conversationnel ; sync auto `~/.claude/skills`→table `skills` ; borne GSC gros comptes ; polish design composant par composant ; retirer code mort (score-engine/agent-runner jamais déployés).
+
+## 2026-06-13 — Espace compte (stats + déconnexion)
+- Nouveau composant `src/components/AccountPanel.jsx` : modale "Mon compte" ouverte depuis un bouton en bas de la Sidebar.
+- Identité : email Google (table `google_connections`), pastille statut connecté.
+- Stats réelles : projets suivis + conversations (localStorage), sites GSC connectés, recommandations (`optimizations`), faits mémorisés (`project_memory`), rapports (`botbeat_reports`) — comptés via PostgREST `count=exact`.
+- Liste des sites Search Console connectés.
+- Déconnexion : `supabase.auth.signOut()` + purge des clés `radarr_*` + reload.
+- Design Google-mono (Roboto/Roboto Mono, gris Google, accent #1A73E8, chiffres en mono).
+- Commit + push main + déployé prod sur qadence.io (site inquisitive-pegasus).
