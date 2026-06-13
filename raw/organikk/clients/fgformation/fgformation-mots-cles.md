@@ -236,6 +236,27 @@ relié: [[fgformation]]
 - Le **modèle scalable `qualiopi pour formateur en [métier]`** est confirmé par la diversité des secteurs (≈ +6 métiers nouveaux), il alimente le décompte ~100 pages.
 - Toujours `[À SOURCER]` : brancher GSC FG + Ahrefs/Semrush.
 
+### VAGUE 2bis — Cluster conformité / preuves (issu des 5 audits blancs) `[Axe F + OF]`
+
+> Requêtes surtout **Know / top-funnel** : elles captent le formateur ou l'OF qui **prépare son audit** (nouvel entrant) et qui aura besoin d'accompagnement juste après. C'est un **hub de topical authority** qui maille vers les money pages. Quelques requêtes sont décisionnelles (récupérer un NDA perdu, contrat de sous-traitance, manuel qualité).
+
+| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
+|---|---|---|---|---|---|
+| quelles preuves fournir à l'audit qualiopi par indicateur | Know | [À SOURCER] | Moyenne | Problème | « déclaratif ≠ preuve », angoisse récurrente. Page hub. |
+| documents obligatoires nouvel entrant qualiopi | Know | [À SOURCER] | Faible | Problème | Quels indicateurs concernés quand on débute. |
+| manuel qualité qualiopi modèle | Do | [À SOURCER] | Moyenne | Décision | Livrable recherché. Lead magnet possible. |
+| indicateur 4 et 26 qualiopi recueil et accueil du handicap | Know | [À SOURCER] | Faible | Problème | Référent handicap, protocole, liste partenaires. |
+| comment calculer le taux de réussite qualiopi | Know | [À SOURCER] | Faible | Problème | Indicateurs 2/11. |
+| prouver la compétence des formateurs cv intervenants qualiopi | Know | [À SOURCER] | Faible | Problème | Cas médecins/experts/bénévoles (ind. 17-21-22). |
+| veille réglementaire formation qualiopi | Know | [À SOURCER] | Faible | Problème | Sujet daté (V10, décrets) — ind. 23-24-25. |
+| récupérer un numéro de déclaration d'activité perdu | Do | [À SOURCER] | Faible | Décision | Recoupe P4 (certif perdue). Score décisionnel élevé. |
+| contrat de sous-traitance formateur qualiopi | Do | [À SOURCER] | Faible | Décision | Indicateur 27. |
+| comment devenir edof après qualiopi | Know | [À SOURCER] | Moyenne | Problème | Confusion parcours post-certif (recoupe P3). |
+| fiche d'analyse du besoin stagiaire modèle | Do | [À SOURCER] | Faible | Problème | Indicateur 4. |
+| qualiopi formateur sans local | Know | [À SOURCER] | Faible | Problème | Cas formateur solo nomade. |
+
+**Lecture** : les 5 audits ne sont pas stériles. Ils ne contiennent pas d'intention de devis aussi nette que les RDV de découverte (c'est du coaching indicateur-par-indicateur), mais ils livrent un **cluster opérationnel « nouvel entrant / preuves »** précieux pour l'autorité thématique et pour capter le prospect mûr en préparation d'audit. Profils audités : 4 formateurs/OF nouveaux entrants (axe F) + 1 OF associatif ayant perdu son NDA (axe OF, recoupe P4).
+
 ## Journal
 
 - **2026-06-06** : recherche mots-clés depuis les 14 calls (skill seo-recherche-mots-cles). ~130 requêtes, 9 blocs personas, top 12 décisionnel. Volumes à sourcer. Prochain : clustering + sourcing GSC.

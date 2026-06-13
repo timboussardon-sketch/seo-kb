@@ -212,7 +212,10 @@ Brancher cette matière dans le workflow mots-clés :
 - *« Du côté administratif, j'ai tout à apprendre, je ne veux pas me mettre en difficulté. »* (création, ordre des démarches)
 - *« Nos confrères sont plus ou moins tous Qualiopi, on veut se mettre à la page. »* (P10, cabinet)
 
-> Détails appel par appel : voir `calls/SYNTHESE-appels-anonymisee.md` (vague 1) + les transcripts `calls/rdv-*.md` (vague 2).
+### Apport des 5 audits blancs (minés en Vague 2bis)
+Les audits confirment un **cluster « nouvel entrant / preuves »** transverse à P1 (formateur) et P4 (OF) : angoisse « déclaratif ≠ preuve », documents par indicateur, manuel qualité, accueil du handicap (ind. 4/26), preuve de compétence des formateurs experts/médecins (ind. 17-21-22), récupérer un NDA perdu, devenir EDOF après Qualiopi. Profils : 4 formateurs/OF nouveaux entrants + 1 OF associatif (milieu pénitentiaire) ayant perdu son NDA. → alimente le cluster conformité dans `fgformation-mots-cles` (Vague 2bis).
+
+> Détails appel par appel : voir `calls/SYNTHESE-appels-anonymisee.md` (vague 1) + tous les transcripts `calls/*.md` (vague 2 : `rdv-*`, `coaching-*`, `r1-*`, `audit-blanc-*`).
 
 ---
 
