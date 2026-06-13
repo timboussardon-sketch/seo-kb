@@ -53,3 +53,16 @@ Virage majeur : qadence ne tournait plus côté IA (modèles `gemini-3.1-flash/p
 - Déconnexion : `supabase.auth.signOut()` + purge des clés `radarr_*` + reload.
 - Design Google-mono (Roboto/Roboto Mono, gris Google, accent #1A73E8, chiffres en mono).
 - Commit + push main + déployé prod sur qadence.io (site inquisitive-pegasus).
+
+## 2026-06-13 (suite) — Connexion GSC : fix fragmentation + système multi-comptes/multi-sites
+**Problème** : l'agent répondait « Google Search Console non connectée » alors que fgformation.fr était bien connecté. Cause : `seo-agent/gsc.ts` cherchait le token strictement par le `user_id` de la session courante. Les sessions anonymes fragmentent les connexions Google sur plusieurs user_id (Tim en avait 5+, ses 23-30 propriétés éparpillées).
+**Diagnostic prouvé** : avec le token le plus frais de tim.boussardon@gmail.com → fgformation.fr 28j = 663 clics / 51 609 impressions / CTR 1,28 % / pos 12,7.
+**Fixes livrés (tous en prod)** :
+- `seo-agent/gsc.ts` : résolveur robuste (user_id+site → user_id → site → domaine). Validé live avec user_id orphelin → sort les vrais chiffres. Propagé seo-agent ET seo-agent-claude.
+- Edge `gsc-properties` : liste les propriétés groupées par compte Google (résout par email à travers les user_id, refresh token, fusionne Google+DB). Test : 30 propriétés pour tim.
+- Edge `stripe-portal` : portail de facturation (STRIPE_SECRET_KEY déjà posé).
+- Front `AccountPage.jsx` plein écran (remplace l'ancienne mini-modale AccountPanel, supprimée) : onglets Profil / Abonnement / Connexions / Statistiques. Connexions = liste des comptes Google + « Connecter un autre compte » (google-auth add_account) + sélecteur de propriété par projet (optgroup par compte, gère multi-sites/multi-comptes). Déconnexion.
+- `ConnectGoogle.jsx` : passe `user_id` à google-auth (réduit la fragmentation future).
+- App.jsx : state `view` chat|account ; bouton « Mon compte » sidebar.
+Commit + push main + déploiement prod qadence.io. Design Google-mono.
+**Reste** : connecter le site Netlify au repo GitHub pour l'auto-deploy (étape dashboard).
