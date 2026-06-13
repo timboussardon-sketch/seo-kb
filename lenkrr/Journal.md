@@ -309,3 +309,25 @@ Une entrée (URL) → leenq sonde → route vers la méthode qui marchera, jamai
 
 ### Note repo
 Pendant la session, des fichiers **non liés** étaient modifiés dans le working tree par un travail parallèle (onboarding, FreeAnalysis, HeroAnalyze, MaillageLoader, crawl.ts, engine.ts, middleware, globals.css…). Laissés **intacts** : mes deux commits ne contiennent que leurs fichiers respectifs.
+
+## Échec révélateur sur fgformation : 2 défauts produit (2026-06-13)
+
+Premier vrai test bout-en-bout d'application de liens sur un site client (fgformation, WordPress connecté). Résultat : ratage, mais deux bugs réels exposés et un contenu.
+
+### Contexte connexion
+- Compte propriétaire leenq (`LENKRR_USER_ID` `49d9b314…`) n'avait AUCUN moyen de login (ni email, ni mdp, ni provider). Provisionné un login email+mdp confirmé via admin API : `tim.boussardon+leenq@gmail.com` (l'email nu était déjà pris par un autre compte) → passe le gate (`user.id === LENKRR_USER_ID`).
+- Signup public cassé : `mailer_autoconfirm:false` + SMTP intégré Supabase saturé (`over_email_send_rate_limit`). Email de confirmation jamais reçu. Contournement = Google OAuth, ou provisioning admin. Fix propre (autoconfirm / Resend SMTP) = config Auth partagée avec Fusionn, à décider.
+
+### Défaut A — diversification d'ancres CASSÉE (critique)
+9 liens posés vers le même hub, **tous avec la même ancre exact-match** « Numéro de déclaration d'activité : GUIDE 2026 » (1 ancre distincte / 9, toutes `exact`). Violation directe de la doctrine (1 exact match max par cible). **Cause localisée** : `lib/analysis/engine.ts` (~l.649-664), le générateur de propositions issu du plan LLM met `anchorExact = anchorPartial = titre cible`, `recommendedAnchorKind:'exact'` pour TOUS, sans diversification — il contourne la diversification qui existe pourtant dans `propose.ts` (l.245-250). **Fix non appliqué** : engine.ts a les modifs non commitées de l'autre agent (réécriture du moteur) → l'éditer clobberait son travail. À folder dans sa réécriture : compteur par cible (1er=exact, puis alterne partial/semantic) + anchorPartial réellement distinct (titre raccourci).
+
+### Défaut B — incompatibilité page builder (CORRIGÉ, commit `af50ebc`)
+fgformation est sous **Elementor** : il rend depuis `_elementor_data` et IGNORE `post_content`. leenq écrivait le lien dans post_content (API 200), mais rien ne sortait sur le site public — et affichait « posé » (lien fantôme). `_elementor_edit_mode` n'est pas exposé en REST, et les marqueurs « elementor » sont partout (thème entier Elementor) donc non discriminants. **Détection fiable retenue** (`applyEdit`, `renderedReflects`) : si le paragraphe d'origine est dans `content.raw` mais PAS dans `content.rendered`, post_content n'est pas affiché → page builder → on REFUSE l'édition avec message clair. Validé : page Elementor 25922 refusée, post classique 26527 accepté.
+
+### Conséquences
+- Aucun dégât SEO réel : les liens (et leurs ancres sur-optimisées) n'ont jamais été rendus (Elementor), Google ne les a jamais vus. Les 9 paris bidons ont été supprimés de `link_bets` (loop repropre).
+- **fgformation est majoritairement Elementor → write-back leenq inutilisable sur ces pages.** Seuls les articles de blog en contenu classique (ex. post 26527) sont éditables. Support Elementor réel (écrire dans `_elementor_data`) = chantier à part.
+
+### RESTE
+- Fix A (diversification) : à appliquer dans engine.ts une fois la réécriture de l'autre agent commitée.
+- Support page builder (Elementor) : décision produit — soit on écrit dans `_elementor_data` (gros), soit on assume « leenq n'édite que le contenu classique ».
