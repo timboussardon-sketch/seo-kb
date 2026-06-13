@@ -68,7 +68,7 @@ relié: [[fgformation]]
 | créer un organisme de formation par où commencer | Know commercial | **3** | Guide pilier (top funnel) | Guide long | Newsletter / quiz |
 
 **Top 3 arbre B :**
-1. **qualiopi pour un centre de formation interne** (10) — intention de devis forte (entreprise qui doit financer ses formations), faisabilité haute, niche peu travaillée. Cas Fassi/Maurel.
+1. **qualiopi pour un centre de formation interne** (10) — intention de devis forte (entreprise qui doit financer ses formations), faisabilité haute, niche peu travaillée. Cas industrie A/groupe industriel B.
 2. **redevenir qualiopi après l'avoir perdu** (10) — situation hyper précise, prospect qui sait ce qu'il veut, concurrence quasi nulle sur cette formulation.
 3. **audit blanc qualiopi / préparer son audit de surveillance** (8) — offre packageable et récurrente, CTA direct (« réserver un audit blanc »), demande répétée dans les calls.
 

@@ -42,7 +42,7 @@ Deux leviers à croiser :
 
 ## 4. Personas identifiés (point de départ, à étoffer)
 
-> **Mise à jour 2026-06-06 :** les 14 calls réels ont été décortiqués. La carte complète (9 personas terrain, ~45 problématiques candidates, banque de verbatims) est dans [[fgformation-personas-problematiques]]. Les 4 hypothèses ci-dessous sont confirmées et élargies : s'ajoutent l'OF interne qui a perdu sa certif (Fassi, Maurel), l'OF qui prépare son audit de surveillance (SFNDT, Ekstend), la structure réglementée/association (AFDR), le blocage NDA pur (PH Formation), et l'axe visibilité/LinkedIn (GD Formations).
+> **Mise à jour 2026-06-06 :** les 14 calls réels ont été décortiqués. La carte complète (9 personas terrain, ~45 problématiques candidates, banque de verbatims) est dans [[fgformation-personas-problematiques]]. Les 4 hypothèses ci-dessous sont confirmées et élargies : s'ajoutent l'OF interne qui a perdu sa certif (industrie A, groupe industriel B), l'OF qui prépare son audit de surveillance (société savante santé, OF orienté IA), la structure réglementée/association (association A), le blocage NDA pur (OF (Hervé P.)), et l'axe visibilité/LinkedIn (OF (Gaël D.)).
 
 1. **Le formateur indépendant sous-traitant** qui veut **sortir de la dépendance** à un ou deux donneurs d'ordre. Risque central : se retrouver à zéro chiffre d'affaires du jour au lendemain si le donneur d'ordre n'a plus assez de missions. Anticipe la baisse d'activité 2026 en visant Qualiopi pour développer une clientèle directe.
 2. **Le créateur d'organisme de formation** (ex. ancien commercial 10 ans dans la formation, secteur IT/cybersécurité) qui veut bâtir un **vrai catalogue** (20-30 formations) et travailler avec des formateurs sous-traitants. Projet sérieux, structurant.

@@ -33,7 +33,7 @@ relié: [[fgformation]]
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
 | qualiopi pour travailler en direct avec les entreprises | Do | [À SOURCER] | Faible | Décision | Page pivot P1 → devis. Personne ne la fait. |
-| passer en direct quand on est formateur sous-traitant | Do | [À SOURCER] | Faible | Décision | Verbatim Cyril/Victoria. CTA prise de RDV. |
+| passer en direct quand on est formateur sous-traitant | Do | [À SOURCER] | Faible | Décision | Verbatim Damien/Manon. CTA prise de RDV. |
 | devenir formateur indépendant sans organisme de formation | Do | [À SOURCER] | Faible | Décision | |
 | sortir de la sous-traitance en formation | Know | [À SOURCER] | Faible | Problème | Article problème → solution Qualiopi. |
 | ne plus dépendre d'un donneur d'ordre formation | Know | [À SOURCER] | Faible | Problème | Angle « risque dépendance », fil rouge. |
@@ -43,23 +43,23 @@ relié: [[fgformation]]
 | trouver ses propres clients quand on est formateur | Do | [À SOURCER] | Moyenne | Décision | Recoupe P9. |
 | comment trouver des clients en formation professionnelle | Do | [À SOURCER] | Moyenne | Décision | |
 | prospecter quand on est formateur indépendant | Know | [À SOURCER] | Faible | Problème | |
-| baisse d'activité formateur 2026 | Know-Simple | [À SOURCER] | Faible | Problème | Page « anticipation » (verbatim Cyril). |
-| risque de travailler avec un seul donneur d'ordre | Know | [À SOURCER] | Faible | Problème | Verbatim Vincent « ardoise 5-10 k€ ». |
-| qualiopi roue de secours formateur | Know | [À SOURCER] | Faible | Problème | Verbatim Cyril, angle anticipation 2027. |
+| baisse d'activité formateur 2026 | Know-Simple | [À SOURCER] | Faible | Problème | Page « anticipation » (verbatim Damien). |
+| risque de travailler avec un seul donneur d'ordre | Know | [À SOURCER] | Faible | Problème | Verbatim Bruno « ardoise 5-10 k€ ». |
+| qualiopi roue de secours formateur | Know | [À SOURCER] | Faible | Problème | Verbatim Damien, angle anticipation 2027. |
 
 ## P2 — Débloquer des ventes / financement `[Axe F + OF]`
 
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
 | faire financer une formation sans être qualiopi | Know | [À SOURCER] | Faible | Problème | Réponse = impossible → CTA Qualiopi. Fort. |
-| mes clients ne peuvent pas financer ma formation | Know | [À SOURCER] | Faible | Problème | Verbatim Nicolas. Page douleur. |
+| mes clients ne peuvent pas financer ma formation | Know | [À SOURCER] | Faible | Problème | Verbatim Fabrice. Page douleur. |
 | qualiopi pour débloquer les financements opco | Do | [À SOURCER] | Moyenne | Décision | |
 | combien de temps pour obtenir qualiopi | Know | [À SOURCER] | Moyenne | Décision | Objection délai. PAA. |
 | obtenir qualiopi rapidement | Do | [À SOURCER] | Moyenne | Décision | |
 | qualiopi est-ce rentable | Know | [À SOURCER] | Faible | Problème | Page ROI (verbatim « rentabilité immédiate »). |
 | qualiopi à partir de combien de clients c'est rentable | Know | [À SOURCER] | Faible | Problème | |
 | sortir de la sous-traitance pour facturer en direct | Do | [À SOURCER] | Faible | Décision | Recoupe P1. |
-| faire héberger sa formation par un organisme qualiopi | Know | [À SOURCER] | Faible | Problème | Verbatim Nicolas, commission 30 %. |
+| faire héberger sa formation par un organisme qualiopi | Know | [À SOURCER] | Faible | Problème | Verbatim Fabrice, commission 30 %. |
 
 ## P3 — Créer son OF / devenir finançable CPF `[Axe OF]`
 
@@ -68,19 +68,19 @@ relié: [[fgformation]]
 | comment rendre sa formation éligible au cpf | Do | [À SOURCER] | Élevée | Décision | Gros sujet, concurrentiel. |
 | créer un organisme de formation par où commencer | Do | [À SOURCER] | Élevée | Décision | Tête de cluster P3. |
 | devenir organisme de formation finançable | Do | [À SOURCER] | Moyenne | Décision | |
-| e-learning et cpf dossier refusé | Know | [À SOURCER] | Faible | Problème | Verbatim Chrup. Très spécifique. |
+| e-learning et cpf dossier refusé | Know | [À SOURCER] | Faible | Problème | Verbatim créateur OF A. Très spécifique. |
 | différence nda qualiopi edof cpf | Know-Simple | [À SOURCER] | Moyenne | Problème | Page pédagogique anti-confusion. Maillage interne hub. |
-| qualiopi ou rncp pour être finançable | Know | [À SOURCER] | Moyenne | Problème | Verbatim Medical Axès. |
+| qualiopi ou rncp pour être finançable | Know | [À SOURCER] | Moyenne | Problème | Verbatim OF santé A. |
 | devenir finançable cpf quand on vend aux particuliers | Do | [À SOURCER] | Faible | Décision | |
 | rendre une formation finançable | Do | [À SOURCER] | Moyenne | Décision | |
 | s'adosser à une certification pour le cpf | Know | [À SOURCER] | Faible | Problème | |
-| créer sa propre certification rncp ou s'adosser | Know | [À SOURCER] | Faible | Problème | Verbatim Medical Axès, arbitrage. |
+| créer sa propre certification rncp ou s'adosser | Know | [À SOURCER] | Faible | Problème | Verbatim OF santé A, arbitrage. |
 
 ## P4 — OF interne d'entreprise (certif perdue) `[Axe OF]`
 
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
-| qualiopi pour un centre de formation interne | Do | [À SOURCER] | Faible | Décision | Cas Fassi / Maurel. |
+| qualiopi pour un centre de formation interne | Do | [À SOURCER] | Faible | Décision | Cas industrie A / groupe industriel B. |
 | certifier qualiopi le service formation d'une entreprise | Do | [À SOURCER] | Faible | Décision | |
 | redevenir qualiopi après l'avoir perdu | Do | [À SOURCER] | Faible | Décision | Verbatim « repart de zéro ». |
 | remettre en place qualiopi | Do | [À SOURCER] | Faible | Décision | |
@@ -92,14 +92,14 @@ relié: [[fgformation]]
 
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
-| préparer son audit de surveillance qualiopi | Do | [À SOURCER] | Moyenne | Décision | Récurrent (SFNDT, Ekstend). Page pivot P5. |
+| préparer son audit de surveillance qualiopi | Do | [À SOURCER] | Moyenne | Décision | Récurrent (société savante santé, OF orienté IA). Page pivot P5. |
 | audit blanc qualiopi | Do | [À SOURCER] | Moyenne | Décision | Offre packageable, CTA direct. |
 | réussir son audit de surveillance qualiopi | Know | [À SOURCER] | Moyenne | Problème | |
 | audit qualiopi non-conformités majeures | Know | [À SOURCER] | Faible | Problème | |
 | éviter les non-conformités à l'audit qualiopi | Know | [À SOURCER] | Faible | Problème | |
 | simplifier ses process qualiopi | Know | [À SOURCER] | Faible | Problème | Verbatim « on fait tout à la main ». |
 | audit de surveillance qualiopi à 18 mois | Know-Simple | [À SOURCER] | Faible | Problème | |
-| indicateurs qualiopi soumis à interprétation | Know | [À SOURCER] | Faible | Problème | Verbatim SFNDT, angle subjectivité auditeur. |
+| indicateurs qualiopi soumis à interprétation | Know | [À SOURCER] | Faible | Problème | Verbatim société savante santé, angle subjectivité auditeur. |
 | se faire accompagner pour l'audit de surveillance | Do | [À SOURCER] | Faible | Décision | |
 
 ## P6 — Offre IA finançable CPF `[Axe OF]` (marché chaud)
@@ -117,20 +117,20 @@ relié: [[fgformation]]
 
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
-| qualiopi pour une association qui forme ses membres | Do | [À SOURCER] | Faible | Décision | Cas AFDR. Niche très peu travaillée. |
+| qualiopi pour une association qui forme ses membres | Do | [À SOURCER] | Faible | Décision | Cas association A. Niche très peu travaillée. |
 | qualiopi obligatoire pour les formations d'avocats | Know | [À SOURCER] | Faible | Problème | Décision CNB fin 2023. Très précis. |
 | homologation formation avocat qualiopi | Know | [À SOURCER] | Faible | Problème | |
 | qualiopi société savante / ordre professionnel | Do | [À SOURCER] | Faible | Décision | |
-| qualiopi en nom propre ou portage | Know | [À SOURCER] | Faible | Problème | Verbatim AFDR, arbitrage. |
+| qualiopi en nom propre ou portage | Know | [À SOURCER] | Faible | Problème | Verbatim association A, arbitrage. |
 | portage qualiopi comment ça marche | Know | [À SOURCER] | Faible | Problème | |
 | faire certifier les formations de mes membres | Do | [À SOURCER] | Faible | Décision | |
-| diagnostic qualiopi avant de se lancer | Do | [À SOURCER] | Faible | Décision | Verbatim AFDR « besoin d'un diagnostic préalable ». Lead magnet. |
+| diagnostic qualiopi avant de se lancer | Do | [À SOURCER] | Faible | Décision | Verbatim association A « besoin d'un diagnostic préalable ». Lead magnet. |
 
 ## P8 — Problème NDA (pas Qualiopi) `[Axe F]`
 
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
-| mon nda a été refusé que faire | Know | [À SOURCER] | Faible | Problème | Verbatim PH Formation. Peu concurrentiel. |
+| mon nda a été refusé que faire | Know | [À SOURCER] | Faible | Problème | Verbatim OF (Hervé P.). Peu concurrentiel. |
 | refus de déclaration d'activité formation | Know | [À SOURCER] | Faible | Problème | |
 | pourquoi mon numéro de déclaration d'activité est refusé | Know | [À SOURCER] | Faible | Problème | |
 | transférer son nda d'auto-entrepreneur vers une société | Do | [À SOURCER] | Faible | Décision | Verbatim PH, deadline statut. |
@@ -143,9 +143,9 @@ relié: [[fgformation]]
 
 | Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
 |---|---|---|---|---|---|
-| trouver des clients formateur sans faire de commercial | Do | [À SOURCER] | Moyenne | Décision | Verbatim Gilles « je suis musicien pas commercial ». |
+| trouver des clients formateur sans faire de commercial | Do | [À SOURCER] | Moyenne | Décision | Verbatim Gaël « je suis musicien pas commercial ». |
 | utiliser linkedin pour trouver des clients en formation | Do | [À SOURCER] | Moyenne | Décision | Recoupe stratégie LinkedIn. |
-| relancer son activité de formateur | Know | [À SOURCER] | Faible | Problème | Verbatim Gilles, chute de CA. |
+| relancer son activité de formateur | Know | [À SOURCER] | Faible | Problème | Verbatim Gaël, chute de CA. |
 | prospecter en formation professionnelle b2b | Know | [À SOURCER] | Moyenne | Problème | |
 
 ## Têtes génériques (référence, à NE PAS prioriser)

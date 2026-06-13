@@ -86,7 +86,7 @@ Persona : OF (interne, association, déjà certifié, créateur). Conversion : d
 
 | Modèle (template + variable) | Variable | Volume de pages | Score type | Note |
 |---|---|---|---|---|
-| `Qualiopi pour le centre de formation interne d'une entreprise [secteur]` | secteur (industrie, automobile, santé, BTP, transport, IT…) | ~10-15 | 9 | Décline le Spoke n°1 par secteur. Cas Fassi/Maurel généralisés. |
+| `Qualiopi pour le centre de formation interne d'une entreprise [secteur]` | secteur (industrie, automobile, santé, BTP, transport, IT…) | ~10-15 | 9 | Décline le Spoke n°1 par secteur. Cas industrie A/groupe industriel B généralisés. |
 | `Qualiopi pour [structure réglementée]` | structure (association, ordre professionnel, société savante, syndicat, fédération) | ~5 | 8 | Niche réglementée, SERP vierge. |
 | `Qualiopi obligatoire pour former des [profession]` | profession (avocats, notaires, experts-comptables, médecins, experts fonciers…) | ~6-8 | 6 | Décline l'obligation déontologique par profession. |
 | `monter une formation [domaine] finançable CPF` | domaine (IA, cybersécurité, management, soft skills…) | ~5 | 5 | Surfe le marché financements. |
