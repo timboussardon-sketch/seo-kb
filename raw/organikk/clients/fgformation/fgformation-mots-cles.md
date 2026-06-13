@@ -30,133 +30,133 @@ relié: [[fgformation]]
 
 ## P1 — Sortir de la sous-traitance / dépendance `[Axe F]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| qualiopi pour travailler en direct avec les entreprises | Do | [À SOURCER] | Faible | Décision | Page pivot P1 → devis. Personne ne la fait. |
-| passer en direct quand on est formateur sous-traitant | Do | [À SOURCER] | Faible | Décision | Verbatim Damien/Manon. CTA prise de RDV. |
-| devenir formateur indépendant sans organisme de formation | Do | [À SOURCER] | Faible | Décision | |
-| sortir de la sous-traitance en formation | Know | [À SOURCER] | Faible | Problème | Article problème → solution Qualiopi. |
-| ne plus dépendre d'un donneur d'ordre formation | Know | [À SOURCER] | Faible | Problème | Angle « risque dépendance », fil rouge. |
-| faut-il être qualiopi pour travailler en direct | Know | [À SOURCER] | Moyenne | Problème | PAA. Réponse = oui + offre. |
-| combien un organisme de formation prend de marge sur un formateur | Know | [À SOURCER] | Faible | Problème | Verbatim « 2 600 € → payée 450 € ». Très accrocheur. |
-| formateur sous-traitant ou en direct | Know | [À SOURCER] | Faible | Problème | Comparatif. |
-| trouver ses propres clients quand on est formateur | Do | [À SOURCER] | Moyenne | Décision | Recoupe P9. |
-| comment trouver des clients en formation professionnelle | Do | [À SOURCER] | Moyenne | Décision | |
-| prospecter quand on est formateur indépendant | Know | [À SOURCER] | Faible | Problème | |
-| baisse d'activité formateur 2026 | Know-Simple | [À SOURCER] | Faible | Problème | Page « anticipation » (verbatim Damien). |
-| risque de travailler avec un seul donneur d'ordre | Know | [À SOURCER] | Faible | Problème | Verbatim Bruno « ardoise 5-10 k€ ». |
-| qualiopi roue de secours formateur | Know | [À SOURCER] | Faible | Problème | Verbatim Damien, angle anticipation 2027. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| qualiopi pour travailler en direct avec les entreprises | Do | Faible | Décision | Page pivot P1 → devis. Personne ne la fait. |
+| passer en direct quand on est formateur sous-traitant | Do | Faible | Décision | Verbatim Damien/Manon. CTA prise de RDV. |
+| devenir formateur indépendant sans organisme de formation | Do | Faible | Décision | |
+| sortir de la sous-traitance en formation | Know | Faible | Problème | Article problème → solution Qualiopi. |
+| ne plus dépendre d'un donneur d'ordre formation | Know | Faible | Problème | Angle « risque dépendance », fil rouge. |
+| faut-il être qualiopi pour travailler en direct | Know | Moyenne | Problème | PAA. Réponse = oui + offre. |
+| combien un organisme de formation prend de marge sur un formateur | Know | Faible | Problème | Verbatim « 2 600 € → payée 450 € ». Très accrocheur. |
+| formateur sous-traitant ou en direct | Know | Faible | Problème | Comparatif. |
+| trouver ses propres clients quand on est formateur | Do | Moyenne | Décision | Recoupe P9. |
+| comment trouver des clients en formation professionnelle | Do | Moyenne | Décision | |
+| prospecter quand on est formateur indépendant | Know | Faible | Problème | |
+| baisse d'activité formateur 2026 | Know-Simple | Faible | Problème | Page « anticipation » (verbatim Damien). |
+| risque de travailler avec un seul donneur d'ordre | Know | Faible | Problème | Verbatim Bruno « ardoise 5-10 k€ ». |
+| qualiopi roue de secours formateur | Know | Faible | Problème | Verbatim Damien, angle anticipation 2027. |
 
 ## P2 — Débloquer des ventes / financement `[Axe F + OF]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| faire financer une formation sans être qualiopi | Know | [À SOURCER] | Faible | Problème | Réponse = impossible → CTA Qualiopi. Fort. |
-| mes clients ne peuvent pas financer ma formation | Know | [À SOURCER] | Faible | Problème | Verbatim Fabrice. Page douleur. |
-| qualiopi pour débloquer les financements opco | Do | [À SOURCER] | Moyenne | Décision | |
-| combien de temps pour obtenir qualiopi | Know | [À SOURCER] | Moyenne | Décision | Objection délai. PAA. |
-| obtenir qualiopi rapidement | Do | [À SOURCER] | Moyenne | Décision | |
-| qualiopi est-ce rentable | Know | [À SOURCER] | Faible | Problème | Page ROI (verbatim « rentabilité immédiate »). |
-| qualiopi à partir de combien de clients c'est rentable | Know | [À SOURCER] | Faible | Problème | |
-| sortir de la sous-traitance pour facturer en direct | Do | [À SOURCER] | Faible | Décision | Recoupe P1. |
-| faire héberger sa formation par un organisme qualiopi | Know | [À SOURCER] | Faible | Problème | Verbatim Fabrice, commission 30 %. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| faire financer une formation sans être qualiopi | Know | Faible | Problème | Réponse = impossible → CTA Qualiopi. Fort. |
+| mes clients ne peuvent pas financer ma formation | Know | Faible | Problème | Verbatim Fabrice. Page douleur. |
+| qualiopi pour débloquer les financements opco | Do | Moyenne | Décision | |
+| combien de temps pour obtenir qualiopi | Know | Moyenne | Décision | Objection délai. PAA. |
+| obtenir qualiopi rapidement | Do | Moyenne | Décision | |
+| qualiopi est-ce rentable | Know | Faible | Problème | Page ROI (verbatim « rentabilité immédiate »). |
+| qualiopi à partir de combien de clients c'est rentable | Know | Faible | Problème | |
+| sortir de la sous-traitance pour facturer en direct | Do | Faible | Décision | Recoupe P1. |
+| faire héberger sa formation par un organisme qualiopi | Know | Faible | Problème | Verbatim Fabrice, commission 30 %. |
 
 ## P3 — Créer son OF / devenir finançable CPF `[Axe OF]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| comment rendre sa formation éligible au cpf | Do | [À SOURCER] | Élevée | Décision | Gros sujet, concurrentiel. |
-| créer un organisme de formation par où commencer | Do | [À SOURCER] | Élevée | Décision | Tête de cluster P3. |
-| devenir organisme de formation finançable | Do | [À SOURCER] | Moyenne | Décision | |
-| e-learning et cpf dossier refusé | Know | [À SOURCER] | Faible | Problème | Verbatim créateur OF A. Très spécifique. |
-| différence nda qualiopi edof cpf | Know-Simple | [À SOURCER] | Moyenne | Problème | Page pédagogique anti-confusion. Maillage interne hub. |
-| qualiopi ou rncp pour être finançable | Know | [À SOURCER] | Moyenne | Problème | Verbatim OF santé A. |
-| devenir finançable cpf quand on vend aux particuliers | Do | [À SOURCER] | Faible | Décision | |
-| rendre une formation finançable | Do | [À SOURCER] | Moyenne | Décision | |
-| s'adosser à une certification pour le cpf | Know | [À SOURCER] | Faible | Problème | |
-| créer sa propre certification rncp ou s'adosser | Know | [À SOURCER] | Faible | Problème | Verbatim OF santé A, arbitrage. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| comment rendre sa formation éligible au cpf | Do | Élevée | Décision | Gros sujet, concurrentiel. |
+| créer un organisme de formation par où commencer | Do | Élevée | Décision | Tête de cluster P3. |
+| devenir organisme de formation finançable | Do | Moyenne | Décision | |
+| e-learning et cpf dossier refusé | Know | Faible | Problème | Verbatim créateur OF A. Très spécifique. |
+| différence nda qualiopi edof cpf | Know-Simple | Moyenne | Problème | Page pédagogique anti-confusion. Maillage interne hub. |
+| qualiopi ou rncp pour être finançable | Know | Moyenne | Problème | Verbatim OF santé A. |
+| devenir finançable cpf quand on vend aux particuliers | Do | Faible | Décision | |
+| rendre une formation finançable | Do | Moyenne | Décision | |
+| s'adosser à une certification pour le cpf | Know | Faible | Problème | |
+| créer sa propre certification rncp ou s'adosser | Know | Faible | Problème | Verbatim OF santé A, arbitrage. |
 
 ## P4 — OF interne d'entreprise (certif perdue) `[Axe OF]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| qualiopi pour un centre de formation interne | Do | [À SOURCER] | Faible | Décision | Cas industrie A / groupe industriel B. |
-| certifier qualiopi le service formation d'une entreprise | Do | [À SOURCER] | Faible | Décision | |
-| redevenir qualiopi après l'avoir perdu | Do | [À SOURCER] | Faible | Décision | Verbatim « repart de zéro ». |
-| remettre en place qualiopi | Do | [À SOURCER] | Faible | Décision | |
-| qualiopi sans référent formation interne | Do | [À SOURCER] | Faible | Décision | Angle clé en main + référent. |
-| récupérer son numéro de déclaration d'activité perdu | Know | [À SOURCER] | Faible | Problème | |
-| qualiopi clé en main pour entreprise | Do | [À SOURCER] | Moyenne | Décision | Attention : tenir l'angle « rend autonome ». |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| qualiopi pour un centre de formation interne | Do | Faible | Décision | Cas industrie A / groupe industriel B. |
+| certifier qualiopi le service formation d'une entreprise | Do | Faible | Décision | |
+| redevenir qualiopi après l'avoir perdu | Do | Faible | Décision | Verbatim « repart de zéro ». |
+| remettre en place qualiopi | Do | Faible | Décision | |
+| qualiopi sans référent formation interne | Do | Faible | Décision | Angle clé en main + référent. |
+| récupérer son numéro de déclaration d'activité perdu | Know | Faible | Problème | |
+| qualiopi clé en main pour entreprise | Do | Moyenne | Décision | Attention : tenir l'angle « rend autonome ». |
 
 ## P5 — Audit de surveillance / sécuriser la certif `[Axe OF]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| préparer son audit de surveillance qualiopi | Do | [À SOURCER] | Moyenne | Décision | Récurrent (société savante santé, OF orienté IA). Page pivot P5. |
-| audit blanc qualiopi | Do | [À SOURCER] | Moyenne | Décision | Offre packageable, CTA direct. |
-| réussir son audit de surveillance qualiopi | Know | [À SOURCER] | Moyenne | Problème | |
-| audit qualiopi non-conformités majeures | Know | [À SOURCER] | Faible | Problème | |
-| éviter les non-conformités à l'audit qualiopi | Know | [À SOURCER] | Faible | Problème | |
-| simplifier ses process qualiopi | Know | [À SOURCER] | Faible | Problème | Verbatim « on fait tout à la main ». |
-| audit de surveillance qualiopi à 18 mois | Know-Simple | [À SOURCER] | Faible | Problème | |
-| indicateurs qualiopi soumis à interprétation | Know | [À SOURCER] | Faible | Problème | Verbatim société savante santé, angle subjectivité auditeur. |
-| se faire accompagner pour l'audit de surveillance | Do | [À SOURCER] | Faible | Décision | |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| préparer son audit de surveillance qualiopi | Do | Moyenne | Décision | Récurrent (société savante santé, OF orienté IA). Page pivot P5. |
+| audit blanc qualiopi | Do | Moyenne | Décision | Offre packageable, CTA direct. |
+| réussir son audit de surveillance qualiopi | Know | Moyenne | Problème | |
+| audit qualiopi non-conformités majeures | Know | Faible | Problème | |
+| éviter les non-conformités à l'audit qualiopi | Know | Faible | Problème | |
+| simplifier ses process qualiopi | Know | Faible | Problème | Verbatim « on fait tout à la main ». |
+| audit de surveillance qualiopi à 18 mois | Know-Simple | Faible | Problème | |
+| indicateurs qualiopi soumis à interprétation | Know | Faible | Problème | Verbatim société savante santé, angle subjectivité auditeur. |
+| se faire accompagner pour l'audit de surveillance | Do | Faible | Décision | |
 
 ## P6 — Offre IA finançable CPF `[Axe OF]` (marché chaud)
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| monter une formation ia finançable cpf | Do | [À SOURCER] | Moyenne | Décision | Marché chaud, financements OPCO fléchés. |
-| quelle certification pour une formation en intelligence artificielle cpf | Know | [À SOURCER] | Moyenne | Problème | |
-| devenir organisme de formation en ia | Do | [À SOURCER] | Moyenne | Décision | |
-| qualiopi pour une formation en intelligence artificielle | Do | [À SOURCER] | Faible | Décision | |
-| financement opco formation ia 2026 | Know | [À SOURCER] | Faible | Problème | Angle « budgets prioritaires IA ». |
-| comment devenir formateur en ia | Know | [À SOURCER] | Élevée | Problème | Gros volume probable (cf. call Tim). Top funnel, capter large. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| monter une formation ia finançable cpf | Do | Moyenne | Décision | Marché chaud, financements OPCO fléchés. |
+| quelle certification pour une formation en intelligence artificielle cpf | Know | Moyenne | Problème | |
+| devenir organisme de formation en ia | Do | Moyenne | Décision | |
+| qualiopi pour une formation en intelligence artificielle | Do | Faible | Décision | |
+| financement opco formation ia 2026 | Know | Faible | Problème | Angle « budgets prioritaires IA ». |
+| comment devenir formateur en ia | Know | Élevée | Problème | Gros volume probable (cf. call Tim). Top funnel, capter large. |
 
 ## P7 — Professions réglementées / associations `[Axe OF]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| qualiopi pour une association qui forme ses membres | Do | [À SOURCER] | Faible | Décision | Cas association A. Niche très peu travaillée. |
-| qualiopi obligatoire pour les formations d'avocats | Know | [À SOURCER] | Faible | Problème | Décision CNB fin 2023. Très précis. |
-| homologation formation avocat qualiopi | Know | [À SOURCER] | Faible | Problème | |
-| qualiopi société savante / ordre professionnel | Do | [À SOURCER] | Faible | Décision | |
-| qualiopi en nom propre ou portage | Know | [À SOURCER] | Faible | Problème | Verbatim association A, arbitrage. |
-| portage qualiopi comment ça marche | Know | [À SOURCER] | Faible | Problème | |
-| faire certifier les formations de mes membres | Do | [À SOURCER] | Faible | Décision | |
-| diagnostic qualiopi avant de se lancer | Do | [À SOURCER] | Faible | Décision | Verbatim association A « besoin d'un diagnostic préalable ». Lead magnet. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| qualiopi pour une association qui forme ses membres | Do | Faible | Décision | Cas association A. Niche très peu travaillée. |
+| qualiopi obligatoire pour les formations d'avocats | Know | Faible | Problème | Décision CNB fin 2023. Très précis. |
+| homologation formation avocat qualiopi | Know | Faible | Problème | |
+| qualiopi société savante / ordre professionnel | Do | Faible | Décision | |
+| qualiopi en nom propre ou portage | Know | Faible | Problème | Verbatim association A, arbitrage. |
+| portage qualiopi comment ça marche | Know | Faible | Problème | |
+| faire certifier les formations de mes membres | Do | Faible | Décision | |
+| diagnostic qualiopi avant de se lancer | Do | Faible | Décision | Verbatim association A « besoin d'un diagnostic préalable ». Lead magnet. |
 
 ## P8 — Problème NDA (pas Qualiopi) `[Axe F]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| mon nda a été refusé que faire | Know | [À SOURCER] | Faible | Problème | Verbatim OF (Hervé P.). Peu concurrentiel. |
-| refus de déclaration d'activité formation | Know | [À SOURCER] | Faible | Problème | |
-| pourquoi mon numéro de déclaration d'activité est refusé | Know | [À SOURCER] | Faible | Problème | |
-| transférer son nda d'auto-entrepreneur vers une société | Do | [À SOURCER] | Faible | Décision | Verbatim PH, deadline statut. |
-| refaire son nda en passant en sarl | Do | [À SOURCER] | Faible | Décision | |
-| changer de statut formateur sans perdre son activité | Know | [À SOURCER] | Faible | Problème | |
-| vérifier son contrat de formation avant le nda | Do | [À SOURCER] | Faible | Décision | Offre « relecture contrat », CTA. |
-| modèle de contrat de formation dreets | Know | [À SOURCER] | Moyenne | Problème | Capter + orienter. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| mon nda a été refusé que faire | Know | Faible | Problème | Verbatim OF (Hervé P.). Peu concurrentiel. |
+| refus de déclaration d'activité formation | Know | Faible | Problème | |
+| pourquoi mon numéro de déclaration d'activité est refusé | Know | Faible | Problème | |
+| transférer son nda d'auto-entrepreneur vers une société | Do | Faible | Décision | Verbatim PH, deadline statut. |
+| refaire son nda en passant en sarl | Do | Faible | Décision | |
+| changer de statut formateur sans perdre son activité | Know | Faible | Problème | |
+| vérifier son contrat de formation avant le nda | Do | Faible | Décision | Offre « relecture contrat », CTA. |
+| modèle de contrat de formation dreets | Know | Moyenne | Problème | Capter + orienter. |
 
 ## P9 — Visibilité / prospection (offre connexe) `[Axe F]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| trouver des clients formateur sans faire de commercial | Do | [À SOURCER] | Moyenne | Décision | Verbatim Gaël « je suis musicien pas commercial ». |
-| utiliser linkedin pour trouver des clients en formation | Do | [À SOURCER] | Moyenne | Décision | Recoupe stratégie LinkedIn. |
-| relancer son activité de formateur | Know | [À SOURCER] | Faible | Problème | Verbatim Gaël, chute de CA. |
-| prospecter en formation professionnelle b2b | Know | [À SOURCER] | Moyenne | Problème | |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| trouver des clients formateur sans faire de commercial | Do | Moyenne | Décision | Verbatim Gaël « je suis musicien pas commercial ». |
+| utiliser linkedin pour trouver des clients en formation | Do | Moyenne | Décision | Recoupe stratégie LinkedIn. |
+| relancer son activité de formateur | Know | Faible | Problème | Verbatim Gaël, chute de CA. |
+| prospecter en formation professionnelle b2b | Know | Moyenne | Problème | |
 
 ## Têtes génériques (référence, à NE PAS prioriser)
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| accompagnement qualiopi | Do | [À SOURCER] | Élevée | Décision | Déjà top 3, plafonné. Garder, ne pas y investir. |
-| accompagnement à la certification qualiopi | Do | [À SOURCER] | Élevée | Décision | ~3e. |
-| consultant qualiopi | Do | [À SOURCER] | Élevée | Décision | |
-| certification qualiopi | Know | [À SOURCER] | Élevée | Problème | Informationnel saturé. |
-| organisme de formation clé en main | Do | [À SOURCER] | Élevée | Décision | Page existante (top 2-6), retombées faibles. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| accompagnement qualiopi | Do | Élevée | Décision | Déjà top 3, plafonné. Garder, ne pas y investir. |
+| accompagnement à la certification qualiopi | Do | Élevée | Décision | ~3e. |
+| consultant qualiopi | Do | Élevée | Décision | |
+| certification qualiopi | Know | Élevée | Problème | Informationnel saturé. |
+| organisme de formation clé en main | Do | Élevée | Décision | Page existante (top 2-6), retombées faibles. |
 
 ---
 
@@ -198,37 +198,37 @@ relié: [[fgformation]]
 
 ### P10 — Entreprise / éditeur qui rend sa formation finançable `[Axe PME]` (alimente « qualiopi pour PME »)
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| ⭐ qualiopi pour pme | Do | [À SOURCER] | Moyenne | Décision | **Money page PME**. Angle : financer la formation des salariés via OPCO. Doctrine 4 piliers en tête. |
-| qualiopi pour financer la formation de ses salariés | Do | [À SOURCER] | Faible | Décision | Reformulation intention réelle. CTA devis. |
-| former ses clients avec une prise en charge opco | Do | [À SOURCER] | Faible | Décision | Verbatim éditeurs SaaS (caisse, conformité, data). |
-| qualiopi pour une entreprise informatique / prestataire it | Do | [À SOURCER] | Faible | Décision | Cas MSP/IT (Samir). SERP vierge. |
-| qualiopi pour un éditeur de logiciel | Do | [À SOURCER] | Faible | Décision | Facturer la formation à son outil. |
-| facturer l'onboarding comme une formation finançable | Know | [À SOURCER] | Faible | Problème | Verbatim « on appelle ça accompagnement, on veut le marketer ». |
-| transformer un accompagnement produit en formation opco | Know | [À SOURCER] | Faible | Problème | |
-| qualiopi quand on a déjà iso 27001 / iso 9001 | Know | [À SOURCER] | Faible | Problème | Rassure les structures déjà certifiées. |
-| créer une activité de formation dans son entreprise | Do | [À SOURCER] | Moyenne | Décision | Business unit formation. |
-| qualiopi formation anti-blanchiment lcb-ft obligatoire | Do | [À SOURCER] | Faible | Décision | Formation réglementaire annuelle (professions assujetties). |
-| qualiopi pour un cabinet d'avocats | Do | [À SOURCER] | Faible | Décision | Cas cabinet (droit social), recoupe P7. |
-| qualiopi pour un studio / une agence qui forme à l'ia | Do | [À SOURCER] | Faible | Décision | Recoupe P6 (IA). |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| ⭐ qualiopi pour pme | Do | Moyenne | Décision | **Money page PME**. Angle : financer la formation des salariés via OPCO. Doctrine 4 piliers en tête. |
+| qualiopi pour financer la formation de ses salariés | Do | Faible | Décision | Reformulation intention réelle. CTA devis. |
+| former ses clients avec une prise en charge opco | Do | Faible | Décision | Verbatim éditeurs SaaS (caisse, conformité, data). |
+| qualiopi pour une entreprise informatique / prestataire it | Do | Faible | Décision | Cas MSP/IT (Samir). SERP vierge. |
+| qualiopi pour un éditeur de logiciel | Do | Faible | Décision | Facturer la formation à son outil. |
+| facturer l'onboarding comme une formation finançable | Know | Faible | Problème | Verbatim « on appelle ça accompagnement, on veut le marketer ». |
+| transformer un accompagnement produit en formation opco | Know | Faible | Problème | |
+| qualiopi quand on a déjà iso 27001 / iso 9001 | Know | Faible | Problème | Rassure les structures déjà certifiées. |
+| créer une activité de formation dans son entreprise | Do | Moyenne | Décision | Business unit formation. |
+| qualiopi formation anti-blanchiment lcb-ft obligatoire | Do | Faible | Décision | Formation réglementaire annuelle (professions assujetties). |
+| qualiopi pour un cabinet d'avocats | Do | Faible | Décision | Cas cabinet (droit social), recoupe P7. |
+| qualiopi pour un studio / une agence qui forme à l'ia | Do | Faible | Décision | Recoupe P6 (IA). |
 
 ### P1 bis — Nouvelles situations formateur (Vague 2) `[Axe F]`
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| ⭐ qualiopi pour formateur sous-traitant | Know | [À SOURCER] | Moyenne | Problème | **Page pivot Arbre A**. SERP informationnelle. Vérité : pas obligatoire hors CPF → pivot « passer en direct ». |
-| dans quel ordre faire siret nda et qualiopi | Know | [À SOURCER] | Faible | Problème | Confusion fréquente (Yasmine). Page pédagogique. |
-| qualiopi quand on est demandeur d'emploi | Know | [À SOURCER] | Faible | Problème | Petit budget, financement France Travail. |
-| financer sa certification quand on a peu de trésorerie | Know | [À SOURCER] | Faible | Problème | |
-| organisme de portage cpf en faillite que faire | Know | [À SOURCER] | Faible | Problème | Verbatim « 30 000 € d'ardoise ». Très spécifique, SERP vierge. |
-| internaliser le cpf après un portage raté | Do | [À SOURCER] | Faible | Décision | Reprendre la main sur EDOF. |
-| passer qualiopi pour le bilan de compétences ou la formation | Know | [À SOURCER] | Faible | Problème | Arbitrage double certif. |
-| qualiopi est-ce rentable si je ne vends pas | Know | [À SOURCER] | Faible | Problème | Verbatim « la certif ne m'a pas fait travailler ». |
-| faut-il garder ou abandonner qualiopi | Know | [À SOURCER] | Faible | Problème | Angle ROI / décision. |
-| financement fipu formation prévention | Know | [À SOURCER] | Faible | Problème | FIPU ~70 % (PRAP, gestes & postures). Peu couvert. |
-| prise en charge opco pour un artisan | Know | [À SOURCER] | Faible | Problème | Barèmes, fenêtre de financement. |
-| qualiopi pour formateur en [métier] | Do | [À SOURCER] | Faible | Décision | **Modèle scalable** : coiffure, imprimerie, FLE, automobile, HSE, RSE événementiel, sport… (cf. modèle pSEO arbre A). |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| ⭐ qualiopi pour formateur sous-traitant | Know | Moyenne | Problème | **Page pivot Arbre A**. SERP informationnelle. Vérité : pas obligatoire hors CPF → pivot « passer en direct ». |
+| dans quel ordre faire siret nda et qualiopi | Know | Faible | Problème | Confusion fréquente (Yasmine). Page pédagogique. |
+| qualiopi quand on est demandeur d'emploi | Know | Faible | Problème | Petit budget, financement France Travail. |
+| financer sa certification quand on a peu de trésorerie | Know | Faible | Problème | |
+| organisme de portage cpf en faillite que faire | Know | Faible | Problème | Verbatim « 30 000 € d'ardoise ». Très spécifique, SERP vierge. |
+| internaliser le cpf après un portage raté | Do | Faible | Décision | Reprendre la main sur EDOF. |
+| passer qualiopi pour le bilan de compétences ou la formation | Know | Faible | Problème | Arbitrage double certif. |
+| qualiopi est-ce rentable si je ne vends pas | Know | Faible | Problème | Verbatim « la certif ne m'a pas fait travailler ». |
+| faut-il garder ou abandonner qualiopi | Know | Faible | Problème | Angle ROI / décision. |
+| financement fipu formation prévention | Know | Faible | Problème | FIPU ~70 % (PRAP, gestes & postures). Peu couvert. |
+| prise en charge opco pour un artisan | Know | Faible | Problème | Barèmes, fenêtre de financement. |
+| qualiopi pour formateur en [métier] | Do | Faible | Décision | **Modèle scalable** : coiffure, imprimerie, FLE, automobile, HSE, RSE événementiel, sport… (cf. modèle pSEO arbre A). |
 
 ### Synthèse Vague 2
 - **~24 requêtes ajoutées** : 12 sur P10 (PME/entreprise, cœur de la 2e money page prioritaire), 12 sur les nouvelles situations formateur.
@@ -240,20 +240,20 @@ relié: [[fgformation]]
 
 > Requêtes surtout **Know / top-funnel** : elles captent le formateur ou l'OF qui **prépare son audit** (nouvel entrant) et qui aura besoin d'accompagnement juste après. C'est un **hub de topical authority** qui maille vers les money pages. Quelques requêtes sont décisionnelles (récupérer un NDA perdu, contrat de sous-traitance, manuel qualité).
 
-| Mot-clé | Intention | Volume | Difficulté | Funnel | Note |
-|---|---|---|---|---|---|
-| quelles preuves fournir à l'audit qualiopi par indicateur | Know | [À SOURCER] | Moyenne | Problème | « déclaratif ≠ preuve », angoisse récurrente. Page hub. |
-| documents obligatoires nouvel entrant qualiopi | Know | [À SOURCER] | Faible | Problème | Quels indicateurs concernés quand on débute. |
-| manuel qualité qualiopi modèle | Do | [À SOURCER] | Moyenne | Décision | Livrable recherché. Lead magnet possible. |
-| indicateur 4 et 26 qualiopi recueil et accueil du handicap | Know | [À SOURCER] | Faible | Problème | Référent handicap, protocole, liste partenaires. |
-| comment calculer le taux de réussite qualiopi | Know | [À SOURCER] | Faible | Problème | Indicateurs 2/11. |
-| prouver la compétence des formateurs cv intervenants qualiopi | Know | [À SOURCER] | Faible | Problème | Cas médecins/experts/bénévoles (ind. 17-21-22). |
-| veille réglementaire formation qualiopi | Know | [À SOURCER] | Faible | Problème | Sujet daté (V10, décrets) — ind. 23-24-25. |
-| récupérer un numéro de déclaration d'activité perdu | Do | [À SOURCER] | Faible | Décision | Recoupe P4 (certif perdue). Score décisionnel élevé. |
-| contrat de sous-traitance formateur qualiopi | Do | [À SOURCER] | Faible | Décision | Indicateur 27. |
-| comment devenir edof après qualiopi | Know | [À SOURCER] | Moyenne | Problème | Confusion parcours post-certif (recoupe P3). |
-| fiche d'analyse du besoin stagiaire modèle | Do | [À SOURCER] | Faible | Problème | Indicateur 4. |
-| qualiopi formateur sans local | Know | [À SOURCER] | Faible | Problème | Cas formateur solo nomade. |
+| Mot-clé | Intention | Difficulté | Funnel | Note |
+|---|---|---|---|---|
+| quelles preuves fournir à l'audit qualiopi par indicateur | Know | Moyenne | Problème | « déclaratif ≠ preuve », angoisse récurrente. Page hub. |
+| documents obligatoires nouvel entrant qualiopi | Know | Faible | Problème | Quels indicateurs concernés quand on débute. |
+| manuel qualité qualiopi modèle | Do | Moyenne | Décision | Livrable recherché. Lead magnet possible. |
+| indicateur 4 et 26 qualiopi recueil et accueil du handicap | Know | Faible | Problème | Référent handicap, protocole, liste partenaires. |
+| comment calculer le taux de réussite qualiopi | Know | Faible | Problème | Indicateurs 2/11. |
+| prouver la compétence des formateurs cv intervenants qualiopi | Know | Faible | Problème | Cas médecins/experts/bénévoles (ind. 17-21-22). |
+| veille réglementaire formation qualiopi | Know | Faible | Problème | Sujet daté (V10, décrets) — ind. 23-24-25. |
+| récupérer un numéro de déclaration d'activité perdu | Do | Faible | Décision | Recoupe P4 (certif perdue). Score décisionnel élevé. |
+| contrat de sous-traitance formateur qualiopi | Do | Faible | Décision | Indicateur 27. |
+| comment devenir edof après qualiopi | Know | Moyenne | Problème | Confusion parcours post-certif (recoupe P3). |
+| fiche d'analyse du besoin stagiaire modèle | Do | Faible | Problème | Indicateur 4. |
+| qualiopi formateur sans local | Know | Faible | Problème | Cas formateur solo nomade. |
 
 **Lecture** : les 5 audits ne sont pas stériles. Ils ne contiennent pas d'intention de devis aussi nette que les RDV de découverte (c'est du coaching indicateur-par-indicateur), mais ils livrent un **cluster opérationnel « nouvel entrant / preuves »** précieux pour l'autorité thématique et pour capter le prospect mûr en préparation d'audit. Profils audités : 4 formateurs/OF nouveaux entrants (axe F) + 1 OF associatif ayant perdu son NDA (axe OF, recoupe P4).
 
