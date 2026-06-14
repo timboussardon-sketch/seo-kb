@@ -372,3 +372,24 @@ Grille : source_diversity 8, claim_density « info du jour 5 verified + 1 uncert
 
 **Décision pour la prochaine édition** : viser Product-Led SEO (fiche preuve H-007 J+30 à 2 jours si renseignée) ou Actualité SEO (opt-out AI Overviews 17 juin à 4 jours, fenêtre d'observation) ou GEO (2e étude empirique Dark Matter Rate). NE PAS réenchaîner Recherche agentique sans fait franchement neuf (deux des trois dernières : 0612 + 0613).
 | 2026-06-13-v2 | 5/5 | 4/5 | 5/5 | 4/5 | 12 claims retenus, corps recoupé ≥2 sources indépendantes pour info du jour (Stein post X + SEJ Montti + PPC Land + 9to5Google), ≥2 sources pour B1 (BrightEdge primaire + SEJ Montti), ≥3 sources pour B2 (SEL + SEJ + PPC Land + blog.google), ≥3 sources pour B3 (SE Roundtable + SEL + Optimixed + Digital Phablet) ; 1 claim écarté (Robby Stein interview SEL URL 403 non vérifiable) ; pilier GEO information agents distinct du pilier Recherche agentique v1 Microsoft Agent 365 (couche consumer Ultra vs enterprise IT) | 4.5/5 |
+
+## Édition 2026-06-14 (samedi, matin, cloud)
+
+Pilier : Actualité SEO (info du jour).
+
+| Axe | Mesure | Note |
+|---|---|---|
+| `source_diversity` | 11 sources indépendantes mobilisées (4 info du jour + 4 brève 1 + 2 brève 2 + 2 brève 3, dont 2 primaires Google) | 4/5 |
+| `claim_density` | 15 claims `verified` au total (4 info + 4 brève 1 + 4 brève 2 + 3 brève 3) | 4/5 |
+| `novelty_score` | extension de la Limited Ad Serving Policy à Search jamais traitée + parenté E-E-A-T paid/organic non couverte ; nouvelle donnée Claude/Brave qui ouvre un axe GEO non listé dans metriques-visibilite-geo ; deadline back button D-1 angle pratique avec responsabilité code tiers ; opt-out CMA J-3 + zone Information Agents non documentée (nouveau cadrage) | 4/5 |
+| `doctrine_fit` | info du jour reliée à e-e-a-t (parenté Trustworthiness paid/organic, mention explicite) ; brève 2 reliée à aeo + metriques-visibilite-geo (nouvel axe moteur web sous-jacent) ; brève 3 reliée à agentic-search (Information Agents persistance asynchrone, déjà couverte 0613-v2) ; brève 1 pas de doctrine directe (spam policy UX) | 3/5 |
+| `redite_risk` | aucun thème de l'info du jour ni des brèves 1 et 2 dans said_index ; brève 3 consolide un thème connu (CMA opt-out said 0609-v2) avec angle nouveau (J-3 + question Information Agents) ; risque global faible | faible |
+| `clickbait_risk` | titres factuels, pas de promesse creuse, pas de question rhétorique, pas de superlatif vide ; B1 « demain 15 juin » est temporellement précis pas alarmiste ; B2 « nouvelle donnée Profound » nomme la source ; B3 « non documentée » est neutre | faible |
+
+Note globale : 4/5.
+
+Notes méthodo :
+- 3 brèves au lieu de 3-4 préconisé, conscient. Samedi à faible densité de news : pas de 4e brève forcée (Tabeling écarté pour méthodologie + paraphrase Ahrefs incorrecte + promotion llms.txt contre doctrine).
+- Pilier de variation tenu (Actualité SEO dernière 0612-v2, 3 jours en arrière). Vigilance pour la prochaine : ne pas réenchaîner Actualité SEO en info du jour, viser Product-Led SEO (H-007 J+30 dans 1 jour) ou Recherche agentique ou GEO.
+- Doctrine fit 3/5 (et non 4-5) car le lien e-e-a-t est argumenté mais reste une parenté plus qu'une activation directe d'une page doctrine. Plus fort sur la brève 2 (axe moteur web sous-jacent à ajouter à metriques-visibilite-geo en revue hebdo).
+- Discipline anti-pattern IA tenue : zéro métaphore, zéro tiret cadratim hors structurels, zéro consensus artificiel, vouvoiement maintenu.
