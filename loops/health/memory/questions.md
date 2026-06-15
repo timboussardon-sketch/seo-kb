@@ -4,7 +4,12 @@ LA SEULE PORTE par laquelle la boucle touche au CODE. Le brain n'edite jamais so
 il ecrit ici un diff propose + la raison, Tim tranche a la revue.
 
 ## En attente de decision
-- (rien pour l'instant)
+
+### 2026-06-15 — cadence pour content-brain/*
+Le schema v1 de `content-brain/_template/manifest.yml` n'a pas de champ `cadence` (calque agent-synthetic v2 qui en manque aussi). Resultat : impossible de detecter une boucle muette au niveau d'un brain client (ex. golfiller dernier run J+5). Diff propose : ajouter `cadence: a-la-demande` par defaut dans `_template/manifest.yml`, et au cas par cas dans chaque brain client (golfiller = hebdomadaire ? mensuelle ?). Raison : sans cadence declaree, la routine health n'a pas de baseline pour alerter. Tim tranche.
+
+### 2026-06-15 — trigger linkedin-journal
+`loops/linkedin-journal` cadence=quotidienne, 0 run depuis sa creation 2026-06-12. Le brain est instrumente (ledgers vides + manifest + memory) mais aucun cron ni hook ne le declenche. Question : faut-il un workflow GitHub Actions ou un LaunchAgent ? Tim tranche.
 
 ## Tranche (historique)
 - (rien pour l'instant)

@@ -1,0 +1,1 @@
+{"date":"2026-06-15","brain":"loops/linkedin-journal","anomalie":"boucle muette","preuve":"cadence=quotidienne dans manifest.yml, runs.jsonl vide, brain cree 2026-06-12 (3 jours sans run, tolerance quotidienne=2 jours)","capture_mode":"native"}
