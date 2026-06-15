@@ -41,7 +41,7 @@
     "digitalcommerce360": 1.08,
     "mediapost": 1.08,
     "9to5google": 1.08,
-    "ppc.land": 1.2,
+    "ppc.land": 1.24,
     "paypal-newsroom": 1.09,
     "retail-systems": 1.04,
     "ietf-datatracker": 1.09,
@@ -145,6 +145,22 @@
     "mlex.com": 1.04,
     "9to5mac.com": 1.0,
     "kaleighmoore.com": 0.99,
-    "gsqi.com": 1.13
+    "gsqi.com": 1.13,
+    "searchengineland.com": 1.08,
+    "developer.chrome.com": 1.21,
+    "infoq.com": 0.78,
+    "suganthan.com": 0.7,
+    "technobezz.com": 0.55,
+    "blog.imseankim.com": 0.6,
+    "webdeveloper.com": 0.6,
+    "nohacks.co": 0.55,
+    "aljazeera.com": 1.13,
+    "time.com": 0.65,
+    "venturebeat.com": 1.12,
+    "cybersecuritynews.com": 0.55,
+    "bleepingcomputer.com": 0.7,
+    "digitalapplied.com": 1.2,
+    "apichangelog.substack.com": 0.55,
+    "optimixed.com": 0.93
   }
 }
