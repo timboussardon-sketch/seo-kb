@@ -1,4 +1,4 @@
-# Sante boucle - seo-quick-win (2026-06-11)
+# Sante boucle - seo-quick-win (2026-06-15)
 
 **Statut : OK**
 

@@ -1,4 +1,4 @@
-# Sante boucle - maillage-interne-gsc (2026-06-09)
+# Sante boucle - maillage-interne-gsc (2026-06-15)
 
 **Statut : OK**
 
