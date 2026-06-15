@@ -887,3 +887,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - front: espace compte plein écran, GSC multi-comptes (gsc-properties), lanceur de skills, design Google-mono
 - fix: résolveur GSC tolérant à la fragmentation des sessions anonymes (token par site/domaine)
 - journal dev détaillé: qadence/Journal.md
+
+## [2026-06-15] backlog | sweep — 192 en backlog (P1:84 P2:38 P3:70) + 22 drive-accompagnement parké C-006
+- 326 fichiers raw scannés ; bond 110 → 192 depuis le sweep 2026-06-08
+- ingests réels de la semaine (arrivés ET traités dans la fenêtre) : Golfiller, Alexia, Victoria Garden, Catherine, Leexi
+- moteur du bond : FG-Formation dossier client complet (40 — 32 transcripts d'appels + 8 livrables), x-playbook (4), espressio-ai refs (5), bootcamp4/exercices (26), guides/notes (3)
+- prochain lot proposé: golfiller-strat.md + etude-ctr-ai-overviews-gsc.md (lot W25 voté, toujours non exécuté)
+- nouveaux skips: aucun (bloc matériel pédagogique bootcamp4 = 50 fichiers, candidat skip groupé à trancher par Tim)
