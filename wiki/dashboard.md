@@ -1,10 +1,10 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-06-14 09:34 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-06-15 09:40 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **644 fichiers** markdown (389 dans `raw/`, 255 dans `wiki/`)
+- **645 fichiers** markdown (389 dans `raw/`, 256 dans `wiki/`)
 - **1228k mots** au total
 - **5853 wikilinks** (moyenne 9.1 / fichier)
 - **Ratio raw→wiki** : 0.66 *(< 1 = matière brute pas encore synthétisée)*
@@ -35,20 +35,20 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **155** commits
-- **216** fichiers créés
-- **146** fichiers modifiés
+- **158** commits
+- **218** fichiers créés
+- **140** fichiers modifiés
 
 ### 30 derniers jours
-- **312** commits
-- **463** fichiers créés
+- **321** commits
+- **470** fichiers créés
 - **319** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
 - **18** éditions publiées (18 sur les 30 derniers jours)
-- Dernière édition : `2026-06-12-revue-presse` (il y a 2j)
+- Dernière édition : `2026-06-12-revue-presse` (il y a 3j)
 - **Couverture 30j** : 18/30 (60%)
 
 ### Newsletter
@@ -84,7 +84,7 @@
 - `[[mots-cles-actionnels]]` — **63** backlinks
 - `[[anti-ai-writing]]` — **62** backlinks
 
-### Orphelins (sans backlink) : **374**
+### Orphelins (sans backlink) : **375**
 
 - `raw/journal/2026-05-07.md`
 - `raw/journal/2026-05-23.md`
@@ -96,16 +96,16 @@
 - `raw/journal/2026-05-26.md`
 - `raw/journal/2026-05-06.md`
 - `raw/journal/2026-05-22.md`
-*(374 au total — voir `wiki/audit` pour la liste complète)*
+*(375 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: █▁▃▁▁▁▃▃·▁▅▃█▅█·█▅█▅▃█▅██████·
+30j: ▁▃▁▁▁▃▃·▁▅▃█▅█·█▅█▅▃█▅██████▅▁
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
-**Streak actuel** : 0 jour(s) consécutif(s) avec commit
+**Streak actuel** : 15 jour(s) consécutif(s) avec commit
 
 ### Dossiers inactifs > 14j
 
@@ -115,10 +115,10 @@
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-06-14 09:01 | 0 | ✓ |
-| recap-jour | 2026-06-12 23:05 | 0 | ✓ |
+| revue-presse | 2026-06-15 09:06 | 256 | ✗ |
+| recap-jour | 2026-06-15 09:24 | 256 | ✗ |
 | refresh-snapshots | 2026-06-01 08:14 | 0 | ✓ |
-| dashboard | 2026-06-14 09:34 | 0 | ✓ |
+| dashboard | 2026-06-15 09:40 | 0 | ✓ |
 
 ---
 
