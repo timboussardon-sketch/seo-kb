@@ -97,3 +97,19 @@ Commit + push main + déploiement prod qadence.io. Design Google-mono.
 - Nouveau `qadence/sync-skills.py` : synchro idempotente table `skills` ← SKILL.md (26 slugs mappés, alias inclus), `--dry-run` dispo. Créds dans `~/.config/seo-kb/qadence-skills.env` (hors repo, chmod 600). À relancer après modif d'un SKILL.md / `./kb rebuild`.
 - Upgradé les 2 stubs exposés : `content_gaps` ← seo-cluster-aeo (724→2344), `strategie_seo` ← seo-roadmap-pseo (707→16180). Vérifié en base.
 - Stubs restants (audit_gsc, analyse_gsc_complete, cohortes_gsc, faq_*, intention_recherche, query_requete, structure_hn*) laissés tels quels : pas de skill source 1:1, grounded par search_kb + gsc_query.
+
+## 2026-06-16 — Réparation des crons (rapports auto 7h / 8h30 / hebdo)
+**Constat** : les 14 fonctions cron étaient déployées mais les 3 features (7h positions, 8h30 corrections, hebdo montées/chutes) **n'avaient aucun schedule pg_cron** (seuls les 4 jobs Hermes du 15/06 existaient). `daily-digest` avait tourné jusqu'au 1er juin puis stoppé ; `rank_history` et `weekly_push_reports` à 0.
+**Causes trouvées** :
+- Aucun schedule pour rank-tracker / daily-digest / weekly-push (migration `setup_crons` jamais appliquée + URL `rank-tracker-cron` en 404).
+- Boucles sur les **1299 connexions OAuth orphelines** → timeout (56 projets GSC mais ~16 propriétés/user actif).
+- `rank-tracker` : `onConflict` sur `date` au lieu de `recorded_date` → upsert planté.
+- Modèles Gemini hardcodés **invalides** (`gemini-3.1-flash` / `gemini-3.1-pro` → 400) dans daily-digest ET weekly-push.
+- `daily-digest` filtrait sur des clés mémoire disparues (`insights`, `known_pages`).
+- `weekly-push` (worker) **ignorait le body** et rebouclait sur tous les users à chaque appel du wrapper.
+**Correctifs** (commit `c4b5fc9` + déploiements) :
+- Vue `active_gsc_targets` : pilote unique = sites avec `project_memory` < 30j résolus vers une connexion GSC = **~22 cibles réelles** (choix de Tim : « comptes actifs récemment »).
+- 3 fonctions branchées sur la vue ; traitement par **lots concurrents** (digest 6, weekly 4) ; modèles → `gemini-flash-latest` / `gemini-pro-latest` ; fix onConflict ; fallback RAS ; weekly-push respecte désormais `user_id`/`gsc_site` du body.
+- 3 schedules pg_cron créés : `qadence_rank_tracker` (0 7 * * *), `qadence_daily_digest` (30 8 * * *), `qadence_weekly_push` (0 8 * * 1), URLs corrigées.
+**Vérifié live** : rank-tracker → 910 lignes `rank_history` (21 sites) ; daily-digest → run complet 24s, écrit (RAS au 1er jour, normal : pas encore d'historique J-7). weekly-push en cours de validation.
+**Note infra** : `net.http_post` (pg_cron) timeout à 5s → log un timeout mais la fonction continue server-side (fire-and-forget OK). Accès DB de debug via token CLI keychain « Supabase CLI » + API Management `database/query`.
