@@ -229,7 +229,24 @@
     body{background:#fff;}
     .page{margin:0; max-width:none; page-break-after:always; min-height:auto; padding:60px 64px;}
     .page:last-child{page-break-after:auto;}
-    .codebox, .callout, .caption{break-inside:avoid;}
+
+    /* Le H2 en dégradé clippé sur le texte casse à l'impression (Chrome peint
+       le rectangle de fond plein largeur par-dessus le titre) : couleur pleine en print. */
+    h2.sec{
+      background:none; -webkit-background-clip:border-box; background-clip:border-box;
+      color:#FF371C; -webkit-text-fill-color:#FF371C;
+    }
+
+    /* Ne jamais couper un bloc visuel en plein milieu d'un saut de page. */
+    .codebox, .callout, .caption, .screen, .term, .duo, .ladder,
+    .cta-fus, .cta-fus-wrap, .cta-org, .toc-item{
+      break-inside:avoid; page-break-inside:avoid;
+    }
+    /* Garder un titre avec le contenu qui suit, une légende avec sa figure. */
+    h2.sec, h3.sub, .ch-eyebrow, .ch-title{
+      break-after:avoid; page-break-after:avoid;
+    }
+    .caption{ break-before:avoid; page-break-before:avoid; }
   }
 </style>
 </head>
@@ -250,6 +267,15 @@
     <div class="lstep l4"><b>Routine</b><span>tourne</span></div>
   </div>
   <div class="byline">Timothée Boussardon &nbsp;·&nbsp; <a href="https://organikk.co">organikk.co</a></div>
+
+  <div class="cta-fus-wrap">
+    <div class="cta-fus">
+      <span class="tag">Qadence · Agent SEO</span>
+      <h3>Construire votre agent SEO.</h3>
+      <p>Un agent qui surveille votre site 24h/24, vous alerte, travaille pour vous et vous aide à mieux ranker sur Google, et les IA.</p>
+      <a class="btn" href="https://qadence.io">Découvrir Qadence&nbsp;→</a>
+    </div>
+  </div>
 </div>
 
 <!-- ════════════════ SOMMAIRE ════════════════ -->
@@ -1308,10 +1334,10 @@ Le cycle correction → règle durable
 
   <div class="cta-fus-wrap">
     <div class="cta-fus">
-      <span class="tag">Fusionn · Agent mot-clé</span>
-      <h3>Fusionn, un agent qui repère vos meilleurs mots-clés pour ranker sur ChatGPT.</h3>
-      <p>Vous lui donnez votre site, il analyse vos pages et votre Search Console, puis il vous dit quels mots-clés business viser et quelles pages créer en priorité. Chaque analyse est conservée dans votre Historique.</p>
-      <a class="btn" href="https://fusionn.co">Analyser votre site&nbsp;→</a>
+      <span class="tag">Qadence · Agent SEO</span>
+      <h3>Construire votre agent SEO.</h3>
+      <p>Un agent qui surveille votre site 24h/24, vous alerte, travaille pour vous et vous aide à mieux ranker sur Google, et les IA.</p>
+      <a class="btn" href="https://qadence.io">Découvrir Qadence&nbsp;→</a>
     </div>
   </div>
 
