@@ -236,3 +236,23 @@ P-2026-06-06-v2-2 est passée de `resolved-partial` (8 juin) à `resolved` (11 j
 - (proposition skill - PAS appliquée sans validation Tim) ajouter une rubrique fixe « écart de couverture moteur » dans les éditions GEO quand un moteur publie une métrique inédite : forcer la lecture comparative explicite (Google vs Microsoft vs OpenAI) sur la dimension de mesure publiée. Ici testé en spontané sur Citation Share vs GSC AI reports. À discuter en revue hebdo si systématiser dans le wording_rules.
 - (suivi P-2026-06-17-1) surveiller publication d'études empiriques utilisant Citation Share pendant la preview Bing Webmaster Tools sur 100+ sites. Sources à monitorer : Ahrefs Brand Radar, Semrush AI Performance Insights, Conductor, BrightEdge, SISTRIX, Onely, Digital Authority Partners.
 - (suivi P-2026-06-17-3) surveiller premières affaires small claims court UK déposées sur la base d'un Search-Only Contract MOW. Sources à monitorer : Press Gazette, PPC Land, Mlex (juridique antitrust), CourthouseNews, Movement for an Open Web blog.
+
+## 2026-06-17 v2 — questions et observations (cloud)
+
+### Questions à Tim (revue hebdo)
+- **Famille C fabricant FMCG dans ACP** : faut-il créer une fiche concept dédiée dans `wiki/concepts/` pour formaliser la typologie famille A retailer / famille B fintech / famille C fabricant dans l'architecture Agentic Commerce Protocol ? Cadre conceptuel issu de l'édition mais qui mériterait un statut doctrine stable (proposition diff skill : non, ce serait une fiche concept à créer en revue hebdo).
+- **L'Oréal pages produit en ChatGPT US** : est-ce qu'un de tes clients est en position de demander à OpenAI les conditions techniques d'inscription des « enriched signals » pour pages produit ? Ce serait une donnée de terrain forte pour résoudre P-2026-06-17-v2-3 (politique de désambiguïsation).
+- **Ahrefs 137K llms.txt** : tu as un test terrain llms.txt sur un client ? Si oui, croiser avec la mesure Ahrefs (notre client est-il dans les 3 pct qui ont du trafic, ou dans les 97 pct qui n'en ont pas ?) pourrait alimenter une fiche preuve hypothesis-llms-txt-inutile.
+
+### Diffs de skill proposés
+- Aucun ce run. Le cadre 3 familles ACP est un cadre conceptuel SyntheticBrain, pas un changement de skill.
+
+### Sources découvertes (auto-ajoutées explore)
+- wwd.com (0,85, trade press beauty US, primaire trade press, signature journaliste, candidate exploit en revue hebdo)
+- cosmeticsbusiness.com (0,7, trade press beauty UK)
+- webwire.com (0,6, press release distributor neutre)
+- happi.com (0,62, trade press household personal care US)
+
+### Observations méthodologiques
+- L'angle « architecture par familles » a été testé pour la première fois dans ce run pour clore une info du jour. Le cadre tient parce que les 3 faits indépendants (Walmart 25 mars, Klarna 20 mai, L'Oréal 17 juin) ont chacun un sourcing primaire distinct. Si une 4e famille émerge dans les prochaines semaines (P-2026-06-17-v2-1), le cadre devra être révisé.
+- Ahrefs llms.txt a été placé en brève B1 GEO plutôt qu'en info du jour Actualité SEO parce que la mesure empirique 137K domaines est plus forte que la quote Mueller seule. Le déplacement de cible (developer vs consumer) est l'angle d'analyse propre qui ajoute valeur au-delà du résumé d'étude.
