@@ -106,3 +106,19 @@ Aucun appliqué. Piste récurrente : garde-fou « vérifier la date de la source
 **Prédictions à échéance proche** : P-2026-06-01-1 (profil des perdants core update, 2026-06-30, à 22 jours), P-2026-05-30-1 (Expert Advice AIO, 2026-07-15, à 37 jours), P-2026-06-01-v2-2 (appel Amazon-Perplexity non tranché au fond, 2026-09-30, audience 11 juin).
 
 **Prédictions nouvelles ajoutées** : P-2026-06-08-v2-1 (différenciation empirique pages-fonctionnalité PLS strict vs pages-marketing produit, 2026-12-31). Test concret de la doctrine Product-Led SEO.
+
+## Mise à jour 2026-06-17 (mercredi matin cloud)
+
+**Piliers d'info du jour étendus** : ... → Recherche agentique (0614-v2 OKF) → GEO (0615 LinkedIn) → Recherche agentique (0615-v2 WebMCP) → Actualité SEO (0616 Deaure) → Product-Led SEO (0616-v2 Seer) → **GEO (0617 Bing Webmaster Tools 4 métriques)**. Variation OK : 1 GEO depuis 0615 LinkedIn, fait neuf franc requis et satisfait par annonce moteur primaire 16 juin.
+
+**Fait marquant 0617** : Bing Webmaster Tools ouvre 4 nouvelles métriques GEO (Intents, Topics, Citation Share, Compare) en preview globale 16 juin 2026. Annonce blog Bing primaire signée Madhavan + Merchant + Nigam + Shah, Product Managers Microsoft AI. Citation Share = première mesure officielle de la part de citation d'un site sur une grounding query publiée par un moteur grand public, observational pas compétitive. Caveat Launchcodex : ne couvre pas les citations ChatGPT alimentées par Bing. Couverture SEL Schwartz + SEJ Southern le même jour.
+
+**Effectivité opt-out CMA UK** : J+0 aujourd'hui 17 juin. Fenêtre de mesure d'adoption ouverte. P-2026-06-15-2 reste à fenêtre-ouverte. Surveiller Press Gazette + CMA reporting + SISTRIX + SEL dans 7 jours.
+
+**Movement for an Open Web Search-Only Contracts** : 15 juin 31 éditeurs UK fondateurs, 500 livres par article scrapé. Mécanisme small claims Moneyclaim.gov.uk + county courts UK sans avocat spécialisé. Premier dispositif de tarif standard public adossé à recouvrement accessible.
+
+**Sources** : 1 nouvelle explore ajoutée (launchcodex.com 0.65 secondaire analyse 1er hit caveat technique). 6 consolidations exploit confirmées (blogs.bing.com 2e hit promu candidat exploit, ppc.land 14e hit, searchengineland 22e hit, searchenginejournal 15e hit, techcrunch.com 3e hit, computing.co.uk 2e hit, pressgazette.co.uk 3e hit). Directive « tester source de mesure de visibilité GEO indépendante hors BrightEdge/DAP/Conductor/Profound » reste non tenue, à viser prochaine édition.
+
+**Prédictions à échéance proche** : P-2026-06-01-1 (profil perdants core update, 2026-06-30 = J+13), P-2026-05-30-1 (Expert Advice AIO, 2026-07-15 = J+28), P-2026-06-09-v2-2 (opt-out UK sous 10 pct, fenêtre ouverte), P-2026-06-15-2 (opt-out UK sous 15 pct, fenêtre ouverte), P-2026-06-14-2 (back button hijacking fenêtre ouverte).
+
+**Prédictions nouvelles ajoutées** : P-2026-06-17-1 (étude indépendante Citation Share 100+ sites preview Bing avant 31-12-2026), P-2026-06-17-2 (Google ajoute métrique Citation Share GSC AI reports avant 31-12-2026), P-2026-06-17-3 (décision small claims court UK validité Search-Only Contract MOW avant 31-03-2027).

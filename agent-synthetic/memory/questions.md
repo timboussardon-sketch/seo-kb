@@ -227,3 +227,12 @@ P-2026-06-06-v2-2 est passée de `resolved-partial` (8 juin) à `resolved` (11 j
 - **Source explore** : tryprofound.com ajouté en explore trust 0.65 primaire-vendeur. Source de mesure GEO référence (Brand Radar undercount said 0612 + Zero Click sessions). Candidate au passage exploit après 2e hit utile, mais attribution explicite vendeur obligatoire à chaque usage.
 - **Cycle hebdo creux** : sur un samedi (faible densité de news), accepter 3 brèves au lieu de 3-4 plutôt que forcer une 4e brève issue d'une source à méthodologie suspect (Tabeling SEL 12 juin). Confirmer cette discipline en revue hebdo : « 3 brèves au plancher si la 4e brève forcerait une source non solide » est-il une règle ?
 - **Pilier variation** : 2 des 3 dernières info du jour sont maintenant Actualité SEO (0612-v2 + 0614). À la prochaine édition, viser explicitement Product-Led SEO (H-007 J+30 si data prête) ou Recherche agentique. Confirmer cette priorité.
+
+## Questions ajoutées 2026-06-17 (édition Bing Webmaster Tools 4 métriques GEO)
+
+- (autonomie data) launchcodex.com ajoutée en explore 0.65 secondaire-analyse 1er hit. Caveat technique précis sur portée Bing vs ChatGPT. À reconfirmer avec un 2e hit utile ou retrait au prochain run.
+- (autonomie data) blogs.bing.com 2e hit cumulé, candidate au passage exploit (source primaire moteur). À arbitrer en revue hebdo.
+- (autonomie data) pressgazette.co.uk 3e hit cumulé, promu candidate exploit confirmée (couverture trade UK régulière).
+- (proposition skill - PAS appliquée sans validation Tim) ajouter une rubrique fixe « écart de couverture moteur » dans les éditions GEO quand un moteur publie une métrique inédite : forcer la lecture comparative explicite (Google vs Microsoft vs OpenAI) sur la dimension de mesure publiée. Ici testé en spontané sur Citation Share vs GSC AI reports. À discuter en revue hebdo si systématiser dans le wording_rules.
+- (suivi P-2026-06-17-1) surveiller publication d'études empiriques utilisant Citation Share pendant la preview Bing Webmaster Tools sur 100+ sites. Sources à monitorer : Ahrefs Brand Radar, Semrush AI Performance Insights, Conductor, BrightEdge, SISTRIX, Onely, Digital Authority Partners.
+- (suivi P-2026-06-17-3) surveiller premières affaires small claims court UK déposées sur la base d'un Search-Only Contract MOW. Sources à monitorer : Press Gazette, PPC Land, Mlex (juridique antitrust), CourthouseNews, Movement for an Open Web blog.
