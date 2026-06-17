@@ -6,7 +6,7 @@
 >
 > Statut d'une étape : **éprouvé** (déjà fait sur un vrai client) ou **doctrine** (prévu, pas encore validé terrain). MAJ par le skill, jamais à la main de mémoire.
 
-Dernière mise à jour : 2026-06-12 (leexi étapes 3, 6, 13, 14)
+Dernière mise à jour : 2026-06-17 (leexi étape 6 : stratégie de mots-clés des 3 premiers mois, architecture en clusters ordonnés)
 
 ---
 
@@ -41,7 +41,8 @@ Skills : `seo-core-web-vitals`, `seo-donnees-structurees`. Statut : doctrine.
 **6. Mots-clés business et décisionnels**
 Recherche from scratch → clustering par SERP (1 cluster = 1 page) → isolement des mots-clés décisionnels (qui convertissent).
 Méthode apprise (leexi) : cadrer les clusters AVEC le client (4 chez Leexi : problématiques par persona, intention d'achat, 1 page par fonctionnalité + outils gratuits, conformité/souveraineté), puis grounding data réel : scrape Google Suggest FR sur 60-80 seeds (vraies requêtes tapées), croisement avec la GSC (clics réels), confrontation d'une éventuelle matrice pSEO externe au filtre de requêtabilité humaine (exclusions documentées : géolocalisation pour un SaaS, pages prix/support d'outils tiers). Vocabulaire : « cluster », jamais « territoire ». Zéro volume inventé ([À SOURCER] sinon).
-Skills : `seo-recherche-mots-cles` → `seo-clustering-mots-cles` → `seo-mots-cles-decisionnels`. Statut : éprouvé (leexi : 4 clusters, ~95 mots-clés qualifiés, cf. `leexi-seo/production/recherche-mots-cles-2026-06-12.md`).
+Méthode apprise (leexi, stratégie des 3 premiers mois) : une fois les clusters cadrés, **les ordonner par fonction stratégique, pas par volume**. (1) D'abord le terrain vierge qui porte la vente (chez Leexi : souveraineté/RGPD, 0 clic GSC = aucune concurrence de classement). (2) Ensuite le cluster qui répare une perte chiffrée (chez Leexi : intégrations, là où la refonte a fait −43 % hors-marque) = fort retour rapide. (3) En parallèle les outils gratuits Product-Led (les plus rapides à sortir, générateurs de texte, ils alimentent la capture d'email). Deux patterns réutilisables : un **cluster intégration** se construit en « produit × plateforme » (1 page par plateforme majeure + 1 par CRM + 1 hub de maillage, on cible les intégrations DU produit jamais le support d'outils tiers) ; un **cluster outils gratuits** = 1 outil = 1 famille de requêtes = 1 page, priorisé en MVP par ancrage data × faisabilité. Capter aussi des **verbatims utilisateurs réels** (Reddit, PAA) pour les besoins et la réassurance — quand le crawler est bloqué, les coller à la main. Discipline anti-cannibalisation transverse aux clusters : une intention = une page (le Know « enregistrer une réunion teams » maille vers le Do « notetaker teams » ; « gratuit »/« modèle » restent au cluster outils ; le juridique au cluster conformité). Préalable technique non négociable avant d'empiler du contenu : réparer une refonte cassée (301, canonicals, maillage), sinon les nouvelles pages repartent de zéro.
+Skills : `seo-recherche-mots-cles` → `seo-clustering-mots-cles` → `seo-mots-cles-decisionnels` (+ `seo-product-led-seo` pour le cluster outils gratuits). Statut : éprouvé (leexi : 4 clusters cadrés le 12/06 ~95 mots-clés, puis approfondissement par cluster ordonné — souveraineté 56 KW le 16/06, intégrations ~55 + outils gratuits ~50 le 17/06, consolidés dans `leexi-seo/production/Strategie-clusters-leexi.md`).
 
 **7. Architecture : piliers, clusters AEO, maillage**
 Piliers business (3 à 5), cluster/cocon sémantique Know-Simple/Know/Do, plan de maillage (hub/satellite, ancres, orphelines).
@@ -90,6 +91,6 @@ Statut : doctrine.
 
 ## Index clients
 - [[prestation/clients/golfiller]] — e-commerce balles occasion, à l'étape 11 (brief Hn page usage ; modèles directory usage/besoin ajouté)
-- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, étape 6 faite (4 clusters, ~95 mots-clés) ; espace client complet (audit + mots-clés + assistant RAG) ; semaine du 15 juin : les 50 meilleurs mots-clés + stratégie étape par étape
+- [[prestation/clients/leexi]] — B2B SaaS notetaker IA, étape 6 approfondie (3 clusters ordonnés = stratégie des 3 premiers mois : souveraineté/RGPD + intégrations + outils gratuits, doc unique `Strategie-clusters-leexi.md`) ; espace client complet (audit + mots-clés + assistant RAG)
 
 Pages liées : [[golfiller-strat]] · [[clusters/modeles-pseo-2026-06-10-golfiller]] · [[queries/2026-06-10-golfiller-gsc-6mois]] · [[concepts/product-led-seo]] · [[concepts/know-simple-know-do]]

@@ -7,8 +7,9 @@
 - Offre : système livrable (repo transférable `~/Code/leexi-seo` + pack doctrine en submodule)
 
 ## Où on en est
-Étape courante : 6 (mots-clés business, recherche faite)
-Prochaine action : plan arrêté par Tim le 2026-06-12 : 1) optimiser les 20 meilleures pages business, 2) mots-clés proches de l'intention d'achat, 3) programmatique SEO (modèles). Démarrer par l'étape 1
+Étape courante : 6 (mots-clés business — stratégie des 3 premiers mois arrêtée en 3 clusters ordonnés)
+Prochaine action : les 3 clusters de la stratégie 3 mois sont recherchés (souveraineté/RGPD 56 KW le 16/06 ; intégrations ~55 KW + outils gratuits ~50 KW le 17/06), consolidés dans `leexi-seo/production/Strategie-clusters-leexi.md`. Enchaîner : (1) réparer la refonte (301/canonicals/maillage, préalable technique) ; (2) `seo-clustering-mots-cles` par SERP sur clusters 2 et 3 ; (3) specs techniques des 4 MVP outils gratuits (data Leexi anonymisée à récupérer) ; (4) briefs prioritaires (Teams et Google Meet d'abord, acquis à défendre).
+À trancher : consolider le cluster 1 (RGPD, encore dans `seo-kb/raw/organikk/clients/leexi/keywords/`) dans le repo leexi-seo.
 
 ## Accès et data
 - GSC : oui (4 exports dans `leexi-seo/data/gsc/`, manque l'export requête × page) · GA4 : non
@@ -31,6 +32,10 @@ Prochaine action : plan arrêté par Tim le 2026-06-12 : 1) optimiser les 20 mei
 | 2026-06-12 | 14 | assistant de l'espace client connecté au vault Obsidian du client : RAG scopé par projet (kb_chunks.project), 109 chunks leexi ingérés, prompt vouvoiement, widget branché | `leexi-seo/scripts/export-kb-chat.py` + edge functions kb-chat/kb-ingest | aucun |
 
 | 2026-06-12 | 14 | email de livraison (audit + stratégie mots-clés en ligne, annonce des 50 mots-clés la semaine du 15 juin) : brouillon Gmail prêt, modèle capitalisé en §2 d'emails.md | brouillon Gmail r6085825889555304583 | aucun |
+
+| 2026-06-16 | 6 | approfondissement du cluster RGPD (1 des 4 clusters du 12/06) : 56 mots-clés groundés data réelle WebSearch (PAA + variantes tapées), 24 Do / 30 Know / 2 Know-Simple, 8 sous-clusters ; cadrage tranché par Tim : traduction juridique = feature produit → traitée en Do | `raw/organikk/clients/leexi/keywords/recherche-2026-06-16-rgpd.md` | seo-recherche-mots-cles |
+
+| 2026-06-17 | 6 | stratégie de mots-clés des 3 premiers mois arrêtée : 3 clusters ordonnés par fonction. Cluster 2 intégrations (~55 KW : Teams/Meet/Zoom/Webex + CRM + productivité + technique, ancré sur l'acquis GSC à défendre) ; cluster 3 outils gratuits Product-Led (~50 KW, 1 outil = 1 page, 4 MVP) ; besoins Reddit capturés (verbatims collés main, Reddit bloque le crawler). Doc de référence unique consolidé | `leexi-seo/production/Strategie-clusters-leexi.md` (+ recherche-mots-cles-cluster2/cluster3, cluster3-outils-gratuits, besoins-reddit-cluster2) | seo-recherche-mots-cles + seo-product-led-seo |
 
 ## Spécificités client
 - Relancer `python3 scripts/export-kb-chat.py` (repo leexi-seo) après toute session qui modifie le vault, pour que l'assistant de l'espace reste à jour.

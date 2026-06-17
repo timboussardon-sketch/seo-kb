@@ -89,3 +89,16 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - étape 13 : brique assistant RAG client (export-kb-chat.py) éprouvée
 - étape 14 : DA = site public (fzn), points de statut, email premier rapport §2, alimentation des onglets
 - étape 3 : restitution = Google Doc + onglet Audit
+
+## [2026-06-16] leexi | étape 6 | approfondissement cluster mots-clés RGPD
+- 56 KW groundés data réelle (WebSearch PAA + variantes), 24 Do / 30 Know / 2 Know-Simple, 8 sous-clusters
+- cadrage Tim : traduction juridique = feature produit → Do (pages de conversion, pas que de l'autorité)
+- output : raw/organikk/clients/leexi/keywords/recherche-2026-06-16-rgpd.md
+- next : seo-clustering-mots-cles puis seo-mots-cles-decisionnels sur les 24 Do
+
+## [2026-06-17] leexi | étape 6 | stratégie de mots-clés des 3 premiers mois (3 clusters ordonnés)
+- méthode capitalisée: ordonner les clusters par fonction (terrain vierge qui porte la vente > cluster qui répare une perte chiffrée > outils gratuits rapides), pattern cluster intégration "produit × plateforme", pattern cluster outils gratuits "1 outil = 1 page" priorisé en MVP, verbatims utilisateurs réels (Reddit collé main), discipline anti-cannibalisation transverse, préalable technique = réparer la refonte
+- clusters: 2 intégrations (~55 KW), 3 outils gratuits Product-Led (~50 KW, 4 MVP) ; cluster 1 souveraineté/RGPD déjà fait le 16/06
+- output: leexi-seo/production/Strategie-clusters-leexi.md (doc unique) + recherche-mots-cles-cluster2-integrations + recherche-mots-cles-cluster3-outils-gratuits + cluster3-outils-gratuits + besoins-reddit-cluster2
+- skills: seo-recherche-mots-cles + seo-product-led-seo
+- next: réparer la refonte (301/canonicals/maillage) -> clustering par SERP clusters 2/3 -> specs 4 MVP (data Leexi anonymisée) -> briefs Teams + Google Meet
