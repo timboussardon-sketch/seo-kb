@@ -74,15 +74,21 @@ SyntheticBrain est un système distribué entre local, cloud, git et l'humain. A
 - Date du jour : `date +%F`
 - Cadrage : `~/Code/seo-kb/wiki/methodes/cadrage-boucle-edition-algorithme.md`
 
-## Périmètre thématique (strict, non négociable)
+## Périmètre thématique (fermé — 5 familles, rien d'autre)
 
-Algorithme ne parle QUE de : **SEO, IA, LLM, Google, et tout ce qui touche aux moteurs de recherche et au search marketing.** Rien d'autre.
+Algorithme ne parle QUE de ces **5 familles, et c'est tout** :
 
-Sont DANS le périmètre : SEO (technique, contenu, maillage, core updates), GEO/AEO, AI Overviews, AI Mode, SGE, les LLM et moteurs génératifs en tant qu'ils touchent la recherche (ChatGPT search, Perplexity, Gemini, Claude search), Google (Search, Ads liés au search, annonces produit search), Bing, le commerce et les agents EN TANT QU'ils passent par la recherche (recherche agentique, checkout depuis Search), le search marketing.
+1. **IA** (au sens search/IA : LLM, moteurs génératifs, ChatGPT/Perplexity/Gemini/Claude en tant qu'ils touchent la recherche, AI Overviews / AI Mode / SGE).
+2. **SEO** (technique, contenu, maillage, core updates, Google Search, Bing, search marketing, pratiques de référencement).
+3. **GEO** (Generative Engine Optimization / AEO — jamais SEO géographique).
+4. **Business SEO** (idées de business, monétisation, acquisition organique exploitable, mouvement de marché search exploitable).
+5. **Niche SEO** (cas de site / cluster de niche qui s'ouvre ou qui gagne).
 
-Sont HORS périmètre, à écarter même si l'actu est énorme : politique, finance/bourse générale, hardware/puces, levées de fonds et valorisations qui ne touchent pas le search, sorties de modèles LLM pour elles-mêmes (capacités de raisonnement, benchmarks, coding) sauf si l'angle est l'impact sur la recherche, réseaux sociaux hors search, crypto, gaming, actu tech générale.
+Tout sujet qui n'entre dans AUCUNE de ces 5 familles est **hors périmètre**, à écarter même si l'actu est énorme ou virale, même si c'est de la « tech intéressante ». C'est le **filtre d'entrée**, appliqué avant tout le reste.
 
-Test simple avant de retenir un sujet : « est-ce que ça change la façon dont on est trouvé, lu ou cité dans un moteur de recherche ? ». Si non, on écarte, et on logge le sujet écarté dans `runs.jsonl` (sources_rejetees) avec la raison « hors périmètre ».
+Sont donc HORS périmètre : politique, finance/bourse générale, hardware/puces, levées de fonds et valorisations qui ne touchent pas le search, sorties de modèles LLM pour elles-mêmes (capacités de raisonnement, benchmarks, coding) sauf si l'angle est l'impact direct sur la recherche, réseaux sociaux hors search, crypto, gaming, actu tech générale, réglementaire / institutionnel abstrait (CMA, antitrust, DMA, procès), méta-secteur business des éditeurs (marketplaces de licence IA, taux de prélèvement, think-tanks).
+
+Test avant de retenir un sujet : « est-ce que ça rentre dans l'une des 5 familles (IA, SEO, GEO, business SEO, niche SEO) ET est-ce que ça change la façon dont on est trouvé/lu/cité dans un moteur, OU ça donne une idée de business / un cas SEO actionnable ? ». Si non, on écarte, et on logge le sujet écarté dans `runs.jsonl` (sources_rejetees) avec la raison « hors périmètre ».
 
 ## Règles absolues
 

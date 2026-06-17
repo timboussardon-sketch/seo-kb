@@ -10,7 +10,7 @@ Différence avec Algorithme : Algorithme creuse une info du jour + 3-4 brèves. 
 
 ## Règles (héritées de l'agent-synthetic)
 
-- **Périmètre strict** : SEO, IA, LLM, Google, moteurs de recherche, search marketing. Rien d'autre. Test : « est-ce que ça change la façon dont on est trouvé, lu ou cité dans un moteur ? ».
+- **Périmètre fermé — 5 familles, rien d'autre** : **IA** (search/IA, LLM, moteurs génératifs, AI Overviews/AI Mode/SGE), **SEO** (Google, moteurs de recherche, référencement), **GEO** (Generative Engine Optimization / AEO, jamais SEO géographique), **business SEO** (idées de business, monétisation, acquisition organique), **niche SEO** (cas de site / cluster de niche). Tout sujet hors de ces 5 familles est écarté, même si c'est de la tech intéressante : c'est le filtre d'entrée. Test : « ça rentre dans l'une des 5 familles ET ça change la façon dont on est trouvé/lu/cité, OU ça donne une idée de business / un cas SEO actionnable ? ».
 - **Liens de sources TOUJOURS** : chaque brève finit par `*Sources : [nom](url) / [nom](url)*`. Pas de lien sourçable, pas de brève.
 - **Anti-hallucination** : aucun chiffre, %, date ou citation hors d'une source réellement consultée. Donnée d'agence agrégée = signalée comme telle dans la note de fin.
 - **Recoupement** : viser 2 sources indépendantes par brève quand c'est possible.

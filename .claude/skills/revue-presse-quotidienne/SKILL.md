@@ -34,9 +34,13 @@ Les wikilinks au format `[[xxx]]` cassent le rendu sur Substack. Tu n'en mets nu
 
 Tu invoques le skill `ton-de-voix-tim` avant de commencer à rédiger. Il rassemble les règles de la voix de Tim et de l'anti-IA writing, et il fournit la checklist de relecture que tu dois passer avant de livrer.
 
+## Périmètre fermé (5 familles, rien d'autre)
+
+Avant de scanner et de sélectionner quoi que ce soit, applique le filtre d'entrée. L'édition ne parle QUE de ces 5 familles : **IA** (search/IA, LLM, moteurs génératifs, AI Overviews / AI Mode / SGE), **SEO** (Google, moteurs de recherche, référencement), **GEO** (Generative Engine Optimization / AEO, jamais SEO géographique), **business SEO** (idées de business, monétisation, acquisition organique exploitable), **niche SEO** (cas de site / cluster de niche qui s'ouvre ou qui gagne). Tout sujet hors de ces 5 familles est écarté avant même les critères de sélection, même si l'actu est énorme. Test : « ça rentre dans l'une des 5 familles ET ça change la façon dont on est trouvé/lu/cité dans un moteur, OU ça donne une idée de business / un cas SEO actionnable ? ». Si non, on écarte.
+
 ## Étape 1, le scan des sources
 
-Tu commences par un scan large. Lance au moins douze recherches web réparties sur le SEO, l'IA et le contenu, en visant l'actu des dernières 24 à 48 heures, et sans jamais remonter au-delà de 30 jours. Ce scan doit te donner de quoi choisir une info du jour solide et trois ou quatre brèves distinctes.
+Tu commences par un scan large. Lance au moins douze recherches web réparties sur le SEO, l'IA et le contenu, en visant l'actu des dernières 24 à 48 heures, et sans jamais remonter au-delà de 30 jours. Ce scan doit te donner de quoi choisir une info du jour solide et trois ou quatre brèves distinctes. Tout ce que tu remontes doit déjà tenir dans l'une des 5 familles du périmètre ci-dessus.
 
 Les sources à privilégier, dans l'ordre :
 

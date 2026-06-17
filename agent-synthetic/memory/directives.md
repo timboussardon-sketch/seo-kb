@@ -1,6 +1,6 @@
 # Directives pour la prochaine édition
 
-> PÉRIMÈTRE STRICT (Tim, 2026-05-30) : SEO, IA, LLM, Google, moteurs de recherche, search marketing. RIEN D'AUTRE. Test : « ça change la façon dont on est trouvé/lu/cité dans un moteur ? » Sinon, écarter.
+> PÉRIMÈTRE FERMÉ — 5 FAMILLES, RIEN D'AUTRE (Tim, 2026-06-17, durcit la version du 2026-05-30) : les seuls thèmes admis sont **(1) IA** (search/IA, LLM, moteurs génératifs, AI Overviews / AI Mode / SGE), **(2) SEO** (Google, moteurs de recherche, référencement), **(3) GEO** (Generative Engine Optimization / AEO, jamais SEO géographique), **(4) business SEO** (idées de business, monétisation, acquisition organique exploitable), **(5) niche SEO** (cas de site / cluster de niche qui s'ouvre ou qui gagne). Tout sujet hors de ces 5 familles est écarté avant tout critère de sélection, même si l'actu est énorme. C'est le filtre d'entrée. Test : « ça rentre dans l'une des 5 familles ET ça change la façon dont on est trouvé/lu/cité dans un moteur, OU ça donne une idée de business / un cas SEO actionnable ? » Sinon, écarter.
 >
 > LIENS DE SOURCES (Tim, 2026-05-30) : TOUJOURS afficher le lien cliquable de chaque source dans le corps.
 >
