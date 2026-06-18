@@ -81,18 +81,40 @@ def parse_edition(path: Path):
         out.append((pos, title, clean_body(m.group(3)), src.group(2), src.group(1)))
     return out
 
+def canonical_by_date():
+    """Un seul fichier par jour : le plus complet (plus de brèves), puis le plus
+    récent. La table a DEUX contraintes uniques — (edition, position) ET
+    (edition_date, position) — donc deux fichiers du même jour aux mêmes
+    positions (ex. -breves / -v2 / -v3) se télescopent en 409. On ne publie
+    donc qu'une édition canonique par date."""
+    best = {}
+    for path in BREVES_DIR.glob('*-breves*.md'):
+        m = re.match(r'(\d{4}-\d{2}-\d{2})', path.stem)
+        if not m:
+            continue
+        date = m.group(1)
+        n = len(parse_edition(path))
+        score = (n, path.stat().st_mtime)
+        if date not in best or score > best[date][0]:
+            best[date] = (score, path)
+    return {d: p for d, (s, p) in best.items()}
+
 def main():
     backfill = int(sys.argv[sys.argv.index('--backfill') + 1]) if '--backfill' in sys.argv else 1
     force = '--force' in sys.argv
     key = service_key()
-    done = {r['edition'] for r in rest('GET', '/breves_wall?select=edition', key)}
-    editions = sorted(p for p in BREVES_DIR.glob('*-breves*.md'))[-backfill:]
+    # « déjà publié » se juge par DATE, pas par nom de fichier : si le fichier
+    # canonique d'un jour change (v2 -> v3), republier sous un nouveau stem
+    # violerait la contrainte (edition_date, position). On verrouille par date.
+    done = {r['edition_date'] for r in rest('GET', '/breves_wall?select=edition_date', key)}
+    canon = canonical_by_date()
+    dates = sorted(canon)[-backfill:]
     total = 0
-    for path in editions:
-        edition = path.stem
-        if edition in done and not force:
+    for date in dates:
+        if date in done and not force:
             continue
-        date = re.match(r'(\d{4}-\d{2}-\d{2})', edition).group(1)
+        path = canon[date]
+        edition = path.stem
         items = parse_edition(path)
         if not items:
             print(f'{edition} : aucune brève parsée, on saute')
@@ -101,8 +123,10 @@ def main():
             {'edition': edition, 'edition_date': date, 'position': pos, 'line': title, 'body': body, 'url': url, 'source': source}
             for (pos, title, body, url, source) in items
         ]
-        rest('POST', '/breves_wall?on_conflict=edition,position', key, rows)
-        print(f'{edition} : {len(rows)} lignes publiées')
+        # arbitre (edition_date, position) : un re-run --force met à jour le jour
+        # en place même si le fichier canonique a changé de nom.
+        rest('POST', '/breves_wall?on_conflict=edition_date,position', key, rows)
+        print(f'{edition} : {len(rows)} lignes publiées ({date})')
         total += len(rows)
     print(f'OK · {total} lignes ajoutées au wall')
 
