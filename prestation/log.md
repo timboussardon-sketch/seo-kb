@@ -50,6 +50,14 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - §1 premier email (envoi dashboard + 3 docs contexte + vidéo) = exemple Alexia verbatim
 - roadmap.md étape 1 enrichie : renvoi vers emails.md §1
 
+## [2026-06-18] alexia | setup | repo alexia-seo + skills + workflow mots-clés
+- repo ~/Code/alexia-seo sur modèle leexi-seo (pack submodule + .claude/skills symlink)
+- pack organikk-seo-pack enrichi : portage seo-recherche-mots-cles + seo-clustering-mots-cles + seo-brief-contenu → 11 skills, chaîne mots-clés complète (pushé)
+- 3 docs contexte récupérés du Drive → brain/voix-alexia/ ; data/clients/ multi-client (5 pilotes)
+- AGENTS.md + WORKFLOW-MOTS-CLES.md rédigés ; tracker clients/alexia.md créé
+- état réel des docs : about-me complet, my-rules partiel ([À COMPLÉTER]), my-voice VIDE
+- next : faire compléter my-voice + my-rules ; dérouler le workflow mots-clés sur un 1er compte (déposer export GSC)
+
 ## [2026-06-12] leexi | tracker | création du tracker prestation (reprise client)
 - état consolidé depuis leexi-seo/Journal.md (session 1 du 2026-06-09)
 - étapes 1-3 faites + amorce 6 + étape 14 (espace client DA Leexi)
