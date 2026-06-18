@@ -55,8 +55,9 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - pack organikk-seo-pack enrichi : portage seo-recherche-mots-cles + seo-clustering-mots-cles + seo-brief-contenu → 11 skills, chaîne mots-clés complète (pushé)
 - 3 docs contexte récupérés du Drive → brain/voix-alexia/ ; data/clients/ multi-client (5 pilotes)
 - AGENTS.md + WORKFLOW-MOTS-CLES.md rédigés ; tracker clients/alexia.md créé
-- état réel des docs : about-me complet, my-rules partiel ([À COMPLÉTER]), my-voice VIDE
-- next : faire compléter my-voice + my-rules ; dérouler le workflow mots-clés sur un 1er compte (déposer export GSC)
+- état réel des docs : about-me complet, my-voice rempli (tutoiement clients, pattern CONSTAT→ISOLATION→ACTION, liste noire stricte), my-rules partiel ([À COMPLÉTER])
+- piège évité : 1er tirage du Drive lisait un doublon my-voice vide ; vrai doc = 1NnrIBs…
+- next : Alexia choisit le 1er compte → workflow mots-clés (export GSC) ; compléter les trous de my-rules
 
 ## [2026-06-12] leexi | tracker | création du tracker prestation (reprise client)
 - état consolidé depuis leexi-seo/Journal.md (session 1 du 2026-06-09)

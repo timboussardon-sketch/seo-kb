@@ -8,11 +8,11 @@
 
 ## Où on en est
 Étape courante : setup système (repo + skills + workflow mots-clés câblés)
-Prochaine action : dérouler le workflow mots-clés sur un 1er compte pilote ; faire compléter `my-voice.md` (vide) et les `[À COMPLÉTER]` de `my-rules.md`.
+Prochaine action : Alexia choisit le 1er compte pilote → dérouler le workflow mots-clés (déposer son export GSC). Faire compléter les `[À COMPLÉTER]` de `my-rules.md` (% IA, posture concurrents/désaccord, 4 workflows).
 
 ## Accès et data
 - GSC : à brancher (API GSC souhaitée, dépasser la GSC classique) · GA4 : oui (second, jamais seul)
-- Data propriétaire reçue : 3 docs contexte (about-me complet, my-rules partiel, my-voice vide)
+- Data propriétaire reçue : 3 docs contexte (about-me complet, my-rules partiel, my-voice rempli)
 - Comptes pilotes (5/12+) : chefsquare, trench-et-coat, pain-de-sucre, provence-outillage, lauren-vidal
 - Outillage : Semrush, GSC, Seobserver, Screaming Frog, Surfer SEO, Getfluence, Notion, Gemini, Claude
 
