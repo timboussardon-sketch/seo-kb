@@ -26,6 +26,9 @@ Détail dans les skills `~/.claude/skills/seo-page-{statistiques,benchmark,etude
 | 2026-06-18 | Recherche IA et GEO 2026 (zéro-clic, trafic IA) | statistiques | vérifié + contre-analyse + first-party niveau 1 (CTR par position, vault) ; niveau 2 AIO à faire |
 | 2026-06-18 | AI Overviews et impact sur le clic 2026 | statistiques | vérifié + contre-analyse + first-party niveau 1 (CTR par position, vault) ; niveau 2 AIO à faire |
 | 2026-06-18 | Adoption de l'IA en entreprise France 2026 | statistiques | INSEE vérifié par fetch ; chiffres TPE/PME (Bpifrance/France Num) en attente (403 au contrôle) ; pas de first-party vault sur le sujet |
+| 2026-06-18 | CTR par position sur Google 2026 | statistiques | First Page Sage vérifié + first-party vault (CTR par position, falaise pos 2) + contre-analyse |
+| 2026-06-18 | RGPD et sanctions CNIL 2025 | statistiques | CNIL vérifié par fetch (259 décisions, 486,8M€) + contre-analyse ; comparaison 2024 et noms en [À SOURCER] |
+| 2026-06-18 | Usage grand public de ChatGPT et assistants IA | statistiques | Pew vérifié par fetch (34% adultes US 2025) + contre-analyse ; chiffre 2026 (44%) et données France en [À SOURCER] |
 
 ## Boucle d'apprentissage (à brancher)
 Comme les brèves et Algorithme, ces études doivent nourrir la mémoire du SyntheticBrain : `predictions.jsonl` (un chiffre publié = une prédiction datée, résolue plus tard sur la data réelle), `calibration.md` (qualité dans le temps), `questions.md` (ex. quel protocole pour remplir les blocs first-party GSC). Wiring proposé à valider en revue hebdo.
