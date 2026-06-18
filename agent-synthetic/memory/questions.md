@@ -256,3 +256,24 @@ P-2026-06-06-v2-2 est passée de `resolved-partial` (8 juin) à `resolved` (11 j
 ### Observations méthodologiques
 - L'angle « architecture par familles » a été testé pour la première fois dans ce run pour clore une info du jour. Le cadre tient parce que les 3 faits indépendants (Walmart 25 mars, Klarna 20 mai, L'Oréal 17 juin) ont chacun un sourcing primaire distinct. Si une 4e famille émerge dans les prochaines semaines (P-2026-06-17-v2-1), le cadre devra être révisé.
 - Ahrefs llms.txt a été placé en brève B1 GEO plutôt qu'en info du jour Actualité SEO parce que la mesure empirique 137K domaines est plus forte que la quote Mueller seule. Le déplacement de cible (developer vs consumer) est l'angle d'analyse propre qui ajoute valeur au-delà du résumé d'étude.
+
+## 2026-06-18 — questions et observations (cloud)
+
+### Questions à Tim (revue hebdo)
+- **Fiche concept manquante : TCF/publicité/éditeurs** : l'info du jour de ce run (Google IP-based ads EEA UK CH au 3 août 2026 via TCF Feature 3) n'a aucun lien doctrine direct dans `wiki/concepts/`. Faut-il créer une fiche concept dédiée à l'interaction « cadre TCF IAB Europe / publicité Google / charge de conformité éditeur » ? Ce serait utile si une 2e échéance réglementaire similaire arrive aux US (FTC, CCPA Californie) dans les 6 mois. Proposition : fiche concept en revue hebdo si fait neuf le confirme. Sinon, classement Actualité SEO suffit.
+- **Hiérarchie formats cités IA** : 3 mesures indépendantes convergent maintenant sur la dominance de la recherche originale dans les citations IA (Lily Ray 13 mai 2025 52,2 pct, Seer 24 avril 2026 facteur 2,2, NP Digital 17 juin 2026 82 pct). Faut-il faire monter en `confidence: very-high` la page [[concepts/data-proprietaire]] (actuellement `high`), ou au contraire la maintenir prudente car NP Digital est déclaratif (sondage de 500 marketeurs, pas une mesure côté moteur) ? Proposition : maintenir `high` jusqu'à ce qu'une 2e mesure empirique côté moteur (équivalent à Seer R&D) reproduise le facteur 2,2 sur un autre échantillon.
+- **Test terrain Google IP-based ads pour les clients européens** : tu as un client éditeur AdSense en Europe ? Si oui, vérifier que sa CMP est prête pour la TCF Feature 3 vendor 755 avant le 3 août pourrait être un service à fournir en juillet. Bonne donnée de terrain pour résoudre P-2026-06-18-2 (mesure adoption CMP) dans 90 jours.
+
+### Diffs de skill proposés
+- Aucun ce run. La méthode « 3 implications opérationnelles directes » est une technique d'angle, pas un changement de skill.
+
+### Sources découvertes (auto-ajoutées explore)
+- crowell-moring (0,7, cabinet juridique américain, analyse jurisprudence AI/copyright/contract law, source secondaire fiable)
+- loeb-loeb (0,65, cabinet juridique américain, analyse en interne dossier Reddit-Anthropic)
+- bleepingcomputer (0,7, source d'analyse cybersécurité/privacy reconnue, 1er hit utile)
+- neilpatel-com (0,6, source primaire enquête NP Digital sur formats AI citation, 1er hit utile)
+
+### Observations méthodologiques
+- L'angle « 3 implications opérationnelles directes » a été testé sur l'info du jour Google IP-based ads. Tient parce que les 3 implications (date dure, interface CMP, déplacement charge juridique) sont chacune ancrée sur un mécanisme nommé (3 août, Feature 3 + vendor 755, EU User Consent Policy). À reproduire sur d'autres annonces produit/réglementaires où le déplacement est précisable. Si une annonce ne se prête pas à 3 implications atomiques, en nommer 1 ou 2 plutôt qu'en forcer 3.
+- L'enquête NP Digital a été placée en brève B1 GEO plutôt qu'en info du jour parce que (a) GEO a été pris hier en info du jour (Bing Webmaster Tools) et la directive impose de ne pas réenchaîner sans fait franchement neuf, (b) l'enquête est déclarative ce qui pondère sa robustesse. L'approche « 3e mesure indépendante hiérarchisée vs antérieurs » est une technique d'angle qui rend le claim plus solide qu'une simple reprise.
+- L'absence de lien doctrine direct sur l'info du jour (TCF/publicité/éditeurs) a été assumée explicitement dans le corps. Ne pas forcer un lien décoratif est conforme à la voix synthétique : honnêteté sur les limites de la couverture existante.
