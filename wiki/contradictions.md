@@ -4,7 +4,7 @@ title: Registre des contradictions et dépendances ouvertes
 aliases: [contradictions, dette-doctrinale, dependances-ouvertes]
 tags: [meta, doctrine, lint, contradictions, dette]
 created: 2026-05-16
-updated: 2026-06-12
+updated: 2026-06-19
 sources: 0
 confidence: high
 status: living-doc
@@ -61,7 +61,9 @@ Repassée `ouverte` le 2026-06-12 ([[revue-hebdo/2026-W24]]) : aucune action eng
 
 Le cluster business Organikk et les 4 modèles pSEO ([[sources/2026-04-24-cluster-business-organikk-4-piliers]], [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]]) sont planifiés mais l'implémentation et la mesure post-déploiement manquent. C'est la dépendance qui bloque la moitié des hypothèses du registre : sans pages publiées et mesurées, [[hypotheses#H-002]], [[hypotheses#H-003]], [[hypotheses#H-007]] restent `ouvert`. Action : alimenter [[preuves/index]] dès les premières pages en ligne.
 
-`en-cours` depuis le 2026-05-16 : la cohorte pSEO secteur×ville déjà publiée a permis d'engager la première instrumentation sans attendre le déploiement complet du cluster — fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (H-007 passé `en-test`). La contradiction ne se ferme que quand le cluster complet est déployé et mesuré ; cette fiche en couvre une fraction (5 pages, H-007 seule), pas la totalité.
+`en-cours` depuis le 2026-05-16 : la cohorte pSEO secteur×ville déjà publiée devait engager la première instrumentation sans attendre le déploiement complet du cluster — fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (H-007 passé `en-test`). La contradiction ne se ferme que quand le cluster complet est déployé et mesuré ; cette fiche n'en couvre qu'une fraction (5 pages, H-007 seule).
+
+Mise à jour 2026-06-19 ([[revue-hebdo/2026-W25]]) : la fraction d'instrumentation revendiquée n'a jamais produit de donnée — baseline GSC `organikk.co` jamais capturée, H-007 repassée `ouvert`, fiche gelée. C-003 reste `en-cours` mais sur du vrai zéro mesure, pas sur une progression partielle. Elle ne bougera que sur un sprint de contenu Organikk réel avec baseline capturée avant intervention, jamais par reconduction.
 
 ### C-007 — Décompte workflows vs skills
 

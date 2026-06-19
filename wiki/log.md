@@ -918,3 +918,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - pages créées: 3 / mises à jour: 1 (index)
 - contradictions: N
 - angle SEO identifié: X faible en SEO Google (login wall, pas de deal data) mais fort en GEO via Grok ; cas francophone inversé (communauté SEO/IA FR vivante sur X). Cas test Qadence.io commun.
+
+## [2026-06-19] revue-hebdo | Semaine W25 — exécution des conditionnels W24
+- promotions: 2 draft→stable (methodes/ranker-verticale-niche-sans-backlink, methodes/cadrage-boucle-edition-algorithme) ; 0 stable→stale
+- hypothèse: H-007 en-test→ouvert (export Organikk jamais déposé au J+30 2026-06-15, fiche pseo-secteur-ville gelée baseline-jamais-capturee) ; aucune nouvelle mise en test (pas de fiche preuve)
+- lot ingest: golfiller-strat + etude-ctr-ai-overviews-gsc — 1ère reconduction pour W26, skip si non exécuté
+- contradiction: aucune fermée par décret (toutes event-gated) ; C-003 corrigée (zéro mesure réel suite reversal H-007)
+- archivage: rien ; mislabel revues-presse/2026-04-13 (draft mais publiée) renvoyé à audit-vault-hygiene
+- résurgence: verdict Grounding Score 06-12 exécuté (section Opérationnalisation sourcée, sources 6→11, confidence high→medium, updated 2026-06-19) ; mercredi 06-17 muet (ticket ops TCC ouvert)
+- fil rouge: instrumentation client (J+30 Golfiller 2026-07-03) + fil neuf parasite SEO/GEO Reddit+X+Grok (cas test Qadence) — les deux gelés sur événement data

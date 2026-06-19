@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-06-12
+updated: 2026-06-19
 sources: 0
 confidence: high
 status: living-doc
@@ -36,7 +36,7 @@ status: living-doc
 | H-004 | Une page "entity / style wiki" est mieux citée en SGE qu'une page statique équivalente | `ouvert` | [[concepts/persistent-wiki-vs-rag]] · [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] | — |
 | H-005 | structural-information-geo (title/meta/schema > body, +22% Hit Rate) se généralise au contenu français | `ouvert` | [[concepts/structural-information-geo]] | — |
 | H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — |
-| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `en-test` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] |
+| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `ouvert` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (baseline jamais capturée) |
 | H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
 | H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `en-test` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] |
 | H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
@@ -85,7 +85,9 @@ Test : échantillon de requêtes Organikk pertinentes, distribution des dates de
 
 Énoncé : le Retrieval Collapse (67% du pool capte 80% de l'exposition, NAVER [[sources/2026-04-25-scan-arxiv-25-avril]]) frappe moins les pages portant une donnée propriétaire unique. C'est l'argument scientifique central vendu aux prospects ([[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]]).
 
-Statut `en-test` depuis le 2026-05-16 (décision [[revue-hebdo/2026-W20]] point 2, exécutée en revue mensuelle). Fiche : [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]]. Cohorte = 5 pages pSEO secteur×ville déjà publiées (sans attendre le déploiement du cluster, [[contradictions#C-003]]). Jalons J+30 ≈ 2026-06-15, J+90 ≈ 2026-08-14. Réserve dure : baseline GSC non capturée tant que le service account n'est pas déposé ([[preuves/SETUP-GSC]]) — H-007 ne peut pas dépasser `en-test` avant que la baseline et les jalons soient renseignés.
+Repassée `ouvert` le 2026-06-19 ([[revue-hebdo/2026-W25]]), conditionnel pré-arbitré en W24 exécuté : aucun export `organikk.co` déposé dans `raw/data/exports-gsc/` au 2026-06-15 (J+30), seuls des exports clients sont arrivés (golfiller, victoriagarden, fgformation). Le test ne se relancera qu'attaché à un vrai sprint de contenu Organikk, plus jamais par reconduction rituelle. Diagnostic dur acté : le blocage n'est ni technique ni de process — la boucle GSC tourne dès qu'un travail payé la demande, Organikk n'est simplement pas sur le chemin du travail réel.
+
+Historique : `en-test` du 2026-05-16 au 2026-06-19 (décision [[revue-hebdo/2026-W20]] point 2). Fiche : [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] — notée « baseline jamais capturée ». Cohorte = 5 pages pSEO secteur×ville déjà publiées (sans attendre le déploiement du cluster, [[contradictions#C-003]]). Jalons théoriques J+30 ≈ 2026-06-15, J+90 ≈ 2026-08-14, jamais renseignés faute de baseline.
 
 Test : suivre l'exposition réelle (citations IA, impressions) des pages Organikk à data propriétaire vs pages génériques sur 90j.
 
