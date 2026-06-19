@@ -41,6 +41,19 @@ Reddit est passé en deux ans du statut de site obscur à 2e-3e domaine le plus 
 - **Aucune étude de cas Reddit indépendante** (marque nommée, trafic/positions/conversions chiffrés, méthodo vérifiable).
 - Aucune donnée FR chiffrée comparant la visibilité SERP Reddit sur Google.fr vs Google.com. « Reddit domine les SERP FR » se recopie sans étude Sistrix/Semrush sur le .fr.
 
+## Test first-party en cours : Qadence.io
+
+Le playbook amorce un test réel (juin 2026) qui doit produire la donnée de cas absente partout. Objectif double : citations GEO de Qadence.io + positions Google sur mots-clés décisionnels (« outil IA », « agent SEO »), plus la question « peut-on construire une audience qui nourrit le SEO d'organikk.co ». Deux règles : pas de spam, pas de coup éclair. C'est le candidat naturel pour la première [[concepts/data-proprietaire|étude first-party]] Reddit FR. Cf. [[entities/qadence-seo-agent]].
+
+## Tactiques concrètes ajoutées (audit praticiens juin 2026)
+
+- **Deux protocoles opérationnels** : activation par le commentaire (8-12 subs, 20-30 mots-clés de douleur, structure de réponse fixe, 5-10 commentaires/jour, disclosure) et post (50-80 % de valeur, titre « J'ai fait X pendant Y, voici ce qui a marché/foiré », cross-post 1× toutes les 2-3 semaines).
+- **Vélocité d'upvotes** : Reddit classe à la vitesse, pas au total. Fenêtre haute mardi-mercredi 7-10h ET, 30 premières minutes décisives (étude 1 000 posts Upvote.net, source commerciale).
+- **Écrire comme une documentation** pour être cité par l'IA : retirer « je pense / à mon avis », formuler en faits et définitions.
+- **Fraîcheur cycle 90 jours** : repasser sur ses réponses, signal d'année dans les titres.
+- **Réputation = enjeu GEO défensif** : les IA citent le sentiment négatif (~6,1 %) quasi autant que le positif (~5 %). Un thread négatif visible oriente durablement ta présentation par l'IA. Recoupe le manque #3 de l'audit de fond.
+- **Mining X.com** en complément de GummySearch/Keyworddit pour les signaux utilisateurs (recherche mode expert, compte premium).
+
 ## Implications SEO/GEO pour Tim
 
 - **GEO d'abord, sur subs anglophones** de la niche search/IA : c'est là que les threads denses sont produits et cités, y compris pour des utilisateurs FR qui interrogent l'IA en français.

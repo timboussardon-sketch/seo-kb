@@ -903,3 +903,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - pages créées: 3 / mises à jour: 2 (perplexity + index)
 - contradictions: N
 - angle SEO identifié: priorité GEO > parasite SEO > insights ; trou FR (pas de communauté SEO FR, pas d'étude de cas FR chiffrée) = cible étude first-party Tim
+
+## [2026-06-19] update | Playbook Reddit enrichi (cas Qadence + protocoles + GEO défensif)
+- source: [[sources/2026-06-19-playbook-reddit-seo-geo]] (maj)
+- ajouts playbook raw : section terrain de test Qadence.io, §7bis 2 protocoles concrets (activation + post), §2 écrire-comme-doc + fraîcheur 90j + réputation défensive, §9 mining X.com
+- 5 nouvelles sources web (audit praticiens juin 2026 : SubredditSignals, Upvote.net, Reddit GEO Playbook Medium, AuthorityTech, Redship)
+- comble manques #1 (exemples concrets) et #3 (défense GEO) de l'audit de fond
