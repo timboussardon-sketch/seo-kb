@@ -48,7 +48,7 @@
     "cloudflare-blog": 1.13,
     "variety": 1.13,
     "apptopia": 1.04,
-    "sistrix": 1.13,
+    "sistrix": 1.17,
     "piunikaweb": 1.04,
     "mediacopilot": 1.04,
     "law360": 0.86,
@@ -170,6 +170,12 @@
     "pewresearch.org": 1.13,
     "techspot.com": 1.04,
     "windowsreport.com": 1.0,
-    "allineedformywebsite.com": 1.0
+    "allineedformywebsite.com": 1.0,
+    "gov.uk": 1.09,
+    "niemanlab.org": 1.04,
+    "telecompaper.com": 1.04,
+    "digiday.com": 0.95,
+    "sistrix.com": 1.2,
+    "adweek.com": 1.08
   }
 }

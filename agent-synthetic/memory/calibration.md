@@ -528,3 +528,23 @@ Tentations stylistiques identifiées et écartées : « pose les rails de l'agen
 
 Brève B1 (Lily Ray 69pct) a posé un mini-dilemme méthodologique : un seul exemple chiffré (Oasis LMS) cité par la source primaire SEL. J'ai retenu ce cas en flagant la limite (« un seul exemple cité, source primaire unique mais corrobore par pattern d'ensemble »), plutôt que de le taire. Conforme à la voix d'analyste qui assume l'incertitude.
 
+
+## 2026-06-19-v2 — Pilier Actualité SEO, CMA fair ranking + data portability
+
+| Édition | Recoupement | Angle | Doctrine | Hook | Survie fact-check | Note globale |
+|---|---|---|---|---|---|---|
+| 2026-06-19-v2 | 5/5 | 4/5 | 3/5 | 4/5 | 14 claims retenus tous recoupés ≥2 sources, 1 claim Barry Adams mono-source flagué dans le corps, 4 claims écartés (Reddit-Anthropic CMC sans sortie publique J+1, back button hijacking J+4 redite morning, opt-out CMA UK J+2 sans mesure, Pew Research 60pct AI summaries même étude déjà traitée morning) | 4,1/5 |
+
+**Lecture.** Edition cloud après-midi sur fait reglementaire majeur passé sous le radar de la veille SEO française : la CMA UK a publié le 17 juin DEUX nouvelles conduct requirements contre Google Search (fair ranking organique objectif AI Overviews compris + data portability vers tiers autorisés). Aucune édition Algorithme antérieure n'avait traité ces deux requirements. Le pilier varie correctement vs morning v1 (Recherche agentique → Actualité SEO).
+
+L'info du jour tient sur 5 sources indépendantes dont GOV.UK primaire. Quote Will Hayter verbatim sur 2 sources. Le doctrine_fit est limité à 3/5 car aucune fiche wiki ne couvre directement le fair ranking côté régulation ; le lien indirect avec `metriques-visibilite-geo` et `agentic-search` (AI Overviews dans le périmètre fair ranking) est nommé honnêtement comme indirect, pas forcé. C'est conforme à la voix : assumer l'absence de lien doctrine direct vaut mieux que forcer une connexion décorative.
+
+B1 USA Today shell files : excellent recoupement (Digiday scoop + SEL + Nieman Lab) avec quote DelGallo verbatim sur 2 sources. Chiffres groupe USA Today marqués vendeur dans la méthode. Le claim Barry Adams "4 heures avant AIO" est mono-source (SEL) et flagué dans le corps en attribution explicite, conforme à la règle dure single-source.
+
+B2 SISTRIX GPT-5.5 47pct : publication 2 juin donc 17 jours, normalement hors fenêtre fraîche. Couvert ici car (a) aucune édition antérieure ne l'avait traité (vérifié par grep said_index), (b) la méthodologie 3,8M réponses + 38 échantillons + 4j avant/après est solide, (c) le motif "primaire local gagne, agrégateur perd" recoupe la lecture Aleyda Solis du core update Google de mai 2026 couverte le 14 juin. La directive 2026-06-16-v2 autorise explicitement de revenir sur une mesure de 5-8 semaines quand elle n'a pas été traitée et que la méthodologie est robuste.
+
+B3 Ask Ad Manager : annonce produit fraîche (18 juin) avec 3 sources (blog.google primaire + SEL + Adweek). Limite méthodologique nommée : un seul partenaire intégrateur cité (Yahoo), pas d'éditeur indépendant. Le claim "serveur MCP plus tard en 2026" est intégré comme structural pour 2027 (cohérent avec Tableau MCP Salesforce 15 juin et OKF 12 juin).
+
+**Discipline anti-pattern IA.** Run propre. Zéro métaphore vérifiée. Tentations identifiées et écartées : « la régulation prend le contrôle » (rejeté pour info du jour, personnification), « USA Today contre Google » (rejeté B1, militarisme implicite), « Google industrialise sa couche conversationnelle » (gardé, descriptif littéral). « Couche » employé trois fois (vocabulaire informatique standard, à surveiller). Aucune personnification de Google, CMA, USA Today, SISTRIX, ChatGPT, Yahoo. Aucun tiret cadratim hors structurels markdown ---. Vouvoiement maintenu. Citations Hayter, DelGallo, Google et Yahoo signalées comme verbatim.
+
+**Bilan piliers (8 dernières info du jour).** Recherche agentique 0617-v2 → Actualité SEO 0618 → GEO 0618-v2 → Recherche agentique 0619 → Actualité SEO 0619-v2. Le pilier Actualité SEO se prend deux des cinq dernières info du jour (0618 Google IP-based ads + 0619-v2 CMA fair ranking). Risque à surveiller pour la prochaine édition : NE PAS réenchaîner Actualité SEO sans fait franchement neuf.
