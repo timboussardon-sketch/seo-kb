@@ -14,6 +14,10 @@ status: stable
 
 Ensemble de règles pour éliminer les patterns d'écriture détectables comme générés par IA. Basé sur le guide Wikipedia "Signs of AI Writing" + les règles propriétaires de Tim. Appliqué systématiquement aux étapes 6 et 8 du [[concepts/workflow-redaction-8-etapes]].
 
+## Règle fondamentale — factuel, sans narratif
+
+Droit au but, ultra factuel. On entre par la réponse (answer-first), jamais par une mise en situation. **Le narratif est interdit dans le contenu** : pas de storytelling, pas de « la plupart des gens font X », pas de « imagine que », pas de décor ni de scénario qui raconte une histoire avant d'arriver au fait. Faits, étapes, chiffres, position tranchée, directement. Tout paragraphe qui raconte au lieu d'affirmer un fait est à supprimer. Cumulé avec la doctrine GEO (réponse extractible, pyramide inversée) et la voix Tim ([[methode-organikk-4-piliers]]).
+
 ## Source de référence
 
 **Fichier raw** : `raw/notes/tim-anti-ai-writing-style.md` (139 KB)

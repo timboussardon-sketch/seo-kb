@@ -33,4 +33,4 @@ Moteur de recherche IA spécialisé dans la citation systématique de sources. P
 
 ## Pages liées
 
-[[sources/2026-04-11-algorithme-linkedin-2e-source-ia]] · [[sources/2026-04-22-algorithme-core-update-fermes-ia]] · [[sources/2026-04-15-scan-arxiv-15-avril]] · [[sources/2026-04-13-call-04-jamel]] · [[concepts/aeo]] · [[concepts/data-proprietaire]] · [[entities/chatgpt-search]] · [[entities/google-ai-mode]]
+[[sources/2026-04-11-algorithme-linkedin-2e-source-ia]] · [[sources/2026-04-22-algorithme-core-update-fermes-ia]] · [[sources/2026-04-15-scan-arxiv-15-avril]] · [[sources/2026-04-13-call-04-jamel]] · [[sources/2026-06-19-playbook-reddit-seo-geo]] · [[concepts/aeo]] · [[concepts/data-proprietaire]] · [[entities/reddit]] · [[entities/chatgpt-search]] · [[entities/google-ai-mode]]

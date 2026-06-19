@@ -894,3 +894,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - moteur du bond : FG-Formation dossier client complet (40 — 32 transcripts d'appels + 8 livrables), x-playbook (4), espressio-ai refs (5), bootcamp4/exercices (26), guides/notes (3)
 - prochain lot proposé: golfiller-strat.md + etude-ctr-ai-overviews-gsc.md (lot W25 voté, toujours non exécuté)
 - nouveaux skips: aucun (bloc matériel pédagogique bootcamp4 = 50 fichiers, candidat skip groupé à trancher par Tim)
+
+## [2026-06-19] ingest | Playbook Reddit (SEO + GEO)
+- source_type: doctrine
+- source: [[sources/2026-06-19-playbook-reddit-seo-geo]] (depuis raw/reddit-playbook/Playbook-Reddit-SEO-GEO.md, audit web 5 angles)
+- entities touchées: 2 (création [[entities/reddit]], maj [[entities/perplexity]])
+- concepts touchés: 1 (création [[concepts/parasite-seo]])
+- pages créées: 3 / mises à jour: 2 (perplexity + index)
+- contradictions: N
+- angle SEO identifié: priorité GEO > parasite SEO > insights ; trou FR (pas de communauté SEO FR, pas d'étude de cas FR chiffrée) = cible étude first-party Tim
