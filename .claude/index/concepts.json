@@ -165,6 +165,7 @@
       "wiki/entities/christophe.md",
       "wiki/entities/fg-formation.md",
       "wiki/entities/google-ai-mode.md",
+      "wiki/entities/grok.md",
       "wiki/entities/linkedin.md",
       "wiki/entities/mum.md",
       "wiki/entities/perplexity.md",
@@ -172,6 +173,7 @@
       "wiki/entities/seer-interactive.md",
       "wiki/entities/semrush.md",
       "wiki/entities/sge.md",
+      "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
@@ -189,6 +191,7 @@
       "wiki/sources/2026-04-30-fg-formation-pseo-cas-client.md",
       "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md",
@@ -996,9 +999,11 @@
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/entities/google-ai-mode.md",
+      "wiki/entities/grok.md",
       "wiki/entities/perplexity.md",
       "wiki/entities/reddit.md",
       "wiki/entities/seer-interactive.md",
+      "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
@@ -1008,6 +1013,7 @@
       "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
       "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
       "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
       "wiki/syntheses/4-piliers-organikk.md"
     ],
     "confidence": "high",
@@ -1280,6 +1286,7 @@
       "wiki/entities/reddit.md",
       "wiki/entities/semrush.md",
       "wiki/entities/victoria-garden.md",
+      "wiki/entities/x-twitter.md",
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
@@ -1340,6 +1347,7 @@
       "wiki/sources/2026-04-30-scheduled-skills-cron.md",
       "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -1513,6 +1521,7 @@
       "wiki/sources/2026-04-15-scan-arxiv-15-avril.md",
       "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/tim-profil-doctrine.md",
       "wiki/syntheses/vendre-seo-ia-2026.md"
@@ -1939,6 +1948,7 @@
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/entities/chatgpt-search.md",
+      "wiki/entities/grok.md",
       "wiki/entities/perplexity.md",
       "wiki/entities/reddit.md",
       "wiki/entities/seer-interactive.md",
@@ -2007,6 +2017,43 @@
       "organisation"
     ],
     "title": "Google DeepMind",
+    "type": "entity"
+  },
+  "grok": {
+    "aliases": [
+      "grok",
+      "grok-search",
+      "phoenix",
+      "xai"
+    ],
+    "backrefs": [
+      "wiki/entities/x-twitter.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/grok.md",
+    "outlinks": [
+      "x-twitter",
+      "2026-06-19-playbook-x-seo-geo",
+      "chatgpt-search",
+      "perplexity",
+      "google-ai-mode",
+      "aeo",
+      "metriques-visibilite-geo"
+    ],
+    "status": "stable",
+    "tags": [
+      "moteur-ia",
+      "citation-ia",
+      "geo",
+      "aeo",
+      "x",
+      "twitter",
+      "algo"
+    ],
+    "title": "Grok (xAI)",
     "type": "entity"
   },
   "grounding-score": {
@@ -2977,6 +3024,7 @@
       "wiki/concepts/information-gain.md",
       "wiki/concepts/structural-information-geo.md",
       "wiki/entities/geo-bench.md",
+      "wiki/entities/grok.md",
       "wiki/entities/sageo-arena-benchmark.md",
       "wiki/index.md",
       "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
@@ -3540,9 +3588,11 @@
     ],
     "backrefs": [
       "wiki/entities/reddit.md",
+      "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
-      "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md"
+      "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md"
     ],
     "confidence": "medium",
     "file": "wiki/concepts/parasite-seo.md",
@@ -3658,7 +3708,9 @@
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/entities/chatgpt-search.md",
       "wiki/entities/google-ai-mode.md",
+      "wiki/entities/grok.md",
       "wiki/entities/reddit.md",
+      "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
@@ -3668,6 +3720,7 @@
       "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
       "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
       "wiki/syntheses/4-piliers-organikk.md"
     ],
     "confidence": "high",
@@ -4170,10 +4223,12 @@
       "raw/agents/qadence-seo-agent/README.md",
       "raw/fusionn/README.md",
       "wiki/entities/organikk-co.md",
+      "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
-      "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md"
+      "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/qadence-seo-agent.md",
@@ -4326,6 +4381,7 @@
     "backrefs": [
       "wiki/concepts/parasite-seo.md",
       "wiki/entities/perplexity.md",
+      "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md"
@@ -5401,6 +5457,47 @@
     ],
     "title": "Workflow rédaction 8 étapes (Article Engine)",
     "type": "concept"
+  },
+  "x-twitter": {
+    "aliases": [
+      "x",
+      "twitter",
+      "x-com",
+      "x.com"
+    ],
+    "backrefs": [
+      "wiki/audit/2026-06-01-audit.md",
+      "wiki/entities/grok.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/x-twitter.md",
+    "outlinks": [
+      "grok",
+      "2026-06-19-playbook-x-seo-geo",
+      "reddit",
+      "chatgpt-search",
+      "perplexity",
+      "data-proprietaire",
+      "parasite-seo",
+      "aeo",
+      "qadence-seo-agent"
+    ],
+    "status": "stable",
+    "tags": [
+      "plateforme",
+      "citation-ia",
+      "geo",
+      "aeo",
+      "grok",
+      "phoenix",
+      "parasite-seo",
+      "reply-game"
+    ],
+    "title": "X (ex-Twitter)",
+    "type": "entity"
   },
   "youtube": {
     "aliases": [

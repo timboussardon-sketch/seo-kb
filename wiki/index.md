@@ -31,7 +31,7 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (58)
+## Sources (59)
 
 ### Articles (12)
 - [[sources/2026-02-27-algorithme-youtube-ai-overviews]] — YouTube 30% AI Overviews
@@ -47,7 +47,7 @@ status: stable
 - [[sources/2026-04-17-organikk-process-seo-b2b-2026]] — Article pilier blog Organikk (HUB Pilier 1, 2400 mots)
 - [[sources/2026-04-22-algorithme-core-update-fermes-ia]] — Core Update mars 2026, IA spécialisées, brevet US12536233B1
 
-### Doctrine (22)
+### Doctrine (23)
 - [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim
 - [[sources/2026-03-31-tim-workflow-redaction]] — Workflow rédaction 8 étapes (Article Engine)
 - [[sources/2026-03-31-tim-prompt-systeme-fusionn]] — Prompt système Fusionn SEO Bot
@@ -70,6 +70,7 @@ status: stable
 - [[sources/2026-04-30-drive-accompagnement-templates]] — Kit 7 dossiers pour migration Drive client
 - [[sources/2026-04-30-scheduled-skills-cron]] — 6 specs cron (revue presse / scan arxiv / recap hebdo / todo / rappel calls)
 - [[sources/2026-06-19-playbook-reddit-seo-geo]] — Playbook Reddit SEO+GEO (GEO d'abord, nofollow, cas FR à combler)
+- [[sources/2026-06-19-playbook-x-seo-geo]] — Playbook X.com SEO+GEO (miroir Reddit ; GEO via Grok, SEO Google faible, cas FR inversé)
 
 ### Fondation (1)
 - [[sources/2026-04-11-karpathy-llm-wiki]] — Pattern LLM Wiki : wiki persistant vs RAG
@@ -113,7 +114,7 @@ status: stable
 ### Tests terrain (1)
 - [[sources/2026-04-13-cas-clients-resultats]] — Preuves chiffrées Tim (1h30→45min, 10→50% closing, top 2 balle de golf)
 
-## Entities (48)
+## Entities (50)
 
 ### Outils SEO (4)
 - [[entities/obsidian]] — IDE du wiki (1 source)
@@ -154,8 +155,10 @@ status: stable
 ### Quality Raters (1)
 - [[entities/quality-raters-guidelines]] — QRG p.42 "sans effort" (1 source)
 
-### Concepts-marque / Produits IA & plateformes (8)
+### Concepts-marque / Produits IA & plateformes (10)
 - [[entities/reddit]] — 2e-3e domaine Google US, n°1-2 citations IA, nofollow (1 source)
+- [[entities/x-twitter]] — Algo Phoenix/Grok, GEO fort / SEO Google faible, reply game (1 source)
+- [[entities/grok]] — Moteur xAI nourri par X, algo Phoenix + Grok Search (1 source)
 - [[entities/notebooklm]] — Exemple RAG stateless (1 source)
 - [[entities/google-deepmind]] — Auteur Titans/MIRAS (1 source)
 - [[entities/youtube]] — 30% AI Overviews, 48.6B visites/mois (2 sources)
