@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: Plan de test des formats X
+aliases: [plan-test-formats-x, x-formats-test]
+tags: [x, twitter, formats, test, mesure, data-proprietaire]
+created: 2026-06-13
+updated: 2026-06-19
+sources: 1
+confidence: medium
+status: draft
+---
+
 # Plan de test des formats X (résoudre les contradictions sur ta propre data)
 
 > Compagnon de [[Playbook-X-autorite-SEO-IA]] et [[Algo-Grok-X-decryptage]]. On ne tranche pas les débats du web par opinion, on les tranche sur ta data, en 4 semaines.

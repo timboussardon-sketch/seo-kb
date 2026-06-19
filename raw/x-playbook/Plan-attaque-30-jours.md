@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: "Plan d'attaque X : 30 jours"
+aliases: [plan-attaque-x-30j, x-30-jours]
+tags: [x, twitter, reply-game, plan, qadence, geo]
+created: 2026-06-13
+updated: 2026-06-19
+sources: 1
+confidence: medium
+status: draft
+---
+
 # Plan d'attaque X : 30 jours
 
 > Compagnon de [[Playbook-X-autorite-SEO-IA]], [[Algo-Grok-X-decryptage]], [[Plan-test-formats-X]].

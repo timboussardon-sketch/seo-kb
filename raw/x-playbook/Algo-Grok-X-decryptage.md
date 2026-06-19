@@ -1,3 +1,16 @@
+---
+type: source
+source_type: doctrine
+title: Décryptage de l'algorithme Grok de X (Phoenix)
+aliases: [algo-grok-x, phoenix-algo, x-algorithm-decryptage]
+tags: [x, twitter, grok, phoenix, algo, geo, reply-game]
+created: 2026-06-13
+updated: 2026-06-19
+sources: 1
+confidence: medium
+status: draft
+---
+
 # Décryptage de l'algorithme Grok de X (Phoenix)
 
 > Compagnon de [[Playbook-X-autorite-SEO-IA]]. Étude de l'algo de recommandation de X depuis le passage sous Grok (xAI), open-sourcé le 20 janvier 2026.
