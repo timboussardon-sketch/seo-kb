@@ -506,3 +506,25 @@ Note globale : **3,9/5**. Info du jour multi-source robuste 2 primaires recoupé
 - **Goût de Tim à appliquer (rappel 2026-06-03)** : familles AIMÉES cochées. Info du jour (Google IP-based ads EEA UK CH 3 août) : « conflits éditeurs/IA » (charge conformité déplacée vers éditeurs + réaction ICO 2024) + « bascules de marché » (réconciliation contradiction interne) + « business mesurable » (date dure 3 août + obligation TCF). B1 (NP Digital) : « contre-vérité mesurée » + « voix des praticiens ». B2 (CMC) : « conflits éditeurs/IA ». B3 (volatilité) : « voix des praticiens ». Run très aligné familles aimées.
 - **Méthode confirmée 2026-06-18** : sur une annonce produit/réglementaire qui sort le jour même via email mandatory (Google IP-based ads via adsense-noreply 17 juin), l'angle qui distingue précisément ce que l'annonce déplace dans une mécanique existante (côté serveur IP + PETs + Feature 3 vs antérieur côté navigateur cookie tiers) et qui pose 3 implications opérationnelles directes (date dure, interface CMP, déplacement charge juridique) donne doctrine_fit 4/5 et novelty 4/5 sans forcer. Reconnaître l'absence de page wiki couvrant le sujet est préférable à un lien décoratif. Sur une enquête déclarative (NP Digital), citer la limite méthodologique avant l'apport (3e mesure indépendante) protège contre la sur-interprétation. Sur une session procédurale (CMC 18 juin), nommer la nature procédurale évite l'effet d'attente excessive.
 - **Risque à surveiller** : tentation de lecture politique « Google trahit ses utilisateurs européens » qui serait clickbait. Tenu en formulation neutre « Google déplace la conformité sur les éditeurs ». Pas de pronostic d'amende. Pas de jugement moral. Aucun superlatif vide.
+
+## Édition 2026-06-19 — Adyen Agentic (Recherche agentique)
+
+Score : 4.0 / 5.
+
+| Axe | Mesure | Commentaire |
+|---|---|---|
+| `source_diversity` | 18 | 5 sources indépendantes confirmées pour l'info du jour (Adyen primaire + PR Newswire + PYMNTS + The Paypers + PaySpace), 3-4 par brève. |
+| `claim_density` | 4.5 claims verified / section | Info du jour : 9 claims natifs verified. Brèves : 4+3+2 claims. Faible nombre de claims discardés (3) car la sélection a tranché tôt. |
+| `novelty_score` | 4/5 | Annonce Adyen Agentic distincte de tous les sujets agentic précédents traités (web bot auth, walmart sparky, nike ucp, mastercard ap4m, okf, webmcp, loreal openai). Angle propre : PSP comme couche d'abstraction multi-protocoles. |
+| `doctrine_fit` | 5/5 | Lien direct agentic-search + data-proprietaire + structural-information-geo + metriques-visibilite-geo. Les 3 couches Adyen (Feed/Cart/Payments) sont chacune reliées à une mécanique documentée. |
+| `redite_risk` | faible | Adyen jamais traité, Pew juin 2026 distinct de la Pew juillet 2025 écartée le 0616, Lily Ray B2B listicles distinct de Lily Ray contenu IA mai 2026 (édition 0601-v3). |
+| `clickbait_risk` | faible | Titre info du jour neutre, nomme les 3 protocoles. Titre B1 contient le chiffre 69pct sans surchauffer. |
+
+Points positifs : choix de pilier conforme à la directive (Recherche agentique avec fait franchement neuf), discipline anti-pattern IA stricte tenue, recoupement systématique avec sources primaires (Adyen press primaire + PR Newswire republication primaire). La brève B2 Pew Research a permis de cocher la famille « bascule de marché » sans forcer.
+
+Points faibles : info du jour est une annonce produit sans chiffre d'adoption ni volume de transactions ; le caveat est explicite dans le corps mais cela borne le novelty_score à 4/5 plutôt que 5/5. La brève B3 (back button hijacking J+4) est délibérément un statut d'absence : utile comme tracker procédural, mais faible en information neuve. À surveiller : ne pas répéter ce format « statut J+N » trop souvent sans fait observé.
+
+Tentations stylistiques identifiées et écartées : « pose les rails de l'agentic commerce » → remplacé par « couche d'intégration unique » ; « ouvre la voie aux marchands » → remplacé par « met le catalogue marchand en circulation directe » ; « bascule » employé une seule fois en B2 comme terme démographique (pas comme effet de style).
+
+Brève B1 (Lily Ray 69pct) a posé un mini-dilemme méthodologique : un seul exemple chiffré (Oasis LMS) cité par la source primaire SEL. J'ai retenu ce cas en flagant la limite (« un seul exemple cité, source primaire unique mais corrobore par pattern d'ensemble »), plutôt que de le taire. Conforme à la voix d'analyste qui assume l'incertitude.
+
