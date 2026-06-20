@@ -4,10 +4,10 @@ type: methode
 aliases: [strat-niche-sans-backlink, do-intent-product-led, pattern-winner-gsc]
 tags: [pseo, product-led, do-vs-know, autorite-thematique, anti-llm, sans-backlink, methode]
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-19
 sources: 1
 confidence: medium
-status: draft
+status: stable
 illustration: golfiller
 ---
 

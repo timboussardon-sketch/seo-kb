@@ -2,7 +2,8 @@
 title: "Cadrage : SyntheticBrain, boucle d'édition auto-améliorante pour Algorithme"
 type: methode
 created: 2026-05-30
-status: draft, en validation avec Tim
+updated: 2026-06-19
+status: stable
 skill-socle: revue-presse-quotidienne
 runtime: /agent-synthetic
 decisions-tim:

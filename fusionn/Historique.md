@@ -2172,3 +2172,13 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - `enqueue_lifecycle_emails()` ajoute désormais une passe (0) de requalification : suppression des `pending` dont le segment ne tient plus (activation si ≥1 analyse, nudge_1 si ≠1, nudge_2 si ≠2, réengagement si analyse <14j, premium_click si abonné, premium_onboarding si plus abonné). DELETE et pas `skipped` : l'unicité (user, sequence) permet ainsi une remise en file future légitime.
 - Incident en route : la migration 20260612120000 a écrasé le RPC prod avec l'ancienne segmentation `search_history` (la prod tournait sur `site_crawls done` depuis 20260530200000) → 46 mises en file erronées. Correctif 20260612130000 : purge totale des `pending` + redéfinition sur la bonne base. Rien n'est parti à tort (les envois n'ont lieu qu'au run quotidien).
 - Vérif post-fix : 0 pending, RPC insère 0 (état stable). Les 10 envois de la semaine étaient légitimes.
+
+## [2026-06-17] Fix favoris mots-clés : l'étoile ne « tenait » pas
+
+- Symptôme Tim : ajout d'un mot-clé en favori « ne fonctionne pas ».
+- Forensic prod (service_role + user JWT jetable) : RLS OK (un propriétaire authentifié met bien `is_saved=true`), lignes `search_semantic_results` présentes, backend ne réécrit pas `is_saved` (business-score = update partiel `google_suggestions_count`). Test end-to-end via la vraie edge function `generate-semantic-keywords` puis PATCH favori avec le JWT user → 1 ligne mise à jour, persistée. **La persistance marche à 100%.** 54 favoris existaient (3 autres users, 27 mai→2 juin) ; Tim n'en avait jamais réussi un.
+- Vraie cause = bug UI dans `SortableKeywordsTable.tsx` : `useEffect(() => setLocalKeywords(keywords), [keywords])` ré-écrasait l'état favori local à chaque re-render du parent (scores business en streaming / realtime / progression reconstruisent `keywords` avec `is_saved=false`). L'étoile se « dé-cochait » toute seule → perçu comme cassé.
+- Correctifs (build local, pas déployé) :
+  1. `src/components/SortableKeywordsTable.tsx` : le resync depuis `keywords` fusionne et préserve `is_saved` local tant qu'on reste sur la même recherche ; reset propre au changement de `searchId`.
+  2. `src/lib/keywordActions.ts` (`toggleKeywordSaved` + `bulkSaveKeywords`) : ajout de `.select('id')` ; un UPDATE à 0 ligne renvoie désormais `success:false` (avant : faux `success:true` silencieux qui masquait tout échec).
+- Type-check vert. Données/users de test nettoyés. Local : http://localhost:5176/. À déployer sur demande.

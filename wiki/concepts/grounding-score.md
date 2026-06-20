@@ -4,9 +4,9 @@ title: Grounding Score
 aliases: [grounding-score, score-ancrage]
 tags: [seo-ia, geo, aeo, vecteurs, ranking]
 created: 2026-04-11
-updated: 2026-04-13
-sources: 6
-confidence: high
+updated: 2026-06-19
+sources: 11
+confidence: medium
 status: stable
 ---
 
@@ -49,6 +49,14 @@ Cf. [[concepts/surprise-gap]] : apporter l'info **manquante** (pas inexistante) 
 
 [[sources/2026-04-13-miras-architecture]] propose un encodage multi-granularité (document → section → passage → phrase). Le grounding peut se calculer sur le segment le plus pertinent vs moyenne diluée du document → une page avec un seul H2 fortement vectorisé peut remonter même si le reste est moyen. Connecte directement à [[concepts/passage-ranking]].
 
+## Opérationnalisation (méthode Organikk)
+
+Le concept est resté spéculatif jusqu'en avril, puis la doctrine l'a doté d'un protocole concret. [[sources/2026-04-24-reflexion-organikk-4-piliers]] fait du Grounding Score le pilier 2 de la méthode Organikk et fixe la chaîne de mesure : embedding via Gemini Embedding, puis méthode Triade SERP. La Triade calcule le vecteur dominant à partir du top 3 d'une SERP, et y greffe une divergence contrôlée plutôt qu'un alignement maximal — la traduction terrain du sweet spot proximité + divergence posé plus haut. L'audit se structure ensuite par un framework à quatre catégories d'entités : techniques, preuves, multimodal, divergence.
+
+[[sources/2026-04-24-cluster-business-organikk-4-piliers]] pose les KPI chiffrés associés : un Grounding Score moyen de cluster supérieur à 0,75, puis supérieur à 0,85 en cible mature, et un outil Do dédié (`/outils/audit-grounding-score`). Ces seuils sont des objectifs de doctrine, pas des benchmarks validés — aucune fiche [[preuves/index|preuve]] ne les a encore confrontés à de la donnée de citation réelle (cf. [[hypotheses#H-003]], toujours `ouvert`).
+
+Deux sources externes appuient la métrique sans la prouver. [[sources/2026-04-15-opendecoder-seo-scoring-system]] : le score S_Pertinence dominant du scoring LLM-as-Judge recouvre exactement le grounding. [[sources/2026-04-25-scan-arxiv-25-avril]] (paper MAGEO) : la fidélité aux sources reste le critère de tri prioritaire des LLM, ce qui renforce le grounding comme métrique structurelle et non comme simple proxy de pertinence.
+
 ## Limites
 
 - **Aucune définition officielle de Google**. "Grounding Score" est un terme de doctrine SEO (dont `AGENTS.md` §4.2), pas un concept publié par Google avec ce nom exact.
@@ -57,4 +65,4 @@ Cf. [[concepts/surprise-gap]] : apporter l'info **manquante** (pas inexistante) 
 
 ## Pages liées
 
-[[sources/2026-04-13-titans-architecture-google-deepmind]] · [[sources/2026-04-13-miras-architecture]] · [[sources/2026-04-13-sageo-arena-2025]] (retrieval-stage grounding via structural info) · [[sources/2026-04-13-searchllm-2026]] (grounding = gate non-négociable en prod) · [[sources/2026-04-11-seo-ia-tim]] · [[sources/2026-04-11-karpathy-llm-wiki]] · [[concepts/surprise-metric]] · [[concepts/surprise-gap]] · [[concepts/passage-ranking]] · [[concepts/ingenierie-semantique-inversee]] · [[concepts/structural-information-geo]] · [[concepts/answer-first-pattern]] · [[concepts/metriques-visibilite-geo]] · [[entities/titans]] · [[entities/miras]]
+[[sources/2026-04-13-titans-architecture-google-deepmind]] · [[sources/2026-04-13-miras-architecture]] · [[sources/2026-04-13-sageo-arena-2025]] (retrieval-stage grounding via structural info) · [[sources/2026-04-13-searchllm-2026]] (grounding = gate non-négociable en prod) · [[sources/2026-04-11-seo-ia-tim]] · [[sources/2026-04-11-karpathy-llm-wiki]] · [[sources/2026-04-24-reflexion-organikk-4-piliers]] · [[sources/2026-04-24-cluster-business-organikk-4-piliers]] · [[sources/2026-04-15-opendecoder-seo-scoring-system]] · [[sources/2026-04-25-scan-arxiv-25-avril]] · [[concepts/surprise-metric]] · [[concepts/surprise-gap]] · [[concepts/passage-ranking]] · [[concepts/ingenierie-semantique-inversee]] · [[concepts/structural-information-geo]] · [[concepts/answer-first-pattern]] · [[concepts/metriques-visibilite-geo]] · [[entities/titans]] · [[entities/miras]]

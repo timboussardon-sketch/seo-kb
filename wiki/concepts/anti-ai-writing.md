@@ -4,7 +4,7 @@ title: Anti-AI Writing (anti-patterns IA)
 aliases: [anti-ai-writing, anti-patterns-ia, wikipedia-signs-ai-writing]
 tags: [redaction, anti-patterns, qualite, doctrine-tim]
 created: 2026-04-12
-updated: 2026-04-13
+updated: 2026-06-19
 sources: 9
 confidence: high
 status: stable
@@ -36,6 +36,19 @@ Le guide Wikipedia (descriptif, pas prescriptif) identifie les patterns statisti
 - Conclusion-résumé qui répète ce qui vient d'être dit
 - Méta-intro ("Dans cet article, nous allons voir...")
 - Émojis dans les titres ou le corps
+
+### Oppositions rhétoriques interdites
+Tournures qui n'apportent aucune information et sonnent « profond » à vide. Bannies : « pas X mais Y », « ce n'est pas X, c'est Y », « plutôt que », « au lieu de », « ne cherchez pas à », « l'objectif n'est pas ». On dit directement, en affirmatif, ce qu'il faut faire.
+- ❌ « Racontez une histoire vraie plutôt que de poser une accroche. »
+- ✅ « Ajoutez un cas client chiffré en intro. »
+
+### Verbes d'action vagues interdits (sans objet précis)
+Bannis dès qu'ils sont employés seuls : améliorer · optimiser · renforcer · travailler · développer · valoriser · mettre en avant. Toujours suivis de quoi exactement, où, et comment le mesurer.
+- ❌ « Il faut optimiser la page et renforcer le maillage. »
+- ✅ « Ajoute 3 liens internes depuis A, B et C vers /tarifs (ancre « tarifs formation ») pour faire remonter sa position moyenne, aujourd'hui 14. »
+
+### Enchaînement imposé
+Chaque idée suit **Constat → preuve → action**. Jamais **Vision → inspiration → storytelling** (grande idée inspirante, mise en récit, envolée). Tout conseil cite un élément concret, une action observable et un effet expliqué, sinon il n'est pas livrable.
 
 ### Patterns Wikipedia
 - **Undue emphasis on significance** : "stands as", "is a testament", "a vital/significant/crucial role", "underscores its importance", "reflects broader", "evolving landscape", "indelible mark"

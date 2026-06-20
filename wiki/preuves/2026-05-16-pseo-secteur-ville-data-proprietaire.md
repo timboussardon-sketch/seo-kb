@@ -4,10 +4,10 @@ title: "Preuve — pSEO secteur×ville Organikk vs Retrieval Collapse"
 aliases: [preuve-pseo-secteur-ville-data-proprietaire]
 tags: [preuve, terrain, pseo, organikk, data-proprietaire, gsc]
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-06-19
 sources: 1
 confidence: low
-status: en-cours
+status: baseline-jamais-capturee
 hypothese: H-007
 contenu: "[[queries/pseo-2026-05-13-organikk-secteur-ville]]"
 publie_le: 2026-05-13
@@ -18,6 +18,8 @@ jalon_90j: 2026-08-14
 # Preuve — pSEO secteur×ville Organikk vs Retrieval Collapse
 
 > Fiche ouverte sur décision [[revue-hebdo/2026-W20]] point 2. Cohorte de test disponible sans attendre le déploiement du cluster ([[contradictions#C-003]]) : les pages pSEO secteur×ville déjà en ligne sur Organikk.
+>
+> **Baseline jamais capturée — fiche gelée le 2026-06-19 ([[revue-hebdo/2026-W25]]).** Aucun export GSC `organikk.co` n'a été déposé entre l'ouverture (2026-05-16) et le J+30 (2026-06-15). H-007 est repassée `ouvert`. La fiche reste ici comme trace ; elle ne se rouvre qu'attachée à un sprint de contenu Organikk réel, avec capture de baseline AVANT intervention (le modèle qui a marché pour [[preuves/2026-06-12-golfiller-instrumentation-client|Golfiller]]).
 
 ## Ce qu'on teste
 

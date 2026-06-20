@@ -45,6 +45,7 @@
     ],
     "backrefs": [
       "wiki/briefs/maillage-interne-claude.md",
+      "wiki/concepts/maillage-interne.md",
       "wiki/concepts/maillage-systeme.md",
       "wiki/index.md",
       "wiki/log.md",
@@ -152,6 +153,7 @@
       "wiki/concepts/5-types-ancres.md",
       "wiki/concepts/agentic-search.md",
       "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/geo.md",
       "wiki/concepts/know-simple-know-do.md",
       "wiki/concepts/maillage-systeme.md",
       "wiki/concepts/methode-organikk-4-piliers.md",
@@ -255,12 +257,15 @@
       "agent-synthetic/revuedepressIA/2026-06-17-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-17-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-18-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-12-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-19-breves.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse-v2.md",
@@ -402,6 +407,7 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-06-13-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "qadence/Strategie-contenu.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
@@ -490,6 +496,7 @@
       "wiki/concepts/information-gain.md",
       "wiki/concepts/purete-vectorielle.md",
       "wiki/concepts/retrieval-collapse.md",
+      "wiki/concepts/ton-de-voix-tim.md",
       "wiki/concepts/workflow-redaction-8-etapes.md",
       "wiki/dashboard.md",
       "wiki/entities/naver.md",
@@ -886,6 +893,9 @@
       "wiki/audit/2026-06-12-audit.md",
       "wiki/briefs/2026-06-10-balle-golf-distance.md",
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
+      "wiki/concepts/gsc-export.md",
+      "wiki/concepts/intention-recherche.md",
+      "wiki/concepts/maillage-interne.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md"
@@ -1178,7 +1188,9 @@
       "agent-synthetic/revuedepressIA/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-18-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-18-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-19-breves-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-01-revue-presse-v3.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
@@ -1838,6 +1850,38 @@
     "title": "Fusionn.io",
     "type": "entity"
   },
+  "geo": {
+    "aliases": [
+      "geo",
+      "GEO",
+      "Generative Engine Optimization",
+      "generative engine optimization"
+    ],
+    "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/revuedepressIA/2026-06-09-revue-presse-v2.md",
+      "raw/journal/2026-06-17.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/geo.md",
+    "outlinks": [
+      "aeo",
+      "structural-information-geo",
+      "grounding-score",
+      "surprise-gap",
+      "metriques-visibilite-geo"
+    ],
+    "status": "stable",
+    "tags": [
+      "geo",
+      "aeo",
+      "llm",
+      "visibilite"
+    ],
+    "title": "GEO (Generative Engine Optimization)",
+    "type": "concept"
+  },
   "geo-bench": {
     "aliases": [
       "geo-bench",
@@ -1896,6 +1940,7 @@
       "raw/organikk/pré-call/proximit.md",
       "raw/transcripts/video-erreur-ia-137-pages.md",
       "wiki/audit/2026-06-06-audit-vault-liens.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md",
       "wiki/briefs/2026-06-10-balle-golf-distance.md",
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
       "wiki/concepts/cannibalisation.md",
@@ -2084,6 +2129,7 @@
       "raw/etudes-seo/etude-searchllm-2026.md",
       "raw/golfiller/golfiller-strat.md",
       "raw/journal/2026-06-12.md",
+      "raw/journal/2026-06-19.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-entites-vectorielles.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
@@ -2101,10 +2147,12 @@
       "wiki/concepts/answer-first-pattern.md",
       "wiki/concepts/confidence-score.md",
       "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/geo.md",
       "wiki/concepts/ingenierie-semantique-inversee.md",
       "wiki/concepts/methode-organikk-4-piliers.md",
       "wiki/concepts/metriques-visibilite-geo.md",
       "wiki/concepts/passage-ranking.md",
+      "wiki/concepts/preuve-atomique.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/purete-vectorielle.md",
@@ -2133,6 +2181,7 @@
       "wiki/moc/moc-aeo-geo.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
       "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
+      "wiki/revue-hebdo/2026-W25.md",
       "wiki/revue-hebdo/resurgence-2026-05-16.md",
       "wiki/revue-hebdo/resurgence-2026-06-12.md",
       "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
@@ -2166,7 +2215,7 @@
       "wiki/syntheses/process-keyword-research-5-etapes.md",
       "wiki/syntheses/tim-profil-doctrine.md"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "file": "wiki/concepts/grounding-score.md",
     "outlinks": [
       "2026-04-11-seo-ia-tim",
@@ -2176,6 +2225,12 @@
       "surprise-gap",
       "2026-04-13-miras-architecture",
       "passage-ranking",
+      "2026-04-24-reflexion-organikk-4-piliers",
+      "2026-04-24-cluster-business-organikk-4-piliers",
+      "index",
+      "hypotheses",
+      "2026-04-15-opendecoder-seo-scoring-system",
+      "2026-04-25-scan-arxiv-25-avril",
       "2026-04-13-titans-architecture-google-deepmind",
       "2026-04-13-sageo-arena-2025",
       "2026-04-13-searchllm-2026",
@@ -2239,6 +2294,37 @@
     "title": "Google Search Console (GSC)",
     "type": "entity"
   },
+  "gsc-export": {
+    "aliases": [
+      "gsc-export",
+      "export gsc",
+      "gsc export",
+      "export Search Console"
+    ],
+    "backrefs": [
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-29-audit.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/gsc-export.md",
+    "outlinks": [
+      "maillage-interne",
+      "cannibalisation"
+    ],
+    "status": "stable",
+    "tags": [
+      "gsc",
+      "data",
+      "methode",
+      "outils"
+    ],
+    "title": "Export GSC",
+    "type": "concept"
+  },
   "information-gain": {
     "aliases": [
       "information-gain",
@@ -2264,6 +2350,7 @@
       "wiki/concepts/data-proprietaire.md",
       "wiki/concepts/entites-vectorielles.md",
       "wiki/concepts/metriques-visibilite-geo.md",
+      "wiki/concepts/preuve-atomique.md",
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/concepts/tabou-visibilite.md",
       "wiki/concepts/workflow-redaction-8-etapes.md",
@@ -2422,6 +2509,39 @@
       "meta"
     ],
     "title": "Ingest workflow (pattern Karpathy)",
+    "type": "concept"
+  },
+  "intention-recherche": {
+    "aliases": [
+      "intention-recherche",
+      "intention de recherche",
+      "search intent",
+      "intention"
+    ],
+    "backrefs": [
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
+      "raw/organikk/clients/victoriagarden/victoriagarden-quick-wins-2026-06-11.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-29-audit.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/intention-recherche.md",
+    "outlinks": [
+      "know-simple-know-do",
+      "mots-cles-actionnels",
+      "cannibalisation"
+    ],
+    "status": "stable",
+    "tags": [
+      "seo",
+      "intention",
+      "mots-cles",
+      "serp"
+    ],
+    "title": "Intention de recherche",
     "type": "concept"
   },
   "isi": {
@@ -2658,6 +2778,7 @@
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/cannibalisation.md",
+      "wiki/concepts/intention-recherche.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/organikk-co.md",
       "wiki/index.md",
@@ -2736,6 +2857,40 @@
     "title": "LinkedIn",
     "type": "entity"
   },
+  "maillage-interne": {
+    "aliases": [
+      "maillage-interne",
+      "maillage interne",
+      "internal linking",
+      "liens internes"
+    ],
+    "backrefs": [
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-29-audit.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md",
+      "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
+      "wiki/concepts/gsc-export.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/maillage-interne.md",
+    "outlinks": [
+      "maillage-systeme",
+      "cannibalisation",
+      "5-types-ancres"
+    ],
+    "status": "stable",
+    "tags": [
+      "seo",
+      "maillage",
+      "architecture",
+      "gsc"
+    ],
+    "title": "Maillage interne",
+    "type": "concept"
+  },
   "maillage-systeme": {
     "aliases": [
       "maillage-systeme",
@@ -2758,6 +2913,7 @@
       "wiki/concepts/5-types-ancres.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/know-simple-know-do.md",
+      "wiki/concepts/maillage-interne.md",
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas.md",
       "wiki/entities/organikk-co.md",
@@ -3007,11 +3163,15 @@
       "agent-synthetic/revuedepressIA/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-17-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-18-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-12-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-19-breves-v2.md",
+      "agent-synthetic/revuedepressIA/breves-IA/2026-06-19-breves.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-citations-multimoteurs.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse-v2.md",
@@ -3020,6 +3180,7 @@
       "raw/articles/organikk-blog/roadmap-seo-2026.md",
       "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
       "wiki/concepts/answer-first-pattern.md",
+      "wiki/concepts/geo.md",
       "wiki/concepts/grounding-score.md",
       "wiki/concepts/information-gain.md",
       "wiki/concepts/structural-information-geo.md",
@@ -3169,6 +3330,7 @@
       "raw/transcripts/video-erreur-ia-137-pages.md",
       "wiki/concepts/80-pourcent-pattern-strategie.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/intention-recherche.md",
       "wiki/concepts/know-simple-know-do.md",
       "wiki/concepts/modele-page-variable-prix.md",
       "wiki/concepts/programmatique-pseo.md",
@@ -3701,6 +3863,7 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-06-breves-v2.md",
+      "agent-synthetic/revuedepressIA/etudes-IA/2026-06-20-stats-citations-ia-domaines-recouvrement.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-05-revue-presse.md",
       "raw/organikk/pré-call/centrale-directe.md",
       "wiki/concepts/aeo.md",
@@ -3854,6 +4017,37 @@
       "doctrine-tim"
     ],
     "title": "Peur du train IA",
+    "type": "concept"
+  },
+  "preuve-atomique": {
+    "aliases": [
+      "preuve-atomique",
+      "claim",
+      "claim atomique",
+      "preuve"
+    ],
+    "backrefs": [
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
+      "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
+      "wiki/audit/2026-05-11-audit.md",
+      "wiki/audit/2026-05-29-audit.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/preuve-atomique.md",
+    "outlinks": [
+      "grounding-score",
+      "information-gain"
+    ],
+    "status": "stable",
+    "tags": [
+      "synthetic-brain",
+      "fact-check",
+      "methode",
+      "sources"
+    ],
+    "title": "Preuve atomique (claim)",
     "type": "concept"
   },
   "product-bench": {
@@ -4798,11 +4992,13 @@
       "agent-synthetic/revuedepressIA/2026-06-17-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-17-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-18-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
+      "wiki/concepts/geo.md",
       "wiki/concepts/grounding-score.md",
       "wiki/concepts/metriques-visibilite-geo.md",
       "wiki/concepts/passage-ranking.md",
@@ -4887,6 +5083,7 @@
       "wiki/concepts/data-proprietaire.md",
       "wiki/concepts/e-e-a-t.md",
       "wiki/concepts/entites-vectorielles.md",
+      "wiki/concepts/geo.md",
       "wiki/concepts/grounding-score.md",
       "wiki/concepts/information-gain.md",
       "wiki/concepts/ingenierie-semantique-inversee.md",
@@ -5228,6 +5425,56 @@
     ],
     "title": "Titans (architecture)",
     "type": "entity"
+  },
+  "ton-de-voix-tim": {
+    "aliases": [
+      "ton-de-voix-tim",
+      "ton de voix Tim",
+      "voix Tim",
+      "ton de voix"
+    ],
+    "backrefs": [
+      "loops/health/memory/directives.md",
+      "loops/health/memory/score-grid.md",
+      "loops/health/memory/wording_rules.md",
+      "loops/indexation-check/memory/directives.md",
+      "loops/indexation-check/memory/score-grid.md",
+      "loops/indexation-check/memory/wording_rules.md",
+      "loops/linkedin-journal/memory/directives.md",
+      "loops/linkedin-journal/memory/score-grid.md",
+      "loops/linkedin-journal/memory/wording_rules.md",
+      "loops/maillage-interne-gsc/memory/directives.md",
+      "loops/maillage-interne-gsc/memory/score-grid.md",
+      "loops/maillage-interne-gsc/memory/wording_rules.md",
+      "loops/seo-cannibalisation/memory/directives.md",
+      "loops/seo-cannibalisation/memory/score-grid.md",
+      "loops/seo-cannibalisation/memory/wording_rules.md",
+      "loops/seo-quick-win/memory/directives.md",
+      "loops/seo-quick-win/memory/score-grid.md",
+      "loops/seo-quick-win/memory/wording_rules.md",
+      "raw/articles/modele-production/modele-strategie-b2b.md",
+      "raw/articles/modele-production/modele-strategie.md",
+      "raw/journal/2026-05-30.md",
+      "wiki/audit/2026-05-29-audit.md",
+      "wiki/audit/2026-06-06-audit-vault-liens.md",
+      "wiki/audit/2026-06-12-audit.md",
+      "wiki/audit/2026-06-20-audit-vault-liens.md",
+      "wiki/log.md"
+    ],
+    "confidence": "high",
+    "file": "wiki/concepts/ton-de-voix-tim.md",
+    "outlinks": [
+      "anti-ai-writing"
+    ],
+    "status": "stable",
+    "tags": [
+      "voix",
+      "redaction",
+      "anti-ai-writing",
+      "organikk"
+    ],
+    "title": "Ton de voix Tim",
+    "type": "concept"
   },
   "triade-serp": {
     "aliases": [
