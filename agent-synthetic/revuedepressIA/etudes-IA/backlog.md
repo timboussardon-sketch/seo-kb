@@ -12,10 +12,10 @@
 - 2026-06-18 · Usage grand public de ChatGPT et assistants IA → `2026-06-18-stats-usage-grand-public-chatgpt.md`
 - 2026-06-19 · Zéro-clic par type de requête 2026 (informationnel vs transactionnel) → `2026-06-19-stats-zero-clic-intent-informationnel-transactionnel.md`
 - 2026-06-20 · Qui se fait citer par les IA : part de domaines, recouvrement entre moteurs 2026 → `2026-06-20-stats-citations-ia-domaines-recouvrement.md`
+- 2026-06-21 · Adoption de l'IA générative par les particuliers en France 2026 → `2026-06-21-stats-adoption-ia-generative-particuliers-france.md`
 
 ## À faire (par priorité)
-1. Adoption de l'IA générative par les particuliers en France 2026
-2. Impact de l'IA sur l'emploi et les métiers en France 2026
+1. Impact de l'IA sur l'emploi et les métiers en France 2026
 3. E-commerce et IA : conversion et trafic assisté 2026
 4. Souveraineté et hébergement des données IA en Europe 2026
 5. SEO local et IA : présence dans les réponses locales 2026
