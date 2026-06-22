@@ -1,1 +1,3 @@
 {"date":"2026-06-15","brain":"loops/linkedin-journal","anomalie":"boucle muette","preuve":"cadence=quotidienne dans manifest.yml, runs.jsonl vide, brain cree 2026-06-12 (3 jours sans run, tolerance quotidienne=2 jours)","capture_mode":"native"}
+{"date":"2026-06-22","brain":"loops/linkedin-journal","anomalie":"boucle muette persistante","preuve":"cadence=quotidienne dans manifest.yml, runs.jsonl vide, brain cree 2026-06-12 (10 jours sans run), deja signalee 2026-06-15","capture_mode":"native"}
+{"date":"2026-06-22","brain":"loops/seo-quick-win","anomalie":"boucle muette","preuve":"cadence=hebdomadaire dans manifest.yml, dernier run 2026-06-11 (J+11 vs tolerance >8 jours)","capture_mode":"native"}
