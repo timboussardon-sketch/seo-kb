@@ -4,8 +4,8 @@ title: Backlog d'ingest
 aliases: [ingest-backlog, backlog, raw-non-traite, file-ingest]
 tags: [meta, ingest, capture, pipeline, backlog]
 created: 2026-05-16
-updated: 2026-06-15
-last_sweep: 2026-06-15
+updated: 2026-06-22
+last_sweep: 2026-06-22
 sources: 0
 confidence: high
 status: living-doc
@@ -19,9 +19,9 @@ status: living-doc
 >
 > Méthode : un fichier `raw/` est "traité" quand un `wiki/sources/*.md` le couvre (directement ou via une source agrégée documentée). Sinon il est dans le backlog. Un fichier peut être explicitement `skip` (faible valeur doctrinale, déjà couvert, archive).
 
-> **Sweep 2026-06-15** : 326 fichiers `raw/` scannés, backlog à 192 (P1:84 P2:38 P3:70). Bond de 110 → 192 depuis le sweep du 2026-06-08. La semaine a vu des ingests réels — mais uniquement du travail client frais qui est arrivé ET a été traité dans la même fenêtre : Golfiller (fiche + GSC + pSEO), Alexia (2 calls), Victoria Garden (audit + quick wins + source GSC), Catherine (call + propale), Leexi (dossier complet en repo dédié). Le backlog gonfle parce que de la matière brute massive a été déposée sans être digérée : le dossier client **FG-Formation** (40 fichiers — 32 transcripts d'appels + 8 livrables), le `raw/x-playbook/` (4), les références concurrent `espressio-ai` (5), les `bootcamp4/exercices/` (26) et trois guides/notes. Le lot W25 voté en revue hebdo (`golfiller-strat` + `etude-ctr-ai-overviews-gsc`) n'est toujours pas ingéré — il est repris ci-dessous. Backlog > 80 → on liste les 15 premiers par tier (oldest-first) et on agrège le reste par groupe.
+> **Sweep 2026-06-22** : 331 fichiers `raw/` scannés, backlog stable à 192 (P1:83 P2:38 P3:71). Stabilité trompeuse : 5 nouveaux fichiers déposés cette semaine, 4 ingestés en sortie. **Ingéré** : les playbooks `raw/x-playbook/` (4 fichiers — Playbook-X + compagnons Grok/30-jours/formats) couverts par [[sources/2026-06-19-playbook-x-seo-geo]], et le nouveau `raw/reddit-playbook/Playbook-Reddit-SEO-GEO.md` couvert par [[sources/2026-06-19-playbook-reddit-seo-geo]] (arrivé ET traité dans la fenêtre). **Nouvelle matière non digérée** : pré-call commercial `organikk/pré-call/hellocse.md`, prep acquisition `youtube/preparation-yt.md`, recherche mots-clés client `leexi/keywords/recherche-2026-06-16-rgpd.md` (→ P1), et la liste opérationnelle `organikk/mots-cles-a-traiter.md` (→ P3). Le gros bloc reste le dossier client **FG-Formation** (40 fichiers — 32 transcripts d'appels + 8 livrables, le cas-client de synthèse [[sources/2026-04-30-fg-formation-pseo-cas-client]] ne couvre que les 2 notes `raw/notes/fg-formation/`, pas le dossier `raw/organikk/clients/fgformation/`). Le lot W25 voté en revue hebdo (`golfiller-strat` + `etude-ctr-ai-overviews-gsc`) n'est toujours pas ingéré — repris ci-dessous. Backlog > 80 → on liste les 15 premiers par tier (oldest-first) et on agrège le reste par groupe.
 
-## Priorité 1 — Données terrain propriétaires non capturées (le moat qui fuit) — 84
+## Priorité 1 — Données terrain propriétaires non capturées (le moat qui fuit) — 83
 
 Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non rejouable, qui alimente directement la doctrine et le discours commercial. Les laisser non traitées, c'est laisser fuir le moat. Oldest-first, 15 premiers listés.
 
@@ -48,7 +48,7 @@ Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non
 - **FG-Formation — dossier client complet** (2026-06-13, 40 fichiers) : `clients/fgformation/calls/` (32 — audits blancs ×5, coachings ×6, R1 ×3, RDV ×17, `SYNTHESE-appels-anonymisee`) + 8 livrables (`fgformation` maître, `-clusters`, `-gsc-quickwins`, `-modeles-pseo`, `-mots-cles`, `-mots-cles-decisionnels`, `-mots-cles-recherche-exhaustive`, `-personas-problematiques`). **Le plus gros bloc terrain frais de tout le backlog** : 32 transcripts d'appels réels = matière brute pour [[concepts/avatar-freelance-sans-systeme]] et le discours commercial, + livrables pSEO produits. Aucun équivalent wiki.
 - **Terrain commercial Organikk pré-call** (2026-06-08 → 06-12, 12 fichiers) : `centrale-directe` (×3), `proximit` (×5 : call-damien, propale, propale-1-1, resume-call-client, fiche), `pangaea-sports` (×2), `ears-360`, `_MODELE-pre-call` — calls + résumés + propales réels, le moat commercial le plus frais, alimente [[syntheses/workflow-complet-consultant-seo-ia]].
 - **Bootcamp 4 — fin sessions 1, 2 & 4** (5 fichiers) : `session-1-mots-cles-prep`, `session-1-mots-cles-transcript`, `session-2-redaction-prep`, `session-4-automatisations-chat`, `session-4-call-prep` — transcripts + prep restants, même valeur que les sessions déjà listées.
-- **X-playbook** (2026-06-13, 4 fichiers) : `Playbook-X-autorite-SEO-IA`, `Algo-Grok-X-decryptage`, `Plan-attaque-30-jours`, `Plan-test-formats-X` — playbook propriétaire d'acquisition X/Grok (angle original, décryptage algo), non publié.
+- **Acquisition / pré-call frais** (2026-06-16 → 06-20, 3 fichiers) : `organikk/pré-call/hellocse.md` (call découverte CSE/SaaS fait, propale + chiffrage à envoyer — moat commercial frais), `youtube/preparation-yt.md` (masterclass SEO-Claude + plan de chaîne YouTube, lead gen Organikk/Fusionn/Qadence), `organikk/clients/leexi/keywords/recherche-2026-06-16-rgpd.md` (recherche mots-clés RGPD client Leexi — terrain).
 - **Bootcamp 5** (2026-05-30 → 06-08, 3 fichiers) : `cadrage`, `calls-prospects`, `propal-remi` — cadrage du nouveau bootcamp + appels prospects + propale réelle.
 - **Discours / stratégie commerciale** (2 fichiers) : `_MODELE-discours-commercial` (2026-06-08), `strategie-commerciale-fusionn-2026-05-23` — modèle de pitch + stratégie produit Fusionn.
 - **Fusionn** : `etude utilisation fusionn.md` (2026-06-08) — data terrain produit.
@@ -84,7 +84,7 @@ Articles, newsletters et posts publiés qui n'ont ni source wiki ni [[preuves/in
 
 > Note boucle preuves : pour chaque article publié de P2, créer la source ET la [[preuves/index|fiche preuve]] qui le relie à l'hypothèse doctrinale qu'il teste (ex. les pSEO secteur×ville testent [[hypotheses#H-002]] et [[hypotheses#H-007]]).
 
-## Priorité 3 — À traiter selon valeur — 70 (+ drive-accompagnement parké)
+## Priorité 3 — À traiter selon valeur — 71 (+ drive-accompagnement parké)
 
 15 premiers listés, oldest-first.
 
@@ -114,6 +114,7 @@ Articles, newsletters et posts publiés qui n'ont ni source wiki ni [[preuves/in
 - `raw/etudes-seo/etude-ctr-ai-overviews-gsc.md` (2026-06-08) — **étude externe CTR AI Overviews / GSC, valeur doctrinale élevée** : à ingérer comme source `paper`/`etude`, pas P1 (pas propriétaire) mais à ne pas laisser traîner. **Lot W25 voté, non exécuté.**
 - `raw/golfiller/pages/_template-golfiller-NOTE.md` (2026-06-10) — template/design de référence Golfiller — **candidat skip**.
 - `raw/todo/todo-actuelle.md` (2026-05-26) — todo de travail, valeur doctrinale ~nulle — **candidat skip**.
+- `raw/organikk/mots-cles-a-traiter.md` (2026-06-16) — liste opérationnelle de mots-clés à traiter (client-note Organikk), document de travail vivant — **candidat skip** ou à absorber dans un workflow KW réel, à trancher par Tim.
 
 | `raw/notes/drive-accompagnement/` (22 templates individuels, INDEX déjà ingéré [[sources/2026-04-30-drive-accompagnement-templates]]) | — | Voir [[contradictions#C-006]] : statut `acceptée`, ingest à la demande seulement. **Parké**, non compté dans le backlog actif |
 

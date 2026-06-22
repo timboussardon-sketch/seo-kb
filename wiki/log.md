@@ -927,3 +927,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - archivage: rien ; mislabel revues-presse/2026-04-13 (draft mais publiée) renvoyé à audit-vault-hygiene
 - résurgence: verdict Grounding Score 06-12 exécuté (section Opérationnalisation sourcée, sources 6→11, confidence high→medium, updated 2026-06-19) ; mercredi 06-17 muet (ticket ops TCC ouvert)
 - fil rouge: instrumentation client (J+30 Golfiller 2026-07-03) + fil neuf parasite SEO/GEO Reddit+X+Grok (cas test Qadence) — les deux gelés sur événement data
+
+## [2026-06-22] backlog | sweep — 192 en backlog (P1:83 P2:38 P3:71)
+- 331 fichiers raw scannés, backlog stable à 192 (5 déposés / 4 ingestés cette semaine)
+- sorties backlog : x-playbook (4) → [[sources/2026-06-19-playbook-x-seo-geo]], reddit-playbook (1, neuf) → [[sources/2026-06-19-playbook-reddit-seo-geo]]
+- entrées backlog : organikk/pré-call/hellocse, youtube/preparation-yt, leexi/keywords/recherche-2026-06-16-rgpd (P1) + organikk/mots-cles-a-traiter (P3)
+- prochain lot proposé : golfiller-strat, etude-ctr-ai-overviews-gsc (lot W25 voté, toujours non exécuté), clients/fgformation/calls/SYNTHESE-appels-anonymisee
+- nouveaux skips: aucun
