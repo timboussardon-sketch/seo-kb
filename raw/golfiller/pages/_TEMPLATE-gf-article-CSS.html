@@ -1,0 +1,106 @@
+<!-- ============================================================
+     TEMPLATE GOLFILLER OFFICIEL — articles de blog (gf-article)
+     Validé par Tim le 2026-06-22. À réutiliser pour toute page /blogs/infos/ de golfiller.fr.
+     Remplace le template Bebas Neue (.golf-page) pour les ARTICLES de blog :
+     .golf-page reste pour les pages outils/landing, .gf-article pour les articles.
+
+     COULEURS DE MARQUE (relevées dans le thème Shopify, à respecter pixel perfect) :
+       teal primaire  #108474  (liens, puces, CTA, accent)
+       turquoise      #5BD8C0  (FOND des en-têtes de colonnes de tableau)
+       jaune/or       #FBCD0A / #FFD700 (accent secondaire, non utilisé par défaut)
+       encre          #13241D   muted #5B6B62   ligne #E0ECE9
+
+     RÈGLE DE COLLAGE SHOPIFY : coller en VUE CODE (</>) de l'éditeur d'article
+     le bloc <style> + <article class="gf-article">. En éditeur visuel, le <style> est supprimé.
+
+     ⚠️ LE THÈME SHOPIFY ÉCRASE LE <style> SUR 2 POINTS — toujours doubler en INLINE !important :
+       1. fond turquoise des <th>  -> style="background:#5BD8C0!important;color:#13241d!important;text-align:left"
+       2. <summary> en flex (+ à droite) -> style="display:flex!important;justify-content:space-between!important;align-items:center;..."
+       3. FAQ : aérer la réponse en INLINE (le thème colle question/réponse) :
+          - <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+          - <summary ...padding:18px 2px!important...>
+          - réponse dans <div class="gf-a" style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75"> avec <p style="margin:0 0 14px">
+       Le toggle +/− = un vrai <span class="gf-ico">+</span> (pas ::after, que le thème supprime),
+       qui pivote via .gf-faq details[open] summary .gf-ico{transform:rotate(45deg)}.
+
+     PATTERNS DE CONTENU VALIDÉS (à réutiliser) :
+       - Tableau RÉCAP en tête de page (ex. Top 8 « en un coup d'œil ») = fort pour l'AEO + scan.
+       - Sous-titres en QUESTIONS (« Quelle balle utilise X ? ») en <h3> + réponse en <p><strong>question</strong> ...</p> = featured snippets.
+       - Compression CHIFFRÉE par modèle où sourcée (Chrome Soft 72, TP5 85, TP5x 97, Z-Star 88) ; sinon « élevée/haute » + lien tableau, jamais de chiffre inventé.
+       - Section CONVERSION « jouez la balle des pros / X en reconditionné » + garde-fou « la balle d'un pro n'est pas forcément la vôtre » + CTA.
+       - Maillage interne systématique : tableau de compression, vitesse de swing, calcul index, comment choisir, classement, fiches produits.
+       - Bloc Sources en pied. Voix Tim : vouvoiement client, anti-AI-writing, zéro tiret cadratin, zéro métaphore.
+
+     Exemples complets remplis :
+       - content-brain/golfiller/outputs/2026-06-22-classement-meilleures-balles-STYLEE.html
+       - content-brain/golfiller/outputs/2026-06-22-balles-des-pros-STYLEE.html
+     ============================================================ -->
+<style>
+  .gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7}
+  .gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;color:var(--gf-ink)}
+  .gf-article h2{font-size:clamp(21px,3vw,27px);line-height:1.25;letter-spacing:-.01em;margin:40px 0 14px;color:var(--gf-ink)}
+  .gf-article h3{font-size:19px;line-height:1.3;margin:28px 0 6px;color:var(--gf-ink)}
+  .gf-article p{margin:0 0 16px}
+  .gf-article a{color:var(--gf-accent);text-decoration:none;border-bottom:1px solid rgba(16,132,116,.3)}
+  .gf-article a:hover{border-bottom-color:var(--gf-accent)}
+  .gf-article .gf-lead{font-size:19px;color:var(--gf-ink)}
+  .gf-article ul{margin:0 0 16px;padding-left:0;list-style:none}
+  .gf-article ul li{position:relative;padding-left:22px;margin-bottom:10px}
+  .gf-article ul li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--gf-accent)}
+  .gf-article .gf-table-wrap{overflow-x:auto;margin:0 0 20px}
+  .gf-article table{width:100%;border-collapse:collapse;font-size:15px}
+  .gf-article thead th{background:#5BD8C0!important;text-align:left;font-weight:700;color:#13241d!important;padding:11px 14px;border-bottom:2px solid var(--gf-line);white-space:nowrap}
+  .gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
+  .gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
+  .gf-article tbody tr:nth-child(even){background:#fafcfb}
+  .gf-article .gf-faq{border-top:1px solid var(--gf-line)}
+  .gf-article .gf-faq details[open] summary .gf-ico{transform:rotate(45deg)}
+  .gf-article .gf-faq summary::-webkit-details-marker{display:none!important}
+  .gf-article .gf-faq summary::marker{content:""!important}
+  .gf-article .gf-faq .gf-a li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--gf-accent)}
+  .gf-article .gf-cta{display:inline-block;margin:6px 0 8px;background:var(--gf-accent);color:#fff;padding:12px 22px;border-radius:10px;font-weight:600;border:0}
+  .gf-article .gf-cta:hover{background:#0c6a5d}
+  .gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
+  .gf-article .gf-sources h2{font-size:18px;margin:0 0 10px}
+  .gf-article .gf-sources li::before{background:var(--gf-muted)}
+</style>
+
+<!-- SQUELETTE TYPE (remplir le contenu) -->
+<article class="gf-article">
+  <h1>Titre (ne pas coller si le titre d'article Shopify est déjà réglé)</h1>
+  <p class="gf-lead">Chapô / lead.</p>
+
+  <h2>Section</h2>
+  <p>Paragraphe.</p>
+  <ul><li>Puce verte automatique.</li></ul>
+
+  <!-- TABLEAU : th toujours en inline !important pour le turquoise -->
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Colonne A</th>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Colonne B</th>
+      </tr></thead>
+      <tbody><tr><td>val</td><td>val</td></tr></tbody>
+    </table>
+  </div>
+
+  <p><a class="gf-cta" href="https://golfiller.fr/collections/all" target="_blank">Bouton CTA</a></p>
+
+  <!-- FAQ : summary flex inline + réponse dans .gf-a inline pour l'aération -->
+  <h2>Questions fréquentes</h2>
+  <div class="gf-faq" style="border-top:1px solid #e0ece9;margin-top:8px">
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex!important;justify-content:space-between!important;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px!important;margin:0!important;font-weight:600;font-size:17px;color:#13241d"><span class="gf-q" style="flex:1 1 auto">Question ?</span><span class="gf-ico" style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div class="gf-a" style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75">
+        <p style="margin:0 0 14px">Réponse, paragraphe 1.</p>
+        <p style="margin:0">Réponse, paragraphe 2.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="gf-sources">
+    <h2>Sources</h2>
+    <ul><li>Source.</li></ul>
+  </div>
+</article>

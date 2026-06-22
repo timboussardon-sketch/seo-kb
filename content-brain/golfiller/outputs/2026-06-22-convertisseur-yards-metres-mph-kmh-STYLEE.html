@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convertisseur golf : yards ↔ mètres et mph ↔ km/h | Golfiller</title>
+<style>body{margin:0;padding:30px 20px 60px;background:#fff}</style>
+</head>
+<body>
+<!-- Golfiller — Convertisseur yards/mètres + mph/km/h (template gf-article validé 2026-06-22)
+     POUR SHOPIFY : coller en VUE CODE (</>) le bloc <style> + <article> + <script>.
+     JS en addEventListener + DOMContentLoaded (compat Shopify). th turquoise en inline !important. -->
+<style>
+  .gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7}
+  .gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;color:var(--gf-ink)}
+  .gf-article h2{font-size:clamp(21px,3vw,27px);line-height:1.25;letter-spacing:-.01em;margin:40px 0 14px;color:var(--gf-ink)}
+  .gf-article p{margin:0 0 16px}
+  .gf-article a{color:var(--gf-accent);text-decoration:none;border-bottom:1px solid rgba(16,132,116,.3)}
+  .gf-article a:hover{border-bottom-color:var(--gf-accent)}
+  .gf-article .gf-lead{font-size:19px;color:var(--gf-ink)}
+  .gf-article .gf-table-wrap{overflow-x:auto;margin:0 0 20px}
+  .gf-article table{width:100%;border-collapse:collapse;font-size:15px}
+  .gf-article thead th{background:#5BD8C0!important;text-align:left;font-weight:700;color:#13241d!important;padding:11px 14px;border-bottom:2px solid var(--gf-line);white-space:nowrap}
+  .gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
+  .gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
+  .gf-article tbody tr:nth-child(even){background:#fafcfb}
+  .gf-article .gf-tool{background:var(--gf-soft);border:1px solid var(--gf-line);border-radius:12px;padding:18px;margin:0 0 14px;display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap}
+  .gf-article .gf-tool label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:700;color:var(--gf-ink);text-transform:uppercase;letter-spacing:.03em}
+  .gf-article .gf-tool input{width:120px;font-size:18px;padding:10px 12px;border:2px solid var(--gf-accent);border-radius:8px;font-family:inherit;color:var(--gf-ink)}
+  .gf-article .gf-tool .gf-eq{font-size:22px;font-weight:700;color:var(--gf-accent);padding-bottom:8px}
+  .gf-article .gf-note{font-size:14px;color:var(--gf-muted);margin:0 0 24px}
+  .gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
+</style>
+
+<article class="gf-article">
+
+  <h1>Convertisseur golf : yards ↔ mètres et mph ↔ km/h</h1>
+
+  <p class="gf-lead">Les deux conversions qu'on croise tout le temps au golf : les distances (yards / mètres) et les vitesses de swing (mph / km/h). Tapez une valeur, l'autre se calcule.</p>
+
+  <h2>Yards ↔ mètres</h2>
+  <div class="gf-tool">
+    <label>Yards <input id="gfl-yd" type="number" inputmode="decimal" placeholder="ex : 200"></label>
+    <span class="gf-eq">=</span>
+    <label>Mètres <input id="gfl-m" type="number" inputmode="decimal" placeholder="ex : 183"></label>
+  </div>
+  <p class="gf-note">1 yard = 0,9144 mètre · 1 mètre = 1,0936 yard.</p>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Yards</th>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Mètres</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>50 yd</td><td>46 m</td></tr>
+        <tr><td>100 yd</td><td>91 m</td></tr>
+        <tr><td>150 yd</td><td>137 m</td></tr>
+        <tr><td>200 yd</td><td>183 m</td></tr>
+        <tr><td>250 yd</td><td>229 m</td></tr>
+        <tr><td>300 yd</td><td>274 m</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>mph ↔ km/h</h2>
+  <div class="gf-tool">
+    <label>mph <input id="gfl-mph" type="number" inputmode="decimal" placeholder="ex : 90"></label>
+    <span class="gf-eq">=</span>
+    <label>km/h <input id="gfl-kmh" type="number" inputmode="decimal" placeholder="ex : 145"></label>
+  </div>
+  <p class="gf-note">1 mph = 1,609 km/h · 1 km/h = 0,621 mph.</p>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">mph</th>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">km/h</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>70 mph</td><td>113 km/h</td></tr>
+        <tr><td>80 mph</td><td>129 km/h</td></tr>
+        <tr><td>90 mph</td><td>145 km/h</td></tr>
+        <tr><td>100 mph</td><td>161 km/h</td></tr>
+        <tr><td>110 mph</td><td>177 km/h</td></tr>
+        <tr><td>120 mph</td><td>193 km/h</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Pour situer votre vitesse de swing et la traduire en distance par club, voyez nos <a href="https://golfiller.fr/blogs/infos/vitesse-de-swing-au-golf-tableaux-par-profil-par-club-et-du-top-10-mondial" target="_blank">tableaux de vitesse de swing</a>.</p>
+
+  <div class="gf-sources">
+    <p style="margin:0">Facteurs exacts : 1 yard = 0,9144 m ; 1 mile/h = 1,609344 km/h (valeurs internationales). Tableaux arrondis à l'unité.</p>
+  </div>
+
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function fmt(n, d) { var p = Math.pow(10, d); return Math.round(n * p) / p; }
+  function link(aId, bId, factor, dA, dB) {
+    var a = document.getElementById(aId), b = document.getElementById(bId);
+    if (!a || !b) return;
+    a.addEventListener('input', function () { b.value = a.value === '' ? '' : fmt(parseFloat(a.value) * factor, dB); });
+    b.addEventListener('input', function () { a.value = b.value === '' ? '' : fmt(parseFloat(b.value) / factor, dA); });
+  }
+  link('gfl-yd', 'gfl-m', 0.9144, 1, 1);
+  link('gfl-mph', 'gfl-kmh', 1.609344, 1, 1);
+});
+</script>
+<!-- /Golfiller convertisseur -->
+</body>
+</html>
