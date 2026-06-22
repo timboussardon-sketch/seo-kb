@@ -1,7 +1,7 @@
-# Sante boucle - indexation-check (2026-06-15)
+# Sante boucle - indexation-check (2026-06-22)
 
 **Statut : OK**
 
-- Runs loggés : 1
-- Claims : 2 (verifies : 0)
+- Runs loggés : 2
+- Claims : 5 (verifies : 0)
 - Predictions : 0 ouvertes, 0 en retard, 0 resolues
