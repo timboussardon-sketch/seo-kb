@@ -2201,3 +2201,5 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
   - `analyze-semantic-score` : contenu de page tronqué à 3000 mots avant Gemini (l'analyse n'a pas besoin de 10k mots).
   - `run-opportunity-scan` : cache 6h du « charter » business par domaine (table `opportunity_charter_cache`, migration 20260623110000) → coupe le refetch home + appel Gemini à chaque scan du Radar (gros multiplicateur).
 - Réponse à Tim sur "Opus 4.7 suffit ?" : oui et c'est même trop pour ces tâches ; Opus 4.7 = le plus cher, Sonnet suffit. Économie estimée 50-70% du poste LLM sans perte de qualité.
+
+- **Décision modèle finale (Tim)** : `generate-pseo-strategy` + `generate-brief` repassés sur `claude-opus-4-8` (qualité max sur les 2 livrables phares) ; les 5 autres generate-* restent Sonnet 4.6 ; l'agent (`ai-chat`) reste sur Gemini (pas de chemin Claude, et coût/message élevé sur un chat). À vérifier : accès Opus 4.8 sur le compte Anthropic Fusionn (étaient sur 4.7).
