@@ -113,3 +113,14 @@ Commit + push main + déploiement prod qadence.io. Design Google-mono.
 - 3 schedules pg_cron créés : `qadence_rank_tracker` (0 7 * * *), `qadence_daily_digest` (30 8 * * *), `qadence_weekly_push` (0 8 * * 1), URLs corrigées.
 **Vérifié live** : rank-tracker → 910 lignes `rank_history` (21 sites) ; daily-digest → run complet 24s, écrit (RAS au 1er jour, normal : pas encore d'historique J-7). weekly-push **vérifié** : après parallélisation des 3 pages (timeout edge réglé) + purge des colonnes inexistantes (current_period/previous_period/generated_at) qui faisaient échouer l'insert en silence → 1re ligne écrite dans `weekly_push_reports` (HTTP 200, 3 pages). Les 3 features tournent. (commits `c4b5fc9`, `772d78f`, `c41d47b` sur `fix/audit-sprint0-security`)
 **Note infra** : `net.http_post` (pg_cron) timeout à 5s → log un timeout mais la fonction continue server-side (fire-and-forget OK). Accès DB de debug via token CLI keychain « Supabase CLI » + API Management `database/query`.
+
+## 2026-06-23 — Clé Gemini, limite freemium 7→3, audit & économie de tokens
+
+**Clé API Gemini** : testée avant pose (gemini-flash-latest/pro-latest/embedding-001 → 200), posée en secret `GEMINI_API_KEY` (projet qadence). `GEMINI_API_KEY_2` (secours) inchangée ; Fusionn intacte.
+
+**Limite gratuite 7 → 3** : `UPDATE plan_limits` free/beta=3 en prod (lu par `consume_quota`, effet immédiat). Front : `FREE_LIMIT` (Chat) + `PLAN_LIMITS` (AccountPage) = 3, migration alignée. Wording cards tarif « 3 actions au total » / « ≈20 min » + quotaTitle (FR+EN). Build + déploiement Netlify. Commit `54daa95`.
+
+**Audit token + 3 fixes (commit `cca3126`)** : l'historique n'était pas caché (system+outils oui, messages non) → transcript (dumps RAG `get_document` 40k, skills) retraité plein tarif chaque tour. Opus 4.7 = 4.8 (même prix) → le levier est le contexte, pas le modèle.
+- #1 cache historique : `cache_control` sur le dernier bloc de `messages` (claude.ts) → ~0,1×.
+- #2 trim (`get_document` 40k→12k, cap tool results 60k→24k) + context editing beta `clear_tool_uses_20250919` (header `context-management-2025-06-27`), kill-switch `SEO_AGENT_CTX_EDIT`. Validé sur appel Anthropic réel via sonde jetable → HTTP 200 ; activé (`=1`), `seo-agent` redéployé, sonde supprimée.
+- #3 effort par tier : Sonnet 'low' / Opus 'high' (index.ts), posé seulement sur opus/sonnet.
