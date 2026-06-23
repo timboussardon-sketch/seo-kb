@@ -2182,3 +2182,12 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
   1. `src/components/SortableKeywordsTable.tsx` : le resync depuis `keywords` fusionne et préserve `is_saved` local tant qu'on reste sur la même recherche ; reset propre au changement de `searchId`.
   2. `src/lib/keywordActions.ts` (`toggleKeywordSaved` + `bulkSaveKeywords`) : ajout de `.select('id')` ; un UPDATE à 0 ligne renvoie désormais `success:false` (avant : faux `success:true` silencieux qui masquait tout échec).
 - Type-check vert. Données/users de test nettoyés. Local : http://localhost:5176/. À déployer sur demande.
+
+## [2026-06-23] Limite freemium 10→2 + Agent/Opportunités réservés aux abonnés + clé Gemini
+
+- **Clé Gemini** : nouveau `GEMINI_API_KEY` posé dans les secrets edge (project ref `fwhfnzbtlddzfxbsejyf`), live au runtime (pas de redéploiement nécessaire).
+- **Limite gratuite 10→2 par fonction** : front `src/components/compte/types.ts` (SEARCH_LIMITS) + 5 edge functions (`check-rate-limit`, `check-hn-score-limit`, `check-semantic-score-limit`, `analyze-geo-sentinel`, `get-all-quotas`) + fonction DB `reserve_semantic_analysis_slot` (migration 20260623100000, appliquée en prod via Management API). Premium reste 999.
+- **Agent + Opportunités réservés aux abonnés** :
+  - UI (`WorkspaceLayout.tsx`) : verrou discret (icône Lock + tooltip « Réservé aux abonnés ») sur les onglets pour les free ; clic = `onUpgradeClick`, accès bloqué.
+  - Hardening backend : `ai-chat` renvoie 403 si `feature:'agent'` et user non abonné (AgentChatView envoie le flag ; le chat contextuel gratuit ne l'envoie pas → épargné). `run-opportunity-scan` skip si la watchlist appartient à un non-abonné.
+- Déployé : 7 edge functions (run-opportunity-scan en `--no-verify-jwt`) + push main (auto-deploy Netlify fusionn2). Commits `d99fd4a` + `ef38e5a`.
