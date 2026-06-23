@@ -2191,3 +2191,13 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
   - UI (`WorkspaceLayout.tsx`) : verrou discret (icône Lock + tooltip « Réservé aux abonnés ») sur les onglets pour les free ; clic = `onUpgradeClick`, accès bloqué.
   - Hardening backend : `ai-chat` renvoie 403 si `feature:'agent'` et user non abonné (AgentChatView envoie le flag ; le chat contextuel gratuit ne l'envoie pas → épargné). `run-opportunity-scan` skip si la watchlist appartient à un non-abonné.
 - Déployé : 7 edge functions (run-opportunity-scan en `--no-verify-jwt`) + push main (auto-deploy Netlify fusionn2). Commits `d99fd4a` + `ef38e5a`.
+
+## [2026-06-23] Audit & économie tokens (coût explosé)
+
+- **Constat** : 7 fonctions "generate-*" peuvent tourner sur Claude `opus-4-7` (le plus cher) via des secrets `*_MODEL`. `PSEO_STRATEGY_MODEL` était ABSENT → `generate-pseo-strategy` tournait sur Opus 4.7 par défaut (16k tokens out), poste silencieux le plus lourd.
+- **Levier #1 (zéro deploy)** : les 7 secrets modèle (BRIEF/PSEO_STRATEGY/SEMANTIC_ANALYSIS/HN_STRUCTURE/VECTEURS/PLAN_ACTION/OBJECTIONS_MODEL) passés à `claude-sonnet-4-6`. Pour ces tâches d'extraction/structuration, Sonnet = qualité quasi égale à ~1/5 du prix. Réversible en changeant le secret.
+- **Leviers code (commit 9173743, déployés)** :
+  - `generate-pseo-strategy` : max_tokens 16000→12000 (Claude + fallback Gemini).
+  - `analyze-semantic-score` : contenu de page tronqué à 3000 mots avant Gemini (l'analyse n'a pas besoin de 10k mots).
+  - `run-opportunity-scan` : cache 6h du « charter » business par domaine (table `opportunity_charter_cache`, migration 20260623110000) → coupe le refetch home + appel Gemini à chaque scan du Radar (gros multiplicateur).
+- Réponse à Tim sur "Opus 4.7 suffit ?" : oui et c'est même trop pour ces tâches ; Opus 4.7 = le plus cher, Sonnet suffit. Économie estimée 50-70% du poste LLM sans perte de qualité.
