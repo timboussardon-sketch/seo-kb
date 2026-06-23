@@ -1,13 +1,13 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-06-22 09:42 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-06-23 09:32 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **677 fichiers** markdown (404 dans `raw/`, 273 dans `wiki/`)
-- **1266k mots** au total
-- **6087 wikilinks** (moyenne 9.0 / fichier)
-- **Ratio raw→wiki** : 0.68 *(< 1 = matière brute pas encore synthétisée)*
+- **678 fichiers** markdown (405 dans `raw/`, 273 dans `wiki/`)
+- **1267k mots** au total
+- **6094 wikilinks** (moyenne 9.0 / fichier)
+- **Ratio raw→wiki** : 0.67 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
 
@@ -36,19 +36,19 @@
 
 ### 7 derniers jours
 - **66** commits
-- **72** fichiers créés
-- **42** fichiers modifiés
+- **71** fichiers créés
+- **35** fichiers modifiés
 
 ### 30 derniers jours
-- **362** commits
-- **502** fichiers créés
-- **339** fichiers modifiés
+- **369** commits
+- **439** fichiers créés
+- **314** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
 - **21** éditions publiées (10 sur les 30 derniers jours)
-- Dernière édition : `2026-06-20-revue-presse` (il y a 2j)
+- Dernière édition : `2026-06-20-revue-presse` (il y a 3j)
 - **Couverture 30j** : 10/30 (33%)
 
 ### Newsletter
@@ -84,7 +84,7 @@
 - `[[mots-cles-actionnels]]` — **63** backlinks
 - `[[anti-ai-writing]]` — **62** backlinks
 
-### Orphelins (sans backlink) : **393**
+### Orphelins (sans backlink) : **394**
 
 - `raw/journal/2026-05-07.md`
 - `raw/journal/2026-05-23.md`
@@ -96,29 +96,30 @@
 - `raw/journal/2026-06-18.md`
 - `raw/journal/2026-05-12.md`
 - `raw/journal/2026-05-26.md`
-*(393 au total — voir `wiki/audit` pour la liste complète)*
+*(394 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: ·▁▅▃█▅█·█▅█▅▃█▅██████▅█████▅▅▁
+30j: ▁▅▃█▅█·█▅█▅▃█▅██████▅█████▅██·
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
-**Streak actuel** : 22 jour(s) consécutif(s) avec commit
+**Streak actuel** : 0 jour(s) consécutif(s) avec commit
 
 ### Dossiers inactifs > 14j
 
-*Aucun — tout est actif*
+- `raw/articles` — dernière modif il y a **15j** (2026-06-08)
+- `wiki/syntheses` — dernière modif il y a **15j** (2026-06-08)
 
 ## 🤖 Automatisations (LaunchAgents)
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-06-22 09:01 | 256 | ✗ |
-| recap-jour | 2026-06-21 23:01 | 0 | ✓ |
+| revue-presse | 2026-06-23 09:04 | 256 | ✗ |
+| recap-jour | 2026-06-23 07:06 | 256 | ✗ |
 | refresh-snapshots | 2026-06-01 08:14 | 0 | ✓ |
-| dashboard | 2026-06-22 09:42 | 0 | ✓ |
+| dashboard | 2026-06-23 09:32 | 0 | ✓ |
 
 ---
 
