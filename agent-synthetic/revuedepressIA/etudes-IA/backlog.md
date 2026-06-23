@@ -14,12 +14,12 @@
 - 2026-06-20 · Qui se fait citer par les IA : part de domaines, recouvrement entre moteurs 2026 → `2026-06-20-stats-citations-ia-domaines-recouvrement.md`
 - 2026-06-21 · Adoption de l'IA générative par les particuliers en France 2026 → `2026-06-21-stats-adoption-ia-generative-particuliers-france.md`
 - 2026-06-22 · Impact de l'IA sur l'emploi et les métiers en France 2026 → `2026-06-22-stats-ia-emploi-metiers-france.md`
+- 2026-06-23 · E-commerce et IA : conversion et trafic assisté 2026 → `2026-06-23-stats-ecommerce-ia-conversion-trafic.md`
 
 ## À faire (par priorité)
-1. E-commerce et IA : conversion et trafic assisté 2026
-2. Souveraineté et hébergement des données IA en Europe 2026
-3. SEO local et IA : présence dans les réponses locales 2026
-4. Claude comme moteur de citation : profil, domaines favoris, part de voix 2026
+1. Souveraineté et hébergement des données IA en Europe 2026
+2. SEO local et IA : présence dans les réponses locales 2026
+3. Claude comme moteur de citation : profil, domaines favoris, part de voix 2026
 
 ## Sujets écartés (avec raison)
 (vide)
