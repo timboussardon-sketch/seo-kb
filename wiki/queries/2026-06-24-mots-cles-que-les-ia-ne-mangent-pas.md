@@ -88,6 +88,140 @@ Ordre d'attaque des mots-clés : décisionnel d'abord (meilleur, comparatif de b
 - Angle "pourquoi ta page comparatif est à 0,02 % de CTR" : partir du cas Averi, expliquer substituable vs défendable.
 - Angle "la seule liste de mots-clés que personne ne peut te copier" : la data propriétaire comme moat.
 
+## 1. Les preuves : ce que le vault contient comme news et stats
+
+Réponse directe à la question "est-ce qu'il y a de la donnée qui justifie de viser des mots-clés non mangés ?" : oui, et elle se range en quatre couches.
+
+### a. Le clic s'effondre, mais seulement sur certaines requêtes
+
+| Donnée | Chiffre | Source |
+|---|---|---|
+| Clic vers un résultat classique quand un AIO s'affiche | 8 % contre 15 % sans AIO | Pew Research, 2025 |
+| CTR organique sur requêtes avec AIO | -61 % (1,76 % à 0,61 %) | Seer Interactive, 3 119 termes, 42 organisations |
+| CTR position 1 avec AIO présent | -58 % | Ahrefs, 300 000 mots-clés |
+| Taux de zéro-clic US | 68 % début 2026 contre 58,5 % en 2024 | SparkToro / Similarweb |
+| CTR position 1 sur requêtes informationnelles, en un an | -44,6 %, même sans résumé IA | Ahrefs, 150 000 mots-clés |
+
+Réf vault : [[etudes-IA/2026-06-18-stats-ai-overviews-ctr]], [[etudes-IA/2026-06-19-stats-zero-clic-intent-informationnel-transactionnel]].
+
+### b. La preuve qui parle directement aux sites non produit : l'étude Wikipédia
+
+C'est la donnée la plus importante pour ton angle, parce que Wikipédia est le site éditorial pur par excellence, sans produit ni service à vendre. Étude sur 161 382 articles : -15 % de trafic en moyenne avec l'AI Overview, mais la perte n'est pas uniforme.
+
+- Culture, lifestyle, société : perte élevée. La requête est simple, l'IA répond entièrement, zéro raison de cliquer.
+- Sciences, technologie, médecine : perte faible. La requête est complexe, l'IA répond partiellement, l'utilisateur clique pour aller plus loin.
+
+Tu l'avais déjà formulé dans ton édition Algorithme de mars 2026 : *« le contenu généraliste n'est plus la priorité. Il faut de l'expertise, du contenu de niche, du contenu actionnel. »* La règle pour un site sans produit : ce qui survit n'est pas le format outil (tu n'en as pas forcément), c'est la profondeur et la complexité que l'IA ne peut traiter qu'à moitié. Réf : [[sources/algorithme-etude-citation-ia]].
+
+### c. Le contenu générique mis à l'échelle s'effondre, la data propriétaire tient
+
+- Lily Ray, 13 mai 2026, 220+ sites se déclarant clients de plateformes de contenu IA : 54 % ont perdu au moins 30 % de leur pic de trafic, 39 % au moins 50 %, 22 % au moins 75 %. Réf : [[revues-presse/2026-06-01]].
+- Étude académique (10 000 requêtes, 25 domaines) sur ce qui augmente la citation par les LLM : ajouter des citations +41 %, ajouter des statistiques +30 %, ajouter des sources d'autorité +30 %. Ce qui se fait manger, c'est le texte nu. Ce qui se fait citer, c'est la donnée sourcée. Réf : [[sources/algorithme-etude-citation-ia]].
+
+### d. La nuance pro à garder : le clic se déplace, il ne disparaît pas
+
+68 % de zéro-clic d'un côté, mais le trafic issu des moteurs IA monte (x3 sur certains panels) et convertit mieux (7,1 % sur un panel, deux fois mieux que l'organique selon Conductor). Réf : [[etudes-IA/2026-06-18-stats-recherche-ia-geo]], [[revues-presse/2026-06-16]]. Pour un site non produit, l'implication est que se faire citer (GEO) devient un objectif au même titre que se faire cliquer.
+
+## 2. Le process pour les trouver : X et Reddit
+
+Le principe de fond vient de ton workflow mots-clés en six sources : le consensus web est le bruit, le terrain X est le signal, Reddit donne le langage non filtré, le croisement donne les angles exclusifs. Réf : [[raw/bootcamp4/session-1-mots-cles-prep]]. Pour la chasse aux mots-clés non mangés, deux sources font le gros du travail parce qu'elles remontent des intentions que l'IA n'a pas digérées et des formulations absentes des outils SEO.
+
+### X via Grok DeepSearch
+
+Grok est le seul LLM branché en temps réel sur X. Il sort des intentions fraîches que ni le Keyword Planner ni la GSC ne voient. Deux prompts suffisent pour la découverte de mots-clés non mangés.
+
+Prompt terrain (ce que les praticiens demandent et que l'IA ne traite pas bien) :
+
+```
+Active DeepSearch. Sujet : [THÉMATIQUE]
+Cherche uniquement sur X, 30 derniers jours :
+1. Les questions concrètes posées par des praticiens qui n'obtiennent
+   pas de bonne réponse (ni dans les commentaires, ni quand on tape
+   la question dans ChatGPT)
+2. Les calculs, comparaisons et arbitrages personnels que les gens
+   font à la main (chiffres, configs, cas particuliers)
+3. Les débats où les experts ne sont pas d'accord
+Pour chaque trouvaille : la formulation exacte, @handle, date, lien.
+Format tableau.
+```
+
+Prompt gap (ce que X discute et que Google ne couvre pas) :
+
+```
+À partir des données X ci-dessus, isole :
+1. Les sujets activement discutés sur X mais absents des 10 premiers
+   résultats Google
+2. Les questions où la réponse exige une donnée chiffrée, un calcul
+   personnalisé ou un cas précis (donc non résolvable par un paragraphe
+   générique d'IA)
+3. Les formulations récurrentes que personne n'a transformées en page
+Format : [Intention | Pourquoi l'IA ne la mange pas | Format de page]
+```
+
+### Reddit
+
+Reddit donne le vocabulaire réel, les objections nues, les questions mal servies. Garde-fou opérationnel : le crawler est souvent bloqué, donc on colle les threads à la main et on les décompose en besoin puis mot-clé puis cluster. Les prompts utiles pour la chasse aux non mangés sont ceux qui remontent une intention que l'IA ne sait pas clore.
+
+Prompt questions mal servies (le filon principal) :
+
+```
+Liste sur Reddit (site:reddit.com) les questions sur [SUJET] qui ont :
+- 0 à 2 réponses satisfaisantes
+- mais >10 upvotes ou >20 commentaires
+Ce sont des intentions de recherche mal servies.
+Pour chacune : question textuelle exacte, URL, subreddit, et pourquoi
+aucune réponse (web ou IA) ne la satisfait.
+```
+
+Prompt vocabulaire et arbitrages personnels :
+
+```
+Analyse 30 threads Reddit sur [THÉMATIQUE] et extrais :
+- Les expressions exactes que les gens emploient (≠ vocabulaire marketing)
+- Les moments où ils décrivent un calcul, une comparaison ou un choix
+  qu'ils ont dû faire eux-mêmes faute de réponse toute faite
+Donne 20 formulations avec la phrase citée.
+```
+
+Prompt inversions (matière à Surprise Gap) :
+
+```
+Cherche sur Reddit les opinions contre-intuitives sur [SUJET]
+(titres "unpopular opinion", "hot take", threads à fort ratio de réponses).
+Pour chaque : la thèse, l'argument, le contre-argument majoritaire.
+```
+
+Le tri ensuite : chaque formulation remontée passe le test de substitution ci-dessous. Ce qui reste alimente le Google Sheet noté sur Mot-clé / Intention / Difficulté / Funnel / Note.
+
+## 3. Le tableau d'analyse : mangé contre non mangé, pour un site non produit
+
+Pour un site sans produit ni service (média, blog d'expertise, site de contenu, éditeur), le moat ne peut pas être "j'embarque mon produit dans la page". Il devient l'un de ces quatre : une donnée first-party que toi seul publies (étude, baromètre, mesure), un outil interactif qui est la valeur en lui-même (calculateur, comparateur filtrable), une profondeur de niche que l'IA ne traite qu'à moitié (la leçon Wikipédia sciences/tech/médecine), ou une agrégation de signaux frais ou communautaires que le modèle n'a pas structurés. La conversion n'est plus un email vers un SaaS, c'est la citation par l'IA, l'autorité, l'audience récurrente, l'affiliation ou la publicité.
+
+### Étape 0 du skill pSEO appliquée (test de substitution LLM)
+
+Exemple sur un site de contenu running (aucun produit vendu).
+
+| Idée de page | Q1 ChatGPT répond aussi bien ? | Q2 composant interactif ou data non reproductible ? | Q3 raison d'exister dans un navigateur ? | Verdict |
+|---|---|---|---|---|
+| « meilleur plan d'entraînement marathon » | Oui, liste générique | Non | Non | Mangé |
+| « qu'est-ce que le mur du marathon » | Oui, réponse complète | Non | Non | Mangé |
+| « calculateur d'allure selon mon chrono cible » | Non, calcul personnalisé | Oui, calculateur | Oui | Non mangé |
+| « comparateur de 30 montres GPS, prix et autonomie à jour » | Non | Oui, comparateur filtrable + data fraîche | Oui | Non mangé |
+| « temps moyen au marathon de Paris par tranche d'âge, 50 000 finishers » | Non, donnée propriétaire | Oui, dataviz + étude originale | Oui | Non mangé |
+
+### La paire à montrer dans l'édition
+
+| Critère | Mot-clé mangé | Mot-clé non mangé |
+|---|---|---|
+| Requête | « qu'est-ce que la VMA » | « calculer ma VMA à partir de mon dernier 10 km » |
+| Intention | Informationnelle simple (Know-Simple) | Actionnelle (Do) |
+| Ce que fait l'IA | Répond entièrement dans l'AIO, zéro clic | Ne fait pas tourner le calcul personnalisé dans la SERP |
+| Prévalence AIO | Élevée (36 % sur l'informationnel) | Faible, l'intention exige une action |
+| Moat sur un site non produit | Aucun, texte substituable | Le calculateur est la valeur, plus une donnée de référence sourcée |
+| Format | Article (à éviter) | Outil interactif + passage ancré citable |
+
+Lecture pour l'édition : sur un site sans produit, le mot-clé non mangé n'est pas forcément transactionnel, c'est celui dont la réponse complète exige soit un calcul personnalisé, soit une donnée que tu es seul à avoir, soit une profondeur que l'IA ne couvre qu'à moitié. Les deux filtres restent le test de substitution 80 % et le test ChatGPT en deux questions. Réf : [[concepts/test-substitution-llm]], [[concepts/product-led-seo]], [[concepts/mots-cles-actionnels]].
+
 ## Sources mobilisées
 
 ```
