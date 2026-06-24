@@ -572,3 +572,16 @@ B3 Job Posting addressCountry : recoupement 2 sources Google primaires (search/u
 **Discipline anti-pattern IA.** Run propre. Zéro métaphore vérifiée (pas de bataille, vague, rails, moteur figuré, fusée, ouvrir la voie, passer à la caisse, écosystème imagé, plomberie, douve, porte d'entrée figurée). Tentations identifiées et écartées : « le décrochage » gardé (descriptif littéral mouvement de courbe), « substitution » employé 1 fois (sens analytique de remplacement de canal, pas figuratif). « Couche » employé 0 fois dans le corps — amélioration nette vs 5 fois en 0621-v2 et 4 fois en 0620-v2/0621, signal anti-pattern tenu. Aucune personnification du Reuters Institute, Google, Chartbeat, Schwartz, Roger Montti, Mueller, Sullivan, Nic Newman, Egan, Robertson. Aucun tiret cadratim hors structurels markdown ---. Vouvoiement maintenu. Citations Reuters et chercheurs Google signalées comme verbatim.
 
 **Bilan piliers (10 dernières info du jour).** RA 0617-v2 → Actu 0618 → GEO 0618-v2 → RA 0619 → Actu 0619-v2 → RA 0620 → GEO 0620-v2 → PL 0621 → RA 0621-v2 → Actu 0622. Pilier Actualité SEO se prend 3 des 10 dernières. Risque à surveiller pour la prochaine édition : NE PAS réenchaîner Actualité SEO sans fait franchement neuf.
+
+## Édition 2026-06-24 (Recherche agentique, TikTok Symphony Agent)
+
+- `source_diversity` : 14 sources indépendantes mobilisées (info 6 + B1 3 + B2 3 + B3 2)
+- `claim_density` : info 5 claims verified / B1 1 claim / B2 1 claim / B3 1 claim — 8 claims verified au total
+- `novelty_score` : 4/5 — TikTok Symphony Agent comme 4e plateforme du pattern Cannes 2026 est genuinely new (annonce 22 juin, traitée 24 juin = J+2 raisonnable), B1 lecture méthodologique du tracker-community gap apporte un angle distinct (3 fenêtres pattern vs week-end isolé M-005 risk évité), B2 cadrage commerciale OpenAI publique distincte des annonces produit 23 juin, B3 procédural mais à jour
+- `doctrine_fit` : 4/5 — agentic-search (zone d'ombre B2B couche amont signalée et étendue) + product-led-seo (validation communautaire non reproductible UI générative) + metriques-visibilite-geo (extension B1 mesure de volatilité elle-même) + know-simple-know-do (B2 répartition organique/payant Know vs commercial)
+- `redite_risk` : faible — extension contextualisée du 23 juin (4e plateforme pattern explicite, pas redite déguisée), pilier RA back-to-back justifié par fait franchement neuf rare listé en directives
+- `clickbait_risk` : faible — titre descriptif factuel ('TikTok ouvre un quatrième espace de découverte aux agents IA, le pattern Cannes se confirme'), donne l'info + la signification doctrinale sans promesse creuse
+- Erreur nouvelle détectée et corrigée : M-006 (websearch_synthesis_hallucination_date) — résumés WebSearch attribuant fausse date 22 juin à Job Posting addressCountry, vérifié page primaire Google updates au 17 juin et écarté C-2026-06-24-D1
+- Discipline anti-pattern IA : 3 tentations métaphoriques corrigées en révision (se ferme avec / joue le calendrier / pression sur la page) → 0 résiduelle
+- Décisions structurantes : pilier RA acceptable car fait franchement neuf rare explicitement listé en directives (4e plateforme), NE PAS réenchaîner RA 3e fois consécutive
+

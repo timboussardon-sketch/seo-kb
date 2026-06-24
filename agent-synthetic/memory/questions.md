@@ -277,3 +277,20 @@ P-2026-06-06-v2-2 est passée de `resolved-partial` (8 juin) à `resolved` (11 j
 - L'angle « 3 implications opérationnelles directes » a été testé sur l'info du jour Google IP-based ads. Tient parce que les 3 implications (date dure, interface CMP, déplacement charge juridique) sont chacune ancrée sur un mécanisme nommé (3 août, Feature 3 + vendor 755, EU User Consent Policy). À reproduire sur d'autres annonces produit/réglementaires où le déplacement est précisable. Si une annonce ne se prête pas à 3 implications atomiques, en nommer 1 ou 2 plutôt qu'en forcer 3.
 - L'enquête NP Digital a été placée en brève B1 GEO plutôt qu'en info du jour parce que (a) GEO a été pris hier en info du jour (Bing Webmaster Tools) et la directive impose de ne pas réenchaîner sans fait franchement neuf, (b) l'enquête est déclarative ce qui pondère sa robustesse. L'approche « 3e mesure indépendante hiérarchisée vs antérieurs » est une technique d'angle qui rend le claim plus solide qu'une simple reprise.
 - L'absence de lien doctrine direct sur l'info du jour (TCF/publicité/éditeurs) a été assumée explicitement dans le corps. Ne pas forcer un lien décoratif est conforme à la voix synthétique : honnêteté sur les limites de la couverture existante.
+
+## Questions levées par l'édition 2026-06-24
+
+### Doctrinales (à arbitrer en revue hebdo vendredi)
+
+- **La couche B2B agent acheteur ↔ agent vendeur dans agentic-search** : zone d'ombre signalée le 23 juin, étendue le 24 juin avec TikTok Symphony Agent (annonceur → agent générateur de campagne → plateforme). La fiche [[concepts/agentic-search]] décrit la couche utilisateur final ↔ agent ↔ contenu, mais pas la couche annonceur ↔ agent créateur ↔ plateforme. Faut-il formaliser une fiche [[concepts/agentic-advertising]] distincte ? Ou étendre [[concepts/agentic-search]] avec une section dédiée à la couche B2B ? (Tim arbitre revue hebdo).
+- **Sous-clusters du pattern Cannes 2026** : graphes structurels (Pinterest Taste Graph + Shopify Catalog) vs corpus communautaires-créateurs (Reddit posts/comments + TikTok creator content + performance signals). Faut-il formaliser dans la doctrine cette distinction des deux modèles d'agent publicitaire IA selon le type de corpus mobilisé ? Implication SEO : la stratégie d'optimisation diffère selon le sous-cluster (structuration de données vs activation communautaire). (Tim arbitre revue hebdo).
+
+### Méthodologiques
+
+- **WebSearch synthesis hallucination dates** (M-006) : faut-il systématiser un script de cross-check entre WebSearch synthesis et page primaire developers.google.com/search/updates avant d'inclure un changement de documentation Google ? Voire un audit hebdomadaire de la page Search Central updates pour tracker les changements réels vs prétendus.
+- **Schwartz tracker-community gap** : la chatter praticien lourde + outils calmes pourrait justifier d'ajouter aux sources exploit un agrégateur communautaire (forum Webmaster, X SEO community, Reddit r/SEO) pour ne pas dépendre uniquement des outils SERP automatisés. À discuter.
+
+### Sources
+
+- 5 sources explore ajoutées ce run (newsroom.tiktok.com primaire trust 1.15 / netinfluencer.com 0.65 / hellopartner.com 0.62 / affiversemedia.com 0.6 / performancemarketingworld.com 0.7 / adexchanger.com 0.75). newsroom.tiktok.com et adexchanger.com sont candidats passage exploit en revue hebdo (autorité connue, qualité corroborée). Les autres restent en explore tant que pas de 2e hit utile documenté.
+
