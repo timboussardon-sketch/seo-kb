@@ -232,6 +232,14 @@ Mélange volontaire de niches (running, finance perso, immobilier, nutrition, vo
 
 Quatre familles de non mangés ressortent : les outils interactifs (8, 9, 10), les comparateurs à données fraîches (11), les études first-party citables (12, 13) et les arbitrages complexes personnalisés (14). Les mangés (1 à 7) ont un point commun : l'IA referme la requête sans que l'utilisateur ait à agir ni à voir une donnée qu'elle n'a pas.
 
+### Deux réflexes de production pour sites non produit
+
+Au-delà du choix du mot-clé, il y a deux façons de fabriquer la page non mangeable que l'édition gagnerait à montrer.
+
+**Le réflexe annuaire (directory sémantique dense).** Quand une thématique se croise sur deux ou trois axes (profil par besoin par format, type par usage par niveau), chaque croisement devient une page. Une matrice de combinaisons produit des centaines de pages, chacune dense et structurée, qui répond à une micro-requête ultra-précise. L'IA ne la mange pas parce que ce n'est pas une réponse en paragraphe, c'est une ressource navigable et filtrable qui agrège et croise plusieurs sources, avec une densité sémantique qu'un chat ne restitue pas. Sur un site sans produit, la conversion ne passe pas par un email vers un SaaS mais par un lead magnet attaché à la page (un PDF, un guide, un export téléchargeable). Le piège à tenir : le thin content. Chaque page de la matrice doit changer de contenu réel, pas seulement de titre, sinon Google la traite comme dupliquée.
+
+**Le réflexe création de data (pas seulement agrégation).** L'étage au-dessus de "viser un mot-clé non mangé", c'est construire soi-même la donnée qui n'existe pas encore sous forme structurée : compiler des specs depuis les sources primaires, relever un terrain, agréger une base métier à la main, et en faire un tableau comparable ou une étude. Cette donnée devient citable par les IA précisément parce qu'elle n'était nulle part avant. Ensuite on lit ses pages winners dans la GSC, on isole le pattern commun de celles qui sur-performent, et on transforme les pages "Do" gagnantes en outils interactifs (calculateur, comparateur, tableau filtrable). L'autorité se bâtit par la densité thématique de la verticale et le maillage interne, pas par l'achat de liens. C'est le levier qui permet à un petit site de passer devant des acteurs majeurs sur sa niche, sans budget de netlinking.
+
 ### La paire à montrer dans l'édition
 
 | Critère | Mot-clé mangé | Mot-clé non mangé |
