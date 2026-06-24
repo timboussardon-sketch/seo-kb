@@ -20,27 +20,27 @@ statut: liste qualifiée — prêt pour clustering
 - **Marché** : France / Europe, FR.
 
 ## A. Outils IA conformes RGPD (cœur Do)
-| Mot-clé | Intention | Difficulté | Funnel | Note |
-|---|---|---|---|---|
-| outil ia conforme rgpd | Do | Élevée | Décision | Seed. Tête de cluster, fort potentiel conversion |
-| logiciel ia rgpd | Do | Élevée | Décision | Variante générique |
-| solution ia hébergée en europe | Do | Moyenne | Décision | Angle souveraineté, différenciant Leexi |
-| outil ia données hébergées en france | Do | Moyenne | Décision | Sous-intention hébergement souverain |
-| ia conforme rgpd entreprise | Do | Moyenne | Décision | Qualifie le persona B2B |
-| meilleur outil ia rgpd | Do | Élevée | Décision | Modificateur « meilleur » = comparatif |
-| outil ia sans transfert de données usa | Know→Do | Faible | Décision | Angle Cloud Act, très qualifiant |
-| ia chiffrement bout en bout rgpd | Do | Faible | Décision | Critère technique de réassurance |
+| Mot-clé                                | Intention | Difficulté | Funnel   | Note                                             |
+| -------------------------------------- | --------- | ---------- | -------- | ------------------------------------------------ |
+| outil ia conforme rgpd                 | Do        | Élevée     | Décision | Seed. Tête de cluster, fort potentiel conversion |
+| logiciel ia rgpd                       | Do        | Élevée     | Décision | Variante générique                               |
+| solution ia hébergée en europe         | Do        | Moyenne    | Décision | Angle souveraineté, différenciant Leexi          |
+| outil ia données hébergées en france   | Do        | Moyenne    | Décision | Sous-intention hébergement souverain             |
+| ia conforme rgpd entreprise            | Do        | Moyenne    | Décision | Qualifie le persona B2B                          |
+| meilleur outil ia rgpd                 | Do        | Élevée     | Décision | Modificateur « meilleur » = comparatif           |
+| outil ia sans transfert de données usa | Know→Do   | Faible     | Décision | Angle Cloud Act, très qualifiant                 |
+| ia chiffrement bout en bout rgpd       | Do        | Faible     | Décision | Critère technique de réassurance                 |
 
 ## B. Transcription réunion IA + RGPD
-| Mot-clé | Intention | Difficulté | Funnel | Note |
-|---|---|---|---|---|
-| meilleur outil ia transcription réunion europe rgpd | Do | Élevée | Décision | Seed. Très business |
-| logiciel transcription réunion rgpd | Do | Moyenne | Décision | Variante |
-| transcription audio rgpd | Know | Moyenne | Know | Volet 7 obligations |
-| transcription réunion sans bot rgpd | Do | Faible | Décision | « sans bot » = critère conformité fort |
-| transcription automatique consentement | Know | Faible | Know | Pivot juridique → outil |
-| ia transcription réunion confidentialité | Know→Do | Moyenne | Considération | Réassurance |
-| outil transcription réunion hébergé en europe | Do | Faible | Décision | Longue traîne décisionnelle |
+| Mot-clé                                             | Intention | Difficulté | Funnel        | Note                                   |
+| --------------------------------------------------- | --------- | ---------- | ------------- | -------------------------------------- |
+| meilleur outil ia transcription réunion europe rgpd | Do        | Élevée     | Décision      | Seed. Très business                    |
+| logiciel transcription réunion rgpd                 | Do        | Moyenne    | Décision      | Variante                               |
+| transcription audio rgpd                            | Know      | Moyenne    | Know          | Volet 7 obligations                    |
+| transcription réunion sans bot rgpd                 | Do        | Faible     | Décision      | « sans bot » = critère conformité fort |
+| transcription automatique consentement              | Know      | Faible     | Know          | Pivot juridique → outil                |
+| ia transcription réunion confidentialité            | Know→Do   | Moyenne    | Considération | Réassurance                            |
+| outil transcription réunion hébergé en europe       | Do        | Faible     | Décision      | Longue traîne décisionnelle            |
 
 ## C. Comptes rendus de réunion IA + RGPD
 | Mot-clé | Intention | Difficulté | Funnel | Note |
@@ -53,13 +53,13 @@ statut: liste qualifiée — prêt pour clustering
 | compte rendu cse ia rgpd | Do | Faible | Décision | Sous-segment CSE (cas sensible) |
 
 ## D. Traduction juridique IA + RGPD (feature produit → Do)
-| Mot-clé | Intention | Difficulté | Funnel | Note |
-|---|---|---|---|---|
-| solution ia traduction juridique rgpd | Do | Moyenne | Décision | Seed. Feature produit confirmée |
-| traduction document confidentiel ia | Know→Do | Faible | Considération | Risque de réutilisation des données |
-| traduction juridique ia confidentialité | Know | Faible | Know | Volet enjeux → rabattre vers outil |
-| outil traduction ia hébergé en europe | Do | Faible | Décision | Cohérent angle souveraineté |
-| ia traduction données rgpd | Know | Faible | Know | Périphérie |
+| Mot-clé                                 | Intention | Difficulté | Funnel        | Note                                |
+| --------------------------------------- | --------- | ---------- | ------------- | ----------------------------------- |
+| solution ia traduction juridique rgpd   | Do        | Moyenne    | Décision      | Seed. Feature produit confirmée     |
+| traduction document confidentiel ia     | Know→Do   | Faible     | Considération | Risque de réutilisation des données |
+| traduction juridique ia confidentialité | Know      | Faible     | Know          | Volet enjeux → rabattre vers outil  |
+| outil traduction ia hébergé en europe   | Do        | Faible     | Décision      | Cohérent angle souveraineté         |
+| ia traduction données rgpd              | Know      | Faible     | Know          | Périphérie                          |
 
 ## E. Visioconférence RGPD
 | Mot-clé | Intention | Difficulté | Funnel | Note |
