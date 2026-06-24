@@ -942,3 +942,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - verdict proposé : confidence high → medium tant que H-002 non testée ; lancer le test A/B Organikk maintenant que la plomberie GSC existe
 - output : [[revue-hebdo/resurgence-2026-06-24]]
 - à arbitrer en revue hebdo (vendredi)
+
+## [2026-06-24] query | Mots-clés que les IA ne peuvent pas manger (matière newsletter)
+- output: [[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]]
+- skill déclenché: kb-semantic-search (Phase 0 vector index)
+- sources mobilisées: leexi-call-2026-05-21, mots-cles-actionnels, test-substitution-llm, product-led-seo, data-proprietaire, tabou-visibilite, revues Seer 06-16 + Averi 06-08
+- angle SEO: prévalence AIO par intention (5% transactionnel vs 95% comparaison), substituable vs défendable
