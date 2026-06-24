@@ -209,6 +209,29 @@ Exemple sur un site de contenu running (aucun produit vendu).
 | « comparateur de 30 montres GPS, prix et autonomie à jour » | Non | Oui, comparateur filtrable + data fraîche | Oui | Non mangé |
 | « temps moyen au marathon de Paris par tranche d'âge, 50 000 finishers » | Non, donnée propriétaire | Oui, dataviz + étude originale | Oui | Non mangé |
 
+### Tableau étendu : 14 mots-clés notés (site non produit)
+
+Mélange volontaire de niches (running, finance perso, immobilier, nutrition, voyage, culture) pour montrer que la logique se transpose. Le verdict ne dépend pas du sujet, il dépend de ce que l'IA peut clore seule.
+
+| # | Mot-clé | Intention | Verdict | Pourquoi | Moat / format sur un site non produit |
+|---|---|---|---|---|---|
+| 1 | « qu'est-ce que le VO2max » | Know-Simple | Mangé | Définition close en deux phrases dans l'AIO | Aucun, texte substituable |
+| 2 | « combien de calories dans une banane » | Factuel | Mangé | Réponse directe, zéro raison de cliquer | Aucun |
+| 3 | « définition de l'inflation » | Know-Simple | Mangé | L'IA répond mieux et plus court | Aucun |
+| 4 | « symptômes de la grippe » | Know | Mangé | Requête simple, réponse complète en AIO | Aucun |
+| 5 | « meilleurs films de 2026 » | Commercial/liste | Mangé | ChatGPT génère la liste directement | Aucun, listicle reproductible |
+| 6 | « recette de pâte à crêpes » | Know | Mangé | Recette servie dans la SERP | Aucun |
+| 7 | « comment calculer son IMC » (explication) | Know | Mangé | L'IA explique la formule, pas besoin de page | Aucun si c'est du texte |
+| 8 | « calculateur d'allure marathon selon mon chrono cible » | Do | Non mangé | Calcul personnalisé que l'AIO ne fait pas tourner | Outil interactif (le calculateur est la valeur) |
+| 9 | « simulateur de capacité d'emprunt selon apport et revenus » | Do | Non mangé | Entrées perso + calcul, l'IA ne le restitue pas dans la SERP | Outil interactif |
+| 10 | « convertisseur d'allure min/km vers temps sur 5/10/21/42 km » | Do | Non mangé | Conversion à inputs multiples | Outil interactif |
+| 11 | « comparateur de 30 montres GPS, prix et autonomie à jour » | Commercial | Non mangé | Données fraîches et filtrables que le modèle n'a pas à jour | Comparateur filtrable + data live |
+| 12 | « baromètre des loyers par quartier à Lyon, données 2026 » | Know/data | Non mangé | Donnée chiffrée datée et localisée que l'IA n'a pas | Étude first-party + dataviz |
+| 13 | « âge du record perso en course, analyse de 200 000 finishers » | Know/data | Non mangé | Donnée originale, jamais publiée ailleurs | Étude propriétaire citable |
+| 14 | « comparatif fiscal SCI à l'IR vs IS sur 10 ans avec mes chiffres » | Do/complexe | Non mangé | Arbitrage complexe et personnalisé, l'IA ne le tranche qu'à moitié | Simulateur + profondeur de niche (leçon Wikipédia) |
+
+Quatre familles de non mangés ressortent : les outils interactifs (8, 9, 10), les comparateurs à données fraîches (11), les études first-party citables (12, 13) et les arbitrages complexes personnalisés (14). Les mangés (1 à 7) ont un point commun : l'IA referme la requête sans que l'utilisateur ait à agir ni à voir une donnée qu'elle n'a pas.
+
 ### La paire à montrer dans l'édition
 
 | Critère | Mot-clé mangé | Mot-clé non mangé |
