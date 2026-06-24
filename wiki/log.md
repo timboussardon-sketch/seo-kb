@@ -934,3 +934,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - entrées backlog : organikk/pré-call/hellocse, youtube/preparation-yt, leexi/keywords/recherche-2026-06-16-rgpd (P1) + organikk/mots-cles-a-traiter (P3)
 - prochain lot proposé : golfiller-strat, etude-ctr-ai-overviews-gsc (lot W25 voté, toujours non exécuté), clients/fgformation/calls/SYNTHESE-appels-anonymisee
 - nouveaux skips: aucun
+
+## [2026-06-24] resurgence | [[concepts/surprise-gap]] — verdict proposé
+- concept ressorti : surprise-gap (stable, updated 2026-04-13, 72j, 74 backrefs, hub prioritaire)
+- état : rien ne l'a touché frontalement depuis avril ; boucle preuve désormais ouverte (exports GSC golfiller + victoria garden)
+- drift : confidence: high alors que H-002 reste `ouvert` et zéro fiche preuve adossée
+- verdict proposé : confidence high → medium tant que H-002 non testée ; lancer le test A/B Organikk maintenant que la plomberie GSC existe
+- output : [[revue-hebdo/resurgence-2026-06-24]]
+- à arbitrer en revue hebdo (vendredi)
