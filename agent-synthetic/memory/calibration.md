@@ -585,3 +585,20 @@ B3 Job Posting addressCountry : recoupement 2 sources Google primaires (search/u
 - Discipline anti-pattern IA : 3 tentations métaphoriques corrigées en révision (se ferme avec / joue le calendrier / pression sur la page) → 0 résiduelle
 - Décisions structurantes : pilier RA acceptable car fait franchement neuf rare explicitement listé en directives (4e plateforme), NE PAS réenchaîner RA 3e fois consécutive
 
+
+## Édition 2026-06-25 (cloud, jeudi matin)
+
+- Pilier info du jour : **GEO** (varié vs 0624-v2 Actualité SEO + 0624 RA + 0623-v2 RA + 0623 PLS)
+- Sujet info du jour : Similarweb « The Downstream Impact of AI Visibility » publié 21 juin 2026
+- Score global : 4.0/5
+- Grille :
+  - source_diversity : 12 (4 indep sur info du jour dont 1 primaire, 4 indep sur B1, 3 indep sur B2, 2 sur B3)
+  - claim_density_corps : 8 claims verified used_in dans le corps
+  - novelty_score : 4 (4e dimension downstream pas couverte par fiche metriques-visibilite-geo, angle inédit pour le wiki)
+  - doctrine_fit : 5 (proposition concrète d'ajout de section à metriques-visibilite-geo + agentic-search + tabou-visibilite)
+  - redite_risk : faible (étude récente non couverte, pilier varié vs 4 derniers)
+  - clickbait_risk : faible (titre nomme la source, l'objet, donne la valeur d'analyse sans promesse creuse)
+- Forces : (1) info du jour ancrée sur source primaire datée (21 juin) avec 3 reprises indépendantes presse SEO (SEJ 23, SEL 24, ppc.land), (2) chiffres central + sectoriels + parcours présentés sans agrégation, (3) caveat commercial Similarweb signalé explicitement, (4) lien doctrine concret (proposition d'ajout de 4e dimension), (5) 1re fois pilier explicite Business SEO en B2 (Anthropic ad-free Claude + Film Craft shortlist) qui répond au goût Tim « bascule de marché / contre-vérité mesurée », (6) restitution Cannes Day 3 en B3 avec distinction nette event off-site LinkedIn Rooftop vs session officielle Carlton (évite affabulation contradiction non résolue)
+- Faiblesses : (1) chiffres par secteur et par étape parcours en mono-source secondaire (SEL ou SEJ) faute d'extraction directe du rapport primaire, confidence légèrement abaissée à 0.85, (2) Snap MCP server du 19 juin écarté pour cause périmètre strict mais aurait complété le pattern 5 plateformes MCP, mention en passant dans B1 acceptable, (3) Cannes Day 4 25 juin sans fait franchement neuf produit AI identifié au moment de l'édition, attendre 24-72h pour restitution complète panel
+- Décisions structurantes : (1) éviter back-to-back Actualité SEO et back-to-back RA en respectant les directives 0624-v2, (2) prendre pilier GEO sur fait neuf récent reproductible (étude Similarweb 21 juin), (3) ouvrir 1re fois pilier Business SEO en brève sur Anthropic comme polarisation business du marché des assistants (ad-financed vs subscription-pure), (4) traiter restitution Cannes Day 3 en B3 sans tenter de trancher contradiction lieu (LinkedIn Rooftop Adweek vs Carlton programme officiel), (5) 2 prédictions ouvertes nouvelles à échéances étalées (31 décembre 2026 et 31 mars 2027)
+- Discipline anti-pattern IA : zéro métaphore vérifiée, zéro tiret cadratim (sed pass global au remplacement par deux-points / virgules selon contexte), zéro personnification entreprise, vouvoiement maintenu, zéro game-changer / révolutionnaire / écosystème / moat / leverage / booster / synergie / disrupter, zéro « il est important de noter » / « dans un monde » / « explorons ensemble ». Termes structurels « moteur » (au sens littéral « moteur de recherche »), « plateforme », « couche » (3 fois sous seuil 5 d'alerte), « zone » (1 fois au sens analytique) gardés en lecture littérale. Aucune ouverture de type « plusieurs sources s'accordent ».
