@@ -17,9 +17,11 @@
 - 2026-06-23 · E-commerce et IA : conversion et trafic assisté 2026 → `2026-06-23-stats-ecommerce-ia-conversion-trafic.md`
 - 2026-06-24 · Souveraineté et hébergement des données IA en Europe 2026 → `2026-06-24-stats-souverainete-hebergement-donnees-ia-europe.md`
 - 2026-06-25 · SEO local et IA : présence dans les réponses locales 2026 → `2026-06-25-stats-seo-local-ia-presence-reponses.md`
+- 2026-06-26 · Claude comme moteur de citation : profil, domaines favoris, part de voix 2026 → `2026-06-26-stats-claude-moteur-citation-profil.md`
 
 ## À faire (par priorité)
-1. Claude comme moteur de citation : profil, domaines favoris, part de voix 2026
+
+(vide — ajouter de nouveaux sujets à la prochaine session)
 
 ## Sujets écartés (avec raison)
 (vide)
