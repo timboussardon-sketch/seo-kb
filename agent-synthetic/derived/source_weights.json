@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-06-19",
+  "updated": "2026-06-26",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -176,6 +176,17 @@
     "telecompaper.com": 1.04,
     "digiday.com": 0.95,
     "sistrix.com": 1.2,
-    "adweek.com": 1.08
+    "adweek.com": 1.08,
+    "canneslions.com": 0.94,
+    "lbbonline.com": 0.74,
+    "brandinginasia.com": 0.64,
+    "exchange4media.com": 0.66,
+    "deepmind.google": 0.96,
+    "selfstorming.com": 0.54,
+    "ads-developers.googleblog.com": 0.96,
+    "eseospace.com": 0.59,
+    "position.digital": 0.59,
+    "sqmagazine.co.uk": 0.59,
+    "techtimes.com": 0.66
   }
 }
