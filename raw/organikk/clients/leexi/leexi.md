@@ -89,6 +89,19 @@ Comparatifs : OK contre outils **américains** uniquement, pas contre acteurs fr
 
 - Dashboard/propale en DA Leexi : c'est le **gabarit standard** des espaces clients Organikk (réf. `organikk-next/public/espace-leexi/index.html`).
 
+## Architecture de contenu (cocons)
+
+> Refonte 2026-06-26 : on repart sur une archi **produit-centric** (2 cocons), plus RGPD-centric. La recherche RGPD du 16/06 alimente le Cocon 2.
+
+- [[cocon-1-notetaker-reunion]] — pilier produit (notetaker / prise de notes réunion). 7 branches : types de réunion, secteur, outil gratuit, cas d'usage (sales/CS/recrutement), intégrations, cas clients, conformité ISO/E-E-A-T.
+- [[cocon-2-prise-de-notes-rgpd]] — pilier conformité (RGPD/souveraineté). 5 branches : prise de notes RGPD, secteur, cas d'usage juridique, comparatif (vs outils US), conformité ISO/DPA/AI Act.
+- [[cocon-3-middle-funnel-metier]] — **couche GEO transversale** (ex-cocon 3, décision 2026-06-26) : plus un 3e cocon de pages produit (les usages doublonnaient le cocon 1). On garde uniquement les pages « problème » à SERP distincte (sans prendre de notes, sur le pipeline, verbatims, débrief sans biais, CRM sans saisie) + le hub « agent IA entreprise ». Les autres angles « comment… » sont repliés en H2/FAQ dans le cocon 1. Rôle : citations IA + maillage vers les pages business.
+- [[liste-mots-cles-complete]] — inventaire exhaustif des 259 MC, branche par branche.
+- [[clusters-2026-06-26]] — clustering page-à-page (71 pages, 1 cluster = 1 page), arbitrages de cannibalisation + vagues P1/P2/P3.
+- [[livrable-mots-cles-business]] — **livrable à envoyer** : 4 mots-clés business + 3 cocons à valider par Leexi (voix Tim, factuel).
+- [[arborescence-cocons]] — framework SEO 16 branches (façon Julien CTR) rempli pour chacun des 3 cocons.
+- [[recherche-2026-06-16-rgpd]] — recherche mots-clés source (56 MC RGPD qualifiés).
+
 ## Sources dans ce dossier
 
 - [[leexi-call-2026-05-21]] — transcript nettoyé du premier call de découverte (2026-05-21)

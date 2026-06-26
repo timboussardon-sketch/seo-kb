@@ -7,9 +7,9 @@
 - Offre : système livrable (repo transférable `~/Code/leexi-seo` + pack doctrine en submodule)
 
 ## Où on en est
-Étape courante : 6 (mots-clés business — stratégie des 3 premiers mois arrêtée en 3 clusters ordonnés)
-Prochaine action : les 3 clusters de la stratégie 3 mois sont recherchés (souveraineté/RGPD 56 KW le 16/06 ; intégrations ~55 KW + outils gratuits ~50 KW le 17/06), consolidés dans `leexi-seo/production/Strategie-clusters-leexi.md`. Enchaîner : (1) réparer la refonte (301/canonicals/maillage, préalable technique) ; (2) `seo-clustering-mots-cles` par SERP sur clusters 2 et 3 ; (3) specs techniques des 4 MVP outils gratuits (data Leexi anonymisée à récupérer) ; (4) briefs prioritaires (Teams et Google Meet d'abord, acquis à défendre).
-À trancher : consolider le cluster 1 (RGPD, encore dans `seo-kb/raw/organikk/clients/leexi/keywords/`) dans le repo leexi-seo.
+Étape courante : 7 (architecture en cocons — 3 cocons mère/fille/petite-fille arrêtés, livrable client prêt à envoyer)
+Prochaine action : (1) **envoyer le Google Doc** à Leexi pour validation des 4 mots-clés business + récupérer les cas clients chiffrés (carburant citation IA) + réponses HDS/URLs ancien site ; (2) **confronter l'overlap SERP réel** (SE Ranking) sur les pages P1, surtout zones à risque visio et ISO ; (3) réparer la refonte (301/canonicals/maillage, préalable technique non négociable) ; (4) brief par page de la vague 1.
+À trancher : les 3 cocons du 26/06 vivent dans `seo-kb/raw/organikk/clients/leexi/keywords/` ; **à consolider dans le repo leexi-seo** (règle « tout livrable dans le repo client »), articuler avec l'ancien `Strategie-clusters-leexi.md` du 17/06 (le restructuré du 26/06 fait foi : notetaker/réunion + RGPD + couche GEO).
 
 ## Accès et data
 - GSC : oui (4 exports dans `leexi-seo/data/gsc/`, manque l'export requête × page) · GA4 : non
@@ -36,6 +36,10 @@ Prochaine action : les 3 clusters de la stratégie 3 mois sont recherchés (souv
 | 2026-06-16 | 6 | approfondissement du cluster RGPD (1 des 4 clusters du 12/06) : 56 mots-clés groundés data réelle WebSearch (PAA + variantes tapées), 24 Do / 30 Know / 2 Know-Simple, 8 sous-clusters ; cadrage tranché par Tim : traduction juridique = feature produit → traitée en Do | `raw/organikk/clients/leexi/keywords/recherche-2026-06-16-rgpd.md` | seo-recherche-mots-cles |
 
 | 2026-06-17 | 6 | stratégie de mots-clés des 3 premiers mois arrêtée : 3 clusters ordonnés par fonction. Cluster 2 intégrations (~55 KW : Teams/Meet/Zoom/Webex + CRM + productivité + technique, ancré sur l'acquis GSC à défendre) ; cluster 3 outils gratuits Product-Led (~50 KW, 1 outil = 1 page, 4 MVP) ; besoins Reddit capturés (verbatims collés main, Reddit bloque le crawler). Doc de référence unique consolidé | `leexi-seo/production/Strategie-clusters-leexi.md` (+ recherche-mots-cles-cluster2/cluster3, cluster3-outils-gratuits, besoins-reddit-cluster2) | seo-recherche-mots-cles + seo-product-led-seo |
+| 2026-06-24 | 2 | call #2 (Baptiste CTO + Mathieu + Sophie marketing) : validation des axes mots-clés, calage prod, MCP Strapi tranché | `raw/organikk/clients/leexi/leexi-call-2026-06-24.md` | aucun |
+| 2026-06-26 | 6 | inventaire complet 259 mots-clés : fan-out WebSearch parallèle par branche (PAA/SERP réelles) + confrontation GSC (signaux `teams compte rendu réunion automatique` pos 5,3 sans page, `agent ia entreprise` 310 impr, `best ai note taker for lawyers` EN) ; réparti en 5 seaux (Money / Longue traîne / Questions / Sous-exploitées / SERP faibles) ; comparatifs vs outils US uniquement | `keywords/liste-mots-cles-complete.md` + `keywords/clusters-2026-06-26.md` | seo-recherche-mots-cles + seo-clustering-mots-cles |
+| 2026-06-26 | 7 | architecture restructurée en 3 cocons mère/fille/petite-fille : (1) notetaker/réunion produit, (2) RGPD différenciateur, (3) couche GEO transversale (problèmes métier « comment… », citation IA + maillage, PAS un cocon produit) ; arbitrage cannibalisation explicite, décision couche GEO ≠ doublon des usages | `keywords/cocon-1/2/3-*.md` + `keywords/arborescence-cocons.md` | seo-cluster-aeo |
+| 2026-06-26 | 7 | livrable client : 4 mots-clés business + 3 cocons à valider, Google Doc mère/fille/petite-fille (vrais mots-clés), voix Tim factuelle, titres bleus | [Google Doc archi](https://docs.google.com/document/d/1dhQOMflYoDcTsSWELYZWZYBUGTiYWpJfI89TTtdJTPM/) + [Google Doc mots-clés business](https://docs.google.com/document/d/1hsVZmZvzh6RcGzaDSRDVUHs0JNCE4cB3KCk18GcSjxw/) + `livrable-mots-cles-business.md` | aucun |
 
 ## Spécificités client
 - Relancer `python3 scripts/export-kb-chat.py` (repo leexi-seo) après toute session qui modifie le vault, pour que l'assistant de l'espace reste à jour.

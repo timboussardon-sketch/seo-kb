@@ -111,3 +111,9 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - output: leexi-seo/production/Strategie-clusters-leexi.md (doc unique) + recherche-mots-cles-cluster2-integrations + recherche-mots-cles-cluster3-outils-gratuits + cluster3-outils-gratuits + besoins-reddit-cluster2
 - skills: seo-recherche-mots-cles + seo-product-led-seo
 - next: réparer la refonte (301/canonicals/maillage) -> clustering par SERP clusters 2/3 -> specs 4 MVP (data Leexi anonymisée) -> briefs Teams + Google Meet
+
+## [2026-06-26] leexi | étape 6+7 | restructure 3 cocons + standardisation méthode mots-clés
+- étape 6 : inventaire 259 mots-clés (fan-out WebSearch + confrontation GSC), 5 seaux
+- étape 7 : architecture 3 cocons mère/fille/petite-fille (notetaker + RGPD + couche GEO transversale), arbitrage cannibalisation ; couche GEO ≠ cocon produit (décision)
+- livrable client : Google Doc 4 mots-clés business + cocons à valider
+- capitalisé dans roadmap.md : étape 6 (grounding fan-out + GSC + 5 seaux), étape 7 passée éprouvée (cocons mère/fille/petite-fille + couche GEO + test cannibalisation SERP)
