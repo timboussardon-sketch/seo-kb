@@ -4,10 +4,10 @@ title: Andrej Karpathy
 aliases: [karpathy, andrej-karpathy]
 tags: [personne, ia, llm, acteur]
 created: 2026-04-11
-updated: 2026-04-11
+updated: 2026-06-26
 sources: 1
 confidence: medium
-status: draft
+status: stable
 ---
 
 # Andrej Karpathy

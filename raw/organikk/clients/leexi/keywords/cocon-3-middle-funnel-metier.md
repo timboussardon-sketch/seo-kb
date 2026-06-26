@@ -1,93 +1,89 @@
 ---
 client: leexi
 type: cluster
-theme: Couche GEO transversale (ex-cocon 3) — problèmes métier + hub agent IA
+theme: Cocon 3 — Problématiques IA métier (par fonction + secteur)
 date: 2026-06-26
-statut: architecture validée — couche GEO/maillage (décision 2026-06-26)
-pilier: capter le problème métier non résolu → citation IA + maillage vers les pages business
+statut: architecture validée — cocon plein (décision révisée 2026-06-26)
+pilier: l'IA qui résout un problème de métier → citation IA + conversion
 related:
   - "[[leexi]]"
   - "[[cocon-1-notetaker-reunion]]"
   - "[[cocon-2-prise-de-notes-rgpd]]"
 ---
 
-# Couche GEO transversale (ex-cocon 3)
+# Cocon 3 — Problématiques IA métier
 
-> **Décision 2026-06-26.** Les pages « usage métier » (Sales / CS / Recrutement) existent déjà dans le [[cocon-1-notetaker-reunion]] (intention produit, volume Google, conversion). Refaire des pages persona ici = cannibalisation. Le « cocon 3 » n'est donc **pas un 3e cocon de pages produit** : c'est une **couche transversale GEO + maillage** posée par-dessus les cocons 1 et 2.
+> **Décision révisée 2026-06-26.** Le Cocon 3 est un **cocon plein**, pas une couche résiduelle. Son angle propre : la **problématique métier résolue par l'IA**, organisée par fonction (Sales, CS, Recrutement) et par secteur.
 >
-> **Ce qu'elle garde** : uniquement les pages « problème » dont la requête a une **SERP distincte** (ou pas de SERP Google du tout, réponse IA only) + le **hub agent IA** (intention agent ≠ notetaker, signal GSC réel).
-> **Ce qu'elle ne garde pas** : les angles « comment… » qui partagent la SERP d'une page produit du cocon 1. Ceux-là sont **repliés dans le cocon 1** sous forme de H2 / FAQ (voir section 3).
+> **Ce qui le distingue du Cocon 1 (et lève la cannibalisation)** : le Cocon 1 cible la requête **produit** (`compte rendu rendez-vous commercial` = il cherche l'outil). Le Cocon 3 cible la requête **problème métier** (`comment automatiser le suivi de mes calls commerciaux`, `IA pour le suivi commercial` = il décrit sa douleur, pas le produit). Intentions différentes, pages différentes, personas au même métier mais à un autre étage de conscience.
 >
-> **Rôle de chaque page conservée** : se faire citer par ChatGPT / Perplexity / AI Overviews sur un problème métier, puis mailler vers la page du cocon 1 ou 2 qui convertit. Ce n'est pas une page de volume Google, c'est une page de citation IA + de maillage.
+> **Orientation GEO** : ces requêtes ont peu de volume Google FR mais sont massivement répondues par ChatGPT / Perplexity / AI Overviews. Le cocon vise donc la **citation IA** d'abord, et maille vers la page produit (cocon 1/2) qui convertit.
+>
+> **Seule règle anti-doublon** : si une requête est *littéralement* la même qu'une page produit du cocon 1 (`compte rendu X`), on garde la page produit et on traite l'angle « comment… » en section dedans. Sinon, page propre ici.
 
 ## Cadrage
-- **Format** : answer-first, problème en H1, réponse extractible (procédure / tableau / définition), data propriétaire Leexi, CTA vers la page business.
-- **Test d'admission d'une page** : sa requête a-t-elle une SERP distincte d'une page produit du cocon 1 ? Si oui → page propre ici. Si non → repli en H2/FAQ dans le cocon 1.
-- **Mesure** : citations IA constatées + trafic référent (ChatGPT/Perplexity) + leads assistés via maillage. Pas le volume GSC.
+- **Mère** : le hub « agent IA / IA pour les équipes en entreprise » (problème métier, pas page produit).
+- **Format** : answer-first, problème en H1, réponse extractible (procédure / tableau), data propriétaire Leexi, CTA vers la page business.
+- **Mesure** : citations IA + trafic référent (ChatGPT/Perplexity) + leads assistés par maillage.
 
 ---
 
-## 1. Pages problème conservées (SERP distincte / réponse IA only)
-
-> Critère retenu : angle quasi absent des SERP FR aujourd'hui, donc zéro cannibalisation du cocon 1, et répondu par les moteurs IA.
-
-### Sales
-| Page (problème) | Pourquoi elle reste (vs cocon 1) | Maille vers |
-|---|---|---|
-| Comment remplir son CRM après un rendez-vous sans saisie manuelle | Angle « CRM auto-update », pain distinct de la page produit « synchronisation CRM » | Intégrations CRM + essai |
-| Comment suivre les objections clients sur tout le pipeline | Angle « suivi des objections sur le pipeline » absent des SERP produit | Cas d'usage Sales + essai |
-
-### Customer Success
-| Page (problème) | Pourquoi elle reste | Maille vers |
-|---|---|---|
-| Comment réussir un onboarding client sans prendre de notes en réunion | Angle « sans prendre de notes » quasi absent des SERP | Cas d'usage CS + essai |
-| Comment préparer un QBR à partir des verbatims clients | Angle « à partir des verbatims » distinct de la page QBR produit | Cas clients + essai |
-| Comment ne plus oublier les actions de suivi après une réunion client | Problème universel, formulation négative sans SERP produit | Essai gratuit |
-
-### Recrutement
-| Page (problème) | Pourquoi elle reste | Maille vers |
-|---|---|---|
-| Comment structurer le débrief d'un entretien sans biais | Angle « sans biais » distinct de la page « débrief candidat » produit | Cas d'usage recrutement + essai |
-
-## 2. Hub agent IA (cocon autonome)
-
-> Intention distincte du notetaker (signal GSC `agent ia entreprise` : 310 impr, pos 4,1). Pas de doublon possible avec les cocons 1/2. Traité en hub haut-funnel qui maille vers le notetaker.
-
-| Page | Intention | Maille vers |
-|---|---|---|
-| Qu'est-ce qu'un agent IA en entreprise (définition + cas d'usage) | Know-Simple | Hub → assistant réunion |
-| Différence entre assistant IA et agent IA en entreprise | Know-Simple | Hub → assistant réunion |
-| Assistant IA pour les réunions d'équipe : quel outil choisir | Know/Do | Assistant de réunion IA + essai |
-| Meilleur agent IA pour entreprise / PME (comparatif 2026) | Do | Comparatif + tarifs |
-| Agent IA pour équipe commerciale / sales | Know/Do | Cas d'usage Sales + intégrations CRM |
-| Comment utiliser un agent IA pour automatiser les comptes rendus | Do | Pont vers le cocon 1 (compte rendu auto) |
-
-## 3. Angles repliés dans le Cocon 1 (H2 / FAQ, pas de page propre)
-
-> Ces formulations partagent la SERP d'une page produit existante. On ne crée pas de page : on enrichit la page produit du cocon 1 avec une section / FAQ qui répond à la question « comment… ». Ça nourrit aussi le GEO sans cannibaliser.
-
-| Angle « comment… » | Page du cocon 1 qui l'absorbe |
+## Branche A — IA pour les commerciaux (Sales)
+| Page (problème métier) | Maille vers |
 |---|---|
-| comment automatiser le compte rendu d'un call commercial | Usage Sales : compte rendu rendez-vous commercial |
-| comment comparer deux candidats sur les mêmes critères | Usage Recrutement : comparer candidats après entretien |
-| comment gagner du temps sur les comptes rendus d'entretien | Usage Recrutement : compte rendu entretien d'embauche |
-| comment gérer les comptes rendus de mission en cabinet de conseil | Secteur : cabinet de conseil |
-| comment automatiser les comptes rendus de rendez-vous client en cabinet comptable | Secteur : cabinet comptable |
-| comment automatiser le PV d'un conseil municipal / instance publique | Secteur : conseil municipal / secteur public |
+| comment automatiser le compte rendu d'un call commercial | Usage Sales (cocon 1) + essai |
+| comment remplir son CRM après un rendez-vous sans saisie manuelle | Intégrations CRM + essai |
+| comment suivre les objections clients sur tout le pipeline | Usage Sales + essai |
+| automatiser le reporting commercial avec l'IA (tête à confirmer SERP) | Usage Sales + essai |
+| IA pour le suivi commercial (tête à confirmer SERP) | Hub + intégrations CRM |
+
+## Branche B — IA pour le Customer Success
+| Page (problème métier) | Maille vers |
+|---|---|
+| comment réussir un onboarding client sans prendre de notes | Usage CS + essai |
+| comment préparer un QBR à partir des verbatims clients | Cas clients + essai |
+| comment ne plus oublier les actions de suivi après une réunion client | Essai |
+| IA pour le suivi client (tête à confirmer SERP) | Hub + usage CS |
+
+## Branche C — IA pour les RH / recrutement
+| Page (problème métier) | Maille vers |
+|---|---|
+| comment structurer le débrief d'un entretien sans biais | Usage recrutement + essai |
+| comment comparer deux candidats sur les mêmes critères | Usage recrutement + essai |
+| comment gagner du temps sur les comptes rendus d'entretien | Usage recrutement + essai |
+| IA pour le recrutement (tête à confirmer SERP) | Hub + usage recrutement |
+
+## Branche D — Problématique IA par secteur
+| Page (problème métier) | Maille vers |
+|---|---|
+| comment gérer les comptes rendus de mission en cabinet de conseil | Secteur conseil (cocon 1) + essai |
+| comment automatiser les comptes rendus de rendez-vous client en cabinet comptable | Secteur comptable (cocon 1) + essai |
+| comment automatiser le PV d'un conseil municipal / instance publique | Secteur public (cocon 1) + démo |
+
+## Branche E — Hub agent IA (définition / choix)
+> Signal GSC `agent ia entreprise` (310 impr, pos 4,1). Tête de cocon, maille vers tout le reste.
+
+| Page | Maille vers |
+|---|---|
+| qu'est-ce qu'un agent IA en entreprise | Hub → branches métier |
+| différence entre assistant IA et agent IA en entreprise | Hub → assistant réunion |
+| assistant IA pour les réunions d'équipe : quel outil choisir | Assistant de réunion IA + essai |
+| meilleur agent IA pour entreprise / PME (comparatif 2026) | Comparatif + tarifs |
+| agent IA pour équipe commerciale / sales | Branche A + intégrations CRM |
+| comment utiliser un agent IA pour automatiser les comptes rendus | Pont vers le cocon 1 (compte rendu auto) |
 
 ---
 
-## Maillage interne (règle de la couche)
-- **Sens unique** : chaque page problème conservée → la page business du cocon 1 ou 2 qui convertit. C'est la fonction de la couche.
-- **Hub agent IA** : pilier définition → décline vers assistant réunion / cas d'usage → pont vers le compte rendu auto du cocon 1.
-- **Angles repliés** : vivent en H2/FAQ dans le cocon 1, donc maillage interne natif à la page produit.
+## Maillage interne
+- **Hub → branches métier → pages problème** ; chaque page problème maille vers la page produit (cocon 1/2) qui convertit.
+- **Discipline anti-doublon** : une SERP = une page. Si `comment automatiser le compte rendu d'un call commercial` partage la SERP de `compte rendu rendez-vous commercial` (cocon 1), garder la page produit et y intégrer l'angle « comment » en section. À vérifier en overlap SERP réel.
 
-## Données à re-sourcer avant publication (doctrine : aucun chiffre inventé)
-- « 61 % appliquent les actions décidées en réunion » (attribué HBR par les réponses IA) → source primaire ou retrait.
-- « PV de conseil municipal : 2-4 h → -70/-80 % » → re-sourcer (rapport Sénat 2025 cité, à vérifier).
+## Données à re-sourcer avant publication (aucun chiffre inventé)
+- « 61 % appliquent les actions décidées en réunion » (attribué HBR par l'IA) → source primaire ou retrait.
+- « PV de conseil municipal : 2-4 h → -70/-80 % » → re-sourcer.
 - Stats d'usage Leexi (gain de temps réel) = data propriétaire à fournir, carburant de citation IA.
 
 ## Roadmap
-- **Vague 1** : hub agent IA (définition + assistant réunion d'équipe) + débrief sans biais + CRM sans saisie. Les plus citables, zéro cannibalisation.
-- **Vague 2** : objections pipeline, onboarding sans notes, QBR verbatims, actions de suivi, reste du hub agent IA.
-- **En parallèle** : enrichir les pages cocon 1 concernées avec les 6 angles repliés (section 3).
+- **Vague 1** : hub agent IA (définition + assistant réunion d'équipe) + débrief sans biais + CRM sans saisie (les plus citables).
+- **Vague 2** : objections pipeline, onboarding sans notes, QBR verbatims, actions de suivi, têtes métier (IA pour le suivi commercial / client / recrutement) après confirmation SERP.
+- **Vague 3** : les 3 problématiques sectorielles.

@@ -95,7 +95,7 @@ Comparatifs : OK contre outils **américains** uniquement, pas contre acteurs fr
 
 - [[cocon-1-notetaker-reunion]] — pilier produit (notetaker / prise de notes réunion). 7 branches : types de réunion, secteur, outil gratuit, cas d'usage (sales/CS/recrutement), intégrations, cas clients, conformité ISO/E-E-A-T.
 - [[cocon-2-prise-de-notes-rgpd]] — pilier conformité (RGPD/souveraineté). 5 branches : prise de notes RGPD, secteur, cas d'usage juridique, comparatif (vs outils US), conformité ISO/DPA/AI Act.
-- [[cocon-3-middle-funnel-metier]] — **couche GEO transversale** (ex-cocon 3, décision 2026-06-26) : plus un 3e cocon de pages produit (les usages doublonnaient le cocon 1). On garde uniquement les pages « problème » à SERP distincte (sans prendre de notes, sur le pipeline, verbatims, débrief sans biais, CRM sans saisie) + le hub « agent IA entreprise ». Les autres angles « comment… » sont repliés en H2/FAQ dans le cocon 1. Rôle : citations IA + maillage vers les pages business.
+- [[cocon-3-middle-funnel-metier]] — **cocon « problématiques IA métier »** (cocon plein, décision révisée 2026-06-26) : angle propre = le problème de métier résolu par l'IA, par fonction (Sales/CS/Recrutement) + secteur + hub « agent IA entreprise ». Distinct du cocon 1 (qui cible la requête produit) car il cible la requête problème métier. Orienté citation IA + maillage vers les pages business. Anti-doublon : seules les requêtes littéralement identiques à une page produit restent en H2/FAQ du cocon 1.
 - [[liste-mots-cles-complete]] — inventaire exhaustif des 259 MC, branche par branche.
 - [[clusters-2026-06-26]] — clustering page-à-page (71 pages, 1 cluster = 1 page), arbitrages de cannibalisation + vagues P1/P2/P3.
 - [[livrable-mots-cles-business]] — **livrable à envoyer** : 4 mots-clés business + 3 cocons à valider par Leexi (voix Tim, factuel).
@@ -106,3 +106,4 @@ Comparatifs : OK contre outils **américains** uniquement, pas contre acteurs fr
 
 - [[leexi-call-2026-05-21]] — transcript nettoyé du premier call de découverte (2026-05-21)
 - [[leexi-call-2026-06-24]] — transcript nettoyé du call #2, session de travail / validation des axes mots-clés (2026-06-24)
+- [[leexi-call-2026-06-24-notes-meet]] — notes auto Google Meet du même call (résumé, étapes suivantes, détails)

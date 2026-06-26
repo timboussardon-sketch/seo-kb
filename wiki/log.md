@@ -948,3 +948,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - skill déclenché: kb-semantic-search (Phase 0 vector index)
 - sources mobilisées: leexi-call-2026-05-21, mots-cles-actionnels, test-substitution-llm, product-led-seo, data-proprietaire, tabou-visibilite, revues Seer 06-16 + Averi 06-08
 - angle SEO: prévalence AIO par intention (5% transactionnel vs 95% comparaison), substituable vs défendable
+
+## [2026-06-26] revue-hebdo | Semaine W26 — 7 décisions, 4 mouvements exécutés en séance
+- promotions: 2 draft→stable (entities/karpathy, entities/google-deepmind) ; 0 stable→stale
+- hypothèse en test: aucune forcée (H-002 garderait le piège Organikk de H-007, reste ouvert) — vivante H-009, J+30 Golfiller à préparer pour 2026-07-03
+- confidence: surprise-gap high→medium (résurgence 06-24 exécutée, aligné sur section Limites, H-002 ouvert)
+- lot ingest W27: etude-ctr-ai-overviews-gsc + dossier Leexi (call 06-24 + kw RGPD) tirés par travail réel ; golfiller-strat skip documenté (2ᵉ non-exécution)
+- contradiction: C-011 ouverte→acceptée (garde-fou chiffres glossaire, calque C-007)
+- archivage: rien de mort ; 2 snapshots audit périmés = ressort de audit-vault-hygiene, pas ici
+- fil rouge: mots-clés non mangés par l'IA (Leexi + query 06-24) → mûr pour édition Algorithme

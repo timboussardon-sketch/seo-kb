@@ -39,7 +39,7 @@ status: living-doc
 | C-008 | Brevet Google US12536233B1 : publication ≠ déploiement | `ouverte` | 2026-05-01 | Surveiller déploiement réel |
 | C-009 | Papers MAGEO (2604.19516) et Role-Augmented G-SEO (2508.11158) non ingérés | `ouverte` | 2026-05-01 | Ingest papers si Tim valide la priorité |
 | C-010 | Statut inscription bootcamp Cécile / Franck non confirmé | `ouverte` | 2026-05-01 | Confirmer via suivi prospects |
-| C-011 | Chiffres glossaire non sourcés (40% AIO clics, 15M req/j Perplexity, 90-99% autorité 301) | `ouverte` | 2026-04-13 | Sourcer ou flaguer `confidence: low` avant réutilisation |
+| C-011 | Chiffres glossaire non sourcés (40% AIO clics, 15M req/j Perplexity, 90-99% autorité 301) | `acceptée` | 2026-04-13 | Limite assumée [[revue-hebdo/2026-W26]] : jamais publier ces 3 chiffres sans source primaire ; sourcer au moment de l'usage |
 | C-012 | Glossaire simplifie MIRAS "multi-résolution" en "mémoire long-terme" | `acceptée` | 2026-04-13 | Vulgarisation assumée du glossaire public ; divergence documentée dans la source, référence canonique = [[entities/miras]] |
 | C-013 | Reranking : plafond effective rate ~70% non résolu par aucune méthode étudiée | `acceptée` | 2026-04-25 | Limite scientifique connue, à citer comme telle |
 
@@ -74,6 +74,8 @@ Passée `acceptée` le 2026-06-12 ([[revue-hebdo/2026-W24]]), en application du 
 ### C-011 — Chiffres glossaire non sourcés
 
 Le glossaire Organikk ([[sources/2026-04-12-organikk-glossaire-scrape]]) avance 40% de clics AI Overviews, 15M requêtes/jour Perplexity, 90-99% de transfert d'autorité sur 301. Aucune source primaire. Règle §5.4 violée : pas de source = pas d'affirmation. Action : sourcer ou marquer `confidence: low` partout où ces chiffres sont repris, ne jamais les mettre dans un contenu publié sans source (croise la règle [[concepts/data-proprietaire]] et l'interdiction de chiffres non sourcés).
+
+Passée `acceptée` le 2026-06-26 ([[revue-hebdo/2026-W26]]), même traitement que C-007 : sourcer rétroactivement trois chiffres d'un glossaire scrapé ne vaut pas un sprint, et ils ne sont repris dans aucun contenu publié à ce jour. Limite assumée avec garde-fou dur : ces trois chiffres ne sortent jamais dans un contenu publié sans source primaire vérifiée au moment de l'usage. Si un de ces chiffres devient nécessaire à une édition, on le source ou on le coupe — on ne le ressort pas du glossaire tel quel. Ligne conservée pour la trace d'audit.
 
 ## Quand une contradiction se ferme
 

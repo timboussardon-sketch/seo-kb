@@ -130,6 +130,7 @@ Reportés depuis [[log]]. Le sweep hebdo doit les ignorer sauf décision explici
 - `raw/articles/lost-from-old-site/` — faible valeur ajoutée
 - Fichiers vides (`raw/todo/todo-2026-04-25.md` 0 octet)
 - `raw/data/keyword-research-2026-05-02/` (binôme `keywords-cleaned.md` + `keywords-classified.md`) — skip acté [[revue-hebdo/2026-W24]] en application du conditionnel [[revue-hebdo/2026-W22]] point 3 : 4 reconductions (W20→W24) sans ingest, la doctrine de sélection des mots-clés s'est consolidée entre-temps via Fusionn et le terrain client. Ce binôme ne passe pas par le rituel ; ré-ingest seulement si un travail réel le réclame.
+- `raw/golfiller/golfiller-strat.md` — skip acté [[revue-hebdo/2026-W26]] en application du conditionnel [[revue-hebdo/2026-W25]] : voté W24, reconduit W25, non exécuté W26, aucun travail vivant ne le tire. Même doctrine que le binôme kw-research. Ré-ingest seulement attaché à un sprint Golfiller réel. NB : `raw/etudes-seo/etude-ctr-ai-overviews-gsc.md`, ex-binôme du même lot, n'est PAS skippé — il passe en ingest W27 tiré par la newsletter « mots-clés non mangés » ([[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]]).
 
 ## Méthode du sweep hebdo
 

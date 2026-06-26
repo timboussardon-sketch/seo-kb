@@ -4,9 +4,9 @@ title: Surprise Gap (thèse Tim)
 aliases: [surprise-gap, information-gap, gap-informationnel]
 tags: [doctrine-tim, seo-ia, geo, ranking, strategie]
 created: 2026-04-11
-updated: 2026-04-13
+updated: 2026-06-26
 sources: 4
-confidence: high
+confidence: medium
 status: stable
 ---
 

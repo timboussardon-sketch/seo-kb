@@ -4,10 +4,10 @@ title: Google DeepMind
 aliases: [deepmind, google-deepmind]
 tags: [google, ia, recherche, organisation]
 created: 2026-04-11
-updated: 2026-04-11
+updated: 2026-06-26
 sources: 1
 confidence: medium
-status: draft
+status: stable
 ---
 
 # Google DeepMind
