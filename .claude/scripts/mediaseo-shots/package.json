@@ -1,0 +1,11 @@
+{
+  "name": "mediaseo-shots",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MediaSEO — service de capture d'écran authentique (Playwright headless Chromium). Ne génère jamais d'image : capture la vraie page ou retourne 'Capture indisponible'.",
+  "bin": { "mediaseo-shots": "capture.mjs" },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
