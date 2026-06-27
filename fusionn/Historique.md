@@ -2203,3 +2203,14 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - Réponse à Tim sur "Opus 4.7 suffit ?" : oui et c'est même trop pour ces tâches ; Opus 4.7 = le plus cher, Sonnet suffit. Économie estimée 50-70% du poste LLM sans perte de qualité.
 
 - **Décision modèle finale (Tim)** : `generate-pseo-strategy` + `generate-brief` repassés sur `claude-opus-4-8` (qualité max sur les 2 livrables phares) ; les 5 autres generate-* restent Sonnet 4.6 ; l'agent (`ai-chat`) reste sur Gemini (pas de chemin Claude, et coût/message élevé sur un chat). À vérifier : accès Opus 4.8 sur le compte Anthropic Fusionn (étaient sur 4.7).
+
+## 2026-06-27 — Prompt caching Anthropic (brief)
+- **Contexte** : Tim veut activer le prompt caching Anthropic (réduction coût/latence sur le préfixe statique).
+- **Audit** : 7 generate-* appellent Claude via `_shared/claude.ts` (single-shot, pas d'agent). Aucune ne passait de `system` ni de `cache_control`. Tout (instructions + données) était concaténé dans le `prompt`, avec `${keyword}`/`${context}` tissé dès la L1 → aucun préfixe statique propre à cacher sans réécrire le wording. De plus, objections/vecteurs/semantic ont déjà un cache de RÉSULTATS applicatif (table keyword+context) qui court-circuite le LLM pour un input identique (mieux que le 0,1× du prompt caching).
+- **Décision (Tim)** : cibler **`generate-brief` seulement** (Opus 4.8, le plus cher, structure propre : 1 seule interpolation `${contextInfo}`, pas de result-cache par mot-clé).
+- **Changements** :
+  - `_shared/claude.ts` : option `cacheSystem?: boolean` → pose `cache_control: ephemeral` sur le bloc system. Rétrocompatible (sans effet si non passé).
+  - `generate-brief/index.ts` : template découpé en `INSTR_HEAD` / `briefEntree` (données) / `INSTR_TAIL`. Chemin Gemini (défaut) : `prompt` recomposé HEAD+ENTRÉE+TAIL = **byte-identique** à l'ancien, inchangé. Chemin Claude : instructions statiques → `system` caché (`cacheSystem:true`), `briefEntree` (données) → message user.
+- **Effet** : les ~2k tokens d'instructions du brief (identiques pour tous les briefs) sont relus à 0,1× sur les rafales de briefs distincts < 5 min. Opus 4.8 min cacheable = 1024 tok → le cache s'enclenche.
+- **Vérifs** : helper `deno check` OK ; brief parse OK (lint warnings `any` pré-existants seulement) ; backticks équilibrés.
+- **Pas encore déployé** : `supabase functions deploy generate-brief` + `_shared` = acte prod, en attente du feu vert Tim. (NB : un push main ne déploie QUE le front Netlify, pas les edge functions Supabase.)
