@@ -18,12 +18,12 @@
 - 2026-06-24 · Souveraineté et hébergement des données IA en Europe 2026 → `2026-06-24-stats-souverainete-hebergement-donnees-ia-europe.md`
 - 2026-06-25 · SEO local et IA : présence dans les réponses locales 2026 → `2026-06-25-stats-seo-local-ia-presence-reponses.md`
 - 2026-06-26 · Claude comme moteur de citation : profil, domaines favoris, part de voix 2026 → `2026-06-26-stats-claude-moteur-citation-profil.md`
+- 2026-06-28 · Fraîcheur du contenu et citations IA : délais d'indexation et biais par plateforme 2026 → `2026-06-28-stats-fraicheur-citations-ia-delais.md`
 
 ## À faire (par priorité)
 
-1. **Fraîcheur du contenu et citations IA : combien de temps pour être indexé et cité par les moteurs génératifs en 2026 ?** — Données sur la vitesse à laquelle ChatGPT Search, Perplexity et AI Overviews captent du contenu nouveau, délais de fraîcheur, biais vers le contenu récent vs établi, impact de la date de publication sur la probabilité d'être cité. Angle inédit : aucun sujet "indexation IA" couvert. Requête-ancre : "contenu récent citations IA délai 2026".
-2. **Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026** — Données sur les dépenses en SEO (marché global, France), part réallouée aux outils IA et à la stratégie GEO, tendances des agences et CMO. Contre-angle : est-ce que les budgets SEO baissent vraiment ou se transforment ? Sources potentielles : Gartner, SpendEdge, enquêtes agences (Semrush, BrightEdge State of SEO). Requête-ancre : "budget SEO 2026 statistiques dépenses".
-3. **Profil technique des pages citées par les IA : longueur, structure et balisage 2026** — Données sur les caractéristiques techniques (nombre de mots, densité FAQ, schema.org, vitesse, HTTPS, profondeur de lien) des pages les plus citées par Perplexity, ChatGPT Search et AI Overviews. Transformation originale : recoupement de deux ou trois études de sources différentes pour dégager un profil composite. Sources potentielles : Goodie AI, Ahrefs, SE Ranking, Kevin Indig. Requête-ancre : "longueur contenu cité IA statistiques 2026".
+1. **Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026** — Données sur les dépenses en SEO (marché global, France), part réallouée aux outils IA et à la stratégie GEO, tendances des agences et CMO. Contre-angle : est-ce que les budgets SEO baissent vraiment ou se transforment ? Sources potentielles : Gartner, SpendEdge, enquêtes agences (Semrush, BrightEdge State of SEO). Requête-ancre : "budget SEO 2026 statistiques dépenses".
+2. **Profil technique des pages citées par les IA : longueur, structure et balisage 2026** — Données sur les caractéristiques techniques (nombre de mots, densité FAQ, schema.org, vitesse, HTTPS, profondeur de lien) des pages les plus citées par Perplexity, ChatGPT Search et AI Overviews. Transformation originale : recoupement de deux ou trois études de sources différentes pour dégager un profil composite. Sources potentielles : Goodie AI, Ahrefs, SE Ranking, Kevin Indig. Requête-ancre : "longueur contenu cité IA statistiques 2026".
 
 ## Sujets écartés (avec raison)
 (vide)
