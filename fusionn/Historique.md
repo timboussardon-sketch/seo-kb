@@ -2222,3 +2222,13 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - **Effet** : les ~2k tokens d'instructions du brief (identiques pour tous les briefs) sont relus à 0,1× sur les rafales de briefs distincts < 5 min. Opus 4.8 min cacheable = 1024 tok → le cache s'enclenche.
 - **Vérifs** : helper `deno check` OK ; brief parse OK (lint warnings `any` pré-existants seulement) ; backticks équilibrés.
 - **Pas encore déployé** : `supabase functions deploy generate-brief` + `_shared` = acte prod, en attente du feu vert Tim. (NB : un push main ne déploie QUE le front Netlify, pas les edge functions Supabase.)
+
+## 2026-06-29 — Recherche mots-clés : colonne Potentiel, navbar, écran démo home
+
+- **Colonne Potentiel** dans le tableau de mots-clés (`KeywordTable.tsx`) : synthèse calculée client-side = demande (volume Google Ads) × conversion (business) × accessibilité (compétition), rendue en jauge + label Fort/Moyen/Faible. Distincte du Score sémantique. Présente dans le chat, l'onglet Mots-clés (réutilise le même composant) et le panneau détail (`projectViews.tsx`). CSS jauge dans `chat.css`, tableau passé à 8 colonnes.
+- **Thinking rassurant** (`keyword-agent/index.ts`, déployé) : `thinkMsg`→`thinkLines` renvoie une séquence de lignes nommant les sources réelles (« Je consulte les données Google », « volume réel Google Keyword Planner », « CPC et concurrence Google Ads », « croise avec votre Search Console »). S'empilent en checklist.
+- **Photo Google sur le bouton compte** (Sidebar) : charge `google_connections` (picture/name/email), avatar + nom + email, fallback initiale.
+- **Carte Premium 29€** dans l'onglet Abonnement du Compte (`AccountView.tsx`) : vraie carte + bouton branché sur `create-checkout-session` (Stripe, 2900c).
+- **Écran « Voilà ce que Fusionn fait pour vous »** (`landing/DemoSection.tsx`) réécrit : colonnes Mot-clé/Intention/Volume/CPC/Compétition/Potentiel (la vraie data Ads), onglets Mots-clés/Micro-intentions/Objections/Brief (synthèse 8 sections), header « Projet » + description produit, CTA → `/recherche` avec `state.description`.
+- **Navbar** (`Navbar.tsx`) alignée : pages publiques = menu Tarifs/Outils gratuits/Documentation + CTA « Lancer une recherche »/« Ma recherche » → `/recherche` ; lien YouTube « Démo » retiré ; boutons legacy (Rechercher/Espace/Historique → /compte) conservés uniquement quand les handlers sont passés (page `/compte`).
+- **Vérifs** : `tsc --noEmit` = 0 erreur sur tout le projet ; dev `http://localhost:5176` (`/` et `/recherche` = 200) ; edge `keyword-agent` déployée.
