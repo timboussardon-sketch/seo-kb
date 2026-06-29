@@ -2232,3 +2232,20 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - **Écran « Voilà ce que Fusionn fait pour vous »** (`landing/DemoSection.tsx`) réécrit : colonnes Mot-clé/Intention/Volume/CPC/Compétition/Potentiel (la vraie data Ads), onglets Mots-clés/Micro-intentions/Objections/Brief (synthèse 8 sections), header « Projet » + description produit, CTA → `/recherche` avec `state.description`.
 - **Navbar** (`Navbar.tsx`) alignée : pages publiques = menu Tarifs/Outils gratuits/Documentation + CTA « Lancer une recherche »/« Ma recherche » → `/recherche` ; lien YouTube « Démo » retiré ; boutons legacy (Rechercher/Espace/Historique → /compte) conservés uniquement quand les handlers sont passés (page `/compte`).
 - **Vérifs** : `tsc --noEmit` = 0 erreur sur tout le projet ; dev `http://localhost:5176` (`/` et `/recherche` = 200) ; edge `keyword-agent` déployée.
+
+## 2026-06-29 (suite) — keyword-agent : hybride Sonnet/Gemini (économie tokens)
+
+- Découpage modèles aligné sur l'ancien Fusionn, validé par Tim : **chatbot + brief = Sonnet 4.6** (obligatoire) ; **génération de masse = Gemini** (moins cher, plus exhaustif que Haiku). Reco assumée : Gemini > Haiku pour l'idéation mots-clés (coût + souffle + déjà éprouvé en prod + cohérence ancien Fusionn).
+- 3 outils Gemini ajoutés dans `keyword-agent` : `generate_keywords` (**gemini-2.5-pro** : idéation 40+ mots-clés PUIS le serveur attache volume/CPC/compétition réels Google Ads et renvoie la liste prête `{keyword,intention,volume,cpc,competition,business,bucket}`), `generate_micro_intentions` (**gemini-3.1-flash-lite**), `generate_objections` (**gemini-2.5-pro**). Helper `callGemini(model,prompt)` (responseMimeType json) + `parseJsonArray` tolérant + dédup.
+- Skills mis à jour : `recherche_mots_cles` appelle generate_keywords (ne brainstorme plus → gros gain tokens Sonnet) ; `micro_intentions` appelle l'outil ; nouveau skill `objections`. Clustering/décisionnels/structure_hn restent Sonnet (transfo légère). Flags surchargeables `KEYWORD_GEN_MODEL` / `KEYWORD_GEN_LITE_MODEL`.
+- Lignes « thinking » rassurantes par outil Gemini. Anti-hallucination : volume/CPC = Google Ads via generate_keywords OU keyword_metrics, jamais inventés.
+- `deno check` OK ; déployé `--no-verify-jwt` ; secrets GEMINI_API_KEY + ANTHROPIC + GOOGLE_ADS_* présents ; smoke test 200 (cadrage Sonnet OK).
+
+## 2026-06-29 (suite 2) — Persistance projets par compte + reprise post-connexion
+
+- **Persistance serveur** : table `public.kw_user_state` (user_id PK → auth.users, data jsonb, updated_at) + RLS select/insert/update own, grant authenticated. Créée via API Management `/database/query` (PAT décodé du keychain « Supabase CLI » : valeur `go-keyring-base64:<base64(sbp_...)>`).
+- Module `src/lib/kwSync.ts` : snapshot/apply du namespace `fusionn_kw_*`, fetch/push/clear remote (upsert onConflict user_id), `mergeSnapshots` au grain projet (union projets, convs fusionnées par id la + récente, mémoire/contexte/briefs du côté le + récent). localStorage = cache, Supabase = source durable.
+- `Recherche.tsx` : boot async hydrate (fetch remote → merge local → apply → re-push), `scheduleSync()` debouncé (1,2 s) après chaque save, listener `onAuthStateChange` pour capter une connexion tardive. `AccountView.deleteAll` vide aussi le serveur (sinon resurrection à la synchro). Sync seulement si user non-anon.
+- **Reprise recherche après connexion** : Landing handleSearch non connecté → `sessionStorage['fusionn_pending_recherche']` + `/connexion` ; reprise gérée DEUX fois (Connexion useEffect pour email/mdp ; Landing au montage car redirect Google = `origin+'/'`) → `/recherche` state.description, kickoff auto, sans retaper.
+- Copy : H1 « L'agent qui trouve vos meilleurs mots-clés pour ChatGPT, Google, YouTube » + sous-titre « Décrivez votre produit… identifie vos meilleurs mots-clés, récupère leur volume… CPC… suivi de vos positions » ; onglet Mémoire phrase réécrite.
+- `tsc` 0 erreur, `npm run build` OK (react-snap prerender échoue = non bloquant). Commit + push `main` (`d524765..4ca60ec`) → déploiement Netlify prod.
