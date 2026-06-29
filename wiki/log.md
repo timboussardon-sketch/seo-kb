@@ -957,3 +957,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - contradiction: C-011 ouverte→acceptée (garde-fou chiffres glossaire, calque C-007)
 - archivage: rien de mort ; 2 snapshots audit périmés = ressort de audit-vault-hygiene, pas ici
 - fil rouge: mots-clés non mangés par l'IA (Leexi + query 06-24) → mûr pour édition Algorithme
+
+## [2026-06-29] backlog | sweep — 201 en backlog (P1:92 P2:38 P3:71)
+- 341 fichiers raw scannés (+10 vs sweep 06-22), toute la matière fraîche = terrain client Leexi + Alexia
+- nouveaux P1 (10) : dossier organikk/clients/leexi/ (9 — 2 calls 06-24, livrable mots-clés business, arborescence-cocons, 5 fichiers keywords/clusters/cocons) + alexia/2026-06-24-call-1-resume
+- mouvement skip : golfiller-strat sort du backlog → skip documenté (déjà acté W26, 2ᵉ non-exécution)
+- prochain lot proposé : etude-ctr-ai-overviews-gsc + dossier Leexi (call 06-24 + recherche kw RGPD) — lot W27 voté en W26, toujours non exécuté, tiré par la newsletter « mots-clés non mangés »
+- nouveaux skips: aucun
