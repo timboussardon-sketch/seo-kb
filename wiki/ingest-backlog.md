@@ -4,8 +4,8 @@ title: Backlog d'ingest
 aliases: [ingest-backlog, backlog, raw-non-traite, file-ingest]
 tags: [meta, ingest, capture, pipeline, backlog]
 created: 2026-05-16
-updated: 2026-06-22
-last_sweep: 2026-06-22
+updated: 2026-06-29
+last_sweep: 2026-06-29
 sources: 0
 confidence: high
 status: living-doc
@@ -19,9 +19,9 @@ status: living-doc
 >
 > Méthode : un fichier `raw/` est "traité" quand un `wiki/sources/*.md` le couvre (directement ou via une source agrégée documentée). Sinon il est dans le backlog. Un fichier peut être explicitement `skip` (faible valeur doctrinale, déjà couvert, archive).
 
-> **Sweep 2026-06-22** : 331 fichiers `raw/` scannés, backlog stable à 192 (P1:83 P2:38 P3:71). Stabilité trompeuse : 5 nouveaux fichiers déposés cette semaine, 4 ingestés en sortie. **Ingéré** : les playbooks `raw/x-playbook/` (4 fichiers — Playbook-X + compagnons Grok/30-jours/formats) couverts par [[sources/2026-06-19-playbook-x-seo-geo]], et le nouveau `raw/reddit-playbook/Playbook-Reddit-SEO-GEO.md` couvert par [[sources/2026-06-19-playbook-reddit-seo-geo]] (arrivé ET traité dans la fenêtre). **Nouvelle matière non digérée** : pré-call commercial `organikk/pré-call/hellocse.md`, prep acquisition `youtube/preparation-yt.md`, recherche mots-clés client `leexi/keywords/recherche-2026-06-16-rgpd.md` (→ P1), et la liste opérationnelle `organikk/mots-cles-a-traiter.md` (→ P3). Le gros bloc reste le dossier client **FG-Formation** (40 fichiers — 32 transcripts d'appels + 8 livrables, le cas-client de synthèse [[sources/2026-04-30-fg-formation-pseo-cas-client]] ne couvre que les 2 notes `raw/notes/fg-formation/`, pas le dossier `raw/organikk/clients/fgformation/`). Le lot W25 voté en revue hebdo (`golfiller-strat` + `etude-ctr-ai-overviews-gsc`) n'est toujours pas ingéré — repris ci-dessous. Backlog > 80 → on liste les 15 premiers par tier (oldest-first) et on agrège le reste par groupe.
+> **Sweep 2026-06-29** : 341 fichiers `raw/` scannés (+10 vs sweep précédent), backlog à **201** (P1:92 P2:38 P3:71). Toute la matière fraîche est du terrain client **Leexi** (SaaS notetaker RGPD), client actif de la semaine. **Nouvelle matière non digérée (10 fichiers, tous P1)** : dossier `organikk/clients/leexi/` — 2 calls de découverte (`leexi-call-2026-06-24` + `-notes-meet`), le livrable mots-clés business (`livrable-mots-cles-business`), l'arborescence de cocons (`arborescence-cocons`) et le travail mots-clés (`keywords/clusters-2026-06-26`, `cocon-1-notetaker-reunion`, `cocon-2-prise-de-notes-rgpd`, `cocon-3-middle-funnel-metier`, `liste-mots-cles-complete`), + le résumé de call Alexia (`alexia/2026-06-24-call-1-resume`). Aucun de ces fichiers n'a de `wiki/sources/` : le call 05-21 et la recherche RGPD ne sont mobilisés que dans la query [[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]], jamais ingérés en source. **Mouvement de skip** : `raw/golfiller/golfiller-strat.md` sort du backlog → skip documenté (2ᵉ non-exécution actée [[revue-hebdo/2026-W26]]). Le lot W27 voté en W26 (`etude-ctr-ai-overviews-gsc` + dossier Leexi, tirés par la newsletter « mots-clés non mangés ») n'est **toujours pas exécuté** — repris en prochain lot ci-dessous. Le gros bloc reste **FG-Formation** (40 fichiers, [[sources/2026-04-30-fg-formation-pseo-cas-client]] ne couvre que les 2 notes `raw/notes/fg-formation/`). Backlog > 80 → on liste les 15 premiers par tier (oldest-first) et on agrège le reste par groupe.
 
-## Priorité 1 — Données terrain propriétaires non capturées (le moat qui fuit) — 83
+## Priorité 1 — Données terrain propriétaires non capturées (le moat qui fuit) — 92
 
 Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non rejouable, qui alimente directement la doctrine et le discours commercial. Les laisser non traitées, c'est laisser fuir le moat. Oldest-first, 15 premiers listés.
 
@@ -43,16 +43,17 @@ Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non
 | `raw/articles/modele-production/modele-mots-clés.md` | 2026-05-27 | Modèle de production scalable. Croise [[concepts/programmatique-pseo]] et [[concepts/pseo-data-driven-models]] |
 | `raw/bootcamp4/sequencage-semaine-4.md` | 2026-05-28 | Séquençage semaine 4, structure pédagogique |
 
-**+ 69 autres P1, par groupe :**
+**+ 77 autres P1, par groupe :**
 
+- **Leexi — dossier client complet** (2026-05-21 → 06-27, 12 fichiers) : `clients/leexi/leexi.md` (note maître client), `leexi-call-2026-05-21`, `leexi-call-2026-06-24` + `-notes-meet` (3 calls de découverte SaaS notetaker RGPD), `livrable-mots-cles-business`, `arborescence-cocons` (architecture de cocons), `keywords/` (5 : `recherche-2026-06-16-rgpd`, `clusters-2026-06-26`, `cocon-1-notetaker-reunion`, `cocon-2-prise-de-notes-rgpd`, `cocon-3-middle-funnel-metier`, `liste-mots-cles-complete`). **Bloc terrain client le plus frais du backlog** : calls réels + livrables mots-clés produits, mobilisés dans [[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]] mais aucun ingéré en `wiki/sources/`. Tire le fil rouge éditorial « mots-clés que les IA ne mangent pas ». **Lot W27 voté, non exécuté.**
+- **Alexia — dossier client** (2026-06-10 → 06-24, 3 fichiers) : `clients/alexia/2026-06-10-call-cadrage-adrien`, `-resume-call-envoye`, `2026-06-24-call-1-resume` — calls de cadrage archivés en raw (actions `client` au [[log]]) mais sans `wiki/sources/`.
 - **FG-Formation — dossier client complet** (2026-06-13, 40 fichiers) : `clients/fgformation/calls/` (32 — audits blancs ×5, coachings ×6, R1 ×3, RDV ×17, `SYNTHESE-appels-anonymisee`) + 8 livrables (`fgformation` maître, `-clusters`, `-gsc-quickwins`, `-modeles-pseo`, `-mots-cles`, `-mots-cles-decisionnels`, `-mots-cles-recherche-exhaustive`, `-personas-problematiques`). **Le plus gros bloc terrain frais de tout le backlog** : 32 transcripts d'appels réels = matière brute pour [[concepts/avatar-freelance-sans-systeme]] et le discours commercial, + livrables pSEO produits. Aucun équivalent wiki.
 - **Terrain commercial Organikk pré-call** (2026-06-08 → 06-12, 12 fichiers) : `centrale-directe` (×3), `proximit` (×5 : call-damien, propale, propale-1-1, resume-call-client, fiche), `pangaea-sports` (×2), `ears-360`, `_MODELE-pre-call` — calls + résumés + propales réels, le moat commercial le plus frais, alimente [[syntheses/workflow-complet-consultant-seo-ia]].
 - **Bootcamp 4 — fin sessions 1, 2 & 4** (5 fichiers) : `session-1-mots-cles-prep`, `session-1-mots-cles-transcript`, `session-2-redaction-prep`, `session-4-automatisations-chat`, `session-4-call-prep` — transcripts + prep restants, même valeur que les sessions déjà listées.
-- **Acquisition / pré-call frais** (2026-06-16 → 06-20, 3 fichiers) : `organikk/pré-call/hellocse.md` (call découverte CSE/SaaS fait, propale + chiffrage à envoyer — moat commercial frais), `youtube/preparation-yt.md` (masterclass SEO-Claude + plan de chaîne YouTube, lead gen Organikk/Fusionn/Qadence), `organikk/clients/leexi/keywords/recherche-2026-06-16-rgpd.md` (recherche mots-clés RGPD client Leexi — terrain).
+- **Acquisition / pré-call frais** (2026-06-16 → 06-20, 2 fichiers) : `organikk/pré-call/hellocse.md` (call découverte CSE/SaaS fait, propale + chiffrage à envoyer — moat commercial frais), `youtube/preparation-yt.md` (masterclass SEO-Claude + plan de chaîne YouTube, lead gen Organikk/Fusionn/Qadence). _(La recherche mots-clés RGPD Leexi est désormais comptée dans le dossier Leexi ci-dessus.)_
 - **Bootcamp 5** (2026-05-30 → 06-08, 3 fichiers) : `cadrage`, `calls-prospects`, `propal-remi` — cadrage du nouveau bootcamp + appels prospects + propale réelle.
 - **Discours / stratégie commerciale** (2 fichiers) : `_MODELE-discours-commercial` (2026-06-08), `strategie-commerciale-fusionn-2026-05-23` — modèle de pitch + stratégie produit Fusionn.
 - **Fusionn** : `etude utilisation fusionn.md` (2026-06-08) — data terrain produit.
-- **Golfiller** : `golfiller-strat.md` (2026-06-08) — stratégie SEO client, cas terrain. **Lot W25 voté, non exécuté.**
 - **Transcript terrain** : `raw/transcripts/video-erreur-ia-137-pages.md` (2026-06-09) — transcript vidéo erreur IA / indexation 137 pages.
 
 ## Priorité 2 — Contenu publié non bouclé (boucle preuves) — 38
