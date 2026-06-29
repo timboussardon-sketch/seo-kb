@@ -9,6 +9,14 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-06-29 · Refonte agent mots-clés type Qadence (chatbot + skills + mémoire + Google Ads) — DÉPLOYÉ
+
+- Nouveau parcours : la landing perd l'input d'URL, gagne une flexbox « décrivez votre produit/service » → route `/recherche` (chatbot plein écran type Qadence, DA Fusionn). Pages SEO publiques inchangées.
+- Edge function `keyword-agent` (déployée, `--no-verify-jwt`) : port de la boucle agentique Qadence (`runAgentLoopStream`), scope mots-clés. Outils : `load_skill` (skills dédiés recherche/clustering/décisionnels/micro-intentions/structure Hn/brief/décodage/GEO, repris de `agentSkills` + `guide-skills`), `update_memory` (mémoire par projet), `keyword_metrics` (Google Ads via `_shared/google-ads.ts fetchKeywordHistoricalMetrics` → volume + CPC + compétition réels, rendu obligatoire par Tim). Modèle `KEYWORD_AGENT_MODEL` (défaut Sonnet 4.6).
+- Front : sidebar dédiée à UN projet (sélecteur de projet en haut + onglets dédiés Chat/Mots-clés/Clusters/Micro-intentions/Structure Hn/Briefs/Mémoire + historique par projet), réflexion live (StepsBox), tableau mots-clés DA Fusionn (Volume/CPC/Compétition/Business/Bucket). Modèle de données projet → conversations + mémoire, en localStorage. Fichiers : `src/pages/Recherche.tsx`, `src/components/recherche/*`.
+- Dev local sans Docker : serve via Deno (`npm run serve:keyword-agent`, clé dans `.env.keyword-agent.local` gitignoré, `VITE_KEYWORD_AGENT_URL`). En prod le front tape la fonction déployée (secrets ANTHROPIC_API_KEY + GOOGLE_ADS_* déjà sur le Supabase `fwhfnzbtlddzfxbsejyf`). Deploy CLI : resets intermittents sur api.supabase.com, relancer 2-4x (token keychain "Supabase CLI").
+- Reste à faire : capturer les livrables clusters/micro/hn/briefs dans leurs onglets dédiés (aujourd'hui produits dans le chat ; seul l'onglet Mots-clés capture la donnée structurée).
+
 ## 2026-06-10 · Opportunités : findings de crawl ne polluent plus les Quick wins — DÉPLOYÉ
 
 - Retour Tim (capture) : « Pousser "timothée boussardon" en page 1 » et « Pousser "2 pages au contenu fin (< 250 mots)" en page 1 » → « ça ne sert strictement à rien ».

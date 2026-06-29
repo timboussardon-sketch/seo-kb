@@ -270,6 +270,9 @@
       "agent-synthetic/revuedepressIA/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -2371,6 +2374,8 @@
       "export Search Console"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
@@ -2938,6 +2943,7 @@
       "liens internes"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
@@ -2971,6 +2977,7 @@
       "maillage-architecture"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
       "lenkrr/Journal.md",
       "qadence/Strategie-contenu.md",
       "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
@@ -3246,6 +3253,9 @@
       "agent-synthetic/revuedepressIA/2026-06-25-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -5081,6 +5091,7 @@
     ],
     "backrefs": [
       "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/directives.md",
       "agent-synthetic/memory/questions.md",
       "agent-synthetic/revuedepressIA/2026-06-11-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-12-revue-presse-v2.md",
@@ -5095,6 +5106,10 @@
       "agent-synthetic/revuedepressIA/2026-06-25-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -5367,13 +5382,19 @@
     "backrefs": [
       "AGENTS.md",
       "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/2026-06-25-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-25-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-27-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-06-28-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-05.md",
       "raw/journal/2026-06-15.md",
       "raw/journal/2026-06-18.md",
+      "raw/journal/2026-06-27.md",
       "raw/notes/analyse-calls-prospects-bootcamp.md",
       "raw/organikk/_MODELE-discours-commercial.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
