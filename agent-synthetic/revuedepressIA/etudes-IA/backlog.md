@@ -20,10 +20,11 @@
 - 2026-06-26 · Claude comme moteur de citation : profil, domaines favoris, part de voix 2026 → `2026-06-26-stats-claude-moteur-citation-profil.md`
 - 2026-06-28 · Fraîcheur du contenu et citations IA : délais d'indexation et biais par plateforme 2026 → `2026-06-28-stats-fraicheur-citations-ia-delais.md`
 - 2026-06-29 · Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026 → `2026-06-29-stats-budgets-seo-reallocation-ia.md`
+- 2026-06-30 · Profil technique des pages citées par les IA : longueur, structure et balisage 2025-2026 → `2026-06-30-stats-profil-technique-pages-citees-ia.md`
 
 ## À faire (par priorité)
 
-1. **Profil technique des pages citées par les IA : longueur, structure et balisage 2026** — Données sur les caractéristiques techniques (nombre de mots, densité FAQ, schema.org, vitesse, HTTPS, profondeur de lien) des pages les plus citées par Perplexity, ChatGPT Search et AI Overviews. Transformation originale : recoupement de deux ou trois études de sources différentes pour dégager un profil composite. Sources potentielles : Goodie AI, Ahrefs, SE Ranking, Kevin Indig. Requête-ancre : "longueur contenu cité IA statistiques 2026".
+(vide — file épuisée)
 
 ## Sujets écartés (avec raison)
 (vide)
