@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALGORITHME · Fusion + palettes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1E8; --card:#FBF8EF; --ink:#1B1A17; --ink-soft:#56524a;
+    --rule:#C9C0AD; --rule-soft:#DCD5C4; --accent:#2C4A63; --accent-2:#7A6A53;
+    --night:#1B2733; --night-ink:#D8CFBC; --night-glow:#7FB8A0;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+  .mono{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  a{color:inherit}
+
+  /* ===== palette switcher ===== */
+  .switch{position:sticky;top:0;z-index:50;background:var(--night);color:var(--night-ink);border-bottom:1px solid rgba(255,255,255,.08)}
+  .switch .wrap{display:flex;align-items:center;gap:16px;height:50px;flex-wrap:wrap}
+  .switch .lbl{font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+  .swatches{display:flex;gap:9px;flex-wrap:wrap}
+  .sw{display:flex;align-items:center;gap:7px;cursor:pointer;border:1px solid rgba(255,255,255,.16);border-radius:40px;padding:5px 11px 5px 6px;background:rgba(255,255,255,.04);color:var(--night-ink);font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;transition:.15s}
+  .sw:hover{border-color:rgba(255,255,255,.45)}
+  .sw[aria-pressed="true"]{background:#fff;color:#1b1a17;border-color:#fff}
+  .sw .dotc{width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+
+  /* ===== console ticker ===== */
+  .console{background:var(--night);color:var(--night-ink);font-family:"Space Mono",monospace;font-size:12px;border-bottom:1px solid rgba(255,255,255,.06)}
+  .console .wrap{display:flex;align-items:center;gap:18px;height:34px;overflow:hidden;white-space:nowrap}
+  .console .prompt{color:var(--night-glow)}
+  .console .tk{display:flex;gap:26px;animation:scroll 36s linear infinite}
+  .console .tk b{font-weight:400;color:#E6C79A}
+  .console .up{color:var(--night-glow)}.console .dn{color:#D98E7A}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ===== masthead ===== */
+  header.mh{border-bottom:3px double var(--ink);padding:24px 0 14px}
+  .mh-top{display:flex;justify-content:space-between;align-items:flex-end}
+  .mh-top .c{flex:1}.mh-top .c.r{text-align:right}.mh-top .c.m{flex:0 0 auto;text-align:center}
+  .mh .ed{color:var(--ink-soft)}
+  .brand{font-family:"Fraunces",serif;font-weight:600;font-size:72px;line-height:.9;letter-spacing:.01em;margin:2px 0 4px}
+  .brand .d{color:var(--accent)}
+  .tagl{font-family:"Newsreader",serif;font-style:italic;color:var(--ink-soft);font-size:17px}
+  .live{display:inline-flex;align-items:center;gap:7px;color:var(--accent)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent)}70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+
+  nav.sec{border-top:1px solid var(--rule);margin-top:14px;padding-top:10px;display:flex;gap:24px;flex-wrap:wrap}
+  nav.sec a{text-decoration:none}
+  nav.sec a:hover{color:var(--accent)}
+
+  /* ===== hero + data panel ===== */
+  main{padding:30px 0 30px}
+  .lead-grid{display:grid;grid-template-columns:1.65fr 350px;gap:36px;border-bottom:1px solid var(--rule);padding-bottom:30px}
+  .kick{color:var(--accent);margin-bottom:12px}
+  h1.lead{font-family:"Fraunces",serif;font-weight:600;font-size:52px;line-height:1.02;letter-spacing:.004em;margin:0 0 18px}
+  .stand{font-size:21px;color:var(--ink-soft);line-height:1.46;max-width:60ch}
+  .by{margin-top:18px;color:var(--accent-2)}
+  .figure{margin-top:26px;border:1px solid var(--rule);aspect-ratio:21/8;background:
+    repeating-linear-gradient(90deg,transparent,transparent 30px,color-mix(in srgb,var(--ink) 5%,transparent) 31px),
+    linear-gradient(160deg,var(--card),color-mix(in srgb,var(--accent) 14%,var(--card)));
+    position:relative}
+  .figure .cap{position:absolute;left:14px;bottom:14px;background:var(--card);border:1px solid var(--rule);padding:6px 10px;font-size:13px;color:var(--ink-soft)}
+
+  aside .panel{border:1px solid var(--rule);background:var(--card);padding:20px;margin-bottom:22px}
+  aside h4{margin:0 0 14px;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--rule);padding-bottom:10px;display:flex;align-items:center;gap:8px}
+  aside h4::before{content:"";width:7px;height:7px;background:var(--accent)}
+  .metric{display:flex;align-items:baseline;justify-content:space-between;padding:11px 0;border-bottom:1px dashed var(--rule)}
+  .metric:last-child{border-bottom:0}
+  .metric .v{font-family:"Fraunces",serif;font-weight:600;font-size:30px;color:var(--accent)}
+  .metric .v.dn{color:var(--accent-2)}
+  .metric .k{font-size:14px;color:var(--ink-soft);max-width:58%;text-align:right;line-height:1.3}
+  .tick{display:flex;gap:12px;padding:10px 0;border-bottom:1px dotted var(--rule)}
+  .tick:last-child{border-bottom:0}
+  .tick .t{font-family:"Space Mono",monospace;font-size:11px;color:var(--accent-2);flex:0 0 42px;padding-top:3px}
+  .tick .h{font-size:15.5px;line-height:1.28}
+
+  /* ===== three columns ===== */
+  .more{padding:28px 0 6px}
+  .more .label{color:var(--accent);border-top:2px solid var(--ink);padding-top:9px;display:inline-block;margin-bottom:16px}
+  .threecol{column-count:3;column-gap:30px;column-rule:1px solid var(--rule-soft)}
+  .threecol .art{break-inside:avoid;margin-bottom:24px}
+  .threecol .src{color:var(--accent-2);margin-bottom:7px}
+  .threecol h3{font-family:"Fraunces",serif;font-weight:600;font-size:22px;line-height:1.1;margin:0 0 8px}
+  .threecol p{margin:0;font-size:16px;color:var(--ink-soft)}
+  .dropcap::first-letter{font-family:"Fraunces",serif;font-weight:600;float:left;font-size:56px;line-height:.76;padding:6px 8px 0 0;color:var(--accent)}
+
+  /* ===== chronique strip ===== */
+  .strip{margin-top:24px;border:1px solid var(--rule);display:grid;grid-template-columns:210px 1fr}
+  .strip .l{background:var(--night);color:var(--night-ink);padding:24px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center}
+  .strip .r{padding:26px 30px;background:var(--card)}
+  .strip h2{font-family:"Fraunces",serif;font-weight:600;font-style:italic;font-size:30px;line-height:1.12;margin:0}
+  .strip p{color:var(--ink-soft);margin:12px 0 0;max-width:70ch}
+
+  footer{border-top:3px double var(--ink);margin-top:34px;padding:18px 0 60px;color:var(--ink-soft)}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  @media(max-width:920px){
+    .lead-grid{grid-template-columns:1fr}
+    .threecol{column-count:1}
+    .brand{font-size:50px}h1.lead{font-size:38px}
+    .strip{grid-template-columns:1fr}
+    .mh-top{flex-wrap:wrap;gap:10px}
+  }
+</style>
+</head>
+<body>
+
+<!-- palette switcher -->
+<div class="switch">
+  <div class="wrap">
+    <span class="lbl">Palette</span>
+    <div class="swatches" id="sw"></div>
+  </div>
+</div>
+
+<!-- ticker -->
+<div class="console">
+  <div class="wrap">
+    <span class="prompt">algorithme&nbsp;~&nbsp;$</span>
+    <div class="tk">
+      <span>AI&nbsp;Overviews&nbsp;FR&nbsp;<b class="up">38%&nbsp;▲</b></span>
+      <span>Volatilité&nbsp;SERP&nbsp;<b>4,8</b></span>
+      <span>Citations&nbsp;answer-first&nbsp;<b class="up">×2,1&nbsp;▲</b></span>
+      <span>Clic&nbsp;organique&nbsp;info.&nbsp;<b class="dn">-6,3%&nbsp;▼</b></span>
+      <span>Core&nbsp;update&nbsp;juin&nbsp;<b>jour&nbsp;10</b></span>
+      <span>AI&nbsp;Overviews&nbsp;FR&nbsp;<b class="up">38%&nbsp;▲</b></span>
+      <span>Volatilité&nbsp;SERP&nbsp;<b>4,8</b></span>
+      <span>Citations&nbsp;answer-first&nbsp;<b class="up">×2,1&nbsp;▲</b></span>
+      <span>Clic&nbsp;organique&nbsp;info.&nbsp;<b class="dn">-6,3%&nbsp;▼</b></span>
+      <span>Core&nbsp;update&nbsp;juin&nbsp;<b>jour&nbsp;10</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- masthead -->
+<header class="mh">
+  <div class="wrap mh-top">
+    <div class="c"><div class="mono ed">N&deg; 412</div><div class="mono ed">Édition du matin</div></div>
+    <div class="c m">
+      <div class="mono kick" style="margin-bottom:6px">Le quotidien du Search &amp; de l'intelligence artificielle</div>
+      <div class="brand">Algorithme<span class="d">.</span></div>
+      <div class="tagl">« Ce qui change aujourd'hui dans la façon dont on sera trouvé demain. »</div>
+    </div>
+    <div class="c r"><div class="mono ed">Mardi 30 juin 2026</div><div class="mono live"><span class="dot"></span> En direct</div></div>
+  </div>
+  <div class="wrap"><nav class="sec mono">
+    <a href="#">Le fil</a><a href="#">Google</a><a href="#">Moteurs IA</a><a href="#">Études</a><a href="#">Brevets</a><a href="#">Outils</a><a href="#">Analyses</a><a href="#">La stat du jour</a>
+  </nav></div>
+</header>
+
+<main class="wrap">
+  <section class="lead-grid">
+    <div>
+      <div class="kick mono">À la une · Moteurs génératifs</div>
+      <h1 class="lead">Les AI Overviews s'étendent, le clic migre vers l'intention d'achat</h1>
+      <p class="stand dropcap">Le report de trafic se confirme sur les requêtes informationnelles partout en Europe. Les pages qui répondent en premier et prouvent par la donnée première résistent, et raflent l'essentiel des citations dans les réponses génératives. Sur le décisionnel, là où l'intention reste lisible, le clic tient.</p>
+      <div class="by mono">Par la rédaction · Lecture 6 min · 🟢 confirmé · Maj 06:40</div>
+      <figure class="figure"><span class="cap">Part des SERP avec bloc IA · France · 2024 → 2026</span></figure>
+    </div>
+    <aside>
+      <div class="panel">
+        <h4>Indice du jour</h4>
+        <div class="metric"><span class="v">38%</span><span class="k">requêtes info. avec bloc IA en France</span></div>
+        <div class="metric"><span class="v">×2,1</span><span class="k">citation des pages answer-first</span></div>
+        <div class="metric"><span class="v dn">-6,3%</span><span class="k">clic organique sur l'informationnel</span></div>
+        <div class="metric"><span class="v">11 j</span><span class="k">déploiement moyen d'un core update</span></div>
+      </div>
+      <div class="panel">
+        <h4>Le fil de la nuit</h4>
+        <div class="tick"><span class="t">05:12</span><span class="h">Gemini ouvre l'accès programmatique aux résumés de recherche</span></div>
+        <div class="tick"><span class="t">03:40</span><span class="h">Bing teste un carrousel de sources sous chaque réponse</span></div>
+        <div class="tick"><span class="t">01:55</span><span class="h">Ahrefs publie un suivi de visibilité dans les moteurs IA</span></div>
+        <div class="tick"><span class="t">23:30</span><span class="h">Chromium expose un signal de lisibilité des contenus</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="more">
+    <span class="label mono">Le reste du fil</span>
+    <div class="threecol">
+      <article class="art"><div class="src mono">Google</div><h3>Le core update de juin retombe au dixième jour</h3><p>Les sites à preuve première gagnent, le contenu de remplissage recule. La volatilité repasse sous le seuil d'alerte.</p></article>
+      <article class="art"><div class="src mono">OpenAI</div><h3>Les données structurées remontent dans les citations</h3><p>Les pages portant un schéma Dataset apparaissent plus souvent en source directe des réponses longues de SearchGPT.</p></article>
+      <article class="art"><div class="src mono">Étude</div><h3>Le format question-réponse double la chance d'être cité</h3><p>Sur 40 000 réponses analysées, l'extractibilité d'un passage compte plus que la longueur totale du contenu.</p></article>
+      <article class="art"><div class="src mono">Outils</div><h3>La GSC teste une vue dédiée aux apparitions IA</h3><p>Une métrique d'impressions séparée pour les blocs de réponse arrive sur un échantillon de comptes.</p></article>
+      <article class="art"><div class="src mono">Reddit</div><h3>Le trafic de discussion remonte dans les sources citées</h3><p>Les fils techniques sont de plus en plus repris par les moteurs de réponse depuis deux mois.</p></article>
+      <article class="art"><div class="src mono">Brevet</div><h3>Un score de fraîcheur appliqué au passage, pas à la page</h3><p>Le signal jouerait au niveau du paragraphe, relançant le débat sur la mise à jour des contenus.</p></article>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="l">La chronique<br>de Tim</div>
+    <div class="r">
+      <h2>Le contenu de remplissage est mort, et c'est une bonne nouvelle</h2>
+      <p>Quand le moteur résume à votre place, il ne reste qu'une question : qu'est-ce que vous savez que personne d'autre ne sait. La donnée première, le terrain, la preuve. Le reste, l'IA le génère plus vite que vous, et le fait déjà.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap mono">
+    <span>Algorithme · le quotidien du Search &amp; de l'IA</span>
+    <span id="curPal">Palette : Bleu ardoise</span>
+  </div>
+</footer>
+
+<script>
+  const palettes = {
+    indigo:{name:"Indigo", paper:"#FAFAFB",card:"#FFFFFF",ink:"#15171A",inkSoft:"#5B5F66",rule:"#E7E8EC",ruleSoft:"#EFF0F3",accent:"#5B5BD6",accent2:"#7E8390",night:"#16181D",nightInk:"#D4D5DE",nightGlow:"#9B99F5"},
+    cobalt:{name:"Cobalt", paper:"#F7F8FA",card:"#FFFFFF",ink:"#0F1419",inkSoft:"#566072",rule:"#E3E7ED",ruleSoft:"#EDF0F4",accent:"#2563EB",accent2:"#6B7686",night:"#0E1626",nightInk:"#C9D4E6",nightGlow:"#6BA1FF"},
+    emeraude:{name:"Émeraude", paper:"#F6F8F7",card:"#FFFFFF",ink:"#0F1512",inkSoft:"#566159",rule:"#E0E7E3",ruleSoft:"#EBF0ED",accent:"#0E9F6E",accent2:"#6E7C74",night:"#0C1512",nightInk:"#C8E2D6",nightGlow:"#36D9A0"},
+    violet:{name:"Violet doux", paper:"#FBFAFC",card:"#FFFFFF",ink:"#171320",inkSoft:"#615A6E",rule:"#EAE6F0",ruleSoft:"#F2EEF7",accent:"#7C3AED",accent2:"#867E94",night:"#171320",nightInk:"#D8CFE6",nightGlow:"#B18BF5"},
+    teal:{name:"Bleu glacier", paper:"#F5F9FA",card:"#FFFFFF",ink:"#0D1719",inkSoft:"#506068",rule:"#DEE9EC",ruleSoft:"#EAF2F4",accent:"#0E8FA8",accent2:"#64757C",night:"#0B1A20",nightInk:"#C4DEE6",nightGlow:"#3EC6E0"},
+    corail:{name:"Corail", paper:"#FBF8F6",card:"#FFFFFF",ink:"#1A1310",inkSoft:"#6A5C55",rule:"#EEE5E0",ruleSoft:"#F5EEEA",accent:"#E0533C",accent2:"#8A7E78",night:"#1C1411",nightInk:"#E6D4CC",nightGlow:"#FF8A6B"},
+    graphite:{name:"Graphite", paper:"#F4F4F3",card:"#FCFCFB",ink:"#18181A",inkSoft:"#5C5C5F",rule:"#E2E2E1",ruleSoft:"#ECECEB",accent:"#2A2A2C",accent2:"#86868A",night:"#161618",nightInk:"#D6D6D8",nightGlow:"#9AA1A8"},
+    ambre:{name:"Ambre", paper:"#F9F8F4",card:"#FFFFFF",ink:"#1A160D",inkSoft:"#615B4C",rule:"#EAE6DA",ruleSoft:"#F2EFE6",accent:"#C2740B",accent2:"#7E7A6C",night:"#1A1510",nightInk:"#E6DCC6",nightGlow:"#F0B452"},
+    nocturne:{name:"Mode nuit", paper:"#0E0F12",card:"#17181C",ink:"#ECECEF",inkSoft:"#9B9CA3",rule:"#2A2C31",ruleSoft:"#232429",accent:"#9B99F5",accent2:"#7E828C",night:"#0A0B0D",nightInk:"#CFD0DA",nightGlow:"#9B99F5"}
+  };
+  const r = document.documentElement;
+  function apply(key){
+    const p = palettes[key];
+    r.style.setProperty('--paper',p.paper); r.style.setProperty('--card',p.card);
+    r.style.setProperty('--ink',p.ink); r.style.setProperty('--ink-soft',p.inkSoft);
+    r.style.setProperty('--rule',p.rule); r.style.setProperty('--rule-soft',p.ruleSoft);
+    r.style.setProperty('--accent',p.accent); r.style.setProperty('--accent-2',p.accent2);
+    r.style.setProperty('--night',p.night); r.style.setProperty('--night-ink',p.nightInk);
+    r.style.setProperty('--night-glow',p.nightGlow);
+    document.getElementById('curPal').textContent = 'Palette : '+p.name;
+    document.querySelectorAll('.sw').forEach(b=>b.setAttribute('aria-pressed', b.dataset.k===key));
+  }
+  const host = document.getElementById('sw');
+  Object.entries(palettes).forEach(([k,p])=>{
+    const b=document.createElement('button');
+    b.className='sw'; b.dataset.k=k; b.setAttribute('aria-pressed', k==='indigo');
+    b.innerHTML='<span class="dotc" style="background:'+p.accent+'"></span>'+p.name;
+    b.onclick=()=>apply(k);
+    host.appendChild(b);
+  });
+  apply('indigo');
+</script>
+</body>
+</html>
