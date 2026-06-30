@@ -1,0 +1,16 @@
+# Algorithme · robots.txt
+User-agent: *
+Allow: /
+Disallow: /recherche.html
+
+# Moteurs de réponse génératifs : citation autorisée avec lien
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://algorithme.media/sitemap.xml

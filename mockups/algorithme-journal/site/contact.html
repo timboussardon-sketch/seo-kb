@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Algorithme</title>
+<meta name="description" content="Écrire à la rédaction d'Algorithme : sujet, correction, partenariat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-nav="">
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="kick mono">Contact</div>
+    <h1>Écrire à la rédaction</h1>
+    <p class="stand">Un sujet à signaler, une correction, une proposition. On lit tout.</p>
+  </div>
+
+  <section class="cols2">
+    <div class="form">
+      <form onsubmit="return false">
+        <div class="field"><label>Nom</label><input type="text" placeholder="Votre nom"></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="vous@email.com"></div>
+        <div class="field"><label>Objet</label>
+          <select><option>Proposer un sujet</option><option>Signaler une correction</option><option>Partenariat / presse</option><option>Autre</option></select>
+        </div>
+        <div class="field"><label>Message</label><textarea rows="6" placeholder="Votre message"></textarea></div>
+        <button>Envoyer</button>
+      </form>
+    </div>
+    <aside>
+      <div class="panel">
+        <h4>Par email</h4>
+        <p class="muted" style="font-size:16px;margin:0 0 8px">Rédaction</p>
+        <p style="margin:0 0 16px"><a class="accent" href="mailto:redaction@algorithme.media">redaction@algorithme.media</a></p>
+        <p class="muted" style="font-size:16px;margin:0 0 8px">Corrections</p>
+        <p style="margin:0"><a class="accent" href="mailto:corrections@algorithme.media">corrections@algorithme.media</a></p>
+      </div>
+      <div class="panel">
+        <h4>Suivre</h4>
+        <div class="tick"><span class="t mono">X</span><a href="#"><span class="h">@algorithme_media</span></a></div>
+        <div class="tick"><span class="t mono">in</span><a href="#"><span class="h">Algorithme sur LinkedIn</span></a></div>
+        <div class="tick"><span class="t mono">rss</span><a href="#"><span class="h">Flux RSS du fil</span></a></div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
