@@ -1,7 +1,3 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Que faire à Bordeaux</title>
-<link rel="stylesheet" href="https://use.typekit.net/vnq7wma.css"><link rel="stylesheet" href="https://www.victoriagarden.com/wp-includes/css/dist/block-library/style.min.css"><link rel="stylesheet" href="https://www.victoriagarden.com/wp-content/themes/victoria-garden/dist/styles/main_97f57e46.css">
-<style>body{background:#fff;padding:24px 0;font-family:sofia-pro,sans-serif;color:#212529}.t-page__content h2{font-family:bely-display,sans-serif;color:#173c3c}.wp-block-table td{border-bottom:1px solid #e9ecef}</style></head><body>
-<div class="container"><div class="row"><div class="t-page col-lg-10 offset-lg-1 col-xl-8 offset-xl-2"><div class="t-page__content">
 <!-- wp:heading -->
 <h2 class="wp-block-heading">Que faire à Bordeaux depuis la résidence</h2>
 <!-- /wp:heading -->
@@ -251,4 +247,3 @@
 <!-- wp:paragraph -->
 <p>Vous préparez un long séjour ? Découvrez nos <a href="https://www.victoriagarden.com/appart-hotel-au-mois/">séjours au mois</a>. Vous hésitez sur la période ? Consultez notre page <a href="#">quand venir à Bordeaux</a>.</p>
 <!-- /wp:paragraph -->
-</div></div></div></div></body></html>
