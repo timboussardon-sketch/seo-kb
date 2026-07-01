@@ -1,4 +1,4 @@
-# Sante boucle - linkedin-journal (2026-06-22)
+# Sante boucle - linkedin-journal (2026-06-29)
 
 **Statut : OK**
 
