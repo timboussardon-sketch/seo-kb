@@ -2249,3 +2249,12 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - **Reprise recherche après connexion** : Landing handleSearch non connecté → `sessionStorage['fusionn_pending_recherche']` + `/connexion` ; reprise gérée DEUX fois (Connexion useEffect pour email/mdp ; Landing au montage car redirect Google = `origin+'/'`) → `/recherche` state.description, kickoff auto, sans retaper.
 - Copy : H1 « L'agent qui trouve vos meilleurs mots-clés pour ChatGPT, Google, YouTube » + sous-titre « Décrivez votre produit… identifie vos meilleurs mots-clés, récupère leur volume… CPC… suivi de vos positions » ; onglet Mémoire phrase réécrite.
 - `tsc` 0 erreur, `npm run build` OK (react-snap prerender échoue = non bloquant). Commit + push `main` (`d524765..4ca60ec`) → déploiement Netlify prod.
+
+## 2026-07-01 — Preuve d'origine des data : logos Google Ads + Search Console
+
+- Nouveau composant `src/components/recherche/DataSourceLogos.tsx` : `GoogleAdsLogo`, `GoogleSearchConsoleLogo` (SVG couleur officiels) + `sourceForStep(label)` qui mappe un libellé d'étape → `'ads'` (volume/CPC/Google Ads) ou `'gsc'` (Search Console/positions/impressions/requêtes/clics).
+- `KeywordChat.tsx` : (1) badge « Données Google réelles » dans la topbar avec les deux logos + tooltip d'origine ; (2) `StepsBox` affiche le logo de la source à côté de chaque étape de thinking concernée (ex. « Je relève le volume et le CPC réels (Google Ads) » → logo Ads).
+- But : prouver visuellement que les chiffres viennent de sources réelles, pas inventés.
+- `tsc` 0 erreur, `npm run build` OK (react-snap échoue en local = non bloquant). Push `main` (`0041266..e8c5e13`) → deploy Netlify prod `ready` sans erreur (commit_ref e8c5e13).
+- Même traitement porté sur **Qadence** (`src/components/DataSourceLogos.jsx` + `Chat.jsx`, GSC en premier car source principale, Ads bêta). Déployé prod via `netlify deploy --prod --dir=dist` → https://qadence.io.
+- Note : le commit `43baa72` (edge function `alexia-copilot/index.ts`, auto-commitée avant la session) est parti dans le même push main — sans impact front (edge function Supabase, déployée à part).
