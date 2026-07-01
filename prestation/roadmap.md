@@ -26,7 +26,8 @@ Output : doc pré-call. Skills : aucun (gabarit pré-call). Statut : éprouvé.
 Après la signature, avant de produire quoi que ce soit : l'agent confirme qu'il a **bien compris le contexte**. Il fait tourner le scan public de `seo-pre-audit` pour former ses hypothèses, puis **interviewe Tim** en rounds thématiques (batterie resserrée ~20 questions, 8 thèmes : business, cible, différenciation/data propriétaire, état SEO, data/accès, objectif, voix/tabous, relation). Chaque question part d'une hypothèse tirée du public que Tim confirme ou corrige ; l'inconnu devient « à poser au client », jamais une invention.
 Gate : produire un bloc « Ce que j'ai compris » (15 lignes max) et le faire valider par Tim avant l'étape 3. Le cadrage oriente ce qu'on cherche dans la GSC.
 Batterie + protocole complet : `prestation/interview-cadrage.md`. Sortie stockée dans `clients/<slug>.md` section « Cadrage (interview) ».
-Input : scan public + réponses de Tim. Output : bloc cadrage validé. Skills : `seo-pre-audit` (scan), `roadmap-prestation` (orchestration). Statut : doctrine.
+Version client-facing embarquée dans le kit d'accompagnement : le workflow `workflow-cadrage` (généré par `alexia-seo/build-dataset.py`, 1er des workflows du kit + du vault Obsidian, présenté en tête du dashboard). C'est l'entrée du kit : Claude interroge l'utilisateur sur tout le contexte puis liste les docs/accès manquants.
+Input : scan public + réponses. Output : bloc cadrage validé + liste des manques. Skills : `seo-pre-audit` (scan), `roadmap-prestation` (orchestration), `workflow-cadrage` (kit client). Statut : doctrine.
 
 ## Phase 1 — Diagnostic data
 

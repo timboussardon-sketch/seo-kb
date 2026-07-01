@@ -8,7 +8,11 @@
 
 L'interview n'est pas un questionnaire froid. Avant de poser une question, l'agent a déjà tout ce qui est public (le scan de `seo-pre-audit`). Chaque question part donc d'une **hypothèse** tirée du public, et Tim confirme, corrige ou complète. On cadre en confirmant une compréhension, pas en partant de zéro.
 
+L'interview couvre **tout le contexte** : le business et ses angles (offre qui fait le CA, modèle éco, différenciation), la cible, l'état SEO, la data, l'objectif de mission, la voix, la relation. Rien ne se produit tant que ce contexte n'est pas cadré et validé.
+
 Format : **l'agent interviewe Tim** (pas le client). Interactif, via `AskUserQuestion`, en rounds thématiques (2 à 4 questions par appel). Pour chaque question, l'agent propose 2 à 4 réponses plausibles issues du scan public, et Tim tranche ou répond en libre (« Other »). Une réponse faible ou inconnue devient une **question à poser au client**, jamais une invention.
+
+**Signaler les manques (obligatoire).** Si un document, un accès ou une donnée manque pour cadrer ou pour attaquer la suite (GSC, GA4, transcripts de calls, avis, CRM, cas clients chiffrés, ancienne stratégie, plan de refonte, guidelines de marque), l'agent le **dit explicitement** à Tim : quoi, pourquoi il en a besoin, ce que ça débloque. Il ne comble jamais un trou par une invention. La liste des manques fait partie de la sortie.
 
 ## Quand
 
@@ -20,8 +24,8 @@ Format : **l'agent interviewe Tim** (pas le client). Interactif, via `AskUserQue
 
 1. **Scan public.** Faire tourner la collecte de `seo-pre-audit` (identité, modèle éco, état SEO public, surface GEO, data propriétaire pressentie). Noter la source de chaque fait.
 2. **Interview.** Dérouler la batterie ci-dessous par rounds. Chaque round = un `AskUserQuestion` de 2 à 4 questions, options pré-remplies avec les hypothèses du scan, reco en première position quand une hypothèse est solide. Ne pas enchaîner plus d'un round à l'aveugle : adapter les questions suivantes aux réponses reçues.
-3. **Restitution (gate).** Rédiger un bloc **« Ce que j'ai compris »** (voir format de sortie), 15 lignes max, factuel, et le faire valider par Tim : « c'est ça le contexte, je pars là-dessus, ou on corrige ? ». On n'exécute pas l'étape 3 tant que ce n'est pas validé.
-4. **Stockage.** Coller la version validée dans `prestation/clients/<slug>.md`, section « Cadrage (interview) », datée. Marquer les trous restants comme « à poser au client ».
+3. **Restitution (gate).** Rédiger un bloc **« Ce que j'ai compris »** (voir format de sortie), 15 lignes max, factuel, suivi de la liste des **docs/accès manquants** et des questions à poser au client. Faire valider par Tim : « c'est ça le contexte, il me manque ça, je pars là-dessus, ou on corrige ? ». On n'exécute pas l'étape 3 tant que ce n'est pas validé.
+4. **Stockage.** Coller la version validée dans `prestation/clients/<slug>.md`, section « Cadrage (interview) », datée. Reporter les manques dans « Accès et data » du tracker.
 
 ## La batterie (resserrée, ~20 questions, 8 thèmes)
 
@@ -80,6 +84,10 @@ Bloc court, factuel, tutoiement, zéro chiffre inventé. Tout ce qui n'est pas t
 - Objectif : <KPI, première preuve datée, périmètre/contraintes>
 - Voix et tabous : <registre, mots bannis, contraintes secteur>
 - Relation : <maturité, autonomie visée, ce qui serait un échec>
+
+### Docs / accès qui me manquent
+- <doc ou accès> — pour <ce que ça débloque>
+- <doc ou accès> — pour <ce que ça débloque>
 
 ### À poser au client (non tranché)
 - <question 1>

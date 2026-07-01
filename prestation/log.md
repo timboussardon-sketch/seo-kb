@@ -129,3 +129,9 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - format = l'agent interviewe Tim (AskUserQuestion, hypothèses pré-remplies via seo-pre-audit)
 - roadmap.md (étape 2b), _template.md (section Cadrage), skill roadmap-prestation mis à jour
 - statut : doctrine (pas encore éprouvé sur un client)
+
+## [2026-07-01] système | cadrage étendu — signaler les manques + kit client
+- interview-cadrage.md : l'agent couvre tout le contexte + angles business, et SIGNALE explicitement les docs/accès manquants (section dédiée dans la sortie + gate)
+- kit d'accompagnement : nouveau workflow client-facing `workflow-cadrage` (1er des workflows), généré par alexia-seo/build-dataset.py → embarqué kit + vault Obsidian
+- dashboard Alexia : workflow cadrage en tête (section Workflows + roadmap semaine 1 « Cadrage, setup & data »), compteurs 34 skills / 4 workflows
+- kit + vault régénérés en LOCAL (build-dataset.py + build-vault.py) ; PAS déployé, PAS de push (organikk = prod sur push main)
