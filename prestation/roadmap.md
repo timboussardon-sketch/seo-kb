@@ -6,7 +6,7 @@
 >
 > Statut d'une étape : **éprouvé** (déjà fait sur un vrai client) ou **doctrine** (prévu, pas encore validé terrain). MAJ par le skill, jamais à la main de mémoire.
 
-Dernière mise à jour : 2026-07-01 (Annexe A ajoutée : runbook « monter le kit d'accompagnement » — dashboard + vault Obsidian + skills, éprouvé Alexia ; étape 1 enrichie)
+Dernière mise à jour : 2026-07-01 (étape 2b ajoutée : interview de cadrage client, gate de compréhension avant l'audit ; batterie + protocole dans `prestation/interview-cadrage.md`)
 
 ---
 
@@ -21,6 +21,12 @@ Input client : accès + exports. Output : `raw/organikk/clients/<slug>.md`. Skil
 **2. Pré-call et diagnostic d'entrée**
 Document pré-call : résumé, diagnostic, angle, état SEO (sitemaps, indexation grossière), pSEO multi-axes pressenti, roadmap 90j, notes. Réf format : `raw/organikk/pré-call/<prospect>.md`.
 Output : doc pré-call. Skills : aucun (gabarit pré-call). Statut : éprouvé.
+
+**2b. Interview de cadrage client**
+Après la signature, avant de produire quoi que ce soit : l'agent confirme qu'il a **bien compris le contexte**. Il fait tourner le scan public de `seo-pre-audit` pour former ses hypothèses, puis **interviewe Tim** en rounds thématiques (batterie resserrée ~20 questions, 8 thèmes : business, cible, différenciation/data propriétaire, état SEO, data/accès, objectif, voix/tabous, relation). Chaque question part d'une hypothèse tirée du public que Tim confirme ou corrige ; l'inconnu devient « à poser au client », jamais une invention.
+Gate : produire un bloc « Ce que j'ai compris » (15 lignes max) et le faire valider par Tim avant l'étape 3. Le cadrage oriente ce qu'on cherche dans la GSC.
+Batterie + protocole complet : `prestation/interview-cadrage.md`. Sortie stockée dans `clients/<slug>.md` section « Cadrage (interview) ».
+Input : scan public + réponses de Tim. Output : bloc cadrage validé. Skills : `seo-pre-audit` (scan), `roadmap-prestation` (orchestration). Statut : doctrine.
 
 ## Phase 1 — Diagnostic data
 

@@ -2258,3 +2258,10 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - `tsc` 0 erreur, `npm run build` OK (react-snap échoue en local = non bloquant). Push `main` (`0041266..e8c5e13`) → deploy Netlify prod `ready` sans erreur (commit_ref e8c5e13).
 - Même traitement porté sur **Qadence** (`src/components/DataSourceLogos.jsx` + `Chat.jsx`, GSC en premier car source principale, Ads bêta). Déployé prod via `netlify deploy --prod --dir=dist` → https://qadence.io.
 - Note : le commit `43baa72` (edge function `alexia-copilot/index.ts`, auto-commitée avant la session) est parti dans le même push main — sans impact front (edge function Supabase, déployée à part).
+
+## 2026-07-01 — 2 nouveaux outils gratuits : générateur mots-clés Amazon + IA
+- Cluster « générateur de mots-clés » (page qui décolle en impressions) transformé en cluster d'outils : 2 pages-outils ajoutées pour attaquer/renforcer.
+- **/generateur-mots-cles-amazon** : réutilise le MÊME moteur de scoring (`tool-keyword-generator-amazon`, copie déterministe de tool-keyword-generator), prompt calibré barre de recherche Amazon (marque/modèle/usage/avis…).
+- **/generateur-mots-cles-ia** : nouveau moteur `tool-generateur-mots-cles-ia`, angle éclatement en micro-intentions (besoin réel + requêtes + format), groupé Do/Know/Know-Simple (GEO).
+- Branché : routes App.tsx, footer Outils gratuits, sitemap + reactSnap.include (au passage ajouté /generateur-mots-cles-gratuit qui manquait au sitemap/prerender).
+- 2 edge functions déployées sur projet fusionn (fwhfnzbtlddzfxbsejyf), testées OK. Site pas encore poussé en prod.

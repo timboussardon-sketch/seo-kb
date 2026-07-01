@@ -122,3 +122,10 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - vault embarque tous les skills (skills-a-partager/, fichiers <nom>.md), ton-de-voix-tim retiré, slug client neutralisé
 - SKILLS.md + WORKFLOWS.md ajoutés aux zips ; déployé organikk.co, vérifié live
 - process reproductible ajouté : roadmap.md Annexe A « monter le kit d'accompagnement »
+
+## [2026-07-01] système | étape 2b — interview de cadrage client
+- nouvelle étape Phase 0 (2b) : gate de compréhension du contexte avant l'audit
+- batterie resserrée ~20 questions (8 thèmes) + protocole interactif : prestation/interview-cadrage.md
+- format = l'agent interviewe Tim (AskUserQuestion, hypothèses pré-remplies via seo-pre-audit)
+- roadmap.md (étape 2b), _template.md (section Cadrage), skill roadmap-prestation mis à jour
+- statut : doctrine (pas encore éprouvé sur un client)

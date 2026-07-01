@@ -1,0 +1,130 @@
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Un appart&#x27;hôtel au cœur de Bordeaux, à pied des quartiers historiques</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La résidence est au 127 cours de la Somme, dans le quartier Nansouty, à deux pas de la place de la Victoire. Le centre historique, les quais de la Garonne et la gare Saint-Jean sont accessibles à pied ou en tramway. Voici les distances réelles depuis la résidence.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"24px"} -->
+<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Quartier</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Depuis la résidence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Accès</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À voir</th></tr></thead><tbody><tr><td style="padding:10px 14px">Rue Sainte-Catherine</td><td style="padding:10px 14px">8 min</td><td style="padding:10px 14px">marche</td><td style="padding:10px 14px">1,2 km piéton, plus longue de France</td></tr><tr><td style="padding:10px 14px">Quartier Saint-Michel</td><td style="padding:10px 14px">10 min</td><td style="padding:10px 14px">marche</td><td style="padding:10px 14px">Flèche + marché</td></tr><tr><td style="padding:10px 14px">Quais rive gauche</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram C ou marche</td><td style="padding:10px 14px">7 km de promenade</td></tr><tr><td style="padding:10px 14px">Quartier Saint-Pierre</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram A</td><td style="padding:10px 14px">Cœur historique, restaurants</td></tr><tr><td style="padding:10px 14px">Triangle d&#x27;Or</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram B/C</td><td style="padding:10px 14px">Boutiques luxe + galeries</td></tr><tr><td style="padding:10px 14px">Quartier des Chartrons</td><td style="padding:10px 14px">20 min</td><td style="padding:10px 14px">tram B</td><td style="padding:10px 14px">Antiquaires + caves</td></tr><tr><td style="padding:10px 14px">Darwin Écosystème</td><td style="padding:10px 14px">25 min</td><td style="padding:10px 14px">tram A + marche</td><td style="padding:10px 14px">Skatepark + restos + street art</td></tr><tr><td style="padding:10px 14px">Bassins à flot</td><td style="padding:10px 14px">28 min</td><td style="padding:10px 14px">tram B</td><td style="padding:10px 14px">Brunch + bateaux</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Appart&#x27;hôtel, hôtel ou location : lequel choisir à Bordeaux</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Un appart'hôtel combine ce que l'hôtel et la location courte durée offrent séparément : la cuisine et l'espace d'un appartement, avec la réception, le ménage et la souplesse d'annulation d'un hôtel.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"24px"} -->
+<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Critère</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Appart&#x27;hôtel (Victoria Garden)</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Hôtel</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Location courte durée</th></tr></thead><tbody><tr><td style="padding:10px 14px">Cuisine équipée</td><td style="padding:10px 14px">Oui, dans chaque studio</td><td style="padding:10px 14px">Rarement</td><td style="padding:10px 14px">Oui</td></tr><tr><td style="padding:10px 14px">Réception et ménage</td><td style="padding:10px 14px">Oui</td><td style="padding:10px 14px">Oui</td><td style="padding:10px 14px">Non</td></tr><tr><td style="padding:10px 14px">Remise des clés</td><td style="padding:10px 14px">Sur place, à toute heure</td><td style="padding:10px 14px">Sur place</td><td style="padding:10px 14px">À organiser</td></tr><tr><td style="padding:10px 14px">Caution</td><td style="padding:10px 14px">Non</td><td style="padding:10px 14px">Non</td><td style="padding:10px 14px">Souvent demandée</td></tr><tr><td style="padding:10px 14px">Annulation souple</td><td style="padding:10px 14px">Oui, tarif flexible</td><td style="padding:10px 14px">Oui</td><td style="padding:10px 14px">Variable</td></tr><tr><td style="padding:10px 14px">Séjour au mois</td><td style="padding:10px 14px">Oui, tarif dégressif</td><td style="padding:10px 14px">Plein tarif</td><td style="padding:10px 14px">Variable</td></tr><tr><td style="padding:10px 14px">Idéal pour</td><td style="padding:10px 14px">Court et long séjour, famille, affaires</td><td style="padding:10px 14px">Court séjour</td><td style="padding:10px 14px">Séjour touristique</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Pour aller plus loin : <a href="https://www.victoriagarden.com/airbnb-ou-appart-hotel-a-bordeaux-lequel-est-vraiment-le-moins-cher/">appart&#x27;hôtel ou Airbnb à Bordeaux, lequel est le moins cher</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Quel séjour préparez-vous ?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Un week-end ou un séjour tourisme</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Le centre, les musées et le vignoble sont à portée. Consultez notre sélection <a href="#">que faire à Bordeaux depuis la résidence</a> et notre guide <a href="#">quand venir à Bordeaux</a> selon la saison.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Un séjour au mois ou longue durée</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pour une mutation, un chantier, une formation ou un logement temporaire, nos studios se louent à la semaine et au mois, avec des tarifs dégressifs et sans bail.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/appart-hotel-au-mois/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Voir nos séjours au mois</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Un séjour en famille</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nos studios communicants accueillent les familles, avec du matériel bébé sur demande. Les activités enfants (Cap Sciences, Muséum, petit train) sont à quelques minutes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Un séjour d&#x27;affaires</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>À proximité du quartier d'affaires de Mériadeck, la résidence propose une salle de réunion, la facturation avec TVA récupérable et des tarifs prépayés.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Quelle est la différence entre un hôtel et un appart'hôtel ?</strong><br>Vous disposez d'un appartement avec cuisine équipée et coin repas, tout en gardant les services d'un hôtel : réception, ménage, petit-déjeuner en option.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Peut-on réserver pour un mois ou plus ?</strong><br>Oui. Nos studios se louent à la nuit, à la semaine et au mois, avec des tarifs dégressifs et sans bail.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Le parking est-il disponible ?</strong><br>Un parking privé est accessible sur place à 15 € la nuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Peut-on obtenir une facture au nom de l'entreprise ?</strong><br>Oui, avec la TVA récupérable et des tarifs prépayés pour les séjours professionnels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Quelle est la difference entre un hotel et un appart'hotel a Bordeaux ?","acceptedAnswer":{"@type":"Answer","text":"Vous disposez d'un appartement avec cuisine equipee et coin repas, tout en gardant les services d'un hotel : reception, menage et petit-dejeuner en option."}},
+{"@type":"Question","name":"Peut-on reserver un appart'hotel a Bordeaux pour un mois ou plus ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nos studios se louent a la nuit, a la semaine et au mois, avec des tarifs degressifs et sans bail."}},
+{"@type":"Question","name":"Le parking est-il disponible a la residence ?","acceptedAnswer":{"@type":"Answer","text":"Un parking prive est accessible sur place a 15 EUR la nuit."}},
+{"@type":"Question","name":"Peut-on obtenir une facture au nom de l'entreprise ?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec la TVA recuperable et des tarifs prepayes pour les sejours professionnels."}}
+]}
+</script>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Réserver votre appart&#x27;hôtel à Bordeaux</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->

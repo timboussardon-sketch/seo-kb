@@ -14,6 +14,9 @@ Prochaine action : <ce qu'on fait ensuite>
 - GSC : <oui/non> · GA4 : <oui/non>
 - Data propriétaire reçue : <calls / tickets / CRM / avis / ton de voix>
 
+## Cadrage (interview)
+<Bloc « Ce que j'ai compris » validé par Tim, issu de l'étape 2b. Voir `prestation/interview-cadrage.md`. Vide tant que le cadrage n'est pas fait.>
+
 ## Journal des étapes faites
 | Date | Étape (roadmap) | Ce qui a été fait | Output | Skill |
 |---|---|---|---|---|
