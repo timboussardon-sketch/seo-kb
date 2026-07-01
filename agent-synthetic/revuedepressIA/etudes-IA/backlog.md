@@ -24,7 +24,11 @@
 
 ## À faire (par priorité)
 
-(vide — file épuisée)
+1. **Part de marché des moteurs IA en 2026 : Perplexity, ChatGPT Search, Google AI Mode, Copilot, Gemini** — Volume de requêtes déclarées, croissance mensuelle, préférences par cas d'usage (information factuelle, achat, local, code). Angle inédit : les études existantes mesurent qui est cité dedans ; ici on mesure qui est utilisé pour chercher. Sujets proches déjà couverts : citations-ia-domaines (06-20), claude-moteur-citation (06-26) — angle différent (côté moteur, pas côté domaine cité).
+
+2. **Contenu IA-généré et référencement : volume estimé, détection algorithmique et impact sur les classements Google 2025-2026** — Quelle proportion du contenu indexé est IA-généré ? Quels signaux Google utilise-t-il pour le détecter (HCU, Spam Update) ? Quelle corrélation avec la chute de trafic ? Sujet absent du backlog et ultra-demandé par les praticiens SEO.
+
+3. **E-E-A-T mesurable et citations IA : méthodes de quantification, corrélation auteur/entité, benchmarks 2025-2026** — Comment quantifier l'expertise et l'autorité au sens Google Quality Rater Guidelines ? Corrélation entre présence d'un auteur nommé, d'une entité vérifiée (Wikidata, LinkedIn) et le taux de citation dans les réponses IA (ChatGPT, Perplexity, AIO). Complémentaire du profil technique (06-30) : là où cette étude couvrait la structure HTML, ici on couvre le signal d'autorité.
 
 ## Sujets écartés (avec raison)
 (vide)
