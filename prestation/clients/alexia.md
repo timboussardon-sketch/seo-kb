@@ -21,6 +21,8 @@ Prochaine action : Alexia choisit le 1er compte pilote → dérouler le workflow
 |---|---|---|---|---|
 | 2026-06-11 | 1 | Email onboarding + dashboard + 3 docs contexte | public/alexia-accompagnement/ | — |
 | 2026-06-18 | setup | Repo `alexia-seo` (modèle Leexi), pack submodule 11 skills, 3 docs déposés dans brain/voix-alexia/, workflow mots-clés câblé | ~/Code/alexia-seo | pack |
+| 2026-06-30 | setup | Onglet **Installation** au dashboard : vault Obsidian épuré (227 notes, `AGENTS.md` inclus, 0 PII tiers / 0 secret) + step-by-step Cowork méthode raw→wiki (ranger le vault dans son dossier claude, prompts d'ingestion). Déployé sur organikk.co | public/alexia-accompagnement/ + vault-seo-organikk.zip | — |
+| 2026-07-01 | 1 | Kit d'accompagnement complet : `SKILLS.md` + `WORKFLOWS.md` ajoutés aux 3 zips (dataset, cowork-pack, vault) ; vault embarque **tous les skills** dans `skills-a-partager/` (fichiers renommés `<nom>.md`), `ton-de-voix-tim` retiré (voix perso), slug client `feedback_golfiller_*` neutralisé. Process capitalisé en **Annexe A** de la roadmap | public/alexia-accompagnement/ (vault-seo-organikk.zip, alexia-dataset.zip) | roadmap-prestation |
 
 ## Spécificités client
 - Multi-client (12+ comptes) : `data/clients/<slug>/` par compte, pas mono-marque comme Leexi.

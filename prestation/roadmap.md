@@ -6,7 +6,7 @@
 >
 > Statut d'une étape : **éprouvé** (déjà fait sur un vrai client) ou **doctrine** (prévu, pas encore validé terrain). MAJ par le skill, jamais à la main de mémoire.
 
-Dernière mise à jour : 2026-06-26 (leexi étape 7 éprouvée : cocons mère/fille/petite-fille + couche GEO transversale + inventaire 5 seaux + livrable Google Doc ; étape 6 enrichie : grounding fan-out + confrontation GSC)
+Dernière mise à jour : 2026-07-01 (Annexe A ajoutée : runbook « monter le kit d'accompagnement » — dashboard + vault Obsidian + skills, éprouvé Alexia ; étape 1 enrichie)
 
 ---
 
@@ -15,6 +15,7 @@ Dernière mise à jour : 2026-06-26 (leexi étape 7 éprouvée : cocons mère/fi
 **1. Onboarding et récupération des accès + data propriétaire**
 Récupérer : accès Search Console + GA4, et la data métier (transcripts de calls commerciaux, tickets SAV, e-mails, CRM, avis clients, ton de voix). Sans data propriétaire en input, le système ne tourne pas, c'est le pré-requis non négociable.
 Premier contact post-vente : envoi du dashboard client + 3 docs de contexte à remplir (about-me, my-rules, my-voice) + vidéo explicative. Modèle d'email : `prestation/emails.md` §1 (exemple Alexia 2026-06-11).
+Le montage technique du kit livré au client (dashboard + kit skills + vault Obsidian zippé) suit un process reproductible : **cf. Annexe A — Runbook « monter le kit d'accompagnement »** (éprouvé Alexia 2026-07-01).
 Input client : accès + exports. Output : `raw/organikk/clients/<slug>.md`. Skills : aucun. Statut : éprouvé.
 
 **2. Pré-call et diagnostic d'entrée**
@@ -95,5 +96,197 @@ Statut : doctrine.
 ## Index clients
 - [[prestation/clients/golfiller]] — e-commerce balles occasion, à l'étape 11 (brief Hn page usage ; modèles directory usage/besoin ajouté)
 - [[prestation/clients/leexi]] — B2B SaaS notetaker IA, étape 7 éprouvée (3 cocons mère/fille/petite-fille : notetaker/réunion + RGPD + couche GEO transversale ; 259 mots-clés en inventaire 5 seaux ; livrable Google Doc à valider) ; espace client complet (audit + mots-clés + assistant RAG)
+- [[prestation/clients/alexia]] — accompagnement 1:1 consultante SEO (agence e-commerce), setup système ; kit d'accompagnement complet livré (dashboard + kit skills + vault Obsidian avec tous les skills) — client de référence de l'Annexe A
+
+---
+
+## Annexe A — Runbook détaillé : monter le kit d'accompagnement (dashboard + vault + skills)
+
+> Ce qu'on livre à CHAQUE nouveau client pour qu'il branche la doctrine et les skills dans son Claude (Cowork ou Claude Code). Process reproductible à l'identique, commande par commande. **Éprouvé : Alexia (2026-07-01).** Suivre les étapes dans l'ordre : chacune finit par un **point de contrôle** à vérifier avant de passer à la suite.
+>
+> Convention : `<slug>` = identifiant client (ex. `alexia`). Remplacer partout. Les commandes sont copiables telles quelles après avoir posé la variable `SLUG`.
+
+### A.0 — Les 3 artefacts livrés (vue d'ensemble)
+
+| Artefact | Fichier | Rôle | Format skill |
+|---|---|---|---|
+| **Dashboard** | `organikk-next/public/<slug>-accompagnement/index.html` (+ `dataset.html`) | Page d'accueil client : install, workflows, livrables | — |
+| **Kit « dataset »** | `public/<slug>-accompagnement/alexia-dataset.zip` + repo privé `alexia-seo-kit` | Chemin d'install PROPRE des skills (déjà `SKILL.md`) | `SKILL.md` |
+| **Vault Obsidian** | `public/<slug>-accompagnement/vault-seo-organikk.zip` | Doctrine complète + skills lisibles dans Obsidian | `<nom>.md` |
+
+Le dashboard sert les deux zips en téléchargement. Le vault et le kit portent les mêmes skills, à deux formats : le kit pour brancher vite, le vault pour lire/naviguer dans Obsidian.
+
+### A.1 — Prérequis (une fois)
+
+```bash
+# repos et venv attendus
+ls ~/Code/organikk-next          # site (Netlify auto-deploy sur push main)
+ls ~/Code/alexia-seo             # générateur du kit (build-dataset.py)
+ls ~/Code/alexia-seo-kit         # repo skills poussé, cloné par le client
+ls ~/Code/seo-kb/.venv/bin/python  # venv qui a pyyaml + modules du vault
+```
+
+Pose les variables de session (réutilisées dans tout le runbook) :
+
+```bash
+SLUG=alexia                                   # <-- slug du client
+ON=~/Code/organikk-next
+PUB="$ON/public/${SLUG}-accompagnement"
+KIT=~/Code/alexia-seo-kit
+```
+
+### A.2 — Étape 1 : dashboard client
+
+Cloner le dashboard d'un client existant, puis adapter.
+
+```bash
+cp -R "$ON/public/alexia-accompagnement" "$PUB"     # gabarit de référence = Alexia
+```
+
+À adapter dans `$PUB/index.html` : nom du client, contexte, voix, liens des workflows (Google Docs), libellés de téléchargement. **Garder** `<meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />` sur chaque page (`index.html`, `dataset.html`) — un espace client ne s'indexe jamais.
+
+**Point de contrôle** : `grep -c 'noindex' "$PUB/index.html" "$PUB/dataset.html"` > 0 sur chaque fichier.
+
+### A.3 — Étape 2 : kit skills « dataset » (source des skills)
+
+Le kit est généré, pas assemblé à la main. Il produit les skills au bon format `SKILL.md` + les catalogues `SKILLS.md` / `WORKFLOWS.md`, et sert de source à l'étape vault.
+
+```bash
+cd ~/Code/alexia-seo
+./build-dataset.sh          # lance build-dataset.py (venv seo-kb) PUIS git push alexia-seo-kit
+```
+
+Ce que ça fait : régénère `~/Code/alexia-seo-kit/` (34 dossiers de skills + `seo-doctrine/` + `SKILLS.md` + `WORKFLOWS.md`), écrit le zip miroir `alexia-dataset.zip` sur le dashboard, puis commit + push le repo kit.
+
+**Point de contrôle** — la sortie doit afficher :
+```
+garde-fou fuite client : ✓ aucun
+```
+Si elle affiche « ✗ FUITE CLIENT détectée », le build s'arrête : corriger la source du skill fautif avant de continuer (cf. A.5, piège `\b`).
+
+> Limite connue : `build-dataset.py` écrit un chemin **codé en dur** (`ZIP_DST = .../alexia-accompagnement/alexia-dataset.zip`). Pour un autre slug, éditer `ZIP_DST` (et le nom du repo `OUT`) avant de lancer, ou copier le zip produit vers `$PUB/`. TODO : paramétrer par `SLUG`.
+
+### A.4 — Étape 3 : vault Obsidian zippé
+
+**Automatisé** depuis 2026-07-01 par `alexia-seo/build-vault.py` (une commande) :
+
+```bash
+cd ~/Code/alexia-seo && ./build-vault.sh "$SLUG"
+```
+
+Le script part de la doctrine du zip vault existant (baseline), ré-injecte TOUS les skills du kit (sauf `ton-de-voix-tim`), renomme chaque `SKILL.md` en `<nom>.md`, régénère `SKILLS.md` / `WORKFLOWS.md` / la section skills de `000-START-HERE.md`, lance les garde-fous confidentialité (A.5) et re-zippe. Idempotent. Il **ne déploie pas** : il écrit le zip, le push reste explicite (A.6). Sortie attendue : `garde-fou confidentialité : ✓ aucun`.
+
+> Le détail ci-dessous documente ce que fait le script (utile pour débugger ou monter un vault à la main si besoin). Le déroulé manuel se fait dans un dossier de travail jetable.
+
+```bash
+WORK="$(mktemp -d)"; cd "$WORK"
+unzip -q "$PUB/vault-seo-organikk.zip"        # -> $WORK/vault-seo-organikk/
+V="$WORK/vault-seo-organikk"
+SAP="$V/skills-a-partager"
+```
+
+**3a. Peupler `skills-a-partager/` avec TOUS les skills** (depuis le kit de l'étape 2) :
+
+```bash
+rm -rf "$SAP"; mkdir -p "$SAP"
+for d in "$KIT"/*/; do name=$(basename "$d"); cp -R "$d" "$SAP/$name"; done
+find "$SAP" -name .DS_Store -delete
+```
+
+**3b. Retirer la voix perso de Tim** (jamais chez un client) :
+
+```bash
+rm -rf "$SAP/ton-de-voix-tim"
+```
+
+**3c. Renommer chaque `SKILL.md` en `<nom>.md`** (sinon 30+ fichiers « SKILL » illisibles dans Obsidian) :
+
+```bash
+for d in "$SAP"/*/; do n=$(basename "$d"); [ -f "$d/SKILL.md" ] && mv "$d/SKILL.md" "$d/$n.md"; done
+find "$SAP" -maxdepth 2 -name SKILL.md      # doit être VIDE
+```
+
+**3d. Catalogues + porte d'entrée.** Copier les catalogues générés par le kit et adapter leur intro au contexte vault :
+
+```bash
+cp "$KIT/SKILLS.md" "$KIT/WORKFLOWS.md" "$V/"
+```
+Puis éditer à la main :
+- `SKILLS.md` / `WORKFLOWS.md` : intro « les skills sont dans `skills-a-partager/`, pour les activer copie-les dans `~/.claude/skills/` **en renommant en `SKILL.md`** ». Retirer la fiche `ton-de-voix-tim` de `SKILLS.md` (elle n'est plus dans le pack) et ajuster le compte.
+- `000-START-HERE.md` : section « Les skills et workflows » qui pointe vers `skills-a-partager/` (nb de skills), `SKILLS.md`, `WORKFLOWS.md`, avec la consigne de renommage à l'install.
+
+**3e. Re-zipper avec le wrapper `vault-seo-organikk/`** (structure exacte du zip d'origine) :
+
+```bash
+cd "$WORK"; find . -name .DS_Store -delete
+rm -f "$PUB/vault-seo-organikk.zip"
+zip -rqX "$PUB/vault-seo-organikk.zip" vault-seo-organikk -x '*.DS_Store'
+```
+
+**Point de contrôle** :
+```bash
+unzip -l "$PUB/vault-seo-organikk.zip" | grep -c 'skills-a-partager/[^/]*/SKILL.md'   # = 0 (tout renommé)
+unzip -l "$PUB/vault-seo-organikk.zip" | grep -cE 'skills-a-partager/[^/]+/[^/]+\.md'  # = nb de skills
+```
+
+### A.5 — Étape 4 : garde-fous confidentialité (OBLIGATOIRE avant deploy)
+
+Deux catégories de fuite : **clients privés** (Leexi, FG Formation → jamais nulle part) et **slugs internes** (`feedback_<client>_...` dans les skills). Golfiller est un cas **public** : toléré dans la doctrine (`wiki/`, `raw/`), jamais dans un fichier de skill.
+
+```bash
+# 1) clients privés : doit être VIDE partout dans le vault
+grep -rliE "leexi|fg.?formation" "$V"
+
+# 2) slugs/refs dans les skills livrés : doit être VIDE (scan SANS \b, cf. piège)
+grep -rliE "leexi|fg.?formation|golfiller" "$SAP"
+```
+
+Si le second scan remonte un fichier, ouvrir et **neutraliser la référence** (ex. remplacer `` (cf. `feedback_golfiller_sources_sites_marques` : …) `` par une formulation générique), puis re-zipper (A.3e) et re-scanner. **Ne pas déployer tant que les deux scans ne sont pas vides.**
+
+### A.6 — Étape 5 : deploy + vérification live
+
+`organikk.co` auto-déploie sur push `main` (Netlify). Règle dure : le push = la prod → obtenir le feu vert de Tim.
+
+```bash
+cd "$ON"
+git add "public/${SLUG}-accompagnement/"
+git commit -m "Kit d'accompagnement <slug> : dashboard + kit skills + vault (tous les skills)"
+git push origin HEAD
+```
+
+Vérifier **en live** (Netlify propage en ~40-60 s → boucler 2-3 fois) :
+
+```bash
+cd "$(mktemp -d)"; curl -s -o v.zip "https://organikk.co/${SLUG}-accompagnement/vault-seo-organikk.zip"
+echo "skills          : $(unzip -l v.zip | grep -cE 'skills-a-partager/[^/]+/[^/]+\.md')"
+echo "SKILL.md restants: $(unzip -l v.zip | grep -c 'skills-a-partager/[^/]*/SKILL.md')"   # doit être 0
+echo "ton-de-voix-tim : $(unzip -l v.zip | grep -c 'skills-a-partager/ton-de-voix-tim/')"  # doit être 0
+```
+
+### A.7 — Étape 6 : libellés du dashboard
+
+Mettre à jour dans `$PUB/index.html` (deux endroits : le corps du step « Récupère le vault » et le sous-titre du bouton de téléchargement) : **nb de notes de doctrine**, **nb de skills**, **taille du zip**. Idem `dataset.html` si présent. Distinguer proprement : « notes » = fichiers `.md` de doctrine ; le nombre d'**entrées** du zip (dossiers + `.obsidian`) est plus grand, ne pas le confondre avec les notes.
+
+### A.8 — Checklist finale
+
+- [ ] Dashboard cloné, adapté, `noindex` sur toutes les pages
+- [ ] `build-dataset.sh` OK (« fuite client : ✓ aucun »), repo kit poussé
+- [ ] Vault : tous les skills dans `skills-a-partager/`, fichiers `<nom>.md` (0 `SKILL.md`), `ton-de-voix-tim` retiré
+- [ ] `SKILLS.md` / `WORKFLOWS.md` / `000-START-HERE.md` à jour (comptes + consigne de renommage)
+- [ ] Scans confidentialité vides (clients privés + slugs dans les skills)
+- [ ] Push organikk-next (feu vert Tim) + vérif live curl OK
+- [ ] Libellés dashboard à jour (notes + skills + taille)
+- [ ] Tracker client + `log.md` mis à jour (boucle d'apprentissage)
+
+### A.9 — Pièges & dette technique
+
+- **Regex `\b` — RÉSOLU (2026-07-01)** : le `sanitize()` de `build-dataset.py` utilisait `\b(...)\b`, qui **rate les slugs collés aux underscores** (`feedback_golfiller_sources_...`). Corrigé en frontières « lettres » `(?<![a-z])(...)(?![a-z])` (attrape underscore/chiffre comme frontière). `build-vault.py` applique le même scan. Le double scan de A.5 reste une ceinture de sécurité.
+- **Build vault reproductible — RÉSOLU (2026-07-01)** : `alexia-seo/build-vault.py` automatise l'étape A.4 (baseline doctrine + injection skills + renommage + catalogues + garde-fous + zip, idempotent). L'ancien assemblage manuel n'est plus la voie normale.
+- **`build-dataset.py` mono-client** : `ZIP_DST` et le repo `OUT` sont codés en dur sur Alexia. Paramétrer par `SLUG` avant multi-clients.
+- **Nom de fichier skill** : `SKILL.md` (nom exact) est requis pour le déclenchement auto Claude/Cowork. Les `<nom>.md` du vault sont **uniquement** pour la lecture Obsidian → l'install doit les renommer en `SKILL.md`. Le kit dataset, lui, est déjà au bon format : c'est le chemin d'install à recommander.
+- **Deux chemins d'install** : kit dataset (rapide, déjà `SKILL.md`) vs vault (lisible, à renommer). Ne pas les confondre dans la com client.
+- **Cache CDN** : après deploy, un ancien zip peut rester en cache navigateur → re-télécharger avec `?v=2`. La vérif `curl` tape l'origine et voit la vraie version.
+
+Statut : éprouvé (Alexia).
 
 Pages liées : [[golfiller-strat]] · [[clusters/modeles-pseo-2026-06-10-golfiller]] · [[queries/2026-06-10-golfiller-gsc-6mois]] · [[concepts/product-led-seo]] · [[concepts/know-simple-know-do]]
