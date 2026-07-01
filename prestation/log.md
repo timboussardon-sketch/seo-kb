@@ -117,3 +117,8 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - étape 7 : architecture 3 cocons mère/fille/petite-fille (notetaker + RGPD + couche GEO transversale), arbitrage cannibalisation ; couche GEO ≠ cocon produit (décision)
 - livrable client : Google Doc 4 mots-clés business + cocons à valider
 - capitalisé dans roadmap.md : étape 6 (grounding fan-out + GSC + 5 seaux), étape 7 passée éprouvée (cocons mère/fille/petite-fille + couche GEO + test cannibalisation SERP)
+
+## [2026-07-01] alexia | étape 1 | Kit d'accompagnement livré + runbook capitalisé (Annexe A roadmap)
+- vault embarque tous les skills (skills-a-partager/, fichiers <nom>.md), ton-de-voix-tim retiré, slug client neutralisé
+- SKILLS.md + WORKFLOWS.md ajoutés aux zips ; déployé organikk.co, vérifié live
+- process reproductible ajouté : roadmap.md Annexe A « monter le kit d'accompagnement »
