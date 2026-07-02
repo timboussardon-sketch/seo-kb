@@ -9,7 +9,7 @@
 ## Où on en est
 Étape courante : 7 (architecture en cocons — 3 cocons mère/fille/petite-fille arrêtés, livrable client prêt à envoyer)
 Prochaine action : (1) **envoyer le Google Doc** à Leexi pour validation des 4 mots-clés business + récupérer les cas clients chiffrés (carburant citation IA) + réponses HDS/URLs ancien site ; (2) **confronter l'overlap SERP réel** (SE Ranking) sur les pages P1, surtout zones à risque visio et ISO ; (3) réparer la refonte (301/canonicals/maillage, préalable technique non négociable) ; (4) brief par page de la vague 1.
-À trancher : les 3 cocons du 26/06 vivent dans `seo-kb/raw/organikk/clients/leexi/keywords/` ; **à consolider dans le repo leexi-seo** (règle « tout livrable dans le repo client »), articuler avec l'ancien `Strategie-clusters-leexi.md` du 17/06 (le restructuré du 26/06 fait foi : notetaker/réunion + RGPD + couche GEO).
+À trancher : plus rien côté rangement (consolidation faite le 02/07, architecture canonique dans `leexi-seo/production/cocons/`). Restent les arbitrages client : faits de conformité publiables, CTA essai vs démo, mode de publication Strapi.
 
 ## Accès et data
 - GSC : oui (4 exports dans `leexi-seo/data/gsc/`, manque l'export requête × page) · GA4 : non
@@ -40,6 +40,7 @@ Prochaine action : (1) **envoyer le Google Doc** à Leexi pour validation des 4 
 | 2026-06-26 | 6 | inventaire complet 259 mots-clés : fan-out WebSearch parallèle par branche (PAA/SERP réelles) + confrontation GSC (signaux `teams compte rendu réunion automatique` pos 5,3 sans page, `agent ia entreprise` 310 impr, `best ai note taker for lawyers` EN) ; réparti en 5 seaux (Money / Longue traîne / Questions / Sous-exploitées / SERP faibles) ; comparatifs vs outils US uniquement | `keywords/liste-mots-cles-complete.md` + `keywords/clusters-2026-06-26.md` | seo-recherche-mots-cles + seo-clustering-mots-cles |
 | 2026-06-26 | 7 | architecture restructurée en 3 cocons mère/fille/petite-fille : (1) notetaker/réunion produit, (2) RGPD différenciateur, (3) couche GEO transversale (problèmes métier « comment… », citation IA + maillage, PAS un cocon produit) ; arbitrage cannibalisation explicite, décision couche GEO ≠ doublon des usages | `keywords/cocon-1/2/3-*.md` + `keywords/arborescence-cocons.md` | seo-cluster-aeo |
 | 2026-06-26 | 7 | livrable client : 4 mots-clés business + 3 cocons à valider, Google Doc mère/fille/petite-fille (vrais mots-clés), voix Tim factuelle, titres bleus | [Google Doc archi](https://docs.google.com/document/d/1dhQOMflYoDcTsSWELYZWZYBUGTiYWpJfI89TTtdJTPM/) + [Google Doc mots-clés business](https://docs.google.com/document/d/1hsVZmZvzh6RcGzaDSRDVUHs0JNCE4cB3KCk18GcSjxw/) + `livrable-mots-cles-business.md` | aucun |
+| 2026-07-02 | 7 | consolidation de l'architecture du 26/06 dans le vault Obsidian client (`production/cocons/`, 6 fichiers, wikilinks raccordés), supersession du découpage 17/06 marquée sur `Strategie-clusters-leexi.md`, 000-home + Journal du repo client mis à jour (la session du 26/06 n'y était pas loggée), notes de canonicité posées côté seo-kb | `leexi-seo/production/cocons/` (commit 0205437) | aucun |
 
 ## Spécificités client
 - Relancer `python3 scripts/export-kb-chat.py` (repo leexi-seo) après toute session qui modifie le vault, pour que l'assistant de l'espace reste à jour.
