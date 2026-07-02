@@ -969,3 +969,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - source: [[Playbook-Reddit-SEO-GEO]]
 - pages créées: 2 (raw/reddit-playbook/Routine-quotidienne.md, raw/reddit-playbook/Journal.md)
 - quotas posés: 4-6 commentaires/jour (plafond 10), 1 mention/semaine, 1 post/semaine (mar-mer 19-22h Manille), bilan vendredi, refresh 90j
+
+## [2026-07-02] verification | Routine Reddit vérifiée contre le web
+- 3 audits web parallèles (~25 sources 2025-2026) sur la routine [[Playbook-Reddit-SEO-GEO]]
+- corrections: plafond commentaires 10→8, plafond dur 3 posts/semaine, fenêtre post 1h+6-10h, cross-post 6h+/3-4 subs, refresh 90j nuancé (threads cités = ~900j d'âge moyen, Semrush)
+- ajouts: ciblage threads déjà positionnés Google (Perplexity source via SERP), format 120-200 mots, pas de seuil d'upvotes (80% des cités <20), liste fixe 15-20 requêtes acheteur, section 2026 (pages traduites ?tl=, Reddit Answers)
