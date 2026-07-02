@@ -1,4 +1,5 @@
 ---
+---
 client: leexi
 type: recherche-mots-cles
 theme: Inventaire complet des mots-clés — 2 cocons, 12 branches
@@ -13,11 +14,14 @@ related:
   - "[[recherche-2026-06-16-rgpd]]"
 ---
 
+> **Consolidé le 2026-07-02** : la version de travail canonique vit dans le repo `leexi-seo`, `production/cocons/liste-mots-cles-complete.md`. Ce fichier reste l'archive seo-kb.
+
 # Inventaire complet des mots-clés — Leexi (2 cocons)
 
 > Tous les mots-clés de chaque branche de chaque cocon. Grounding : data réelle WebSearch du 2026-06-26 (SERP, PAA, autocomplétion) + les 56 MC du [[recherche-2026-06-16-rgpd]] remappés sur les branches.
 > **Pas de colonne Volume** (décision Tim). Difficulté = proxy déclaratif (Faible / Moyenne / Élevée). Funnel : Know / Considération / Décision.
 
+---
 ---
 
 # COCON 1 — Notetaker IA / prise de notes de réunion
@@ -206,6 +210,7 @@ related:
 | meilleur notetaker ia sécurisé 2026 | Know | Moyenne | Know | Classement par certifications réelles |
 
 ---
+---
 
 # COCON 2 — Prise de notes / notetaker conforme RGPD
 
@@ -335,6 +340,7 @@ related:
 | outil ia certifié iso 27001 | Do | Faible | Décision | Réassurance + différenciant (pont Cocon 1 B7) |
 | registre des traitements transcription | Know | Faible | Know | Obligation documentaire |
 
+---
 ---
 
 ## Synthèse chiffrée

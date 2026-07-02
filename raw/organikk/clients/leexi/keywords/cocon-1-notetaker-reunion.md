@@ -1,4 +1,5 @@
 ---
+---
 client: leexi
 type: cluster
 theme: Notetaker IA / prise de notes de réunion (pilier produit)
@@ -13,6 +14,8 @@ related:
   - "[[cocon-2-prise-de-notes-rgpd]]"
 ---
 
+> **Consolidé le 2026-07-02** : la version de travail canonique vit dans le repo `leexi-seo`, `production/cocons/cocon-1-notetaker-reunion.md`. Ce fichier reste l'archive seo-kb.
+
 # Cocon 1 — Notetaker IA / prise de notes de réunion
 
 > Pilier produit cœur de Leexi. Architecture AEO : 1 page = 1 intention de SERP, Know-Simple / Know / Do, maillage intentionnel des pages Know/info vers les pages Do (outil + démo).
@@ -26,6 +29,7 @@ related:
 - **Absorption de la couche GEO (décision 2026-06-26)** : les pages usage (branche 4) et secteur (branche 2) **absorbent en H2/FAQ** les angles « comment… » repliés depuis la [[cocon-3-middle-funnel-metier|couche GEO]] (ex-cocon 3) : compte rendu d'un call commercial, comparer deux candidats, gagner du temps sur les CR d'entretien, CR de mission en conseil, CR en cabinet comptable, PV de conseil municipal. Pas de page dédiée pour ces angles, ils enrichissent la page produit correspondante (bon pour le GEO, zéro cannibalisation).
 
 ---
+---
 
 ## Page pilier
 
@@ -33,6 +37,7 @@ related:
 |---|---|---|---|---|
 | **Notetaker IA / prise de notes de réunion par IA** (pilier) | Know + Do | Page produit answer-first + démo intégrée | SoftwareApplication + FAQPage | Haute |
 
+---
 ---
 
 ## Branche 1 — Notetaker + type de réunion
@@ -146,6 +151,7 @@ related:
 | Notetaker IA SOC 2 | Do | Page réassurance acheteur entreprise | SoftwareApplication | Basse |
 | Certifications d'un outil de transcription IA (checklist ISO/SOC 2/RGPD) | Know-Simple | Contenu extractible (IA) | FAQPage | Basse |
 
+---
 ---
 
 ## Maillage interne (règles)

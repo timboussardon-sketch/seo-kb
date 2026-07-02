@@ -1,4 +1,5 @@
 ---
+---
 client: leexi
 type: recherche-mots-cles
 theme: Conformité RGPD des outils IA
@@ -6,6 +7,8 @@ date: 2026-06-16
 skill: seo-recherche-mots-cles
 statut: liste qualifiée — prêt pour clustering
 ---
+
+> **Consolidé le 2026-07-02** : la version de travail canonique vit dans le repo `leexi-seo`, `production/cocons/recherche-2026-06-16-rgpd.md`. Ce fichier reste l'archive seo-kb.
 
 # Recherche mots-clés — Conformité RGPD des outils IA (Leexi)
 

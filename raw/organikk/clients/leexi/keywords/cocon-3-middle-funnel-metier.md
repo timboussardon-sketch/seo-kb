@@ -1,4 +1,5 @@
 ---
+---
 client: leexi
 type: cluster
 theme: Cocon 3 — Problématiques IA métier (par fonction + secteur)
@@ -10,6 +11,8 @@ related:
   - "[[cocon-1-notetaker-reunion]]"
   - "[[cocon-2-prise-de-notes-rgpd]]"
 ---
+
+> **Consolidé le 2026-07-02** : la version de travail canonique vit dans le repo `leexi-seo`, `production/cocons/cocon-3-middle-funnel-metier.md`. Ce fichier reste l'archive seo-kb.
 
 # Cocon 3 — Problématiques IA métier
 
@@ -26,6 +29,7 @@ related:
 - **Format** : answer-first, problème en H1, réponse extractible (procédure / tableau), data propriétaire Leexi, CTA vers la page business.
 - **Mesure** : citations IA + trafic référent (ChatGPT/Perplexity) + leads assistés par maillage.
 
+---
 ---
 
 ## Branche A — IA pour les commerciaux (Sales)
@@ -72,6 +76,7 @@ related:
 | agent IA pour équipe commerciale / sales | Branche A + intégrations CRM |
 | comment utiliser un agent IA pour automatiser les comptes rendus | Pont vers le cocon 1 (compte rendu auto) |
 
+---
 ---
 
 ## Maillage interne

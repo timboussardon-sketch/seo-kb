@@ -1,4 +1,5 @@
 ---
+---
 client: leexi
 type: cluster
 theme: Prise de notes / notetaker conforme RGPD (pilier conformité)
@@ -14,6 +15,8 @@ related:
   - "[[recherche-2026-06-16-rgpd]]"
 ---
 
+> **Consolidé le 2026-07-02** : la version de travail canonique vit dans le repo `leexi-seo`, `production/cocons/cocon-2-prise-de-notes-rgpd.md`. Ce fichier reste l'archive seo-kb.
+
 # Cocon 2 — Prise de notes / notetaker conforme RGPD
 
 > Pilier conformité de Leexi : le RGPD / la souveraineté comme **critère de choix d'outil**, no-go absolu pour une partie des clients. Reprend les 56 mots-clés qualifiés du [[recherche-2026-06-16-rgpd]] + complète secteurs et comparatifs (WebSearch 2026-06-26).
@@ -26,6 +29,7 @@ related:
 - **Frontière avec le Cocon 1** : ici l'angle est **légal / RGPD / souveraineté** ; la conformité **ISO / sécurité produit** (certifications, chiffrement) vit dans la branche 7 du [[cocon-1-notetaker-reunion]]. La branche 5 ci-dessous ne garde du transverse conformité que le volet **juridique/contractuel** (DPA, AI Act, registre).
 
 ---
+---
 
 ## Page pilier
 
@@ -33,6 +37,7 @@ related:
 |---|---|---|---|---|
 | **Outil IA / notetaker conforme RGPD** (pilier) | Do | Page produit answer-first + démo | SoftwareApplication + FAQPage | Haute |
 
+---
 ---
 
 ## Branche 1 — Prise de notes RGPD (cœur Do + info juridique)
@@ -108,6 +113,7 @@ related:
 | Registre des traitements pour la transcription IA | Know | Guide documentaire | Article | Basse |
 | Données personnelles dans la transcription IA (base juridique) | Know | Guide juridique | Article | Basse |
 
+---
 ---
 
 ## Maillage interne (règles)
