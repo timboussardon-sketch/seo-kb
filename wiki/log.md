@@ -964,3 +964,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - mouvement skip : golfiller-strat sort du backlog → skip documenté (déjà acté W26, 2ᵉ non-exécution)
 - prochain lot proposé : etude-ctr-ai-overviews-gsc + dossier Leexi (call 06-24 + recherche kw RGPD) — lot W27 voté en W26, toujours non exécuté, tiré par la newsletter « mots-clés non mangés »
 - nouveaux skips: aucun
+
+## [2026-07-02] doctrine | Routine quotidienne Reddit + Journal
+- source: [[Playbook-Reddit-SEO-GEO]]
+- pages créées: 2 (raw/reddit-playbook/Routine-quotidienne.md, raw/reddit-playbook/Journal.md)
+- quotas posés: 4-6 commentaires/jour (plafond 10), 1 mention/semaine, 1 post/semaine (mar-mer 19-22h Manille), bilan vendredi, refresh 90j
