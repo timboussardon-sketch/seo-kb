@@ -46,7 +46,9 @@ Ouvre les alertes F5Bot (Qadence, organikk, fusionn, ton nom). Deux buts : repé
 **2. Réponses (5 min).**
 Réponds à 100 % des commentaires et DM reçus depuis hier. C'est la règle la plus rentable de la routine : l'engagement nourrit le ranking des threads et le karma.
 
-**3. Commentaires (15 min).**
+**3. Commentaires (15 min ; ~8-10 min avec le cockpit).**
+Le Reddit Cockpit (`~/Code/reddit-cockpit/`, launchd 07h50) prépare chaque matin une file de drafts dans `queue/AAAA-MM-JJ.md` : threads scorés + 1-2 commentaires pré-rédigés en ta voix, quotas rappelés en tête. Tu relis, tu ajustes, tu colles à la main : la machine ne publie jamais. Sans le cockpit (ou pour compléter), la sélection manuelle suit les mêmes règles :
+
 4 à 6 commentaires utiles. La sélection des threads compte plus que le nombre :
 
 - **Priorité 1 : les threads qui rankent déjà sur Google** sur tes requêtes acheteur (`site:reddit.com "best ai seo tool"` etc.). C'est le levier GEO le plus rapide : Perplexity source Reddit via les SERP Google (révélé par le procès Reddit v. Perplexity, oct. 2025), donc un commentaire dans un thread déjà positionné apparaît dans Perplexity en quelques jours.
