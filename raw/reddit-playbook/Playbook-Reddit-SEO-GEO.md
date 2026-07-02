@@ -5,7 +5,7 @@ title: Playbook Reddit (SEO + GEO) : être lu par Google et cité par les IA
 aliases: [playbook-reddit, reddit-seo, reddit-geo, strategie-reddit]
 tags: [seo, geo, reddit, aeo, parasite-seo, ia, llm, gummysearch]
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-07-02
 sources: 11
 confidence: medium
 status: draft
@@ -57,6 +57,16 @@ Plus une question de fond : peut-on vraiment construire une audience sur Reddit,
 2. Pas de coup éclair. On construit une présence durable qui nourrit le SEO dans le temps, pas un pic de trafic jetable.
 
 Posture au lancement : faible conviction assumée. Les raisons d'y aller quand même sont le poids réel de Reddit dans Google depuis le deal data, et sa place de source n°1 ou 2 citée par les moteurs IA (chiffres sourcés en §1 et §2, à ne pas confondre avec les estimations larges qui circulent sur le trafic total). Et la méthode reste celle du système SEO : pas deux ou trois prompts lancés à la main, mais une recherche outillée qui va chercher les signaux là où ils sont (Reddit, mais aussi X.com, voir §9).
+
+---
+
+## L'exécution : routine quotidienne + Reddit Cockpit (depuis 2026-07-02)
+
+Ce playbook a une couche d'exécution, dans le même dossier :
+
+- **[[Routine-quotidienne]]** : les quotas opérationnels (4-6 commentaires/jour plafond 8, 1 mention/semaine, 1 post/semaine plafond dur 3, bilan du vendredi sur liste fixe de requêtes). Dérivée de ce playbook puis vérifiée contre ~25 sources web le 2026-07-02 ; c'est elle qui fait foi sur les chiffres d'exécution quand elle diverge du corps de ce document.
+- **[[Journal]]** : le suivi append-only (une ligne par jour, un bloc par bilan hebdo).
+- **Le Reddit Cockpit** (`~/Code/reddit-cockpit/`, jumeau du x-cockpit) : chaque matin à 07h50, un scrape RSS en lecture seule des subs cibles et des requêtes acheteur, puis un drafting automatique de 1-2 commentaires par thread retenu (anglais, 120-200 mots, ton documentation, quotas vérifiés contre le Journal), déposés dans `queue/AAAA-MM-JJ.md`. Règle dure identique au x-cockpit : la machine ne publie jamais, le clic reste manuel. Ramène le bloc commentaires de la routine à ~10-12 minutes par jour.
 
 ---
 
@@ -126,9 +136,9 @@ Interdits absolus : astroturfing, faux comptes, faux avis. C'est détecté, sanc
 
 Les moteurs IA reprennent plus volontiers un texte formulé comme une source de référence. Concrètement : retire « je pense », « à mon avis », « on croit que », et écris en définitions précises, données vérifiables, process structurés. Une formulation neutre et factuelle augmente la probabilité d'être repris comme source de vérité (Reddit GEO Playbook, Medium, mai 2026, recoupé sur plusieurs guides GEO 2026).
 
-### Entretenir la fraîcheur (cycle 90 jours)
+### Entretenir la fraîcheur (cycle mensuel, nuancé 2026-07-02)
 
-Perplexity privilégie le contenu de moins de douze mois. Tactique concrète : revenir sur tes réponses tous les 90 jours pour mettre à jour un chiffre, ajouter un retour récent, et indiquer l'année dans le titre quand c'est pertinent (« Guide SEO Reddit » devient « Guide SEO Reddit 2026 »). Des mesures donnent un taux de citation en AI Overviews plus élevé pour les pages portant un signal d'année courante, chiffre issu de sources à intérêt commercial, à confirmer.
+Perplexity privilégie le contenu récent et reprend les nouveaux commentaires Reddit sous 24 h à 7 jours. Mais l'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush, 248 000 URLs citées, oct. 2025) : les vieux threads forts restent cités. La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (chiffre issu d'une seule source Medium), mais d'injecter de la fraîcheur : un commentaire neuf dans les vieux threads forts où tu es déjà présent, l'année courante dans les titres quand c'est pertinent, et un contrôle mensuel que tes threads les plus cités n'ont pas dérivé. Des mesures donnent un taux de citation en AI Overviews plus élevé pour les pages portant un signal d'année courante, chiffre issu de sources à intérêt commercial, à confirmer.
 
 ### La réputation devient un enjeu GEO (la veille défensive)
 
@@ -213,7 +223,7 @@ Le playbook reste théorique sans gestes précis. Voici deux protocoles opérati
 - Si le subreddit l'autorise, propose un DM pour aller plus loin.
 - Tracke la source « Reddit » dans ton CRM (UTM).
 - Réponds à tous les commentaires et DM dans les 48 heures.
-- Limite de départ : 5 à 10 commentaires par jour maximum.
+- Limite : 4 à 6 commentaires par jour, plafond 8 (aligné 2026-07-02 sur le consensus des guides, bande 2-8/jour ; aucun ne recommande plus de 8). Jamais en rafale : 20 commentaires dans l'heure = pattern spam.
 
 ### Protocole de post (le contenu)
 
@@ -221,10 +231,11 @@ Le playbook reste théorique sans gestes précis. Voici deux protocoles opérati
 - Mets 50 à 80 % de valeur pure dans le post (captures, métriques, échecs assumés).
 - Titre type : « J'ai [fait X] pendant [période]. Voici ce qui a marché et ce qui a foiré. »
 - Autres formats qui rankent (recherche Ross Simmonds et guides 2026) : « How to [objectif] in [secteur] », « My experience with [produit] », « We tested 5 [outils] », « Best [outil] for [cas d'usage] ». Méthode Simmonds : TL;DR en tête, enseignements concrets, question ouverte en fin pour nourrir les commentaires.
-- Timing : poste en fenêtre haute (mardi-mercredi 7-10h ET d'après l'étude 1 000 posts d'Upvote.net, source à intérêt commercial) et joue les 30 premières minutes. Reddit classe à la vitesse des upvotes, pas au total : passer de 1 à 10 upvotes en 30 minutes pèse autant que 100 à 1 000 huit heures plus tard.
+- Timing : poste en fenêtre haute, matinée ET en semaine, environ 6-10h ET (corrigé 2026-07-02 : l'étude Upvote.net porte sur 150 posts, pas 1 000, et vient d'un vendeur d'upvotes ; la fenêtre est corroborée par Foundation, RecurPost et Single Grain, Foundation ajoutant le samedi matin).
+- Joue la première heure : la pondération des votes est logarithmique, les 10 premiers upvotes pèsent autant que les 100 suivants. Les 6-10 premières heures conditionnent le ranking Google du thread. (Corrigé 2026-07-02 : le « 30 premières minutes » ne venait que de vendeurs d'upvotes.)
 - Poste d'abord dans ton subreddit principal.
-- Engage-toi sur 100 % des commentaires pendant 24 à 48 heures.
-- Cross-post adapté une seule fois toutes les 2 à 3 semaines maximum.
+- Réponds aux commentaires sous 2 heures, puis engage-toi sur 100 % des commentaires pendant 24 à 48 heures.
+- Cross-post : 3-4 subs pertinents maximum par contenu, espacés d'au moins 6 heures et sur des jours différents ; 5 subs ou plus en rafale = pattern de spam. (Corrigé 2026-07-02 : l'ancien « une fois toutes les 2-3 semaines » n'avait aucune source.)
 
 ### Repurposing d'un article existant
 
@@ -353,6 +364,8 @@ Garde en tête le délai GEO : 60 à 120 jours avant un effet mesurable de citat
 ---
 
 ## Note de fiabilité (à lire avant de citer ces chiffres ailleurs)
+
+Mise à jour 2026-07-02 : les chiffres d'exécution (cadences, timing, cross-post, fraîcheur) ont été vérifiés contre ~25 sources via 3 audits web parallèles et corrigés dans le corps du document, marqués « corrigé 2026-07-02 ». Le détail des sources et des corrections est dans [[Routine-quotidienne]], qui fait foi sur l'exécution. Apports notables de cette vérif : 80 % des posts Reddit cités par les IA ont moins de 20 upvotes (Semrush, 248 000 URLs) ; les threads Q&A pèsent plus de 50 % des citations ; Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity) ; les pages Reddit auto-traduites `?tl=` font 40-73 % des citations Reddit sur les surfaces IA de Google en Europe non anglophone (Peec AI).
 
 Plusieurs chiffres viennent d'agrégateurs secondaires qui citent Sistrix ou Semrush sans toujours pointer l'étude primaire. Les mieux ancrés sur source primaire : l'update hidden gems (Glenn Gabe), la visibilité plus 1 328 % (Sistrix via Amsive, 2024), les deals Google 60 M$ (CBS, Fortune) et OpenAI 70 M$ estimé (Search Engine Land), l'étude de citations IA (Semrush, juillet-octobre 2025) et Peec AI (mars 2026).
 
