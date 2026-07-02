@@ -21,14 +21,13 @@
 - 2026-06-28 · Fraîcheur du contenu et citations IA : délais d'indexation et biais par plateforme 2026 → `2026-06-28-stats-fraicheur-citations-ia-delais.md`
 - 2026-06-29 · Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026 → `2026-06-29-stats-budgets-seo-reallocation-ia.md`
 - 2026-06-30 · Profil technique des pages citées par les IA : longueur, structure et balisage 2025-2026 → `2026-06-30-stats-profil-technique-pages-citees-ia.md`
+- 2026-07-02 · Parts de marché des moteurs IA en 2026 : Perplexity, ChatGPT Search, Google AI Mode, Copilot, Gemini → `2026-07-02-stats-parts-marche-moteurs-ia.md`
 
 ## À faire (par priorité)
 
-1. **Part de marché des moteurs IA en 2026 : Perplexity, ChatGPT Search, Google AI Mode, Copilot, Gemini** — Volume de requêtes déclarées, croissance mensuelle, préférences par cas d'usage (information factuelle, achat, local, code). Angle inédit : les études existantes mesurent qui est cité dedans ; ici on mesure qui est utilisé pour chercher. Sujets proches déjà couverts : citations-ia-domaines (06-20), claude-moteur-citation (06-26) — angle différent (côté moteur, pas côté domaine cité).
+1. **Contenu IA-généré et référencement : volume estimé, détection algorithmique et impact sur les classements Google 2025-2026** — Quelle proportion du contenu indexé est IA-généré ? Quels signaux Google utilise-t-il pour le détecter (HCU, Spam Update) ? Quelle corrélation avec la chute de trafic ? Sujet absent du backlog et ultra-demandé par les praticiens SEO.
 
-2. **Contenu IA-généré et référencement : volume estimé, détection algorithmique et impact sur les classements Google 2025-2026** — Quelle proportion du contenu indexé est IA-généré ? Quels signaux Google utilise-t-il pour le détecter (HCU, Spam Update) ? Quelle corrélation avec la chute de trafic ? Sujet absent du backlog et ultra-demandé par les praticiens SEO.
-
-3. **E-E-A-T mesurable et citations IA : méthodes de quantification, corrélation auteur/entité, benchmarks 2025-2026** — Comment quantifier l'expertise et l'autorité au sens Google Quality Rater Guidelines ? Corrélation entre présence d'un auteur nommé, d'une entité vérifiée (Wikidata, LinkedIn) et le taux de citation dans les réponses IA (ChatGPT, Perplexity, AIO). Complémentaire du profil technique (06-30) : là où cette étude couvrait la structure HTML, ici on couvre le signal d'autorité.
+2. **E-E-A-T mesurable et citations IA : méthodes de quantification, corrélation auteur/entité, benchmarks 2025-2026** — Comment quantifier l'expertise et l'autorité au sens Google Quality Rater Guidelines ? Corrélation entre présence d'un auteur nommé, d'une entité vérifiée (Wikidata, LinkedIn) et le taux de citation dans les réponses IA (ChatGPT, Perplexity, AIO). Complémentaire du profil technique (06-30) : là où cette étude couvrait la structure HTML, ici on couvre le signal d'autorité.
 
 ## Sujets écartés (avec raison)
 (vide)
