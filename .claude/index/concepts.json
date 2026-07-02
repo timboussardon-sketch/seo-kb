@@ -275,6 +275,7 @@
       "agent-synthetic/revuedepressIA/2026-06-28-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-30-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -494,6 +495,7 @@
       "agent-synthetic/memory/voix-synthetic.md",
       "agent-synthetic/memory/wording_rules.md",
       "agent-synthetic/revuedepressIA/2026-06-21-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "content-brain/_template/memory/score-grid.md",
       "content-brain/_template/memory/wording_rules.md",
       "content-brain/golfiller/memory/score-grid.md",
@@ -584,6 +586,7 @@
       "arbitrage-plateforme"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "wiki/index.md"
@@ -1218,6 +1221,7 @@
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1559,6 +1563,7 @@
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-06-22-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-23-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-14-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
@@ -3263,7 +3268,9 @@
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -4989,6 +4996,8 @@
       "seo-multi-vectoriel"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
@@ -5123,7 +5132,9 @@
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -5406,6 +5417,8 @@
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-06-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-05.md",
