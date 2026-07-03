@@ -298,4 +298,36 @@ Mettre à jour dans `$PUB/index.html` (deux endroits : le corps du step « Récu
 
 Statut : éprouvé (Alexia).
 
+## Annexe B — Runbook : créer le Drive client (modèle Leexi)
+
+Référence vivante : Drive « Leexi — SEO (Organikk) », créé le 2026-07-03 → https://drive.google.com/drive/folders/12_5gi10IpJbLTCyrzSpnGGkrmf8yLdDF. C'est L'EXEMPLE à répliquer quand Tim dit « crée le drive client ».
+
+### B.1 — Principes
+
+- Le Drive est un **miroir lisible** du vault client : la source de vérité reste le vault, chaque doc Drive est un export daté. Après toute évolution majeure d'un doc canonique, régénérer son export.
+- **Docs canoniques uniquement** (ceux listés dans la home du vault), jamais les versions supersédées : le Drive doit rester scannable par le client.
+- Nettoyage à l'export : frontmatter YAML retiré, wikilinks aplatis en texte simple. Conversion markdown → Google Doc via MCP Drive (`create_file`, contentMimeType `text/markdown`).
+- Les sheets d'exécution validés (redirections, sélections de mots-clés…) sont **copiés dans le dossier** concerné : la copie dans le Drive devient la canonique.
+
+### B.2 — Structure (numérotée, dans l'ordre de lecture)
+
+- `00 — Lisez-moi` : navigation, résumé de la stratégie en un paragraphe, règles d'exécution (jamais de 410 → 301, zéro chiffre sans source, gate ton de voix avant CMS, rien publié sans validation), liste des validations en attente.
+- `01 — Stratégie` : brief client canonique, stratégie SEO-GEO, livrable mots-clés business + cocons validé.
+- `02 — Mots-clés et cocons` : liste complète groundée, clustering page à page, un doc par cocon.
+- `03 — Analyses` : GSC approfondie, audit thématique, étude de marché, études juridiques/secteur.
+- `04 — Quick wins` : liste des pages à optimiser + réécritures (drafts à valider).
+- `05 — Élagage et redirections` : audit d'élagage + sheet d'exécution 301 + audits de redirections historiques.
+- `06 — Ton de voix` : la fiche maître du client.
+- `07 — Optimisation par mot-clé` : un sous-dossier par mot-clé travaillé (vecteurs sémantiques + brief Hn dedans), micro-intentions transverses à la racine du 07. Ajout de Tim le 03/07 : dès qu'on entre en production page par page, le rangement par mot-clé prime sur le rangement par type de doc.
+
+### B.3 — Exécution
+
+1. Créer racine + sous-dossiers via MCP Drive (mimeType folder).
+2. Paralléliser les exports par agents : un agent par lot de 4-5 docs, chaque agent lit → nettoie → `create_file` avec parentId.
+3. Copier les sheets validés dans leur dossier (`copy_file`).
+4. Le MCP Drive n'a **pas d'outil de suppression ni de déplacement** : signaler à Tim les doublons restés à la racine, c'est lui qui supprime.
+5. Fin de course : lien du Drive en tête de la home du vault client, entrée Journal, et email client « suivi en direct » (modèle §3 de `prestation/emails.md`).
+
+Statut : éprouvé (Leexi, 2026-07-03).
+
 Pages liées : [[golfiller-strat]] · [[clusters/modeles-pseo-2026-06-10-golfiller]] · [[queries/2026-06-10-golfiller-gsc-6mois]] · [[concepts/product-led-seo]] · [[concepts/know-simple-know-do]]
