@@ -131,7 +131,7 @@ Les moteurs reprennent davantage un texte formulé comme une source de référen
 
 L'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush) : les vieux threads forts restent cités. La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (un chiffre issu d'une seule source Medium).
 
-Elle consiste à ajouter un commentaire récent dans les vieux threads forts déjà investis, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois la dérive des threads les plus cités. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
+Elle consiste à ajouter un commentaire récent dans les vieux threads où tu es déjà présent, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois que tes threads les plus cités n'ont pas bougé. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
 
 ### Citations négatives
 

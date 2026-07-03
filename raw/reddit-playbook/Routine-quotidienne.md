@@ -21,7 +21,7 @@ Chaque jour, tu réponds d'abord à tout ce qui est arrivé (100 % sous 48 h, so
 
 Chaque semaine, tu t'autorises au maximum une mention de Qadence ou d'un site à toi, et tu publies un post (le plafond dur est de 3, d'après la recherche interne de Reddit). Le vendredi, tu mesures sur une liste fixe de requêtes.
 
-Le 1er du mois, tu redonnes de la fraîcheur aux vieux threads investis, par un commentaire, pas par de la réécriture.
+Le 1er du mois, tu retournes dans les vieux threads où tu es déjà présent et tu ajoutes un commentaire récent. Tu ne réécris pas tes anciennes réponses.
 
 ---
 
@@ -92,11 +92,11 @@ Tu conclus par un verdict en une phrase : ce qu'on reconduit, ce qu'on ajuste.
 
 ---
 
-## Cycle mensuel (fraîcheur)
+## Cycle mensuel
 
 Le 1er du mois, 20 minutes. La donnée de cadrage : l'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush), les vieux threads forts restent cités. Trois actions :
 
-- tu ajoutes un commentaire récent dans les vieux threads forts déjà investis (un chiffre à jour, un retour récent) ; Perplexity reprend un commentaire nouveau en 24 h à 7 jours ;
+- tu ajoutes un commentaire récent dans les vieux threads où tu es déjà présent (un chiffre à jour, un retour récent) ; Perplexity reprend un commentaire nouveau en 24 h à 7 jours ;
 - tu mets l'année courante dans les titres quand c'est pertinent ;
 - tu contrôles tes 3 à 5 threads les plus cités : une nouvelle réponse passée au-dessus de la tienne, un thread verrouillé.
 
