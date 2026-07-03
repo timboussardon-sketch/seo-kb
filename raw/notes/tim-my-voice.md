@@ -206,4 +206,6 @@ Source : session Claude Code du 2026-07-03, corrections verbatim de Tim sur le p
 
 **Deux règles dures posées en parallèle :** jamais de fragments nominaux même en registre factuel (« Compte complété, vieillissement. » interdit, sujet + verbe partout) ; le mot « karma » banni de tout le writing (dire « réputation », « points de réputation »).
 
+**Échantillon canonique du registre attendu (rédigé par Tim, section « Cycle mensuel » de la routine Reddit) :** « Le premier jour de chaque mois, prévois une vingtaine de minutes pour mettre à jour tes contributions. Les études de Semrush montrent que les IA continuent de citer des threads Reddit anciens (en moyenne près de 900 jours). Un thread qui fait autorité peut donc rester visible très longtemps, à condition qu'il reste vivant. » Structure : impératif d'action + source + fait chiffré entre parenthèses + conséquence en « donc » + condition concrète. Et en clôture : « Le paysage change vite : l'objectif est de maintenir tes contenus à jour plutôt que de repartir de zéro chaque mois. » (la conséquence pratique ferme la section, jamais un résumé).
+
 Concepts mobilisés : [[anti-ai-writing]]
