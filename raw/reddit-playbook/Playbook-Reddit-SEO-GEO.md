@@ -671,12 +671,49 @@ Le délai GEO reste de 60 à 90 jours avant un effet mesurable. 120 en borne hau
 
 ## 14. Métriques
 
-- La réputation et l'âge du compte (condition d'accès à tout le reste).
-- Les threads positionnés sur Google et leurs positions (`site:reddit.com`).
-- Les citations des sites et du nom dans Perplexity, ChatGPT et les AI Overviews, sur une liste fixe de 15-20 requêtes acheteur. C'est la métrique principale en 2026.
-- Les mentions F5Bot (volume, tonalité).
-- Les insights Reddit convertis en pages ou clusters publiés.
-- Le trafic référent Reddit (faible attendu).
+Six chiffres à suivre. Chacun répond à une question précise.
+
+**1. La santé du compte.**
+
+Tu relèves la réputation (commentaires + posts) et l'âge du compte.
+
+Question : est-ce que je peux encore poster partout ? Sous les seuils des subs, rien d'autre ne compte.
+
+**2. Les positions Google de tes threads.**
+
+Tu tapes `site:reddit.com` suivi de ta requête dans Google. Tu notes quels threads où tu as contribué apparaissent, et à quelle position.
+
+Question : mes threads rankent-ils sur mes requêtes acheteur ?
+
+**3. Les citations IA. La métrique principale en 2026.**
+
+Tu prends ta liste fixe de 15 à 20 requêtes acheteur (« best AI SEO tool », « Qadence alternatives »...).
+
+Tu les tapes une par une dans Perplexity, ChatGPT et Google (AI Overviews).
+
+Tu comptes combien de réponses citent Qadence.io ou un de tes sites.
+
+La liste ne change pas d'une semaine à l'autre : c'est ce qui rend la mesure comparable.
+
+Question : les IA me recommandent-elles, et de plus en plus ?
+
+**4. Les mentions entrantes.**
+
+Tu comptes les alertes reçues dans la semaine : combien de fois quelqu'un a cité tes sites ou ton nom sur Reddit, et sur quel ton (positif, neutre, négatif).
+
+Question : est-ce qu'on parle de moi sans que je le provoque ?
+
+**5. Les insights convertis.**
+
+Tu comptes les pain points trouvés sur Reddit qui sont devenus une page ou un cluster publié sur tes sites.
+
+Question : est-ce que Reddit nourrit mon contenu, même sans citation ?
+
+**6. Le trafic référent.**
+
+Tu regardes dans GA ou la GSC les visites qui arrivent depuis reddit.com.
+
+Attends-toi à peu : les liens sont en nofollow et ce n'est pas l'objectif. C'est un bonus, pas un indicateur de réussite.
 
 ---
 
