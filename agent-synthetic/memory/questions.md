@@ -311,3 +311,24 @@ P-2026-06-06-v2-2 est passée de `resolved-partial` (8 juin) à `resolved` (11 j
 ### Sources
 
 - 11 sources explore ajoutées ce run : canneslions.com (0.9, primaire org, candidate exploit revue hebdo car source primaire de référence pour Cannes Lions + autorité industrie), lbbonline.com (0.7, trade média), brandinginasia.com (0.6, trade APAC), exchange4media.com (0.62, trade India), deepmind.google (0.92, primaire vendeur Google DeepMind, candidate exploit revue hebdo car source primaire de référence pour DeepMind products + papers), selfstorming.com (0.5, plateforme campaigns library), ads-developers.googleblog.com (0.92, primaire vendeur Google Ads Developer Blog, candidate exploit revue hebdo car source primaire de référence pour API releases + changelog), eseospace.com (0.55, blog SEO), position.digital (0.55, agence digitale compilation stats), sqmagazine.co.uk (0.55, magazine SEO UK compilation), techtimes.com (0.62, presse tech, 2e hit utile, candidate exploit). 3 sources fortes pour passage exploit : canneslions.com + deepmind.google + ads-developers.googleblog.com (primaires des trois sujets traités du jour). Continuer 1 source neuve par édition pour explore.
+
+## 2026-07-03-v2 — Questions et propositions issues du run cloud pilier GEO
+
+### Questions à Tim (revue hebdo)
+
+1. **Statut CiteLens** : la source est nouvelle (0.55 explore), le finding 60 pct divergence AIO vs top 10 est quantifiée mais mono-source vendeur. J'ai publié le claim ATTRIBUÉ explicitement à CiteLens (pas comme consensus mesuré) avec 4 caveats méthodologiques dans le corps + prédiction testable P-2026-07-03-v2-1 pour reproduction indépendante d'ici fin 2026. Est-ce que le seuil d'attribution vendeur single-source explicite est acceptable pour info du jour, ou tu préfères que les études vendeur single-source restent en brève avec caveat renforcé et jamais en info du jour ? Question de politique éditoriale de la voix SyntheticBrain.
+
+2. **CiteLens Alper Tekin trust initial** : proposé 0.55 (vendeur nouveau, methodologie détaillée non publiée en annexe). Est-ce que le seuil devrait être plus bas (0.4-0.45) tant que la méthodologie complète n'est pas publiée en annexe consultable ? Question de calibration trust pour futures études vendeur GEO.
+
+3. **Choix pilier GEO malgré 3 GEO dans 16 dernières info du jour** : la directive disait « viser Product-Led SEO OR GEO OR Business SEO ». J'ai retenu GEO car (a) fait franchement neuf CiteLens hors 3 exclusions (reasoning modes Semrush + citation-first recettes + Consensus Gap Indig), (b) doctrine directement testée (metriques-visibilite-geo + tabou-visibilite), (c) l'alternative Indig+Johnson SEL 2 juillet était redite v1 morning, (d) Business SEO récent 0702 v2 Cloudflare. Est-ce que la concentration GEO (3 sur 16, dont 2 récentes 0627 v2 + 0703 v2) est acceptable ou faut-il forcer Product-Led SEO même sans fait franchement neuf ? Question de balance piliers vs qualité fait.
+
+4. **Nudge 4x visibility + 24 pct lift** : chiffres vendeur auto-déclarés publiés dans brève B2 avec caveat renforcé (auto-déclaré + non ventilé + duré non spécifiée + non reproduit tiers). Est-ce que le seuil « publier chiffre vendeur avec caveat » est acceptable pour la voix SyntheticBrain ou tu préfères une politique plus stricte « chiffres vendeur non ventilés = pas publiés du tout, seulement l'existence de la levée + les fonctions du produit + le protocole ACP/UCP » ? Question de politique éditoriale.
+
+### Diffs de skill proposés (à évaluer en revue hebdo)
+
+Aucun diff de skill proposé ce run. Le skill SKILL.md tient bien sur (a) attribution explicite vendeur single-source, (b) caveats méthodologiques ≥ 3 dans le corps, (c) prédiction testable de reproduction indépendante. Pattern reproductible pour futures études vendeur GEO/AEO documenté dans directives.md méthode confirmée 2026-07-03-v2.
+
+### Sources découvertes ce run
+
+- 7 nouvelles explore ajoutées : citelens.io (0.55 vendeur GEO), martechseries.com (0.6 outlet MarTech), tech.einnews.com (0.5 PR syndication), natlawreview.com (0.5 PR syndication), retailtechinnovationhub.com (0.65 primaire Scott Thompson signé), intelligentretail.tech (0.55 reprise), wwd.com (0.7 Tier-2 retail spécialisé), practicalecommerce.com (0.65 curation ecommerce). 2 candidates à surveiller pour passage exploit en revue hebdo si utilisation répétée : retailtechinnovationhub.com (primaire retail tech avec signature Scott Thompson) + wwd.com (Tier-2 spécialisé retail/mode avec Sourcing Journal).
+- practicalecommerce.com est une source de curation d'outils ecommerce/martech utile pour la découverte de nouveaux acteurs à l'intersection SEO/GEO/commerce agentique. Candidate au passage exploit si 2e hit utile confirmé.

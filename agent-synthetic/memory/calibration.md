@@ -790,3 +790,18 @@ B3 Job Posting addressCountry : recoupement 2 sources Google primaires (search/u
 - validate.sh à lancer avant commit
 
 Discipline anti-pattern IA : run propre. Zéro métaphore, zéro personnification, zéro tiret cadratim intra-texte, zéro émoji. Vouvoiement maintenu. Verbatims italique attribution explicite. Cf. discipline détaillée directives.md 2026-07-03.
+
+## 2026-07-03-v2 — Cloud après-midi (pilier GEO)
+
+Info du jour : **CiteLens mesure 60 pct de divergence entre les domaines cités par Google AI Overviews et le top 10 organique** sur 500 requêtes commerciales dans 126 catégories, publication 29 juin 2026.
+
+- source_diversity : 11 (3 nouvelles reprises PR CiteLens + 4 nouvelles sources Nudge dont Retail Tech Innovation Hub primaire + 3 exploit connues)
+- claim_density_corps : 9 verified (dont 4 métriques CiteLens attribuées vendeur + 3 faits Nudge + 1 Search Console fix + 1 point d'étape spam update)
+- novelty_score : 3 (mesure quantifiée CiteLens fresh mais vendeur single-source, Nudge levée small pre-seed sur un maillon différencié du commerce agentique)
+- doctrine_fit : 3 (concepts touchés : metriques-visibilite-geo confirmé empiriquement + tabou-visibilite ajout dimension protocole de répétition ; sans forcer)
+- redite_risk : faible (v1 morning Actualité SEO Bing WMT vs v2 GEO CiteLens = piliers et thèmes distincts ; Indig SEL 2 juillet écarté redite explicite avec v1 morning brève B2)
+- clickbait_risk : faible (titre factuel description quantifiée 'CiteLens mesure 60 pct de divergence' aucun superlatif aucune promesse)
+- score global : 3.4/5
+- validate.sh à lancer avant commit
+
+Discipline anti-pattern IA : run propre après relecture. Tentations métaphoriques corrigées en draft : « couche de découverte » → « fonction de découverte » ; « maillon distinct de la chaîne » → « étape distincte du parcours d'achat ». Zéro métaphore résiduelle, zéro personnification, zéro tiret cadratim intra-texte (grep -c « — » = 0), zéro émoji. Vouvoiement maintenu. Verbatims italique attribution explicite (Alper Tekin CiteLens PR + Kanishka Thakur Retail Tech Innovation Hub). Cf. discipline détaillée directives.md 2026-07-03-v2.

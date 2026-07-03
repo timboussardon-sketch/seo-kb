@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-06-27",
+  "updated": "2026-07-03",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -193,6 +193,15 @@
     "schemaninja.com": 1.0,
     "synscribe.com": 1.0,
     "mediapost.com": 1.04,
-    "roastbrief.us": 1.04
+    "roastbrief.us": 1.04,
+    "citelens.io": 1.04,
+    "martechseries": 1.04,
+    "tech.einnews": 1.04,
+    "natlawreview": 1.04,
+    "retailtechinnovationhub": 1.04,
+    "intelligentretail-tech": 1.04,
+    "wwd-sourcing": 1.04,
+    "practicalecommerce": 1.04,
+    "einpresswire": 1.08
   }
 }
