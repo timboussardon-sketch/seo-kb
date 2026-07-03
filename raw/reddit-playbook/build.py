@@ -216,7 +216,7 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .ptitle{font-size:20px;font-weight:600;line-height:1.3;letter-spacing:-.01em;margin-bottom:12px}
 
 /* ── Contenu de post ── */
-.pcontent p{margin:0 0 17px}
+.pcontent p{margin:0 0 13px}
 .pcontent h2{font-size:17px;font-weight:700;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #edeff1}
 .pcontent h3{font-size:15.5px;font-weight:700;margin:20px 0 8px}
 .pcontent ul,.pcontent ol{margin:0 0 14px;padding-left:24px}
