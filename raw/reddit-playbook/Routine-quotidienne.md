@@ -17,7 +17,11 @@ status: stable
 
 ## En résumé
 
-Chaque jour, tu réponds d'abord à tout ce qui est arrivé (100 % sous 48 h, sous 2 h après un post), puis tu écris 4 à 6 commentaires de 120 à 200 mots, en priorité dans des threads déjà positionnés sur Google. Chaque semaine, tu t'autorises au maximum une mention de Qadence ou d'un site à toi, et tu publies un post (le plafond dur est de 3, d'après la recherche interne de Reddit). Le vendredi, tu mesures sur une liste fixe de requêtes. Le 1er du mois, tu redonnes de la fraîcheur aux vieux threads investis, par un commentaire, pas par de la réécriture.
+Chaque jour, tu réponds d'abord à tout ce qui est arrivé (100 % sous 48 h, sous 2 h après un post), puis tu écris 4 à 6 commentaires de 120 à 200 mots, en priorité dans des threads déjà positionnés sur Google.
+
+Chaque semaine, tu t'autorises au maximum une mention de Qadence ou d'un site à toi, et tu publies un post (le plafond dur est de 3, d'après la recherche interne de Reddit). Le vendredi, tu mesures sur une liste fixe de requêtes.
+
+Le 1er du mois, tu redonnes de la fraîcheur aux vieux threads investis, par un commentaire, pas par de la réécriture.
 
 ---
 
@@ -54,7 +58,9 @@ Tu écris 4 à 6 commentaires, sélectionnés dans cet ordre :
 - **Priorité 1 : les threads déjà positionnés sur Google** sur tes requêtes acheteur (`site:reddit.com "best ai seo tool"`, etc.). Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity, octobre 2025) : un commentaire dans un thread positionné apparaît dans Perplexity en quelques jours.
 - **Priorité 2 : les threads de moins de 48 h**, repérés via New/Rising et les mots-clés de douleur (« best X for Y », « [catégorie] alternatives », troubleshooting). L'heuristique de sélection est un thread de 30 à 100 réponses (source unique, à valider sur le terrain).
 
-Le format : 120 à 200 mots, 2 à 3 données précises (un outil nommé, un chiffre daté, des étapes), en registre documentation, sans « je pense ». La longueur médiane des commentaires cités par les IA est d'environ 80 mots (Semrush, 248 000 URLs) ; 120-200 vise la marge haute. Il n'existe pas de seuil d'upvotes : 80 % des posts cités en ont moins de 20 (médiane 5-8, Semrush). La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread.
+Le format : 120 à 200 mots, 2 à 3 données précises (un outil nommé, un chiffre daté, des étapes), en registre documentation, sans « je pense ». La longueur médiane des commentaires cités par les IA est d'environ 80 mots (Semrush, 248 000 URLs) ; 120-200 vise la marge haute.
+
+Il n'existe pas de seuil d'upvotes : 80 % des posts cités en ont moins de 20 (médiane 5-8, Semrush). La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread.
 
 La mention « une option que j'utilise moi-même est X » ne part que si elle est légitime dans le thread, que le quota hebdomadaire n'est pas consommé, et qu'elle inclut la disclosure.
 

@@ -1015,3 +1015,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - tableau quotas simplifié à 2 colonnes (Action | Quota), plus de mention d'outils dans la routine
 - annexe Journal retirée du document généré (le fichier Journal.md reste le suivi)
 - section 9bis ajoutée : les 8 prompts Reddit (sujets de niche depuis les questions Reddit), repris de wiki/briefs/reddit-pour-geo-2026
+
+## [2026-07-03] update | Playbook Reddit : programme de lancement 30 jours + aération
+- section 4 refaite en vrai programme de lancement de compte : 4 phases J1→J30, actions par jour, paliers chiffrés, critères de passage, interdits ; plan 90 jours réaligné (lancement = jours 1-30)
+- lignes d'actions (commentaires/partager/enregistrer/signaler) retirées de tous les posts
+- textes aérés : gros paragraphes découpés, espacements CSS augmentés

@@ -19,7 +19,9 @@ status: stable
 
 ## En résumé (à lire en premier)
 
-Reddit est passé du 68e rang au top 5 des domaines les plus visibles sur Google US entre juillet 2023 et juillet 2024. L'indice Sistrix est monté de 95,1 à 1 370 points, soit +1 328 % (Sistrix via Amsive, 2024). Trois causes documentées se sont cumulées : l'update « hidden gems » déployée à l'automne 2023, le filtre « Discussions and forums » dans les résultats, et l'accord de licence de données entre Google et Reddit à environ 60 M$/an signé en février 2024.
+Reddit est passé du 68e rang au top 5 des domaines les plus visibles sur Google US entre juillet 2023 et juillet 2024. L'indice Sistrix est monté de 95,1 à 1 370 points, soit +1 328 % (Sistrix via Amsive, 2024).
+
+Trois causes documentées se sont cumulées : l'update « hidden gems » déployée à l'automne 2023, le filtre « Discussions and forums » dans les résultats, et l'accord de licence de données entre Google et Reddit à environ 60 M$/an signé en février 2024.
 
 Sur les moteurs génératifs, Reddit est la source n°1 ou n°2 des citations selon toutes les études 2025-2026 (Peec AI, Semrush, Evertune, détail en §2). Sur Perplexity, Reddit pèse entre 20 et 47 % des citations selon l'étude et la période. Ces accès sont contractuels : Google paie environ 60 M$/an, OpenAI environ 70 M$/an estimés (mai 2024).
 
@@ -60,7 +62,9 @@ La couche d'exécution vit dans le même dossier que ce playbook :
 
 ### Croissance 2023-2024
 
-En juillet 2023, reddit.com était le 68e domaine le plus visible sur Google US. En juillet 2024, il était dans le top 5. L'indice Sistrix est passé de 95,1 à 1 370 points entre juillet 2023 et avril 2024, soit +1 328 % (Sistrix via Amsive). Le trafic organique estimé a suivi la même pente : d'environ 57 M à environ 427 M de visites mensuelles sur la même période, soit +649 % (estimation Ahrefs via Amsive, pas une donnée officielle Reddit).
+En juillet 2023, reddit.com était le 68e domaine le plus visible sur Google US. En juillet 2024, il était dans le top 5. L'indice Sistrix est passé de 95,1 à 1 370 points entre juillet 2023 et avril 2024, soit +1 328 % (Sistrix via Amsive).
+
+Le trafic organique estimé a suivi la même pente : d'environ 57 M à environ 427 M de visites mensuelles sur la même période, soit +649 % (estimation Ahrefs via Amsive, pas une donnée officielle Reddit).
 
 Trois causes sont documentées :
 
@@ -70,13 +74,17 @@ Trois causes sont documentées :
 
 ### Correction 2025
 
-À partir du 7 janvier 2025, Reddit a perdu environ 350 points d'indice Sistrix et est passé du 3e au 4e rang US. Les core updates de 2025 (mars, juin, août, décembre) ont créé de la volatilité sur les sites communautaires (Reddit, Quora, Stack Exchange). Pendant l'update de décembre 2025, Reddit a chuté puis est revenu à son niveau antérieur dans la semaine suivant le déploiement. En août 2025, il a brièvement atteint le 2e rang US, devant Amazon. La position structurelle reste le top 5 US, avec une volatilité par paliers.
+À partir du 7 janvier 2025, Reddit a perdu environ 350 points d'indice Sistrix et est passé du 3e au 4e rang US. Les core updates de 2025 (mars, juin, août, décembre) ont créé de la volatilité sur les sites communautaires (Reddit, Quora, Stack Exchange).
+
+Pendant l'update de décembre 2025, Reddit a chuté puis est revenu à son niveau antérieur dans la semaine suivant le déploiement. En août 2025, il a brièvement atteint le 2e rang US, devant Amazon. La position structurelle reste le top 5 US, avec une volatilité par paliers.
 
 ### Mécanisme de ranking (liens en nofollow)
 
 Les liens sortants de Reddit sont en nofollow : ils ne transmettent pas d'autorité au sens backlink. Une stratégie fondée sur des « backlinks Reddit » n'a donc pas de base technique.
 
-Les facteurs de ranking documentés d'une page Reddit sont le crawl quasi temps réel (facilité par l'accord de données), les signaux d'engagement (temps passé, interactions) et le critère « expérience » de l'E-E-A-T, cible déclarée de l'update hidden gems. John Mueller (Google) précise que les liens Reddit apportent du trafic référent, et que les mentions sans lien ne sont pas un facteur de ranking direct. Un effet de second ordre est constaté : un thread qui ranke est repris par des médias, qui créent des liens dofollow vers les sites mentionnés.
+Les facteurs de ranking documentés d'une page Reddit sont le crawl quasi temps réel (facilité par l'accord de données), les signaux d'engagement (temps passé, interactions) et le critère « expérience » de l'E-E-A-T, cible déclarée de l'update hidden gems.
+
+John Mueller (Google) précise que les liens Reddit apportent du trafic référent, et que les mentions sans lien ne sont pas un facteur de ranking direct. Un effet de second ordre est constaté : un thread qui ranke est repris par des médias, qui créent des liens dofollow vers les sites mentionnés.
 
 ---
 
@@ -89,7 +97,9 @@ Les facteurs de ranking documentés d'une page Reddit sont le crawl quasi temps 
 - Evertune (200 M+ de prompts, fin 2025-début 2026) mesure Reddit comme le domaine le plus cité sur Perplexity sur cinq mois consécutifs, avec des pics au-delà de 20 %. D'autres mesures montent à 46-47 % des citations Perplexity.
 - Sur les AI Overviews, Reddit pèse environ 21 % des citations selon plusieurs analyses.
 
-À pondérer : ces pourcentages sont volatils. La part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % entre début août et mi-septembre 2025 (Semrush). Une mesure donne Gemini à 0,1 % quand une autre le classe n°1. Tout chiffre de citation doit être donné avec l'étude, la fenêtre et la date. Les ordres de grandeur robustes : Reddit est n°1 ou n°2 partout, au maximum sur Perplexity, fort sur les AI Overviews, instable sur ChatGPT.
+À pondérer : ces pourcentages sont volatils. La part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % entre début août et mi-septembre 2025 (Semrush). Une mesure donne Gemini à 0,1 % quand une autre le classe n°1.
+
+Tout chiffre de citation doit donc être donné avec l'étude, la fenêtre et la date. Les ordres de grandeur robustes : Reddit est n°1 ou n°2 partout, au maximum sur Perplexity, fort sur les AI Overviews, instable sur ChatGPT.
 
 ### Facteurs explicatifs documentés
 
@@ -105,9 +115,11 @@ Google paie environ 60 M$/an (février 2024, CBS, Fortune). OpenAI a signé pour
 
 Les cinq formats de threads les plus cités par les IA (Discovered Labs) sont la question-réponse directe, le comparatif « versus », le troubleshooting et les how-to, le débat prix avec montants concrets, et l'avis équilibré pour/contre. Un avis qui liste des défauts est plus repris qu'un avis uniquement positif.
 
-Les données Semrush (248 000 URLs Reddit citées, octobre 2025) cadrent les seuils : 80 % des posts cités ont moins de 20 upvotes (médiane 5-8), 70 % ont moins de 20 commentaires, les threads Q&A représentent plus de 50 % des citations, et la longueur médiane d'un commentaire cité est d'environ 80 mots. Il n'existe pas de seuil d'upvotes.
+Les données Semrush (248 000 URLs Reddit citées, octobre 2025) cadrent les seuils : 80 % des posts cités ont moins de 20 upvotes (médiane 5-8) et 70 % ont moins de 20 commentaires. Les threads Q&A représentent plus de 50 % des citations, et la longueur médiane d'un commentaire cité est d'environ 80 mots. Il n'existe pas de seuil d'upvotes.
 
-Côté compte, les conditions sont l'ancienneté et la réputation, des réponses réparties sur plusieurs threads plutôt qu'un post unique, et une terminologie cohérente dans la durée. La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread (Conbersa). Le délai avant effet mesurable fait consensus à 60-90 jours, avec 120 jours en borne haute. Perplexity reprend un commentaire Reddit nouveau en 24 h à 7 jours.
+Côté compte, les conditions sont l'ancienneté et la réputation, des réponses réparties sur plusieurs threads plutôt qu'un post unique, et une terminologie cohérente dans la durée. La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread (Conbersa).
+
+Le délai avant effet mesurable fait consensus à 60-90 jours, avec 120 jours en borne haute. Perplexity reprend un commentaire Reddit nouveau en 24 h à 7 jours.
 
 Les interdits sont l'astroturfing, les faux comptes et les faux avis. Leur détection par les communautés est documentée et le dommage est durable.
 
@@ -117,7 +129,9 @@ Les moteurs reprennent davantage un texte formulé comme une source de référen
 
 ### Fraîcheur (corrigé 2026-07-02)
 
-L'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush) : les vieux threads forts restent cités. La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (un chiffre issu d'une seule source Medium). Elle consiste à ajouter un commentaire récent dans les vieux threads forts déjà investis, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois la dérive des threads les plus cités. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
+L'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush) : les vieux threads forts restent cités. La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (un chiffre issu d'une seule source Medium).
+
+Elle consiste à ajouter un commentaire récent dans les vieux threads forts déjà investis, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois la dérive des threads les plus cités. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
 
 ### Citations négatives
 
@@ -133,14 +147,57 @@ La conséquence opérationnelle est que la contribution précède la promotion. 
 
 ---
 
-## 4. Montée d'un compte
+## 4. Programme de lancement d'un compte (jour 1 à jour 30)
 
-Reddit filtre les comptes neufs automatiquement. La montée se fait en quatre temps.
+Reddit filtre les comptes neufs automatiquement, sur deux critères : l'ancienneté (chaque sub fixe son seuil, de 1 à 30 jours, avec 7 jours en standard courant et 30 jours sur les subs exigeants) et la réputation. Reddit tient deux compteurs de réputation, un pour les commentaires et un pour les posts, sur une échelle logarithmique : un post à 1 000 upvotes peut ne rapporter que ~500 points. La réputation liée aux commentaires monte plus vite. Les seuils anti-spam typiques des subs vont de 10 à plus de 100 points combinés, et sous le seuil, l'AutoModerator supprime le post sans intervention humaine.
 
-1. **Création et profil.** Le compte se crée avec un avatar et une bio sobre, sans mention commerciale.
-2. **Ancienneté.** Chaque subreddit fixe son seuil, de 1 à 30 jours. Le standard courant est de 7 jours minimum, et de 30 jours sur les subs exigeants. Un compte créé le jour même qui poste un lien est filtré.
-3. **Réputation.** Reddit tient deux compteurs de réputation, un pour les commentaires et un pour les posts, sur une échelle logarithmique : un post à 1 000 upvotes peut ne rapporter que ~500 points. La réputation liée aux commentaires monte plus vite que celle liée aux posts. Les seuils anti-spam typiques des subs vont de 10 à plus de 100 points combinés. Sous le seuil, l'AutoModerator supprime le post sans intervention humaine.
-4. **Rodage, 2 à 4 semaines.** Le compte ne produit que des commentaires utiles dans les subs cibles, sans aucun lien. La lecture des posts triés par « Top, ce mois-ci » sert à cartographier ce qui fonctionne. Cette phase conditionne l'accès à tout le reste.
+Le programme se déroule en quatre phases, chacune avec un critère de passage. On ne passe pas à la phase suivante tant que le critère n'est pas rempli.
+
+### Phase 0 : la préparation (jour 1, environ 1 heure)
+
+- Tu crées le compte avec un pseudo crédible de particulier : pas de nom de société, pas de mot-clé métier dans le pseudo.
+- Tu complètes le profil : un avatar, une bio d'une ligne qui dit ce que tu fais sans lien ni pitch commercial.
+- Tu utilises une connexion propre : pas de VPN datacenter, pas d'IP qui a déjà porté des comptes Reddit sanctionnés, un seul compte par personne.
+- Tu t'abonnes à 10-15 subs : tes subs cibles plus quelques généralistes, pour que le feed ressemble à celui d'un utilisateur réel.
+- Tu ne postes rien et tu ne commentes rien le jour 1.
+
+### Phase 1 : l'observation (jours 2 à 7)
+
+- Tu lis 15 minutes par jour. Dans chaque sub cible, tu tries par « Top, ce mois-ci » et tu notes ce qui marche : les formats, la longueur, le ton.
+- Tu lis les règles et la wiki de chaque sub, et tu relèves trois choses : le seuil de réputation ou d'âge, la politique d'autopromo, l'existence d'un jour dédié à la promo.
+- Tu construis tes deux listes de travail : 8 à 12 subs cibles et 20 à 30 mots-clés de douleur (§7bis).
+- Tu votes sur ce que tu lis : c'est l'activité passive d'un compte normal.
+- Tu peux poser tes premiers commentaires à partir du jour 4, à raison de 1 à 2 par jour, sur des questions simples où ta réponse est incontestable.
+
+**Critère de passage :** les règles des 8-12 subs cibles sont lues et notées, les deux listes de travail existent.
+
+### Phase 2 : les premiers commentaires (jours 8 à 14)
+
+- Tu écris 2 à 3 commentaires utiles par jour, le consensus des guides pour un compte neuf. Tu commences par les subs à seuil bas.
+- Tu vises les questions de ta niche où une réponse concrète manque : c'est ce qui monte la réputation le plus vite, avec le moins de risque.
+- Tu espaces tes actions d'au moins 10 à 15 minutes : c'est la limite technique appliquée aux comptes à faible réputation.
+- Tu réponds à toute personne qui répond à tes commentaires.
+- Zéro lien, zéro mention de ton site, zéro post pendant toute la phase.
+
+**Critère de passage :** 50 à 100 points de réputation combinés, et aucune suppression par l'AutoModerator.
+
+### Phase 3 : la montée (jours 15 à 30)
+
+- Tu passes à 3 à 5 commentaires par jour, en montée progressive.
+- Tu élargis aux subs exigeants dès que l'âge du compte franchit leurs seuils.
+- Tu vises 30 à 60 commentaires cumulés, répartis sur 3 à 6 subs, à la fin du mois.
+- Tu peux publier un premier post sans lien en fin de phase (une question ou un retour d'expérience) dans le sub où ta réputation est la plus établie.
+- Tu fais un check shadowban vers le jour 21 : profil ouvert en navigation privée déconnecté (§10).
+
+**Critère de sortie :** le compte a 30 jours, 200 points de réputation ou plus, et aucune suppression récente. Le compte est opérationnel : la routine quotidienne prend le relais (4 à 6 commentaires par jour), et le protocole d'activation du §7bis s'applique.
+
+### Les interdits du lancement, sur les 30 jours
+
+- Aucun lien externe, vers ton site ou un autre.
+- Aucune mention de ton produit ou de ton activité commerciale.
+- Aucun cross-post et aucun repost.
+- Aucun achat d'upvotes, aucun échange de votes.
+- Un seul compte. Les multi-comptes sur une même IP correspondent au pattern sanctionné (§10).
 
 ---
 
@@ -211,7 +268,9 @@ La mécanique : un thread dont le titre correspond à une requête réelle bén�
 
 Les tactiques documentées (Ross Simmonds) sont au nombre de trois. Le titre reprend la formulation de la requête (« What's the best… », « Has anyone tried… », « How do I… »). La réponse complète est dans le corps du post. Les commentaires actifs soutiennent le ranking, donc la discussion s'entretient dans la durée.
 
-Le cadre de risque est la politique Google « site reputation abuse » (mars 2024, renforcée le 19 novembre 2024). Elle vise les sous-dossiers loués chez les éditeurs, pas les forums UGC. Reddit modère de son côté les patterns d'abus, typiquement des comptes récents qui poussent les mêmes offres dans des threads de recommandation. Le critère de décision : un thread construit pour répondre, dont le titre correspond à une requête, reste dans le cadre ; un thread construit uniquement pour ranker correspond au pattern modéré.
+Le cadre de risque est la politique Google « site reputation abuse » (mars 2024, renforcée le 19 novembre 2024). Elle vise les sous-dossiers loués chez les éditeurs, pas les forums UGC. Reddit modère de son côté les patterns d'abus, typiquement des comptes récents qui poussent les mêmes offres dans des threads de recommandation.
+
+Le critère de décision : un thread construit pour répondre, dont le titre correspond à une requête, reste dans le cadre ; un thread construit uniquement pour ranker correspond au pattern modéré.
 
 Le croisement avec le GEO a été vérifié le 2026-07-02 : Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity, test honeypot). Un commentaire dans un thread déjà positionné apparaît dans Perplexity en quelques jours. C'est le levier GEO au meilleur rendement documenté.
 
@@ -235,7 +294,11 @@ Une contrainte technique : Reddit bloque le crawler. Les posts se collent à la 
 
 ## 9bis. Les 8 prompts : trouver les sujets de la niche dans les questions Reddit
 
-Ces huit prompts servent à sortir les sujets de ta niche des questions que les gens posent sur Reddit. Ils s'exécutent dans une IA avec recherche web. Tu remplaces `[THÉMATIQUE]`, `[SUJET]` ou `[PRODUIT]` par un mot-clé business de ta roadmap, jamais par un mot-clé inventé : si le mot-clé n'est pas dans ta roadmap, ce n'est pas une publication Reddit, c'est du bruit. Chaque extraction garde les permalinks Reddit et les verbatims bruts, sans reformulation. Le prompt 3 est le plus rentable : il identifie à la fois un thread où publier une réponse experte et un angle pour un article pilier sur le site.
+Ces huit prompts servent à sortir les sujets de ta niche des questions que les gens posent sur Reddit. Ils s'exécutent dans une IA avec recherche web.
+
+Tu remplaces `[THÉMATIQUE]`, `[SUJET]` ou `[PRODUIT]` par un mot-clé business de ta roadmap, jamais par un mot-clé inventé : si le mot-clé n'est pas dans ta roadmap, ce n'est pas une publication Reddit, c'est du bruit. Chaque extraction garde les permalinks Reddit et les verbatims bruts, sans reformulation.
+
+Le prompt 3 est le plus rentable : il identifie à la fois un thread où publier une réponse experte et un angle pour un article pilier sur le site.
 
 ### Prompt 1 : les pain points
 
@@ -310,7 +373,9 @@ Côté communautés, il n'existe pas de sub SEO francophone actif (pas de r/SEO_
 
 Sur le levier FR, Lefebvre Dalloz (juillet 2025) classe Reddit « canal secondaire ou de veille dans un contexte francophone ». Une limite de preuve est à connaître : aucune donnée chiffrée comparant la visibilité SERP de Reddit sur Google.fr et Google.com n'est publiée. Les affirmations du type « Reddit domine les SERP françaises » circulent sans étude à l'appui.
 
-Une donnée 2026 change le calcul (Peec AI, 64,77 M de citations Reddit, mars-juin 2026) : les pages Reddit auto-traduites (`?tl=`) représentent 40 à 73 % des citations Reddit sur les surfaces IA de Google dans les marchés non anglophones d'Europe (plus de 70 % en Suède et Norvège, 72 % en Espagne sur AI Mode, 52 % en Allemagne sur les AIO ; la France n'est pas isolée mais le pattern est pan-européen). ChatGPT a quasi cessé de citer les pages traduites (de 6,14 % à 0,30 % entre avril et juin 2026).
+Une donnée 2026 change le calcul (Peec AI, 64,77 M de citations Reddit, mars-juin 2026) : les pages Reddit auto-traduites (`?tl=`) représentent 40 à 73 % des citations Reddit sur les surfaces IA de Google dans les marchés non anglophones d'Europe. Le détail par pays : plus de 70 % en Suède et en Norvège, 72 % en Espagne sur AI Mode, 52 % en Allemagne sur les AIO. La France n'est pas isolée dans l'étude, mais le pattern est pan-européen.
+
+ChatGPT suit la pente inverse : il a quasi cessé de citer les pages traduites, de 6,14 % à 0,30 % entre avril et juin 2026.
 
 Trois conséquences :
 
@@ -322,13 +387,13 @@ Trois conséquences :
 
 ## 13. Plan 90 jours
 
-**Jours 1-14 : le socle.** Complète le compte et laisse-le vieillir. Identifie 8 à 10 subs (anglophones search/IA/growth en priorité, 2 à 3 FR), lis chacun pendant une semaine, règles et wiki comprises. Ne produis que des commentaires utiles, sans aucun lien. L'objectif est de franchir les seuils de réputation et d'âge. Pose F5Bot sur les sites suivis.
+**Jours 1 à 30 : le lancement du compte.** Tu déroules le programme de la section 4, phase par phase : préparation, observation, premiers commentaires, montée. Les subs cibles sont anglophones search/IA/growth en priorité, plus 2 à 3 FR. En parallèle, tu poses les alertes de mentions sur les sites suivis. À la fin du mois, le compte est opérationnel (30 jours, 200 points de réputation ou plus).
 
-**Semaines 3-6 : contribution et insights.** Monte à 20-30 commentaires de qualité par semaine. Lance le travail d'insights (Keyworddit, GummySearch) et fais redescendre les pain points dans le process besoin → mot-clé → cluster. Publie le premier post à valeur, une donnée originale anonymisée, dans le sub où le capital est le plus élevé. Le ratio 95/5 se tient sur toute la période.
+**Semaines 5-8 : contribution et insights.** Monte à 20-30 commentaires de qualité par semaine. Lance le travail d'insights (Keyworddit, GummySearch) et fais redescendre les pain points dans le process besoin → mot-clé → cluster. Publie le premier post à valeur, une donnée originale anonymisée, dans le sub où le capital est le plus élevé. Le ratio 95/5 se tient sur toute la période.
 
-**Semaines 7-10 : threads et GEO.** Publie des posts dont le titre correspond à une requête réelle et entretiens la discussion. Interviens dans les threads décisionnels « best X for Y » et les comparatifs, en nommant le site quand c'est légitime. Demande l'accord des mods en modmail avant tout post limite.
+**Semaines 9-11 : threads et GEO.** Publie des posts dont le titre correspond à une requête réelle et entretiens la discussion. Interviens dans les threads décisionnels « best X for Y » et les comparatifs, en nommant le site quand c'est légitime. Demande l'accord des mods en modmail avant tout post limite.
 
-**Semaines 11-13 : la mesure.** Vérifie les positions via `site:reddit.com`. Cherche les citations dans Perplexity et ChatGPT sur la liste fixe de requêtes. Arrête ce qui ne produit pas. Le bilan porte sur trois points : les threads positionnés, les mentions dans les IA, les insights convertis en contenu publié.
+**Semaines 12-13 : la mesure.** Vérifie les positions via `site:reddit.com`. Cherche les citations dans Perplexity et ChatGPT sur la liste fixe de requêtes. Arrête ce qui ne produit pas. Le bilan porte sur trois points : les threads positionnés, les mentions dans les IA, les insights convertis en contenu publié.
 
 Le délai GEO reste de 60 à 90 jours avant un effet mesurable, 120 en borne haute. Le plan pose les fondations ; les citations arrivent en général après.
 

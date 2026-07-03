@@ -71,7 +71,7 @@ FLAIRS = [
     ("1. Visibilité Google", "CONTEXTE", "f-gray"),
     ("2. Reddit dans les moteurs", "GEO", "f-orange"),
     ("3. Politique d", "RÈGLE", "f-red"),
-    ("4. Montée d", "MÉTHODE", "f-blue"),
+    ("4. Programme", "PROGRAMME", "f-green"),
     ("5. Sélection", "MÉTHODE", "f-blue"),
     ("6. Ratio d", "RÈGLE", "f-red"),
     ("7. Formats", "MÉTHODE", "f-blue"),
@@ -110,7 +110,6 @@ def post(title, body_html, when, pid=None, extra=""):
     <h2 class="ptitle">{title}</h2>
     <div class="pcontent">{body_html}</div>
     {extra}
-    <div class="pactions">{BUBBLE} {c} commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>'''
 
@@ -205,7 +204,7 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .vote{width:44px;background:var(--votebg);padding:10px 0;display:flex;flex-direction:column;align-items:center;gap:2px;flex-shrink:0}
 .vote .up{color:var(--orange)} .vote .down{color:#b8bcc0}
 .vote b{font-size:12.5px;font-weight:700}
-.pbody{padding:10px 18px 8px;min-width:0;flex:1}
+.pbody{padding:12px 22px 18px;min-width:0;flex:1}
 .pmeta{font-size:12px;color:var(--meta);margin-bottom:6px}
 .pmeta a{color:var(--meta);font-weight:500}
 .flair{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;border-radius:10px;padding:2px 9px;margin-right:8px;vertical-align:1px}
@@ -215,14 +214,13 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .f-red{background:#EA0027;color:#fff}
 .f-gray{background:#edeff1;color:#1c1c1c}
 .ptitle{font-size:20px;font-weight:600;line-height:1.3;letter-spacing:-.01em;margin-bottom:12px}
-.pactions{font-size:12.5px;font-weight:600;color:var(--meta);padding:10px 0 6px;border-top:1px solid #edeff1;margin-top:14px}
 
 /* ── Contenu de post ── */
-.pcontent p{margin:0 0 14px}
+.pcontent p{margin:0 0 17px}
 .pcontent h2{font-size:17px;font-weight:700;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #edeff1}
 .pcontent h3{font-size:15.5px;font-weight:700;margin:20px 0 8px}
 .pcontent ul,.pcontent ol{margin:0 0 14px;padding-left:24px}
-.pcontent li{margin:4px 0}
+.pcontent li{margin:7px 0}
 .pcontent strong{font-weight:600}
 .pcontent blockquote{border-left:4px solid #c8ccd0;padding:2px 0 2px 14px;margin:0 0 14px;color:#4a4a4a}
 .pcontent table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:13.5px}
