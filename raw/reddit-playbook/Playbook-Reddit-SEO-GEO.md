@@ -262,6 +262,24 @@ Résume les idées principales, supprime le remplissage, garde les enseignements
 
 ---
 
+## 7ter. Placer Qadence dans le process
+
+Qadence n'apparaît jamais pendant le lancement du compte (jours 1 à 30). La première mention attend un compte opérationnel : 30 jours d'ancienneté, 200 points de réputation.
+
+Ensuite, une mention par semaine maximum. Chaque mention remplit trois conditions : le thread s'y prête (quelqu'un cherche un outil, compare des solutions ou décrit un problème que Qadence résout), le quota hebdomadaire est encore disponible dans le journal, et la disclosure est incluse.
+
+**Assume que c'est ton produit.** Tu ne fais pas passer Qadence pour une découverte : « I built Qadence, so I'm biased, but... » désarme la méfiance et respecte les règles des subs qui tolèrent les makers. La recommandation déguisée, elle, correspond au pattern astroturfing (§2) : c'est le chemin le plus court vers le ban.
+
+**Où la mention rapporte le plus : les threads décisionnels déjà positionnés sur Google.** « Best AI SEO tool », « SEO agent », « [catégorie] alternatives ». Perplexity source Reddit via les SERP Google (§8), donc une mention dans un thread positionné peut apparaître dans les réponses IA en quelques jours. C'est exactement ce que mesure le test.
+
+**Comment la formuler.** D'abord la réponse utile (3 à 5 conseils concrets), puis Qadence en option parmi 2 ou 3 outils, jamais seul. Un avis qui donne aussi les limites (« it won't do X ») est plus crédible et plus repris par les IA qu'un avis 100 % positif (§2). Et garde la même formulation d'une mention à l'autre, « Qadence, an AI SEO agent » : la répétition d'une même terminologie dans des threads différents est le signal que les IA agrègent (Conbersa).
+
+**Le meilleur véhicule reste la data.** Un post « We analyzed N sites, here's what we found » avec Qadence en source de la donnée passe presque partout, y compris dans les subs qui interdisent l'autopromo directe (demande en modmail avant). C'est le format le plus compatible avec une activité commerciale (§7), et il produit des citations IA sans épuiser la tolérance de la communauté.
+
+**La mesure ferme la boucle.** Chaque mention se logge dans le journal, et le cockpit vérifie le quota avant de drafter. Le vendredi, tu regardes si les mentions produisent : citations de Qadence sur la liste fixe de 15 à 20 requêtes acheteur, trafic référent, mentions entrantes.
+
+---
+
 ## 8. Threads positionnés sur Google
 
 Un thread dont le titre reprend une vraie requête Google profite directement de l'autorité de reddit.com. C'est ce qui lui permet de se positionner rapidement dans le top 10.
