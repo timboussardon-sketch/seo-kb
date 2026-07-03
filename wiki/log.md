@@ -992,3 +992,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - pilier dominant: SEO
 - skill déclenché: revue-presse-quotidienne + ton-de-voix-tim
 - écarté: Cloudflare 15 septembre (déjà en brève les 26/06, 01/07 et 02/07), spam update juin (info du jour du 29/06)
+
+## [2026-07-03] update | Qadence : conscience temporelle + DA Métriques
+- entités touchées : 1 ([[entities/qadence-seo-agent]] : 2 sections ajoutées, état 2026-07-03)
+- journal de dev : entrée 2026-07-03 dans qadence/Journal.md
+- concepts liés : [[concepts/memory-llm-vs-wiki-persistant]] (timeline + décisions + preuves mesurées, côté produit)
+- angle SEO : boucle de résultat J+14/J+30 = la « fiche preuve » du vault portée en SaaS

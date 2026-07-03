@@ -124,3 +124,20 @@ Commit + push main + déploiement prod qadence.io. Design Google-mono.
 - #1 cache historique : `cache_control` sur le dernier bloc de `messages` (claude.ts) → ~0,1×.
 - #2 trim (`get_document` 40k→12k, cap tool results 60k→24k) + context editing beta `clear_tool_uses_20250919` (header `context-management-2025-06-27`), kill-switch `SEO_AGENT_CTX_EDIT`. Validé sur appel Anthropic réel via sonde jetable → HTTP 200 ; activé (`=1`), `seo-agent` redéployé, sonde supprimée.
 - #3 effort par tier : Sonnet 'low' / Opus 'high' (index.ts), posé seulement sur opus/sonnet.
+
+## 2026-07-03 — Conscience temporelle, proactivité, DA « Métriques », boucle de résultat
+
+**DA « Métriques » sur tous les onglets Suivi & Analyse** (commits `e43da36`, `1741621`, `9fc366a`, `295d70f`) : 5 propositions maquettées en dev (`/design-onglets`), Tim a retenu « Métriques » (alignée sur Performances). Cartes métriques colorées langage GSC (`MetricCards`/`GSC`/`StatusChip` dans dashKit), deltas verts/rouges (fini le bleu accent), tableaux à en-tête gris arrondi (coins 14 px, `border-collapse: separate` car collapse ignore border-radius), barres de données en dégradés de bleu (jamais d'ocre), flèches de tendance `TrendArrow` à la place des mini-traits (Rapport + Suivi), listes d'URLs une ligne par URL.
+
+**Conscience temporelle de l'agent** (commit `e6da2f0`, 7 chantiers d'un audit validé par Tim) :
+- Prompt : état SEO (snapshots), journal 10 événements (`project_events`), recos + résultats mesurés, décisions dures (`decision:*`), déjà expliqué (`explained:*`), signaux crons.
+- Nouveaux outils : `record_decision`, `track_reco`, `open_view` ; `suggest_agent` élargi aux 7 personas ; continuité de profondeur sur l'historique (un follow-up court reste en tour profond).
+- « Prochaine meilleure action » obligatoire en fin d'analyse : bloc ```nba rendu en carte (impact /5, minutes, ≈ clics/mois, confiance %, pourquoi), chiffres dérivés des outils uniquement, puis `track_reco`.
+- Boucle de résultat : table `agent_recos` (migration `20260703120000`) + edge `cron-reco-outcome` (cron pg 7h15 UTC, job 32) qui re-mesure la GSC à J+14/J+30, écrit les deltas, notifie, trace un `project_events`.
+- `distill-session` extrait décisions/concepts/événements en fin de session.
+- Front : ouverture proactive du chat (daily-briefing assemblé, zéro LLM, 1×/jour/projet), `NextActionCard`, bouton open_view, Thinking à étapes sur l'onglet To do (`24d7309`).
+- Évals de régression : `evals/run-evals.mjs` + `prompts.json` (10 prompts dorés), à lancer avant tout deploy du prompt.
+
+**Optimisation cache** (commit `76314d7`) : voix (12 003 car.) + règle fondamentale (~6 500 car.) déplacées dans la tête cacheable du prompt (~4 600 tokens qui passaient plein tarif à chaque session/invalidation → tarif cache 10 %). Rappel court en fin de queue pour garder le poids de fin de prompt.
+
+**Déploiements** : migration via API Management (HTTP 201), `seo-agent` v261, `distill-session` v34, `cron-reco-outcome` v1, front Netlify ×3. Vérifs : cron actif en cron.job, fonctions répondent, `agent_recos` existe. Le système démarre à vide : les blocs temporels se remplissent avec l'usage, premiers outcomes à J+14.

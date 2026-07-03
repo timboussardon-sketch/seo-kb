@@ -4,8 +4,8 @@ title: "Qadence (qadence.io)"
 aliases: [qadence, qadence-io, qadence-seo-agent, qadence-agent, watcher, scorer, botbeat, veilleur]
 tags: [agent, produit-tim, supabase, edge-function, deno, vite, react, netlify, claude, claude-api, vault-rag, gemini-legacy, gsc, opendecoder, dispatcher, organikk]
 created: 2026-04-30
-updated: 2026-06-13
-sources: 2
+updated: 2026-07-03
+sources: 3
 confidence: high
 status: stable
 ---
@@ -17,6 +17,29 @@ status: stable
 Plateforme SEO agentique de Tim. Frontend `qadence.io` + API `api.qadence.io`. Pitch : *"Votre partenaire SEO connecté à votre GSC, pas un chatbot qui invente."* Cible : praticien SEO sénior, contexte cumulatif entre conversations.
 
 Distinct de [[entities/organikk-co]] (laboratoire public + acquisition) : Qadence = produit SaaS agentique, sortie commerciale de la doctrine 4 piliers ([[concepts/methode-organikk-4-piliers]]).
+
+## Conscience temporelle + proactivité (2026-07-03) : l'agent tient ses dossiers
+
+Chantier structurant livré en prod le 2026-07-03 (commits `e6da2f0`, `76314d7`). Le principe : l'agent ne vit plus dans le présent, chaque réponse est située dans l'histoire du projet. Incarnation produit de [[concepts/memory-llm-vs-wiki-persistant]] : la mémoire n'est plus un sac de faits, c'est une timeline + des décisions + des résultats mesurés.
+
+**Le prompt reçoit, dans l'ordre** : contexte client → décisions SEO actées (contraintes dures) → état SEO actuel (clics/impressions 28 j vs 28 j précédents, depuis `gsc_daily_snapshots`, zéro appel GSC ajouté) → journal du projet (10 derniers événements datés, table `project_events`) → recommandations déjà émises avec leurs résultats mesurés (`agent_recos`) → concepts déjà expliqués (jamais réexpliqués) → signaux des crons → mémoire ponctuelle → question.
+
+**Boucle de résultat** (le différenciateur) : toute analyse se termine par une « prochaine meilleure action » chiffrée (bloc `nba` rendu en carte : action, impact /5, minutes, ≈ clics/mois, confiance %, pourquoi ; chaque chiffre dérive des outils consultés, champ non étayable = omis). L'outil `track_reco` l'enregistre avec ses métriques de départ ; le cron `cron-reco-outcome` (7h15 UTC) re-mesure position et clics dans la GSC à J+14 et J+30, écrit le delta réel, notifie, et le résultat revient dans le prompt des sessions suivantes. Même logique que la boucle sortie→apprentissage du vault ([[preuves/index]]), appliquée au produit.
+
+**Mémoire à 3 régimes** dans `project_memory` : faits ponctuels (update_memory), décisions SEO durables (`decision:*`, outil `record_decision` : refus d'une tactique, CMS, URLs intouchables, périmètre de mots-clés ; contraintes dures respectées à 6 mois), concepts expliqués (`explained:*`). La distillation de fin de session (`distill-session`) extrait automatiquement les trois + les événements notables.
+
+**Proactivité** : l'agent ouvre la conversation sur un projet (point du jour assemblé depuis `daily-briefing`, zéro appel LLM, 1×/jour/projet, chips d'action cliquables) ; `suggest_agent` couvre les 7 personas (jade, indigo, onyx, ambre, carmin, azur, veille) ; `open_view` propose un bouton vers l'onglet pertinent ; continuité de profondeur (un follow-up court au milieu d'un audit reste sur le tour profond).
+
+**Économie de tokens** : voix + règle fondamentale (~4 600 tokens statiques) déplacées dans la tête cacheable du prompt (servies à 10 % du tarif), rappel court en fin de queue. Blocs temporels plafonnés (~1 800 tokens max). Évals de régression : `evals/run-evals.mjs` (10 prompts dorés, règles déterministes : wording, structure Observation/Action/Impact, nba présent sur les analyses), à lancer avant tout déploiement d'une modification du prompt.
+
+## DA « Métriques » des onglets Suivi & Analyse (2026-07-03)
+
+Refonte visuelle validée par Tim (proposition 2 sur 5, maquettes dev `/design-onglets`) : tous les onglets (Alertes, Indexation, Sitemaps, Suivi de positions, Cartographie, Rythme hebdo + les dashboards partagés) parlent le langage de l'onglet Performances. Règles durables :
+- Cartes métriques en dégradé, une couleur par métrique (langage GSC : bleu clics, violet impressions, teal CTR, orange position, rouge chutes, vert hausses) : `MetricCards` + `GSC` dans `src/lib/dashKit.jsx`.
+- Deltas verts (gains) / rouges (pertes), plus jamais le bleu accent. Chips de statut colorées (`StatusChip`).
+- Barres de DONNÉES en dégradés de bleu (`#3450C0` → `#D6DEF6`), jamais d'ocre : l'ambre reste réservé au sémantique (statut, quota, sévérité).
+- Le SENS d'une évolution = flèche verte haut / rouge bas (`TrendArrow`, vizKit), jamais un mini-trait. Listes d'URLs = une ligne par URL avec delta, jamais un paragraphe à virgules.
+- Tableaux : en-tête gris neutre arrondi (le bandeau bleu reste réservé aux tableaux du chat), coins 14 px, `border-collapse: separate` (collapse ignore border-radius).
 
 ## Refonte majeure — agent sous Claude (2026-06-13)
 

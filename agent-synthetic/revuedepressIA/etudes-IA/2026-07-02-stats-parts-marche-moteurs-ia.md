@@ -20,15 +20,15 @@ ChatGPT détient 62,6 % des référrals IA vers les sites B2B, 17,9 % des requê
 
 ### Volume d'utilisateurs actifs (2026)
 
-| Plateforme | Utilisateurs actifs | Fréquence | Source | Date |
-|---|---|---|---|---|
-| Google AI Mode | +1 milliard | mensuel | Google I/O 2026 (blog officiel) | mai 2026 |
-| ChatGPT | 900 millions | hebdomadaire | OpenAI (déclaration officielle) | 27 fév. 2026 |
-| ChatGPT | +1 milliard | mensuel | Sensor Tower / Reuters | juin 2026 |
-| Microsoft Copilot | 420 millions | mensuel | Microsoft Q3 FY2026 | avr. 2026 |
-| Gemini | 750 millions | mensuel | Google | avr. 2026 |
-| Perplexity | ~45 millions | mensuel | DemandSage / Similarweb | mai 2026 |
-| Claude | ~30 millions | mensuel | Anthropic (consumer) | 2026 |
+| Plateforme        | Utilisateurs actifs | Fréquence    | Source                          | Date         |
+| ----------------- | ------------------- | ------------ | ------------------------------- | ------------ |
+| Google AI Mode    | +1 milliard         | mensuel      | Google I/O 2026 (blog officiel) | mai 2026     |
+| ChatGPT           | 900 millions        | hebdomadaire | OpenAI (déclaration officielle) | 27 fév. 2026 |
+| ChatGPT           | +1 milliard         | mensuel      | Sensor Tower / Reuters          | juin 2026    |
+| Microsoft Copilot | 420 millions        | mensuel      | Microsoft Q3 FY2026             | avr. 2026    |
+| Gemini            | 750 millions        | mensuel      | Google                          | avr. 2026    |
+| Perplexity        | ~45 millions        | mensuel      | DemandSage / Similarweb         | mai 2026     |
+| Claude            | ~30 millions        | mensuel      | Anthropic (consumer)            | 2026         |
 
 Note de lecture : le périmètre de Copilot inclut Microsoft 365 Copilot (enterprise) — les 420M MAU ne sont pas des utilisateurs de Copilot Search au sens strict. Le chiffre Perplexity varie selon les sources (45M à 230M) selon que l'on compte uniquement la recherche web ou l'ensemble des produits (Comet browser, agent Computer, API). Les 45M correspondent à la plateforme de recherche principale (Similarweb, mai 2026).
 
