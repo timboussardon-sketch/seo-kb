@@ -76,7 +76,6 @@ FLAIRS = [
     ("6. Ratio d", "RÈGLE", "f-red"),
     ("7. Formats", "MÉTHODE", "f-blue"),
     ("7bis", "PROTOCOLE", "f-blue"),
-    ("7ter", "QADENCE", "f-green"),
     ("8. Threads positionnés", "SEO", "f-orange"),
     ("9bis", "PROMPTS", "f-orange"),
     ("9. Extraction", "INSIGHTS", "f-green"),
