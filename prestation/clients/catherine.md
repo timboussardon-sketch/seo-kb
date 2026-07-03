@@ -18,7 +18,7 @@ Prochaine action : quand les réponses arrivent (admin.html ou table Supabase), 
 ## Journal des étapes faites
 | Date | Étape (roadmap) | Ce qui a été fait | Output | Skill |
 |---|---|---|---|---|
-| 2026-07-03 | 1 | Dashboard client créé (gabarit Alexia) : seul l'onglet Questionnaire est ouvert, le reste verrouillé. Réponses persistées en ligne (Supabase `client_selections`, doc_key `catherine-accompagnement`) + localStorage ; `admin.html` pour lire ses réponses. Commit local, PAS poussé (organikk = prod sur push main) | public/catherine-accompagnement/ | roadmap-prestation |
+| 2026-07-03 | 1 | Dashboard client créé (gabarit Alexia) : seul l'onglet Questionnaire est ouvert, le reste verrouillé. Réponses persistées en ligne (Supabase `client_selections`, doc_key `catherine-accompagnement`) + localStorage ; `admin.html` pour lire ses réponses. **Déployé sur organikk.co** (push validé par Tim, vérifié live : 200 + X-Robots-Tag noindex) | organikk.co/catherine-accompagnement/ | roadmap-prestation |
 
 ## Spécificités client
 - Canada : tarif énoncé 1 500 € HT, conversion CAD + taxes à trancher avant facturation.
