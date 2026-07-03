@@ -65,3 +65,64 @@ Modèle verbatim (version finale de Tim, envoyée à Leexi le 2026-06-12) :
 > Si un point de l'audit ne vous paraît pas clair, ne surtout pas hésiter à me le dire, et si vous avez également d'autres contenus pour le contexte, je prends :)
 >
 > Excellente journée
+
+## §3 — Livraison du Drive + premiers chantiers d'optimisation (fin d'onboarding)
+
+Quand : à la fin de l'onboarding, quand le Drive client est rangé et que les premiers chantiers concrets sont prêts à valider (élagage + briefs des pages à optimiser). C'est LE message de bascule : « la phase de cadrage est finie, voilà ce que je produis, validez et on exécute ».
+Objectif : donner l'accès au Drive comme outil de suivi en direct, présenter les chantiers en 2 blocs max, et fermer sur UNE demande de validation groupée.
+
+Structure (version finale de Tim, Leexi 2026-07-03) :
+1. Ouverture courte + marqueur d'étape (« Maintenant que l'on a passé l'onboarding »).
+2. L'accès au Drive, lien seul sur sa ligne, vendu comme du suivi en direct : « Vous pouvez suivre en direct ce que je fais, et les docs que je crée ».
+3. « Cette semaine j'ai préparé deux choses » : jamais plus de 2 blocs de livrables par email.
+4. Bloc 1 (ex. élagage) : l'objectif en 2 phrases + le pourquoi en langage vecteurs simples (« supprimer des pages permet de recentrer vos vecteurs sémantiques autour de vos vrais sujets ») + le lien + la mention de contrôle (« URL à valider avant supp »).
+5. Bloc 2 (optimisation) : une entrée par page, format sec : nom + situation chiffrée en 1 ligne (position, affichages, clics) + le lien du plan. Pas de paragraphe d'explication par page.
+6. Le paragraphe d'honnêteté : « il va falloir revoir pas mal de contenu sur ces pages. Les textes actuels parlent du produit, alors que les recherches attendent des réponses à leur question. » + la phrase de confiance adaptée IA : « Tout est chiffré à partir de votre Search Console et de vos tickets support, rien n'est halluciné. »
+7. Clôture = une seule demande de validation groupée : « Si vous pouvez valider les URL à supprimer et les 3 briefs, on est bon :) ».
+8. Signature : « Excellente journée ».
+
+Différences voulues vs le premier draft (leçons) : plus court ; la liste des matériaux à récupérer NE part PAS dans cet email (elle vient après la validation, ou en call) ; pas de détail du rangement du Drive (le Drive se visite) ; « rien n'est halluciné » remplace « rien n'est estimé » quand le client est une boîte IA.
+
+Modèle verbatim :
+
+> Bonjour {Prénom 1}, {Prénom 2}, {Prénom 3},
+>
+> J'espère que vous allez bien,
+>
+> Maintenant que l'on a passé l'onboarding, vous avez accès à votre drive {CLIENT}, juste ici :
+> {URL du Drive}
+>
+> Vous pouvez suivre en direct ce que je fais, et les docs que je crée : stratégie, mots-clés, analyses, quick wins, redirections etc.
+>
+> Cette semaine j'ai préparé deux choses.
+>
+> 1. les pages à supprimer. L'objectif est de faire un premier tri, on voit ce qui se passe, et on attaquera la phase 2 ensuite. Supprimer des pages permet de recentrer vos vecteurs sémantiques autour de vos vrais sujets.
+>
+> Le fichier est ici : {URL du sheet d'élagage}
+>
+> (URL à valider avant supp)
+>
+> 2. J'ai commencé l'optimisation des pages
+>
+> 1. {Nom de la page 1 (son rôle)}
+>
+> Votre page la mieux placée : position {X} sur Google, {N} affichages en {période}, mais {N} clics. Le texte actuel ne répond pas à ce que les gens cherchent.
+>
+> Le plan de la nouvelle structure : {URL brief 1}
+>
+> 2. {Nom de la page 2}
+> Position {X}, {N} affichages en {période}, {N} clics.
+>
+> La nouvelle structure hn : {URL brief 2}
+>
+> 3. {Nom de la page 3}
+> Position {X}, {N} affichages sur {période}.
+>
+> La structure hn : {URL brief 3}
+>
+> À savoir : il va falloir revoir pas mal de contenu sur ces pages. Les textes actuels parlent du produit, alors que les recherches attendent des réponses à leur question. Chaque plan précise ce qu'on garde, ce qu'on remplace et pourquoi. Tout est chiffré à partir de votre Search Console et de vos tickets support, rien n'est halluciné.
+>
+> Si vous pouvez valider les URL à supprimer et les {N} briefs, on est bon :)
+>
+> Excellente journée,
+> {Prénom}
