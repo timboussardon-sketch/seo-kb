@@ -1040,3 +1040,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - résurgence: mercredi 2026-07-01 muet (3ᵉ, ticket ops LaunchAgent), pas de verdict à ratifier
 - fil rouge: édition « mots-clés non mangés » sort en W28 ou se gèle ; fil Reddit attend les données du programme 30 jours
 - output: [[revue-hebdo/2026-W27]]
+
+## [2026-07-03] session | Playbook Reddit : version finale ligne claire + skill redaction-guide
+- playbook + routine réécrits en « ligne claire » (une idée par ligne, donnée d'abord, ligne de chute), mise en page validée par Tim sur le modèle du post Trailblazer
+- sections rédigées par Tim reprises verbatim : Cycle mensuel (fraîcheur), 7. Formats de contribution ; §14 Métriques réécrite (quoi/comment/quelle question) ; §7bis renvoie au prompt 8 pour les subs
+- skill global `redaction-guide` créé (~/.claude/skills) : les 7 règles du rythme + structure guide + interdits + auto-check ; corpus my-voice enrichi (cartographie slope IA + échantillon canonique)
+- livrable : raw/reddit-playbook/Playbook-Reddit-complet.html (DA Reddit) + .pdf, régénérables via build.py
