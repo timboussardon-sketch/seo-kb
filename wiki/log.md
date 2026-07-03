@@ -984,3 +984,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - section « L'exécution : routine + Reddit Cockpit » ajoutée en tête du playbook (wikilinks Routine-quotidienne, Journal)
 - corrections marquées dans le corps : timing (étude Upvote.net = 150 posts), 1re heure au lieu de 30 min, cross-post 6h+/3-4 subs, fraîcheur mensuelle au lieu du refresh 90j, cadence 4-6/j plafond 8
 - note de fiabilité : la Routine-quotidienne fait foi sur les chiffres d'exécution
+
+## [2026-07-03] revue-presse | Google remet des clics dans ses réponses IA
+- output: raw/revue-de-presse/2026-07-03-revue-presse.md
+- info du jour: liens cliquables réintégrés dans les réponses IA (recettes AI Mode 1er juillet + 5 changements de mai + rebond CTR Seer 1,3%→2,4%)
+- brèves: pubs ChatGPT ouvertes UK/Japon/Corée/Brésil/Mexique / étude Kevin Indig data propriétaire et citations / retraite Fabrice Canel (Bing, IndexNow)
+- pilier dominant: SEO
+- skill déclenché: revue-presse-quotidienne + ton-de-voix-tim
+- écarté: Cloudflare 15 septembre (déjà en brève les 26/06, 01/07 et 02/07), spam update juin (info du jour du 29/06)
