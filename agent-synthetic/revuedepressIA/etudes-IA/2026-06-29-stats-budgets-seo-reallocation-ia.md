@@ -17,7 +17,7 @@ En 2026, les CMO allouent en moyenne **15,3 % de leur budget marketing à l'IA**
 
 ---
 
-## Les chiffres clés (vérifiés à la source)
+## Les chiffres 
 
 ### Budget marketing global (CMO)
 
@@ -94,9 +94,9 @@ Paid search représente **13,9 % des allocations digitales** dans ce périmètre
 
 ## Le budget marketing stagne ; le digital, lui, progresse
 
-Les budgets marketing des grandes entreprises sont restés stables à 7,7 % du revenu en 2025 (Gartner), légèrement remonté à 7,8 % en 2026 — loin des 9,5 % d'il y a trois ans. Mais le numérique concentre une part croissante : les canaux digitaux représentent désormais 61,1 % du budget marketing total en 2025, un record absolu depuis 2013.
+Les budgets marketing des grandes entreprises sont restés stables à 7,7 % du revenu en 2025 (Gartner), légèrement remonté à 7,8 % en 2026, loin des 9,5 % d'il y a trois ans. Mais le numérique concentre une part croissante : les canaux digitaux représentent désormais 61,1 % du budget marketing total en 2025, un record absolu depuis 2013.
 
-En France, le marché publicitaire digital a franchi 12,4 milliards d'euros en 2025 (+11 %). La publicité search — paid search, pas le référencement naturel — capte 40 % de ce marché, soit 4,93 milliards d'euros, en hausse de 10 %. Ça ne ressemble pas à une fuite des investisseurs hors du search.
+En France, le marché publicitaire digital a franchi 12,4 milliards d'euros en 2025 (+11 %). La publicité search, paid search, pas le référencement naturel — capte 40 % de ce marché, soit 4,93 milliards d'euros, en hausse de 10 %. Ça ne ressemble pas à une fuite des investisseurs hors du search.
 
 ---
 
