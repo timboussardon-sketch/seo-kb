@@ -998,3 +998,7 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - journal de dev : entrée 2026-07-03 dans qadence/Journal.md
 - concepts liés : [[concepts/memory-llm-vs-wiki-persistant]] (timeline + décisions + preuves mesurées, côté produit)
 - angle SEO : boucle de résultat J+14/J+30 = la « fiche preuve » du vault portée en SaaS
+
+## [2026-07-03] design | Playbook Reddit refait en DA Reddit
+- Playbook-Reddit-complet.html/pdf refaits : feed Reddit (posts votés, flairs, u/timboussardon, AutoModerator, carte communauté), IBM Plex Sans
+- build.py posé dans raw/reddit-playbook/ : regénère HTML+PDF depuis les 3 .md sources
