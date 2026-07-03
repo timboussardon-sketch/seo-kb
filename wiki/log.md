@@ -1020,3 +1020,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - section 4 refaite en vrai programme de lancement de compte : 4 phases J1→J30, actions par jour, paliers chiffrés, critères de passage, interdits ; plan 90 jours réaligné (lancement = jours 1-30)
 - lignes d'actions (commentaires/partager/enregistrer/signaler) retirées de tous les posts
 - textes aérés : gros paragraphes découpés, espacements CSS augmentés
+
+## [2026-07-03] edit | Playbook + routine Reddit : passe d'édition anti-IA complète
+- 12 corrections verbatim de Tim + ~55 tournures compilées réécrites (« la donnée de cadrage », « le cadre de risque », « les tactiques documentées », « la conséquence opérationnelle »...)
+- zéro info ni source supprimée ; voix directe rétablie (« c'est le mauvais plan », « effet de second tour », « verrouillé par contrat »)
+- fix phrase orpheline en §fraîcheur (« Elle consiste à » sans antécédent)

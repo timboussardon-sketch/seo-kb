@@ -13,7 +13,7 @@ status: stable
 
 # Playbook Reddit : SEO + GEO
 
-> Ce playbook vise deux résultats mesurables : des citations dans les moteurs génératifs (GEO) et des positions Google via des threads qui rankent. Il a été cadré le 2026-06-18, et les chiffres d'exécution ont été vérifiés contre ~25 sources le 2026-07-02. Les chiffres fragiles sont signalés comme tels.
+> Ce playbook vise deux résultats mesurables : des citations dans les moteurs génératifs (GEO) et des positions Google via des threads qui rankent. Première version le 18 juin 2026, chiffres d'exécution vérifiés contre ~25 sources le 2 juillet. Les chiffres fragiles sont signalés comme tels.
 
 ---
 
@@ -21,18 +21,18 @@ status: stable
 
 Reddit est passé du 68e rang au top 5 des domaines les plus visibles sur Google US entre juillet 2023 et juillet 2024. L'indice Sistrix est monté de 95,1 à 1 370 points, soit +1 328 % (Sistrix via Amsive, 2024).
 
-Trois causes documentées se sont cumulées : l'update « hidden gems » déployée à l'automne 2023, le filtre « Discussions and forums » dans les résultats, et l'accord de licence de données entre Google et Reddit à environ 60 M$/an signé en février 2024.
+Trois causes se sont empilées : l'update « hidden gems » déployée à l'automne 2023, le filtre « Discussions and forums » dans les résultats, et l'accord de licence de données entre Google et Reddit à environ 60 M$/an signé en février 2024.
 
-Sur les moteurs génératifs, Reddit est la source n°1 ou n°2 des citations selon toutes les études 2025-2026 (Peec AI, Semrush, Evertune, détail en §2). Sur Perplexity, Reddit pèse entre 20 et 47 % des citations selon l'étude et la période. Ces accès sont contractuels : Google paie environ 60 M$/an, OpenAI environ 70 M$/an estimés (mai 2024).
+Sur les moteurs génératifs, Reddit est la source n°1 ou n°2 des citations selon toutes les études 2025-2026 (Peec AI, Semrush, Evertune, détail en §2). Sur Perplexity, Reddit pèse entre 20 et 47 % des citations selon l'étude et la période. Et c'est verrouillé par contrat : Google paie environ 60 M$/an pour les données Reddit, OpenAI environ 70 M$/an estimés (mai 2024).
 
-Le playbook exploite quatre usages, dans l'ordre de rendement documenté :
+Il y a quatre façons d'exploiter Reddit, classées ici par rendement :
 
-1. **Les citations IA**, obtenues via des threads décisionnels où le site est nommé de façon authentique.
-2. **Les positions Google**, obtenues via des threads dont le titre correspond à une requête réelle.
-3. **L'extraction d'insights** : pain points, verbatims et vocabulaire réel. Cet usage ne comporte aucun risque de ban puisque rien n'est posté.
-4. **Un compte crédible**, avec de l'ancienneté, de la réputation et un historique de contributions. C'est le prérequis des trois usages précédents.
+1. **Te faire citer par les IA** dans des threads décisionnels où ton site est nommé de façon authentique.
+2. **Faire ranker des threads sur Google** dont le titre reprend une requête réelle.
+3. **Miner Reddit comme source d'insights** : pain points, verbatims, vocabulaire réel. Aucun risque de ban, tu ne postes rien.
+4. **Construire un compte crédible** : de l'ancienneté, de la réputation, un historique de contributions. Sans ça, les trois premiers leviers sont inaccessibles.
 
-La contrainte structurante est la politique anti-spam de Reddit. La doctrine officielle de la plateforme tient en une phrase : « C'est OK d'être un Redditor qui a un site web, ce n'est pas OK d'être un site web qui a un compte Reddit. » Les sanctions constatées vont de la suppression du post au shadowban et au bannissement.
+La contrainte principale, c'est la politique anti-spam de Reddit. La doctrine officielle tient en une phrase : « C'est OK d'être un Redditor qui a un site web, ce n'est pas OK d'être un site web qui a un compte Reddit. » Les sanctions vont de la suppression du post au bannissement définitif, en passant par le shadowban.
 
 En France, Reddit compte environ 20,6 M d'utilisateurs estimés (Influencia) et a gagné 72 % de visiteurs mensuels en un an (Médiamétrie), mais aucune communauté SEO francophone n'y est active. Le levier est plus faible en français qu'en anglais. Le détail et les conséquences sont en §12.
 
@@ -50,10 +50,10 @@ Je pars d'un compte ancien (un premier post il y a un an) resté quasi inactif d
 
 ## L'exécution : routine quotidienne + Reddit Cockpit (depuis 2026-07-02)
 
-La couche d'exécution vit dans le même dossier que ce playbook :
+L'exécution est dans le même dossier que ce playbook :
 
 - **[[Routine-quotidienne]]** contient les quotas : 4 à 6 commentaires par jour avec un plafond à 8, 1 mention par semaine, 1 post par semaine avec un plafond dur à 3, et le bilan hebdomadaire sur liste fixe de requêtes. Elle a été vérifiée contre ~25 sources le 2026-07-02. En cas de divergence avec ce document, c'est elle qui fait foi sur les chiffres d'exécution.
-- **[[Journal]]** assure le suivi en append-only : une ligne par jour, un bloc par bilan hebdomadaire.
+- **[[Journal]]** tient le suivi : une ligne par jour, un bloc par bilan hebdomadaire.
 - **Le Reddit Cockpit** (`~/Code/reddit-cockpit/`) scrape en lecture seule les flux RSS des subs cibles et des requêtes acheteur chaque jour à 07h50, puis rédige automatiquement 1 à 2 commentaires par thread retenu (en anglais, 120-200 mots, quotas vérifiés contre le journal). La file arrive dans `queue/AAAA-MM-JJ.md`. La machine ne publie jamais : le clic reste manuel. Le bloc commentaires de la routine descend ainsi à 10-12 minutes par jour.
 
 ---
@@ -66,7 +66,7 @@ En juillet 2023, reddit.com était le 68e domaine le plus visible sur Google US.
 
 Le trafic organique estimé a suivi la même pente : d'environ 57 M à environ 427 M de visites mensuelles sur la même période, soit +649 % (estimation Ahrefs via Amsive, pas une donnée officielle Reddit).
 
-Trois causes sont documentées :
+Trois causes expliquent cette montée :
 
 - **L'update « hidden gems »**, annoncée en mai 2023 et déployée dans les core updates d'octobre-novembre 2023, a remonté le contenu expérientiel et les forums. Glenn Gabe a mesuré sur 97 forums que 88 % ont gagné plus de 100 % de visibilité sur un an. Reddit a gagné entre +378 % (Semrush) et +978 % (Sistrix) selon l'outil de mesure.
 - **Le filtre « Discussions and forums »** a créé une zone dédiée aux forums dans les résultats, qui remonte Reddit sur les requêtes conversationnelles (« best X for Y », avis, troubleshooting).
@@ -76,15 +76,15 @@ Trois causes sont documentées :
 
 À partir du 7 janvier 2025, Reddit a perdu environ 350 points d'indice Sistrix et est passé du 3e au 4e rang US. Les core updates de 2025 (mars, juin, août, décembre) ont créé de la volatilité sur les sites communautaires (Reddit, Quora, Stack Exchange).
 
-Pendant l'update de décembre 2025, Reddit a chuté puis est revenu à son niveau antérieur dans la semaine suivant le déploiement. En août 2025, il a brièvement atteint le 2e rang US, devant Amazon. La position structurelle reste le top 5 US, avec une volatilité par paliers.
+Pendant l'update de décembre 2025, Reddit a chuté puis est revenu à son niveau antérieur dans la semaine suivant le déploiement. En août 2025, il a brièvement atteint le 2e rang US, devant Amazon. Reddit reste installé dans le top 5 US, avec une volatilité par paliers.
 
 ### Mécanisme de ranking (liens en nofollow)
 
-Les liens sortants de Reddit sont en nofollow : ils ne transmettent pas d'autorité au sens backlink. Une stratégie fondée sur des « backlinks Reddit » n'a donc pas de base technique.
+Les liens sortants de Reddit sont en nofollow : ils ne transmettent pas d'autorité au sens backlink. Si le plan est d'aller chercher des backlinks Reddit pour le ranking, c'est le mauvais plan.
 
 Aujourd'hui, trois facteurs expliquent principalement pourquoi un thread Reddit se positionne : le crawl quasi temps réel (facilité par l'accord de données), les signaux d'engagement (temps passé, interactions) et le critère « expérience » de l'E-E-A-T, cible déclarée de l'update hidden gems.
 
-John Mueller (Google) précise que les liens Reddit apportent du trafic référent, et que les mentions sans lien ne sont pas un facteur de ranking direct. Un effet de second ordre est constaté : un thread qui ranke est repris par des médias, qui créent des liens dofollow vers les sites mentionnés.
+John Mueller (Google) précise que les liens Reddit apportent du trafic référent, et que les mentions sans lien ne sont pas un facteur de ranking direct. Il y a aussi un effet de second tour : quand un thread ranke, des médias le reprennent et créent des liens dofollow vers les sites mentionnés.
 
 ---
 
@@ -99,9 +99,9 @@ John Mueller (Google) précise que les liens Reddit apportent du trafic référe
 
 À pondérer : ces pourcentages sont volatils. La part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % entre début août et mi-septembre 2025 (Semrush). Une mesure donne Gemini à 0,1 % quand une autre le classe n°1.
 
-Tout chiffre de citation doit donc être donné avec l'étude, la fenêtre et la date. Les ordres de grandeur robustes : Reddit est n°1 ou n°2 partout, au maximum sur Perplexity, fort sur les AI Overviews, instable sur ChatGPT.
+Ne sors jamais un chiffre de citation sans préciser l'étude, la fenêtre et la date. Ce qui est robuste : Reddit est n°1 ou n°2 partout, au maximum sur Perplexity, fort sur les AI Overviews, instable sur ChatGPT.
 
-### Facteurs explicatifs documentés
+### Pourquoi les IA citent autant Reddit
 
 - **La densité d'entités.** Le texte cité par les LLM affiche environ 20 % de densité d'entités, contre 5 à 8 % pour un texte standard. Les posts Reddit contiennent des noms d'outils, des versions, des prix et des chiffres.
 - **L'expérience first-hand.** Les récits de résolution de problèmes par des praticiens correspondent à la catégorie de contenu visée par l'update hidden gems.
@@ -111,31 +111,31 @@ Tout chiffre de citation doit donc être donné avec l'étude, la fenêtre et la
 
 Google paie environ 60 M$/an (février 2024, CBS, Fortune). OpenAI a signé pour un accès au contenu temps réel, estimé à 70 M$/an (mai 2024, Search Engine Land). Reddit est un flux de données payé, pas un domaine crawlé parmi d'autres. Deux points de vigilance en 2026 : le contrat Google est en renégociation, et le procès Reddit v. Perplexity (octobre 2025, en cours) peut modifier l'accès de Perplexity.
 
-### Formats cités et conditions
+### Les formats que les IA citent
 
 Les cinq formats de threads les plus cités par les IA (Discovered Labs) sont la question-réponse directe, le comparatif « versus », le troubleshooting et les how-to, le débat prix avec montants concrets, et l'avis équilibré pour/contre. Un avis qui liste des défauts est plus repris qu'un avis uniquement positif.
 
-Les données Semrush (248 000 URLs Reddit citées, octobre 2025) cadrent les seuils : 80 % des posts cités ont moins de 20 upvotes (médiane 5-8) et 70 % ont moins de 20 commentaires. Les threads Q&A représentent plus de 50 % des citations, et la longueur médiane d'un commentaire cité est d'environ 80 mots. Il n'existe pas de seuil d'upvotes.
+Les données Semrush (248 000 URLs Reddit citées, octobre 2025) donnent les ordres de grandeur : 80 % des posts cités ont moins de 20 upvotes (médiane 5-8) et 70 % ont moins de 20 commentaires. Les threads Q&A représentent plus de 50 % des citations, et la longueur médiane d'un commentaire cité est d'environ 80 mots. Il n'existe pas de seuil d'upvotes.
 
-Côté compte, les conditions sont l'ancienneté et la réputation, des réponses réparties sur plusieurs threads plutôt qu'un post unique, et une terminologie cohérente dans la durée. La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread (Conbersa).
+Côté compte, il faut de l'ancienneté, de la réputation, des réponses réparties sur plusieurs threads plutôt qu'un post unique, et une terminologie cohérente dans la durée. La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread (Conbersa).
 
-Le délai avant effet mesurable fait consensus à 60-90 jours, avec 120 jours en borne haute. Perplexity reprend un commentaire Reddit nouveau en 24 h à 7 jours.
+Le consensus des études donne 60 à 90 jours avant un effet mesurable, 120 en borne haute. Perplexity reprend un commentaire Reddit nouveau en 24 h à 7 jours.
 
-Les interdits sont l'astroturfing, les faux comptes et les faux avis. Leur détection par les communautés est documentée et le dommage est durable.
+Trois interdits : l'astroturfing, les faux comptes et les faux avis. Les communautés les repèrent, et le dommage est durable.
 
-### Rédaction : format documentation
+### Écrire comme une documentation
 
 Les moteurs reprennent davantage un texte formulé comme une source de référence : des définitions, des données vérifiables, des étapes numérotées, sans « je pense » ni « à mon avis » (Reddit GEO Playbook, Medium, mai 2026, recoupé sur plusieurs guides 2026).
 
 ### Fraîcheur (corrigé 2026-07-02)
 
-Les vieux threads continuent d'être cités pendant des années : l'âge moyen des discussions reprises par les IA est d'environ 900 jours (Semrush). La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (un chiffre issu d'une seule source Medium).
+Les vieux threads continuent d'être cités pendant des années : l'âge moyen des discussions reprises par les IA est d'environ 900 jours (Semrush). Inutile donc de réécrire tes réponses tous les 90 jours (un chiffre issu d'une seule source Medium).
 
-Elle consiste à retourner sur les discussions où tu as déjà contribué pour y ajouter un nouveau commentaire, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois que tes threads les plus cités n'ont pas bougé. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
+La bonne tactique : retourne sur les discussions où tu as déjà contribué et ajoute un nouveau commentaire, mets l'année courante dans les titres quand c'est pertinent, et contrôle chaque mois que tes threads les plus cités n'ont pas bougé. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
 
 ### Citations négatives
 
-Les IA citent aussi les critiques et les comparatifs défavorables. Une mesure donne des taux de citation proches entre sentiment positif (~5 %) et négatif (~6,1 %) (AuthorityTech, 2026, source à intérêt commercial). Un thread négatif visible peut donc orienter durablement la façon dont une IA présente un site. La veille sur ses propres mentions fait partie du dispositif (bloc veille de la routine).
+Les IA citent aussi les critiques et les comparatifs défavorables. Une mesure donne des taux de citation proches entre sentiment positif (~5 %) et négatif (~6,1 %) (AuthorityTech, 2026, source à intérêt commercial). Un thread négatif visible peut donc orienter durablement la façon dont une IA présente un site. C'est pour ça que la routine inclut une veille sur tes propres mentions.
 
 ---
 
@@ -173,7 +173,7 @@ Le lancement du compte suit quatre phases, chacune avec un critère de passage. 
 
 ### Phase 2 : les premiers commentaires (jours 8 à 14)
 
-- Tu écris 2 à 3 commentaires utiles par jour, le consensus des guides pour un compte neuf. Tu commences par les subs à seuil bas.
+- Tu écris 2 à 3 commentaires utiles par jour : c'est le consensus des guides pour un compte neuf. Tu commences par les subs à seuil bas.
 - Tu vises les questions de ta niche où une réponse concrète manque : c'est ce qui monte la réputation le plus vite, avec le moins de risque.
 - Tu espaces tes actions d'au moins 10 à 15 minutes : c'est la limite technique appliquée aux comptes à faible réputation.
 - Tu réponds à toute personne qui répond à tes commentaires.
@@ -197,7 +197,7 @@ Le lancement du compte suit quatre phases, chacune avec un critère de passage. 
 - Aucune mention de ton produit ou de ton activité commerciale.
 - Aucun cross-post et aucun repost.
 - Aucun achat d'upvotes, aucun échange de votes.
-- Un seul compte. Les multi-comptes sur une même IP correspondent au pattern sanctionné (§10).
+- Un seul compte. Plusieurs comptes sur une même IP, c'est un pattern que Reddit sanctionne (§10).
 
 ---
 
@@ -205,9 +205,9 @@ Le lancement du compte suit quatre phases, chacune avec un critère de passage. 
 
 Pour trouver les bons subreddits, commence par la recherche Reddit avec le filtre « Communities », puis regarde Subreddit Stats (activité, croissance), SnoopSnoo (démographie, parfois indisponible) et Redditlist.
 
-Le critère principal est l'engagement, pas la taille. Un sub de 15 000 membres avec des discussions actives produit plus qu'un sub de 500 000 inactif. La vérification se fait en triant par « Top, ce mois-ci » et en lisant chaque sub candidat pendant une semaine avant d'y écrire.
+Ce qui compte, c'est l'engagement, pas la taille. Un sub de 15 000 membres avec des discussions actives produit plus qu'un sub de 500 000 inactif. Pour vérifier, trie par « Top, ce mois-ci » et lis chaque sub candidat pendant une semaine avant d'y écrire.
 
-Chaque sub a ses règles locales, dans la sidebar ou un post épinglé. Certains interdisent toute activité commerciale, d'autres imposent un seuil de réputation ou d'âge, d'autres réservent l'autopromo à un jour dédié. La lecture des règles et de la wiki du sub précède tout post.
+Chaque sub a ses règles locales, dans la sidebar ou un post épinglé. Certains interdisent toute activité commerciale, d'autres imposent un seuil de réputation ou d'âge, d'autres réservent l'autopromo à un jour dédié. Lis les règles et la wiki du sub avant de poster.
 
 ---
 
@@ -215,22 +215,22 @@ Chaque sub a ses règles locales, dans la sidebar ou un post épinglé. Certains
 
 Pendant longtemps, Reddit recommandait un ratio de 9 contributions pour 1 publication promotionnelle. La règle a ensuite été retirée du Reddiquette formel et remplacée par le principe du « participant authentique », apprécié par les mods sur le comportement global.
 
-Le texte opposable aujourd'hui est la Content Policy : le spam y est défini comme des actions « répétées, non désirées ou non sollicitées », et la manipulation comme « toute tentative de manipuler le vote ou les systèmes de Reddit ». Depuis 2023, le Contributor Quality Score (CQS) filtre en plus les comptes de faible qualité sur des signaux comportementaux, indépendamment de tout ratio.
+Ce qui reste opposable aujourd'hui, c'est la Content Policy : le spam y est défini comme des actions « répétées, non désirées ou non sollicitées », et la manipulation comme « toute tentative de manipuler le vote ou les systèmes de Reddit ». Depuis 2023, le Contributor Quality Score (CQS) filtre en plus les comptes de faible qualité sur des signaux comportementaux, indépendamment de tout ratio.
 
-Le test de contrôle reste simple : un profil dont l'historique se résume à des liens vers un même site correspond au pattern sanctionné. Le ratio de travail est 95/5.
+Le test est simple : si ton historique se résume à des liens vers un même site, tu corresponds au profil sanctionné. En pratique, vise 95/5.
 
 ---
 
 ## 7. Formats de contribution
 
-Le ton attendu est anti-marketing, dans le vocabulaire de la communauté, sans jargon corporate.
+Sur Reddit, le ton est anti-marketing : tu parles le vocabulaire de la communauté, sans jargon corporate.
 
 - **Les commentaires utiles** constituent le volume principal : des réponses en profondeur à de vraies questions, sans pitch. C'est ce qui construit la réputation et la crédibilité.
 - **Les données originales** sont le format le plus compatible avec une activité commerciale : de la data first-party anonymisée (logs Fusionn, GSC, études CTR), qui apporte une valeur vérifiable sans format publicitaire.
 - **Les réponses gratuites, TIL et guides** se publient sans CTA et sans lien commercial.
-- **L'AMA** fonctionne à des conditions documentées : une personne réelle, des réponses longues, les questions gênantes traitées. Les échecs sont documentés, dont Nissan (questions plantées) et les cas archivés sur r/AMADisasters.
+- **L'AMA** ne fonctionne qu'à certaines conditions : une personne réelle, des réponses longues, les questions gênantes traitées. Les échecs sont connus, dont Nissan (questions plantées) et les cas archivés sur r/AMADisasters.
 
-Autre chiffre intéressant : selon Reddit, 81 % des utilisateurs acceptent les conversations avec les acteurs commerciaux et 59 % attendent qu'ils écoutent le feedback. La condition est l'authenticité.
+Autre chiffre intéressant : selon Reddit, 81 % des utilisateurs acceptent les conversations avec les acteurs commerciaux et 59 % attendent qu'ils écoutent le feedback. À condition de rester authentique.
 
 ---
 
@@ -244,7 +244,7 @@ Autre chiffre intéressant : selon Reddit, 81 % des utilisateurs acceptent les c
 - Structure chaque réponse ainsi : 3 à 5 conseils concrets, ton expérience personnelle, puis la mention avec disclosure (« une option que j'utilise moi-même est X ») si elle est légitime.
 - Propose un DM si le sub l'autorise, et tracke la source « Reddit » en CRM (UTM).
 - Réponds à tous les commentaires et DM sous 48 h.
-- Tiens la cadence de 4 à 6 commentaires par jour, plafond 8 (aligné 2026-07-02 sur le consensus des guides, bande 2-8/jour). Jamais en rafale : 20 commentaires dans l'heure correspond au pattern spam détecté.
+- Tiens la cadence de 4 à 6 commentaires par jour, plafond 8 (aligné 2026-07-02 sur le consensus des guides, bande 2-8/jour). Jamais en rafale : 20 commentaires dans l'heure, c'est le pattern spam typique.
 
 ### Protocole de post
 
@@ -258,27 +258,27 @@ Autre chiffre intéressant : selon Reddit, 81 % des utilisateurs acceptent les c
 
 ### Repurposing d'un article
 
-Résume les idées principales, supprime le remplissage, garde les enseignements actionnables, et place le lien en ressource complémentaire, jamais au centre du post. Une donnée Ross Simmonds situe le rendement : un thread positionné sur une requête « [produit] alternative » a généré environ 1 300 visiteurs par mois contre environ 330 pour la page concurrente, soit près de 4 fois plus.
+Résume les idées principales, supprime le remplissage, garde les enseignements actionnables, et place le lien en ressource complémentaire, jamais au centre du post. Un exemple chiffré de Ross Simmonds : un thread positionné sur une requête « [produit] alternative » a généré environ 1 300 visiteurs par mois contre environ 330 pour la page concurrente, soit près de 4 fois plus.
 
 ---
 
 ## 8. Threads positionnés sur Google
 
-Le principe est simple : un thread dont le titre reprend une vraie requête Google profite immédiatement de l'autorité de reddit.com.
+Un thread dont le titre reprend une vraie requête Google profite directement de l'autorité de reddit.com. C'est ce qui lui permet de se positionner rapidement dans le top 10.
 
-Trois approches reviennent dans toutes les études (Ross Simmonds en tête). Le titre reprend la formulation de la requête (« What's the best… », « Has anyone tried… », « How do I… »). La réponse complète est dans le corps du post. Les commentaires actifs soutiennent le ranking, donc la discussion s'entretient dans la durée.
+Trois tactiques reviennent dans la plupart des études (Ross Simmonds en tête). Le titre reprend la formulation de la requête (« What's the best… », « Has anyone tried… », « How do I… »). La réponse complète est dans le corps du post. Les commentaires actifs soutiennent le ranking, donc la discussion s'entretient dans la durée.
 
-Le cadre de risque est la politique Google « site reputation abuse » (mars 2024, renforcée le 19 novembre 2024). Elle vise les sous-dossiers loués chez les éditeurs, pas les forums UGC. Reddit modère de son côté les patterns d'abus, typiquement des comptes récents qui poussent les mêmes offres dans des threads de recommandation.
+Le risque à connaître : la politique Google « site reputation abuse » (mars 2024, renforcée le 19 novembre 2024). Elle vise les sous-dossiers loués chez les éditeurs, pas les forums UGC. Reddit modère de son côté les patterns d'abus, typiquement des comptes récents qui poussent les mêmes offres dans des threads de recommandation.
 
-Le critère de décision : un thread construit pour répondre, dont le titre correspond à une requête, reste dans le cadre ; un thread construit uniquement pour ranker correspond au pattern modéré.
+La ligne est claire : un thread construit pour répondre, dont le titre reprend une requête, ne risque rien ; un thread construit uniquement pour ranker finit modéré.
 
-Le croisement avec le GEO a été vérifié le 2026-07-02 : Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity, test honeypot). Un commentaire dans un thread déjà positionné apparaît dans Perplexity en quelques jours. C'est le levier GEO au meilleur rendement documenté.
+Dernier point, vérifié le 2026-07-02 : Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity, test honeypot). Un commentaire dans un thread déjà positionné apparaît donc dans Perplexity en quelques jours. C'est le levier GEO le plus rentable documenté à ce jour.
 
 ---
 
 ## 9. Extraction d'insights
 
-Cet usage ne comporte aucun risque : rien n'est posté.
+Aucun risque ici : tu ne postes rien.
 
 - **GummySearch** classe automatiquement les conversations d'une niche en Pain Points, Solution Requests, Money Talk et Hot Discussions.
 - **Keyworddit** (gratuit) extrait les termes fréquents d'un subreddit avec un volume Google estimé.
@@ -288,7 +288,7 @@ La méthode est simple : commence par identifier les subreddits de ta niche, ré
 
 X.com complète Reddit : la recherche en mode expert sort des signaux équivalents (compte premium, ~5 €/mois), avec le même traitement.
 
-Une contrainte technique : Reddit bloque le crawler. Les posts se collent à la main pour décomposition, ou passent par les flux RSS publics (la méthode du cockpit).
+Contrainte technique : Reddit bloque le crawler. Tu colles les posts à la main, ou tu passes par les flux RSS publics (la méthode du cockpit).
 
 ---
 
@@ -340,7 +340,7 @@ Chaque sortie alimente les deux côtés du système : la publication Reddit (le 
 
 Un shadowban rend le contenu visible pour son auteur et invisible pour les autres. Il est majoritairement automatique en 2026.
 
-Les déclencheurs documentés :
+Ce qui le déclenche :
 
 - le même lien posté dans plusieurs subreddits, même pertinent partout ;
 - le même commentaire répété, même reformulé a minima (déclencheur n°1 selon RedShip, 2026) ;
@@ -351,33 +351,33 @@ Les déclencheurs documentés :
 - les reposts de contenu déjà publié ;
 - les raccourcisseurs de liens (bit.ly, t.co), flaggés automatiquement.
 
-La détection se fait en ouvrant son profil en navigation privée déconnecté : une page introuvable ou des posts invisibles signalent un shadowban probable. Le lien direct d'un commentaire récent ouvert en privé donne la même information. Des posts récents à zéro vote et des commentaires sans réponse sont un signal indirect. Les outils dédiés : Reddit shadowban checker, redship, banchecker.
+Pour le détecter, ouvre ton profil en navigation privée, déconnecté : une page introuvable ou des posts invisibles signalent un shadowban probable. Le lien direct d'un commentaire récent ouvert en privé donne la même information. Des posts récents à zéro vote et des commentaires sans réponse sont un signal indirect. Les outils dédiés : Reddit shadowban checker, redship, banchecker.
 
-Le pattern le plus fréquent reste le compte neuf qui poste des recommandations produit. C'est le premier signal que surveillent les mods.
+Le cas le plus fréquent reste le compte neuf qui poste des recommandations produit. C'est le premier signal que surveillent les mods.
 
 ---
 
 ## 11. Modération
 
-Chaque sub est géré par des mods bénévoles qui appliquent leurs propres règles. On les contacte par modmail (« Message the mods » dans la sidebar), pas par DM. L'usage utile pour un consultant : demander avant de poster un contenu lié à son activité (« est-ce autorisé de partager une étude que j'ai faite sur X ? »).
+Chaque sub est géré par des mods bénévoles qui appliquent leurs propres règles. On les contacte par modmail (« Message the mods » dans la sidebar), pas par DM. Pour un consultant, le bon réflexe : demander avant de poster un contenu lié à son activité (« est-ce autorisé de partager une étude que j'ai faite sur X ? »).
 
-L'AutoModerator est un bot configurable par sub. Il supprime ou flaire par domaine ou mot-clé, applique les seuils de réputation et d'âge, et répond automatiquement. C'est lui qui supprime les posts sous seuil, sans intervention humaine. C'est la raison d'être de la phase de rodage (§4).
+L'AutoModerator est un bot configurable par sub. Il supprime ou flaire par domaine ou mot-clé, applique les seuils de réputation et d'âge, et répond automatiquement. C'est lui qui supprime les posts sous seuil, sans intervention humaine. C'est exactement pour ça que la phase de rodage existe (§4).
 
 ---
 
 ## 12. Marché francophone
 
-Les données France : environ 20,6 M d'utilisateurs estimés (Influencia), +72 % de visiteurs mensuels sur un an (Médiamétrie), une entrée dans le top 10 des réseaux sociaux français. Abondance donnait 10,4 M de visiteurs mensuels à mi-2025, soit une audience doublée en un an. Les causes sont la traduction automatique du corpus en français et l'indexation prioritaire depuis l'accord Google.
+Côté France : environ 20,6 M d'utilisateurs estimés (Influencia), +72 % de visiteurs mensuels sur un an (Médiamétrie), une entrée dans le top 10 des réseaux sociaux français. Abondance donnait 10,4 M de visiteurs mensuels à mi-2025, soit une audience doublée en un an. Deux causes : la traduction automatique du corpus en français, et l'indexation prioritaire depuis l'accord Google.
 
 Côté communautés, il n'existe pas de sub SEO francophone actif (pas de r/SEO_fr ni de r/referencement vivants). Les SEO français échangent sur r/SEO et r/bigseo (anglophones), sur LinkedIn, sur X et sur WebRankInfo. Les gros subs FR se limitent à r/france (2,5 M+) et à une longue traîne (r/AskFrance, r/vosfinances, r/conseiljuridique, r/Cuisine). Les counts précis hors r/france ne sont pas publiés.
 
-Sur le levier FR, Lefebvre Dalloz (juillet 2025) classe Reddit « canal secondaire ou de veille dans un contexte francophone ». Une limite de preuve est à connaître : aucune donnée chiffrée comparant la visibilité SERP de Reddit sur Google.fr et Google.com n'est publiée. Les affirmations du type « Reddit domine les SERP françaises » circulent sans étude à l'appui.
+Sur le levier FR, Lefebvre Dalloz (juillet 2025) classe Reddit « canal secondaire ou de veille dans un contexte francophone ». Une limite à connaître : personne n'a publié de donnée chiffrée comparant la visibilité SERP de Reddit sur Google.fr et Google.com. Les affirmations du type « Reddit domine les SERP françaises » circulent sans étude à l'appui.
 
-Une donnée 2026 change le calcul (Peec AI, 64,77 M de citations Reddit, mars-juin 2026) : les pages Reddit auto-traduites (`?tl=`) représentent 40 à 73 % des citations Reddit sur les surfaces IA de Google dans les marchés non anglophones d'Europe. Le détail par pays : plus de 70 % en Suède et en Norvège, 72 % en Espagne sur AI Mode, 52 % en Allemagne sur les AIO. La France n'est pas isolée dans l'étude, mais le pattern est pan-européen.
+Un point important (Peec AI, 64,77 M de citations Reddit, mars-juin 2026) : les pages Reddit auto-traduites (`?tl=`) représentent 40 à 73 % des citations Reddit sur les surfaces IA de Google dans les marchés non anglophones d'Europe. Le détail par pays : plus de 70 % en Suède et en Norvège, 72 % en Espagne sur AI Mode, 52 % en Allemagne sur les AIO. La France n'est pas isolée dans l'étude, mais le pattern est pan-européen.
 
 ChatGPT suit la pente inverse : il a quasi cessé de citer les pages traduites, de 6,14 % à 0,30 % entre avril et juin 2026.
 
-Trois conséquences :
+Ce que ça change :
 
 1. Pour le GEO, les subs anglophones de la niche search/IA sont le terrain principal. Les réponses en anglais sont citées, y compris via les pages traduites sur les requêtes françaises côté Google.
 2. Pour le SEO francophone, l'approche reste opportuniste : repérer avec `site:reddit.com` les requêtes FR où un thread ranke, et se positionner au cas par cas.

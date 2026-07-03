@@ -13,7 +13,7 @@ status: stable
 
 # Routine quotidienne Reddit
 
-> Cette routine est dérivée du [[Playbook-Reddit-SEO-GEO]]. Ses chiffres ont été vérifiés contre ~25 sources le 2026-07-02 : chaque quota repose sur la convergence de 4 à 6 sources indépendantes, aucun sur une source unique. Le budget est de 25 à 30 minutes par jour, 6 jours sur 7, plus deux rendez-vous hebdomadaires. Le terrain est Qadence.io, sur les subs anglophones search/IA en priorité.
+> Cette routine est dérivée du [[Playbook-Reddit-SEO-GEO]]. Ses chiffres ont été vérifiés contre ~25 sources le 2026-07-02 : chaque quota repose sur la convergence de 4 à 6 sources indépendantes, aucun sur une source unique. Compte 25 à 30 minutes par jour, 6 jours sur 7, plus deux rendez-vous hebdomadaires. Le test tourne sur Qadence.io, dans les subs anglophones search/IA en priorité.
 
 ## En résumé
 
@@ -45,7 +45,7 @@ Si un sub impose un seuil de réputation ou d'âge que le compte ne franchit pas
 ## Déroulé quotidien (25-30 min)
 
 **1. Veille (5 min).**
-Tu ouvres les alertes de mentions. Tu en sors deux choses : les threads où intervenir aujourd'hui, et les threads négatifs à traiter. Les IA citent le négatif au même taux que le positif (environ 6,1 % contre 5 %, AuthorityTech 2026, source à intérêt commercial). Un thread négatif reçoit une réponse factuelle sous 48 h.
+Tu ouvres les alertes de mentions. Tu en sors deux choses : les threads où intervenir aujourd'hui, et les threads négatifs à traiter. Les IA citent le négatif au même taux que le positif (environ 6,1 % contre 5 %, AuthorityTech 2026, source à intérêt commercial). Tu réponds factuellement aux threads négatifs sous 48 h.
 
 **2. Réponses (5 min).**
 Tu réponds à 100 % des commentaires et DM reçus depuis la veille. Les commentaires actifs soutiennent le ranking du thread et la réputation du compte.
@@ -56,9 +56,9 @@ Le Reddit Cockpit dépose chaque matin à 07h50 une file de drafts dans `queue/A
 Tu écris 4 à 6 commentaires, sélectionnés dans cet ordre :
 
 - **Priorité 1 : les threads déjà positionnés sur Google** sur tes requêtes acheteur (`site:reddit.com "best ai seo tool"`, etc.). Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity, octobre 2025) : un commentaire dans un thread positionné apparaît dans Perplexity en quelques jours.
-- **Priorité 2 : les threads de moins de 48 h**, repérés via New/Rising et les mots-clés de douleur (« best X for Y », « [catégorie] alternatives », troubleshooting). L'heuristique de sélection est un thread de 30 à 100 réponses (source unique, à valider sur le terrain).
+- **Priorité 2 : les threads de moins de 48 h**, repérés via New/Rising et les mots-clés de douleur (« best X for Y », « [catégorie] alternatives », troubleshooting). Vise les threads de 30 à 100 réponses (source unique, à valider sur le terrain).
 
-Le format : 120 à 200 mots, 2 à 3 données précises (un outil nommé, un chiffre daté, des étapes), en registre documentation, sans « je pense ». La longueur médiane des commentaires cités par les IA est d'environ 80 mots (Semrush, 248 000 URLs) ; 120-200 vise la marge haute.
+Le format : 120 à 200 mots, 2 à 3 données précises (un outil nommé, un chiffre daté, des étapes). Tu écris comme une documentation, sans « je pense ». La longueur médiane des commentaires cités par les IA est d'environ 80 mots (Semrush, 248 000 URLs) ; 120-200 vise la marge haute.
 
 Il n'existe pas de seuil d'upvotes : 80 % des posts cités en ont moins de 20 (médiane 5-8, Semrush). La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread.
 
@@ -100,7 +100,7 @@ Le 1er du mois, 20 minutes. Les vieux threads continuent d'être cités pendant 
 - tu mets l'année courante dans les titres quand c'est pertinent ;
 - tu contrôles tes 3 à 5 threads les plus cités : une nouvelle réponse passée au-dessus de la tienne, un thread verrouillé.
 
-Le délai avant un effet GEO mesurable est de 60 à 90 jours (consensus multi-sources), 120 en borne haute. Il n'y aura pas de verdict sur le test Qadence avant fin août 2026. L'évolution attendue se fait par paliers : la part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % en deux semaines en septembre 2025 (Semrush).
+Compte 60 à 90 jours avant un effet GEO mesurable (consensus multi-sources), 120 en borne haute. Pas de verdict sur le test Qadence avant fin août 2026. Et attends-toi à des paliers, pas à une courbe régulière : la part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % en deux semaines en septembre 2025 (Semrush).
 
 ---
 
