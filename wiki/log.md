@@ -1008,3 +1008,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - titres de sections = descriptions sèches (ex. « 2. Reddit dans les moteurs génératifs » au lieu de « le vrai jackpot »)
 - habillage HTML aligné (AutoModerator, sommaire, topbar) ; fix pandoc tex_math_dollars (M$/an rendus en italiques)
 - DA Reddit conservée telle quelle
+
+## [2026-07-03] rewrite | Playbook Reddit v3 : phrases complètes + corrections Tim
+- phrases complètes partout (fini le télégraphique), mot « karma » banni (→ réputation)
+- note de fiabilité retirée, sources déplacées en toute fin (après l'annexe routine)
+- tableau quotas simplifié à 2 colonnes (Action | Quota), plus de mention d'outils dans la routine
+- annexe Journal retirée du document généré (le fichier Journal.md reste le suivi)
+- section 9bis ajoutée : les 8 prompts Reddit (sujets de niche depuis les questions Reddit), repris de wiki/briefs/reddit-pour-geo-2026

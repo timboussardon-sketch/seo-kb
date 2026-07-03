@@ -14,16 +14,18 @@ def load(name):
 
 def wikilinks(txt):
     m = {"Routine-quotidienne": ("#routine", "la routine quotidienne"),
-         "Journal": ("#journal", "le journal"),
+         "Journal": (None, "le journal"),
          "Playbook-Reddit-SEO-GEO": ("#tldr", "le playbook")}
     def rep(mo):
         key = mo.group(1).split("|")[0].strip()
-        return f"[{m[key][1]}]({m[key][0]})" if key in m else mo.group(1)
+        if key not in m:
+            return mo.group(1)
+        anchor, label = m[key]
+        return f"[{label}]({anchor})" if anchor else label
     return re.sub(r"\[\[([^\]]+)\]\]", rep, txt)
 
 playbook = wikilinks(load("Playbook-Reddit-SEO-GEO.md"))
 routine = wikilinks(load("Routine-quotidienne.md"))
-journal = wikilinks(load("Journal.md"))
 
 # ── Découpe du playbook en sections (## ...) ──────────────────────────────
 parts = re.split(r"\n(?=## )", playbook)
@@ -36,16 +38,15 @@ for p in parts[1:]:
 
 # Routine : titre h1 retiré (il devient le titre du post)
 routine_body = re.sub(r"^# .*\n", "", routine, count=1).strip()
-journal_body = re.sub(r"^# .*\n", "", journal, count=1).strip()
 
 # ── Rendu pandoc en un seul appel ─────────────────────────────────────────
 SEP = "\n\n<!--SPLIT-->\n\n"
-all_md = SEP.join([md for _, md in sections] + [routine_body, journal_body])
+all_md = SEP.join([md for _, md in sections] + [routine_body])
 html_all = subprocess.run(["pandoc", "-f", "markdown-tex_math_dollars", "-t", "html"],
                           input=all_md, capture_output=True, text=True, check=True).stdout
 chunks = [c.strip() for c in html_all.split("<!--SPLIT-->")]
 sec_html = chunks[: len(sections)]
-routine_html, journal_html = chunks[len(sections)], chunks[len(sections) + 1]
+routine_html = chunks[len(sections)]
 
 # ── Habillage Reddit ──────────────────────────────────────────────────────
 def slugify(t):
@@ -76,15 +77,14 @@ FLAIRS = [
     ("7. Formats", "MÉTHODE", "f-blue"),
     ("7bis", "PROTOCOLE", "f-blue"),
     ("8. Threads positionnés", "SEO", "f-orange"),
+    ("9bis", "PROMPTS", "f-orange"),
     ("9. Extraction", "INSIGHTS", "f-green"),
     ("10. Shadowban", "WARNING", "f-red"),
     ("11. Modération", "MODÉRATION", "f-red"),
     ("12. Marché francophone", "FRANCE", "f-blue"),
     ("Routine quotidienne", "ROUTINE", "f-blue"),
-    ("Journal", "JOURNAL", "f-gray"),
-    ("13. Outils", "OUTILS", "f-gray"),
-    ("14. Plan 90 jours", "PLAN 90 J", "f-green"),
-    ("15. Les métriques", "MÉTRIQUES", "f-green"),
+    ("13. Plan 90 jours", "PLAN 90 J", "f-green"),
+    ("14. Métriques", "MÉTRIQUES", "f-green"),
     ("Note de fiabilité", "FACT-CHECK", "f-gray"),
     ("Sources", "SOURCES", "f-gray"),
 ]
@@ -124,24 +124,33 @@ AUTOMOD = '''
   </div>
 </div>'''
 
-posts = []
+def toc_target(t):
+    return "tldr" if t.startswith("En résumé") else slugify(t)
+
+posts, sources_post = [], None
 for i, (title, _) in enumerate(sections):
     when = "18 juin · m.à.j. 3 juil."
     pid = "tldr" if title.startswith("En résumé") else None
     extra = AUTOMOD if title.startswith("En résumé") else ""
-    posts.append(post(title, sec_html[i], when, pid=pid, extra=extra))
+    rendered = post(title, sec_html[i], when, pid=pid, extra=extra)
+    # Les sources vont à la toute fin du document, après l'annexe routine
+    if title.startswith("Sources"):
+        sources_post = rendered
+        continue
+    posts.append(rendered)
     # Sommaire juste après le TL;DR
     if title.startswith("En résumé"):
         toc_items = "".join(
-            f'<li><a href="#{ "tldr" if t.startswith("En résumé") else slugify(t)}">{t}</a></li>'
-            for t, _ in sections
-        ) + '<li><a href="#routine">Routine quotidienne (annexe A)</a></li>' \
-          + '<li><a href="#journal">Journal de suivi (annexe B)</a></li>'
+            f'<li><a href="#{toc_target(t)}">{t}</a></li>'
+            for t, _ in sections if not t.startswith("Sources")
+        ) + '<li><a href="#routine">Routine quotidienne (annexe)</a></li>' \
+          + f'<li><a href="#{slugify("Sources (audit web, juin 2026)")}">Sources</a></li>'
         posts.append(post("Sommaire",
                           f'<ul class="toc">{toc_items}</ul>', "18 juin", pid="sommaire"))
 
-posts.append(post("Routine quotidienne (annexe A)", routine_html, "2 juil. · m.à.j. 3 juil.", pid="routine"))
-posts.append(post("Journal de suivi (annexe B)", journal_html, "2 juil.", pid="journal"))
+posts.append(post("Routine quotidienne (annexe)", routine_html, "2 juil. · m.à.j. 3 juil.", pid="routine"))
+if sources_post:
+    posts.append(sources_post)
 
 CSS = """
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
@@ -163,7 +172,6 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .searchbar:hover{border-color:var(--blue)}
 .tb-user{margin-left:auto;font-size:12.5px;color:var(--meta)}
 .tb-user b{color:var(--ink)}
-.karma{color:var(--orange);font-weight:600}
 
 /* ── Bannière ── */
 .banner{background:linear-gradient(90deg,#FF4500,#FF6A1A);height:104px}

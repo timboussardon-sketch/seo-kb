@@ -233,6 +233,46 @@ Une contrainte technique : Reddit bloque le crawler. Les posts se collent à la 
 
 ---
 
+## 9bis. Les 8 prompts : trouver les sujets de la niche dans les questions Reddit
+
+Ces huit prompts servent à sortir les sujets de ta niche des questions que les gens posent sur Reddit. Ils s'exécutent dans une IA avec recherche web. Tu remplaces `[THÉMATIQUE]`, `[SUJET]` ou `[PRODUIT]` par un mot-clé business de ta roadmap, jamais par un mot-clé inventé : si le mot-clé n'est pas dans ta roadmap, ce n'est pas une publication Reddit, c'est du bruit. Chaque extraction garde les permalinks Reddit et les verbatims bruts, sans reformulation. Le prompt 3 est le plus rentable : il identifie à la fois un thread où publier une réponse experte et un angle pour un article pilier sur le site.
+
+### Prompt 1 : les pain points
+
+> Trouve sur Reddit (site:reddit.com) les 20 threads les plus upvotés sur [THÉMATIQUE] des 12 derniers mois. Pour chaque thread, extrais : URL + subreddit + nombre d'upvotes, titre du post, le pain point exact en 1 phrase, le verbatim le plus fort (citation textuelle). Classe par fréquence du pain point.
+
+### Prompt 2 : pourquoi ils n'achètent pas
+
+> Trouve sur Reddit les commentaires où des utilisateurs expriment de la déception, de la méfiance ou un refus d'acheter [PRODUIT/SERVICE]. Extrais : le verbatim brut (pas de reformulation), l'objection sous-jacente (prix, qualité, confiance, complexité, ROI…), le subreddit + permalink. Regroupe les objections par thème et donne-moi le top 5 par volume.
+
+### Prompt 3 : les questions populaires mal traitées
+
+> Liste sur Reddit les questions sur [SUJET] qui ont 0 à 2 réponses mais plus de 10 upvotes ou plus de 20 commentaires sur le thread. Ce sont des intentions de recherche mal servies. Format : question textuelle + URL + nombre de vues/upvotes + pourquoi c'est mal répondu.
+
+### Prompt 4 : les expressions de tes futurs users
+
+> Analyse 30 threads Reddit sur [THÉMATIQUE] et extrais : les expressions familières et le jargon utilisés par les users (différent du vocabulaire marketing), les termes péjoratifs employés pour parler de la catégorie, les images récurrentes. Donne-moi une liste de 20 expressions avec un exemple de phrase citée.
+
+### Prompt 5 : les avant/après
+
+> Sur Reddit, trouve des témoignages utilisateurs décrivant une transformation liée à [PROBLÈME/SOLUTION]. Extrais la structure : situation avant (avec verbatim), déclencheur du changement, action prise, résultat après (avec chiffres si mentionnés). Filtre : minimum 50 upvotes sur le commentaire ou le post.
+
+### Prompt 6 : les opinions contre-intuitives qui font débat
+
+> Cherche sur Reddit les opinions contre-intuitives ou controversées sur [SUJET] : posts avec titre « unpopular opinion », « hot take », ou commentaires à ratio élevé (beaucoup de réponses). Pour chaque : la thèse contre-intuitive, l'argument principal, le contre-argument majoritaire. C'est la matière première de tes inversions expertes.
+
+### Prompt 7 : les comparaisons (requêtes VS)
+
+> Sur Reddit, trouve tous les threads où les utilisateurs comparent spontanément [OUTIL A] à [OUTIL B, C, D…]. Extrais : le critère de comparaison (prix, ergonomie, support, features…), le vainqueur selon le consensus des commentaires, les verbatims justifiant le choix. Classe les critères par fréquence d'apparition.
+
+### Prompt 8 : le subreddit mapping
+
+> Pour la thématique [X], liste-moi les 10 subreddits les plus actifs avec : nombre de membres, volume de posts par semaine, les 3 tags/flairs les plus utilisés, le type d'intention dominant (question, avis, rant, showcase, recommandation).
+
+Chaque sortie alimente les deux côtés du système : la publication Reddit (le prompt 3 donne le thread où répondre, le prompt 8 donne le sub prioritaire) et le site (le prompt 4 calibre le vocabulaire des pages, le prompt 7 donne les pages comparatif, le prompt 5 donne les cas clients).
+
+---
+
 ## 10. Shadowban : définition et déclencheurs
 
 Un shadowban rend le contenu visible pour son auteur et invisible pour les autres. Il est majoritairement automatique en 2026.
@@ -337,7 +377,7 @@ Le délai GEO reste de 60 à 90 jours avant un effet mesurable, 120 en borne hau
 - [Vadim Kravcenko - Self-promotion on Reddit the right way](https://vadimkravcenko.com/qa/self-promotion-on-reddit-the-right-way/)
 - [Reddit Help - Disrupting communities (vote manipulation)](https://support.reddithelp.com/hc/en-us/articles/360043066412-Disrupting-Communities)
 - [Multilogin - Reddit shadowban check 2026](https://multilogin.com/blog/is-your-reddit-account-shadowbanned/)
-- [LaunchKit - Reddit account age and karma requirements](https://launchkit.me/blog/reddit-account-karma-requirements/)
+- [LaunchKit - seuils d'âge et de réputation des comptes Reddit](https://launchkit.me/blog/reddit-account-karma-requirements/)
 - [SubredditSignals - Find relevant subreddits 2025](https://www.subredditsignals.com/blog/how-to-find-relevant-subreddits-for-my-business-a-2025-guide)
 - [Reddit Help - Contact moderators](https://support.reddithelp.com/hc/en-us/articles/360043043792-How-do-I-contact-the-moderators-of-a-community)
 - [Reddit Help - Automoderator](https://support.reddithelp.com/hc/en-us/articles/15484574206484-Automoderator)

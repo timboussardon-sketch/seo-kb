@@ -27,7 +27,7 @@ Format par bloc :
 
 ```
 ### Semaine AAAA-Www
-- Karma : N (comment) / N (post)
+- Réputation : N (commentaires) / N (posts)
 - Threads qui rankent (site:reddit.com) :
 - Citations IA constatées (Perplexity / ChatGPT / AIO) :
 - Mentions F5Bot :
