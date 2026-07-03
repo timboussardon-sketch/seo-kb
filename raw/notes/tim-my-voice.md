@@ -5,7 +5,7 @@ title: "My Voice — Ton de voix Timothée Boussardon"
 aliases: []
 tags: []
 created: 2026-05-22
-updated: 2026-06-09
+updated: 2026-07-03
 sources: 0
 confidence: medium
 status: draft
@@ -183,3 +183,27 @@ Source : [[catherine-call-decouverte]]. Formulations de Tim, verbatim ou quasi :
 - Adaptation Canada : reformule TJM (« je sais pas si on dit ça au Canada »), prix en € avec conversion laissée ouverte, reprend ses mots (« il se garroche »).
 
 Concepts mobilisés : [[concepts/know-simple-know-do]] · [[data-proprietaire]] · second cerveau · skills anti-IA
+
+## [2026-07-03] Session d'édition playbook Reddit — corrections écrites de Tim sur le slope IA
+
+Source : session Claude Code du 2026-07-03, corrections verbatim de Tim sur le playbook Reddit. C'est la cartographie la plus précise à ce jour de ce qui, pour lui, « sonne Claude » dans un texte grammaticalement correct. Test final qu'il impose avant livraison : relire chaque phrase en se demandant si un expert la dirait à voix haute à un autre expert.
+
+**Le pattern central qu'il rejette : le sujet nominal abstrait.** Une phrase qui commence par une étiquette de méta-discours au lieu du fait lui-même. Ses corrections, verbatim ou quasi :
+
+- « La mécanique : un thread dont le titre correspond à une requête réelle bénéficie de l'autorité... » → « Un thread dont le titre reprend une vraie requête Google profite directement de l'autorité de reddit.com. C'est ce qui lui permet de se positionner rapidement dans le top 10. »
+- « Les tactiques documentées sont au nombre de trois. » → « Trois tactiques reviennent dans la plupart des études. »
+- « La conséquence opérationnelle est que la contribution précède la promotion. » → « En pratique, tu contribues d'abord. La promotion vient ensuite. »
+- « La méthode suit quatre temps : repérer..., extraire..., creuser..., isoler... » → « La méthode est simple : commence par identifier..., récupère..., creuse..., puis isole les pain points qui reviennent le plus. » (infinitifs enchaînés → impératifs)
+- « La donnée de cadrage : l'âge moyen... » → supprimer l'étiquette, donner le fait directement : « Les vieux threads continuent d'être cités pendant des années. L'âge moyen des discussions reprises par les IA est d'environ 900 jours (Semrush). »
+- « Une donnée de contexte : selon Reddit, 81 %... » → « Autre chiffre intéressant : selon Reddit, 81 %... »
+- « Le programme se déroule en quatre phases. » → « Le lancement du compte suit quatre phases. » (le sujet concret, pas le mot-container)
+- « Les facteurs de ranking documentés d'une page Reddit sont... » → « Aujourd'hui, trois facteurs expliquent principalement pourquoi un thread Reddit se positionne... »
+- « La découverte passe par... » → « Pour trouver les bons subreddits, commence par... »
+- « La règle 9:1 a été publiée par Reddit puis retirée... » → « Pendant longtemps, Reddit recommandait un ratio de 9 contributions pour 1 publication promotionnelle. » (l'histoire racontée dans l'ordre, pas la fiche d'état)
+- « Les interdits du lancement, sur les 30 jours » (titre) → « Pendant les 30 premiers jours, évite absolument »
+
+**Autres familles bannies dans la même session :** « le cadre de risque est », « le texte opposable est », « le critère de décision : », « la détection se fait en » (passif de compilation → « Pour le détecter, ouvre... »), « cet usage ne comporte aucun risque » (→ « Aucun risque ici : tu ne postes rien »), « X fait partie du dispositif » (→ « C'est pour ça que la routine inclut... »).
+
+**Deux règles dures posées en parallèle :** jamais de fragments nominaux même en registre factuel (« Compte complété, vieillissement. » interdit, sujet + verbe partout) ; le mot « karma » banni de tout le writing (dire « réputation », « points de réputation »).
+
+Concepts mobilisés : [[anti-ai-writing]]

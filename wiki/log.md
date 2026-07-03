@@ -1025,3 +1025,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - 12 corrections verbatim de Tim + ~55 tournures compilées réécrites (« la donnée de cadrage », « le cadre de risque », « les tactiques documentées », « la conséquence opérationnelle »...)
 - zéro info ni source supprimée ; voix directe rétablie (« c'est le mauvais plan », « effet de second tour », « verrouillé par contrat »)
 - fix phrase orpheline en §fraîcheur (« Elle consiste à » sans antécédent)
+
+## [2026-07-03] voix | Corpus my-voice enrichi : cartographie du slope IA
+- entrée datée append-only dans raw/notes/tim-my-voice.md : les 11 corrections verbatim de Tim (playbook Reddit) + familles de tournures bannies (sujets nominaux abstraits, passifs de compilation, étiquettes creuses) + test « un expert dirait ça à voix haute ? »
+- règles dures : fragments nominaux interdits même en factuel, mot « karma » banni (→ réputation)
+- le skill ton-de-voix-tim lit ce corpus : les règles s'appliquent à toute rédaction future
