@@ -289,13 +289,11 @@ html = f"""<!doctype html>
   <div class="about">
     <div class="ahead">À propos de la communauté</div>
     <div class="abody">
-      <p>Doctrine, routine et journal pour deux résultats mesurables : citations IA et positions Google. Chiffres sourcés, les fragiles sont signalés.</p>
       <div class="stat"><b>20,6 M</b><span>utilisateurs Reddit estimés en France</span></div>
       <div class="stat"><b>top 5</b><span>des domaines les plus visibles sur Google US</span></div>
       <div class="stat"><b>60 M$/an</b><span>payés par Google pour la data Reddit</span></div>
       <div class="stat"><b>&lt; 20</b><span>upvotes sur 80 % des posts cités par les IA (Semrush)</span></div>
       <div class="rule">Créé le 18 juin 2026 · vérifié contre ~25 sources le 2 juil. · terrain de test : Qadence.io</div>
-      <div class="rule">Règle n°1 : la machine ne publie jamais seule.</div>
     </div>
   </div>
 </aside>
