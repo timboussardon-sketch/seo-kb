@@ -36,13 +36,13 @@ En France, Reddit compte environ 20,6 M d'utilisateurs estimés (Influencia) et 
 
 ---
 
-## Le test Qadence.io (terrain first-party)
+## Le test Qadence.io (en cours)
 
-Un test a été lancé en juin 2026 sur Qadence.io. Aucune étude de cas Reddit indépendante avec trafic, positions et conversions vérifiables n'existe à ce jour : ce test produit cette donnée.
+Je suis en plein test sur Qadence.io depuis juin 2026. Aucune étude de cas Reddit indépendante avec trafic, positions et conversions vérifiables n'existe à ce jour : je produis cette donnée.
 
-Deux objectifs sont mesurés : le nombre de citations de Qadence.io dans Perplexity, ChatGPT et les AI Overviews, et les positions Google sur des mots-clés décisionnels (« outil IA », « agent SEO », « [catégorie] alternatives »).
+Je mesure deux choses : le nombre de citations de Qadence.io dans Perplexity, ChatGPT et les AI Overviews, et les positions Google sur des mots-clés décisionnels (« outil IA », « agent SEO », « [catégorie] alternatives »).
 
-L'état initial est un compte ancien (un premier post il y a un an) resté quasi inactif depuis. Deux règles de conduite s'appliquent : pas de spam, et pas d'action ponctuelle sans suite. Le délai attendu avant un effet mesurable est de 60 à 90 jours (§2). Le point de coupe est fixé au bilan J+45 (mi-août 2026) : sans thread positionné, citation IA ni mention entrante à cette date, le test s'arrête.
+Je pars d'un compte ancien (un premier post il y a un an) resté quasi inactif depuis, et je m'impose deux règles de conduite : pas de spam, et pas d'action ponctuelle sans suite. Le délai attendu avant un effet mesurable est de 60 à 90 jours (§2). Le point de coupe est fixé au bilan J+45 (mi-août 2026) : sans thread positionné, citation IA ni mention entrante à cette date, j'arrête le test.
 
 ---
 
