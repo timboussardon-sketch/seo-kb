@@ -383,17 +383,25 @@ En pratique, vise 95/5.
 
 ## 7. Formats de contribution
 
-Sur Reddit, le ton est anti-marketing. Tu parles le vocabulaire de la communauté, sans jargon corporate.
+Sur Reddit, le ton est à l'opposé du marketing traditionnel. Il faut adopter les codes de la communauté, éviter le jargon corporate et apporter de la valeur avant tout.
 
-**Les commentaires utiles.** Le volume principal. Des réponses en profondeur à de vraies questions, sans pitch. C'est ce qui construit la réputation et la crédibilité.
+**Les commentaires utiles**
 
-**Les données originales.** Le format le plus compatible avec une activité commerciale. De la data first-party anonymisée : logs Fusionn, GSC, études CTR. Une valeur vérifiable, sans format publicitaire.
+C'est le format le plus important. Répondre en profondeur à de vraies questions, partager son expérience et aider sans chercher à vendre. C'est ce qui construit durablement la crédibilité d'un compte.
 
-**Les réponses gratuites, TIL et guides.** Sans CTA, sans lien commercial.
+**Les données originales**
 
-**L'AMA.** Il ne fonctionne qu'à certaines conditions : une personne réelle, des réponses longues, les questions gênantes traitées. Les échecs sont connus : Nissan (questions plantées), les cas archivés sur r/AMADisasters.
+Le format le plus adapté pour une entreprise. Partager des données propriétaires anonymisées (logs Fusionn, données Google Search Console, études de CTR, etc.) apporte une information vérifiable et difficile à reproduire, sans tomber dans l'autopromotion.
 
-Autre chiffre intéressant : selon Reddit, 81 % des utilisateurs acceptent les conversations avec les acteurs commerciaux. Et 59 % attendent qu'ils écoutent le feedback. À condition de rester authentique.
+**Les guides, TIL (Today I Learned) et réponses détaillées**
+
+Des contenus pédagogiques qui répondent directement à un problème, sans appel à l'action ni lien commercial. L'objectif est d'être utile, pas de générer du trafic.
+
+**Les AMA (Ask Me Anything)**
+
+Ce format ne fonctionne que s'il est authentique : une personne identifiable, des réponses détaillées et la volonté d'aborder aussi les questions difficiles. Les échecs sont nombreux lorsque les entreprises tentent de contrôler la conversation, comme l'AMA de Nissan, souvent cité parmi les exemples à ne pas reproduire.
+
+Enfin, un chiffre montre bien l'état d'esprit de la plateforme : selon Reddit, 81 % des utilisateurs sont ouverts aux échanges avec les entreprises, et 59 % attendent d'elles qu'elles écoutent réellement les retours de la communauté. L'authenticité reste toutefois la condition indispensable pour être bien perçu.
 
 ---
 
