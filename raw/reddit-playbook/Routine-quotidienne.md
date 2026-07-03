@@ -45,7 +45,7 @@ Si un sub impose un seuil de réputation ou d'âge que le compte ne franchit pas
 ## Déroulé quotidien (25-30 min)
 
 **1. Veille (5 min).**
-Tu ouvres les alertes de mentions (Qadence, organikk, fusionn, ton nom). Tu en sors deux choses : les threads où intervenir aujourd'hui, et les threads négatifs à traiter. Les IA citent le négatif au même taux que le positif (environ 6,1 % contre 5 %, AuthorityTech 2026, source à intérêt commercial). Un thread négatif reçoit une réponse factuelle sous 48 h.
+Tu ouvres les alertes de mentions. Tu en sors deux choses : les threads où intervenir aujourd'hui, et les threads négatifs à traiter. Les IA citent le négatif au même taux que le positif (environ 6,1 % contre 5 %, AuthorityTech 2026, source à intérêt commercial). Un thread négatif reçoit une réponse factuelle sous 48 h.
 
 **2. Réponses (5 min).**
 Tu réponds à 100 % des commentaires et DM reçus depuis la veille. Les commentaires actifs soutiennent le ranking du thread et la réputation du compte.
