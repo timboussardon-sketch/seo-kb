@@ -135,3 +135,11 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 - kit d'accompagnement : nouveau workflow client-facing `workflow-cadrage` (1er des workflows), généré par alexia-seo/build-dataset.py → embarqué kit + vault Obsidian
 - dashboard Alexia : workflow cadrage en tête (section Workflows + roadmap semaine 1 « Cadrage, setup & data »), compteurs 34 skills / 4 workflows
 - kit + vault régénérés en LOCAL (build-dataset.py + build-vault.py) ; PAS déployé, PAS de push (organikk = prod sur push main)
+
+## [2026-07-03] catherine | étape 1 | espace client ouvert (questionnaire seul)
+- dashboard public/catherine-accompagnement/ (gabarit Alexia) : Questionnaire ouvert, 8 onglets verrouillés
+- réponses conservées en ligne : upsert Supabase `client_selections` (doc_key `catherine-accompagnement`, debounce 900 ms) + localStorage, la version la plus récente gagne au chargement
+- lecture côté Organikk : catherine-accompagnement/admin.html (auto-refresh 30 s, copie totale)
+- questionnaire adapté au call découverte : rapports clients + « par où commencer », rien de pré-rempli
+- _headers : bloc noindex ajouté ; commit local 774c378, PAS poussé (organikk = prod sur push main)
+- tracker créé : clients/catherine.md
