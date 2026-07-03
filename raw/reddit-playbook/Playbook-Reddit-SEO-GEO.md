@@ -82,7 +82,7 @@ Pendant l'update de décembre 2025, Reddit a chuté puis est revenu à son nivea
 
 Les liens sortants de Reddit sont en nofollow : ils ne transmettent pas d'autorité au sens backlink. Une stratégie fondée sur des « backlinks Reddit » n'a donc pas de base technique.
 
-Les facteurs de ranking documentés d'une page Reddit sont le crawl quasi temps réel (facilité par l'accord de données), les signaux d'engagement (temps passé, interactions) et le critère « expérience » de l'E-E-A-T, cible déclarée de l'update hidden gems.
+Aujourd'hui, trois facteurs expliquent principalement pourquoi un thread Reddit se positionne : le crawl quasi temps réel (facilité par l'accord de données), les signaux d'engagement (temps passé, interactions) et le critère « expérience » de l'E-E-A-T, cible déclarée de l'update hidden gems.
 
 John Mueller (Google) précise que les liens Reddit apportent du trafic référent, et que les mentions sans lien ne sont pas un facteur de ranking direct. Un effet de second ordre est constaté : un thread qui ranke est repris par des médias, qui créent des liens dofollow vers les sites mentionnés.
 
@@ -129,9 +129,9 @@ Les moteurs reprennent davantage un texte formulé comme une source de référen
 
 ### Fraîcheur (corrigé 2026-07-02)
 
-L'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush) : les vieux threads forts restent cités. La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (un chiffre issu d'une seule source Medium).
+Les vieux threads continuent d'être cités pendant des années : l'âge moyen des discussions reprises par les IA est d'environ 900 jours (Semrush). La tactique n'est donc pas de réécrire ses réponses tous les 90 jours (un chiffre issu d'une seule source Medium).
 
-Elle consiste à retourner dans les discussions où tu as déjà répondu pour y ajouter un nouveau commentaire, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois que tes threads les plus cités n'ont pas bougé. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
+Elle consiste à retourner sur les discussions où tu as déjà contribué pour y ajouter un nouveau commentaire, à indiquer l'année courante dans les titres pertinents, et à contrôler chaque mois que tes threads les plus cités n'ont pas bougé. Des mesures donnent un taux de citation AI Overviews plus élevé pour les pages portant un signal d'année courante, mais elles viennent de sources à intérêt commercial et ne sont pas confirmées.
 
 ### Citations négatives
 
@@ -143,7 +143,7 @@ Les IA citent aussi les critiques et les comparatifs défavorables. Une mesure d
 
 La doctrine officielle tient en une phrase : « C'est parfaitement OK d'être un Redditor qui a un site web. Ce n'est pas OK d'être un site web qui a un compte Reddit. »
 
-La conséquence opérationnelle est que la contribution précède la promotion. Le ratio de référence est d'environ 90 % de contribution pour 10 % d'autopromo maximum, et de 95/5 en pratique prudente (§6). Le statut de consultant SEO reste en arrière-plan, il n'est jamais le sujet d'un post.
+En pratique, tu contribues d'abord. La promotion vient ensuite. Le ratio de référence est d'environ 90 % de contribution pour 10 % d'autopromo maximum, et de 95/5 en pratique prudente (§6). Le statut de consultant SEO reste en arrière-plan, il n'est jamais le sujet d'un post.
 
 ---
 
@@ -151,7 +151,7 @@ La conséquence opérationnelle est que la contribution précède la promotion. 
 
 Reddit filtre les comptes neufs automatiquement, sur deux critères : l'ancienneté (chaque sub fixe son seuil, de 1 à 30 jours, avec 7 jours en standard courant et 30 jours sur les subs exigeants) et la réputation. Reddit tient deux compteurs de réputation, un pour les commentaires et un pour les posts, sur une échelle logarithmique : un post à 1 000 upvotes peut ne rapporter que ~500 points. La réputation liée aux commentaires monte plus vite. Les seuils anti-spam typiques des subs vont de 10 à plus de 100 points combinés, et sous le seuil, l'AutoModerator supprime le post sans intervention humaine.
 
-Le programme se déroule en quatre phases, chacune avec un critère de passage. On ne passe pas à la phase suivante tant que le critère n'est pas rempli.
+Le lancement du compte suit quatre phases, chacune avec un critère de passage. On ne passe pas à la phase suivante tant que le critère n'est pas rempli.
 
 ### Phase 0 : la préparation (jour 1, environ 1 heure)
 
@@ -191,7 +191,7 @@ Le programme se déroule en quatre phases, chacune avec un critère de passage. 
 
 **Critère de sortie :** le compte a 30 jours, 200 points de réputation ou plus, et aucune suppression récente. Le compte est opérationnel : la routine quotidienne prend le relais (4 à 6 commentaires par jour), et le protocole d'activation du §7bis s'applique.
 
-### Les interdits du lancement, sur les 30 jours
+### Pendant les 30 premiers jours, évite absolument
 
 - Aucun lien externe, vers ton site ou un autre.
 - Aucune mention de ton produit ou de ton activité commerciale.
@@ -203,7 +203,7 @@ Le programme se déroule en quatre phases, chacune avec un critère de passage. 
 
 ## 5. Sélection des subreddits
 
-La découverte passe par la recherche Reddit avec le filtre « Communities », par Subreddit Stats (activité, croissance), par SnoopSnoo (démographie, parfois indisponible) et par Redditlist.
+Pour trouver les bons subreddits, commence par la recherche Reddit avec le filtre « Communities », puis regarde Subreddit Stats (activité, croissance), SnoopSnoo (démographie, parfois indisponible) et Redditlist.
 
 Le critère principal est l'engagement, pas la taille. Un sub de 15 000 membres avec des discussions actives produit plus qu'un sub de 500 000 inactif. La vérification se fait en triant par « Top, ce mois-ci » et en lisant chaque sub candidat pendant une semaine avant d'y écrire.
 
@@ -213,7 +213,7 @@ Chaque sub a ses règles locales, dans la sidebar ou un post épinglé. Certains
 
 ## 6. Ratio d'autopromo : état de la règle
 
-La règle 9:1 (9 contributions pour 1 contenu promotionnel) a été publiée par Reddit puis retirée du Reddiquette formel. Elle a été remplacée par le principe du « participant authentique », apprécié par les mods sur le comportement global.
+Pendant longtemps, Reddit recommandait un ratio de 9 contributions pour 1 publication promotionnelle. La règle a ensuite été retirée du Reddiquette formel et remplacée par le principe du « participant authentique », apprécié par les mods sur le comportement global.
 
 Le texte opposable aujourd'hui est la Content Policy : le spam y est défini comme des actions « répétées, non désirées ou non sollicitées », et la manipulation comme « toute tentative de manipuler le vote ou les systèmes de Reddit ». Depuis 2023, le Contributor Quality Score (CQS) filtre en plus les comptes de faible qualité sur des signaux comportementaux, indépendamment de tout ratio.
 
@@ -230,7 +230,7 @@ Le ton attendu est anti-marketing, dans le vocabulaire de la communauté, sans j
 - **Les réponses gratuites, TIL et guides** se publient sans CTA et sans lien commercial.
 - **L'AMA** fonctionne à des conditions documentées : une personne réelle, des réponses longues, les questions gênantes traitées. Les échecs sont documentés, dont Nissan (questions plantées) et les cas archivés sur r/AMADisasters.
 
-Une donnée de contexte : selon Reddit, 81 % des utilisateurs acceptent les conversations avec les acteurs commerciaux et 59 % attendent qu'ils écoutent le feedback. La condition est l'authenticité.
+Autre chiffre intéressant : selon Reddit, 81 % des utilisateurs acceptent les conversations avec les acteurs commerciaux et 59 % attendent qu'ils écoutent le feedback. La condition est l'authenticité.
 
 ---
 
@@ -264,9 +264,9 @@ Résume les idées principales, supprime le remplissage, garde les enseignements
 
 ## 8. Threads positionnés sur Google
 
-La mécanique : un thread dont le titre correspond à une requête réelle bénéficie de l'autorité du domaine reddit.com dans le top 10.
+Le principe est simple : un thread dont le titre reprend une vraie requête Google profite immédiatement de l'autorité de reddit.com.
 
-Les tactiques documentées (Ross Simmonds) sont au nombre de trois. Le titre reprend la formulation de la requête (« What's the best… », « Has anyone tried… », « How do I… »). La réponse complète est dans le corps du post. Les commentaires actifs soutiennent le ranking, donc la discussion s'entretient dans la durée.
+Trois approches reviennent dans toutes les études (Ross Simmonds en tête). Le titre reprend la formulation de la requête (« What's the best… », « Has anyone tried… », « How do I… »). La réponse complète est dans le corps du post. Les commentaires actifs soutiennent le ranking, donc la discussion s'entretient dans la durée.
 
 Le cadre de risque est la politique Google « site reputation abuse » (mars 2024, renforcée le 19 novembre 2024). Elle vise les sous-dossiers loués chez les éditeurs, pas les forums UGC. Reddit modère de son côté les patterns d'abus, typiquement des comptes récents qui poussent les mêmes offres dans des threads de recommandation.
 
@@ -284,7 +284,7 @@ Cet usage ne comporte aucun risque : rien n'est posté.
 - **Keyworddit** (gratuit) extrait les termes fréquents d'un subreddit avec un volume Google estimé.
 - **L'opérateur `site:reddit.com`** sur Google fait remonter les threads déjà positionnés sur une requête et les questions récurrentes.
 
-La méthode suit quatre temps : repérer les subs cibles, extraire les mots-clés bruts avec Keyworddit, creuser les conversations avec GummySearch ou la recherche native, et isoler les pain points. Les expressions à charge émotionnelle (« je déteste vraiment », « j'ai désespérément besoin de ») signalent les douleurs exploitables. Le tout alimente le process besoin → mot-clé → cluster.
+La méthode est simple : commence par identifier les subreddits de ta niche, récupère les mots-clés avec Keyworddit, creuse les conversations avec GummySearch ou la recherche native, puis isole les pain points qui reviennent le plus. Les expressions à charge émotionnelle (« je déteste vraiment », « j'ai désespérément besoin de ») signalent les douleurs exploitables. Le tout alimente le process besoin → mot-clé → cluster.
 
 X.com complète Reddit : la recherche en mode expert sort des signaux équivalents (compte premium, ~5 €/mois), avec le même traitement.
 
