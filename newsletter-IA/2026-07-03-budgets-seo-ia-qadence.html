@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#F4F5F7; --card:#FFFFFF;
@@ -42,13 +42,13 @@
   p{font-size:15px;line-height:1.7}
   p strong{color:var(--ink);font-weight:600}
 
-  /* Tableaux */
-  table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
-  th{background:var(--accent-soft);color:var(--ink);font-size:13px;font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
-  td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--ink2);line-height:1.5;vertical-align:top}
-  tr:last-child td{border-bottom:0}
-  td.v{font-weight:700;color:var(--ink);white-space:nowrap}
-  td.s{font-size:13px;color:var(--muted)}
+  /* Tableaux de données */
+  table.data{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  .data th{background:var(--accent-soft);color:var(--ink);font-size:13px;font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+  .data td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--ink2);line-height:1.5;vertical-align:top}
+  .data tr:last-child td{border-bottom:0}
+  .data td.v{font-weight:700;color:var(--ink);white-space:nowrap}
+  .data td.s{font-size:13px;color:var(--muted)}
 
   .src{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.6}
 
@@ -61,11 +61,6 @@
   /* Note encadrée */
   .note{background:var(--accent-soft);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--ink);line-height:1.6;margin-top:14px}
 
-  /* CTA */
-  .cta{text-align:center;margin:40px 0 8px;padding-top:32px;border-top:1px solid var(--line)}
-  .cta p{font-size:15px;color:var(--muted);margin-bottom:16px}
-  .btn{display:inline-block;font-size:14px;font-weight:600;padding:11px 22px;border-radius:8px;background:var(--accent);color:#fff}
-
   /* Footer */
   .foot{max-width:660px;margin:24px auto 0;text-align:center;font-size:13px;color:var(--muted)}
   .foot a{color:var(--muted);font-weight:400;margin:0 8px}
@@ -76,9 +71,9 @@
     body{padding:20px 10px}
     .nl{padding:28px 20px}
     h1{font-size:24px}
-    table,th{font-size:13px}
-    td{padding:9px 10px}
-    td.s{font-size:12px}
+    table.data,.data th{font-size:13px}
+    .data td{padding:9px 10px}
+    .data td.s{font-size:12px}
   }
 </style>
 </head>
@@ -95,8 +90,9 @@
   <h1>Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026</h1>
 
   <div class="lead">
-    <p>En 2026, les CMO allouent en moyenne <strong>15,3 % de leur budget marketing à l'IA</strong>. C'est la dépense la plus documentée sur la transformation en cours. Mais ça ne signifie pas que les budgets SEO fondent.</p>
-    <p>Ce qui change, c'est où l'argent va à l'intérieur de l'enveloppe marketing : les agences perdent des parts (39 % des CMO prévoient de couper les dépenses agences), les outils IA en gagnent. La ligne de partage n'oppose pas SEO à IA ; elle oppose SEO d'agence à SEO internalisé par l'IA.</p>
+    <p>En 2026, les CMO consacrent en moyenne <strong>15,3 % de leur budget marketing à l'IA</strong>. C'est l'un des chiffres qui montre le mieux à quel point le marché est en train de changer. Mais contrairement à ce que beaucoup pensent, cela ne veut pas dire que les budgets SEO disparaissent.</p>
+    <p>Ce qui change, c'est la façon dont l'argent est réparti. Les entreprises investissent moins dans les agences et davantage dans les outils IA, l'automatisation et les équipes internes. <strong>39 % des CMO</strong> prévoient d'ailleurs de réduire leurs dépenses en agences.</p>
+    <p>La vraie transition n'est donc pas SEO vs IA. Elle est entre un SEO réalisé par une agence et un SEO internalisé, assisté par l'IA. L'investissement ne disparaît pas : il change simplement de destination.</p>
   </div>
 
   <div class="stat">
@@ -104,8 +100,8 @@
     <div class="l">du budget marketing alloué à l'IA en moyenne chez les CMO<br>(Gartner CMO Spend Survey 2026, n=401)</div>
   </div>
 
-  <h2>Combien les entreprises dépensent en marketing</h2>
-  <table>
+  <h2>1. Combien les entreprises dépensent en marketing</h2>
+  <table class="data">
     <tr><th>Indicateur</th><th>Valeur</th></tr>
     <tr><td>Budget marketing moyen 2026 (% du revenu)</td><td class="v">7,8&nbsp;%</td></tr>
     <tr><td>Budget marketing moyen 2025 (% du revenu)</td><td class="v">7,7&nbsp;%</td></tr>
@@ -115,8 +111,8 @@
   </table>
   <div class="src">(Sources : Gartner CMO Spend Survey 2026, jan.–mars 2026, n=401 · Gartner CMO Spend Survey 2025, fév.–mars 2025, n=402)</div>
 
-  <h2>La part du budget marketing qui va à l'IA</h2>
-  <table>
+  <h2>2. La part du budget marketing qui va à l'IA</h2>
+  <table class="data">
     <tr><th>Indicateur</th><th>Valeur</th></tr>
     <tr><td>Part du budget marketing allouée à l'IA</td><td class="v">15,3&nbsp;%</td></tr>
     <tr><td>Part allouée à l'IA (organisations IA-matures)</td><td class="v">21,3&nbsp;%</td></tr>
@@ -125,8 +121,8 @@
   </table>
   <div class="src">(Source : Gartner CMO Spend Survey 2026, jan.–mars 2026, n=401)</div>
 
-  <h2>Comment le budget marketing se répartit</h2>
-  <table>
+  <h2>3. Répartition du budget marketing</h2>
+  <table class="data">
     <tr><th>Poste</th><th>Part du budget marketing</th></tr>
     <tr><td>Paid media</td><td class="v">30,6&nbsp;%</td></tr>
     <tr><td>Martech</td><td class="v">22,4&nbsp;%</td></tr>
@@ -136,7 +132,7 @@
   <p style="margin-top:14px">Paid search représente <strong>13,9 % des allocations digitales</strong> dans ce périmètre : le premier poste individuel devant le display (12,5 %) et la publicité sociale (12,2 %).</p>
   <div class="src">(Source : Gartner CMO Spend Survey 2025, n=402, fév.–mars 2025, grandes entreprises &gt;$1 Md de revenu)</div>
 
-  <h2>Les coupes dans les budgets agences</h2>
+  <h2>4. Les coupes dans les budgets agences</h2>
   <ul>
     <li><strong>39 %</strong> des CMO prévoient de réduire leurs dépenses agences en 2025 (élimination de relations improductives, renégociation de contrats).</li>
     <li><strong>22 %</strong> déclarent avoir réduit leur recours aux agences pour la création et la stratégie grâce à l'IA générative.</li>
@@ -144,8 +140,8 @@
   </ul>
   <div class="src">(Source : Gartner CMO Spend Survey 2025, vérifiés par fetch : martech.org, chiefmarketer.com)</div>
 
-  <h2>Les investissements dans l'AEO aux États-Unis</h2>
-  <table>
+  <h2>5. Les investissements dans l'AEO aux États-Unis</h2>
+  <table class="data">
     <tr><th>Indicateur</th><th>Valeur</th></tr>
     <tr><td>Entreprises ayant fait des investissements significatifs en AEO en 2025</td><td class="v">56&nbsp;%</td></tr>
     <tr><td>Entreprises prévoyant d'augmenter l'investissement AEO en 2026</td><td class="v">94&nbsp;%</td></tr>
@@ -153,8 +149,8 @@
   </table>
   <div class="src">(Source : Conductor, State of AEO/GEO 2026, avr. 2026, n=250+ dirigeants d'entreprises de 500+ employés, 12+ secteurs US. Périmètre enterprise uniquement)</div>
 
-  <h2>Les budgets des équipes contenu en 2026</h2>
-  <table>
+  <h2>6. Les budgets des équipes contenu en 2026</h2>
+  <table class="data">
     <tr><th>Indicateur</th><th>Valeur</th></tr>
     <tr><td>Professionnels du contenu augmentant leurs budgets en 2026</td><td class="v">87&nbsp;%</td></tr>
     <tr><td>Professionnels utilisant des outils IA dans leur workflow</td><td class="v">75&nbsp;%</td></tr>
@@ -162,8 +158,8 @@
   </table>
   <div class="src">(Source : Clutch × Conductor, The 2026 State of Content Report, publié le 17 fév. 2026, n=459. Fetch vérifié via clutch.co et Yahoo Finance)</div>
 
-  <h2>La publicité en ligne en France</h2>
-  <table>
+  <h2>7. La publicité en ligne en France</h2>
+  <table class="data">
     <tr><th>Indicateur</th><th>Valeur</th></tr>
     <tr><td>Marché publicitaire digital France 2025</td><td class="v">12,4&nbsp;Md€ (+11&nbsp;%)</td></tr>
     <tr><td>Part du search dans le marché digital France</td><td class="v">40&nbsp;% · 4,93&nbsp;Md€</td></tr>
@@ -173,11 +169,51 @@
   <div class="src">(Sources : SRI / UDECAM / Oliver Wyman, Observatoire e-pub 2025 · part search relayée par hi-commerce.fr · projection 2026 Oliver Wyman)</div>
   <div class="note">Note : une source secondaire (programmatique-marketing.fr) cite la part search à 31 % contre 40 % chez hi-commerce.fr. La divergence tient probablement à l'inclusion ou non des formats shopping et d'inventaires hybrides dans la catégorie « search ». Le chiffre de 4,93 Md€ est celui le plus fréquemment cité avec un montant explicite.</div>
 
-  <!-- CTA -->
-  <div class="cta">
-    <p>Votre partenaire SEO connecté à votre Search Console, pas un chatbot qui invente.</p>
-    <a class="btn" href="https://qadence.io">Essayer Qadence →</a>
-  </div>
+  <h2>8. L'infographie à télécharger</h2>
+  <p>Tous les chiffres de cette édition, réunis sur une seule image à garder ou à partager.</p>
+  <p style="margin-top:16px"><a href="2026-07-03-infographie-budgets-seo-ia.html" download style="display:inline-block;padding:9px 16px;font-size:13.5px;font-weight:500;color:#102830;border:1px solid #D7DBE2;border-radius:8px;background:#FFFFFF;text-decoration:none;">Télécharger l'infographie →</a></p>
+
+  <!-- ═══ Email produit du 2 juillet, repris pixel perfect ═══ -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:40px;">
+    <tr>
+      <td style="background:#FFFFFF; border:1px solid #E7E5DD; border-radius:16px; padding:34px 32px 30px;">
+
+        <div style="font-family:'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#597BF2; margin-bottom:14px;">
+          Nouveau
+        </div>
+
+        <h1 style="margin:0 0 16px; font-family:'Newsreader', Georgia, 'Times New Roman', serif; font-size:28px; line-height:1.22; font-weight:500; color:#141413; letter-spacing:-0.01em;">
+          Nouvelle vue Performances dans Qadence
+        </h1>
+
+        <p style="margin:0 0 22px; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:15.5px; line-height:1.62; color:#46433C;">
+          Toutes tes données Google Search Console sont désormais intégrées. Tu peux suivre tes performances sans quitter l'outil.
+        </p>
+
+        <!-- capture de la vue Performances -->
+        <img src="https://qadence.io/email/performances.png" alt="Vue Performances de Qadence : clics, impressions, CTR et position dans le temps" width="100%" style="display:block; width:100%; height:auto; border:1px solid #E7E5DD; border-radius:12px; margin:0 0 24px;">
+
+        <p style="margin:0 0 16px; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:15px; line-height:1.65; color:#262420;">
+          Clics, impressions, CTR et position dans le temps, de 7 jours à 16 mois, avec comparaison de période.
+        </p>
+
+        <p style="margin:0 0 28px; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:15px; line-height:1.65; color:#262420;">
+          Comme toujours, tes vraies données Search Console. Aucun chiffre inventé.
+        </p>
+
+        <!-- CTA -->
+        <a href="https://qadence.io/app" style="display:inline-block; padding:9px 16px; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:13.5px; font-weight:500; color:#102830; border:1px solid #D7DBE2; border-radius:8px; background:#FFFFFF; text-decoration:none;">
+          Voir mes performances&nbsp;&rarr;
+        </a>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:24px 6px 0; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:14px; line-height:1.6; color:#46433C;">
+        Tim, Qadence
+      </td>
+    </tr>
+  </table>
 
 </div>
 
