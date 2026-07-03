@@ -5,334 +5,192 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* ═══ Tokens DA Qadence (source : src/landing-v2.css) ═══ */
   :root{
-    --paper:#F4F5F7; --paper2:#ECEEF2; --card:#FFFFFF;
-    --ink:#1B2A2F; --ink2:#46505A; --muted:#71787F; --faint:#A2A8AF;
-    --line:#E4E7EC; --line2:#D7DBE2;
-    --dark:#102830; --dark2:#16323B; --on-dark:#F4F5F7; --on-dark-mut:rgba(244,245,247,.64);
-    --petrol:#1F373D;
-    --accent:#597BF2; --accent-ink:#597BF2; --accent-soft:#E9EDFD;
-    --danger:#B4534B;
-    --serif:"Newsreader",Georgia,serif;
+    --paper:#F4F5F7; --card:#FFFFFF;
+    --ink:#1B2A2F; --ink2:#46505A; --muted:#71787F;
+    --line:#E4E7EC;
+    --dark:#102830;
+    --accent:#597BF2; --accent-soft:#E9EDFD;
     --sans:"Inter",system-ui,-apple-system,sans-serif;
-    --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);font-family:var(--sans);color:var(--ink2);line-height:1.6;-webkit-font-smoothing:antialiased;padding:32px 16px}
+  body{background:var(--paper);font-family:var(--sans);color:var(--ink2);line-height:1.6;-webkit-font-smoothing:antialiased;padding:40px 16px}
   a{color:var(--accent);text-decoration:none;font-weight:500}
 
-  .nl{max-width:640px;margin:0 auto}
+  .nl{max-width:660px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:40px 44px}
 
-  /* ═══ Header ═══ */
-  .nl-head{display:flex;align-items:center;justify-content:space-between;padding:0 4px 18px;border-bottom:1px solid var(--line)}
-  .brand{font-family:var(--serif);font-size:22px;color:var(--ink);letter-spacing:-.01em;font-weight:400}
-  .nl-issue{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+  /* Header */
+  .nl-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:32px}
+  .brand{font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+  .nl-date{font-size:13px;color:var(--muted)}
 
-  /* ═══ Hero ═══ */
-  .nl-hero{padding:40px 4px 8px}
-  .eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:inline-flex;align-items:center;gap:8px}
-  .eyebrow::before{content:"";width:9px;height:9px;border:1.4px solid var(--faint);border-radius:2px;display:inline-block}
-  .nl-title{font-family:var(--serif);font-size:38px;font-weight:400;letter-spacing:-.02em;line-height:1.08;color:var(--ink);margin:14px 0 20px}
-  .nl-lead{font-size:17px;color:var(--ink2);line-height:1.78}
-  .nl-lead strong{color:var(--ink);font-weight:600}
-  .nl-lead p{margin-bottom:14px}
+  /* Titre + intro */
+  h1{font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1.2;color:var(--ink);margin-bottom:18px}
+  .lead{font-size:16px;line-height:1.7}
+  .lead p{margin-bottom:14px}
+  .lead strong{color:var(--ink);font-weight:600}
 
-  /* ═══ Stat du jour (section sombre) ═══ */
-  .nl-dark{background:var(--dark);border-radius:18px;padding:34px 32px;margin:32px 0;color:var(--on-dark)}
-  .nl-dark .eyebrow{color:var(--on-dark-mut)}
-  .nl-dark .eyebrow::before{border-color:var(--on-dark-mut)}
-  .nl-dark .big{font-family:var(--serif);font-size:64px;font-weight:400;letter-spacing:-.02em;line-height:1;color:var(--accent);margin:16px 0 10px}
-  .nl-dark .big-label{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--on-dark);line-height:1.25;margin-bottom:12px}
-  .nl-dark p{font-size:14.5px;color:var(--on-dark-mut);line-height:1.65}
-  .nl-dark .src{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark-mut);margin-top:16px}
+  /* Stat clé */
+  .stat{background:var(--dark);border-radius:12px;padding:28px 30px;margin:30px 0;text-align:center}
+  .stat .n{font-size:44px;font-weight:700;letter-spacing:-.02em;color:#fff;line-height:1.1}
+  .stat .l{font-size:15px;color:rgba(244,245,247,.75);margin-top:6px;line-height:1.5}
 
-  /* ═══ Sections ═══ */
-  .nl-sec{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 28px 24px;margin:20px 0;box-shadow:0 1px 2px rgba(16,16,16,.05),0 14px 34px -20px rgba(16,16,16,.26)}
-  .nl-sec h2{font-family:var(--serif);font-size:26px;font-weight:500;letter-spacing:-.01em;color:var(--ink);margin:10px 0 18px;line-height:1.15}
-  .nl-sec p{font-size:15px;line-height:1.7;margin:14px 0 0}
-  .nl-sec p strong{color:var(--ink);font-weight:600}
+  /* Sections */
+  h2{font-size:19px;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin:36px 0 14px}
+  p{font-size:15px;line-height:1.7}
+  p strong{color:var(--ink);font-weight:600}
 
-  /* ═══ Tableaux (DA : entêtes mono uppercase faint, filets --line) ═══ */
-  table{width:100%;border-collapse:collapse}
-  th{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);text-align:left;padding:0 10px 9px 0;border-bottom:1px solid var(--line2)}
-  th:last-child{padding-right:0}
-  td{font-size:13.5px;color:var(--ink2);padding:10px 10px 10px 0;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45}
-  td:last-child{padding-right:0}
+  /* Tableaux */
+  table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  th{background:var(--accent-soft);color:var(--ink);font-size:13px;font-weight:600;text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+  td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--ink2);line-height:1.5;vertical-align:top}
   tr:last-child td{border-bottom:0}
-  td.k{color:var(--ink)}
-  td.v{font-weight:600;color:var(--ink);white-space:nowrap}
-  td.v.hi{color:var(--accent-ink)}
-  td.s{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.01em}
+  td.v{font-weight:700;color:var(--ink);white-space:nowrap}
+  td.s{font-size:13px;color:var(--muted)}
 
-  .note{font-family:var(--mono);font-size:11px;letter-spacing:.02em;color:var(--muted);line-height:1.6;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+  .src{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.6}
 
-  /* ═══ Listes ═══ */
-  .nl-list{list-style:none;margin-top:6px}
-  .nl-list li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.6}
-  .nl-list li:last-child{border-bottom:0}
-  .nl-list .pct{font-family:var(--serif);font-size:26px;font-weight:500;letter-spacing:-.01em;color:var(--accent-ink);line-height:1.15;flex:none;min-width:74px}
-  .nl-list li strong{color:var(--ink);font-weight:600}
+  /* Liste chiffrée */
+  ul{list-style:none;margin-top:4px}
+  ul li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.6}
+  ul li:last-child{border-bottom:0}
+  ul li strong{color:var(--ink);font-weight:700}
 
-  /* ═══ Encadré accent ═══ */
-  .callout{background:var(--accent-soft);border-radius:11px;padding:14px 16px;font-size:13.5px;color:var(--ink);line-height:1.55;margin-top:16px}
+  /* Note encadrée */
+  .note{background:var(--accent-soft);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--ink);line-height:1.6;margin-top:14px}
 
-  /* ═══ CTA ═══ */
-  .nl-cta{text-align:center;padding:36px 4px}
-  .nl-cta p{font-size:15px;color:var(--muted);margin-bottom:18px}
-  .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:13px;font-weight:500;padding:10px 18px;border-radius:8px;background:var(--accent);color:#fff;border:1px solid var(--accent)}
-  .btn:hover{background:#3F5BD9;border-color:#3F5BD9}
+  /* CTA */
+  .cta{text-align:center;margin:40px 0 8px;padding-top:32px;border-top:1px solid var(--line)}
+  .cta p{font-size:15px;color:var(--muted);margin-bottom:16px}
+  .btn{display:inline-block;font-size:14px;font-weight:600;padding:11px 22px;border-radius:8px;background:var(--accent);color:#fff}
 
-  /* ═══ Footer ═══ */
-  .nl-foot{border-top:1px solid var(--line);padding:24px 4px 8px;text-align:center}
-  .nl-foot .brand{font-size:18px}
-  .nl-foot-links{margin:12px 0 14px;font-size:13px}
-  .nl-foot-links a{color:var(--muted);font-weight:400;margin:0 9px}
-  .nl-foot-links a:hover{color:var(--ink)}
-  .nl-foot .legal{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);line-height:1.8}
-  .nl-foot .legal a{color:var(--faint);font-weight:400;text-decoration:underline}
+  /* Footer */
+  .foot{max-width:660px;margin:24px auto 0;text-align:center;font-size:13px;color:var(--muted)}
+  .foot a{color:var(--muted);font-weight:400;margin:0 8px}
+  .foot .legal{font-size:12px;margin-top:10px}
+  .foot .legal a{text-decoration:underline;margin:0}
 
   @media(max-width:560px){
-    body{padding:20px 12px}
-    .nl-title{font-size:30px}
-    .nl-sec{padding:22px 18px 18px}
-    .nl-dark{padding:28px 22px}
-    .nl-dark .big{font-size:52px}
-    td,th{font-size:12.5px}
-    td.s{font-size:10px}
+    body{padding:20px 10px}
+    .nl{padding:28px 20px}
+    h1{font-size:24px}
+    table,th{font-size:13px}
+    td{padding:9px 10px}
+    td.s{font-size:12px}
   }
 </style>
 </head>
 <body>
+
 <div class="nl">
 
   <!-- Header -->
   <div class="nl-head">
     <span class="brand">Qadence</span>
-    <span class="nl-issue">Newsletter · 3 juillet 2026</span>
+    <span class="nl-date">3 juillet 2026</span>
   </div>
 
-  <!-- Hero -->
-  <div class="nl-hero">
-    <span class="eyebrow">Budgets · France / Europe · 2026</span>
-    <h1 class="nl-title">Budgets SEO et réallocation vers l'IA : état du marché 2026</h1>
-    <div class="nl-lead">
-      <p>En 2026, les CMO allouent en moyenne <strong>15,3 % de leur budget marketing à l'IA</strong>. C'est la dépense la plus documentée sur la transformation en cours. Mais ça ne signifie pas que les budgets SEO fondent.</p>
-      <p>Ce qui change, c'est où l'argent va à l'intérieur de l'enveloppe marketing : les agences perdent des parts (39 % des CMO prévoient de couper les dépenses agences), les outils IA en gagnent. La ligne de partage n'oppose pas SEO à IA ; elle oppose SEO d'agence à SEO internalisé par l'IA.</p>
-    </div>
+  <h1>Budgets SEO et réallocation vers l'IA : état du marché France/Europe 2026</h1>
+
+  <div class="lead">
+    <p>En 2026, les CMO allouent en moyenne <strong>15,3 % de leur budget marketing à l'IA</strong>. C'est la dépense la plus documentée sur la transformation en cours. Mais ça ne signifie pas que les budgets SEO fondent.</p>
+    <p>Ce qui change, c'est où l'argent va à l'intérieur de l'enveloppe marketing : les agences perdent des parts (39 % des CMO prévoient de couper les dépenses agences), les outils IA en gagnent. La ligne de partage n'oppose pas SEO à IA ; elle oppose SEO d'agence à SEO internalisé par l'IA.</p>
   </div>
 
-  <!-- Stat du jour -->
-  <div class="nl-dark">
-    <span class="eyebrow">La stat du jour</span>
-    <div class="big">15,3&nbsp;%</div>
-    <div class="big-label">du budget marketing alloué à l'IA en moyenne chez les CMO</div>
-    <p>Chez les organisations IA-matures, la part monte à 21,3 %. 70 % des CMO visent le leadership IA comme objectif 2026, mais seuls 30 % estiment disposer des capacités IA pour monter en charge.</p>
-    <div class="src">Gartner CMO Spend Survey 2026 · jan.–mars 2026 · n=401</div>
+  <div class="stat">
+    <div class="n">15,3&nbsp;%</div>
+    <div class="l">du budget marketing alloué à l'IA en moyenne chez les CMO<br>(Gartner CMO Spend Survey 2026, n=401)</div>
   </div>
 
-  <!-- Budget marketing global -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Budget marketing global (CMO)</h2>
-    <table>
-      <tr><th>Indicateur</th><th>Valeur</th><th>Source · Période</th></tr>
-      <tr>
-        <td class="k">Budget marketing moyen (% du revenu)</td>
-        <td class="v hi">7,8&nbsp;%</td>
-        <td class="s">Gartner 2026 · jan.–mars, n=401</td>
-      </tr>
-      <tr>
-        <td class="k">Budget marketing moyen (% du revenu)</td>
-        <td class="v">7,7&nbsp;%</td>
-        <td class="s">Gartner 2025 · fév.–mars, n=402</td>
-      </tr>
-      <tr>
-        <td class="k">Budget marketing (CMO IA-matures)</td>
-        <td class="v hi">8,9&nbsp;%</td>
-        <td class="s">Gartner 2026 · jan.–mars</td>
-      </tr>
-      <tr>
-        <td class="k">CMO jugeant le budget insuffisant</td>
-        <td class="v hi">56&nbsp;%</td>
-        <td class="s">Gartner 2026</td>
-      </tr>
-      <tr>
-        <td class="k">CMO jugeant le budget insuffisant</td>
-        <td class="v">59&nbsp;%</td>
-        <td class="s">Gartner 2025</td>
-      </tr>
-    </table>
-  </div>
+  <h2>Combien les entreprises dépensent en marketing</h2>
+  <table>
+    <tr><th>Indicateur</th><th>Valeur</th></tr>
+    <tr><td>Budget marketing moyen 2026 (% du revenu)</td><td class="v">7,8&nbsp;%</td></tr>
+    <tr><td>Budget marketing moyen 2025 (% du revenu)</td><td class="v">7,7&nbsp;%</td></tr>
+    <tr><td>Budget marketing (CMO IA-matures)</td><td class="v">8,9&nbsp;%</td></tr>
+    <tr><td>CMO jugeant le budget insuffisant en 2026</td><td class="v">56&nbsp;%</td></tr>
+    <tr><td>CMO jugeant le budget insuffisant en 2025</td><td class="v">59&nbsp;%</td></tr>
+  </table>
+  <div class="src">(Sources : Gartner CMO Spend Survey 2026, jan.–mars 2026, n=401 · Gartner CMO Spend Survey 2025, fév.–mars 2025, n=402)</div>
 
-  <!-- Réallocation vers l'IA -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Réallocation vers l'IA</h2>
-    <table>
-      <tr><th>Indicateur</th><th>Valeur</th><th>Source · Période</th></tr>
-      <tr>
-        <td class="k">Part du budget marketing allouée à l'IA</td>
-        <td class="v hi">15,3&nbsp;%</td>
-        <td class="s">Gartner 2026 · jan.–mars, n=401</td>
-      </tr>
-      <tr>
-        <td class="k">Part allouée à l'IA (organisations IA-matures)</td>
-        <td class="v hi">21,3&nbsp;%</td>
-        <td class="s">Gartner 2026 · jan.–mars</td>
-      </tr>
-      <tr>
-        <td class="k">CMO visant le leadership IA comme objectif 2026</td>
-        <td class="v hi">70&nbsp;%</td>
-        <td class="s">Gartner 2026 · jan.–mars</td>
-      </tr>
-      <tr>
-        <td class="k">CMO disposant des capacités IA pour monter en charge</td>
-        <td class="v hi">30&nbsp;%</td>
-        <td class="s">Gartner 2026 · jan.–mars</td>
-      </tr>
-    </table>
-  </div>
+  <h2>La part du budget marketing qui va à l'IA</h2>
+  <table>
+    <tr><th>Indicateur</th><th>Valeur</th></tr>
+    <tr><td>Part du budget marketing allouée à l'IA</td><td class="v">15,3&nbsp;%</td></tr>
+    <tr><td>Part allouée à l'IA (organisations IA-matures)</td><td class="v">21,3&nbsp;%</td></tr>
+    <tr><td>CMO visant le leadership IA comme objectif 2026</td><td class="v">70&nbsp;%</td></tr>
+    <tr><td>CMO disposant des capacités IA pour monter en charge</td><td class="v">30&nbsp;%</td></tr>
+  </table>
+  <div class="src">(Source : Gartner CMO Spend Survey 2026, jan.–mars 2026, n=401)</div>
 
-  <!-- Répartition des budgets marketing -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Répartition des budgets marketing (2025)</h2>
-    <table>
-      <tr><th>Poste</th><th>Part du budget marketing</th></tr>
-      <tr><td class="k">Paid media</td><td class="v hi">30,6&nbsp;%</td></tr>
-      <tr><td class="k">Martech</td><td class="v">22,4&nbsp;%</td></tr>
-      <tr><td class="k">Main-d'œuvre</td><td class="v">21,9&nbsp;%</td></tr>
-      <tr><td class="k">Agences</td><td class="v">20,7&nbsp;%</td></tr>
-    </table>
-    <p>Paid search représente <strong>13,9 % des allocations digitales</strong> dans ce périmètre : le premier poste individuel devant le display (12,5 %) et la publicité sociale (12,2 %).</p>
-    <div class="note">Source : Gartner CMO Spend Survey 2025, n=402, fév.–mars 2025, grandes entreprises (&gt;$1 Md de revenu).</div>
-  </div>
+  <h2>Comment le budget marketing se répartit</h2>
+  <table>
+    <tr><th>Poste</th><th>Part du budget marketing</th></tr>
+    <tr><td>Paid media</td><td class="v">30,6&nbsp;%</td></tr>
+    <tr><td>Martech</td><td class="v">22,4&nbsp;%</td></tr>
+    <tr><td>Main-d'œuvre</td><td class="v">21,9&nbsp;%</td></tr>
+    <tr><td>Agences</td><td class="v">20,7&nbsp;%</td></tr>
+  </table>
+  <p style="margin-top:14px">Paid search représente <strong>13,9 % des allocations digitales</strong> dans ce périmètre : le premier poste individuel devant le display (12,5 %) et la publicité sociale (12,2 %).</p>
+  <div class="src">(Source : Gartner CMO Spend Survey 2025, n=402, fév.–mars 2025, grandes entreprises &gt;$1 Md de revenu)</div>
 
-  <!-- Coupes agences -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Coupes agences et intégration IA</h2>
-    <ul class="nl-list">
-      <li>
-        <span class="pct">39&nbsp;%</span>
-        <span>des CMO prévoient de <strong>réduire leurs dépenses agences</strong> en 2025 (élimination de relations improductives, renégociation de contrats).</span>
-      </li>
-      <li>
-        <span class="pct">22&nbsp;%</span>
-        <span>déclarent avoir <strong>réduit leur recours aux agences</strong> pour la création et la stratégie grâce à l'IA générative.</span>
-      </li>
-      <li>
-        <span class="pct">49&nbsp;%</span>
-        <span>citent <strong>l'efficacité temporelle</strong> comme premier bénéfice de l'IA, 40&nbsp;% l'efficacité des coûts.</span>
-      </li>
-    </ul>
-    <div class="note">Source : Gartner CMO Spend Survey 2025, vérifiés par fetch (martech.org, chiefmarketer.com).</div>
-  </div>
+  <h2>Les coupes dans les budgets agences</h2>
+  <ul>
+    <li><strong>39 %</strong> des CMO prévoient de réduire leurs dépenses agences en 2025 (élimination de relations improductives, renégociation de contrats).</li>
+    <li><strong>22 %</strong> déclarent avoir réduit leur recours aux agences pour la création et la stratégie grâce à l'IA générative.</li>
+    <li><strong>49 %</strong> citent l'efficacité temporelle comme premier bénéfice de l'IA, <strong>40 %</strong> l'efficacité des coûts.</li>
+  </ul>
+  <div class="src">(Source : Gartner CMO Spend Survey 2025, vérifiés par fetch : martech.org, chiefmarketer.com)</div>
 
-  <!-- AEO / GEO -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Investissements AEO/GEO (entreprises, US)</h2>
-    <table>
-      <tr><th>Indicateur</th><th>Valeur</th><th>Source</th></tr>
-      <tr>
-        <td class="k">Entreprises ayant fait des investissements significatifs en AEO en 2025</td>
-        <td class="v hi">56&nbsp;%</td>
-        <td class="s">Conductor State of AEO/GEO 2026</td>
-      </tr>
-      <tr>
-        <td class="k">Entreprises prévoyant d'augmenter l'investissement AEO en 2026</td>
-        <td class="v hi">94&nbsp;%</td>
-        <td class="s">Conductor State of AEO/GEO 2026</td>
-      </tr>
-      <tr>
-        <td class="k">Budget moyen alloué à l'AEO (% du budget marketing digital)</td>
-        <td class="v hi">12&nbsp;%</td>
-        <td class="s">Conductor State of AEO/GEO 2026</td>
-      </tr>
-    </table>
-    <div class="note">Source : Conductor, avr. 2026, n=250+ dirigeants d'entreprises de 500+ employés, 12+ secteurs US. Périmètre enterprise uniquement.</div>
-  </div>
+  <h2>Les investissements dans l'AEO aux États-Unis</h2>
+  <table>
+    <tr><th>Indicateur</th><th>Valeur</th></tr>
+    <tr><td>Entreprises ayant fait des investissements significatifs en AEO en 2025</td><td class="v">56&nbsp;%</td></tr>
+    <tr><td>Entreprises prévoyant d'augmenter l'investissement AEO en 2026</td><td class="v">94&nbsp;%</td></tr>
+    <tr><td>Budget moyen alloué à l'AEO (% du budget marketing digital)</td><td class="v">12&nbsp;%</td></tr>
+  </table>
+  <div class="src">(Source : Conductor, State of AEO/GEO 2026, avr. 2026, n=250+ dirigeants d'entreprises de 500+ employés, 12+ secteurs US. Périmètre enterprise uniquement)</div>
 
-  <!-- Professionnels du contenu -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Professionnels du contenu (contenus et SEO mélangés)</h2>
-    <table>
-      <tr><th>Indicateur</th><th>Valeur</th><th>Source</th></tr>
-      <tr>
-        <td class="k">Professionnels du contenu augmentant leurs budgets en 2026</td>
-        <td class="v hi">87&nbsp;%</td>
-        <td class="s">Clutch / Conductor, jan. 2026, n=459</td>
-      </tr>
-      <tr>
-        <td class="k">Professionnels utilisant des outils IA dans leur workflow</td>
-        <td class="v hi">75&nbsp;%</td>
-        <td class="s">Clutch / Conductor, jan. 2026, n=459</td>
-      </tr>
-      <tr>
-        <td class="k">Ceux pour qui les LLM sont l'audience principale d'une majorité du contenu</td>
-        <td class="v hi">1&nbsp;sur&nbsp;4</td>
-        <td class="s">Clutch / Conductor, jan. 2026, n=459</td>
-      </tr>
-    </table>
-    <div class="note">Source : Clutch × Conductor, The 2026 State of Content Report, publié le 17 fév. 2026. Fetch vérifié via clutch.co et Yahoo Finance.</div>
-  </div>
+  <h2>Les budgets des équipes contenu en 2026</h2>
+  <table>
+    <tr><th>Indicateur</th><th>Valeur</th></tr>
+    <tr><td>Professionnels du contenu augmentant leurs budgets en 2026</td><td class="v">87&nbsp;%</td></tr>
+    <tr><td>Professionnels utilisant des outils IA dans leur workflow</td><td class="v">75&nbsp;%</td></tr>
+    <tr><td>Ceux pour qui les LLM sont l'audience principale d'une majorité du contenu</td><td class="v">1&nbsp;sur&nbsp;4</td></tr>
+  </table>
+  <div class="src">(Source : Clutch × Conductor, The 2026 State of Content Report, publié le 17 fév. 2026, n=459. Fetch vérifié via clutch.co et Yahoo Finance)</div>
 
-  <!-- Marché France -->
-  <div class="nl-sec">
-    <span class="eyebrow">Les chiffres</span>
-    <h2>Marché publicitaire digital France</h2>
-    <table>
-      <tr><th>Indicateur</th><th>Valeur</th><th>Source</th></tr>
-      <tr>
-        <td class="k">Marché publicitaire digital France 2025</td>
-        <td class="v hi">12,4&nbsp;Md€ <span style="font-weight:400;color:var(--muted)">(+11&nbsp;% / 2024)</span></td>
-        <td class="s">SRI / UDECAM / Oliver Wyman, Observatoire e-pub 2025</td>
-      </tr>
-      <tr>
-        <td class="k">Part du search dans le marché digital France</td>
-        <td class="v hi">40&nbsp;% <span style="font-weight:400;color:var(--muted)">soit 4,93&nbsp;Md€ (+10&nbsp;%)</span></td>
-        <td class="s">SRI / UDECAM, relayé par hi-commerce.fr</td>
-      </tr>
-      <tr>
-        <td class="k">Part du social dans le marché digital France</td>
-        <td class="v">34&nbsp;% <span style="font-weight:400;color:var(--muted)">soit 4,18&nbsp;Md€ (+15&nbsp;%)</span></td>
-        <td class="s">SRI / UDECAM / Oliver Wyman</td>
-      </tr>
-      <tr>
-        <td class="k">Projection 2026</td>
-        <td class="v">~13,8&nbsp;Md€ <span style="font-weight:400;color:var(--muted)">(+11&nbsp;%)</span></td>
-        <td class="s">Oliver Wyman</td>
-      </tr>
-    </table>
-    <div class="callout">Note : une source secondaire (programmatique-marketing.fr) cite la part search à 31 % contre 40 % chez hi-commerce.fr. La divergence tient probablement à l'inclusion ou non des formats shopping et d'inventaires hybrides dans la catégorie « search ». Le chiffre de 4,93 Md€ est celui le plus fréquemment cité avec un montant explicite.</div>
-  </div>
+  <h2>La publicité en ligne en France</h2>
+  <table>
+    <tr><th>Indicateur</th><th>Valeur</th></tr>
+    <tr><td>Marché publicitaire digital France 2025</td><td class="v">12,4&nbsp;Md€ (+11&nbsp;%)</td></tr>
+    <tr><td>Part du search dans le marché digital France</td><td class="v">40&nbsp;% · 4,93&nbsp;Md€</td></tr>
+    <tr><td>Part du social dans le marché digital France</td><td class="v">34&nbsp;% · 4,18&nbsp;Md€</td></tr>
+    <tr><td>Projection 2026</td><td class="v">~13,8&nbsp;Md€ (+11&nbsp;%)</td></tr>
+  </table>
+  <div class="src">(Sources : SRI / UDECAM / Oliver Wyman, Observatoire e-pub 2025 · part search relayée par hi-commerce.fr · projection 2026 Oliver Wyman)</div>
+  <div class="note">Note : une source secondaire (programmatique-marketing.fr) cite la part search à 31 % contre 40 % chez hi-commerce.fr. La divergence tient probablement à l'inclusion ou non des formats shopping et d'inventaires hybrides dans la catégorie « search ». Le chiffre de 4,93 Md€ est celui le plus fréquemment cité avec un montant explicite.</div>
 
   <!-- CTA -->
-  <div class="nl-cta">
+  <div class="cta">
     <p>Votre partenaire SEO connecté à votre Search Console, pas un chatbot qui invente.</p>
-    <a class="btn" href="https://qadence.io">Essayer Qadence&nbsp;→</a>
-  </div>
-
-  <!-- Footer -->
-  <div class="nl-foot">
-    <span class="brand">Qadence</span>
-    <div class="nl-foot-links">
-      <a href="https://qadence.io">Accueil</a>
-      <a href="https://qadence.io/tarifs">Tarifs</a>
-      <a href="https://qadence.io/blog">Blog</a>
-      <a href="https://qadence.io/documentation">Documentation</a>
-    </div>
-    <div class="legal">
-      Vous recevez cet email parce que vous êtes inscrit à la newsletter Qadence.<br>
-      <a href="{{unsubscribe_url}}">Se désinscrire</a>
-    </div>
+    <a class="btn" href="https://qadence.io">Essayer Qadence →</a>
   </div>
 
 </div>
+
+<!-- Footer -->
+<div class="foot">
+  <div>
+    <a href="https://qadence.io">Accueil</a> ·
+    <a href="https://qadence.io/tarifs">Tarifs</a> ·
+    <a href="https://qadence.io/blog">Blog</a> ·
+    <a href="https://qadence.io/documentation">Documentation</a>
+  </div>
+  <div class="legal">Vous recevez cet email parce que vous êtes inscrit à la newsletter Qadence. <a href="{{unsubscribe_url}}">Se désinscrire</a></div>
+</div>
+
 </body>
 </html>
