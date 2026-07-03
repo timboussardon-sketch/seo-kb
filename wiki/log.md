@@ -1030,3 +1030,13 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - entrée datée append-only dans raw/notes/tim-my-voice.md : les 11 corrections verbatim de Tim (playbook Reddit) + familles de tournures bannies (sujets nominaux abstraits, passifs de compilation, étiquettes creuses) + test « un expert dirait ça à voix haute ? »
 - règles dures : fragments nominaux interdits même en factuel, mot « karma » banni (→ réputation)
 - le skill ton-de-voix-tim lit ce corpus : les règles s'appliquent à toute rédaction future
+
+## [2026-07-03] revue-hebdo | Semaine W27 — 7 décisions, 2 mouvements exécutés en séance
+- promotions: 0 draft→stable, 0 stable→stale (refresh source playbook Reddit renvoyé à l'ingest W28)
+- hypothèse en test: H-009 seule vivante — échéance J+30 Golfiller tombée le 2026-07-03 sans mesure, export GSC à déposer avant 2026-07-07 sinon `ouvert` en W28 (conditionnel pré-arbitré)
+- lot ingest W28: Leexi (call 06-24 + recherche RGPD) en tête + etude-ctr-ai-overviews avec date de mort + refresh [[sources/2026-06-19-playbook-reddit-seo-geo]]
+- contradiction fermée: C-004 `ouverte`→`résolue` (entité Qadence vivante = référence d'état, snapshot = photo datée)
+- archivage: [[keywords/recherche-2026-06-05-consultant-seo-startup]] `draft`→`stale`
+- résurgence: mercredi 2026-07-01 muet (3ᵉ, ticket ops LaunchAgent), pas de verdict à ratifier
+- fil rouge: édition « mots-clés non mangés » sort en W28 ou se gèle ; fil Reddit attend les données du programme 30 jours
+- output: [[revue-hebdo/2026-W27]]

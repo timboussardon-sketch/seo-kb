@@ -4,7 +4,7 @@ title: Revue hebdo — rituel de décision
 aliases: [revue-hebdo, weekly-review, rituel-hebdo]
 tags: [meta, rituel, revue, decision]
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-07-03
 sources: 0
 confidence: high
 status: living-doc
@@ -49,6 +49,7 @@ status: living-doc
 | 2026-W24 | [[revue-hebdo/2026-W24]] | 7 mouvements de registre **exécutés en séance** · H-009 `en-test` (fiche [[preuves/2026-06-12-golfiller-instrumentation-client]], 1ʳᵉ baseline capturée avant décision) · H-007 dernière fenêtre 72 h sinon `ouvert` en W25 · binôme kw-research → skip documenté (4ᵉ non-exécution) · lot W25 = golfiller-strat + etude-ctr-ai-overviews · C-012 fermée, C-007 `acceptée`, C-002 requalifiée `ouverte` · post LinkedIn 2026-05-05 archivé · reco 2 promotions `methodes/*` draft→stable · fil rouge = **instrumentation client** (déclencheur éditorial J+30 Golfiller 2026-07-03) |
 | 2026-W26 | [[revue-hebdo/2026-W26]] | **2 promotions entités-référence draft→stable** (karpathy, google-deepmind) exécutées · stable→stale 0 (vault < 3 mois) · **aucune hypothèse forcée en-test** (H-002 garderait le piège Organikk de H-007 — reste `ouvert`), H-009 J+30 le 2026-07-03 à préparer · lot W27 = `etude-ctr` + dossier Leexi **tirés par le travail réel** (newsletter + client), `golfiller-strat` **skip** (2ᵉ non-exécution, doctrine kw-research) · **C-011 `ouverte`→`acceptée`** (garde-fou chiffres glossaire, calque C-007) · rien de mort à archiver · **résurgence surprise-gap exécutée** : `confidence high→medium` (aligné sur la section Limites, H-002 `ouvert`) · fil rouge = **mots-clés non mangés par l'IA**, mûr pour une édition Algorithme |
 | 2026-W25 | [[revue-hebdo/2026-W25]] | revue d'**exécution de conditionnels W24** : 3 actions Tim non faites mais pré-arbitrées · **2 promotions `methodes/*` draft→stable** flippées en séance · **H-007 `en-test→ouvert`** (export Organikk jamais déposé, fiche gelée `baseline-jamais-capturee`) · aucune nouvelle hypothèse en test (pas de fiche preuve) · lot ingest golfiller-strat + etude-ctr **1ʳᵉ reconduction (W26)** sinon skip · C-003 corrigée (zéro mesure réel, pas progression fictive) · rien à archiver, mislabel `revues-presse/2026-04-13`→hygiène · **résurgence Grounding Score 06-12 exécutée** (opérationnalisation + sources 6→11 + confidence→medium) · mercredi 06-17 muet (ticket ops) · fil rouge neuf = **parasite SEO/GEO Reddit+X+Grok** (cas test Qadence, gelé sur baseline) |
+| 2026-W27 | [[revue-hebdo/2026-W27]] | 0 promotion (rien n'a mûri en 7 jours) · **H-009 au pied du mur** : échéance J+30 Golfiller tombée le 2026-07-03 sans mesure — export GSC à déposer avant le 2026-07-07 sinon `ouvert` en W28 (conditionnel pré-arbitré) · lot W28 = **Leexi en tête** (prestation vivante) + etude-ctr **avec date de mort** (skip si l'édition ne sort pas en W28) + refresh source playbook Reddit (2 versions de retard sur le raw v3) · **C-004 `ouverte`→`résolue` en séance** (entité Qadence vivante = référence d'état, snapshot requalifié photo datée) · recherche kw consultant-startup `draft`→`stale` en séance · **résurgence 01/07 muette** (3ᵉ mercredi muet, ticket ops LaunchAgent) · fil rouge : **édition « mots-clés non mangés » sort en W28 ou se gèle** ; fil Reddit attend les données du programme 30 jours |
 
 Chaque édition est filée dans `revue-hebdo/YYYY-Www.md` et résumée dans cette table.
 

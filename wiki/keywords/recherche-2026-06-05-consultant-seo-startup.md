@@ -5,15 +5,17 @@ title: "Recherche mots-clés — Consultant SEO startup"
 slug: recherche-2026-06-05-consultant-seo-startup
 tags: [seo, mots-cles, pseo, recherche-mots-cles]
 created: 2026-06-05
-updated: 2026-06-06
+updated: 2026-07-03
 sources: 1
 confidence: medium
-status: draft
+status: stale
 seed_keyword: "consultant SEO startup"
 scope: recherche mots-clés décisionnels, audience startups SaaS B2B
 ---
 
 # RECHERCHE MOTS-CLÉS — « Consultant SEO startup »
+
+> `stale` acté [[revue-hebdo/2026-W27]] : jamais transformée en cluster ni en contenu depuis le 2026-06-06, dépassée par le travail mots-clés terrain client (clusters Leexi 2026-06-26). Conservée pour la méthode, plus dans le chemin des drafts actifs.
 
 **Date :** 2026-06-05
 **Offre / point de conversion :** prestation de consultant SEO (freelance/fractional) pour jeunes pousses

@@ -4,7 +4,7 @@ title: Registre des contradictions et dépendances ouvertes
 aliases: [contradictions, dette-doctrinale, dependances-ouvertes]
 tags: [meta, doctrine, lint, contradictions, dette]
 created: 2026-05-16
-updated: 2026-06-19
+updated: 2026-07-03
 sources: 0
 confidence: high
 status: living-doc
@@ -32,7 +32,7 @@ status: living-doc
 | C-001 | Discordance parcours Franck : Jumpto vs SEO.fr | `ouverte` | 2026-05-01 | Clarifier au prochain call/ingest |
 | C-002 | Paper OpenDecoder (Mo et al., 2026) jamais ingéré alors qu'il fonde le scoring | `ouverte` | 2026-04-30 | Item long terme — re-litiger seulement si [[hypotheses#H-010]] redevient critique |
 | C-003 | Cluster Organikk + 4 modèles pSEO non implémentés, zéro mesure post-déploiement | `en-cours` | 2026-04-30 | Mesurer après déploiement → [[preuves/index]] |
-| C-004 | Snapshot qadence-seo-agent figé au 2026-04-30, le repo évolue | `ouverte` | 2026-04-30 | Ré-ingest snapshot ou diff |
+| C-004 | Snapshot qadence-seo-agent figé au 2026-04-30, le repo évolue | `résolue` | 2026-04-30 | Fermée [[revue-hebdo/2026-W27]] : [[entities/qadence-seo-agent]] maintenue vivante fait référence d'état, le snapshot est une photo datée |
 | C-005 | Audit blanc Qualiopi FG Formation lu en titre seulement | `ouverte` | 2026-04-30 | Détailler le contenu en source |
 | C-006 | 21 templates Drive Accompagnement : seul l'INDEX est en wiki source | `acceptée` | 2026-04-30 | Limite assumée, ingest à la demande |
 | C-007 | "11 workflows automatisés" (drive-accompagnement) vs 10 skills documentés | `acceptée` | 2026-04-30 | Limite assumée [[revue-hebdo/2026-W24]] : jamais citer un décompte de skills sans le recompter depuis AGENTS.md §7 au moment de l'usage |
@@ -64,6 +64,10 @@ Le cluster business Organikk et les 4 modèles pSEO ([[sources/2026-04-24-cluste
 `en-cours` depuis le 2026-05-16 : la cohorte pSEO secteur×ville déjà publiée devait engager la première instrumentation sans attendre le déploiement complet du cluster — fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (H-007 passé `en-test`). La contradiction ne se ferme que quand le cluster complet est déployé et mesuré ; cette fiche n'en couvre qu'une fraction (5 pages, H-007 seule).
 
 Mise à jour 2026-06-19 ([[revue-hebdo/2026-W25]]) : la fraction d'instrumentation revendiquée n'a jamais produit de donnée — baseline GSC `organikk.co` jamais capturée, H-007 repassée `ouvert`, fiche gelée. C-003 reste `en-cours` mais sur du vrai zéro mesure, pas sur une progression partielle. Elle ne bougera que sur un sprint de contenu Organikk réel avec baseline capturée avant intervention, jamais par reconduction.
+
+### C-004 — Snapshot Qadence figé (résolue)
+
+Passée `résolue` le 2026-07-03 ([[revue-hebdo/2026-W27]]). La dette supposée — un snapshot du 2026-04-30 qui divergeait du repo vivant — est résolue par la pratique constatée : [[entities/qadence-seo-agent]] est maintenue à jour au fil du travail réel (3 sources, dernière mise à jour 2026-07-03 : conscience temporelle + DA Métriques) et c'est l'entité, pas le snapshot, qui fait référence d'état courant. [[sources/2026-04-30-qadence-seo-agent-snapshot]] est requalifié en photo datée, ce qui est le rôle normal d'une source. Aucun ré-ingest de snapshot n'est nécessaire tant que l'entité suit le repo.
 
 ### C-007 — Décompte workflows vs skills
 
