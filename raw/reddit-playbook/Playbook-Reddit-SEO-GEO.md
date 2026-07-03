@@ -409,7 +409,7 @@ Enfin, un chiffre montre bien l'état d'esprit de la plateforme : selon Reddit, 
 
 ### Protocole d'activation (commentaire)
 
-- Établis une liste de 8 à 12 subreddits et de 20 à 30 mots-clés de douleur (« best CRM for solopreneur », « [catégorie] alternatives »).
+- Établis une liste de 8 à 12 subreddits avec le prompt 8 (subreddit mapping, §9bis), et de 20 à 30 mots-clés de douleur (« best CRM for solopreneur », « [catégorie] alternatives »).
 - Monitore avec Reddit Search et F5Bot (gratuit, 200 mots-clés maximum).
 - Pars d'un compte de plus de 30 jours avec 200 à 500 points de réputation.
 - Structure chaque réponse ainsi : 3 à 5 conseils concrets, ton expérience personnelle, puis la mention avec disclosure (« une option que j'utilise moi-même est X ») si elle est légitime.
