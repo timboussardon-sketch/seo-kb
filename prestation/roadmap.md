@@ -154,6 +154,8 @@ cp -R "$ON/public/alexia-accompagnement" "$PUB"     # gabarit de référence = A
 
 **Point de contrôle** : `grep -c 'noindex' "$PUB/index.html" "$PUB/dataset.html"` > 0 sur chaque fichier.
 
+**Variante « phase de démarrage »** (éprouvé Catherine 2026-07-03) : quand le client n'a pas encore répondu au questionnaire, ouvrir le dashboard avec le SEUL onglet Questionnaire actif (tous les autres `locked: true`) et persister les réponses en ligne : upsert Supabase `client_selections` (projet fusionn, `doc_key = '<slug>'`, debounce ~900 ms, la version la plus récente gagne au chargement) en plus du localStorage. Ajouter un `admin.html` (clone de `catherine-accompagnement/admin.html`) pour lire les réponses côté Organikk, et le bloc noindex du slug dans `public/_headers`. Gabarit de référence : `public/catherine-accompagnement/`.
+
 ### A.3 — Étape 2 : kit skills « dataset » (source des skills)
 
 Le kit est généré, pas assemblé à la main. Il produit les skills au bon format `SKILL.md` + les catalogues `SKILLS.md` / `WORKFLOWS.md`, et sert de source à l'étape vault.
