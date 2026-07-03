@@ -92,15 +92,21 @@ Tu conclus par un verdict en une phrase : ce qu'on reconduit, ce qu'on ajuste.
 
 ---
 
-## Cycle mensuel
+## Cycle mensuel (fraîcheur)
 
-Le 1er du mois, 20 minutes. Les vieux threads continuent d'être cités pendant des années : l'âge moyen des discussions reprises par les IA est d'environ 900 jours (Semrush). Trois actions :
+Le premier jour de chaque mois, prévois une vingtaine de minutes pour mettre à jour tes contributions.
 
-- tu retournes sur les discussions où tu as déjà contribué et tu ajoutes un nouveau commentaire si tu as quelque chose à apporter (un chiffre à jour, un retour récent) ; Perplexity reprend un commentaire nouveau en 24 h à 7 jours ;
-- tu mets l'année courante dans les titres quand c'est pertinent ;
-- tu contrôles tes 3 à 5 threads les plus cités : une nouvelle réponse passée au-dessus de la tienne, un thread verrouillé.
+Les études de Semrush montrent que les IA continuent de citer des threads Reddit anciens (en moyenne près de 900 jours). Un thread qui fait autorité peut donc rester visible très longtemps, à condition qu'il reste vivant.
 
-Compte 60 à 90 jours avant un effet GEO mesurable (consensus multi-sources), 120 en borne haute. Pas de verdict sur le test Qadence avant fin août 2026. Et attends-toi à des paliers, pas à une courbe régulière : la part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % en deux semaines en septembre 2025 (Semrush).
+Chaque mois :
+
+- ajoute un nouveau commentaire sur les threads où tu es déjà bien positionné (une donnée récente, un retour d'expérience, une mise à jour, etc.). Sur Perplexity, ce type de rafraîchissement peut être pris en compte en quelques jours seulement (entre 24 heures et une semaine) ;
+- mets à jour les titres avec l'année en cours lorsque cela a du sens ;
+- vérifie tes 3 à 5 threads les plus performants : regarde si une réponse plus pertinente est apparue, si le fil a été verrouillé ou si une intervention mérite d'être ajoutée.
+
+Les premiers effets sur la visibilité dans les moteurs IA sont généralement observables après 60 à 90 jours, avec parfois jusqu'à 120 jours selon les cas. Il est donc inutile de tirer des conclusions sur le test Qadence avant fin août 2026.
+
+Enfin, garde en tête que les citations des IA évoluent rapidement. Par exemple, la part de Reddit dans les citations de ChatGPT est passée d'environ 60 % à 10 % en seulement deux semaines en septembre 2025 (Semrush). Le paysage change vite : l'objectif est de maintenir tes contenus à jour plutôt que de repartir de zéro chaque mois.
 
 ---
 
