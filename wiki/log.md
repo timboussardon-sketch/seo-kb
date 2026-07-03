@@ -1002,3 +1002,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 ## [2026-07-03] design | Playbook Reddit refait en DA Reddit
 - Playbook-Reddit-complet.html/pdf refaits : feed Reddit (posts votés, flairs, u/timboussardon, AutoModerator, carte communauté), IBM Plex Sans
 - build.py posé dans raw/reddit-playbook/ : regénère HTML+PDF depuis les 3 .md sources
+
+## [2026-07-03] rewrite | Playbook + routine Reddit réécrits en registre factuel
+- tout le writing refait au format brèves : fait + chiffre + source datée, phrases courtes, zéro framing narratif
+- titres de sections = descriptions sèches (ex. « 2. Reddit dans les moteurs génératifs » au lieu de « le vrai jackpot »)
+- habillage HTML aligné (AutoModerator, sommaire, topbar) ; fix pandoc tex_math_dollars (M$/an rendus en italiques)
+- DA Reddit conservée telle quelle

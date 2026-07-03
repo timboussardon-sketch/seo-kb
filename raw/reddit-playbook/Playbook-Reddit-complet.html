@@ -85,8 +85,9 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .pcontent pre{background:#f6f7f8;border:1px solid #edeff1;border-radius:6px;padding:12px 16px;overflow-x:auto;margin:0 0 14px}
 .pcontent pre code{background:none;border:none;padding:0;font-size:12.5px;line-height:1.6}
 .pcontent hr{border:none;border-top:1px solid #edeff1;margin:22px 0}
-ol.toc{padding-left:26px}
-ol.toc li{margin:7px 0;font-size:14.5px}
+ul.toc{padding-left:0;list-style:none}
+ul.toc li{margin:7px 0;font-size:14.5px;border-bottom:1px solid #edeff1;padding-bottom:7px}
+ul.toc li:last-child{border-bottom:none}
 
 /* ── Commentaires ── */
 .comment{display:flex;gap:10px;margin:16px 0 4px;padding:12px;border-radius:6px}
@@ -120,7 +121,7 @@ ol.toc li{margin:7px 0;font-size:14.5px}
 <div class="topbar">
   <div class="logo"><span class="disc"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span> playbook</div>
   <div class="searchbar">Rechercher dans r/PlaybookSEO</div>
-  <div class="tb-user"><b>u/timboussardon</b> · karma <span class="karma">à construire (c'est le sujet)</span></div>
+  <div class="tb-user"><b>u/timboussardon</b> · test en cours : Qadence.io</div>
 </div>
 
 <div class="banner"></div>
@@ -135,7 +136,7 @@ ol.toc li{margin:7px 0;font-size:14.5px}
   <div class="about">
     <div class="ahead">À propos de la communauté</div>
     <div class="abody">
-      <p>Faire de Reddit un canal SEO + GEO sans se faire bannir. Doctrine, routine et journal, sur data sourcée. Les chiffres fragiles sont signalés comme tels.</p>
+      <p>Doctrine, routine et journal pour deux résultats mesurables : citations IA et positions Google. Chiffres sourcés, les fragiles sont signalés.</p>
       <div class="stat"><b>20,6 M</b><span>utilisateurs Reddit estimés en France</span></div>
       <div class="stat"><b>top 5</b><span>des domaines les plus visibles sur Google US</span></div>
       <div class="stat"><b>60 M$/an</b><span>payés par Google pour la data Reddit</span></div>
@@ -151,768 +152,578 @@ ol.toc li{margin:7px 0;font-size:14.5px}
 <article class="post" id="tldr">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,1 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-orange">TL;DR</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
+    <div class="pmeta"><span class="flair f-orange">TL;DR</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
     <h2 class="ptitle">En résumé (à lire en premier)</h2>
-    <div class="pcontent"><p>Reddit est passé en deux ans du statut de site obscur à celui de
-deuxième ou troisième domaine le plus visible sur Google US. Sa
-visibilité a été multipliée par plus de treize entre mi-2023 et 2024
-(indice Sistrix de 95 à 1 370). Trois forces ont poussé dans le même
-sens : l’update « hidden gems » de Google fin 2023 qui a remonté les
-forums, le filtre « Discussions and forums » dans les résultats, et le
-deal de licence de données entre Google et Reddit à environ 60 millions
-de dollars par an signé en février 2024. Depuis début 2025, il y a eu
-une correction et de la volatilité, mais Reddit reste solidement dans le
-top 5 des domaines US.</p>
-<p>Le vrai jackpot de 2026 n’est pas Google, c’est l’IA. Reddit est la
-source la plus citée, ou la deuxième, par à peu près tous les moteurs
-génératifs : ChatGPT, Perplexity, Google AI Overviews, Gemini. Sur
-Perplexity, Reddit pèse jusqu’à 20 à 47 % des citations selon l’étude et
-la période. C’est verrouillé par contrat : Google paie pour les données
-Reddit, OpenAI aussi (deal estimé à 70 millions de dollars par an, mai
-2024). Quand tu es nommé dans le bon thread Reddit, tu augmentes
-mécaniquement tes chances d’être recommandé par une IA.</p>
-<p>La mécanique pour toi tient en quatre leviers, dans cet ordre :</p>
+    <div class="pcontent"><p>Reddit est passé du 68e rang au top 5 des domaines les plus visibles
+sur Google US entre juillet 2023 et juillet 2024. Indice Sistrix : de
+95,1 à 1 370 points, +1 328 % (Sistrix via Amsive, 2024). Trois causes
+documentées, cumulées : l’update « hidden gems » déployée à l’automne
+2023, le filtre « Discussions and forums » dans les résultats, l’accord
+de licence de données Google-Reddit à ~60 M$/an signé en février
+2024.</p>
+<p>Sur les moteurs génératifs, Reddit est la source n°1 ou n°2 des
+citations selon toutes les études 2025-2026 (Peec AI, Semrush, Evertune,
+détail §2). Sur Perplexity : 20 à 47 % des citations selon l’étude et la
+période. Ces accès sont contractuels : Google ~60 M$/an, OpenAI ~70
+M$/an estimés (mai 2024).</p>
+<p>Quatre usages, dans l’ordre de rendement documenté :</p>
 <ol type="1">
-<li><strong>Te faire citer par les IA</strong> via des threads
-décisionnels où ton site ou ton offre est nommé de façon authentique.
-C’est le levier le plus puissant et le plus durable.</li>
-<li><strong>Faire ranker des threads sur Google</strong> dont le titre
-épouse une requête réelle, en profitant de l’autorité du domaine
-reddit.com.</li>
-<li><strong>Miner Reddit comme source d’insights</strong> : pain points,
-verbatims, mots-clés réels tapés par de vrais humains. C’est ta matière
-première pour le contenu.</li>
-<li><strong>Construire une présence de fond</strong> : un compte qui a
-de l’âge, du karma, et un historique de contributions utiles. Sans ça,
-les trois premiers leviers sont inaccessibles.</li>
+<li><strong>Citations IA</strong> via des threads décisionnels où le
+site est nommé de façon authentique.</li>
+<li><strong>Positions Google</strong> via des threads dont le titre
+correspond à une requête réelle.</li>
+<li><strong>Extraction d’insights</strong> : pain points, verbatims,
+vocabulaire réel. Aucun risque de ban, rien n’est posté.</li>
+<li><strong>Compte crédible</strong> (âge, karma, historique de
+contributions). Prérequis des trois usages précédents.</li>
 </ol>
-<p>Le piège : Reddit est ouvertement anti-marketing. La doctrine
-officielle de la plateforme tient en une phrase : « C’est OK d’être un
-Redditor qui a un site web, ce n’est pas OK d’être un site web qui a un
-compte Reddit. » Tout découle de là. L’autopromo agressive est le moyen
-le plus rapide de tout perdre : post supprimé, compte shadowbanné,
-bannissement définitif.</p>
-<p>Pour toi spécifiquement : Reddit explose en France (plus de 20
-millions d’utilisateurs estimés, plus 72 % de visiteurs mensuels sur un
-an), mais il n’existe pas de communauté SEO francophone active dessus,
-et le levier reste structurellement plus faible en français qu’en
-anglais. Ça change ta stratégie. J’y reviens en section 12.</p></div>
+<p>Contrainte structurante : la politique anti-spam de Reddit. Doctrine
+officielle de la plateforme : « C’est OK d’être un Redditor qui a un
+site web, ce n’est pas OK d’être un site web qui a un compte Reddit. »
+Sanctions constatées : post supprimé, shadowban, bannissement.</p>
+<p>France : ~20,6 M d’utilisateurs estimés (Influencia), +72 % de
+visiteurs mensuels sur un an (Médiamétrie), aucune communauté SEO
+francophone active. Le levier est plus faible en français qu’en anglais.
+Détail et conséquences en §12.</p></div>
     
 <div class="comment automod">
   <div class="cav am">A</div>
   <div class="cbody">
     <div class="cmeta"><b class="am-name">u/AutoModerator</b> <span class="modtag">MOD</span> · épinglé</div>
-    <p>Rappel des règles de r/PlaybookSEO : 95 % de contribution pour 5 % d'autopromo maximum, jamais deux fois le même commentaire, jamais le même lien plus de 2 fois par jour, et la machine ne publie jamais seule. Les infractions finissent en shadowban, et personne ne te préviendra.</p>
+    <p>Règles de r/PlaybookSEO : ratio 95/5, même commentaire jamais répété, même lien 2 fois par jour maximum, la machine ne publie jamais seule. Sanctions constatées : suppression, shadowban, ban.</p>
   </div>
 </div>
     <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 194 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
 <article class="post" id="sommaire">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>925</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,7 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
     <div class="pmeta"><span class="flair f-gray">DOCTRINE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin</div>
-    <h2 class="ptitle">Le sommaire, épinglé pour scroller utile</h2>
-    <div class="pcontent"><ol class="toc"><li><a href="#tldr">En résumé (à lire en premier)</a></li><li><a href="#le-terrain-de-test-first-party-qadence-io-cas-en-cours">Le terrain de test first-party : Qadence.io (cas en cours)</a></li><li><a href="#lexecution-routine-quotidienne-reddit-cockpit-depuis-2026-07">L'exécution : routine quotidienne + Reddit Cockpit (depuis 2026-07-02)</a></li><li><a href="#1-le-terrain-2024-2026-pourquoi-reddit-est-devenu-incontourn">1. Le terrain 2024-2026 : pourquoi Reddit est devenu incontournable</a></li><li><a href="#2-reddit-et-les-ia-le-vrai-jackpot-cest-le-geo">2. Reddit et les IA : le vrai jackpot, c'est le GEO</a></li><li><a href="#3-la-regle-dor-avant-toute-tactique">3. La règle d'or, avant toute tactique</a></li><li><a href="#4-etape-par-etape-monter-un-compte-qui-tient">4. Étape par étape : monter un compte qui tient</a></li><li><a href="#5-trouver-les-bons-subreddits">5. Trouver les bons subreddits</a></li><li><a href="#6-la-regle-9-1-et-lautopromo">6. La règle 9:1 et l'autopromo</a></li><li><a href="#7-les-formats-qui-marchent-et-le-ton-reddit">7. Les formats qui marchent (et le ton Reddit)</a></li><li><a href="#7bis-deux-protocoles-concrets-activation-et-post">7bis. Deux protocoles concrets (activation et post)</a></li><li><a href="#8-faire-ranker-un-thread-sur-google-le-parasite-seo-maitrise">8. Faire ranker un thread sur Google (le parasite SEO maîtrisé)</a></li><li><a href="#9-reddit-comme-machine-a-insights">9. Reddit comme machine à insights</a></li><li><a href="#10-les-pieges-shadowban-ban-ce-qui-te-grille">10. Les pièges : shadowban, ban, ce qui te grille</a></li><li><a href="#11-moderation-comprendre-les-mods-et-lautomoderator">11. Modération : comprendre les mods et l'AutoModerator</a></li><li><a href="#12-le-cas-francophone-ce-qui-change-pour-toi">12. Le cas francophone : ce qui change pour toi</a></li><li><a href="#13-outils">13. Outils</a></li><li><a href="#14-plan-90-jours">14. Plan 90 jours</a></li><li><a href="#15-les-metriques-a-suivre">15. Les métriques à suivre</a></li><li><a href="#note-de-fiabilite-a-lire-avant-de-citer-ces-chiffres-ailleur">Note de fiabilité (à lire avant de citer ces chiffres ailleurs)</a></li><li><a href="#sources-audit-web-juin-2026">Sources (audit web, juin 2026)</a></li><li><a href="#routine">Daily thread : la routine quotidienne (annexe A)</a></li><li><a href="#journal">Le journal de suivi (annexe B)</a></li></ol></div>
+    <h2 class="ptitle">Sommaire</h2>
+    <div class="pcontent"><ul class="toc"><li><a href="#tldr">En résumé (à lire en premier)</a></li><li><a href="#le-test-qadence-io-terrain-first-party">Le test Qadence.io (terrain first-party)</a></li><li><a href="#lexecution-routine-quotidienne-reddit-cockpit-depuis-2026-07">L'exécution : routine quotidienne + Reddit Cockpit (depuis 2026-07-02)</a></li><li><a href="#1-visibilite-google-de-reddit-2023-2026">1. Visibilité Google de Reddit, 2023-2026</a></li><li><a href="#2-reddit-dans-les-moteurs-generatifs">2. Reddit dans les moteurs génératifs</a></li><li><a href="#3-politique-dautopromo-de-reddit">3. Politique d'autopromo de Reddit</a></li><li><a href="#4-montee-dun-compte">4. Montée d'un compte</a></li><li><a href="#5-selection-des-subreddits">5. Sélection des subreddits</a></li><li><a href="#6-ratio-dautopromo-etat-de-la-regle">6. Ratio d'autopromo : état de la règle</a></li><li><a href="#7-formats-de-contribution">7. Formats de contribution</a></li><li><a href="#7bis-protocoles-dexecution">7bis. Protocoles d'exécution</a></li><li><a href="#8-threads-positionnes-sur-google">8. Threads positionnés sur Google</a></li><li><a href="#9-extraction-dinsights">9. Extraction d'insights</a></li><li><a href="#10-shadowban-definition-et-declencheurs">10. Shadowban : définition et déclencheurs</a></li><li><a href="#11-moderation">11. Modération</a></li><li><a href="#12-marche-francophone">12. Marché francophone</a></li><li><a href="#13-outils">13. Outils</a></li><li><a href="#14-plan-90-jours">14. Plan 90 jours</a></li><li><a href="#15-metriques">15. Métriques</a></li><li><a href="#note-de-fiabilite-a-lire-avant-de-citer-ces-chiffres-ailleur">Note de fiabilité (à lire avant de citer ces chiffres ailleurs)</a></li><li><a href="#sources-audit-web-juin-2026">Sources (audit web, juin 2026)</a></li><li><a href="#routine">Routine quotidienne (annexe A)</a></li><li><a href="#journal">Journal de suivi (annexe B)</a></li></ul></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 151 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 141 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="le-terrain-de-test-first-party-qadence-io-cas-en-cours">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,3 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="le-test-qadence-io-terrain-first-party">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>922</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-green">TEST TERRAIN</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">Le terrain de test first-party : Qadence.io (cas en cours)</h2>
-    <div class="pcontent"><p>Ce playbook n’est pas que théorique. Il cadre un test réel lancé en
-juin 2026 sur Qadence.io, pensé pour produire la donnée de cas qui
-manque partout ailleurs (voir la note de fiabilité en bas).</p>
-<p>Point de départ honnête : il y a un an, un premier post sur le sujet,
-puis presque rien. Quelques tentatives pour des clients, plutôt
-concluantes, mais rien d’assez net pour trancher si bosser son SEO sur
-Reddit vaut vraiment la peine. Ce test sert à trancher.</p>
-<p><strong>Objectif double :</strong></p>
-<ol type="1">
-<li>Augmenter le nombre de citations de Qadence.io par les moteurs
-génératifs (GEO).</li>
-<li>Gagner des positions Google sur des mots-clés décisionnels (« outil
-IA », « agent SEO », « [catégorie] alternatives »).</li>
-</ol>
-<p>Plus une question de fond : peut-on vraiment construire une audience
-sur Reddit, et la faire profiter au SEO d’organikk.co.</p>
-<p><strong>Deux règles non négociables :</strong></p>
-<ol type="1">
-<li>Pas de spam. On ne reproduit pas ce que vend la majorité des
-agences. On apporte de la valeur ou on ne poste pas.</li>
-<li>Pas de coup éclair. On construit une présence durable qui nourrit le
-SEO dans le temps, pas un pic de trafic jetable.</li>
-</ol>
-<p>Posture au lancement : faible conviction assumée. Les raisons d’y
-aller quand même sont le poids réel de Reddit dans Google depuis le deal
-data, et sa place de source n°1 ou 2 citée par les moteurs IA (chiffres
-sourcés en §1 et §2, à ne pas confondre avec les estimations larges qui
-circulent sur le trafic total). Et la méthode reste celle du système SEO
-: pas deux ou trois prompts lancés à la main, mais une recherche
-outillée qui va chercher les signaux là où ils sont (Reddit, mais aussi
-X.com, voir §9).</p></div>
+    <div class="pmeta"><span class="flair f-green">TEST TERRAIN</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">Le test Qadence.io (terrain first-party)</h2>
+    <div class="pcontent"><p>Test lancé en juin 2026 sur Qadence.io. Aucune étude de cas Reddit
+indépendante avec trafic, positions et conversions vérifiables n’existe
+(voir note de fiabilité). Ce test produit cette donnée.</p>
+<p>Objectifs mesurés : 1. citations de Qadence.io dans Perplexity,
+ChatGPT et AI Overviews ; 2. positions Google sur des mots-clés
+décisionnels (« outil IA », « agent SEO », « [catégorie] alternatives
+»).</p>
+<p>État initial : compte ancien (premier post il y a un an), activité
+quasi nulle depuis. Deux règles de conduite : pas de spam, pas d’action
+ponctuelle sans suite. Délai attendu avant effet mesurable : 60 à 90
+jours (§2). Point de coupe : bilan à J+45 (mi-août 2026) ; sans thread
+positionné, citation IA ni mention entrante, le test s’arrête.</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 50 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 96 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
 <article class="post" id="lexecution-routine-quotidienne-reddit-cockpit-depuis-2026-07">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,8 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-blue">ROUTINE</span> Posté par <a href="#">u/timboussardon</a> · 2 juil.</div>
+    <div class="pmeta"><span class="flair f-blue">ROUTINE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
     <h2 class="ptitle">L'exécution : routine quotidienne + Reddit Cockpit (depuis 2026-07-02)</h2>
-    <div class="pcontent"><p>Ce playbook a une couche d’exécution, dans le même dossier :</p>
+    <div class="pcontent"><p>La couche d’exécution est dans le même dossier :</p>
 <ul>
 <li><strong><a href="#routine">la routine quotidienne</a></strong> : les
-quotas opérationnels (4-6 commentaires/jour plafond 8, 1
-mention/semaine, 1 post/semaine plafond dur 3, bilan du vendredi sur
-liste fixe de requêtes). Dérivée de ce playbook puis vérifiée contre ~25
-sources web le 2026-07-02 ; c’est elle qui fait foi sur les chiffres
-d’exécution quand elle diverge du corps de ce document.</li>
-<li><strong><a href="#journal">le journal</a></strong> : le suivi
-append-only (une ligne par jour, un bloc par bilan hebdo).</li>
-<li><strong>Le Reddit Cockpit</strong>
-(<code>~/Code/reddit-cockpit/</code>, jumeau du x-cockpit) : chaque
-matin à 07h50, un scrape RSS en lecture seule des subs cibles et des
-requêtes acheteur, puis un drafting automatique de 1-2 commentaires par
-thread retenu (anglais, 120-200 mots, ton documentation, quotas vérifiés
-contre le Journal), déposés dans <code>queue/AAAA-MM-JJ.md</code>. Règle
-dure identique au x-cockpit : la machine ne publie jamais, le clic reste
-manuel. Ramène le bloc commentaires de la routine à ~10-12 minutes par
-jour.</li>
+quotas (4-6 commentaires/jour plafond 8, 1 mention/semaine, 1
+post/semaine plafond dur 3, bilan hebdo sur liste fixe de requêtes).
+Vérifiée contre ~25 sources le 2026-07-02. En cas de divergence avec ce
+document, la routine fait foi sur les chiffres d’exécution.</li>
+<li><strong><a href="#journal">le journal</a></strong> : suivi
+append-only. Une ligne par jour, un bloc par bilan hebdo.</li>
+<li><strong>Reddit Cockpit</strong>
+(<code>~/Code/reddit-cockpit/</code>) : scrape RSS en lecture seule des
+subs cibles et des requêtes acheteur, chaque jour à 07h50, puis drafting
+automatique de 1-2 commentaires par thread retenu (anglais, 120-200
+mots, quotas vérifiés contre le journal). Sortie :
+<code>queue/AAAA-MM-JJ.md</code>. La machine ne publie jamais, le clic
+reste manuel. Temps du bloc commentaires : ~10-12 min/jour.</li>
 </ul></div>
     
     <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 115 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="1-le-terrain-2024-2026-pourquoi-reddit-est-devenu-incontourn">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>534</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="1-visibilite-google-de-reddit-2023-2026">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>791</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-gray">CONTEXTE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">1. Le terrain 2024-2026 : pourquoi Reddit est devenu incontournable</h2>
-    <div class="pcontent"><h3 id="lexplosion">L’explosion</h3>
-<p>En juillet 2023, reddit.com était le 68e domaine le plus visible aux
-États-Unis sur Google. Un an plus tard, en juillet 2024, il était dans
-le top 5. L’indice de visibilité Sistrix est passé de 95,1 à 1 370
-points, soit plus 1 328 % entre juillet 2023 et avril 2024 (Sistrix via
-Amsive, 2024). Le trafic organique estimé a suivi : d’environ 57
-millions de visites mensuelles à 427 millions sur la même période, plus
-649 % (estimation Ahrefs via Amsive). Lily Ray a résumé ça en mai 2024 :
-jamais un site n’avait vu une hausse aussi massive de rankings, de
-trafic et de visibilité en si peu de temps.</p>
-<p>Trois causes, qui se sont empilées.</p>
-<p><strong>L’update « hidden gems » et le coup de pouce aux forums
-(automne 2023).</strong> En mai 2023, Google annonce vouloir faire
-remonter des « pépites cachées », du contenu écrit d’un point de vue
-personnel et expérientiel. Le déploiement réel s’est fait à l’automne
-2023, intégré aux core updates d’octobre et novembre. Résultat mesuré
-par Glenn Gabe : sur 97 forums analysés, 88 % ont gagné plus de 100 % de
-visibilité sur un an, beaucoup plus de 500 %. Reddit a gagné entre 378 %
-(Semrush) et 978 % (Sistrix) selon l’outil.</p>
-<p><strong>Le filtre « Discussions and forums » et « Perspectives
-».</strong> Google a ajouté dans ses résultats une zone dédiée aux
-forums et aux avis de vraies personnes, ce qui a structurellement
-remonté Reddit sur les requêtes conversationnelles et expérientielles,
-le « best X for Y », l’avis produit, le troubleshooting.</p>
-<p><strong>Le deal Google-Reddit (février 2024, environ 60 millions de
-dollars par an).</strong> Annoncé fin février 2024, juste avant l’IPO de
-Reddit, ce contrat donne à Google un accès en temps réel à l’API de
-Reddit pour entraîner ses modèles IA et nourrir ses réponses. Google
-jure que ce deal de licence est distinct du classement organique. La
-corrélation temporelle entre le deal et l’explosion de visibilité est
-documentée par tous les outils, mais reste une corrélation, pas une
-preuve de causalité directe. La FTC a d’ailleurs ouvert une enquête non
-publique sur ces licences de contenu en mars 2024.</p>
-<h3 id="la-correction-de-2025">La correction de 2025</h3>
-<p>Ce n’est pas une courbe qui monte tout droit. À partir du 7 janvier
-2025, Reddit a perdu de la visibilité, environ 350 points d’indice
-Sistrix, et est repassé du 3e au 4e rang US. Les core updates de 2025
-(mars, juin, août, décembre) ont créé une forte volatilité sur les sites
-de contenu communautaire (Reddit, Quora, Stack Exchange). Pendant le
-core update de décembre 2025, Reddit a chuté puis a rebondi à son niveau
-d’avant update dans la semaine qui a suivi la fin du déploiement. Reddit
-a même brièvement atteint le 2e rang US en août 2025, dépassant Amazon,
-avant de redescendre.</p>
-<p>Ce qu’il faut retenir : Reddit est volatil mais structurellement
-installé dans le top 5. Tu ne construis pas sur du sable, mais tu ne
-mises pas une stratégie entière sur le fait qu’un thread donné restera
-en position 2 pour toujours.</p>
-<h3
-id="le-mécanisme-technique-pourquoi-une-page-reddit-ranke-alors-que-ses-liens-sont-en-nofollow">Le
-mécanisme technique : pourquoi une page Reddit ranke alors que ses liens
-sont en nofollow</h3>
-<p>Point important pour ne pas te tromper de stratégie : <strong>les
-liens sortants de Reddit sont en nofollow.</strong> Ils ne transmettent
-pas de link juice façon backlink dofollow d’un site d’autorité. Si ton
-plan est « je vais chopper des backlinks Reddit pour mon ranking »,
-c’est le mauvais plan.</p>
-<p>Une page Reddit ranke pour d’autres raisons : la fraîcheur et le
-crawl quasi temps réel (facilité par le deal data), des signaux
-d’engagement forts (temps passé élevé, faible rebond, interactions
-massives), et le « E » de E-E-A-T, l’expérience vécue, exactement ce que
-l’update hidden gems cherchait à remonter. John Mueller a confirmé que
-les liens Reddit apportent du trafic référent et que les mentions, même
-en nofollow, peuvent renforcer la crédibilité d’une entité. Et il y a un
-effet de second tour : quand un thread Reddit ranke et fait du bruit,
-des journalistes et blogueurs le citent, ce qui génère de vrais liens
-dofollow vers les sites mentionnés dedans.</p></div>
+    <div class="pmeta"><span class="flair f-gray">CONTEXTE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">1. Visibilité Google de Reddit, 2023-2026</h2>
+    <div class="pcontent"><h3 id="croissance-2023-2024">Croissance 2023-2024</h3>
+<p>Juillet 2023 : reddit.com est le 68e domaine le plus visible sur
+Google US. Juillet 2024 : top 5. Indice Sistrix : 95,1 → 1 370 points
+entre juillet 2023 et avril 2024, +1 328 % (Sistrix via Amsive). Trafic
+organique estimé : ~57 M → ~427 M de visites mensuelles sur la même
+période, +649 % (estimation Ahrefs via Amsive, pas une donnée
+Reddit).</p>
+<p>Trois causes documentées :</p>
+<ul>
+<li><strong>Update « hidden gems »</strong> (annoncée mai 2023, déployée
+dans les core updates d’octobre-novembre 2023) : remontée du contenu
+expérientiel et des forums. Mesure de Glenn Gabe sur 97 forums : 88 %
+ont gagné plus de 100 % de visibilité sur un an. Gain Reddit selon
+l’outil : +378 % (Semrush) à +978 % (Sistrix).</li>
+<li><strong>Filtre « Discussions and forums »</strong> : zone dédiée aux
+forums dans les résultats, qui remonte Reddit sur les requêtes
+conversationnelles (« best X for Y », avis, troubleshooting).</li>
+<li><strong>Accord Google-Reddit</strong> (février 2024, ~60 M$/an) :
+accès temps réel à l’API Reddit pour l’entraînement des modèles et les
+réponses. Google déclare le contrat distinct du classement organique. La
+corrélation temporelle avec l’explosion de visibilité est documentée par
+tous les outils ; la causalité directe ne l’est pas. La FTC a ouvert une
+enquête non publique sur ces licences en mars 2024.</li>
+</ul>
+<h3 id="correction-2025">Correction 2025</h3>
+<p>À partir du 7 janvier 2025 : perte d’environ 350 points d’indice
+Sistrix, passage du 3e au 4e rang US. Les core updates 2025 (mars, juin,
+août, décembre) créent de la volatilité sur les sites communautaires
+(Reddit, Quora, Stack Exchange). Décembre 2025 : chute pendant le
+déploiement, retour au niveau antérieur dans la semaine suivante. Août
+2025 : 2e rang US atteint brièvement, devant Amazon. Position
+structurelle : top 5 US, avec volatilité par paliers.</p>
+<h3 id="mécanisme-de-ranking-liens-en-nofollow">Mécanisme de ranking
+(liens en nofollow)</h3>
+<p>Les liens sortants de Reddit sont en nofollow. Ils ne transmettent
+pas d’autorité au sens backlink. Une stratégie « backlinks Reddit » n’a
+pas de base technique.</p>
+<p>Facteurs de ranking d’une page Reddit documentés : crawl quasi temps
+réel (facilité par l’accord de données), signaux d’engagement (temps
+passé, interactions), critère « expérience » de l’E-E-A-T (cible
+déclarée de l’update hidden gems). John Mueller (Google) : les liens
+Reddit apportent du trafic référent ; les mentions sans lien ne sont pas
+un facteur de ranking direct. Effet de second ordre constaté : un thread
+qui ranke est repris par des médias, qui créent des liens dofollow vers
+les sites mentionnés.</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 20 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 73 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="2-reddit-et-les-ia-le-vrai-jackpot-cest-le-geo">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>897</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="2-reddit-dans-les-moteurs-generatifs">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,4 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-orange">GEO</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">2. Reddit et les IA : le vrai jackpot, c'est le GEO</h2>
-    <div class="pcontent"><p>Si tu ne devais retenir qu’une chose de ce playbook : en 2026,
-l’intérêt n°1 de Reddit n’est pas de ranker sur Google, c’est de te
-faire citer par les IA.</p>
-<h3 id="les-chiffres">Les chiffres</h3>
-<p>Reddit est la source la plus citée, ou la deuxième, par presque tous
-les moteurs génératifs. L’étude Peec AI (30 millions de sources, mars
-2026) classe Reddit n°1 sur Gemini et Perplexity, n°2 sur Google AI
-Mode, AI Overviews et ChatGPT. L’étude Semrush (230 000 prompts, 100
-millions de citations, juillet à octobre 2025) place Reddit n°2 sur
-ChatGPT après septembre, et top 5 stable sur Google AI Mode et
-Perplexity.</p>
-<p>La domination la plus nette est sur Perplexity. L’étude Evertune
-(plus de 200 millions de prompts, fin 2025 début 2026) montre Reddit
-comme le domaine le plus cité sur Perplexity sur toute la durée des cinq
-mois observés, avec des pics au-delà de 20 %. D’autres mesures montent
-jusqu’à 46-47 % des citations Perplexity. Sur les AI Overviews de
-Google, Reddit pèse autour de 21 % des citations selon plusieurs
-analyses.</p>
-<p>Avertissement méthodo, et c’est important pour ne pas dire de bêtises
-: ces pourcentages sont extrêmement volatils. Reddit est passé d’environ
-60 % à environ 10 % des citations ChatGPT entre début août et
-mi-septembre 2025 (Semrush). Une mesure donne Gemini à 0,1 % quand une
-autre le donne n°1. Ne sors jamais un chiffre seul. Dis toujours « X %
-selon telle étude, sur telle fenêtre, à telle date ». Les ordres de
-grandeur robustes et consensuels : Reddit n°1 ou n°2 partout, très fort
-sur Perplexity, fort sur AI Overviews, plus modéré et instable sur
-ChatGPT.</p>
-<h3 id="pourquoi-reddit-est-sur-cité-par-les-ia">Pourquoi Reddit est
-sur-cité par les IA</h3>
-<p>Trois raisons de fond, utiles à comprendre parce qu’elles te disent
-quoi produire.</p>
-<p>La densité d’entités. Le texte que les LLM citent affiche une densité
-d’entités d’environ 20 %, contre 5 à 8 % dans un texte normal. Les posts
-Reddit sont naturellement bourrés d’entités précises : noms d’outils,
-versions, prix, chiffres, du genre « on est passés de Salesforce à
-HubSpot le trimestre dernier et notre taux de closing a pris 15 % ».
-C’est exactement le texte dont un modèle extrait des faits propres et
-non ambigus.</p>
-<p>L’expérience first-hand. Un thread où un praticien réel raconte
-comment il a résolu un problème précis porte de l’expérience qu’aucun
-contenu corporate générique n’a. Reddit est littéralement une base de
-données d’expérience vécue.</p>
-<p>La validation communautaire. Les votes et les débats servent de
-couche de vérification. Quand quarante personnes discutent un outil avec
-des exemples concrets, le modèle lit ça comme une preuve par les
-pairs.</p>
-<h3 id="le-verrou-contractuel">Le verrou contractuel</h3>
-<p>Ce n’est pas qu’algorithmique, c’est contractuel, donc durable.
-Google paie environ 60 millions de dollars par an pour les données
-Reddit (février 2024). OpenAI a signé en mai 2024 un accord donnant à
-ChatGPT accès au contenu temps réel de Reddit, estimé à environ 70
-millions de dollars par an. Reddit n’est pas un domaine crawlé parmi
-d’autres pour ces moteurs, c’est un flux de données privilégié et payé.
-C’est pour ça que sa position de source citée est solide et pas près de
-s’effondrer.</p>
-<h3 id="comment-se-faire-citer-le-cœur-du-geo-reddit">Comment se faire
-citer (le cœur du GEO Reddit)</h3>
+    <div class="pmeta"><span class="flair f-orange">GEO</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">2. Reddit dans les moteurs génératifs</h2>
+    <div class="pcontent"><h3 id="parts-de-citation">Parts de citation</h3>
+<ul>
+<li>Peec AI (30 M de sources, mars 2026) : Reddit n°1 des domaines cités
+sur Gemini et Perplexity, n°2 sur Google AI Mode, AI Overviews et
+ChatGPT.</li>
+<li>Semrush (230 000 prompts, 100 M de citations, juillet-octobre 2025)
+: Reddit n°2 sur ChatGPT après septembre, top 5 stable sur Google AI
+Mode et Perplexity.</li>
+<li>Evertune (200 M+ de prompts, fin 2025-début 2026) : Reddit domaine
+le plus cité sur Perplexity sur cinq mois consécutifs, pics au-delà de
+20 %. D’autres mesures donnent 46-47 % des citations Perplexity.</li>
+<li>AI Overviews : ~21 % des citations selon plusieurs analyses.</li>
+</ul>
+<p>À pondérer : ces pourcentages sont volatils. Part de Reddit dans les
+citations ChatGPT : ~60 % → ~10 % entre début août et mi-septembre 2025
+(Semrush). Une mesure donne Gemini à 0,1 % quand une autre le donne n°1.
+Tout chiffre de citation se donne avec l’étude, la fenêtre et la date.
+Ordres de grandeur robustes : Reddit n°1 ou n°2 partout, maximum sur
+Perplexity, fort sur AI Overviews, instable sur ChatGPT.</p>
+<h3 id="facteurs-explicatifs-documentés">Facteurs explicatifs
+documentés</h3>
+<ul>
+<li><strong>Densité d’entités.</strong> Le texte cité par les LLM
+affiche ~20 % de densité d’entités, contre 5-8 % pour un texte standard.
+Les posts Reddit contiennent des noms d’outils, versions, prix,
+chiffres.</li>
+<li><strong>Expérience first-hand.</strong> Récits de résolution de
+problèmes par des praticiens, catégorie de contenu visée par l’update
+hidden gems.</li>
+<li><strong>Validation communautaire.</strong> Votes et contradiction
+publique servent de couche de vérification pour les modèles.</li>
+</ul>
+<h3 id="contrats-de-données">Contrats de données</h3>
+<p>Google : ~60 M$/an (février 2024, CBS, Fortune). OpenAI : accès au
+contenu temps réel, ~70 M$/an estimés (mai 2024, Search Engine Land).
+Reddit est un flux de données payé, pas un domaine crawlé parmi
+d’autres. Point de vigilance 2026 : le contrat Google est en
+renégociation, et le procès Reddit v. Perplexity (octobre 2025, en
+cours) peut modifier l’accès de Perplexity.</p>
+<h3 id="formats-cités-et-conditions">Formats cités et conditions</h3>
 <p>Les cinq formats de threads les plus cités par les IA (Discovered
-Labs) : les questions-réponses à réponse directe, les comparatifs «
-versus », les threads de troubleshooting et how-to, les débats prix et
-valeur avec des montants concrets, et les avis équilibrés qui donnent le
-pour ET le contre. Un avis qui liste des défauts est plus crédible qu’un
-avis 100 % positif, et il est davantage repris.</p>
-<p>Les bonnes pratiques : un compte ancien avec du karma, des réponses
-authentiques réparties sur 5 à 10 threads plutôt qu’un post promo
-unique, des réponses structurées en étapes ou en bullets, une
-terminologie cohérente répétée sur plusieurs threads dans la durée. La
-fraîcheur compte : Perplexity privilégie le contenu de moins de douze
-mois, un post récent avec 50 upvotes bat un post de six mois avec 500.
-Et il faut être patient : compte 60 à 120 jours entre un démarrage à
-froid et un effet mesurable, l’ordre d’apparition typique étant
-Perplexity, puis ChatGPT search, puis les AI Overviews de Google.</p>
-<p>Interdits absolus : astroturfing, faux comptes, faux avis. C’est
-détecté, sanctionné par les communautés, et le dommage de réputation est
-durable.</p>
-<h3 id="écrire-comme-une-documentation-pour-être-cité">Écrire comme une
-documentation (pour être cité)</h3>
-<p>Les moteurs IA reprennent plus volontiers un texte formulé comme une
-source de référence. Concrètement : retire « je pense », « à mon avis »,
-« on croit que », et écris en définitions précises, données vérifiables,
-process structurés. Une formulation neutre et factuelle augmente la
-probabilité d’être repris comme source de vérité (Reddit GEO Playbook,
-Medium, mai 2026, recoupé sur plusieurs guides GEO 2026).</p>
-<h3
-id="entretenir-la-fraîcheur-cycle-mensuel-nuancé-2026-07-02">Entretenir
-la fraîcheur (cycle mensuel, nuancé 2026-07-02)</h3>
-<p>Perplexity privilégie le contenu récent et reprend les nouveaux
-commentaires Reddit sous 24 h à 7 jours. Mais l’âge moyen des threads
-Reddit cités par les IA est d’environ 900 jours (Semrush, 248 000 URLs
-citées, oct. 2025) : les vieux threads forts restent cités. La tactique
-n’est donc pas de réécrire ses réponses tous les 90 jours (chiffre issu
-d’une seule source Medium), mais d’injecter de la fraîcheur : un
-commentaire neuf dans les vieux threads forts où tu es déjà présent,
-l’année courante dans les titres quand c’est pertinent, et un contrôle
-mensuel que tes threads les plus cités n’ont pas dérivé. Des mesures
-donnent un taux de citation en AI Overviews plus élevé pour les pages
-portant un signal d’année courante, chiffre issu de sources à intérêt
-commercial, à confirmer.</p>
-<h3 id="la-réputation-devient-un-enjeu-geo-la-veille-défensive">La
-réputation devient un enjeu GEO (la veille défensive)</h3>
-<p>Les IA ne citent pas que le positif. Elles reprennent aussi les
-critiques, les retours négatifs, les comparatifs défavorables et les
-discussions controversées. Une mesure montre un taux de citation quasi
-identique entre sentiment positif (environ 5 %) et négatif (environ 6,1
-%), avec un léger biais vers le négatif (AuthorityTech, 2026, source à
-intérêt commercial). Conséquence directe : un thread négatif visible sur
-toi peut durablement orienter la façon dont une IA te présente.
-Surveiller ta propre réputation Reddit fait donc partie de la stratégie
-GEO, au même titre que l’offensif, et pas en option.</p></div>
+Labs) : question-réponse directe, comparatif « versus »,
+troubleshooting/how-to, débat prix avec montants, avis équilibré
+pour/contre. Un avis qui liste des défauts est plus repris qu’un avis
+uniquement positif.</p>
+<p>Données Semrush (248 000 URLs Reddit citées, octobre 2025) : 80 % des
+posts cités ont moins de 20 upvotes, médiane 5-8. 70 % ont moins de 20
+commentaires. Les threads Q&amp;A représentent plus de 50 % des
+citations. Longueur médiane d’un commentaire cité : ~80 mots. Il
+n’existe pas de seuil d’upvotes.</p>
+<p>Conditions côté compte : ancienneté et karma, réponses réparties sur
+plusieurs threads plutôt qu’un post unique, terminologie cohérente dans
+la durée. La répétition d’une même recommandation dans des threads
+différents pèse plus qu’un score élevé dans un seul thread (Conbersa).
+Délai avant effet mesurable : 60 à 90 jours, consensus multi-sources ;
+120 jours en borne haute. Perplexity reprend un commentaire Reddit
+nouveau en 24 h à 7 jours.</p>
+<p>Interdits : astroturfing, faux comptes, faux avis. Détection
+communautaire documentée, dommage durable.</p>
+<h3 id="rédaction-format-documentation">Rédaction : format
+documentation</h3>
+<p>Les moteurs reprennent davantage un texte formulé comme une source de
+référence : définitions, données vérifiables, étapes numérotées. Sans «
+je pense », « à mon avis » (Reddit GEO Playbook, Medium, mai 2026,
+recoupé sur plusieurs guides 2026).</p>
+<h3 id="fraîcheur-corrigé-2026-07-02">Fraîcheur (corrigé
+2026-07-02)</h3>
+<p>Âge moyen des threads Reddit cités par les IA : ~900 jours (Semrush).
+Les vieux threads forts restent cités. La tactique n’est pas de réécrire
+ses réponses tous les 90 jours (chiffre issu d’une seule source Medium)
+: elle consiste à ajouter un commentaire récent dans les vieux threads
+forts déjà investis, à indiquer l’année courante dans les titres
+pertinents, et à contrôler chaque mois la dérive des threads les plus
+cités. Des mesures donnent un taux de citation AI Overviews plus élevé
+pour les pages portant un signal d’année courante ; sources à intérêt
+commercial, non confirmées.</p>
+<h3 id="citations-négatives">Citations négatives</h3>
+<p>Les IA citent aussi les critiques et comparatifs défavorables. Une
+mesure donne des taux de citation proches entre sentiment positif (~5 %)
+et négatif (~6,1 %) (AuthorityTech, 2026, source à intérêt commercial).
+Un thread négatif visible peut orienter durablement la présentation d’un
+site par une IA. La veille sur ses propres mentions fait partie du
+dispositif (routine, bloc veille).</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 63 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 179 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="3-la-regle-dor-avant-toute-tactique">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>856</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="3-politique-dautopromo-de-reddit">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,0 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-red">RÈGLE D'OR</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">3. La règle d'or, avant toute tactique</h2>
-    <div class="pcontent"><p>Avant les techniques, la philosophie, parce que sans elle tu te feras
-bannir dans la semaine.</p>
-<blockquote>
-<p>« C’est parfaitement OK d’être un Redditor qui a un site web. Ce
-n’est pas OK d’être un site web qui a un compte Reddit. »</p>
-</blockquote>
-<p>C’est la doctrine officielle de Reddit sur l’autopromo, et tout en
-découle. Reddit accueille les gens actifs dans la communauté qui
-partagent occasionnellement leur travail. Reddit rejette les comptes qui
-n’existent que pour promouvoir. La culture est ouvertement
-anti-marketing : « les redditors détestent les pubs ». Le fait que tu
-sois consultant SEO doit rester en arrière-plan, jamais le sujet du
-post.</p>
-<p>Concrètement, ça veut dire que tu vas passer beaucoup plus de temps à
-aider, commenter, partager le contenu des autres, qu’à parler de toi. Le
-ratio recommandé tourne autour de 90 % de contribution réelle pour 10 %
-maximum d’autopromo, et les marketeurs prudents visent même 95/5. J’y
-reviens en section 6.</p></div>
+    <div class="pmeta"><span class="flair f-red">RÈGLE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">3. Politique d'autopromo de Reddit</h2>
+    <div class="pcontent"><p>Doctrine officielle : « C’est parfaitement OK d’être un Redditor qui
+a un site web. Ce n’est pas OK d’être un site web qui a un compte
+Reddit. »</p>
+<p>Conséquence opérationnelle : la contribution précède la promotion.
+Ratio de référence : ~90 % de contribution pour 10 % d’autopromo maximum
+; 95/5 en pratique prudente (§6). Le statut de consultant SEO reste en
+arrière-plan, jamais le sujet d’un post.</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 118 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 161 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="4-etape-par-etape-monter-un-compte-qui-tient">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,6 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="4-montee-dun-compte">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>731</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-blue">MÉTHODE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">4. Étape par étape : monter un compte qui tient</h2>
-    <div class="pcontent"><p>Tu ne peux rien faire sans un compte crédible. Reddit filtre les
-comptes neufs de façon brutale et automatique.</p>
-<p><strong>Étape 1 : crée le compte et complète le profil.</strong>
-Avatar, bio sobre. Surtout pas « agence SEO n°1 » dans la bio. Tu es une
-personne, pas un panneau publicitaire.</p>
-<p><strong>Étape 2 : laisse le compte vieillir.</strong> Les subreddits
-fixent leurs propres seuils d’âge, généralement de 1 à 30 jours. Le
-standard le plus courant est 7 jours minimum, beaucoup de subs sérieux
-exigent 30 jours. Un compte créé aujourd’hui qui poste un lien
-aujourd’hui est quasi systématiquement filtré ou caché.</p>
-<p><strong>Étape 3 : comprends le karma.</strong> Le karma est le
-système de réputation de Reddit. Il y en a deux types. Le comment karma
-se gagne quand tes commentaires sont upvotés, le post karma quand tes
-posts le sont. Ce n’est pas du 1:1 avec les upvotes : Reddit applique
-une échelle logarithmique, un post à 1 000 upvotes peut ne rapporter que
-500 de karma. Le comment karma se construit beaucoup plus vite, parce
-qu’on commente plus souvent qu’on ne poste. Les subreddits l’utilisent
-comme barrière anti-spam, avec des seuils typiques de 10 à 100 et plus
-de karma combiné. Sous le seuil, l’AutoModerator supprime ton post avant
-même qu’un humain le voie.</p>
-<p><strong>Étape 4 : roder le compte, deux à quatre semaines.</strong>
-Pendant une à deux semaines, tu fais uniquement du commentaire dans tes
-subs cibles. Des réponses utiles, précises, qui aident réellement. Zéro
-lien vers ton site. Tu tries les posts par « Top, ce mois-ci » pour
-comprendre ce qui résonne dans chaque communauté avant d’écrire quoi que
-ce soit. Cette phase n’est pas optionnelle : c’est elle qui fabrique le
-capital qui rend tout le reste possible.</p></div>
-    
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 26 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
-  </div>
-</article>
-<article class="post" id="5-trouver-les-bons-subreddits">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>3,0 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
-  <div class="pbody">
-    <div class="pmeta"><span class="flair f-blue">MÉTHODE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">5. Trouver les bons subreddits</h2>
-    <div class="pcontent"><p><strong>La découverte.</strong> La barre de recherche Reddit avec le
-filtre « Communities » sur des mots-clés de ton métier. Les outils
-Subreddit Stats (activité et croissance historique), SnoopSnoo
-(démographie et chevauchement d’audiences, parfois instable), Redditlist
-pour le classement.</p>
-<p><strong>L’évaluation, et c’est contre-intuitif : la taille ne fait
-pas la valeur.</strong> L’engagement prime sur le nombre d’abonnés. Un
-sub de 15 000 membres où chaque post déclenche une vraie discussion vaut
-mieux qu’un sub de 500 000 quasi mort. Tu tries par « Top, ce mois-ci »
-pour comprendre la culture, et tu lurkes au moins une semaine dans
-chaque sub candidat avant d’y être actif.</p>
-<p><strong>Lis les règles avant de poster. Non négociable.</strong>
-Chaque subreddit est modéré par des bénévoles et a ses propres règles,
-dans la sidebar ou un post épinglé. Certains interdisent toute activité
-commerciale. D’autres imposent un seuil de karma ou d’âge, ou ont un
-jour dédié à l’autopromo (le fameux « Self-promo Saturday »). Lis aussi
-la wiki du sub si elle existe.</p></div>
-    
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 102 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
-  </div>
-</article>
-<article class="post" id="6-la-regle-9-1-et-lautopromo">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,5 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
-  <div class="pbody">
-    <div class="pmeta"><span class="flair f-red">RÈGLE D'OR</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">6. La règle 9:1 et l'autopromo</h2>
-    <div class="pcontent"><p>C’est la règle la plus connue de Reddit : pour 1 contenu
-auto-promotionnel, 9 contributions non promotionnelles, soit 10 %
-maximum d’autopromo.</p>
-<p>Une nuance honnête, parce que je ne vais pas te raconter une règle
-périmée comme si c’était gravé dans le marbre. La règle 9:1 a bien été
-publiée par Reddit dans les premières années, mais elle a été retirée du
-Reddiquette formel parce que jugée trop rigide. Reddit l’a remplacée par
-un principe : sois un participant authentique, pas seulement un
-promoteur, les mods jugeant le comportement global plutôt qu’un
-pourcentage exact.</p>
-<p>Ce qui reste officiel et opposable aujourd’hui, c’est la Content
-Policy de Reddit : le spam y est défini comme des actions « répétées,
-non désirées ou non sollicitées » qui perturbent une communauté, et la
-manipulation comme « toute tentative de manipuler le vote ou les
-systèmes de Reddit ». L’esprit de la règle 9:1 survit, même si le ratio
-chiffré n’est plus dans le texte. Garde le test mental simple : si
-quelqu’un scrolle ton profil et n’y voit que des liens vers ton site, tu
-es grillé. Vise 95/5, tu seras tranquille.</p></div>
-    
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 224 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
-  </div>
-</article>
-<article class="post" id="7-les-formats-qui-marchent-et-le-ton-reddit">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>206</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
-  <div class="pbody">
-    <div class="pmeta"><span class="flair f-blue">MÉTHODE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">7. Les formats qui marchent (et le ton Reddit)</h2>
-    <div class="pcontent"><p>Le ton Reddit est anti-marketing et exigeant en authenticité. La
-règle de tonalité : dégage le jargon corporate et parle au niveau de la
-communauté, avec son vocabulaire.</p>
-<p>Les formats qui fonctionnent pour un consultant comme toi :</p>
-<p><strong>Les commentaires utiles.</strong> Ta base. Tu réponds en
-profondeur à de vraies questions, sans pitcher. C’est ce qui construit
-le karma et la crédibilité, et c’est de loin ce que tu feras le
-plus.</p>
-<p><strong>Le partage de données originales.</strong> Reddit adore la
-data inédite. C’est le format le plus défendable pour quelqu’un qui a
-quelque chose à vendre, parce qu’il apporte une vraie valeur et ne
-ressemble pas à une pub. Tu produis déjà des études first-party (logs
-Fusionn, GSC de tes propriétés, études CTR croisé AI Overviews).
-Anonymisé et présenté comme une trouvaille, ce contenu est de l’or sur
-Reddit.</p>
-<p><strong>Répondre aux questions</strong> des gens, gratuitement, sans
-CTA. <strong>Les TIL et les guides</strong>, contenus pédagogiques sans
-lien commercial.</p>
-<p><strong>L’AMA (Ask Me Anything).</strong> Puissant mais piégeux. Pour
-réussir, il faut une vraie personne compétente qui apporte une vraie
-valeur et répond vraiment, longuement, y compris aux questions gênantes.
-Les AMA qui sentent le copy marketing coulent. Les cas d’échec sont
-célèbres : Nissan accusé d’avoir planté des questions, des personnalités
-atterries sur r/AMADisasters pour avoir ignoré les vraies questions et
-fait leur promo.</p>
-<p>Une donnée encourageante côté réceptivité : selon Reddit, 81 % des
-gens apprécient que les acteurs aient des conversations sur la
-plateforme et 59 % veulent qu’ils écoutent leur feedback. La condition
-reste l’authenticité.</p></div>
-    
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 188 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
-  </div>
-</article>
-<article class="post" id="7bis-deux-protocoles-concrets-activation-et-post">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,7 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
-  <div class="pbody">
-    <div class="pmeta"><span class="flair f-blue">PROTOCOLE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">7bis. Deux protocoles concrets (activation et post)</h2>
-    <div class="pcontent"><p>Le playbook reste théorique sans gestes précis. Voici deux protocoles
-opérationnels, l’un pour activer le compte par le commentaire, l’autre
-pour poster du contenu.</p>
-<h3 id="protocole-dactivation-le-commentaire">Protocole d’activation (le
-commentaire)</h3>
-<ul>
-<li>Liste 8 à 12 subreddits et 20 à 30 mots-clés de douleur (ex. « best
-CRM for solopreneur », « comment gérer X sans outil », « [catégorie]
-alternatives »).</li>
-<li>Monitore avec Reddit Search et un outil d’alerte (F5Bot gratuit ou
-équivalent).</li>
-<li>Pars d’un compte ancien (plus de 30 jours, karma 200-500).</li>
-<li>Réponds avec une structure fixe : 3 à 5 conseils concrets, puis ton
-expérience personnelle, puis la mention assumée « une option que
-j’utilise moi-même est X » (disclosure).</li>
-<li>Si le subreddit l’autorise, propose un DM pour aller plus loin.</li>
-<li>Tracke la source « Reddit » dans ton CRM (UTM).</li>
-<li>Réponds à tous les commentaires et DM dans les 48 heures.</li>
-<li>Limite : 4 à 6 commentaires par jour, plafond 8 (aligné 2026-07-02
-sur le consensus des guides, bande 2-8/jour ; aucun ne recommande plus
-de 8). Jamais en rafale : 20 commentaires dans l’heure = pattern
-spam.</li>
-</ul>
-<h3 id="protocole-de-post-le-contenu">Protocole de post (le
-contenu)</h3>
-<ul>
-<li>Étudie les 10 meilleurs posts du subreddit (format, longueur,
-ton).</li>
-<li>Mets 50 à 80 % de valeur pure dans le post (captures, métriques,
-échecs assumés).</li>
-<li>Titre type : « J’ai [fait X] pendant [période]. Voici ce qui a
-marché et ce qui a foiré. »</li>
-<li>Autres formats qui rankent (recherche Ross Simmonds et guides 2026)
-: « How to [objectif] in [secteur] », « My experience with [produit] »,
-« We tested 5 [outils] », « Best [outil] for [cas d’usage] ». Méthode
-Simmonds : TL;DR en tête, enseignements concrets, question ouverte en
-fin pour nourrir les commentaires.</li>
-<li>Timing : poste en fenêtre haute, matinée ET en semaine, environ
-6-10h ET (corrigé 2026-07-02 : l’étude Upvote.net porte sur 150 posts,
-pas 1 000, et vient d’un vendeur d’upvotes ; la fenêtre est corroborée
-par Foundation, RecurPost et Single Grain, Foundation ajoutant le samedi
-matin).</li>
-<li>Joue la première heure : la pondération des votes est logarithmique,
-les 10 premiers upvotes pèsent autant que les 100 suivants. Les 6-10
-premières heures conditionnent le ranking Google du thread. (Corrigé
-2026-07-02 : le « 30 premières minutes » ne venait que de vendeurs
-d’upvotes.)</li>
-<li>Poste d’abord dans ton subreddit principal.</li>
-<li>Réponds aux commentaires sous 2 heures, puis engage-toi sur 100 %
-des commentaires pendant 24 à 48 heures.</li>
-<li>Cross-post : 3-4 subs pertinents maximum par contenu, espacés d’au
-moins 6 heures et sur des jours différents ; 5 subs ou plus en rafale =
-pattern de spam. (Corrigé 2026-07-02 : l’ancien « une fois toutes les
-2-3 semaines » n’avait aucune source.)</li>
-</ul>
-<h3 id="repurposing-dun-article-existant">Repurposing d’un article
-existant</h3>
-<p>Transformer un article en thread : résume les idées principales,
-supprime le remplissage, garde les enseignements actionnables, place le
-lien comme ressource complémentaire et jamais au centre du post. Un
-thread bien positionné sur une requête « [produit] alternative » peut
-générer environ 1 300 visiteurs par mois contre environ 330 pour un
-concurrent, soit près de 4 fois plus de trafic sans pub (exemple Ross
-Simmonds).</p></div>
-    
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 160 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
-  </div>
-</article>
-<article class="post" id="8-faire-ranker-un-thread-sur-google-le-parasite-seo-maitrise">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,1 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
-  <div class="pbody">
-    <div class="pmeta"><span class="flair f-orange">SEO</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">8. Faire ranker un thread sur Google (le parasite SEO maîtrisé)</h2>
-    <div class="pcontent"><p>Le « parasite SEO » consiste à exploiter l’autorité d’un domaine
-tiers pour faire ranker du contenu. Sur Reddit, ça veut dire : un thread
-dont le titre épouse une requête réelle profite de l’autorité énorme de
-reddit.com pour occuper le top 10.</p>
-<p>Les tactiques qui marchent (Ross Simmonds, entre autres) :</p>
-<p>Le titre est la requête. Google reprend souvent le titre du post tel
-quel. Les formats « What’s the best… », « Has anyone tried… », « How do
-I… » épousent les requêtes réelles. La réponse doit être complète dans
-le corps : un how-to, un retour d’expérience, une réponse détaillée et
-scannable. Les mots-clés viennent naturellement dans le titre et le
-corps, sans bourrage. Et l’engagement nourrit le ranking : un thread
-avec des commentaires actifs ranke mieux, donc tu restes pour répondre
-et entretenir la discussion.</p>
-<p>Le risque, et il faut le dire clairement. En mars 2024, renforcée le
-19 novembre 2024, Google a sorti sa politique « site reputation abuse »
-contre le parasite SEO. Bonne nouvelle pour Reddit : cette politique
-vise surtout les sous-dossiers loués chez les éditeurs (le « Forbes
-Advisor », les pages coupons de CNN), pas les forums UGC. Avoir du
-contenu tiers n’est pas une violation en soi. Mais Reddit modère de son
-côté les patterns d’abus : des threads de recommandation pilotés par des
-comptes créés 48 heures avant, qui poussent toujours les mêmes offres
-affiliées, sont traqués et bannis.</p>
-<p>Mon conseil : ne construis pas de thread bidon juste pour ranker.
-Construis un thread qui apporte vraiment, dont le titre se trouve
-correspondre à une requête. La différence entre les deux est exactement
-ce que Google et les mods cherchent à séparer.</p></div>
+    <div class="pmeta"><span class="flair f-blue">MÉTHODE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">4. Montée d'un compte</h2>
+    <div class="pcontent"><p>Reddit filtre les comptes neufs automatiquement.</p>
+<ol type="1">
+<li><strong>Création et profil.</strong> Avatar, bio sobre, sans mention
+commerciale.</li>
+<li><strong>Ancienneté.</strong> Seuils fixés par chaque subreddit : 1 à
+30 jours. Standard courant : 7 jours minimum, 30 jours sur les subs
+exigeants. Un compte créé le jour même qui poste un lien est
+filtré.</li>
+<li><strong>Karma.</strong> Deux types : comment karma et post karma.
+Échelle logarithmique (un post à 1 000 upvotes peut rapporter ~500 de
+karma). Le comment karma se construit plus vite. Seuils anti-spam
+typiques des subs : 10 à 100+ de karma combiné. Sous le seuil,
+l’AutoModerator supprime le post sans intervention humaine.</li>
+<li><strong>Rodage : 2 à 4 semaines.</strong> Commentaires utiles
+uniquement dans les subs cibles, zéro lien. Lecture des posts triés par
+« Top, ce mois-ci » pour cartographier ce qui fonctionne. Cette phase
+conditionne l’accès à tout le reste.</li>
+</ol></div>
     
     <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 213 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="9-reddit-comme-machine-a-insights">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>216</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="5-selection-des-subreddits">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>506</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-green">INSIGHTS</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">9. Reddit comme machine à insights</h2>
-    <div class="pcontent"><p>C’est le levier le plus sûr et le plus immédiatement rentable pour
-toi, et il ne risque aucun ban parce que tu ne postes rien.</p>
-<p>Reddit est une mine de besoins exprimés en langage réel. Les outils
-:</p>
-<p><strong>GummySearch</strong> classe automatiquement les conversations
-d’une niche en Pain Points, Solution Requests, Money Talk, Hot
-Discussions. Idéal pour trouver les besoins, les objections et le
-vocabulaire d’un cluster.</p>
-<p><strong>Keyworddit</strong> est gratuit et dédié au keyword research
-Reddit : tu entres un subreddit, il extrait les termes et expressions
-fréquents des titres et commentaires, avec un volume de recherche Google
-estimé. C’est le pont direct entre Reddit et ton SEO classique.</p>
-<p><strong>L’opérateur <code>site:reddit.com</code></strong> sur Google
-pour repérer les threads qui rankent déjà sur une requête et lire les
-questions récurrentes.</p>
-<p>La méthode : repérer les bons subs, extraire les mots-clés bruts avec
-Keyworddit, puis creuser les conversations avec GummySearch ou la
-recherche native pour les pain points. Les expressions à charge
-émotionnelle (« je déteste vraiment », « j’ai désespérément besoin de »)
-signalent les douleurs les plus fortes, donc les meilleurs angles de
-contenu. Ça nourrit directement ton process besoin, mot-clé,
-cluster.</p>
-<p><strong>Miner X.com pour les signaux utilisateurs.</strong> On ne se
-limite pas à Reddit pour chasser les signaux. X.com (Twitter) est une
-source dense de douleurs et de demandes exprimées en langage réel. La
-recherche en mode expert sort de meilleurs signaux, mais elle suppose un
-compte premium (environ 5 € par mois). La logique est la même que
-GummySearch et Keyworddit : on remonte les pain points et le vocabulaire
-réel, on les décompose en process besoin, mot-clé, cluster, puis on s’en
-sert pour repérer les threads Reddit où intervenir.</p>
-<p>Rappel pratique cohérent avec ce que tu sais déjà : Reddit bloque le
-crawler. En pratique, on colle souvent les posts à la main pour les
-décomposer, comme tu le fais déjà pour les verbatims.</p></div>
+    <div class="pmeta"><span class="flair f-blue">MÉTHODE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">5. Sélection des subreddits</h2>
+    <div class="pcontent"><p>Découverte : recherche Reddit filtre « Communities », Subreddit Stats
+(activité, croissance), SnoopSnoo (démographie, parfois indisponible),
+Redditlist.</p>
+<p>Critère principal : l’engagement, pas la taille. Un sub de 15 000
+membres avec des discussions actives produit plus qu’un sub de 500 000
+inactif. Vérification : tri « Top, ce mois-ci », une semaine de lecture
+par sub candidat avant d’y écrire.</p>
+<p>Règles locales : chaque sub a les siennes (sidebar ou post épinglé).
+Certains interdisent toute activité commerciale, d’autres imposent un
+seuil de karma ou d’âge, d’autres réservent l’autopromo à un jour dédié.
+Lecture obligatoire avant tout post, wiki du sub comprise.</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 226 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 36 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="10-les-pieges-shadowban-ban-ce-qui-te-grille">
+<article class="post" id="6-ratio-dautopromo-etat-de-la-regle">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,0 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-red">RÈGLE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">6. Ratio d'autopromo : état de la règle</h2>
+    <div class="pcontent"><p>La règle 9:1 (9 contributions pour 1 contenu promotionnel) a été
+publiée par Reddit puis retirée du Reddiquette formel. Remplacement : «
+participant authentique », apprécié par les mods sur le comportement
+global.</p>
+<p>Texte opposable aujourd’hui, Content Policy : spam = actions «
+répétées, non désirées ou non sollicitées » ; manipulation = « toute
+tentative de manipuler le vote ou les systèmes de Reddit ». Depuis 2023,
+le Contributor Quality Score (CQS) filtre les comptes de faible qualité
+par signaux comportementaux, indépendamment de tout ratio.</p>
+<p>Test de contrôle : un profil dont l’historique se résume à des liens
+vers un même site correspond au pattern sanctionné. Ratio de travail :
+95/5.</p></div>
+    
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 27 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+  </div>
+</article>
+<article class="post" id="7-formats-de-contribution">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>172</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-blue">MÉTHODE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">7. Formats de contribution</h2>
+    <div class="pcontent"><p>Ton constaté : anti-marketing, vocabulaire de la communauté, sans
+jargon corporate.</p>
+<ul>
+<li><strong>Commentaires utiles.</strong> Le volume principal. Réponses
+en profondeur à de vraies questions, sans pitch. Construit karma et
+crédibilité.</li>
+<li><strong>Données originales.</strong> Format le plus compatible avec
+une activité commerciale : data first-party anonymisée (logs Fusionn,
+GSC, études CTR). Apport vérifiable, pas de format publicitaire.</li>
+<li><strong>Réponses gratuites, TIL, guides.</strong> Sans CTA, sans
+lien commercial.</li>
+<li><strong>AMA.</strong> Conditions de réussite documentées : personne
+réelle, réponses longues, questions gênantes traitées. Échecs documentés
+: Nissan (questions plantées), cas archivés sur r/AMADisasters.</li>
+</ul>
+<p>Donnée de contexte : selon Reddit, 81 % des utilisateurs acceptent
+les conversations avec les acteurs commerciaux, 59 % attendent qu’ils
+écoutent le feedback. Condition : authenticité.</p></div>
+    
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 18 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+  </div>
+</article>
+<article class="post" id="7bis-protocoles-dexecution">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,7 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-blue">ROUTINE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">7bis. Protocoles d'exécution</h2>
+    <div class="pcontent"><h3 id="protocole-dactivation-commentaire">Protocole d’activation
+(commentaire)</h3>
+<ul>
+<li>Liste : 8 à 12 subreddits, 20 à 30 mots-clés de douleur (« best CRM
+for solopreneur », « [catégorie] alternatives »).</li>
+<li>Monitoring : Reddit Search + F5Bot (gratuit, 200 mots-clés
+max).</li>
+<li>Compte : plus de 30 jours, karma 200-500.</li>
+<li>Structure de réponse : 3 à 5 conseils concrets, expérience
+personnelle, puis mention avec disclosure (« une option que j’utilise
+moi-même est X ») si légitime.</li>
+<li>DM proposé si le sub l’autorise. Source « Reddit » trackée en CRM
+(UTM).</li>
+<li>Réponse à tous les commentaires et DM sous 48 h.</li>
+<li>Cadence : 4 à 6 commentaires par jour, plafond 8 (aligné 2026-07-02
+sur le consensus des guides, bande 2-8/jour). Jamais en rafale : 20
+commentaires dans l’heure correspond au pattern spam détecté.</li>
+</ul>
+<h3 id="protocole-de-post">Protocole de post</h3>
+<ul>
+<li>Étude préalable des 10 meilleurs posts du sub (format, longueur,
+ton).</li>
+<li>50 à 80 % de valeur directe dans le post : captures, métriques,
+échecs assumés.</li>
+<li>Titres qui rankent (Ross Simmonds, guides 2026) : « J’ai [fait X]
+pendant [période], voici ce qui a marché », « How to [objectif] in
+[secteur] », « We tested 5 [outils] », « Best [outil] for [cas d’usage]
+». Méthode Simmonds : TL;DR en tête, enseignements concrets, question
+ouverte en fin.</li>
+<li>Timing : matinée ET en semaine, environ 6-10 h ET (corrigé
+2026-07-02 : l’étude Upvote.net porte sur 150 posts, pas 1 000, vendeur
+d’upvotes ; fenêtre corroborée par Foundation, RecurPost, Single Grain ;
+Foundation ajoute le samedi matin).</li>
+<li>Première heure décisive : pondération logarithmique des votes, les
+10 premiers upvotes pèsent comme les 100 suivants. Les 6-10 premières
+heures conditionnent le ranking Google du thread (corrigé 2026-07-02 :
+le « 30 premières minutes » ne venait que de vendeurs d’upvotes).</li>
+<li>Publication d’abord dans le sub principal. Réponses sous 2 h, puis
+100 % des commentaires pendant 24-48 h.</li>
+<li>Cross-post : 3-4 subs pertinents maximum par contenu, espacés de 6 h
+et sur des jours différents. 5 subs ou plus en rafale = pattern de spam
+(corrigé 2026-07-02 : l’ancien « 1 toutes les 2-3 semaines » n’avait
+aucune source).</li>
+</ul>
+<h3 id="repurposing-dun-article">Repurposing d’un article</h3>
+<p>Résumé des idées principales, suppression du remplissage,
+enseignements actionnables, lien en ressource complémentaire, jamais au
+centre du post. Donnée Ross Simmonds : un thread positionné sur une
+requête « [produit] alternative » a généré ~1 300 visiteurs/mois contre
+~330 pour la page concurrente, soit ~4x.</p></div>
+    
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 159 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+  </div>
+</article>
+<article class="post" id="8-threads-positionnes-sur-google">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>579</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-orange">SEO</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">8. Threads positionnés sur Google</h2>
+    <div class="pcontent"><p>Mécanique : un thread dont le titre correspond à une requête réelle
+bénéficie de l’autorité du domaine reddit.com dans le top 10.</p>
+<p>Tactiques documentées (Ross Simmonds) : le titre reprend la
+formulation de la requête (« What’s the best… », « Has anyone tried… »,
+« How do I… ») ; la réponse complète est dans le corps ; les
+commentaires actifs soutiennent le ranking, donc la discussion
+s’entretient.</p>
+<p>Cadre de risque : politique Google « site reputation abuse » (mars
+2024, renforcée le 19 novembre 2024). Elle vise les sous-dossiers loués
+chez les éditeurs, pas les forums UGC. Reddit modère de son côté les
+patterns d’abus : comptes récents poussant les mêmes offres dans des
+threads de recommandation. Critère de décision : un thread construit
+pour répondre, dont le titre correspond à une requête, reste dans le
+cadre ; un thread construit uniquement pour ranker correspond au pattern
+modéré.</p>
+<p>Croisement GEO (vérifié 2026-07-02) : Perplexity source Reddit via
+les SERP Google (procès Reddit v. Perplexity, test honeypot). Un
+commentaire dans un thread déjà positionné apparaît dans Perplexity en
+quelques jours. C’est le levier GEO au meilleur rendement documenté.</p></div>
+    
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 173 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+  </div>
+</article>
+<article class="post" id="9-extraction-dinsights">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,6 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-red">WARNING</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">10. Les pièges : shadowban, ban, ce qui te grille</h2>
-    <div class="pcontent"><p>Un shadowban, c’est quand ton contenu reste visible pour toi mais
-devient invisible pour tout le monde. En 2026, ces shadowbans sont
-majoritairement automatiques.</p>
-<p>Les déclencheurs principaux : spammer le même lien dans plusieurs
-subreddits même s’il est pertinent partout, une cadence de post trop
-élevée, poster en boucle vers le même domaine surtout s’il est neuf, un
-compte récent qui poste beaucoup tout de suite, une IP déjà liée à des
-comptes spam. Et la manipulation de vote sous toutes ses formes :
-demander à des amis d’upvoter, utiliser plusieurs comptes, échanger des
-upvotes en groupe. Reddit interdit la triche de vote « manuelle,
-programmatique ou autre ». Le brigading, c’est-à-dire interférer en
-groupe sur un thread, est sanctionné même quand ce n’est pas organisé. À
-éviter aussi : reposter du contenu déjà posté, et utiliser des
-raccourcisseurs de liens (bit.ly, t.co), flaggés automatiquement parce
-qu’ils masquent la destination.</p>
-<p>Comment détecter un shadowban : ouvre ton profil en navigation
-privée, déconnecté. Si tu vois « page not found » ou aucun de tes posts,
-tu es probablement shadowbanné. Copie le lien direct d’un commentaire
-récent et ouvre-le en privé : s’il n’apparaît pas dans le thread, tu es
-invisible. Signal indirect : tes posts récents ont zéro upvote ET zéro
-downvote, et tes commentaires ne reçoivent jamais de réponse. Des outils
-tiers existent (Reddit shadowban checker, redship, banchecker).</p>
-<p>L’erreur la plus fréquente et la plus bête : un compte neuf qui poste
-direct des recommandations produit. C’est le pattern n°1 que traquent
-les mods. Il faut participer des semaines avant de mentionner quoi que
-ce soit.</p></div>
+    <div class="pmeta"><span class="flair f-green">INSIGHTS</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">9. Extraction d'insights</h2>
+    <div class="pcontent"><p>Usage sans risque : rien n’est posté.</p>
+<ul>
+<li><strong>GummySearch</strong> : classement automatique des
+conversations d’une niche en Pain Points, Solution Requests, Money Talk,
+Hot Discussions.</li>
+<li><strong>Keyworddit</strong> (gratuit) : extraction des termes
+fréquents d’un subreddit avec volume Google estimé.</li>
+<li><strong><code>site:reddit.com</code></strong> sur Google : threads
+déjà positionnés sur une requête, questions récurrentes.</li>
+</ul>
+<p>Méthode : subs cibles → mots-clés bruts (Keyworddit) → conversations
+(GummySearch ou recherche native) → pain points. Les expressions à
+charge émotionnelle (« je déteste vraiment », « j’ai désespérément
+besoin de ») signalent les douleurs exploitables. Alimente le process
+besoin → mot-clé → cluster.</p>
+<p>X.com en complément : la recherche en mode expert sort des signaux
+équivalents (compte premium, ~5 €/mois). Même traitement.</p>
+<p>Contrainte technique : Reddit bloque le crawler. Les posts se collent
+à la main pour décomposition, ou passent par les flux RSS publics
+(méthode du cockpit).</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 43 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 94 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="11-moderation-comprendre-les-mods-et-lautomoderator">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,4 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
-  <div class="pbody">
-    <div class="pmeta"><span class="flair f-red">MODÉRATION</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">11. Modération : comprendre les mods et l'AutoModerator</h2>
-    <div class="pcontent"><p>Chaque sub est géré par des Redditors bénévoles avec leurs propres
-règles. Ce sont eux qui décident ce qui passe. Tu ne les contournes
-jamais et tu ne les contredis pas publiquement.</p>
-<p>Pour les contacter, tu utilises le modmail, pas un DM. Tu cliques sur
-« Message the mods » sous la section moderators de la sidebar. Message
-clair et concis. Le bon réflexe quand tu es consultant : demander la
-permission avant de poster quelque chose qui touche à ton activité, du
-genre « est-ce autorisé de partager une étude que j’ai faite sur tel
-sujet ? ». Ça désamorce tout conflit à venir.</p>
-<p>L’AutoModerator est un bot configurable qui applique les règles
-écrites par les mods. Il supprime ou flaire des posts par domaine ou
-mot-clé, repère les comptes faibles, répond automatiquement en renvoyant
-vers les règles. C’est lui qui applique les seuils de karma et d’âge :
-si tu ne les remplis pas, ton post disparaît instantanément, sans
-intervention humaine. D’où l’importance de la phase de rodage de la
-section 4.</p></div>
-    
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 128 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
-  </div>
-</article>
-<article class="post" id="12-le-cas-francophone-ce-qui-change-pour-toi">
+<article class="post" id="10-shadowban-definition-et-declencheurs">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,6 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-blue">FRANCE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">12. Le cas francophone : ce qui change pour toi</h2>
-    <div class="pcontent"><p>C’est là que ton plan doit être différent d’un playbook américain
-recopié.</p>
-<p><strong>Reddit explose en France.</strong> Environ 20,6 millions
-d’utilisateurs estimés (Influencia), plus 72 % de visiteurs mensuels sur
-un an (Médiamétrie), entrée dans le top 10 des réseaux sociaux français.
-Abondance donnait 10,4 millions de visiteurs mensuels en France à
-mi-2025, audience doublée en un an. La cause directe : la traduction
-automatique du corpus en français, et l’indexation prioritaire par
-Google depuis le deal.</p>
-<p><strong>Mais il n’y a pas de communauté SEO francophone active sur
-Reddit.</strong> Pas de r/SEO_fr ni de r/referencement vivants. Les SEO
-français parlent SEO entre eux sur les subreddits anglophones (r/SEO,
-r/bigseo), ou hors Reddit, sur LinkedIn, X, et le forum historique
-WebRankInfo. La seule présence « SEO et FR » sur Reddit, ce sont des
-subs de quelques centaines d’abonnés liés à une agence, donc
-anecdotique.</p>
-<p><strong>Les gros subs francophones</strong> sont concentrés autour de
-r/france (plus de 2,5 millions de membres, le hub généraliste), avec une
-longue traîne de niches plus petites : r/AskFrance, r/jeuxvideo,
-r/vosfinances, r/conseiljuridique, r/Cuisine, r/jardin. Rien de
-comparable à la densité anglophone où chaque secteur a son gros
-subreddit dédié. (Les counts précis hors r/france ne sont pas publiés, à
-relever à la main dans la sidebar.)</p>
-<p><strong>Le levier est plus faible en français, et c’est dit
-explicitement.</strong> Lefebvre Dalloz (juillet 2025) qualifie Reddit
-de « canal secondaire ou de veille dans un contexte francophone », «
-marginalisé par rapport à X, Discord, ou aux forums traditionnels comme
-Doctissimo et jeuxvideo.com ». La mécanique de la faiblesse est logique
-: moins de communautés FR actives, moins de volume en français, donc
-moins de threads à faire ranker, donc un bénéfice SEO mécaniquement
-inférieur au marché US.</p>
-<p>Une limite de preuve que je te signale franchement : aucune source
-française ne fournit de donnée chiffrée comparant la visibilité SERP de
-Reddit sur Google.fr versus Google.com. Les phrases du type « Reddit
-domine les SERP françaises » se recopient d’un article à l’autre sans
-étude Sistrix ou Semrush sur le .fr à l’appui. Le consensus réel :
-Reddit monte fort en France et apparaît de plus en plus dans Google.fr,
-mais reste structurellement moins puissant qu’en anglais, et la mesure
-chiffrée manque.</p>
-<p><strong>Ce que ça implique pour ta stratégie :</strong></p>
+    <div class="pmeta"><span class="flair f-red">WARNING</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">10. Shadowban : définition et déclencheurs</h2>
+    <div class="pcontent"><p>Shadowban : contenu visible pour l’auteur, invisible pour les autres.
+Majoritairement automatique en 2026.</p>
+<p>Déclencheurs documentés :</p>
+<ul>
+<li>même lien posté dans plusieurs subreddits, même pertinent ;</li>
+<li>même commentaire répété, même reformulé a minima (déclencheur n°1
+selon RedShip, 2026) ;</li>
+<li>cadence anormale : compte récent très actif, rafales (limite
+technique ~1 action/10-15 min quand le karma est bas dans un sub) ;</li>
+<li>posts répétés vers un même domaine, surtout récent ;</li>
+<li>IP liée à des comptes spam ;</li>
+<li>manipulation de vote sous toutes ses formes (demander des upvotes,
+multi-comptes, échanges de votes), brigading inclus ;</li>
+<li>reposts de contenu déjà publié ;</li>
+<li>raccourcisseurs de liens (bit.ly, t.co), flaggés
+automatiquement.</li>
+</ul>
+<p>Détection : profil ouvert en navigation privée déconnecté (« page not
+found » ou posts invisibles = shadowban probable) ; lien direct d’un
+commentaire récent ouvert en privé ; posts récents à zéro vote et
+commentaires sans réponse. Outils : Reddit shadowban checker, redship,
+banchecker.</p>
+<p>Pattern le plus fréquent : compte neuf qui poste des recommandations
+produit. C’est le premier signal surveillé par les mods.</p></div>
+    
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 47 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+  </div>
+</article>
+<article class="post" id="11-moderation">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,8 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-red">MODÉRATION</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">11. Modération</h2>
+    <div class="pcontent"><p>Chaque sub est géré par des mods bénévoles qui appliquent leurs
+propres règles. Contact : modmail (« Message the mods » dans la
+sidebar), pas les DM. Usage utile pour un consultant : demander avant de
+poster un contenu lié à son activité (« est-ce autorisé de partager une
+étude que j’ai faite sur X ? »).</p>
+<p>AutoModerator : bot configurable par sub. Supprime ou flaire par
+domaine ou mot-clé, applique les seuils de karma et d’âge, répond
+automatiquement. C’est lui qui supprime les posts sous seuil, sans
+intervention humaine. D’où la phase de rodage (§4).</p></div>
+    
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 221 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+  </div>
+</article>
+<article class="post" id="12-marche-francophone">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,9 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-blue">FRANCE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">12. Marché francophone</h2>
+    <div class="pcontent"><p>Données France : ~20,6 M d’utilisateurs estimés (Influencia), +72 %
+de visiteurs mensuels sur un an (Médiamétrie), top 10 des réseaux
+sociaux en France. Abondance : 10,4 M de visiteurs mensuels à mi-2025,
+audience doublée en un an. Causes : traduction automatique du corpus en
+français, indexation prioritaire depuis l’accord Google.</p>
+<p>Communautés : pas de sub SEO francophone actif (pas de r/SEO_fr ni
+r/referencement vivants). Les SEO français échangent sur r/SEO et
+r/bigseo (anglophones), sur LinkedIn, X et WebRankInfo. Gros subs FR :
+r/france (2,5 M+), puis longue traîne (r/AskFrance, r/vosfinances,
+r/conseiljuridique, r/Cuisine). Counts précis non publiés hors
+r/france.</p>
+<p>Évaluation du levier FR : Lefebvre Dalloz (juillet 2025) classe
+Reddit « canal secondaire ou de veille dans un contexte francophone ».
+Limite de preuve : aucune donnée chiffrée comparant la visibilité SERP
+de Reddit sur Google.fr et Google.com n’est publiée. Les affirmations «
+Reddit domine les SERP françaises » circulent sans étude à l’appui.</p>
+<p>Donnée 2026 déterminante (Peec AI, 64,77 M de citations Reddit,
+mars-juin 2026) : les pages Reddit auto-traduites (<code>?tl=</code>)
+représentent 40 à 73 % des citations Reddit sur les surfaces IA de
+Google dans les marchés non anglophones d’Europe (Suède/Norvège 70 %+,
+Espagne 72 % sur AI Mode, Allemagne 52 % sur AIO ; France non isolée,
+pattern pan-européen). ChatGPT a quasi cessé de citer les pages
+traduites (6,14 % → 0,30 %, avril-juin 2026).</p>
+<p>Conséquences :</p>
 <ol type="1">
-<li>Pour le GEO (te faire citer par les IA), travaille surtout les subs
-anglophones de ta niche search/IA, parce que c’est là que les threads
-denses sont produits et cités. ChatGPT et Perplexity citent du Reddit
-anglophone même pour des utilisateurs français qui posent une question
-en français.</li>
-<li>Pour le SEO francophone pur, sois opportuniste plus que systématique
-: repère avec <code>site:reddit.com</code> les requêtes FR où un thread
-ranke déjà, et place-toi dessus quand c’est pertinent, sans en faire ta
-colonne vertébrale.</li>
-<li>Le vide de communauté SEO FR sur Reddit, et l’absence d’étude de cas
-française chiffrée, c’est exactement le genre de trou qu’une de tes
-études first-party pourrait combler. Personne n’a publié de retour
-d’expérience FR mesuré sur Reddit. Il y a une place à prendre, et c’est
-dans ta zone de génie.</li>
+<li>GEO : les subs anglophones de la niche search/IA sont le terrain
+principal. Les réponses en anglais sont citées, y compris via les pages
+traduites sur les requêtes françaises côté Google.</li>
+<li>SEO francophone : opportuniste. Repérage
+<code>site:reddit.com</code> des requêtes FR où un thread ranke,
+positionnement au cas par cas.</li>
+<li>Aucun retour d’expérience FR mesuré n’est publié. Le test Qadence
+produit cette donnée.</li>
 </ol></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 91 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 41 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
 <article class="post" id="13-outils">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,3 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-gray">OUTILS</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
+    <div class="pmeta"><span class="flair f-gray">OUTILS</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
     <h2 class="ptitle">13. Outils</h2>
     <div class="pcontent"><table>
 <colgroup>
@@ -930,27 +741,24 @@ dans ta zone de génie.</li>
 <tbody>
 <tr>
 <td>GummySearch</td>
-<td>Recherche d’audience, pain points, classement auto des
-conversations</td>
+<td>Pain points, classement auto des conversations</td>
 <td>Payant (essai gratuit)</td>
 </tr>
 <tr>
 <td>Keyworddit</td>
-<td>Extraction de mots-clés d’un subreddit avec volume Google
-estimé</td>
+<td>Mots-clés d’un subreddit avec volume Google estimé</td>
 <td>Gratuit</td>
 </tr>
 <tr>
 <td>F5Bot</td>
-<td>Alertes email quand un mot-clé est mentionné sur Reddit. Jusqu’à 200
-mots-clés. Pas de dashboard ni de sentiment</td>
+<td>Alertes email sur mots-clés, 200 max. Pas de dashboard ni
+sentiment</td>
 <td>Gratuit</td>
 </tr>
 <tr>
 <td>Brand24</td>
-<td>Social listening multi-plateformes avec sentiment et part de
-voix</td>
-<td>Environ 199 $/mois</td>
+<td>Social listening multi-plateformes, sentiment, part de voix</td>
+<td>~199 $/mois</td>
 </tr>
 <tr>
 <td>Subreddit Stats</td>
@@ -959,8 +767,7 @@ voix</td>
 </tr>
 <tr>
 <td>SnoopSnoo</td>
-<td>Analyse d’un profil ou d’une activité Reddit (parfois
-indisponible)</td>
+<td>Analyse de profil et d’activité (parfois indisponible)</td>
 <td>Gratuit</td>
 </tr>
 <tr>
@@ -970,15 +777,14 @@ indisponible)</td>
 </tr>
 <tr>
 <td>Shadowban checker</td>
-<td>Vérifier si ton compte est shadowbanné</td>
+<td>Vérification de shadowban</td>
 <td>Gratuit</td>
 </tr>
 </tbody>
 </table>
-<p>Stack minimal pour toi : Keyworddit plus GummySearch pour la
-recherche d’insights, F5Bot gratuit pour monitorer les mentions de tes
-sites et de tes clients. Tu passes à Brand24 seulement si tu as besoin
-de sentiment et de part de voix sur un compte client.</p></div>
+<p>Stack retenu : Keyworddit + GummySearch pour les insights, F5Bot pour
+les mentions. Brand24 seulement si un compte client exige sentiment et
+part de voix.</p></div>
     
     <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 134 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
@@ -986,100 +792,81 @@ de sentiment et de part de voix sur un compte client.</p></div>
 <article class="post" id="14-plan-90-jours">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,5 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-green">PLAN 90 J</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
+    <div class="pmeta"><span class="flair f-green">PLAN 90 J</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
     <h2 class="ptitle">14. Plan 90 jours</h2>
-    <div class="pcontent"><p><strong>Jours 1 à 14 : socle et rodage.</strong> Crée le compte,
-complète un profil sobre, laisse-le vieillir. Identifie 8 à 10
-subreddits, anglophones search/IA/growth en priorité plus 2 ou 3 FR
-pertinents. Lurke chacun une semaine, lis leurs règles et leur wiki.
-Commence à commenter, uniquement du commentaire utile, zéro lien.
-Objectif : franchir les seuils de karma et d’âge de tes subs cibles. En
-parallèle, lance F5Bot sur tes sites et ceux de tes clients.</p>
-<p><strong>Semaines 3 à 6 : contribution et insights.</strong> Monte à
-20-30 commentaires de qualité par semaine sur tes subs cibles. Lance le
-travail d’insights avec Keyworddit et GummySearch, et fais redescendre
-les pain points trouvés dans ton process besoin, mot-clé, cluster.
-Publie ton premier vrai post à valeur, idéalement une donnée originale
-anonymisée, dans le sub où tu as le plus de capital. Tu tiens le ratio
-95/5.</p>
-<p><strong>Semaines 7 à 10 : threads et GEO.</strong> Tu publies des
-threads dont le titre épouse une requête réelle, avec une réponse
-complète, et tu restes pour entretenir la discussion. Tu commences le
-travail GEO : intervenir de façon authentique dans les threads
-décisionnels « best X for Y » et les comparatifs de ta niche, en nommant
-ton site ou ton offre seulement quand c’est légitime. Tu demandes
-l’accord des mods en modmail avant tout post limite.</p>
-<p><strong>Semaines 11 à 13 : mesurer.</strong> Tu vérifies tes
-positions sur Google avec <code>site:reddit.com</code> sur tes threads,
-et tu commences à suivre tes citations dans les IA (cherche ta marque et
-tes pages dans Perplexity et ChatGPT). Tu coupes ce qui ne prend pas.
-Premier bilan : quels threads rankent, quelles mentions remontent dans
-les IA, quels insights ont nourri du contenu publié.</p>
-<p>Garde en tête le délai GEO : 60 à 120 jours avant un effet mesurable
-de citation. Le plan 90 jours pose les fondations, les citations IA
-arrivent souvent juste après.</p></div>
+    <div class="pcontent"><p><strong>Jours 1-14 : socle.</strong> Compte complété, vieillissement.
+8 à 10 subs identifiés (anglophones search/IA/growth en priorité, 2-3
+FR). Une semaine de lecture par sub, règles et wiki lues. Commentaires
+utiles uniquement, zéro lien. Objectif : franchir les seuils de karma et
+d’âge. F5Bot posé sur les sites suivis.</p>
+<p><strong>Semaines 3-6 : contribution et insights.</strong> 20-30
+commentaires de qualité par semaine. Travail d’insights lancé
+(Keyworddit, GummySearch), pain points redescendus dans le process
+besoin → mot-clé → cluster. Premier post à valeur, donnée originale
+anonymisée, dans le sub au capital le plus élevé. Ratio 95/5 tenu.</p>
+<p><strong>Semaines 7-10 : threads et GEO.</strong> Posts dont le titre
+correspond à une requête réelle, discussion entretenue. Interventions
+dans les threads décisionnels « best X for Y » et comparatifs, mention
+du site quand elle est légitime. Accord des mods demandé en modmail
+avant tout post limite.</p>
+<p><strong>Semaines 11-13 : mesure.</strong> Positions vérifiées via
+<code>site:reddit.com</code>. Citations recherchées dans Perplexity et
+ChatGPT sur la liste fixe de requêtes. Arrêt de ce qui ne produit pas.
+Bilan : threads positionnés, mentions dans les IA, insights convertis en
+contenu publié.</p>
+<p>Délai GEO : 60 à 90 jours avant effet mesurable, 120 en borne haute.
+Le plan pose les fondations ; les citations arrivent en général
+après.</p></div>
     
     <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 236 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
-<article class="post" id="15-les-metriques-a-suivre">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,6 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+<article class="post" id="15-metriques">
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,1 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-green">MÉTRIQUES</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
-    <h2 class="ptitle">15. Les métriques à suivre</h2>
-    <div class="pcontent"><p>Karma et âge du compte (la condition d’accès à tout le reste). -
-Nombre de threads à toi qui rankent sur Google, et leur position (via
-<code>site:reddit.com</code>). - Citations de tes sites et de ton nom
-dans Perplexity, ChatGPT, AI Overviews (la métrique GEO, la plus
-importante en 2026). - Mentions captées par F5Bot (volume et sentiment).
-- Insights remontés de Reddit qui ont nourri une page ou un cluster
-publié. - Trafic référent depuis Reddit vers tes sites (faible attendu,
-mais à surveiller).</p></div>
+    <div class="pmeta"><span class="flair f-gray">DOCTRINE</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">15. Métriques</h2>
+    <div class="pcontent"><p>Karma et âge du compte (condition d’accès). - Threads positionnés sur
+Google et positions (<code>site:reddit.com</code>). - Citations des
+sites et du nom dans Perplexity, ChatGPT, AI Overviews, sur liste fixe
+de 15-20 requêtes acheteur (métrique principale 2026). - Mentions F5Bot
+(volume, tonalité). - Insights Reddit convertis en pages ou clusters
+publiés. - Trafic référent Reddit (faible attendu).</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 128 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 121 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
 <article class="post" id="note-de-fiabilite-a-lire-avant-de-citer-ces-chiffres-ailleur">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,7 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-gray">FACT-CHECK</span> Posté par <a href="#">u/timboussardon</a> · 2 juil.</div>
+    <div class="pmeta"><span class="flair f-gray">FACT-CHECK</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
     <h2 class="ptitle">Note de fiabilité (à lire avant de citer ces chiffres ailleurs)</h2>
     <div class="pcontent"><p>Mise à jour 2026-07-02 : les chiffres d’exécution (cadences, timing,
 cross-post, fraîcheur) ont été vérifiés contre ~25 sources via 3 audits
-web parallèles et corrigés dans le corps du document, marqués « corrigé
-2026-07-02 ». Le détail des sources et des corrections est dans <a
-href="#routine">la routine quotidienne</a>, qui fait foi sur
-l’exécution. Apports notables de cette vérif : 80 % des posts Reddit
-cités par les IA ont moins de 20 upvotes (Semrush, 248 000 URLs) ; les
-threads Q&amp;A pèsent plus de 50 % des citations ; Perplexity source
-Reddit via les SERP Google (procès Reddit v. Perplexity) ; les pages
-Reddit auto-traduites <code>?tl=</code> font 40-73 % des citations
-Reddit sur les surfaces IA de Google en Europe non anglophone (Peec
-AI).</p>
-<p>Plusieurs chiffres viennent d’agrégateurs secondaires qui citent
-Sistrix ou Semrush sans toujours pointer l’étude primaire. Les mieux
-ancrés sur source primaire : l’update hidden gems (Glenn Gabe), la
-visibilité plus 1 328 % (Sistrix via Amsive, 2024), les deals Google 60
-M$ (CBS, Fortune) et OpenAI 70 M$ estimé (Search Engine Land), l’étude
-de citations IA (Semrush, juillet-octobre 2025) et Peec AI (mars
-2026).</p>
-<p>Les pourcentages de citation IA sont très volatils dans le temps, ne
-jamais les sortir sans la fenêtre et la date. Les chiffres de trafic en
-visites sont des estimations Ahrefs, pas des données Reddit officielles.
-Il n’existe aucune étude de cas Reddit indépendante, marque nommée, avec
-trafic, positions et conversions chiffrés et méthodo vérifiable. Le test
-Qadence.io (voir « Le terrain de test first-party » en tête de playbook)
-est le premier cas first-party en cours destiné à combler ce vide ; ses
-résultats ne sont pas encore disponibles. Les données ajoutées en juin
-2026 sur l’effet d’un signal d’année sur la citation et sur la parité de
-citation entre sentiment positif et négatif viennent de sources à
-intérêt commercial et restent à confirmer. Les stats du type « plus 15 à
-40 % de visibilité » ou « plus 11 % de lift publicitaire » viennent de
-sources à intérêt commercial, à citer comme telles. Enfin, sur les
-mentions sans lien : le consensus Google (Mueller) est qu’elles ne sont
-pas un facteur de ranking direct ; le vrai levier est la demande de
-marque qu’elles génèrent et la citation par les IA. Ne vends jamais «
-mention Reddit égale backlink ».</p></div>
+web parallèles et corrigés dans le corps, marqués « corrigé 2026-07-02
+». Détail des corrections dans <a href="#routine">la routine
+quotidienne</a>, qui fait foi sur l’exécution. Apports de cette
+vérification : 80 % des posts cités par les IA ont moins de 20 upvotes
+(Semrush, 248 000 URLs) ; threads Q&amp;A &gt; 50 % des citations ;
+Perplexity source Reddit via les SERP Google (procès Reddit v.
+Perplexity) ; pages auto-traduites <code>?tl=</code> = 40-73 % des
+citations Reddit sur les surfaces IA de Google en Europe non anglophone
+(Peec AI).</p>
+<p>Chiffres les mieux ancrés sur source primaire : update hidden gems
+(Glenn Gabe), visibilité +1 328 % (Sistrix via Amsive, 2024), accords
+Google 60 M$ (CBS, Fortune) et OpenAI 70 M$ estimé (Search Engine Land),
+citations IA (Semrush juillet-octobre 2025, Peec AI mars 2026).</p>
+<p>Limites : les pourcentages de citation IA sont volatils, à toujours
+dater et fenêtrer. Les chiffres de trafic en visites sont des
+estimations Ahrefs. Aucune étude de cas Reddit indépendante avec méthodo
+vérifiable n’existe ; le test Qadence.io est en cours, résultats non
+disponibles. Les données sur l’effet du signal d’année et la parité
+positif/négatif viennent de sources à intérêt commercial, non
+confirmées. Les stats « +15-40 % de visibilité » et « +11 % de lift
+publicitaire » viennent de sources à intérêt commercial. Mentions sans
+lien : pas un facteur de ranking direct (consensus Mueller) ; effets
+réels = demande de marque et citation IA. « Mention Reddit = backlink »
+est faux.</p></div>
     
     <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 244 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
@@ -1087,7 +874,7 @@ mention Reddit égale backlink ».</p></div>
 <article class="post" id="sources-audit-web-juin-2026">
   <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,3 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-gray">SOURCES</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 2 juil.</div>
+    <div class="pmeta"><span class="flair f-gray">SOURCES</span> Posté par <a href="#">u/timboussardon</a> · 18 juin · m.à.j. 3 juil.</div>
     <h2 class="ptitle">Sources (audit web, juin 2026)</h2>
     <div class="pcontent"><p><strong>Reddit et Google (visibilité, deal, mécanisme) :</strong> -
 <a
@@ -1112,8 +899,13 @@ Angles Media - Reddit backlinks nofollow value</a></p>
 <p><strong>Reddit et IA (citations, GEO, deals) :</strong> - <a
 href="https://peec.ai/blog/top-domains-cited-by-ai-search-analysis-based-on-30m-sources">Peec
 AI - Top domains cited by AI search (30M sources)</a> - <a
+href="https://peec.ai/blog/reddit-machine-translated-pages-ai-visibility">Peec
+AI - Reddit machine-translated pages AI visibility (64,77M
+citations)</a> - <a
 href="https://www.semrush.com/blog/most-cited-domains-ai/">Semrush -
 Most-cited domains in AI</a> - <a
+href="https://www.semrush.com/blog/reddit-ai-search-visibility-study/">Semrush
+- Reddit AI search visibility study (248k URLs)</a> - <a
 href="https://www.evertune.ai/resources/insights-on-ai/perplexity-loves-reddit-exploring-llms-top-sources">Evertune
 - Perplexity loves Reddit</a> - <a
 href="https://discoveredlabs.com/blog/the-reddit-content-types-that-llms-cite-most-data-backed-breakdown">Discovered
@@ -1126,6 +918,9 @@ href="https://searchengineland.com/openai-may-pay-reddit-70m-for-licensing-deal-
 Engine Land - OpenAI may pay Reddit 70M</a> - <a
 href="https://searchengineland.com/ai-search-engines-cite-reddit-youtube-and-linkedin-most-study-473138">Search
 Engine Land - AI engines cite Reddit YouTube LinkedIn most</a> - <a
+href="https://searchengineland.com/reddit-sues-perplexity-serpapi-scraping-google-463681">Search
+Engine Land - Reddit sues Perplexity, SerpApi (sourcing via Google
+SERPs)</a> - <a
 href="https://weirdmarketingtales.com/why-people-are-adding-reddit-to-their-google-searches/">Weird
 Marketing Tales - Why people add reddit to searches</a></p>
 <p><strong>Participation, règles, ban, modération :</strong> - <a
@@ -1166,7 +961,7 @@ Engine Journal - Branded search patent (implied links)</a></p>
 href="https://www.subredditsignals.com/blog/reddit-seo-in-2026-the-real-ranking-factors-behind-google-visible-threads-and-how-to-spot-winners-before-everyone-else">SubredditSignals
 - Reddit SEO 2026, vrais facteurs de ranking</a> - <a
 href="https://upvote.net/blog/best-time-to-post-on-reddit">Upvote.net -
-étude 1 000 posts (timing et vélocité d’upvotes)</a> - <a
+étude 150 posts (timing et vélocité d’upvotes)</a> - <a
 href="https://medium.com/@tentenco/reddit-geo-playbook-how-to-get-cited-by-chatgpt-and-perplexity-in-2026-75607d1d2b01">Reddit
 GEO Playbook - Medium (mai 2026)</a> - <a
 href="https://authoritytech.io/blog/reddit-perplexity-geo-strategy-2026">AuthorityTech
@@ -1193,29 +988,26 @@ subreddits français</a></p></div>
   </div>
 </article>
 <article class="post" id="routine">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,4 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>323</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-gray">DOCTRINE</span> Posté par <a href="#">u/timboussardon</a> · 2 juil.</div>
-    <h2 class="ptitle">Daily thread : la routine quotidienne (annexe A)</h2>
+    <div class="pmeta"><span class="flair f-blue">ROUTINE</span> Posté par <a href="#">u/timboussardon</a> · 2 juil. · m.à.j. 3 juil.</div>
+    <h2 class="ptitle">Routine quotidienne (annexe A)</h2>
     <div class="pcontent"><blockquote>
-<p>Dérivée du <a href="#tldr">le playbook</a>, puis vérifiée contre le
-web le 2026-07-02 (3 audits parallèles, ~25 sources recoupées, détail en
-bas de page). Budget : 25 à 30 minutes par jour, 6 jours sur 7, plus
-deux rendez-vous hebdo. Terrain de test : Qadence.io, subs anglophones
-search/IA en priorité (§12 du playbook).</p>
+<p>Dérivée du <a href="#tldr">le playbook</a>. Chiffres vérifiés contre
+~25 sources le 2026-07-02 (3 audits web parallèles, détail en bas de
+page). Budget : 25 à 30 min/jour, 6 jours sur 7, plus deux rendez-vous
+hebdo. Terrain : Qadence.io, subs anglophones search/IA en priorité.</p>
 </blockquote>
 <h2 id="en-résumé">En résumé</h2>
-<p>Chaque jour : répondre à tout ce qui est arrivé (sous 48 h max, sous
-2 h après un post), poser 4 à 6 commentaires utiles de 120-200 mots dans
-des threads qui rankent déjà sur Google, zéro lien vers tes sites hors
-quota. Une mention de Qadence ou d’un de tes sites par semaine, maximum.
-Un post par semaine (plafond dur : 3, d’après la recherche interne de
-Reddit). Le vendredi, on mesure sur une liste fixe de requêtes acheteur.
-Chaque mois, on redonne de la fraîcheur aux vieux threads forts par un
-commentaire, pas par de la réécriture.</p>
+<p>Par jour : réponses à tout ce qui est arrivé (100 % sous 48 h, sous 2
+h après un post), 4 à 6 commentaires de 120-200 mots, en priorité dans
+des threads déjà positionnés sur Google. Par semaine : 1 mention maximum
+de Qadence ou d’un site à soi, 1 post (plafond dur : 3, data interne
+Reddit). Le vendredi : mesure sur liste fixe de requêtes. Le 1er du mois
+: fraîcheur des vieux threads investis, par commentaire, pas par
+réécriture.</p>
 <hr />
-<h2 id="les-quotas-les-chiffres-à-retenir">Les quotas (les chiffres à
-retenir)</h2>
+<h2 id="quotas">Quotas</h2>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -1232,28 +1024,28 @@ retenir)</h2>
 <tbody>
 <tr>
 <td>Commentaires utiles</td>
-<td>4 à 6 par jour, plafond 8</td>
-<td>consensus 2025-2026 : bande 2-8/jour, 4-7 (Backlinko) et 5-8
-(SubredditSignals) pour un compte rodé ; aucun guide ne recommande plus
-de 8</td>
+<td>4 à 6/jour, plafond 8</td>
+<td>bande 2-8/jour, consensus des guides 2025-2026 : 4-7 (Backlinko),
+5-8 (SubredditSignals) pour un compte rodé ; aucun guide ne recommande
+plus de 8</td>
 </tr>
 <tr>
 <td>Rythme</td>
-<td>jamais en rafale : espace tes actions, 20 commentaires dans l’heure
-= pattern spam</td>
+<td>actions espacées, jamais en rafale ; 20 commentaires/heure = pattern
+spam</td>
 <td>KarmaGuy 2026 ; limite technique ~1 action/10-15 min quand le karma
 est bas dans un sub</td>
 </tr>
 <tr>
-<td>Mention de Qadence / tes sites</td>
-<td>1 par semaine max</td>
-<td>ratio 95/5 ; le 90/10 formel a été retiré par Reddit, l’enforcement
-passe par le Contributor Quality Score (comportemental) et les règles de
-chaque sub</td>
+<td>Mention de Qadence / sites à soi</td>
+<td>1/semaine max</td>
+<td>ratio 95/5 ; le 90/10 formel a été retiré par Reddit, enforcement
+par Contributor Quality Score (comportemental) + règles de chaque
+sub</td>
 </tr>
 <tr>
 <td>Même lien</td>
-<td>jamais plus de 2 fois par jour, jamais 5 subs d’affilée</td>
+<td>2 fois/jour max, jamais 5 subs d’affilée</td>
 <td>KarmaGuy + ReddiReach 2026</td>
 </tr>
 <tr>
@@ -1263,216 +1055,185 @@ chaque sub</td>
 </tr>
 <tr>
 <td>Post à valeur</td>
-<td>1 par semaine, plafond dur 3/semaine</td>
+<td>1/semaine, plafond dur 3/semaine</td>
 <td>data interne Reddit (Rob Gaige, Adweek 2026) : au-delà de 3/semaine
-le sentiment s’effondre ; 3 commentaires communautaires = +2,2 % de
-mentions vs +0,5 % pour 1 post</td>
+le sentiment chute ; 3 commentaires communautaires = +2,2 % de mentions
+vs +0,5 % pour 1 post</td>
 </tr>
 <tr>
 <td>Cross-post d’un même contenu</td>
-<td>3-4 subs pertinents max, espacés de 6 h et sur des jours
-différents</td>
-<td>postpone.app et recoupements 2025-2026 (l’ancien « 1 toutes les 2-3
-semaines » n’a aucune source)</td>
+<td>3-4 subs pertinents max, espacés de 6 h, jours différents</td>
+<td>postpone.app et recoupements 2025-2026 ; le « 1 toutes les 2-3
+semaines » antérieur n’avait aucune source</td>
 </tr>
 <tr>
-<td>Réponses aux commentaires et DM reçus</td>
-<td>100 %, sous 48 h ; sous 2 h après un post</td>
-<td>§7bis + guides Reddit-SEO 2025-2026</td>
+<td>Réponses aux commentaires et DM</td>
+<td>100 % sous 48 h ; sous 2 h après un post</td>
+<td>§7bis du playbook + guides Reddit-SEO 2025-2026</td>
 </tr>
 </tbody>
 </table>
-<p>Si un sub impose un seuil de karma ou d’âge que le compte ne franchit
-pas encore : commentaires seuls dans ce sub, pas de post.</p>
+<p>Sub avec seuil de karma ou d’âge non atteint : commentaires seuls,
+pas de post.</p>
 <hr />
-<h2 id="la-routine-25-30-min">La routine (25-30 min)</h2>
-<p><strong>1. Veille et défense (5 min).</strong> Ouvre les alertes
-F5Bot (Qadence, organikk, fusionn, ton nom). Deux buts : repérer un
-thread où tu es légitime pour répondre aujourd’hui, et détecter un
-thread négatif sur toi ou un client (veille défensive GEO : les IA
-citent le négatif autant que le positif). Un thread négatif détecté =
-réponse factuelle et calme sous 48 h, jamais défensive. Note : les
-guides GEO documentent une veille hebdo ; le quotidien via F5Bot est un
-cran au-dessus de la pratique, à coût quasi nul puisque ce sont des
-alertes email.</p>
-<p><strong>2. Réponses (5 min).</strong> Réponds à 100 % des
-commentaires et DM reçus depuis hier. C’est la règle la plus rentable de
-la routine : l’engagement nourrit le ranking des threads et le
-karma.</p>
+<h2 id="déroulé-quotidien-25-30-min">Déroulé quotidien (25-30 min)</h2>
+<p><strong>1. Veille (5 min).</strong> Alertes F5Bot (Qadence, organikk,
+fusionn, nom). Deux sorties : threads où intervenir aujourd’hui, threads
+négatifs à traiter. Les IA citent le négatif au même taux que le positif
+(~6,1 % vs ~5 %, AuthorityTech 2026, source à intérêt commercial).
+Thread négatif : réponse factuelle sous 48 h. Cadence documentée par les
+guides GEO : hebdomadaire ; le quotidien via F5Bot est au-dessus de la
+pratique, à coût nul (alertes email).</p>
+<p><strong>2. Réponses (5 min).</strong> 100 % des commentaires et DM
+reçus depuis la veille. Les commentaires actifs soutiennent le ranking
+du thread et le karma (§1 et §8 du playbook).</p>
 <p><strong>3. Commentaires (15 min ; ~8-10 min avec le
 cockpit).</strong> Le Reddit Cockpit
-(<code>~/Code/reddit-cockpit/</code>, launchd 07h50) prépare chaque
-matin une file de drafts dans <code>queue/AAAA-MM-JJ.md</code> : threads
-scorés + 1-2 commentaires pré-rédigés en ta voix, quotas rappelés en
-tête. Tu relis, tu ajustes, tu colles à la main : la machine ne publie
-jamais. Sans le cockpit (ou pour compléter), la sélection manuelle suit
-les mêmes règles :</p>
-<p>4 à 6 commentaires utiles. La sélection des threads compte plus que
-le nombre :</p>
+(<code>~/Code/reddit-cockpit/</code>, launchd 07h50) dépose chaque matin
+une file de drafts dans <code>queue/AAAA-MM-JJ.md</code> : threads
+scorés, 1-2 commentaires pré-rédigés, quotas en tête. Relecture,
+ajustement, collage manuel. La machine ne publie jamais. Sans le
+cockpit, sélection manuelle selon les mêmes règles.</p>
+<p>4 à 6 commentaires. Sélection par priorité :</p>
 <ul>
-<li><strong>Priorité 1 : les threads qui rankent déjà sur
-Google</strong> sur tes requêtes acheteur
-(<code>site:reddit.com "best ai seo tool"</code> etc.). C’est le levier
-GEO le plus rapide : Perplexity source Reddit via les SERP Google
-(révélé par le procès Reddit v. Perplexity, oct. 2025), donc un
-commentaire dans un thread déjà positionné apparaît dans Perplexity en
-quelques jours.</li>
-<li><strong>Priorité 2 : les threads récents</strong> (moins de 48 h)
-repérés via New/Rising et les mots-clés de douleur (« best X for Y », «
-[catégorie] alternatives », troubleshooting). Heuristique de tri : 30 à
-100 réponses (en dessous, indexation faible ; au-dessus, ton commentaire
-est enterré ; source unique, à valider sur le terrain).</li>
+<li><strong>Priorité 1 : threads déjà positionnés sur Google</strong>
+sur les requêtes acheteur
+(<code>site:reddit.com "best ai seo tool"</code>, etc.). Perplexity
+source Reddit via les SERP Google (procès Reddit v. Perplexity, oct.
+2025) ; un commentaire dans un thread positionné apparaît dans
+Perplexity en quelques jours.</li>
+<li><strong>Priorité 2 : threads de moins de 48 h</strong>, via
+New/Rising et les mots-clés de douleur (« best X for Y », « [catégorie]
+alternatives », troubleshooting). Heuristique de sélection : 30 à 100
+réponses (source unique, à valider sur le terrain).</li>
 </ul>
-<p>Format du commentaire : <strong>120 à 200 mots, 2-3 données
-précises</strong> (noms d’outils, chiffres, étapes), ton documentation,
-pas de « je pense ». La longueur médiane des commentaires cités par les
-IA est ~80 mots (Semrush, 248 000 URLs citées) ; les 120-200 mots visent
-la marge haute. <strong>Ne cours pas après les upvotes : 80 % des posts
-Reddit cités par les IA ont moins de 20 upvotes</strong> (médiane 5-8,
-Semrush). La répétition de la même recommandation dans des threads
-différents pèse plus qu’un gros score dans un seul thread.</p>
-<p>La mention « une option que j’utilise moi-même est X » seulement si
-elle est légitime dans le thread ET que le quota hebdo n’est pas
-consommé, toujours avec disclosure.</p>
+<p>Format : 120 à 200 mots, 2-3 données précises (outil, chiffre daté,
+étapes), registre documentation, sans « je pense ». Longueur médiane des
+commentaires cités par les IA : ~80 mots (Semrush, 248 000 URLs) ;
+120-200 vise la marge haute. Seuil d’upvotes : inexistant, 80 % des
+posts cités en ont moins de 20 (médiane 5-8, Semrush). La répétition
+d’une même recommandation dans des threads différents pèse plus qu’un
+score élevé dans un seul thread.</p>
+<p>Mention « une option que j’utilise moi-même est X » : uniquement si
+légitime dans le thread, quota hebdo non consommé, disclosure
+incluse.</p>
 <p><strong>4. Log (2 min).</strong> Une ligne dans <a href="#journal">le
-journal</a> : date, nombre de commentaires, subs touchés, mention
-oui/non, threads intéressants repérés, insights à redescendre.</p>
+journal</a> : date, commentaires, subs, mention oui/non, threads
+repérés, insights.</p>
 <hr />
-<h2 id="les-deux-rendez-vous-hebdo">Les deux rendez-vous hebdo</h2>
-<p><strong>Mardi, mercredi ou jeudi matin ET : le post de la
-semaine.</strong> Fenêtre corroborée par 4 sources : matinée ET en
-semaine, environ 6-10 h ET, soit 18-22 h à Manille. Foundation ajoute le
-samedi matin ET comme fenêtre secondaire. (Précision honnête : l’étude
-Upvote.net citée dans le playbook porte sur 150 posts, pas 1 000, et
-vient d’un vendeur d’upvotes ; c’est la convergence des sources qui
-valide la fenêtre, pas cette étude. Pour affiner sur r/SEO précisément,
-un outil per-sub type Delay for Reddit ou Postpone donne les pics
-réels.)</p>
-<p>Le titre épouse une requête réelle, format Q&amp;A de préférence :
-<strong>les threads Q&amp;A représentent plus de 50 % des citations
-IA</strong> (Semrush). 50 à 80 % de valeur pure dans le corps :
-captures, métriques, échecs assumés. Le format le plus défendable pour
-toi reste la donnée originale anonymisée (logs Fusionn, GSC, tests).</p>
-<p>Présence après publication : la première heure est décisive pour la
-distribution Reddit (pondération logarithmique des votes : les 10
-premiers upvotes pèsent autant que les 100 suivants), les 6-10 premières
-heures conditionnent le ranking Google du thread. Réponds aux
-commentaires sous 2 h, puis entretiens pendant 24-48 h. (L’ancien « 30
-minutes » venait uniquement de vendeurs d’upvotes.)</p>
-<p><strong>Vendredi : le bilan (15 min).</strong> Dans le <a
+<h2 id="rendez-vous-hebdo">Rendez-vous hebdo</h2>
+<p><strong>Mardi, mercredi ou jeudi matin ET : le post.</strong> Fenêtre
+: 6-10 h ET, soit 18-22 h à Manille. Corroborée par 4 sources
+(Foundation, RecurPost, Single Grain, Upvote.net) ; l’étude Upvote.net
+porte sur 150 posts et vient d’un vendeur d’upvotes, la convergence des
+sources fait foi, pas cette étude. Foundation ajoute le samedi matin ET.
+Pics réels par sub : outil per-sub type Delay for Reddit ou
+Postpone.</p>
+<p>Titre = requête réelle, format Q&amp;A de préférence : les threads
+Q&amp;A représentent plus de 50 % des citations IA (Semrush). Corps : 50
+à 80 % de valeur directe (captures, métriques, échecs assumés). Format
+le plus compatible avec l’activité : donnée originale anonymisée (logs
+Fusionn, GSC, tests).</p>
+<p>Après publication : première heure décisive pour la distribution
+Reddit (pondération logarithmique des votes, les 10 premiers upvotes
+pèsent comme les 100 suivants), 6-10 premières heures pour le ranking
+Google. Réponses sous 2 h, suivi 24-48 h. Le « 30 premières minutes »
+antérieur ne venait que de vendeurs d’upvotes.</p>
+<p><strong>Vendredi : mesure (15 min).</strong> Dans le <a
 href="#journal">le journal</a> :</p>
 <ol type="1">
-<li>Karma du compte (comment + post)</li>
-<li>Positions des threads via <code>site:reddit.com</code> sur
-Google</li>
-<li>Citations IA sur une <strong>liste fixe de 15-20 requêtes
-acheteur</strong> (« best AI SEO agent », « Qadence alternatives »…)
-passées dans Perplexity, ChatGPT, AI Overviews. La liste fixe est ce qui
-rend la mesure comparable d’une semaine à l’autre (cadence documentée
-par les guides GEO 2026)</li>
-<li>Mentions F5Bot de la semaine (volume et tonalité)</li>
-<li>Insights Reddit redescendus dans le process besoin → mot-clé →
-cluster</li>
+<li>Karma (comment + post)</li>
+<li>Positions des threads via <code>site:reddit.com</code></li>
+<li>Citations de Qadence.io et des sites sur <strong>liste fixe de 15-20
+requêtes acheteur</strong> passées dans Perplexity, ChatGPT, AI
+Overviews. Liste fixe = mesure comparable d’une semaine à l’autre
+(cadence documentée par les guides GEO 2026)</li>
+<li>Mentions F5Bot (volume, tonalité)</li>
+<li>Insights redescendus dans le process besoin → mot-clé → cluster</li>
 <li>Trafic référent Reddit (GA/GSC, faible attendu)</li>
 </ol>
-<p>Verdict de la semaine en une phrase : on continue pareil, on ajuste
-quoi.</p>
+<p>Verdict en une phrase : reconduire ou ajuster, quoi.</p>
 <hr />
-<h2 id="le-cycle-mensuel-fraîcheur">Le cycle mensuel (fraîcheur)</h2>
-<p>Le 1er de chaque mois, 20 minutes. Nuance importante remontée par la
-vérif web : l’âge moyen des threads Reddit cités par les IA est
-d’environ 900 jours (Semrush). Les vieux threads forts restent cités ;
-ce qui compte, c’est d’y injecter de la fraîcheur. La tactique n’est
-donc pas de réécrire tes réponses tous les 90 jours (ce chiffre ne vient
-que d’une seule source), mais :</p>
+<h2 id="cycle-mensuel-fraîcheur">Cycle mensuel (fraîcheur)</h2>
+<p>Le 1er du mois, 20 min. Donnée de cadrage : âge moyen des threads
+Reddit cités par les IA ~900 jours (Semrush) ; les vieux threads forts
+restent cités. Le « refresh tous les 90 jours » vient d’une seule source
+Medium. Actions :</p>
 <ul>
-<li>ajouter un <strong>commentaire frais dans les vieux threads
-forts</strong> où tu es déjà présent (chiffre à jour, retour récent) ;
-Perplexity reprend les nouveaux commentaires Reddit sous 24 h à 7 jours
-;</li>
-<li>mettre l’année courante dans les titres quand c’est pertinent ;</li>
-<li>vérifier que tes 3-5 threads les plus cités n’ont pas dérivé
-(nouvelle réponse au-dessus de la tienne, thread verrouillé).</li>
+<li>commentaire récent dans les vieux threads forts déjà investis
+(chiffre à jour, retour récent) ; Perplexity reprend un commentaire
+nouveau en 24 h à 7 jours ;</li>
+<li>année courante dans les titres quand pertinent ;</li>
+<li>contrôle des 3-5 threads les plus cités : nouvelle réponse
+au-dessus, thread verrouillé.</li>
 </ul>
-<p>Rappel du délai : 60 à 90 jours entre le démarrage et un effet GEO
-mesurable (consensus multi-sources ; 120 jours en borne haute). Pas de
-verdict sur le test Qadence avant fin août 2026 au plus tôt. Et
-attends-toi à des marches d’escalier, pas à une courbe : la part de
-Reddit dans les citations ChatGPT est passée d’environ 60 % à environ 10
-% en deux semaines en septembre 2025.</p>
+<p>Délai avant effet GEO mesurable : 60 à 90 jours (consensus
+multi-sources), 120 en borne haute. Pas de verdict sur le test Qadence
+avant fin août 2026. Évolution attendue par paliers : la part de Reddit
+dans les citations ChatGPT est passée d’environ 60 % à environ 10 % en
+deux semaines en septembre 2025 (Semrush).</p>
 <hr />
-<h2 id="spécifique-2026-ce-que-les-vieux-playbooks-ratent">Spécifique
-2026 (ce que les vieux playbooks ratent)</h2>
+<h2 id="spécifique-2026">Spécifique 2026</h2>
 <ul>
-<li><strong>Tes réponses en anglais servent aussi les requêtes en
-français.</strong> Les pages Reddit auto-traduites (<code>?tl=</code>)
-représentent 40 à 73 % des citations Reddit sur les surfaces IA de
-Google dans les marchés non anglophones d’Europe (Peec AI, 64,77 M de
-citations, mars-juin 2026). Écrire en anglais dans les subs anglophones
-reste le bon choix, y compris pour la visibilité IA côté France sur
-Google. ChatGPT, lui, a quasiment cessé de citer les pages
-traduites.</li>
-<li><strong>Reddit Answers</strong> (le moteur de réponse interne de
-Reddit) est passé de 1 M à 15 M d’utilisateurs hebdo en 2025. C’est une
-surface de plus où tes réponses karma-validées peuvent sortir, sans
-action supplémentaire : la routine la nourrit déjà.</li>
-<li><strong>Le procès Reddit v. Perplexity</strong> (oct. 2025, en
-cours) peut rebattre l’accès de Perplexity à Reddit. Raison de plus pour
-ne pas suroptimiser pour un seul moteur.</li>
+<li><strong>Les réponses en anglais couvrent aussi les requêtes en
+français.</strong> Pages Reddit auto-traduites (<code>?tl=</code>) : 40
+à 73 % des citations Reddit sur les surfaces IA de Google dans les
+marchés non anglophones d’Europe (Peec AI, 64,77 M de citations,
+mars-juin 2026). ChatGPT a quasi cessé de citer les pages traduites
+(6,14 % → 0,30 %, avril-juin 2026).</li>
+<li><strong>Reddit Answers</strong> : 1 M → 15 M d’utilisateurs hebdo en
+2025. Surface supplémentaire alimentée par les mêmes réponses, sans
+action dédiée.</li>
+<li><strong>Procès Reddit v. Perplexity</strong> (oct. 2025, en cours) :
+l’accès de Perplexity à Reddit peut changer. Ne pas optimiser pour un
+seul moteur.</li>
 </ul>
 <hr />
-<h2 id="garde-fous-ce-qui-grille-le-compte">Garde-fous (ce qui grille le
-compte)</h2>
+<h2 id="garde-fous">Garde-fous</h2>
 <ul>
-<li>Jamais le même commentaire répété, même reformulé a minima :
-déclencheur n°1 des filtres</li>
-<li>Jamais le même lien plus de 2 fois par jour, jamais dans plusieurs
-subs d’affilée</li>
-<li>Jamais de raccourcisseur de lien (bit.ly, t.co) : flag
-automatique</li>
-<li>Jamais de manipulation de vote, sous aucune forme</li>
-<li>Jamais de changement brutal de comportement (un compte calme qui se
-met à poster des liens en volume = flag), même vieux et karmaté</li>
-<li>Jamais de post promo dans un sub dont tu n’as pas lu les règles ; en
-cas de doute, modmail aux mods avant</li>
-<li>Test mental permanent : si quelqu’un scrolle ton profil, il doit
-voir un praticien qui aide, pas un site qui a un compte</li>
+<li>Même commentaire jamais répété, même reformulé : déclencheur n°1 des
+filtres (RedShip 2026)</li>
+<li>Même lien : 2 fois/jour max, jamais plusieurs subs d’affilée</li>
+<li>Raccourcisseurs de liens (bit.ly, t.co) : flag automatique</li>
+<li>Manipulation de vote : sanctionnée sous toutes ses formes</li>
+<li>Changement brutal de comportement d’un compte ancien (liens en
+volume) : flag</li>
+<li>Post lié à l’activité commerciale : règles du sub lues avant,
+modmail en cas de doute</li>
+<li>Contrôle du profil : un historique réduit à des liens vers un même
+site correspond au pattern sanctionné</li>
 </ul>
-<p><strong>Check shadowban, 1 fois par mois</strong> : profil ouvert en
+<p><strong>Check shadowban mensuel</strong> : profil ouvert en
 navigation privée déconnecté. Page introuvable ou posts invisibles =
-shadowban probable, on gèle tout et on diagnostique avant de
-continuer.</p>
+shadowban probable. Gel de toute activité jusqu’au diagnostic.</p>
 <hr />
 <h2 id="note-de-vérification-2026-07-02">Note de vérification
 (2026-07-02)</h2>
 <p>Routine confrontée au web via 3 audits parallèles (~25 sources,
-2025-2026). Ce qui a changé après vérif : plafond de commentaires ramené
-de 10 à 8 ; plafond dur de 3 posts/semaine ajouté (data interne Reddit)
-; « 30 premières minutes » reformulé en 1 h + 6-10 h (le 30 min ne
-venait que de vendeurs d’upvotes) ; cross-post « toutes les 2-3 semaines
-» remplacé par espacement 6 h+ / 3-4 subs (l’ancien chiffre n’avait
-aucune source) ; refresh 90 jours nuancé (source unique, contredite par
-l’âge moyen de ~900 jours des threads cités) ; ajout du ciblage
-prioritaire des threads déjà positionnés sur Google, du format 120-200
-mots, de la liste fixe de requêtes pour le bilan, et de la section
-2026.</p>
-<p>Biais à garder en tête : presque toutes les sources qui donnent un
-chiffre précis vendent un outil ou un service Reddit (KarmaGuy,
-SubredditSignals, ReddiReach, RedShip, Upvote.net…). Les données les
-moins biaisées : Semrush (étude 248 000 URLs citées, oct. 2025), Peec
-AI, Adweek/eMarketer (recherche interne Reddit), Search Engine Land, et
-la mécanique logarithmique du hot ranking (Salihefendic). Les quotas de
-cette routine s’appuient sur la convergence de 4-6 sources indépendantes
-par chiffre, pas sur une source unique.</p></div>
+2025-2026). Corrections issues de la vérification : plafond de
+commentaires 10 → 8 ; plafond dur 3 posts/semaine ajouté (data interne
+Reddit) ; « 30 premières minutes » remplacé par 1 h + 6-10 h ;
+cross-post « toutes les 2-3 semaines » remplacé par espacement 6 h+ /
+3-4 subs ; refresh 90 jours remplacé par cycle mensuel (source unique,
+contredite par l’âge moyen ~900 jours des threads cités). Ajouts :
+ciblage prioritaire des threads positionnés sur Google, format 120-200
+mots, liste fixe de requêtes pour la mesure, section 2026.</p>
+<p>Biais des sources : la quasi-totalité des sources donnant un chiffre
+précis vend un outil ou service Reddit (KarmaGuy, SubredditSignals,
+ReddiReach, RedShip, Upvote.net). Sources les moins biaisées : Semrush
+(248 000 URLs citées, oct. 2025), Peec AI, Adweek/eMarketer (recherche
+interne Reddit), Search Engine Land, formule de ranking logarithmique
+(Salihefendic). Chaque quota repose sur la convergence de 4-6 sources
+indépendantes, aucun sur une source unique.</p></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 51 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 249 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
 <article class="post" id="journal">
-  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>1,6 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
+  <div class="vote"><span class="up"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 3l7 8h-4v6H7v-6H3z" fill="currentColor"/></svg></span><b>2,1 k</b><span class="down"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17l-7-8h4V3h6v6h4z" fill="currentColor"/></svg></span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-gray">DOCTRINE</span> Posté par <a href="#">u/timboussardon</a> · 2 juil.</div>
-    <h2 class="ptitle">Le journal de suivi (annexe B)</h2>
+    <div class="pmeta"><span class="flair f-gray">JOURNAL</span> Posté par <a href="#">u/timboussardon</a> · 2 juil.</div>
+    <h2 class="ptitle">Journal de suivi (annexe B)</h2>
     <div class="pcontent"><blockquote>
 <p>Append-only. Une ligne par jour de routine, un bloc par bilan du
 vendredi. Voir <a href="#routine">la routine quotidienne</a> pour les
@@ -1493,7 +1254,7 @@ quotas et <a href="#tldr">le playbook</a> pour la doctrine.</p>
 - Trafic référent Reddit :
 - Verdict en une phrase :</code></pre></div>
     
-    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 156 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
+    <div class="pactions"><svg viewBox="0 0 20 20" width="15" height="15" style="vertical-align:-2px"><path d="M10 2C5 2 1.5 5.1 1.5 9c0 2.2 1.2 4.2 3 5.5L4 18l4-1.6c.6.1 1.3.2 2 .2 5 0 8.5-3.1 8.5-7.6S15 2 10 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> 110 commentaires &nbsp;·&nbsp; Partager &nbsp;·&nbsp; Enregistrer &nbsp;·&nbsp; Signaler</div>
   </div>
 </article>
 </main>

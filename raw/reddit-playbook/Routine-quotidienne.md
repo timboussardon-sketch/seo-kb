@@ -5,7 +5,7 @@ title: Routine quotidienne Reddit (SEO + GEO)
 aliases: [routine-reddit, reddit-quotidien, reddit-daily]
 tags: [reddit, geo, seo, routine, qadence]
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-03
 sources: 25
 confidence: high
 status: stable
@@ -13,115 +13,115 @@ status: stable
 
 # Routine quotidienne Reddit
 
-> Dérivée du [[Playbook-Reddit-SEO-GEO]], puis vérifiée contre le web le 2026-07-02 (3 audits parallèles, ~25 sources recoupées, détail en bas de page). Budget : 25 à 30 minutes par jour, 6 jours sur 7, plus deux rendez-vous hebdo. Terrain de test : Qadence.io, subs anglophones search/IA en priorité (§12 du playbook).
+> Dérivée du [[Playbook-Reddit-SEO-GEO]]. Chiffres vérifiés contre ~25 sources le 2026-07-02 (3 audits web parallèles, détail en bas de page). Budget : 25 à 30 min/jour, 6 jours sur 7, plus deux rendez-vous hebdo. Terrain : Qadence.io, subs anglophones search/IA en priorité.
 
 ## En résumé
 
-Chaque jour : répondre à tout ce qui est arrivé (sous 48 h max, sous 2 h après un post), poser 4 à 6 commentaires utiles de 120-200 mots dans des threads qui rankent déjà sur Google, zéro lien vers tes sites hors quota. Une mention de Qadence ou d'un de tes sites par semaine, maximum. Un post par semaine (plafond dur : 3, d'après la recherche interne de Reddit). Le vendredi, on mesure sur une liste fixe de requêtes acheteur. Chaque mois, on redonne de la fraîcheur aux vieux threads forts par un commentaire, pas par de la réécriture.
+Par jour : réponses à tout ce qui est arrivé (100 % sous 48 h, sous 2 h après un post), 4 à 6 commentaires de 120-200 mots, en priorité dans des threads déjà positionnés sur Google. Par semaine : 1 mention maximum de Qadence ou d'un site à soi, 1 post (plafond dur : 3, data interne Reddit). Le vendredi : mesure sur liste fixe de requêtes. Le 1er du mois : fraîcheur des vieux threads investis, par commentaire, pas par réécriture.
 
 ---
 
-## Les quotas (les chiffres à retenir)
+## Quotas
 
 | Action | Quota | Ancrage |
 |---|---|---|
-| Commentaires utiles | 4 à 6 par jour, plafond 8 | consensus 2025-2026 : bande 2-8/jour, 4-7 (Backlinko) et 5-8 (SubredditSignals) pour un compte rodé ; aucun guide ne recommande plus de 8 |
-| Rythme | jamais en rafale : espace tes actions, 20 commentaires dans l'heure = pattern spam | KarmaGuy 2026 ; limite technique ~1 action/10-15 min quand le karma est bas dans un sub |
-| Mention de Qadence / tes sites | 1 par semaine max | ratio 95/5 ; le 90/10 formel a été retiré par Reddit, l'enforcement passe par le Contributor Quality Score (comportemental) et les règles de chaque sub |
-| Même lien | jamais plus de 2 fois par jour, jamais 5 subs d'affilée | KarmaGuy + ReddiReach 2026 |
+| Commentaires utiles | 4 à 6/jour, plafond 8 | bande 2-8/jour, consensus des guides 2025-2026 : 4-7 (Backlinko), 5-8 (SubredditSignals) pour un compte rodé ; aucun guide ne recommande plus de 8 |
+| Rythme | actions espacées, jamais en rafale ; 20 commentaires/heure = pattern spam | KarmaGuy 2026 ; limite technique ~1 action/10-15 min quand le karma est bas dans un sub |
+| Mention de Qadence / sites à soi | 1/semaine max | ratio 95/5 ; le 90/10 formel a été retiré par Reddit, enforcement par Contributor Quality Score (comportemental) + règles de chaque sub |
+| Même lien | 2 fois/jour max, jamais 5 subs d'affilée | KarmaGuy + ReddiReach 2026 |
 | Même commentaire | jamais répété, même reformulé a minima | déclencheur n°1 des filtres spam (RedShip 2026) |
-| Post à valeur | 1 par semaine, plafond dur 3/semaine | data interne Reddit (Rob Gaige, Adweek 2026) : au-delà de 3/semaine le sentiment s'effondre ; 3 commentaires communautaires = +2,2 % de mentions vs +0,5 % pour 1 post |
-| Cross-post d'un même contenu | 3-4 subs pertinents max, espacés de 6 h et sur des jours différents | postpone.app et recoupements 2025-2026 (l'ancien « 1 toutes les 2-3 semaines » n'a aucune source) |
-| Réponses aux commentaires et DM reçus | 100 %, sous 48 h ; sous 2 h après un post | §7bis + guides Reddit-SEO 2025-2026 |
+| Post à valeur | 1/semaine, plafond dur 3/semaine | data interne Reddit (Rob Gaige, Adweek 2026) : au-delà de 3/semaine le sentiment chute ; 3 commentaires communautaires = +2,2 % de mentions vs +0,5 % pour 1 post |
+| Cross-post d'un même contenu | 3-4 subs pertinents max, espacés de 6 h, jours différents | postpone.app et recoupements 2025-2026 ; le « 1 toutes les 2-3 semaines » antérieur n'avait aucune source |
+| Réponses aux commentaires et DM | 100 % sous 48 h ; sous 2 h après un post | §7bis du playbook + guides Reddit-SEO 2025-2026 |
 
-Si un sub impose un seuil de karma ou d'âge que le compte ne franchit pas encore : commentaires seuls dans ce sub, pas de post.
+Sub avec seuil de karma ou d'âge non atteint : commentaires seuls, pas de post.
 
 ---
 
-## La routine (25-30 min)
+## Déroulé quotidien (25-30 min)
 
-**1. Veille et défense (5 min).**
-Ouvre les alertes F5Bot (Qadence, organikk, fusionn, ton nom). Deux buts : repérer un thread où tu es légitime pour répondre aujourd'hui, et détecter un thread négatif sur toi ou un client (veille défensive GEO : les IA citent le négatif autant que le positif). Un thread négatif détecté = réponse factuelle et calme sous 48 h, jamais défensive. Note : les guides GEO documentent une veille hebdo ; le quotidien via F5Bot est un cran au-dessus de la pratique, à coût quasi nul puisque ce sont des alertes email.
+**1. Veille (5 min).**
+Alertes F5Bot (Qadence, organikk, fusionn, nom). Deux sorties : threads où intervenir aujourd'hui, threads négatifs à traiter. Les IA citent le négatif au même taux que le positif (~6,1 % vs ~5 %, AuthorityTech 2026, source à intérêt commercial). Thread négatif : réponse factuelle sous 48 h. Cadence documentée par les guides GEO : hebdomadaire ; le quotidien via F5Bot est au-dessus de la pratique, à coût nul (alertes email).
 
 **2. Réponses (5 min).**
-Réponds à 100 % des commentaires et DM reçus depuis hier. C'est la règle la plus rentable de la routine : l'engagement nourrit le ranking des threads et le karma.
+100 % des commentaires et DM reçus depuis la veille. Les commentaires actifs soutiennent le ranking du thread et le karma (§1 et §8 du playbook).
 
 **3. Commentaires (15 min ; ~8-10 min avec le cockpit).**
-Le Reddit Cockpit (`~/Code/reddit-cockpit/`, launchd 07h50) prépare chaque matin une file de drafts dans `queue/AAAA-MM-JJ.md` : threads scorés + 1-2 commentaires pré-rédigés en ta voix, quotas rappelés en tête. Tu relis, tu ajustes, tu colles à la main : la machine ne publie jamais. Sans le cockpit (ou pour compléter), la sélection manuelle suit les mêmes règles :
+Le Reddit Cockpit (`~/Code/reddit-cockpit/`, launchd 07h50) dépose chaque matin une file de drafts dans `queue/AAAA-MM-JJ.md` : threads scorés, 1-2 commentaires pré-rédigés, quotas en tête. Relecture, ajustement, collage manuel. La machine ne publie jamais. Sans le cockpit, sélection manuelle selon les mêmes règles.
 
-4 à 6 commentaires utiles. La sélection des threads compte plus que le nombre :
+4 à 6 commentaires. Sélection par priorité :
 
-- **Priorité 1 : les threads qui rankent déjà sur Google** sur tes requêtes acheteur (`site:reddit.com "best ai seo tool"` etc.). C'est le levier GEO le plus rapide : Perplexity source Reddit via les SERP Google (révélé par le procès Reddit v. Perplexity, oct. 2025), donc un commentaire dans un thread déjà positionné apparaît dans Perplexity en quelques jours.
-- **Priorité 2 : les threads récents** (moins de 48 h) repérés via New/Rising et les mots-clés de douleur (« best X for Y », « [catégorie] alternatives », troubleshooting). Heuristique de tri : 30 à 100 réponses (en dessous, indexation faible ; au-dessus, ton commentaire est enterré ; source unique, à valider sur le terrain).
+- **Priorité 1 : threads déjà positionnés sur Google** sur les requêtes acheteur (`site:reddit.com "best ai seo tool"`, etc.). Perplexity source Reddit via les SERP Google (procès Reddit v. Perplexity, oct. 2025) ; un commentaire dans un thread positionné apparaît dans Perplexity en quelques jours.
+- **Priorité 2 : threads de moins de 48 h**, via New/Rising et les mots-clés de douleur (« best X for Y », « [catégorie] alternatives », troubleshooting). Heuristique de sélection : 30 à 100 réponses (source unique, à valider sur le terrain).
 
-Format du commentaire : **120 à 200 mots, 2-3 données précises** (noms d'outils, chiffres, étapes), ton documentation, pas de « je pense ». La longueur médiane des commentaires cités par les IA est ~80 mots (Semrush, 248 000 URLs citées) ; les 120-200 mots visent la marge haute. **Ne cours pas après les upvotes : 80 % des posts Reddit cités par les IA ont moins de 20 upvotes** (médiane 5-8, Semrush). La répétition de la même recommandation dans des threads différents pèse plus qu'un gros score dans un seul thread.
+Format : 120 à 200 mots, 2-3 données précises (outil, chiffre daté, étapes), registre documentation, sans « je pense ». Longueur médiane des commentaires cités par les IA : ~80 mots (Semrush, 248 000 URLs) ; 120-200 vise la marge haute. Seuil d'upvotes : inexistant, 80 % des posts cités en ont moins de 20 (médiane 5-8, Semrush). La répétition d'une même recommandation dans des threads différents pèse plus qu'un score élevé dans un seul thread.
 
-La mention « une option que j'utilise moi-même est X » seulement si elle est légitime dans le thread ET que le quota hebdo n'est pas consommé, toujours avec disclosure.
+Mention « une option que j'utilise moi-même est X » : uniquement si légitime dans le thread, quota hebdo non consommé, disclosure incluse.
 
 **4. Log (2 min).**
-Une ligne dans [[Journal]] : date, nombre de commentaires, subs touchés, mention oui/non, threads intéressants repérés, insights à redescendre.
+Une ligne dans [[Journal]] : date, commentaires, subs, mention oui/non, threads repérés, insights.
 
 ---
 
-## Les deux rendez-vous hebdo
+## Rendez-vous hebdo
 
-**Mardi, mercredi ou jeudi matin ET : le post de la semaine.**
-Fenêtre corroborée par 4 sources : matinée ET en semaine, environ 6-10 h ET, soit 18-22 h à Manille. Foundation ajoute le samedi matin ET comme fenêtre secondaire. (Précision honnête : l'étude Upvote.net citée dans le playbook porte sur 150 posts, pas 1 000, et vient d'un vendeur d'upvotes ; c'est la convergence des sources qui valide la fenêtre, pas cette étude. Pour affiner sur r/SEO précisément, un outil per-sub type Delay for Reddit ou Postpone donne les pics réels.)
+**Mardi, mercredi ou jeudi matin ET : le post.**
+Fenêtre : 6-10 h ET, soit 18-22 h à Manille. Corroborée par 4 sources (Foundation, RecurPost, Single Grain, Upvote.net) ; l'étude Upvote.net porte sur 150 posts et vient d'un vendeur d'upvotes, la convergence des sources fait foi, pas cette étude. Foundation ajoute le samedi matin ET. Pics réels par sub : outil per-sub type Delay for Reddit ou Postpone.
 
-Le titre épouse une requête réelle, format Q&A de préférence : **les threads Q&A représentent plus de 50 % des citations IA** (Semrush). 50 à 80 % de valeur pure dans le corps : captures, métriques, échecs assumés. Le format le plus défendable pour toi reste la donnée originale anonymisée (logs Fusionn, GSC, tests).
+Titre = requête réelle, format Q&A de préférence : les threads Q&A représentent plus de 50 % des citations IA (Semrush). Corps : 50 à 80 % de valeur directe (captures, métriques, échecs assumés). Format le plus compatible avec l'activité : donnée originale anonymisée (logs Fusionn, GSC, tests).
 
-Présence après publication : la première heure est décisive pour la distribution Reddit (pondération logarithmique des votes : les 10 premiers upvotes pèsent autant que les 100 suivants), les 6-10 premières heures conditionnent le ranking Google du thread. Réponds aux commentaires sous 2 h, puis entretiens pendant 24-48 h. (L'ancien « 30 minutes » venait uniquement de vendeurs d'upvotes.)
+Après publication : première heure décisive pour la distribution Reddit (pondération logarithmique des votes, les 10 premiers upvotes pèsent comme les 100 suivants), 6-10 premières heures pour le ranking Google. Réponses sous 2 h, suivi 24-48 h. Le « 30 premières minutes » antérieur ne venait que de vendeurs d'upvotes.
 
-**Vendredi : le bilan (15 min).**
+**Vendredi : mesure (15 min).**
 Dans le [[Journal]] :
 
-1. Karma du compte (comment + post)
-2. Positions des threads via `site:reddit.com` sur Google
-3. Citations IA sur une **liste fixe de 15-20 requêtes acheteur** (« best AI SEO agent », « Qadence alternatives »…) passées dans Perplexity, ChatGPT, AI Overviews. La liste fixe est ce qui rend la mesure comparable d'une semaine à l'autre (cadence documentée par les guides GEO 2026)
-4. Mentions F5Bot de la semaine (volume et tonalité)
-5. Insights Reddit redescendus dans le process besoin → mot-clé → cluster
+1. Karma (comment + post)
+2. Positions des threads via `site:reddit.com`
+3. Citations de Qadence.io et des sites sur **liste fixe de 15-20 requêtes acheteur** passées dans Perplexity, ChatGPT, AI Overviews. Liste fixe = mesure comparable d'une semaine à l'autre (cadence documentée par les guides GEO 2026)
+4. Mentions F5Bot (volume, tonalité)
+5. Insights redescendus dans le process besoin → mot-clé → cluster
 6. Trafic référent Reddit (GA/GSC, faible attendu)
 
-Verdict de la semaine en une phrase : on continue pareil, on ajuste quoi.
+Verdict en une phrase : reconduire ou ajuster, quoi.
 
 ---
 
-## Le cycle mensuel (fraîcheur)
+## Cycle mensuel (fraîcheur)
 
-Le 1er de chaque mois, 20 minutes. Nuance importante remontée par la vérif web : l'âge moyen des threads Reddit cités par les IA est d'environ 900 jours (Semrush). Les vieux threads forts restent cités ; ce qui compte, c'est d'y injecter de la fraîcheur. La tactique n'est donc pas de réécrire tes réponses tous les 90 jours (ce chiffre ne vient que d'une seule source), mais :
+Le 1er du mois, 20 min. Donnée de cadrage : âge moyen des threads Reddit cités par les IA ~900 jours (Semrush) ; les vieux threads forts restent cités. Le « refresh tous les 90 jours » vient d'une seule source Medium. Actions :
 
-- ajouter un **commentaire frais dans les vieux threads forts** où tu es déjà présent (chiffre à jour, retour récent) ; Perplexity reprend les nouveaux commentaires Reddit sous 24 h à 7 jours ;
-- mettre l'année courante dans les titres quand c'est pertinent ;
-- vérifier que tes 3-5 threads les plus cités n'ont pas dérivé (nouvelle réponse au-dessus de la tienne, thread verrouillé).
+- commentaire récent dans les vieux threads forts déjà investis (chiffre à jour, retour récent) ; Perplexity reprend un commentaire nouveau en 24 h à 7 jours ;
+- année courante dans les titres quand pertinent ;
+- contrôle des 3-5 threads les plus cités : nouvelle réponse au-dessus, thread verrouillé.
 
-Rappel du délai : 60 à 90 jours entre le démarrage et un effet GEO mesurable (consensus multi-sources ; 120 jours en borne haute). Pas de verdict sur le test Qadence avant fin août 2026 au plus tôt. Et attends-toi à des marches d'escalier, pas à une courbe : la part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % en deux semaines en septembre 2025.
-
----
-
-## Spécifique 2026 (ce que les vieux playbooks ratent)
-
-- **Tes réponses en anglais servent aussi les requêtes en français.** Les pages Reddit auto-traduites (`?tl=`) représentent 40 à 73 % des citations Reddit sur les surfaces IA de Google dans les marchés non anglophones d'Europe (Peec AI, 64,77 M de citations, mars-juin 2026). Écrire en anglais dans les subs anglophones reste le bon choix, y compris pour la visibilité IA côté France sur Google. ChatGPT, lui, a quasiment cessé de citer les pages traduites.
-- **Reddit Answers** (le moteur de réponse interne de Reddit) est passé de 1 M à 15 M d'utilisateurs hebdo en 2025. C'est une surface de plus où tes réponses karma-validées peuvent sortir, sans action supplémentaire : la routine la nourrit déjà.
-- **Le procès Reddit v. Perplexity** (oct. 2025, en cours) peut rebattre l'accès de Perplexity à Reddit. Raison de plus pour ne pas suroptimiser pour un seul moteur.
+Délai avant effet GEO mesurable : 60 à 90 jours (consensus multi-sources), 120 en borne haute. Pas de verdict sur le test Qadence avant fin août 2026. Évolution attendue par paliers : la part de Reddit dans les citations ChatGPT est passée d'environ 60 % à environ 10 % en deux semaines en septembre 2025 (Semrush).
 
 ---
 
-## Garde-fous (ce qui grille le compte)
+## Spécifique 2026
 
-- Jamais le même commentaire répété, même reformulé a minima : déclencheur n°1 des filtres
-- Jamais le même lien plus de 2 fois par jour, jamais dans plusieurs subs d'affilée
-- Jamais de raccourcisseur de lien (bit.ly, t.co) : flag automatique
-- Jamais de manipulation de vote, sous aucune forme
-- Jamais de changement brutal de comportement (un compte calme qui se met à poster des liens en volume = flag), même vieux et karmaté
-- Jamais de post promo dans un sub dont tu n'as pas lu les règles ; en cas de doute, modmail aux mods avant
-- Test mental permanent : si quelqu'un scrolle ton profil, il doit voir un praticien qui aide, pas un site qui a un compte
+- **Les réponses en anglais couvrent aussi les requêtes en français.** Pages Reddit auto-traduites (`?tl=`) : 40 à 73 % des citations Reddit sur les surfaces IA de Google dans les marchés non anglophones d'Europe (Peec AI, 64,77 M de citations, mars-juin 2026). ChatGPT a quasi cessé de citer les pages traduites (6,14 % → 0,30 %, avril-juin 2026).
+- **Reddit Answers** : 1 M → 15 M d'utilisateurs hebdo en 2025. Surface supplémentaire alimentée par les mêmes réponses, sans action dédiée.
+- **Procès Reddit v. Perplexity** (oct. 2025, en cours) : l'accès de Perplexity à Reddit peut changer. Ne pas optimiser pour un seul moteur.
 
-**Check shadowban, 1 fois par mois** : profil ouvert en navigation privée déconnecté. Page introuvable ou posts invisibles = shadowban probable, on gèle tout et on diagnostique avant de continuer.
+---
+
+## Garde-fous
+
+- Même commentaire jamais répété, même reformulé : déclencheur n°1 des filtres (RedShip 2026)
+- Même lien : 2 fois/jour max, jamais plusieurs subs d'affilée
+- Raccourcisseurs de liens (bit.ly, t.co) : flag automatique
+- Manipulation de vote : sanctionnée sous toutes ses formes
+- Changement brutal de comportement d'un compte ancien (liens en volume) : flag
+- Post lié à l'activité commerciale : règles du sub lues avant, modmail en cas de doute
+- Contrôle du profil : un historique réduit à des liens vers un même site correspond au pattern sanctionné
+
+**Check shadowban mensuel** : profil ouvert en navigation privée déconnecté. Page introuvable ou posts invisibles = shadowban probable. Gel de toute activité jusqu'au diagnostic.
 
 ---
 
 ## Note de vérification (2026-07-02)
 
-Routine confrontée au web via 3 audits parallèles (~25 sources, 2025-2026). Ce qui a changé après vérif : plafond de commentaires ramené de 10 à 8 ; plafond dur de 3 posts/semaine ajouté (data interne Reddit) ; « 30 premières minutes » reformulé en 1 h + 6-10 h (le 30 min ne venait que de vendeurs d'upvotes) ; cross-post « toutes les 2-3 semaines » remplacé par espacement 6 h+ / 3-4 subs (l'ancien chiffre n'avait aucune source) ; refresh 90 jours nuancé (source unique, contredite par l'âge moyen de ~900 jours des threads cités) ; ajout du ciblage prioritaire des threads déjà positionnés sur Google, du format 120-200 mots, de la liste fixe de requêtes pour le bilan, et de la section 2026.
+Routine confrontée au web via 3 audits parallèles (~25 sources, 2025-2026). Corrections issues de la vérification : plafond de commentaires 10 → 8 ; plafond dur 3 posts/semaine ajouté (data interne Reddit) ; « 30 premières minutes » remplacé par 1 h + 6-10 h ; cross-post « toutes les 2-3 semaines » remplacé par espacement 6 h+ / 3-4 subs ; refresh 90 jours remplacé par cycle mensuel (source unique, contredite par l'âge moyen ~900 jours des threads cités). Ajouts : ciblage prioritaire des threads positionnés sur Google, format 120-200 mots, liste fixe de requêtes pour la mesure, section 2026.
 
-Biais à garder en tête : presque toutes les sources qui donnent un chiffre précis vendent un outil ou un service Reddit (KarmaGuy, SubredditSignals, ReddiReach, RedShip, Upvote.net…). Les données les moins biaisées : Semrush (étude 248 000 URLs citées, oct. 2025), Peec AI, Adweek/eMarketer (recherche interne Reddit), Search Engine Land, et la mécanique logarithmique du hot ranking (Salihefendic). Les quotas de cette routine s'appuient sur la convergence de 4-6 sources indépendantes par chiffre, pas sur une source unique.
+Biais des sources : la quasi-totalité des sources donnant un chiffre précis vend un outil ou service Reddit (KarmaGuy, SubredditSignals, ReddiReach, RedShip, Upvote.net). Sources les moins biaisées : Semrush (248 000 URLs citées, oct. 2025), Peec AI, Adweek/eMarketer (recherche interne Reddit), Search Engine Land, formule de ranking logarithmique (Salihefendic). Chaque quota repose sur la convergence de 4-6 sources indépendantes, aucun sur une source unique.
