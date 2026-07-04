@@ -37,7 +37,7 @@ Pour les prospects prioritaires (ou dès qu'un prospect répond), on produit un 
 ## Angles d'accroche J1 (25)
 
 - **ImaaGO** (https://imaago.fr) : David Joannès, Directeur-Fondateur ([LinkedIn](https://www.linkedin.com/in/david-joannes))
-  Angle : Le site présente le logiciel de planification de chantier en français mais sans section blog ni ressources visible, et imaago.fr/blog répond en 404 : aucune page ne capte les requêtes métier des conducteurs de travaux.
+  Angle : Une soixantaine d'articles métier vivent sous /actualites (le blog est invisible à /blog, qui répond 404) et des modèles Excel de planning sont déjà en téléchargement gratuit, mais aucune page décisionnelle dédiée type « logiciel planning chantier » n'existe : l'offre se vend via 2-3 posts de blog. (Corrigé le 2026-07-04 : l'angle initial disait « pas de blog », faux.)
 - **Koddex** (https://koddex.io) : Stéphane Dicostanzo, Founder & CEO ([LinkedIn](https://fr.linkedin.com/in/stephane-dicostanzo))
   Angle : Le blog compte 50 articles bien ciblés métier (PLM, certifications, BOM) mais tout est en anglais sans version française, alors que plusieurs sujets visent explicitement le marché français (MBSE in France, défense française, événements hardware en France).
 - **Spore.Bio** (https://spore.bio) : Amine Raji, Co-founder & CEO ([LinkedIn](https://fr.linkedin.com/in/amine-raji))
