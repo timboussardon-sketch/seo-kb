@@ -122,7 +122,7 @@ Les requêtes acheteur du cockpit. Les mots-clés de douleur du protocole. La li
 
 Cette liste ne s'invente pas. Elle sort de ta Search Console.
 
-Dans Qadence, la vue Performances affiche tes données Search Console : clics, impressions, CTR, position. Avec le bilan mois par mois.
+Dans [Qadence](https://qadence.io), la vue Performances affiche tes données Search Console : clics, impressions, CTR, position. Avec le bilan mois par mois.
 
 ![Vue Performances de Qadence : bilan mensuel, clics, impressions, CTR et position depuis la Search Console](assets/qadence-performances.png)
 

@@ -163,6 +163,22 @@ posts.append(post("Routine quotidienne (annexe)", routine_html, "2 juil. · m.à
 if sources_post:
     posts.append(sources_post)
 
+# CTA final : post sponsorisé Qadence, dans la DA Reddit
+CTA = f'''
+<article class="post cta" id="cta-qadence">
+  <div class="vote"><span class="up">{UP}</span><b>•</b><span class="down">{DOWN}</span></div>
+  <div class="pbody">
+    <div class="pmeta"><span class="flair f-orange">SPONSORISÉ</span> Promu par <a href="https://qadence.io">u/timboussardon</a></div>
+    <h2 class="ptitle">Qadence : ton agent SEO branché sur ta Search Console</h2>
+    <div class="pcontent">
+      <p>Les captures de ce playbook viennent de Qadence.</p>
+      <p>Un agent qui surveille ton site, t'alerte, et t'aide à mieux ranker sur Google et dans les IA. Branché sur ta vraie donnée Search Console.</p>
+      <p><a class="ctabtn" href="https://qadence.io">Essayer Qadence →</a></p>
+    </div>
+  </div>
+</article>'''
+posts.append(CTA)
+
 CSS = """
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 :root{
@@ -245,6 +261,9 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .pcontent img{max-width:100%;height:auto;border:1px solid #edeff1;border-radius:10px;margin:4px 0 8px;display:block}
 .pcontent figure{margin:0 0 18px}
 .pcontent figcaption{font-size:12px;color:var(--meta);margin:6px 0 0;line-height:1.5}
+.post.cta{border-color:#FF4500}
+.ctabtn{display:inline-block;background:var(--orange);color:#fff !important;font-weight:600;font-size:14px;border-radius:20px;padding:9px 22px;margin-top:2px}
+.ctabtn:hover{text-decoration:none;background:#e03d00}
 ul.toc{padding-left:0;list-style:none}
 ul.toc li{margin:7px 0;font-size:14.5px;border-bottom:1px solid #edeff1;padding-bottom:7px}
 ul.toc li:last-child{border-bottom:none}
