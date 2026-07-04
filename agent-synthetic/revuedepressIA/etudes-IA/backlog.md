@@ -23,10 +23,11 @@
 - 2026-06-30 · Profil technique des pages citées par les IA : longueur, structure et balisage 2025-2026 → `2026-06-30-stats-profil-technique-pages-citees-ia.md`
 - 2026-07-02 · Parts de marché des moteurs IA en 2026 : Perplexity, ChatGPT Search, Google AI Mode, Copilot, Gemini → `2026-07-02-stats-parts-marche-moteurs-ia.md`
 - 2026-07-03 · Contenu IA-généré et référencement : volume estimé, détection algorithmique et impact sur les classements Google 2025-2026 → `2026-07-03-stats-contenu-ia-seo-classements.md`
+- 2026-07-04 · E-E-A-T mesurable et citations IA : méthodes de quantification, corrélation auteur/entité, benchmarks 2025-2026 → `2026-07-04-stats-eeat-citations-ia-mesure.md`
 
 ## À faire (par priorité)
 
-1. **E-E-A-T mesurable et citations IA : méthodes de quantification, corrélation auteur/entité, benchmarks 2025-2026** — Comment quantifier l'expertise et l'autorité au sens Google Quality Rater Guidelines ? Corrélation entre présence d'un auteur nommé, d'une entité vérifiée (Wikidata, LinkedIn) et le taux de citation dans les réponses IA (ChatGPT, Perplexity, AIO). Complémentaire du profil technique (06-30) : là où cette étude couvrait la structure HTML, ici on couvre le signal d'autorité.
+(vide — ajouter de nouveaux sujets)
 
 ## Sujets écartés (avec raison)
 (vide)
