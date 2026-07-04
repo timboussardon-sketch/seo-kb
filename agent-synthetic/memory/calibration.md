@@ -805,3 +805,19 @@ Info du jour : **CiteLens mesure 60 pct de divergence entre les domaines cités 
 - validate.sh à lancer avant commit
 
 Discipline anti-pattern IA : run propre après relecture. Tentations métaphoriques corrigées en draft : « couche de découverte » → « fonction de découverte » ; « maillon distinct de la chaîne » → « étape distincte du parcours d'achat ». Zéro métaphore résiduelle, zéro personnification, zéro tiret cadratim intra-texte (grep -c « — » = 0), zéro émoji. Vouvoiement maintenu. Verbatims italique attribution explicite (Alper Tekin CiteLens PR + Kanishka Thakur Retail Tech Innovation Hub). Cf. discipline détaillée directives.md 2026-07-03-v2.
+
+## 2026-07-04 (édition v1 cloud)
+
+- pilier info du jour : Niche SEO
+- sujet info du jour : Google Business Profile Reviews bug 3 juillet 2026 (Barry Schwartz SEL 08h48 article 481616 primaire + porte-parole Google verbatim + SEOteric writeup reprise + Sterling Sky Joy Hawkins reference historique 2024)
+- brèves : B1 Actualité SEO (GSC page indexing report fixed 3 juillet 08h40 UTC après 22 jours), B2 Product-Led SEO (On-Page.ai Information Gain Study 150 pages top-3 organique 12 juin Eric Lancheres), B3 GEO (fragmentation outils AI visibility Ahrefs Brand Radar Profound Semrush aucun ne couvre Claude Grok Meta AI DeepSeek)
+- source_diversity : 9 sources indépendantes mobilisées (searchengineland, seroundtable, seoteric, sterlingsky, api.on-page.ai, tryprofound, rankability, ewrdigital, status.search.google.com)
+- claim_density : 8 claims verified retenus (info du jour 3 + B1 1 + B2 2 + B3 2), 3 claims discarded loggés (Course rich result mineur non recoupé, arxiv 2507 non frais, bilan spam update meta-observation redite)
+- novelty_score : 3/5 (info du jour = fait mesuré Google admet publiquement faux positifs algorithmiques sur avis, jour+1 fresh, mais mécanisme spam-detection global sans quantification volume ; angle doctrinal étendu de metriques-visibilite-geo au-delà Bing WMT est le vrai nouveauté)
+- doctrine_fit : 4/5 (info du jour lie explicitement metriques-visibilite-geo signal produit vs artefact pipeline + tabou-visibilite nombre d'avis note moyenne sans unité opérable ; B1 renforce même doctrine avec GSC ; B2 lie information-gain QRG + data-proprietaire avec point empirique aligné ; B3 lie tabou-visibilite avec fragmentation commerciale)
+- redite_risk : faible (Reviews bug 3 juillet = fait Google jour+1 distinct des thèmes 30 derniers jours ; GSC report fixed = incident opérationnel distinct de Bing WMT backfill même si même famille pipeline artifact ; On-Page.ai Information Gain 12 juin = pas encore said_index ; AI visibility tools fragmentation = angle doctrinal cadre pas d'événement fresh mais landscape état de l'art)
+- clickbait_risk : faible (titre factuel description mécanisme + effet + fait horodaté 'Google admet que la détection anti-spam retire des avis Google Business Profile légitimes et pause la collecte de nouveaux avis sur les fiches touchées' aucun superlatif aucune promesse)
+- score global : 3.6/5
+- validate.sh à lancer avant commit
+
+Discipline anti-pattern IA : run propre après relecture. Aucune tentation métaphorique en draft nécessitant correction. Zéro métaphore résiduelle, zéro personnification, zéro tiret cadratim intra-texte (grep -c « — » = 0 body), zéro émoji. Vouvoiement maintenu (« Documentez pour chaque fiche client », « Ne concluez pas », « Attendez au moins », « Si vous facturez », « indiquez explicitement à votre client », « pour un consultant qui livre »). Verbatim porte-parole Google italique blockquote attribution SEL 3 juillet 08h48. Verbatim Eric Lancheres On-Page.ai italique attribution étude. Cf. discipline détaillée directives.md 2026-07-04.

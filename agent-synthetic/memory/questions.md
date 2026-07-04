@@ -332,3 +332,23 @@ Aucun diff de skill proposé ce run. Le skill SKILL.md tient bien sur (a) attrib
 
 - 7 nouvelles explore ajoutées : citelens.io (0.55 vendeur GEO), martechseries.com (0.6 outlet MarTech), tech.einnews.com (0.5 PR syndication), natlawreview.com (0.5 PR syndication), retailtechinnovationhub.com (0.65 primaire Scott Thompson signé), intelligentretail.tech (0.55 reprise), wwd.com (0.7 Tier-2 retail spécialisé), practicalecommerce.com (0.65 curation ecommerce). 2 candidates à surveiller pour passage exploit en revue hebdo si utilisation répétée : retailtechinnovationhub.com (primaire retail tech avec signature Scott Thompson) + wwd.com (Tier-2 spécialisé retail/mode avec Sourcing Journal).
 - practicalecommerce.com est une source de curation d'outils ecommerce/martech utile pour la découverte de nouveaux acteurs à l'intersection SEO/GEO/commerce agentique. Candidate au passage exploit si 2e hit utile confirmé.
+
+## Run 2026-07-04
+
+### Questions à Tim (non bloquantes, à trancher en revue hebdo)
+
+1. **Pilier Niche SEO saturé** : Google Business Profile Reviews bug = 4e Niche SEO parmi les 17 dernières info du jour (0704 + 0701 v2 + 0630 v1 + 0628 v1). C'est le pilier le plus fréquent avec Actualité SEO. Est-ce que la définition de Niche SEO du manifeste (« cas de site / cluster de niche qui s'ouvre ou qui gagne ») doit distinguer plus clairement entre (a) niche site case study d'un vertical qui gagne ou perd nettement (Gabe YMYL santé, Bing Copilot toggle, Walker Sands B2B) et (b) incident opérationnel Google qui affecte un cluster (Business Profile Reviews). Le second cas est arguably plus Actualité SEO qu'Niche SEO. Question de taxonomie.
+
+2. **Article On-Page.ai 12 juin publié avec 22 jours de retard** : la publication a 3 semaines. Publier ce fait en brève doctrinale reste-t-il pertinent, ou faut-il durcir la règle « une brève ne peut porter un fait de plus de 10 jours sans un signal fresh qui la ré-actualise » ? Question de règle éditoriale. Le pattern On-Page.ai est utile comme point empirique aligné avec la fiche data-propriétaire, mais la fraîcheur factuelle est modérée.
+
+3. **Pattern « fragmentation outils AI visibility » comme B3** : cette brève est doctrinale (angle tabou-visibilite mot sans unité) mais s'appuie sur des revues concurrent-contre-concurrent (Profound review Ahrefs). Le biais commercial est explicite dans les sources. Est-ce que cette famille de brèves (état de l'art commercial d'un marché avec biais éditeur explicite) est acceptable, ou faut-il durcir « une brève ne peut pas s'appuyer principalement sur des reviews cross-vendors sans une source neutre tierce » ? Question de politique éditoriale.
+
+4. **Directive « tester une source de mesure de visibilité indépendante » = 23e édition consécutive non tenue** : Semrush Sensor, Mozcast, Wincher, AccuRanker, AWR — aucune n'a été testée. Question méta : est-ce que cette directive doit être escaladée en « ne pas publier de brève Actualité SEO sur un core update ou spam update tant que cette directive n'est pas tenue » ? Ou renoncer explicitement à cette directive si elle n'a pas de valeur ajoutée démontrée ? Question de gouvernance des directives récurrentes non tenues.
+
+### Diffs de skill proposés (à évaluer en revue hebdo)
+
+Aucun diff de skill proposé ce run. Le pattern « confirmation Google d'un incident opérationnel avec faux positif algorithmique admis » est documenté dans directives.md 2026-07-04 méthode confirmée : combinaison primaire journalistique verbatim + reprise indépendante hypothèses causales + expert vertical historique + verbatim porte-parole + portée qualitative explicite + doctrine multi-concepts + recommandations vouvoyantes + prédiction transparence post-incident.
+
+### Sources découvertes ce run
+
+- 5 nouvelles explore ajoutées : seoteric.com (0.55 agence local SEO writeup), sterlingsky.ca (0.75 Joy Hawkins expert local SEO reconnue, candidate exploit après 2e utilisation), api.on-page.ai (0.6 vendeur GEO/PLS étude proprietaire), tryprofound.com (0.6 vendeur AI visibility concurrent Ahrefs biais commercial explicite), rankability.com (0.6 blog outil AI visibility), ewrdigital.com (0.55 agence review). sterlingsky.ca est la candidate la plus forte au passage exploit en revue hebdo (Joy Hawkins référence Google Business Profile Product Expert depuis 2012, source fiable pour tout dossier local SEO / Business Profile).
