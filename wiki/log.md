@@ -1057,3 +1057,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - section « Trouver tes mots-clés avant d'attaquer » : 2 vraies captures Qadence (Performances + table Requêtes GSC, mode démo), lien qadence.io
 - CTA final en post sponsorisé Reddit (bordure orange, bouton Essayer Qadence)
 - ÉTAT : guide validé pixel perfect par Tim, envoi prévu semaine du 6 juillet 2026 ; ne plus toucher au contenu sans lui ; option avant envoi = captures sur sa GSC réelle
+
+## [2026-07-04] redaction | Newsletter process Claude recherche mots-clés
+- output: newsletter-IA/2026-07-04-process-claude-recherche-mots-cles.md (draft, épisode 2 série « Mon process Claude pour... »)
+- format hérité de la newsletter maillage 2026-05-06 (tableau comparatif en bloc 1)
+- preuve : run réel [[keywords/recherche-2026-05-27-agence-seo]] → clustering → décisionnels (78 → 50 → 51 → 10 Tier 1)
+- skill déclenché: ton-de-voix-tim (+ seo-recherche-mots-cles en source du process)
