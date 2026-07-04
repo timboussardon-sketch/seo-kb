@@ -1051,3 +1051,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - vraies captures des vues Qadence (Performances + table Requêtes GSC), prises en local via Playwright sur le mode preview (data démo organikk.co, badge Démo visible)
 - section placée avant §1 : la table Requêtes alimente les threads prioritaires (positions 4-12), les mots-clés de douleur et la liste fixe du vendredi
 - build.py : images embarquées en base64 (HTML autonome), CSS figure/figcaption, break-inside avoid sur les images
+
+## [2026-07-04] session | Playbook Reddit : benchmark guides + section Qadence + CTA, prêt pour diffusion
+- benchmark de 2 guides récents (Search Engine Land, SevenSEO) + tactique Dulait : 6 ajouts sourcés (banc de test, veille positive, demande de marque, outil gratuit, relations mods, ciblage mot-clé) ; rien pris de Sorank (consigne Tim)
+- section « Trouver tes mots-clés avant d'attaquer » : 2 vraies captures Qadence (Performances + table Requêtes GSC, mode démo), lien qadence.io
+- CTA final en post sponsorisé Reddit (bordure orange, bouton Essayer Qadence)
+- ÉTAT : guide validé pixel perfect par Tim, envoi prévu semaine du 6 juillet 2026 ; ne plus toucher au contenu sans lui ; option avant envoi = captures sur sa GSC réelle
