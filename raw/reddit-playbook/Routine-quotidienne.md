@@ -58,6 +58,8 @@ Les IA citent le négatif au même taux que le positif. Environ 6,1 % contre 5 %
 
 Tu réponds factuellement aux threads négatifs sous 48 h.
 
+Et tu amplifies les mentions positives : merci, upvote, réponse. Un thread où l'auteur du produit répond devient plus vivant, donc plus citable (Search Engine Land, 2025).
+
 **2. Réponses (5 min).**
 
 Tu réponds à 100 % des commentaires et DM reçus depuis la veille.

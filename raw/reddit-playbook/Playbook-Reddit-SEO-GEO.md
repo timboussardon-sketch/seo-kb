@@ -269,7 +269,11 @@ Une mesure donne des taux proches : ~5 % pour le positif, ~6,1 % pour le négati
 
 Un thread négatif visible peut orienter durablement la façon dont une IA présente un site.
 
-C'est pour ça que la routine inclut une veille sur tes propres mentions.
+C'est pour ça que la routine inclut une veille sur tes propres mentions. Dans les deux sens.
+
+Le négatif se traite : réponse factuelle sous 48 h.
+
+Le positif s'amplifie : tu remercies, tu upvotes, tu réponds à la mention spontanée (Search Engine Land, 2025). Un thread où l'auteur du produit répond devient plus vivant. Donc plus citable.
 
 ---
 
@@ -397,6 +401,10 @@ Le format le plus adapté pour une entreprise. Partager des données propriétai
 
 Des contenus pédagogiques qui répondent directement à un problème, sans appel à l'action ni lien commercial. L'objectif est d'être utile, pas de générer du trafic.
 
+**Les outils gratuits**
+
+Partager un petit outil qui résout un problème du sub (un calculateur, un vérificateur, un script) est une contribution à part entière. C'est le format Product-Led appliqué à Reddit : l'outil apporte la valeur, personne n'a besoin de vendre (SevenSEO, 2026).
+
 **Les AMA (Ask Me Anything)**
 
 Ce format ne fonctionne que s'il est authentique : une personne identifiable, des réponses détaillées et la volonté d'aborder aussi les questions difficiles. Les échecs sont nombreux lorsque les entreprises tentent de contrôler la conversation, comme l'AMA de Nissan, souvent cité parmi les exemples à ne pas reproduire.
@@ -411,6 +419,7 @@ Enfin, un chiffre montre bien l'état d'esprit de la plateforme : selon Reddit, 
 
 - Établis une liste de 8 à 12 subreddits avec le prompt 8 (subreddit mapping, §9bis), et de 20 à 30 mots-clés de douleur (« best CRM for solopreneur », « [catégorie] alternatives »).
 - Monitore avec Reddit Search et F5Bot (gratuit, 200 mots-clés maximum).
+- Vise en priorité les threads dont le titre contient déjà ton mot-clé business : c'est là que le commentaire à forte valeur avec pitch naturel rapporte le plus (tactique décrite par Nicholas Dulait, ChatSEO, X, juillet 2026).
 - Pars d'un compte de plus de 30 jours avec 200 à 500 points de réputation.
 - Structure chaque réponse ainsi : 3 à 5 conseils concrets, ton expérience personnelle, puis la mention avec disclosure (« une option que j'utilise moi-même est X ») si elle est légitime.
 - Propose un DM si le sub l'autorise, et tracke la source « Reddit » en CRM (UTM).
@@ -485,6 +494,14 @@ La méthode est simple :
 Les expressions à charge émotionnelle signalent les douleurs exploitables. « Je déteste vraiment ». « J'ai désespérément besoin de ».
 
 Le tout alimente le process besoin → mot-clé → cluster.
+
+Et le flux marche aussi dans l'autre sens : Reddit sert de banc de test.
+
+Tu postes une idée en discussion. Tu regardes ce qui accroche : votes, réponses, questions.
+
+Ce qui prend devient l'article long sur ton site, en citant la discussion d'origine (Search Engine Land + SevenSEO, 2025-2026).
+
+Tu n'investis dans une page qu'après avoir vu la demande.
 
 X.com complète Reddit. La recherche en mode expert sort des signaux équivalents (compte premium, ~5 €/mois). Même traitement.
 
@@ -590,6 +607,12 @@ L'AutoModerator est un bot configurable par sub. Il supprime ou flaire par domai
 C'est lui qui supprime les posts sous seuil, sans intervention humaine.
 
 C'est exactement pour ça que la phase de rodage existe (§4).
+
+Un dernier point : les relations se construisent dans la durée.
+
+Réponds aux membres actifs, upvote les bonnes réponses des autres, sois connu des mods avant d'avoir besoin d'eux (SevenSEO, 2026).
+
+C'est ce qui protège le compte le jour où un post est limite.
 
 ---
 
@@ -715,6 +738,14 @@ Tu regardes dans GA ou la GSC les visites qui arrivent depuis reddit.com.
 
 Attends-toi à peu : les liens sont en nofollow et ce n'est pas l'objectif. C'est un bonus, pas un indicateur de réussite.
 
+**7. La demande de marque.**
+
+Tu suis dans la GSC les impressions et clics sur les requêtes qui contiennent « Qadence ».
+
+C'est l'effet réel des mentions selon Google (Mueller, §1) : les gens qui te lisent sur Reddit te cherchent ensuite par ton nom (SevenSEO, 2026).
+
+Question : mon activité Reddit crée-t-elle des recherches sur mon nom ?
+
 ---
 
 ## Sources (audit web, juin 2026)
@@ -771,6 +802,10 @@ Attends-toi à peu : les liens sont en nofollow et ce n'est pas l'objectif. C'es
 - [Reddit GEO Playbook - Medium (mai 2026)](https://medium.com/@tentenco/reddit-geo-playbook-how-to-get-cited-by-chatgpt-and-perplexity-in-2026-75607d1d2b01)
 - [AuthorityTech - Reddit pour les citations Perplexity 2026](https://authoritytech.io/blog/reddit-perplexity-geo-strategy-2026)
 - [Redship - éviter le ban marketing sur Reddit 2026](https://redship.io/learn/how-to-avoid-getting-banned-marketing-reddit)
+
+**Mise à jour juillet 2026 (stratégie organique, banc de test, demande de marque) :**
+- [Search Engine Land - How to build an organic Reddit strategy that drives SEO impact](https://searchengineland.com/build-organic-reddit-strategy-seo-impact-464698)
+- [SevenSEO - Reddit Strategy for SEO & GEO](https://sevenseo.io/blog/reddit-strategy-for-geo-seo/)
 
 **Reddit francophone :**
 - [Influencia - Reddit thermomètre éditorial France](https://www.influencia.net/reddit-le-reseau-social-et-veritable-thermometre-editorial-que-la-france-na-pas-vu-venir-et-quil-va-falloir-serieusement-prendre-en-compte/)
