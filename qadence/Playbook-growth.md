@@ -24,9 +24,9 @@ Le transcript décrit 4 moteurs. Qadence est bootstrap, solo, sans budget d'ampl
 | Lead magnets LinkedIn | **Deuxième moteur.** Coûte du temps, pas d'argent. Tester sur le compte de Tim, garder ce qui marche. |
 | Réseau perso (amplification) | **Oui, systématique.** Première heure de chaque launch : DM aux anciens du bootcamp, clients, réseau SEO LinkedIn. |
 | Reddit marketing | **Oui pour l'EN.** Le reddit-cockpit existe déjà, il suffit d'y ajouter les threads où Qadence est la réponse. |
-| Influenceurs micro-budget (200 à 1000 $ le post LinkedIn) | **Phase 2.** Seulement quand un lead magnet a prouvé sa viralité sur le compte de Tim. On paie pour dupliquer un format gagnant, jamais pour tester. |
-| Whitelisting / ads | **Phase 3.** On sponsorise uniquement un post qui a déjà performé en organique. |
-| UGC farm, clipping | **Non.** Réservé aux boîtes avec du cash et un produit mass market. |
+| Influenceurs micro-budget (200 à 1000 $ le post LinkedIn) | **Phase 2.** Seulement quand un lead magnet a prouvé sa viralité sur le compte de Tim. On paie pour dupliquer un format gagnant, jamais pour tester. Mode d'emploi complet : [[Playbook-influenceurs]]. |
+| Whitelisting / ads | **Phase 3.** On sponsorise uniquement un post qui a déjà performé en organique. Setup Meta : [[Playbook-influenceurs]] §11 (la créative fait le ciblage). |
+| UGC farm, clipping | **Phase 3, pas avant.** Le transcript Jedi la documente sur des SaaS B2B (Lovable, Gamma, n8n), mais elle exige du cash, des formats prouvés et du management quotidien. Paramètres : [[Playbook-influenceurs]] §10. |
 
 Le principe du transcript qui reste vrai à toutes les échelles : personne ne se soucie du ROI d'un post isolé. L'objectif est que la niche SEO francophone (puis anglophone) voie passer Qadence plusieurs fois par semaine, jusqu'à ce que « agent SEO branché Search Console » évoque Qadence par réflexe.
 
