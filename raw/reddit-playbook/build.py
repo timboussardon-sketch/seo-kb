@@ -44,6 +44,17 @@ SEP = "\n\n<!--SPLIT-->\n\n"
 all_md = SEP.join([md for _, md in sections] + [routine_body])
 html_all = subprocess.run(["pandoc", "-f", "markdown-tex_math_dollars", "-t", "html"],
                           input=all_md, capture_output=True, text=True, check=True).stdout
+
+# Images embarquées en base64 : le HTML reste autonome (offline, partageable en un fichier)
+import base64
+def inline_img(m):
+    rel = m.group(1)
+    f = SRC / rel
+    if not f.exists():
+        return m.group(0)
+    b64 = base64.b64encode(f.read_bytes()).decode()
+    return f'src="data:image/png;base64,{b64}"'
+html_all = re.sub(r'src="(assets/[^"]+\.png)"', inline_img, html_all)
 chunks = [c.strip() for c in html_all.split("<!--SPLIT-->")]
 sec_html = chunks[: len(sections)]
 routine_html = chunks[len(sections)]
@@ -68,6 +79,7 @@ FLAIRS = [
     ("En résumé", "TL;DR", "f-orange"),
     ("Le test Qadence", "TEST TERRAIN", "f-green"),
     ("exécution", "ROUTINE", "f-blue"),
+    ("Trouver tes mots-clés", "MOTS-CLÉS", "f-orange"),
     ("1. Visibilité Google", "CONTEXTE", "f-gray"),
     ("2. Reddit dans les moteurs", "GEO", "f-orange"),
     ("3. Politique d", "RÈGLE", "f-red"),
@@ -230,6 +242,9 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .pcontent pre{background:#f6f7f8;border:1px solid #edeff1;border-radius:6px;padding:12px 16px;overflow-x:auto;margin:0 0 14px}
 .pcontent pre code{background:none;border:none;padding:0;font-size:12.5px;line-height:1.6}
 .pcontent hr{border:none;border-top:1px solid #edeff1;margin:22px 0}
+.pcontent img{max-width:100%;height:auto;border:1px solid #edeff1;border-radius:10px;margin:4px 0 8px;display:block}
+.pcontent figure{margin:0 0 18px}
+.pcontent figcaption{font-size:12px;color:var(--meta);margin:6px 0 0;line-height:1.5}
 ul.toc{padding-left:0;list-style:none}
 ul.toc li{margin:7px 0;font-size:14.5px;border-bottom:1px solid #edeff1;padding-bottom:7px}
 ul.toc li:last-child{border-bottom:none}
@@ -253,7 +268,7 @@ ul.toc li:last-child{border-bottom:none}
   .wrap{display:block;max-width:none;padding:0 4mm}
   .sidebar{position:static;width:auto;display:block;margin-bottom:14px}
   .post{break-inside:auto;box-shadow:none}
-  .pmeta,.comment,.about,table,blockquote,pre{break-inside:avoid}
+  .pmeta,.comment,.about,table,blockquote,pre,img,figure{break-inside:avoid}
   .vote{break-inside:auto}
   .ptitle{break-after:avoid}
   a{color:var(--ink)}

@@ -114,6 +114,34 @@ Le bloc commentaires descend à 10-12 minutes par jour.
 
 ---
 
+## Trouver tes mots-clés avant d'attaquer
+
+Tout le playbook repose sur une liste de mots-clés business.
+
+Les requêtes acheteur du cockpit. Les mots-clés de douleur du protocole. La liste fixe du bilan du vendredi.
+
+Cette liste ne s'invente pas. Elle sort de ta Search Console.
+
+Dans Qadence, la vue Performances affiche tes données Search Console : clics, impressions, CTR, position. Avec le bilan mois par mois.
+
+![Vue Performances de Qadence : bilan mensuel, clics, impressions, CTR et position depuis la Search Console](assets/qadence-performances.png)
+
+La table Requêtes liste ce que les gens tapent déjà pour te trouver.
+
+C'est ta matière première pour Reddit :
+
+- les requêtes en position 4 à 12 (« agence geo » à 11,3, « content gap seo » à 12,0) : des threads Reddit rankent souvent au-dessus de toi. Ce sont tes threads prioritaires.
+- les requêtes décisionnelles (« audit seo gratuit », « consultant seo ») : tes mots-clés de douleur pour la recherche Reddit et les prompts du §9bis.
+- les 15 à 20 requêtes les plus business : ta liste fixe du bilan du vendredi.
+
+![Table Requêtes de Qadence : les mots-clés Search Console triés par clics, avec impressions, CTR et position](assets/qadence-requetes.png)
+
+Le tri prend deux minutes. Tu filtres, tu gardes l'intention d'achat, tu écartes l'informationnel pur.
+
+Une requête avec des impressions et peu de clics est un bon candidat : la demande existe, la position se joue ailleurs. Y compris sur Reddit.
+
+---
+
 ## 1. Visibilité Google de Reddit, 2023-2026
 
 ### Croissance 2023-2024

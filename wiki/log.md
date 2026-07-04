@@ -1046,3 +1046,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - sections rédigées par Tim reprises verbatim : Cycle mensuel (fraîcheur), 7. Formats de contribution ; §14 Métriques réécrite (quoi/comment/quelle question) ; §7bis renvoie au prompt 8 pour les subs
 - skill global `redaction-guide` créé (~/.claude/skills) : les 7 règles du rythme + structure guide + interdits + auto-check ; corpus my-voice enrichi (cartographie slope IA + échantillon canonique)
 - livrable : raw/reddit-playbook/Playbook-Reddit-complet.html (DA Reddit) + .pdf, régénérables via build.py
+
+## [2026-07-04] update | Playbook Reddit : section « Trouver tes mots-clés avant d'attaquer »
+- vraies captures des vues Qadence (Performances + table Requêtes GSC), prises en local via Playwright sur le mode preview (data démo organikk.co, badge Démo visible)
+- section placée avant §1 : la table Requêtes alimente les threads prioritaires (positions 4-12), les mots-clés de douleur et la liste fixe du vendredi
+- build.py : images embarquées en base64 (HTML autonome), CSS figure/figcaption, break-inside avoid sur les images
