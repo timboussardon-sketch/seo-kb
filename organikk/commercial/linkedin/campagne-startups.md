@@ -30,6 +30,10 @@
 
 Règles : chaque message adapté au profil, jamais d'envoi en série identique. L'angle vient de la colonne « Angle d'accroche », jamais improvisé. Zéro promesse chiffrée.
 
+## Pré-audits prospection
+
+Pour les prospects prioritaires (ou dès qu'un prospect répond), on produit un pré-audit prospection dans `pre-audits/<slug>.md` : un mini-audit partageable (constats datés et vérifiables, angle business, 3 recos claires) + le bloc approche interne (note de connexion, 1er message, trame de Loom). Premier cas : `pre-audits/origin137.md`. Zéro chiffre de trafic inventé : tout vient du site public, la GSC reste une question à poser.
+
 ## Angles d'accroche J1 (25)
 
 - **ImaaGO** (https://imaago.fr) : David Joannès, Directeur-Fondateur ([LinkedIn](https://www.linkedin.com/in/david-joannes))
