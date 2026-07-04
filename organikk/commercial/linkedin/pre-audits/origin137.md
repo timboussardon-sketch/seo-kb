@@ -9,22 +9,24 @@
 
 ## Mini-audit (partageable)
 
-**Ce qu'on a regardé.** Votre site, votre sitemap, votre robots.txt et une dizaine de pages, le 4 juillet 2026. Pas d'accès à votre Search Console, donc aucun chiffre de trafic avancé ici : uniquement ce qui est public et vérifiable.
+Relevé du 4 juillet 2026 sur le site public (sitemap, robots.txt, une dizaine de pages). Aucun chiffre de trafic avancé sans votre Search Console. Le socle est déjà bon : 137 URLs propres, llms.txt, crawlers IA autorisés, 3 patterns de pages lancés. Les angles ci-dessous sont ce qui manque pour que ce socle produise des demandes entrantes et des citations IA.
 
-**Le constat en une phrase : la machine est construite, c'est la conversion qui n'est pas branchée.**
+**Angle 1 — Publier l'étude que personne n'a : l'IA en production en France.**
+Vous avez 47+ agents IA en production. Délais réels discovery → prod, coûts constatés, causes d'échec des POC repris : aucun intégrateur français n'a publié ces chiffres. Quand un DSI demande à ChatGPT « combien coûte un projet IA » ou « pourquoi les POC échouent », la réponse cite celui qui a la data. Une étude annuelle sourcée sur votre terrain fait de vous cette source, et elle est incopiable. C'est le chantier n°1 : il rapporte des citations IA, des liens entrants et de la preuve, en un seul actif.
 
-Ce qui est au-dessus de la moyenne (et rare) :
+**Angle 2 — Posséder les requêtes de décision « techno × secteur ».**
+Un acheteur en phase de choix ne tape pas « agence IA », il tape « RAG banque », « agents IA industrie », « computer vision pharma ». Vos 12 pages expertise et vos 8 pages secteur existent, mais aucune page ne répond à ces croisements. 25 à 30 pages, priorisées sur les couples où vous avez un cas réel, prennent des requêtes à concurrence faible et à conversion forte. La matière existe déjà dans vos cas d'usage taggés par secteur.
 
-- 137 URLs propres, sitemap mis à jour le 3 juillet, un llms.txt en place et un robots.txt qui accueille explicitement GPTBot, ClaudeBot et PerplexityBot. Presque personne ne fait ça.
-- 3 patterns de pages déjà lancés : 9 pages « agence IA » par ville avec du vrai contenu local, 12 pages expertise, 8 pages secteur.
+**Angle 3 — Passer la preuve d'anonyme à nominative.**
+Vos case studies disent « groupe média » et « ETI finance » pendant que votre home affiche Sodexo, ENGIE, Thales. Tout le trafic que le site capte atterrit sur des pages qui ne peuvent pas closer un DSI en comparaison. Deux ou trois autorisations clients pour des case studies nominatifs et chiffrés changent le taux de conversion de tout le reste, sans créer une seule page.
 
-Les 3 trous qui vous coûtent des demandes entrantes :
+**Angle 4 — Devenir la réponse des IA sur votre catégorie.**
+Votre llms.txt et votre robots.txt montrent que vous y pensez déjà. Ce qui manque, c'est le contenu que les moteurs génératifs peuvent citer : des chiffres sourcés (angle 1), des pages qui tranchent une question de décision (angle 2), des preuves nommées (angle 3). La mesure existe : suivre qui est cité sur « intégrateur IA France », « déployer des agents IA en entreprise » dans ChatGPT et Perplexity, mois par mois.
 
-1. **Vos preuves sont anonymes.** Vos 4 case studies disent « groupe média », « ETI finance », pendant que votre home affiche Sodexo, ENGIE, Thales. Un DSI qui compare atterrit sur des pages qui ne peuvent pas closer. Une seule autorisation client pour passer un case study en nominatif vaut plus que dix pages neuves.
-2. **Votre data dort.** Vous revendiquez 47+ agents IA en production. Délais réels de mise en production, coûts constatés, causes d'échec des POC repris : personne en France n'a publié cette étude. C'est exactement le contenu que ChatGPT et Perplexity citent quand un décideur demande « combien coûte un projet IA ». Vous avez le carburant, il n'est pas exploité.
-3. **Vos expertises et vos secteurs ne se croisent jamais.** « RAG banque », « agents IA industrie », « computer vision pharma » : ce sont les requêtes d'un acheteur en phase de décision, et aucune page n'y répond alors que vos cas d'usage taggés par secteur fournissent déjà la matière. 25 à 30 pages à faible concurrence, priorisées sur vos cas réels.
+**Angle 5 — Étendre le pattern villes qui est déjà validé.**
+Vos 9 pages « agence IA » par ville tiennent la route (contenu local réel, maillage propre) mais couvrent uniquement Paris et Rhône-Alpes. Bordeaux, Nantes, Lille, Toulouse, Marseille sont absentes. Le gabarit est prouvé, l'extension est le chantier le moins cher de la liste, à condition d'avoir du concret à dire par ville.
 
-**Par quoi commencer.** L'étude d'abord (elle règle le problème de preuve et alimente les citations IA), le croisement expertise × secteur en parallèle dès la semaine 3, l'extension des villes ensuite. À 90 jours, la mesure se fait dans votre Search Console et sur les citations IA, pas au ressenti.
+**L'ordre.** L'étude d'abord, le croisement techno × secteur en parallèle dès la semaine 3, les preuves nominatives en transversal, les villes en continu. À 90 jours, la mesure se fait dans la Search Console et sur les citations IA, pas au ressenti.
 
 ---
 
