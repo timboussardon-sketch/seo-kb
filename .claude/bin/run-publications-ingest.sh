@@ -48,16 +48,25 @@ claude_retry() {
   echo "--- auto-commit wiki/ ---"
   git add wiki/ 2>/dev/null || true
   if git diff --cached --quiet; then
-    echo "Aucune nouvelle publication a ingerer, rien a commit."
+    echo "Rien de nouveau a stager (un autocommit WIP concurrent a pu deja commit les fiches)."
   else
     git -c user.email="noreply@anthropic.com" -c user.name="publications-ingest-cron" \
       commit -m "Ingest publications (Algorithme + Organikk) — ${TODAY} (auto)"
-    git pull --rebase --autostash origin main 2>/dev/null || true
+  fi
+
+  # Push si le local est en avance sur origin — que le commit vienne de nous OU d'un
+  # autocommit WIP concurrent. Sinon les fiches restent bloquees en local (bug observe au 1er run).
+  echo "--- push si en avance sur origin ---"
+  git pull --rebase --autostash origin main 2>/dev/null || true
+  AHEAD="$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)"
+  if [ "$AHEAD" != "0" ]; then
     if git push origin main; then
-      echo "Pushed."
+      echo "Pushed ($AHEAD commit(s))."
     else
-      echo "WARN: git push failed. Commit kept locally for next run."
+      echo "WARN: git push failed. Commits gardes en local pour le prochain run."
     fi
+  else
+    echo "A jour avec origin, rien a pousser."
   fi
   echo "=== /publications-ingest run ended at $(date -Iseconds) — exit $EXIT_CODE ==="
 } >> "$LOG_FILE" 2>&1
