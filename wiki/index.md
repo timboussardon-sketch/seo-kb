@@ -31,9 +31,9 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (59)
+## Sources (80)
 
-### Articles (12)
+### Articles (33)
 - [[sources/2026-02-27-algorithme-youtube-ai-overviews]] — YouTube 30% AI Overviews
 - [[sources/2026-03-04-algorithme-lancer-site-sans-cms]] — Test terrain indexation 3j
 - [[sources/2026-03-06-algorithme-etude-citation-ia]] — Benchmark GEO +41%/+30%/+30%
@@ -64,6 +64,27 @@ status: stable
 - [[sources/2026-04-25-scan-arxiv-25-avril]] — Scan ArXiv 18-25 avril (5 papers ACM Web Conf 2026)
 - [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]] — 4 modèles pSEO data-driven (Empreinte SERP, Entités, Suggest, Schema)
 - [[sources/2026-04-25-tim-ton-de-voix-extraction-terrain]] — 35 patterns + 5 intros + 5 closings + 10 règles applicables
+- [[sources/2026-04-25-organikk-reddit-pour-geo]] — Reddit pour citations IA sans ban (ratio 9-1-1, 44% citations sociales AI Overviews)
+- [[sources/2026-04-29-organikk-9-skills-seo-claude]] — 9 skills SEO Claude = méthode Organikk encodée (data-first)
+- [[sources/2026-05-08-organikk-ranker-chatgpt-2026]] — Ranker dans ChatGPT : cite humains+sources, décisionnel d'abord (900M WAU)
+- [[sources/2026-05-12-organikk-role-consultant-seo-2026]] — Consultant 2026 : vendre un système (Obsidian+Claude), pas des heures/TJM
+- [[sources/2026-05-13-algorithme-process-verifier-indexation]] — Audit indexation piloté par skill Claude, 9 points/URL, sans outil payant
+- [[sources/2026-05-15-organikk-ameliorer-redaction-ia-claude]] — Workflow rédaction Claude 5 étapes (data propriétaire + fact-check)
+- [[sources/2026-05-19-algorithme-10-convictions-seo]] — 10 convictions : Claude 95% exec, fin du TJM, data propriétaire seul avantage
+- [[sources/2026-05-27-algorithme-methode-claude-semantique]] — Skill audit sémantique 13 phases (entités pondérées, Surprise/Content Gap Score)
+- [[sources/2026-05-27-organikk-5-skills-seo-technique-claude]] — 5 skills SEO technique (indexation, schema, cannibalisation, maillage, CWV)
+- [[sources/2026-06-02-algorithme-geo-pas-un-scam]] — GEO ≠ scam : autorité passe des backlinks au discours, pages Do résistent
+- [[sources/2026-06-03-organikk-systeme-seo-ia-complet]] — Système SEO 4 workflows sous Claude, IA 80% / humain 20% stratégique
+- [[sources/2026-06-05-algorithme-fin-des-backlinks-llms]] — Backlinks ne prédisent plus les citations IA (r=0,18 vs sémantique 0,87)
+- [[sources/2026-06-09-algorithme-ia-detruire-business-seo]] — Non : valeur → autorité resserrée + data propriétaire + mentions (YouTube)
+- [[sources/2026-06-11-organikk-construire-agent-seo-claude]] — Agent SEO 0→1 : mémoire/skills/routines/boucles, boucle sortie→mesure clé
+- [[sources/2026-06-12-algorithme-youtube-domine-fanout]] — YouTube n°1 citations IA (20,9%), trafic IA convertit mieux, fan-out = nouveau SEO
+- [[sources/2026-06-17-algorithme-creez-votre-agent-seo]] — 3 niveaux prompt/skill/loop, avis clients pèsent en intention d'achat
+- [[sources/2026-06-19-algorithme-test-reddit-seo]] — Test terrain Reddit pour ranker + citations IA (qadence.io), 5 étapes anti-spam
+- [[sources/2026-06-24-algorithme-fin-des-mots-cles]] — Du mot-clé au « modèle de page » défendable, 8 modèles anti-cannibalisation IA
+- [[sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic]] — Requête cliquable vs clic : viser le transactionnel qui échappe à l'AI Overview
+- [[sources/2026-06-29-algorithme-livres-ia-amazon]] — Livres IA >60% sur Amazon, ChatGPT 54,7% du trafic LLM, signaux humains
+- [[sources/2026-07-01-algorithme-x2-trafic-3-mois]] — Cas client X2 trafic/3 mois sans achat de lien (pages qualifiées + data GSC/Reddit)
 - [[sources/2026-04-30-newsletter-maillage-interne]] — 0 → 62 liens internes blog Organikk (cas terrain + skill `maillage-systeme`)
 - [[sources/2026-04-30-qadence-seo-agent-snapshot]] — Edge Function Supabase, dispatcher agent SEO connecté GSC (2643 LoC)
 - [[sources/2026-04-30-tim-posts-linkedin-batch]] — 11 posts LinkedIn (idées + posts publiés)

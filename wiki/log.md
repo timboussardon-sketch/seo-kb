@@ -1063,3 +1063,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - format hérité de la newsletter maillage 2026-05-06 (tableau comparatif en bloc 1)
 - preuve : run réel [[keywords/recherche-2026-05-27-agence-seo]] → clustering → décisionnels (78 → 50 → 51 → 10 Tier 1)
 - skill déclenché: ton-de-voix-tim (+ seo-recherche-mots-cles en source du process)
+
+## [2026-07-05] ingest | Rattrapage scrape Algorithme (Substack) + blog Organikk
+- source_type: article
+- sources créées: 21 (12 Algorithme Substack du 13/05 au 01/07 + 9 blog Organikk du 25/04 au 24/06)
+- Algorithme: [[sources/2026-05-13-algorithme-process-verifier-indexation]] · [[sources/2026-05-19-algorithme-10-convictions-seo]] · [[sources/2026-05-27-algorithme-methode-claude-semantique]] · [[sources/2026-06-02-algorithme-geo-pas-un-scam]] · [[sources/2026-06-05-algorithme-fin-des-backlinks-llms]] · [[sources/2026-06-09-algorithme-ia-detruire-business-seo]] · [[sources/2026-06-12-algorithme-youtube-domine-fanout]] · [[sources/2026-06-17-algorithme-creez-votre-agent-seo]] · [[sources/2026-06-19-algorithme-test-reddit-seo]] · [[sources/2026-06-24-algorithme-fin-des-mots-cles]] · [[sources/2026-06-29-algorithme-livres-ia-amazon]] · [[sources/2026-07-01-algorithme-x2-trafic-3-mois]]
+- Organikk: [[sources/2026-04-25-organikk-reddit-pour-geo]] · [[sources/2026-04-29-organikk-9-skills-seo-claude]] · [[sources/2026-05-08-organikk-ranker-chatgpt-2026]] · [[sources/2026-05-12-organikk-role-consultant-seo-2026]] · [[sources/2026-05-15-organikk-ameliorer-redaction-ia-claude]] · [[sources/2026-05-27-organikk-5-skills-seo-technique-claude]] · [[sources/2026-06-03-organikk-systeme-seo-ia-complet]] · [[sources/2026-06-11-organikk-construire-agent-seo-claude]] · [[sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic]]
+- wikilinks: 6-9 sortants/fiche, 0 lien mort (vérifié)
+- entities/concepts créés: 0 (manquants récurrents signalés à Tim, décision de curation à part)
+- angle SEO: bascule autorité backlinks→discours/mentions, fin du mot-clé→modèle de page, agents SEO (prompt/skill/loop), data propriétaire comme seul avantage durable
