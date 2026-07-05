@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-07-05",
+  "updated": "2026-07-05-v2",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -205,6 +205,17 @@
     "einpresswire": 1.08,
     "concurate.com": 1.04,
     "originality.ai": 1.09,
-    "ramp.com": 1.04
+    "ramp.com": 1.04,
+    "benzinga": 1.04,
+    "coincentral": 0.99,
+    "parameter.io": 0.99,
+    "blockonomi": 0.99,
+    "sg-finance-yahoo": 1.04,
+    "cjr.org": 1.09,
+    "frase.io": 0.99,
+    "ziptie.dev": 0.99,
+    "2x-marketing": 1.04,
+    "derivatex-agency": 1.04,
+    "walkersands": 1.09
   }
 }
