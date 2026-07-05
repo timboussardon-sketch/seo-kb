@@ -27,7 +27,9 @@
 
 ## À faire (par priorité)
 
-(vide — ajouter de nouveaux sujets)
+1. Évolution de la longueur des requêtes : des mots-clés aux prompts conversationnels (2023-2026) — Le glissement mesurable vers les requêtes longues et conversationnelles : benchmarks chiffrés (Google, Ahrefs, études académiques), répartition par type d'intent, implications pour la structure de contenu AEO/GEO.
+2. Autorité et liens entrants des pages citées par les IA : profil off-page des sources préférées (2025-2026) — Complément du profil technique (2026-06-30), axé sur la dimension off-page : DA médian, referring domains, TLD favorisés, corrélation autorité/citation par moteur génératif.
+3. IA dans les agences SEO : adoption des outils, impact sur la productivité et évolution des équipes (2025-2026) — Chiffres d'adoption des outils IA par les professionnels SEO, impact mesuré sur la productivité, effets sur les structures d'équipes et sur la tarification des prestations.
 
 ## Sujets écartés (avec raison)
 (vide)
