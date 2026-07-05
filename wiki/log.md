@@ -1072,3 +1072,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: 6-9 sortants/fiche, 0 lien mort (vérifié)
 - entities/concepts créés: 0 (manquants récurrents signalés à Tim, décision de curation à part)
 - angle SEO: bascule autorité backlinks→discours/mentions, fin du mot-clé→modèle de page, agents SEO (prompt/skill/loop), data propriétaire comme seul avantage durable
+
+## [2026-07-05] curation | Création entities/concepts récurrents manquants (post-scrape Algorithme/Organikk)
+- entities créées (6): [[entities/gemini]] · [[entities/amazon-rufus]] · [[entities/shopify]] · [[entities/wikipedia]] · [[entities/ahrefs]] · [[entities/sparktoro]]
+- concepts créés (5): [[concepts/query-fan-out]] · [[concepts/requete-cliquable-vs-clic]] · [[concepts/dette-cognitive]] · [[concepts/fraicheur-contenu]] · [[concepts/boucle-sortie-mesure]]
+- câblage: wikilinks réciproques ajoutés dans 8 fiches sources (backrefs 2-3/nœud, 0 lien mort)
+- index.md: nœuds ajoutés sous leurs sous-sections + compteurs ; concepts.json à 122 nœuds

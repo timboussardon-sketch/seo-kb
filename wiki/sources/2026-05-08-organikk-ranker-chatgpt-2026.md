@@ -51,3 +51,5 @@ ChatGPT cite des humains et des sources, pas des sites, donc la stratégie s'app
 ## Pages liées
 **Entity** : [[entities/chatgpt-search]] · [[entities/organikk-co]] · [[entities/linkedin]] · [[entities/youtube]] · [[entities/perplexity]]
 **Concepts** : [[concepts/geo]] · [[concepts/grounding-score]] · [[concepts/data-proprietaire]] · [[concepts/surprise-gap]] · [[concepts/answer-first-pattern]] · [[concepts/seo-multi-plateforme]] · [[concepts/tabou-visibilite]] · [[concepts/mots-cles-actionnels]]
+
+**Voir aussi** (curation 2026-07-05) : [[entities/wikipedia]]

@@ -46,24 +46,6 @@ status: stable
 - [[sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse]] — Listicles ChatGPT −30%, AEO Addy Osmani, LinkedIn 360Brew
 - [[sources/2026-04-17-organikk-process-seo-b2b-2026]] — Article pilier blog Organikk (HUB Pilier 1, 2400 mots)
 - [[sources/2026-04-22-algorithme-core-update-fermes-ia]] — Core Update mars 2026, IA spécialisées, brevet US12536233B1
-
-### Doctrine (23)
-- [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim
-- [[sources/2026-03-31-tim-workflow-redaction]] — Workflow rédaction 8 étapes (Article Engine)
-- [[sources/2026-03-31-tim-prompt-systeme-fusionn]] — Prompt système Fusionn SEO Bot
-- [[sources/2026-04-11-seo-ia-tim]] — Analyse Titans/MIRAS → surprise metric, grounding, weight decay
-- [[sources/2026-04-12-tim-skills-seo-proprietary]] — 10 skills SEO propriétaires (hooks §7 AGENTS.md)
-- [[sources/2026-04-13-offre-bootcamp-seo-ia]] — Fiche produit bootcamp #4 (590€, 2 phases)
-- [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] — Avatar + 6 douleurs + objections (9 calls)
-- [[sources/2026-04-13-prompt-pseo-produit-service]] — Méga-prompt pSEO sites produit/service (7 règles)
-- [[sources/2026-04-13-prompt-pseo-non-produit]] — Méga-prompt pSEO sites non-produit (8 règles dont Étape 0 substitution LLM)
-- [[sources/2026-04-15-scan-arxiv-15-avril]] — Scan ArXiv 8-15 avril (5 papers)
-- [[sources/2026-04-15-opendecoder-seo-scoring-system]] — Système scoring 4 axes (Pertinence + Qualité + Potentiel + AEO), 15 prompts LLM
-- [[sources/2026-04-24-reflexion-organikk-4-piliers]] — Doctrine Organikk : Surprise Gap / Grounding / pSEO / AEO + 6 interconnexions + matrice skills
-- [[sources/2026-04-24-cluster-business-organikk-4-piliers]] — Cluster opérationnel : 16 satellites + 3 commerciales + roadmap 90j
-- [[sources/2026-04-25-scan-arxiv-25-avril]] — Scan ArXiv 18-25 avril (5 papers ACM Web Conf 2026)
-- [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]] — 4 modèles pSEO data-driven (Empreinte SERP, Entités, Suggest, Schema)
-- [[sources/2026-04-25-tim-ton-de-voix-extraction-terrain]] — 35 patterns + 5 intros + 5 closings + 10 règles applicables
 - [[sources/2026-04-25-organikk-reddit-pour-geo]] — Reddit pour citations IA sans ban (ratio 9-1-1, 44% citations sociales AI Overviews)
 - [[sources/2026-04-29-organikk-9-skills-seo-claude]] — 9 skills SEO Claude = méthode Organikk encodée (data-first)
 - [[sources/2026-05-08-organikk-ranker-chatgpt-2026]] — Ranker dans ChatGPT : cite humains+sources, décisionnel d'abord (900M WAU)
@@ -85,6 +67,24 @@ status: stable
 - [[sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic]] — Requête cliquable vs clic : viser le transactionnel qui échappe à l'AI Overview
 - [[sources/2026-06-29-algorithme-livres-ia-amazon]] — Livres IA >60% sur Amazon, ChatGPT 54,7% du trafic LLM, signaux humains
 - [[sources/2026-07-01-algorithme-x2-trafic-3-mois]] — Cas client X2 trafic/3 mois sans achat de lien (pages qualifiées + data GSC/Reddit)
+
+### Doctrine (23)
+- [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim
+- [[sources/2026-03-31-tim-workflow-redaction]] — Workflow rédaction 8 étapes (Article Engine)
+- [[sources/2026-03-31-tim-prompt-systeme-fusionn]] — Prompt système Fusionn SEO Bot
+- [[sources/2026-04-11-seo-ia-tim]] — Analyse Titans/MIRAS → surprise metric, grounding, weight decay
+- [[sources/2026-04-12-tim-skills-seo-proprietary]] — 10 skills SEO propriétaires (hooks §7 AGENTS.md)
+- [[sources/2026-04-13-offre-bootcamp-seo-ia]] — Fiche produit bootcamp #4 (590€, 2 phases)
+- [[sources/2026-04-13-analyse-calls-prospects-bootcamp]] — Avatar + 6 douleurs + objections (9 calls)
+- [[sources/2026-04-13-prompt-pseo-produit-service]] — Méga-prompt pSEO sites produit/service (7 règles)
+- [[sources/2026-04-13-prompt-pseo-non-produit]] — Méga-prompt pSEO sites non-produit (8 règles dont Étape 0 substitution LLM)
+- [[sources/2026-04-15-scan-arxiv-15-avril]] — Scan ArXiv 8-15 avril (5 papers)
+- [[sources/2026-04-15-opendecoder-seo-scoring-system]] — Système scoring 4 axes (Pertinence + Qualité + Potentiel + AEO), 15 prompts LLM
+- [[sources/2026-04-24-reflexion-organikk-4-piliers]] — Doctrine Organikk : Surprise Gap / Grounding / pSEO / AEO + 6 interconnexions + matrice skills
+- [[sources/2026-04-24-cluster-business-organikk-4-piliers]] — Cluster opérationnel : 16 satellites + 3 commerciales + roadmap 90j
+- [[sources/2026-04-25-scan-arxiv-25-avril]] — Scan ArXiv 18-25 avril (5 papers ACM Web Conf 2026)
+- [[sources/2026-04-25-pseo-data-driven-organikk-4-modeles]] — 4 modèles pSEO data-driven (Empreinte SERP, Entités, Suggest, Schema)
+- [[sources/2026-04-25-tim-ton-de-voix-extraction-terrain]] — 35 patterns + 5 intros + 5 closings + 10 règles applicables
 - [[sources/2026-04-30-newsletter-maillage-interne]] — 0 → 62 liens internes blog Organikk (cas terrain + skill `maillage-systeme`)
 - [[sources/2026-04-30-qadence-seo-agent-snapshot]] — Edge Function Supabase, dispatcher agent SEO connecté GSC (2643 LoC)
 - [[sources/2026-04-30-tim-posts-linkedin-batch]] — 11 posts LinkedIn (idées + posts publiés)
@@ -135,9 +135,10 @@ status: stable
 ### Tests terrain (1)
 - [[sources/2026-04-13-cas-clients-resultats]] — Preuves chiffrées Tim (1h30→45min, 10→50% closing, top 2 balle de golf)
 
-## Entities (50)
+## Entities (56)
 
-### Outils SEO (4)
+### Outils SEO (5)
+- [[entities/ahrefs]] — Suite SEO (crawl, backlinks, index), source taux d'indexation
 - [[entities/obsidian]] — IDE du wiki (1 source)
 - [[entities/fusionn-io]] — SaaS analyse sémantique SEO/GEO de Tim (6 sources)
 - [[entities/semrush]] — Suite SEO + études (humain 8x #1, ChatGPT 4x conversion) (3 sources)
@@ -176,7 +177,11 @@ status: stable
 ### Quality Raters (1)
 - [[entities/quality-raters-guidelines]] — QRG p.42 "sans effort" (1 source)
 
-### Concepts-marque / Produits IA & plateformes (10)
+### Concepts-marque / Produits IA & plateformes (14)
+- [[entities/gemini]] — LLM + app Google, part trafic LLM ~6→25 %
+- [[entities/amazon-rufus]] — Assistant d'achat IA Amazon (+115 % users)
+- [[entities/shopify]] — E-commerce, trafic IA +50 % conversion
+- [[entities/wikipedia]] — 1re source citée ChatGPT (~47,9 %)
 - [[entities/reddit]] — 2e-3e domaine Google US, n°1-2 citations IA, nofollow (1 source)
 - [[entities/x-twitter]] — Algo Phoenix/Grok, GEO fort / SEO Google faible, reply game (1 source)
 - [[entities/grok]] — Moteur xAI nourri par X, algo Phoenix + Grok Search (1 source)
@@ -193,7 +198,8 @@ status: stable
 - [[entities/miras]] — Multi-Resolution Adaptive Summarization (1 source)
 - [[entities/qadence-seo-agent]] — Edge Function Supabase, dispatcher 9 tools, 2643 LoC (1 source)
 
-### Ressources / Benchmarks (3)
+### Ressources / Benchmarks (4)
+- [[entities/sparktoro]] — Études zero-click (68 % recherches sans clic Q1 2026)
 - [[entities/geo-bench]] — Benchmark GEO Aggarwal 2024 (1 source)
 - [[entities/product-bench]] — Benchmark CORE (1 source)
 - [[entities/sageo-arena-benchmark]] — Benchmark pipeline 170k docs (1 source)
@@ -213,9 +219,11 @@ status: stable
 ### Infrastructure Google (1)
 - [[entities/isi]] — Index Serve Infrastructure, pré-filtre candidats avant ranking
 
-## Concepts (51)
+## Concepts (56)
 
-### AEO / GEO (10)
+### AEO / GEO (12)
+- [[concepts/query-fan-out]] — Décomposition d'une requête en sous-requêtes par le moteur IA
+- [[concepts/requete-cliquable-vs-clic]] — Viser la requête qui garde un clic, pas le volume
 - [[concepts/parasite-seo]] — Exploiter l'autorité d'un domaine tiers (Reddit) pour ranker (1 source)
 - [[concepts/surprise-metric]] — Gradient d'information (2 sources)
 - [[concepts/grounding-score]] — Proximité cosinus + divergence (4 sources)
@@ -252,7 +260,8 @@ status: stable
 - [[concepts/know-simple-know-do]] — Framework remplace TOFU/MOFU/BOFU (4 sources)
 - [[concepts/angle-differenciant-mot-cle]] — Cerner le head term, attaquer la sous-niche décisionnelle (6 sources)
 
-### Métriques & GEO opérationnel (6)
+### Métriques & GEO opérationnel (7)
+- [[concepts/fraicheur-contenu]] — Contenu <3 mois cité ~3x plus par les IA
 - [[concepts/metriques-visibilite-geo]] — Imp_wc + Imp_pos (PAWC) + Subjective Impression (2 sources)
 - [[concepts/answer-first-pattern]] — Réponse directe 2-3 phrases, validé A/B (3 sources)
 - [[concepts/structural-information-geo]] — Title/meta/schema dominent body text (+22% Hit Rate) (1 source)
@@ -271,7 +280,9 @@ status: stable
 - [[concepts/5-types-ancres]] — Exact / partial / sémantique / naming / contextuelle (1 source)
 - [[concepts/pseo-data-driven-models]] — 4 modèles pSEO conformes APIs officielles (1 source)
 
-### Méthode KB / Fondations (5)
+### Méthode KB / Fondations (7)
+- [[concepts/dette-cognitive]] — Garde-fou : l'agent exécute, l'humain décide
+- [[concepts/boucle-sortie-mesure]] — Chaque contenu revient mesuré J+30/J+90
 - [[concepts/persistent-wiki-vs-rag]] — Wiki maintenu par LLM vs RAG (1 source)
 - [[concepts/ingest-workflow]] — 1 source → 10-15 pages touchées (1 source)
 - [[concepts/query-synthesis]] — Questions filées back comme nouvelles pages (1 source)

@@ -45,3 +45,5 @@ Article méthodologique et commercial (positionnement Organikk face à la commod
 ## Pages liées
 **Entity** : [[entities/organikk-co]] · [[entities/qadence-seo-agent]] · [[entities/obsidian]] · [[entities/gsc]] · [[entities/karpathy]]
 **Concepts** : [[concepts/ingest-workflow]] · [[concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas]] · [[concepts/persistent-wiki-vs-rag]] · [[concepts/memory-llm-vs-wiki-persistant]] · [[concepts/data-proprietaire]] · [[concepts/anti-ai-writing]] · [[concepts/objection-confidentialite-rgpd]] · [[concepts/obsidian-as-ide]]
+
+**Voir aussi** (curation 2026-07-05) : [[concepts/boucle-sortie-mesure]]

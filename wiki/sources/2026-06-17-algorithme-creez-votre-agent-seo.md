@@ -42,3 +42,5 @@ Article public. La revendication « remplacer TOUS vos outils SEO » est une pos
 ## Pages liées
 **Entity** : [[entities/qadence-seo-agent]], [[entities/youtube]], [[entities/reddit]]
 **Concepts** : [[concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas]], [[concepts/data-proprietaire]], [[concepts/memory-llm-vs-wiki-persistant]]
+
+**Voir aussi** (curation 2026-07-05) : [[concepts/dette-cognitive]]

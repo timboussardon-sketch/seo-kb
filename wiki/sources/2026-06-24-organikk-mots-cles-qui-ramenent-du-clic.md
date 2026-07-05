@@ -45,3 +45,5 @@ Les seuils cités (60-70 % de clics perdus, gains de 15-35 %) mêlent études ti
 ## Pages liées
 **Entity** : [[entities/organikk-co]] · [[entities/gsc]] · [[entities/chatgpt-search]] · [[entities/grok]] · [[entities/semrush]] · [[entities/reddit]] · [[entities/qadence-seo-agent]]
 **Concepts** : [[concepts/mots-cles-actionnels]] · [[concepts/intention-recherche]] · [[concepts/test-substitution-llm]] · [[concepts/modele-page-variable-prix]] · [[concepts/programmatique-pseo]] · [[concepts/aeo]] · [[concepts/data-proprietaire]]
+
+**Voir aussi** (curation 2026-07-05) : [[entities/sparktoro]] · [[concepts/requete-cliquable-vs-clic]]

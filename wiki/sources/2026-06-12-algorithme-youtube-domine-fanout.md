@@ -45,3 +45,5 @@ Article public non paywallé, mais certains chiffres (Gemini 32,4 % / 13,7 %) so
 ## Pages liées
 **Entity** : [[entities/youtube]], [[entities/google-ai-mode]], [[entities/perplexity]], [[entities/reddit]]
 **Concepts** : [[concepts/seo-multi-plateforme]], [[concepts/metriques-visibilite-geo]], [[concepts/geo]]
+
+**Voir aussi** (curation 2026-07-05) : [[entities/shopify]] · [[concepts/query-fan-out]]

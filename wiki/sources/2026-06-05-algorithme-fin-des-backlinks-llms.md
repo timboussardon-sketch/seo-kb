@@ -46,3 +46,5 @@ Article public complet, non paywallé. Format agrégateur : les chiffres provien
 ## Pages liées
 **Entity** : [[entities/geo-bench]], [[entities/chatgpt-search]], [[entities/perplexity]], [[entities/semrush]]
 **Concepts** : [[concepts/directories-data-ia]], [[concepts/data-proprietaire]], [[concepts/geo]], [[concepts/metriques-visibilite-geo]]
+
+**Voir aussi** (curation 2026-07-05) : [[entities/gemini]]

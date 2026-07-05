@@ -47,3 +47,5 @@ Article public complet, non paywallé. Les benchmarks de conversion agrègent pl
 ## Pages liées
 **Entity** : [[entities/youtube]], [[entities/seer-interactive]], [[entities/linkedin]], [[entities/chatgpt-search]]
 **Concepts** : [[concepts/geo]], [[concepts/aeo]], [[concepts/information-gain]], [[concepts/data-proprietaire]], [[concepts/mots-cles-actionnels]]
+
+**Voir aussi** (curation 2026-07-05) : [[entities/amazon-rufus]] · [[concepts/fraicheur-contenu]]
