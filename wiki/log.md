@@ -1078,3 +1078,13 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - concepts créés (5): [[concepts/query-fan-out]] · [[concepts/requete-cliquable-vs-clic]] · [[concepts/dette-cognitive]] · [[concepts/fraicheur-contenu]] · [[concepts/boucle-sortie-mesure]]
 - câblage: wikilinks réciproques ajoutés dans 8 fiches sources (backrefs 2-3/nœud, 0 lien mort)
 - index.md: nœuds ajoutés sous leurs sous-sections + compteurs ; concepts.json à 122 nœuds
+
+## [2026-07-05] ingest | Scrape auto publications (Algorithme + Organikk)
+- source_type: article
+- sources créées: 8 ([[sources/2026-04-12-organikk-wiki-ia-obsidian-claude]], [[sources/2026-04-05-organikk-audit-seo-claude-7-phases]], [[sources/2026-03-25-organikk-etude-42000-urls-contenu-ia]], [[sources/2026-03-15-organikk-grok-seo-pipeline-data]], [[sources/2026-03-05-organikk-strategie-seo-du-moment]], [[sources/2026-02-20-organikk-information-gain-geo]], [[sources/2026-02-10-organikk-creer-bot-ia-seo]], [[sources/2026-01-28-organikk-premier-agent-seo-ia]])
+- posts sautés (déjà ingérés): 22 (Algorithme: 12/12 de l'archive déjà ingérés, aucune nouveauté depuis 2026-07-01 ; Organikk: 10 récents déjà en fiche individuelle)
+- posts laissés pour le prochain run (cap 8/run): 4 plus anciens Organikk — roadmap-seo-2026 (20 jan), mots-cles-seo-2026 (15 jan), strategie-seo-serrurier-lyon (12 jan), strategie-seo-agence-immobiliere-lyon (8 jan)
+- note dédup: les 12 anciens Organikk (jan→avril) n'avaient pas de fiche individuelle avec clé URL — seulement l'agrégat [[sources/2026-04-12-organikk-blog-scrape]]. Fichage individuel fait pour couper le faux-"NEW" récurrent.
+- wikilinks: min 2/fiche (2 à 7), 0 lien mort (vérifié)
+- nœuds suggérés (à créer en curation): aucun (toutes les cibles existaient)
+- angle SEO transverse: la doctrine Organikk du T1 2026 est déjà là — effort éditorial > outil de production, data propriétaire + faits atomiques comme seul avantage défendable, agent SEO spécialisé duplicable.

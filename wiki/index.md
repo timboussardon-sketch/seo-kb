@@ -31,16 +31,24 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (80)
+## Sources (88)
 
-### Articles (33)
+### Articles (41)
+- [[sources/2026-01-28-organikk-premier-agent-seo-ia]] — Premier agent SEO Claude : config 3 temps, duplicable 30 min/client
+- [[sources/2026-02-10-organikk-creer-bot-ia-seo]] — Bot IA SEO sans code : NotebookLM + Fusionn + GEM Gemini (mémoire client)
+- [[sources/2026-02-20-organikk-information-gain-geo]] — Information gain = levier GEO : faits atomiques, +41% citations via quotes experts
 - [[sources/2026-02-27-algorithme-youtube-ai-overviews]] — YouTube 30% AI Overviews
 - [[sources/2026-03-04-algorithme-lancer-site-sans-cms]] — Test terrain indexation 3j
+- [[sources/2026-03-05-organikk-strategie-seo-du-moment]] — Stratégie SEO du moment : 30-50 KW décisionnels, top 3 sur 80%, RRF + Triade SERP
 - [[sources/2026-03-06-algorithme-etude-citation-ia]] — Benchmark GEO +41%/+30%/+30%
 - [[sources/2026-03-11-algorithme-data-claude-perplexity]] — Data propriétaire + fact-checking
 - [[sources/2026-03-13-algorithme-agents-seo-consultants]] — Agents SEO + GEO basiques
+- [[sources/2026-03-15-organikk-grok-seo-pipeline-data]] — Grok + SEO : seul LLM live X, pipeline data haute surprise, données < 60 jours
 - [[sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas]] — SEO rédaction → information
+- [[sources/2026-03-25-organikk-etude-42000-urls-contenu-ia]] — Étude 42 000 URLs : 80% pos1 humain vs 9% IA pure, corrélation pénalité 0,011
+- [[sources/2026-04-05-organikk-audit-seo-claude-7-phases]] — Audit SEO Claude 7 phases sur GSC seule, 4-6h, sans outil payant
 - [[sources/2026-04-11-algorithme-linkedin-2e-source-ia]] — LinkedIn 2e source IA citée (325k prompts)
+- [[sources/2026-04-12-organikk-wiki-ia-obsidian-claude]] — Système SEO propriétaire Claude + Obsidian : wiki persistant, data > vitesse
 - [[sources/2026-04-12-organikk-blog-scrape]] — 12 articles blog Organikk (bibliothèque publique Tim)
 - [[sources/2026-04-12-organikk-glossaire-scrape]] — 78 termes SEO/GEO/LLM (référence terminologique publique Tim)
 - [[sources/2026-04-15-algorithme-listicles-chatgpt-30pct-baisse]] — Listicles ChatGPT −30%, AEO Addy Osmani, LinkedIn 360Brew
