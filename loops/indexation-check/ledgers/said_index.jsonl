@@ -9,3 +9,7 @@
 {"date":"2026-06-29","angle":"sitemap_canonical_mismatch (trailing slash) - 3e recurrence consecutive, P1 du 2026-06-15 sans effet","report":"reports/indexation-organikk-2026-06-29.md"}
 {"date":"2026-06-29","angle":"lastmod_uniforme - 3e recurrence consecutive, P2 du 2026-06-15 sans effet","report":"reports/indexation-organikk-2026-06-29.md"}
 {"date":"2026-06-29","angle":"sitemap mouvement bidirectionnel +7 cette semaine apres -33 - rotation editoriale, pas regression","report":"reports/indexation-organikk-2026-06-29.md"}
+{"date":"2026-07-06","angle":"audit indexation Organikk wiki - HTTP+sitemap+robots+noindex (run hebdo)","perimetre":"organikk.co/wiki/* (39 fiches) + /wiki (1 index)","report":"reports/indexation-organikk-2026-07-06.md"}
+{"date":"2026-07-06","angle":"sitemap_canonical_mismatch (trailing slash) - 4e recurrence consecutive, P1 du 2026-06-15 sans effet 21 jours","report":"reports/indexation-organikk-2026-07-06.md"}
+{"date":"2026-07-06","angle":"lastmod_uniforme - 4e recurrence consecutive, P2 du 2026-06-15 sans effet 21 jours","report":"reports/indexation-organikk-2026-07-06.md"}
+{"date":"2026-07-06","angle":"sitemap stable 143 URLs (delta 0 vs run precedent) - trajectoire 21j 169-136-143-143","report":"reports/indexation-organikk-2026-07-06.md"}
