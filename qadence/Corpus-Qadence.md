@@ -53,7 +53,7 @@ Chaque page se termine par le même renvoi : l'agent fait ça sur ton site, avec
 
 ## Règle absolue de production
 
-Interdit de créer un contenu que l'on n'a pas dans le vault. Chaque fiche part de ce que le vault couvre (notes, doctrine, skills, transcripts). Le vault est muet sur un sujet : la fiche ne se fait pas, on note le trou et j'écris la matière d'abord.
+70 % du contenu de chaque fiche doit être trouvé dans le vault (notes, doctrine, skills, transcripts, data de grounding). Les 30 % restants servent à la liaison, à la structure et au complément vérifiable. Le vault ne fournit pas les 70 % sur un sujet : la fiche ne se fait pas, on note le trou et j'écris la matière d'abord.
 
 C'est la règle qui a fait bxble : sans matière vault, la page est générique, et une page générique est de la commodité.
 
