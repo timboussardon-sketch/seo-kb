@@ -103,7 +103,7 @@ Le bilan du vendredi est intégré. Ton journal aussi.
 
 ![Le Copilot Reddit de Fusionn : la mission du jour, le programme sur 90 jours, tes subs et tes requêtes suivis au même endroit](assets/copilot-reddit.png)
 
-C'est le même playbook que ce document, transformé en routine que tu suis sans y penser.
+Ce document devient un système que tu exécutes naturellement.
 
 ---
 
