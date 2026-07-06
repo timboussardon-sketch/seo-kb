@@ -75,13 +75,35 @@ Je mesure deux choses :
 - les citations de Qadence.io dans Perplexity, ChatGPT et les AI Overviews
 - les positions Google sur des mots-clés décisionnels : « outil IA », « agent SEO », « [catégorie] alternatives »
 
-Je pars d'un compte ancien, quasi inactif depuis un an.
+Je pars d'un compte neuf.
 
 Deux règles de conduite : pas de spam, pas d'action ponctuelle sans suite.
 
 Le délai attendu avant un effet mesurable : 60 à 90 jours (§2).
 
 Le point de coupe : bilan J+45, mi-août 2026. Sans thread positionné, citation IA ni mention entrante, j'arrête le test.
+
+---
+
+## Le Copilot Reddit : un outil gratuit pour piloter tout ça
+
+Toute cette routine tient dans un outil gratuit : le Copilot Reddit de Fusionn.
+
+Tu le trouves sur [fusionn.co/copilot-reddit](https://fusionn.co/copilot-reddit). Rien à installer.
+
+Il déroule le programme sur 90 jours, phase par phase.
+
+Chaque matin, il te donne ta mission du jour : combien de commentaires, dans quels subs, quoi écrire.
+
+Tu coches ce que tu fais, tu gagnes des points, tu vois ta régularité sur un calendrier.
+
+Tu gardes ta liste de subs et ta liste de requêtes acheteur au même endroit, avec un accès direct à Reddit et aux moteurs pour vérifier où tu es cité.
+
+Le bilan du vendredi est intégré. Ton journal aussi.
+
+![Le Copilot Reddit de Fusionn : la mission du jour, le programme sur 90 jours, tes subs et tes requêtes suivis au même endroit](assets/copilot-reddit.png)
+
+C'est le même playbook que ce document, transformé en routine que tu suis sans y penser.
 
 ---
 
@@ -140,55 +162,7 @@ Le tri prend deux minutes. Tu filtres, tu gardes l'intention d'achat, tu écarte
 
 Une requête avec des impressions et peu de clics est un bon candidat : la demande existe, la position se joue ailleurs. Y compris sur Reddit.
 
----
-
-## 1. Visibilité Google de Reddit, 2023-2026
-
-### Croissance 2023-2024
-
-Juillet 2023 : reddit.com est le 68e domaine le plus visible sur Google US.
-
-Juillet 2024 : top 5.
-
-L'indice Sistrix passe de 95,1 à 1 370 points. +1 328 % (Sistrix via Amsive).
-
-Le trafic organique estimé suit : de ~57 M à ~427 M de visites mensuelles. +649 % (estimation Ahrefs via Amsive, pas une donnée officielle Reddit).
-
-Trois causes expliquent cette montée :
-
-- **L'update « hidden gems »** (automne 2023). Google remonte le contenu expérientiel et les forums. Glenn Gabe mesure sur 97 forums : 88 % gagnent plus de 100 % de visibilité en un an. Reddit gagne entre +378 % (Semrush) et +978 % (Sistrix) selon l'outil.
-- **Le filtre « Discussions and forums »**. Une zone dédiée aux forums dans les résultats. Reddit remonte sur les requêtes conversationnelles : « best X for Y », avis, troubleshooting.
-- **L'accord Google-Reddit** (février 2024, ~60 M$/an). Google accède en temps réel à l'API Reddit pour ses modèles et ses réponses. Google déclare ce contrat distinct du classement organique. La corrélation temporelle est documentée par tous les outils ; la causalité directe ne l'est pas. La FTC a ouvert une enquête non publique en mars 2024.
-
-### Correction 2025
-
-7 janvier 2025 : Reddit perd ~350 points d'indice Sistrix. Il passe du 3e au 4e rang US.
-
-Les core updates 2025 (mars, juin, août, décembre) créent de la volatilité sur les sites communautaires : Reddit, Quora, Stack Exchange.
-
-Décembre 2025 : Reddit chute pendant l'update, puis revient à son niveau en une semaine.
-
-Août 2025 : il touche brièvement le 2e rang US, devant Amazon.
-
-Reddit reste installé dans le top 5 US. Avec une volatilité par paliers.
-
-### Mécanisme de ranking (liens en nofollow)
-
-Les liens sortants de Reddit sont en nofollow.
-
-Ils ne transmettent pas d'autorité au sens backlink.
-
-Si le plan est d'aller chercher des backlinks Reddit pour le ranking, c'est le mauvais plan.
-
-Aujourd'hui, trois facteurs expliquent pourquoi un thread Reddit se positionne :
-
-- le crawl quasi temps réel, facilité par l'accord de données
-- les signaux d'engagement : temps passé, interactions
-- le critère « expérience » de l'E-E-A-T, cible déclarée de l'update hidden gems
-
-John Mueller (Google) précise deux choses. Les liens Reddit apportent du trafic référent. Les mentions sans lien ne sont pas un facteur de ranking direct.
-
-Il y a aussi un effet de second tour : quand un thread ranke, des médias le reprennent. Et créent des liens dofollow vers les sites mentionnés.
+<p><a class="ctabtn" href="https://qadence.io">Auditer tes mots-clés gratuitement sur Qadence →</a></p>
 
 ---
 
@@ -380,6 +354,12 @@ Le compte est opérationnel. La routine quotidienne prend le relais : 4 à 6 com
 ## 5. Sélection des subreddits
 
 Pour trouver les bons subreddits, commence par la recherche Reddit avec le filtre « Communities ».
+
+Pour dégrossir plus vite, lance ce prompt dans une IA avec recherche web (c'est le prompt 8, subreddit mapping, du §9bis). Tu remplaces `[X]` par ta thématique.
+
+> Pour la thématique [X], liste-moi les 10 subreddits les plus actifs avec : nombre de membres, volume de posts par semaine, les 3 tags/flairs les plus utilisés, le type d'intention dominant (question, avis, rant, showcase, recommandation).
+
+Tu récupères une première liste de subs candidats. Tu affines ensuite à la main.
 
 Puis regarde Subreddit Stats (activité, croissance), SnoopSnoo (démographie, parfois indisponible) et Redditlist.
 
@@ -770,7 +750,7 @@ Attends-toi à peu : les liens sont en nofollow et ce n'est pas l'objectif. C'es
 
 Tu suis dans la GSC les impressions et clics sur les requêtes qui contiennent « Qadence ».
 
-C'est l'effet réel des mentions selon Google (Mueller, §1) : les gens qui te lisent sur Reddit te cherchent ensuite par ton nom (SevenSEO, 2026).
+C'est l'effet réel des mentions selon Google (John Mueller) : les gens qui te lisent sur Reddit te cherchent ensuite par ton nom (SevenSEO, 2026).
 
 Question : mon activité Reddit crée-t-elle des recherches sur mon nom ?
 

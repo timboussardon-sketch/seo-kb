@@ -78,6 +78,7 @@ def coms_for(title):
 FLAIRS = [
     ("En résumé", "TL;DR", "f-orange"),
     ("Le test Qadence", "TEST TERRAIN", "f-green"),
+    ("Le Copilot Reddit", "OUTIL GRATUIT", "f-orange"),
     ("exécution", "ROUTINE", "f-blue"),
     ("Trouver tes mots-clés", "MOTS-CLÉS", "f-orange"),
     ("1. Visibilité Google", "CONTEXTE", "f-gray"),
