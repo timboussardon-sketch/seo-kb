@@ -51,6 +51,14 @@ Une fiche diagnostic pointe une métrique du dictionnaire. Une page sujet classe
 
 Chaque page se termine par le même renvoi : l'agent fait ça sur ton site, avec ta Search Console.
 
+## Règle absolue de production
+
+Interdit de créer un contenu que l'on n'a pas dans le vault. Chaque fiche part de ce que le vault couvre (notes, doctrine, skills, transcripts). Le vault est muet sur un sujet : la fiche ne se fait pas, on note le trou et j'écris la matière d'abord.
+
+C'est la règle qui a fait bxble : sans matière vault, la page est générique, et une page générique est de la commodité.
+
+Conséquence sur les backlogs : la liste des fiches d'un corpus se filtre d'abord par la couverture du vault. Le potentiel SEO d'une fiche passe après.
+
 ## Ordre de construction
 
 1. Lexique des modificateurs, côté agent d'abord : dataset + branchement dans la table skills, on vérifie que ses classifications de requêtes s'améliorent. Les pages publiques viennent après validation.
