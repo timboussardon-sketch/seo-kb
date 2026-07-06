@@ -900,3 +900,43 @@ Sources nouvelles ajoutées.
 - digiday.com (0.7, presse marketing/ads établie corroboration OpenAI hiring 3 postes format publicitaire).
 
 Total sources.jsonl après ce run : environ 580 lignes (2 explore nouvelles + 5 exploit incréments).
+
+## 2026-07-06 v2 — Recherche agentique Salesforce Agentforce Commerce GA + ChatGPT juillet
+
+Grille de score.
+
+- source_diversity : 11 (salesforce.com primaire + 3 corroborations Digital Commerce 360/Martech Notes/CX Today info du jour + 5 corroborations Canel SEL/SEJ/Roundtable/Optimixed/X @facan + 6 corroborations Fake Perplexity Microsoft primaire/Hacker News/Malwarebytes/TechRepublic/Windows Report/TechTimes + 5 corroborations Claude Foundry Anthropic/Claude.com/Windows News/EdTech Innovation Hub/AI Business + Releasebot Enterprise admin analytics)
+- claim_density corps : 7 verified (C-2026-07-06-v2-1 à 7) + 6 discarded explicites (D1-D6)
+- novelty_score : 3/5 (fait GA Agentforce Commerce publiquement daté et connecteur ChatGPT juillet 2026 franchement neuf, brèves Canel + Fake Perplexity extension + Claude Foundry frais mais chaque brève reste fait vendeur/vendor primaire + doctrine articulée moat opérationnel pipeline catalogue distincte moat textuel = complément fiche)
+- doctrine_fit : 5/5 (3 concepts touchés avec ajouts explicites à 2 fiches : data-propriétaire moat opérationnel pipeline catalogue vs moat textuel + metriques-visibilite-geo 2e grille mesure canal agent commerce distincte de la citation)
+- redite_risk : faible (Salesforce Agentforce Commerce distinct de Salesforce Summer 26 A2A MCP 0618 protocoles + distinct Agentforce Sales décembre 2025 Sales pas Commerce + distinct v1 GEO Cloudflare BotBase, brèves distinct de tout ce qui précède)
+- clickbait_risk : faible (titraille descriptive verbe d'action GA fixée + implication doctrinal l'objet à optimiser sort du site)
+
+Note globale : 3.6/5.
+
+Angle. Salesforce fait passer Agentforce Commerce en GA le 29 juin 2026 sur les 3 agents Shopper/Buyer/Merchant, annonce l'intégration ChatGPT en GA en juillet 2026 (Google AI Mode et Gemini plus tard dans l'été). L'implication doctrinale n'est pas la disponibilité technique du produit, c'est le déplacement de l'unité de discovery : pour un vendeur qui passe par ce canal, l'objet à optimiser n'est plus la page produit publique mais le flux catalogue synchronisé depuis Business Manager. La condition d'entrée effective devient la complétude et la fraîcheur du flux catalogue en amont, pas la qualité SEO de la page produit. Le canal agent commerce demande une seconde grille de mesure, distincte de la citation générative textuelle.
+
+Doctrine touchée. agentic-search (instrumentation opérable côté vendeur du principe "être sélectionné par l'agent pour accomplir une tâche" : l'agent Shopper est un composant Salesforce avec accès inventaire et checkout du client Salesforce, pas un module autonome qui parcourt le web). data-proprietaire (ligne à ajouter fiche : le pipeline catalogue temps réel entre PIM/OMS et connecteur d'agent devient un moat opérationnel autant qu'informationnel, distinct du moat textuel de data propriétaire écrite). metriques-visibilite-geo (ligne à ajouter fiche : les 3 métriques posées Imp_wc/Imp_pos/Subjective Impression mesurent la citation dans une réponse générative textuelle et ne couvrent pas la sélection produit par agent commerce qui produit une action d'achat plutôt qu'une phrase citante ; le canal agent commerce demande une seconde grille structurée autour du taux de sélection produit par requête, du volume de commandes déclenchées via connecteur agent, et du rapport catalogue synchronisé complet vs partiel).
+
+Prédictions ajoutées.
+
+- P-2026-07-06-v2-1 (D'ici 2026-12-31, mesure taux sélection produit agent Shopper Agentforce cohort >=10 clients Salesforce ventilée par catégorie).
+- P-2026-07-06-v2-2 (D'ici 2026-12-31, connecteur agent commerce concurrent Shopify/BigCommerce/Adobe Commerce atteint GA ChatGPT périmètre équivalent 3 agents Salesforce).
+- P-2026-07-06-v2-3 (D'ici 2026-12-31, Anthropic publie mesure adoption Claude Enterprise via Microsoft Foundry chiffrée).
+
+Sources nouvelles ajoutées.
+
+- martechnotes.com (0.65, martech notes B2B media, corroboration Salesforce GA).
+- cxtoday.com (0.65, CRM/CX media, corroboration Salesforce GA).
+- thehackernews.com (0.75, référence sécurité, corroboration Fake Perplexity extension).
+- malwarebytes.com (0.75, vendeur sécurité primaire blog, corroboration Fake Perplexity extension).
+- techrepublic.com (0.7, tech media référence, corroboration Fake Perplexity extension).
+- claude.com (0.75, blog Claude officiel Anthropic distinct de anthropic.com, Claude Foundry corroboration).
+- windowsnews.ai (0.5, tech news Windows, Claude Foundry relais).
+- edtechinnovationhub.com (0.55, education tech media, Claude Foundry relais).
+- aibusiness.com (0.65, AI B2B media Informa, Claude Foundry).
+- releasebot.io (0.55, aggregator release notes multi-vendors, Claude Enterprise admin analytics documentation).
+
+Incréments exploit : salesforce.com +1 (poids 1.4), searchengineland.com +1 (1.3), searchenginejournal.com +1 (1.3), seroundtable.com +1 (1.2), optimixed.com +1 (1.0), microsoft.com/security/blog +1 (1.13), anthropic.com +1 (1.13), windowsreport.com +1 (1.0), techtimes.com +1 (1.0), digitalcommerce360.com +1 (1.08).
+
+Total sources.jsonl après ce run : environ 590 lignes (10 explore nouvelles + 10 exploit incréments).
