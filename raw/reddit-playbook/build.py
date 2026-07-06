@@ -196,8 +196,13 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .topbar{background:#fff;border-bottom:1px solid #edeff1;padding:8px 20px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:9}
 .logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;letter-spacing:-.02em}
 .logo .disc{width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center}
-.searchbar{flex:1;max-width:560px;background:#f6f7f8;border:1px solid #edeff1;border-radius:20px;padding:8px 16px;font-size:13.5px;color:var(--meta)}
+.searchbar{flex:1;max-width:560px;background:#f6f7f8;border:1px solid #edeff1;border-radius:20px;padding:8px 16px;font-size:13.5px;color:var(--ink);font-family:inherit;outline:none;-webkit-appearance:none}
+.searchbar::placeholder{color:var(--meta)}
 .searchbar:hover{border-color:var(--blue)}
+.searchbar:focus{border-color:var(--blue);background:#fff}
+.post.nomatch{display:none}
+.searchmsg{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 18px;font-size:14px;color:var(--meta);margin-bottom:14px}
+mark{background:#ffe08a;color:inherit;border-radius:2px;padding:0 1px}
 .tb-user{margin-left:auto;font-size:12.5px;color:var(--meta)}
 .tb-user b{color:var(--ink)}
 
@@ -308,7 +313,7 @@ html = f"""<!doctype html>
 
 <div class="topbar">
   <div class="logo"><span class="disc">{UP}</span> playbook</div>
-  <div class="searchbar">Rechercher dans r/PlaybookSEO</div>
+  <input class="searchbar" id="pbsearch" type="search" placeholder="Rechercher dans r/PlaybookSEO" autocomplete="off">
   <div class="tb-user"><b>u/timboussardon</b> · test en cours : Qadence.io</div>
 </div>
 
@@ -337,6 +342,33 @@ html = f"""<!doctype html>
 {''.join(posts)}
 </main>
 </div>
+
+<script>
+(function(){{
+  var input = document.getElementById('pbsearch');
+  var feed = document.querySelector('.feed');
+  var posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
+  var msg = document.createElement('div');
+  msg.className = 'searchmsg';
+  msg.style.display = 'none';
+  feed.insertBefore(msg, feed.firstChild);
+  function norm(s){{ return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,''); }}
+  function run(){{
+    var q = norm(input.value.trim());
+    if(!q){{ posts.forEach(function(p){{ p.classList.remove('nomatch'); }}); msg.style.display='none'; return; }}
+    var n = 0;
+    posts.forEach(function(p){{
+      var hit = norm(p.textContent).indexOf(q) !== -1;
+      p.classList.toggle('nomatch', !hit);
+      if(hit) n++;
+    }});
+    if(n === 0){{ msg.textContent = 'Aucun post ne contient « ' + input.value.trim() + ' ».'; msg.style.display='block'; }}
+    else {{ msg.textContent = n + (n>1 ? ' posts trouvés' : ' post trouvé') + ' pour « ' + input.value.trim() + ' ».'; msg.style.display='block'; }}
+  }}
+  input.addEventListener('input', run);
+  input.addEventListener('keydown', function(e){{ if(e.key === 'Escape'){{ input.value=''; run(); }} }});
+}})();
+</script>
 
 </body>
 </html>"""
