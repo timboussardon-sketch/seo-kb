@@ -4,8 +4,8 @@ title: Backlog d'ingest
 aliases: [ingest-backlog, backlog, raw-non-traite, file-ingest]
 tags: [meta, ingest, capture, pipeline, backlog]
 created: 2026-05-16
-updated: 2026-06-29
-last_sweep: 2026-06-29
+updated: 2026-07-06
+last_sweep: 2026-07-06
 sources: 0
 confidence: high
 status: living-doc
@@ -19,9 +19,9 @@ status: living-doc
 >
 > Méthode : un fichier `raw/` est "traité" quand un `wiki/sources/*.md` le couvre (directement ou via une source agrégée documentée). Sinon il est dans le backlog. Un fichier peut être explicitement `skip` (faible valeur doctrinale, déjà couvert, archive).
 
-> **Sweep 2026-06-29** : 341 fichiers `raw/` scannés (+10 vs sweep précédent), backlog à **201** (P1:92 P2:38 P3:71). Toute la matière fraîche est du terrain client **Leexi** (SaaS notetaker RGPD), client actif de la semaine. **Nouvelle matière non digérée (10 fichiers, tous P1)** : dossier `organikk/clients/leexi/` — 2 calls de découverte (`leexi-call-2026-06-24` + `-notes-meet`), le livrable mots-clés business (`livrable-mots-cles-business`), l'arborescence de cocons (`arborescence-cocons`) et le travail mots-clés (`keywords/clusters-2026-06-26`, `cocon-1-notetaker-reunion`, `cocon-2-prise-de-notes-rgpd`, `cocon-3-middle-funnel-metier`, `liste-mots-cles-complete`), + le résumé de call Alexia (`alexia/2026-06-24-call-1-resume`). Aucun de ces fichiers n'a de `wiki/sources/` : le call 05-21 et la recherche RGPD ne sont mobilisés que dans la query [[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]], jamais ingérés en source. **Mouvement de skip** : `raw/golfiller/golfiller-strat.md` sort du backlog → skip documenté (2ᵉ non-exécution actée [[revue-hebdo/2026-W26]]). Le lot W27 voté en W26 (`etude-ctr-ai-overviews-gsc` + dossier Leexi, tirés par la newsletter « mots-clés non mangés ») n'est **toujours pas exécuté** — repris en prochain lot ci-dessous. Le gros bloc reste **FG-Formation** (40 fichiers, [[sources/2026-04-30-fg-formation-pseo-cas-client]] ne couvre que les 2 notes `raw/notes/fg-formation/`). Backlog > 80 → on liste les 15 premiers par tier (oldest-first) et on agrège le reste par groupe.
+> **Sweep 2026-07-06** : 349 fichiers `raw/` scannés (+8 vs sweep précédent), backlog à **210** (P1:98 P2:38 P3:74). **Nouvelle matière non digérée (9 fichiers)** : dossier client frais **Victoria Garden** (appart-hôtel Bordeaux, 3 fichiers P1 : `analyse-semantique-appart-hotel-bordeaux`, `brief-hub-appart-hotel-bordeaux`, `journal-appart-hotel-bordeaux`) — client actif produit en une session complète (analyse sémantique + brief hub + journal), aucun `wiki/sources/`. Le **pré-call Origin 137** (`organikk/pré-call/origin137.md`, o137.ai — moat commercial frais, P1). Le **dossier `raw/reddit-playbook/`** (3 fichiers) : `Playbook-Reddit-SEO-GEO.md` (`source_type: doctrine`, 36 sources — doctrine propriétaire parasite-SEO/GEO, référence canonique du skill `redaction-guide` validée [[log]] 2026-07-03) et `Routine-quotidienne.md` (`source_type: doctrine`, routine opérationnelle) → P1 ; `Journal.md` (`source_type: test-terrain`, tracker Qadence live) → P3. Enfin **2 transcripts vidéo externes growth** (`transcripts/video-growth-saas-ia-distribution`, `-influencer-flywheel-jedi` — playbooks distribution/influence, tagués qadence, valeur non-SEO-core) → P3. **Reddit est du terrain vivant** : le skill `reddit-cockpit` tourne en quotidien, le test Qadence.io est en cours — le playbook est le candidat d'ingest le plus tiré par du travail réel. Le lot W27 voté en W26 (`etude-ctr-ai-overviews-gsc` + dossier Leexi, tirés par la newsletter « mots-clés non mangés ») n'est **toujours pas exécuté** — repris en prochain lot ci-dessous. Le gros bloc reste **FG-Formation** (40 fichiers, [[sources/2026-04-30-fg-formation-pseo-cas-client]] ne couvre que les 2 notes `raw/notes/fg-formation/`). Backlog > 80 → on liste les 15 premiers par tier (oldest-first) et on agrège le reste par groupe.
 
-## Priorité 1 — Données terrain propriétaires non capturées (le moat qui fuit) — 92
+## Priorité 1 — Données terrain propriétaires non capturées (le moat qui fuit) — 98
 
 Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non rejouable, qui alimente directement la doctrine et le discours commercial. Les laisser non traitées, c'est laisser fuir le moat. Oldest-first, 15 premiers listés.
 
@@ -43,8 +43,11 @@ Ce sont les sources qui justifient l'existence de la KB : du terrain unique, non
 | `raw/articles/modele-production/modele-mots-clés.md` | 2026-05-27 | Modèle de production scalable. Croise [[concepts/programmatique-pseo]] et [[concepts/pseo-data-driven-models]] |
 | `raw/bootcamp4/sequencage-semaine-4.md` | 2026-05-28 | Séquençage semaine 4, structure pédagogique |
 
-**+ 77 autres P1, par groupe :**
+**+ 83 autres P1, par groupe :**
 
+- **Reddit — playbook propriétaire SEO/GEO** (2026-06-18 → 07-04, 2 fichiers) : `reddit-playbook/Playbook-Reddit-SEO-GEO.md` (`source_type: doctrine`, 36 sources — stratégie parasite-SEO + GEO sur Reddit, référence canonique du skill `redaction-guide`) + `Routine-quotidienne.md` (routine opérationnelle quotidienne). **Terrain vivant** : `reddit-cockpit` tourne en quotidien, test Qadence.io en cours. Doctrine propriétaire non ingérée en `wiki/sources/` — appelle des `entities/reddit` + `concepts/parasite-seo`. **Candidat de tête pour le prochain lot.**
+- **Victoria Garden — dossier client frais** (2026-07-01, 3 fichiers) : `clients/victoriagarden/victoriagarden-analyse-semantique-appart-hotel-bordeaux-2026-07-01`, `-brief-hub-appart-hotel-bordeaux-2026-07-01`, `-journal-appart-hotel-bordeaux-2026-07-01` — client actif appart-hôtel Bordeaux, livrable complet produit en une session (analyse sémantique + brief hub pilier + journal). Aucun `wiki/sources/`.
+- **Origin 137 — pré-call** (2026-07-04, 1 fichier) : `organikk/pré-call/origin137.md` (o137.ai, `type: pre-call` — pré-audit prospection LinkedIn, moat commercial frais).
 - **Leexi — dossier client complet** (2026-05-21 → 06-27, 12 fichiers) : `clients/leexi/leexi.md` (note maître client), `leexi-call-2026-05-21`, `leexi-call-2026-06-24` + `-notes-meet` (3 calls de découverte SaaS notetaker RGPD), `livrable-mots-cles-business`, `arborescence-cocons` (architecture de cocons), `keywords/` (5 : `recherche-2026-06-16-rgpd`, `clusters-2026-06-26`, `cocon-1-notetaker-reunion`, `cocon-2-prise-de-notes-rgpd`, `cocon-3-middle-funnel-metier`, `liste-mots-cles-complete`). **Bloc terrain client le plus frais du backlog** : calls réels + livrables mots-clés produits, mobilisés dans [[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]] mais aucun ingéré en `wiki/sources/`. Tire le fil rouge éditorial « mots-clés que les IA ne mangent pas ». **Lot W27 voté, non exécuté.**
 - **Alexia — dossier client** (2026-06-10 → 06-24, 3 fichiers) : `clients/alexia/2026-06-10-call-cadrage-adrien`, `-resume-call-envoye`, `2026-06-24-call-1-resume` — calls de cadrage archivés en raw (actions `client` au [[log]]) mais sans `wiki/sources/`.
 - **FG-Formation — dossier client complet** (2026-06-13, 40 fichiers) : `clients/fgformation/calls/` (32 — audits blancs ×5, coachings ×6, R1 ×3, RDV ×17, `SYNTHESE-appels-anonymisee`) + 8 livrables (`fgformation` maître, `-clusters`, `-gsc-quickwins`, `-modeles-pseo`, `-mots-cles`, `-mots-cles-decisionnels`, `-mots-cles-recherche-exhaustive`, `-personas-problematiques`). **Le plus gros bloc terrain frais de tout le backlog** : 32 transcripts d'appels réels = matière brute pour [[concepts/avatar-freelance-sans-systeme]] et le discours commercial, + livrables pSEO produits. Aucun équivalent wiki.
@@ -85,7 +88,7 @@ Articles, newsletters et posts publiés qui n'ont ni source wiki ni [[preuves/in
 
 > Note boucle preuves : pour chaque article publié de P2, créer la source ET la [[preuves/index|fiche preuve]] qui le relie à l'hypothèse doctrinale qu'il teste (ex. les pSEO secteur×ville testent [[hypotheses#H-002]] et [[hypotheses#H-007]]).
 
-## Priorité 3 — À traiter selon valeur — 71 (+ drive-accompagnement parké)
+## Priorité 3 — À traiter selon valeur — 74 (+ drive-accompagnement parké)
 
 15 premiers listés, oldest-first.
 
@@ -107,7 +110,10 @@ Articles, newsletters et posts publiés qui n'ont ni source wiki ni [[preuves/in
 | `raw/articles/brouillons/linkedin-trend-research-semaine-2-avril-2026.md` | 2026-05-26 | Notes trend research. Pas de source — vérifier valeur doctrinale |
 | `raw/bootcamp4/SKILL-revue-presse-bootcamp.md` | 2026-05-26 | Doc skill formation revue de presse — bloc candidat skip |
 
-**+ 55 autres P3, par groupe :**
+**+ 58 autres P3, par groupe :**
+
+- **Transcripts vidéo growth externes** (2026-07-04, 2 fichiers) : `transcripts/video-growth-saas-ia-distribution` (playbook distribution SaaS IA), `transcripts/video-influencer-flywheel-jedi` (playbook influenceurs B2B). Matière growth/distribution tagguée qadence, hors SEO-core — valeur pour la stratégie produit, pas la doctrine SEO. À ingérer si un fil Qadence/Fusionn le tire.
+- `raw/reddit-playbook/Journal.md` (2026-07-02) — `source_type: test-terrain`, tracker du test Qadence.io, document vivant (`status: draft`). À ne pas ingérer seul : il boucle avec le playbook Reddit (P1) une fois la data terrain constituée → **fiche preuve** plutôt que source.
 
 - **Matériel pédagogique bootcamp 4** (50 fichiers, **bloc candidat skip groupé**) : `bootcamp4/exercices/` (26 — exercices skills + workflows), `bootcamp4/skill-*` (11 docs skill formation), `bootcamp4/` docs-guides (13 : `SKILL-revue-presse-{client-template,theme-seo}`, `IMPLEMENTATION-COWORK`, `install-repo-skills-cowork`, `fiche-skills-terminal`, `guide-cowork-vers-terminal`, `passer-cowork-vers-terminal`, `plan-exercices-workflows-skills`, `bundle-todo`, `skills-checklist-bootcamp4`, `workflow-audit-bootcamp4`, `ton-de-voix-worksheet`). Matériel du projet formation Cowork→terminal, faible valeur doctrinale SEO vs skills déjà installés. À trancher par Tim en revue hebdo.
 - **Références concurrent espressio-ai** (2026-06-11, 5 fichiers) : `blog`, `home`, `index`, `offre`, `plan-adaptation-organikk` — scrape concurrent + plan d'adaptation. À ingérer comme `entities/` concurrent si valeur retenue.

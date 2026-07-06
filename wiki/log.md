@@ -1088,3 +1088,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: min 2/fiche (2 à 7), 0 lien mort (vérifié)
 - nœuds suggérés (à créer en curation): aucun (toutes les cibles existaient)
 - angle SEO transverse: la doctrine Organikk du T1 2026 est déjà là — effort éditorial > outil de production, data propriétaire + faits atomiques comme seul avantage défendable, agent SEO spécialisé duplicable.
+
+## [2026-07-06] backlog | sweep — 210 en backlog (P1:98 P2:38 P3:74)
+- 349 fichiers raw scannés (+8 vs sweep 06-29) ; 9 net-new classés
+- nouveaux P1: dossier client Victoria Garden (3), pré-call Origin 137 (1), reddit-playbook Playbook+Routine (2, source_type doctrine)
+- nouveaux P3: 2 transcripts vidéo growth externes, reddit-playbook/Journal (test-terrain Qadence)
+- prochain lot proposé: reddit-playbook/Playbook-Reddit-SEO-GEO (terrain vivant, reddit-cockpit quotidien + test Qadence), dossier Victoria Garden (client actif), dossier Leexi (lot W27 non exécuté, fil "mots-clés non mangés")
+- nouveaux skips: aucun
