@@ -2265,3 +2265,12 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
 - **/generateur-mots-cles-ia** : nouveau moteur `tool-generateur-mots-cles-ia`, angle éclatement en micro-intentions (besoin réel + requêtes + format), groupé Do/Know/Know-Simple (GEO).
 - Branché : routes App.tsx, footer Outils gratuits, sitemap + reactSnap.include (au passage ajouté /generateur-mots-cles-gratuit qui manquait au sitemap/prerender).
 - 2 edge functions déployées sur projet fusionn (fwhfnzbtlddzfxbsejyf), testées OK. Site pas encore poussé en prod.
+
+## 2026-07-06 — Copilot Reddit mis en prod
+- Le Copilot Reddit (`/copilot-reddit`, programme guidé Reddit SEO/GEO 12 semaines, public sans login) était resté sur la branche `feat/copilot-reddit`, jamais mergée ni push → jamais déployé. C'est pour ça qu'il n'était pas en ligne.
+- Mergé `feat/copilot-reddit` → `main` (fast-forward, 2 commits), build Vite OK, push `main` → déploiement Netlify auto (site fusionn2, commit `e34be98`, state ready, published 04:48 UTC).
+- Backend de persistance déployé sur projet Supabase fusionn (fwhfnzbtlddzfxbsejyf) :
+  - edge function `reddit-copilot-state` déployée via `supabase functions deploy --use-api` (pas besoin de Docker),
+  - table `reddit_copilot_state` créée via API Management `/database/query` (RLS activé, aucune policy : seul le service_role de la fonction y accède, keyé par device_id uuid).
+- Testé bout-en-bout : save `{"ok":true}` puis load renvoie l'état exact. Ligne de test supprimée.
+- Note archi : le front a un fallback localStorage, donc la page marche même si le backend tombe (persistance appareil garantie, sync serveur en plus).
