@@ -871,3 +871,32 @@ Sources nouvelles ajoutées.
 - derivatex.agency (0.6, agence + editeur B2B SaaS Benchmark 2026, candidate exploit).
 
 Total sources.jsonl après ce run : environ 578 lignes (10 explore nouvelles + 4 exploit incréments).
+
+## 2026-07-06 — GEO Cloudflare BotBase + Attribution Business Insights
+
+Grille de score.
+
+- source_diversity : 10 (3 primaires Cloudflare distinctes + 3 primaires Meta/Google/OpenAI-adjacent + 4 reprises presse trade indépendantes)
+- claim_density corps : 11 verified + 6 discarded explicites dans runs.jsonl
+- novelty_score : 3/5 (mesure per-operator inédite mais fournisseur unique Cloudflare + 3 ratios repères 2025 déjà cités précédemment + brèves déjà connues sur pattern)
+- doctrine_fit : 4/5 (4 concepts touchés directement dont proposition d'addition explicite ligne fiche metriques-visibilite-geo)
+- redite_risk : moyen (07-02 v2 Cloudflare Pay Per Use 4 jours d'écart, assumée dans corps distinction paiement vs mesure infra dashboard, thèmes distincts BotBase 7-way + Attribution Insights + dashboard éditeur enterprise vs Pay Per Use + Ceramic.ai + You.com)
+- clickbait_risk : faible (titraille factuelle description mesure)
+
+Note globale : 3.2/5.
+
+Angle. Fournisseur d'infrastructure Cloudflare rend visible aux éditeurs enterprise le ratio crawl / renvoi opérateur par opérateur via 2 dashboards nouveaux (BotBase annuaire consultable robots + Attribution Business Insights métriques), avec taxonomie 7 catégories extension de la 3-way précédente. Rapport anniversaire même jour réaffirme 3 ratios 2025 Google 14/1 OpenAI 1700/1 Anthropic 73000/1 sur réseau agrégé Cloudflare. Nouveauté = mesure au niveau du site individuel disponible en dashboard éditeur, non plus mesure agrégée réseau. Contrainte forte : enterprise Bot Management customers only.
+
+Doctrine touchée. metriques-visibilite-geo (ligne à ajouter : ratio crawl/renvoi par opérateur devient métrique disponible dashboard éditeur, premier indicateur direct de l'asymétrie économique accès contenu vs renvoi trafic). tabou-visibilite (obligation attribution mesure pipeline+période+numérateur+dénominateur pour ratio, comme pour visibilité). data-proprietaire (dashboard produit série temporelle non substituable actif premier main pour éditeur qui l'active). agentic-search (taxonomie 7-way BotBase Search/Agent/Training/Transact/Data Collection/SEO/Ads Verification propose vocabulaire classification à intégrer si concurrents infra reprennent).
+
+Prédictions ajoutées.
+
+- P-2026-07-06-1 (D'ici 2026-12-31, fournisseur infra indépendant Cloudflare publie ratio crawl/renvoi par opérateur sur >3 catégories).
+- P-2026-07-06-2 (D'ici 2026-12-31, étude tierce comparaison Cloudflare Attribution Insights vs source externe 10 sites).
+
+Sources nouvelles ajoutées.
+
+- tech2geek.net (0.5, blog SEO agence analyse descriptive spam update sans data quantifiée).
+- digiday.com (0.7, presse marketing/ads établie corroboration OpenAI hiring 3 postes format publicitaire).
+
+Total sources.jsonl après ce run : environ 580 lignes (2 explore nouvelles + 5 exploit incréments).
