@@ -164,17 +164,18 @@ posts.append(post("Routine quotidienne (annexe)", routine_html, "2 juil. · m.à
 if sources_post:
     posts.append(sources_post)
 
-# CTA final : post sponsorisé Qadence, dans la DA Reddit
+# CTA final : les deux outils gratuits pour appliquer le playbook (DA Reddit)
 CTA = f'''
-<article class="post cta" id="cta-qadence">
-  <div class="vote"><span class="up">{UP}</span><b>•</b><span class="down">{DOWN}</span></div>
+<article class="post cta" id="cta-outils">
+  <div class="vote"><span class="up">{UP}</span><b>{votes_for("outils playbook reddit")}</b><span class="down">{DOWN}</span></div>
   <div class="pbody">
-    <div class="pmeta"><span class="flair f-orange">SPONSORISÉ</span> Promu par <a href="https://qadence.io">u/timboussardon</a></div>
-    <h2 class="ptitle">Qadence : ton agent SEO branché sur ta Search Console</h2>
+    <div class="pmeta"><span class="flair f-orange">OUTILS</span> Posté par <a href="#">u/timboussardon</a> · pour appliquer ce playbook</div>
+    <h2 class="ptitle">Les deux outils gratuits pour appliquer ce playbook</h2>
     <div class="pcontent">
-      <p>Les captures de ce playbook viennent de Qadence.</p>
-      <p>Un agent qui surveille ton site, t'alerte, et t'aide à mieux ranker sur Google et dans les IA. Branché sur ta vraie donnée Search Console.</p>
-      <p><a class="ctabtn" href="https://qadence.io">Essayer Qadence →</a></p>
+      <p>Le Copilot Reddit déroule la routine jour par jour et suit tes subs, tes requêtes et ton bilan du vendredi.</p>
+      <p>Qadence te sort tes mots-clés business depuis ta Search Console : c'est de là que viennent les captures de ce playbook.</p>
+      <p><a class="ctabtn" href="https://fusionn.co/copilot-reddit">Ouvrir le Copilot Reddit →</a></p>
+      <p><a class="ctabtn" href="https://qadence.io">Auditer tes mots-clés sur Qadence →</a></p>
     </div>
   </div>
 </article>'''
@@ -292,9 +293,10 @@ ul.toc li:last-child{border-bottom:none}
   .searchbar{display:none}
   .wrap{display:block;max-width:none;padding:0 4mm}
   .sidebar{position:static;width:auto;display:block;margin-bottom:14px}
-  .post{break-inside:auto;box-shadow:none}
+  .post{break-inside:avoid;box-shadow:none}
   .pmeta,.comment,.about,table,blockquote,pre,img,figure{break-inside:avoid}
-  .vote{break-inside:auto}
+  .pcontent h2,.pcontent h3{break-after:avoid;break-inside:avoid}
+  .vote{break-inside:avoid}
   .ptitle{break-after:avoid}
   a{color:var(--ink)}
   @page{margin:12mm 10mm}
