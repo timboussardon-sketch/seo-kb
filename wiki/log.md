@@ -1152,3 +1152,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 ## [2026-07-07] pseo | Organikk corpus : itération 5 (N1-N4), filtre recalibré
 - M12-M15 rejetés ; constat sur 4 rejets : documenter l'existant = commodité, survivent l'outil interactif appliqué au cas du visiteur et la data que Tim seul possède
 - N1 pages-décision interactives, N2 bibliothèque avant/après anti-IA writing (data des sessions d'édition), N3 bancs d'essai modèles IA sur tâches SEO, N4 pipeline « trous de l'IA » (directories-data-ia opérationnalisé)
+
+## [2026-07-07] publication | Guide Reddit SEO GEO publié sur organikk.co
+- URL: https://organikk.co/blog/guide-reddit-seo-geo/ (transcription du playbook canonique, sans la section test Qadence)
+- vidéo intégrée (L'influence de Reddit sur le SEO IA) + cocon maillé : hub Do du sous-pilier GEO, 6 liens déclarés dans internal-links.ts
+- publiés le même jour : outil /outils/probabilite-citation-llm, article automatiser-audit-seo-claude-code, refonte design (miniatures picto, glossaire, guides teintés, nav)
+- boucle preuves : poser la baseline GSC de ces URLs vers J+30 (début août 2026)
