@@ -156,6 +156,32 @@ Prérequis commun : schéma d'agrégation anonymisé + DPA, seuil minimal de pro
 5. Le pilote workflows Organikk à J+60 (à créer : baseline posée au lancement du modèle 1).
 6. Cas client pSEO Qualiopi, ~100 pages sur 2 arbres (FG Formation, publication conditionnée à l'anonymisation + accord).
 
+## Itération 3 : modèles alternatifs après rejet de la fiche produit wiki (2026-07-07)
+
+Le modèle « fiche produit moteur IA » (testé sur Perplexity, retiré le jour même) échoue au [[concepts/test-substitution-llm]] : tout son contenu est public et copiable, c'est le même défaut que le glossaire GEO rejeté dans [[corpus-qadence]]. Filtre durci pour les modèles suivants : impossibles à produire sans la pratique ou la data de Tim.
+
+### M7. Skills téléchargeables (Product-Led, lead magnet)
+
+1 page par skill, avec le fichier téléchargeable (version publique), la doc d'installation et le cas mesuré. Corpus = les 23 skills. Signal GSC déjà présent : l'article 9-skills est le 1er contenu du blog (34 imp, pos 18,8) et la requête « skills claude seo » apparaît. Requêtes : « skill claude seo », « créer un skill claude code seo », « télécharger skill claude ». Capture email = pipeline bootcamp/accompagnement. Substitution : une IA écrit un skill générique, pas un skill qui a tourné en prestation avec sa preuve GSC.
+
+### M8. Verdicts de test terrain (« j'ai testé »)
+
+1 page par test réel, verdict tranché + chiffres. Matière déjà existante : l'erreur des 137 pages (vidéo), « Screaming Frog recréé en skill, mais au-delà de 1 000 pages garde l'outil » (verbatim call), « le standard de rédaction à 100 n'est pas atteignable par l'IA seule ». Corpus = fiches preuves + transcripts + vidéos. Requêtes : « claude peut-il remplacer [outil] », « l'ia peut-elle faire [tâche] seo ». Substitution : le verdict repose sur un test daté et mesuré.
+
+### M9. Peurs et objections, répondues depuis les calls
+
+1 page par objection réellement entendue en call (anonymisée). L'argumentaire confidentialité/RGPD existe déjà en interne. Exemples : « faut-il bloquer GPTBot », « mes données client dans Claude », « l'IA va-t-elle tuer le SEO ». Corpus = transcripts + skill seo-peurs-objections. Substitution : une IA ne connaît ni les vraies objections ni leur fréquence.
+
+### M10. Observatoire mensuel du Search IA
+
+Une page vivante, datée, mise à jour par la routine de brèves : les chiffres du mois (part du zéro-clic, trafic référent IA, mouvements de citation). Diffère de /statistiques (pages figées par étude) : ici la fraîcheur est le produit, contre le [[concepts/weight-decay]]. Substitution : la mise à jour mensuelle disciplinée est le coût que les autres ne paient pas.
+
+### M11. Série datée « ma stratégie SEO du moment »
+
+Déjà 3e contenu du blog en impressions (31 imp) sans en être un modèle. En faire une série mensuelle datée, archives maillées, alimentée par la revue hebdo du vault. Substitution : un journal de bord ne se génère pas.
+
+Au passage, quick win technique repéré : `ma-strategie-seo-du-moment` remonte en GSC avec et sans slash final (pos 4,2 et 28), canonical à vérifier.
+
 ## Résumé exécutif
 
 Organikk a un site jeune (GSC quasi entièrement branded) mais une matière propriétaire que les autres sites n'ont pas : 23 skills qui tournent réellement, un vault de 122 nœuds, un pipeline d'études en prod et ~30 propriétés GSC agrégables. Le modèle n°1 à lancer est la bibliothèque de workflows Claude × SEO : le corpus existe à 100 %, les 49 requêtes du backlog sont quasi vierges en FR, l'intention est décisionnelle, et chaque page se prouve avec de la data GSC réelle. Les études statistiques continuent en flux, le wiki s'étend sur le stock du vault, et les benchmarks first-party se préparent en tâche de fond : c'est le seul actif incopiable, celui qui forcera les citations IA.

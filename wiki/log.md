@@ -1120,3 +1120,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - source enrichie: [[sources/2026-07-07-moteurs-ia-chiffres-usage]] (produit, gamme 2026, valorisation, procès, Cloudflare)
 - exposition: /wiki/perplexity-ai = fiche produit complète (identité, dates clés, gamme, données, comment être cité, controverses, comparatif 6 moteurs, sources)
 - template wiki organikk: champ blocks[] ajouté (réutilisable pour les autres fiches moteurs)
+
+## [2026-07-07] pseo | Organikk : retrait fiche produit wiki + 5 modèles alternatifs (itération 3)
+- décision Tim: modèle « fiche produit moteur IA » retiré du site (échoue au test de substitution LLM)
+- revert organikk-next 80c582a ; la matière reste au vault ([[sources/2026-07-07-moteurs-ia-chiffres-usage]])
+- nouveaux modèles M7-M11 dans [[queries/pseo-2026-07-07-organikk-corpus]] : skills téléchargeables, verdicts de test, objections de calls, observatoire mensuel, série stratégie datée
