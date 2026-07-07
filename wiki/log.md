@@ -1095,3 +1095,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - nouveaux P3: 2 transcripts vidéo growth externes, reddit-playbook/Journal (test-terrain Qadence)
 - prochain lot proposé: reddit-playbook/Playbook-Reddit-SEO-GEO (terrain vivant, reddit-cockpit quotidien + test Qadence), dossier Victoria Garden (client actif), dossier Leexi (lot W27 non exécuté, fil "mots-clés non mangés")
 - nouveaux skips: aucun
+
+## [2026-07-07] pseo | Organikk : modèles de pages corpus
+- skill déclenché: seo-programmatique-pseo
+- output: [[queries/pseo-2026-07-07-organikk-corpus]]
+- data: GSC organikk.co 90j (edge admin-gsc-export) + inventaire vault (65 concepts, 57 entities, 90 sources)
+- 6 modèles classés, P1 = bibliothèque de workflows Claude × SEO (backlog 49 mots-clés Lot 1)
+- anti-cannibalisation posée avec [[corpus-qadence]] (diagnostics + lexique restent chez Qadence)
