@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-07 · Autorité et liens entrants des pages citées par les IA : profil off-page des sources préférées (2025-2026) → `2026-07-07-stats-autorite-liens-pages-citees-ia.md`
 - 2026-07-06 · Évolution de la longueur des requêtes : des mots-clés aux prompts conversationnels (2023-2026) → `2026-07-06-stats-longueur-requetes-conversationnelles.md`
 - 2026-06-18 · AI Overviews et impact sur le clic 2026 → `2026-06-18-stats-ai-overviews-ctr.md`
 - 2026-06-18 · Recherche IA et GEO 2026 (zéro-clic, trafic IA) → `2026-06-18-stats-recherche-ia-geo.md`
@@ -28,8 +29,7 @@
 
 ## À faire (par priorité)
 
-1. Autorité et liens entrants des pages citées par les IA : profil off-page des sources préférées (2025-2026) — Complément du profil technique (2026-06-30), axé sur la dimension off-page : DA médian, referring domains, TLD favorisés, corrélation autorité/citation par moteur génératif.
-2. IA dans les agences SEO : adoption des outils, impact sur la productivité et évolution des équipes (2025-2026) — Chiffres d'adoption des outils IA par les professionnels SEO, impact mesuré sur la productivité, effets sur les structures d'équipes et sur la tarification des prestations.
+1. IA dans les agences SEO : adoption des outils, impact sur la productivité et évolution des équipes (2025-2026) — Chiffres d'adoption des outils IA par les professionnels SEO, impact mesuré sur la productivité, effets sur les structures d'équipes et sur la tarification des prestations.
 
 ## Sujets écartés (avec raison)
 (vide)
