@@ -940,3 +940,36 @@ Sources nouvelles ajoutées.
 Incréments exploit : salesforce.com +1 (poids 1.4), searchengineland.com +1 (1.3), searchenginejournal.com +1 (1.3), seroundtable.com +1 (1.2), optimixed.com +1 (1.0), microsoft.com/security/blog +1 (1.13), anthropic.com +1 (1.13), windowsreport.com +1 (1.0), techtimes.com +1 (1.0), digitalcommerce360.com +1 (1.08).
 
 Total sources.jsonl après ce run : environ 590 lignes (10 explore nouvelles + 10 exploit incréments).
+
+## Édition 2026-07-07 (cloud, lundi)
+
+**Pilier info du jour** : GEO / search IA.
+
+**Info du jour** : John Mueller (Google) déclare publiquement sur un fil r/TechSEO début juillet 2026 que la directive `content-signal` proposée par Cloudflare pour robots.txt n'a « aucun effet » sur les crawlers ou LLMs, la qualifie de « made up by a CDN » et ajoute qu'elle ne fait qu'ajouter du bloat au robots.txt. Contexte : question d'un utilisateur sur l'utilité de Content-Signal headers et `llms-author.txt` pour la désambiguïsation d'entité personne. Mueller confirme aussi que Google n'utilise pas `llms.txt` ni `llms-author.txt`. Cloudflare a lancé Content Signals le 24 septembre 2025 (3 signaux `search`/`ai-input`/`ai-train`) et prévoit le 15 septembre 2026 un blocage par défaut de `ai-train` et Agent sur pages porteuses de publicité pour les nouveaux clients. Rapport Cloudflare Content Independence Day 1er juillet 2026 : 52 % des requêtes crawler sont maintenant liées à l'entraînement IA (vs 22 % au printemps 2025).
+
+**Brèves** : B1 Actualité SEO / Niche SEO Shopify Merchant API 18 août 2026 deadline (product IDs Shopify_ZZ_ rewrite, historique perdu, Performance Max ré-apprentissage). B2 Niche SEO Bing panneau détail produit superposition test début juillet 2026. B3 GEO Google Further Exploration bloc pied AI Overview annoncé Google I/O mai 2026, déploiement observable juillet 2026.
+
+**Score grille mesurable** :
+- `source_diversity` : 10 sources indépendantes mobilisées (info du jour 4 primaires + 3 primaires Cloudflare / brèves 4+2+2)
+- `claim_density` : 6 claims verified (info du jour 3 + brèves 3), soit 2 claims par section principale
+- `novelty_score` : 4 / 5 (déclaration publique franche de John Mueller sur un standard émergent contesté, non tenue avant début juillet 2026 ; Content Signals était présenté par Cloudflare comme la brique de contrôle, la position Google le vide de portée opérationnelle)
+- `doctrine_fit` : 4 / 5 (3 fiches doctrine articulées : structural-information-geo + metriques-visibilite-geo + geo ; règle générale explicitée « contrôle serveur/page respecté par les moteurs vs contrôle fichier frère = déclaration sans exécution »)
+- `redite_risk` : faible (Content Signals + Mueller + rejet public = pas dans said_index, distinct de 0706 v1 GEO Cloudflare BotBase / 0703 v2 GEO CiteLens / 0617 v2 Ahrefs 137K llms.txt qui étaient sur des angles distincts ; brèves Merchant API + Bing overlay + Further Exploration pas dans said_index)
+- `clickbait_risk` : faible (titre = sujet + acteur + verbe + fait factuel « déclare qu'aucun crawler ni LLM n'utilise la directive » ; anti-racoleur)
+
+**Note globale** : 3.9 / 5.
+
+**Décisions actées** :
+- Pilier GEO retenu avec fait franchement neuf déclaration publique Mueller (autorisé par directives quand fait franchement neuf disponible). Distinct des 3 dernières éditions GEO par angle : 0706 v1 = mesure d'usage IA Cloudflare, 0703 v2 = divergence citation AIO vs top 10, 0707 = refus directive Content Signals par Google.
+- Brève B1 Shopify Merchant API concrete deadline actionable D-42 jours pour tout consultant SEO/GEO accompagnant catalogue Shopify significatif : angle « what to do » explicite (réinstallation avec perte historique vs feed manager tiers).
+- Brève B2 Bing product detail overlay = test A/B en cours, angle « 2e surface d'exposition indépendante du ranking SERP » utile pour marchand qui optimise Bing Shopping.
+- Brève B3 Further Exploration = angle « nouveau slot de visibilité GEO à ajouter à la grille metriques-visibilite-geo », mesure d'impact CTR non publiée.
+- Prédiction P-2026-07-07-1 ajoutée avec seuil binaire vérifiable (au moins un engagement documenté d'un des 5 grands crawlers d'ici 15 déc 2026).
+
+**Directive 28e édition consécutive non tenue** : tester source de mesure de visibilité indépendante (Semrush Sensor, Mozcast, Wincher, AccuRanker, AWR) reste PRIORITÉ ABSOLUE. Bilan spam update June 2026 P-2026-07-02-v2-5 échéance 10 juillet dans 3 jours + P-2026-07-03-4 échéance 17 juillet dans 10 jours toujours ouvertes.
+
+**Sources** : 2 nouvelles explore ajoutées (bidnamic.com trust 0.7 spécialiste feed management Shopify, community.shopify.com trust 0.65 forum communauté).
+
+Incréments exploit : seroundtable.com +4 (poids 1.2, 4 hits primaires info du jour + 3 brèves), searchenginejournal.com +1 (poids 1.3, Roger Montti llms-author.txt), optimixed.com +2 (poids 1.0, reprise Content Signals + Bing overlay), digitalphablet.com +1 (passe 3e hit cumulé statut exploit), blog.cloudflare.com +2 (poids 1.0, content-signals-policy primaire + agentic-internet-bot-report Content Independence Day), cloudflare.com/press +1 (poids 1.0, launch 24 sept 2025 press release primaire), support.google.com/merchants +1 (poids 1.0, doc officielle Merchant Center), blog.google/products +1 (poids 1.0, search-io-2026 primaire Further Exploration annonce initiale).
+
+Total sources.jsonl après ce run : environ 610 lignes (2 explore nouvelles + 8 exploit incréments).
