@@ -182,6 +182,43 @@ Déjà 3e contenu du blog en impressions (31 imp) sans en être un modèle. En f
 
 Au passage, quick win technique repéré : `ma-strategie-seo-du-moment` remonte en GSC avec et sans slash final (pos 4,2 et 28), canonical à vérifier.
 
+## Itération 4 : transposition des modèles bxble (2026-07-07)
+
+Inventaire du repo bxble : une quinzaine de modèles de pages en prod (concordance/versets, lexique, connexions, combien, différence, lieux, personnages, listes, plans de lecture, résumés, questions, exégèses, pensées). GSC bxble 90 j (pull edge) : site jeune (4 clics, 166 impressions) mais le lexique domine déjà l'exposition (43 pages, 56 impressions, requêtes nom propre type « jokshan », « datan »). Leçon : la base finie exhaustive expose la longue traîne plus vite que tout le reste, et chaque base nourrit d'abord un outil du site.
+
+Transposition Organikk, du plus fort au plus faible :
+
+### M12. Corpus Quality Rater Guidelines (le « résumé par livre » de bxble)
+
+- **Corpus** : les 182 pages officielles des QRG, découpées section par section (verbatim traduit + implication concrète). Il nourrit l'assistant QRG déjà en prod sur /outils.
+- **Pages** : 1 fiche par section/concept (Fully Meets, Needs Met, E-E-A-T, YMYL, Lowest…), + l'index.
+- **Signal déjà présent** : « quality rater guidelines » est LA requête non-branded d'organikk.co (95 impressions, position 71, page outil seule). La demande existe, aucune page de fond ne la sert.
+- **Substitution** : personne ne maintient ça en FR ; le corpus est fini et versionné (chaque mise à jour des QRG = un refresh différenciant).
+
+### M13. Base des crawlers IA + générateur robots.txt (le « lexique » de bxble)
+
+- **Corpus** : base finie des bots IA et search (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Perplexity-User, Google-Extended, CCBot, Bytespider…) : user-agent exact, propriétaire, ce qu'il alimente, respecte-t-il robots.txt, implication SEO/GEO.
+- **Pages** : 1 fiche par bot + la liste canonique + un générateur robots.txt interactif qui lit la base (l'outil est le lecteur du corpus, mécanique bxble exacte).
+- **Requêtes** : « bloquer gptbot », « claudebot robots txt », « liste crawlers ia », « google-extended ». Décisionnel technique, le générateur rend le clic obligatoire (famille B anti-ChatGPT).
+- **Croisement** : la fiche Perplexity du vault documente déjà le cas Cloudflare (bloquer PerplexityBot n'immunise pas), c'est la Haute Surprise de la base.
+
+### M14. Base Schema.org utile SEO (même mécanique)
+
+- **Corpus** : les ~50 types réellement utiles, avec JSON-LD canonique, propriétés exactes, erreurs courantes. Le générateur de données structurées déjà en prod devient son lecteur.
+- **Pages** : 1 fiche par type (« schema Article seo », « schema FAQ », « LocalBusiness »). Fini, stable.
+
+### M15. Différences (le « différence entre X et Y » de bxble)
+
+- ~30 paires couvertes par le vault : SEO vs GEO, GEO vs AEO, crawl vs indexation, impressions vs clics, embedding vs mot-clé. Fiches courtes answer-first. Partiellement mangé par l'IA, mais fort en citation.
+
+### Écartés après examen
+
+- « Combien » (requêtes chiffrées) : déjà couvert par le modèle études /statistiques, pas un modèle séparé.
+- Questions Q&A : mangé par l'IA, sauf objections pré-achat déjà en M9.
+- Plans × profils (Matrix) : la matière réelle est le playbook de prestation, à exposer plus tard, risque de prose générée sinon.
+
+Ordre suggéré : M12 (signal GSC existant + corpus fini + outil déjà en prod), puis M13 (outil + fraîcheur), M14 en flux, M15 en remplissage de maillage.
+
 ## Résumé exécutif
 
 Organikk a un site jeune (GSC quasi entièrement branded) mais une matière propriétaire que les autres sites n'ont pas : 23 skills qui tournent réellement, un vault de 122 nœuds, un pipeline d'études en prod et ~30 propriétés GSC agrégables. Le modèle n°1 à lancer est la bibliothèque de workflows Claude × SEO : le corpus existe à 100 %, les 49 requêtes du backlog sont quasi vierges en FR, l'intention est décisionnelle, et chaque page se prouve avec de la data GSC réelle. Les études statistiques continuent en flux, le wiki s'étend sur le stock du vault, et les benchmarks first-party se préparent en tâche de fond : c'est le seul actif incopiable, celui qui forcera les citations IA.

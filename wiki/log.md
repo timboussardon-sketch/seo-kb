@@ -1143,3 +1143,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - slug /outils/probabilite-citation-llm (jamais déployé, pas de redirection nécessaire)
 - verdict enrichi : ligne « Probabilité d'une réponse IA » chiffrée par intention (Semrush oct. 2025)
 - copy page validée par Tim (section calcul en 3 éléments + FAQ 4 questions)
+
+## [2026-07-07] pseo | Organikk corpus : transposition des modèles bxble (itération 4)
+- inventaire bxble : ~15 modèles en prod ; GSC 90j jeune mais lexique = modèle le plus exposé (43 pages)
+- nouveaux modèles M12-M15 dans [[queries/pseo-2026-07-07-organikk-corpus]] : corpus QRG (signal GSC organikk déjà présent), base crawlers IA + générateur robots.txt, base Schema.org, différences
+- leçon bxble : base finie exhaustive → outil lecteur → pages ; la longue traîne s'expose d'abord par la base

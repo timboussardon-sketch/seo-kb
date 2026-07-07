@@ -8,10 +8,13 @@
 </head>
 <body>
 <!-- Golfiller — Convertisseur yards/mètres + mph/km/h (template gf-article validé 2026-06-22)
-     POUR SHOPIFY : coller en VUE CODE (</>) le bloc <style> + <article>.
-     ⚠️ CORRECTIF 2026-07-07 : Shopify SUPPRIME les balises <script> du corps d'article.
-        Le JS a donc été déplacé en oninput INLINE sur chaque champ (survit au filtre Shopify).
-        Ne PAS remettre de <script> séparé, il sera à nouveau strippé et l'outil ne marchera plus. -->
+     ⚠️ CORRECTIF 2026-07-07 : Shopify strippe TOUT le JS du corps d'article (balises <script> ET
+        attributs oninput/on*). Un outil ne peut donc PAS embarquer son JS dans l'article.
+     DEUX MORCEAUX :
+       1) CORPS D'ARTICLE (ci-dessous, <style> + <article>) : champs à id stables, ZERO JS. À coller en vue code.
+       2) THEME : le <script> tout en bas est à coller dans layout/theme.liquid, juste avant </body>.
+          Il tourne partout, cible les id gfl-* avec un guard, inoffensif sur les autres pages.
+     Le <script> ici sert aussi à l'aperçu local. NE PAS le coller dans l'article (il serait strippé). -->
 <style>
   .gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7}
   .gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;color:var(--gf-ink)}
@@ -42,9 +45,9 @@
 
   <h2>Yards ↔ mètres</h2>
   <div class="gf-tool">
-    <label>Yards <input id="gfl-yd" type="number" inputmode="decimal" placeholder="ex : 200" oninput="var v=parseFloat(this.value);document.getElementById('gfl-m').value=isNaN(v)?'':Math.round(v*0.9144*10)/10"></label>
+    <label>Yards <input id="gfl-yd" type="number" inputmode="decimal" placeholder="ex : 200"></label>
     <span class="gf-eq">=</span>
-    <label>Mètres <input id="gfl-m" type="number" inputmode="decimal" placeholder="ex : 183" oninput="var v=parseFloat(this.value);document.getElementById('gfl-yd').value=isNaN(v)?'':Math.round(v/0.9144*10)/10"></label>
+    <label>Mètres <input id="gfl-m" type="number" inputmode="decimal" placeholder="ex : 183"></label>
   </div>
   <p class="gf-note">1 yard = 0,9144 mètre · 1 mètre = 1,0936 yard.</p>
   <div class="gf-table-wrap">
@@ -102,9 +105,9 @@
 
   <h2>mph ↔ km/h</h2>
   <div class="gf-tool">
-    <label>mph <input id="gfl-mph" type="number" inputmode="decimal" placeholder="ex : 90" oninput="var v=parseFloat(this.value);document.getElementById('gfl-kmh').value=isNaN(v)?'':Math.round(v*1.609344*10)/10"></label>
+    <label>mph <input id="gfl-mph" type="number" inputmode="decimal" placeholder="ex : 90"></label>
     <span class="gf-eq">=</span>
-    <label>km/h <input id="gfl-kmh" type="number" inputmode="decimal" placeholder="ex : 145" oninput="var v=parseFloat(this.value);document.getElementById('gfl-mph').value=isNaN(v)?'':Math.round(v/1.609344*10)/10"></label>
+    <label>km/h <input id="gfl-kmh" type="number" inputmode="decimal" placeholder="ex : 145"></label>
   </div>
   <p class="gf-note">1 mph = 1,609 km/h · 1 km/h = 0,621 mph.</p>
   <div class="gf-table-wrap">
@@ -131,6 +134,20 @@
   </div>
 
 </article>
-<!-- /Golfiller convertisseur -->
+
+<!-- ↓↓↓ À COLLER DANS layout/theme.liquid JUSTE AVANT </body> (PAS dans l'article) ↓↓↓ -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function bind(aId, bId, factor) {
+    var a = document.getElementById(aId), b = document.getElementById(bId);
+    if (!a || !b) return;
+    a.addEventListener('input', function () { var v = parseFloat(a.value); b.value = isNaN(v) ? '' : Math.round(v * factor * 10) / 10; });
+    b.addEventListener('input', function () { var v = parseFloat(b.value); a.value = isNaN(v) ? '' : Math.round(v / factor * 10) / 10; });
+  }
+  bind('gfl-yd', 'gfl-m', 0.9144);
+  bind('gfl-mph', 'gfl-kmh', 1.609344);
+});
+</script>
+<!-- ↑↑↑ fin du snippet thème ↑↑↑ -->
 </body>
 </html>
