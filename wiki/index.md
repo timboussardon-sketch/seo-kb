@@ -314,7 +314,8 @@ status: stable
 - [[syntheses/tim-profil-doctrine]] — Profil et doctrine de Tim Boussardon
 - [[syntheses/audit-doctrine-2026]] — Audit de la doctrine 2026 (cas terrain, dont [[entities/golfiller]])
 
-## Queries (7)
+## Queries (8)
+- [[queries/product-led-2026-07-07-organikk-anti-chatgpt]] — Organikk : modèles anti-ChatGPT, 3 familles à clic obligatoire (offres ultra-nichées, 5 outils data propriétaire, preuves vérifiables)
 - [[queries/pseo-2026-07-07-organikk-corpus]] — Organikk : 6 modèles de pages corpus classés (P1 = bibliothèque de workflows Claude × SEO, GSC 90j + inventaire vault)
 - [[queries/2026-06-10-golfiller-gsc-90j]] — Golfiller, analyse GSC 90 jours (winners Do, 1 346 requêtes sur la page tarifs, 388 parcours nommés)
 - [[queries/2026-06-10-golfiller-gsc-6mois]] — Golfiller, analyse GSC 6 mois comparée (branded +43 %, pSEO décolle, érosion du non-branded pluriel, striking distance « balle de golf »)

@@ -1125,3 +1125,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - décision Tim: modèle « fiche produit moteur IA » retiré du site (échoue au test de substitution LLM)
 - revert organikk-next 80c582a ; la matière reste au vault ([[sources/2026-07-07-moteurs-ia-chiffres-usage]])
 - nouveaux modèles M7-M11 dans [[queries/pseo-2026-07-07-organikk-corpus]] : skills téléchargeables, verdicts de test, objections de calls, observatoire mensuel, série stratégie datée
+
+## [2026-07-07] product-led | Organikk : modèles anti-ChatGPT (clic obligatoire)
+- skill déclenché: seo-product-led-seo
+- output: [[queries/product-led-2026-07-07-organikk-anti-chatgpt]]
+- 3 familles : transactionnel ultra-niché (5 pages offre), outils data propriétaire (5 concepts), preuve vérifiable
+- signaux GSC : « bootcamp seo » 34 imp pos 30,4 sans page dédiée ; analyse-geo pos 13,6
+- garde-fou : outils Organikk = démos qui vendent Tim, Fusionn garde la plateforme d'outils
