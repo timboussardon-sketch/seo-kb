@@ -90,6 +90,72 @@ Semaines 11-13 : lot 2 workflows (10 pages), première étude originale publiée
 
 Montée en charge pilotée par la Search Console, jamais de déversement massif.
 
+## Backlogs concrets par modèle (ajout 2026-07-07, itération 2)
+
+### Modèle 1 : les pages workflows, skill par skill
+
+Chaque page part d'un skill qui tourne réellement. 20 pages couvertes à 100 % par la matière existante.
+
+| Page (H1 indicatif) | Skill(s) source | Requête cible (Lot 1) |
+|---|---|---|
+| Comment utiliser Claude Code pour le SEO (pilier/hub) | tous | comment utiliser claude code pour le seo |
+| Connecter Claude Code à Google Search Console | maillage-interne-gsc, seo-quick-win | connecter claude code à google search console |
+| Automatiser un audit SEO avec Claude Code | seo-geo-audit, seo-pre-audit | claude code audit seo |
+| Claude Code pour le maillage interne | maillage-interne-gsc, maillage-systeme | claude code maillage interne |
+| Automatiser la recherche de mots-clés avec l'IA | seo-recherche-mots-cles | automatiser la recherche de mots-clés avec l'ia |
+| Clusteriser une liste de mots-clés avec Claude | seo-clustering-mots-cles | 1 cluster = 1 page |
+| Isoler les mots-clés qui convertissent avec l'IA | seo-mots-cles-decisionnels | mots-clés décisionnels |
+| Générer un brief SEO avec l'IA | seo-brief-contenu | générer un brief seo avec l'ia |
+| Rédiger un article SEO avec Claude (workflow 8 étapes) | seo-workflow-article | rédiger un article seo avec claude |
+| Éviter le AI writing en SEO | anti-ai-writing (concept vault) | éviter le ai writing en seo, humaniser un texte ia |
+| Générer des pages programmatiques avec Claude | seo-programmatique-pseo, seo-roadmap-pseo | générer des pages programmatiques avec claude |
+| Concevoir des pages satellites décisionnelles | seo-modeles-pseo | pages satellites, money page |
+| Détecter la cannibalisation avec Claude + GSC | seo-cannibalisation | cannibalisation seo |
+| Trouver ses quick wins dans la GSC avec Claude | seo-quick-win | quick wins gsc |
+| Auditer l'indexation d'un site avec Claude Code | indexation-check | audit indexation |
+| Construire un cluster AEO avec l'IA | seo-cluster-aeo | cluster aeo, topical authority |
+| Cartographier les entités sémantiques d'une page | seo-entites-vectorielles | entités sémantiques, grounding score |
+| Générer ses données structurées avec Claude | seo-donnees-structurees (+ outil en ligne) | données structurées ia |
+| Connecter Obsidian à Claude (base de connaissances SEO) | kb-semantic-search + architecture vault | connecter obsidian à claude, rag seo |
+| Créer un agent SEO IA / un skill Claude Code SEO | architecture skills (9-skills déjà bloggé) | créer un agent seo ia, créer un skill claude code seo |
+
+Trous 70/30 identifiés : « claude vs chatgpt pour le seo » (comparatif, pas de skill dessous, matière à produire d'abord) et « mcp seo » (concept présent mais pas de workflow documenté au vault).
+
+### Modèle 2 : études statistiques
+
+Coup zéro : 13 études déjà écrites, `published: false`, à passer en revue puis publier (ai-overviews-ctr, ctr-par-position-google, parts-marche-moteurs-ia, contenu-ia-seo-classements, eeat-citations-ia-mesure, fraicheur-citations-ia-delais, profil-technique-pages-citees-ia, longueur-requetes-conversationnelles, usage-grand-public-chatgpt, ia-entreprise-france, seo-local-ia-presence-reponses, budgets-seo-reallocation-ia, sanctions-cnil-rgpd).
+
+Nouvelles études candidates (sujets qui remontent dans les brèves, sources publiques agrégables) : crawl des bots IA sur les sites (GPTBot, ClaudeBot, données Cloudflare), trafic référent envoyé par ChatGPT/Perplexity aux sites, part des requêtes conversationnelles dans le Search, statistiques d'adoption des agents IA en entreprise, chiffres du Search e-commerce (Rufus, comparateurs IA).
+
+### Modèle 3 : wiki, le stock prêt à publier
+
+Concepts du vault non exposés (~22 publiables tels quels) : query-fan-out, query-synthesis, structural-information-geo, ingenierie-semantique-inversee, test-substitution-llm, preuve-atomique, data-proprietaire, directories-data-ia, requete-cliquable-vs-clic, weight-decay, fraicheur-contenu, parasite-seo, seo-multi-plateforme, persistent-wiki-vs-rag, memory-llm-vs-wiki-persistant, know-simple-know-do, 5-types-ancres, angle-differenciant-mot-cle, anti-ai-writing, confidence-score, pseo-data-driven-models, metriques GEO (métriques présence/reco/fréquence).
+
+Entities du vault non exposées (~15 fiches) : google-ai-mode, chatgpt-search, perplexity, notebooklm, gemini, grok, amazon-rufus, geo-bench, sageo-arena-benchmark, miras, neural-matching, bert, rankbrain, mum, bm25.
+
+Restent internes (doctrine ou perso, pas de page) : tabou-visibilite, peur-train-ia, avatar-*, boucle-sortie-mesure, ton-de-voix-tim, 4w-deep-reflection, regle-ia-ne-le-fait-pas-je-le-fais-pas.
+
+### Modèle 4 : benchmarks first-party, les études à poser
+
+1. Pilote logs : les bots IA dans les logs serveur (déjà cadrée, [[project-etudes-originales]]).
+2. CTR × AI Overviews sur les propriétés connectées (prochaine étude planifiée).
+3. CTR réel par position 2026, agrégé multi-propriétés FR (version first-party de l'étude sourcée en draft).
+4. Requête cliquable vs clic : part des impressions au-delà de la position 10 qui ne produisent jamais un clic (adosse le concept vault du même nom).
+5. Délai médian entre publication et premier clic d'une page neuve (Golfiller, Fusionn, organikk : trois âges de site).
+6. Effet mesuré d'un chantier de maillage interne à J+90 (data leenq + fiches preuves).
+7. pSEO vs éditorial : répartition réelle des clics par type de page (Golfiller, 388 parcours nommés en GSC).
+
+Prérequis commun : schéma d'agrégation anonymisé + DPA, seuil minimal de propriétés par chiffre publié.
+
+### Modèle 5 : fiches preuves publiques
+
+1. Ranker sur une verticale e-commerce sans un seul backlink : les chiffres Golfiller à 6 mois (striking distance « balle de golf », branded +43 %).
+2. Anatomie d'un tableau de données à 5 652 clics (le tableau de compression Golfiller).
+3. 90 jours de pSEO métier × ville : ce que la GSC montre ([[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]]).
+4. Un corpus de 31 170 versets devenu des pages : le cas bxble (concordance → pages Versets).
+5. Le pilote workflows Organikk à J+60 (à créer : baseline posée au lancement du modèle 1).
+6. Cas client pSEO Qualiopi, ~100 pages sur 2 arbres (FG Formation, publication conditionnée à l'anonymisation + accord).
+
 ## Résumé exécutif
 
 Organikk a un site jeune (GSC quasi entièrement branded) mais une matière propriétaire que les autres sites n'ont pas : 23 skills qui tournent réellement, un vault de 122 nœuds, un pipeline d'études en prod et ~30 propriétés GSC agrégables. Le modèle n°1 à lancer est la bibliothèque de workflows Claude × SEO : le corpus existe à 100 %, les 49 requêtes du backlog sont quasi vierges en FR, l'intention est décisionnelle, et chaque page se prouve avec de la data GSC réelle. Les études statistiques continuent en flux, le wiki s'étend sur le stock du vault, et les benchmarks first-party se préparent en tâche de fond : c'est le seul actif incopiable, celui qui forcera les citations IA.

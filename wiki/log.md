@@ -1102,3 +1102,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - data: GSC organikk.co 90j (edge admin-gsc-export) + inventaire vault (65 concepts, 57 entities, 90 sources)
 - 6 modèles classés, P1 = bibliothèque de workflows Claude × SEO (backlog 49 mots-clés Lot 1)
 - anti-cannibalisation posée avec [[corpus-qadence]] (diagnostics + lexique restent chez Qadence)
+
+## [2026-07-07] pseo | Organikk corpus : backlogs concrets par modèle (itération 2)
+- output: [[queries/pseo-2026-07-07-organikk-corpus]] (section ajoutée)
+- modèle 1: 20 pages workflows mappées skill → requête, 2 trous 70/30 flagués (claude vs chatgpt, mcp seo)
+- modèle 2: 13 études écrites non publiées identifiées (published: false) + 5 sujets candidats
+- modèle 3: 22 concepts + 15 entities du vault non exposés sur /wiki
+- modèle 4: 7 études first-party listées ; modèle 5: 6 fiches preuves candidates
