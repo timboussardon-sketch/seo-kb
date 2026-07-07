@@ -1132,3 +1132,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - 3 familles : transactionnel ultra-niché (5 pages offre), outils data propriétaire (5 concepts), preuve vérifiable
 - signaux GSC : « bootcamp seo » 34 imp pos 30,4 sans page dédiée ; analyse-geo pos 13,6
 - garde-fou : outils Organikk = démos qui vendent Tim, Fusionn garde la plateforme d'outils
+
+## [2026-07-07] build | Organikk : outil « testeur de requête mangée » (anti-ChatGPT famille B)
+- décision Tim: go sur le concept 1 de [[queries/product-led-2026-07-07-organikk-anti-chatgpt]]
+- livré: /outils/testeur-requete-mangee (verdict déterministe par signaux d'intention + data vérifiée Semrush/Ahrefs/SparkToro, variantes à clic, zéro volume affiché, zéro score fabriqué)
+- règle ajoutée en test: contrainte budget (« à moins de X € ») = signal décisionnel même sans autre modificateur
+- commit local organikk-next, pas de push (deploy = auto sur push main, à la demande de Tim uniquement)

@@ -8,8 +8,10 @@
 </head>
 <body>
 <!-- Golfiller — Convertisseur yards/mètres + mph/km/h (template gf-article validé 2026-06-22)
-     POUR SHOPIFY : coller en VUE CODE (</>) le bloc <style> + <article> + <script>.
-     JS en addEventListener + DOMContentLoaded (compat Shopify). th turquoise en inline !important. -->
+     POUR SHOPIFY : coller en VUE CODE (</>) le bloc <style> + <article>.
+     ⚠️ CORRECTIF 2026-07-07 : Shopify SUPPRIME les balises <script> du corps d'article.
+        Le JS a donc été déplacé en oninput INLINE sur chaque champ (survit au filtre Shopify).
+        Ne PAS remettre de <script> séparé, il sera à nouveau strippé et l'outil ne marchera plus. -->
 <style>
   .gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7}
   .gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;color:var(--gf-ink)}
@@ -40,9 +42,9 @@
 
   <h2>Yards ↔ mètres</h2>
   <div class="gf-tool">
-    <label>Yards <input id="gfl-yd" type="number" inputmode="decimal" placeholder="ex : 200"></label>
+    <label>Yards <input id="gfl-yd" type="number" inputmode="decimal" placeholder="ex : 200" oninput="var v=parseFloat(this.value);document.getElementById('gfl-m').value=isNaN(v)?'':Math.round(v*0.9144*10)/10"></label>
     <span class="gf-eq">=</span>
-    <label>Mètres <input id="gfl-m" type="number" inputmode="decimal" placeholder="ex : 183"></label>
+    <label>Mètres <input id="gfl-m" type="number" inputmode="decimal" placeholder="ex : 183" oninput="var v=parseFloat(this.value);document.getElementById('gfl-yd').value=isNaN(v)?'':Math.round(v/0.9144*10)/10"></label>
   </div>
   <p class="gf-note">1 yard = 0,9144 mètre · 1 mètre = 1,0936 yard.</p>
   <div class="gf-table-wrap">
@@ -54,7 +56,11 @@
       <tbody>
         <tr><td>50 yd</td><td>46 m</td></tr>
         <tr><td>100 yd</td><td>91 m</td></tr>
+        <tr><td>130 yd</td><td>119 m</td></tr>
+        <tr><td>145 yd</td><td>133 m</td></tr>
         <tr><td>150 yd</td><td>137 m</td></tr>
+        <tr><td>165 yd</td><td>151 m</td></tr>
+        <tr><td>190 yd</td><td>174 m</td></tr>
         <tr><td>200 yd</td><td>183 m</td></tr>
         <tr><td>250 yd</td><td>229 m</td></tr>
         <tr><td>300 yd</td><td>274 m</td></tr>
@@ -62,11 +68,43 @@
     </table>
   </div>
 
+  <p class="gf-note">En partant des mètres, de 5 en 5 jusqu'à 100 (1 mètre = 1,0936 yard).</p>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Mètres</th>
+        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Yards</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>5 m</td><td>5 yd</td></tr>
+        <tr><td>10 m</td><td>11 yd</td></tr>
+        <tr><td>15 m</td><td>16 yd</td></tr>
+        <tr><td>20 m</td><td>22 yd</td></tr>
+        <tr><td>25 m</td><td>27 yd</td></tr>
+        <tr><td>30 m</td><td>33 yd</td></tr>
+        <tr><td>35 m</td><td>38 yd</td></tr>
+        <tr><td>40 m</td><td>44 yd</td></tr>
+        <tr><td>45 m</td><td>49 yd</td></tr>
+        <tr><td>50 m</td><td>55 yd</td></tr>
+        <tr><td>55 m</td><td>60 yd</td></tr>
+        <tr><td>60 m</td><td>66 yd</td></tr>
+        <tr><td>65 m</td><td>71 yd</td></tr>
+        <tr><td>70 m</td><td>77 yd</td></tr>
+        <tr><td>75 m</td><td>82 yd</td></tr>
+        <tr><td>80 m</td><td>87 yd</td></tr>
+        <tr><td>85 m</td><td>93 yd</td></tr>
+        <tr><td>90 m</td><td>98 yd</td></tr>
+        <tr><td>95 m</td><td>104 yd</td></tr>
+        <tr><td>100 m</td><td>109 yd</td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <h2>mph ↔ km/h</h2>
   <div class="gf-tool">
-    <label>mph <input id="gfl-mph" type="number" inputmode="decimal" placeholder="ex : 90"></label>
+    <label>mph <input id="gfl-mph" type="number" inputmode="decimal" placeholder="ex : 90" oninput="var v=parseFloat(this.value);document.getElementById('gfl-kmh').value=isNaN(v)?'':Math.round(v*1.609344*10)/10"></label>
     <span class="gf-eq">=</span>
-    <label>km/h <input id="gfl-kmh" type="number" inputmode="decimal" placeholder="ex : 145"></label>
+    <label>km/h <input id="gfl-kmh" type="number" inputmode="decimal" placeholder="ex : 145" oninput="var v=parseFloat(this.value);document.getElementById('gfl-mph').value=isNaN(v)?'':Math.round(v/1.609344*10)/10"></label>
   </div>
   <p class="gf-note">1 mph = 1,609 km/h · 1 km/h = 0,621 mph.</p>
   <div class="gf-table-wrap">
@@ -93,20 +131,6 @@
   </div>
 
 </article>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  function fmt(n, d) { var p = Math.pow(10, d); return Math.round(n * p) / p; }
-  function link(aId, bId, factor, dA, dB) {
-    var a = document.getElementById(aId), b = document.getElementById(bId);
-    if (!a || !b) return;
-    a.addEventListener('input', function () { b.value = a.value === '' ? '' : fmt(parseFloat(a.value) * factor, dB); });
-    b.addEventListener('input', function () { a.value = b.value === '' ? '' : fmt(parseFloat(b.value) / factor, dA); });
-  }
-  link('gfl-yd', 'gfl-m', 0.9144, 1, 1);
-  link('gfl-mph', 'gfl-kmh', 1.609344, 1, 1);
-});
-</script>
 <!-- /Golfiller convertisseur -->
 </body>
 </html>
