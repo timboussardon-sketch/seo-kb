@@ -1138,3 +1138,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - livré: /outils/testeur-requete-mangee (verdict déterministe par signaux d'intention + data vérifiée Semrush/Ahrefs/SparkToro, variantes à clic, zéro volume affiché, zéro score fabriqué)
 - règle ajoutée en test: contrainte budget (« à moins de X € ») = signal décisionnel même sans autre modificateur
 - commit local organikk-next, pas de push (deploy = auto sur push main, à la demande de Tim uniquement)
+
+## [2026-07-07] update | Outil Organikk renommé « Probabilité de citation sur les LLMs »
+- slug /outils/probabilite-citation-llm (jamais déployé, pas de redirection nécessaire)
+- verdict enrichi : ligne « Probabilité d'une réponse IA » chiffrée par intention (Semrush oct. 2025)
+- copy page validée par Tim (section calcul en 3 éléments + FAQ 4 questions)

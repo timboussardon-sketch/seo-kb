@@ -198,6 +198,40 @@ Relis chaque paragraphe et coche :
 
 Si une case échoue, on reprend le passage concerné avant livraison.
 
+## 7bis — Patterns structurels d'IA à traquer (analyse terrain 2026-07-07)
+
+La section 3 traque les MOTS. Cette section-ci traque la MÉCANIQUE. Un texte peut n'avoir aucun mot banni et rester reconnaissable comme généré, à cause de ses structures trop régulières. Relis en chassant :
+
+1. **Oppositions systématiques** — « X fait ci, Y fait ça », « Sans… / Avec… », « Google conserve… / Leexi génère… ». Une à deux fois maximum sur tout le texte, jamais à chaque paragraphe.
+2. **« En revanche »** — transition favorite de l'IA. Alterner (mais, pourtant, sauf que, seulement) ou supprimer.
+3. **« Une fois… »** — « une fois l'appel terminé / l'intégration activée / la réunion terminée ». Toujours la même mécanique. Varier ou couper.
+4. **Listes ternaires** — « résumé, décisions, tâches », « hébergement, DPA, sous-traitants ». L'IA écrit par trois. Casser : deux éléments, ou quatre, ou une phrase pleine.
+5. **Phrases finissant par un complément explicatif** — « …, sans ressaisie », « …, sans votre validation », « …, sans parcourir l'enregistrement ». Couper au point avant.
+6. **Répétitions du même terme** — compter les occurrences (une même page peut répéter 8× « hébergé en France », 35× « compte rendu »). On coupe ~20 % du texte rien qu'en dégonflant les répétitions.
+7. **Titres en « Ce qui / Ce que »** — « Ce qui se passe après », « Ce qu'il vous faut », « Ce que vous obtenez ». Signature Claude. Reformuler en titre concret.
+8. **Conclusions en « Enfin »** — marqueur. Supprimer.
+9. **Faux bénéfices** — « vous pouvez vous concentrer sur vos interlocuteurs ». Générique. Remplacer par un fait concret.
+10. **Phrases abstraites** — « les informations circulent sans ressaisie ». Personne ne parle comme ça. Dire : « le compte rendu est ajouté au CRM ».
+11. **« à partir de »** — « à partir des échanges / de la vidéo ». Reformuler.
+12. **Expliquer l'évidence** — « les personnes présentes savent donc que… ». Couper.
+13. **Verbes IA** — permettre, générer, produire, transformer, proposer, retrouver, rejoindre, contenir. Préférer des verbes concrets et variés.
+14. **Voix passive** — « sont hébergées », « sont relevées », « sont planifiées ». Écrire actif.
+15. **« automatiquement »** — l'IA en met partout (~12× sur une seule page). Garder 1 à 2 maximum.
+16. **Structures miroir** — « Vous raccrochez. Vous relisez. Vous ajustez. Vous envoyez. » Casser le parallélisme.
+17. **H3 descriptifs** — « Informer les participants », « Vous gardez le contrôle ». Claude produit exactement ces titres.
+18. **Phrases trop parfaites** — tout grammaticalement impeccable. L'humain coupe plus court. « Le compte rendu arrive dans votre CRM. » Point. Pas besoin d'ajouter « sans ressaisie ».
+19. **Bénéfices universels** — « plus besoin de », « reste accessible », « vous gagnez ». Tous les SaaS disent ça.
+20. **Mots ultra-fréquents de Claude, à limiter fort** — permet / permet de, en revanche, enfin, automatiquement, directement, véritable, ensuite, une fois, informations, échanges, interactions, suivi, structuré, disponible, intégré, conforme, connecté.
+21. **Paragraphes qui finissent sur une morale** — « c'est la différence qui compte… ». Terminer sur un fait, pas sur une leçon.
+
+### Le vrai correctif : la spécificité, pas le style
+
+Le manque n'est jamais « écrire plus joli », c'est « écrire plus spécifique ». Un texte reste identifiable comme IA tant qu'il reste général. L'antidote, ce sont les détails concrets, difficiles à inventer pour une IA :
+- un scénario nommé (« Paul demande un devis, Sophie doit l'envoyer avant vendredi : les deux se retrouvent dans les actions »),
+- un ordre de grandeur réel (une réunion commerciale à dix produit une longue transcription, le compte rendu tient sur une page).
+
+Règle dure : chaque section gagne au moins un détail concret. Mais **aucun chiffre inventé** : un ordre de grandeur ne s'écrit que s'il est sourçable (data client, test). Sinon on demande la donnée plutôt que de meubler avec du générique.
+
 ## 8 — Test final
 
 Relis avec la question : **"un dirigeant marketing non-SEO comprendrait-il ça en première lecture ?"**
