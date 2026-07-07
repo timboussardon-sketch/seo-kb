@@ -1109,3 +1109,14 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - modèle 2: 13 études écrites non publiées identifiées (published: false) + 5 sujets candidats
 - modèle 3: 22 concepts + 15 entities du vault non exposés sur /wiki
 - modèle 4: 7 études first-party listées ; modèle 5: 6 fiches preuves candidates
+
+## [2026-07-07] ingest | Moteurs IA : chiffres d'usage juillet 2026 + fiche Perplexity organikk
+- source: [[sources/2026-07-07-moteurs-ia-chiffres-usage]] (collecte web, confidence medium sur Mistral/DeepSeek)
+- entities créées: [[entities/mistral]], [[entities/deepseek]] ; enrichie: [[entities/perplexity]] (fiche d'identité)
+- exposition publique: /wiki/perplexity-ai sur organikk.co (template wiki étendu : identity/facts/comparison/sources)
+- trou noté: doc crawler MistralAI-User à sourcer ; Reuters DeepSeek à recouper en source primaire
+
+## [2026-07-07] update | Fiche produit Perplexity complète (organikk /wiki)
+- source enrichie: [[sources/2026-07-07-moteurs-ia-chiffres-usage]] (produit, gamme 2026, valorisation, procès, Cloudflare)
+- exposition: /wiki/perplexity-ai = fiche produit complète (identité, dates clés, gamme, données, comment être cité, controverses, comparatif 6 moteurs, sources)
+- template wiki organikk: champ blocks[] ajouté (réutilisable pour les autres fiches moteurs)
