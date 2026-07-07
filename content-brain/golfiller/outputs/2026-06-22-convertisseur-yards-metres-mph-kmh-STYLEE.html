@@ -7,14 +7,10 @@
 <style>body{margin:0;padding:30px 20px 60px;background:#fff}</style>
 </head>
 <body>
-<!-- Golfiller — Convertisseur yards/mètres + mph/km/h (template gf-article validé 2026-06-22)
-     ⚠️ CORRECTIF 2026-07-07 : Shopify strippe TOUT le JS du corps d'article (balises <script> ET
-        attributs oninput/on*). Un outil ne peut donc PAS embarquer son JS dans l'article.
-     DEUX MORCEAUX :
-       1) CORPS D'ARTICLE (ci-dessous, <style> + <article>) : champs à id stables, ZERO JS. À coller en vue code.
-       2) THEME : le <script> tout en bas est à coller dans layout/theme.liquid, juste avant </body>.
-          Il tourne partout, cible les id gfl-* avec un guard, inoffensif sur les autres pages.
-     Le <script> ici sert aussi à l'aperçu local. NE PAS le coller dans l'article (il serait strippé). -->
+<!-- Golfiller — Convertisseur yards/mètres + mph/km/h — VERSION SANS JAVASCRIPT (2026-07-07)
+     Shopify strippe tout le JS de l'article. Cette version n'utilise QUE du HTML + <style> (qui survivent).
+     Sélecteur en radio + CSS :checked ~ . Valeurs préréglées, aucun script, aucun oninput.
+     POUR SHOPIFY : coller en vue code (</>) tout le bloc <style> + <article>. Rien d'autre à faire. -->
 <style>
   .gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7}
   .gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 18px;color:var(--gf-ink)}
@@ -29,49 +25,74 @@
   .gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
   .gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
   .gf-article tbody tr:nth-child(even){background:#fafcfb}
-  .gf-article .gf-tool{background:var(--gf-soft);border:1px solid var(--gf-line);border-radius:12px;padding:18px;margin:0 0 14px;display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap}
-  .gf-article .gf-tool label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:700;color:var(--gf-ink);text-transform:uppercase;letter-spacing:.03em}
-  .gf-article .gf-tool input{width:120px;font-size:18px;padding:10px 12px;border:2px solid var(--gf-accent);border-radius:8px;font-family:inherit;color:var(--gf-ink)}
-  .gf-article .gf-tool .gf-eq{font-size:22px;font-weight:700;color:var(--gf-accent);padding-bottom:8px}
   .gf-article .gf-note{font-size:14px;color:var(--gf-muted);margin:0 0 24px}
   .gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
+
+  /* Calculatrice sans JS : radios cachées + pills + résultat révélé par :checked ~ */
+  .gfc{margin:0 0 16px}
+  .gfc>input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+  .gfc-lab{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--gf-ink);margin:0 0 8px}
+  .gfc-pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+  .gfc-pills label{cursor:pointer;padding:9px 15px;border:2px solid var(--gf-line);border-radius:999px;font-weight:700;font-size:15px;color:var(--gf-ink);background:#fff;user-select:none}
+  .gfc-pills label:hover{border-color:var(--gf-accent)}
+  .gfc-res{background:var(--gf-soft);border:1px solid var(--gf-line);border-radius:12px;padding:18px 20px;font-size:clamp(20px,3.4vw,26px);font-weight:700;color:var(--gf-accent);min-height:26px}
+  .gfc-res .v{display:none}
+
+  /* Yards -> mètres */
+  #yd-50:checked ~ .gfc-res .v-yd50,#yd-100:checked ~ .gfc-res .v-yd100,#yd-130:checked ~ .gfc-res .v-yd130,#yd-145:checked ~ .gfc-res .v-yd145,#yd-150:checked ~ .gfc-res .v-yd150,#yd-165:checked ~ .gfc-res .v-yd165,#yd-190:checked ~ .gfc-res .v-yd190,#yd-200:checked ~ .gfc-res .v-yd200,#yd-250:checked ~ .gfc-res .v-yd250,#yd-300:checked ~ .gfc-res .v-yd300{display:block}
+  #yd-50:checked ~ .gfc-pills label[for=yd-50],#yd-100:checked ~ .gfc-pills label[for=yd-100],#yd-130:checked ~ .gfc-pills label[for=yd-130],#yd-145:checked ~ .gfc-pills label[for=yd-145],#yd-150:checked ~ .gfc-pills label[for=yd-150],#yd-165:checked ~ .gfc-pills label[for=yd-165],#yd-190:checked ~ .gfc-pills label[for=yd-190],#yd-200:checked ~ .gfc-pills label[for=yd-200],#yd-250:checked ~ .gfc-pills label[for=yd-250],#yd-300:checked ~ .gfc-pills label[for=yd-300]{background:var(--gf-accent);color:#fff;border-color:var(--gf-accent)}
+
+  /* mph -> km/h */
+  #mph-70:checked ~ .gfc-res .v-mph70,#mph-80:checked ~ .gfc-res .v-mph80,#mph-90:checked ~ .gfc-res .v-mph90,#mph-100:checked ~ .gfc-res .v-mph100,#mph-110:checked ~ .gfc-res .v-mph110,#mph-120:checked ~ .gfc-res .v-mph120{display:block}
+  #mph-70:checked ~ .gfc-pills label[for=mph-70],#mph-80:checked ~ .gfc-pills label[for=mph-80],#mph-90:checked ~ .gfc-pills label[for=mph-90],#mph-100:checked ~ .gfc-pills label[for=mph-100],#mph-110:checked ~ .gfc-pills label[for=mph-110],#mph-120:checked ~ .gfc-pills label[for=mph-120]{background:var(--gf-accent);color:#fff;border-color:var(--gf-accent)}
 </style>
 
 <article class="gf-article">
 
   <h1>Convertisseur golf : yards ↔ mètres et mph ↔ km/h</h1>
 
-  <p class="gf-lead">Les deux conversions qu'on croise tout le temps au golf : les distances (yards / mètres) et les vitesses de swing (mph / km/h). Tapez une valeur, l'autre se calcule.</p>
+  <p class="gf-lead">Les deux conversions qu'on croise tout le temps au golf : les distances (yards / mètres) et les vitesses de swing (mph / km/h). Choisissez une valeur, le résultat s'affiche.</p>
 
-  <h2>Yards ↔ mètres</h2>
-  <div class="gf-tool">
-    <label>Yards <input id="gfl-yd" type="number" inputmode="decimal" placeholder="ex : 200"></label>
-    <span class="gf-eq">=</span>
-    <label>Mètres <input id="gfl-m" type="number" inputmode="decimal" placeholder="ex : 183"></label>
+  <h2>Yards → mètres</h2>
+  <div class="gfc">
+    <input type="radio" name="gfc-yd" id="yd-50" checked>
+    <input type="radio" name="gfc-yd" id="yd-100">
+    <input type="radio" name="gfc-yd" id="yd-130">
+    <input type="radio" name="gfc-yd" id="yd-145">
+    <input type="radio" name="gfc-yd" id="yd-150">
+    <input type="radio" name="gfc-yd" id="yd-165">
+    <input type="radio" name="gfc-yd" id="yd-190">
+    <input type="radio" name="gfc-yd" id="yd-200">
+    <input type="radio" name="gfc-yd" id="yd-250">
+    <input type="radio" name="gfc-yd" id="yd-300">
+    <p class="gfc-lab">Distance en yards</p>
+    <div class="gfc-pills">
+      <label for="yd-50">50</label>
+      <label for="yd-100">100</label>
+      <label for="yd-130">130</label>
+      <label for="yd-145">145</label>
+      <label for="yd-150">150</label>
+      <label for="yd-165">165</label>
+      <label for="yd-190">190</label>
+      <label for="yd-200">200</label>
+      <label for="yd-250">250</label>
+      <label for="yd-300">300</label>
+    </div>
+    <div class="gfc-res">
+      <span class="v v-yd50">50 yards = 46 mètres</span>
+      <span class="v v-yd100">100 yards = 91 mètres</span>
+      <span class="v v-yd130">130 yards = 119 mètres</span>
+      <span class="v v-yd145">145 yards = 133 mètres</span>
+      <span class="v v-yd150">150 yards = 137 mètres</span>
+      <span class="v v-yd165">165 yards = 151 mètres</span>
+      <span class="v v-yd190">190 yards = 174 mètres</span>
+      <span class="v v-yd200">200 yards = 183 mètres</span>
+      <span class="v v-yd250">250 yards = 229 mètres</span>
+      <span class="v v-yd300">300 yards = 274 mètres</span>
+    </div>
   </div>
   <p class="gf-note">1 yard = 0,9144 mètre · 1 mètre = 1,0936 yard.</p>
-  <div class="gf-table-wrap">
-    <table>
-      <thead><tr>
-        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Yards</th>
-        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">Mètres</th>
-      </tr></thead>
-      <tbody>
-        <tr><td>50 yd</td><td>46 m</td></tr>
-        <tr><td>100 yd</td><td>91 m</td></tr>
-        <tr><td>130 yd</td><td>119 m</td></tr>
-        <tr><td>145 yd</td><td>133 m</td></tr>
-        <tr><td>150 yd</td><td>137 m</td></tr>
-        <tr><td>165 yd</td><td>151 m</td></tr>
-        <tr><td>190 yd</td><td>174 m</td></tr>
-        <tr><td>200 yd</td><td>183 m</td></tr>
-        <tr><td>250 yd</td><td>229 m</td></tr>
-        <tr><td>300 yd</td><td>274 m</td></tr>
-      </tbody>
-    </table>
-  </div>
 
-  <p class="gf-note">En partant des mètres, de 5 en 5 jusqu'à 100 (1 mètre = 1,0936 yard).</p>
   <div class="gf-table-wrap">
     <table>
       <thead><tr>
@@ -103,51 +124,41 @@
     </table>
   </div>
 
-  <h2>mph ↔ km/h</h2>
-  <div class="gf-tool">
-    <label>mph <input id="gfl-mph" type="number" inputmode="decimal" placeholder="ex : 90"></label>
-    <span class="gf-eq">=</span>
-    <label>km/h <input id="gfl-kmh" type="number" inputmode="decimal" placeholder="ex : 145"></label>
+  <h2>mph → km/h</h2>
+  <div class="gfc">
+    <input type="radio" name="gfc-mph" id="mph-70" checked>
+    <input type="radio" name="gfc-mph" id="mph-80">
+    <input type="radio" name="gfc-mph" id="mph-90">
+    <input type="radio" name="gfc-mph" id="mph-100">
+    <input type="radio" name="gfc-mph" id="mph-110">
+    <input type="radio" name="gfc-mph" id="mph-120">
+    <p class="gfc-lab">Vitesse en mph</p>
+    <div class="gfc-pills">
+      <label for="mph-70">70</label>
+      <label for="mph-80">80</label>
+      <label for="mph-90">90</label>
+      <label for="mph-100">100</label>
+      <label for="mph-110">110</label>
+      <label for="mph-120">120</label>
+    </div>
+    <div class="gfc-res">
+      <span class="v v-mph70">70 mph = 113 km/h</span>
+      <span class="v v-mph80">80 mph = 129 km/h</span>
+      <span class="v v-mph90">90 mph = 145 km/h</span>
+      <span class="v v-mph100">100 mph = 161 km/h</span>
+      <span class="v v-mph110">110 mph = 177 km/h</span>
+      <span class="v v-mph120">120 mph = 193 km/h</span>
+    </div>
   </div>
   <p class="gf-note">1 mph = 1,609 km/h · 1 km/h = 0,621 mph.</p>
-  <div class="gf-table-wrap">
-    <table>
-      <thead><tr>
-        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">mph</th>
-        <th style="background:#5BD8C0!important;color:#13241d!important;text-align:left">km/h</th>
-      </tr></thead>
-      <tbody>
-        <tr><td>70 mph</td><td>113 km/h</td></tr>
-        <tr><td>80 mph</td><td>129 km/h</td></tr>
-        <tr><td>90 mph</td><td>145 km/h</td></tr>
-        <tr><td>100 mph</td><td>161 km/h</td></tr>
-        <tr><td>110 mph</td><td>177 km/h</td></tr>
-        <tr><td>120 mph</td><td>193 km/h</td></tr>
-      </tbody>
-    </table>
-  </div>
 
   <p>Pour situer votre vitesse de swing et la traduire en distance par club, voyez nos <a href="https://golfiller.fr/blogs/infos/vitesse-de-swing-au-golf-tableaux-par-profil-par-club-et-du-top-10-mondial" target="_blank">tableaux de vitesse de swing</a>.</p>
 
   <div class="gf-sources">
-    <p style="margin:0">Facteurs exacts : 1 yard = 0,9144 m ; 1 mile/h = 1,609344 km/h (valeurs internationales). Tableaux arrondis à l'unité.</p>
+    <p style="margin:0">Facteurs exacts : 1 yard = 0,9144 m ; 1 mile/h = 1,609344 km/h (valeurs internationales). Résultats arrondis à l'unité.</p>
   </div>
 
 </article>
-
-<!-- ↓↓↓ À COLLER DANS layout/theme.liquid JUSTE AVANT </body> (PAS dans l'article) ↓↓↓ -->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  function bind(aId, bId, factor) {
-    var a = document.getElementById(aId), b = document.getElementById(bId);
-    if (!a || !b) return;
-    a.addEventListener('input', function () { var v = parseFloat(a.value); b.value = isNaN(v) ? '' : Math.round(v * factor * 10) / 10; });
-    b.addEventListener('input', function () { var v = parseFloat(b.value); a.value = isNaN(v) ? '' : Math.round(v / factor * 10) / 10; });
-  }
-  bind('gfl-yd', 'gfl-m', 0.9144);
-  bind('gfl-mph', 'gfl-kmh', 1.609344);
-});
-</script>
-<!-- ↑↑↑ fin du snippet thème ↑↑↑ -->
+<!-- /Golfiller convertisseur sans JS -->
 </body>
 </html>

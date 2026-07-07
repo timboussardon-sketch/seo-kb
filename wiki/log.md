@@ -1148,3 +1148,7 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - inventaire bxble : ~15 modèles en prod ; GSC 90j jeune mais lexique = modèle le plus exposé (43 pages)
 - nouveaux modèles M12-M15 dans [[queries/pseo-2026-07-07-organikk-corpus]] : corpus QRG (signal GSC organikk déjà présent), base crawlers IA + générateur robots.txt, base Schema.org, différences
 - leçon bxble : base finie exhaustive → outil lecteur → pages ; la longue traîne s'expose d'abord par la base
+
+## [2026-07-07] pseo | Organikk corpus : itération 5 (N1-N4), filtre recalibré
+- M12-M15 rejetés ; constat sur 4 rejets : documenter l'existant = commodité, survivent l'outil interactif appliqué au cas du visiteur et la data que Tim seul possède
+- N1 pages-décision interactives, N2 bibliothèque avant/après anti-IA writing (data des sessions d'édition), N3 bancs d'essai modèles IA sur tâches SEO, N4 pipeline « trous de l'IA » (directories-data-ia opérationnalisé)

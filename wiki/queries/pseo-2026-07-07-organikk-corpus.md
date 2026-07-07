@@ -219,6 +219,39 @@ Transposition Organikk, du plus fort au plus faible :
 
 Ordre suggéré : M12 (signal GSC existant + corpus fini + outil déjà en prod), puis M13 (outil + fraîcheur), M14 en flux, M15 en remplissage de maillage.
 
+## Itération 5 : après rejet des transpositions bxble (2026-07-07)
+
+M12-M15 rejetés en bloc par Tim. Relecture des 4 rejets successifs (fiche produit, M7-M11, M12-M15) : tout ce qui documente une chose existante meurt (commodité), ce qui survit à son filtre tient en deux formes : l'outil interactif qui applique la doctrine au cas du visiteur, et la data que lui seul possède. Modèles suivants contraints à ces deux formes.
+
+### N1. Pages-décision : « Faut-il … ? » en arbre interactif
+
+- 1 page = 1 décision SEO réelle que ses clients lui posent : faut-il bloquer GPTBot, faut-il un blog, faut-il élaguer, faut-il migrer de domaine, faut-il traduire son site.
+- Le visiteur répond à 3-5 questions, l'arbre rend une recommandation personnalisée. Corpus = les décisions réellement prises en prestation (tracker + calls), pas de théorie.
+- Anti-ChatGPT par construction : la réponse dépend des réponses du visiteur, une réponse générique ne satisfait personne. Le clic est l'usage.
+- Requêtes : « faut-il bloquer gptbot », « faut-il un blog en 2026 », intention décisionnelle pure.
+
+### N2. Bibliothèque avant/après anti-IA writing
+
+- Corpus 100 % propriétaire : les corrections verbatim de Tim sur ses propres textes (la session playbook Reddit du 2026-07-03 en contient déjà ~15 : sujet nominal abstrait, fragments, règle de 3, étiquettes de méta-discours).
+- 1 pattern = 1 page : le texte qui « sonne IA » vs la correction, avec la règle. Personne d'autre n'a ces avant/après réels.
+- Nourrit directement le futur détecteur d'AI writing FR (famille B) : la base des patterns EST le moteur de l'outil. Mécanique corpus → outil → pages, mais sur SA data.
+- Requêtes : « humaniser un texte ia », « texte qui sonne chatgpt », « réécrire un texte ia ».
+
+### N3. Bancs d'essai : les modèles IA sur les tâches SEO
+
+- Son système fait tourner les mêmes tâches réelles (brief, maillage, audit, rédaction) sur Claude / GPT / Gemini, résultats notés sur sa grille geo-audit, publiés datés.
+- 1 tâche = 1 page benchmark first-party, re-testée à chaque génération de modèles (la fraîcheur est le produit).
+- Comble le trou identifié à l'itération 2 (« claude vs chatgpt pour le seo » sans matière vault) : au lieu d'écrire un comparatif d'opinions, on fabrique la data.
+- Requêtes : « claude vs chatgpt seo », « meilleur llm pour le seo », « quel modèle ia pour rédiger ». Très citable (les IA adorent citer des benchmarks).
+
+### N4. Les trous de l'IA (directories-data-ia opérationnalisé)
+
+- Pipeline : interroger périodiquement les moteurs IA sur les questions SEO FR du backlog → cataloguer celles où la réponse est absente, fausse ou sans source FR → produire exactement la page qui comble chaque trou.
+- Le manque de l'IA devient la recherche de mots-clés. On ne choisit plus les pages, le trou les choisit.
+- C'est le concept [[concepts/directories-data-ia]] du vault transformé en usine à pages ; chaque page naît avec la garantie qu'aucune source ne la concurrence dans la réponse IA.
+
+Priorité proposée : N2 (la data existe déjà, zéro coût, personne ne peut copier) puis N1 (décisions déjà prises en prestation), N3 en rituel trimestriel, N4 comme pipeline permanent d'idéation.
+
 ## Résumé exécutif
 
 Organikk a un site jeune (GSC quasi entièrement branded) mais une matière propriétaire que les autres sites n'ont pas : 23 skills qui tournent réellement, un vault de 122 nœuds, un pipeline d'études en prod et ~30 propriétés GSC agrégables. Le modèle n°1 à lancer est la bibliothèque de workflows Claude × SEO : le corpus existe à 100 %, les 49 requêtes du backlog sont quasi vierges en FR, l'intention est décisionnelle, et chaque page se prouve avec de la data GSC réelle. Les études statistiques continuent en flux, le wiki s'étend sur le stock du vault, et les benchmarks first-party se préparent en tâche de fond : c'est le seul actif incopiable, celui qui forcera les citations IA.
