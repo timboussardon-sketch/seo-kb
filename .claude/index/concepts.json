@@ -584,6 +584,7 @@
       "raw/journal/2026-06-15.md",
       "raw/journal/2026-07-02.md",
       "raw/journal/2026-07-03.md",
+      "raw/journal/2026-07-07.md",
       "raw/notes/tim-my-voice.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "raw/papers/google-quality-raters-guidelines-2026.md",
@@ -1149,9 +1150,11 @@
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/entities/amazon-rufus.md",
+      "wiki/entities/deepseek.md",
       "wiki/entities/gemini.md",
       "wiki/entities/google-ai-mode.md",
       "wiki/entities/grok.md",
+      "wiki/entities/mistral.md",
       "wiki/entities/perplexity.md",
       "wiki/entities/reddit.md",
       "wiki/entities/seer-interactive.md",
@@ -1177,6 +1180,7 @@
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
       "wiki/syntheses/4-piliers-organikk.md"
     ],
     "confidence": "high",
@@ -1355,6 +1359,7 @@
       "agent-synthetic/revuedepressIA/2026-07-05-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-06-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-07-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1618,6 +1623,34 @@
     "title": "Data propriétaire (le moat SEO/GEO)",
     "type": "concept"
   },
+  "deepseek": {
+    "aliases": [
+      "deepseek",
+      "deepseek-r1"
+    ],
+    "backrefs": [
+      "wiki/log.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/deepseek.md",
+    "outlinks": [
+      "2026-07-07-moteurs-ia-chiffres-usage",
+      "perplexity",
+      "chatgpt-search",
+      "geo"
+    ],
+    "status": "draft",
+    "tags": [
+      "ia",
+      "llm",
+      "moteur-ia",
+      "chine",
+      "geo"
+    ],
+    "title": "DeepSeek",
+    "type": "entity"
+  },
   "dette-cognitive": {
     "aliases": [
       "dette-cognitive",
@@ -1688,6 +1721,7 @@
     ],
     "backrefs": [
       "wiki/concepts/fraicheur-contenu.md",
+      "wiki/queries/pseo-2026-07-07-organikk-corpus.md",
       "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md"
     ],
     "confidence": "medium",
@@ -2169,7 +2203,8 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-02-10-organikk-creer-bot-ia-seo.md",
-      "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md"
+      "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "medium",
     "file": "wiki/entities/gemini.md",
@@ -2210,7 +2245,9 @@
       "wiki/concepts/fraicheur-contenu.md",
       "wiki/concepts/query-fan-out.md",
       "wiki/entities/amazon-rufus.md",
+      "wiki/entities/deepseek.md",
       "wiki/entities/gemini.md",
+      "wiki/entities/mistral.md",
       "wiki/entities/wikipedia.md",
       "wiki/sources/2026-02-20-organikk-information-gain-geo.md",
       "wiki/sources/2026-04-25-organikk-reddit-pour-geo.md",
@@ -2219,7 +2256,8 @@
       "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md",
       "wiki/sources/2026-06-09-algorithme-ia-detruire-business-seo.md",
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
-      "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md"
+      "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/geo.md",
@@ -2367,7 +2405,8 @@
       "wiki/sources/2026-04-22-algorithme-core-update-fermes-ia.md",
       "wiki/sources/2026-04-25-pseo-data-driven-organikk-4-modeles.md",
       "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
-      "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md"
+      "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/google-ai-mode.md",
@@ -3201,6 +3240,7 @@
       "wiki/moc/moc-maillage.md",
       "wiki/queries/2026-06-10-golfiller-gsc-6mois.md",
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md",
+      "wiki/queries/product-led-2026-07-07-organikk-anti-chatgpt.md",
       "wiki/sources/2026-01-28-organikk-premier-agent-seo-ia.md",
       "wiki/sources/2026-05-19-algorithme-10-convictions-seo.md",
       "wiki/syntheses/4-piliers-organikk.md",
@@ -3614,6 +3654,8 @@
       "agent-synthetic/revuedepressIA/2026-07-05-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-06-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-07-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -3669,6 +3711,7 @@
       "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md",
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/faq-geo-175-questions.md"
     ],
@@ -3739,6 +3782,35 @@
       "multi-resolution"
     ],
     "title": "MIRAS (architecture)",
+    "type": "entity"
+  },
+  "mistral": {
+    "aliases": [
+      "mistral",
+      "mistral-ai",
+      "le-chat"
+    ],
+    "backrefs": [
+      "wiki/log.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/mistral.md",
+    "outlinks": [
+      "2026-07-07-moteurs-ia-chiffres-usage",
+      "perplexity",
+      "chatgpt-search",
+      "geo"
+    ],
+    "status": "draft",
+    "tags": [
+      "ia",
+      "llm",
+      "moteur-ia",
+      "france",
+      "geo"
+    ],
+    "title": "Mistral AI (Le Chat)",
     "type": "entity"
   },
   "modele-page-variable-prix": {
@@ -4395,9 +4467,11 @@
       "wiki/concepts/pseo-data-driven-models.md",
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/entities/chatgpt-search.md",
+      "wiki/entities/deepseek.md",
       "wiki/entities/gemini.md",
       "wiki/entities/google-ai-mode.md",
       "wiki/entities/grok.md",
+      "wiki/entities/mistral.md",
       "wiki/entities/reddit.md",
       "wiki/entities/wikipedia.md",
       "wiki/entities/x-twitter.md",
@@ -4417,6 +4491,7 @@
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
       "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
       "wiki/syntheses/4-piliers-organikk.md"
     ],
     "confidence": "high",
@@ -4427,6 +4502,7 @@
       "jamel",
       "2026-04-13-call-04-jamel",
       "2026-04-15-scan-arxiv-15-avril",
+      "2026-07-07-moteurs-ia-chiffres-usage",
       "2026-06-19-playbook-reddit-seo-geo",
       "aeo",
       "data-proprietaire",
@@ -4687,6 +4763,7 @@
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md",
       "wiki/queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas.md",
       "wiki/queries/entites-2026-06-10-golfiller-balle-de-golf.md",
+      "wiki/queries/product-led-2026-07-07-organikk-anti-chatgpt.md",
       "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
@@ -5281,6 +5358,7 @@
       "wiki/entities/sparktoro.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/queries/product-led-2026-07-07-organikk-anti-chatgpt.md",
       "wiki/sources/2026-03-05-organikk-strategie-seo-du-moment.md",
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md"
     ],
@@ -5732,6 +5810,7 @@
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -6033,6 +6112,7 @@
       "agent-synthetic/revuedepressIA/2026-07-05-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-05-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-06-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-07-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
@@ -6136,6 +6216,8 @@
       "wiki/log.md",
       "wiki/moc/moc-redaction.md",
       "wiki/queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas.md",
+      "wiki/queries/product-led-2026-07-07-organikk-anti-chatgpt.md",
+      "wiki/queries/pseo-2026-07-07-organikk-corpus.md",
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/sources/2026-04-13-prompt-pseo-non-produit.md",
       "wiki/sources/2026-04-13-victoria-garden-pseo.md",
@@ -6424,6 +6506,7 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/queries/pseo-2026-07-07-organikk-corpus.md",
       "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
       "wiki/sources/2026-03-06-algorithme-etude-citation-ia.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
