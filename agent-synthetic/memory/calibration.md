@@ -973,3 +973,26 @@ Total sources.jsonl après ce run : environ 590 lignes (10 explore nouvelles + 1
 Incréments exploit : seroundtable.com +4 (poids 1.2, 4 hits primaires info du jour + 3 brèves), searchenginejournal.com +1 (poids 1.3, Roger Montti llms-author.txt), optimixed.com +2 (poids 1.0, reprise Content Signals + Bing overlay), digitalphablet.com +1 (passe 3e hit cumulé statut exploit), blog.cloudflare.com +2 (poids 1.0, content-signals-policy primaire + agentic-internet-bot-report Content Independence Day), cloudflare.com/press +1 (poids 1.0, launch 24 sept 2025 press release primaire), support.google.com/merchants +1 (poids 1.0, doc officielle Merchant Center), blog.google/products +1 (poids 1.0, search-io-2026 primaire Further Exploration annonce initiale).
 
 Total sources.jsonl après ce run : environ 610 lignes (2 explore nouvelles + 8 exploit incréments).
+
+---
+
+## Édition 2026-07-08 (cloud)
+
+**Pilier info du jour** : Recherche agentique (Profound Aim lancement 2 juillet 2026).
+
+**Score sur la grille** :
+
+| Axe | Note | Justification |
+|---|---|---|
+| `source_diversity` | 5 | Info du jour couverte par GlobeNewswire wire primaire + Yahoo Finance + Adweek interview indépendante Blyskal + MarTech Series + Real Internet Sales + Martech360. Contexte financier SiliconANGLE + MarTech News. 5 sources indépendantes minimum sur chaque affirmation info du jour. |
+| `claim_density` | 8 | 8 claims `verified` retenus pour le corps (4 info du jour Profound Aim + 1 GSC Platform Properties + 1 Square ChatGPT/Claude + 1 James Allen cadre used vs cited + 1 description capacités Aim). Densité forte, article court et référencé. |
+| `novelty_score` | 4 | Angle « la couche exécution s'ajoute à la couche mesure dans les outils GEO » nouveau, ancré sur un fait concret (Profound qui bâtit sur son socle mesure). Distinct des angles récents Recherche agentique 0706 v2 (Salesforce Agentforce Commerce côté consommateur) et 0628 v2 (Computer Use Gemini). Pas d'événement inédit dans le champ SEO/GEO, mais cadrage propre. |
+| `doctrine_fit` | 4 | 3 fiches doctrine articulées : `metriques-visibilite-geo` étendue avec 5e dimension (latence signal-action), `agentic-search` documente le côté opérateur distinct du côté consommateur déjà couvert, `data-propriétaire` avec moat augmenté par exécution. Articulation nette, pas décorative. |
+| `redite_risk` | faible | Profond Aim absent de said_index (grep = 0). Anti-redite vérifiée. Brèves piliers variés (Actualité SEO GSC, RA Square, GEO James Allen cadre). |
+| `clickbait_risk` | faible | Titre factuel « Profound sort Aim le 2 juillet 2026 : la couche exécution s'ajoute à la couche mesure dans les outils GEO ». Pattern Titres↑ #3 (négation + retournement) appliqué à un fait mesuré. Aucun « vous n'allez pas croire », aucun chiffre agité sans donnée. |
+
+**Note globale** : 4,3 / 5. Édition solide, doctrine bien articulée, 3 limites explicitées sur le vendor unique, prédictions vérifiables datées. Manque : aucun chiffre d'adoption interne Profound sur Aim (typique du J+6 sur un lancement produit). Enjeu : suivre l'exécution de la prédiction P-2026-07-08-1 pour valider ou invalider la traction réelle du produit.
+
+**Sources** : 7 nouvelles explore ajoutées (globenewswire.com trust 0.65 wire primaire agnostique, martechseries.com trust 0.6 trade secondaire, realinternetsales.com trust 0.5 trade blog, emarketer.com trust 0.7 analyste trade e-commerce, eightx.co trust 0.55 blog CFO agentic, martech.news trust 0.6 trade media, squareup.com trust 0.85 primaire vendor). Incréments exploit : adweek.com +1 (interview Blyskal indépendante confirme statut exploit), developers.google.com +1 (primaire GSC Platform Properties), businesswire.com +1 (Square wire), searchengineland.com +2 (Schwartz GSC + Allen cadre), seroundtable.com +1 (daily recap 7 juillet), searchenginejournal.com +1 (Southern GSC), 9to5google.com +1 (GSC social accounts), tryprofound.com +1 (contexte Profound Index NY 29 juin, cumul plusieurs hits, candidate exploit rapide).
+
+**Discipline anti-pattern IA respectée** : grep tiret cadratim = 0 (sauf structurel markdown ---), zéro personnification, vouvoiement maintenu, aucun mot banni, corrections effectuées avant publication (« par vagues » → « par lots successifs », « pile agent » → « architecture agent », « agent-cadre » → « agent-orchestrateur », « agents-ouvriers » → « agents spécialisés »).
