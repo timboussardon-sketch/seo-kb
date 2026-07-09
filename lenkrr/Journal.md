@@ -14,6 +14,16 @@ Module manquant identifié : la correspondance URL vers fichier source, absente 
 
 Pain point chiffré : Leexi, moins 43 % de SEO hors-marque en six mois, refonte sans 301, réparé à la main sur 178 URLs.
 
+**Deuxième passe, même jour.** Décision Tim : zéro validation humaine, un dashboard de contrôle. Spec réécrite en conséquence. La validation humaine est du théâtre (un consultant qui reçoit 40 PR par nuit clique, il ne lit pas), elle est remplacée par quatre mécanismes : vérification de préversion, budget d'actions par nuit, déploiement progressif par classe, retour arrière automatique. Une action dangereuse n'est plus « soumise à approbation », elle est **hors de l'espace d'action** : l'agent ne sait pas l'exprimer. Trois modes d'adoption : ombre (30 nuits, il montre ce qu'il aurait fait, il remplit le journal), canari, autonome.
+
+Veille faite sur les deux produits cités par Tim. **Okara** (~66 $/mois) audite chaque jour et livre « 2 high-impact recommendations daily with copy-ready snippets » : il n'écrit pas sur le site, le livrable est un extrait à coller. **Polsia** n'est pas un produit SEO, c'est une plateforme d'agents autonomes (identité persistante, mémoire, outils, boucle planifiée) ; RankPilot vit sur `rankpilot-7.polsia.app` et semble être une app tierce, à confirmer. Conclusion : personne n'écrit dans la source du client, la ligne de démarcation de leenq est intacte.
+
+Deux emprunts. À Polsia le runtime (le signal déclenche, pas l'utilisateur ; « ton agent » pas « notre plateforme »). À Okara la **cadence bornée** : deux corrections par jour n'est pas une limitation, c'est le budget de rayon d'explosion déguisé en rythme produit. La contrainte de sécurité est l'argument commercial. « Trois corrections cette nuit, trois vérifiées, zéro régression depuis quatre mois » remplace le compteur qui s'emballe.
+
+Non repris : le link building autonome annoncé par RankPilot (achat de liens automatisé, interdit par la doctrine), et le positionnement anti-retainer d'Okara.
+
+**Décision Tim : l'acheteur est le consultant SEO**, pas le fondateur sans SEO (cible d'Okara et Polsia). Tarif par site. Le dashboard multi-sites est la surface. Le plan unique à 39 €/mois du squelette Stripe ne correspond plus au produit.
+
 ## Renommage + mise en prod (2026-06-11)
 
 Grosse session « on fait tout » : les 5 restes du backlog traités d'un coup.
