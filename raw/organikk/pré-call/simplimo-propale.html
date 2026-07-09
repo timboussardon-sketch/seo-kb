@@ -170,6 +170,16 @@
 </head>
 <body>
 
+<style>
+  .kw td{ padding:4.5px 12px; font-size:10.5px; }
+  .kw th{ padding:7px 12px; }
+  .kw .pill{ font-size:9.5px; padding:3px 7px; }
+  .pill.no{ color:var(--red); background:var(--red-soft); border-color:var(--red-line); }
+  .pill.mid{ color:var(--muted); background:#f6f8fc; border-color:var(--line-2); }
+  .kw-note p{ font-size:12px; line-height:1.58; }
+  .kw-note p+p{ margin-top:9px; }
+</style>
+
 <!-- ════════ PAGE 1 · COVER ════════ -->
 <section class="page cover">
   <div class="cover-top">
@@ -204,8 +214,8 @@
     <p>Vous avez pourtant nommé vous-mêmes les cinq situations qui amènent un vendeur pressé. Ce qu'on installe : une <strong>machine à contenu</strong> qui produit une page ultra personnalisée par situation et par ville, à partir de vos dossiers réels, et qui décline chaque contenu sur <strong>LinkedIn, la newsletter et Reddit</strong>.</p>
   </div>
 
-  <div class="sh gap-lg"><span class="num">02</span><span class="rule"></span><span class="lbl">Constat</span></div>
-  <h1 class="sec">Ce qu'on a vu</h1>
+  <div class="sh gap-lg"><span class="num">02</span><span class="rule"></span><span class="lbl">Pré-audit</span></div>
+  <h1 class="sec">Pré-audit technique</h1>
   <p class="sec-lead">Relevé du 9 juillet 2026 sur vos pages publiques. Aucun chiffre estimé, aucune donnée Search Console.</p>
   <div class="tbl">
     <table>
@@ -238,10 +248,10 @@
     <p>On part du besoin, pas du mot-clé. Pour chacune de vos cinq situations, on cartographie tout ce qu'un vendeur tape ou demande avant de décider : la question posée au téléphone, celle posée sur un forum, celle tapée dans Google, celle posée à une IA. On obtient la liste complète des requêtes autour d'un même besoin, regroupées par situation et par ville. <span class="dk">Chaque requête est associée à une page, et à une seule.</span></p>
   </div>
 
-  <div class="sub gap-lg"><span class="n">3.2</span><h3>La machine à contenu : des pages ultra personnalisées</h3></div>
+  <div class="sub gap-lg"><span class="n">3.2</span><h3>Le cocon autour de « vendre sa maison rapidement »</h3></div>
   <div class="prose">
     <p>Le système produit une page par situation et par ville, nourrie par votre corpus de données : la procédure québécoise réelle avec ses délais légaux sourcés, et un dossier que vous avez traité, anonymisé, avec le délai constaté. S'ajoute un outil gratuit, le calcul de ce qui reste au vendeur, net, avec courtier ou par offre directe.</p>
-    <p>Le maillage interne est géré par le système : chaque page de ville remonte vers sa page de situation et cite ses voisines. Le système exécute, vous gardez la main sur ce qui part en ligne.</p>
+    <p>Le maillage interne est géré par le système : chaque page de ville remonte vers sa page de situation et cite ses voisines. Le cocon complet est détaillé en section 05.</p>
   </div>
 
   <div class="sub gap-lg"><span class="n">3.3</span><h3>La déclinaison multicanale</h3></div>
@@ -321,19 +331,19 @@
     <div class="panel ok">
       <span class="p-label">Création de pages</span>
       <ul class="clist">
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les cinq pages de situation.</b> Procédure québécoise sourcée, délais légaux, un dossier réel anonymisé par page.</span></li>
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>La déclinaison par ville.</b> Uniquement là où une donnée locale existe.</span></li>
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le calculateur du net vendeur.</b> Branché sur « Obtenir mon offre », avec ses sources chiffrées.</span></li>
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>La déclinaison.</b> Chaque page produit sa version LinkedIn, newsletter et Reddit.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Vos cinq situations deviennent cinq pages. Chacune porte la procédure québécoise, ses délais légaux sourcés, et un de vos dossiers, anonymisé.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>On décline ensuite par ville, seulement là où vous avez une donnée locale à donner.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le calculateur du net vendeur se branche sur « Obtenir mon offre », avec ses sources chiffrées.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Chaque page sort ensuite en version LinkedIn, newsletter et Reddit.</span></li>
       </ul>
     </div>
     <div class="panel ok">
       <span class="p-label">Optimisation de l'existant</span>
       <ul class="clist">
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Votre page Avantages.</b> Allégée, elle renvoie vers les cinq pages de situation.</span></li>
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Votre FAQ.</b> Découpée en pages de questions, chacune reconnue par les moteurs de réponse.</span></li>
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Vos pages actuelles.</b> Titres, contenus et liens repris, une par une.</span></li>
-        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le maillage.</b> Repris entièrement par le système sur l'ensemble du site.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Votre page Avantages porte les cinq situations en sous-titres. On l'allège, et elle renvoie vers les cinq pages.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Votre FAQ fait 649 mots que Google ne reconnaît pas. On la découpe en pages de questions, chacune déclarée comme telle.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Vos pages actuelles gardent des titres qui reprennent le menu. On reprend les titres, les contenus et les liens, une page à la fois.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le maillage se refait sur l'ensemble du site, page par page.</span></li>
       </ul>
     </div>
   </div>
@@ -342,9 +352,82 @@
   </div>
 </section>
 
-<!-- ════════ PAGE 5 · LIVRABLES + TARIF + SUITE ════════ -->
+<!-- ════════ PAGE · COCON ════════ -->
 <section class="page">
-  <div class="sh"><span class="num">05</span><span class="rule"></span><span class="lbl">Livrables</span></div>
+  <div class="sh"><span class="num">05</span><span class="rule"></span><span class="lbl">Le cocon</span></div>
+  <h1 class="sec">Le cocon autour de « vendre sa maison rapidement »</h1>
+  <p class="sec-lead">Requêtes relevées dans Google Suggest le 9 juillet 2026, croisées avec vos pages réelles. Chaque satellite couvre une intention distincte et une seule. La colonne de droite dit ce qu'on fait de la page existante, quand il y en a une. Aucun volume n'est affiché, il se sort du Keyword Planner une fois votre compte relié.</p>
+  <div class="tbl kw">
+    <table>
+      <thead><tr><th style="width:30%">Requête cible réelle</th><th style="width:13%">Intention</th><th style="width:35%">Sur votre site aujourd'hui</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">combien de temps pour vendre une maison</td><td class="mut">Know-Simple</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vente sans garantie légale : signification</td><td class="mut">Know-Simple</td><td class="read">Mentionné, jamais expliqué</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">préavis d'exercice : délai</td><td class="mut">Know-Simple</td><td class="read">Sous-titre sur /avantages/</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">frais de notaire vente maison Québec</td><td class="mut">Know-Simple</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vendre maison succession</td><td class="mut">Know</td><td class="read">Sous-titre sur /avantages/</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vendre sa maison avant saisie</td><td class="mut">Know</td><td class="read">Sous-titre sur /avantages/</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vendre maison séparation</td><td class="mut">Know</td><td class="read">Sous-titre sur /avantages/</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vendre maison tel quel</td><td class="mut">Know</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vendre sa maison à un investisseur</td><td class="mut">Know</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">recours achat maison sans garantie légale</td><td class="mut">Know</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">vendre maison sans courtier</td><td class="mut">Know</td><td class="read">Page d'accueil, 516 mots</td><td><span class="pill mid">Enrichir</span></td></tr>
+        <tr><td class="dim">vendre maison Montréal, Lévis, Laval…</td><td class="mut">Know</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">calcul profit vente maison</td><td class="mut">Do</td><td class="read">Aucun outil</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">frais vente maison Québec</td><td class="mut">Do</td><td class="read">Aucun outil</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">promesse d'achat modèle Québec</td><td class="mut">Do</td><td class="read">Aucun document</td><td><span class="pill">Créer</span></td></tr>
+        <tr><td class="dim">combien coûte un courtier immobilier Québec</td><td class="mut">Do</td><td class="read">Aucune page</td><td><span class="pill">Créer</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub gap-lg"><span class="n">5.1</span><h3>Le maillage, et ce que le relevé révèle</h3></div>
+  <div class="prose kw-note">
+    <p>Les pages Know-Simple répondent en moins de cinquante mots et renvoient vers la page pilier. Les pages Know développent, citent deux pages sœurs, et pointent toutes vers une page Do. Les pages Do sont des outils, pas du texte : c'est là que se capte l'email.</p>
+    <p>Le relevé remonte une opportunité rare : sur ce cocon, presque tout est à créer. Vos cinq situations sont des sous-titres, et vos deux calculateurs n'existent pas. Un site neuf se construit dans le bon ordre du premier coup.</p>
+  </div>
+</section>
+
+<!-- ════════ PAGE · VECTEURS SÉMANTIQUES ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">06</span><span class="rule"></span><span class="lbl">Vecteurs</span></div>
+  <h1 class="sec">Les vecteurs attendus sur votre requête principale</h1>
+  <p class="sec-lead">Requête cible : <span class="dk">« vendre sa maison rapidement »</span>. Intention : Do — transactionnelle. Une page se positionne quand elle contient les notions que le lecteur attend sur cette requête. Voici ces notions, et ce que vos pages en contiennent aujourd'hui.</p>
+  <div class="tbl kw">
+    <table>
+      <thead><tr><th style="width:55%">Vecteur attendu</th><th style="width:24%">Catégorie</th><th>Sur vos pages</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Sans courtier</td><td class="mut">Technique</td><td><span class="pill">Présent</span></td></tr>
+        <tr><td class="dim">Commission</td><td class="mut">Technique</td><td><span class="pill">Présent</span></td></tr>
+        <tr><td class="dim">Garantie légale</td><td class="mut">Technique</td><td><span class="pill">Présent</span></td></tr>
+        <tr><td class="dim">Préavis d'exercice</td><td class="mut">Technique</td><td><span class="pill">Présent</span></td></tr>
+        <tr><td class="dim">Notaire</td><td class="mut">Technique</td><td><span class="pill">Présent</span></td></tr>
+        <tr><td class="dim">Offre d'achat</td><td class="mut">Technique</td><td><span class="pill">Présent</span></td></tr>
+        <tr><td class="dim">Vice caché</td><td class="mut">Technique</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Prise en paiement, recours hypothécaire</td><td class="mut">Technique</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Promesse d'achat, acte de vente</td><td class="mut">Technique</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Liquidateur de succession</td><td class="mut">Technique</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Évaluation municipale, inspection</td><td class="mut">Technique</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Commission moyenne d'un courtier au Québec, en %</td><td class="mut">Preuve chiffrée</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Délai légal après un préavis d'exercice, en jours</td><td class="mut">Preuve chiffrée</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Votre délai réel entre le premier appel et la signature</td><td class="mut">Preuve chiffrée</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Calculateur du net vendeur, accessible sans compte</td><td class="mut">Multimodal</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Un dossier réel anonymisé, par situation</td><td class="mut">Multimodal</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">Ce que vous refusez d'acheter</td><td class="mut">Divergence</td><td><span class="pill no">Absent</span></td></tr>
+        <tr><td class="dim">L'écart de prix assumé face au marché</td><td class="mut">Divergence</td><td><span class="pill no">Absent</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub gap-lg"><span class="n">6.1</span><h3>Le gap</h3></div>
+  <div class="prose kw-note">
+    <p><span class="dk">6 des 18 vecteurs listés ci-dessus sont présents</span> sur vos pages, relevé fait le 9 juillet 2026 sur vos pages publiques. Vous nommez le préavis d'exercice et la garantie légale, sans jamais expliquer ce qu'ils impliquent : la prise en paiement, le vice caché, le délai qui court, le rôle du liquidateur dans une succession. Le vendeur qui cherche est en train de comprendre ce qu'il signe. Les quatre derniers vecteurs sont ceux que vous seuls détenez : votre délai réel constaté, ce que vous refusez d'acheter, l'écart de prix que vous assumez. Chaque chiffre légal sera sourcé sur un texte officiel, jamais estimé.</p>
+  </div>
+</section>
+
+<!-- ════════ PAGE · LIVRABLES + TARIF ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">07</span><span class="rule"></span><span class="lbl">Livrables</span></div>
   <h1 class="sec">Livrables</h1>
   <div class="deliver">
     <div class="d-row"><span class="d-n">01</span><span class="d-t">L'audit, avec les correctifs appliqués : vrai numéro transmis à Google, FAQ reconnue, ancrage local déclaré, titres de page réécrits.</span></div>
@@ -356,7 +439,7 @@
     <div class="d-row"><span class="d-n">07</span><span class="d-t">La compétence pour faire tourner la machine sans moi.</span></div>
   </div>
 
-  <div class="sh gap-lg"><span class="num">06</span><span class="rule"></span><span class="lbl">Tarification</span></div>
+  <div class="sh gap-lg"><span class="num">08</span><span class="rule"></span><span class="lbl">Tarification</span></div>
   <h1 class="sec">Tarification</h1>
   <div class="price">
     <div class="price-l">
@@ -376,20 +459,5 @@
   <p class="esti"><b>Engagement de méthode.</b> Aucun volume, aucune position, aucune donnée de trafic n'est avancée dans ce document. Tout ce qui est chiffré ici a été relevé le 9 juillet 2026 sur vos pages publiques et reste vérifiable par vos équipes.</p>
 
 </section>
-
-<!-- ════════ PAGE 6 · PROCHAINE ÉTAPE ════════ -->
-<section class="page">
-  <div class="sh"><span class="num">07</span><span class="rule"></span><span class="lbl">Prochaine étape</span></div>
-  <h1 class="sec">Prochaine étape</h1>
-  <div class="next">
-    <div class="big">Sortez vos vingt derniers dossiers, avec la situation et le délai réel entre le premier appel et la signature. C'est la matière première de la machine, et c'est la seule chose que je ne peux pas produire à votre place.</div>
-    <div class="sig">
-      <div class="nm">Timothée Boussardon</div>
-      <div class="ml">tim@organikk.co</div>
-      <div class="ft">ORGANIKK.CO · CONSEIL SEO ET GEO</div>
-    </div>
-  </div>
-</section>
-
 </body>
 </html>
