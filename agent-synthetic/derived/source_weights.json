@@ -1,14 +1,14 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-07-06-v2",
+  "updated": "2026-07-09-v2",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
     "bing-webmaster": 1.05,
     "search-engine-land": 1.3,
     "search-engine-journal": 1.3,
-    "search-engine-roundtable": 1.2,
-    "techcrunch-ai": 1.04,
+    "search-engine-roundtable": 1.24,
+    "techcrunch-ai": 1.08,
     "the-verge-ai": 1.0,
     "ars-technica": 1.0,
     "reddit-seo": 0.95,
@@ -39,8 +39,8 @@
     "shopify-blog": 1.04,
     "pymnts": 1.12,
     "digitalcommerce360": 1.08,
-    "mediapost": 1.08,
-    "9to5google": 1.08,
+    "mediapost": 1.12,
+    "9to5google": 1.12,
     "ppc.land": 1.24,
     "paypal-newsroom": 1.09,
     "retail-systems": 1.04,
@@ -230,6 +230,17 @@
     "salesforce.com": 1.4,
     "microsoft.com/security/blog": 1.13,
     "anthropic.com": 1.13,
-    "digitalcommerce360.com": 1.08
+    "digitalcommerce360.com": 1.08,
+    "openai-primary": 1.04,
+    "ppc-land": 1.04,
+    "google-blog": 1.04,
+    "google-merchant-help": 1.04,
+    "x-nick-fox": 1.04,
+    "x-robby-stein": 1.04,
+    "jonloomer": 1.04,
+    "grayvault-consulting": 1.04,
+    "sqmagazine-tech": 1.02,
+    "testingcatalog": 1.05,
+    "theaicareerlab": 0.95
   }
 }
