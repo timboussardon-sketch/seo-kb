@@ -30,7 +30,11 @@
 
 ## À faire (par priorité)
 
-(vide — ajouter de nouveaux sujets pour la prochaine édition)
+1. **Crawlers IA (GPTBot, ClaudeBot, PerplexityBot, Googlebot-AI) : fréquence d'exploration, profondeur, taux de blocage robots.txt et nouvelles directives (2025-2026)** — angle technique neuf, données Cloudflare Radar + analyses de logs disponibles, pas de recouvrement avec les études existantes sur le profil off-page ou technique des pages citées. Requête-ancre : « GPTBot statistiques / taux de blocage / crawl IA 2026 ».
+
+2. **Langue française et biais linguistique des moteurs IA : part du contenu francophone dans les citations IA, sur-représentation de l'anglais et implications pour le SEO en France (2025-2026)** — angle différenciant pour l'audience française de Tim, données SE Ranking + études MLCommons/Eurostat sur la diversité linguistique des LLMs. Requête-ancre : « contenu francophone citations IA / biais linguistique SEO France ».
+
+3. **Featured snippets à l'ère de l'IA : évolution de l'inventaire, du CTR position zéro et de la cannibalisation par les AI Overviews (2024-2026)** — complète les études existantes sur les AI Overviews et le zéro-clic en documentant spécifiquement le devenir de la position 0 classique. Données Semrush Sensor + Advanced Web Ranking + MozCast disponibles. Requête-ancre : « featured snippets statistiques 2026 / position zéro CTR IA ».
 
 ## Sujets écartés (avec raison)
 (vide)
