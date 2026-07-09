@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Proposition commerciale · Horizon CRM · Organikk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0F1E; --ink-2:#293247; --muted:#5a6681; --muted-2:#8a93a8;
+    --line:rgba(10,15,30,.08); --line-2:rgba(10,15,30,.13);
+    --paper:#ffffff; --bg-2:#f6f8fc;
+    --blue:#2559DD; --blue-deep:#1B3E8F; --blue-title:#1d44b8;
+    --blue-soft:#eef3fe; --blue-softer:#f4f8ff; --blue-line:rgba(37,89,221,.22);
+    --red:#d23a22; --red-soft:#fdf1ee; --red-line:rgba(210,58,34,.18);
+    --font:'Geist', system-ui, sans-serif;
+    --mono:'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+    --serif:'Instrument Serif', serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  @page{ size:A4; margin:0; }
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:var(--font); color:var(--ink-2); letter-spacing:-.011em; -webkit-font-smoothing:antialiased; background:#fff; line-height:1.6; }
+  .page{ position:relative; width:210mm; min-height:297mm; padding:18mm 18mm 16mm; background:#fff; overflow:hidden; page-break-after:always; display:flex; flex-direction:column; }
+  .page:last-child{ page-break-after:auto; }
+
+  /* ── Section header : 01 ───────── Label ── */
+  .sh{ display:flex; align-items:center; gap:14px; margin:30px 0 0; }
+  .sh:first-child{ margin-top:0; }
+  .sh .num{ font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--blue); letter-spacing:.04em; }
+  .sh .rule{ flex:1; height:1px; background:var(--line-2); }
+  .sh .lbl{ font-family:var(--mono); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); font-weight:600; }
+  h1.sec{ font-size:30px; font-weight:600; letter-spacing:-.032em; line-height:1.08; color:var(--blue-title); margin:14px 0 0; }
+  .sec-lead{ font-size:14px; line-height:1.62; color:var(--muted); margin-top:10px; max-width:620px; }
+
+  /* ── Subsection : 3.1 Titre ── */
+  .sub{ display:flex; align-items:baseline; gap:10px; margin:26px 0 8px; }
+  .sub .n{ font-family:var(--mono); font-size:12px; font-weight:700; color:var(--blue); }
+  .sub h3{ font-size:16.5px; font-weight:600; letter-spacing:-.022em; color:var(--ink); }
+
+  p{ font-size:13px; line-height:1.64; color:var(--ink-2); }
+  .prose p+p{ margin-top:11px; }
+  strong, b.acc{ font-weight:600; color:var(--blue); }
+  .prose .dk{ font-weight:600; color:var(--ink); }
+
+  /* ── COVER ── */
+  .cover{ background:linear-gradient(155deg,#0e1c49 0%, #16307b 38%, #1B3E8F 62%, #2d5fe0 100%); color:#fff; padding:16mm 18mm 14mm; }
+  .cover-top{ display:flex; justify-content:space-between; align-items:center; }
+  .cover-brand{ font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.18em; color:#fff; }
+  .cover-brand b{ color:#9db9f7; font-weight:700; }
+  .cover-tag{ font-family:var(--mono); font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:rgba(255,255,255,.55); font-weight:600; }
+  .cover-mid{ margin-top:auto; }
+  .cover-kicker{ font-family:var(--mono); font-size:11px; letter-spacing:.26em; text-transform:uppercase; color:#8fb0f5; font-weight:700; }
+  h1.cover-title{ margin-top:22px; font-size:51px; line-height:1.06; letter-spacing:-.035em; font-weight:600; color:#fff; max-width:12em; }
+  h1.cover-title .serif{ font-family:var(--serif); font-style:italic; font-weight:400; letter-spacing:-.01em; }
+  .cover-lead{ margin-top:22px; font-size:15.5px; line-height:1.6; color:rgba(255,255,255,.78); max-width:36em; }
+  .cover-stats{ margin-top:34px; padding-top:26px; border-top:1px solid rgba(255,255,255,.18); display:grid; grid-template-columns:1.05fr 1.25fr 1.15fr 1.25fr; gap:22px; }
+  .cstat .k{ font-size:29px; font-weight:600; letter-spacing:-.03em; line-height:1; color:#fff; }
+  .cstat.accent .k{ color:#8fb0f5; }
+  .cstat .l{ margin-top:9px; font-size:11px; line-height:1.5; color:rgba(255,255,255,.62); }
+  .cover-foot{ margin-top:auto; padding-top:24px; border-top:1px solid rgba(255,255,255,.14); display:flex; justify-content:space-between; align-items:flex-end; }
+  .cover-foot .who{ font-size:11.5px; line-height:1.7; color:rgba(255,255,255,.66); }
+  .cover-foot .who b{ color:#fff; font-weight:600; }
+  .cover-foot .ref{ font-family:var(--mono); font-size:9.5px; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.45); font-weight:600; }
+  .cover .cover-mid{ flex:0 0 auto; margin-top:120px; }
+  .cover-spacer{ flex:1; }
+
+  /* ── Table ── */
+  .tbl{ margin-top:14px; border:1px solid var(--line-2); border-radius:14px; overflow:hidden; }
+  table{ width:100%; border-collapse:collapse; }
+  th{ font-family:var(--mono); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted-2);
+    font-weight:700; text-align:left; padding:9px 14px; background:var(--blue-softer); border-bottom:1px solid var(--line-2); }
+  td{ padding:9px 14px; border-bottom:1px solid var(--line); font-size:11px; line-height:1.5; color:var(--ink-2); vertical-align:top; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:nth-child(even){ background:#fbfcff; }
+  td.dim{ font-weight:600; color:var(--ink); }
+  td.mut{ color:var(--muted); }
+  td.read{ color:#5572b8; }
+  .pill{ display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; color:var(--blue);
+    white-space:nowrap; padding:4px 9px; border-radius:8px; background:var(--blue-soft); border:1px solid var(--blue-line); }
+
+  /* ── Panels ok / ko ── */
+  .duo{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .panel{ padding:20px 22px; border-radius:18px; }
+  .panel.ok{ background:linear-gradient(170deg,#eef4ff 0%, #e7efff 100%); }
+  .panel.ko{ background:linear-gradient(170deg,#fdf2ee 0%, #fcebe6 100%); }
+  .p-label{ font-family:var(--mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; display:block; margin-bottom:16px; }
+  .panel.ok .p-label{ color:var(--blue); }
+  .panel.ko .p-label{ color:var(--red); }
+  .clist{ list-style:none; display:flex; flex-direction:column; gap:11px; }
+  .clist li{ display:flex; gap:11px; font-size:11px; line-height:1.5; color:var(--ink-2); }
+  .clist li b{ color:var(--ink); font-weight:600; }
+  .di{ flex-shrink:0; width:17px; height:17px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+  .di svg{ width:9px; height:9px; stroke:currentColor; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .di.v{ background:#fff; color:var(--blue); }
+  .di.x{ background:#fff; color:var(--red); }
+  .di.a{ background:var(--blue-soft); color:var(--blue); }
+
+  /* ── Big callout ── */
+  .bigcall{ margin-top:16px; padding:22px 26px; border-radius:18px; background:linear-gradient(165deg,#eaf1ff 0%, #dfeafe 100%); }
+  .bigcall .p-label{ color:var(--blue); }
+  .bigcall p{ font-size:13px; line-height:1.66; color:var(--ink-2); }
+  .bigcall h2{ font-size:24px; font-weight:600; letter-spacing:-.028em; color:var(--blue-title); margin:2px 0 12px; }
+  .bigcall .closing{ margin-top:18px; padding-top:14px; border-top:1px solid rgba(37,89,221,.18); font-size:12.5px; font-weight:600; color:var(--blue-title); }
+
+  /* ── Side-by-side cards ── */
+  .card{ background:#fff; border:1px solid var(--line); border-radius:18px; padding:22px 24px; box-shadow:0 10px 28px -24px rgba(27,62,143,.18); }
+  .card .sub{ margin:0 0 10px; }
+  .card p{ font-size:11.5px; line-height:1.6; color:var(--ink-2); }
+  .alist{ list-style:none; display:flex; flex-direction:column; gap:11px; }
+  .alist li{ display:flex; gap:11px; font-size:11.5px; line-height:1.55; color:var(--ink-2); }
+  .alist .di{ margin-top:1px; }
+  .alist .di svg{ width:8px; height:8px; }
+
+  /* ── Deliverables ── */
+  .deliver{ margin-top:14px; border:1px solid var(--line-2); border-radius:14px; overflow:hidden; }
+  .d-row{ display:flex; gap:15px; align-items:baseline; padding:9px 15px; border-bottom:1px solid var(--line); }
+  .d-row:last-child{ border-bottom:none; }
+  .d-row:nth-child(even){ background:#fbfcff; }
+  .d-n{ font-family:var(--mono); font-size:11px; font-weight:700; color:var(--blue); flex-shrink:0; }
+  .d-t{ font-size:12px; line-height:1.55; color:var(--ink-2); }
+
+  /* ── Months ── */
+  .months{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .month{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:17px; box-shadow:0 10px 28px -24px rgba(27,62,143,.16); }
+  .m-tag{ font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--blue); }
+  .m-title{ margin:5px 0 12px; font-size:14.5px; font-weight:600; letter-spacing:-.02em; color:var(--ink); padding-bottom:11px; border-bottom:1px dashed var(--blue-line); }
+  .m-list{ list-style:none; display:flex; flex-direction:column; gap:9px; }
+  .m-list li{ position:relative; padding-left:14px; font-size:10.5px; line-height:1.5; color:var(--ink-2); }
+  .m-list li::before{ content:""; position:absolute; left:0; top:.55em; width:4.5px; height:4.5px; border-radius:50%; background:var(--blue); }
+
+  /* ── Price ── */
+  .price{ margin-top:16px; display:grid; grid-template-columns:1.45fr 1fr; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:0 14px 34px -26px rgba(27,62,143,.2); }
+  .price-l{ padding:26px 28px; background:#fff; }
+  .price-l .clist li{ font-size:12px; }
+  .price-l .di.v{ background:var(--blue-soft); }
+  .price-modal{ margin-top:16px; padding-top:13px; border-top:1px solid var(--line); font-size:11px; line-height:1.6; color:var(--muted); }
+  .price-r{ padding:26px 28px; color:#fff; background:linear-gradient(150deg,#16307b 0%, #1B3E8F 40%, #2d5fe0 100%); display:flex; flex-direction:column; justify-content:center; }
+  .price-amt{ font-size:42px; font-weight:600; letter-spacing:-.04em; line-height:1; }
+  .price-unit{ font-size:13px; font-weight:500; color:rgba(255,255,255,.8); margin-left:8px; }
+  .price-x{ margin-top:13px; font-size:11.5px; line-height:1.55; color:rgba(255,255,255,.8); }
+
+  /* ── Result tiles ── */
+  .tiles{ margin-top:16px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .tile{ background:#fff; border:1px solid var(--line); border-radius:15px; padding:18px 17px 15px; box-shadow:0 10px 28px -24px rgba(27,62,143,.16); }
+  .tile .k{ font-size:23px; font-weight:600; letter-spacing:-.03em; color:var(--blue); line-height:1.05; }
+  .tile .l{ font-size:10.5px; line-height:1.52; color:var(--muted); margin-top:9px; }
+  .esti{ margin-top:16px; font-size:11px; line-height:1.6; color:var(--muted); font-style:italic; }
+  .esti b{ font-style:normal; font-weight:600; color:var(--blue-title); }
+
+  /* ── Why cards ── */
+  .why{ margin-top:16px; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .why .card .wn{ font-family:var(--mono); font-size:14px; font-weight:700; color:var(--blue); }
+  .why .card h4{ margin:9px 0 6px; font-size:14px; font-weight:600; letter-spacing:-.018em; color:var(--ink); }
+  .closing-line{ margin-top:24px; text-align:center; font-size:12.5px; font-weight:600; color:var(--blue-title); line-height:1.6; }
+
+  /* ── Next panel ── */
+  .next{ margin-top:18px; padding:30px 32px; border-radius:20px; background:linear-gradient(165deg,#eef4ff 0%, #e3edff 100%); }
+  .next .big{ font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.6; }
+  .next .small{ margin-top:11px; font-size:12px; color:var(--muted); line-height:1.6; }
+  .next .sig{ margin-top:22px; padding-top:18px; border-top:1px solid rgba(37,89,221,.18); }
+  .next .sig .nm{ font-size:14.5px; font-weight:600; color:var(--ink); }
+  .next .sig .ml{ font-family:var(--mono); font-size:11px; color:var(--blue); margin-top:4px; }
+  .next .sig .ft{ font-family:var(--mono); font-size:9px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); margin-top:14px; font-weight:600; }
+
+  .gap{ margin-top:20px; }
+  .gap-lg{ margin-top:22px; }
+</style>
+</head>
+<body>
+
+<!-- ════════ PAGE 1 · COVER ════════ -->
+<section class="page cover">
+  <div class="cover-top">
+    <div class="cover-brand">ORGANIKK<b>.CO</b></div>
+    <div class="cover-tag">Proposition commerciale</div>
+  </div>
+  <div class="cover-mid">
+    <div class="cover-kicker">Machine à contenu et système autonome</div>
+    <h1 class="cover-title">Stratégie <span class="serif">Horizon CRM</span>.</h1>
+    <p class="cover-lead">Vos 151 pages existent déjà. Elles ne rapportent pas ce qu'elles devraient, et ce n'est pas une question de volume. On répare la structure, puis on construit une machine à contenu : un contenu produit une fois, décliné en pages optimisées, LinkedIn, Reddit et YouTube.</p>
+    <div class="cover-stats">
+      <div class="cstat"><div class="k">151</div><div class="l">URLs au sitemap, identiques sur .fr et .ca</div></div>
+      <div class="cstat accent"><div class="k">284</div><div class="l">mots sur vos pages métier, celles qui doivent convertir</div></div>
+      <div class="cstat"><div class="k">59 %</div><div class="l">de recouvrement entre vos pages Paris et Lyon</div></div>
+      <div class="cstat"><div class="k">0</div><div class="l">outil gratuit indexable, alors qu'ils sont dans le produit</div></div>
+    </div>
+  </div>
+  <div class="cover-spacer"></div>
+  <div class="cover-foot">
+    <div class="who">Horizon CRM, logiciel de gestion pour les artisans du bâtiment<br>Préparé par <b>Timothée Boussardon</b> · Juillet 2026</div>
+    <div class="ref">ORGANIKK.CO &amp; HORIZON CRM</div>
+  </div>
+</section>
+
+<!-- ════════ PAGE 2 · SYNTHÈSE + EXISTANT ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">01</span><span class="rule"></span><span class="lbl">Synthèse</span></div>
+  <h1 class="sec">Synthèse</h1>
+  <div class="prose gap">
+    <p>Horizon CRM a déjà fait le travail que la plupart des éditeurs remettent à plus tard : <strong>18 pages métier, 14 pages ville, 5 pages conformité, 89 guides</strong>, un rendu côté serveur, des données structurées propres. Le volume de contenu n'est pas le problème.</p>
+    <p>Le problème est en dessous. Le cache de votre CDN ne tient pas compte du nom de domaine. Reproduit dans les deux sens, avec des paramètres d'URL jamais vus : la page servie sur horizoncrm.fr <strong>déclare à Google que sa version de référence est sur horizoncrm.ca</strong>. Tout contenu ajouté sur le .fr travaille donc, une fois sur deux, pour le .ca.</p>
+    <p>Cette proposition cible un objectif unique : réparer la structure, puis installer une <strong>machine à contenu</strong> qui produit un contenu une fois et le décline sur quatre canaux, avec un <strong>maillage interne géré par le système</strong> et un corpus de données nourri par votre support. En fin de mission, votre équipe fait tourner la machine sans moi.</p>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">02</span><span class="rule"></span><span class="lbl">L'existant</span></div>
+  <h1 class="sec">Analyse de l'existant</h1>
+  <p class="sec-lead">Relevé du 9 juillet 2026 : sitemaps, robots.txt, HTML brut de 12 pages, en-têtes HTTP, données structurées. Aucun chiffre estimé, aucune donnée Search Console (non communiquée à ce jour).</p>
+
+  <div class="sub gap"><span class="n">2.1</span><h3>État du SEO actuel</h3></div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:26%">Dimension</th><th style="width:36%">État constaté</th><th>Lecture</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Volume du site</td><td>151 URLs, corpus identique sur .fr et .ca</td><td class="read">Deux marchés servis par un seul corpus, sans séparation</td></tr>
+        <tr><td class="dim">Cache CDN</td><td>CloudFront ignore le nom de domaine dans sa clé de cache</td><td class="read">Le .fr sert la balise canonical du .ca, et l'inverse</td></tr>
+        <tr><td class="dim">Pages inexistantes</td><td>HTTP 200 sur toute URL inventée, sans noindex</td><td class="read">Porte ouverte à l'indexation de pages vides</td></tr>
+        <tr><td class="dim">Pages métier</td><td>284 mots, 38 % de recouvrement entre deux d'entre elles</td><td class="read">Le gabarit est posé, le contenu reste un slogan</td></tr>
+        <tr><td class="dim">Pages ville</td><td>284 mots, 59 % de recouvrement entre Paris et Lyon</td><td class="read">Aucune spécificité locale, rien à différencier</td></tr>
+        <tr><td class="dim">Croisement des axes</td><td>14 villes et 18 métiers, jamais croisés</td><td class="read">Aucune page « logiciel plombier Lyon » : le gisement</td></tr>
+        <tr><td class="dim">Contenu hors sujet</td><td>29 guides sur la restauration et le bien-être</td><td class="read">Le sujet du site se dilue à chaque publication</td></tr>
+        <tr><td class="dim">Fonctionnalités produit</td><td>Calculateurs tonnage et terrasse enfermés derrière l'abonnement</td><td class="read">Des outils gratuits indexables, jamais exposés</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ════════ PAGE 3 · FORCES / FAIBLESSES + PREUVE ════════ -->
+<section class="page">
+  <div class="duo">
+    <div class="panel ok">
+      <span class="p-label">2.2 · Ce qui fonctionne déjà</span>
+      <ul class="clist">
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Rendu côté serveur.</b> Le HTML brut contient le H1, les H2, le title et les données structurées. Un crawler lit la page sans exécuter de JavaScript.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Données structurées riches.</b> SoftwareApplication, Organization, BreadcrumbList, FAQPage, LocalBusiness sur les pages ville.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Robots.txt propre.</b> Les zones applicatives sont bien bloquées.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Guides substantiels.</b> 2 000 à 3 750 mots, datés, avec un sujet principal déclaré.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Data propriétaire réelle.</b> Attestations de conformité, formats d'export, réponses produit par métier. Personne ne peut les publier à votre place.</span></li>
+      </ul>
+    </div>
+    <div class="panel ko">
+      <span class="p-label">2.3 · Ce qui bloque</span>
+      <ul class="clist">
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Le cache CDN ignore le domaine.</b> Vos pages françaises désignent le domaine canadien comme version de référence, de façon non déterministe.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Soft 404 généralisés.</b> Toute URL inexistante répond 200, sans noindex.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Corpus mélangés.</b> Un guide de 3 750 mots sur les obligations CCQ au Québec se lit sur le .fr.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Pages trop courtes.</b> 284 mots ne suffisent pas à prouver quoi que ce soit sur une intention décisionnelle.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Aucune réponse produit.</b> Rien sur ce que fait votre logiciel pour un couvreur, un carreleur, un terrassier.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sub gap-lg"><span class="n">2.4</span><h3>La preuve, reproductible en trente secondes</h3></div>
+  <p class="sec-lead">Quatre requêtes, deux domaines, des paramètres d'URL jamais vus. Le premier domaine qui demande une URL remplit le cache. Le second reçoit la copie de l'autre, avec sa balise canonical.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:8%">Test</th><th style="width:40%">Requête</th><th style="width:34%">Canonical servie</th><th>Cache</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">A1</td><td class="mut">.fr/crm-construction-montreal?n=a7t3k1</td><td class="read">www.horizoncrm.fr/…</td><td><span class="pill">Miss</span></td></tr>
+        <tr><td class="dim">A2</td><td class="mut">.ca/crm-construction-montreal?n=a7t3k1</td><td class="read">www.horizoncrm.fr/…</td><td><span class="pill">Hit</span></td></tr>
+        <tr><td class="dim">B1</td><td class="mut">.ca/conformite-nf525?n=z9q4v8</td><td class="read">www.horizoncrm.ca/…</td><td><span class="pill">Miss</span></td></tr>
+        <tr><td class="dim">B2</td><td class="mut">.fr/conformite-nf525?n=z9q4v8</td><td class="read">www.horizoncrm.ca/…</td><td><span class="pill">Hit</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="bigcall">
+    <span class="p-label">Ce que ça signifie</span>
+    <p>La page <span class="dk">/conformite-nf525</span> servie sur votre domaine français déclare à Google que sa version de référence est sur votre domaine canadien. Le sitemap est touché aussi : au premier appel, horizoncrm.ca/sitemap.xml renvoyait 151 URLs pointant toutes vers le .fr.</p>
+    <p class="closing">Ce n'est pas votre contenu. C'est la clé de cache de votre distribution CloudFront.</p>
+  </div>
+</section>
+
+<!-- ════════ PAGE 4 · STRATÉGIE ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">03</span><span class="rule"></span><span class="lbl">La stratégie</span></div>
+  <h1 class="sec">Ce qu'on construit</h1>
+  <p class="sec-lead">Quatre briques, dans cet ordre. L'ordre n'est pas négociable : tant que la structure fuit, tout contenu ajouté travaille pour le domaine canadien.</p>
+
+  <div class="why">
+    <div class="card">
+      <div class="wn">A</div>
+      <h4>La machine à contenu multicanal</h4>
+      <p>Un contenu est produit une fois, à partir de votre matière réelle, puis décliné pour chaque canal. La page web reste le socle. LinkedIn reçoit la version courte adaptée au réseau. Reddit reçoit une réponse utile là où vos artisans posent déjà leurs questions, sans lien commercial, parce que c'est la seule façon d'y survivre. YouTube reçoit le script et la structure de la démonstration produit. Chaque canal a ses codes : le système adapte, vous validez, vous publiez.</p>
+    </div>
+    <div class="card">
+      <div class="wn">B</div>
+      <h4>Des pages optimisées, à la chaîne</h4>
+      <p>Un outil gratuit par fonctionnalité, en commençant par vos calculateurs de tonnage et de terrasse, aujourd'hui enfermés derrière l'abonnement. Puis le croisement métier &times; fonctionnalité : ce que votre produit fait sur un devis de couverture, sur le suivi des heures d'un compagnon réparti sur trois chantiers. Ces réponses sont dans votre produit et nulle part ailleurs. Aucune IA générative ne peut les fabriquer à votre place.</p>
+    </div>
+    <div class="card">
+      <div class="wn">C</div>
+      <h4>Le maillage interne géré par le système</h4>
+      <p>Chaque page publiée est reliée à son pilier et à ses pages sœurs, selon le cluster défini, sans que personne ne tienne un tableur. Les pages orphelines sont détectées, les ancres sont diversifiées, les nouvelles pages sont insérées dans le graphe existant. Le système exécute, vous gardez la main sur ce qui part en ligne.</p>
+    </div>
+    <div class="card">
+      <div class="wn">D</div>
+      <h4>Le corpus de données</h4>
+      <p>On rassemble votre matière propriétaire : les questions réelles remontées par votre support et vos appels de démo, vos attestations de conformité, vos formats d'export, vos cas clients. Le système s'en nourrit. Chaque nouveau contenu enrichit le corpus, et le corpus rend le contenu suivant plus précis. C'est ce qui vous rend citable par les moteurs de réponse.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PAGE 5 · MODÈLES DE PAGES ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">04</span><span class="rule"></span><span class="lbl">Modèles</span></div>
+  <h1 class="sec">Les modèles de pages, priorisés</h1>
+  <p class="sec-lead">Chaque modèle a une variable réelle et une donnée qui remplit la page. Aucun modèle ne se lance avant la correction du socle.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:34%">Modèle</th><th style="width:12%">Pages</th><th style="width:12%">Effort</th><th style="width:20%">Conversion</th><th>Priorité</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">M0 · Structure (cache, 404, séparation des marchés)</td><td class="mut">n/a</td><td class="mut">Faible</td><td class="read">Débloque tout le reste</td><td><span class="pill">1</span></td></tr>
+        <tr><td class="dim">M1 · Un outil gratuit par fonctionnalité</td><td class="mut">6 à 10</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">2</span></td></tr>
+        <tr><td class="dim">M2 · Questions produit &times; métier &times; fonctionnalité</td><td class="mut">50 à 70</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">3</span></td></tr>
+        <tr><td class="dim">M3 · Conformité &times; métier</td><td class="mut">~40</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">4</span></td></tr>
+        <tr><td class="dim">M4 · Migration depuis l'outil actuel</td><td class="mut">~6</td><td class="mut">Faible</td><td class="read">Très forte</td><td><span class="pill">5</span></td></tr>
+        <tr><td class="dim">M5 · Métier &times; ville</td><td class="mut">60 à 80</td><td class="mut">Fort</td><td class="read">Forte</td><td><span class="pill">6</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub gap-lg"><span class="n">4.1</span><h3>Les règles qui tiennent le dispositif</h3></div>
+  <div class="prose">
+    <p><span class="dk">Anti-thin.</span> Une page ne se publie pas sans sa donnée propre. <span class="dk">Données terrain.</span> Zéro chiffre inventé, chaque taux et chaque calendrier vient d'un texte officiel. <span class="dk">Canonical propre.</span> Self-canonical, une seule version par domaine, Host dans la clé de cache. <span class="dk">Maillage différenciant.</span> Chaque page fille remonte vers son pilier et cite deux pages sœurs, jamais la même paire. <span class="dk">Authorship réel.</span> Chaque page est signée par une personne, pas par « L'équipe Horizon CRM ».</p>
+    <p>Sur Reddit, aucun lien commercial n'est publié. C'est la seule façon d'y être lu plutôt qu'exclu, et c'est ce qui distingue le dispositif d'une campagne de spam.</p>
+  </div>
+</section>
+
+<!-- ════════ PAGE 6 · LIVRABLES + PLANNING ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">05</span><span class="rule"></span><span class="lbl">Livrables</span></div>
+  <h1 class="sec">Livrables</h1>
+  <div class="deliver">
+    <div class="d-row"><span class="d-n">01</span><span class="d-t">Le socle technique remis d'aplomb : clé de cache CloudFront corrigée, vrais 404, corpus séparés par marché, chaque URL retirée redirigée en 301 vers la plus proche.</span></div>
+    <div class="d-row"><span class="d-n">02</span><span class="d-t">La machine à contenu opérationnelle : un contenu, quatre sorties (page, LinkedIn, Reddit, YouTube), avec les gabarits par canal.</span></div>
+    <div class="d-row"><span class="d-n">03</span><span class="d-t">Les modèles de pages posés et le premier lot produit : les outils gratuits adossés à vos fonctionnalités, puis le croisement métier &times; fonctionnalité.</span></div>
+    <div class="d-row"><span class="d-n">04</span><span class="d-t">Le maillage interne piloté par le système, avec l'audit du graphe existant en entrée.</span></div>
+    <div class="d-row"><span class="d-n">05</span><span class="d-t">Le corpus de données branché, alimenté par votre support et vos appels de démo.</span></div>
+    <div class="d-row"><span class="d-n">06</span><span class="d-t">La compétence pour faire tourner la machine sans moi.</span></div>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">06</span><span class="rule"></span><span class="lbl">Planning</span></div>
+  <h1 class="sec">Planning sur 3 mois</h1>
+  <div class="months gap">
+    <div class="month">
+      <div class="m-tag">Mois 1</div>
+      <div class="m-title">La structure</div>
+      <ul class="m-list">
+        <li>Clé de cache CloudFront corrigée, Host dans la clé</li>
+        <li>Vrais 404 sur route inconnue</li>
+        <li>Séparation des corpus .fr et .ca, redirections 301</li>
+        <li>Vérification hreflang et x-default</li>
+        <li>Lecture de la Search Console, point de départ établi</li>
+        <li>Inventaire des fonctionnalités et collecte des questions support</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-tag">Mois 2</div>
+      <div class="m-title">Les outils gratuits</div>
+      <ul class="m-list">
+        <li>Contrôle de la reprise d'indexation en GSC</li>
+        <li>3 à 4 outils gratuits produits et branchés sur l'essai</li>
+        <li>Densification des 18 pages métier existantes</li>
+        <li>Maillage croisé, resoumission du sitemap</li>
+        <li>Machine à contenu en production sur les 4 canaux</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-tag">Mois 3</div>
+      <div class="m-title">Les questions produit</div>
+      <ul class="m-list">
+        <li>Pilote sur 3 métiers &times; 3 fonctionnalités</li>
+        <li>Mesure en GSC sur les outils et le pilote</li>
+        <li>On garde ce qui indexe et convertit, on coupe le reste</li>
+        <li>Extension du modèle gagnant</li>
+        <li>Transmission du système à l'équipe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PAGE 7 · TARIFICATION + RÉSULTATS ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">07</span><span class="rule"></span><span class="lbl">Tarification</span></div>
+  <h1 class="sec">Tarification</h1>
+  <div class="price">
+    <div class="price-l">
+      <ul class="clist">
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>La machine à contenu, quatre canaux</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Les modèles de pages et la production du premier lot</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le maillage interne géré par le système</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le corpus de données branché sur votre support</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Un point régulier, et la transmission du système</span></li>
+      </ul>
+      <div class="price-modal">Le budget de fonctionnement (tokens) est de l'ordre de 90 à 200 € par mois selon la charge, et baisse une fois les process posés. C'est un coût de production, pas un abonnement supplémentaire.</div>
+    </div>
+    <div class="price-r">
+      <div><span class="price-amt">850 €</span><span class="price-unit">HT / mois</span></div>
+      <div class="price-x">L'ordre de grandeur de huit abonnements « Essentiel » à votre propre produit. Vous ne louez pas un outil de plus, vous construisez un système qui vous appartient.</div>
+    </div>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">08</span><span class="rule"></span><span class="lbl">Résultats</span></div>
+  <h1 class="sec">Ce qui se mesure, et quand</h1>
+  <p class="sec-lead">Je ne promets pas un chiffre de trafic ni un nombre de leads. Personne d'honnête ne le peut avant d'avoir lu votre Search Console. En revanche, chaque étape se vérifie dans vos propres outils.</p>
+  <div class="tiles">
+    <div class="tile"><div class="k">Sem. 1</div><div class="l">Les quatre tests de cache ne reproduisent plus le défaut</div></div>
+    <div class="tile"><div class="k">Sem. 4</div><div class="l">Le rapport « Pages » de la GSC perd ses « Alternative avec balise canonique correcte »</div></div>
+    <div class="tile"><div class="k">Sem. 8</div><div class="l">Les premiers outils gratuits sont indexés et suivis</div></div>
+    <div class="tile"><div class="k">Sem. 12</div><div class="l">Le pilote métier &times; fonctionnalité est mesuré, gardé ou coupé</div></div>
+  </div>
+  <p class="esti"><b>Engagement de méthode.</b> Aucun volume, aucune position, aucune donnée de trafic n'est avancée dans ce document. Tout ce qui est chiffré ici a été relevé le 9 juillet 2026 sur vos pages publiques et reste vérifiable par vos équipes.</p>
+</section>
+
+<!-- ════════ PAGE 8 · HORS PÉRIMÈTRE + POURQUOI ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">09</span><span class="rule"></span><span class="lbl">Hors périmètre</span></div>
+  <h1 class="sec">Hors périmètre</h1>
+  <div class="prose gap">
+    <p>Ce que cette mission <span class="dk">ne comprend pas</span>, pour qu'il n'y ait aucune ambiguïté : l'achat de liens, sous quelque forme que ce soit. La refonte graphique du site. Le développement des outils gratuits côté produit, qui reste chez vos équipes techniques, même si les spécifications viennent de moi. La gestion de vos campagnes payantes. Et le tournage des vidéos YouTube : le système produit le script et la structure, pas l'image.</p>
+    <p>Une chose ne se délègue pas non plus : les questions réelles de vos clients. Elles sont dans votre support et dans vos appels de démo. C'est la seule matière que je ne peux pas produire à votre place, et c'est celle qui fait toute la valeur du dispositif. Sans elle, les pages deviennent un gabarit vide, et un gabarit vide ne se positionne pas.</p>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">10</span><span class="rule"></span><span class="lbl">Pourquoi</span></div>
+  <h1 class="sec">Pourquoi maintenant</h1>
+  <div class="why">
+    <div class="card">
+      <div class="wn">01</div>
+      <h4>Le sujet est chaud</h4>
+      <p>La réforme de la facturation électronique met vos pages conformité au centre. Elles existent déjà. Elles envoient aujourd'hui leur autorité au Canada.</p>
+    </div>
+    <div class="card">
+      <div class="wn">02</div>
+      <h4>Chaque mois coûte</h4>
+      <p>Tant que la clé de cache n'est pas corrigée, chaque euro investi en rédaction est arrosé, une fois sur deux, sur le mauvais domaine.</p>
+    </div>
+  </div>
+  <div class="closing-line">Le travail est fait. Il est servi sous le mauvais nom de domaine la moitié du temps.<br>Écrire la page 152 n'y changera rien.</div>
+</section>
+
+<!-- ════════ PAGE 9 · PROCHAINE ÉTAPE ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">11</span><span class="rule"></span><span class="lbl">Prochaine étape</span></div>
+  <h1 class="sec">Prochaine étape</h1>
+  <div class="next">
+    <div class="big">Faites reproduire les quatre tests de cache par votre équipe technique. Trente secondes, un paramètre d'URL au hasard, deux domaines. Si vous voyez ce que j'ai vu, le reste de la discussion devient simple.</div>
+    <div class="small">Vous présentez en interne, vous me faites un retour. Si le budget bloque, on en reparle : on peut démarrer sur un périmètre resserré, le socle technique et les outils gratuits, et étendre ensuite.</div>
+    <div class="sig">
+      <div class="nm">Timothée Boussardon</div>
+      <div class="ml">tim@organikk.co</div>
+      <div class="ft">ORGANIKK.CO · CONSEIL SEO ET GEO</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

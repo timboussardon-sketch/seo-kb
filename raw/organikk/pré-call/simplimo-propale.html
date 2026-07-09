@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Proposition commerciale · Simplimo · Organikk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0F1E; --ink-2:#293247; --muted:#5a6681; --muted-2:#8a93a8;
+    --line:rgba(10,15,30,.08); --line-2:rgba(10,15,30,.13);
+    --paper:#ffffff; --bg-2:#f6f8fc;
+    --blue:#2559DD; --blue-deep:#1B3E8F; --blue-title:#1d44b8;
+    --blue-soft:#eef3fe; --blue-softer:#f4f8ff; --blue-line:rgba(37,89,221,.22);
+    --red:#d23a22; --red-soft:#fdf1ee; --red-line:rgba(210,58,34,.18);
+    --font:'Geist', system-ui, sans-serif;
+    --mono:'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+    --serif:'Instrument Serif', serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  @page{ size:A4; margin:0; }
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:var(--font); color:var(--ink-2); letter-spacing:-.011em; -webkit-font-smoothing:antialiased; background:#fff; line-height:1.6; }
+  .page{ position:relative; width:210mm; min-height:297mm; padding:18mm 18mm 16mm; background:#fff; overflow:hidden; page-break-after:always; display:flex; flex-direction:column; }
+  .page:last-child{ page-break-after:auto; }
+
+  /* ── Section header : 01 ───────── Label ── */
+  .sh{ display:flex; align-items:center; gap:14px; margin:30px 0 0; }
+  .sh:first-child{ margin-top:0; }
+  .sh .num{ font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--blue); letter-spacing:.04em; }
+  .sh .rule{ flex:1; height:1px; background:var(--line-2); }
+  .sh .lbl{ font-family:var(--mono); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); font-weight:600; }
+  h1.sec{ font-size:30px; font-weight:600; letter-spacing:-.032em; line-height:1.08; color:var(--blue-title); margin:14px 0 0; }
+  .sec-lead{ font-size:14px; line-height:1.62; color:var(--muted); margin-top:10px; max-width:620px; }
+
+  /* ── Subsection : 3.1 Titre ── */
+  .sub{ display:flex; align-items:baseline; gap:10px; margin:26px 0 8px; }
+  .sub .n{ font-family:var(--mono); font-size:12px; font-weight:700; color:var(--blue); }
+  .sub h3{ font-size:16.5px; font-weight:600; letter-spacing:-.022em; color:var(--ink); }
+
+  p{ font-size:13px; line-height:1.64; color:var(--ink-2); }
+  .prose p+p{ margin-top:11px; }
+  strong, b.acc{ font-weight:600; color:var(--blue); }
+  .prose .dk{ font-weight:600; color:var(--ink); }
+
+  /* ── COVER ── */
+  .cover{ background:linear-gradient(155deg,#0e1c49 0%, #16307b 38%, #1B3E8F 62%, #2d5fe0 100%); color:#fff; padding:16mm 18mm 14mm; }
+  .cover-top{ display:flex; justify-content:space-between; align-items:center; }
+  .cover-brand{ font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.18em; color:#fff; }
+  .cover-brand b{ color:#9db9f7; font-weight:700; }
+  .cover-tag{ font-family:var(--mono); font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:rgba(255,255,255,.55); font-weight:600; }
+  .cover-mid{ margin-top:auto; }
+  .cover-kicker{ font-family:var(--mono); font-size:11px; letter-spacing:.26em; text-transform:uppercase; color:#8fb0f5; font-weight:700; }
+  h1.cover-title{ margin-top:22px; font-size:51px; line-height:1.06; letter-spacing:-.035em; font-weight:600; color:#fff; max-width:12em; }
+  h1.cover-title .serif{ font-family:var(--serif); font-style:italic; font-weight:400; letter-spacing:-.01em; }
+  .cover-lead{ margin-top:22px; font-size:15.5px; line-height:1.6; color:rgba(255,255,255,.78); max-width:36em; }
+  .cover-stats{ margin-top:34px; padding-top:26px; border-top:1px solid rgba(255,255,255,.18); display:grid; grid-template-columns:1.05fr 1.25fr 1.15fr 1.25fr; gap:22px; }
+  .cstat .k{ font-size:29px; font-weight:600; letter-spacing:-.03em; line-height:1; color:#fff; }
+  .cstat.accent .k{ color:#8fb0f5; }
+  .cstat .l{ margin-top:9px; font-size:11px; line-height:1.5; color:rgba(255,255,255,.62); }
+  .cover-foot{ margin-top:auto; padding-top:24px; border-top:1px solid rgba(255,255,255,.14); display:flex; justify-content:space-between; align-items:flex-end; }
+  .cover-foot .who{ font-size:11.5px; line-height:1.7; color:rgba(255,255,255,.66); }
+  .cover-foot .who b{ color:#fff; font-weight:600; }
+  .cover-foot .ref{ font-family:var(--mono); font-size:9.5px; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.45); font-weight:600; }
+  .cover .cover-mid{ flex:0 0 auto; margin-top:120px; }
+  .cover-spacer{ flex:1; }
+
+  /* ── Table ── */
+  .tbl{ margin-top:14px; border:1px solid var(--line-2); border-radius:14px; overflow:hidden; }
+  table{ width:100%; border-collapse:collapse; }
+  th{ font-family:var(--mono); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted-2);
+    font-weight:700; text-align:left; padding:9px 14px; background:var(--blue-softer); border-bottom:1px solid var(--line-2); }
+  td{ padding:9px 14px; border-bottom:1px solid var(--line); font-size:11px; line-height:1.5; color:var(--ink-2); vertical-align:top; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:nth-child(even){ background:#fbfcff; }
+  td.dim{ font-weight:600; color:var(--ink); }
+  td.mut{ color:var(--muted); }
+  td.read{ color:#5572b8; }
+  .pill{ display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; color:var(--blue);
+    white-space:nowrap; padding:4px 9px; border-radius:8px; background:var(--blue-soft); border:1px solid var(--blue-line); }
+
+  /* ── Panels ok / ko ── */
+  .duo{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .panel{ padding:20px 22px; border-radius:18px; }
+  .panel.ok{ background:linear-gradient(170deg,#eef4ff 0%, #e7efff 100%); }
+  .panel.ko{ background:linear-gradient(170deg,#fdf2ee 0%, #fcebe6 100%); }
+  .p-label{ font-family:var(--mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; display:block; margin-bottom:16px; }
+  .panel.ok .p-label{ color:var(--blue); }
+  .panel.ko .p-label{ color:var(--red); }
+  .clist{ list-style:none; display:flex; flex-direction:column; gap:11px; }
+  .clist li{ display:flex; gap:11px; font-size:11px; line-height:1.5; color:var(--ink-2); }
+  .clist li b{ color:var(--ink); font-weight:600; }
+  .di{ flex-shrink:0; width:17px; height:17px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+  .di svg{ width:9px; height:9px; stroke:currentColor; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .di.v{ background:#fff; color:var(--blue); }
+  .di.x{ background:#fff; color:var(--red); }
+  .di.a{ background:var(--blue-soft); color:var(--blue); }
+
+  /* ── Big callout ── */
+  .bigcall{ margin-top:16px; padding:22px 26px; border-radius:18px; background:linear-gradient(165deg,#eaf1ff 0%, #dfeafe 100%); }
+  .bigcall .p-label{ color:var(--blue); }
+  .bigcall p{ font-size:13px; line-height:1.66; color:var(--ink-2); }
+  .bigcall h2{ font-size:24px; font-weight:600; letter-spacing:-.028em; color:var(--blue-title); margin:2px 0 12px; }
+  .bigcall .closing{ margin-top:18px; padding-top:14px; border-top:1px solid rgba(37,89,221,.18); font-size:12.5px; font-weight:600; color:var(--blue-title); }
+
+  /* ── Side-by-side cards ── */
+  .card{ background:#fff; border:1px solid var(--line); border-radius:18px; padding:22px 24px; box-shadow:0 10px 28px -24px rgba(27,62,143,.18); }
+  .card .sub{ margin:0 0 10px; }
+  .card p{ font-size:11.5px; line-height:1.6; color:var(--ink-2); }
+  .alist{ list-style:none; display:flex; flex-direction:column; gap:11px; }
+  .alist li{ display:flex; gap:11px; font-size:11.5px; line-height:1.55; color:var(--ink-2); }
+  .alist .di{ margin-top:1px; }
+  .alist .di svg{ width:8px; height:8px; }
+
+  /* ── Deliverables ── */
+  .deliver{ margin-top:14px; border:1px solid var(--line-2); border-radius:14px; overflow:hidden; }
+  .d-row{ display:flex; gap:15px; align-items:baseline; padding:9px 15px; border-bottom:1px solid var(--line); }
+  .d-row:last-child{ border-bottom:none; }
+  .d-row:nth-child(even){ background:#fbfcff; }
+  .d-n{ font-family:var(--mono); font-size:11px; font-weight:700; color:var(--blue); flex-shrink:0; }
+  .d-t{ font-size:12px; line-height:1.55; color:var(--ink-2); }
+
+  /* ── Months ── */
+  .months{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .month{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:17px; box-shadow:0 10px 28px -24px rgba(27,62,143,.16); }
+  .m-tag{ font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--blue); }
+  .m-title{ margin:5px 0 12px; font-size:14.5px; font-weight:600; letter-spacing:-.02em; color:var(--ink); padding-bottom:11px; border-bottom:1px dashed var(--blue-line); }
+  .m-list{ list-style:none; display:flex; flex-direction:column; gap:9px; }
+  .m-list li{ position:relative; padding-left:14px; font-size:10.5px; line-height:1.5; color:var(--ink-2); }
+  .m-list li::before{ content:""; position:absolute; left:0; top:.55em; width:4.5px; height:4.5px; border-radius:50%; background:var(--blue); }
+
+  /* ── Price ── */
+  .price{ margin-top:16px; display:grid; grid-template-columns:1.45fr 1fr; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:0 14px 34px -26px rgba(27,62,143,.2); }
+  .price-l{ padding:26px 28px; background:#fff; }
+  .price-l .clist li{ font-size:12px; }
+  .price-l .di.v{ background:var(--blue-soft); }
+  .price-modal{ margin-top:16px; padding-top:13px; border-top:1px solid var(--line); font-size:11px; line-height:1.6; color:var(--muted); }
+  .price-r{ padding:26px 28px; color:#fff; background:linear-gradient(150deg,#16307b 0%, #1B3E8F 40%, #2d5fe0 100%); display:flex; flex-direction:column; justify-content:center; }
+  .price-amt{ font-size:42px; font-weight:600; letter-spacing:-.04em; line-height:1; }
+  .price-unit{ font-size:13px; font-weight:500; color:rgba(255,255,255,.8); margin-left:8px; }
+  .price-x{ margin-top:13px; font-size:11.5px; line-height:1.55; color:rgba(255,255,255,.8); }
+
+  /* ── Result tiles ── */
+  .tiles{ margin-top:16px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .tile{ background:#fff; border:1px solid var(--line); border-radius:15px; padding:18px 17px 15px; box-shadow:0 10px 28px -24px rgba(27,62,143,.16); }
+  .tile .k{ font-size:23px; font-weight:600; letter-spacing:-.03em; color:var(--blue); line-height:1.05; }
+  .tile .l{ font-size:10.5px; line-height:1.52; color:var(--muted); margin-top:9px; }
+  .esti{ margin-top:16px; font-size:11px; line-height:1.6; color:var(--muted); font-style:italic; }
+  .esti b{ font-style:normal; font-weight:600; color:var(--blue-title); }
+
+  /* ── Why cards ── */
+  .why{ margin-top:16px; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .why .card .wn{ font-family:var(--mono); font-size:14px; font-weight:700; color:var(--blue); }
+  .why .card h4{ margin:9px 0 6px; font-size:14px; font-weight:600; letter-spacing:-.018em; color:var(--ink); }
+  .closing-line{ margin-top:24px; text-align:center; font-size:12.5px; font-weight:600; color:var(--blue-title); line-height:1.6; }
+
+  /* ── Next panel ── */
+  .next{ margin-top:18px; padding:30px 32px; border-radius:20px; background:linear-gradient(165deg,#eef4ff 0%, #e3edff 100%); }
+  .next .big{ font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.6; }
+  .next .small{ margin-top:11px; font-size:12px; color:var(--muted); line-height:1.6; }
+  .next .sig{ margin-top:22px; padding-top:18px; border-top:1px solid rgba(37,89,221,.18); }
+  .next .sig .nm{ font-size:14.5px; font-weight:600; color:var(--ink); }
+  .next .sig .ml{ font-family:var(--mono); font-size:11px; color:var(--blue); margin-top:4px; }
+  .next .sig .ft{ font-family:var(--mono); font-size:9px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); margin-top:14px; font-weight:600; }
+
+  .gap{ margin-top:20px; }
+  .gap-lg{ margin-top:22px; }
+</style>
+</head>
+<body>
+
+<!-- ════════ PAGE 1 · COVER ════════ -->
+<section class="page cover">
+  <div class="cover-top">
+    <div class="cover-brand">ORGANIKK<b>.CO</b></div>
+    <div class="cover-tag">Proposition commerciale</div>
+  </div>
+  <div class="cover-mid">
+    <div class="cover-kicker">Machine à contenu et système autonome</div>
+    <h1 class="cover-title">Stratégie <span class="serif">Simplimo</span>.</h1>
+    <p class="cover-lead">Vous avez déjà nommé vos cinq meilleures pages. Elles sont aujourd'hui des sous-titres sur une seule page. On les sort, on les croise avec la ville, et on installe une machine à contenu : un contenu produit une fois, décliné en pages optimisées, LinkedIn, Reddit et YouTube.</p>
+    <div class="cover-stats">
+      <div class="cstat"><div class="k">8</div><div class="l">pages en tout, dont 3 légales ou de contact</div></div>
+      <div class="cstat accent"><div class="k">5</div><div class="l">situations de vente, enterrées en sous-titres</div></div>
+      <div class="cstat"><div class="k">0</div><div class="l">page par ville, par situation, ou article</div></div>
+      <div class="cstat"><div class="k">3 400</div><div class="l">mots pour l'intégralité du site</div></div>
+    </div>
+  </div>
+  <div class="cover-spacer"></div>
+  <div class="cover-foot">
+    <div class="who">Simplimo, achat direct de propriétés au Québec<br>Préparé par <b>Timothée Boussardon</b> · Juillet 2026</div>
+    <div class="ref">ORGANIKK.CO &amp; SIMPLIMO</div>
+  </div>
+</section>
+
+<!-- ════════ PAGE 2 · SYNTHÈSE + EXISTANT ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">01</span><span class="rule"></span><span class="lbl">Synthèse</span></div>
+  <h1 class="sec">Synthèse</h1>
+  <div class="prose gap">
+    <p>Simplimo achète directement des propriétés aux particuliers : maison, immeuble à revenus, terrain. Sans courtier, sans commission, sans rénovation, avec une offre annoncée en moins de 24 h et une transaction en moins de 30 jours. La promesse est claire et le positionnement est juste.</p>
+    <p>Le site, lui, n'existe presque pas. <strong>Huit pages, dont trois sont légales ou de contact</strong>. Aucun article, aucune page par ville, aucune page par situation. Le corpus complet tient en 3 400 mots. C'est une brochure, pas un dispositif qui capte de la demande.</p>
+    <p>Pourtant vous avez déjà identifié vous-mêmes les cinq situations qui amènent un vendeur pressé : <strong>préavis d'exercice, succession, séparation, transfert, vente rapide</strong>. Elles sont des sous-titres sur la page Avantages. Ce sont vos cinq meilleures pages. Cette proposition les sort, les croise avec la ville, et installe la machine qui les produit.</p>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">02</span><span class="rule"></span><span class="lbl">L'existant</span></div>
+  <h1 class="sec">Analyse de l'existant</h1>
+  <p class="sec-lead">Relevé du 9 juillet 2026 : sitemap_index.xml, robots.txt, HTML brut des 6 pages publiques, données structurées, en-têtes HTTP. Aucun chiffre estimé, aucune donnée Search Console (non communiquée à ce jour).</p>
+
+  <div class="sub gap"><span class="n">2.1</span><h3>État du SEO actuel</h3></div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:26%">Dimension</th><th style="width:36%">État constaté</th><th>Lecture</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Volume du site</td><td>8 pages, 3 aimants à emails, aucun article</td><td class="read">Une brochure, sans couche d'acquisition organique</td></tr>
+        <tr><td class="dim">Fiche entreprise</td><td>Le téléphone déclaré est +1-418-XXX-XXXX</td><td class="read">Un placeholder jamais remplacé, servi à Google</td></tr>
+        <tr><td class="dim">Page FAQ</td><td>649 mots de questions et réponses, aucun balisage FAQPage</td><td class="read">La matière est écrite, elle n'est pas déclarée</td></tr>
+        <tr><td class="dim">Entreprise locale</td><td>Aucun balisage LocalBusiness, aucune adresse publiée</td><td class="read">Un business strictement local, invisible comme tel</td></tr>
+        <tr><td class="dim">Blocs Organization</td><td>Deux blocs concurrents sur l'accueil, réseaux sociaux divergents</td><td class="read">Deux définitions de la même entité sur la même page</td></tr>
+        <tr><td class="dim">Titres H1</td><td>« Avantages », « À propos », « Contactez-nous »</td><td class="read">Le title est optimisé, le H1 reprend le menu</td></tr>
+        <tr><td class="dim">Situations de vente</td><td>5 situations, en sous-titres d'une seule page</td><td class="read">Cinq intentions de recherche distinctes : le gisement</td></tr>
+        <tr><td class="dim">Données propriétaires</td><td>Dossiers traités, délais réels constatés</td><td class="read">Non exploitées, c'est le carburant des pages</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ════════ PAGE 3 · FORCES / FAIBLESSES + LE GISEMENT ════════ -->
+<section class="page">
+  <div class="duo">
+    <div class="panel ok">
+      <span class="p-label">2.2 · Ce qui fonctionne déjà</span>
+      <ul class="clist">
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le positionnement est juste.</b> Vous ne vendez pas le meilleur prix, vous vendez la vitesse et la certitude. C'est ce que cherche un vendeur pressé.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les titles et meta descriptions sont travaillés.</b> Le mot-clé et la promesse y sont.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les 404 sont de vrais 404,</b> les canoniques sont propres et auto-référentes.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le robots.txt autorise explicitement les robots d'IA</b> (GPTBot, ClaudeBot, Google-Extended, CCBot). Quelqu'un s'est posé la question.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le réflexe de capture existe.</b> Un guide de vente et une checklist sont déjà en place.</span></li>
+      </ul>
+    </div>
+    <div class="panel ko">
+      <span class="p-label">2.3 · Ce qui bloque</span>
+      <ul class="clist">
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Un numéro factice dans les données structurées.</b> +1-418-XXX-XXXX, sur l'accueil et la page contact, pendant que le vrai numéro s'affiche juste à côté.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>La FAQ n'est pas déclarée comme telle.</b> Les moteurs de réponse se nourrissent de ce format.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Aucune page par situation, aucune page par ville.</b> Vos cinq meilleures intentions ne sont adressées nulle part.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Aucun outil.</b> La question « combien me reste-t-il, net » n'a pas de réponse sur le site.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Rien n'a bougé depuis avril 2026.</b> Sans contenu organique, vous rachetez la même audience chaque mois.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sub gap-lg"><span class="n">2.4</span><h3>Le gisement : vos cinq situations</h3></div>
+  <p class="sec-lead">Ce sont les H2 de votre page /avantages/. Cinq intentions distinctes, chacune avec son vocabulaire, son urgence et son cadre juridique, empilées comme des paragraphes.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:30%">Situation</th><th style="width:36%">Ce que cherche le vendeur</th><th>Ce que vous seuls pouvez dire</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Préavis d'exercice ou saisie</td><td class="mut">Combien de temps me reste-t-il vraiment</td><td class="read">Le délai réel constaté sur vos dossiers</td></tr>
+        <tr><td class="dim">Succession ou décès</td><td class="mut">Vendre la maison de mes parents, sans travaux</td><td class="read">Ce que vous achetez en l'état, et ce que vous refusez</td></tr>
+        <tr><td class="dim">Séparation ou divorce</td><td class="mut">Personne ne rachète la part de l'autre</td><td class="read">Le déroulé d'une transaction à deux vendeurs</td></tr>
+        <tr><td class="dim">Transfert ou déménagement</td><td class="mut">Je pars, je ne peux pas porter deux propriétés</td><td class="read">Le délai de fermeture que vous tenez</td></tr>
+        <tr><td class="dim">Vente rapide souhaitée</td><td class="mut">Est-ce que je vais me faire avoir</td><td class="read">La réponse honnête, y compris quand elle vous dessert</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="bigcall">
+    <span class="p-label">Pourquoi c'est défendable</span>
+    <p>Une IA générative sait expliquer ce qu'est un préavis d'exercice. Elle ne sait pas combien de jours il reste réellement une fois le préavis inscrit, ni ce qu'un acheteur direct peut faire dans ce délai. <span class="dk">Vos dossiers le savent.</span></p>
+    <p class="closing">La donnée que vous possédez est invérifiable ailleurs. C'est exactement ce qui se fait citer.</p>
+  </div>
+</section>
+
+<!-- ════════ PAGE 4 · STRATÉGIE ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">03</span><span class="rule"></span><span class="lbl">La stratégie</span></div>
+  <h1 class="sec">Ce qu'on construit</h1>
+  <p class="sec-lead">Quatre briques. Ici on ne répare pas un site, on le construit, sur un marché où l'intention est parmi les plus décisionnelles qui existent.</p>
+
+  <div class="why">
+    <div class="card">
+      <div class="wn">A</div>
+      <h4>La machine à contenu multicanal</h4>
+      <p>Un contenu est produit une fois, à partir de vos dossiers réels, puis décliné pour chaque canal. La page web reste le socle. LinkedIn reçoit la version courte, utile aux notaires, comptables et syndics qui vous envoient des dossiers. Reddit reçoit une réponse honnête là où les Québécois posent déjà leurs questions sur la saisie et la succession, sans lien commercial, parce que c'est la seule façon d'y être écouté. YouTube reçoit le script de la vidéo qui explique une situation. Le système adapte, vous validez, vous publiez.</p>
+    </div>
+    <div class="card">
+      <div class="wn">B</div>
+      <h4>Des pages optimisées, à la chaîne</h4>
+      <p>Vos cinq situations deviennent cinq pages piliers, chacune avec la procédure québécoise réelle, ses délais légaux sourcés, et un dossier que vous avez traité, anonymisé, avec le délai constaté. Puis on croise avec la ville, uniquement là où vous avez de la matière locale. En parallèle, un outil gratuit : le calcul de ce qui reste au vendeur, net, avec courtier contre offre directe.</p>
+    </div>
+    <div class="card">
+      <div class="wn">C</div>
+      <h4>Le maillage interne géré par le système</h4>
+      <p>Chaque page de ville remonte vers son pilier de situation et cite ses voisines, selon le cluster défini, sans que personne ne tienne un tableur. Les pages orphelines sont détectées, les ancres sont diversifiées. Le système exécute, vous gardez la main sur ce qui part en ligne.</p>
+    </div>
+    <div class="card">
+      <div class="wn">D</div>
+      <h4>Le corpus de données</h4>
+      <p>C'est le cœur de la valeur, et c'est ce que vous seuls possédez. On anonymise vos dossiers à la réception, on en tire les délais et les situations, et ce corpus nourrit chaque contenu produit. Le cadre de traitement des données est contractualisé. Ce qui sert, c'est le délai et la situation, jamais le nom.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PAGE 5 · MODÈLES DE PAGES ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">04</span><span class="rule"></span><span class="lbl">Modèles</span></div>
+  <h1 class="sec">Les modèles de pages, priorisés</h1>
+  <p class="sec-lead">Chaque modèle a une variable réelle et une donnée qui remplit la page. Une page se crée seulement s'il existe une matière réelle à dire.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:36%">Modèle</th><th style="width:12%">Pages</th><th style="width:12%">Effort</th><th style="width:18%">Conversion</th><th>Priorité</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">M0 · Correctifs (téléphone, FAQPage, LocalBusiness, H1)</td><td class="mut">n/a</td><td class="mut">Faible</td><td class="read">Crédibilité de base</td><td><span class="pill">1</span></td></tr>
+        <tr><td class="dim">M1 · Calculateur du net vendeur</td><td class="mut">2</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">2</span></td></tr>
+        <tr><td class="dim">M2 · Situation &times; ville</td><td class="mut">20 à 30</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">3</span></td></tr>
+        <tr><td class="dim">M3 · Les questions qu'on n'ose pas poser</td><td class="mut">10 à 15</td><td class="mut">Faible</td><td class="read">Forte</td><td><span class="pill">4</span></td></tr>
+        <tr><td class="dim">M4 · Type de bien &times; ville</td><td class="mut">15 à 20</td><td class="mut">Moyen</td><td class="read">Forte</td><td><span class="pill">5</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub gap-lg"><span class="n">4.1</span><h3>Les règles qui tiennent le dispositif</h3></div>
+  <div class="prose">
+    <p><span class="dk">Anti-thin.</span> Une page ne se publie pas sans sa donnée propre. Si la ville n'a rien de spécifique à dire, la page n'existe pas. <span class="dk">Données terrain.</span> Les délais légaux viennent des textes officiels québécois, les délais constatés viennent de vos dossiers. Zéro chiffre inventé. <span class="dk">Maillage différenciant.</span> Chaque page de ville remonte vers son pilier et cite deux voisines, jamais la même paire. <span class="dk">Authorship réel.</span> Chaque page est signée par une personne de votre équipe, pas par « Simplimo ».</p>
+    <p>Sur le calculateur, aucun chiffre ne flattera artificiellement votre offre. Un outil qui ment se retourne contre vous à la première vérification, et sur un métier où le vendeur a peur de se faire avoir, l'honnêteté est le seul actif qui compte. Sur Reddit, aucun lien commercial n'est publié.</p>
+  </div>
+</section>
+
+<!-- ════════ PAGE 6 · LIVRABLES + PLANNING ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">05</span><span class="rule"></span><span class="lbl">Livrables</span></div>
+  <h1 class="sec">Livrables</h1>
+  <div class="deliver">
+    <div class="d-row"><span class="d-n">01</span><span class="d-t">Les correctifs de crédibilité : vrai numéro dans les données structurées, blocs Organization fusionnés, balisage LocalBusiness, FAQ déclarée en FAQPage, H1 réécrits.</span></div>
+    <div class="d-row"><span class="d-n">02</span><span class="d-t">La machine à contenu opérationnelle : un contenu, quatre sorties (page, LinkedIn, Reddit, YouTube), avec les gabarits par canal.</span></div>
+    <div class="d-row"><span class="d-n">03</span><span class="d-t">Les cinq pages piliers de situation, puis la déclinaison par ville là où la donnée locale existe.</span></div>
+    <div class="d-row"><span class="d-n">04</span><span class="d-t">Le calculateur du net vendeur, branché sur « Obtenir mon offre ».</span></div>
+    <div class="d-row"><span class="d-n">05</span><span class="d-t">Le maillage interne piloté par le système.</span></div>
+    <div class="d-row"><span class="d-n">06</span><span class="d-t">Le corpus de données branché sur vos dossiers anonymisés, et la compétence pour faire tourner la machine sans moi.</span></div>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">06</span><span class="rule"></span><span class="lbl">Planning</span></div>
+  <h1 class="sec">Planning sur 3 mois</h1>
+  <div class="months gap">
+    <div class="month">
+      <div class="m-tag">Mois 1</div>
+      <div class="m-title">Le socle et les piliers</div>
+      <ul class="m-list">
+        <li>Vrai numéro dans les données structurées</li>
+        <li>Blocs Organization fusionnés, LocalBusiness ajouté</li>
+        <li>FAQ balisée en FAQPage, H1 réécrits</li>
+        <li>Fiche Google Business Profile alignée sur le site</li>
+        <li>Lecture de la Search Console, point de départ établi</li>
+        <li>Les cinq pages piliers de situation produites</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-tag">Mois 2</div>
+      <div class="m-title">Le calculateur</div>
+      <ul class="m-list">
+        <li>Outil du net vendeur, avec ses sources chiffrées</li>
+        <li>Branchement sur « Obtenir mon offre »</li>
+        <li>Mesure du taux de complétion, pas seulement du trafic</li>
+        <li>Six premières pages de questions</li>
+        <li>Machine à contenu en production sur les 4 canaux</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-tag">Mois 3</div>
+      <div class="m-title">La déclinaison par ville</div>
+      <ul class="m-list">
+        <li>Extension des situations qui indexent et convertissent</li>
+        <li>Uniquement les villes où la donnée locale existe</li>
+        <li>Mesure en GSC, on garde ou on coupe</li>
+        <li>Décision sur le croisement type de bien &times; ville</li>
+        <li>Transmission du système à l'équipe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PAGE 7 · TARIFICATION + RÉSULTATS ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">07</span><span class="rule"></span><span class="lbl">Tarification</span></div>
+  <h1 class="sec">Tarification</h1>
+  <div class="price">
+    <div class="price-l">
+      <ul class="clist">
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>La machine à contenu, quatre canaux</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Les cinq pages piliers, puis la déclinaison par ville</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le calculateur du net vendeur</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le maillage interne géré par le système</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le corpus de données, et la transmission du système</span></li>
+      </ul>
+      <div class="price-modal">Le budget de fonctionnement (tokens) est de l'ordre de 90 à 200 € par mois selon la charge, et baisse une fois les process posés. C'est un coût de production, pas un abonnement supplémentaire.</div>
+    </div>
+    <div class="price-r">
+      <div><span class="price-amt">850 €</span><span class="price-unit">HT / mois</span></div>
+      <div class="price-x">Une fraction du coût d'acquisition publicitaire d'un seul dossier. La différence : une page qui se positionne continue de ramener des dossiers quand vous ne payez plus.</div>
+    </div>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">08</span><span class="rule"></span><span class="lbl">Résultats</span></div>
+  <h1 class="sec">Ce qui se mesure, et quand</h1>
+  <p class="sec-lead">Je ne promets pas un chiffre de trafic ni un nombre de dossiers. Personne d'honnête ne le peut avant d'avoir lu votre Search Console. En revanche, chaque étape se vérifie dans vos propres outils.</p>
+  <div class="tiles">
+    <div class="tile"><div class="k">Sem. 1</div><div class="l">Le numéro factice a disparu, la FAQ est déclarée, le LocalBusiness existe</div></div>
+    <div class="tile"><div class="k">Sem. 4</div><div class="l">Les cinq pages piliers sont en ligne et soumises à l'indexation</div></div>
+    <div class="tile"><div class="k">Sem. 8</div><div class="l">Les piliers indexent, le calculateur est suivi en complétion</div></div>
+    <div class="tile"><div class="k">Sem. 12</div><div class="l">Les situations qui convertissent sont étendues, les autres coupées</div></div>
+  </div>
+  <p class="esti"><b>Engagement de méthode.</b> Aucun volume, aucune position, aucune donnée de trafic n'est avancée dans ce document. Tout ce qui est chiffré ici a été relevé le 9 juillet 2026 sur vos pages publiques et reste vérifiable par vos équipes.</p>
+</section>
+
+<!-- ════════ PAGE 8 · HORS PÉRIMÈTRE + POURQUOI ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">09</span><span class="rule"></span><span class="lbl">Hors périmètre</span></div>
+  <h1 class="sec">Hors périmètre</h1>
+  <div class="prose gap">
+    <p>Ce que cette mission <span class="dk">ne comprend pas</span>, pour qu'il n'y ait aucune ambiguïté : l'achat de liens, sous quelque forme que ce soit. La refonte graphique du site. La gestion de vos campagnes payantes. L'animation de vos comptes TikTok et Instagram, même si la machine peut les alimenter. Et le tournage des vidéos YouTube : le système produit le script et la structure, pas l'image.</p>
+    <p>Une chose ne se délègue pas non plus : vos dossiers réels et les délais que vous constatez. C'est la seule matière que je ne peux pas produire à votre place. Sans elle, les pages deviennent un gabarit vide, et un gabarit vide ne se positionne pas. Vos dossiers restent confidentiels : on anonymise à la réception, et le cadre de traitement des données est contractualisé.</p>
+  </div>
+
+  <div class="sh gap-lg"><span class="num">10</span><span class="rule"></span><span class="lbl">Pourquoi</span></div>
+  <h1 class="sec">Pourquoi maintenant</h1>
+  <div class="why">
+    <div class="card">
+      <div class="wn">01</div>
+      <h4>Le site est neuf</h4>
+      <p>Tout est encore à écrire, donc l'architecture peut être posée correctement du premier coup. C'est le seul moment où bâtir la structure ne coûte presque rien.</p>
+    </div>
+    <div class="card">
+      <div class="wn">02</div>
+      <h4>Chaque mois coûte</h4>
+      <p>Sans contenu organique, l'acquisition dépend du payant. La publicité s'arrête le jour où vous coupez le budget. Une page qui se positionne, non.</p>
+    </div>
+  </div>
+  <div class="closing-line">Vos cinq situations sont vos cinq meilleures pages.<br>Aujourd'hui, ce sont cinq sous-titres.</div>
+</section>
+
+<!-- ════════ PAGE 9 · PROCHAINE ÉTAPE ════════ -->
+<section class="page">
+  <div class="sh"><span class="num">11</span><span class="rule"></span><span class="lbl">Prochaine étape</span></div>
+  <h1 class="sec">Prochaine étape</h1>
+  <div class="next">
+    <div class="big">Faites vérifier une chose par la personne qui a fait votre site. Ouvrez le code source de votre page d'accueil et cherchez 418-XXX-XXXX. Ça prend une minute, et ça dit tout sur l'attention portée au reste.</div>
+    <div class="small">Vous présentez en interne, vous me faites un retour. Si le budget bloque, on en reparle : on peut démarrer sur un périmètre resserré, les correctifs et les cinq pages piliers, et étendre ensuite.</div>
+    <div class="sig">
+      <div class="nm">Timothée Boussardon</div>
+      <div class="ml">tim@organikk.co</div>
+      <div class="ft">ORGANIKK.CO · CONSEIL SEO ET GEO</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
