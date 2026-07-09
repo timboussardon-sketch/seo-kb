@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Proposition commerciale · Upscale · organikk.co</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600&display=swap');
+
+:root {
+  --ink: #0A0F1E;
+  --ink-2: #1b2439;
+  --muted: #5a6681;
+  --muted-2: #8590a8;
+  --blue: #4685F0;
+  --blue-2: #2559DD;
+  --blue-deep: #1B3E8F;
+  --line: rgba(10,15,30,.09);
+  --line-2: rgba(10,15,30,.14);
+  --accent: #FF371C;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+html, body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.011em;
+}
+
+@page { size: A4; margin: 14mm 15mm; }
+@page :first { margin: 0; }
+
+.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+/* icône SVG (remplace les glyphes ✓ ✕ ›) */
+.ic {
+  width: 9px; height: 9px; display: block;
+  fill: none; stroke: currentColor; stroke-width: 3.4;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ─── COUVERTURE ─── */
+.cover {
+  width: 210mm; height: 297mm;
+  background:
+    radial-gradient(ellipse 60% 50% at 78% 12%, rgba(91,134,245,.45), transparent 70%),
+    linear-gradient(158deg, #0c2470 0%, #15327f 46%, #2559DD 100%);
+  color: #fff;
+  padding: 26mm 22mm 22mm;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+  page-break-after: always;
+}
+.cover-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 13mm 13mm;
+  mask-image: radial-gradient(ellipse at 70% 25%, #000 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse at 70% 25%, #000 30%, transparent 78%);
+}
+.cover > * { position: relative; }
+.cover-top { display: flex; justify-content: space-between; align-items: center; }
+.wordmark {
+  font-weight: 700; font-size: 17px; letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.wordmark span { color: #8FB4FF; }
+.cover-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.62);
+}
+.cover-mid { margin-top: auto; }
+.cover-kicker {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  letter-spacing: .24em; text-transform: uppercase; color: #8FB4FF;
+  margin-bottom: 20px;
+}
+.cover-h1 {
+  font-size: 46px; line-height: 1.07; font-weight: 600; letter-spacing: -.035em;
+}
+.cover-h1 .lexi {
+  font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400;
+  color: #A8C7FF;
+}
+.cover-sub {
+  margin-top: 22px; max-width: 135mm;
+  font-size: 14.5px; line-height: 1.62; color: rgba(255,255,255,.82);
+}
+.cover-rule { height: 1px; background: rgba(255,255,255,.22); margin: 26px 0; }
+.cover-metrics { display: flex; gap: 9mm; }
+.cover-metric-n { font-size: 24px; font-weight: 600; letter-spacing: -.03em; }
+.cover-metric-n em { font-style: normal; color: #8FB4FF; }
+.cover-metric-l {
+  margin-top: 5px; font-size: 9.5px; line-height: 1.45;
+  color: rgba(255,255,255,.66); max-width: 38mm;
+}
+.cover-foot {
+  margin-top: auto; padding-top: 22px;
+  display: flex; justify-content: space-between; align-items: flex-end;
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+.cover-foot-block { font-size: 11px; line-height: 1.6; color: rgba(255,255,255,.78); }
+.cover-foot-block b { color: #fff; font-weight: 600; }
+.cover-foot-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 9.5px;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.5);
+}
+
+/* ─── DOCUMENT ─── */
+.doc { background: var(--paper); }
+.sec { padding: 4mm 0 9mm; }
+.sec:first-child { padding-top: 0; }
+
+.sec-head { break-after: avoid; margin-bottom: 7mm; }
+.sec-head-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 9px; }
+.sec-num {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+  letter-spacing: .04em; color: var(--blue-2);
+}
+.sec-rule { flex: 1; height: 1px; background: var(--line-2); }
+.sec-count {
+  font-family: 'JetBrains Mono', monospace; font-size: 9.5px;
+  letter-spacing: .14em; color: var(--muted-2);
+}
+.sec-h2 {
+  font-size: 28px; font-weight: 600; letter-spacing: -.03em; line-height: 1.1;
+  color: #1B3E8F;
+}
+.sec-intro {
+  margin-top: 11px; max-width: 150mm;
+  font-size: 12.5px; line-height: 1.6; color: var(--muted);
+}
+
+.block { margin-top: 7mm; }
+.block:first-of-type { margin-top: 0; }
+
+.sub {
+  font-size: 15px; font-weight: 600; letter-spacing: -.018em; color: var(--ink);
+  margin-bottom: 10px; break-after: avoid;
+}
+.sub-n { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--blue-2); margin-right: 8px; }
+.sub-note { font-size: 11.5px; line-height: 1.55; color: var(--muted); margin-bottom: 11px; max-width: 150mm; }
+
+/* prose */
+.prose { max-width: 162mm; }
+.prose p { font-size: 12.5px; line-height: 1.7; color: var(--ink-2); margin-bottom: 11px; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { font-weight: 600; color: var(--blue-deep); }
+
+/* table */
+.table-wrap {
+  border: 1px solid var(--line-2); border-radius: 11px; overflow: hidden;
+  break-inside: auto;
+}
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+thead { display: table-header-group; }
+th {
+  font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted-2); font-weight: 600; text-align: left;
+  padding: 9px 11px; background: #eef3fe; border-bottom: 1px solid var(--line-2);
+}
+td {
+  padding: 9px 11px; border-bottom: 1px solid var(--line);
+  font-size: 10px; line-height: 1.45; color: var(--ink-2); vertical-align: top;
+}
+tr { break-inside: avoid; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: #fafbfe; }
+td.col-dim { font-weight: 600; color: var(--ink); }
+td.col-muted { color: var(--muted); }
+.vol {
+  display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 8.5px;
+  font-weight: 600; color: var(--blue-deep); white-space: nowrap;
+  padding: 3px 7px; border-radius: 5px;
+  background: rgba(70,133,240,.1); border: 1px solid rgba(70,133,240,.22);
+}
+.t-diag col.c1 { width: 27%; } .t-diag col.c2 { width: 33%; } .t-diag col.c3 { width: 40%; }
+.t-model col.c1 { width: 21%; } .t-model col.c2 { width: 40%; }
+.t-model col.c3 { width: 14%; } .t-model col.c4 { width: 25%; }
+
+/* duo */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.panel { padding: 6mm 6mm 6.5mm; border-radius: 13px; border: 1px solid; break-inside: avoid; }
+.panel.ok { background: linear-gradient(165deg, #f3f8ff, #e6effc); border-color: rgba(70,133,240,.24); }
+.panel.ko { background: linear-gradient(165deg, #fff6f4, #ffe9e4); border-color: rgba(255,55,28,.22); }
+.panel-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 600; margin-bottom: 12px; display: block;
+}
+.panel.ok .panel-label { color: var(--blue-deep); }
+.panel.ko .panel-label { color: var(--accent); }
+
+/* lists */
+.clist { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.clist li { display: flex; gap: 9px; font-size: 10.5px; line-height: 1.5; color: var(--ink-2); break-inside: avoid; }
+.clist li b { color: var(--ink); font-weight: 600; }
+.dot {
+  flex-shrink: 0; width: 14px; height: 14px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; margin-top: 1px;
+}
+.dot.v { background: rgba(70,133,240,.14); color: var(--blue-2); }
+.dot.x { background: rgba(255,55,28,.14); color: var(--accent); }
+.dot.a { background: rgba(70,133,240,.12); color: var(--blue); }
+
+/* soft card */
+.soft {
+  padding: 6mm 6mm; border-radius: 14px; height: 100%;
+  background: #f7f9fc; border: 1px solid var(--line-2); break-inside: avoid;
+}
+.soft p { font-size: 10.5px; line-height: 1.6; color: var(--ink-2); }
+
+/* callout */
+.callout {
+  padding: 7mm 7mm; border-radius: 15px; break-inside: avoid;
+  background: linear-gradient(155deg, #e9f1fd 0%, #d8e7fb 100%);
+  border: 1px solid rgba(70,133,240,.3);
+}
+.callout-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-deep);
+  display: block; margin-bottom: 10px;
+}
+.callout p { font-size: 12.5px; line-height: 1.65; color: var(--ink); }
+.callout strong { font-weight: 600; color: var(--blue-deep); }
+
+/* bot */
+.bot {
+  padding: 8mm 8mm; border-radius: 17px; break-inside: avoid;
+  background: linear-gradient(160deg, #eef3ff 0%, #e3ebfe 52%, #f1f5ff 100%);
+  border: 1px solid rgba(70,133,240,.26);
+}
+.bot-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-2); display: block; margin-bottom: 6px;
+}
+.bot-title {
+  font-size: 21px; font-weight: 600; letter-spacing: -.025em;
+  color: #1B3E8F;
+}
+.bot-intro { margin: 12px 0 0; font-size: 11.5px; line-height: 1.6; color: var(--ink-2); max-width: 160mm; }
+.bot-caps {
+  list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 8mm;
+  margin: 14px 0; padding: 14px 0;
+  border-top: 1px solid rgba(70,133,240,.2); border-bottom: 1px solid rgba(70,133,240,.2);
+}
+.bot-caps li { display: flex; gap: 9px; font-size: 10px; line-height: 1.45; color: var(--ink); }
+.bot-foot { font-size: 11px; line-height: 1.55; color: var(--blue-deep); font-weight: 600; }
+
+/* deliverables */
+.deliver { border: 1px solid var(--line-2); border-radius: 13px; overflow: hidden; }
+.deliver-row {
+  display: flex; gap: 14px; align-items: baseline;
+  padding: 10px 14px; border-bottom: 1px solid var(--line); break-inside: avoid;
+}
+.deliver-row:last-child { border-bottom: none; }
+.deliver-row:nth-child(even) { background: #fafbfe; }
+.deliver-n { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; color: var(--blue-2); flex-shrink: 0; }
+.deliver-t { font-size: 11px; line-height: 1.5; color: var(--ink); }
+
+/* planning */
+.plan { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.month {
+  padding: 5.5mm 5mm; border-radius: 13px; break-inside: avoid;
+  background: #f7f9fc; border: 1px solid var(--line-2);
+}
+.month-head { padding-bottom: 9px; margin-bottom: 10px; border-bottom: 1px dashed rgba(70,133,240,.3); }
+.month-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-2);
+}
+.month-title { margin-top: 5px; font-size: 14px; font-weight: 600; letter-spacing: -.02em; color: var(--ink); }
+.month-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.month-list li { position: relative; padding-left: 12px; font-size: 9.5px; line-height: 1.5; color: var(--ink-2); }
+.month-list li::before {
+  content: ""; position: absolute; left: 0; top: .55em;
+  width: 4px; height: 4px; border-radius: 50%; background: var(--blue);
+}
+
+/* price */
+.price {
+  display: grid; grid-template-columns: 1.4fr 1fr;
+  border: 1px solid rgba(70,133,240,.26); border-radius: 16px; overflow: hidden;
+  break-inside: avoid;
+}
+.price-left { padding: 7mm 7mm; background: #fff; }
+.price-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 600; color: var(--blue-deep);
+  display: block; margin-bottom: 14px;
+}
+.price-modal {
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);
+  font-size: 9.5px; line-height: 1.55; color: var(--muted);
+}
+.price-right {
+  padding: 7mm 7mm; color: #fff;
+  background: linear-gradient(160deg, #15327f 0%, #2559DD 62%, #4685F0 100%);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.price-rate { display: flex; align-items: baseline; gap: 8px; }
+.price-amount { font-size: 42px; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
+.price-unit { font-size: 12px; font-weight: 500; color: rgba(255,255,255,.82); }
+.price-x { margin-top: 12px; font-size: 10.5px; line-height: 1.5; color: rgba(255,255,255,.82); }
+
+/* stats */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-bottom: 4mm; }
+.stats-note { margin: 0 0 7mm; font-size: 9.5px; line-height: 1.55; color: var(--muted); font-style: italic; }
+.stats-note b { font-style: normal; font-weight: 600; color: var(--blue-deep); }
+.stat {
+  padding: 6mm 5mm; border-radius: 13px; break-inside: avoid;
+  background: #f7f9fc; border: 1px solid var(--line-2);
+}
+.stat-n { font-size: 22px; font-weight: 600; letter-spacing: -.035em; color: var(--blue-2); line-height: 1.08; }
+.stat-l { margin-top: 9px; font-size: 9px; line-height: 1.5; color: var(--ink-2); }
+
+/* hors périmètre */
+.out {
+  display: flex; gap: 10px; padding: 5mm 5.5mm; height: 100%;
+  border: 1px solid var(--line-2); border-radius: 12px; background: #fbfcfe;
+  font-size: 10.5px; line-height: 1.55; color: var(--ink-2); break-inside: avoid;
+}
+
+/* pourquoi */
+.why { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4mm; }
+.why-card {
+  padding: 5.5mm 5.5mm; border-radius: 13px; break-inside: avoid;
+  background: #f7f9fc; border: 1px solid var(--line-2);
+}
+.why-n {
+  font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 600;
+  display: inline-block; margin-bottom: 9px;
+  color: #2559DD;
+}
+.why-t { font-size: 13px; font-weight: 600; letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px; }
+.why-d { font-size: 10px; line-height: 1.55; color: var(--ink-2); }
+.why-foot {
+  margin-top: 6mm; text-align: center; font-size: 12px; line-height: 1.55;
+  color: var(--blue-deep); font-weight: 600; max-width: 150mm; margin-left: auto; margin-right: auto;
+}
+
+/* final */
+.final {
+  padding: 8mm 8mm; border-radius: 17px; break-inside: avoid;
+  background: linear-gradient(160deg, #ffffff 0%, #f3f7ff 50%, #e7eefe 100%);
+  border: 1px solid rgba(70,133,240,.26);
+}
+.final-lead { font-size: 13px; line-height: 1.6; color: var(--ink); font-weight: 600; max-width: 158mm; }
+.final-p { margin-top: 10px; font-size: 11px; line-height: 1.62; color: var(--muted); max-width: 158mm; }
+.sign { margin-top: 14px; padding-top: 13px; border-top: 1px solid var(--line-2); }
+.sign-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.sign-mail { margin-top: 3px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--blue-2); }
+.sign-foot {
+  margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 8.5px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--muted-2);
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ COUVERTURE ══════════ -->
+<section class="cover">
+  <div class="cover-grid"></div>
+  <div class="cover-top">
+    <div class="wordmark">organikk<span>.co</span></div>
+    <div class="cover-tag">Proposition commerciale</div>
+  </div>
+
+  <div class="cover-mid">
+    <div class="cover-kicker">Stratégie SEO décisionnelle et système de contenu</div>
+    <h1 class="cover-h1">
+      Capter les prospects<br />
+      qui cherchent déjà à<br />
+      externaliser, pour <span class="lexi">Upscale</span>.
+    </h1>
+    <p class="cover-sub">
+      Mission de 3 mois : se positionner sur 10 à 20 mots-clés business, produire les
+      pages décisionnelles qui les servent, et construire le système de contenu que
+      vous gardez. Le KPI n'est pas le trafic, c'est le lead.
+    </p>
+    <div class="cover-rule"></div>
+    <div class="cover-metrics">
+      <div class="cover-metric">
+        <div class="cover-metric-n">20</div>
+        <div class="cover-metric-l">URL en ligne, aucune page décisionnelle</div>
+      </div>
+      <div class="cover-metric">
+        <div class="cover-metric-n"><em>2</em></div>
+        <div class="cover-metric-l">d'autorité de domaine, site récent</div>
+      </div>
+      <div class="cover-metric">
+        <div class="cover-metric-n">0</div>
+        <div class="cover-metric-l">outil gratuit en ligne aujourd’hui</div>
+      </div>
+      <div class="cover-metric">
+        <div class="cover-metric-n">1 sur 4</div>
+        <div class="cover-metric-l">résultat propose une solution sur votre requête</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-foot">
+    <div class="cover-foot-block">
+      Upscale, agence de prospection B2B (outbound, inbound, RevOps)<br />
+      Préparé par <b>Timothée Boussardon</b> · Juillet 2026
+    </div>
+    <div class="cover-foot-tag">organikk.co &amp; Upscale</div>
+  </div>
+</section>
+
+<div class="doc">
+
+<!-- ══ 1 · SYNTHÈSE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">01</span><span class="sec-rule"></span><span class="sec-count">Synthèse</span></div>
+    <h2 class="sec-h2">Synthèse</h2>
+  </div>
+  <div class="prose">
+    <p>Vous vendez des systèmes d'acquisition. Outbound, inbound, RevOps, quatre cas clients publiés, un socle de contenu GTM sérieux. Sur le papier, l'expertise est là.</p>
+    <p>Mais votre propre canal entrant est vide. <strong>20 URL au total, dont 8 guides informationnels et zéro page qui intercepte quelqu'un qui cherche à externaliser sa prospection maintenant.</strong> Ce contenu nourrit les réponses de ChatGPT et de Google AI Overviews, et ne vous amène pas de demande entrante. La production s'est arrêtée en février 2026.</p>
+    <p>Cette proposition cible un objectif unique : vous positionner sur <strong>10 à 20 mots-clés business</strong> et rien d'autre, avec les pages décisionnelles qui les servent, construites sur votre data propriétaire. Et vous laisser le système qui les produit, pour que vous n'ayez plus besoin de moi.</p>
+  </div>
+</section>
+
+<!-- ══ 2 · ANALYSE DE L'EXISTANT ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">02</span><span class="sec-rule"></span><span class="sec-count">L'existant</span></div>
+    <h2 class="sec-h2">Analyse de l'existant</h2>
+    <p class="sec-intro">Diagnostic issu du call du 9 juillet 2026 et du relevé du sitemap up-scale.fr (20 URL, 8 juillet 2026).</p>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">2.1</span>État du SEO actuel</div>
+    <div class="table-wrap">
+      <table class="t-diag">
+        <colgroup><col class="c1" /><col class="c2" /><col class="c3" /></colgroup>
+        <thead><tr><th>Dimension</th><th>État actuel</th><th>Lecture</th></tr></thead>
+        <tbody>
+          <tr><td class="col-dim">Volume du site</td><td>20 URL, aucune date de mise à jour au sitemap</td><td class="col-muted">Empreinte minimale, tout reste à construire</td></tr>
+          <tr><td class="col-dim">Autorité de domaine</td><td>2, relevé en call</td><td class="col-muted">Normal sur un site récent, ce n'est pas un frein au démarrage</td></tr>
+          <tr><td class="col-dim">Pages décisionnelles</td><td>Aucune</td><td class="col-muted">Personne n'atterrit chez vous en intention d'achat</td></tr>
+          <tr><td class="col-dim">Contenu « ressources »</td><td>8 guides GTM, tous informationnels</td><td class="col-muted">Les moteurs génératifs les résument sans vous citer</td></tr>
+          <tr><td class="col-dim">Cadence éditoriale</td><td>Dernier article en février 2026</td><td class="col-muted">Le socle existe mais ne travaille plus</td></tr>
+          <tr><td class="col-dim">Cas clients</td><td>4 pages (Cleaq, Delos, Imagine Médias, Gimmic Design)</td><td class="col-muted">Résultats globaux, aucune métrique atomique citable</td></tr>
+          <tr><td class="col-dim">Outils gratuits, lead magnets</td><td>Aucun en ligne</td><td class="col-muted">Zéro capture d'e-mail depuis l'organique</td></tr>
+          <tr><td class="col-dim">Mots-clés positionnés</td><td>Essentiellement la marque</td><td class="col-muted">« Upscale » est un mot anglais courant : ces impressions ne vous cherchent pas</td></tr>
+          <tr><td class="col-dim">Search Console</td><td>Non connectée</td><td class="col-muted">Aucune mesure possible tant qu'elle n'est pas ouverte</td></tr>
+          <tr><td class="col-dim">Données propriétaires</td><td>Calls clients, rapports, cas clients</td><td class="col-muted">Non exploitées pour le SEO. C'est la matière la plus rare</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="duo">
+      <div class="panel ok">
+        <span class="panel-label">2.2 · Ce qui fonctionne déjà</span>
+        <ul class="clist">
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Compétence éditoriale prouvée.</b> Les guides GTM sont sérieux et bien écrits. La capacité de production existe, elle est pointée au mauvais endroit.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Quatre cas clients réels.</b> Cleaq, Delos, Imagine Médias, Gimmic Design. De la preuve chiffrable, que personne d'autre ne peut publier.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Un point de conversion clair.</b> L'audit de 30 minutes via Cal.com structure déjà le funnel.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span><b>Un site rapide et léger.</b> Les notes techniques desktop sont bonnes. Le sujet mobile se règle vite.</span></li>
+        </ul>
+      </div>
+      <div class="panel ko">
+        <span class="panel-label">2.3 · Ce qui ne fonctionne pas</span>
+        <ul class="clist">
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Aucune page décisionnelle.</b> Quelqu'un qui cherche à externaliser sa prospection ne trouve aucune de vos pages sur son chemin.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Du contenu qui nourrit l'IA.</b> Les guides GTM répondent à des questions que ChatGPT résume à votre place, sans vous nommer comme fournisseur.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Cas clients sous-exploités.</b> Des vitrines génériques, sans les chiffres qui les rendraient citables par les moteurs génératifs.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Zéro outil gratuit.</b> Aucun e-mail collecté au moment où le prospect évalue s'il sait faire seul.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Production arrêtée.</b> Le socle éditorial dort depuis février 2026.</span></li>
+          <li><span class="dot x"><svg class="ic" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span><span><b>Data propriétaire non convertie.</b> Vos calls et vos rapports contiennent les mots-clés que les autres agences ne trouveront jamais.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="callout">
+      <span class="callout-label">2.4 · L'opportunité</span>
+      <p>Sur « externaliser sa prospection B2B », les premiers résultats sont des guides. Un seul des quatre premiers propose une solution. Or quelqu'un qui tape cette requête cherche à acheter, pas à comprendre. <strong>L'intention est mal servie, et la place est libre.</strong> Les autres acteurs produisent de l'informationnel et laissent le transactionnel vide. C'est là qu'on entre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3 · STRATÉGIE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">03</span><span class="sec-rule"></span><span class="sec-count">La stratégie</span></div>
+    <h2 class="sec-h2">Stratégie proposée</h2>
+    <p class="sec-intro">Sur « agence de prospection », il y a deux gagnants. On n'y va pas. On va sur les dix problématiques qui amènent quelqu'un à taper ce mot-clé.</p>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">3.1</span>Le filtre : mots-clés business, avec CPC</div>
+    <div class="prose">
+      <p>Un mot-clé business est un mot-clé où l'utilisateur arrive avec l'intention d'agir : demander un devis, comparer, prendre rendez-vous. Mon filtre est simple : <strong>s'il y a un CPC sur le mot-clé, j'y vais.</strong> Un CPC prouve que d'autres acteurs paient déjà pour ce clic, donc que le mot-clé ramène du business.</p>
+      <p>« Agence de prospection » ne m'intéresse pas. « Externaliser un SDR » m'intéresse : le vocabulaire est expert, la personne a fait ses recherches, elle est proche de la décision. <strong>Le KPI n'est pas le trafic, c'est l'e-mail qualifié.</strong></p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">3.2</span>Modèles de pages déclinables</div>
+    <p class="sub-note">Un modèle égale un template plus une variable. Les requêtes ci-dessous sont des exemples relevés au call ou au pré-audit. La liste définitive sort de la Search Console et de votre data, en semaine 1 et 2. Aucun volume n'est avancé tant qu'il n'est pas mesuré.</p>
+    <div class="table-wrap">
+      <table class="t-model">
+        <colgroup><col class="c1" /><col class="c2" /><col class="c3" /><col class="c4" /></colgroup>
+        <thead><tr><th>Modèle de page</th><th>Exemples de requêtes</th><th>Volume cible</th><th>Logique business</th></tr></thead>
+        <tbody>
+          <tr><td class="col-dim">Problème d'acquisition</td><td class="col-muted">externaliser un SDR · externaliser sa prospection B2B · remplacer un SDR interne par un système</td><td><span class="vol">6-8 pages</span></td><td>Intention 100 % commerciale, mal servie aujourd'hui</td></tr>
+          <tr><td class="col-dim">Vertical de l'acheteur</td><td class="col-muted">prospection B2B pour SaaS · pour cabinet de conseil · pour ESN</td><td><span class="vol">5 pages max</span></td><td>Un vertical par cas client réel, jamais plus</td></tr>
+          <tr><td class="col-dim">Pages preuve chiffrées</td><td class="col-muted">vos cas clients restructurés, métriques atomiques et citables</td><td><span class="vol">4 pages</span></td><td>La matière que les moteurs génératifs citent</td></tr>
+          <tr><td class="col-dim">Outils gratuits</td><td class="col-muted">simulateur coût d'un SDR interne face à une agence · calculateur rendez-vous vers ARR</td><td><span class="vol">2-3 outils</span></td><td>Capture d'e-mail au moment de la décision</td></tr>
+          <tr><td class="col-dim">Occupation de SERP</td><td class="col-muted">contenu Reddit sur les requêtes où les 3 premières places sont tenues</td><td><span class="vol">Selon SERP</span></td><td>Présence là où votre domaine ne peut pas encore aller</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="duo">
+      <div class="soft">
+        <div class="sub" style="margin-bottom:8px"><span class="sub-n">3.3</span>Uniquement des landing pages</div>
+        <p>Pas d'articles de blog, pas de pages informationnelles. Un article qui explique ce qu'est un SDR, ChatGPT le sort déjà, et personne ne paiera pour ça. Chaque page est sur votre domaine et fait une chose : récupérer un e-mail. Sur « externaliser un SDR », un simulateur du coût interne face à l'agence, avec le devis et la roadmap contre l'e-mail.</p>
+      </div>
+      <div class="soft">
+        <div class="sub" style="margin-bottom:10px"><span class="sub-n">3.4</span>Optimisation pour les moteurs IA</div>
+        <ul class="clist">
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Blocs de réponse courts en début de page, pour citation directe par ChatGPT et Perplexity.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Schema.org adapté : FAQPage, Service, Organization.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Chiffres vérifiables tirés de vos cas clients : le seul contenu qu'un modèle ne peut pas produire seul.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Suivi des citations dans les moteurs génératifs, en plus des positions Google.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="bot">
+      <span class="bot-label">3.5 · La pièce centrale</span>
+      <div class="bot-title">Votre data propriétaire, structurée en système</div>
+      <p class="bot-intro">C'est ce qui différencie cette mission d'une prestation d'agence classique. Je récupère votre data, je la structure, et je construis un système d'agents Claude qui s'en nourrit. Il sait :</p>
+      <ul class="bot-caps">
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Extraire de vos calls clients les problématiques réelles, et en faire des sujets de page.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Sortir des mots-clés que les autres agences ne trouvent pas, parce que la matière est chez vous.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Reprendre votre ton de voix et vos méthodes de prospection dans les pages.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Produire aussi vos posts LinkedIn, votre newsletter et vos contenus Reddit, à partir des mêmes sources.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Pré-auditer le site et le maillage, et générer la liste de corrections.</span></li>
+      </ul>
+      <p class="bot-foot">Le système est livré, formé et documenté en fin de mission. Une page que l'IA peut écrire à votre place ne vaut rien. Ce système écrit les pages que vous seuls pouviez écrire.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4 · MÉTHODOLOGIE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">04</span><span class="sec-rule"></span><span class="sec-count">Méthodologie</span></div>
+    <h2 class="sec-h2">Méthodologie</h2>
+  </div>
+
+  <div class="block">
+    <div class="sub"><span class="sub-n">4.1</span>Ce que je prends en charge</div>
+    <div class="prose">
+      <p>Je travaille en mode <strong>done-for-you</strong> : audit, stratégie, recherche de mots-clés, rédaction, maillage, intégration et suivi des positions. Aucun rédacteur à mobiliser chez vous. Vous gardez la validation sur les trois premières pages, le temps que le ton de voix soit calé.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="duo">
+      <div class="soft">
+        <div class="sub" style="margin-bottom:10px"><span class="sub-n">4.2</span>Demandé côté Upscale</div>
+        <ul class="clist">
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>L'accès à la Google Search Console. Sans elle, je travaille à l'aveugle sur vos vraies requêtes.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un export anonymisé de calls clients, représentatifs de vos personas. C'est la matière qui nourrit le système.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Vos cas clients avec les chiffres non publiés, vos rapports mensuels, vos méthodes de prospection.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>La liste des secteurs qui pèsent le plus dans votre portefeuille, et ceux où vous avez des cas clients.</span></li>
+          <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Un accès en écriture au site, ou la documentation technique.</span></li>
+        </ul>
+      </div>
+      <div class="soft">
+        <div class="sub" style="margin-bottom:10px"><span class="sub-n">4.3</span>Rythme de collaboration</div>
+        <ul class="clist">
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Un point de 30 minutes par semaine.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Suivi partagé en continu : pages produites, indexation, positions, premiers leads.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Accès direct par message, pas de ticket. Full remote, aucun déplacement.</span></li>
+          <li><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Plus vous me donnez de data, plus la production va vite.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 5 · LIVRABLES ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">05</span><span class="sec-rule"></span><span class="sec-count">Livrables</span></div>
+    <h2 class="sec-h2">Livrables</h2>
+    <p class="sec-intro">Ce que vous avez en main à la fin des 3 mois.</p>
+  </div>
+  <div class="deliver">
+    <div class="deliver-row"><span class="deliver-n">01</span><span class="deliver-t">Audit SEO initial complet : technique, sémantique, contenu à réorienter, maillage à construire.</span></div>
+    <div class="deliver-row"><span class="deliver-n">02</span><span class="deliver-t">La liste des 10 à 20 mots-clés business prioritaires, avec le CPC constaté sur chacun.</span></div>
+    <div class="deliver-row"><span class="deliver-n">03</span><span class="deliver-t">40 à 50 pages décisionnelles produites et intégrées, optimisées pour Google et les moteurs génératifs.</span></div>
+    <div class="deliver-row"><span class="deliver-n">04</span><span class="deliver-t">Vos 4 cas clients restructurés en pages preuve chiffrées et citables.</span></div>
+    <div class="deliver-row"><span class="deliver-n">05</span><span class="deliver-t">2 à 3 outils gratuits conçus et mis en ligne, dont le simulateur de coût d'un SDR.</span></div>
+    <div class="deliver-row"><span class="deliver-n">06</span><span class="deliver-t">Le maillage interne entre pages décisionnelles et pages preuve.</span></div>
+    <div class="deliver-row"><span class="deliver-n">07</span><span class="deliver-t">Le système de contenu livré, documenté et transmis en session de formation. Il produit aussi LinkedIn et la newsletter.</span></div>
+    <div class="deliver-row"><span class="deliver-n">08</span><span class="deliver-t">Rapport de fin de mission : leads générés, positions, citations IA, recommandations pour la suite.</span></div>
+  </div>
+</section>
+
+<!-- ══ 6 · PLANNING ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">06</span><span class="sec-rule"></span><span class="sec-count">Planning</span></div>
+    <h2 class="sec-h2">Planning sur 3 mois</h2>
+    <p class="sec-intro">Deux à trois semaines d'audit et de stratégie, puis la production démarre. Une phase nourrit la suivante.</p>
+  </div>
+  <div class="plan">
+    <div class="month">
+      <div class="month-head"><span class="month-tag">Mois 1</span><div class="month-title">Cadrage et premières pages</div></div>
+      <ul class="month-list">
+        <li>Ouverture de la Search Console et lecture de vos vraies requêtes.</li>
+        <li>Audit SEO complet : technique, sémantique, contenu existant, mobile.</li>
+        <li>Récupération et structuration de votre data : calls, cas clients, rapports, méthodes.</li>
+        <li>Les 10 à 20 mots-clés business, filtrés au CPC. Choix des verticaux, cinq maximum.</li>
+        <li>Construction du système, puis production des premières pages décisionnelles.</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="month-head"><span class="month-tag">Mois 2</span><div class="month-title">Production</div></div>
+      <ul class="month-list">
+        <li>Environ 15 pages : problèmes d'acquisition, verticaux adossés à un cas client.</li>
+        <li>Restructuration des 4 cas clients en pages preuve chiffrées.</li>
+        <li>Premier outil gratuit en ligne, le simulateur de coût d'un SDR.</li>
+        <li>Maillage interne entre pages décisionnelles et pages preuve.</li>
+        <li>Occupation de SERP par Reddit sur les requêtes dont le top 3 est tenu.</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="month-head"><span class="month-tag">Mois 3</span><div class="month-title">Mesure, extension, transfert</div></div>
+      <ul class="month-list">
+        <li>Lecture Search Console : ce qui indexe, ce qui remonte, ce qui ramène des leads.</li>
+        <li>Le modèle de page qui gagne est étendu aux autres verticaux.</li>
+        <li>Production des dernières pages pour atteindre 40 à 50 pages publiées.</li>
+        <li>Livraison du système, formation et documentation. Une session.</li>
+        <li>Bilan conjoint : autonomie complète, ou prolongation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 7 · TARIFICATION ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">07</span><span class="sec-rule"></span><span class="sec-count">Tarification</span></div>
+    <h2 class="sec-h2">Tarification</h2>
+  </div>
+  <div class="price">
+    <div class="price-left">
+      <span class="price-label">La mission couvre</span>
+      <ul class="clist">
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Stratégie complète : audit, mots-clés business filtrés au CPC, maillage, suivi des positions.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Environ 15 pages par mois, soit 40 à 50 pages décisionnelles à 3 mois, intégrées au site.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>2 à 3 outils gratuits, et vos cas clients transformés en pages preuve.</span></li>
+        <li><span class="dot v"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 6.5"/></svg></span><span>Le système de contenu construit sur votre data, livré et documenté.</span></li>
+      </ul>
+      <p class="price-modal">Modalités : facturation mensuelle, sans engagement de durée. La mission peut s'arrêter à la fin de n'importe quel mois. On fixe ensemble un objectif de leads au démarrage : tant qu'il n'est pas atteint, je continue à travailler sur le projet.</p>
+    </div>
+    <div class="price-right">
+      <div class="price-rate"><span class="price-amount">1 400 €</span><span class="price-unit">HT / mois</span></div>
+      <div class="price-x">Sans engagement. La mission peut s'arrêter à la fin de n'importe quel mois.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 8 · RÉSULTATS ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">08</span><span class="sec-rule"></span><span class="sec-count">Résultats</span></div>
+    <h2 class="sec-h2">Résultats attendus</h2>
+    <p class="sec-intro">Référence de départ : 20 URL en ligne, aucune page décisionnelle, aucun lead attribué au canal entrant.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-n">40-50</div><div class="stat-l">Pages décisionnelles publiées à 3 mois, plus 2 à 3 outils gratuits</div></div>
+    <div class="stat"><div class="stat-n">~30</div><div class="stat-l">Pages en ligne à partir desquelles les premiers résultats apparaissent</div></div>
+    <div class="stat"><div class="stat-n">3 à 6</div><div class="stat-l">Mois pour tenir les mots-clés business sur une agence</div></div>
+    <div class="stat"><div class="stat-n">10-20</div><div class="stat-l">Mots-clés business visés. Aucun autre chantier tant qu'ils ne sont pas tenus</div></div>
+  </div>
+  <p class="stats-note"><b>Ceci est une estimation</b>, pas une garantie de résultat. Le SEO est mathématique et long terme : personne ne peut promettre une position à 30 jours. Les délais dépendent de la difficulté de vos requêtes et de la quantité de data que vous fournissez.</p>
+  <div class="prose">
+    <p>Les premiers résultats apparaissent vers 30 pages en ligne, soit environ trois mois. Sur une agence, comptez entre trois et six mois pour tenir les mots-clés business. Plus vous avez de data, plus on crée de pages, et plus on va vite.</p>
+    <p>Effet secondaire attendu : une présence dans les réponses de ChatGPT, Perplexity et Google AI Overviews sur les requêtes décisionnelles, parce que vos pages preuve chiffrées sont exactement ce que ces moteurs citent. Vos guides GTM actuels, eux, se font résumer sans attribution.</p>
+    <p>Vous avez déjà un calculateur de leads et un taux de prise de rendez-vous. On s'en sert pour fixer l'objectif de leads du départ, avec vos chiffres. C'est cet objectif qui déclenche la garantie : tant qu'il n'est pas atteint, je continue.</p>
+  </div>
+</section>
+
+<!-- ══ 9 · HORS PÉRIMÈTRE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">09</span><span class="sec-rule"></span><span class="sec-count">Hors périmètre</span></div>
+    <h2 class="sec-h2">Hors périmètre</h2>
+  </div>
+  <div class="why">
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Les pages par ville. Votre métier est national et distant : 200 pages « agence Bordeaux » envoient un mauvais signal à Google. Si une requête ville se justifie un jour, elle exige d'abord une fiche Google My Business.</span></div>
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Les articles informationnels et les guides GTM. Les moteurs génératifs les résument à votre place. La production s'arrête là.</span></div>
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Les verticaux sans preuve. Pas de page BTP sans clients BTP ni calls BTP. On crée d'abord les cas clients, ensuite les pages. Cinq verticaux au maximum.</span></div>
+    <div class="out"><span class="dot a"><svg class="ic" viewBox="0 0 24 24"><path d="M8 4l8 8-8 8"/></svg></span><span>Les campagnes payantes et la refonte technique majeure du site. À évaluer après audit si nécessaire, devis séparé.</span></div>
+  </div>
+</section>
+
+<!-- ══ 10 · POURQUOI CE SETUP ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">10</span><span class="sec-rule"></span><span class="sec-count">Pourquoi</span></div>
+    <h2 class="sec-h2">Pourquoi ce setup</h2>
+    <p class="sec-intro">Vous m'avez posé la bonne question : si tout le monde investit, qui gagne. Voici pourquoi ce dispositif gagne, et pourquoi publier 200 articles ne gagne plus.</p>
+  </div>
+  <div class="why">
+    <div class="why-card"><span class="why-n">01</span><div class="why-t">Dix problématiques, deux gagnants</div><p class="why-d">Sur le mot-clé de tête, il y a deux gagnants. Sur les problématiques qui y mènent, il y a de la place pour vous.</p></div>
+    <div class="why-card"><span class="why-n">02</span><div class="why-t">Le CPC comme preuve</div><p class="why-d">On investit là où d'autres acteurs paient déjà le clic. C'est la preuve externe que le mot-clé ramène du business.</p></div>
+    <div class="why-card"><span class="why-n">03</span><div class="why-t">Votre data propriétaire</div><p class="why-d">Vos calls et vos cas clients sortent des mots-clés que personne d'autre ne peut trouver, et des pages que l'IA ne peut pas écrire.</p></div>
+    <div class="why-card"><span class="why-n">04</span><div class="why-t">L'autonomie en sortie</div><p class="why-d">Vous gardez le système. Une fois les mots-clés, les modèles de page et la data en place, vous n'avez plus besoin de moi.</p></div>
+  </div>
+  <p class="why-foot">C'est exactement le dispositif que j'installe, testé sur mes propres sites et chez mes clients SaaS et tech.</p>
+</section>
+
+<!-- ══ 11 · PROCHAINE ÉTAPE ══ -->
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-head-meta"><span class="sec-num">11</span><span class="sec-rule"></span><span class="sec-count">Prochaine étape</span></div>
+    <h2 class="sec-h2">Prochaine étape</h2>
+  </div>
+  <div class="final">
+    <p class="final-lead">Ouvrez-moi la Search Console et dites-moi quels secteurs pèsent le plus dans votre portefeuille. Sur cette base, on cale un second call de stratégie, mot-clé par mot-clé. Démarrage sous 7 jours ouvrés après validation, premier livrable, l'audit complet et l'extraction de la data, sous 2 semaines.</p>
+    <p class="final-p">Même en cas de réponse négative, un retour rapide est apprécié : cela me permet d'organiser mon agenda. Une décision « non » aujourd'hui peut très bien devenir « oui » dans six mois.</p>
+    <div class="sign">
+      <div class="sign-name">Timothée Boussardon</div>
+      <div class="sign-mail">tim.boussardon@gmail.com</div>
+      <div class="sign-foot">organikk.co &amp; Upscale · Proposition commerciale · Juillet 2026</div>
+    </div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>

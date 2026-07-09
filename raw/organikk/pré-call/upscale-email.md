@@ -50,9 +50,13 @@ Le vrai sujet, c'est ta data. Tes calls clients, tes documents, tes rapports, te
 
 Deux choses avant qu'on aille plus loin : ouvre-moi ta Search Console (tu m'as demandé comment suivre ton ranking, la réponse est là, et elle est gratuite), et dis-moi quels secteurs pèsent le plus dans ton portefeuille clients. On ne fait pas plus de cinq verticales. Une verticale sans cas client derrière, on ne la crée pas.
 
-J'ai mis le détail complet ici, avec les mots-clés, la roadmap sur 90 jours et ce que je te demande au démarrage :
+Le résumé du call est ici, avec la SERP qu'on a regardée ensemble et le cadre de la mission :
 
 https://organikk.co/upscale-accompagnement/
+
+Et la proposition complète, avec le diagnostic, les modèles de pages, le planning sur trois mois et ce que je te demande au démarrage :
+
+https://organikk.co/upscale-accompagnement/proposition-upscale-organikk.pdf
 
 Tu débriefes ton associé, tu me fais un retour, et on cale un second call si vous voulez qu'on rentre dans la stratégie.
 
