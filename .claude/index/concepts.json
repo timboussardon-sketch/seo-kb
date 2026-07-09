@@ -1486,6 +1486,7 @@
       "wiki/entities/qadence-seo-agent.md",
       "wiki/entities/reddit.md",
       "wiki/entities/semrush.md",
+      "wiki/entities/upscale.md",
       "wiki/entities/victoria-garden.md",
       "wiki/entities/x-twitter.md",
       "wiki/hypotheses.md",
@@ -1570,6 +1571,7 @@
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -2260,7 +2262,8 @@
       "wiki/sources/2026-06-09-algorithme-ia-detruire-business-seo.md",
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
-      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
+      "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/geo.md",
@@ -2975,7 +2978,8 @@
       "wiki/concepts/requete-cliquable-vs-clic.md",
       "wiki/sources/2026-01-28-organikk-premier-agent-seo-ia.md",
       "wiki/sources/2026-06-24-algorithme-fin-des-mots-cles.md",
-      "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md"
+      "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/intention-recherche.md",
@@ -3898,6 +3902,7 @@
       "wiki/entities/gsc.md",
       "wiki/entities/organikk-co.md",
       "wiki/entities/sparktoro.md",
+      "wiki/entities/upscale.md",
       "wiki/index.md",
       "wiki/keywords/clustering-2026-05-28-agence-seo.md",
       "wiki/keywords/decisionnels-2026-05-28-agence-seo.md",
@@ -3943,6 +3948,7 @@
       "wiki/sources/2026-06-24-algorithme-fin-des-mots-cles.md",
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
     "confidence": "high",
@@ -4144,7 +4150,8 @@
       "raw/journal/2026-06-11.md",
       "wiki/log.md",
       "wiki/moc/moc-vente-objections.md",
-      "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md"
+      "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/objection-confidentialite-rgpd.md",
@@ -4348,13 +4355,15 @@
     ],
     "backrefs": [
       "wiki/entities/reddit.md",
+      "wiki/entities/upscale.md",
       "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-04-25-organikk-reddit-pour-geo.md",
       "wiki/sources/2026-06-19-algorithme-test-reddit-seo.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
-      "wiki/sources/2026-06-19-playbook-x-seo-geo.md"
+      "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
     ],
     "confidence": "medium",
     "file": "wiki/concepts/parasite-seo.md",
@@ -4749,6 +4758,7 @@
       "raw/organikk/pré-call/hellocse.md",
       "raw/organikk/pré-call/pangaea-sports.md",
       "raw/organikk/pré-call/proximit.md",
+      "raw/organikk/pré-call/upscale-call-vincent.md",
       "raw/transcripts/video-erreur-ia-137-pages.md",
       "wiki/audit/2026-06-01-audit.md",
       "wiki/briefs/2026-06-10-balle-golf-distance.md",
@@ -4761,6 +4771,7 @@
       "wiki/entities/fg-formation.md",
       "wiki/entities/golfiller.md",
       "wiki/entities/shopify.md",
+      "wiki/entities/upscale.md",
       "wiki/index.md",
       "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
@@ -4786,6 +4797,7 @@
       "wiki/sources/2026-06-03-organikk-systeme-seo-ia-complet.md",
       "wiki/sources/2026-06-24-algorithme-fin-des-mots-cles.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -5018,7 +5030,8 @@
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/journal/2026-05-16.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
-      "wiki/index.md"
+      "wiki/index.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/purete-vectorielle.md",
@@ -5523,8 +5536,10 @@
       "raw/organikk/clients/fgformation/fgformation-personas-problematiques.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/objection-confidentialite-rgpd.md",
+      "wiki/entities/vincent-upscale.md",
       "wiki/index.md",
       "wiki/sources/2026-06-02-algorithme-geo-pas-un-scam.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/syntheses/audit-doctrine-2026.md"
     ],
     "confidence": "high",
@@ -6151,6 +6166,7 @@
       "wiki/entities/marrusia-cecile.md",
       "wiki/entities/organikk-co.md",
       "wiki/entities/shopify.md",
+      "wiki/entities/vincent-upscale.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-vente-objections.md",
@@ -6167,6 +6183,7 @@
       "wiki/sources/2026-04-17-organikk-process-seo-b2b-2026.md",
       "wiki/sources/2026-04-25-tim-ton-de-voix-extraction-terrain.md",
       "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/vendre-seo-ia-2026.md",
       "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
@@ -6430,6 +6447,42 @@
     "title": "Triade SERP",
     "type": "concept"
   },
+  "upscale": {
+    "aliases": [
+      "upscale",
+      "up-scale",
+      "up-scale.fr"
+    ],
+    "backrefs": [
+      "raw/transcripts/call-14-vincent-upscale.md",
+      "wiki/entities/vincent-upscale.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/upscale.md",
+    "outlinks": [
+      "vincent-upscale",
+      "mots-cles-actionnels",
+      "data-proprietaire",
+      "product-led-seo",
+      "2026-07-09-call-14-vincent-upscale",
+      "upscale-preaudit",
+      "parasite-seo"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "organikk",
+      "prospection-b2b",
+      "outbound",
+      "revops",
+      "saas",
+      "agence",
+      "pseo"
+    ],
+    "title": "Upscale (prospect Organikk - agence de prospection B2B)",
+    "type": "entity"
+  },
   "vannevar-bush": {
     "aliases": [
       "bush",
@@ -6494,6 +6547,38 @@
       "hospitality"
     ],
     "title": "Victoria Garden (client Tim)",
+    "type": "entity"
+  },
+  "vincent-upscale": {
+    "aliases": [
+      "vincent-upscale",
+      "vincent",
+      "prospect-14"
+    ],
+    "backrefs": [
+      "wiki/entities/upscale.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/vincent-upscale.md",
+    "outlinks": [
+      "upscale",
+      "scam-objection-data-aleatoire",
+      "2026-07-09-call-14-vincent-upscale",
+      "_MODELE-discours-commercial",
+      "tabou-visibilite",
+      "moc-vente-objections"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "organikk",
+      "vente",
+      "prospection-b2b",
+      "upscale",
+      "acheteur-analytique"
+    ],
+    "title": "Vincent (prospect Organikk - cofondateur Upscale)",
     "type": "entity"
   },
   "weight-decay": {

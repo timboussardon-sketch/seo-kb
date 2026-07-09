@@ -90,6 +90,9 @@ Pour la salariée qui pilote le SEO (ex. Candice) : le bot ne te remplace pas, i
 
 ## 7. Gestion des objections
 
+- « Il n'y a qu'un ou deux gagnants. Si tout le monde investit, qui gagne ? » (objection de théorie des jeux, cf. [[sources/2026-07-09-call-14-vincent-upscale|call Vincent, Upscale]]) → Trois étages. D'abord, tout le monde n'investit pas. Ensuite, sur Google il n'y a effectivement pas plusieurs gagnants **par mot-clé de tête**, donc on ne joue pas cette case : « Tu dis qu'il y a deux gagnants, mais il y a 10 problématiques. » On attaque les micro-intentions, les problématiques qui ont poussé la personne à taper le mot-clé. Enfin, sur les LLM la requête est spécifique et contextualisée, ce qui rend les micro-intentions encore plus payantes. Corollaire à énoncer : « Agence de prospection », je n'y vais pas. « Externaliser un SDR », j'y vais.
+- « Comment tu sais qu'un mot-clé vaut l'investissement ? » → Le CPC sert de preuve externe. « S'il y a un CPC, j'y vais, parce que je sais que les autres acteurs mettent de l'argent. » Un mot-clé sur lequel d'autres paient déjà le clic est un mot-clé business.
+- « C'est celui qui publie le plus qui gagne ? » → Non, c'est celui qui prouve une expertise thématique. Cinq verticales maximum, pas de bibliothèque de 10 000 articles, pas de pages par ville (mauvais signal). Une verticale n'est légitime que si le client a déjà de la data et des cas clients dessus.
 - « On a déjà un prestataire / la migration est gérée. » → Tant mieux, on vérifie qu'elle ne fuit pas. Le vrai sujet est derrière : exploiter ta [[concepts/data-proprietaire|data que personne d'autre n'a]].
 - « Le SEO sur notre CMS, c'est limité. » → La limite n'est pas l'outil, c'est l'absence de pages construites sur ta donnée propriétaire.
 - « Nos clients pros nous connaissent déjà. » → La longue traîne va chercher ceux qui ne te connaissent pas encore, au moment exact où ils cherchent.
@@ -118,6 +121,13 @@ Pour la salariée qui pilote le SEO (ex. Candice) : le bot ne te remplace pas, i
 - « L'informationnel, les IA le mangent. Le décisionnel et le transactionnel, il y a des requêtes à aller chercher. »
 - « Je commence par le meilleur argument : le gain de temps. »
 - « Donne l'information que les autres ne donnent pas, et c'est toi que Google et les LLM vont vouloir servir. »
+- « Tu dis qu'il y a deux gagnants, mais il y a 10 problématiques. »
+- « S'il y a un CPC, j'y vais, parce que je sais que les autres acteurs mettent de l'argent. »
+- « Ils te vendent une courbe. Moi je vends pas de trafic, je vends uniquement des leads. »
+- « Tant qu'on n'est pas positionné sur 10 à 20 mots-clés business, on fait rien d'autre. »
+- « L'idée, c'est pas de créer des pages générées par IA. C'est de créer des pages que toi seul pouvais créer. »
+
+**Piège de formulation** : « on fait uniquement de la landing page » se fait comprendre comme « des pages hébergées ailleurs, avec des redirections ». Toujours enchaîner avec « sur ton site ». La landing page est une page SEO dont le job est de récupérer un e-mail, pas une page annexe.
 
 ---
 
