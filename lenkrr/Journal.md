@@ -1,5 +1,19 @@
 # leenq (ex-lenkrr) : Journal de développement
 
+## Cadrage IA AUTO (2026-07-09)
+
+Nouvelle direction produit cadrée avec Tim : leenq passe du module « maillage interne » à l'agent autonome de SEO technique. Spec écrite dans [[IA-AUTO]], rien de codé.
+
+Idée centrale : les outils du marché s'arrêtent au constat, leenq va jusqu'à l'écriture dans la source, en PR, avec vérification **avant** la fusion. Le maillage devient une règle parmi d'autres dans le même moteur.
+
+Quatre corrections apportées à la spec initiale de Tim : la vérification passe avant la fusion et non après (un rollback de canonical ou de 301 ne défait pas ce que Google a déjà vu) ; le droit d'agir vient d'une table de classes d'action alimentée par le journal des résultats, jamais de la confiance auto-déclarée du modèle ; on compte les correcteurs vérifiés, pas les règles (500 règles = le terrain de Screaming Frog, et 200 000 constats sur lesquels personne n'agit) ; le correcteur ne touche pas à ce qui n'est pas du SEO (WebP, lazy loading, suppression de scripts, ce dernier étant l'action qui détruit un client).
+
+Module manquant identifié : la correspondance URL vers fichier source, absente de la spec initiale, et qui décide quels sites le produit accepte.
+
+État du code : modules 0 (partiel), 1, 4 et 6 existent déjà (connecteurs, write-back gated, auth GSC, boucle d'impact `link_bets`). Manquent le moteur de règles généralisé, la table des classes d'action, et la vérification de préversion.
+
+Pain point chiffré : Leexi, moins 43 % de SEO hors-marque en six mois, refonte sans 301, réparé à la main sur 178 URLs.
+
 ## Renommage + mise en prod (2026-06-11)
 
 Grosse session « on fait tout » : les 5 restes du backlog traités d'un coup.
