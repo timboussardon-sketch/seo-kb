@@ -179,12 +179,12 @@
   <div class="cover-mid">
     <div class="cover-kicker">Machine à contenu et système autonome</div>
     <h1 class="cover-title">Stratégie <span class="serif">Horizon CRM</span>.</h1>
-    <p class="cover-lead">Vos 151 pages existent déjà. Elles ne rapportent pas ce qu'elles devraient, et ce n'est pas une question de volume. On répare la structure, puis on construit une machine à contenu : un contenu produit une fois, décliné en pages optimisées, LinkedIn, Reddit et YouTube.</p>
+    <p class="cover-lead">Vos 151 pages existent déjà. Le rendement vient de la structure qui les porte, et cette structure fuit aujourd'hui. On la remet d'aplomb, puis on installe une machine à contenu : un contenu produit une fois, décliné en pages, LinkedIn, Reddit et YouTube.</p>
     <div class="cover-stats">
-      <div class="cstat"><div class="k">151</div><div class="l">URLs au sitemap, identiques sur .fr et .ca</div></div>
+      <div class="cstat"><div class="k">151</div><div class="l">pages, les mêmes sur vos deux sites</div></div>
       <div class="cstat accent"><div class="k">284</div><div class="l">mots sur vos pages métier, celles qui doivent convertir</div></div>
-      <div class="cstat"><div class="k">59 %</div><div class="l">de recouvrement entre vos pages Paris et Lyon</div></div>
-      <div class="cstat"><div class="k">0</div><div class="l">outil gratuit indexable, alors qu'ils sont dans le produit</div></div>
+      <div class="cstat"><div class="k">59 %</div><div class="l">de contenu commun entre vos pages Paris et Lyon</div></div>
+      <div class="cstat"><div class="k">0</div><div class="l">outil gratuit accessible, alors qu'ils sont dans le produit</div></div>
     </div>
   </div>
   <div class="cover-spacer"></div>
@@ -199,28 +199,28 @@
   <div class="sh"><span class="num">01</span><span class="rule"></span><span class="lbl">Synthèse</span></div>
   <h1 class="sec">Synthèse</h1>
   <div class="prose gap">
-    <p>Horizon CRM a déjà fait le travail que la plupart des éditeurs remettent à plus tard : <strong>18 pages métier, 14 pages ville, 5 pages conformité, 89 guides</strong>, un rendu côté serveur, des données structurées propres. Le volume de contenu n'est pas le problème.</p>
-    <p>Le problème est en dessous. Le cache de votre CDN ne tient pas compte du nom de domaine. Reproduit dans les deux sens, avec des paramètres d'URL jamais vus : la page servie sur horizoncrm.fr <strong>déclare à Google que sa version de référence est sur horizoncrm.ca</strong>. Tout contenu ajouté sur le .fr travaille donc, une fois sur deux, pour le .ca.</p>
-    <p>Cette proposition cible un objectif unique : réparer la structure, puis installer une <strong>machine à contenu</strong> qui produit un contenu une fois et le décline sur quatre canaux, avec un <strong>maillage interne géré par le système</strong> et un corpus de données nourri par votre support. En fin de mission, votre équipe fait tourner la machine sans moi.</p>
+    <p>Horizon CRM a déjà produit ce que la plupart des éditeurs remettent à plus tard : <strong>18 pages métier, 14 pages ville, 5 pages conformité, 89 guides</strong>. Le volume de contenu est là.</p>
+    <p>Ce qui coince se situe en dessous. Vos deux sites, le français et le canadien, servent exactement les mêmes pages, et le serveur qui les distribue ne fait pas la différence entre les deux adresses. Vos pages françaises finissent par <strong>désigner le site canadien comme la version officielle</strong>. Un contenu ajouté sur le site français travaille alors, une fois sur deux, pour le canadien.</p>
+    <p>Cette proposition poursuit un objectif unique : remettre la structure d'aplomb, puis installer une <strong>machine à contenu</strong> qui produit un contenu une fois et le décline sur quatre canaux, avec un <strong>maillage interne géré par le système</strong> et un corpus de données nourri par votre support. En fin de mission, votre équipe fait tourner la machine sans moi.</p>
   </div>
 
   <div class="sh gap-lg"><span class="num">02</span><span class="rule"></span><span class="lbl">L'existant</span></div>
   <h1 class="sec">Analyse de l'existant</h1>
-  <p class="sec-lead">Relevé du 9 juillet 2026 : sitemaps, robots.txt, HTML brut de 12 pages, en-têtes HTTP, données structurées. Aucun chiffre estimé, aucune donnée Search Console (non communiquée à ce jour).</p>
+  <p class="sec-lead">Relevé du 9 juillet 2026 sur vos pages publiques. Aucun chiffre estimé, aucune donnée Search Console (non communiquée à ce jour).</p>
 
-  <div class="sub gap"><span class="n">2.1</span><h3>État du SEO actuel</h3></div>
+  <div class="sub gap"><span class="n">2.1</span><h3>Ce que dit le site aujourd'hui</h3></div>
   <div class="tbl">
     <table>
-      <thead><tr><th style="width:26%">Dimension</th><th style="width:36%">État constaté</th><th>Lecture</th></tr></thead>
+      <thead><tr><th style="width:26%">Ce qu'on a regardé</th><th style="width:36%">Ce qu'on a trouvé</th><th>Ce que ça vous coûte</th></tr></thead>
       <tbody>
-        <tr><td class="dim">Volume du site</td><td>151 URLs, corpus identique sur .fr et .ca</td><td class="read">Deux marchés servis par un seul corpus, sans séparation</td></tr>
-        <tr><td class="dim">Cache CDN</td><td>CloudFront ignore le nom de domaine dans sa clé de cache</td><td class="read">Le .fr sert la balise canonical du .ca, et l'inverse</td></tr>
-        <tr><td class="dim">Pages inexistantes</td><td>HTTP 200 sur toute URL inventée, sans noindex</td><td class="read">Porte ouverte à l'indexation de pages vides</td></tr>
-        <tr><td class="dim">Pages métier</td><td>284 mots, 38 % de recouvrement entre deux d'entre elles</td><td class="read">Le gabarit est posé, le contenu reste un slogan</td></tr>
-        <tr><td class="dim">Pages ville</td><td>284 mots, 59 % de recouvrement entre Paris et Lyon</td><td class="read">Aucune spécificité locale, rien à différencier</td></tr>
-        <tr><td class="dim">Croisement des axes</td><td>14 villes et 18 métiers, jamais croisés</td><td class="read">Aucune page « logiciel plombier Lyon » : le gisement</td></tr>
-        <tr><td class="dim">Contenu hors sujet</td><td>29 guides sur la restauration et le bien-être</td><td class="read">Le sujet du site se dilue à chaque publication</td></tr>
-        <tr><td class="dim">Fonctionnalités produit</td><td>Calculateurs tonnage et terrasse enfermés derrière l'abonnement</td><td class="read">Des outils gratuits indexables, jamais exposés</td></tr>
+        <tr><td class="dim">Vos deux sites</td><td>Le même contenu, à l'identique, sur le .fr et le .ca</td><td class="read">Deux marchés servis par un seul contenu, sans séparation</td></tr>
+        <tr><td class="dim">La version officielle</td><td>Vos pages françaises désignent souvent le site canadien</td><td class="read">Google consolide votre autorité sur le mauvais site</td></tr>
+        <tr><td class="dim">Les adresses erronées</td><td>Une adresse qui n'existe pas renvoie une page vide, jugée valide</td><td class="read">Google peut indexer des pages sans contenu</td></tr>
+        <tr><td class="dim">Vos pages métier</td><td>284 mots, très proches les unes des autres</td><td class="read">Le gabarit est posé, le contenu reste un slogan</td></tr>
+        <tr><td class="dim">Vos pages ville</td><td>284 mots, 59 % de contenu commun entre Paris et Lyon</td><td class="read">Rien qui distingue une ville d'une autre</td></tr>
+        <tr><td class="dim">Le croisement</td><td>14 villes et 18 métiers, jamais croisés</td><td class="read">Aucune page « logiciel plombier Lyon » : le gisement</td></tr>
+        <tr><td class="dim">Le sujet du site</td><td>29 guides sur la restauration et le bien-être</td><td class="read">Le sujet se dilue à chaque publication</td></tr>
+        <tr><td class="dim">Vos fonctionnalités</td><td>Calculateurs tonnage et terrasse enfermés derrière l'abonnement</td><td class="read">Des outils gratuits possibles, jamais exposés</td></tr>
       </tbody>
     </table>
   </div>
@@ -232,42 +232,42 @@
     <div class="panel ok">
       <span class="p-label">2.2 · Ce qui fonctionne déjà</span>
       <ul class="clist">
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Rendu côté serveur.</b> Le HTML brut contient le H1, les H2, le title et les données structurées. Un crawler lit la page sans exécuter de JavaScript.</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Données structurées riches.</b> SoftwareApplication, Organization, BreadcrumbList, FAQPage, LocalBusiness sur les pages ville.</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Robots.txt propre.</b> Les zones applicatives sont bien bloquées.</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Guides substantiels.</b> 2 000 à 3 750 mots, datés, avec un sujet principal déclaré.</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Data propriétaire réelle.</b> Attestations de conformité, formats d'export, réponses produit par métier. Personne ne peut les publier à votre place.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le site est lisible par Google.</b> Rien ne bloque la lecture de vos pages.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les fiches d'information sont riches.</b> Vos pages disent correctement à Google ce qu'elles contiennent.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Vos guides sont substantiels.</b> 2 000 à 3 750 mots, datés, avec un sujet clair.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le socle est propre.</b> Les zones réservées à vos clients sont bien tenues à l'écart de Google.</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Vous détenez une donnée rare.</b> Vos attestations, vos formats d'export, les réponses de votre produit métier par métier.</span></li>
       </ul>
     </div>
     <div class="panel ko">
       <span class="p-label">2.3 · Ce qui bloque</span>
       <ul class="clist">
-        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Le cache CDN ignore le domaine.</b> Vos pages françaises désignent le domaine canadien comme version de référence, de façon non déterministe.</span></li>
-        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Soft 404 généralisés.</b> Toute URL inexistante répond 200, sans noindex.</span></li>
-        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Corpus mélangés.</b> Un guide de 3 750 mots sur les obligations CCQ au Québec se lit sur le .fr.</span></li>
-        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Pages trop courtes.</b> 284 mots ne suffisent pas à prouver quoi que ce soit sur une intention décisionnelle.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Vos deux sites se marchent dessus.</b> Le français renvoie vers le canadien, et l'inverse, selon les moments.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Des pages vides peuvent être indexées.</b> Toute adresse erronée répond comme une page valide.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Les contenus sont mélangés.</b> Un guide de 3 750 mots sur la réglementation québécoise se lit sur votre site français.</span></li>
+        <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Vos pages métier sont trop courtes.</b> 284 mots ne prouvent rien à un artisan qui compare des logiciels.</span></li>
         <li><span class="di x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span><b>Aucune réponse produit.</b> Rien sur ce que fait votre logiciel pour un couvreur, un carreleur, un terrassier.</span></li>
       </ul>
     </div>
   </div>
 
-  <div class="sub gap-lg"><span class="n">2.4</span><h3>La preuve, reproductible en trente secondes</h3></div>
-  <p class="sec-lead">Quatre requêtes, deux domaines, des paramètres d'URL jamais vus. Le premier domaine qui demande une URL remplit le cache. Le second reçoit la copie de l'autre, avec sa balise canonical.</p>
+  <div class="sub gap-lg"><span class="n">2.4</span><h3>La preuve, vérifiable en trente secondes</h3></div>
+  <p class="sec-lead">On demande la même page aux deux sites, coup sur coup. Le premier qui la demande la met en mémoire. Le second reçoit la copie du premier, avec la version officielle du premier.</p>
   <div class="tbl">
     <table>
-      <thead><tr><th style="width:8%">Test</th><th style="width:40%">Requête</th><th style="width:34%">Canonical servie</th><th>Cache</th></tr></thead>
+      <thead><tr><th style="width:34%">On demande la page</th><th style="width:22%">Au site</th><th style="width:26%">Elle se déclare officielle sur</th><th>Réponse</th></tr></thead>
       <tbody>
-        <tr><td class="dim">A1</td><td class="mut">.fr/crm-construction-montreal?n=a7t3k1</td><td class="read">www.horizoncrm.fr/…</td><td><span class="pill">Miss</span></td></tr>
-        <tr><td class="dim">A2</td><td class="mut">.ca/crm-construction-montreal?n=a7t3k1</td><td class="read">www.horizoncrm.fr/…</td><td><span class="pill">Hit</span></td></tr>
-        <tr><td class="dim">B1</td><td class="mut">.ca/conformite-nf525?n=z9q4v8</td><td class="read">www.horizoncrm.ca/…</td><td><span class="pill">Miss</span></td></tr>
-        <tr><td class="dim">B2</td><td class="mut">.fr/conformite-nf525?n=z9q4v8</td><td class="read">www.horizoncrm.ca/…</td><td><span class="pill">Hit</span></td></tr>
+        <tr><td class="dim">La page « CRM construction Montréal »</td><td class="mut">français</td><td class="read">le site français</td><td><span class="pill">1re demande</span></td></tr>
+        <tr><td class="dim">La même page</td><td class="mut">canadien</td><td class="read">le site français</td><td><span class="pill">copie</span></td></tr>
+        <tr><td class="dim">La page « Conformité NF525 »</td><td class="mut">canadien</td><td class="read">le site canadien</td><td><span class="pill">1re demande</span></td></tr>
+        <tr><td class="dim">La même page</td><td class="mut">français</td><td class="read">le site canadien</td><td><span class="pill">copie</span></td></tr>
       </tbody>
     </table>
   </div>
   <div class="bigcall">
     <span class="p-label">Ce que ça signifie</span>
-    <p>La page <span class="dk">/conformite-nf525</span> servie sur votre domaine français déclare à Google que sa version de référence est sur votre domaine canadien. Le sitemap est touché aussi : au premier appel, horizoncrm.ca/sitemap.xml renvoyait 151 URLs pointant toutes vers le .fr.</p>
-    <p class="closing">Ce n'est pas votre contenu. C'est la clé de cache de votre distribution CloudFront.</p>
+    <p>Votre page sur la conformité NF525, servie sur votre site français, déclare à Google que <span class="dk">la vraie version se trouve sur votre site canadien</span>. Votre plan de site est touché aussi : au premier appel, celui du site canadien renvoyait 151 adresses pointant toutes vers le site français.</p>
+    <p class="closing">L'origine est dans le réglage du serveur qui distribue vos pages, pas dans vos contenus.</p>
   </div>
 </section>
 
@@ -275,177 +275,153 @@
 <section class="page">
   <div class="sh"><span class="num">03</span><span class="rule"></span><span class="lbl">La stratégie</span></div>
   <h1 class="sec">Ce qu'on construit</h1>
-  <p class="sec-lead">Quatre briques, dans cet ordre. L'ordre n'est pas négociable : tant que la structure fuit, tout contenu ajouté travaille pour le domaine canadien.</p>
+  <p class="sec-lead">Quatre briques, dans cet ordre. Tant que la structure fuit, un contenu ajouté travaille pour le site canadien.</p>
 
   <div class="why">
     <div class="card">
       <div class="wn">A</div>
       <h4>La machine à contenu multicanal</h4>
-      <p>Un contenu est produit une fois, à partir de votre matière réelle, puis décliné pour chaque canal. La page web reste le socle. LinkedIn reçoit la version courte adaptée au réseau. Reddit reçoit une réponse utile là où vos artisans posent déjà leurs questions, sans lien commercial, parce que c'est la seule façon d'y survivre. YouTube reçoit le script et la structure de la démonstration produit. Chaque canal a ses codes : le système adapte, vous validez, vous publiez.</p>
+      <p>Un contenu est produit une fois, à partir de votre matière réelle, puis décliné pour chaque canal. La page reste le socle. LinkedIn reçoit la version courte adaptée au réseau. Reddit reçoit une réponse utile là où vos artisans posent déjà leurs questions, sans lien commercial, seule façon d'y être lu. YouTube reçoit le script et la structure de la démonstration produit. Chaque canal a ses codes : le système adapte, vous validez, vous publiez.</p>
     </div>
     <div class="card">
       <div class="wn">B</div>
-      <h4>Des pages optimisées, à la chaîne</h4>
-      <p>Un outil gratuit par fonctionnalité, en commençant par vos calculateurs de tonnage et de terrasse, aujourd'hui enfermés derrière l'abonnement. Puis le croisement métier &times; fonctionnalité : ce que votre produit fait sur un devis de couverture, sur le suivi des heures d'un compagnon réparti sur trois chantiers. Ces réponses sont dans votre produit et nulle part ailleurs. Aucune IA générative ne peut les fabriquer à votre place.</p>
+      <h4>Des pages qui répondent vraiment</h4>
+      <p>Un outil gratuit par fonctionnalité, en commençant par vos calculateurs de tonnage et de terrasse, aujourd'hui enfermés derrière l'abonnement. Puis les réponses produit, métier par métier : ce que fait votre logiciel sur un devis de couverture, sur le suivi des heures d'un compagnon réparti sur trois chantiers. Ces réponses se trouvent dans votre produit, et une IA ne peut pas les inventer.</p>
     </div>
     <div class="card">
       <div class="wn">C</div>
       <h4>Le maillage interne géré par le système</h4>
-      <p>Chaque page publiée est reliée à son pilier et à ses pages sœurs, selon le cluster défini, sans que personne ne tienne un tableur. Les pages orphelines sont détectées, les ancres sont diversifiées, les nouvelles pages sont insérées dans le graphe existant. Le système exécute, vous gardez la main sur ce qui part en ligne.</p>
+      <p>Chaque page publiée est reliée aux bonnes pages du site, selon le plan défini, sans que personne ne tienne un tableur. Les pages isolées sont détectées, les liens sont variés, les nouvelles pages sont insérées au bon endroit. Le système exécute, vous gardez la main sur ce qui part en ligne.</p>
     </div>
     <div class="card">
       <div class="wn">D</div>
       <h4>Le corpus de données</h4>
-      <p>On rassemble votre matière propriétaire : les questions réelles remontées par votre support et vos appels de démo, vos attestations de conformité, vos formats d'export, vos cas clients. Le système s'en nourrit. Chaque nouveau contenu enrichit le corpus, et le corpus rend le contenu suivant plus précis. C'est ce qui vous rend citable par les moteurs de réponse.</p>
+      <p>On rassemble votre matière propriétaire : les questions réelles remontées par votre support et vos appels de démo, vos attestations, vos cas clients. Le système s'en nourrit. Chaque nouveau contenu enrichit le corpus, et le corpus rend le contenu suivant plus précis. C'est ce qui vous rend citable par les IA.</p>
     </div>
   </div>
 </section>
 
-<!-- ════════ PAGE 5 · MODÈLES DE PAGES ════════ -->
+<!-- ════════ PAGE 5 · ROADMAP ════════ -->
 <section class="page">
-  <div class="sh"><span class="num">04</span><span class="rule"></span><span class="lbl">Modèles</span></div>
-  <h1 class="sec">Les modèles de pages, priorisés</h1>
-  <p class="sec-lead">Chaque modèle a une variable réelle et une donnée qui remplit la page. Aucun modèle ne se lance avant la correction du socle.</p>
-  <div class="tbl">
-    <table>
-      <thead><tr><th style="width:34%">Modèle</th><th style="width:12%">Pages</th><th style="width:12%">Effort</th><th style="width:20%">Conversion</th><th>Priorité</th></tr></thead>
-      <tbody>
-        <tr><td class="dim">M0 · Structure (cache, 404, séparation des marchés)</td><td class="mut">n/a</td><td class="mut">Faible</td><td class="read">Débloque tout le reste</td><td><span class="pill">1</span></td></tr>
-        <tr><td class="dim">M1 · Un outil gratuit par fonctionnalité</td><td class="mut">6 à 10</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">2</span></td></tr>
-        <tr><td class="dim">M2 · Questions produit &times; métier &times; fonctionnalité</td><td class="mut">50 à 70</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">3</span></td></tr>
-        <tr><td class="dim">M3 · Conformité &times; métier</td><td class="mut">~40</td><td class="mut">Moyen</td><td class="read">Très forte</td><td><span class="pill">4</span></td></tr>
-        <tr><td class="dim">M4 · Migration depuis l'outil actuel</td><td class="mut">~6</td><td class="mut">Faible</td><td class="read">Très forte</td><td><span class="pill">5</span></td></tr>
-        <tr><td class="dim">M5 · Métier &times; ville</td><td class="mut">60 à 80</td><td class="mut">Fort</td><td class="read">Forte</td><td><span class="pill">6</span></td></tr>
-      </tbody>
-    </table>
+  <div class="sh"><span class="num">04</span><span class="rule"></span><span class="lbl">Roadmap</span></div>
+  <h1 class="sec">La roadmap</h1>
+  <p class="sec-lead">Deux phases. On va de 0 à 1 en posant les fondations, puis de 1 à 3 en produisant et en reprenant l'existant. La production démarre une fois la phase 0 à 1 bouclée.</p>
+
+  <div class="sub gap"><span class="n">4.1</span><h3>De 0 à 1 : les fondations</h3></div>
+  <div class="months gap">
+    <div class="month">
+      <div class="m-tag">Étape 1</div>
+      <div class="m-title">Audit</div>
+      <ul class="m-list">
+        <li>Le socle du site, page par page</li>
+        <li>Ce que Google voit, et ce qu'il ignore</li>
+        <li>L'inventaire de vos fonctionnalités produit</li>
+        <li>La collecte des questions de votre support et de vos démos</li>
+        <li>Lecture de la Search Console, point de départ établi</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-tag">Étape 2</div>
+      <div class="m-title">Recherche de mots-clés business</div>
+      <ul class="m-list">
+        <li>Les requêtes tapées par un artisan qui choisit un logiciel</li>
+        <li>Celles qui amènent un essai gratuit, pas celles qui font du volume</li>
+        <li>Regroupement par métier et par fonctionnalité</li>
+        <li>Chaque mot-clé associé à une page et à une seule</li>
+        <li>Priorisation par effort et par conversion</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="m-tag">Étape 3</div>
+      <div class="m-title">Mise en production</div>
+      <ul class="m-list">
+        <li>Vos deux sites sont séparés proprement</li>
+        <li>Les adresses erronées répondent correctement</li>
+        <li>Les contenus québécois quittent le site français</li>
+        <li>La machine à contenu est branchée sur les 4 canaux</li>
+        <li>Le corpus de données est en place</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="sub gap-lg"><span class="n">4.1</span><h3>Les règles qui tiennent le dispositif</h3></div>
-  <div class="prose">
-    <p><span class="dk">Anti-thin.</span> Une page ne se publie pas sans sa donnée propre. <span class="dk">Données terrain.</span> Zéro chiffre inventé, chaque taux et chaque calendrier vient d'un texte officiel. <span class="dk">Canonical propre.</span> Self-canonical, une seule version par domaine, Host dans la clé de cache. <span class="dk">Maillage différenciant.</span> Chaque page fille remonte vers son pilier et cite deux pages sœurs, jamais la même paire. <span class="dk">Authorship réel.</span> Chaque page est signée par une personne, pas par « L'équipe Horizon CRM ».</p>
-    <p>Sur Reddit, aucun lien commercial n'est publié. C'est la seule façon d'y être lu plutôt qu'exclu, et c'est ce qui distingue le dispositif d'une campagne de spam.</p>
+  <div class="sub gap-lg"><span class="n">4.2</span><h3>De 1 à 3 : la production</h3></div>
+  <div class="duo">
+    <div class="panel ok">
+      <span class="p-label">Création de pages</span>
+      <ul class="clist">
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les outils gratuits.</b> Un par fonctionnalité du produit, chacun rendant un chiffre utilisable et menant à l'essai.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les réponses produit.</b> Une page par métier et par fonctionnalité, alimentée par les questions réelles de votre support.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Les pages conformité.</b> Une par norme et par métier, avec vos attestations datées.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>La déclinaison multicanale.</b> Chaque page produit sa version LinkedIn, Reddit et YouTube.</span></li>
+      </ul>
+    </div>
+    <div class="panel ok">
+      <span class="p-label">Optimisation de l'existant</span>
+      <ul class="clist">
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Vos 18 pages métier.</b> Elles passent de 284 mots à un contenu qui prouve quelque chose.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Vos 14 pages ville.</b> Différenciées avec une donnée locale réelle, ou fusionnées si elles n'ont rien à dire.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Vos 89 guides.</b> On garde ceux qui servent le sujet, on redirige les autres, jamais de suppression sèche.</span></li>
+        <li><span class="di a"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Le maillage.</b> Repris entièrement par le système sur l'ensemble du site.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="prose gap">
+    <p>Une règle tient tout le dispositif : <span class="dk">une page ne se publie pas sans sa donnée propre.</span> Zéro chiffre inventé. Chaque page est signée par une personne de votre équipe. Sur Reddit, aucun lien commercial n'est publié.</p>
   </div>
 </section>
 
-<!-- ════════ PAGE 6 · LIVRABLES + PLANNING ════════ -->
+<!-- ════════ PAGE 6 · LIVRABLES + RÉSULTATS ════════ -->
 <section class="page">
   <div class="sh"><span class="num">05</span><span class="rule"></span><span class="lbl">Livrables</span></div>
   <h1 class="sec">Livrables</h1>
   <div class="deliver">
-    <div class="d-row"><span class="d-n">01</span><span class="d-t">Le socle technique remis d'aplomb : clé de cache CloudFront corrigée, vrais 404, corpus séparés par marché, chaque URL retirée redirigée en 301 vers la plus proche.</span></div>
-    <div class="d-row"><span class="d-n">02</span><span class="d-t">La machine à contenu opérationnelle : un contenu, quatre sorties (page, LinkedIn, Reddit, YouTube), avec les gabarits par canal.</span></div>
-    <div class="d-row"><span class="d-n">03</span><span class="d-t">Les modèles de pages posés et le premier lot produit : les outils gratuits adossés à vos fonctionnalités, puis le croisement métier &times; fonctionnalité.</span></div>
-    <div class="d-row"><span class="d-n">04</span><span class="d-t">Le maillage interne piloté par le système, avec l'audit du graphe existant en entrée.</span></div>
-    <div class="d-row"><span class="d-n">05</span><span class="d-t">Le corpus de données branché, alimenté par votre support et vos appels de démo.</span></div>
-    <div class="d-row"><span class="d-n">06</span><span class="d-t">La compétence pour faire tourner la machine sans moi.</span></div>
+    <div class="d-row"><span class="d-n">01</span><span class="d-t">L'audit complet, avec les correctifs appliqués : vos deux sites séparés, les adresses erronées corrigées, les contenus remis sur le bon marché.</span></div>
+    <div class="d-row"><span class="d-n">02</span><span class="d-t">La liste de mots-clés business, par métier et par fonctionnalité, chacun associé à une page et une seule.</span></div>
+    <div class="d-row"><span class="d-n">03</span><span class="d-t">La machine à contenu opérationnelle : un contenu, quatre sorties (page, LinkedIn, Reddit, YouTube), avec les gabarits par canal.</span></div>
+    <div class="d-row"><span class="d-n">04</span><span class="d-t">Les nouvelles pages produites : les outils gratuits, puis les réponses produit métier par métier.</span></div>
+    <div class="d-row"><span class="d-n">05</span><span class="d-t">Vos pages existantes reprises : les 18 pages métier, les 14 pages ville, le tri des 89 guides.</span></div>
+    <div class="d-row"><span class="d-n">06</span><span class="d-t">Le maillage interne piloté par le système, et le corpus de données alimenté par votre support.</span></div>
+    <div class="d-row"><span class="d-n">07</span><span class="d-t">La compétence pour faire tourner la machine sans moi.</span></div>
   </div>
 
-  <div class="sh gap-lg"><span class="num">06</span><span class="rule"></span><span class="lbl">Planning</span></div>
-  <h1 class="sec">Planning sur 3 mois</h1>
-  <div class="months gap">
-    <div class="month">
-      <div class="m-tag">Mois 1</div>
-      <div class="m-title">La structure</div>
-      <ul class="m-list">
-        <li>Clé de cache CloudFront corrigée, Host dans la clé</li>
-        <li>Vrais 404 sur route inconnue</li>
-        <li>Séparation des corpus .fr et .ca, redirections 301</li>
-        <li>Vérification hreflang et x-default</li>
-        <li>Lecture de la Search Console, point de départ établi</li>
-        <li>Inventaire des fonctionnalités et collecte des questions support</li>
-      </ul>
-    </div>
-    <div class="month">
-      <div class="m-tag">Mois 2</div>
-      <div class="m-title">Les outils gratuits</div>
-      <ul class="m-list">
-        <li>Contrôle de la reprise d'indexation en GSC</li>
-        <li>3 à 4 outils gratuits produits et branchés sur l'essai</li>
-        <li>Densification des 18 pages métier existantes</li>
-        <li>Maillage croisé, resoumission du sitemap</li>
-        <li>Machine à contenu en production sur les 4 canaux</li>
-      </ul>
-    </div>
-    <div class="month">
-      <div class="m-tag">Mois 3</div>
-      <div class="m-title">Les questions produit</div>
-      <ul class="m-list">
-        <li>Pilote sur 3 métiers &times; 3 fonctionnalités</li>
-        <li>Mesure en GSC sur les outils et le pilote</li>
-        <li>On garde ce qui indexe et convertit, on coupe le reste</li>
-        <li>Extension du modèle gagnant</li>
-        <li>Transmission du système à l'équipe</li>
-      </ul>
-    </div>
+  <div class="sh gap-lg"><span class="num">06</span><span class="rule"></span><span class="lbl">Résultats</span></div>
+  <h1 class="sec">Ce qui se mesure, et quand</h1>
+  <p class="sec-lead">Aucun chiffre de trafic ni nombre de leads n'est promis ici : cela demanderait d'avoir lu votre Search Console au préalable. Chaque étape se vérifie dans vos propres outils.</p>
+  <div class="tiles">
+    <div class="tile"><div class="k">Sem. 1</div><div class="l">Vos deux sites ne se renvoient plus l'un vers l'autre</div></div>
+    <div class="tile"><div class="k">Sem. 4</div><div class="l">La Search Console cesse de signaler vos pages comme des doublons</div></div>
+    <div class="tile"><div class="k">Sem. 8</div><div class="l">Les premiers outils gratuits sont en ligne et suivis</div></div>
+    <div class="tile"><div class="k">Sem. 12</div><div class="l">Les réponses produit sont mesurées, gardées ou coupées</div></div>
   </div>
+  <p class="esti"><b>Engagement de méthode.</b> Aucun volume, aucune position, aucune donnée de trafic n'est avancée dans ce document. Tout ce qui est chiffré ici a été relevé le 9 juillet 2026 sur vos pages publiques et reste vérifiable par vos équipes.</p>
 </section>
 
-<!-- ════════ PAGE 7 · TARIFICATION + RÉSULTATS ════════ -->
+<!-- ════════ PAGE 7 · TARIFICATION + PROCHAINE ÉTAPE ════════ -->
 <section class="page">
   <div class="sh"><span class="num">07</span><span class="rule"></span><span class="lbl">Tarification</span></div>
   <h1 class="sec">Tarification</h1>
   <div class="price">
     <div class="price-l">
       <ul class="clist">
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>L'audit et la mise en production des correctifs</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>La recherche de mots-clés business</span></li>
         <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>La machine à contenu, quatre canaux</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Les modèles de pages et la production du premier lot</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le maillage interne géré par le système</span></li>
-        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le corpus de données branché sur votre support</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>La création des pages et la reprise de l'existant</span></li>
+        <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Le maillage interne et le corpus de données</span></li>
         <li><span class="di v"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Un point régulier, et la transmission du système</span></li>
       </ul>
       <div class="price-modal">Le budget de fonctionnement (tokens) est de l'ordre de 90 à 200 € par mois selon la charge, et baisse une fois les process posés. C'est un coût de production, pas un abonnement supplémentaire.</div>
     </div>
     <div class="price-r">
       <div><span class="price-amt">850 €</span><span class="price-unit">HT / mois</span></div>
-      <div class="price-x">L'ordre de grandeur de huit abonnements « Essentiel » à votre propre produit. Vous ne louez pas un outil de plus, vous construisez un système qui vous appartient.</div>
     </div>
   </div>
 
-  <div class="sh gap-lg"><span class="num">08</span><span class="rule"></span><span class="lbl">Résultats</span></div>
-  <h1 class="sec">Ce qui se mesure, et quand</h1>
-  <p class="sec-lead">Je ne promets pas un chiffre de trafic ni un nombre de leads. Personne d'honnête ne le peut avant d'avoir lu votre Search Console. En revanche, chaque étape se vérifie dans vos propres outils.</p>
-  <div class="tiles">
-    <div class="tile"><div class="k">Sem. 1</div><div class="l">Les quatre tests de cache ne reproduisent plus le défaut</div></div>
-    <div class="tile"><div class="k">Sem. 4</div><div class="l">Le rapport « Pages » de la GSC perd ses « Alternative avec balise canonique correcte »</div></div>
-    <div class="tile"><div class="k">Sem. 8</div><div class="l">Les premiers outils gratuits sont indexés et suivis</div></div>
-    <div class="tile"><div class="k">Sem. 12</div><div class="l">Le pilote métier &times; fonctionnalité est mesuré, gardé ou coupé</div></div>
-  </div>
-  <p class="esti"><b>Engagement de méthode.</b> Aucun volume, aucune position, aucune donnée de trafic n'est avancée dans ce document. Tout ce qui est chiffré ici a été relevé le 9 juillet 2026 sur vos pages publiques et reste vérifiable par vos équipes.</p>
-</section>
-
-<!-- ════════ PAGE 8 · HORS PÉRIMÈTRE + POURQUOI ════════ -->
-<section class="page">
-  <div class="sh"><span class="num">09</span><span class="rule"></span><span class="lbl">Hors périmètre</span></div>
-  <h1 class="sec">Hors périmètre</h1>
-  <div class="prose gap">
-    <p>Ce que cette mission <span class="dk">ne comprend pas</span>, pour qu'il n'y ait aucune ambiguïté : l'achat de liens, sous quelque forme que ce soit. La refonte graphique du site. Le développement des outils gratuits côté produit, qui reste chez vos équipes techniques, même si les spécifications viennent de moi. La gestion de vos campagnes payantes. Et le tournage des vidéos YouTube : le système produit le script et la structure, pas l'image.</p>
-    <p>Une chose ne se délègue pas non plus : les questions réelles de vos clients. Elles sont dans votre support et dans vos appels de démo. C'est la seule matière que je ne peux pas produire à votre place, et c'est celle qui fait toute la valeur du dispositif. Sans elle, les pages deviennent un gabarit vide, et un gabarit vide ne se positionne pas.</p>
-  </div>
-
-  <div class="sh gap-lg"><span class="num">10</span><span class="rule"></span><span class="lbl">Pourquoi</span></div>
-  <h1 class="sec">Pourquoi maintenant</h1>
-  <div class="why">
-    <div class="card">
-      <div class="wn">01</div>
-      <h4>Le sujet est chaud</h4>
-      <p>La réforme de la facturation électronique met vos pages conformité au centre. Elles existent déjà. Elles envoient aujourd'hui leur autorité au Canada.</p>
-    </div>
-    <div class="card">
-      <div class="wn">02</div>
-      <h4>Chaque mois coûte</h4>
-      <p>Tant que la clé de cache n'est pas corrigée, chaque euro investi en rédaction est arrosé, une fois sur deux, sur le mauvais domaine.</p>
-    </div>
-  </div>
-  <div class="closing-line">Le travail est fait. Il est servi sous le mauvais nom de domaine la moitié du temps.<br>Écrire la page 152 n'y changera rien.</div>
-</section>
-
-<!-- ════════ PAGE 9 · PROCHAINE ÉTAPE ════════ -->
-<section class="page">
-  <div class="sh"><span class="num">11</span><span class="rule"></span><span class="lbl">Prochaine étape</span></div>
+  <div class="sh gap-lg"><span class="num">08</span><span class="rule"></span><span class="lbl">Prochaine étape</span></div>
   <h1 class="sec">Prochaine étape</h1>
   <div class="next">
-    <div class="big">Faites reproduire les quatre tests de cache par votre équipe technique. Trente secondes, un paramètre d'URL au hasard, deux domaines. Si vous voyez ce que j'ai vu, le reste de la discussion devient simple.</div>
-    <div class="small">Vous présentez en interne, vous me faites un retour. Si le budget bloque, on en reparle : on peut démarrer sur un périmètre resserré, le socle technique et les outils gratuits, et étendre ensuite.</div>
+    <div class="big">Faites vérifier une chose par votre équipe technique. Demandez la même page à vos deux sites, coup sur coup, et regardez laquelle des deux adresses se déclare officielle. Trente secondes suffisent.</div>
+    <div class="small">Vous présentez en interne, vous me faites un retour. Si le budget bloque, on en reparle : on peut démarrer sur la seule phase 0 à 1, et décider ensuite.</div>
     <div class="sig">
       <div class="nm">Timothée Boussardon</div>
       <div class="ml">tim@organikk.co</div>
