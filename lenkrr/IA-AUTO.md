@@ -16,9 +16,11 @@ Le maillage interne, déjà construit, devient une règle parmi les autres dans 
 
 ## Le paysage, vérifié le 2026-07-09
 
-**Okara** (`okara.ai/agent/seo`, ~66 $/mois) audite le site chaque jour et livre « 2 high-impact recommendations daily with step-by-step guides and copy-ready snippets ». Title, meta, Open Graph, ALT, H1, canonicals, liens cassés. Plus un suivi des citations dans ChatGPT, Perplexity, Gemini. **Il n'écrit pas sur le site.** Le livrable final est un extrait à coller à la main.
+**Okara** (`okara.ai/agent/seo`, 66 $/mois, 2 000 crédits, offre gratuite à 20 crédits) audite le site chaque jour et livre « 2 high-impact recommendations daily with step-by-step guides and copy-ready snippets ». Title, meta, Open Graph, ALT, H1, canonicals, liens cassés, Core Web Vitals, backlinks. Plus un suivi des citations dans ChatGPT, Claude, Perplexity, Gemini. **Il n'écrit pas sur le site.** Vérifié le 2026-07-10 : la seule intégration citée est la Search Console, aucune connexion à un CMS ni à un dépôt, et le livrable est un extrait à coller à la main. Positionnement assumé : « Set it up once. The agent delivers fixes daily », et un modèle explicite d'humain dans la boucle, « You stay in control ». Sa boucle affichée, audit → priorisation → correction → réaudit, s'arrête donc à la troisième étape, qui est faite par l'utilisateur.
 
-**Polsia** (`polsia.com`) n'est pas un produit SEO. C'est une plateforme d'agents autonomes : identité persistante, mémoire, outils, exécution planifiée, boucle précâblée, cycles quotidiens sur données réelles. Le « RankPilot » qui remonte en recherche vit sur `rankpilot-7.polsia.app` et semble être une app construite **sur** Polsia par un tiers, pas un produit de Polsia. À vérifier.
+**Polsia** (`polsia.com`) n'est pas un produit SEO. C'est une plateforme d'agents autonomes : identité persistante, mémoire, outils, exécution planifiée, boucle précâblée, cycles quotidiens sur données réelles. Architecture en couches : un agent de conversation qui fait office de stratège, une couche de traduction en tâches, puis des agents spécialisés (ingénierie, marketing, recherche, support), chacun doté d'outils volontairement restreints pour borner le coût et l'emballement. Le réengagement passe par un rapport quotidien : « si tu oublies de lui parler, il se réveille la nuit, travaille, et t'envoie un point le matin ».
+
+**RankPilot, RankOS, Rankline : ce ne sont pas des produits.** Vérifié le 2026-07-10. Les trois vivent sur des sous-domaines `*.polsia.app`, et les trois pages contiennent zéro `<form>`, zéro `<input>`, aucune mention d'inscription, de connexion, de paiement ni de Stripe. `rankpilot-7` ne pointe que vers `polsia.com`. Ce sont des pages vitrines produites par des agents Polsia, pas des logiciels qu'on achète. La question ouverte de la V1 de cette note est donc tranchée : personne n'a livré cet agent. Leur copy est en revanche la meilleure description du produit que nous voulons construire, RankOS en tête : « No briefs. No approval cycles. No human bottleneck. »
 
 Screaming Frog, Sitebulb, Semrush, Ahrefs : détection seule.
 
@@ -285,14 +287,36 @@ Où vit le module 5 : un déploiement de préversion Netlify ou Vercel côté cl
 
 Suivi des citations IA (ChatGPT, Perplexity, Gemini) en option, comme Okara, ou hors périmètre.
 
+## Où en est le code, au 2026-07-10
+
+Branche `tech-agent-v1` sur `~/Code/leenq`. Rien n'est fusionné, rien n'est déployé.
+
+**Le module 1 est réel.** Crawl profond : sitemaps lus récursivement (index imbriqués, gzip), `robots.txt` respecté, redirections suivies à la main hop par hop, statut de chaque URL interne touchée. Aucun plafond silencieux : toute borne atteinte est remontée dans le rapport. Sur organikk.co, 160 pages en 17 secondes, contre 146 déclarées au sitemap.
+
+Deux pièges rencontrés, tous deux instructifs pour la suite.
+
+*L'adresse et l'identité sont deux choses différentes.* En normalisant le slash final avant de refetcher, le crawler bouclait sur `/a` → `/a/` → `/a` et 145 pages sur 146 tombaient en erreur. Le slash final appartient au serveur.
+
+*Un lien de nav n'est pas un lien éditorial.* Le crawl de maillage retire le chrome, ce qui est juste pour le maillage et faux pour l'accessibilité : on déclarait orphelines des pages liées depuis le menu. `PageFacts` porte désormais les deux jeux de liens.
+
+**Le module 2 est réel.** 13 règles déterministes, zéro modèle. Non testé n'est jamais rendu comme cassé.
+
+**Le module 3 est réel.** `canAct()` est le seul point du code qui accorde le droit d'écrire, et il ne reçoit aucun argument venant d'un modèle.
+
+**Le module 5 est écrit et testé sur cas construits, jamais sur une vraie préversion.** Les six invariants tiennent, y compris la régression collatérale : un correctif de H1 qui casse un canonical ailleurs ferme la PR. Mais `buildPassed` est un booléen passé à la main, aucune CI n'est lue, aucune PR n'a jamais été ouverte ni fermée par ce code.
+
+**Le module 0 n'existe pas.** `lib/tech/` ne contient aucun appel à `createConnector` ni à `applyEdit`. L'agent sait dériver un H1, il ne sait pas où l'écrire. C'est la barrière à l'entrée, et elle est intacte.
+
+Donc, sans détour : on a aujourd'hui un crawler qui sait dire ce qu'il corrigerait. Okara livre au moins un extrait à coller. Le jalon qui prouvera quelque chose est une PR ouverte seule, vérifiée sur préversion, et fermée seule si un invariant saute.
+
 ## Ce qui n'est pas tranché
 
 Le décompte des classes par zone vient de notre propre liste, pas d'un audit de marché. Ordre de grandeur, pas mesure.
 
 Le retrait de l'endpoint de ping des sitemaps et la restriction de l'Indexing API sont à revérifier dans la documentation Google avant toute mention publique.
 
-Le statut de `rankpilot-7.polsia.app` (app tierce construite sur Polsia, ou produit de Polsia) n'est pas confirmé. `polsia.com/live` n'a renvoyé que son titre.
-
 Le positionnement des acteurs qui appliquent des correctifs à l'edge est à vérifier de première main avant d'écrire quoi que ce soit qui les compare.
+
+Le seuil de 65 caractères sur le title est une convention, pas une règle de Google. Il produit 33 violations sur organikk.co, ce qui en dit plus long sur le seuil que sur le site. À réexaminer, ou à sortir des règles.
 
 Pages liées : [[concepts/maillage-systeme]] · [[moc/moc-maillage]]
