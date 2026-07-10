@@ -1158,3 +1158,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - vidéo intégrée (L'influence de Reddit sur le SEO IA) + cocon maillé : hub Do du sous-pilier GEO, 6 liens déclarés dans internal-links.ts
 - publiés le même jour : outil /outils/probabilite-citation-llm, article automatiser-audit-seo-claude-code, refonte design (miniatures picto, glossaire, guides teintés, nav)
 - boucle preuves : poser la baseline GSC de ces URLs vers J+30 (début août 2026)
+
+## [2026-07-10] etude-IA | Crawlers IA : GPTBot, ClaudeBot, PerplexityBot, robots.txt 2025-2026
+- skill: seo-page-statistiques (SyntheticBrain)
+- output: [[agent-synthetic/revuedepressIA/etudes-IA/2026-07-10-stats-crawlers-ia-gptbot-claudebot-perplexitybot-robots-txt]]
+- sources vérifiées par fetch: 8 (Ahrefs, Cloudflare ×4, BuzzStream, cloro.dev, DigitalApplied, TechnologyChecker, SE Ranking)
+- transformation originale: réconciliation des 3 mesures de blocage GPTBot (5,89 % web général / 13,9 % domaines visibles / 62 % éditeurs presse)
+- chiffres clés: GPTBot +305 % volume mai 2024-mai 2025 ; ClaudeBot profondeur 5,2 vs GPTBot 3,8 ; blocage GPTBot = 139× moins de citations ChatGPT ; Anthropic 286 930:1 crawl/référral jan. 2025
+- contre-analyse: DigitalApplied 12 sites (faible échantillon) ; corrélation ≠ causalité (blocage/citations) ; shadow crawl Perplexity-User ; llms.txt non pris en charge par Google
+- [À SOURCER]: données profondeur > 100 sites, taux blocage francophone, causalité blocage contrôlée
