@@ -4,7 +4,7 @@ title: "Preuve — Golfiller, résultats client instrumentés (avant/après mesu
 aliases: [preuve-golfiller-instrumentation, preuve-h009-golfiller]
 tags: [preuve, terrain, client, golfiller, gsc, content-brain, data-proprietaire]
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-10
 sources: 2
 confidence: medium
 status: en-cours
@@ -45,11 +45,13 @@ Capturée. Source : export GSC manuel `golfiller-2026-06-10` (4 CSV : pages, req
 
 ## Mesure J+30
 
-Échéance 2026-07-03 (P-golfiller-2026-06-03-1).
+Échéance 2026-07-03 (P-golfiller-2026-06-03-1). **J+30 non mesuré.**
 
 | Prédiction | Valeur constatée | Δ vs baseline | Verdict ledger |
 |---|---|---|---|
-| … | — | — | — |
+| P-golfiller-2026-06-03-1 | non relevée (aucun export Golfiller déposé après le 2026-06-10) | — | `open`, non résolu à échéance |
+
+Clause de falsification appliquée le 2026-07-10 ([[revue-hebdo/2026-W28]], conditionnel pré-arbitré [[revue-hebdo/2026-W27]] point 2) : [[hypotheses#H-009]] repasse `ouvert`. La fiche reste `en-cours` pour les seules échéances J+90 (2026-09-01 et 2026-09-08) : si les mesures sont relevées à ces dates, H-009 peut repasser `en-test` sur décision de revue.
 
 ## Mesure J+90
 

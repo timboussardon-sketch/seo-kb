@@ -4,7 +4,7 @@ title: Banque de preuves
 aliases: [preuves, banque-preuves, proof-bank, boucle-preuves]
 tags: [meta, preuves, validation, terrain, moat, gsc]
 created: 2026-05-16
-updated: 2026-06-12
+updated: 2026-07-10
 sources: 0
 confidence: high
 status: living-doc
@@ -41,8 +41,9 @@ status: living-doc
 
 | Fiche | Contenu | Hypothèse | Publié | Statut |
 |---|---|---|---|---|
-| [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] | 5 pages pSEO secteur×ville Organikk | [[hypotheses#H-007]] | ≤ 2026-05-13 | `en-cours` |
-| [[preuves/2026-06-12-golfiller-instrumentation-client]] | 2 pages Golfiller instrumentées (ledger content-brain + exports GSC) | [[hypotheses#H-009]] | 2026-06-10 | `en-cours` |
+| [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] | 5 pages pSEO secteur×ville Organikk | [[hypotheses#H-007]] | ≤ 2026-05-13 | `en-cours` (gelée, baseline jamais capturée) |
+| [[preuves/2026-06-12-golfiller-instrumentation-client]] | 2 pages Golfiller instrumentées (ledger content-brain + exports GSC) | [[hypotheses#H-009]] | 2026-06-10 | `en-cours` (J+30 non mesuré, J+90 seuls actifs) |
+| [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] | 3 URLs Organikk publiées le 2026-07-07 (guide Reddit, outil citation LLM, article audit) | [[hypotheses#H-007]] | 2026-07-07 | `en-cours` |
 
 ## Données minimales par fiche
 

@@ -1167,3 +1167,23 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - chiffres clés: GPTBot +305 % volume mai 2024-mai 2025 ; ClaudeBot profondeur 5,2 vs GPTBot 3,8 ; blocage GPTBot = 139× moins de citations ChatGPT ; Anthropic 286 930:1 crawl/référral jan. 2025
 - contre-analyse: DigitalApplied 12 sites (faible échantillon) ; corrélation ≠ causalité (blocage/citations) ; shadow crawl Perplexity-User ; llms.txt non pris en charge par Google
 - [À SOURCER]: données profondeur > 100 sites, taux blocage francophone, causalité blocage contrôlée
+
+## [2026-07-10] revue-hebdo | Semaine W28 — 7 décisions
+- édition: [[revue-hebdo/2026-W28]]
+- promotions: 0 draft→stable, 0 stable→stale (binôme corpus promotable à la 1re page publiée)
+- hypothèses: H-009 en-test→ouvert (conditionnel W27 appliqué, J+30 Golfiller non mesuré) · H-007 ouvert→en-test (fiche [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]], GSC organikk.co branchée via edge admin-gsc-export)
+- lot ingest W29: refresh playbook Reddit en tête + Leexi avec date de mort · etude-ctr-ai-overviews-gsc skippé en séance (4 votes, édition gelée)
+- contradiction fermée: aucune · C-003 débloquée de son « zéro mesure » structurel (note au registre)
+- archivage: jeudi-4-infos — Tim tranche avant W29 sinon stale par défaut
+- résurgence: 2026-07-08 muette (2e consécutive) → migration GH Actions avant le 2026-07-15
+- fil rouge: corpus Organikk (publier + mesurer via boucle preuves) · édition « mots-clés non mangés » gelée
+
+## [2026-07-10] preuve | organikk-batch-juillet → en-cours (H-007 en-test)
+- fiche: [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]]
+- cohorte: 3 URLs publiées le 2026-07-07 (guide Reddit SEO/GEO, outil probabilite-citation-llm, article automatiser-audit-seo-claude-code)
+- baseline: structurelle (URLs neuves, zéro historique GSC) + état site au run indexation 2026-07-10
+- jalons: J+30 = 2026-08-06 · J+90 = 2026-10-05
+
+## [2026-07-10] hypothese | H-009 → ouvert · H-007 → en-test
+- H-009: clause de falsification W27 appliquée, fiche golfiller annotée « J+30 non mesuré », échéances J+90 seules actives
+- H-007: conditions W25 remplies (sprint réel + baseline avant décision + instrument GSC en place)

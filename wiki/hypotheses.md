@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-06-19
+updated: 2026-07-10
 sources: 0
 confidence: high
 status: living-doc
@@ -36,9 +36,9 @@ status: living-doc
 | H-004 | Une page "entity / style wiki" est mieux citée en SGE qu'une page statique équivalente | `ouvert` | [[concepts/persistent-wiki-vs-rag]] · [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] | — |
 | H-005 | structural-information-geo (title/meta/schema > body, +22% Hit Rate) se généralise au contenu français | `ouvert` | [[concepts/structural-information-geo]] | — |
 | H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — |
-| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `ouvert` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (baseline jamais capturée) |
+| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `en-test` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (baseline structurelle capturée) |
 | H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
-| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `en-test` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] |
+| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) |
 | H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
 
 ## Détail
@@ -85,9 +85,9 @@ Test : échantillon de requêtes Organikk pertinentes, distribution des dates de
 
 Énoncé : le Retrieval Collapse (67% du pool capte 80% de l'exposition, NAVER [[sources/2026-04-25-scan-arxiv-25-avril]]) frappe moins les pages portant une donnée propriétaire unique. C'est l'argument scientifique central vendu aux prospects ([[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]]).
 
-Repassée `ouvert` le 2026-06-19 ([[revue-hebdo/2026-W25]]), conditionnel pré-arbitré en W24 exécuté : aucun export `organikk.co` déposé dans `raw/data/exports-gsc/` au 2026-06-15 (J+30), seuls des exports clients sont arrivés (golfiller, victoriagarden, fgformation). Le test ne se relancera qu'attaché à un vrai sprint de contenu Organikk, plus jamais par reconduction rituelle. Diagnostic dur acté : le blocage n'est ni technique ni de process — la boucle GSC tourne dès qu'un travail payé la demande, Organikk n'est simplement pas sur le chemin du travail réel.
+Repassée `en-test` le 2026-07-10 ([[revue-hebdo/2026-W28]] point 2), les deux conditions posées en W25 étant enfin remplies : un sprint de contenu Organikk réel la tire (batch publié le 2026-07-07 : guide Reddit SEO/GEO, outil probabilité de citation LLM, article audit automatisé — [[log]] 2026-07-07), et la baseline existe avant la décision (URLs neuves, zéro historique GSC par construction). L'instrument manquant depuis W20 est en place : propriété GSC `organikk.co` connectée via l'edge `admin-gsc-export` de Fusionn, première mesure réelle servie au run indexation du 2026-07-10. Fiche : [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]], jalons J+30 = 2026-08-06, J+90 = 2026-10-05. Clause de falsification pré-arbitrée : pas de pull archivé à l'échéance → fiche gelée, retour `ouvert` sans débat.
 
-Historique : `en-test` du 2026-05-16 au 2026-06-19 (décision [[revue-hebdo/2026-W20]] point 2). Fiche : [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] — notée « baseline jamais capturée ». Cohorte = 5 pages pSEO secteur×ville déjà publiées (sans attendre le déploiement du cluster, [[contradictions#C-003]]). Jalons théoriques J+30 ≈ 2026-06-15, J+90 ≈ 2026-08-14, jamais renseignés faute de baseline.
+Historique : `en-test` du 2026-05-16 au 2026-06-19 (décision [[revue-hebdo/2026-W20]] point 2), repassée `ouvert` le 2026-06-19 ([[revue-hebdo/2026-W25]], conditionnel W24 exécuté) : aucun export `organikk.co` déposé au J+30, fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] gelée « baseline jamais capturée » (cohorte 5 pages pSEO secteur×ville, jalons jamais renseignés). Diagnostic W25 maintenu : la boucle GSC tourne dès qu'un travail réel la demande — c'est exactement ce qui s'est produit en W28.
 
 Test : suivre l'exposition réelle (citations IA, impressions) des pages Organikk à data propriétaire vs pages génériques sur 90j.
 
@@ -103,7 +103,9 @@ Test : A/B sur pages Organikk, présence vs absence du bloc answer-first, mesure
 
 Test : instrumenter sur les prochains clients (Victoria Garden, FG Formation) une mesure tierce avant/après, archivée dans [[preuves/index]]. C'est ce qui transforme un argument de vente en preuve opposable.
 
-Statut `en-test` depuis le 2026-06-12 (décision [[revue-hebdo/2026-W24]] point 2). Fiche : [[preuves/2026-06-12-golfiller-instrumentation-client]]. Le test ne porte pas sur les chiffres historiques du discours (1h30→45min, closing) — invérifiables rétroactivement — mais sur le mécanisme qui les rend opposables à l'avenir : 3 prédictions datées dans le ledger content-brain Golfiller, baselines GSC capturées avant intervention (export `golfiller-2026-06-10`), résolution par la data aux échéances 2026-07-03 / 2026-09-01 / 2026-09-08. Premier cas où la baseline existe avant la décision de revue, pas après.
+Repassée `ouvert` le 2026-07-10 ([[revue-hebdo/2026-W28]] point 2), clause de falsification pré-arbitrée en W27 appliquée sans nouveau débat : l'échéance J+30 du 2026-07-03 (P-golfiller-2026-06-03-1) est passée sans mesure — aucun export Golfiller postérieur au 2026-06-10 dans `raw/data/exports-gsc/`, prédiction toujours `open` dans le ledger, table J+30 de la fiche vide. Le discours commercial reste auto-rapporté. Les échéances J+90 (2026-09-01 et 2026-09-08) restent actives dans le ledger : si les mesures sont relevées à ces dates, H-009 peut repasser `en-test` sur décision de revue.
+
+Historique : `en-test` du 2026-06-12 au 2026-07-10 (décision [[revue-hebdo/2026-W24]] point 2). Fiche : [[preuves/2026-06-12-golfiller-instrumentation-client]]. Le test ne porte pas sur les chiffres historiques du discours (1h30→45min, closing) — invérifiables rétroactivement — mais sur le mécanisme qui les rend opposables à l'avenir : 3 prédictions datées dans le ledger content-brain Golfiller, baselines GSC capturées avant intervention (export `golfiller-2026-06-10`), résolution par la data aux échéances. Premier cas où la baseline existait avant la décision de revue ; la mesure, elle, n'a pas suivi.
 
 ### H-010 — Fidélité du scoring à OpenDecoder
 

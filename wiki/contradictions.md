@@ -4,7 +4,7 @@ title: Registre des contradictions et dépendances ouvertes
 aliases: [contradictions, dette-doctrinale, dependances-ouvertes]
 tags: [meta, doctrine, lint, contradictions, dette]
 created: 2026-05-16
-updated: 2026-07-03
+updated: 2026-07-10
 sources: 0
 confidence: high
 status: living-doc
@@ -64,6 +64,8 @@ Le cluster business Organikk et les 4 modèles pSEO ([[sources/2026-04-24-cluste
 `en-cours` depuis le 2026-05-16 : la cohorte pSEO secteur×ville déjà publiée devait engager la première instrumentation sans attendre le déploiement complet du cluster — fiche [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] (H-007 passé `en-test`). La contradiction ne se ferme que quand le cluster complet est déployé et mesuré ; cette fiche n'en couvre qu'une fraction (5 pages, H-007 seule).
 
 Mise à jour 2026-06-19 ([[revue-hebdo/2026-W25]]) : la fraction d'instrumentation revendiquée n'a jamais produit de donnée — baseline GSC `organikk.co` jamais capturée, H-007 repassée `ouvert`, fiche gelée. C-003 reste `en-cours` mais sur du vrai zéro mesure, pas sur une progression partielle. Elle ne bougera que sur un sprint de contenu Organikk réel avec baseline capturée avant intervention, jamais par reconduction.
+
+Mise à jour 2026-07-10 ([[revue-hebdo/2026-W28]]) : le blocage « zéro mesure » n'est plus structurel. La propriété GSC `organikk.co` est connectée (edge `admin-gsc-export` de Fusionn, première donnée réelle au run indexation du 2026-07-10) et un sprint réel a produit un batch publié le 2026-07-07, instrumenté par [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (H-007 repassée `en-test`). C-003 reste `en-cours` : elle ne se ferme qu'au déploiement mesuré du cluster complet, et le batch de juillet n'en couvre qu'une fraction — mais c'est la première fraction mesurable, pas revendiquée.
 
 ### C-004 — Snapshot Qadence figé (résolue)
 

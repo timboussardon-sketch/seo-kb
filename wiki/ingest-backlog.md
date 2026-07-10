@@ -4,7 +4,7 @@ title: Backlog d'ingest
 aliases: [ingest-backlog, backlog, raw-non-traite, file-ingest]
 tags: [meta, ingest, capture, pipeline, backlog]
 created: 2026-05-16
-updated: 2026-07-06
+updated: 2026-07-10
 last_sweep: 2026-07-06
 sources: 0
 confidence: high
@@ -137,7 +137,8 @@ Reportés depuis [[log]]. Le sweep hebdo doit les ignorer sauf décision explici
 - `raw/articles/lost-from-old-site/` — faible valeur ajoutée
 - Fichiers vides (`raw/todo/todo-2026-04-25.md` 0 octet)
 - `raw/data/keyword-research-2026-05-02/` (binôme `keywords-cleaned.md` + `keywords-classified.md`) — skip acté [[revue-hebdo/2026-W24]] en application du conditionnel [[revue-hebdo/2026-W22]] point 3 : 4 reconductions (W20→W24) sans ingest, la doctrine de sélection des mots-clés s'est consolidée entre-temps via Fusionn et le terrain client. Ce binôme ne passe pas par le rituel ; ré-ingest seulement si un travail réel le réclame.
-- `raw/golfiller/golfiller-strat.md` — skip acté [[revue-hebdo/2026-W26]] en application du conditionnel [[revue-hebdo/2026-W25]] : voté W24, reconduit W25, non exécuté W26, aucun travail vivant ne le tire. Même doctrine que le binôme kw-research. Ré-ingest seulement attaché à un sprint Golfiller réel. NB : `raw/etudes-seo/etude-ctr-ai-overviews-gsc.md`, ex-binôme du même lot, n'est PAS skippé — il passe en ingest W27 tiré par la newsletter « mots-clés non mangés » ([[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]]).
+- `raw/golfiller/golfiller-strat.md` — skip acté [[revue-hebdo/2026-W26]] en application du conditionnel [[revue-hebdo/2026-W25]] : voté W24, reconduit W25, non exécuté W26, aucun travail vivant ne le tire. Même doctrine que le binôme kw-research. Ré-ingest seulement attaché à un sprint Golfiller réel.
+- `raw/etudes-seo/etude-ctr-ai-overviews-gsc.md` — skip acté [[revue-hebdo/2026-W28]] en application de la date de mort posée en [[revue-hebdo/2026-W27]] point 3 : voté W24 (lot W25), reconduit W25, W26 et W27, jamais exécuté. Cet ingest n'existait que pour donner son chiffre manquant à l'édition « mots-clés non mangés » ([[queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas]]) ; l'édition n'est pas sortie en W28 et le fil éditorial est gelé. Ré-ingest seulement si le fil se dégèle et qu'une édition en cours de rédaction le réclame.
 
 ## Méthode du sweep hebdo
 

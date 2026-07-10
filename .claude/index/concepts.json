@@ -1503,6 +1503,7 @@
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
       "wiki/preuves/2026-05-16-pseo-secteur-ville-data-proprietaire.md",
       "wiki/preuves/2026-06-12-golfiller-instrumentation-client.md",
+      "wiki/preuves/2026-07-10-organikk-batch-juillet-data-proprietaire.md",
       "wiki/preuves/_template.md",
       "wiki/preuves/index.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
@@ -1639,6 +1640,7 @@
     ],
     "backrefs": [
       "wiki/log.md",
+      "wiki/revue-hebdo/2026-W28.md",
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "medium",
@@ -3153,6 +3155,7 @@
       "wiki/log.md",
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
+      "wiki/revue-hebdo/2026-W28.md",
       "wiki/sources/2026-04-13-call-08-franck.md",
       "wiki/sources/2026-04-15-call-10-franck-suite.md"
     ],
@@ -3531,6 +3534,7 @@
       "wiki/log.md",
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
+      "wiki/revue-hebdo/2026-W28.md",
       "wiki/sources/2026-04-11-seo-ia-tim.md",
       "wiki/syntheses/doctrine-seo-post-sge.md"
     ],
@@ -3722,6 +3726,7 @@
       "wiki/index.md",
       "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
       "wiki/log.md",
+      "wiki/preuves/2026-07-10-organikk-batch-juillet-data-proprietaire.md",
       "wiki/preuves/index.md",
       "wiki/queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas.md",
       "wiki/sources/2026-04-13-geo-aggarwal-2024.md",
@@ -3812,6 +3817,7 @@
     ],
     "backrefs": [
       "wiki/log.md",
+      "wiki/revue-hebdo/2026-W28.md",
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "medium",
@@ -4130,6 +4136,7 @@
       "wiki/log.md",
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
+      "wiki/revue-hebdo/2026-W28.md",
       "wiki/sources/2026-02-10-organikk-creer-bot-ia-seo.md",
       "wiki/sources/2026-03-04-algorithme-lancer-site-sans-cms.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
@@ -4370,6 +4377,7 @@
       "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/preuves/2026-07-10-organikk-batch-juillet-data-proprietaire.md",
       "wiki/sources/2026-04-25-organikk-reddit-pour-geo.md",
       "wiki/sources/2026-06-19-algorithme-test-reddit-seo.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
@@ -5095,6 +5103,7 @@
       "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/preuves/2026-07-10-organikk-batch-juillet-data-proprietaire.md",
       "wiki/revue-hebdo/2026-W27.md",
       "wiki/sources/2026-04-15-opendecoder-seo-scoring-system.md",
       "wiki/sources/2026-04-29-organikk-9-skills-seo-claude.md",
@@ -5430,6 +5439,7 @@
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/preuves/2026-05-16-pseo-secteur-ville-data-proprietaire.md",
+      "wiki/preuves/2026-07-10-organikk-batch-juillet-data-proprietaire.md",
       "wiki/revue-hebdo/2026-W20.md"
     ],
     "confidence": "high",
@@ -6509,6 +6519,7 @@
       "wiki/log.md",
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
+      "wiki/revue-hebdo/2026-W28.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
     ],
     "confidence": "medium",
