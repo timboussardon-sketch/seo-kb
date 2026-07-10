@@ -21,7 +21,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p style="margin-bottom:20px;line-height:1.65">Prolongation et annulation : <mark style="background:#ffe9b3">[À VÉRIFIER : politique à confirmer avec la réception]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65">Les conditions le permettent. Au-delà de sept nuits, la réservation est annulable sans frais jusqu'à quatorze jours avant l'arrivée. Et un séjour de plus de trente nuits se règle par périodes de trente nuits, au début de chacune : vous ne payez pas d'avance un séjour dont vous ignorez la fin.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -134,10 +134,13 @@
 <p style="margin-bottom:20px;line-height:1.65"><strong>Le parking est-il disponible ?</strong><br>Un parking sécurisé est accessible sur place à 15 € la nuit.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on prolonger un séjour au jour le jour ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on annuler si l'hospitalisation est reportée ?</strong><br>Au-delà de sept nuits, l'annulation est sans frais jusqu'à quatorze jours avant l'arrivée. En deçà de sept nuits, elle est sans frais jusqu'à vingt-quatre heures avant.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p style="margin-bottom:20px;line-height:1.65"><strong>L'arrivée tardive est-elle possible ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : horaires de réception et procédure d arrivée tardive]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Comment se paie un séjour de plusieurs mois ?</strong><br>Par périodes de trente nuits, réglées au début de chaque période. Vous ne payez pas d'avance un séjour dont vous ignorez la durée.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Que se passe-t-il si j'arrive tard le premier soir ?</strong><br>Garantissez votre réservation par carte bancaire. Sans acompte, la résidence peut annuler la réservation en l'absence d'arrivée à 18 heures.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->

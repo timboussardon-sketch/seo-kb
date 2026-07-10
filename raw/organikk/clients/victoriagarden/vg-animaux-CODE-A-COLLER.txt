@@ -55,7 +55,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p style="margin-bottom:20px;line-height:1.65"><mark style="background:#ffe9b3">[À VÉRIFIER : poids maximum, nombre d animaux accueillis, espaces de la résidence interdits aux animaux]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><mark style="background:#ffe9b3">[À VÉRIFIER : poids maximum, nombre d animaux, espaces interdits. Aucune de ces trois informations n est publiée sur le site ni dans les CGV. Seule la réception peut répondre]</mark></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -127,10 +127,13 @@
 <p style="margin-bottom:20px;line-height:1.65"><strong>Y a-t-il une cuisine dans l'appartement ?</strong><br>Oui, une kitchenette équipée dans chaque appartement, de 20 à 36 m².</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p style="margin-bottom:20px;line-height:1.65"><strong>Y a-t-il une limite de poids ou de nombre d'animaux ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on annuler sa réservation ?</strong><br>En deçà de sept nuits, l'annulation est sans frais jusqu'à vingt-quatre heures avant l'arrivée. Au-delà de sept nuits, jusqu'à quatorze jours avant.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on laisser un animal seul dans l'appartement ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Y a-t-il une limite de poids ou de nombre d'animaux ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception, information non publiée]</mark></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on laisser un animal seul dans l'appartement ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception, information non publiée]</mark></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
