@@ -1,0 +1,232 @@
+<!-- H1 de la page (champ titre WordPress) : Appart'hôtel pour une mutation à Bordeaux : un appartement meublé le temps de trouver le vôtre -->
+
+<!-- wp:paragraph -->
+<p>Victoria Garden Bordeaux centre est un appart'hôtel 3 étoiles de 100 appartements, au 127 cours de la Somme, à 8 minutes à pied de la rue Sainte-Catherine. Les studios démarrent à 72 € la nuit, avec un tarif dégressif à partir de 30 nuits. Chaque appartement dispose d'une kitchenette. Vous emménagez avec une valise : sans bail, sans dépôt de garantie, sans mobilier à acheter, et vous cherchez votre logement définitif depuis le centre-ville plutôt que depuis un hôtel de périphérie.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Une mutation, c'est un logement à trouver pendant qu'on travaille déjà</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vous arrivez avant votre déménagement. Vous visitez des appartements le samedi et vous prenez votre poste le lundi. Vous ne savez pas combien de temps cela prendra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Trois contraintes en découlent. Vous ne pouvez pas signer un bail avant d'avoir choisi votre quartier. Vous avez besoin de cuisiner, parce que trois semaines au restaurant coûtent plus cher que le logement. Et vous avez besoin de prolonger sans renégocier.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Un appart'hôtel répond aux trois. Vous restez à la nuit, à la semaine ou au mois, avec une kitchenette, et vous partez quand votre bail commence.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">L'appartement adapté à un séjour de plusieurs semaines</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Capacité</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Équipement</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À partir de</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio lits jumeaux</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette, salle d'eau</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio double</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Studio supérieur</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Suite</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : capacité]</mark></td><td style="padding:10px 14px">Kitchenette, espace de travail</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:spacer {"height":"24px"} -->
+<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Ce qui est inclus, ce qui est en supplément</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Inclus</strong> : la kitchenette équipée, le wifi, le linge de lit, les charges.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>En supplément</strong> : le parking sur place à 15 € la nuit, le petit-déjeuner à 12 € par personne, le ménage <mark style="background:#ffe9b3">[À FOURNIR : fréquence et tarif]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pas de bail, pas de dépôt de garantie, pas d'abonnement à ouvrir. La facture est établie au nom de votre entreprise si elle prend le séjour en charge. <mark style="background:#ffe9b3">[À VÉRIFIER : procédure de facturation entreprise et récupération de TVA]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Combien coûte un mois à Bordeaux</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Le studio démarre à 72 € la nuit. À partir de 30 nuits, le tarif devient dégressif. En janvier, la remise atteint 10 % sur 30 nuits.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><mark style="background:#ffe9b3">[À FOURNIR : grille complète par durée : 7 nuits, 30 nuits, 90 nuits. Ne pas publier de prix mensuel sans cette grille]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/appart-hotel-au-mois/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Voir nos tarifs au mois</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">S'installer dans le quartier : ce qu'il y a autour</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La résidence est au 127 cours de la Somme, entre Nansouty et la place de la Victoire. Ces huit quartiers sont ceux dans lesquels vous chercherez votre logement. Loger au centre pendant la recherche vous permet de les visiter à pied ou en un trajet de tram.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Quartier</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Depuis la résidence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Accès</th></tr></thead><tbody><tr><td style="padding:10px 14px">Rue Sainte-Catherine</td><td style="padding:10px 14px">8 min</td><td style="padding:10px 14px">marche</td></tr><tr><td style="padding:10px 14px">Quartier Saint-Michel</td><td style="padding:10px 14px">10 min</td><td style="padding:10px 14px">marche</td></tr><tr><td style="padding:10px 14px">Quartier Saint-Pierre</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram A</td></tr><tr><td style="padding:10px 14px">Quais rive gauche</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram C ou marche</td></tr><tr><td style="padding:10px 14px">Triangle d'Or</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram B/C</td></tr><tr><td style="padding:10px 14px">Quartier des Chartrons</td><td style="padding:10px 14px">20 min</td><td style="padding:10px 14px">tram B</td></tr><tr><td style="padding:10px 14px">Darwin Écosystème</td><td style="padding:10px 14px">25 min</td><td style="padding:10px 14px">tram A + marche</td></tr><tr><td style="padding:10px 14px">Bassins à flot</td><td style="padding:10px 14px">28 min</td><td style="padding:10px 14px">tram B</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Faire ses courses</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Marché</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Depuis la résidence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Accès</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Couvert</th></tr></thead><tbody><tr><td style="padding:10px 14px">Marché des Capucins</td><td style="padding:10px 14px">5 min</td><td style="padding:10px 14px">marche</td><td style="padding:10px 14px">oui</td></tr><tr><td style="padding:10px 14px">Marché des Quais (Chartrons)</td><td style="padding:10px 14px">22 min</td><td style="padding:10px 14px">tram B</td><td style="padding:10px 14px">non</td></tr><tr><td style="padding:10px 14px">Halles de Bacalan</td><td style="padding:10px 14px">30 min</td><td style="padding:10px 14px">tram B</td><td style="padding:10px 14px">oui</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Le Marché des Capucins est le marché couvert historique de Bordeaux. Il est à 5 minutes à pied et reste praticable les jours de pluie.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Le climat bordelais sur une année complète</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vous ne venez pas pour une semaine. Voici ce que vous allez vivre, d'après les normales climatologiques 1991-2020 de la station Bordeaux-Mérignac.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Indicateur</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Bordeaux, moyenne annuelle</th></tr></thead><tbody><tr><td style="padding:10px 14px">Température moyenne</td><td style="padding:10px 14px">14,2 °C</td></tr><tr><td style="padding:10px 14px">Ensoleillement</td><td style="padding:10px 14px">2 069,9 heures par an</td></tr><tr><td style="padding:10px 14px">Précipitations</td><td style="padding:10px 14px">924,9 mm par an</td></tr><tr><td style="padding:10px 14px">Jours de pluie d'au moins 1 mm</td><td style="padding:10px 14px">122,6</td></tr><tr><td style="padding:10px 14px">Jours à 30 °C ou plus</td><td style="padding:10px 14px">25,5</td></tr><tr><td style="padding:10px 14px">Jours de gel</td><td style="padding:10px 14px">23,3</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Le mois le plus chaud est août, à 21,9 °C de moyenne. Le mois le plus froid est janvier, à 7,1 °C, avec 7,3 jours de gel. Le mois le plus pluvieux est novembre, avec 114,5 mm et 13,3 jours de pluie. Le mois le plus ensoleillé est juillet, avec 256 heures de soleil.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'hiver est doux et peu lumineux. L'été est chaud sans être sec. Novembre est le mois à passer à l'intérieur.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Source : Météo-France, fiche climatologique de la station Bordeaux-Mérignac (33281001), altitude 47 m, normales 1991-2020. Licence Ouverte Etalab v2.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Accès et transports</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La résidence est desservie par les trams A, B et C. La gare Saint-Jean et l'aéroport de Mérignac sont accessibles en transport direct. <mark style="background:#ffe9b3">[À FOURNIR : temps de trajet exacts vers la gare Saint-Jean et l aéroport]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Le parking privé est sur place, à 15 € la nuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Peut-on rester plusieurs mois ?</strong><br>Oui. Le tarif devient dégressif à partir de 30 nuits, et le séjour se prolonge sans nouveau contrat.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Faut-il un bail ou un dépôt de garantie ?</strong><br>Non. Ni bail, ni dépôt de garantie, ni ouverture de compteur.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>L'entreprise peut-elle payer directement ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : procédure de facturation entreprise, prépaiement et TVA]</mark></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Y a-t-il une cuisine ?</strong><br>Oui, une kitchenette équipée dans chaque appartement.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Peut-on prolonger au dernier moment ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Peut-on rester plusieurs mois dans un appart'hotel a Bordeaux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Le tarif devient degressif a partir de 30 nuits, et le sejour se prolonge sans nouveau contrat."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Faut-il un bail ou un depot de garantie ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Ni bail, ni depot de garantie, ni ouverture de compteur."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Y a-t-il une cuisine dans l'appartement ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, une kitchenette equipee dans chaque appartement."
+   }
+  }
+ ]
+}
+</script>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p>Pour découvrir la résidence et toutes nos typologies : <a href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/">notre appart'hôtel à Bordeaux centre</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Comparer avec une location : <a href="https://www.victoriagarden.com/airbnb-ou-appart-hotel-a-bordeaux-lequel-est-vraiment-le-moins-cher/">appart'hôtel ou Airbnb à Bordeaux, lequel est vraiment le moins cher</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Voir nos appartements à Bordeaux</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->

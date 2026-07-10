@@ -1,0 +1,174 @@
+<!-- H1 de la page (champ titre WordPress) : Appart'hôtel qui accepte les animaux à Bordeaux centre : un appartement avec kitchenette, à 5 minutes des quais -->
+
+<!-- wp:paragraph -->
+<p>Victoria Garden Bordeaux centre accepte les animaux. C'est un appart'hôtel 3 étoiles de 100 appartements, au 127 cours de la Somme, dans le quartier de la place de la Victoire. Chaque appartement dispose d'une kitchenette, les studios démarrent à 72 € la nuit et le parking est sur place à 15 € la nuit. Les quais de la Garonne sont à 5 minutes à pied. <mark style="background:#ffe9b3">[À VÉRIFIER : supplément par animal et par nuit]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Voyager avec un animal change deux choses, pas dix</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vous cherchez d'abord un établissement qui accepte votre animal sans discussion. Ensuite, vous cherchez un endroit où le sortir, tôt le matin et tard le soir, sans traverser la ville.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Le reste ne change pas. Un appartement avec kitchenette vous évite de laisser votre animal seul pendant que vous dînez au restaurant.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">L'appartement adapté</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Capacité</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Équipement</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À partir de</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio lits jumeaux</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette, salle d'eau</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio double</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Studios communicants</td><td style="padding:10px 14px">4 personnes</td><td style="padding:10px 14px">2 kitchenettes</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:spacer {"height":"24px"} -->
+<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Ce qui est inclus, ce qui est en supplément</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Inclus</strong> : la kitchenette équipée, le wifi, le linge de lit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>En supplément</strong> : le parking à 15 € la nuit, le petit-déjeuner à 12 € par personne.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Animaux</strong> : acceptés. <mark style="background:#ffe9b3">[À VÉRIFIER : supplément par nuit, poids maximum, nombre d animaux, espaces interdits]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sortir votre chien depuis la résidence</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cinq espaces extérieurs, avec le temps de trajet réel depuis le 127 cours de la Somme.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Espace</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Depuis la résidence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Accès</th></tr></thead><tbody><tr><td style="padding:10px 14px">Quais de la Garonne</td><td style="padding:10px 14px">5 min</td><td style="padding:10px 14px">marche, départ devant la résidence</td></tr><tr><td style="padding:10px 14px">Jardin Public</td><td style="padding:10px 14px">18 min</td><td style="padding:10px 14px">tram B</td></tr><tr><td style="padding:10px 14px">Parc Nelson Mandela</td><td style="padding:10px 14px">18 min</td><td style="padding:10px 14px">tram A</td></tr><tr><td style="padding:10px 14px">Parc Rivière</td><td style="padding:10px 14px">22 min</td><td style="padding:10px 14px">tram A</td></tr><tr><td style="padding:10px 14px">Parc Bordelais</td><td style="padding:10px 14px">25 min</td><td style="padding:10px 14px">tram A + bus</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p><mark style="background:#ffe9b3">[À VÉRIFIER : pour chacun de ces cinq espaces : les chiens y sont-ils admis, tenus en laisse, à quelles heures. Ne pas publier ce tableau sans vérifier les règlements municipaux]</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Les jours de pluie, à Bordeaux</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Quand on sort un chien deux fois par jour, la pluie n'est pas un détail.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bordeaux compte <strong>122,6 jours de pluie</strong> d'au moins 1 mm par an, pour 924,9 mm cumulés. Novembre est le mois le plus pluvieux, avec 114,5 mm et 13,3 jours de pluie. Juillet est le plus sec, avec 48,6 mm et 7,1 jours de pluie.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'hiver bordelais reste doux : 7,1 °C de moyenne en janvier, et 7,3 jours de gel sur le mois.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Source : Météo-France, fiche climatologique de la station Bordeaux-Mérignac (33281001), normales 1991-2020. Licence Ouverte Etalab v2.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Acceptez-vous les chiens et les chats ?</strong><br>Oui, les animaux sont acceptés. <mark style="background:#ffe9b3">[À VÉRIFIER : espèces, poids, nombre]</mark></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Y a-t-il un supplément par animal ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse chiffrée obligatoire]</mark></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Peut-on laisser un animal seul dans l'appartement ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Où sortir un chien à proximité ?</strong><br>Les quais de la Garonne sont à 5 minutes à pied de la résidence.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Le parking est-il sur place ?</strong><br>Oui, un parking privé est accessible sur place à 15 € la nuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Les animaux sont-ils acceptes a l'appart'hotel Victoria Garden Bordeaux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, les animaux sont acceptes dans la residence."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ou sortir un chien a proximite de la residence ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les quais de la Garonne sont a 5 minutes a pied de la residence."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Le parking est-il sur place ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, un parking prive est accessible sur place a 15 EUR la nuit."
+   }
+  }
+ ]
+}
+</script>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p>Pour découvrir la résidence et toutes nos typologies : <a href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/">notre appart'hôtel à Bordeaux centre</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vous venez en voiture : <a href="https://www.victoriagarden.com/trouvez-votre-appart-hotel-a-bordeaux-avec-parking/">notre appart'hôtel à Bordeaux avec parking</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Voir nos appartements à Bordeaux</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
