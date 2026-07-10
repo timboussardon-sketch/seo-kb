@@ -16,6 +16,8 @@ related:
 
 # Mots-clés prioritaires — prise de note IA × cibles à besoin RGPD, non réglementées
 
+> **Consolidé le 2026-07-10** : la version de travail canonique vit dans le repo `leexi-seo`, `production/mots-cles-prioritaires-2026-07-09.md`. Ce fichier reste l'archive seo-kb.
+
 ## En résumé
 
 Cibles retenues avec un double filtre : **besoin RGPD/confidentialité fort** (l'argument souveraineté de Leexi porte) **et non bloquées par une réglementation sectorielle** (on écarte tout ce qui exige une certification que Leexi ne peut pas cocher aujourd'hui : HDS santé, SecNumCloud public, professions réglementées type ordre/déontologie).
