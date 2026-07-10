@@ -1,7 +1,7 @@
 <!-- H1 de la page (champ titre WordPress) : Appart'hôtel près du CHU de Bordeaux : un appartement avec cuisine pour accompagner un proche hospitalisé -->
 
 <!-- wp:paragraph -->
-<p>Victoria Garden Bordeaux centre est un appart'hôtel 3 étoiles de 100 appartements, au 127 cours de la Somme. La résidence est à <mark style="background:#ffe9b3">[À VÉRIFIER : temps de trajet réel jusqu au CHU Pellegrin, à pied et en tram]</mark> du CHU Pellegrin. Chaque appartement dispose d'une kitchenette : vous préparez vos repas à vos horaires, pas à ceux d'un restaurant. Les studios démarrent à 72 € la nuit, le parking est sur place à 15 € la nuit, et le tarif devient dégressif à partir de 30 nuits.</p>
+<p style="margin-bottom:20px;line-height:1.65">Victoria Garden Bordeaux centre est un appart'hôtel 3 étoiles de 100 appartements, au 127 cours de la Somme. La résidence est à <mark style="background:#ffe9b3">[À VÉRIFIER : temps de trajet réel jusqu au CHU Pellegrin, à pied et en tram]</mark> du CHU Pellegrin. Chaque appartement dispose d'une kitchenette : vous préparez vos repas à vos horaires, pas à ceux d'un restaurant. Les studios démarrent à 72 € la nuit, le parking est sur place à 15 € la nuit, et le tarif devient dégressif à partir de 30 nuits.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -9,19 +9,19 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Accompagner un proche hospitalisé, ce n'est pas un séjour d'hôtel</h2>
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Accompagner un proche hospitalisé, ce n'est pas un séjour d'hôtel</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Vous ne connaissez pas la durée. Vous rentrez tard, vous repartez tôt, vous mangez à des heures qui ne sont celles de personne. Vous avez besoin de trois choses : être près de l'hôpital, pouvoir cuisiner, et pouvoir prolonger sans refaire une réservation.</p>
+<p style="margin-bottom:20px;line-height:1.65">Vous ne connaissez pas la durée. Vous rentrez tard, vous repartez tôt, vous mangez à des heures qui ne sont celles de personne. Vous avez besoin de trois choses : être près de l'hôpital, pouvoir cuisiner, et pouvoir prolonger sans refaire une réservation.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>C'est ce qu'un appartement change par rapport à une chambre. Vous gardez une cuisine, vous lavez votre linge, vous ne dépendez pas d'un service de restauration.</p>
+<p style="margin-bottom:20px;line-height:1.65">C'est ce qu'un appartement change par rapport à une chambre. Vous gardez une cuisine, vous lavez votre linge, vous ne dépendez pas d'un service de restauration.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Notre résidence se trouve dans le centre de Bordeaux : <mark style="background:#ffe9b3">[À VÉRIFIER : politique de prolongation et d annulation pour ce motif]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65">Notre résidence se trouve dans le centre de Bordeaux : <mark style="background:#ffe9b3">[À VÉRIFIER : politique de prolongation et d annulation pour ce motif]</mark></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -29,11 +29,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">L'appartement adapté à un séjour long et imprévisible</h2>
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">L'appartement adapté à un séjour long et imprévisible</h2>
 <!-- /wp:heading -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Capacité</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Équipement</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À partir de</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio lits jumeaux</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette, salle d'eau</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio double</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette, salle d'eau</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Studio supérieur</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Suite</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : capacité]</mark></td><td style="padding:10px 14px">Kitchenette, espace séparé</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Capacité</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Équipement</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À partir de</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio lits jumeaux</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette, salle d'eau</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio double</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette, salle d'eau</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Studio supérieur</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Kitchenette</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr><tr><td style="padding:10px 14px">Suite</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : capacité]</mark></td><td style="padding:10px 14px">Kitchenette, espace séparé</td><td style="padding:10px 14px"><mark style="background:#ffe9b3">[À FOURNIR : tarif]</mark></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:spacer {"height":"24px"} -->
@@ -41,19 +41,19 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Ce qui est inclus, ce qui est en supplément</h2>
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Ce qui est inclus, ce qui est en supplément</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>Inclus</strong> : la kitchenette équipée, le wifi, le linge de lit.</p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Inclus</strong> : la kitchenette équipée, le wifi, le linge de lit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>En supplément</strong> : le parking sur place à 15 € la nuit, le petit-déjeuner à 12 € par personne, le ménage <mark style="background:#ffe9b3">[À FOURNIR : fréquence et tarif]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>En supplément</strong> : le parking sur place à 15 € la nuit, le petit-déjeuner à 12 € par personne, le ménage <mark style="background:#ffe9b3">[À FOURNIR : fréquence et tarif]</mark></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Les animaux sont acceptés. <mark style="background:#ffe9b3">[À VÉRIFIER : conditions et supplément]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65">Les animaux sont acceptés. <mark style="background:#ffe9b3">[À VÉRIFIER : conditions et supplément]</mark></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -61,11 +61,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Faire ses courses et cuisiner sans y penser</h2>
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Faire ses courses et cuisiner sans y penser</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Le Marché des Capucins est à <strong>5 minutes à pied</strong> de la résidence. C'est le marché couvert historique de Bordeaux : il reste praticable les jours de pluie, et vous y trouvez de quoi cuisiner pour la semaine sans prendre le tram.</p>
+<p style="margin-bottom:20px;line-height:1.65">Le Marché des Capucins est à <strong>5 minutes à pied</strong> de la résidence. C'est le marché couvert historique de Bordeaux : il reste praticable les jours de pluie, et vous y trouvez de quoi cuisiner pour la semaine sans prendre le tram.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -73,15 +73,15 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Où souffler une heure, entre deux visites</h2>
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Où souffler une heure, entre deux visites</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Quatre lieux calmes, accessibles à pied ou en un arrêt de tram. Les trois premiers sont couverts et fonctionnent par tous les temps.</p>
+<p style="margin-bottom:20px;line-height:1.65">Quatre lieux calmes, accessibles à pied ou en un arrêt de tram. Les trois premiers sont couverts et fonctionnent par tous les temps.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table style="border-collapse:collapse"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Lieu</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Depuis la résidence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Accès</th></tr></thead><tbody><tr><td style="padding:10px 14px">Cinéma Utopia</td><td style="padding:10px 14px">10 min</td><td style="padding:10px 14px">marche</td></tr><tr><td style="padding:10px 14px">Librairie Mollat</td><td style="padding:10px 14px">12 min</td><td style="padding:10px 14px">marche</td></tr><tr><td style="padding:10px 14px">Cathédrale Saint-André</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram A</td></tr><tr><td style="padding:10px 14px">Jardin Public</td><td style="padding:10px 14px">18 min</td><td style="padding:10px 14px">tram B</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Lieu</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Depuis la résidence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Accès</th></tr></thead><tbody><tr><td style="padding:10px 14px">Cinéma Utopia</td><td style="padding:10px 14px">10 min</td><td style="padding:10px 14px">marche</td></tr><tr><td style="padding:10px 14px">Librairie Mollat</td><td style="padding:10px 14px">12 min</td><td style="padding:10px 14px">marche</td></tr><tr><td style="padding:10px 14px">Cathédrale Saint-André</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">tram A</td></tr><tr><td style="padding:10px 14px">Jardin Public</td><td style="padding:10px 14px">18 min</td><td style="padding:10px 14px">tram B</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:spacer {"height":"32px"} -->
@@ -89,23 +89,23 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Questions fréquentes</h2>
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Questions fréquentes</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>À quelle distance êtes-vous du CHU Pellegrin ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse chiffrée obligatoire, en minutes à pied et en tram]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>À quelle distance êtes-vous du CHU Pellegrin ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse chiffrée obligatoire, en minutes à pied et en tram]</mark></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><strong>Peut-on prolonger un séjour au jour le jour ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on prolonger un séjour au jour le jour ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : réponse réception]</mark></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><strong>Y a-t-il une cuisine dans l'appartement ?</strong><br>Oui. Chaque appartement dispose d'une kitchenette équipée, dans toutes les typologies.</p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Y a-t-il une cuisine dans l'appartement ?</strong><br>Oui. Chaque appartement dispose d'une kitchenette équipée, dans toutes les typologies.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><strong>L'arrivée tardive est-elle possible ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : horaires de réception et procédure d arrivée tardive]</mark></p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>L'arrivée tardive est-elle possible ?</strong><br><mark style="background:#ffe9b3">[À VÉRIFIER : horaires de réception et procédure d arrivée tardive]</mark></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><strong>Le parking est-il disponible ?</strong><br>Un parking privé est accessible sur place à 15 € la nuit.</p>
+<p style="margin-bottom:20px;line-height:1.65"><strong>Le parking est-il disponible ?</strong><br>Un parking privé est accessible sur place à 15 € la nuit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
@@ -140,11 +140,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p>Pour découvrir la résidence et toutes nos typologies : <a href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/">notre appart'hôtel à Bordeaux centre</a>.</p>
+<p style="margin-bottom:20px;line-height:1.65">Pour découvrir la résidence et toutes nos typologies : <a href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/">notre appart'hôtel à Bordeaux centre</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Un séjour d'accompagnement dépasse souvent 30 nuits : consultez nos <a href="https://www.victoriagarden.com/appart-hotel-au-mois/">tarifs au mois</a>.</p>
+<p style="margin-bottom:20px;line-height:1.65">Un séjour d'accompagnement dépasse souvent 30 nuits : consultez nos <a href="https://www.victoriagarden.com/appart-hotel-au-mois/">tarifs au mois</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
