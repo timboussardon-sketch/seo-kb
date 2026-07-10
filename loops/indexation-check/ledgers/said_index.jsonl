@@ -13,3 +13,12 @@
 {"date":"2026-07-06","angle":"sitemap_canonical_mismatch (trailing slash) - 4e recurrence consecutive, P1 du 2026-06-15 sans effet 21 jours","report":"reports/indexation-organikk-2026-07-06.md"}
 {"date":"2026-07-06","angle":"lastmod_uniforme - 4e recurrence consecutive, P2 du 2026-06-15 sans effet 21 jours","report":"reports/indexation-organikk-2026-07-06.md"}
 {"date":"2026-07-06","angle":"sitemap stable 143 URLs (delta 0 vs run precedent) - trajectoire 21j 169-136-143-143","report":"reports/indexation-organikk-2026-07-06.md"}
+{"date":"2026-07-10","angle":"1er audit indexation Organikk sur le SITE COMPLET (146 URLs) et non le seul perimetre /wiki","perimetre":"organikk.co - 146 URLs du sitemap","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"1ere mesure d'indexation reelle via GSC searchAnalytics (edge admin-gsc-export) : 49/146 confirmees, 97 indeterminees - fin des 4 runs 'non testable'","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"CRITIQUE /manifeste/ : 404 servie par Google avec 30 imp/28j sur 'manifeste seo' - invisible aux 4 runs precedents car absente du sitemap","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"CRITIQUE /accompagnement-seo-geo orpheline : page d'offre 1272 mots, 0 lien interne entrant sur 146 pages","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"sitemap_canonical_mismatch verifie sur 146/146 (plus une hypothese) - 5e recurrence, P1 sans effet 25j","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"lastmod_uniforme 146/146 - 5e recurrence, P2 sans effet 25j","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"wiki mort en visibilite : 38/40 fiches a 0 impression, 10/14 des pages <300 mots sont des fiches wiki","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"scraping site: definitivement mort (5/5 runs) - proposer le remplacement par urlInspection API","report":"reports/indexation-organikk-2026-07-10.md"}
+{"date":"2026-07-10","angle":"sitemap 146 URLs (delta +3 vs 143) - trajectoire 28j 169-136-143-143-146","report":"reports/indexation-organikk-2026-07-10.md"}
