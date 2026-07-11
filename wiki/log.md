@@ -1187,3 +1187,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 ## [2026-07-10] hypothese | H-009 → ouvert · H-007 → en-test
 - H-009: clause de falsification W27 appliquée, fiche golfiller annotée « J+30 non mesuré », échéances J+90 seules actives
 - H-007: conditions W25 remplies (sprint réel + baseline avant décision + instrument GSC en place)
+
+## [2026-07-11] ingest | Scrape auto publications (Algorithme + Organikk)
+- source_type: article
+- sources créées: 7 ([[sources/2026-07-08-algorithme-redaction-claude]], [[sources/2026-07-07-organikk-guide-reddit-seo-geo]], [[sources/2026-07-07-organikk-automatiser-audit-seo-claude-code]], [[sources/2026-01-20-organikk-roadmap-seo-2026]], [[sources/2026-01-15-organikk-mots-cles-seo-2026]], [[sources/2026-01-12-organikk-seo-serrurier-lyon]], [[sources/2026-01-08-organikk-seo-agence-immobiliere-lyon]])
+- posts sautés (déjà ingérés): 33 (11 Algorithme + 22 Organikk vérifiés par URL)
+- wikilinks: min 2/fiche, 0 lien mort (vérifié)
+- nœuds suggérés (à créer en curation): concepts/topical-authority (cité dans roadmap-seo-2026 et mots-cles-seo-2026) · concepts/cocon-semantique (pivot des 2 articles SEO local) · entities/coudac (agence citée dans redaction-claude)
+- angle SEO transverse: la frontière IA/humain se précise partout — l'IA exécute (audit diff, transposition d'idées), l'humain garde la pensée, le ton et la data propriétaire ; les 4 articles de janvier montrent la doctrine déjà en place avant les posts système

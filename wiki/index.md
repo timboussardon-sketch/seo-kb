@@ -31,9 +31,13 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (88)
+## Sources (95)
 
-### Articles (41)
+### Articles (48)
+- [[sources/2026-01-08-organikk-seo-agence-immobiliere-lyon]] — SEO local immobilier Lyon : micro-intentions, estimateurs, newsletter à backlinks
+- [[sources/2026-01-12-organikk-seo-serrurier-lyon]] — SEO serrurier Lyon : transparence tarifaire, 30 KW bottom-funnel, leads seuls
+- [[sources/2026-01-15-organikk-mots-cles-seo-2026]] — Mots-clés 2026 : volume = projection, GSC = fait, requêtes 24+ mots
+- [[sources/2026-01-20-organikk-roadmap-seo-2026]] — Roadmap 6 phases : intentions avant audit, MVS 30 contenus/3 mois
 - [[sources/2026-01-28-organikk-premier-agent-seo-ia]] — Premier agent SEO Claude : config 3 temps, duplicable 30 min/client
 - [[sources/2026-02-10-organikk-creer-bot-ia-seo]] — Bot IA SEO sans code : NotebookLM + Fusionn + GEM Gemini (mémoire client)
 - [[sources/2026-02-20-organikk-information-gain-geo]] — Information gain = levier GEO : faits atomiques, +41% citations via quotes experts
@@ -75,6 +79,9 @@ status: stable
 - [[sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic]] — Requête cliquable vs clic : viser le transactionnel qui échappe à l'AI Overview
 - [[sources/2026-06-29-algorithme-livres-ia-amazon]] — Livres IA >60% sur Amazon, ChatGPT 54,7% du trafic LLM, signaux humains
 - [[sources/2026-07-01-algorithme-x2-trafic-3-mois]] — Cas client X2 trafic/3 mois sans achat de lien (pages qualifiées + data GSC/Reddit)
+- [[sources/2026-07-07-organikk-automatiser-audit-seo-claude-code]] — Audit SEO mensuel automatisé Claude Code : lire le diff, pas produire l'analyse
+- [[sources/2026-07-07-organikk-guide-reddit-seo-geo]] — Guide Reddit SEO/GEO : 80% posts cités < 20 upvotes, répétition > seuil
+- [[sources/2026-07-08-algorithme-redaction-claude]] — Rédaction + Claude : l'IA transpose, ne pense jamais ; templates ton de voix + anti-IA
 
 ### Doctrine (23)
 - [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim
