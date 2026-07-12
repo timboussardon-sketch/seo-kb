@@ -352,3 +352,17 @@ Aucun diff de skill proposé ce run. Le pattern « confirmation Google d'un inci
 ### Sources découvertes ce run
 
 - 5 nouvelles explore ajoutées : seoteric.com (0.55 agence local SEO writeup), sterlingsky.ca (0.75 Joy Hawkins expert local SEO reconnue, candidate exploit après 2e utilisation), api.on-page.ai (0.6 vendeur GEO/PLS étude proprietaire), tryprofound.com (0.6 vendeur AI visibility concurrent Ahrefs biais commercial explicite), rankability.com (0.6 blog outil AI visibility), ewrdigital.com (0.55 agence review). sterlingsky.ca est la candidate la plus forte au passage exploit en revue hebdo (Joy Hawkins référence Google Business Profile Product Expert depuis 2012, source fiable pour tout dossier local SEO / Business Profile).
+
+## Questions ajoutées après 2026-07-12-v2
+
+### Sources découvertes ce run
+
+- 4 nouvelles explore ajoutées : josephcharnin.com (0.6 blog-analyse-praticien-indépendant, candidate à observer sur 2-3 prochaines éditions), unrealwebmarketing.com (0.55 blog-analyse-praticien), github.com/agentic-commerce-protocol (0.75 spécification-technique-primaire, source officielle pour tout travail sur ACP), searchsignal.online (0.6 recherche-indépendante-AI-search, à recouper avec 2e source sur 2 prochaines éditions).
+
+### Question méthode (à trancher en revue hebdo)
+
+- Quand une édition v1 existe déjà pour la journée (contexte cloud automatique), le run v2 doit-il chercher activement un pilier différent de v1 (comme fait ce run : v1 Business SEO → v2 GEO / search IA) ou peut-il rester sur le même pilier si le sujet est distinct ? Position tenue ce run : varier le pilier est cohérent avec la directive Tim « varier le pilier d'une édition à l'autre », et pouvoir varier même à l'intérieur d'une même journée est un avantage éditorial (couverture plus large des 4 piliers dans la semaine). À valider explicitement.
+
+### Question sujet (à surveiller)
+
+- Cloudflare Content Signals (mentionné 2026-07-08 P-2026-06-01-v2-1) et Cloudflare Pay Per Use (2026-07-12-v2) : deux mécaniques distinctes du même acteur qui pourraient converger à l'échéance 15 septembre 2026. Faut-il créer une fiche `wiki/concepts/cloudflare-controle-acces-llm` qui consolide les deux ? Ou garder deux traitements distincts dans le vault ? Position tenue ce run : ne pas créer de fiche, laisser la brève B2 (0708) et l'info du jour (v2 aujourd'hui) documenter deux temps distincts. À arbitrer en revue hebdo si la convergence effective se produit après le 15 septembre.
