@@ -1195,3 +1195,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: min 2/fiche, 0 lien mort (vérifié)
 - nœuds suggérés (à créer en curation): concepts/topical-authority (cité dans roadmap-seo-2026 et mots-cles-seo-2026) · concepts/cocon-semantique (pivot des 2 articles SEO local) · entities/coudac (agence citée dans redaction-claude)
 - angle SEO transverse: la frontière IA/humain se précise partout — l'IA exécute (audit diff, transposition d'idées), l'humain garde la pensée, le ton et la data propriétaire ; les 4 articles de janvier montrent la doctrine déjà en place avant les posts système
+
+## [2026-07-13] revue-presse | Avis Google Business Profile effacés par erreur
+- output: raw/revue-de-presse/2026-07-13-revue-presse.md
+- info du jour: avis GBP disparus (3-12 juillet, enquête Google en cours) — pilier SEO local
+- brèves: GPT-5.6 + ChatGPT Work (OpenAI) / Semrush AI Visibility Index 126M prompts / llms.txt inutile selon Google
+- connexion doctrine: data propriétaire (les avis Google ne sont pas un actif possédé)
+- 1034 mots, checks anti-IA + anti-jargon passés
