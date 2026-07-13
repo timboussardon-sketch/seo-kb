@@ -366,3 +366,9 @@ Aucun diff de skill proposé ce run. Le pattern « confirmation Google d'un inci
 ### Question sujet (à surveiller)
 
 - Cloudflare Content Signals (mentionné 2026-07-08 P-2026-06-01-v2-1) et Cloudflare Pay Per Use (2026-07-12-v2) : deux mécaniques distinctes du même acteur qui pourraient converger à l'échéance 15 septembre 2026. Faut-il créer une fiche `wiki/concepts/cloudflare-controle-acces-llm` qui consolide les deux ? Ou garder deux traitements distincts dans le vault ? Position tenue ce run : ne pas créer de fiche, laisser la brève B2 (0708) et l'info du jour (v2 aujourd'hui) documenter deux temps distincts. À arbitrer en revue hebdo si la convergence effective se produit après le 15 septembre.
+
+## Questions / observations 2026-07-13-v2
+
+- **Non bloquant.** Kerhoas cite dans son article des chiffres (ChatGPT US base flat depuis septembre 2025, financials OpenAI 2025) sans donner de lien primaire. Recoupement fait de notre côté sur Zitron/FT/TechSpot pour les financials et sur TechCrunch/Sensor Tower décembre 2025 pour ChatGPT. Question : faut-il durcir la règle et systématiquement re-sourcer chaque chiffre cité par un article d'analyse tiers, même quand il paraît courant ? Proposition : oui, à mettre en observation dans `wording_rules.md` sous « chiffres relayés ».
+- **Non bloquant.** Le préprint Sielinski IQRush n'est pas encore publié à la date du 11 juillet (annoncé pour la semaine suivante par Southern). Notre B1 s'appuie sur la couverture SEJ + le travail Saint-Gall indépendant. Question : quand le préprint sera publié, revient sur la brève pour ajouter le lien direct arxiv/SSRN et vérifier que la méthodologie décrite par Southern est bien la méthodologie publiée. À caler pour la revue hebdo.
+- **Non bloquant.** Le workflow `youtube-claude-seo/yt_best.py --months 1` n'est pas utilisé en édition cloud (binaire local). À exécuter à la prochaine édition locale pour élargir la surface de découverte.
