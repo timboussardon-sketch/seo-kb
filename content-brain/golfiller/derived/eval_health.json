@@ -1,12 +1,14 @@
 {
   "brain": "golfiller",
-  "generated": "2026-06-29",
+  "generated": "2026-07-13",
   "runs": 4,
   "claims_total": 11,
   "claims_verified": 0,
   "predictions_open": 3,
-  "predictions_overdue": 0,
+  "predictions_overdue": 1,
   "predictions_resolved": 0,
-  "status": "OK",
-  "reasons": []
+  "status": "WATCH",
+  "reasons": [
+    "1 prediction(s) en retard"
+  ]
 }
