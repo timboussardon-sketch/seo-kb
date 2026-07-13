@@ -15,9 +15,9 @@ status: stable
 
 Fichier synchronisé automatiquement depuis la table `prospection_pipeline` (Supabase fusionn), toutes les heures. Ne pas éditer à la main : toute modification sera écrasée à la synchro suivante.
 
-La base compte 309 prospects. 116 invitations sont parties, 15 sont acceptées. 173 prospects restent dans la file LK.
+La base compte 305 prospects. 127 invitations sont parties, 15 sont acceptées. 157 prospects restent dans la file LK.
 
-## Invitations envoyées (116)
+## Invitations envoyées (127)
 
 | Startup | Contact | Statut | Acceptée | Dernière maj |
 |---|---|---|---|---|
@@ -113,14 +113,23 @@ La base compte 309 prospects. 116 invitations sont parties, 15 sont acceptées. 
 | Eledone | Bruno Heckel | a_contacter |  | 2026-07-04 |
 | K-Ren | Lucie Doriez | a_contacter |  | 2026-07-04 |
 | Nabu | Arnaud Doly | a_contacter |  | 2026-07-04 |
-| Bloom Lasers | Julien Saby | a_contacter |  | 2026-07-04 |
 | MaGestionPsy | Alexandre De Beukelaer | a_contacter |  | 2026-07-04 |
+| Bluedigo | Maxime Baffert | a_contacter |  | 2026-07-04 |
+| Holivia | Jérôme Crest | a_contacter |  | 2026-07-04 |
+| Tenacy | Cyril Guillet | a_contacter |  | 2026-07-04 |
+| Patrowl | Nicolas Mattiocco | a_contacter |  | 2026-07-04 |
+| ZestMeUp | Christophe Bergeon | a_contacter |  | 2026-07-04 |
+| Anozr Way | Philippe Luc | a_contacter |  | 2026-07-04 |
+| Leviia | William Méauzoone | a_contacter |  | 2026-07-04 |
+| MyTraffic | Hakim Saadaoui | a_contacter |  | 2026-07-04 |
 | Carbonfact | Marc Laurent | a_contacter |  | 2026-07-04 |
 | Energiency | Arnaud Legrand | a_contacter |  | 2026-07-04 |
 | Lizee | Anna Balez | a_contacter |  | 2026-07-04 |
 | Formality | Eliott Reilhac | a_contacter |  | 2026-07-04 |
+| Bloom Lasers | Julien Saby | a_contacter |  | 2026-07-04 |
 | ProTechnologies | Hervé Bozon-Petrier | a_contacter |  | 2026-07-04 |
-| Mindflow | Paul-Arthur Jonville | a_contacter |  | 2026-07-04 |
+| Orthomax | Geoffroy Lapointe | a_contacter |  | 2026-07-04 |
+| Corma | Héloïse Rozès | a_contacter |  | 2026-07-04 |
 | Elemate Technologies | Thomas Robert | a_contacter |  | 2026-07-04 |
 | Wineriz | Charles Riveau | a_contacter |  | 2026-07-04 |
 | Vizzia | Katrin de Proyart | a_contacter |  | 2026-07-04 |
@@ -134,11 +143,13 @@ La base compte 309 prospects. 116 invitations sont parties, 15 sont acceptées. 
 | Riot | Benjamin Netter | a_contacter |  | 2026-07-04 |
 | Beehire | Joey Cariano | a_contacter |  | 2026-07-04 |
 | TinyMDM | Yann Mareschal | a_contacter |  | 2026-07-04 |
+| kiwiHR | Sacha Taghavi | a_contacter |  | 2026-07-04 |
 | nooa | Luc Romano | a_contacter |  | 2026-07-04 |
+| Mindflow | Paul-Arthur Jonville | a_contacter |  | 2026-07-04 |
 | Resilio | Amael Parreaux-Ey | a_contacter |  | 2026-07-04 |
 | Witik | Arnaud Zilliox | a_contacter |  | 2026-07-04 |
 
-## File LK — à contacter (173)
+## File LK — à contacter (157)
 
 | Startup | Contact | Jour | Score | Batch |
 |---|---|---|---|---|
@@ -225,33 +236,25 @@ La base compte 309 prospects. 116 invitations sont parties, 15 sont acceptées. 
 | Marble | Arnaud Schwartz |  | 4 | B4 tech-IA |
 | .txt (dottxt) | Rémi Louf |  | 4 | B4 tech-IA |
 | ICONO | Louis Develle |  | 4 | B4 tech-IA |
-| Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
 | Lupin & Holmes | Roni Carta |  | 5 | B4 tech-IA |
+| Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
 | Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
 | Geovelo | Gaël Sauvanet | J8 | 0 | B2 éthique |
 | Sami | Tanguy Robert | J8 | 2 | B2 éthique |
 | Getinside | Maxime Garrigues | J8 | 3 | B3 métier+seed |
 | Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
+| Osteo2ls | Antoine Mentré |  | 5 | B3 métier+seed |
 | Scriboupsy | Blandine Coudray |  | 3 | B3 métier+seed |
 | NeoXperiences | Boris Courté | J8 | 4 | B3 métier+seed |
-| Scorp-io | Jean-Romain Bardet | J8 | 4 | B3 métier+seed |
-| Cementic | Samir Raddi | J8 | 4 | B3 métier+seed |
-| GetMint | Joan Burkovic | J8 | 4 | B3 métier+seed |
-| Entent | Mathias Fonlupt | J8 | 4 | B3 métier+seed |
-| Osteo2ls | Antoine Mentré |  | 5 | B3 métier+seed |
-| Docorga | Florian Faideau | J7 | 5 | B3 métier+seed |
 | ProGBat | Thierry Lecocq | J7 | 5 | B3 métier+seed |
-| Extrabat | Anthony Body | J7 | 5 | B3 métier+seed |
+| Diapaz | Cyril Bouchet | J7 | 5 | B3 métier+seed |
 | RDV360 | Ludovic Diligeart | J7 | 5 | B3 métier+seed |
 | Azeoo | Anthony Desbois | J7 | 5 | B3 métier+seed |
+| Extrabat | Anthony Body | J7 | 5 | B3 métier+seed |
 | Axomove | Boris Lévêque | J7 | 5 | B3 métier+seed |
-| Tehtris | Éléna Poincet | J8 | 4 | B2 éthique |
-| Sencrop | Michael Bruniaux |  | 4 | B2 éthique |
-| Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
-| Greenspector | Thomas Corvaisier | J8 | 4 | B2 éthique |
-| Sarus | Maxime Agostini | J7 | 4 | B2 éthique |
 | MotoClic | Jean-François Rullier | J7 | 4 | B3 métier+seed |
 | Partnerimmo | Alexandre Chopine | J7 | 4 | B3 métier+seed |
+| Objow | Jonathan Le Duc | J7 | 5 | B3 métier+seed |
 | Jardisoft | Kim Billout |  | 4 | B3 métier+seed |
 | Shortcuts | Anthony Desmars | J8 | 4 | B3 métier+seed |
 | Webosteo | Michaël Chazel | J7 | 4 | B3 métier+seed |
@@ -266,57 +269,49 @@ La base compte 309 prospects. 116 invitations sont parties, 15 sont acceptées. 
 | Orakle Weather | Stella Jovet | J7 | 4 | B3 métier+seed |
 | Lemrock | Roxane Laigle | J7 | 4 | B3 métier+seed |
 | Dowgo | Oscar Dumant | J8 | 4 | B3 métier+seed |
-| Objow | Jonathan Le Duc | J7 | 5 | B3 métier+seed |
+| Entent | Mathias Fonlupt | J8 | 4 | B3 métier+seed |
+| GetMint | Joan Burkovic | J8 | 4 | B3 métier+seed |
+| Cementic | Samir Raddi | J8 | 4 | B3 métier+seed |
+| Scorp-io | Jean-Romain Bardet | J8 | 4 | B3 métier+seed |
 | OneFlash | Lucas Di Franco | J7 | 5 | B3 métier+seed |
 | Hubblo | Benoit Petit | J7 | 4 | B2 éthique |
-| Diapaz | Cyril Bouchet | J7 | 5 | B3 métier+seed |
 | Apiday | Édouard Audi | J7 | 4 | B2 éthique |
+| Docorga | Florian Faideau | J7 | 5 | B3 métier+seed |
 | Holis | Martin Besnier | J7 | 4 | B2 éthique |
+| Tehtris | Éléna Poincet | J8 | 4 | B2 éthique |
+| Sencrop | Michael Bruniaux |  | 4 | B2 éthique |
+| Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
+| Greenspector | Thomas Corvaisier | J8 | 4 | B2 éthique |
+| Sarus | Maxime Agostini | J7 | 4 | B2 éthique |
 | Auto Gestion | Hector Snowman |  | 2 | B3 métier+seed |
 | SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
 | Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
+| Sêmeia | Pierre Hornus | J6 | 5 | B2 éthique |
 | Popina | Florion Coiffé | J7 | 5 | B3 métier+seed |
 | LOCKimmo | Julien Dourlen | J6 | 5 | B3 métier+seed |
-| Orthomax | Geoffroy Lapointe | J6 | 5 | B3 métier+seed |
-| Commown | Adrien Montagut | J6 | 5 | B2 éthique |
 | Apimo | Nicolas Guillaud de Saint-Fer… | J6 | 5 | B3 métier+seed |
 | Terapiz | Frédéric Lefetz | J6 | 5 | B3 métier+seed |
 | Copriciel | Mohamed Badaoui | J6 | 5 | B3 métier+seed |
 | Costructor | Mathieu Affejee | J6 | 5 | B3 métier+seed |
 | OOTI | Maxime Riahi | J6 | 5 | B3 métier+seed |
-| Fulll | Pierre Bourdu | J6 | 5 | B3 métier+seed |
 | Milo | Caroline Moga-Birling | J6 | 5 | B3 métier+seed |
 | Klaxo | Evguen Bernat | J6 | 5 | B3 métier+seed |
 | Ublo | Flavien Douetteau | J6 | 5 | B3 métier+seed |
 | Free Devis Factures | Jean-Pierre Eldin |  | 5 | B3 métier+seed |
+| Filigran | Samuel Hassine | J6 | 5 | B2 éthique |
+| Jamespot | Alain Garnier | J6 | 5 | B2 éthique |
+| Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
 | Fitnet | Laurent Salsé | J6 | 5 | B3 métier+seed |
 | abaseo | François Herbreteau | J6 | 5 | B3 métier+seed |
 | dr.veto | Hervé Hiard | J6 | 5 | B3 métier+seed |
-| Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
-| Bluedigo | Maxime Baffert | J6 | 5 | B2 éthique |
-| Anozr Way | Philippe Luc | J5 | 5 | B2 éthique |
-| Dametis | Julian Aristizabal | J5 | 5 | B2 éthique |
-| Tenacy | Cyril Guillet | J5 | 5 | B2 éthique |
-| Patrowl | Nicolas Mattiocco | J5 | 5 | B2 éthique |
-| Carbo | Simon Létourneau | J5 | 5 | B2 éthique |
-| Leviia | William Méauzoone | J5 | 5 | B2 éthique |
-| Holivia | Jérôme Crest | J5 | 5 | B1 tech |
-| ZestMeUp | Christophe Bergeon | J5 | 5 | B1 tech |
-| MyTraffic | Hakim Saadaoui | J5 | 5 | B1 tech |
 | Ikosoft | Jean-Claude Brosset | J6 | 5 | B3 métier+seed |
 | Tactill | Grégoire Lopez | J6 | 5 | B3 métier+seed |
 | Alivio | Jérémie Guichot | J6 | 5 | B3 métier+seed |
 | Albus | Geoffroy Lapointe | J6 | 5 | B3 métier+seed |
 | Epsor | Julien Niquet | J6 | 5 | B2 éthique |
-| Sêmeia | Pierre Hornus | J6 | 5 | B2 éthique |
-| Filigran | Samuel Hassine | J6 | 5 | B2 éthique |
-| Jamespot | Alain Garnier | J6 | 5 | B2 éthique |
 | Rounded | Aymeric Vaudelin |  | 5 | B1 tech |
-| kiwiHR | Sacha Taghavi | J5 | 5 | B1 tech |
-| EvalAndGo | Sébastien Lerouge | J5 | 5 | B1 tech |
-| Corma | Héloïse Rozès | J5 | 5 | B1 tech |
 
-## Hors file (20)
+## Hors file (21)
 
 Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 
@@ -332,14 +327,15 @@ Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 | BiteSEO |  | a_contacter |  |
 | CarouselCraft | David Manneveau | a_contacter |  |
 | Mageltys | Olivier de La Chevasnerie | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/ol… |
+| SO-FA | Laurent Tixier | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/l… |
 | Tanaguru | Frédéric Halna | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/fr… |
 | ArtisanFacture | Valentin Halgand | a_contacter |  |
 | Numalis | Arnault Ioualalen | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/a… |
 | Snowpack | Frédéric Laurent | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/f… |
-| SO-FA | Laurent Tixier | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/l… |
-| Stabler | Anis Gandoura | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/a… |
+| EvalAndGo | Sébastien Lerouge | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/se… |
 | Youmethem | François-Xavier Gourvès | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-11 : https://www.linkedin.com/in/f… |
 | Custocy | Sébastien Sivignon | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-11 : https://www.linkedin.com/in/s… |
 | Weepo | Hicham El Maniari | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/hi… |
 | Adveez | Karim Ben Dhia | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/k… |
+| Stabler | Anis Gandoura | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/a… |
 
