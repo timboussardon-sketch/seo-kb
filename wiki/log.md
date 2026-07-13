@@ -1202,3 +1202,13 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - brèves: GPT-5.6 + ChatGPT Work (OpenAI) / Semrush AI Visibility Index 126M prompts / llms.txt inutile selon Google
 - connexion doctrine: data propriétaire (les avis Google ne sont pas un actif possédé)
 - 1034 mots, checks anti-IA + anti-jargon passés
+
+## [2026-07-13] backlog | sweep — 240 en backlog (P1:123 P2:35 P3:82)
+- 373 fichiers raw scannés (+24 vs sweep 2026-07-06)
+- sorties backlog : ranker-chatgpt → [[sources/2026-05-08-organikk-ranker-chatgpt-2026]], strategie-seo-serrurier-lyon → [[sources/2026-01-12-organikk-seo-serrurier-lyon]], strategie-seo-agence-immobiliere-lyon → [[sources/2026-01-08-organikk-seo-agence-immobiliere-lyon]] (scrape publications 07-05/07-11) ; etude-ctr-ai-overviews-gsc sorti par skip acté [[revue-hebdo/2026-W28]]
+- ingéré à chaud sans passer par le backlog : call-14-vincent-upscale → [[sources/2026-07-09-call-14-vincent-upscale]] (couvre aussi upscale-call-vincent + upscale-preaudit)
+- entrées backlog (21 P1) : sprint corpus Victoria Garden (7), pré-calls horizoncrm/simplimo/upscale-email/yalp + modèle pre-email (9), sprint corpus Golfiller (3), leexi/keywords/mots-cles-prioritaires-2026-07-09 (1), x-playbook/Modele-tweet-SEO (1)
+- régularisation (9 P3, jamais comptés) : scheduled-skills ×3, fusionn/README, qadence-seo-agent/README, scoring/opendecoder, cas-clients ×2, clients/golfiller
+- note comptage : P1 du sweep précédent affiché 98 mais sommant à 102 dans son propre listing — recompté from scratch
+- prochain lot proposé (= lot W29 voté [[revue-hebdo/2026-W28]]) : refresh [[sources/2026-06-19-playbook-reddit-seo-geo]] (tête de lot), leexi-call-2026-06-24-notes-meet + keywords/recherche-2026-06-16-rgpd (date de mort W29) ; option : stack-corpus-victoriagarden + victoriagarden-faits-verifies-2026-07-10
+- nouveaux skips: aucun (le skip etude-ctr avait été acté en W28)
