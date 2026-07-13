@@ -1,12 +1,12 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-07-12 09:32 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-07-13 09:32 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **815 fichiers** markdown (476 dans `raw/`, 339 dans `wiki/`)
-- **1454k mots** au total
-- **7073 wikilinks** (moyenne 8.7 / fichier)
+- **818 fichiers** markdown (477 dans `raw/`, 341 dans `wiki/`)
+- **1456k mots** au total
+- **7156 wikilinks** (moyenne 8.7 / fichier)
 - **Ratio raw→wiki** : 0.71 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
@@ -15,9 +15,9 @@
 |---------|---------:|-----:|:--------------:|
 | raw/articles | 65 | 122.5k | 2026-06-08 |
 | raw/notes | 86 | 210.3k | 2026-07-03 |
-| raw/revue-de-presse | 32 | 33.6k | 2026-07-11 |
+| raw/revue-de-presse | 33 | 34.6k | 2026-07-12 |
 | raw/newsletter | 0 | 0 | — |
-| raw/journal | 58 | 72.4k | 2026-07-11 |
+| raw/journal | 58 | 72.4k | 2026-07-12 |
 | raw/briefs | 0 | 0 | — |
 | raw/etudes-seo | 7 | 6.1k | 2026-06-08 |
 | raw/papers | 5 | 2.3k | 2026-05-26 |
@@ -30,25 +30,25 @@
 | wiki/queries | 13 | 24.0k | 2026-07-09 |
 | wiki/posts-linkedin | 2 | 1.1k | 2026-06-18 |
 | wiki/revues-presse | 2 | 2.2k | 2026-06-08 |
-| wiki/audit | 8 | 6.8k | 2026-06-20 |
+| wiki/audit | 9 | 7.9k | 2026-07-12 |
 
 ## 📈 Production
 
 ### 7 derniers jours
-- **95** commits
-- **115** fichiers créés
-- **34** fichiers modifiés
+- **91** commits
+- **73** fichiers créés
+- **27** fichiers modifiés
 
 ### 30 derniers jours
-- **441** commits
-- **362** fichiers créés
-- **102** fichiers modifiés
+- **399** commits
+- **357** fichiers créés
+- **97** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
-- **32** éditions publiées (15 sur les 30 derniers jours)
-- Dernière édition : `2026-07-11-revue-presse` (il y a 1j)
+- **33** éditions publiées (15 sur les 30 derniers jours)
+- Dernière édition : `2026-07-12-revue-presse` (il y a 1j)
 - **Couverture 30j** : 15/30 (50%)
 
 ### Newsletter
@@ -84,7 +84,7 @@
 - `[[anti-ai-writing]]` — **73** backlinks
 - `[[surprise-metric]]` — **69** backlinks
 
-### Orphelins (sans backlink) : **459**
+### Orphelins (sans backlink) : **462**
 
 - `raw/journal/2026-05-07.md`
 - `raw/journal/2026-06-29.md`
@@ -96,32 +96,31 @@
 - `raw/journal/2026-05-13.md`
 - `raw/journal/2026-06-09.md`
 - `raw/journal/2026-05-27.md`
-*(459 au total — voir `wiki/audit` pour la liste complète)*
+*(462 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: █▅█████▅█▅██▅██▃█▅██████▅▃███·
+30j: ▅█████▅█▅██▅██▃█▅██████▅▃████▁
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
-**Streak actuel** : 0 jour(s) consécutif(s) avec commit
+**Streak actuel** : 43 jour(s) consécutif(s) avec commit
 
 ### Dossiers inactifs > 14j
 
-- `raw/articles` — dernière modif il y a **34j** (2026-06-08)
-- `wiki/syntheses` — dernière modif il y a **34j** (2026-06-08)
-- `wiki/briefs` — dernière modif il y a **31j** (2026-06-11)
-- `wiki/audit` — dernière modif il y a **22j** (2026-06-20)
+- `raw/articles` — dernière modif il y a **35j** (2026-06-08)
+- `wiki/syntheses` — dernière modif il y a **35j** (2026-06-08)
+- `wiki/briefs` — dernière modif il y a **32j** (2026-06-11)
 
 ## 🤖 Automatisations (LaunchAgents)
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-07-12 09:05 | 0 | ✓ |
-| recap-jour | 2026-07-11 23:05 | 0 | ✓ |
+| revue-presse | 2026-07-13 09:14 | 0 | ✓ |
+| recap-jour | 2026-07-13 09:14 | 0 | ✓ |
 | refresh-snapshots | 2026-06-01 08:14 | 0 | ✓ |
-| dashboard | 2026-07-12 09:32 | 0 | ✓ |
+| dashboard | 2026-07-13 09:32 | 0 | ✓ |
 
 ---
 
