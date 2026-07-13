@@ -1229,3 +1229,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - « Google préconise 60 % » : conservé sur décision Tim
 - règle posée : jamais deux stats contradictoires en ligne sans arbitrage
 - fiche corrigée : [[concepts/requete-cliquable-vs-clic]]
+
+## [2026-07-13] audit | Cohérence des stats organikk.co : 411 phrases à %, 7 familles corrigées
+- output: [[queries/audit-stats-organikk-2026-07-13]]
+- arbitrages Tim : fourchette Reddit 20-47 %, archives NL datées, courbe FPS simulateur
+- 23x démêlé (Opollo 5x vs Ahrefs propres signups), GEO-bench +13 % autorité rétabli
