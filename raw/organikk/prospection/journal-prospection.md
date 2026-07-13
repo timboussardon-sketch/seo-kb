@@ -15,9 +15,9 @@ status: stable
 
 Fichier synchronisé automatiquement depuis la table `prospection_pipeline` (Supabase fusionn), toutes les heures. Ne pas éditer à la main : toute modification sera écrasée à la synchro suivante.
 
-La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 176 prospects restent dans la file LK.
+La base compte 309 prospects. 116 invitations sont parties, 15 sont acceptées. 173 prospects restent dans la file LK.
 
-## Invitations envoyées (115)
+## Invitations envoyées (116)
 
 | Startup | Contact | Statut | Acceptée | Dernière maj |
 |---|---|---|---|---|
@@ -113,12 +113,13 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | Eledone | Bruno Heckel | a_contacter |  | 2026-07-04 |
 | K-Ren | Lucie Doriez | a_contacter |  | 2026-07-04 |
 | Nabu | Arnaud Doly | a_contacter |  | 2026-07-04 |
+| Bloom Lasers | Julien Saby | a_contacter |  | 2026-07-04 |
 | MaGestionPsy | Alexandre De Beukelaer | a_contacter |  | 2026-07-04 |
+| Carbonfact | Marc Laurent | a_contacter |  | 2026-07-04 |
+| Energiency | Arnaud Legrand | a_contacter |  | 2026-07-04 |
 | Lizee | Anna Balez | a_contacter |  | 2026-07-04 |
 | Formality | Eliott Reilhac | a_contacter |  | 2026-07-04 |
-| Bloom Lasers | Julien Saby | a_contacter |  | 2026-07-04 |
 | ProTechnologies | Hervé Bozon-Petrier | a_contacter |  | 2026-07-04 |
-| Energiency | Arnaud Legrand | a_contacter |  | 2026-07-04 |
 | Mindflow | Paul-Arthur Jonville | a_contacter |  | 2026-07-04 |
 | Elemate Technologies | Thomas Robert | a_contacter |  | 2026-07-04 |
 | Wineriz | Charles Riveau | a_contacter |  | 2026-07-04 |
@@ -137,7 +138,7 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | Resilio | Amael Parreaux-Ey | a_contacter |  | 2026-07-04 |
 | Witik | Arnaud Zilliox | a_contacter |  | 2026-07-04 |
 
-## File LK — à contacter (176)
+## File LK — à contacter (173)
 
 | Startup | Contact | Jour | Score | Batch |
 |---|---|---|---|---|
@@ -226,8 +227,8 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | ICONO | Louis Develle |  | 4 | B4 tech-IA |
 | Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
 | Lupin & Holmes | Roni Carta |  | 5 | B4 tech-IA |
-| Geovelo | Gaël Sauvanet | J8 | 0 | B2 éthique |
 | Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
+| Geovelo | Gaël Sauvanet | J8 | 0 | B2 éthique |
 | Sami | Tanguy Robert | J8 | 2 | B2 éthique |
 | Getinside | Maxime Garrigues | J8 | 3 | B3 métier+seed |
 | Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
@@ -237,18 +238,13 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | Cementic | Samir Raddi | J8 | 4 | B3 métier+seed |
 | GetMint | Joan Burkovic | J8 | 4 | B3 métier+seed |
 | Entent | Mathias Fonlupt | J8 | 4 | B3 métier+seed |
-| Dowgo | Oscar Dumant | J8 | 4 | B3 métier+seed |
+| Osteo2ls | Antoine Mentré |  | 5 | B3 métier+seed |
 | Docorga | Florian Faideau | J7 | 5 | B3 métier+seed |
-| Lemrock | Roxane Laigle | J7 | 4 | B3 métier+seed |
-| Orakle Weather | Stella Jovet | J7 | 4 | B3 métier+seed |
 | ProGBat | Thierry Lecocq | J7 | 5 | B3 métier+seed |
-| Diapaz | Cyril Bouchet | J7 | 5 | B3 métier+seed |
 | Extrabat | Anthony Body | J7 | 5 | B3 métier+seed |
 | RDV360 | Ludovic Diligeart | J7 | 5 | B3 métier+seed |
 | Azeoo | Anthony Desbois | J7 | 5 | B3 métier+seed |
 | Axomove | Boris Lévêque | J7 | 5 | B3 métier+seed |
-| Apiday | Édouard Audi | J7 | 4 | B2 éthique |
-| Holis | Martin Besnier | J7 | 4 | B2 éthique |
 | Tehtris | Éléna Poincet | J8 | 4 | B2 éthique |
 | Sencrop | Michael Bruniaux |  | 4 | B2 éthique |
 | Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
@@ -267,17 +263,22 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | Hunimalis | Kevin Zollinger | J7 | 4 | B3 métier+seed |
 | Obside | Thibaud Sultan | J7 | 4 | B3 métier+seed |
 | Leedflow | Clément Réau | J7 | 4 | B3 métier+seed |
+| Orakle Weather | Stella Jovet | J7 | 4 | B3 métier+seed |
+| Lemrock | Roxane Laigle | J7 | 4 | B3 métier+seed |
+| Dowgo | Oscar Dumant | J8 | 4 | B3 métier+seed |
 | Objow | Jonathan Le Duc | J7 | 5 | B3 métier+seed |
 | OneFlash | Lucas Di Franco | J7 | 5 | B3 métier+seed |
 | Hubblo | Benoit Petit | J7 | 4 | B2 éthique |
-| Osteo2ls | Antoine Mentré |  | 5 | B3 métier+seed |
+| Diapaz | Cyril Bouchet | J7 | 5 | B3 métier+seed |
+| Apiday | Édouard Audi | J7 | 4 | B2 éthique |
+| Holis | Martin Besnier | J7 | 4 | B2 éthique |
 | Auto Gestion | Hector Snowman |  | 2 | B3 métier+seed |
 | SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
 | Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
-| Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
 | Popina | Florion Coiffé | J7 | 5 | B3 métier+seed |
 | LOCKimmo | Julien Dourlen | J6 | 5 | B3 métier+seed |
 | Orthomax | Geoffroy Lapointe | J6 | 5 | B3 métier+seed |
+| Commown | Adrien Montagut | J6 | 5 | B2 éthique |
 | Apimo | Nicolas Guillaud de Saint-Fer… | J6 | 5 | B3 métier+seed |
 | Terapiz | Frédéric Lefetz | J6 | 5 | B3 métier+seed |
 | Copriciel | Mohamed Badaoui | J6 | 5 | B3 métier+seed |
@@ -291,12 +292,9 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | Fitnet | Laurent Salsé | J6 | 5 | B3 métier+seed |
 | abaseo | François Herbreteau | J6 | 5 | B3 métier+seed |
 | dr.veto | Hervé Hiard | J6 | 5 | B3 métier+seed |
-| Ikosoft | Jean-Claude Brosset | J6 | 5 | B3 métier+seed |
-| Tactill | Grégoire Lopez | J6 | 5 | B3 métier+seed |
+| Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
 | Bluedigo | Maxime Baffert | J6 | 5 | B2 éthique |
-| Carbonfact | Marc Laurent | J5 | 5 | B2 éthique |
 | Anozr Way | Philippe Luc | J5 | 5 | B2 éthique |
-| Olvid | Thomas Baignères | J5 | 5 | B2 éthique |
 | Dametis | Julian Aristizabal | J5 | 5 | B2 éthique |
 | Tenacy | Cyril Guillet | J5 | 5 | B2 éthique |
 | Patrowl | Nicolas Mattiocco | J5 | 5 | B2 éthique |
@@ -305,14 +303,14 @@ La base compte 311 prospects. 115 invitations sont parties, 15 sont acceptées. 
 | Holivia | Jérôme Crest | J5 | 5 | B1 tech |
 | ZestMeUp | Christophe Bergeon | J5 | 5 | B1 tech |
 | MyTraffic | Hakim Saadaoui | J5 | 5 | B1 tech |
+| Ikosoft | Jean-Claude Brosset | J6 | 5 | B3 métier+seed |
+| Tactill | Grégoire Lopez | J6 | 5 | B3 métier+seed |
 | Alivio | Jérémie Guichot | J6 | 5 | B3 métier+seed |
 | Albus | Geoffroy Lapointe | J6 | 5 | B3 métier+seed |
 | Epsor | Julien Niquet | J6 | 5 | B2 éthique |
 | Sêmeia | Pierre Hornus | J6 | 5 | B2 éthique |
 | Filigran | Samuel Hassine | J6 | 5 | B2 éthique |
 | Jamespot | Alain Garnier | J6 | 5 | B2 éthique |
-| Commown | Adrien Montagut | J6 | 5 | B2 éthique |
-| Fruggr | Frédérick Marchand | J5 | 5 | B1 tech + B2 éthique |
 | Rounded | Aymeric Vaudelin |  | 5 | B1 tech |
 | kiwiHR | Sacha Taghavi | J5 | 5 | B1 tech |
 | EvalAndGo | Sébastien Lerouge | J5 | 5 | B1 tech |
