@@ -1222,3 +1222,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - fiche: [[concepts/grounding-score]] (section opérationnalisation corrigée)
 - déclencheur: correction verbale de Tim pendant la prod des fiches wiki organikk.co
 - répercuté sur /wiki/grounding-score (organikk-next)
+
+## [2026-07-13] correction | Stats contradictoires site : 99,9 % / 91 %-2 % retirés, Reddit×Perplexity unifié à 46,7 %
+- arbitrage Tim : chiffres AIO informationnelles non vérifiables retirés (homepage FAQ, newsletter, article mots-clés, fiche wiki zero-click)
+- Reddit dans Perplexity : 46,7 % (Profound) partout, le ~24 % sans source de l'article Reddit GEO corrigé
+- « Google préconise 60 % » : conservé sur décision Tim
+- règle posée : jamais deux stats contradictoires en ligne sans arbitrage
+- fiche corrigée : [[concepts/requete-cliquable-vs-clic]]
