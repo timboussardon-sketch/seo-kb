@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-13 · Requêtes locales et résumés IA en 2026 : impact GSC avant/après AI Mode, taux d'impressions capturées et CTR résiduel → `2026-07-13-stats-ai-mode-impact-requetes-locales-gsc.md`
 - 2026-07-12 · Featured snippets à l'ère de l'IA : évolution de l'inventaire, du CTR position zéro et de la cannibalisation par les AI Overviews (2024-2026) → `2026-07-12-stats-featured-snippets-ai-overviews-cannibalization.md`
 - 2026-07-11 · Langue française et biais linguistique des moteurs IA : part du contenu francophone dans les citations IA, sur-représentation de l'anglais et implications pour le SEO en France (2025-2026) → `2026-07-11-stats-biais-linguistique-francais-citations-ia.md`
 - 2026-07-10 · Crawlers IA (GPTBot, ClaudeBot, PerplexityBot) : fréquence, profondeur et taux de blocage robots.txt (2025-2026) → `2026-07-10-stats-crawlers-ia-gptbot-claudebot-perplexitybot-robots-txt.md`
@@ -33,7 +34,7 @@
 
 ## À faire (par priorité)
 
-1. **Réponses IA sur les marchés locaux : impact GSC avant/après AI Mode pour les requêtes locales, taux d'impressions capturées et CTR résiduel (2025-2026)** — angle first-party potentiel avec données GSC du vault, complète l'étude SEO local de juin 2025 par une mesure longitudinale. Requête-ancre : « AI Mode impact SEO local statistiques 2026 ».
+_(vide — file à réapprovisionner)_
 
 ## Sujets écartés (avec raison)
 (vide)
