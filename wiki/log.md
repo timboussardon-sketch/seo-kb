@@ -1234,3 +1234,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - output: [[queries/audit-stats-organikk-2026-07-13]]
 - arbitrages Tim : fourchette Reddit 20-47 %, archives NL datées, courbe FPS simulateur
 - 23x démêlé (Opollo 5x vs Ahrefs propres signups), GEO-bench +13 % autorité rétabli
+
+## [2026-07-13] rejet | Modèle 1 workflows Claude × SEO abandonné à la vue de la liste des 19 pages
+- pilote construit puis supprimé (jamais publié)
+- 5 des 19 pages étaient en collision avec des articles publiés depuis le plan du 7 juillet
+- doc: [[queries/pseo-2026-07-07-organikk-corpus]]
