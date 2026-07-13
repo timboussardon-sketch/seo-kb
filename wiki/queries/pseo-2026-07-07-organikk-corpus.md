@@ -280,6 +280,10 @@ Roll-up « chiffres du mois » (variante de M10, rejeté). Pages transcript par 
 
 Total générable sans rédaction humaine : ~90 pages immédiates (points 1-4) + ~37 vault + ~50 après pipelines, plus deux flux permanents (brèves mensuelles, études).
 
+### Correction du jour (rejet v1)
+
+La v1 du point 1 (62 fiches wiki = définition verbatim + maillage) a été rejetée par Tim le jour même : « aucun intérêt car trop peu de mots et le design est horrible ». Même cause que les rejets des itérations 3-5 : documenter une définition existante reste une commodité. Verdict retenu : une fiche wiki ne se publie que si le vault porte de la matière substantielle dessous (thèse, mécanique, chiffres sourcés, limites). V2 livrée : 55 fiches au total dont 40 enrichies depuis `wiki/concepts/` et `wiki/entities/` (370-490 mots de fond, section « Ce qui n'est pas prouvé », bloc Data Organikk vers `/statistiques` et `/outils`), design sobre fzn. Les ~45 termes du glossaire sans matière vault restent des entrées de glossaire, sans page.
+
 ## Résumé exécutif
 
 Organikk a un site jeune (GSC quasi entièrement branded) mais une matière propriétaire que les autres sites n'ont pas : 23 skills qui tournent réellement, un vault de 122 nœuds, un pipeline d'études en prod et ~30 propriétés GSC agrégables. Le modèle n°1 à lancer est la bibliothèque de workflows Claude × SEO : le corpus existe à 100 %, les 49 requêtes du backlog sont quasi vierges en FR, l'intention est décisionnelle, et chaque page se prouve avec de la data GSC réelle. Les études statistiques continuent en flux, le wiki s'étend sur le stock du vault, et les benchmarks first-party se préparent en tâche de fond : c'est le seul actif incopiable, celui qui forcera les citations IA.

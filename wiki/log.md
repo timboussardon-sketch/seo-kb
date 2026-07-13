@@ -1217,3 +1217,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - output: [[queries/pseo-2026-07-07-organikk-corpus]] (itération 6)
 - skill déclenché: seo-programmatique-pseo
 - data: 101 termes glossaire / 39 wiki, 19 études draft, 258 brèves breves_wall
+
+## [2026-07-13] correction | Grounding Score : la mesure ne part pas du top 3 SERP
+- fiche: [[concepts/grounding-score]] (section opérationnalisation corrigée)
+- déclencheur: correction verbale de Tim pendant la prod des fiches wiki organikk.co
+- répercuté sur /wiki/grounding-score (organikk-next)

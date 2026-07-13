@@ -4,7 +4,7 @@ title: Grounding Score
 aliases: [grounding-score, score-ancrage]
 tags: [seo-ia, geo, aeo, vecteurs, ranking]
 created: 2026-04-11
-updated: 2026-06-19
+updated: 2026-07-13
 sources: 11
 confidence: medium
 status: stable
@@ -51,7 +51,7 @@ Cf. [[concepts/surprise-gap]] : apporter l'info **manquante** (pas inexistante) 
 
 ## Opérationnalisation (méthode Organikk)
 
-Le concept est resté spéculatif jusqu'en avril, puis la doctrine l'a doté d'un protocole concret. [[sources/2026-04-24-reflexion-organikk-4-piliers]] fait du Grounding Score le pilier 2 de la méthode Organikk et fixe la chaîne de mesure : embedding via Gemini Embedding, puis méthode Triade SERP. La Triade calcule le vecteur dominant à partir du top 3 d'une SERP, et y greffe une divergence contrôlée plutôt qu'un alignement maximal — la traduction terrain du sweet spot proximité + divergence posé plus haut. L'audit se structure ensuite par un framework à quatre catégories d'entités : techniques, preuves, multimodal, divergence.
+Le concept est resté spéculatif jusqu'en avril, puis la doctrine l'a doté d'un protocole concret. [[sources/2026-04-24-reflexion-organikk-4-piliers]] fait du Grounding Score le pilier 2 de la méthode Organikk et fixe la chaîne de mesure : embedding via Gemini Embedding, calcul du vecteur de l'intention ciblée, puis divergence contrôlée greffée sur ce vecteur plutôt qu'un alignement maximal — la traduction terrain du sweet spot proximité + divergence posé plus haut. **Correction Tim 2026-07-13 : la mesure ne part jamais du top 3 de la SERP.** La formulation « vecteur dominant du top 3 » issue de la source d'avril est retirée de la doctrine publiée (cohérent avec la règle du skill `seo-brief-contenu` : ne jamais copier les pages en place, chercher ce qu'elles n'ont pas dit). L'audit se structure ensuite par un framework à quatre catégories d'entités : techniques, preuves, multimodal, divergence.
 
 [[sources/2026-04-24-cluster-business-organikk-4-piliers]] pose les KPI chiffrés associés : un Grounding Score moyen de cluster supérieur à 0,75, puis supérieur à 0,85 en cible mature, et un outil Do dédié (`/outils/audit-grounding-score`). Ces seuils sont des objectifs de doctrine, pas des benchmarks validés — aucune fiche [[preuves/index|preuve]] ne les a encore confrontés à de la donnée de citation réelle (cf. [[hypotheses#H-003]], toujours `ouvert`).
 
