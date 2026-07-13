@@ -1,3 +1,16 @@
+---
+type: source
+source_type: client-note
+slug: organikk-journal-prospection
+title: "Organikk — journal prospection LinkedIn"
+created: 2026-07-13
+updated: 2026-07-10
+tags: [organikk, prospection, linkedin, pipeline]
+sources: 1
+confidence: high
+status: stable
+---
+
 # Journal prospection LinkedIn
 
 Fichier synchronisé automatiquement depuis la table `prospection_pipeline` (Supabase fusionn), toutes les heures. Ne pas éditer à la main : toute modification sera écrasée à la synchro suivante.
