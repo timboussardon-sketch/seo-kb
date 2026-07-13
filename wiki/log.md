@@ -1212,3 +1212,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - note comptage : P1 du sweep précédent affiché 98 mais sommant à 102 dans son propre listing — recompté from scratch
 - prochain lot proposé (= lot W29 voté [[revue-hebdo/2026-W28]]) : refresh [[sources/2026-06-19-playbook-reddit-seo-geo]] (tête de lot), leexi-call-2026-06-24-notes-meet + keywords/recherche-2026-06-16-rgpd (date de mort W29) ; option : stack-corpus-victoriagarden + victoriagarden-faits-verifies-2026-07-10
 - nouveaux skips: aucun (le skip etude-ctr avait été acté en W28)
+
+## [2026-07-13] query | Pages Organikk générables 100 % auto depuis le corpus
+- output: [[queries/pseo-2026-07-07-organikk-corpus]] (itération 6)
+- skill déclenché: seo-programmatique-pseo
+- data: 101 termes glossaire / 39 wiki, 19 études draft, 258 brèves breves_wall

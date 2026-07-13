@@ -4,7 +4,7 @@ title: "Organikk : modèles de pages corpus pour ranker"
 aliases: [pseo-organikk-corpus, modeles-organikk]
 tags: [organikk, pseo, corpus, geo, aeo, claude, data-proprietaire]
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-13
 sources: 4
 confidence: medium
 status: draft
@@ -251,6 +251,34 @@ M12-M15 rejetés en bloc par Tim. Relecture des 4 rejets successifs (fiche produ
 - C'est le concept [[concepts/directories-data-ia]] du vault transformé en usine à pages ; chaque page naît avec la garantie qu'aucune source ne la concurrence dans la réponse IA.
 
 Priorité proposée : N2 (la data existe déjà, zéro coût, personne ne peut copier) puis N1 (décisions déjà prises en prestation), N3 en rituel trimestriel, N4 comme pipeline permanent d'idéation.
+
+## Itération 6 : les pages générables à 100 % sans intervention humaine (2026-07-13)
+
+Question de Tim : parmi tout ça, qu'est-ce qui se génère en automatique, corpus vers modèle, zéro humain dans la boucle. Inventaire repo `organikk-next` du jour : 101 termes de glossaire pour 39 pages wiki en ligne, 26 études dans `src/data/etudes/` (7 publiées, 19 en draft), 258 brèves dans `breves_wall` depuis le 2026-06-03 (schéma : edition_date, position, line, body, url, source, pas de tag entité).
+
+### Prêt à générer aujourd'hui (le contenu existe verbatim dans le repo)
+
+1. **Wiki, stock glossaire : 62 pages.** 101 termes ont leur définition rédigée dans `glossary.ts`, 39 seulement ont une page `/wiki/{slug}`. La mécanique des 39 premières (définition verbatim + maillage voisins/articles/outil) s'applique telle quelle aux 62 restantes.
+2. **Hubs glossaire par catégorie : 6 pages.** Le champ `cat` existe déjà (IA & LLM, GEO & AEO, SERP & Ranking, Structure & Maillage, Technique & Mesure, Contenu). Valeur unitaire faible, valeur de maillage réelle.
+3. **Archives brèves par mois : 2 pages, puis +1/mois à vie.** `/actualites/2026-06`, `/actualites/2026-07`, générées depuis `breves_wall`, auto-alimentées chaque jour par la routine existante.
+4. **Études en draft : 19 pages écrites.** `published: false`, le flip est un booléen. Seule intervention humaine : le garde-fou de relecture voulu par Tim (fact-check avant publication). Techniquement prêtes, volontairement gated.
+
+### Générable depuis le vault (assemblage automatique, rien à inventer)
+
+5. **Wiki, extension vault : ~37 pages.** Les ~22 concepts et ~15 entities non exposés (inventaire itération 2). Règle 70/30 satisfaite par construction.
+6. **Études en flux : illimité.** Le pipeline auto-ingest tourne déjà (commits « Études-IA auto-ingest » quotidiens). Cadence 2-4/mois, même gate de relecture que le point 4.
+
+### Générable après un pipeline à écrire une fois (la data est en base)
+
+7. **Pages acteur d'actualité : ~10-15 pages vivantes.** `/actualites/google`, `/actualites/openai`, `/actualites/perplexity`, alimentées par classification des 258 brèves (matching entités sur line/body, le champ tag n'existe pas encore). Après le classifieur, zéro humain.
+8. **Workflows Claude × SEO : ~20 pages.** Le modèle 1 (P1) est largement assemblable : les fichiers skills existent verbatim, les preuves GSC aussi. Gabarit à valider sur 1 pilote, ensuite génération en chaîne.
+9. **Avant/après anti-IA writing : ~15 pages.** Le modèle N2 retenu : les corrections verbatim existent dans les sessions (playbook Reddit du 2026-07-03). Extraction + gabarit une fois, ensuite chaque nouvelle session de correction nourrit la base.
+
+### Écartés
+
+Roll-up « chiffres du mois » (variante de M10, rejeté). Pages transcript par vidéo (30 vidéos dans `videos.ts`, mais cannibalisation avec l'article du même concept, le système éditorial décline déjà chaque concept en article + newsletter + vidéo sur le même mot-clé). Hubs `/statistiques` par thème (19 études sur 26 partagent le topic « SEO & recherche IA », pas de diversité à exposer). Différences X vs Y (M15, rejeté).
+
+Total générable sans rédaction humaine : ~90 pages immédiates (points 1-4) + ~37 vault + ~50 après pipelines, plus deux flux permanents (brèves mensuelles, études).
 
 ## Résumé exécutif
 
