@@ -372,3 +372,25 @@ Aucun diff de skill proposé ce run. Le pattern « confirmation Google d'un inci
 - **Non bloquant.** Kerhoas cite dans son article des chiffres (ChatGPT US base flat depuis septembre 2025, financials OpenAI 2025) sans donner de lien primaire. Recoupement fait de notre côté sur Zitron/FT/TechSpot pour les financials et sur TechCrunch/Sensor Tower décembre 2025 pour ChatGPT. Question : faut-il durcir la règle et systématiquement re-sourcer chaque chiffre cité par un article d'analyse tiers, même quand il paraît courant ? Proposition : oui, à mettre en observation dans `wording_rules.md` sous « chiffres relayés ».
 - **Non bloquant.** Le préprint Sielinski IQRush n'est pas encore publié à la date du 11 juillet (annoncé pour la semaine suivante par Southern). Notre B1 s'appuie sur la couverture SEJ + le travail Saint-Gall indépendant. Question : quand le préprint sera publié, revient sur la brève pour ajouter le lien direct arxiv/SSRN et vérifier que la méthodologie décrite par Southern est bien la méthodologie publiée. À caler pour la revue hebdo.
 - **Non bloquant.** Le workflow `youtube-claude-seo/yt_best.py --months 1` n'est pas utilisé en édition cloud (binaire local). À exécuter à la prochaine édition locale pour élargir la surface de découverte.
+
+## Questions ajoutées après 2026-07-14-v2
+
+### Sources découvertes ce run
+
+- 3 nouvelles explore ajoutées : arxiv.org (0.85 primaire-academique-preprint, source de référence pour toute étude quasi-expérimentale ou paper académique en preprint, à corroborer systématiquement par reprise trade press), helpnetsecurity.com (0.7 trade-securite, utile pour infra bot detection / crawlers / agents), siliconangle.com (0.7 trade-tech, à observer sur 2-3 prochaines éditions avant décision exploit).
+
+### Question méthode (à trancher en revue hebdo)
+
+- Sur un preprint arXiv non peer-reviewed publié depuis moins de 10 jours, quel est le seuil de fiabilité acceptable pour en faire une info du jour ? Position tenue ce run : (a) énoncer explicitement que le paper est un preprint non peer-reviewed, (b) recouper avec au moins deux reprises indépendantes de sources exploit (ppc.land + SEJ ici), (c) vérifier au moins deux des trois affiliations d'auteurs (Shi et Zhu confirmés Bocconi, Gu non confirmable). Question : faut-il durcir en règle explicite dans `memory/wording_rules.md` ou dans `notes/` ?
+
+### Question doctrine (à valider en revue hebdo)
+
+- La 7e dimension implicite de [[concepts/metriques-visibilite-geo]] introduite en B3 (taux de citation qui produit effectivement une recommandation nominative de la marque, distinct de l'apparition d'URL) mérite-t-elle une fiche `wiki/concepts/citation-vs-recommandation.md` distincte, ou reste-t-elle une extension de metriques-visibilite-geo ? Position tenue ce run : traiter comme extension. Arbitrage à faire en revue hebdo (potentiel candidat pour promotion en fiche stable si un 2e cas d'usage documenté sort dans les 30 prochains jours).
+
+### Question sujet (à surveiller)
+
+- La mesure Bocconi ne couvre pas le mobile ni l'international, deux angles morts. Faut-il activement chercher des mesures européennes/mobile équivalentes (Similarweb, Datos, Kantar, Nielsen) pour compléter le cadre d'ici la revue hebdo ? Position : à guetter, ne pas forcer un run dédié sans mesure comparable primaire.
+
+### Diffs de skill proposés (à évaluer en revue hebdo)
+
+Aucun diff de skill proposé ce run.
