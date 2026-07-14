@@ -34,7 +34,23 @@
 
 ## À faire (par priorité)
 
-_(vide — file à réapprovisionner)_
+1. **Agentic search et trafic non-humain : volume d'agents IA sur le web, impact sur Google Analytics 4 et le "dark traffic" IA (2025-2026)**
+   - Angle : ChatGPT Deep Research, Perplexity Pro, Claude Projects naviguent le web de façon autonome → le trafic organique mesuré dans GA4 est contaminé ou occulté ; quels volumes, comment les distinguer du trafic humain, impact sur les rapports d'acquisition et les décisions SEO.
+   - Sources à explorer : Cloudflare Radar (logs bots vs humains), Similarweb (non-human traffic share), Botify/Oncrawl (crawl IA vs humain), rapports GA4 anomalies.
+   - Transformation originale pressentie : réconciliation des 3 mesures (crawl-side / analytics-side / referral-side) en un seul cadre de lecture.
+   - Anti-redite : les études existantes traitent les crawlers du point de vue robots.txt (étude 2026-07-10) ; ici le prisme est l'impact sur la mesure analytics côté webmaster.
+
+2. **Perplexity Media Program et monétisation des citations : éditeurs partenaires, revenus partagés, impact sur la neutralité éditoriale (2025-2026)**
+   - Angle : Perplexity rémunère les éditeurs qui autorisent crawl et usage de leurs contenus dans les réponses → conflit d'intérêts potentiel dans la sélection des sources ; quels éditeurs participent, quels revenus, comment cela modifie le profil des citations vs ChatGPT Search.
+   - Sources à explorer : annonces officielles Perplexity (blog, presse), SE Ranking / Profound (domaines cités avant/après programme), réactions éditeurs (NYT, Condé Nast).
+   - Transformation originale pressentie : comparaison partenaires vs non-partenaires dans le profil de citation Perplexity, mis en regard du 25 % overlap inter-moteurs (étude 2026-06-20).
+   - Anti-redite : l'étude 2026-06-20 mesure le recouvrement inter-moteurs mais pas la dimension économique du programme Perplexity.
+
+3. **YouTube et citations IA : 32,4 % de Perplexity, transcriptions comme source citable, benchmark par type de contenu (2025-2026)**
+   - Angle : YouTube est le domaine le plus cité par Perplexity (32,4 %, Ahrefs Brand Radar, étude 2026-06-20) — mais ses mécanismes d'extraction (transcription auto, chapitres, description) et l'impact sur les créateurs restent non mesurés ; comment les moteurs IA traitent la vidéo vs le texte.
+   - Sources à explorer : Ahrefs Brand Radar (breakdown YouTube par requête type), Tubular Labs / VidIQ (transcriptions), Moz/Semrush (présence vidéo en AIO), annonces YouTube sur l'indexation IA.
+   - Transformation originale pressentie : croisement volume de transcriptions indexables / taux de citation effectif vs pages texte de même autorité.
+   - Anti-redite : l'étude 2026-06-20 mentionne YouTube en chiffre ; aucune étude du vault n'analyse le contenu vidéo comme source pour les moteurs IA.
 
 ## Sujets écartés (avec raison)
 (vide)
