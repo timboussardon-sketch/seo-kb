@@ -44,6 +44,7 @@
       "ancres-diversifiees"
     ],
     "backrefs": [
+      "qadence/drive-qadence/17-quels-liens-internes-ajouter.md",
       "wiki/briefs/maillage-interne-claude.md",
       "wiki/concepts/maillage-interne.md",
       "wiki/concepts/maillage-systeme.md",
@@ -76,6 +77,7 @@
       "pattern-strategie-80"
     ],
     "backrefs": [
+      "qadence/drive-qadence/20-par-quoi-commencer-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/posts-linkedin/_index-batch-2026-06-01.md",
       "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
@@ -138,6 +140,7 @@
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v5.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
       "raw/articles/organikk-blog/audit-seo-claude.md",
@@ -285,6 +288,8 @@
       "agent-synthetic/revuedepressIA/2026-07-11-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -455,6 +460,8 @@
       "mots-cles-anti-chatgpt"
     ],
     "backrefs": [
+      "qadence/drive-qadence/07-mots-cles-faciles-a-ranker.md",
+      "qadence/drive-qadence/18-mots-cles-que-je-rate.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/transcripts/video-erreur-ia-137-pages.md",
@@ -511,6 +518,11 @@
       "agent-synthetic/revuedepressIA/2026-06-19-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "qadence/Strategie-contenu.md",
+      "qadence/drive-qadence/04-beaucoup-impressions-peu-de-clics.md",
+      "qadence/drive-qadence/05-ameliorer-taux-de-clic-google.md",
+      "qadence/drive-qadence/06-passer-en-premiere-page-google.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
+      "qadence/drive-qadence/19-structurer-un-article-seo.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "wiki/concepts/agentic-search.md",
@@ -578,6 +590,7 @@
       "agent-synthetic/memory/wording_rules.md",
       "agent-synthetic/revuedepressIA/2026-06-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "content-brain/_template/memory/score-grid.md",
       "content-brain/_template/memory/wording_rules.md",
       "content-brain/golfiller/memory/score-grid.md",
@@ -598,6 +611,7 @@
       "raw/journal/2026-07-09.md",
       "raw/journal/2026-07-10.md",
       "raw/journal/2026-07-11.md",
+      "raw/journal/2026-07-13.md",
       "raw/notes/tim-my-voice.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "raw/papers/google-quality-raters-guidelines-2026.md",
@@ -1036,6 +1050,8 @@
       "cannibalisation de mots-clés"
     ],
     "backrefs": [
+      "qadence/drive-qadence/08-deux-pages-meme-mot-cle.md",
+      "qadence/drive-qadence/09-google-affiche-mauvaise-page.md",
       "raw/journal/2026-06-12.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
@@ -1375,6 +1391,8 @@
       "agent-synthetic/revuedepressIA/2026-07-11-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1525,6 +1543,7 @@
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
       "wiki/queries/2026-06-10-golfiller-dataset-vitesse-distance.md",
       "wiki/queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas.md",
+      "wiki/queries/audit-stats-organikk-2026-07-13.md",
       "wiki/revue-hebdo/2026-W20.md",
       "wiki/revue-hebdo/resurgence-2026-05-16.md",
       "wiki/revue-hebdo/resurgence-2026-06-24.md",
@@ -1752,6 +1771,7 @@
       "matiere-manquante-ia"
     ],
     "backrefs": [
+      "qadence/drive-qadence/18-mots-cles-que-je-rate.md",
       "wiki/concepts/fraicheur-contenu.md",
       "wiki/queries/pseo-2026-07-07-organikk-corpus.md",
       "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md"
@@ -1826,6 +1846,8 @@
       "agent-synthetic/revuedepressIA/_archive/2026-06-23-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v2.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
+      "qadence/drive-qadence/19-structurer-un-article-seo.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
@@ -1913,6 +1935,9 @@
       "cartographie-entites-vectorielles"
     ],
     "backrefs": [
+      "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
+      "qadence/drive-qadence/11-mon-article-ne-ressort-pas.md",
+      "qadence/drive-qadence/12-quels-mots-cles-ajouter-a-ma-page.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
       "raw/articles/posts-linkedin/post-linkedin-audit-semantique-sans-outil.md",
@@ -2018,6 +2043,10 @@
       "freshness"
     ],
     "backrefs": [
+      "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
+      "qadence/drive-qadence/02-chute-de-trafic-seo-que-faire.md",
+      "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
+      "qadence/drive-qadence/10-page-non-indexee-google.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-06-09-algorithme-ia-detruire-business-seo.md"
@@ -2283,6 +2312,8 @@
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-10-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/etudes-IA/2026-06-25-stats-seo-local-ia-presence-reponses.md",
+      "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
       "raw/journal/2026-06-17.md",
       "wiki/audit/2026-06-20-audit-vault-liens.md",
       "wiki/concepts/directories-data-ia.md",
@@ -2571,6 +2602,8 @@
       "content-brain/_template/memory/score-grid.md",
       "content-brain/golfiller/memory/score-grid.md",
       "qadence/Strategie-contenu.md",
+      "qadence/drive-qadence/11-mon-article-ne-ressort-pas.md",
+      "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
@@ -2789,6 +2822,7 @@
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
       "reports/indexation-organikk-2026-07-10.md",
+      "reports/indexation-organikk-2026-07-13.md",
       "wiki/audit/2026-05-11-audit.md",
       "wiki/audit/2026-05-29-audit.md",
       "wiki/audit/2026-06-20-audit-vault-liens.md",
@@ -2821,6 +2855,10 @@
     "backrefs": [
       "agent-synthetic/memory/notation.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-04-revue-presse.md",
+      "qadence/drive-qadence/06-passer-en-premiere-page-google.md",
+      "qadence/drive-qadence/10-page-non-indexee-google.md",
+      "qadence/drive-qadence/12-quels-mots-cles-ajouter-a-ma-page.md",
+      "qadence/drive-qadence/18-mots-cles-que-je-rate.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
@@ -2854,6 +2892,7 @@
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
+      "wiki/queries/audit-stats-organikk-2026-07-13.md",
       "wiki/revue-hebdo/2026-W21.md",
       "wiki/revue-hebdo/2026-W22.md",
       "wiki/sources/2026-02-20-organikk-information-gain-geo.md",
@@ -2918,6 +2957,8 @@
       "framework-tim"
     ],
     "backrefs": [
+      "qadence/drive-qadence/11-mon-article-ne-ressort-pas.md",
+      "qadence/drive-qadence/12-quels-mots-cles-ajouter-a-ma-page.md",
       "raw/papers/miras-architecture.md",
       "wiki/concepts/4w-deep-reflection.md",
       "wiki/concepts/grounding-score.md",
@@ -3020,6 +3061,11 @@
       "intention"
     ],
     "backrefs": [
+      "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
+      "qadence/drive-qadence/08-deux-pages-meme-mot-cle.md",
+      "qadence/drive-qadence/09-google-affiche-mauvaise-page.md",
+      "qadence/drive-qadence/11-mon-article-ne-ressort-pas.md",
+      "qadence/drive-qadence/13-page-ne-correspond-pas-intention.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-maillage-interne.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
@@ -3278,6 +3324,9 @@
       "content-brain/golfiller/outputs/2026-06-03-quelle-balle-de-golf-choisir.md",
       "prestation/roadmap.md",
       "qadence/Strategie-contenu.md",
+      "qadence/drive-qadence/07-mots-cles-faciles-a-ranker.md",
+      "qadence/drive-qadence/13-page-ne-correspond-pas-intention.md",
+      "qadence/drive-qadence/19-structurer-un-article-seo.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/golfiller-conversations.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
@@ -3390,10 +3439,13 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-06-27-revue-presse-v2.md",
+      "qadence/drive-qadence/16-detecter-pages-orphelines.md",
+      "qadence/drive-qadence/17-quels-liens-internes-ajouter.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cannibalisation.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-cluster-aeo.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-programmatique-pseo.md",
       "reports/indexation-organikk-2026-07-10.md",
+      "reports/indexation-organikk-2026-07-13.md",
       "wiki/audit/2026-05-11-audit.md",
       "wiki/audit/2026-05-29-audit.md",
       "wiki/audit/2026-06-20-audit-vault-liens.md",
@@ -3432,6 +3484,8 @@
       "lenkrr/IA-AUTO.md",
       "lenkrr/Journal.md",
       "qadence/Strategie-contenu.md",
+      "qadence/drive-qadence/16-detecter-pages-orphelines.md",
+      "qadence/drive-qadence/17-quels-liens-internes-ajouter.md",
       "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
       "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
       "raw/articles/posts-linkedin/post-linkedin-indexation-hebdo.md",
@@ -3611,6 +3665,9 @@
     "backrefs": [
       "newsletter-IA/_MODELE-newsletter-IA.md",
       "organikk/commercial/PLAYBOOK.md",
+      "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
+      "qadence/drive-qadence/20-par-quoi-commencer-seo.md",
       "raw/articles/brouillons/methode-lead-gen-seo.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
@@ -3725,6 +3782,8 @@
       "agent-synthetic/revuedepressIA/2026-07-10-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -3760,6 +3819,7 @@
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-citations-multimoteurs.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-07-revue-presse.md",
+      "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
       "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
       "raw/articles/organikk-blog/roadmap-seo-2026.md",
       "raw/etudes-seo/etude-ctr-ai-overviews-gsc.md",
@@ -3934,6 +3994,9 @@
       "actionnels"
     ],
     "backrefs": [
+      "qadence/drive-qadence/06-passer-en-premiere-page-google.md",
+      "qadence/drive-qadence/07-mots-cles-faciles-a-ranker.md",
+      "qadence/drive-qadence/20-par-quoi-commencer-seo.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/brouillons/préparation-post-golfiller-strat-seo.md",
@@ -4469,6 +4532,9 @@
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu-light.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-03-revue-presse-longueur-contenu.md",
+      "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
+      "qadence/drive-qadence/06-passer-en-premiere-page-google.md",
+      "qadence/drive-qadence/19-structurer-un-article-seo.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/modele-production/modele-strategie-b2b.md",
       "raw/articles/modele-production/modele-strategie.md",
@@ -4801,6 +4867,7 @@
       "agent-synthetic/revuedepressIA/2026-06-18-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-08-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-23-revue-presse.md",
@@ -4827,6 +4894,7 @@
       "raw/articles/organikk-blog/strategie-seo-serrurier-lyon.md",
       "raw/articles/posts-linkedin/post-linkedin-9-skills-seo.md",
       "raw/journal/2026-06-01.md",
+      "raw/journal/2026-07-13.md",
       "raw/notes/prompt-pseo-non-produit.md",
       "raw/notes/prompt-pseo-produit-service.md",
       "raw/organikk/clients/fgformation/fgformation-modeles-pseo.md",
@@ -5107,6 +5175,7 @@
       "une-page-une-intention"
     ],
     "backrefs": [
+      "qadence/drive-qadence/12-quels-mots-cles-ajouter-a-ma-page.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/journal/2026-05-16.md",
@@ -5268,6 +5337,8 @@
       "eventail-de-requetes"
     ],
     "backrefs": [
+      "qadence/drive-qadence/13-page-ne-correspond-pas-intention.md",
+      "qadence/drive-qadence/18-mots-cles-que-je-rate.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md"
@@ -5462,9 +5533,12 @@
       "citation-vs-clic"
     ],
     "backrefs": [
+      "qadence/drive-qadence/04-beaucoup-impressions-peu-de-clics.md",
+      "qadence/drive-qadence/05-ameliorer-taux-de-clic-google.md",
       "wiki/entities/sparktoro.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/queries/audit-stats-organikk-2026-07-13.md",
       "wiki/queries/product-led-2026-07-07-organikk-anti-chatgpt.md",
       "wiki/sources/2026-03-05-organikk-strategie-seo-du-moment.md",
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md"
@@ -5498,6 +5572,8 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
+      "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
+      "qadence/drive-qadence/02-chute-de-trafic-seo-que-faire.md",
       "raw/journal/2026-05-16.md",
       "raw/journal/2026-05-19.md",
       "wiki/concepts/anti-ai-writing.md",
@@ -5922,6 +5998,7 @@
       "agent-synthetic/revuedepressIA/2026-06-29-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -5940,6 +6017,8 @@
       "agent-synthetic/revuedepressIA/_archive/2026-07-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-05-30-revue-presse-v4.md",
+      "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "wiki/concepts/geo.md",
@@ -5994,6 +6073,7 @@
       "content-brain/_template/memory/score-grid.md",
       "content-brain/golfiller/memory/score-grid.md",
       "qadence/Strategie-contenu.md",
+      "qadence/drive-qadence/15-apparaitre-dans-reponses-ia.md",
       "raw/articles/brouillons/golfiller-conversations.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
@@ -6230,6 +6310,8 @@
       "agent-synthetic/revuedepressIA/2026-07-11-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-12-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
@@ -6243,6 +6325,10 @@
       "agent-synthetic/revuedepressIA/_archive/2026-07-06-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-10-revue-presse.md",
+      "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
+      "qadence/drive-qadence/04-beaucoup-impressions-peu-de-clics.md",
+      "qadence/drive-qadence/05-ameliorer-taux-de-clic-google.md",
+      "qadence/drive-qadence/20-par-quoi-commencer-seo.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
       "raw/journal/2026-06-05.md",
       "raw/journal/2026-06-15.md",
@@ -6327,6 +6413,9 @@
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-05-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
+      "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
+      "qadence/drive-qadence/10-page-non-indexee-google.md",
+      "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/fully-meets.md",
@@ -6496,6 +6585,9 @@
     "backrefs": [
       "content-brain/golfiller/memory/score-grid.md",
       "qadence/Strategie-contenu.md",
+      "qadence/drive-qadence/04-beaucoup-impressions-peu-de-clics.md",
+      "qadence/drive-qadence/05-ameliorer-taux-de-clic-google.md",
+      "qadence/drive-qadence/13-page-ne-correspond-pas-intention.md",
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/articles/organikk-blog/9-skills-seo-claude.md",
@@ -6691,6 +6783,8 @@
       "biais-recence"
     ],
     "backrefs": [
+      "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
+      "qadence/drive-qadence/02-chute-de-trafic-seo-que-faire.md",
       "raw/papers/titans-architecture-google-deepmind.md",
       "wiki/concepts/ingenierie-semantique-inversee.md",
       "wiki/concepts/rrf.md",
