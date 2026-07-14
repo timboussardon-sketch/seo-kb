@@ -1,0 +1,67 @@
+{
+  "_comment": "Poids et seuils du barème de sélection de la Newsletter IA. Lu au moment de scorer, réécrit par recalibrate.py après chaque édition avec feedback. axis_weights à 1.0 tant que < 6 éditions notées (calibration d'axe gelée). source_weights dérivés de ledgers/sources.jsonl : base_tier + 0.04*useful_hits - 0.1*noise_hits, borné [0.9, 1.15].",
+  "updated": "2026-07-14",
+  "editions_with_feedback": 0,
+  "axis_calibration_active": false,
+  "axis_calibration_min_editions": 6,
+  "axis_weights": {
+    "nouveaute": 1.0,
+    "impact_seo": 1.0,
+    "impact_business": 1.0,
+    "originalite": 1.0,
+    "surprise": 1.0,
+    "potentiel_discussion": 1.0,
+    "durabilite": 1.0
+  },
+  "fiability_coef": {
+    "confirme": 1.0,
+    "temoignage": 0.8,
+    "debat": 0.7,
+    "analyse": 0.5
+  },
+  "source_factor_bounds": [
+    0.9,
+    1.15
+  ],
+  "tier_base": {
+    "primaire": 1.05,
+    "secondaire": 1.0,
+    "communautaire": 0.95
+  },
+  "_thresholds_comment": "jete_sous et en_bref_min se jugent sur le SCORE DE BASE /80 (fiabilité montrée via ★ + label, pas couperet). sujet_du_jour_min se juge sur le SCORE DE CLASSEMENT = base × coef_fiabilité × facteur_source. Une info fragile ne peut donc pas être la une, mais reste admissible en 'en bref' si honnêtement étiquetée.",
+  "thresholds": {
+    "jete_sous": 30,
+    "en_bref_min": 30,
+    "sujet_du_jour_min": 50
+  },
+  "star_map": [
+    {
+      "impact_min": 9,
+      "stars": "★★★★★"
+    },
+    {
+      "impact_min": 7,
+      "stars": "★★★★☆"
+    },
+    {
+      "impact_min": 5,
+      "stars": "★★★☆☆"
+    },
+    {
+      "impact_min": 3,
+      "stars": "★★☆☆☆"
+    },
+    {
+      "impact_min": 0,
+      "stars": "★☆☆☆☆"
+    }
+  ],
+  "source_weights": {
+    "google-search-central": 1.05,
+    "the-keyword": 1.05,
+    "fractl-study": 1.05,
+    "search-engine-land": 1.0,
+    "search-engine-journal": 1.0,
+    "reddit-seo": 0.95
+  }
+}
