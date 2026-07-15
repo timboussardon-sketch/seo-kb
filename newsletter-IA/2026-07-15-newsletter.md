@@ -1,6 +1,6 @@
 # Google répond à ta place sur 100 % des requêtes depuis le 10 juillet
 
-_Timothée — 15 juil. 2026_
+_Timothée_
 
 > **En résumé**
 > - Depuis le 10 juillet, Gemini 3.5 Flash génère une réponse IA en tête de toutes les recherches Google. Les liens bleus passent sous la ligne de flottaison.
@@ -40,6 +40,8 @@ Et la concentration est brutale : d'après Semrush, les 20 domaines les plus cit
 **Pourquoi ça compte :** être cité par l'IA n'obéit pas aux mêmes règles que ranker. Google privilégie l'expérience vécue et le témoignage, là où ton site parle produit. Deux leviers concrets : nourrir une présence réelle là où l'IA pioche ses citations (Reddit, YouTube), et réécrire tes pages pour qu'elles ressemblent à une réponse d'expert, pas à une plaquette.
 
 Source : Ahrefs, juin 2026 (50 domaines les plus cités dans les AI Overviews) : https://ahrefs.com/blog/most-cited-domains-ai-overviews/ · Semrush, Most-Cited Domains in AI : https://www.semrush.com/blog/most-cited-domains-ai/
+
+👉 **[Tester Qadence : sais-tu si l'IA te cite ?](https://qadence.io)**
 
 ---
 
