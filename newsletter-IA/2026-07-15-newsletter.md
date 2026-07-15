@@ -41,6 +41,8 @@ Et la concentration est brutale : d'après Semrush, les 20 domaines les plus cit
 
 Source : Ahrefs, juin 2026 (50 domaines les plus cités dans les AI Overviews) : https://ahrefs.com/blog/most-cited-domains-ai-overviews/ · Semrush, Most-Cited Domains in AI : https://www.semrush.com/blog/most-cited-domains-ai/
 
+👉 **[Te faire citer via Reddit : mon guide complet SEO + GEO](https://organikk.co/blog/guide-reddit-seo-geo)**
+
 ---
 
 ## En bref
