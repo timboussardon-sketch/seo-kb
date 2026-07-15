@@ -15,7 +15,7 @@ status: stable
 
 Fichier synchronisé automatiquement depuis la table `prospection_pipeline` (Supabase fusionn), toutes les heures. Ne pas éditer à la main : toute modification sera écrasée à la synchro suivante.
 
-La base compte 300 prospects. 131 invitations sont parties, 13 sont acceptées. 147 prospects restent dans la file LK.
+La base compte 326 prospects. 131 invitations sont parties, 13 sont acceptées. 173 prospects restent dans la file LK.
 
 ## Invitations envoyées (131)
 
@@ -109,62 +109,96 @@ La base compte 300 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | AudioWizard | Thibaut Gressier | a_contacter |  | 2026-07-06 |
 | Blify | Clément Lhommeau | a_contacter |  | 2026-07-06 |
 | Eledone | Bruno Heckel | a_contacter |  | 2026-07-04 |
-| Nabu | Arnaud Doly | a_contacter |  | 2026-07-04 |
 | K-Ren | Lucie Doriez | a_contacter |  | 2026-07-04 |
-| OOTI | Maxime Riahi | a_contacter |  | 2026-07-04 |
-| Costructor | Mathieu Affejee | a_contacter |  | 2026-07-04 |
-| Sêmeia | Pierre Hornus | a_contacter |  | 2026-07-04 |
-| Filigran | Samuel Hassine | a_contacter |  | 2026-07-04 |
-| Apimo | Nicolas Guillaud de Saint-Fer… | a_contacter |  | 2026-07-04 |
+| Nabu | Arnaud Doly | a_contacter |  | 2026-07-04 |
+| Orthomax | Geoffroy Lapointe | a_contacter |  | 2026-07-04 |
 | MaGestionPsy | Alexandre De Beukelaer | a_contacter |  | 2026-07-04 |
-| Bluedigo | Maxime Baffert | a_contacter |  | 2026-07-04 |
-| Holivia | Jérôme Crest | a_contacter |  | 2026-07-04 |
-| Tenacy | Cyril Guillet | a_contacter |  | 2026-07-04 |
-| Patrowl | Nicolas Mattiocco | a_contacter |  | 2026-07-04 |
-| ZestMeUp | Christophe Bergeon | a_contacter |  | 2026-07-04 |
+| Apimo | Nicolas Guillaud de Saint-Fer… | a_contacter |  | 2026-07-04 |
+| Filigran | Samuel Hassine | a_contacter |  | 2026-07-04 |
+| Sêmeia | Pierre Hornus | a_contacter |  | 2026-07-04 |
+| Costructor | Mathieu Affejee | a_contacter |  | 2026-07-04 |
+| OOTI | Maxime Riahi | a_contacter |  | 2026-07-04 |
 | Anozr Way | Philippe Luc | a_contacter |  | 2026-07-04 |
 | Leviia | William Méauzoone | a_contacter |  | 2026-07-04 |
 | MyTraffic | Hakim Saadaoui | a_contacter |  | 2026-07-04 |
 | Carbonfact | Marc Laurent | a_contacter |  | 2026-07-04 |
 | Energiency | Arnaud Legrand | a_contacter |  | 2026-07-04 |
 | Lizee | Anna Balez | a_contacter |  | 2026-07-04 |
+| LOCKimmo | Julien Dourlen | a_contacter |  | 2026-07-04 |
+| ProTechnologies | Hervé Bozon-Petrier | a_contacter |  | 2026-07-04 |
 | Formality | Eliott Reilhac | a_contacter |  | 2026-07-04 |
 | Bloom Lasers | Julien Saby | a_contacter |  | 2026-07-04 |
-| ProTechnologies | Hervé Bozon-Petrier | a_contacter |  | 2026-07-04 |
-| Orthomax | Geoffroy Lapointe | a_contacter |  | 2026-07-04 |
-| LOCKimmo | Julien Dourlen | a_contacter |  | 2026-07-04 |
-| Corma | Héloïse Rozès | a_contacter |  | 2026-07-04 |
-| Elemate Technologies | Thomas Robert | a_contacter |  | 2026-07-04 |
-| Wineriz | Charles Riveau | a_contacter |  | 2026-07-04 |
-| Vizzia | Katrin de Proyart | a_contacter |  | 2026-07-04 |
-| Jimini AI | Raphael Arroche | a_contacter |  | 2026-07-04 |
-| Malibou | Maxence Drummond | a_contacter |  | 2026-07-04 |
-| Galadrim | Jean Ashton | a_contacter |  | 2026-07-04 |
-| Spinergie | Jean Cristofari | a_contacter |  | 2026-07-04 |
-| Whispeak | Florent Van Calster | a_contacter |  | 2026-07-04 |
-| Addingwell | Romain Baert | a_contacter |  | 2026-07-04 |
-| Bsport | Zakaria Mansour | a_contacter |  | 2026-07-04 |
-| Riot | Benjamin Netter | a_contacter |  | 2026-07-04 |
-| Beehire | Joey Cariano | a_contacter |  | 2026-07-04 |
-| TinyMDM | Yann Mareschal | a_contacter |  | 2026-07-04 |
-| kiwiHR | Sacha Taghavi | a_contacter |  | 2026-07-04 |
-| nooa | Luc Romano | a_contacter |  | 2026-07-04 |
+| ZestMeUp | Christophe Bergeon | a_contacter |  | 2026-07-04 |
+| Patrowl | Nicolas Mattiocco | a_contacter |  | 2026-07-04 |
+| Tenacy | Cyril Guillet | a_contacter |  | 2026-07-04 |
+| Holivia | Jérôme Crest | a_contacter |  | 2026-07-04 |
+| Bluedigo | Maxime Baffert | a_contacter |  | 2026-07-04 |
 | Mindflow | Paul-Arthur Jonville | a_contacter |  | 2026-07-04 |
-| Resilio | Amael Parreaux-Ey | a_contacter |  | 2026-07-04 |
+| Elemate Technologies | Thomas Robert | a_contacter |  | 2026-07-04 |
+| kiwiHR | Sacha Taghavi | a_contacter |  | 2026-07-04 |
+| TinyMDM | Yann Mareschal | a_contacter |  | 2026-07-04 |
+| Beehire | Joey Cariano | a_contacter |  | 2026-07-04 |
+| Riot | Benjamin Netter | a_contacter |  | 2026-07-04 |
+| Bsport | Zakaria Mansour | a_contacter |  | 2026-07-04 |
+| Addingwell | Romain Baert | a_contacter |  | 2026-07-04 |
+| Whispeak | Florent Van Calster | a_contacter |  | 2026-07-04 |
+| Spinergie | Jean Cristofari | a_contacter |  | 2026-07-04 |
+| Galadrim | Jean Ashton | a_contacter |  | 2026-07-04 |
+| Malibou | Maxence Drummond | a_contacter |  | 2026-07-04 |
+| Jimini AI | Raphael Arroche | a_contacter |  | 2026-07-04 |
+| Vizzia | Katrin de Proyart | a_contacter |  | 2026-07-04 |
+| Wineriz | Charles Riveau | a_contacter |  | 2026-07-04 |
+| Corma | Héloïse Rozès | a_contacter |  | 2026-07-04 |
+| nooa | Luc Romano | a_contacter |  | 2026-07-04 |
 | Witik | Arnaud Zilliox | a_contacter |  | 2026-07-04 |
+| Resilio | Amael Parreaux-Ey | a_contacter |  | 2026-07-04 |
 
-## File LK — à contacter (147)
+## File LK — à contacter (173)
 
 | Startup | Contact | Jour | Score | Batch |
 |---|---|---|---|---|
-| AskRH Copilot |  |  | 4 | B4 tech-IA |
-| Quideos | Mikaël Delmas |  | 4 | B4 tech-IA |
-| PyxiScience | Joachim Lebovits |  | 4 | B4 tech-IA |
-| Speeral | Julien Chevalier |  | 4 | B4 tech-IA |
-| Leakmited | Hubert Baya Toda |  | 4 | B4 tech-IA |
-| Trust-Place | Gaëlle Delore |  | 4 | B4 tech-IA |
-| Orus Energy | Alexandre Girard |  | 4 | B4 tech-IA |
+| Hyperline | Lucas Bédout |  | 5 | B5 saas-financé |
+| Najar | Vincent Coste |  | 4 | B5 saas-financé |
+| Beedeez | Julien Huelvan |  | 4 | B5 saas-financé |
+| Upfund | Mehdi Bakkali |  | 4 | B5 saas-financé |
+| Escape | Tristan Kalos |  | 4 | B5 saas-financé |
+| Linkup | Philippe Mizrahi |  | 4 | B5 saas-financé |
+| Happydemics | Tarek Ouagguini |  | 4 | B5 saas-financé |
+| iSYBUY | Mélanie Lehoux |  | 5 | B5 saas-financé |
+| Evertrust | Kamel Ferchouche |  | 5 | B5 saas-financé |
+| Intent Technologies | Benjamin Ulrich |  | 4 | B5 saas-financé |
+| AdAlong | Clémence Demerliac |  | 5 | B5 saas-financé |
+| Dylogy | Aurélien Couloumy |  | 5 | B5 saas-financé |
+| Edgee | Gilles Raymond |  | 5 | B5 saas-financé |
+| EnCaps | Pascal Jardé |  | 5 | B5 saas-financé |
+| Arenametrix | Kévin Vitoz |  | 4 | B5 saas-financé |
+| Agendize | Alexandre Rambaud |  | 4 | B5 saas-financé |
+| OpsMill | Damien Garros |  | 6 | B5 saas-financé |
+| Freeda | Peter Starr |  | 6 | B5 saas-financé |
+| Captain | Julien Murzyn |  | 6 | B5 saas-financé |
+| Pathway | Zuzanna Stamirowska |  | 4 | B5 saas-financé |
+| Qovery | Romaric Philogène |  | 5 | B5 saas-financé |
+| Stockoss | Laurent Bonnet |  | 5 | B5 saas-financé |
+| Skillup | Hugues Peuchot |  | 3 | B5 saas-financé |
+| Screeb | Simon Robic |  | 4 | B5 saas-financé |
+| Djust | Arnaud Rihiant |  | 5 | B5 saas-financé |
+| Trezy | Quentin Lacointa |  | 5 | B5 saas-financé |
+| Obat | Florent Liagre |  | 2 | B4 tech-IA |
 | Leanear | Cécile Delerablée |  | 4 | B4 tech-IA |
+| Orus Energy | Alexandre Girard |  | 4 | B4 tech-IA |
+| Trust-Place | Gaëlle Delore |  | 4 | B4 tech-IA |
+| Leakmited | Hubert Baya Toda |  | 4 | B4 tech-IA |
+| Speeral | Julien Chevalier |  | 4 | B4 tech-IA |
+| PyxiScience | Joachim Lebovits |  | 4 | B4 tech-IA |
+| Quideos | Mikaël Delmas |  | 4 | B4 tech-IA |
+| AskRH Copilot |  |  | 4 | B4 tech-IA |
+| Kanta | Clément Lemariey |  | 4 | B4 tech-IA |
+| Softyflow | Abdellatif El Alaoui |  | 4 | B4 tech-IA |
+| Diffly | Julien Cohen-Roussey |  | 4 | B4 tech-IA |
+| Eidō | Maxime Lalo |  | 4 | B4 tech-IA |
+| Paxilia | Mohamed Haijoubi |  | 4 | B4 tech-IA |
+| AUCAE | Pascale Perez |  | 4 | B4 tech-IA |
+| Hollia | Hadrien Bonato-Pape |  | 4 | B4 tech-IA |
 | Qwairy | Luca Fancello |  | 4 | B4 tech-IA |
 | Boby | Aurélien Rey |  | 4 | B4 tech-IA |
 | Skill LMS | Abel Salah |  | 4 | B4 tech-IA |
@@ -181,17 +215,47 @@ La base compte 300 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Aktio | Laurent Barbezieux |  | 2 | B4 tech-IA |
 | Talkspirit | Philippe Pinault |  | 2 | B4 tech-IA |
 | IPaidThat | Sébastien Claeys |  | 2 | B4 tech-IA |
-| Hollia | Hadrien Bonato-Pape |  | 4 | B4 tech-IA |
-| Obat | Florent Liagre |  | 2 | B4 tech-IA |
 | Malou | Louiza Hacene |  | 2 | B4 tech-IA |
-| AUCAE | Pascale Perez |  | 4 | B4 tech-IA |
-| Paxilia | Mohamed Haijoubi |  | 4 | B4 tech-IA |
-| Eidō | Maxime Lalo |  | 4 | B4 tech-IA |
-| Diffly | Julien Cohen-Roussey |  | 4 | B4 tech-IA |
-| Softyflow | Abdellatif El Alaoui |  | 4 | B4 tech-IA |
-| Kanta | Clément Lemariey |  | 4 | B4 tech-IA |
-| Habity | Quentin Pion |  | 5 | B4 tech-IA |
+| Fraktion | Vincent Pastor |  | 5 | B4 tech-IA |
+| Noota | Alexandre Duffaut |  | 5 | B4 tech-IA |
+| Memority | Gilles Castéran |  | 5 | B4 tech-IA |
+| Veilio | Martin Charbonnel |  | 5 | B4 tech-IA |
+| Flowie | Yann Ravel-Sibillot |  | 5 | B4 tech-IA |
+| Furtiveo | Thibaut Lemay |  | 5 | B4 tech-IA |
+| Subnoto | Corentin Mors |  | 5 | B4 tech-IA |
+| Cuevr | Gaëlle Boutaud |  | 5 | B4 tech-IA |
+| PublikConnect | Alan Bourhis |  | 5 | B4 tech-IA |
+| Vertesia | Eric Barroca |  | 5 | B4 tech-IA |
+| Idealys | Michael Lalande |  | 5 | B4 tech-IA |
+| Alta Ares | Hadrien Canter |  | 5 | B4 tech-IA |
+| Aletiq | Geoffrey Ricard |  | 5 | B4 tech-IA |
+| ICONO | Louis Develle |  | 4 | B4 tech-IA |
+| .txt (dottxt) | Rémi Louf |  | 4 | B4 tech-IA |
+| Marble | Arnaud Schwartz |  | 4 | B4 tech-IA |
+| Cyberesist | Fabien Tavernier |  | 4 | B4 tech-IA |
+| Skelter | Michel Centeno |  | 4 | B4 tech-IA |
+| CountAct | Lounis Lakhal |  | 4 | B4 tech-IA |
+| Catalog | Julien Bellemare |  | 4 | B4 tech-IA |
+| Lixo | Marjorie Darcet |  | 5 | B4 tech-IA |
+| MerciYanis | Guillaume Blanc |  | 5 | B4 tech-IA |
+| Faks | Corentin Geoffray |  | 5 | B4 tech-IA |
+| Figures | Virgile Raingeard |  | 5 | B4 tech-IA |
 | Zeliq | Dorian Ciavarella |  | 5 | B4 tech-IA |
+| Manty | Harold Gerber |  | 5 | B4 tech-IA |
+| Bump.sh | Sébastien Charrier |  | 5 | B4 tech-IA |
+| Brainboard | Chafik Belhaoues |  | 5 | B4 tech-IA |
+| Secudeal | Stanley Dubois |  | 5 | B4 tech-IA |
+| Ostratia | Marie-Caroline Blanckaert |  | 5 | B4 tech-IA |
+| BatiScript | Benoit Jeannin |  | 5 | B4 tech-IA |
+| Breakcold | Arnaud Belinga |  | 5 | B4 tech-IA |
+| Habity | Quentin Pion |  | 5 | B4 tech-IA |
+| Timescanner | Adrien Blandin |  | 5 | B4 tech-IA |
+| Tisio | Jean-Michel Berjaud |  | 5 | B4 tech-IA |
+| Netmesafe | Arnaud Vinson |  | 5 | B4 tech-IA |
+| Mimorian | Cédric Jean |  | 5 | B4 tech-IA |
+| Mergify | Julien Danjou |  | 5 | B4 tech-IA |
+| Trustee | Anaïs Boughanem |  | 5 | B4 tech-IA |
+| Mon CRM | Thibaut Juge |  | 5 | B4 tech-IA |
 | Botmind | Christophe Chevalier |  | 5 | B4 tech-IA |
 | Eleya | Thomas Benchetrit |  | 5 | B4 tech-IA |
 | Veeton | Flore Lestrade |  | 5 | B4 tech-IA |
@@ -202,60 +266,34 @@ La base compte 300 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Cycloid | Benjamin Brial |  | 5 | B4 tech-IA |
 | LetXbe | Pierre Magrangeas |  | 5 | B4 tech-IA |
 | Deephawk | Gilles Allain |  | 5 | B4 tech-IA |
-| Vertesia | Eric Barroca |  | 5 | B4 tech-IA |
-| Idealys | Michael Lalande |  | 5 | B4 tech-IA |
-| Alta Ares | Hadrien Canter |  | 5 | B4 tech-IA |
-| Fraktion | Vincent Pastor |  | 5 | B4 tech-IA |
-| Aletiq | Geoffrey Ricard |  | 5 | B4 tech-IA |
-| Noota | Alexandre Duffaut |  | 5 | B4 tech-IA |
-| Memority | Gilles Castéran |  | 5 | B4 tech-IA |
-| Veilio | Martin Charbonnel |  | 5 | B4 tech-IA |
-| Flowie | Yann Ravel-Sibillot |  | 5 | B4 tech-IA |
-| Furtiveo | Thibaut Lemay |  | 5 | B4 tech-IA |
-| Subnoto | Corentin Mors |  | 5 | B4 tech-IA |
-| Cuevr | Gaëlle Boutaud |  | 5 | B4 tech-IA |
-| PublikConnect | Alan Bourhis |  | 5 | B4 tech-IA |
-| Mon CRM | Thibaut Juge |  | 5 | B4 tech-IA |
-| Trustee | Anaïs Boughanem |  | 5 | B4 tech-IA |
-| Mergify | Julien Danjou |  | 5 | B4 tech-IA |
-| Mimorian | Cédric Jean |  | 5 | B4 tech-IA |
-| Netmesafe | Arnaud Vinson |  | 5 | B4 tech-IA |
-| Tisio | Jean-Michel Berjaud |  | 5 | B4 tech-IA |
-| Timescanner | Adrien Blandin |  | 5 | B4 tech-IA |
-| Breakcold | Arnaud Belinga |  | 5 | B4 tech-IA |
-| BatiScript | Benoit Jeannin |  | 5 | B4 tech-IA |
-| Ostratia | Marie-Caroline Blanckaert |  | 5 | B4 tech-IA |
-| Secudeal | Stanley Dubois |  | 5 | B4 tech-IA |
-| Brainboard | Chafik Belhaoues |  | 5 | B4 tech-IA |
-| Bump.sh | Sébastien Charrier |  | 5 | B4 tech-IA |
-| Manty | Harold Gerber |  | 5 | B4 tech-IA |
-| Figures | Virgile Raingeard |  | 5 | B4 tech-IA |
-| Faks | Corentin Geoffray |  | 5 | B4 tech-IA |
-| MerciYanis | Guillaume Blanc |  | 5 | B4 tech-IA |
-| Lixo | Marjorie Darcet |  | 5 | B4 tech-IA |
-| Catalog | Julien Bellemare |  | 4 | B4 tech-IA |
-| CountAct | Lounis Lakhal |  | 4 | B4 tech-IA |
-| Skelter | Michel Centeno |  | 4 | B4 tech-IA |
-| Cyberesist | Fabien Tavernier |  | 4 | B4 tech-IA |
-| Marble | Arnaud Schwartz |  | 4 | B4 tech-IA |
-| .txt (dottxt) | Rémi Louf |  | 4 | B4 tech-IA |
-| ICONO | Louis Develle |  | 4 | B4 tech-IA |
-| Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
 | Lupin & Holmes | Roni Carta |  | 5 | B4 tech-IA |
-| Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
+| Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
 | Geovelo | Gaël Sauvanet | J8 | 0 | B2 éthique |
-| Sami | Tanguy Robert | J8 | 2 | B2 éthique |
-| RDV360 | Ludovic Diligeart | J7 | 5 | B3 métier+seed |
+| Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
 | Getinside | Maxime Garrigues | J8 | 3 | B3 métier+seed |
-| Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
+| Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
+| SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
+| Auto Gestion | Hector Snowman |  | 2 | B3 métier+seed |
+| Extrabat | Anthony Body | J7 | 5 | B3 métier+seed |
+| ProGBat | Thierry Lecocq | J7 | 5 | B3 métier+seed |
 | Docorga | Florian Faideau | J7 | 5 | B3 métier+seed |
 | Osteo2ls | Antoine Mentré |  | 5 | B3 métier+seed |
+| Diapaz | Cyril Bouchet | J7 | 5 | B3 métier+seed |
+| RDV360 | Ludovic Diligeart | J7 | 5 | B3 métier+seed |
 | Azeoo | Anthony Desbois | J7 | 5 | B3 métier+seed |
 | Axomove | Boris Lévêque | J7 | 5 | B3 métier+seed |
-| Diapaz | Cyril Bouchet | J7 | 5 | B3 métier+seed |
-| Extrabat | Anthony Body | J7 | 5 | B3 métier+seed |
 | Objow | Jonathan Le Duc | J7 | 5 | B3 métier+seed |
 | OneFlash | Lucas Di Franco | J7 | 5 | B3 métier+seed |
+| Hubblo | Benoit Petit | J7 | 4 | B2 éthique |
+| Apiday | Édouard Audi | J7 | 4 | B2 éthique |
+| Holis | Martin Besnier | J7 | 4 | B2 éthique |
+| Tehtris | Éléna Poincet | J8 | 4 | B2 éthique |
+| Sencrop | Michael Bruniaux |  | 4 | B2 éthique |
+| Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
+| Greenspector | Thomas Corvaisier | J8 | 4 | B2 éthique |
+| Sarus | Maxime Agostini | J7 | 4 | B2 éthique |
+| MotoClic | Jean-François Rullier | J7 | 4 | B3 métier+seed |
+| Partnerimmo | Alexandre Chopine | J7 | 4 | B3 métier+seed |
 | Jardisoft | Kim Billout |  | 4 | B3 métier+seed |
 | Shortcuts | Anthony Desmars | J8 | 4 | B3 métier+seed |
 | Webosteo | Michaël Chazel | J7 | 4 | B3 métier+seed |
@@ -276,33 +314,21 @@ La base compte 300 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Scorp-io | Jean-Romain Bardet | J8 | 4 | B3 métier+seed |
 | NeoXperiences | Boris Courté | J8 | 4 | B3 métier+seed |
 | Scriboupsy | Blandine Coudray |  | 3 | B3 métier+seed |
-| Hubblo | Benoit Petit | J7 | 4 | B2 éthique |
-| Apiday | Édouard Audi | J7 | 4 | B2 éthique |
-| Holis | Martin Besnier | J7 | 4 | B2 éthique |
-| Tehtris | Éléna Poincet | J8 | 4 | B2 éthique |
-| Sencrop | Michael Bruniaux |  | 4 | B2 éthique |
-| ProGBat | Thierry Lecocq | J7 | 5 | B3 métier+seed |
-| Greenspector | Thomas Corvaisier | J8 | 4 | B2 éthique |
-| Sarus | Maxime Agostini | J7 | 4 | B2 éthique |
-| MotoClic | Jean-François Rullier | J7 | 4 | B3 métier+seed |
-| Partnerimmo | Alexandre Chopine | J7 | 4 | B3 métier+seed |
-| Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
-| Auto Gestion | Hector Snowman |  | 2 | B3 métier+seed |
-| SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
-| Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
-| Alivio | Jérémie Guichot | J6 | 5 | B3 métier+seed |
-| Popina | Florion Coiffé | J7 | 5 | B3 métier+seed |
-| Klaxo | Evguen Bernat | J6 | 5 | B3 métier+seed |
-| Albus | Geoffroy Lapointe | J6 | 5 | B3 métier+seed |
-| Epsor | Julien Niquet | J6 | 5 | B2 éthique |
-| Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
-| Ublo | Flavien Douetteau | J6 | 5 | B3 métier+seed |
-| Free Devis Factures | Jean-Pierre Eldin |  | 5 | B3 métier+seed |
-| Fitnet | Laurent Salsé | J6 | 5 | B3 métier+seed |
-| abaseo | François Herbreteau | J6 | 5 | B3 métier+seed |
+| Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
+| Sami | Tanguy Robert | J8 | 2 | B2 éthique |
 | dr.veto | Hervé Hiard | J6 | 5 | B3 métier+seed |
-| Ikosoft | Jean-Claude Brosset | J6 | 5 | B3 métier+seed |
+| abaseo | François Herbreteau | J6 | 5 | B3 métier+seed |
+| Fitnet | Laurent Salsé | J6 | 5 | B3 métier+seed |
+| Free Devis Factures | Jean-Pierre Eldin |  | 5 | B3 métier+seed |
+| Ublo | Flavien Douetteau | J6 | 5 | B3 métier+seed |
+| Klaxo | Evguen Bernat | J6 | 5 | B3 métier+seed |
+| Popina | Florion Coiffé | J7 | 5 | B3 métier+seed |
+| Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
+| Epsor | Julien Niquet | J6 | 5 | B2 éthique |
+| Albus | Geoffroy Lapointe | J6 | 5 | B3 métier+seed |
+| Alivio | Jérémie Guichot | J6 | 5 | B3 métier+seed |
 | Tactill | Grégoire Lopez | J6 | 5 | B3 métier+seed |
+| Ikosoft | Jean-Claude Brosset | J6 | 5 | B3 métier+seed |
 | Rounded | Aymeric Vaudelin |  | 5 | B1 tech |
 
 ## Hors file (22)
@@ -311,9 +337,9 @@ Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 
 | Startup | Contact | Statut | Notes |
 |---|---|---|---|
-| CarouselCraft | David Manneveau | a_contacter |  |
-| Cadrio | Lucien Faber | a_contacter |  |
 | Kelyseo | Youcef Belhenniche | a_contacter |  |
+| Cadrio | Lucien Faber | a_contacter |  |
+| CarouselCraft | David Manneveau | a_contacter |  |
 | Skwiz | David Sillan | a_contacter |  |
 | Kwitance |  | a_contacter |  |
 | Tangram |  | a_contacter |  |
@@ -321,16 +347,16 @@ Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 | Wyapy | Antoine Meyer | a_contacter |  |
 | BiteSEO |  | a_contacter |  |
 | Mageltys | Olivier de La Chevasnerie | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/ol… |
-| Terapiz | Frédéric Lefetz | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-14 : https://www.linkedin.com/in/f… |
+| ArtisanFacture | Valentin Halgand | a_contacter |  |
 | Tanaguru | Frédéric Halna | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/fr… |
+| Terapiz | Frédéric Lefetz | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-14 : https://www.linkedin.com/in/f… |
 | Numalis | Arnault Ioualalen | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/a… |
 | Snowpack | Frédéric Laurent | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/f… |
 | SO-FA | Laurent Tixier | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/l… |
-| ArtisanFacture | Valentin Halgand | a_contacter |  |
-| EvalAndGo | Sébastien Lerouge | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/se… |
-| Youmethem | François-Xavier Gourvès | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-11 : https://www.linkedin.com/in/f… |
-| Custocy | Sébastien Sivignon | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-11 : https://www.linkedin.com/in/s… |
-| Weepo | Hicham El Maniari | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/hi… |
-| Adveez | Karim Ben Dhia | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/k… |
 | Stabler | Anis Gandoura | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/a… |
+| EvalAndGo | Sébastien Lerouge | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/se… |
+| Adveez | Karim Ben Dhia | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://www.linkedin.com/in/k… |
+| Weepo | Hicham El Maniari | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/hi… |
+| Custocy | Sébastien Sivignon | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-11 : https://www.linkedin.com/in/s… |
+| Youmethem | François-Xavier Gourvès | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-11 : https://www.linkedin.com/in/f… |
 
