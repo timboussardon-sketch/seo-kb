@@ -1118,3 +1118,21 @@ Grep tiret cadratim « — » = 0 sur draft final (seuls séparateurs `---` mark
 **Point d'attention** : le pilier Business SEO/GEO a été info du jour 3 fois sur 4 éditions récentes (07-11 v2 Business SEO NYT, 07-12 v1 Business SEO Kevin Indig SSI, 07-12 v2 GEO Cloudflare, 07-13 Business SEO/GEO couche opérateur). La prochaine édition doit varier vers Recherche agentique, Actualité SEO, Niche SEO ou Product-Led SEO.
 
 **Discipline anti-pattern IA tenue** : zéro tiret cadratim intra-texte, zéro mot banni, zéro métaphore vocabulaire empruntée, vouvoiement maintenu, aucune personnification acteurs cités, pas d'émoji, pas d'ouverture méta-rhétorique, pas de conclusion redondante. « majeure » substitué par « parmi » avant clôture.
+
+## 2026-07-15 (cloud matin, pilier Actualité SEO)
+
+| Axe | Note | Détail |
+|---|---|---|
+| source_diversity | 8 | 6 sources indépendantes info du jour (SEL Adegbola + SEL 479298 + seroundtable 41675 + blog.google GML + support.google.com primaire + optimixed recap) + 3 brèves recoupées (2-3 sources chacune) + 1 source primaire developers.google.com pour B2 |
+| claim_density_verified | info du jour 5 + brèves 4 = 9 total | Tous verified, deux 0.75-0.7 (CiteLens 320 requêtes marché turc étroit ; volatilité 7-Eleven outillée non confirmée) |
+| novelty_score | 4/5 | Angle asymétrie marchand vs éditeur sur surfaces IA Google est nouveau, pas repris dans les recaps généralistes. Rapport annoncé 20 mai, mais article de fond sur l'asymétrie mesurable après rollout beta 14 juillet = information nouvelle utile. |
+| doctrine_fit | 4/5 | 3 concepts articulés avec rôle distinct : metriques-visibilite-geo 7e dimension share of voice native, data-proprietaire observation exclusive pilote US, tabou-visibilite Google emploie share of voice associé mesure |
+| redite_risk | faible | Info du jour = Actualité SEO (variation pilier tenue vs 4 dernières éditions Business SEO/Recherche agentique/GEO/Business SEO). Brèves : B1 ChatGPT Ads = signal fresh 14 juillet, B2 docs = fresh, B3 CiteLens = source nouvelle explore, B4 volatilité = signal fresh 11 juillet |
+| clickbait_risk | faible | Titre factuel « Merchant Center devient le premier point d'entrée Google à afficher une donnée de requête pour AI Mode et AI Overviews. Les éditeurs, eux, n'y ont toujours pas droit. » = pattern « X fait A, mais pas B » (asymétrie mesurée), ancré sur fait vérifiable |
+| **Note globale** | **4.1/5** | |
+
+**Enseignements** : le pattern « asymétrie mesurée entre populations d'utilisateurs Google » est un patron d'info du jour valide dès qu'il est vérifiable en primaire des deux côtés. Ici : Merchant Center AI Performance Insights (query data, share of voice) vs GSC AI performance report (impressions/pages/pays/devices, pas de clics ni requêtes). Ce type d'angle bat la simple redite d'annonce Google Marketing Live parce qu'il ajoute une comparaison structurée que les recaps généralistes ne font pas. Réutiliser dès qu'un rapport Google élargit sa disponibilité en pilote et qu'un équivalent existe côté SEO / côté éditeur.
+
+**Point d'attention** : le rapport Merchant Center AI Performance Insights est en pilote très restreint (comptes US limités). Toute décision opérationnelle prise à partir d'un chiffre lu dans le rapport doit tenir compte de deux zones d'ombre : méthode de constitution du panier « brands similar to yours » et période couverte, ni l'une ni l'autre documentées. À rappeler si un marchand nommé publie un premier retour d'usage.
+
+**Discipline anti-pattern IA tenue** : zéro tiret cadratim intra-texte (11 occurrences initiales toutes converties en point / virgule / deux-points avant clôture), zéro mot banni, zéro métaphore vocabulaire empruntée (faux positif grep « fus » = 'diffusion' / 'diffusées', mots légitimes), vouvoiement maintenu, aucune personnification acteurs cités (Google/OpenAI/CiteLens/Brodie Clark verbes littéraux), pas d'émoji, pas d'ouverture méta-rhétorique, pas de conclusion redondante.
