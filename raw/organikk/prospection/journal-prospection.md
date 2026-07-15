@@ -4,7 +4,7 @@ source_type: client-note
 slug: organikk-journal-prospection
 title: "Organikk — journal prospection LinkedIn"
 created: 2026-07-13
-updated: 2026-07-10
+updated: 2026-07-15
 tags: [organikk, prospection, linkedin, pipeline]
 sources: 1
 confidence: high
@@ -15,12 +15,14 @@ status: stable
 
 Fichier synchronisé automatiquement depuis la table `prospection_pipeline` (Supabase fusionn), toutes les heures. Ne pas éditer à la main : toute modification sera écrasée à la synchro suivante.
 
-La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 147 prospects restent dans la file LK.
+La base compte 300 prospects. 131 invitations sont parties, 13 sont acceptées. 147 prospects restent dans la file LK.
 
-## Invitations envoyées (133)
+## Invitations envoyées (131)
 
 | Startup | Contact | Statut | Acceptée | Dernière maj |
 |---|---|---|---|---|
+| Tamtam | Edouard Epaud | contacte | oui | 2026-07-15 |
+| Kiosk | Léa Caen | contacte | oui | 2026-07-15 |
 | Toopi Organics | Michael Roes | a_contacter |  | 2026-07-10 |
 | Topograph | Pierre-Henri Janssens | a_contacter |  | 2026-07-10 |
 | Traace | Rodolphe Denieau | a_contacter |  | 2026-07-10 |
@@ -34,7 +36,6 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Verdikt | Christine Heckmann | a_contacter |  | 2026-07-10 |
 | Webyn | Vincent Oliveira | a_contacter |  | 2026-07-10 |
 | Weytop | Souchiam Sechao | a_contacter |  | 2026-07-10 |
-| Tamtam | Edouard Epaud | a_contacter | oui | 2026-07-10 |
 | Sillage | Arnaud Weiss | a_contacter |  | 2026-07-10 |
 | Skyld | Marie Paindavoine | a_contacter |  | 2026-07-10 |
 | Smartback | Olympe Chabert | a_contacter |  | 2026-07-10 |
@@ -51,7 +52,6 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Consio | Philippe Roireau | contacte | oui | 2026-07-08 |
 | Folkyn | Charles Fouchault | contacte | oui | 2026-07-08 |
 | ArtisanSmart | Romaric Sauvanet | contacte | oui | 2026-07-08 |
-| Kalent | Edouard Vaudour | a_contacter | oui | 2026-07-08 |
 | Origin 137 | Hugo Beninca | a_contacter | oui | 2026-07-07 |
 | Opsima | Louis Raynaud | a_contacter |  | 2026-07-07 |
 | Otami | Guillaume Philipson | a_contacter |  | 2026-07-07 |
@@ -86,8 +86,6 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Guepard | Koutheir Cherni | a_contacter |  | 2026-07-07 |
 | Greenscope | Jean-Emmanuel Challan Belval | a_contacter |  | 2026-07-07 |
 | Koddex | Stéphane Dicostanzo | a_contacter | oui | 2026-07-06 |
-| Riverse | Ludovic Chatoux | a_contacter | oui | 2026-07-06 |
-| Kiosk | Léa Caen | a_contacter | oui | 2026-07-06 |
 | Estuaire | Maxime Meijers | a_contacter |  | 2026-07-06 |
 | Ewake | Pooné Mokari | a_contacter |  | 2026-07-06 |
 | Ezymob | Robin Le Gal | a_contacter |  | 2026-07-06 |
@@ -111,8 +109,8 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | AudioWizard | Thibaut Gressier | a_contacter |  | 2026-07-06 |
 | Blify | Clément Lhommeau | a_contacter |  | 2026-07-06 |
 | Eledone | Bruno Heckel | a_contacter |  | 2026-07-04 |
-| K-Ren | Lucie Doriez | a_contacter |  | 2026-07-04 |
 | Nabu | Arnaud Doly | a_contacter |  | 2026-07-04 |
+| K-Ren | Lucie Doriez | a_contacter |  | 2026-07-04 |
 | OOTI | Maxime Riahi | a_contacter |  | 2026-07-04 |
 | Costructor | Mathieu Affejee | a_contacter |  | 2026-07-04 |
 | Sêmeia | Pierre Hornus | a_contacter |  | 2026-07-04 |
@@ -167,7 +165,6 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Trust-Place | Gaëlle Delore |  | 4 | B4 tech-IA |
 | Orus Energy | Alexandre Girard |  | 4 | B4 tech-IA |
 | Leanear | Cécile Delerablée |  | 4 | B4 tech-IA |
-| Hollia | Hadrien Bonato-Pape |  | 4 | B4 tech-IA |
 | Qwairy | Luca Fancello |  | 4 | B4 tech-IA |
 | Boby | Aurélien Rey |  | 4 | B4 tech-IA |
 | Skill LMS | Abel Salah |  | 4 | B4 tech-IA |
@@ -184,9 +181,10 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Aktio | Laurent Barbezieux |  | 2 | B4 tech-IA |
 | Talkspirit | Philippe Pinault |  | 2 | B4 tech-IA |
 | IPaidThat | Sébastien Claeys |  | 2 | B4 tech-IA |
-| AUCAE | Pascale Perez |  | 4 | B4 tech-IA |
+| Hollia | Hadrien Bonato-Pape |  | 4 | B4 tech-IA |
 | Obat | Florent Liagre |  | 2 | B4 tech-IA |
 | Malou | Louiza Hacene |  | 2 | B4 tech-IA |
+| AUCAE | Pascale Perez |  | 4 | B4 tech-IA |
 | Paxilia | Mohamed Haijoubi |  | 4 | B4 tech-IA |
 | Eidō | Maxime Lalo |  | 4 | B4 tech-IA |
 | Diffly | Julien Cohen-Roussey |  | 4 | B4 tech-IA |
@@ -242,13 +240,14 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Marble | Arnaud Schwartz |  | 4 | B4 tech-IA |
 | .txt (dottxt) | Rémi Louf |  | 4 | B4 tech-IA |
 | ICONO | Louis Develle |  | 4 | B4 tech-IA |
-| Lupin & Holmes | Roni Carta |  | 5 | B4 tech-IA |
 | Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
+| Lupin & Holmes | Roni Carta |  | 5 | B4 tech-IA |
 | Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
 | Geovelo | Gaël Sauvanet | J8 | 0 | B2 éthique |
-| RDV360 | Ludovic Diligeart | J7 | 5 | B3 métier+seed |
 | Sami | Tanguy Robert | J8 | 2 | B2 éthique |
+| RDV360 | Ludovic Diligeart | J7 | 5 | B3 métier+seed |
 | Getinside | Maxime Garrigues | J8 | 3 | B3 métier+seed |
+| Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
 | Docorga | Florian Faideau | J7 | 5 | B3 métier+seed |
 | Osteo2ls | Antoine Mentré |  | 5 | B3 métier+seed |
 | Azeoo | Anthony Desbois | J7 | 5 | B3 métier+seed |
@@ -277,18 +276,17 @@ La base compte 302 prospects. 133 invitations sont parties, 15 sont acceptées. 
 | Scorp-io | Jean-Romain Bardet | J8 | 4 | B3 métier+seed |
 | NeoXperiences | Boris Courté | J8 | 4 | B3 métier+seed |
 | Scriboupsy | Blandine Coudray |  | 3 | B3 métier+seed |
-| Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
 | Hubblo | Benoit Petit | J7 | 4 | B2 éthique |
 | Apiday | Édouard Audi | J7 | 4 | B2 éthique |
 | Holis | Martin Besnier | J7 | 4 | B2 éthique |
 | Tehtris | Éléna Poincet | J8 | 4 | B2 éthique |
 | Sencrop | Michael Bruniaux |  | 4 | B2 éthique |
 | ProGBat | Thierry Lecocq | J7 | 5 | B3 métier+seed |
-| Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
 | Greenspector | Thomas Corvaisier | J8 | 4 | B2 éthique |
 | Sarus | Maxime Agostini | J7 | 4 | B2 éthique |
 | MotoClic | Jean-François Rullier | J7 | 4 | B3 métier+seed |
 | Partnerimmo | Alexandre Chopine | J7 | 4 | B3 métier+seed |
+| Miralia | Killian Vermersch | J7 | 4 | B2 éthique |
 | Auto Gestion | Hector Snowman |  | 2 | B3 métier+seed |
 | SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
 | Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
@@ -313,6 +311,7 @@ Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 
 | Startup | Contact | Statut | Notes |
 |---|---|---|---|
+| CarouselCraft | David Manneveau | a_contacter |  |
 | Cadrio | Lucien Faber | a_contacter |  |
 | Kelyseo | Youcef Belhenniche | a_contacter |  |
 | Skwiz | David Sillan | a_contacter |  |
@@ -321,7 +320,6 @@ Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 | ElixMail | Johan Gadefaix | a_contacter |  |
 | Wyapy | Antoine Meyer | a_contacter |  |
 | BiteSEO |  | a_contacter |  |
-| CarouselCraft | David Manneveau | a_contacter |  |
 | Mageltys | Olivier de La Chevasnerie | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/ol… |
 | Terapiz | Frédéric Lefetz | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-14 : https://www.linkedin.com/in/f… |
 | Tanaguru | Frédéric Halna | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/fr… |
