@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-15 · Agentic search et trafic non-humain : volume d'agents IA sur le web, impact sur Google Analytics 4 et le "dark traffic" IA (2025-2026) → `2026-07-15-stats-agentic-search-dark-traffic-ga4.md`
 - 2026-07-13 · Requêtes locales et résumés IA en 2026 : impact GSC avant/après AI Mode, taux d'impressions capturées et CTR résiduel → `2026-07-13-stats-ai-mode-impact-requetes-locales-gsc.md`
 - 2026-07-12 · Featured snippets à l'ère de l'IA : évolution de l'inventaire, du CTR position zéro et de la cannibalisation par les AI Overviews (2024-2026) → `2026-07-12-stats-featured-snippets-ai-overviews-cannibalization.md`
 - 2026-07-11 · Langue française et biais linguistique des moteurs IA : part du contenu francophone dans les citations IA, sur-représentation de l'anglais et implications pour le SEO en France (2025-2026) → `2026-07-11-stats-biais-linguistique-francais-citations-ia.md`
@@ -34,13 +35,7 @@
 
 ## À faire (par priorité)
 
-1. **Agentic search et trafic non-humain : volume d'agents IA sur le web, impact sur Google Analytics 4 et le "dark traffic" IA (2025-2026)**
-   - Angle : ChatGPT Deep Research, Perplexity Pro, Claude Projects naviguent le web de façon autonome → le trafic organique mesuré dans GA4 est contaminé ou occulté ; quels volumes, comment les distinguer du trafic humain, impact sur les rapports d'acquisition et les décisions SEO.
-   - Sources à explorer : Cloudflare Radar (logs bots vs humains), Similarweb (non-human traffic share), Botify/Oncrawl (crawl IA vs humain), rapports GA4 anomalies.
-   - Transformation originale pressentie : réconciliation des 3 mesures (crawl-side / analytics-side / referral-side) en un seul cadre de lecture.
-   - Anti-redite : les études existantes traitent les crawlers du point de vue robots.txt (étude 2026-07-10) ; ici le prisme est l'impact sur la mesure analytics côté webmaster.
-
-2. **Perplexity Media Program et monétisation des citations : éditeurs partenaires, revenus partagés, impact sur la neutralité éditoriale (2025-2026)**
+1. **Perplexity Media Program et monétisation des citations : éditeurs partenaires, revenus partagés, impact sur la neutralité éditoriale (2025-2026)**
    - Angle : Perplexity rémunère les éditeurs qui autorisent crawl et usage de leurs contenus dans les réponses → conflit d'intérêts potentiel dans la sélection des sources ; quels éditeurs participent, quels revenus, comment cela modifie le profil des citations vs ChatGPT Search.
    - Sources à explorer : annonces officielles Perplexity (blog, presse), SE Ranking / Profound (domaines cités avant/après programme), réactions éditeurs (NYT, Condé Nast).
    - Transformation originale pressentie : comparaison partenaires vs non-partenaires dans le profil de citation Perplexity, mis en regard du 25 % overlap inter-moteurs (étude 2026-06-20).
