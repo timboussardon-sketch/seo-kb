@@ -41,8 +41,6 @@ Et la concentration est brutale : d'après Semrush, les 20 domaines les plus cit
 
 Source : Ahrefs, juin 2026 (50 domaines les plus cités dans les AI Overviews) : https://ahrefs.com/blog/most-cited-domains-ai-overviews/ · Semrush, Most-Cited Domains in AI : https://www.semrush.com/blog/most-cited-domains-ai/
 
-👉 **[Te faire citer via Reddit : mon guide complet SEO + GEO](https://organikk.co/blog/guide-reddit-seo-geo)**
-
 ---
 
 ## En bref
@@ -52,3 +50,7 @@ Source : Ahrefs, juin 2026 (50 domaines les plus cités dans les AI Overviews) :
 **Pubs dans l'AI Mode ★★★★☆ :** à Google Marketing Live 2026, Google a ouvert la publicité directement dans les réponses de l'AI Mode (en test aux US) : des Shopping ads que Gemini glisse dans sa réponse, et un « Business Agent » qui qualifie le prospect en chat sans qu'il quitte la page de résultats. L'espace où tu veux être cité gratuitement va aussi se vendre aux enchères. Google, GML 2026 : https://blog.google/products/ads-commerce/google-marketing-live-search-ads/
 
 **DuckDuckGo ★★☆☆☆ :** +75 % d'installations depuis l'annonce Google de mai, sur fond de rejet de la réponse IA imposée. Un signal faible pour l'instant, mais la surface de recherche commence à se disperser hors de Google. TheNextWeb, 2026 : https://thenextweb.com/news/google-search-ai-overhaul-publishers-traffic-open-web
+
+---
+
+👉 **[Trouver des leads SEO](https://organikk.co/consultant-lead-seo)**
