@@ -152,3 +152,9 @@
 {"id":"H-2026-07-15-5","candidate":"Bloc de mises à jour de documentation Google, semaine du 7 juillet.","chosen":true,"type":"breve-B2","date":"2026-07-15"}
 {"id":"H-2026-07-15-6","candidate":"CiteLens : le classement Google prédit les citations d'AI Mode et de Perplexity, mais pas celles de ChatGPT. Étude publiée le 8 juillet 2026.","chosen":true,"type":"breve-B3","date":"2026-07-15"}
 {"id":"H-2026-07-15-7","candidate":"Volatilité de classement Google autour du 11 juillet, non confirmée.","chosen":true,"type":"breve-B4","date":"2026-07-15"}
+{"id":"H-2026-07-15-v2-1","candidate":"Les agents IA se cassent sur la page tarifs des sites B2B, 1 500 essais mesurés","chosen":true,"type":"info-du-jour","date":"2026-07-15-v2"}
+{"id":"H-2026-07-15-v2-2","candidate":"Là où les agents IA calent sur les sites B2B, c'est le tarif","chosen":false,"type":"info-du-jour-candidate","date":"2026-07-15-v2","note":"proche mais moins spécifique sur le protocole chiffré"}
+{"id":"H-2026-07-15-v2-3","candidate":"79 pct vs 93 pct : le tarif est le seul point de rupture des sites B2B face aux agents IA","chosen":false,"type":"info-du-jour-candidate","date":"2026-07-15-v2","note":"chiffré mais moins lisible en tant qu'objet de titre"}
+{"id":"H-2026-07-15-v2-4","candidate":"Google introduit la génération d'images IA dans AI Overviews (Nano Banana)","chosen":true,"type":"breve-B1","date":"2026-07-15-v2"}
+{"id":"H-2026-07-15-v2-5","candidate":"Étude Fractl et SparkToro : les publications de niche à forte affinité battent les grands médias sur l'audience professionnelle","chosen":true,"type":"breve-B2","date":"2026-07-15-v2"}
+{"id":"H-2026-07-15-v2-6","candidate":"eMarketer plafonne le marché US des publicités chatbot à 5,41 Md$ en 2030","chosen":true,"type":"breve-B3","date":"2026-07-15-v2"}
