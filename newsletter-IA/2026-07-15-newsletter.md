@@ -47,7 +47,7 @@ Source : Ahrefs, juin 2026 (50 domaines les plus cités dans les AI Overviews) :
 
 **Publishers ★★★★★ :** la bascule IA de Google fait déjà des trous chiffrés dans le trafic éditeur. HubSpot -70 à -80 % d'organique, Chegg -49 %, DMG Media jusqu'à -89 % sur certaines requêtes, et une plainte déposée en juillet auprès de la CMA britannique. Digiday, 2026 : https://digiday.com/media/media-briefing-publishers-brace-themselves-for-the-zero-click-era-amid-googles-ai-search-overhaul/
 
-**Pubs dans l'AI Mode ★★★★☆ :** à Google Marketing Live 2026, Google a ouvert la publicité directement dans les réponses de l'AI Mode (en test aux US) : des Shopping ads que Gemini glisse dans sa réponse, et un « Business Agent » qui qualifie le prospect en chat sans qu'il quitte la page de résultats. L'espace où tu veux être cité gratuitement va aussi se vendre aux enchères. Google, GML 2026 : https://blog.google/products/ads-commerce/google-marketing-live-search-ads/
+**Moteurs de réponse ★★★☆☆ :** le trafic de référence des chatbots se recompose vite. D'après StatCounter, ChatGPT est tombé à son plus bas historique de part de référents, pendant que Gemini est passé 2ᵉ, devant Perplexity qui recule. Si tu fais du GEO, tes moteurs cibles bougent d'un mois à l'autre, ne mise pas tout sur un seul. StatCounter, 2026 : https://gs.statcounter.com/press/google-gemini-overtakes-perplexity-to-become-second-largest-source-of-ai-chatbot-referrals-to-websites
 
 **DuckDuckGo ★★☆☆☆ :** +75 % d'installations depuis l'annonce Google de mai, sur fond de rejet de la réponse IA imposée. Un signal faible pour l'instant, mais la surface de recherche commence à se disperser hors de Google. TheNextWeb, 2026 : https://thenextweb.com/news/google-search-ai-overhaul-publishers-traffic-open-web
 
