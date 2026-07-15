@@ -1239,3 +1239,5 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - pilote construit puis supprimé (jamais publié)
 - 5 des 19 pages étaient en collision avec des articles publiés depuis le plan du 7 juillet
 - doc: [[queries/pseo-2026-07-07-organikk-corpus]]
+
+## [2026-07-15] resurgence | [[concepts/information-gain]] — verdict proposé (à mettre à jour)
