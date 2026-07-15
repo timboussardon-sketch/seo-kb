@@ -31,7 +31,7 @@ Source : Google I/O 2026 + bascule confirmée le 10 juil. 2026 : https://blog.go
 
 Reste la vraie question pour nous : si Google répond à ta place, quelles sources choisit-il de citer ?
 
-### Ce que Google cite, c'est Reddit et YouTube, pas ta page corporate ★★★★☆
+### Et justement, que citent les AI Overviews ? ★★★★☆
 
 Ahrefs a analysé les 50 domaines les plus cités dans les AI Overviews de Google en juin 2026. En tête, Reddit (environ 21 % des citations) et YouTube (environ 19 %), suivis de Wikipédia et du blog de Google lui-même. Autrement dit, du contenu communautaire et de la vidéo, pas la belle page d'entreprise que tu as passé trois semaines à peaufiner.
 
@@ -47,6 +47,6 @@ Source : Ahrefs, juin 2026 (50 domaines les plus cités dans les AI Overviews) :
 
 **Publishers ★★★★★ :** la bascule IA de Google fait déjà des trous chiffrés dans le trafic éditeur. HubSpot -70 à -80 % d'organique, Chegg -49 %, DMG Media jusqu'à -89 % sur certaines requêtes, et une plainte déposée en juillet auprès de la CMA britannique. Digiday, 2026 : https://digiday.com/media/media-briefing-publishers-brace-themselves-for-the-zero-click-era-amid-googles-ai-search-overhaul/
 
-**GPT-5.6 ★★★☆☆ :** OpenAI a lancé le 9 juillet la famille GPT-5.6 (Sol, Terra, Luna) et ChatGPT Work, qui agrège le contexte des outils d'une équipe. L'autre moteur de réponse monte en gamme, une raison de plus de ne pas miser 100 % de ton acquisition sur Google. OpenAI release notes : https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+**Pubs dans l'AI Mode ★★★★☆ :** à Google Marketing Live 2026, Google a ouvert la publicité directement dans les réponses de l'AI Mode (en test aux US) : des Shopping ads que Gemini glisse dans sa réponse, et un « Business Agent » qui qualifie le prospect en chat sans qu'il quitte la page de résultats. L'espace où tu veux être cité gratuitement va aussi se vendre aux enchères. Google, GML 2026 : https://blog.google/products/ads-commerce/google-marketing-live-search-ads/
 
 **DuckDuckGo ★★☆☆☆ :** +75 % d'installations depuis l'annonce Google de mai, sur fond de rejet de la réponse IA imposée. Un signal faible pour l'instant, mais la surface de recherche commence à se disperser hors de Google. TheNextWeb, 2026 : https://thenextweb.com/news/google-search-ai-overhaul-publishers-traffic-open-web
