@@ -658,6 +658,7 @@
       "wiki/sources/2026-05-15-organikk-ameliorer-redaction-ia-claude.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/tim-profil-doctrine.md",
       "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
@@ -1400,6 +1401,7 @@
       "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1499,6 +1501,7 @@
       "wiki/concepts/avatar-freelance-sans-systeme.md",
       "wiki/concepts/boucle-sortie-mesure.md",
       "wiki/concepts/confidence-score.md",
+      "wiki/concepts/detection-slop-coordonne.md",
       "wiki/concepts/directories-data-ia.md",
       "wiki/concepts/e-e-a-t.md",
       "wiki/concepts/entites-vectorielles.md",
@@ -1625,6 +1628,7 @@
       "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -1709,6 +1713,36 @@
     ],
     "title": "DeepSeek",
     "type": "entity"
+  },
+  "detection-slop-coordonne": {
+    "aliases": [
+      "slop coordonné",
+      "content integrity",
+      "adversarial slop"
+    ],
+    "backrefs": [
+      "wiki/index.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/concepts/detection-slop-coordonne.md",
+    "outlinks": [
+      "2026-07-15-google-slop-detection-s-cts",
+      "surprise-gap",
+      "programmatique-pseo",
+      "pseo-data-driven-models",
+      "data-proprietaire",
+      "youtube"
+    ],
+    "status": "draft",
+    "tags": [
+      "ia",
+      "pseo",
+      "quality-raters",
+      "geo"
+    ],
+    "title": "Détection du slop coordonné (Content Integrity)",
+    "type": "concept"
   },
   "dette-cognitive": {
     "aliases": [
@@ -3798,6 +3832,7 @@
       "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -5022,6 +5057,7 @@
       "raw/organikk/clients/fgformation/fgformation-modeles-pseo.md",
       "wiki/audit/2026-06-01-audit.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
+      "wiki/concepts/detection-slop-coordonne.md",
       "wiki/concepts/maillage-systeme.md",
       "wiki/concepts/methode-organikk-4-piliers.md",
       "wiki/concepts/modele-page-variable-prix.md",
@@ -5079,6 +5115,7 @@
       "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md",
       "wiki/syntheses/tim-profil-doctrine.md"
@@ -5142,6 +5179,7 @@
       "raw/organikk/pré-call/pangaea-sports.md",
       "raw/organikk/pré-call/proximit.md",
       "wiki/clusters/modeles-pseo-2026-07-07-golfiller-corpus.md",
+      "wiki/concepts/detection-slop-coordonne.md",
       "wiki/concepts/modele-page-variable-prix.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/golfiller.md",
@@ -5152,6 +5190,7 @@
       "wiki/keywords/skills-2026-05-28-agence-marketing.md",
       "wiki/log.md",
       "wiki/moc/moc-maillage.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
     "confidence": "high",
@@ -5320,6 +5359,7 @@
       "wiki/sources/2026-01-12-organikk-seo-serrurier-lyon.md",
       "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
       "wiki/sources/2026-04-13-google-quality-raters-guidelines-2026.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md"
@@ -6127,6 +6167,7 @@
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/anti-ai-writing.md",
       "wiki/concepts/data-proprietaire.md",
+      "wiki/concepts/detection-slop-coordonne.md",
       "wiki/concepts/directories-data-ia.md",
       "wiki/concepts/e-e-a-t.md",
       "wiki/concepts/entites-vectorielles.md",
@@ -6193,6 +6234,7 @@
       "wiki/sources/2026-04-30-tim-posts-linkedin-batch.md",
       "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md",
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -6331,6 +6373,7 @@
       "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
@@ -6985,6 +7028,7 @@
       "youtube"
     ],
     "backrefs": [
+      "wiki/concepts/detection-slop-coordonne.md",
       "wiki/concepts/seo-multi-plateforme.md",
       "wiki/entities/google-ai-mode.md",
       "wiki/entities/linkedin.md",
@@ -7000,6 +7044,7 @@
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
       "wiki/sources/2026-06-17-algorithme-creez-votre-agent-seo.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
+      "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/syntheses/doctrine-seo-post-sge.md"
     ],
     "confidence": "high",

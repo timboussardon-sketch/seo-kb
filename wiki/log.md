@@ -1241,3 +1241,13 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - doc: [[queries/pseo-2026-07-07-organikk-corpus]]
 
 ## [2026-07-15] resurgence | [[concepts/information-gain]] — verdict proposé (à mettre à jour)
+
+## [2026-07-15] ingest | Google S-CTS — détection scalable du slop IA coordonné
+- source_type: paper
+- source: [[sources/2026-07-15-google-slop-detection-s-cts]]
+- fichier: raw/etudes-seo/google-slop-detection-s-cts-2026.pdf
+- entities touchées: 2 (youtube, quality-raters-guidelines)
+- concepts touchés: 1 créé (detection-slop-coordonne) + liens surprise-gap / programmatique-pseo / pseo-data-driven-models / data-proprietaire / anti-ai-writing
+- pages créées: 2 / mises à jour: 1 (index)
+- contradictions: N
+- angle SEO: périmètre modération vidéo, pas ranking ; confirme la doctrine (slop coordonné/templaté ciblé, pas l'usage IA) ; signature détectée = portrait d'un mauvais pSEO ; fiabilité analyse (transfert vidéo→search)

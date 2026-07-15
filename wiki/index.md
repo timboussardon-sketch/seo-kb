@@ -111,7 +111,8 @@ status: stable
 ### Fondation (1)
 - [[sources/2026-04-11-karpathy-llm-wiki]] — Pattern LLM Wiki : wiki persistant vs RAG
 
-### Papers (8)
+### Papers (9)
+- [[sources/2026-07-15-google-slop-detection-s-cts]] — Google S-CTS : détection scalable du slop IA coordonné (LoRA), périmètre modération vidéo
 - [[sources/2026-04-13-titans-architecture-google-deepmind]] — Architecture Titans, surprise metric, weight decay
 - [[sources/2026-04-13-miras-architecture]] — Multi-Resolution Adaptive Summarization, passage ranking
 - [[sources/2026-04-13-semrush-llm-conversion-study]] — 4x conversions trafic ChatGPT vs Google
@@ -260,7 +261,8 @@ status: stable
 - [[concepts/triade-serp]] — Modèle 3 phases : Document → Passage → Micro-Contextualisation
 - [[concepts/confidence-score]] — Score confiance AI Overviews
 
-### Stratégie contenu (13)
+### Stratégie contenu (14)
+- [[concepts/detection-slop-coordonne]] — Google cible le slop coordonné/templaté, pas l'usage IA (1 source)
 - [[concepts/e-e-a-t]] — Experience, Expertise, Authoritativeness, Trustworthiness (1 source QRG)
 - [[concepts/surprise-gap]] — L'info manquante qui force la mémorisation (2 sources)
 - [[concepts/ingenierie-semantique-inversee]] — Framework propriétaire Tim (4 sources)
