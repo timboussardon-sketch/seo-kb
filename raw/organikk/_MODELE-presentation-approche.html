@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
-<title>organikk.co · L'approche SEO/GEO</title>
+<title>organikk.co · Présentation</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
 
@@ -14,7 +14,7 @@
   --line:rgba(10,15,30,.07); --line-2:rgba(10,15,30,.12);
   --blue:#4685F0; --blue-light:#7FA9F5; --blue-deep:#1B3E8F;
   --blue-soft:#eaf1ff; --blue-softer:#f4f8ff;
-  --accent:#FF371C; --accent-soft:rgba(255,55,28,.08);
+  --accent:#FF371C;
   --paper:#fdf9ec;
   --shadow:0 20px 60px -20px rgba(27,62,143,.18);
 }
@@ -26,174 +26,131 @@ html,body{
 }
 .mono{font-family:'Geist Mono',ui-monospace,monospace}
 
-/* ── deck ── */
 .deck{padding:32px 0 96px}
 .slide{
   width:min(1120px,calc(100vw - 48px)); aspect-ratio:16/9;
   margin:0 auto 28px; background:var(--bg);
   border-radius:14px; box-shadow:var(--shadow);
-  padding:56px 64px; position:relative; overflow:hidden;
+  padding:54px 62px; position:relative; overflow:hidden;
   display:flex; flex-direction:column;
 }
-.slide-n{
-  position:absolute; bottom:24px; right:32px;
-  font-family:'Geist Mono',monospace; font-size:10px;
-  letter-spacing:.16em; color:var(--muted-2);
-}
-.wm{
-  position:absolute; bottom:24px; left:64px;
-  font-family:'Geist Mono',monospace; font-size:10px;
-  letter-spacing:.14em; color:var(--muted-2);
-}
-.kicker{
-  font-family:'Geist Mono',monospace; font-size:10.5px;
-  letter-spacing:.22em; text-transform:uppercase; color:var(--blue-deep);
-  margin-bottom:20px;
-}
-h2{font-size:34px; line-height:1.14; font-weight:600; letter-spacing:-.03em; max-width:24ch}
+.slide-n{position:absolute; bottom:24px; right:32px; font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.16em; color:var(--muted-2)}
+.wm{position:absolute; bottom:24px; left:62px; font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.14em; color:var(--muted-2)}
+.kicker{font-family:'Geist Mono',monospace; font-size:10.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--blue-deep); margin-bottom:18px}
+h2{font-size:33px; line-height:1.14; font-weight:600; letter-spacing:-.03em; max-width:25ch}
 h2 em{font-style:normal; color:var(--blue-deep)}
-.lede{margin-top:16px; font-size:16px; line-height:1.6; color:var(--muted); max-width:62ch}
-.body{margin-top:auto; padding-top:28px}
-p+p{margin-top:12px}
-.p{font-size:15.5px; line-height:1.66; color:var(--ink-2); max-width:70ch}
+.lede{margin-top:14px; font-size:15.5px; line-height:1.6; color:var(--muted); max-width:64ch}
+.body{margin-top:auto; padding-top:24px}
+.p{font-size:15px; line-height:1.66; color:var(--ink-2); max-width:72ch}
+.p+.p{margin-top:11px}
 .p b{font-weight:600; color:var(--ink)}
+.note{margin-top:16px; font-size:11.5px; line-height:1.6; color:var(--muted); max-width:90ch}
+.note b{color:var(--ink-2); font-weight:600}
 
-/* ── cover ── */
-.cover{
-  background:
+/* cover + intercalaires */
+.cover{background:
     radial-gradient(ellipse 62% 54% at 80% 10%, rgba(127,169,245,.42), transparent 68%),
     linear-gradient(158deg,#0c2470 0%,#1B3E8F 48%,#2559DD 100%);
-  color:#fff;
-}
-.cover-grid{
-  position:absolute; inset:0; pointer-events:none;
-  background-image:
-    linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+  color:#fff}
+.cover-grid{position:absolute; inset:0; pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
   background-size:56px 56px;
   -webkit-mask-image:radial-gradient(ellipse at 72% 22%,#000 30%,transparent 76%);
-  mask-image:radial-gradient(ellipse at 72% 22%,#000 30%,transparent 76%);
-}
+  mask-image:radial-gradient(ellipse at 72% 22%,#000 30%,transparent 76%)}
 .cover>*{position:relative}
 .cover .wordmark{font-size:15px; font-weight:600; letter-spacing:.16em; text-transform:uppercase}
 .cover .wordmark span{color:var(--blue-light)}
-.cover h1{margin-top:auto; font-size:52px; line-height:1.06; font-weight:600; letter-spacing:-.038em; max-width:19ch}
+.cover h1{margin-top:auto; font-size:50px; line-height:1.07; font-weight:600; letter-spacing:-.038em; max-width:20ch}
 .cover h1 em{font-style:normal; color:#A8C7FF}
-.cover .sub{margin-top:22px; font-size:16px; line-height:1.62; color:rgba(255,255,255,.8); max-width:56ch}
-.cover .foot{
-  margin-top:auto; padding-top:24px; border-top:1px solid rgba(255,255,255,.2);
-  display:flex; justify-content:space-between; align-items:flex-end;
-  font-size:12.5px; color:rgba(255,255,255,.76);
-}
+.cover .sub{margin-top:20px; font-size:15.5px; line-height:1.62; color:rgba(255,255,255,.8); max-width:58ch}
+.cover .foot{margin-top:auto; padding-top:22px; border-top:1px solid rgba(255,255,255,.2); display:flex; justify-content:space-between; align-items:flex-end; font-size:12.5px; color:rgba(255,255,255,.76)}
 .cover .slide-n,.cover .wm{color:rgba(255,255,255,.45)}
+.part{justify-content:center; background:var(--paper)}
+.part .num{font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:.24em; color:var(--blue); margin-bottom:16px}
+.part h2{font-size:44px; max-width:20ch}
+.part .lede{margin-top:16px; font-size:16px}
 
-/* ── résumé ── */
-.rows{display:flex; flex-direction:column; gap:0; margin-top:8px}
-.row{
-  display:grid; grid-template-columns:26px 1fr; gap:16px;
-  padding:14px 0; border-bottom:1px solid var(--line);
-}
+/* rows */
+.rows{display:flex; flex-direction:column}
+.row{display:grid; grid-template-columns:26px 1fr; gap:16px; padding:13px 0; border-bottom:1px solid var(--line)}
 .row:last-child{border-bottom:0}
-.row-n{
-  font-family:'Geist Mono',monospace; font-size:11px; color:var(--blue-deep);
-  padding-top:3px; font-weight:500;
-}
-.row-t{font-size:15.5px; line-height:1.6; color:var(--ink-2)}
+.row-n{font-family:'Geist Mono',monospace; font-size:11px; color:var(--blue-deep); padding-top:3px; font-weight:500}
+.row-t{font-size:15px; line-height:1.58; color:var(--ink-2)}
 .row-t b{font-weight:600; color:var(--ink)}
 
-/* ── stats ── */
-.stats{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:8px}
-.stat{
-  background:var(--paper); border:1px solid var(--line-2);
-  border-radius:10px; padding:22px 20px; display:flex; flex-direction:column;
-}
-.stat-n{font-size:38px; font-weight:600; letter-spacing:-.04em; color:var(--blue-deep); line-height:1}
-.stat-n small{font-size:20px; font-weight:500}
-.stat-t{margin-top:12px; font-size:13.5px; line-height:1.5; color:var(--ink-2); flex:1}
-.stat-s{
-  margin-top:14px; padding-top:12px; border-top:1px solid var(--line);
-  font-family:'Geist Mono',monospace; font-size:9.5px; line-height:1.5; color:var(--muted-2);
-}
+/* stats */
+.stats{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.stat{background:var(--paper); border:1px solid var(--line-2); border-radius:10px; padding:20px 18px; display:flex; flex-direction:column}
+.stat-n{font-size:36px; font-weight:600; letter-spacing:-.04em; color:var(--blue-deep); line-height:1}
+.stat-n small{font-size:19px; font-weight:500}
+.stat-t{margin-top:11px; font-size:13px; line-height:1.5; color:var(--ink-2); flex:1}
+.stat-s{margin-top:12px; padding-top:11px; border-top:1px solid var(--line); font-family:'Geist Mono',monospace; font-size:9px; line-height:1.5; color:var(--muted-2)}
 
-/* ── table CTR ── */
+/* grille chiffres maison */
+.grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+.cell{background:var(--paper); border:1px solid var(--line-2); border-radius:9px; padding:16px 16px 14px}
+.cell-n{font-size:30px; font-weight:600; letter-spacing:-.04em; color:var(--blue-deep); line-height:1}
+.cell-t{margin-top:8px; font-size:12.5px; line-height:1.45; color:var(--ink-2)}
+.cell-s{margin-top:7px; font-family:'Geist Mono',monospace; font-size:8.5px; line-height:1.4; color:var(--muted-2)}
+
+/* table */
 .wrap{overflow-x:auto}
 table{border-collapse:collapse; width:100%; font-size:14px}
-th{
-  font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--muted); font-weight:500;
-  text-align:left; padding:0 14px 9px 0; border-bottom:1px solid var(--line-2);
-}
+th{font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:500; text-align:left; padding:0 14px 9px 0; border-bottom:1px solid var(--line-2)}
 th:not(:first-child),td:not(:first-child){text-align:right}
-td{padding:9px 14px 9px 0; border-bottom:1px solid var(--line); color:var(--ink-2); font-variant-numeric:tabular-nums}
+td{padding:8px 14px 8px 0; border-bottom:1px solid var(--line); color:var(--ink-2); font-variant-numeric:tabular-nums}
 tr.hi td{background:var(--blue-soft); font-weight:600; color:var(--blue-deep)}
 tr.hi td:first-child{border-radius:5px 0 0 5px; padding-left:10px}
 tr.hi td:last-child{border-radius:0 5px 5px 0}
-.note{
-  margin-top:18px; font-size:12px; line-height:1.6; color:var(--muted); max-width:88ch;
-}
-.note b{color:var(--ink-2); font-weight:600}
 
-/* ── pyramide ── */
-.pyr{display:flex; flex-direction:column-reverse; gap:8px; margin-top:4px}
-.lvl{
-  display:grid; grid-template-columns:200px 1fr 180px; gap:20px; align-items:center;
-  background:var(--paper); border:1px solid var(--line-2);
-  border-radius:9px; padding:15px 20px;
-}
-.lvl-name{font-size:16px; font-weight:600; letter-spacing:-.02em}
-.lvl-name i{display:block; font-style:normal; font-family:'Geist Mono',monospace;
-  font-size:9px; letter-spacing:.16em; color:var(--blue); margin-bottom:5px; text-transform:uppercase}
-.lvl-q{font-size:14px; line-height:1.55; color:var(--ink-2)}
-.lvl-k{font-family:'Geist Mono',monospace; font-size:10.5px; line-height:1.5; color:var(--muted); text-align:right}
-.pyr-note{
-  margin-top:16px; font-size:13px; line-height:1.6; color:var(--muted); max-width:76ch;
-}
+/* pyramide */
+.pyr{display:flex; flex-direction:column-reverse; gap:7px}
+.lvl{display:grid; grid-template-columns:190px 1fr 170px; gap:18px; align-items:center; background:var(--paper); border:1px solid var(--line-2); border-radius:9px; padding:13px 18px}
+.lvl-name{font-size:15.5px; font-weight:600; letter-spacing:-.02em}
+.lvl-name i{display:block; font-style:normal; font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.16em; color:var(--blue); margin-bottom:4px; text-transform:uppercase}
+.lvl-q{font-size:13.5px; line-height:1.5; color:var(--ink-2)}
+.lvl-k{font-family:'Geist Mono',monospace; font-size:10px; line-height:1.5; color:var(--muted); text-align:right}
 
-/* ── deux colonnes ── */
-.cols{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:4px}
-.col{background:var(--paper); border:1px solid var(--line-2); border-radius:10px; padding:22px 22px 20px}
-.col-h{
-  font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.16em;
-  text-transform:uppercase; color:var(--muted); margin-bottom:14px;
-}
+/* colonnes */
+.cols{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+.cols.c3{grid-template-columns:repeat(3,1fr)}
+.col{background:var(--paper); border:1px solid var(--line-2); border-radius:10px; padding:20px 20px 18px}
+.col-h{font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:12px}
 .col.no .col-h{color:var(--accent)}
 .col.yes .col-h{color:var(--blue-deep)}
 .col ul{list-style:none}
-.col li{
-  font-size:14px; line-height:1.55; color:var(--ink-2);
-  padding:9px 0 9px 20px; border-bottom:1px solid var(--line); position:relative;
-}
+.col li{font-size:13.5px; line-height:1.5; color:var(--ink-2); padding:8px 0 8px 19px; border-bottom:1px solid var(--line); position:relative}
 .col li:last-child{border-bottom:0}
-.col li::before{
-  content:''; position:absolute; left:2px; top:16px;
-  width:6px; height:6px; border-radius:50%;
-}
+.col li::before{content:''; position:absolute; left:2px; top:15px; width:6px; height:6px; border-radius:50%}
 .col.no li::before{background:var(--accent); opacity:.5}
 .col.yes li::before{background:var(--blue)}
 
-/* ── quote ── */
-.quote{
-  margin-top:4px; font-size:26px; line-height:1.38; font-weight:500;
-  letter-spacing:-.025em; color:var(--ink); max-width:30ch;
-}
-.quote-a{
-  margin-top:20px; font-family:'Geist Mono',monospace; font-size:10px;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--muted-2);
-}
+/* clients */
+.clients{display:flex; flex-direction:column; gap:9px}
+.cl{display:grid; grid-template-columns:1fr 1.5fr; gap:20px; align-items:center; background:var(--paper); border:1px solid var(--line-2); border-radius:9px; padding:14px 18px}
+.cl-s{font-size:15px; font-weight:600; letter-spacing:-.02em}
+.cl-s i{display:block; font-style:normal; font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.14em; color:var(--blue); margin-bottom:4px; text-transform:uppercase}
+.cl-w{font-size:13.5px; line-height:1.5; color:var(--muted)}
 
-/* ── sources ── */
-.src{font-size:12.5px; line-height:1.72; color:var(--ink-2); columns:2; column-gap:44px; margin-top:4px}
-.src p{break-inside:avoid; margin-bottom:11px; padding-left:14px; text-indent:-14px}
+/* timeline */
+.tl{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+.tp{background:var(--paper); border:1px solid var(--line-2); border-radius:9px; padding:18px 16px; display:flex; flex-direction:column}
+.tp-k{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:var(--blue); margin-bottom:10px}
+.tp-t{font-size:14.5px; font-weight:600; letter-spacing:-.02em; margin-bottom:8px}
+.tp-d{font-size:12.5px; line-height:1.5; color:var(--muted)}
+
+/* quote */
+.quote{font-size:25px; line-height:1.38; font-weight:500; letter-spacing:-.025em; color:var(--ink); max-width:32ch}
+.quote-a{margin-top:18px; font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted-2)}
+
+/* sources */
+.src{font-size:11.5px; line-height:1.68; color:var(--ink-2); columns:2; column-gap:40px}
+.src p{break-inside:avoid; margin-bottom:10px; padding-left:13px; text-indent:-13px}
 .src b{font-weight:600}
-.src i{font-style:normal; color:var(--muted); font-family:'Geist Mono',monospace; font-size:10.5px}
+.src i{font-style:normal; color:var(--muted); font-family:'Geist Mono',monospace; font-size:10px}
 
-/* ── nav ── */
-.nav{
-  position:fixed; bottom:18px; left:50%; transform:translateX(-50%);
-  display:flex; gap:7px; align-items:center;
-  background:rgba(255,255,255,.86); backdrop-filter:blur(12px);
-  border:1px solid var(--line-2); border-radius:99px; padding:8px 14px; z-index:20;
-}
+/* nav */
+.nav{position:fixed; bottom:18px; left:50%; transform:translateX(-50%); display:flex; gap:6px; align-items:center; background:rgba(255,255,255,.86); backdrop-filter:blur(12px); border:1px solid var(--line-2); border-radius:99px; padding:8px 14px; z-index:20}
 .dot{width:6px; height:6px; border-radius:50%; background:var(--line-2); cursor:pointer; border:0; padding:0}
 .dot.on{background:var(--blue-deep); transform:scale(1.35)}
 .nav-c{font-family:'Geist Mono',monospace; font-size:10px; color:var(--muted); margin-left:6px}
@@ -203,102 +160,132 @@ tr.hi td:last-child{border-radius:0 5px 5px 0}
   .nav{display:none}
   .deck{padding:0}
   @page{size:297mm 167mm; margin:0}
-  .slide{
-    width:297mm; height:167mm; aspect-ratio:auto; margin:0;
-    border-radius:0; box-shadow:none; page-break-after:always;
-  }
+  .slide{width:297mm; height:167mm; aspect-ratio:auto; margin:0; border-radius:0; box-shadow:none; page-break-after:always}
 }
 @media(max-width:820px){
-  .slide{aspect-ratio:auto; min-height:auto; padding:32px 24px}
-  .stats,.cols{grid-template-columns:1fr}
-  .lvl{grid-template-columns:1fr; gap:8px}
+  .slide{aspect-ratio:auto; padding:30px 22px}
+  .stats,.cols,.cols.c3,.tl,.cl{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .lvl{grid-template-columns:1fr; gap:7px}
   .lvl-k{text-align:left}
   .src{columns:1}
-  h2{font-size:26px}
-  .cover h1{font-size:34px}
+  h2,.part h2{font-size:25px}
+  .cover h1{font-size:32px}
 }
 </style>
 </head>
 <body>
-<div class="deck" id="deck">
+<div class="deck">
 
-<!-- 1 · COUVERTURE -->
+<!-- 01 COUVERTURE -->
 <section class="slide cover">
   <div class="cover-grid"></div>
   <div class="wordmark">organikk<span>.co</span></div>
   <h1>Le SEO ne vend pas du trafic.<br />Il vend des <em>leads</em>.</h1>
-  <p class="sub">Notre approche du SEO et du GEO en 2026 : comment on choisit les mots-clés, ce qu'on produit, comment on mesure, et ce que vous gardez à la fin.</p>
+  <p class="sub">Notre approche, ce que les chiffres disent vraiment du SEO en 2026, ce qu'on a produit, pour qui, et comment on travaille.</p>
   <div class="foot">
     <div>Timothée Boussardon<br />Consultant SEO / GEO</div>
-    <div class="mono" style="font-size:10px;letter-spacing:.18em">2026</div>
+    <div class="mono" style="font-size:10px;letter-spacing:.18em">Juillet 2026</div>
   </div>
   <div class="slide-n">01</div>
 </section>
 
-<!-- 2 · EN RÉSUMÉ -->
+<!-- 02 PARTIE 1 -->
+<section class="slide part">
+  <div class="num">Partie 1</div>
+  <h2>Notre approche</h2>
+  <p class="lede">Pourquoi on ne fait pas ce que font les autres agences, et ce que ça implique pour votre site.</p>
+  <div class="wm">organikk.co</div><div class="slide-n">02</div>
+</section>
+
+<!-- 03 EN RÉSUMÉ -->
 <section class="slide">
   <div class="kicker">En résumé</div>
   <h2>Cinq partis pris, et tout le reste en découle</h2>
   <div class="body">
     <div class="rows">
       <div class="row"><div class="row-n">01</div><div class="row-t"><b>On est jugé sur les leads, pas sur le trafic.</b> Une courbe qui monte n'est pas un résultat. La question est de savoir combien de contacts qualifiés arrivent chaque mois.</div></div>
-      <div class="row"><div class="row-n">02</div><div class="row-t"><b>L'informationnel est absorbé par les moteurs génératifs.</b> Ce qui reste à gagner, ce sont les requêtes où l'internaute attend une action : un devis, une démonstration, un outil, un contact.</div></div>
-      <div class="row"><div class="row-n">03</div><div class="row-t"><b>On travaille trois à cinq mots-clés business, pas une bibliothèque d'articles.</b> Être partout n'est plus tenable. Prouver une expertise sur un petit nombre de sujets l'est encore.</div></div>
-      <div class="row"><div class="row-n">04</div><div class="row-t"><b>La matière première, c'est votre data.</b> Vos cas clients, vos appels, vos tickets, vos chiffres. C'est ce qu'un modèle ne peut pas régénérer, donc c'est ce qui vous rend difficile à copier.</div></div>
+      <div class="row"><div class="row-n">02</div><div class="row-t"><b>On ne produit pas ce qu'un modèle sait déjà dire.</b> Ce qui reste à gagner, ce sont les requêtes où l'internaute attend une action : un devis, une démonstration, un outil, un contact.</div></div>
+      <div class="row"><div class="row-n">03</div><div class="row-t"><b>Trois à cinq mots-clés business, pas une bibliothèque d'articles.</b> Être partout n'est plus tenable. Prouver une expertise sur un petit nombre de sujets l'est encore.</div></div>
+      <div class="row"><div class="row-n">04</div><div class="row-t"><b>La matière première, c'est votre data.</b> Vos cas clients, vos appels, vos tickets, vos chiffres. C'est ce qu'un modèle ne peut pas régénérer, donc ce qui vous rend difficile à copier.</div></div>
       <div class="row"><div class="row-n">05</div><div class="row-t"><b>À la fin, vous gardez le système.</b> La prestation s'arrête, la méthode et l'assistant restent chez vous.</div></div>
     </div>
-  </div>
-  <div class="wm">organikk.co</div><div class="slide-n">02</div>
-</section>
-
-<!-- 3 · LE CONSTAT -->
-<section class="slide">
-  <div class="kicker">Le constat</div>
-  <h2>La recherche ne renvoie plus le clic qu'elle renvoyait</h2>
-  <p class="lede">Trois mesures indépendantes, sur trois populations différentes, vont dans le même sens.</p>
-  <div class="body">
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-n">68<small>,01 %</small></div>
-        <div class="stat-t">des recherches Google se terminent sans aucun clic vers un site.</div>
-        <div class="stat-s">SparkToro / Similarweb<br />Panel clickstream, janv.–avr. 2026</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">−34<small>,5 %</small></div>
-        <div class="stat-t">de clics sur les requêtes informationnelles, part attribuée aux AI Overviews par un modèle contrefactuel.</div>
-        <div class="stat-s">Ahrefs<br />150 000 mots-clés, mars 2024 → mars 2025</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">−30 <small>%</small></div>
-        <div class="stat-t">de citations de listicles par ChatGPT, à prompts constants.</div>
-        <div class="stat-s">Seer Interactive<br />2 M de citations, nov. 2025 → févr. 2026</div>
-      </div>
-    </div>
-    <p class="note">Ces chiffres ne disent pas que le SEO est fini. Ils disent que le contenu qui explique un sujet a perdu sa contrepartie économique, parce que la réponse est désormais rendue avant le clic. Un article qui répond bien à une question est devenu une source d'entraînement, pas une source de contacts.</p>
   </div>
   <div class="wm">organikk.co</div><div class="slide-n">03</div>
 </section>
 
-<!-- 4 · LE TEST -->
+<!-- 04 LE FILTRE -->
 <section class="slide">
   <div class="kicker">Le filtre</div>
   <h2>Deux questions avant d'écrire la moindre page</h2>
   <div class="body">
-    <div class="rows" style="max-width:78ch">
+    <div class="rows" style="max-width:80ch">
       <div class="row"><div class="row-n">Q1</div><div class="row-t">Est-ce que ChatGPT peut répondre à cette requête ?</div></div>
       <div class="row"><div class="row-n">Q2</div><div class="row-t">Si oui, est-ce qu'il peut faire mieux que vous ?</div></div>
       <div class="row"><div class="row-n">→</div><div class="row-t"><b>Si la réponse est oui aux deux, la page est morte avant d'exister.</b> On ne la produit pas.</div></div>
     </div>
-    <p class="p" style="margin-top:26px">Ce qui passe ce filtre, on l'appelle un <b>mot-clé actionnel</b> : l'internaute qui le tape veut avancer vers une décision, pas s'informer. Un devis, une comparaison chiffrée, une démonstration, un simulateur, un contact. Le modèle peut décrire la démarche, il ne peut pas la faire à votre place.</p>
-    <p class="p">Ces mots-clés ne se trouvent pas dans un outil de recherche de mots-clés, parce qu'ils viennent de votre terrain : les appels commerciaux enregistrés, les tickets de support, les avis clients, le champ « raison du deal perdu » de votre CRM.</p>
+    <p class="p" style="margin-top:22px">Ce qui passe ce filtre, on l'appelle un <b>mot-clé actionnel</b> : celui qui le tape veut avancer vers une décision, pas s'informer. Un devis, une comparaison chiffrée, une démonstration, un simulateur. Le modèle peut décrire la démarche, il ne peut pas la faire à votre place.</p>
+    <p class="p">Ces mots-clés ne sortent pas d'un outil de recherche de mots-clés, ils sortent de votre terrain : les appels commerciaux, les tickets de support, les avis clients, le champ « raison du deal perdu » de votre CRM.</p>
   </div>
   <div class="wm">organikk.co</div><div class="slide-n">04</div>
 </section>
 
-<!-- 5 · L'ÉTUDE -->
+<!-- 05 LES 4 PILIERS -->
+<section class="slide">
+  <div class="kicker">La méthode · 4 piliers</div>
+  <h2>Chaque étage suppose celui du dessous</h2>
+  <div class="body">
+    <div class="pyr">
+      <div class="lvl"><div class="lvl-name"><i>Pilier 1</i>Surprise Gap</div><div class="lvl-q">Pourquoi on vous lit. On mesure l'écart entre ce que dit la page et ce que dit déjà tout le monde. Ce que personne n'a dit vaut mieux que ce que tout le monde dit mieux.</div><div class="lvl-k">Surprise Score<br />par passage</div></div>
+      <div class="lvl"><div class="lvl-name"><i>Pilier 2</i>Grounding Score</div><div class="lvl-q">Pourquoi vous vous positionnez. On aligne la page sur l'intention visée avec les entités que le moteur attend : jargon métier, preuves chiffrées, tableaux, schémas.</div><div class="lvl-k">Alignement vs<br />top 3 SERP</div></div>
+      <div class="lvl"><div class="lvl-name"><i>Pilier 3</i>pSEO</div><div class="lvl-q">Comment on passe à l'échelle. Un modèle de page et une variable produisent N pages, à condition que chacune mérite son indexation individuellement.</div><div class="lvl-k">Pages indexées<br />sur créées &gt; 85 %</div></div>
+      <div class="lvl"><div class="lvl-name"><i>Pilier 4</i>AEO</div><div class="lvl-q">Comment on gagne les moteurs de réponse. L'architecture est lisible par un agent : une intention par page, une réponse extractible, des sources vérifiables.</div><div class="lvl-k">Taux de citation<br />en réponse générative</div></div>
+    </div>
+    <p class="note">L'ordre n'est pas décoratif. Sans surprise, une page est pertinente mais générique et personne ne la cite. Sans alignement, passer à l'échelle ne produit que des pages creuses. Sans échelle, l'architecture ne couvre pas l'intention. Sans architecture, tout le reste reste du SEO d'avant. On ne commence donc pas par « comment on scale », on commence par « est-ce que cette page mérite d'exister ».</p>
+  </div>
+  <div class="wm">organikk.co</div><div class="slide-n">05</div>
+</section>
+
+<!-- 06 PARTIE 2 -->
+<section class="slide part">
+  <div class="num">Partie 2</div>
+  <h2>Est-ce que ça fonctionne encore ?</h2>
+  <p class="lede">La question que tout le monde se pose depuis l'arrivée des AI Overviews. Voici ce que les chiffres disent, y compris ceux qui nous dérangent.</p>
+  <div class="wm">organikk.co</div><div class="slide-n">06</div>
+</section>
+
+<!-- 07 80% SANS AIO -->
+<section class="slide">
+  <div class="kicker">Ce que l'IA a réellement pris</div>
+  <h2>Huit recherches sur dix n'affichent <em>aucun</em> AI Overview</h2>
+  <p class="lede">Deux méthodes indépendantes, un panel comportemental et un clickstream, arrivent au même ordre de grandeur.</p>
+  <div class="body">
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-n">18 <small>%</small></div>
+        <div class="stat-t">des recherches déclenchent un AI Overview.</div>
+        <div class="stat-s">Pew Research Center<br />Panel 900 adultes, ~69 000 recherches, mars 2025</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">20 <small>%+</small></div>
+        <div class="stat-t">des recherches affichent un AI Overview, mesuré un an plus tard.</div>
+        <div class="stat-s">SparkToro / Similarweb<br />Clickstream, janv.–avr. 2026</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">0<small>,34 %</small></div>
+        <div class="stat-t">des recherches passent par AI Mode, le mode conversationnel de Google.</div>
+        <div class="stat-s">SparkToro / Similarweb<br />Clickstream, janv.–avr. 2026</div>
+      </div>
+    </div>
+    <p class="note"><b>Ce que ça ne dit pas.</b> Là où l'AI Overview apparaît, il fait mal : sur les requêtes informationnelles, Ahrefs mesure une baisse de clics de 34,5 % qui lui est attribuable (150 000 mots-clés, modèle contrefactuel). Et 68 % des recherches Google se terminent déjà sans clic, AI Overview ou pas (SparkToro). Le canal n'est donc pas intact. Il est devenu sélectif : ce qui s'effondre, c'est le contenu qui explique. Ce qui tient, c'est ce qui fait avancer vers une décision.</p>
+  </div>
+  <div class="wm">organikk.co</div><div class="slide-n">07</div>
+</section>
+
+<!-- 08 ÉTUDE CTR -->
 <section class="slide">
   <div class="kicker">Notre étude · data first-party</div>
-  <h2>La deuxième place ne rapporte presque plus rien</h2>
+  <h2>La première place rapporte encore. La deuxième, presque plus.</h2>
   <p class="lede">CTR réel par position, mesuré sur notre portefeuille de propriétés Search Console. Ces chiffres sont à nous, ils ne viennent d'aucun outil tiers.</p>
   <div class="body">
     <div class="wrap">
@@ -317,120 +304,173 @@ tr.hi td:last-child{border-radius:0 5px 5px 0}
     <p class="note"><b>Méthode.</b> 23 propriétés exploitables, 9 798 requêtes, 1 755 778 impressions, 29 628 clics, du 1<sup>er</sup> mars au 30 mai 2026, données finales. Requêtes de nom d'entreprise exclues, seuil de 30 impressions, CTR pondéré par les impressions. Reproductible sur demande.<br />
     <b>Limites.</b> Les positions 1 à 3 ne pèsent que 6,5 % des impressions du portefeuille, donc le CTR de la position 1 repose sur 143 requêtes. Le portefeuille est multi-secteurs, majoritairement français mais pas exclusivement. La faiblesse de la position 2 est un constat, pas une explication : nous ne l'attribuons à rien tant que nous ne l'avons pas mesuré.</p>
   </div>
-  <div class="wm">organikk.co</div><div class="slide-n">05</div>
+  <div class="wm">organikk.co</div><div class="slide-n">08</div>
 </section>
 
-<!-- 6 · CONSÉQUENCE -->
+<!-- 09 CONSÉQUENCE -->
 <section class="slide">
   <div class="kicker">Ce qu'on en tire</div>
   <div class="quote">« Une requête à 100 recherches par mois bien placée vaut mieux que dix mille à côté du sujet. »</div>
   <div class="quote-a">Timothée Boussardon</div>
   <div class="body">
-    <p class="p">Si la première place prend l'essentiel des clics et que la deuxième s'effondre, alors viser large est une dépense, pas une stratégie. Se disperser sur cinquante requêtes pour finir sixième partout ne produit aucun contact.</p>
-    <p class="p">C'est la raison pour laquelle nous choisissons peu de mots-clés et nous les tenons. Sur un mot-clé de tête, il n'y a effectivement qu'un ou deux gagnants. Mais derrière un mot-clé de tête, il y a dix problématiques que vos clients formulent vraiment, et sur lesquelles la concurrence n'a rien écrit.</p>
-  </div>
-  <div class="wm">organikk.co</div><div class="slide-n">06</div>
-</section>
-
-<!-- 7 · LES 4 PILIERS -->
-<section class="slide">
-  <div class="kicker">La méthode · 4 piliers</div>
-  <h2>Chaque étage suppose celui du dessous</h2>
-  <div class="body">
-    <div class="pyr">
-      <div class="lvl"><div class="lvl-name"><i>Pilier 1</i>Surprise Gap</div><div class="lvl-q">Pourquoi on vous lit. On mesure l'écart entre ce que dit la page et ce que dit déjà le consensus. Ce que personne n'a dit vaut mieux que ce que tout le monde dit mieux.</div><div class="lvl-k">Surprise Score<br />par passage</div></div>
-      <div class="lvl"><div class="lvl-name"><i>Pilier 2</i>Grounding Score</div><div class="lvl-q">Pourquoi vous vous positionnez. On aligne la page sur l'intention visée en y plaçant les entités que le moteur attend : jargon métier, preuves chiffrées, tableaux, schémas.</div><div class="lvl-k">Alignement vs<br />top 3 SERP</div></div>
-      <div class="lvl"><div class="lvl-name"><i>Pilier 3</i>pSEO</div><div class="lvl-q">Comment on passe à l'échelle. Un modèle de page et une variable produisent N pages, à condition que chacune mérite son indexation individuellement.</div><div class="lvl-k">Pages indexées<br />sur créées &gt; 85 %</div></div>
-      <div class="lvl"><div class="lvl-name"><i>Pilier 4</i>AEO</div><div class="lvl-q">Comment on gagne les moteurs de réponse. L'architecture est lisible par un agent : une intention par page, une réponse extractible, des sources vérifiables.</div><div class="lvl-k">Taux de citation<br />en réponse générative</div></div>
-    </div>
-    <p class="pyr-note">L'ordre n'est pas décoratif. Sans surprise, une page est pertinente mais générique et personne ne la cite. Sans alignement, passer à l'échelle ne produit que des pages creuses. Sans échelle, l'architecture ne couvre pas l'intention. Sans architecture, tout le reste reste du SEO d'avant. On ne commence donc pas par « comment on scale », on commence par « est-ce que cette page mérite d'exister ».</p>
-  </div>
-  <div class="wm">organikk.co</div><div class="slide-n">07</div>
-</section>
-
-<!-- 8 · DATA PROPRIÉTAIRE -->
-<section class="slide">
-  <div class="kicker">La matière première</div>
-  <h2>80 % de consensus, 20 % de ce que vous seul avez</h2>
-  <div class="body">
-    <p class="p">Une page qui ne contient que du consensus est juste, et invisible. Le consensus est nécessaire pour être compris du moteur, il ne suffit pas pour être choisi. Les 20 % qui font la différence sortent de votre maison : un résultat client chiffré, une méthode que vous êtes seul à appliquer, un prix que personne n'affiche, une observation que vos concurrents n'ont pas.</p>
-    <div class="cols" style="margin-top:24px">
-      <div class="col yes">
-        <div class="col-h">Ce qu'on va vous demander</div>
-        <ul>
-          <li>Vos appels commerciaux enregistrés</li>
-          <li>Vos cas clients, avec les chiffres</li>
-          <li>Vos tickets de support et vos avis</li>
-          <li>Vos process, tels que vous les faites</li>
-        </ul>
-      </div>
-      <div class="col yes">
-        <div class="col-h">Ce que ça produit</div>
-        <ul>
-          <li>Des mots-clés qu'aucun outil ne donne</li>
-          <li>Des pages qu'un modèle ne peut pas régénérer</li>
-          <li>Un avantage qui ne se copie pas au clavier</li>
-          <li>De la matière citable par les moteurs de réponse</li>
-        </ul>
-      </div>
-    </div>
-    <p class="note" style="margin-top:20px">La contrepartie est réelle : sans data de votre côté, la méthode perd son moteur. C'est le seul point sur lequel nous ne pouvons pas nous substituer à vous.</p>
-  </div>
-  <div class="wm">organikk.co</div><div class="slide-n">08</div>
-</section>
-
-<!-- 9 · PRODUCT-LED -->
-<section class="slide">
-  <div class="kicker">Le format qui résiste</div>
-  <h2>Quand la page est l'outil, le modèle ne peut pas la remplacer</h2>
-  <p class="lede">Plutôt qu'un article qui explique comment calculer quelque chose, on met le calculateur dans la page.</p>
-  <div class="body">
-    <div class="cols">
-      <div class="col no">
-        <div class="col-h">Page éditoriale</div>
-        <ul>
-          <li>Un texte qui décrit comment faire X</li>
-          <li>La conversion dépend d'un lien en bas de page</li>
-          <li>Reproductible par un modèle de langage</li>
-          <li>Coût de rédaction, à refaire à chaque sujet</li>
-        </ul>
-      </div>
-      <div class="col yes">
-        <div class="col-h">Page product-led</div>
-        <ul>
-          <li>Un outil qui fait X</li>
-          <li>La conversion arrive à la fin de l'usage</li>
-          <li>Non reproductible : c'est un composant fonctionnel</li>
-          <li>Coût de développement, puis coût marginal faible</li>
-        </ul>
-      </div>
-    </div>
-    <p class="note" style="margin-top:22px">Calculateur, simulateur, comparateur en temps réel, configurateur, générateur, visualisation interactive. C'est la forme la plus poussée du filtre en deux questions : par construction, un modèle textuel ne peut pas rendre ce service à votre place. C'est aussi le format que les évaluateurs qualité de Google notent au maximum.</p>
+    <p class="p">Si la première place prend l'essentiel des clics et que la deuxième s'effondre, viser large devient une dépense, pas une stratégie. Se disperser sur cinquante requêtes pour finir sixième partout ne produit aucun contact.</p>
+    <p class="p">C'est la raison pour laquelle nous choisissons peu de mots-clés et nous les tenons. Sur un mot-clé de tête, il n'y a effectivement qu'un ou deux gagnants. Mais derrière un mot-clé de tête, il y a dix problématiques que vos clients formulent vraiment, et sur lesquelles personne n'a rien écrit.</p>
   </div>
   <div class="wm">organikk.co</div><div class="slide-n">09</div>
 </section>
 
-<!-- 10 · BACKLINKS -->
+<!-- 10 LE GEO -->
 <section class="slide">
-  <div class="kicker">Les liens</div>
-  <h2>On n'achète pas de liens. On en crée.</h2>
+  <div class="kicker">Le GEO · ce qui est mesuré</div>
+  <h2>Les moteurs de réponse font gagner ceux qui n'étaient pas premiers</h2>
+  <p class="lede">Le travail académique de référence a mesuré l'effet de chaque levier sur un jeu de 10 000 requêtes.</p>
   <div class="body">
-    <p class="p">Acheter un lien sur un site qui traite cinquante mille sujets ne prouve plus rien à personne. Nous n'en achetons jamais, donc votre budget va entièrement dans votre site et vos contenus. Cela ne veut pas dire se passer de liens : cela veut dire les gagner.</p>
-    <p class="p">Un contenu produit une fois est décliné là où vos acheteurs lisent et là où les moteurs de réponse vont chercher : un article long sur LinkedIn, une contribution utile sur les forums de votre secteur, une vidéo, une newsletter. L'angle change à chaque fois pour que les versions ne se concurrencent pas entre elles.</p>
-    <p class="p" style="margin-top:20px">Ce qui augmente les chances d'être cité par un moteur génératif est documenté. Le travail académique de référence mesure l'effet de chaque levier sur un jeu de 10 000 requêtes :</p>
-    <div class="stats" style="grid-template-columns:repeat(5,1fr); gap:12px; margin-top:16px">
-      <div class="stat" style="padding:16px 14px"><div class="stat-n" style="font-size:28px">+41<small>%</small></div><div class="stat-t" style="font-size:12px">Citations verbatim</div></div>
-      <div class="stat" style="padding:16px 14px"><div class="stat-n" style="font-size:28px">+34<small>%</small></div><div class="stat-t" style="font-size:12px">Statistiques</div></div>
-      <div class="stat" style="padding:16px 14px"><div class="stat-n" style="font-size:28px">+30<small>%</small></div><div class="stat-t" style="font-size:12px">Fluidité du texte</div></div>
-      <div class="stat" style="padding:16px 14px"><div class="stat-n" style="font-size:28px">+29<small>%</small></div><div class="stat-t" style="font-size:12px">Sources citées</div></div>
-      <div class="stat" style="padding:16px 14px"><div class="stat-n" style="font-size:28px">+13<small>%</small></div><div class="stat-t" style="font-size:12px">Ton d'autorité</div></div>
+    <div class="stats" style="grid-template-columns:repeat(5,1fr); gap:11px">
+      <div class="stat" style="padding:16px 13px"><div class="stat-n" style="font-size:27px">+41<small>%</small></div><div class="stat-t" style="font-size:11.5px">Citations verbatim</div></div>
+      <div class="stat" style="padding:16px 13px"><div class="stat-n" style="font-size:27px">+34<small>%</small></div><div class="stat-t" style="font-size:11.5px">Statistiques</div></div>
+      <div class="stat" style="padding:16px 13px"><div class="stat-n" style="font-size:27px">+30<small>%</small></div><div class="stat-t" style="font-size:11.5px">Fluidité du texte</div></div>
+      <div class="stat" style="padding:16px 13px"><div class="stat-n" style="font-size:27px">+29<small>%</small></div><div class="stat-t" style="font-size:11.5px">Sources citées</div></div>
+      <div class="stat" style="padding:16px 13px"><div class="stat-n" style="font-size:27px">+13<small>%</small></div><div class="stat-t" style="font-size:11.5px">Ton d'autorité</div></div>
     </div>
-    <p class="note" style="margin-top:14px">Aggarwal et al., <i>GEO: Generative Engine Optimization</i>, KDD '24 (arXiv 2311.09735), 10 000 requêtes sur 25 domaines. Le ton d'autorité, celui que tout le monde travaille, est le levier le plus faible des cinq. Les chiffres et les citations sourcées sont les plus forts.</p>
+    <div class="cols" style="margin-top:20px">
+      <div class="col yes">
+        <div class="col-h">Le résultat qui nous intéresse</div>
+        <p class="p" style="font-size:13.5px">Le site en <b>cinquième position gagne 115 %</b> de citations quand le premier en <b>perd 30 %</b>. Les moteurs de réponse ne recopient pas le classement de Google : ils rebattent les cartes. C'est la meilleure nouvelle depuis longtemps pour qui n'est pas le leader de son secteur.</p>
+      </div>
+      <div class="col yes">
+        <div class="col-h">Ce qui marche le moins</div>
+        <p class="p" style="font-size:13.5px">Le <b>ton d'autorité est le levier le plus faible des cinq</b>, avec 13 %. C'est pourtant celui que tout le monde travaille. Les chiffres et les citations sourcées, eux, sont les plus forts. Écrire « leader depuis 20 ans » ne fait rien. Publier une donnée que personne n'a fait beaucoup.</p>
+      </div>
+    </div>
+    <p class="note">Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande, <i>GEO: Generative Engine Optimization</i>, KDD '24 (arXiv 2311.09735). 10 000 requêtes, 25 domaines. La métrique compte les citations obtenues, pondérées par leur place dans la réponse générée.</p>
   </div>
   <div class="wm">organikk.co</div><div class="slide-n">10</div>
 </section>
 
-<!-- 11 · CE QU'ON NE FAIT PAS -->
+<!-- 11 HONNÊTETÉ CONVERSION -->
+<section class="slide">
+  <div class="kicker">Ce qu'on ne sait pas encore</div>
+  <h2>Sur la conversion du trafic IA, les études se contredisent</h2>
+  <div class="body">
+    <div class="cols c3">
+      <div class="col yes">
+        <div class="col-h">Adobe Analytics</div>
+        <div class="stat-n" style="font-size:30px">+42 %</div>
+        <p class="p" style="font-size:13px;margin-top:9px">de conversion pour les visiteurs venus d'un assistant, en mars 2026. Un an plus tôt, la même mesure donnait <b>−38 %</b>.</p>
+      </div>
+      <div class="col no">
+        <div class="col-h">Marketing Science (INFORMS)</div>
+        <div class="stat-n" style="font-size:30px;color:var(--accent)">−13 %</div>
+        <p class="p" style="font-size:13px;margin-top:9px">de conversion pour le trafic ChatGPT face à l'organique. 973 sites, ~50 000 transactions, 20 Md$, 49 pays. C'est l'étude la plus rigoureuse du lot.</p>
+      </div>
+      <div class="col yes">
+        <div class="col-h">Adobe · croissance du canal</div>
+        <div class="stat-n" style="font-size:30px">+393 %</div>
+        <p class="p" style="font-size:13px;margin-top:9px">de trafic venu des assistants vers le e-commerce américain en un an. Sur ce point, aucune étude ne conteste : le canal existe et il grossit vite.</p>
+      </div>
+    </div>
+    <p class="p" style="margin-top:20px">Les deux premières ont probablement raison toutes les deux, parce qu'elles ne mesurent pas la même chose. Une attribution au dernier clic sous-évalue mécaniquement un canal qu'on utilise pour comparer avant d'acheter ailleurs.</p>
+    <p class="note"><b>Pourquoi on vous montre l'étude qui nous contredit.</b> Beaucoup d'agences vous citeront un chiffre flatteur sur la conversion du trafic IA. Ce chiffre existe, il est fragile, et vous pourrez le retourner contre elles en dix minutes de lecture. Nous préférons vous dire ce qui est solide, ce qui ne l'est pas, et ce que nous allons mesurer chez vous plutôt que de le supposer.</p>
+  </div>
+  <div class="wm">organikk.co</div><div class="slide-n">11</div>
+</section>
+
+<!-- 12 PARTIE 3 -->
+<section class="slide part">
+  <div class="num">Partie 3</div>
+  <h2>Nos chiffres</h2>
+  <p class="lede">Tout ce qui suit est recompté au 16 juillet 2026 et se vérifie fichier par fichier, ou en ligne.</p>
+  <div class="wm">organikk.co</div><div class="slide-n">12</div>
+</section>
+
+<!-- 13 PRODUCTION -->
+<section class="slide">
+  <div class="kicker">La machine, en 4 mois et demi</div>
+  <h2>organikk.co existe depuis le 3 mars 2026</h2>
+  <p class="lede">Ce que la méthode produit quand on l'applique à nous-mêmes. C'est le meilleur test qu'on connaisse.</p>
+  <div class="body">
+    <div class="grid">
+      <div class="cell"><div class="cell-n">169</div><div class="cell-t">URLs au sitemap</div><div class="cell-s">organikk.co/sitemap.xml</div></div>
+      <div class="cell"><div class="cell-n">266</div><div class="cell-t">brèves d'actualité publiées</div><div class="cell-s">43 éditions · /actualites</div></div>
+      <div class="cell"><div class="cell-n">100</div><div class="cell-t">termes de glossaire</div><div class="cell-s">/glossaire</div></div>
+      <div class="cell"><div class="cell-n">55</div><div class="cell-t">concepts documentés</div><div class="cell-s">/wiki</div></div>
+      <div class="cell"><div class="cell-n">28</div><div class="cell-t">éditions de la newsletter Algorithme</div><div class="cell-s">algorithme.substack.com</div></div>
+      <div class="cell"><div class="cell-n">25</div><div class="cell-t">articles de blog</div><div class="cell-s">/blog</div></div>
+      <div class="cell"><div class="cell-n">9</div><div class="cell-t">études originales publiées</div><div class="cell-s">/statistiques</div></div>
+      <div class="cell"><div class="cell-n">58</div><div class="cell-t">skills exécutables par l'assistant</div><div class="cell-s">dont 22 dédiés au SEO</div></div>
+    </div>
+    <p class="note">Un site de quatre mois et demi qui porte 169 URLs, publie tous les jours et tient une newsletter quotidienne : c'est exactement ce que la méthode est censée permettre. Nous ne vous demandons pas de nous croire sur parole, chacun de ces chiffres est vérifiable depuis votre navigateur. Le décompte des brèves bouge chaque jour, celui du 16 juillet est donné ici.</p>
+  </div>
+  <div class="wm">organikk.co</div><div class="slide-n">13</div>
+</section>
+
+<!-- 14 PARTIE 4 -->
+<section class="slide part">
+  <div class="num">Partie 4</div>
+  <h2>Nos clients</h2>
+  <p class="lede">Nous ne publions le nom d'aucun client. Ce qu'on vous montre ici, c'est le secteur, le travail livré et la date de mesure.</p>
+  <div class="wm">organikk.co</div><div class="slide-n">14</div>
+</section>
+
+<!-- 15 CLIENTS -->
+<section class="slide">
+  <div class="kicker">Cinq accompagnements · dix-neuf personnes formées</div>
+  <h2>Ce qu'on a livré, et pour qui</h2>
+  <div class="body">
+    <div class="clients">
+      <div class="cl"><div class="cl-s"><i>E-commerce</i>Équipement sportif</div><div class="cl-w">Analyse Search Console sur 6 mois, 7 modèles de pages programmatiques, entités sémantiques de la page de conversion, calculateurs interactifs, briefs et articles prêts à publier.</div></div>
+      <div class="cl"><div class="cl-s"><i>SaaS B2B</i>Logiciel d'entreprise</div><div class="cl-w">259 mots-clés qualifiés, 3 clusters sémantiques, audit de redirections sur 178 URLs après une refonte, ton de voix documenté, 3 briefs structurés, espace client dédié.</div></div>
+      <div class="cl"><div class="cl-s"><i>Hôtellerie</i>Appart-hôtels</div><div class="cl-w">Audit Search Console sur 3 mois comparé à l'année précédente, opportunités chiffrées, chantier de contenu sur le sujet le plus porteur.</div></div>
+      <div class="cl"><div class="cl-s"><i>Formation</i>Organisme certifié</div><div class="cl-w">Clusters, opportunités Search Console, modèles de pages programmatiques, mots-clés décisionnels, personas construits à partir de 32 appels clients anonymisés.</div></div>
+      <div class="cl"><div class="cl-s"><i>Conseil</i>Consultante SEO indépendante</div><div class="cl-w">Transfert complet du système : pack de skills, vault de doctrine de 227 notes, tableau de bord, espace documentaire.</div></div>
+    </div>
+    <p class="note"><b>Sur les résultats.</b> Ces accompagnements ont démarré entre juin et juillet 2026. Nos mesures se font à 30 et 90 jours après publication, avec la donnée Search Console : les premiers jalons à 90 jours tombent en septembre 2026. Nous ne vous montrerons pas de courbe avant d'avoir cette donnée. Quand un jalon n'est pas mesuré, nous ne le remplaçons pas par une estimation.</p>
+  </div>
+  <div class="wm">organikk.co</div><div class="slide-n">15</div>
+</section>
+
+<!-- 16 PARTIE 5 -->
+<section class="slide part">
+  <div class="num">Partie 5</div>
+  <h2>Comment on travaille</h2>
+  <p class="lede">Le déroulé, ce qu'on attend de vous, ce qu'on refuse de faire, et ce que vous gardez à la fin.</p>
+  <div class="wm">organikk.co</div><div class="slide-n">16</div>
+</section>
+
+<!-- 17 DÉROULÉ -->
+<section class="slide">
+  <div class="kicker">Le déroulé</div>
+  <h2>Trois mois pour poser la machine, puis on vous la laisse</h2>
+  <div class="body">
+    <div class="tl">
+      <div class="tp"><div class="tp-k">Mois 1</div><div class="tp-t">Audit et fondations</div><div class="tp-d">Audit du site, recherche des mots-clés business, premières pages en production, construction du système sur votre data, mise en place du monitoring.</div></div>
+      <div class="tp"><div class="tp-k">Mois 2–3</div><div class="tp-t">Production</div><div class="tp-d">10 à 15 pages par mois, soit 45 à 50 à trois mois. Pages de conversion et outils, pas d'articles de blog. En parallèle, optimisation de ce qui existe déjà.</div></div>
+      <div class="tp"><div class="tp-k">Bilan 3 mois</div><div class="tp-t">Décision</div><div class="tp-d">On mesure les leads gagnés. Soit vous passez en autonomie avec l'assistant, soit on prolonge de 3 à 6 mois. Dans les deux cas, on pousse vers l'autonomie.</div></div>
+      <div class="tp"><div class="tp-k">Mois 9</div><div class="tp-t">Contrôle</div><div class="tp-d">Un bilan de contrôle, une fois que vous tournez seul. C'est le moment où l'on vérifie que le système a tenu sans nous.</div></div>
+    </div>
+    <div class="cols" style="margin-top:20px">
+      <div class="col yes">
+        <div class="col-h">Ce qu'on attend de vous</div>
+        <ul>
+          <li>Votre data, le plus possible : appels, cas clients, tickets, chiffres</li>
+          <li>La description de vos process, tels que vous les faites vraiment</li>
+          <li>Un accès Search Console</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <div class="col-h">Le seul point de blocage réel</div>
+        <ul>
+          <li>Sans data de votre côté, la méthode perd son moteur</li>
+          <li>C'est la seule chose sur laquelle nous ne pouvons pas nous substituer à vous</li>
+          <li>Tout le reste, y compris la production, peut être porté par nous</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wm">organikk.co</div><div class="slide-n">17</div>
+</section>
+
+<!-- 18 PÉRIMÈTRE -->
 <section class="slide">
   <div class="kicker">Le périmètre</div>
   <h2>Ce qu'on ne fera pas, et pourquoi on le dit tout de suite</h2>
@@ -457,59 +497,60 @@ tr.hi td:last-child{border-radius:0 5px 5px 0}
         </ul>
       </div>
     </div>
-    <p class="note" style="margin-top:22px">La position moyenne, le trafic total et les impressions ne figurent pas dans nos rapports. Ce sont des indicateurs qui montent sans que rien n'arrive dans votre boîte mail. Chaque page publiée est reprise à 30 et 90 jours avec la donnée Search Console : quand la mesure ne confirme pas ce qu'on attendait, on le note et on corrige la stratégie plutôt que le tableau.</p>
+    <p class="note" style="margin-top:20px">La position moyenne, le trafic total et les impressions ne figurent pas dans nos rapports : ce sont des indicateurs qui montent sans que rien n'arrive dans votre boîte mail. Sur les liens, nous n'en achetons jamais, donc votre budget va entièrement dans votre site. Cela ne veut pas dire s'en passer, cela veut dire les gagner : un contenu produit une fois est décliné là où vos acheteurs lisent et là où les moteurs de réponse vont chercher, avec un angle différent à chaque fois pour que les versions ne se concurrencent pas.</p>
   </div>
-  <div class="wm">organikk.co</div><div class="slide-n">11</div>
+  <div class="wm">organikk.co</div><div class="slide-n">18</div>
 </section>
 
-<!-- 12 · LA SORTIE -->
+<!-- 19 CE QUE VOUS GARDEZ -->
 <section class="slide">
   <div class="kicker">La fin de la prestation</div>
-  <h2>Le système reste quand nous partons</h2>
+  <h2>Une agence a intérêt à ce que vous ne sachiez pas faire</h2>
   <div class="body">
-    <p class="p">Une agence a intérêt à ce que vous ne sachiez pas faire. Notre modèle est l'inverse : la prestation est réussie le jour où vous n'en avez plus besoin. Nous visons l'autonomie, avec un contrôle de sécurité quelques mois plus tard.</p>
-    <div class="cols" style="margin-top:22px">
+    <p class="p">Notre modèle est l'inverse. La prestation est réussie le jour où vous n'en avez plus besoin, et le système que nous installons est précisément ce qui nous rend inutiles.</p>
+    <div class="cols" style="margin-top:20px">
       <div class="col yes">
         <div class="col-h">Ce que vous gardez</div>
         <ul>
           <li>Le vault de la doctrine, lisible et navigable</li>
-          <li>Le kit de skills à brancher sur votre propre assistant</li>
+          <li>Le pack de skills à brancher sur votre propre assistant</li>
           <li>Votre data structurée en système exploitable</li>
           <li>Le tableau de bord de vos livrables et de vos mesures</li>
         </ul>
       </div>
       <div class="col yes">
-        <div class="col-h">Le corpus derrière la méthode</div>
+        <div class="col-h">Ce qu'il y a dedans</div>
         <ul>
           <li>66 concepts et 63 entités documentés</li>
           <li>101 sources analysées et reliées entre elles</li>
-          <li>23 skills SEO exécutables</li>
+          <li>Les stratégies des clients précédents, anonymisées</li>
           <li>Mis à jour en continu, pas figé à la livraison</li>
         </ul>
       </div>
     </div>
-    <p class="note" style="margin-top:20px">Le corpus est recompté au 16 juillet 2026 et se vérifie fichier par fichier. Les stratégies des clients précédents y figurent anonymisées, jamais leurs noms ni leurs chiffres. La vôtre suivra la même règle. Vous pourrez interroger ce système, y compris pour contester ce que nous vous recommandons.</p>
+    <p class="note" style="margin-top:18px">Vous pourrez interroger ce système, y compris pour contester ce que nous vous recommandons. Aucun nom de client, aucun chiffre de client n'y figure : la vôtre suivra la même règle. Corpus recompté au 16 juillet 2026.</p>
   </div>
-  <div class="wm">organikk.co</div><div class="slide-n">12</div>
+  <div class="wm">organikk.co</div><div class="slide-n">19</div>
 </section>
 
-<!-- 13 · SOURCES -->
+<!-- 20 SOURCES -->
 <section class="slide">
   <div class="kicker">Sources</div>
   <h2>D'où viennent les chiffres de ce document</h2>
   <div class="body">
     <div class="src">
-      <p><b>SparkToro / Similarweb</b>, part de recherches sans clic, panel clickstream, janvier à avril 2026. <i>68,01 %</i></p>
+      <p><b>Pew Research Center</b>, part des recherches affichant un AI Overview, panel de 900 adultes, ~69 000 recherches, mars 2025. <i>18 %</i></p>
+      <p><b>SparkToro / Similarweb</b>, clickstream, janvier à avril 2026. <i>20 %+ d'AI Overviews · 0,34 % d'AI Mode · 68,01 % de recherches sans clic</i></p>
       <p><b>Ahrefs</b>, impact des AI Overviews sur le CTR, 150 000 mots-clés, modèle contrefactuel, mars 2024 à mars 2025. <i>−34,5 %</i></p>
-      <p><b>Seer Interactive</b>, évolution des citations ChatGPT, 2 millions de citations, prompts constants, novembre 2025 à février 2026. <i>−30 % sur les listicles</i></p>
-      <p><b>Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande</b>, <i>GEO: Generative Engine Optimization</i>, KDD '24, arXiv 2311.09735. 10 000 requêtes, 25 domaines. <i>+41 / +34 / +30 / +29 / +13 %</i></p>
-      <p><b>Search Quality Rater Guidelines</b>, Google, sur la notation du contenu produit sans effort et des pages qui accomplissent l'intention.</p>
+      <p><b>Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande</b>, <i>GEO: Generative Engine Optimization</i>, KDD '24, arXiv 2311.09735. 10 000 requêtes, 25 domaines. <i>+41 / +34 / +30 / +29 / +13 % · rang 5 +115 %, rang 1 −30 %</i></p>
+      <p><b>Adobe Analytics</b>, via TechCrunch, trafic assistants vers le retail américain, T1 2026 vs T1 2025, plus de 1 000 milliards de visites. <i>+393 % · +42 % de conversion en mars 2026</i></p>
+      <p><b>Kaiser &amp; Schulze</b>, <i>Marketing Science</i> (INFORMS), octobre 2025. 973 sites, ~50 000 transactions, 20 Md$, 49 pays. <i>−13 % de conversion</i></p>
       <p><b>organikk.co</b>, étude CTR par position sur portefeuille Search Console, first-party. 23 propriétés, 9 798 requêtes, 1 755 778 impressions, 29 628 clics, 1<sup>er</sup> mars au 30 mai 2026, données finales. Protocole et requête d'extraction communicables. <i>34,2 % en position 1</i></p>
-      <p><b>organikk.co</b>, décompte du corpus de doctrine, recompté le 16 juillet 2026. <i>66 concepts, 63 entités, 101 sources, 23 skills</i></p>
+      <p><b>organikk.co</b>, décompte de production et de corpus, recompté le 16 juillet 2026, vérifiable en ligne.</p>
     </div>
-    <p class="note" style="margin-top:auto">Tout chiffre présenté ici porte sa source, sa date, sa taille d'échantillon et ses limites. Aucune projection de résultat n'est avancée dans ce document : les projections chiffrées appartiennent à la proposition, elles s'appuient sur vos données et elles restent des estimations.</p>
+    <p class="note" style="margin-top:auto">Chaque chiffre porte sa source, sa date, sa taille d'échantillon et ses limites. Aucune projection de résultat n'est avancée ici : les projections chiffrées appartiennent à la proposition, elles s'appuient sur vos données et elles restent des estimations.</p>
   </div>
-  <div class="wm">organikk.co</div><div class="slide-n">13</div>
+  <div class="wm">organikk.co</div><div class="slide-n">20</div>
 </section>
 
 </div>
@@ -526,9 +567,7 @@ tr.hi td:last-child{border-radius:0 5px 5px 0}
     var b=document.createElement('button');
     b.className='dot'; b.type='button';
     b.setAttribute('aria-label','Slide '+(i+1));
-    b.addEventListener('click',function(){
-      s.scrollIntoView({behavior:'smooth',block:'center'});
-    });
+    b.addEventListener('click',function(){s.scrollIntoView({behavior:'smooth',block:'center'})});
     nav.appendChild(b);
   });
   nav.appendChild(counter);
@@ -541,10 +580,8 @@ tr.hi td:last-child{border-radius:0 5px 5px 0}
     counter.textContent=(i+1)+' / '+slides.length;
   }
   var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting)setCur(slides.indexOf(e.target));
-    });
-  },{threshold:.55});
+    entries.forEach(function(e){if(e.isIntersecting)setCur(slides.indexOf(e.target))});
+  },{threshold:.5});
   slides.forEach(function(s){io.observe(s)});
   dots[0].classList.add('on');
   counter.textContent='1 / '+slides.length;
