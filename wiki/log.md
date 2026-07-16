@@ -1259,3 +1259,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - canaux: blog Organikk, Qadence, LinkedIn, Reddit, newsletter, X, outils gratuits
 - boucle: retours terrain quotidiens -> leçon -> règle (confirmée par le terrain), preuves reliées
 - 1er retour terrain: article "6 tâches SEO technique" publié avec 6 SKILL.md complets
+
+## [2026-07-16] update | FARMING PROSPECTION — prospection à froid + audit-cadeau
+- doctrine: règles messaging cold (parler d'eux, exemple nommé, question zéro pression)
+- asset: mini pré-audit seo-pre-audit, teaser msg1 puis relance Loom, jamais attaché
+- retour terrain: test Galadrim/TamTam vus sans réponse -> leçons gravées

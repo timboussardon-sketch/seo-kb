@@ -64,9 +64,29 @@ Chaque semaine, à la revue hebdo : l'agent confronte les retours de la semaine 
 - Pas de valeur creuse juste pour capturer un email. Le skill donné doit vraiment fonctionner.
 - Pas de canal sans point de capture. Sinon c'est de la notoriété, pas du farming.
 
+## Prospection à froid : le message et l'audit-cadeau
+
+Le farming alimente aussi le cold outreach. Un asset de valeur transforme un DM à froid en conversation.
+
+Le message. Règles validées le 2026-07-16 après un batch LinkedIn vu mais sans réponse.
+
+- Ouvrir sur un manque à eux, chiffré et vrai, jamais sur ce que fait Organikk.
+- Un exemple nommé : une requête acheteur réelle plus le site qui rank à leur place. Sinon ça sent le template.
+- Finir sur un choix à zéro pression, du type « c'est un sujet en ce moment, ou pas la priorité ? ». Jamais un oui/non commercial.
+- Traduire en métier : des clients qui vous cherchent et tombent ailleurs. Pas « positions » ni « mots-clés business ».
+
+L'audit-cadeau. Le meilleur asset pour débloquer une réponse.
+
+- Un mini pré-audit personnalisé par prospect, produit avec le skill `seo-pre-audit`, données publiques, sans outil payant.
+- Trois blocs, une page max : dépendance au nom de marque, 5 requêtes business où un autre site sort à leur place, 1 quick win qu'ils peuvent faire seuls.
+- Jamais attaché au premier message. Friction, bridage LinkedIn, effet envoi de masse. On tease une trouvaille dans le message 1, l'audit devient la relance.
+- Un doc générique, genre PDF « 10 conseils SEO », ne sert à rien : il ne prouve pas qu'on a regardé leur cas.
+- Version la plus forte en relance : l'audit en Loom de 2 minutes, écran partagé, sur le canal async Loom plus WhatsApp.
+
 ## Retours terrain (append-only)
 
 Je note ici, une ligne par observation, daté. Je n'édite pas les anciennes lignes, j'ajoute. L'agent lit, range et fait remonter les leçons à la revue hebdo.
 
 ### 2026-07-16
 - Publication de l'article « 6 tâches SEO technique » sur le blog, avec les 6 SKILL.md donnés en entier. Hypothèse : donner les skills complets crédibilise et capture mieux qu'un article qui les garde pour soi. À mesurer sur les 30 prochains jours (leads audit + inscriptions newsletter attribués à cet article).
+- Test cold LinkedIn (Galadrim, TamTam) : messages vus, zéro réponse. Diagnostic : le message parlait d'Organikk et pas d'eux, jargon SEO au lieu de métier, question de fin fermée et commerciale. Leçons passées en règles dans la section « Prospection à froid ». Asset décidé : mini pré-audit `seo-pre-audit` servi en teaser dans le message 1 puis en relance Loom, jamais attaché au premier envoi. À tester sur le prochain batch.
