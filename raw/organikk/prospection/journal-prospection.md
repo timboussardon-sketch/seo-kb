@@ -4,7 +4,7 @@ source_type: client-note
 slug: organikk-journal-prospection
 title: "Organikk — journal prospection LinkedIn"
 created: 2026-07-13
-updated: 2026-07-15
+updated: 2026-07-16
 tags: [organikk, prospection, linkedin, pipeline]
 sources: 1
 confidence: high
@@ -15,7 +15,7 @@ status: stable
 
 Fichier synchronisé automatiquement depuis la table `prospection_pipeline` (Supabase fusionn), toutes les heures. Ne pas éditer à la main : toute modification sera écrasée à la synchro suivante.
 
-La base compte 388 prospects. 131 invitations sont parties, 13 sont acceptées. 235 prospects restent dans la file LK.
+La base compte 473 prospects. 131 invitations sont parties, 13 sont acceptées. 319 prospects restent dans la file LK.
 
 ## Invitations envoyées (131)
 
@@ -153,77 +153,164 @@ La base compte 388 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Witik | Arnaud Zilliox | a_contacter |  | 2026-07-04 |
 | Resilio | Amael Parreaux-Ey | a_contacter |  | 2026-07-04 |
 
-## File LK — à contacter (235)
+## File LK — à contacter (319)
 
 | Startup | Contact | Jour | Score | Batch |
 |---|---|---|---|---|
+| Lengow | Nicolas Appert |  | 0 | B7 fr-ch annuaires |
+| MyLegitech | Vincent Anquetil |  | 3 | B7 fr-ch annuaires |
+| Stacksync | Ruben Burdin |  | 3 | B7 fr-ch annuaires |
+| Posos | Emmanuel Bilbault |  | 3 | B7 fr-ch annuaires |
+| Libeo | Pierre Dutaret |  | 3 | B7 fr-ch annuaires |
+| Memo Bank | Jean-Daniel Guyot |  | 3 | B7 fr-ch annuaires |
+| Pradeo | Clément Saad |  | 3 | B7 fr-ch annuaires |
+| Windmill | Ruben Fiszel |  | 3 | B7 fr-ch annuaires |
+| Yogosha | Yassir Kazar |  | 3 | B7 fr-ch annuaires |
+| Medaviz | Guillaume Lesdos |  | 3 | B7 fr-ch annuaires |
+| Qotid | Samuel Mottais |  | 3 | B7 fr-ch annuaires |
+| Forest Admin | Sandro Munda |  | 3 | B7 fr-ch annuaires |
+| Coover | Pierre Fruchard |  | 3 | B7 fr-ch annuaires |
+| Sidely | Arthur d'Achon |  | 3 | B7 fr-ch annuaires |
+| Simundia | Grégoire Schiller |  | 3 | B7 fr-ch annuaires |
+| Flowlity | Jean-Baptiste Clouard |  | 3 | B7 fr-ch annuaires |
+| Click Analytic | Paul Boulet |  | 2 | B7 fr-ch annuaires |
+| Workelo | Alexandre Grenier |  | 2 | B7 fr-ch annuaires |
+| Livestorm | Gilles Bertaux |  | 1 | B7 fr-ch annuaires |
+| Sarbacane | Mathieu Tarnus |  | 1 | B7 fr-ch annuaires |
+| Sellsy | Victor Douek |  | 1 | B7 fr-ch annuaires |
+| Pitchy | Lionel Chouraqui |  | 0 | B7 fr-ch annuaires |
+| Powens | Jean Guillaume |  | 0 | B7 fr-ch annuaires |
+| PhantomBuster | Guillaume Boiret |  | 0 | B7 fr-ch annuaires |
+| Waalaxy | Toinon Georget |  | 0 | B7 fr-ch annuaires |
+| Shopping Feed | Olivier Levy |  | 0 | B7 fr-ch annuaires |
+| Batch | Simon Dawlat |  | 0 | B7 fr-ch annuaires |
+| Mooncard | Tristan Leteurtre |  | 0 | B7 fr-ch annuaires |
+| Dropcontact | Denis Cohen |  | 0 | B7 fr-ch annuaires |
+| Guest Suite | Thomas Mathieu |  | 0 | B7 fr-ch annuaires |
+| Skeepers | Marc Bonnamour |  | 0 | B7 fr-ch annuaires |
+| Zenchef | Thomas Jeanjean |  | 0 | B7 fr-ch annuaires |
+| Kameleoon | Jean-René Boidron |  | 0 | B7 fr-ch annuaires |
+| Iconosquare | Romain Ouzeau |  | 0 | B7 fr-ch annuaires |
+| Leonar | Pierre-Alexis Ardon |  | 5 | B7 fr-ch annuaires |
+| Ovrsea | Arthur Barillas de Thé |  | 3 | B7 fr-ch annuaires |
+| Wobee | Romain Monget |  | 3 | B7 fr-ch annuaires |
+| Teamstarter | Quentin Guilluy |  | 3 | B7 fr-ch annuaires |
+| Edflex | Clément Meslin |  | 3 | B7 fr-ch annuaires |
+| Societeinfo | Antoine Onnen |  | 3 | B7 fr-ch annuaires |
+| Popety | Thibault Clément |  | 3 | B7 fr-ch annuaires |
+| Zei | Noël Bauza |  | 3 | B7 fr-ch annuaires |
+| BeezUP | Michel Racat |  | 3 | B7 fr-ch annuaires |
+| Stonly | Alexis Fogel |  | 3 | B7 fr-ch annuaires |
+| Unow | Yannick Petit |  | 3 | B7 fr-ch annuaires |
+| TieTalent | Marc Trillou |  | 3 | B7 fr-ch annuaires |
+| Sensefuel | Stéphane Vendramini |  | 3 | B7 fr-ch annuaires |
+| Mobility Work | Marc-Antoine Talva |  | 3 | B7 fr-ch annuaires |
+| Mailinblack | Thomas Kerjean |  | 3 | B7 fr-ch annuaires |
+| Swello | Jonathan Noble |  | 3 | B7 fr-ch annuaires |
+| Dift | Frédéric Mazzella |  | 3 | B7 fr-ch annuaires |
+| Axonaut | Nicolas Ricard |  | 3 | B7 fr-ch annuaires |
+| Garantme | Thomas Reynaud |  | 3 | B7 fr-ch annuaires |
+| Nomination | Serge Papo |  | 3 | B7 fr-ch annuaires |
+| Fairjungle | Saad Berrada |  | 3 | B7 fr-ch annuaires |
+| Teamoty | Fabien Font |  | 4 | B7 fr-ch annuaires |
+| Fullsoon | Hassan-Ali Chaudhary |  | 4 | B7 fr-ch annuaires |
+| Packmind | Laurent Py |  | 4 | B7 fr-ch annuaires |
+| ChouetteCopro | Philippe Joubert |  | 4 | B7 fr-ch annuaires |
+| Seventee | Guillaume Deslandes |  | 4 | B7 fr-ch annuaires |
+| Whaly | Emilien Sanchez |  | 4 | B7 fr-ch annuaires |
+| EazyRent | Sylvain Assié |  | 4 | B7 fr-ch annuaires |
+| Padoa | Cédric Mathorel |  | 4 | B7 fr-ch annuaires |
+| Neur.on | Paula Reichenberg |  | 4 | B7 fr-ch annuaires |
+| Magileads | Nicolas Arnaud |  | 4 | B7 fr-ch annuaires |
+| Indexima | Nicolas Korchia |  | 4 | B7 fr-ch annuaires |
+| Salesapps | Stéphane Renger |  | 4 | B7 fr-ch annuaires |
+| Atoptima | François Vanderbeck |  | 4 | B7 fr-ch annuaires |
+| MyEasyFarm | François Thierart |  | 4 | B7 fr-ch annuaires |
+| Agrid | Jean-Pierre Voropaieff |  | 4 | B7 fr-ch annuaires |
+| Platon | Alexandre Valenscak |  | 4 | B7 fr-ch annuaires |
+| Popwork | Quentin Demeestère |  | 4 | B7 fr-ch annuaires |
+| Yelda | Thomas Guenoux (Thomas Gx) |  | 4 | B7 fr-ch annuaires |
+| Seeqle | Jean-Eudes Yahouédeou |  | 4 | B7 fr-ch annuaires |
+| Obypay | Arthur Broutin |  | 4 | B7 fr-ch annuaires |
+| Tayo | Etienne Friedli |  | 4 | B7 fr-ch annuaires |
+| Brightside AI | Andrey Suzdaltsev |  | 4 | B7 fr-ch annuaires |
+| Ibat | Mélanie Lehoux |  | 4 | B7 fr-ch annuaires |
+| Harvestr | Valentin Huang |  | 5 | B7 fr-ch annuaires |
+| Piloc | Julian Philip |  | 5 | B7 fr-ch annuaires |
+| DCbrain | Arnaud de Moissac |  | 5 | B7 fr-ch annuaires |
+| Monstock | Guillaume Blanc |  | 3 | B7 fr-ch annuaires |
+| Okimia | François Menjaud |  | 3 | B7 fr-ch annuaires |
+| Tool4staffing | Antoine Détis |  | 3 | B7 fr-ch annuaires |
+| Combo | Olivier Severyns |  | 1 | B6 fr-ch saas-financé |
+| Aisot | Stefan Klauser |  | 5 | B6 fr-ch saas-financé |
+| vyzn | Adrian Henke |  | 6 | B6 fr-ch saas-financé |
+| LogicStar | Boris Paskalev |  | 6 | B6 fr-ch saas-financé |
+| Modulos | Kevin Schawinski |  | 6 | B6 fr-ch saas-financé |
+| Desk | Julian Domercq |  | 6 | B6 fr-ch saas-financé |
+| Aria | Clément Carrier |  | 5 | B6 fr-ch saas-financé |
+| WeWeb | Raphaël Goldsztejn |  | 4 | B6 fr-ch saas-financé |
+| Caplena | Maurice Gonzenbach |  | 4 | B6 fr-ch saas-financé |
+| Modjo | Paul Berloty |  | 4 | B6 fr-ch saas-financé |
 | CybelAngel | Erwan Keraudy |  | 4 | B6 fr-ch saas-financé |
 | Fittingbox | Benjamin Hakoun |  | 4 | B6 fr-ch saas-financé |
 | properti | Levent Künzi |  | 4 | B6 fr-ch saas-financé |
 | Surfe | David Maurice Chevalier |  | 4 | B6 fr-ch saas-financé |
 | Kili Technology | François-Xavier Leduc |  | 4 | B6 fr-ch saas-financé |
 | Captain Data | Guillaume Odier |  | 4 | B6 fr-ch saas-financé |
+| Logmind | Ketevani Zaridze |  | 4 | B6 fr-ch saas-financé |
+| Saqara | Thomas Cassou |  | 4 | B6 fr-ch saas-financé |
+| Gladia | Jean-Louis Quéguiner |  | 4 | B6 fr-ch saas-financé |
+| Witco | Eliane Lugassy |  | 4 | B6 fr-ch saas-financé |
+| Pexapark | Michael Waldner |  | 4 | B6 fr-ch saas-financé |
+| Rayon | Bastien Dolla |  | 5 | B6 fr-ch saas-financé |
+| Weefin | Grégoire Hug |  | 5 | B6 fr-ch saas-financé |
+| DemoSquare | Victor Kristof |  | 5 | B6 fr-ch saas-financé |
+| Moments Lab | Phil Petitpont |  | 5 | B6 fr-ch saas-financé |
 | Pelico | Tarik Benabdallah |  | 5 | B6 fr-ch saas-financé |
 | WIZIO | Christophe Mota |  | 5 | B6 fr-ch saas-financé |
 | Pleias | Anastasia Stasenko |  | 5 | B6 fr-ch saas-financé |
-| Logmind | Ketevani Zaridze |  | 4 | B6 fr-ch saas-financé |
-| vyzn | Adrian Henke |  | 6 | B6 fr-ch saas-financé |
-| LogicStar | Boris Paskalev |  | 6 | B6 fr-ch saas-financé |
-| Gladia | Jean-Louis Quéguiner |  | 4 | B6 fr-ch saas-financé |
 | Elum Energy | Cyril Colin |  | 6 | B6 fr-ch saas-financé |
-| Desk | Julian Domercq |  | 6 | B6 fr-ch saas-financé |
-| Modulos | Kevin Schawinski |  | 6 | B6 fr-ch saas-financé |
-| Saqara | Thomas Cassou |  | 4 | B6 fr-ch saas-financé |
-| Rayon | Bastien Dolla |  | 5 | B6 fr-ch saas-financé |
-| Aisot | Stefan Klauser |  | 5 | B6 fr-ch saas-financé |
-| DemoSquare | Victor Kristof |  | 5 | B6 fr-ch saas-financé |
-| Moments Lab | Phil Petitpont |  | 5 | B6 fr-ch saas-financé |
-| Combo | Olivier Severyns |  | 1 | B6 fr-ch saas-financé |
-| Pexapark | Michael Waldner |  | 4 | B6 fr-ch saas-financé |
-| Aria | Clément Carrier |  | 5 | B6 fr-ch saas-financé |
-| Weefin | Grégoire Hug |  | 5 | B6 fr-ch saas-financé |
-| WeWeb | Raphaël Goldsztejn |  | 4 | B6 fr-ch saas-financé |
-| Caplena | Maurice Gonzenbach |  | 4 | B6 fr-ch saas-financé |
-| Witco | Eliane Lugassy |  | 4 | B6 fr-ch saas-financé |
-| Modjo | Paul Berloty |  | 4 | B6 fr-ch saas-financé |
-| Amnis | Michael Wüst |  | 5 | B6 fr-ch saas-financé |
 | Kadoa | Adrian Krebs |  | 6 | B6 fr-ch saas-financé |
 | viboo | Felix Bünning |  | 6 | B6 fr-ch saas-financé |
 | Arsen | Thomas Le Coz |  | 5 | B6 fr-ch saas-financé |
 | Calvin Risk | Julian Riebartsch |  | 5 | B6 fr-ch saas-financé |
 | Pricemoov | Pierre Hébrard |  | 5 | B6 fr-ch saas-financé |
+| Amnis | Michael Wüst |  | 5 | B6 fr-ch saas-financé |
 | Unique | Manuel Grenacher |  | 5 | B6 fr-ch saas-financé |
 | Mindee | Jonathan Grandperrin |  | 4 | B6 fr-ch saas-financé |
 | Hublo | Antoine Loron |  | 4 | B6 fr-ch saas-financé |
 | LatticeFlow | Petar Tsankov |  | 4 | B6 fr-ch saas-financé |
 | Artur'In | Dan Serfaty |  | 4 | B6 fr-ch saas-financé |
-| Ledgy | Yoko Spirig |  | 4 | B6 fr-ch saas-financé |
-| 365Talents | Loïc Michel |  | 3 | B6 fr-ch saas-financé |
-| Decentriq | Maximilian Groth |  | 3 | B6 fr-ch saas-financé |
-| Shippeo | Pierre Khoury |  | 2 | B6 fr-ch saas-financé |
-| Lago | Anh-Tho Chuong |  | 1 | B6 fr-ch saas-financé |
 | ToucanToco | Charles Miglietti |  | 1 | B6 fr-ch saas-financé |
-| DeepIP | François-Xavier Leduc |  | 6 | B5 saas-financé |
-| Cobl | Damien Hontang |  | 6 | B5 saas-financé |
-| Nao Labs | Claire Gouze |  | 6 | B5 saas-financé |
-| Pelikan Mobility | Vincent Schachter |  | 5 | B5 saas-financé |
-| HrFlow.ai | Mouhidine Seiv |  | 3 | B5 saas-financé |
-| Quai des Notaires | Patrick Mc Namara |  | 4 | B5 saas-financé |
+| Lago | Anh-Tho Chuong |  | 1 | B6 fr-ch saas-financé |
+| Shippeo | Pierre Khoury |  | 2 | B6 fr-ch saas-financé |
+| Decentriq | Maximilian Groth |  | 3 | B6 fr-ch saas-financé |
+| 365Talents | Loïc Michel |  | 3 | B6 fr-ch saas-financé |
+| Ledgy | Yoko Spirig |  | 4 | B6 fr-ch saas-financé |
 | Veesual | Maxime Patte |  | 4 | B5 saas-financé |
-| Ask for the moon | Clément Dietschy |  | 4 | B5 saas-financé |
-| Empowill | Alexandre Malarewicz |  | 4 | B5 saas-financé |
-| Tréso2 | Ludovic Sarda |  | 4 | B5 saas-financé |
-| MuchBetter.ai | Julien Heissat |  | 4 | B5 saas-financé |
-| Defacto | Jordane Giuly |  | 5 | B5 saas-financé |
-| Karmen | Gabriel Thierry |  | 5 | B5 saas-financé |
-| My Digital Buildings | Emeric Mourot |  | 5 | B5 saas-financé |
-| Amalia | Maxime Grandjean |  | 5 | B5 saas-financé |
+| Nao Labs | Claire Gouze |  | 6 | B5 saas-financé |
+| Cobl | Damien Hontang |  | 6 | B5 saas-financé |
+| DeepIP | François-Xavier Leduc |  | 6 | B5 saas-financé |
+| Pelikan Mobility | Vincent Schachter |  | 5 | B5 saas-financé |
 | Seyna | Stephen Leguillon |  | 5 | B5 saas-financé |
+| Amalia | Maxime Grandjean |  | 5 | B5 saas-financé |
+| My Digital Buildings | Emeric Mourot |  | 5 | B5 saas-financé |
+| Karmen | Gabriel Thierry |  | 5 | B5 saas-financé |
+| Defacto | Jordane Giuly |  | 5 | B5 saas-financé |
+| MuchBetter.ai | Julien Heissat |  | 4 | B5 saas-financé |
+| Tréso2 | Ludovic Sarda |  | 4 | B5 saas-financé |
+| Empowill | Alexandre Malarewicz |  | 4 | B5 saas-financé |
+| Ask for the moon | Clément Dietschy |  | 4 | B5 saas-financé |
+| Quai des Notaires | Patrick Mc Namara |  | 4 | B5 saas-financé |
+| HrFlow.ai | Mouhidine Seiv |  | 3 | B5 saas-financé |
+| Qovery | Romaric Philogène |  | 5 | B5 saas-financé |
+| Stockoss | Laurent Bonnet |  | 5 | B5 saas-financé |
+| Evertrust | Kamel Ferchouche |  | 5 | B5 saas-financé |
 | iSYBUY | Mélanie Lehoux |  | 5 | B5 saas-financé |
-| OpsMill | Damien Garros |  | 6 | B5 saas-financé |
-| Freeda | Peter Starr |  | 6 | B5 saas-financé |
+| Dylogy | Aurélien Couloumy |  | 5 | B5 saas-financé |
+| Pathway | Zuzanna Stamirowska |  | 4 | B5 saas-financé |
+| Trezy | Quentin Lacointa |  | 5 | B5 saas-financé |
 | Captain | Julien Murzyn |  | 6 | B5 saas-financé |
-| Djust | Arnaud Rihiant |  | 5 | B5 saas-financé |
 | Skillup | Hugues Peuchot |  | 3 | B5 saas-financé |
 | Screeb | Simon Robic |  | 4 | B5 saas-financé |
 | Intent Technologies | Benjamin Ulrich |  | 4 | B5 saas-financé |
@@ -235,53 +322,47 @@ La base compte 388 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Linkup | Philippe Mizrahi |  | 4 | B5 saas-financé |
 | Happydemics | Tarek Ouagguini |  | 4 | B5 saas-financé |
 | Agendize | Alexandre Rambaud |  | 4 | B5 saas-financé |
-| Pathway | Zuzanna Stamirowska |  | 4 | B5 saas-financé |
-| Qovery | Romaric Philogène |  | 5 | B5 saas-financé |
-| Stockoss | Laurent Bonnet |  | 5 | B5 saas-financé |
-| Dylogy | Aurélien Couloumy |  | 5 | B5 saas-financé |
-| Edgee | Gilles Raymond |  | 5 | B5 saas-financé |
+| Freeda | Peter Starr |  | 6 | B5 saas-financé |
+| OpsMill | Damien Garros |  | 6 | B5 saas-financé |
+| Djust | Arnaud Rihiant |  | 5 | B5 saas-financé |
 | Hyperline | Lucas Bédout |  | 5 | B5 saas-financé |
-| EnCaps | Pascal Jardé |  | 5 | B5 saas-financé |
 | AdAlong | Clémence Demerliac |  | 5 | B5 saas-financé |
-| Evertrust | Kamel Ferchouche |  | 5 | B5 saas-financé |
-| Trezy | Quentin Lacointa |  | 5 | B5 saas-financé |
-| Talkspirit | Philippe Pinault |  | 2 | B4 tech-IA |
-| Aktio | Laurent Barbezieux |  | 2 | B4 tech-IA |
-| Eden AI | Taha Zemmouri |  | 2 | B4 tech-IA |
-| Veritly | Olivier Luxcey |  | 3 | B4 tech-IA |
-| Faktus | Alexandre Pochon |  | 3 | B4 tech-IA |
-| Gleef | Aude Flecchia |  | 3 | B4 tech-IA |
-| Cryptr | Hamid Echarkaoui |  | 4 | B4 tech-IA |
-| Symaps | Mickael Mas |  | 4 | B4 tech-IA |
-| Lokki | Raphaël Masbou |  | 4 | B4 tech-IA |
-| Wax | Guillaume Escolier |  | 4 | B4 tech-IA |
-| La Fraise | Arnaud Assous |  | 4 | B4 tech-IA |
-| Leanear | Cécile Delerablée |  | 4 | B4 tech-IA |
-| Orus Energy | Alexandre Girard |  | 4 | B4 tech-IA |
-| Trust-Place | Gaëlle Delore |  | 4 | B4 tech-IA |
-| Leakmited | Hubert Baya Toda |  | 4 | B4 tech-IA |
-| Speeral | Julien Chevalier |  | 4 | B4 tech-IA |
-| PyxiScience | Joachim Lebovits |  | 4 | B4 tech-IA |
-| Quideos | Mikaël Delmas |  | 4 | B4 tech-IA |
-| AskRH Copilot |  |  | 4 | B4 tech-IA |
-| Kanta | Clément Lemariey |  | 4 | B4 tech-IA |
-| Softyflow | Abdellatif El Alaoui |  | 4 | B4 tech-IA |
-| Diffly | Julien Cohen-Roussey |  | 4 | B4 tech-IA |
-| Eidō | Maxime Lalo |  | 4 | B4 tech-IA |
-| Paxilia | Mohamed Haijoubi |  | 4 | B4 tech-IA |
+| Edgee | Gilles Raymond |  | 5 | B5 saas-financé |
+| EnCaps | Pascal Jardé |  | 5 | B5 saas-financé |
 | AUCAE | Pascale Perez |  | 4 | B4 tech-IA |
 | Hollia | Hadrien Bonato-Pape |  | 4 | B4 tech-IA |
 | Qwairy | Luca Fancello |  | 4 | B4 tech-IA |
 | Boby | Aurélien Rey |  | 4 | B4 tech-IA |
 | Skill LMS | Abel Salah |  | 4 | B4 tech-IA |
-| Obat | Florent Liagre |  | 2 | B4 tech-IA |
-| Malou | Louiza Hacene |  | 2 | B4 tech-IA |
-| IPaidThat | Sébastien Claeys |  | 2 | B4 tech-IA |
 | Xpdeep | Stanislas Chesnais |  | 4 | B4 tech-IA |
-| Marble | Arnaud Schwartz |  | 4 | B4 tech-IA |
-| .txt (dottxt) | Rémi Louf |  | 4 | B4 tech-IA |
-| ICONO | Louis Develle |  | 4 | B4 tech-IA |
-| Timescanner | Adrien Blandin |  | 5 | B4 tech-IA |
+| La Fraise | Arnaud Assous |  | 4 | B4 tech-IA |
+| Wax | Guillaume Escolier |  | 4 | B4 tech-IA |
+| Lokki | Raphaël Masbou |  | 4 | B4 tech-IA |
+| Symaps | Mickael Mas |  | 4 | B4 tech-IA |
+| Cryptr | Hamid Echarkaoui |  | 4 | B4 tech-IA |
+| Gleef | Aude Flecchia |  | 3 | B4 tech-IA |
+| Faktus | Alexandre Pochon |  | 3 | B4 tech-IA |
+| Veritly | Olivier Luxcey |  | 3 | B4 tech-IA |
+| Eden AI | Taha Zemmouri |  | 2 | B4 tech-IA |
+| Aktio | Laurent Barbezieux |  | 2 | B4 tech-IA |
+| Talkspirit | Philippe Pinault |  | 2 | B4 tech-IA |
+| IPaidThat | Sébastien Claeys |  | 2 | B4 tech-IA |
+| Obat | Florent Liagre |  | 2 | B4 tech-IA |
+| AskRH Copilot |  |  | 4 | B4 tech-IA |
+| Quideos | Mikaël Delmas |  | 4 | B4 tech-IA |
+| PyxiScience | Joachim Lebovits |  | 4 | B4 tech-IA |
+| Speeral | Julien Chevalier |  | 4 | B4 tech-IA |
+| Leakmited | Hubert Baya Toda |  | 4 | B4 tech-IA |
+| Trust-Place | Gaëlle Delore |  | 4 | B4 tech-IA |
+| Orus Energy | Alexandre Girard |  | 4 | B4 tech-IA |
+| Leanear | Cécile Delerablée |  | 4 | B4 tech-IA |
+| Malou | Louiza Hacene |  | 2 | B4 tech-IA |
+| Kanta | Clément Lemariey |  | 4 | B4 tech-IA |
+| Softyflow | Abdellatif El Alaoui |  | 4 | B4 tech-IA |
+| Diffly | Julien Cohen-Roussey |  | 4 | B4 tech-IA |
+| Eidō | Maxime Lalo |  | 4 | B4 tech-IA |
+| Paxilia | Mohamed Haijoubi |  | 4 | B4 tech-IA |
+| Lixo | Marjorie Darcet |  | 5 | B4 tech-IA |
 | Zeliq | Dorian Ciavarella |  | 5 | B4 tech-IA |
 | Botmind | Christophe Chevalier |  | 5 | B4 tech-IA |
 | Eleya | Thomas Benchetrit |  | 5 | B4 tech-IA |
@@ -312,6 +393,7 @@ La base compte 388 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Mimorian | Cédric Jean |  | 5 | B4 tech-IA |
 | Netmesafe | Arnaud Vinson |  | 5 | B4 tech-IA |
 | Tisio | Jean-Michel Berjaud |  | 5 | B4 tech-IA |
+| Timescanner | Adrien Blandin |  | 5 | B4 tech-IA |
 | Habity | Quentin Pion |  | 5 | B4 tech-IA |
 | Breakcold | Arnaud Belinga |  | 5 | B4 tech-IA |
 | BatiScript | Benoit Jeannin |  | 5 | B4 tech-IA |
@@ -323,41 +405,43 @@ La base compte 388 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Figures | Virgile Raingeard |  | 5 | B4 tech-IA |
 | Faks | Corentin Geoffray |  | 5 | B4 tech-IA |
 | MerciYanis | Guillaume Blanc |  | 5 | B4 tech-IA |
-| Lixo | Marjorie Darcet |  | 5 | B4 tech-IA |
 | Catalog | Julien Bellemare |  | 4 | B4 tech-IA |
 | CountAct | Lounis Lakhal |  | 4 | B4 tech-IA |
 | Skelter | Michel Centeno |  | 4 | B4 tech-IA |
 | Cyberesist | Fabien Tavernier |  | 4 | B4 tech-IA |
+| Marble | Arnaud Schwartz |  | 4 | B4 tech-IA |
+| .txt (dottxt) | Rémi Louf |  | 4 | B4 tech-IA |
+| ICONO | Louis Develle |  | 4 | B4 tech-IA |
 | Lupin & Holmes | Roni Carta |  | 5 | B4 tech-IA |
 | Yuno | Korentin Mozon |  | 6 | B4 tech-IA |
-| Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
 | Geovelo | Gaël Sauvanet | J8 | 0 | B2 éthique |
-| Leedflow | Clément Réau | J7 | 4 | B3 métier+seed |
-| Orakle Weather | Stella Jovet | J7 | 4 | B3 métier+seed |
-| Lemrock | Roxane Laigle | J7 | 4 | B3 métier+seed |
-| Dowgo | Oscar Dumant | J8 | 4 | B3 métier+seed |
-| Entent | Mathias Fonlupt | J8 | 4 | B3 métier+seed |
-| GetMint | Joan Burkovic | J8 | 4 | B3 métier+seed |
-| Cementic | Samir Raddi | J8 | 4 | B3 métier+seed |
-| Scorp-io | Jean-Romain Bardet | J8 | 4 | B3 métier+seed |
-| NeoXperiences | Boris Courté | J8 | 4 | B3 métier+seed |
-| Scriboupsy | Blandine Coudray |  | 3 | B3 métier+seed |
-| Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
-| Getinside | Maxime Garrigues | J8 | 3 | B3 métier+seed |
-| Sami | Tanguy Robert | J8 | 2 | B2 éthique |
-| Makitizy | Amine El Bernoussi | J8 | 4 | B3 métier+seed |
-| Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
-| SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
+| Seiitra | Alexandre Fretti | J8 | 2 | B3 métier+seed |
 | Auto Gestion | Hector Snowman |  | 2 | B3 métier+seed |
+| SmartAgenda | Sébastien Desmolles |  | 2 | B3 métier+seed |
+| Hektor | Olivier Bugette | J8 | 2 | B3 métier+seed |
+| Sami | Tanguy Robert | J8 | 2 | B2 éthique |
+| Getinside | Maxime Garrigues | J8 | 3 | B3 métier+seed |
+| Melba | Sébastien Vassaux | J8 | 3 | B3 métier+seed |
+| Scriboupsy | Blandine Coudray |  | 3 | B3 métier+seed |
+| NeoXperiences | Boris Courté | J8 | 4 | B3 métier+seed |
+| Scorp-io | Jean-Romain Bardet | J8 | 4 | B3 métier+seed |
+| Cementic | Samir Raddi | J8 | 4 | B3 métier+seed |
+| GetMint | Joan Burkovic | J8 | 4 | B3 métier+seed |
+| Entent | Mathias Fonlupt | J8 | 4 | B3 métier+seed |
+| Dowgo | Oscar Dumant | J8 | 4 | B3 métier+seed |
+| Lemrock | Roxane Laigle | J7 | 4 | B3 métier+seed |
+| Orakle Weather | Stella Jovet | J7 | 4 | B3 métier+seed |
+| Leedflow | Clément Réau | J7 | 4 | B3 métier+seed |
+| Obside | Thibaud Sultan | J7 | 4 | B3 métier+seed |
+| Hunimalis | Kevin Zollinger | J7 | 4 | B3 métier+seed |
+| Matisse | Mathieu Rouppert | J7 | 4 | B3 métier+seed |
+| Makitizy | Amine El Bernoussi | J8 | 4 | B3 métier+seed |
 | Milou | Pablo Clément |  | 4 | B3 métier+seed |
 | Clarisys | Cyril Bazin | J7 | 4 | B3 métier+seed |
 | Osmose Solutions | Edouard Chantrier | J8 | 4 | B3 métier+seed |
 | Webosteo | Michaël Chazel | J7 | 4 | B3 métier+seed |
 | Shortcuts | Anthony Desmars | J8 | 4 | B3 métier+seed |
-| Matisse | Mathieu Rouppert | J7 | 4 | B3 métier+seed |
 | Jardisoft | Kim Billout |  | 4 | B3 métier+seed |
-| Hunimalis | Kevin Zollinger | J7 | 4 | B3 métier+seed |
-| Obside | Thibaud Sultan | J7 | 4 | B3 métier+seed |
 | Partnerimmo | Alexandre Chopine | J7 | 4 | B3 métier+seed |
 | MotoClic | Jean-François Rullier | J7 | 4 | B3 métier+seed |
 | Sarus | Maxime Agostini | J7 | 4 | B2 éthique |
@@ -393,21 +477,22 @@ La base compte 388 prospects. 131 invitations sont parties, 13 sont acceptées. 
 | Vendredi | Félix de Monts | J6 | 5 | B2 éthique |
 | Rounded | Aymeric Vaudelin |  | 5 | B1 tech |
 
-## Hors file (22)
+## Hors file (23)
 
 Prospects sans LinkedIn connu ou dont le statut est sorti de `a_contacter`.
 
 | Startup | Contact | Statut | Notes |
 |---|---|---|---|
-| BiteSEO |  | a_contacter |  |
-| Wyapy | Antoine Meyer | a_contacter |  |
-| ElixMail | Johan Gadefaix | a_contacter |  |
-| Tangram |  | a_contacter |  |
-| Kelyseo | Youcef Belhenniche | a_contacter |  |
-| Cadrio | Lucien Faber | a_contacter |  |
-| CarouselCraft | David Manneveau | a_contacter |  |
+| Koutravo | Olivier Ranjard | a_contacter | Blog 14 ≥10 · Activité LinkedIn à vérifier |
 | Skwiz | David Sillan | a_contacter |  |
 | Kwitance |  | a_contacter |  |
+| Tangram |  | a_contacter |  |
+| ElixMail | Johan Gadefaix | a_contacter |  |
+| Wyapy | Antoine Meyer | a_contacter |  |
+| BiteSEO |  | a_contacter |  |
+| CarouselCraft | David Manneveau | a_contacter |  |
+| Cadrio | Lucien Faber | a_contacter |  |
+| Kelyseo | Youcef Belhenniche | a_contacter |  |
 | Mageltys | Olivier de La Chevasnerie | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/ol… |
 | Terapiz | Frédéric Lefetz | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-14 : https://www.linkedin.com/in/f… |
 | Tanaguru | Frédéric Halna | a_contacter | LinkedIn introuvable (404) retiré le 2026-07-13 : https://fr.linkedin.com/in/fr… |
