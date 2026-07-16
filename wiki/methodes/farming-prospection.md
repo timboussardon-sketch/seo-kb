@@ -68,12 +68,25 @@ Chaque semaine, à la revue hebdo : l'agent confronte les retours de la semaine 
 
 Le farming alimente aussi le cold outreach. Un asset de valeur transforme un DM à froid en conversation.
 
-Le message. Règles validées le 2026-07-16 après un batch LinkedIn vu mais sans réponse.
+Le message. Règles consolidées le 2026-07-16 sur un batch de comptes réels.
 
-- Ouvrir sur un manque à eux, chiffré et vrai, jamais sur ce que fait Organikk.
-- Un exemple nommé : une requête acheteur réelle plus le site qui rank à leur place. Sinon ça sent le template.
-- Finir sur un choix à zéro pression, du type « c'est un sujet en ce moment, ou pas la priorité ? ». Jamais un oui/non commercial.
-- Traduire en métier : des clients qui vous cherchent et tombent ailleurs. Pas « positions » ni « mots-clés business ».
+- Ouvrir sur un manque à eux, vrai et vérifié, jamais sur ce que fait Organikk.
+- Nommer le mot-clé exact où ils sont absents, proche de leur core business. Jamais un terme trop large ou verrouillé (OMS, WMS, « track user behavior » = pièges, terrain des mastodontes).
+- Opposer leur roster de clients premium à leur absence sur ce mot-clé.
+- Ne pas nommer de concurrent dans le message. Le concurrent va dans l'audit et la relance, pas dans le premier contact.
+- Ne jamais expliquer au prospect comment ses propres clients cherchent. C'est de la condescendance, il le sait mieux que nous.
+- Fermer sur une question à zéro pression, du type « c'est une priorité en ce moment, ou pas encore ? ». Jamais sur une offre ni un pitch. « Je peux monter une équipe SEO » est l'erreur type : on pitche seulement quand il a répondu.
+- Traduire en métier, pas en jargon SEO. Des clients qui vous cherchent et ne vous trouvent pas, pas « positions » ni « mots-clés ».
+- Ne pas se survendre : Organikk est un système, un agent calé sur la méthode, pas « une équipe SEO ».
+- Vérifier avant d'envoyer : les noms de clients cités, et le « ni dans les IA » testé dans ChatGPT et Perplexity. Ne jamais affirmer ce qu'on n'a pas vu.
+
+Ce que dit la data externe (sources publiques, 2026-07-16).
+
+- Lavender : un cold sous 50 mots prend 60% de réponses en plus qu'un cold à plus de 125 mots. Hunter, sur 34 M d'emails, situe le pic entre 20 et 39 mots.
+- La vraie variable n'est pas la longueur, c'est la spécificité. Court oblige juste à couper le pitch et à ne garder que ce qui les concerne.
+- Josh Braun : un problème, un CTA à faible friction. On jauge l'intérêt, on ne demande pas un créneau.
+- LinkedIn : les demandes personnalisées font 9,36% de réponse contre 5,44% sans. Référencer un élément spécifique à eux ajoute 15 à 25%.
+- Les relances pèsent 42% des réponses d'une campagne, et 48% des gens n'en envoient jamais. Séquence de 2 à 3 relances, espacées de 4 à 7 jours.
 
 L'audit-cadeau. Le meilleur asset pour débloquer une réponse.
 
@@ -90,3 +103,8 @@ Je note ici, une ligne par observation, daté. Je n'édite pas les anciennes lig
 ### 2026-07-16
 - Publication de l'article « 6 tâches SEO technique » sur le blog, avec les 6 SKILL.md donnés en entier. Hypothèse : donner les skills complets crédibilise et capture mieux qu'un article qui les garde pour soi. À mesurer sur les 30 prochains jours (leads audit + inscriptions newsletter attribués à cet article).
 - Test cold LinkedIn (Galadrim, TamTam) : messages vus, zéro réponse. Diagnostic : le message parlait d'Organikk et pas d'eux, jargon SEO au lieu de métier, question de fin fermée et commerciale. Leçons passées en règles dans la section « Prospection à froid ». Asset décidé : mini pré-audit `seo-pre-audit` servi en teaser dans le message 1 puis en relance Loom, jamais attaché au premier envoi. À tester sur le prochain batch.
+- Batch de 3 comptes (Stockoss, Upfund, Screeb). Méthode posée : mini pré-audit avant d'écrire, hook = mot-clé proche du core où ils sont absents, contraste avec leurs clients premium, question à zéro pression.
+- Stockoss (3PL / logistique externalisée) : premier hook sur le luxe (LVMH, Louboutin), puis pivot demandé vers du non-luxe (Stellantis, Asus). Leçon : OMS et WMS sont trop larges et verrouillés (terrain SAP, Manhattan, Hardis), on cale le hook sur le sectoriel proche du core (logistique mode, cosmétique). Correction actée : ne pas expliquer au prospect comment ses acheteurs cherchent.
+- Upfund (data et IA pour l'immobilier commercial, clients CBRE, Auchan, L'Oréal) : mot-clé retenu « agent IA immobilier », terme émergent prenable (SERP encore ouverte, pas de produit dominant). Consigne : aucun concurrent dans le message.
+- Screeb (analytics produit, clients Doctolib, Orange, SNCF vérifiés dont SNCF via admin.sncf.screeb.app) : mot-clé « track user behavior » signalé comme trop large et verrouillé (Mixpanel, Amplitude, FullStory). Message envoyé à Simon fermé sur un pitch (« je peux monter une équipe SEO ») au lieu d'une question. Erreur type gravée en règle : ne jamais fermer un cold sur une offre, et ne pas se présenter comme « une équipe SEO ».
+- Vérif clients renforcée : toujours confirmer les logos affichés avant de les citer. Fait pour Screeb, les trois noms sont réels.

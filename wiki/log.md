@@ -1264,3 +1264,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - doctrine: règles messaging cold (parler d'eux, exemple nommé, question zéro pression)
 - asset: mini pré-audit seo-pre-audit, teaser msg1 puis relance Loom, jamais attaché
 - retour terrain: test Galadrim/TamTam vus sans réponse -> leçons gravées
+
+## [2026-07-16] update | FARMING PROSPECTION — session prospection cold (règles + data + 3 cas)
+- doctrine cold consolidée : mot-clé proche du core (jamais trop large), pas de concurrent dans le msg, jamais de condescendance, fermer sur question zéro pression jamais sur une offre, vérifier clients + IA
+- benchmarks sourcés : Lavender (<50 mots +60% réponses), Hunter (20-39 mots), Josh Braun (CTA faible friction), perso LinkedIn 9,36% vs 5,44%, relances = 42% des réponses
+- retours terrain : Stockoss (pivot non-luxe, OMS/WMS trop large), Upfund (agent IA immobilier, terme émergent), Screeb (track user behavior verrouillé ; msg Simon fermé sur pitch = erreur)
+- règle offre : Organikk = système/agent, jamais « une équipe SEO »
