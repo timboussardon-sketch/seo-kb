@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-16 · Perplexity Media Program et monétisation des citations : éditeurs partenaires, revenus partagés, impact sur la neutralité éditoriale (2025-2026) → `2026-07-16-stats-perplexity-media-program-citations-monetisation.md`
 - 2026-07-15 · Agentic search et trafic non-humain : volume d'agents IA sur le web, impact sur Google Analytics 4 et le "dark traffic" IA (2025-2026) → `2026-07-15-stats-agentic-search-dark-traffic-ga4.md`
 - 2026-07-13 · Requêtes locales et résumés IA en 2026 : impact GSC avant/après AI Mode, taux d'impressions capturées et CTR résiduel → `2026-07-13-stats-ai-mode-impact-requetes-locales-gsc.md`
 - 2026-07-12 · Featured snippets à l'ère de l'IA : évolution de l'inventaire, du CTR position zéro et de la cannibalisation par les AI Overviews (2024-2026) → `2026-07-12-stats-featured-snippets-ai-overviews-cannibalization.md`
@@ -35,13 +36,7 @@
 
 ## À faire (par priorité)
 
-1. **Perplexity Media Program et monétisation des citations : éditeurs partenaires, revenus partagés, impact sur la neutralité éditoriale (2025-2026)**
-   - Angle : Perplexity rémunère les éditeurs qui autorisent crawl et usage de leurs contenus dans les réponses → conflit d'intérêts potentiel dans la sélection des sources ; quels éditeurs participent, quels revenus, comment cela modifie le profil des citations vs ChatGPT Search.
-   - Sources à explorer : annonces officielles Perplexity (blog, presse), SE Ranking / Profound (domaines cités avant/après programme), réactions éditeurs (NYT, Condé Nast).
-   - Transformation originale pressentie : comparaison partenaires vs non-partenaires dans le profil de citation Perplexity, mis en regard du 25 % overlap inter-moteurs (étude 2026-06-20).
-   - Anti-redite : l'étude 2026-06-20 mesure le recouvrement inter-moteurs mais pas la dimension économique du programme Perplexity.
-
-3. **YouTube et citations IA : 32,4 % de Perplexity, transcriptions comme source citable, benchmark par type de contenu (2025-2026)**
+1. **YouTube et citations IA : 32,4 % de Perplexity, transcriptions comme source citable, benchmark par type de contenu (2025-2026)**
    - Angle : YouTube est le domaine le plus cité par Perplexity (32,4 %, Ahrefs Brand Radar, étude 2026-06-20) — mais ses mécanismes d'extraction (transcription auto, chapitres, description) et l'impact sur les créateurs restent non mesurés ; comment les moteurs IA traitent la vidéo vs le texte.
    - Sources à explorer : Ahrefs Brand Radar (breakdown YouTube par requête type), Tubular Labs / VidIQ (transcriptions), Moz/Semrush (présence vidéo en AIO), annonces YouTube sur l'indexation IA.
    - Transformation originale pressentie : croisement volume de transcriptions indexables / taux de citation effectif vs pages texte de même autorité.
