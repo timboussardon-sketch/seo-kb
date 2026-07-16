@@ -1166,3 +1166,30 @@ Grep tiret cadratim « — » = 0 sur draft final (seuls séparateurs `---` mark
 ### Discipline anti-pattern IA respectée
 
 Grep tiret cadratim `—` = 0 sur draft final (seuls séparateurs `---` markdown en début de fin de blocs, pas des tirets intra-texte). Zéro mot banni après vérification (crucial, pivotal, groundbreaking, comprehensive, paysage, explorons, révolutionnaire, game-changer, incontournable, catalyser, synergie, leverage, disrupter, décrypter, majeur au sens superlatif, propulser, transformer). Zéro métaphore vocabulaire empruntée (rails 0, carburant 0, fusée 0, boussole 0, vague 0, tsunami 0, bataille 0, arme 0, passer à la caisse 0, ouvrir la voie 0, terrain de jeu 0, tuyau 0, chapitre 0). Le mot « moteur » employé uniquement au sens littéral technique (« moteur de recherche classique » vs chatbot, « moteur Google » en apposition à AI Overviews) — 2 occurrences toutes littérales. Aucune personnification (Google/OpenAI/Anthropic/Kevin Indig/David Kaufman/Fractl/SparkToro/eMarketer verbes littéraux : publient, mesurent, teste, ne dispose pas de, projette, cite, cite, atteignent, dominent, améliore, exécute, n'exécute pas). Vouvoiement maintenu. Pas d'émoji. Aucune ouverture méta-rhétorique. Pas de conclusion-résumé redondante en bas de doc (juste séparateur `---` et signature draft SyntheticBrain).
+
+## Édition 2026-07-16 (jeudi cloud matin, pilier Actualité SEO)
+
+Note globale : 4.2/5 (edition solide, mono-vendor pour info du jour compensé par sourcing explicite et 3 limites documentaires publiées + 2 prédictions reproductibilité indépendante datées).
+
+| Axe | Note | Détail |
+|---|---|---|
+| source_diversity | 8 sources | Profound (primaire vendor), SEL Goodwin x2 (exploit), SE Ranking (primaire vendor), seroundtable Schwartz x2 (exploit), SEJ Southern (exploit), optimixed (corroborateur), developers.google.com (exploit), blog.google (exploit) |
+| claim_density | 11 verified + 3 discarded | Ratio claim/section : info du jour 3 claims verified + 3 discarded (rang 1, distribution, ventilation vertical) ; B1 5 claims verified ; B2 2 claims verified ; B3 1 claim verified |
+| novelty_score | 4/5 | Fait mesuré neuf (part citations google.com AI Mode +8,4x sur 32M+ instances), 9e dimension metriques-visibilite-geo proposée. Baisse pour mono-vendor sans reproduction indépendante et #1 non nommé. |
+| doctrine_fit | 5/5 | 3 fiches articulées avec rôle distinct (metriques-visibilite-geo dimension nouvelle, tabou-visibilite mesure opérationnelle, data-proprietaire déplacement structural). Pas mention décorative. |
+| redite_risk | faible | Sujet Profound google.com AI Mode auto-citation neuf. Anti-redite 8 sujets écartés listés dans said_index. |
+| clickbait_risk | faible | Titre littéral + chiffre exact + fenêtre temporelle. Pas de promesse creuse, pas d'affirmation au-delà de la source. |
+
+**Ce qui a marché** :
+- Sourcing explicite mono-vendor + republication éditoriale sans confondre les deux.
+- 3 limites documentaires publiées en clair dans le corps info du jour (barre de rigueur maintenue).
+- Doctrine articulée au niveau de la nouvelle dimension mesurable (9e dimension metriques-visibilite-geo), pas au niveau générique.
+- 2 prédictions ouvertes datées avec critères de résolution positive/négative distincts (reproductibilité indépendante + mesure locale par vertical).
+- Résolution de P-2026-07-02-v2-5 invalidée à J+6, pattern "trackers ne publient pas de bilan sous 14j" confirmé 2026.
+- Frontière explicite : phénomène spécifique à Google (autres moteurs sans cartes propriétaires équivalentes) — évite la généralisation abusive.
+
+**Ce qui aurait pu être meilleur** :
+- 0 nouvelle source explore ajoutée ce run (objectif standard = 1). À rattraper la prochaine édition avec une source neuve indépendante (candidate : un tracker AI visibilité concurrent de Profound tel que Peec AI ou Athena Intelligence).
+- Domaine #1 le plus cité en AI Mode non identifié — pousser la recherche primaire vers Similarweb ou Ahrefs Brand Radar avant la prochaine tentative de re-traitement du sujet.
+- Doctrine 9e dimension proposée sans encore de fiche `wiki/concepts/` formalisée : à valider en revue hebdo, pas de modification autonome de la doctrine.
+

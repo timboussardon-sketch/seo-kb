@@ -394,3 +394,30 @@ Aucun diff de skill proposé ce run. Le pattern « confirmation Google d'un inci
 ### Diffs de skill proposés (à évaluer en revue hebdo)
 
 Aucun diff de skill proposé ce run.
+
+## Questions/propositions issues du run 2026-07-16 (à trancher en revue hebdo)
+
+### Q-2026-07-16-1 : proposer une fiche `wiki/concepts/metriques-visibilite-geo` étendue à 9 dimensions ?
+
+**Contexte** : édition du 15 juillet 2026 a introduit une 8e dimension (« taux de citation première-partie par tâche acheteur »). Édition du 16 juillet 2026 introduit une 9e dimension (« part de citations captée par le moteur lui-même dans ses propres réponses IA »).
+
+**Décision demandée** : valider ou refuser la formalisation en fiche wiki de ces 8e et 9e dimensions. Si validé, quel critère de spécificité au moteur (uniquement Google AI Mode aujourd'hui, faut-il un axe explicitement « spécifique-à-un-moteur » vs « transverse-tous-moteurs » ?).
+
+**Trace** : édition 16 juillet 2026 info du jour, ledger claims C-2026-07-16-1 à 3.
+
+### Q-2026-07-16-2 : passage de tryprofound.com en `exploit` ?
+
+**Contexte** : tryprofound.com en `explore` depuis 2026-05-30 (trust 0.65). 5+ hits utiles cumulés. Info du jour édition 2026-07-16 portée par leur mesure primaire. Sujet corroboré par republication éditoriale SEL sans reproduction indépendante (candidate P-2026-07-16-1).
+
+**Décision demandée** : (1) passer en `exploit` si un 2e vendor corrobore Profound d'ici décembre 2026 (résolution positive P-2026-07-16-1). (2) sinon rester en `explore` avec trust maintenu à 0.65-0.7. (3) alternative : passer en `exploit-conditionnel` avec règle explicite « toute mesure Profound est admise si corroborée par 1 source de mesure indépendante ».
+
+**Trace** : ledger sources.jsonl hit 2026-07-16.
+
+### Q-2026-07-16-3 : mettre à jour la lecture opérationnelle « attendre bilan tracker » après P-2026-07-02-v2-5 invalidée ?
+
+**Contexte** : P-2026-07-02-v2-5 invalidée à J+6 (échéance 10 juillet 2026, aucun bilan large publié). Pattern « trackers ne publient pas de bilan large échantillon sous 14 jours après update Google » confirmé sur 2026 (déjà noté sur core update mai). Directive présente dans plusieurs éditions sur le mode « attendre bilan tracker » devient discutable comme priorité prochaine édition.
+
+**Décision demandée** : soit (1) retirer la directive « attendre bilan tracker large échantillon » du champ « pistes fraîches non traitées » et remplacer par « guetter bilan tracker large uniquement post-J+14 par défaut », soit (2) maintenir la directive mais assumer un délai plus long, soit (3) ajouter la mention explicite du pattern 2026 dans les prochaines directives.
+
+**Trace** : predictions.jsonl P-2026-07-02-v2-5-resolution.
+
