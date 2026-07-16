@@ -1251,3 +1251,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - pages créées: 2 / mises à jour: 1 (index)
 - contradictions: N
 - angle SEO: périmètre modération vidéo, pas ranking ; confirme la doctrine (slop coordonné/templaté ciblé, pas l'usage IA) ; signature détectée = portrait d'un mauvais pSEO ; fiabilité analyse (transfert vidéo→search)
+
+## [2026-07-16] methode | FARMING PROSPECTION (doctrine + boucle quotidienne)
+- output: [[methodes/farming-prospection]]
+- type: methode, status draft
+- pendant farming du hunting [[journal-prospection]]
+- canaux: blog Organikk, Qadence, LinkedIn, Reddit, newsletter, X, outils gratuits
+- boucle: retours terrain quotidiens -> leçon -> règle (confirmée par le terrain), preuves reliées
+- 1er retour terrain: article "6 tâches SEO technique" publié avec 6 SKILL.md complets
