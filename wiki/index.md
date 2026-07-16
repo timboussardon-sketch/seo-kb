@@ -122,7 +122,7 @@ status: stable
 - [[sources/2026-04-13-sageo-arena-2025]] — SAGEO Arena : pipeline complet retrieval→reranking→generation, structural info +22%
 - [[sources/2026-04-13-searchllm-2026]] — SearchLLM : production Xiaohongshu, gated aggregation, answer-first validé A/B
 
-### Transcripts (11)
+### Transcripts (13)
 - [[sources/2026-04-13-call-01-arnaud]] — Consultant SEO + WordPress, sites voyage train
 - [[sources/2026-04-13-call-02-marrusia-cecile]] — Cécile, freelance contenu/web, débutante SEO (premier call)
 - [[sources/2026-04-13-call-03-cecile-suite]] — Cécile, suite (Live Mentor, blocages clients, Claude Code vs Fusion)
@@ -134,8 +134,10 @@ status: stable
 - [[sources/2026-04-13-call-09-julien]] — WordPress + SEO tech, Fusion, peur du train IA
 - [[sources/2026-04-15-call-10-franck-suite]] — Franck (suite, ex-fondateur SEO.fr 2000-2024, vente trafic vs leads)
 - [[sources/2026-04-15-call-13-caroline]] — Employée agence web marketing, niveau Claude avancé
+- [[sources/2026-07-09-call-14-vincent-upscale]] — Vincent (Upscale), objection SEO = jeu à somme nulle, CPC comme filtre
+- [[sources/2026-07-16-call-15-baptiste-yalp]] — Baptiste Blot (Yalp), objection de l'offre large, prospect déjà outillé
 
-📁 raw/transcripts/ : tous les transcripts disponibles désormais ingérés (calls 01-10 + 13). Calls 11/12 absents (numérotation sautée par Tim, vérifié dossier source).
+📁 raw/transcripts/ : tous les transcripts disponibles désormais ingérés (calls 01-10 + 13-15). Calls 11/12 absents (numérotation sautée par Tim, vérifié dossier source). Rupture de série à partir du call 14 : les calls 01-13 sont des calls bootcamp, les suivants des calls de vente de la prestation.
 
 ### Doc Google (1)
 - [[sources/2026-04-13-google-quality-raters-guidelines-2026]] — QRG 2026, E-E-A-T, Fully Meets, p.42 effort-less
@@ -189,6 +191,12 @@ status: stable
 - [[entities/franck]] — 26 ans SEO, ex-fondateur SEO.fr (vendue 2024 à Netlinking.fr) (3 sources)
 - [[entities/julien]] — Webmaster WordPress Paris, SEO technique pur, Fusion user (2 sources)
 - [[entities/caroline]] — Employée agence web marketing, niveau Claude avancé (1 source)
+
+### Acteurs / Prospects Organikk — vente prestation (4)
+- [[entities/upscale]] — Agence de prospection B2B, canal entrant vide (2 sources)
+- [[entities/vincent-upscale]] — Cofondateur Upscale, acheteur analytique, objection somme nulle (2 sources)
+- [[entities/yalp]] — Agence vidéo/motion design B2B, SEO déjà à 30 % du CA (2 sources)
+- [[entities/baptiste-yalp]] — Cofondateur Yalp, acheteur outillé (Claude Code branché), objection offre large (2 sources)
 
 ### Quality Raters (1)
 - [[entities/quality-raters-guidelines]] — QRG p.42 "sans effort" (1 source)

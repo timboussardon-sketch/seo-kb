@@ -46,6 +46,7 @@
     "backrefs": [
       "qadence/drive-qadence/17-quels-liens-internes-ajouter.md",
       "wiki/briefs/maillage-interne-claude.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/maillage-interne.md",
       "wiki/concepts/maillage-systeme.md",
       "wiki/index.md",
@@ -342,6 +343,7 @@
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-product-led-seo.md",
       "raw/notes/prompt-pseo-non-produit.md",
       "raw/notes/prompt-pseo-produit-service.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/know-simple-know-do.md",
       "wiki/concepts/methode-organikk-4-piliers.md",
@@ -858,6 +860,44 @@
     "title": "Avatar \"Freelance Web qui Fait du SEO Sans Système\"",
     "type": "concept"
   },
+  "baptiste-yalp": {
+    "aliases": [
+      "baptiste-yalp",
+      "baptiste-blot",
+      "baptiste",
+      "prospect-15"
+    ],
+    "backrefs": [
+      "wiki/entities/yalp.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/baptiste-yalp.md",
+    "outlinks": [
+      "yalp",
+      "methode-organikk-4-piliers",
+      "vincent-upscale",
+      "scam-objection-data-aleatoire",
+      "2026-07-16-call-15-baptiste-yalp",
+      "tabou-visibilite",
+      "_MODELE-discours-commercial",
+      "moc-vente-objections"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "organikk",
+      "vente",
+      "yalp",
+      "agence-video",
+      "motion-design",
+      "acheteur-outille"
+    ],
+    "title": "Baptiste Blot (prospect Organikk - cofondateur Yalp)",
+    "type": "entity"
+  },
   "bert": {
     "aliases": [
       "bert",
@@ -1028,6 +1068,7 @@
     ],
     "backrefs": [
       "raw/journal/2026-07-06.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md"
@@ -1071,12 +1112,14 @@
       "wiki/concepts/gsc-export.md",
       "wiki/concepts/intention-recherche.md",
       "wiki/concepts/maillage-interne.md",
+      "wiki/entities/yalp.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md",
       "wiki/sources/2026-04-05-organikk-audit-seo-claude-7-phases.md",
       "wiki/sources/2026-05-27-organikk-5-skills-seo-technique-claude.md",
-      "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md"
+      "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/cannibalisation.md",
@@ -1404,6 +1447,7 @@
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1432,6 +1476,7 @@
       "content-brain/golfiller/outputs/2026-06-03-quelle-balle-de-golf-choisir.md",
       "newsletter-IA/_MODELE-newsletter-IA.md",
       "organikk/commercial/PLAYBOOK.md",
+      "qadence/strategie-contenu/A00-agent-seo-pilier.md",
       "raw/agents/qadence-seo-agent/README.md",
       "raw/articles/algorithme/newsletter-maillage-interne.md",
       "raw/articles/brouillons/golfiller-conversations.md",
@@ -1496,6 +1541,7 @@
       "raw/transcripts/video-erreur-ia-137-pages.md",
       "wiki/000-home.md",
       "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/agentic-search.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
@@ -1540,6 +1586,7 @@
       "wiki/entities/upscale.md",
       "wiki/entities/victoria-garden.md",
       "wiki/entities/x-twitter.md",
+      "wiki/entities/yalp.md",
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
@@ -1631,6 +1678,7 @@
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -2369,6 +2417,7 @@
       "wiki/entities/gemini.md",
       "wiki/entities/mistral.md",
       "wiki/entities/wikipedia.md",
+      "wiki/entities/yalp.md",
       "wiki/sources/2026-01-08-organikk-seo-agence-immobiliere-lyon.md",
       "wiki/sources/2026-02-20-organikk-information-gain-geo.md",
       "wiki/sources/2026-04-25-organikk-reddit-pour-geo.md",
@@ -2476,6 +2525,7 @@
       "wiki/sources/2026-06-02-algorithme-geo-pas-un-scam.md",
       "wiki/sources/2026-06-10-golfiller-gsc-6mois.md",
       "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/audit-doctrine-2026.md"
     ],
     "confidence": "medium",
@@ -2681,6 +2731,7 @@
       "raw/papers/titans-architecture-google-deepmind.md",
       "wiki/000-home.md",
       "wiki/briefs/check-indexation-claude.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/aeo.md",
       "wiki/concepts/agentic-search.md",
       "wiki/concepts/answer-first-pattern.md",
@@ -3387,6 +3438,7 @@
       "raw/organikk/clients/fgformation/fgformation-mots-cles.md",
       "raw/organikk/clients/victoriagarden/victoriagarden-audit-gsc-2026-06-11.md",
       "wiki/briefs/maillage-interne-claude.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
       "wiki/clusters/modeles-pseo-2026-07-07-golfiller-corpus.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
@@ -3394,6 +3446,7 @@
       "wiki/concepts/intention-recherche.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/organikk-co.md",
+      "wiki/entities/yalp.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-maillage.md",
@@ -3402,6 +3455,7 @@
       "wiki/queries/product-led-2026-07-07-organikk-anti-chatgpt.md",
       "wiki/sources/2026-01-28-organikk-premier-agent-seo-ia.md",
       "wiki/sources/2026-05-19-algorithme-10-convictions-seo.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
@@ -3545,6 +3599,7 @@
       "raw/transcripts/video-erreur-ia-137-pages.md",
       "wiki/audit/2026-05-21-audit-vault.md",
       "wiki/briefs/maillage-interne-claude.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/5-types-ancres.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/know-simple-know-do.md",
@@ -3632,8 +3687,10 @@
     ],
     "backrefs": [
       "MIGRATION.md",
+      "qadence/strategie-contenu/A00-agent-seo-pilier.md",
       "raw/agents/qadence-seo-agent/README.md",
       "raw/articles/organikk-blog/creer-bot-ia-seo.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/dette-cognitive.md",
       "wiki/entities/qadence-seo-agent.md",
       "wiki/index.md",
@@ -3646,7 +3703,8 @@
       "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
       "wiki/sources/2026-06-17-algorithme-creez-votre-agent-seo.md",
-      "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md"
+      "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/memory-llm-vs-wiki-persistant.md",
@@ -3740,6 +3798,7 @@
       "wiki/concepts/directories-data-ia.md",
       "wiki/concepts/programmatique-pseo.md",
       "wiki/concepts/regle-ia-ne-le-fait-pas-je-le-fais-pas.md",
+      "wiki/entities/baptiste-yalp.md",
       "wiki/entities/organikk-co.md",
       "wiki/entities/qadence-seo-agent.md",
       "wiki/hypotheses.md",
@@ -3753,6 +3812,7 @@
       "wiki/sources/2026-05-12-organikk-role-consultant-seo-2026.md",
       "wiki/sources/2026-06-03-organikk-systeme-seo-ia-complet.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -3837,6 +3897,7 @@
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -4135,6 +4196,7 @@
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
     "confidence": "high",
@@ -4543,6 +4605,7 @@
       "parasitage-autorite"
     ],
     "backrefs": [
+      "raw/notes/tim-my-voice.md",
       "wiki/entities/reddit.md",
       "wiki/entities/upscale.md",
       "wiki/entities/x-twitter.md",
@@ -4553,7 +4616,8 @@
       "wiki/sources/2026-06-19-algorithme-test-reddit-seo.md",
       "wiki/sources/2026-06-19-playbook-reddit-seo-geo.md",
       "wiki/sources/2026-06-19-playbook-x-seo-geo.md",
-      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
     ],
     "confidence": "medium",
     "file": "wiki/concepts/parasite-seo.md",
@@ -4744,6 +4808,7 @@
       "raw/articles/organikk-blog/creer-bot-ia-seo.md",
       "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
       "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/cli-tools-optional.md",
       "wiki/concepts/dette-cognitive.md",
       "wiki/concepts/ingest-workflow.md",
@@ -5002,6 +5067,7 @@
       "wiki/sources/2026-06-24-algorithme-fin-des-mots-cles.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/faq-geo-175-questions.md",
@@ -5190,6 +5256,7 @@
       "wiki/concepts/programmatique-pseo.md",
       "wiki/entities/golfiller.md",
       "wiki/entities/organikk-co.md",
+      "wiki/entities/yalp.md",
       "wiki/index.md",
       "wiki/ingest-backlog.md",
       "wiki/keywords/modeles-pseo-2026-05-28-agence-seo.md",
@@ -5197,6 +5264,7 @@
       "wiki/log.md",
       "wiki/moc/moc-maillage.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
     "confidence": "high",
@@ -5239,9 +5307,12 @@
       "raw/articles/brouillons/engine-densite-semantique-sans-serp.md",
       "raw/articles/brouillons/preparation-semantique-2026-05-23-consultant-seo.md",
       "raw/journal/2026-05-16.md",
+      "raw/notes/tim-my-voice.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
+      "wiki/entities/yalp.md",
       "wiki/index.md",
-      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/purete-vectorielle.md",
@@ -5289,6 +5360,7 @@
       "raw/transcripts/video-growth-saas-ia-distribution.md",
       "raw/transcripts/video-influencer-flywheel-jedi.md",
       "wiki/audit/2026-07-12-audit.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/contradictions.md",
       "wiki/entities/organikk-co.md",
       "wiki/entities/x-twitter.md",
@@ -5764,10 +5836,12 @@
       "raw/organikk/clients/fgformation/fgformation-personas-problematiques.md",
       "wiki/concepts/angle-differenciant-mot-cle.md",
       "wiki/concepts/objection-confidentialite-rgpd.md",
+      "wiki/entities/baptiste-yalp.md",
       "wiki/entities/vincent-upscale.md",
       "wiki/index.md",
       "wiki/sources/2026-06-02-algorithme-geo-pas-un-scam.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/audit-doctrine-2026.md"
     ],
     "confidence": "high",
@@ -5901,6 +5975,7 @@
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
       "wiki/sources/2026-06-19-algorithme-test-reddit-seo.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/tim-profil-doctrine.md"
@@ -6167,6 +6242,7 @@
       "wiki/000-home.md",
       "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
       "wiki/briefs/2026-06-10-balle-golf-distance.md",
+      "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/clusters/modeles-pseo-2026-06-10-golfiller.md",
       "wiki/clusters/modeles-pseo-2026-07-07-golfiller-corpus.md",
       "wiki/concepts/4w-deep-reflection.md",
@@ -6382,6 +6458,7 @@
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
@@ -6410,6 +6487,7 @@
       "raw/journal/2026-07-09.md",
       "raw/journal/2026-07-15.md",
       "raw/notes/analyse-calls-prospects-bootcamp.md",
+      "raw/notes/tim-my-voice.md",
       "raw/organikk/_MODELE-discours-commercial.md",
       "raw/organikk/strategie-commerciale-fusionn-2026-05-23.md",
       "wiki/briefs/2026-04-13-information-gain-seo-geo.md",
@@ -6419,6 +6497,7 @@
       "wiki/concepts/data-proprietaire.md",
       "wiki/concepts/mots-cles-actionnels.md",
       "wiki/concepts/requete-cliquable-vs-clic.md",
+      "wiki/entities/baptiste-yalp.md",
       "wiki/entities/bootcamp-seo-ia.md",
       "wiki/entities/dev-web-anon.md",
       "wiki/entities/marrusia-cecile.md",
@@ -6443,6 +6522,7 @@
       "wiki/sources/2026-04-25-tim-ton-de-voix-extraction-terrain.md",
       "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/vendre-seo-ia-2026.md",
       "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
@@ -6723,6 +6803,8 @@
     "backrefs": [
       "raw/transcripts/call-14-vincent-upscale.md",
       "wiki/entities/vincent-upscale.md",
+      "wiki/entities/yalp.md",
+      "wiki/index.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
     ],
     "confidence": "medium",
@@ -6824,8 +6906,11 @@
       "prospect-14"
     ],
     "backrefs": [
+      "wiki/entities/baptiste-yalp.md",
       "wiki/entities/upscale.md",
-      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
+      "wiki/index.md",
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
     ],
     "confidence": "medium",
     "file": "wiki/entities/vincent-upscale.md",
@@ -7030,6 +7115,46 @@
       "reply-game"
     ],
     "title": "X (ex-Twitter)",
+    "type": "entity"
+  },
+  "yalp": {
+    "aliases": [
+      "yalp",
+      "yalp-video",
+      "yalp-video.fr"
+    ],
+    "backrefs": [
+      "raw/transcripts/call-15-baptiste-yalp.md",
+      "wiki/entities/baptiste-yalp.md",
+      "wiki/index.md",
+      "wiki/log.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
+    ],
+    "confidence": "medium",
+    "file": "wiki/entities/yalp.md",
+    "outlinks": [
+      "baptiste-yalp",
+      "2026-07-16-call-15-baptiste-yalp",
+      "know-simple-know-do",
+      "data-proprietaire",
+      "geo",
+      "pseo-data-driven-models",
+      "purete-vectorielle",
+      "upscale",
+      "cannibalisation"
+    ],
+    "status": "stable",
+    "tags": [
+      "prospect",
+      "organikk",
+      "agence-video",
+      "motion-design",
+      "saas",
+      "tech",
+      "pseo",
+      "geo"
+    ],
+    "title": "Yalp (prospect Organikk - agence vidéo et motion design B2B)",
     "type": "entity"
   },
   "youtube": {

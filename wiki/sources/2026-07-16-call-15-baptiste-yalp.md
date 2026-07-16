@@ -106,7 +106,7 @@ Son autodiagnostic est bon et mérite d'être repris tel quel dans la propositio
 - **Problème architectural** : *« j'ai tiré un peu dans tous les sens, il y a peut-être un peu de clean à faire »*, avec la cannibalisation nommée explicitement.
 - **Trop de pages créées**, avec un doute sur l'indexation (transcription confuse sur ce point, à vérifier en GSC).
 - **Netlinking sans effet** : moins de 1 000 € dépensés l'an dernier en petits liens et quelques plus gros, *« les pages qu'on avait linkées n'ont pas tiré »*. Il arrive donc déjà déçu de l'achat de liens, ce qui rend la doctrine « zéro achat » facile à faire passer.
-- **Une page article de blog qui remonte à la place d'une landing** : *« c'est ça qui m'emmerde »*. Il a le diagnostic sans avoir le mot.
+- **Une page article de blog qui remonte à la place d'une landing** : *« c'est ça qui m'emmerde »* (attribution incertaine, voir limites). Il a le diagnostic sans avoir le mot.
 
 Ce qu'il n'a pas : le recul technique et business. *« J'ai la main sur le CMS, j'ai branché mon Claude Code, je suis efficace sur les modifs et les modules. Par contre j'ai pas la compétence ni le recul des bonnes approches à avoir. »*
 
@@ -161,6 +161,7 @@ Il s'engage sur **une journée par semaine dédiée au SEO à partir de septembr
 - **« Voilà c'est bien 100 pages du coup, mais sans URL d'indexé »** : contradictoire avec la suite (il se positionne sur des requêtes). Le pré-audit relève ~110 URLs au sitemap. L'indexation réelle reste à vérifier en GSC.
 - Les positions lues à l'écran par Tim (1er sur « agence motion design », 2e sur « agence motion design Paris », 4e ailleurs) sont annoncées avec l'incertitude assumée : *« à vérifier, je vérifierai plus tard »*. Elles se contredisent partiellement dans le transcript. À ne pas reprendre dans la proposition sans relevé propre.
 - **~90 % des visiteurs ne font rien** : chiffre avancé de mémoire par Tim, non sourcé. Ne pas réutiliser sans source.
+- Le passage du partage d'écran mélange les deux voix : *« c'est une page article de blog qui remonte et c'est ça qui m'emmerde »* peut être de Tim (il partage) comme de Baptiste (il commente sa propre SERP, et enchaîne sur « une boîte qui nous a copié »). Attribué ici à Baptiste par cohérence de la suite, sans certitude.
 - Clients cités par Baptiste : Orange Business et Aircall sont clairs. « Novacom » et « Airom » sont des transcriptions douteuses.
 - Clients cités par Tim en preuve : « Lexis / Lexi / LEE » = Leexi. « Hit H3E » n'est pas identifiable.
 - Les agences citées comme mises en concurrence (« lopodin », « esquimose », « les hautois devin ») sont des transcriptions corrompues. Eskimoz est l'hypothèse la plus probable pour la deuxième, non confirmée.

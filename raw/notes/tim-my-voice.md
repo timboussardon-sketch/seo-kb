@@ -209,3 +209,35 @@ Source : session Claude Code du 2026-07-03, corrections verbatim de Tim sur le p
 **Échantillon canonique du registre attendu (rédigé par Tim, section « Cycle mensuel » de la routine Reddit) :** « Le premier jour de chaque mois, prévois une vingtaine de minutes pour mettre à jour tes contributions. Les études de Semrush montrent que les IA continuent de citer des threads Reddit anciens (en moyenne près de 900 jours). Un thread qui fait autorité peut donc rester visible très longtemps, à condition qu'il reste vivant. » Structure : impératif d'action + source + fait chiffré entre parenthèses + conséquence en « donc » + condition concrète. Et en clôture : « Le paysage change vite : l'objectif est de maintenir tes contenus à jour plutôt que de repartir de zéro chaque mois. » (la conséquence pratique ferme la section, jamais un résumé).
 
 Concepts mobilisés : [[anti-ai-writing]]
+
+## [2026-07-16] Call de vente Baptiste Blot (Yalp, agence vidéo/motion design)
+
+Source : [[call-15-baptiste-yalp]] · [[sources/2026-07-16-call-15-baptiste-yalp]]. Premier call de vente face à un prospect qui a déjà du SEO qui marche (30 % de son CA), Claude Code branché sur son CMS, et qui benchmarke Tim contre des agences nommées. Ce que ça révèle de sa manière d'aborder un sujet :
+
+**Valider avant de trancher (nouveau, très net).** Il ne commence jamais par le problème. Il ouvre sur ce qui a été bien fait, puis coupe : « Bon déjà tout ce qui a été fait sur le site, c'est déjà bien. Ce qui a été fait avant, on va pas cracher dessus. » → « En gros globalement, c'est un peu la strat qu'on faisait avant. » → « Ce qui veut dire que ce qu'il va falloir, c'est couper sur ton blog. » Le travail du prestataire précédent n'est pas mauvais, il est daté. La correction passe par la chronologie, jamais par l'incompétence de l'autre. Même move sur la personne : « c'est très pro, on voit que tu as l'habitude de faire des calls avec tes clients », « c'est pas mal ce que t'as fait », « c'est déjà une belle position ».
+
+**L'exemple est protégé contre lui-même.** Il répète cinq fois la même clause de sauvegarde : « encore une fois, c'est juste un exemple », « c'était juste un exemple, c'est pas forcément ces mots-là », « quand je te donne l'idée du SaaS, c'était vraiment pour te montrer qu'il va falloir verticaliser ». Il a peur d'être pris au mot sur l'illustration et de voir le prospect confondre l'exemple avec la reco. Tic de précision, pas de doute.
+
+**Il rend la main toutes les deux minutes.** « Est-ce que pour toi ça c'est OK ? », « Est-ce que ça te parle ou pas ? », « Tu vois ce que je veux dire ? », « est-ce que ça a répondu à tes questions ? », « Donc ça, est-ce que c'est quelque chose sur laquelle t'es au fait ? ». Et la conscience explicite de son propre monologue : « J'ai beaucoup parlé, je ferai un petit résumé de tout ça. »
+
+**Il ne dénigre jamais le concurrent nommé.** Mis en concurrence avec d'autres agences, il valide d'abord (« très très bon »), puis déplace sur la structure : « je sais pas qui ils mettent sur les projets. Si on travaille ensemble, c'est moi qui travaille sur le projet directement. » L'argument est l'opérateur, pas la comparaison.
+
+**L'aveu de ce qu'il n'a pas, sans compensation.** Baptiste demande deux fois des cas clients de son secteur. Réponse : « En agence vidéo, j'aurais pas, c'est sûr. » / « j'aurais pas de clients sur agence vidéo, mais j'aurais sur agence SEO. » Il ne fabrique pas de référence approchante, il déplace l'argument sur le playbook — mais il pose le manque d'abord. Prolonge l'honnêteté de vente déjà relevée avec Catherine ([[catherine-call-decouverte]]) : là c'était un conseil contre son intérêt, ici c'est un trou dans sa preuve.
+
+**Nouvelles formulations, signature**
+- « Mon SEO ne fera pas 90 % de mon CA. Je te dis ça en toute transparence. On va chercher 30 à 40 % du CA global. » (borne son propre canal, vers le bas, en vente)
+- « Je pars uniquement d'une problématique et d'un persona. Le secteur, c'est ce qui dirige le contenu sur la page. »
+- « Quand la personne arrive sur ta page, elle attend une décision. »
+- « Ça fait un peu comme une landing page pour du SEA. » (l'analogie qui fait comprendre le décisionnel à un marketeux)
+- « Ta stratégie à toi, elle est meilleure que celle de mon client précédent, mais elle sera moins bonne que celle de mon client suivant. » (la boucle apprenante formulée comme une promesse ET une limite)
+- « Tu peux prendre le vault et dire : Tim m'a dit de faire ça, je sens pas la stratégie. Tu interroges le vault et tu vois si c'est intéressant ou pas. » (il offre au client de quoi le challenger, lui)
+- « Je pars jamais de zéro. »
+- « Le 0 à 1 en SEO, il est pas si compliqué. »
+- « Je n'achète pas de backlinks. Jamais, jamais, jamais. » (la triple répétition est dans le transcript)
+- « On va créer des signaux sociaux. »
+
+**Tics de disqualification (famille confirmée, variantes nouvelles).** À côté de « le mot-clé me fait pas rêver » : « ça m'intéresse pas » revient trois fois pour écarter une piste (« Je vais pas aller chercher pourquoi avoir une agence vidéo, ça m'intéresse pas », « Je veux pas de visite, ça m'intéresse pas plus que ça »). Et « j'y vais pas » pour le head term.
+
+**Tic oral nouveau** : « je rebondis dessus » / « pour rebondir à ce que tu me disais » — sert de charnière pour raccrocher un point laissé en suspens par le prospect plutôt que de dérouler son plan.
+
+Concepts mobilisés : [[data-proprietaire]] · [[know-simple-know-do]] · [[purete-vectorielle]] · [[tabou-visibilite]] · [[parasite-seo]] · [[entities/golfiller]]

@@ -1270,3 +1270,17 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - benchmarks sourcés : Lavender (<50 mots +60% réponses), Hunter (20-39 mots), Josh Braun (CTA faible friction), perso LinkedIn 9,36% vs 5,44%, relances = 42% des réponses
 - retours terrain : Stockoss (pivot non-luxe, OMS/WMS trop large), Upfund (agent IA immobilier, terme émergent), Screeb (track user behavior verrouillé ; msg Simon fermé sur pitch = erreur)
 - règle offre : Organikk = système/agent, jamais « une équipe SEO »
+
+## [2026-07-16] ingest | Call 15 — Baptiste Blot (Yalp, agence vidéo et motion design B2B)
+- source_type: transcript
+- source: [[sources/2026-07-16-call-15-baptiste-yalp]]
+- raw: `raw/transcripts/call-15-baptiste-yalp.md` (ASR mono-piste, début tronqué)
+- amont: pré-audit du 2026-07-08 `raw/organikk/pré-call/yalp-video.md`
+- entities touchées: 2 ([[entities/yalp]], [[entities/baptiste-yalp]] — créées)
+- concepts touchés: 0 créés, 10 cités (purete-vectorielle, know-simple-know-do, mots-cles-actionnels, product-led-seo, parasite-seo, tabou-visibilite, data-proprietaire, cannibalisation, seo-multi-plateforme, pseo-data-driven-models)
+- pages créées: 3 / mises à jour: 3 (index, log, tim-my-voice)
+- contradictions: N (budget 15-20 k€/an ≈ 1250-1666 €/mois, cohérent avec les 1400 € du call 14 mais toujours sous les 1850 € HT du modèle de discours — l'écart de prix reste ouvert depuis le call 14, aucun prix annoncé ici)
+- angle SEO identifié: objection nouvelle « l'offre large » — la méthode marcherait pour un produit précis, pas pour un catalogue. Réponse en trois étages : la verticale SEO n'est pas la verticale business (30-40 % du CA visé, pas 90 %), on part du persona et de sa problématique jamais du secteur, les modèles de page sont transverses. Premier prospect avec du SEO déjà à 30 % du CA et Claude Code branché sur son CMS : on vend la direction, pas l'exécution. Premier call en concurrence frontale avec des agences nommées.
+- régularisation: index.md ne listait pas le call 14 (Transcripts 11 → 13), ni les entities Upscale/Vincent/Yalp/Baptiste (nouvelle section Prospects Organikk — vente prestation)
+- voix: entrée ajoutée dans `raw/notes/tim-my-voice.md` (§ Observations terrain)
+- suite: rapport + cas clients à envoyer vendredi ou lundi max ; décision de Baptiste avant ses congés le 27/07
