@@ -79,6 +79,19 @@ La structure ne change pas. Si une section est inutile pour un client, on la vid
 
 4. Vérifier le rendu page par page (8 pages environ). Contrôler em-dashes, glyphes, titres.
 
+## Document d'accompagnement : la présentation de l'approche
+
+Toute proposition part avec la présentation générique d'organikk.co. Les deux se répartissent le travail : la proposition traite le client (son diagnostic, sa stratégie, son prix), la présentation porte ce qui ne change pas d'un client à l'autre (l'approche, les chiffres du marché, les outils, la roadmap). Ça évite de re-justifier la doctrine dans chaque dossier.
+
+- **En ligne** : `organikk.co/presentation-seo` (7 slides, navigation au clavier, `noindex`)
+- **PDF à joindre** : `organikk.co/presentation-seo/organikk-presentation-seo.pdf` (7 pages paysage)
+- **Source de vérité** : `organikk-next/scripts/build-presentation-seo.py`. Le script régénère l'HTML et écrase la sortie : ne jamais éditer `public/presentation-seo/index.html` à la main. Le gabarit est recopié dans le vault à `raw/organikk/_MODELE-presentation-approche.html` pour lecture.
+- Le PDF se régénère avec la commande Chrome headless documentée en tête du script.
+
+Quand la mettre dans le fil : en pièce jointe du mail de proposition, ou envoyée seule après un premier call quand le prospect demande « c'est quoi votre approche ». Elle ne contient aucun prix et aucun nom de client, donc elle circule sans risque.
+
+**Contrainte de contenu** : les chiffres affichés portent tous leur source, leur date et leur échantillon. Ils se périment. Avant un envoi important, vérifier que les quatre chiffres de la slide marché tiennent toujours (voir les limites notées dans [[hypotheses]] et le registre [[contradictions]]).
+
 ## Lié
 
 - [[template-retainer-2h-500]] — l'autre modèle de proposition, format rétainer léger, texte markdown simple. Celui-ci est le format « gros dossier » designé.

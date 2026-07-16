@@ -189,22 +189,50 @@ h1{
   .col-0,.col-1{animation:none}
 }
 
+@media(max-width:860px){
+  .slide{aspect-ratio:auto; padding:34px 24px}
+  .three,.four,.road,.intro,.stats-wrap,.tools{grid-template-columns:1fr; gap:26px}
+  .marquee{display:none}
+  .shot{width:100%; max-width:260px; height:330px}
+  h1,.intro h1{font-size:28px}
+  .fig-n,.mine .fig-n{font-size:40px}
+}
+
+/* Print en DERNIER : Chrome rend le PDF avec une viewport étroite, ce qui
+   déclencherait le bloc mobile ci-dessus. On réimpose le layout desktop. */
 @media print{
   body{background:#fff}
   .nav{display:none}
   .deck{padding:0}
   @page{size:297mm 167mm; margin:0}
-  .slide{width:297mm; height:167mm; aspect-ratio:auto; margin:0; border-radius:0; box-shadow:none; page-break-after:always}
-  .rv{opacity:1 !important; transform:none !important}
+  .slide{
+    width:297mm !important; height:167mm !important; aspect-ratio:auto;
+    margin:0 !important; border-radius:0; box-shadow:none;
+    padding:60px 68px !important; page-break-after:always; break-after:page;
+  }
+  .rv{opacity:1 !important; transform:none !important; transition:none !important}
   .col-0,.col-1{animation:none}
-}
-@media(max-width:860px){
-  .slide{aspect-ratio:auto; padding:34px 24px}
-  .three,.four,.road,.intro,.stats-wrap{grid-template-columns:1fr; gap:26px}
-  .marquee{display:none}
-  .shot{width:100%; max-width:260px; height:330px}
-  h1,.intro h1{font-size:28px}
-  .fig-n,.mine .fig-n{font-size:40px}
+  /* grilles desktop réimposées */
+  .intro{grid-template-columns:300px 1fr !important; gap:56px !important}
+  .three{grid-template-columns:repeat(3,1fr) !important; gap:44px !important}
+  .four{grid-template-columns:repeat(2,1fr) !important; gap:34px 52px !important}
+  .stats-wrap{grid-template-columns:1fr 460px !important; gap:40px !important}
+  .tools{grid-template-columns:1fr 1fr !important; gap:30px !important}
+  .road{grid-template-columns:repeat(4,1fr) !important; gap:30px !important}
+  .marquee{display:block !important}
+  .shot{width:300px !important; height:392px !important; max-width:none !important}
+  h1{font-size:42px !important}
+  .intro h1{font-size:40px !important}
+  .fig-n{font-size:50px !important}
+  .mine .fig-n{font-size:58px !important}
+  /* background-clip:text ne survit pas au rendu PDF : couleur pleine */
+  h1,.fig-n{
+    background:none !important;
+    -webkit-background-clip:border-box !important; background-clip:border-box !important;
+    color:#2559DD !important; -webkit-text-fill-color:#2559DD !important;
+  }
+  .cover .mark{color:#fff !important; -webkit-text-fill-color:#fff !important}
+  .cover .mark span{color:#A8C7FF !important; -webkit-text-fill-color:#A8C7FF !important}
 }
 </style>
 </head>
@@ -273,29 +301,29 @@ h1{
 
 <!-- 3 · LE MARCHÉ -->
 <section class="slide">
-  <div class="rv"><h1>Le SEO et le GEO en chiffres, en 2026</h1>
-  <p class="lede">Quatre chiffres, mesurés cette année, sur de vrais échantillons.</p></div>
+  <div class="rv"><h1 style="max-width:30ch">Le SEO et le GEO en chiffres</h1>
+  <p class="lede">Quatre chiffres, quatre sources, de vrais échantillons.</p></div>
   <div class="body">
     <div class="four">
       <div class="rv">
-        <div class="fig-n"><span data-count="5">0</span> <small>%</small></div>
-        <div class="fig-t">des requêtes transactionnelles déclenchent un AI Overview. Contre 36 % des requêtes informationnelles.</div>
-        <div class="fig-s">Seer Interactive, avril 2026. 53 marques, 5,47 M de requêtes, 2,43 Md d'impressions. L'IA mange ce qui informe, pas ce qui fait acheter.</div>
+        <div class="fig-n"><span data-count="5000">0</span> <small>Md</small></div>
+        <div class="fig-t">de recherches sur Google par an. Le plus grand marché d'intention d'achat au monde, et il ne se déplace pas.</div>
+        <div class="fig-s">Google, données internes janvier 2025. À nuancer : 68 % de ces recherches se terminent sans aucun clic (SparkToro, 2026). D'où le choix des requêtes.</div>
+      </div>
+      <div class="rv">
+        <div class="fig-n">N° <span data-count="3">0</span></div>
+        <div class="fig-t">la recherche organique reste le 3<sup>e</sup> canal de trafic, derrière le direct (29,4 %) et le référencement payant (25,2 %).</div>
+        <div class="fig-s">Contentsquare, Digital Experience Benchmark 2026. 99 milliards de sessions, 6 500 sites, 9 secteurs. Données de tags réelles, pas du déclaratif.</div>
       </div>
       <div class="rv">
         <div class="fig-n">× <span data-count="2.2" data-dec="1">0</span></div>
         <div class="fig-t">de clics pour la marque citée dans l'AI Overview, face à celle qui n'y est pas : 2,07 % contre 0,94 %.</div>
-        <div class="fig-s">Seer Interactive, avril 2026. Requêtes appariées, avec et sans citation. Être cité par l'IA ne vous prend pas des clics, ça vous en donne.</div>
+        <div class="fig-s">Seer Interactive, avril 2026. 53 marques, 5,47 M de requêtes, requêtes appariées. Être cité par l'IA ne vous prend pas des clics, ça vous en donne.</div>
       </div>
       <div class="rv">
-        <div class="fig-n"><span data-count="34.2" data-dec="1">0</span> <small>%</small></div>
-        <div class="fig-t">de clics pour la première place, contre 5,6 % pour la deuxième.</div>
-        <div class="fig-s">Notre étude, portefeuille Search Console. 23 propriétés, 9 798 requêtes, 1,76 M d'impressions, mars à mai 2026.</div>
-      </div>
-      <div class="rv">
-        <div class="fig-n">+<span data-count="42">0</span> <small>%</small></div>
-        <div class="fig-t">de conversion pour les visiteurs venus des assistants IA. Un an plus tôt, ils convertissaient 38 % moins bien.</div>
-        <div class="fig-s">Adobe Analytics, mars 2026, plus de 1 000 milliards de visites. En douze mois, le trafic IA est passé de mauvais à meilleur que la moyenne.</div>
+        <div class="fig-n">+<span data-count="54">0</span> <small>%</small></div>
+        <div class="fig-t">de conversion pour les visiteurs venus des assistants IA. Un an plus tôt, ils convertissaient 38&nbsp;% moins bien.</div>
+        <div class="fig-s">Adobe Analytics, mai 2026, plus de 1 000 milliards de visites retail. En douze mois, le trafic IA est passé de mauvais à meilleur que la moyenne.</div>
       </div>
     </div>
   </div>
@@ -418,17 +446,24 @@ h1{
   var cur=0;
   function setCur(i){if(i===cur)return;cur=i;dots.forEach(function(d,j){d.classList.toggle('on',j===i)})}
 
+  // Geist rend l'espace fine insécable de toLocaleString trop serrée ("5000") :
+  // on la remplace par une insécable pleine.
+  function fmt(v,dec){
+    return v.toLocaleString('fr-FR',{minimumFractionDigits:dec,maximumFractionDigits:dec})
+            .replace(/[\u202f\u2009]/g,'\u00a0');
+  }
+
   // count-up
   function countUp(el){
     var target=parseFloat(el.dataset.count);
     var dec=parseInt(el.dataset.dec||'0',10);
-    if(reduce){el.textContent=target.toLocaleString('fr-FR',{minimumFractionDigits:dec,maximumFractionDigits:dec});return}
+    if(reduce){el.textContent=fmt(target,dec);return}
     var dur=1100, t0=null;
     function frame(t){
       if(!t0)t0=t;
       var p=Math.min((t-t0)/dur,1);
       var e=1-Math.pow(1-p,3);
-      el.textContent=(target*e).toLocaleString('fr-FR',{minimumFractionDigits:dec,maximumFractionDigits:dec});
+      el.textContent=fmt(target*e,dec);
       if(p<1)requestAnimationFrame(frame);
     }
     requestAnimationFrame(frame);
@@ -460,7 +495,7 @@ h1{
     slides.forEach(function(s){s.classList.add('in')});
     [].slice.call(document.querySelectorAll('[data-count]')).forEach(function(el){
       var d=parseInt(el.dataset.dec||'0',10);
-      el.textContent=parseFloat(el.dataset.count).toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d});
+      el.textContent=fmt(parseFloat(el.dataset.count),d);
     });
   });
 })();
