@@ -19,7 +19,9 @@ Un chatbot SEO répond. Un agent SEO va chercher ta donnée, agit, et mesure ce 
 L'écart entre les deux tient en trois choses, et chacune est documentée dans le vault :
 
 1. **L'accès à la donnée réelle.** Le chatbot raisonne sur le corpus moyen, l'agent lit ta Search Console ([[data-proprietaire]]).
-2. **La mémoire.** Le chatbot repart de zéro à chaque conversation, l'agent tient la timeline du projet ([[memory-llm-vs-wiki-persistant]], [[persistent-wiki-vs-rag]]).
+2. **La mémoire.** Le chatbot retient des faits courts sur toi (ChatGPT Memory depuis février 2024, Claude Memory plafonnée à 200 lignes / 25 Ko), l'agent tient le dossier du projet : décisions actées, recommandations émises, résultats mesurés ([[memory-llm-vs-wiki-persistant]], [[persistent-wiki-vs-rag]]).
+
+> ⚠️ Formulation interdite sur tout le cluster : « le chatbot repart de zéro à chaque conversation ». [[memory-llm-vs-wiki-persistant]] la marque factuellement fausse et à corriger dans les productions Tim. La distinction correcte est une différence de **finalité** (mémoire pour l'IA vs dossier que tu possèdes), pas de présence.
 3. **La boucle de résultat.** Le chatbot recommande et disparaît, l'agent re-mesure sa recommandation à J+14 et J+30 ([[boucle-sortie-mesure]], cron `cron-reco-outcome`).
 
 C'est le pitch produit déjà en prod (« votre partenaire SEO connecté à votre GSC, pas un chatbot qui invente »), transformé en architecture de contenu. Le gradient chatbot → agent est le fil de chaque page.
