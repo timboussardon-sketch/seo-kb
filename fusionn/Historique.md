@@ -9,6 +9,22 @@ Journal du travail sur [[entities/fusionn-io]] (repo `~/Code/newFusionn`). Entr�
 
 ---
 
+## 2026-07-17 · Tous les premium étaient traités comme des gratuits sur l'historique HN — DÉPLOYÉ
+
+Parti d'un signalement : « cyrilmarin@gmail.com est en gratuit ». Son compte, lui, est premium et l'est resté (`active`, échéance 2027-01-31, un seul compte, aucun doublon OAuth). Vérifié jusqu'au bout : requête rejouée sous son identité avec RLS active, puis compte clone avec sa forme exacte d'abonnement (`cus_` présent, `sub_` à NULL) ouvert dans un vrai Chrome sur la prod. Son navigateur reçoit bien sa ligne premium en 200. Le badge « Gratuit » qu'il décrit n'a jamais été reproduit.
+
+La chasse a révélé trois vrais défauts, tous corrigés :
+
+- **`get-hn-score-history` lisait `subscriptions.plan_type`, colonne inexistante** (erreur Postgres 42703). La requête partait en erreur, l'abonnement retombait à `null`, `isPremium` valait `false` pour **les 25 premium sans exception** : historique plafonné à 5 comme un gratuit. Double faute, le test comparait à `premium_monthly` / `premium_annual`, valeurs absentes de `plan_name` (`Premium`, `Premium Annuel`, `Premium Annual`). Vérifié après déploiement : la fonction renvoie `isPremium: true`.
+- **`admin-stats-v2` ignorait `current_period_end`** et calculait le plan sur le seul statut `active`. `jtauk@citabl.ai` (période finie le 2026-06-11) s'affichait « Premium » et comptait dans les « Payants » alors que l'app le bloque en gratuit. L'admin mentait.
+- **Course dans `AuthContext`** : au démarrage, `getSession()` et `onAuthStateChange` lancent chacun un chargement. La garde rendait la main au second appelant sans rien charger, donc `loading` passait à `false` pendant que la requête était en vol et la page Compte affichait « Gratuit » à un premium. La promesse en cours est désormais partagée, et la page Compte n'annonce plus « Gratuit » tant qu'elle ne sait pas.
+
+La règle unique (statut `active`/`trialing` **et** période future, sans exiger les IDs Stripe) vit maintenant dans `supabase/functions/_shared/premium.ts`. Elle était réécrite à la main dans `ai-chat`, `analyze-geo-sentinel`, `get-all-quotas`, `get-hn-score-history`, `ensure-tracked-cluster` et `get-llm-cluster-data`, alors que `PREMIUM_INJECTION.md` ne parle que de 4 endroits à synchroniser. C'est cette dispersion qui a laissé passer le `plan_type`.
+
+État des comptes : 25 abonnements actifs, 24 réellement premium, aucun premium sans profil, aucune subscription orpheline, aucun compte à double abonnement. Le seul vrai gratuit est `jtauk@citabl.ai`, expiré depuis le 2026-06-11 — à trancher côté Stripe.
+
+Commit `92cf834`. Reste ouvert : ce que voit Cyril à l'écran.
+
 ## 2026-06-29 · Refonte agent mots-clés type Qadence (chatbot + skills + mémoire + Google Ads) — DÉPLOYÉ
 
 - Nouveau parcours : la landing perd l'input d'URL, gagne une flexbox « décrivez votre produit/service » → route `/recherche` (chatbot plein écran type Qadence, DA Fusionn). Pages SEO publiques inchangées.
