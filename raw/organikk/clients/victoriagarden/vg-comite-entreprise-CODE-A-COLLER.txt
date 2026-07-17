@@ -1,0 +1,181 @@
+CODE À COLLER — Comité d'entreprise / CSE à Bordeaux et Pau (2026-07-17)
+
+Page satellite du hub groupe. Blocs Gutenberg, thème victoria-garden. 3 intrants bloquants : cette page N'EST PAS publiable en l'état.
+
+AVERTISSEMENT DE PRIORISATION — À LIRE AVANT DE COLLER
+Cette page est produite sur demande. La data ne la soutient pas, et il faut le savoir avant de l'investir.
+- GSC : 10 impressions sur trois mois sur le segment CE, 0 clic.
+- Google Suggest : zéro suggestion sur « hotel comite entreprise », « offre comite entreprise hotel », « tarif comite entreprise hotel », « reduction comite entreprise hotel », « partenariat comite entreprise hotel », « cse hotel reduction », « hotel partenaire cse ».
+- Les requêtes CSE réellement cherchées (« voyage comité d'entreprise », « séjour CSE ») ont une SERP tenue par les agences de voyage, et Suggest les complète vers le ski et Disney. Un appart'hôtel urbain n'a pas d'angle sur cette SERP.
+- « comité entreprise bordeaux » remonte dans Suggest mais c'est un PIÈGE D'INTENTION : Suggest complète vers « comité entreprise CHU bordeaux », « comité d'entreprise SNCF bordeaux », « comité d'entreprise Thales bordeaux ». Ce sont des salariés qui cherchent le CE de leur propre employeur, pas des acheteurs. NE PAS CIBLER cette requête.
+Conclusion : cette page ne doit pas viser un head term. Elle vaut comme page de destination pour le commercial (à envoyer à un CSE démarché) et comme satellite de maillage du hub groupe. Pas comme actif SEO.
+
+POSITION DE CETTE PAGE DANS LE SITE
+Satellite de /appart-hotel-pour-groupe-a-bordeaux/ (981 imp, pos 15,5), qui reste le hub du groupe.
+Elle ne vise PAS « hôtel pour groupes à bordeaux » (position 6,0, propriété du hub).
+
+ANTI-CANNIBALISATION (contrainte Tim)
+Cette page n'écrit jamais « séminaire », « salle de réunion », « salle de formation » ni « team building ». Ces mots appartiennent au hub séminaire. Le CSE achète du loisir pour ses salariés, le séminaire achète une salle de travail. Aucun recoupement de vocabulaire.
+
+LES 3 INTRANTS BLOQUANTS
+1. La remise ou le tarif CSE. C'est le cœur de la page et il n'existe nulle part sur le site. Sans lui, la page n'a aucune raison d'être : un CSE vient chercher un avantage négocié, pas la grille publique.
+2. Les modalités de partenariat CSE : convention, bons, subvention partielle, facturation au CSE ou au salarié.
+3. Le tarif d'entrée à Pau. La fiche vault indique 55 € mais date du 2026-04-13 et n'a pas été revérifiée. Ne pas publier ce chiffre sans contrôle.
+Tant que le point 1 n'est pas fourni, la page dit exactement ce que dit déjà /entreprises-et-groupes/, en moins bien. Ne pas la publier.
+
+Titre WordPress : Comité d'entreprise : héberger vos salariés à Bordeaux et à Pau
+Meta description : [À RÉDIGER une fois la remise CSE connue. Sans chiffre négocié, la meta n'a pas d'argument.]
+
+=== DÉBUT DU CODE ===
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Victoria Garden accueille les salariés de vos entreprises dans deux villes, Bordeaux et Pau, en appartements équipés d'une kitchenette plutôt qu'en chambres d'hôtel. Les studios démarrent à 72 € la nuit à Bordeaux, et la remise de 20 % s'applique dès la quatrième nuit. [À FOURNIR : la remise consentie aux CSE, qui est la raison d'être de cette page.] Les animaux sont acceptés, les familles logent ensemble, et votre comité dispose d'un interlocuteur commercial dédié.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Un appartement, pas une chambre</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Un salarié qui part en week-end avec ses enfants n'a pas les mêmes besoins qu'un voyageur d'affaires. Il lui faut de la place, une cuisine pour les repas des petits, et un budget qui tient.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Chaque logement Victoria Garden dispose d'un espace salon, d'un coin cuisine équipé et d'une salle de bain privative, sur 20 à 36 m². Une famille de quatre tient dans une suite ou dans deux studios communicants, sans réserver deux chambres séparées par un couloir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Les typologies et les tarifs publics</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Capacité</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Description</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À partir de</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio Double</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Un lit double</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio Supérieur Terrasse</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Terrasse privée</td><td style="padding:10px 14px">82 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio Triple</td><td style="padding:10px 14px">3 personnes</td><td style="padding:10px 14px">Idéal petit groupe</td><td style="padding:10px 14px">102 € la nuit</td></tr><tr><td style="padding:10px 14px">Suite</td><td style="padding:10px 14px">4 personnes</td><td style="padding:10px 14px">Espace et confort prolongé</td><td style="padding:10px 14px">122 € la nuit</td></tr><tr><td style="padding:10px 14px">Studios Communicants</td><td style="padding:10px 14px">4 personnes</td><td style="padding:10px 14px">Deux studios reliés</td><td style="padding:10px 14px">150 € la nuit</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Ce sont les tarifs publics de Bordeaux. La remise de 20 % s'applique dès la quatrième nuit, et une remise de 10 % s'ajoute pour toute réservation effectuée trente jours à l'avance.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">[À FOURNIR : la remise CSE, et si elle se cumule ou non avec les deux remises ci-dessus. Sans cette ligne, un comité n'a aucune raison de passer par vous plutôt que par le site public.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">[À FOURNIR : tarif d'entrée à Pau, à revérifier avant publication.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Deux destinations, deux usages</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Bordeaux</strong>, pour l'escapade urbaine. La résidence est au 127 cours de la Somme, à 9 minutes à pied de la place de la Victoire et à 21 minutes de la gare Saint-Jean. Le Marché des Capucins, marché couvert historique, est à 11 minutes à pied.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Pau</strong>, pour le Béarn et la montagne. [À COMPLÉTER : distances routées depuis la résidence de Pau, non encore relevées.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><em>Distances et temps de marche calculés par routage piéton depuis le 127 cours de la Somme (OpenStreetMap).</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Ce qui est inclus, ce qui est en supplément</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Inclus</strong> : la kitchenette équipée, le wifi, le linge de lit, les charges.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>En supplément</strong> : le parking sécurisé à 15 € la nuit, le petit-déjeuner continental à 12 € par adulte et 6 € par enfant jusqu'à 12 ans, le ménage à la demande à 25 € pour les séjours de sept nuits et plus, le panier de bienvenue à 25 € pour deux personnes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Animaux</strong> : acceptés, 12 € par nuit. <strong>Matériel bébé</strong> : lit parapluie et chaise haute sur demande.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Mettre en place l'accord avec votre comité</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Votre comité passe par le service commercial, qui met en place les conditions applicables à vos salariés.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">[À FOURNIR : modalités concrètes. Convention à signer, code de réservation, bons, subvention partielle, facturation au CSE ou au salarié. Ce bloc est celui que lit un élu de CSE : il ne peut pas rester vide.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Écrivez à <a href="mailto:commercial@victoriagarden.com">commercial@victoriagarden.com</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/entreprises-et-groupes/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Contacter le service commercial</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Quel avantage pour les salariés de notre comité ?</strong><br>[À FOURNIR : la réponse à cette question est la remise CSE. Sans elle, il n'y a pas de réponse honnête à donner.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Une famille de quatre peut-elle loger dans un seul logement ?</strong><br>Oui, dans une suite ou dans deux studios communicants. Le lit parapluie et la chaise haute sont disponibles sur demande.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Les animaux sont-ils acceptés ?</strong><br>Oui, moyennant 12 € par nuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Dans quelles villes ?</strong><br>Bordeaux et Pau.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">[Le schéma FAQPage sera ajouté une fois la première question renseignée. Baliser une FAQ dont la réponse principale est un placeholder n'aurait aucun sens.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Pour tous les hébergements de groupe : <a href="https://www.victoriagarden.com/appart-hotel-pour-groupe-a-bordeaux/">notre appart'hôtel pour groupe à Bordeaux</a> et <a href="https://www.victoriagarden.com/appart-hotel-pour-groupe-a-pau/">notre appart'hôtel pour groupe à Pau</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Vos salariés partent en famille : <a href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/">notre appart'hôtel à Bordeaux centre</a>.</p>
+<!-- /wp:paragraph -->
+
+=== FIN DU CODE ===

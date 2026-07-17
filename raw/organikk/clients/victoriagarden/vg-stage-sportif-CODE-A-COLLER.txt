@@ -1,0 +1,208 @@
+CODE À COLLER — Hébergement pour stage sportif à Bordeaux (2026-07-17)
+
+Page satellite du hub groupe. Blocs Gutenberg, thème victoria-garden. 4 points à vérifier auprès de la réception avant publication (listés plus bas).
+
+POSITION DE CETTE PAGE DANS LE SITE
+Satellite de /appart-hotel-pour-groupe-a-bordeaux/ (981 imp, pos 15,5), qui reste le hub du groupe.
+Elle ne vise PAS « hôtel pour groupes à bordeaux » : ce head term sort déjà en position 6,0 et appartient au hub. La page vise le vocabulaire métier confirmé par Google Suggest : « hébergement stage sportif », « hébergement groupe sportif », « séjour club sportif ».
+
+ANTI-CANNIBALISATION (contrainte Tim)
+Cette page n'écrit jamais « séminaire », « salle de réunion », « salle de formation » ni « team building ». Ces mots appartiennent au hub séminaire. Le séminaire vend une salle, cette page vend des lits. Aucun recoupement de vocabulaire.
+Elle n'utilise pas non plus « hôtel pour groupe à Bordeaux » en H1 ni en H2, pour ne pas concurrencer le hub groupe.
+
+RÉSERVE SUR LE CIBLAGE (à connaître)
+Google Suggest confirme « hébergement stage sportif », « hébergement groupe sportif », « séjour club sportif » et « séjour sportif groupe », mais renvoie ZÉRO suggestion dès qu'on ajoute Bordeaux ou Pau. Le volume local sur ce segment n'est pas prouvé. Cette page est produite sur demande : son intérêt est le vocabulaire métier et le maillage vers le hub groupe, pas un volume démontré.
+
+LES 4 POINTS À VÉRIFIER AVANT PUBLICATION
+1. Stationnement d'un car ou d'un minibus : le parking sur place est-il accessible à un véhicule de groupe ? Non publié.
+2. Petit-déjeuner avant une compétition : horaire d'ouverture, et possibilité de servir plus tôt. Non publié.
+3. Stockage du matériel sportif (vélos, sacs, équipement volumineux). Non publié.
+4. Nombre maximum d'appartements mobilisables simultanément pour un même groupe. Non publié.
+Les blocs concernés sont marqués [À VÉRIFIER] dans le code. Ne pas publier ces blocs en l'état.
+
+DISTANCES : routage piéton et automobile OpenStreetMap depuis le 127 cours de la Somme, relevé du 2026-07-17.
+Le Matmut Atlantique a été écarté du tableau : son géocodage renvoie un résultat à Nantes, la distance n'a pas pu être établie de façon fiable. À router à la main avant de l'ajouter.
+
+Titre WordPress : Hébergement pour stage sportif à Bordeaux : appartement avec cuisine dès 57,60 € la nuit
+Meta description : Hébergement de groupe sportif à Bordeaux : appartements avec kitchenette pour maîtriser les repas, remise de 20 % dès la quatrième nuit, facture au club. Distances réelles aux équipements sportifs.
+
+=== DÉBUT DU CODE ===
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Victoria Garden Bordeaux centre héberge les groupes sportifs en appartements équipés d'une kitchenette, au 127 cours de la Somme. Un studio triple accueille 3 personnes à 102 € la nuit, deux studios communicants en accueillent 4 à 150 € la nuit. À partir de la quatrième nuit, la remise de 20 % s'applique automatiquement, ce qui ramène le studio triple à 27,20 € par personne et par nuit. Vos athlètes cuisinent leurs repas à leurs horaires, la facture est établie au nom du club, et le Palais des Sports est à 6 minutes en voiture.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Un stage, ce n'est pas un week-end à l'hôtel</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Un groupe sportif en stage ne cherche pas la même chose qu'un touriste. Il a des horaires de repas imposés par les entraînements, pas par la brigade de cuisine. Il reste plusieurs jours d'affilée. Il compte au coût par athlète et par nuit, parce que c'est le club ou la fédération qui paie.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Trois contraintes en découlent. Les repas doivent pouvoir se préparer sur place, à l'heure du groupe. Le tarif doit baisser quand le séjour s'allonge, pas rester au prix de la nuit sèche. Et la facture doit partir au club, pas à chaque athlète.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Un appartement avec kitchenette répond aux trois. C'est la différence entre un appart'hôtel et une chambre d'hôtel : la cuisine est dans le logement, et le prix se calcule à la durée.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Le coût par athlète et par nuit</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">La remise de 20 % s'applique automatiquement à partir de la quatrième nuit. Un stage dure rarement moins. Voici le calcul, fait à partir des tarifs publics, pour les typologies qui accueillent un groupe.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Athlètes</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Nuit</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Dès la 4e nuit</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Par athlète, dès la 4e nuit</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio Triple</td><td style="padding:10px 14px">3</td><td style="padding:10px 14px">102 €</td><td style="padding:10px 14px">81,60 €</td><td style="padding:10px 14px"><strong>27,20 €</strong></td></tr><tr><td style="padding:10px 14px">Studios Communicants</td><td style="padding:10px 14px">4</td><td style="padding:10px 14px">150 €</td><td style="padding:10px 14px">120 €</td><td style="padding:10px 14px"><strong>30,00 €</strong></td></tr><tr><td style="padding:10px 14px">Suite</td><td style="padding:10px 14px">4</td><td style="padding:10px 14px">122 €</td><td style="padding:10px 14px">97,60 €</td><td style="padding:10px 14px"><strong>24,40 €</strong></td></tr><tr><td style="padding:10px 14px">Studio Lits Jumeaux</td><td style="padding:10px 14px">2</td><td style="padding:10px 14px">72 €</td><td style="padding:10px 14px">57,60 €</td><td style="padding:10px 14px"><strong>28,80 €</strong></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Une remise supplémentaire de 10 % s'applique à toute réservation effectuée trente jours à l'avance. Un calendrier de compétitions se connaît longtemps à l'avance : c'est une remise qui se prend sans effort.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Les appartements font de 20 à 36 m². Le lit jumeaux sépare les couchages, ce que ne fait pas un lit double.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Les équipements sportifs depuis la résidence</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">La résidence est au 127 cours de la Somme, entre Nansouty et la place de la Victoire. Voici ce que vous atteignez, et en combien de temps.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Équipement</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Distance</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">En voiture</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À pied</th></tr></thead><tbody><tr><td style="padding:10px 14px">Palais des Sports</td><td style="padding:10px 14px">1,2 km</td><td style="padding:10px 14px">6 min</td><td style="padding:10px 14px">16 min</td></tr><tr><td style="padding:10px 14px">Parc des Sports Saint-Michel</td><td style="padding:10px 14px">1,4 km</td><td style="padding:10px 14px">5 min</td><td style="padding:10px 14px">19 min</td></tr><tr><td style="padding:10px 14px">Stade Chaban-Delmas</td><td style="padding:10px 14px">2,7 km</td><td style="padding:10px 14px">5 min</td><td style="padding:10px 14px">36 min</td></tr><tr><td style="padding:10px 14px">Piscine Judaïque</td><td style="padding:10px 14px">2,7 km</td><td style="padding:10px 14px">8 min</td><td style="padding:10px 14px">37 min</td></tr><tr><td style="padding:10px 14px">Stade André Moga (Bègles)</td><td style="padding:10px 14px">3,7 km</td><td style="padding:10px 14px">8 min</td><td style="padding:10px 14px">49 min</td></tr><tr><td style="padding:10px 14px">Bordeaux Lac</td><td style="padding:10px 14px">6,7 km</td><td style="padding:10px 14px">15 min</td><td style="padding:10px 14px">—</td></tr><tr><td style="padding:10px 14px">Piscine Tissot</td><td style="padding:10px 14px">7,2 km</td><td style="padding:10px 14px">16 min</td><td style="padding:10px 14px">—</td></tr><tr><td style="padding:10px 14px">Stadium Vélodrome (Bordeaux Lac)</td><td style="padding:10px 14px">9,1 km</td><td style="padding:10px 14px">18 min</td><td style="padding:10px 14px">—</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le Palais des Sports et le Parc des Sports Saint-Michel se rejoignent à pied. Les autres se rejoignent en moins de vingt minutes en voiture.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><em>Distances et temps de trajet calculés par routage depuis le 127 cours de la Somme (OpenStreetMap).</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Les repas à l'heure du groupe</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Chaque appartement dispose d'une kitchenette équipée. Un groupe qui s'entraîne à 7 heures ne dépend pas d'un service de petit-déjeuner, et un groupe qui rentre à 22 heures ne dépend pas d'une cuisine fermée. Les régimes particuliers se gèrent dans l'appartement, sans négociation avec un restaurant.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le Marché des Capucins, marché couvert historique de Bordeaux, est à 11 minutes à pied et à 0,8 km. C'est là que se fait le ravitaillement de la semaine.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le petit-déjeuner continental reste disponible à 12 € par adulte pour ceux qui le souhaitent. [À VÉRIFIER : horaire d'ouverture du petit-déjeuner, et possibilité de servir plus tôt un groupe en compétition.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Logistique du groupe</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le parking sécurisé est sur place, à 15 € la nuit. [À VÉRIFIER : accessibilité du parking à un car ou à un minibus, et hauteur sous plafond.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">[À VÉRIFIER : solution de stockage du matériel sportif volumineux, vélos et sacs d'équipement.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">[À FOURNIR : nombre maximum d'appartements mobilisables simultanément pour un même groupe.]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">La facture est établie au nom du club ou de la fédération, et elle permet la récupération de TVA. Le ménage à la demande est disponible à 25 € pour les séjours de sept nuits et plus.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/entreprises-et-groupes/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Demander un devis pour votre club</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Combien coûte un hébergement de stage sportif par athlète ?</strong><br>Dès la quatrième nuit, la remise de 20 % ramène le studio triple à 27,20 € par athlète et par nuit, et la suite à 24,40 €. Une remise de 10 % s'ajoute si la réservation est faite trente jours à l'avance.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Peut-on cuisiner sur place ?</strong><br>Oui. Chaque appartement dispose d'une kitchenette équipée. Le groupe mange à ses horaires d'entraînement, sans dépendre d'un service de restauration.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>La facture peut-elle être établie au nom du club ?</strong><br>Oui, et elle permet la récupération de TVA.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Combien d'athlètes par appartement ?</strong><br>Trois dans un studio triple, quatre dans une suite ou dans deux studios communicants, deux dans un studio à lits jumeaux. Les appartements font de 20 à 36 m².</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Quels équipements sportifs sont proches ?</strong><br>Le Palais des Sports est à 1,2 km, le Parc des Sports Saint-Michel à 1,4 km, le stade Chaban-Delmas et la piscine Judaïque à 2,7 km. Le Stadium Vélodrome est à 18 minutes en voiture.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Combien coute un hebergement de stage sportif par athlete a Bordeaux ?","acceptedAnswer":{"@type":"Answer","text":"Des la quatrieme nuit, la remise de 20% ramene le studio triple a 27,20 EUR par athlete et par nuit, et la suite a 24,40 EUR. Une remise de 10% s'ajoute si la reservation est faite trente jours a l'avance."}},
+{"@type":"Question","name":"Peut-on cuisiner sur place pendant un stage sportif ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Chaque appartement dispose d'une kitchenette equipee. Le groupe mange a ses horaires d'entrainement, sans dependre d'un service de restauration."}},
+{"@type":"Question","name":"La facture peut-elle etre etablie au nom du club ?","acceptedAnswer":{"@type":"Answer","text":"Oui, et elle permet la recuperation de TVA."}},
+{"@type":"Question","name":"Combien d'athletes par appartement ?","acceptedAnswer":{"@type":"Answer","text":"Trois dans un studio triple, quatre dans une suite ou dans deux studios communicants, deux dans un studio a lits jumeaux. Les appartements font de 20 a 36 m2."}}
+]}
+</script>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Pour tous les hébergements de groupe, sportifs ou non : <a href="https://www.victoriagarden.com/appart-hotel-pour-groupe-a-bordeaux/">notre appart'hôtel pour groupe à Bordeaux</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Un stage de plusieurs semaines : <a href="https://www.victoriagarden.com/appart-hotel-au-mois/">nos séjours au mois</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le groupe se déplace à Pau : <a href="https://www.victoriagarden.com/appart-hotel-pour-groupe-a-pau/">notre appart'hôtel pour groupe à Pau</a>.</p>
+<!-- /wp:paragraph -->
+
+=== FIN DU CODE ===
