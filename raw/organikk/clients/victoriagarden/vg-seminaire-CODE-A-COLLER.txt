@@ -1,0 +1,231 @@
+CODE À COLLER — Hôtel pour séminaire à Bordeaux (2026-07-17)
+
+Page hub du cluster séminaire. Blocs Gutenberg, thème victoria-garden. PUBLIABLE EN L'ÉTAT : aucun placeholder.
+
+CE QUE CETTE PAGE REMPLACE
+Elle fusionne deux pages jumelles qui décrivent les mêmes salons aux mêmes tarifs :
+- /reservez-votre-prochain-hotel-pour-votre-seminaire/ (5 606 imp, 15 clics, pos 23,4) → la page hub prend cette URL
+- /hotel-salle-de-reunion-bordeaux/ (1 558 imp, 11 clics, pos 24,2) → 301 vers l'URL ci-dessus
+Ne pas publier le code sans faire la redirection : les deux pages resteraient en concurrence, ce qui est le problème qu'on corrige.
+
+À NE PAS TOUCHER POUR L'INSTANT
+- /trouver-une-salle-de-formation-a-bordeaux/ (1 845 imp, pos 7,0) : c'est la seule page du cluster en première page. Elle fait l'objet d'un chantier séparé (comparatif à reconstruire à périmètre égal).
+- /entreprises-et-groupes/ : hub commercial multi-segments, conservé, à mailler vers cette page.
+
+DISTANCES CORRIGÉES (routage piéton OpenStreetMap depuis le 127 cours de la Somme, 2026-07-17)
+Les pages actuelles annoncent « à 5 minutes à pied de la Place de la Victoire » et la gare Saint-Jean « à proximité immédiate ». Le routage donne 9 minutes pour la Victoire et 21 minutes pour la gare. Les valeurs de ce code sont les valeurs routées.
+
+RESTE À FAIRE, HORS DE CETTE PAGE
+- Balisage Product/Offer sur les deux salons : à poser en technique, pas dans ce bloc de contenu (le site porte déjà un OfferCatalog sur les chambres, à ne pas dupliquer à l'aveugle).
+- Aucune FAQPage n'existe sur les pages actuelles. Le schéma est inclus dans ce code.
+
+Titre WordPress : Hôtel pour séminaire à Bordeaux : salle de réunion dès 100 € la demi-journée
+Meta description : Deux salles de réunion de 20 à 25 personnes au centre de Bordeaux, dès 100 € TTC la demi-journée, vidéoprojecteur et wifi inclus. Salle réservable avec ou sans hébergement, 100 appartements sur place.
+
+=== DÉBUT DU CODE ===
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Victoria Garden Bordeaux centre est un appart'hôtel 3 étoiles de 100 appartements doté de deux salles de réunion, au 127 cours de la Somme. Le salon Pauillac fait 35 m² et accueille jusqu'à 20 personnes, à 100 € TTC la demi-journée et 180 € TTC la journée. Le salon Margaux fait 50 m² et accueille jusqu'à 25 personnes, à 120 € TTC la demi-journée et 200 € TTC la journée. Le vidéoprojecteur, l'écran, le paperboard et le wifi sont inclus. La salle se réserve avec ou sans hébergement, et vos équipes dorment sur place dans des studios équipés d'une kitchenette, à 9 minutes à pied de la place de la Victoire.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Les deux salles de réunion et leurs tarifs</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le mobilier est modulable : les tables et les chaises se déplacent ou se retirent selon la disposition dont vous avez besoin, en conférence, en U ou en ateliers par sous-groupes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Salon</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Surface</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">En conférence</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">En U</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Demi-journée</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Journée</th></tr></thead><tbody><tr><td style="padding:10px 14px">Pauillac</td><td style="padding:10px 14px">35 m²</td><td style="padding:10px 14px">20 personnes</td><td style="padding:10px 14px">15 personnes</td><td style="padding:10px 14px">100 € TTC</td><td style="padding:10px 14px">180 € TTC</td></tr><tr><td style="padding:10px 14px">Margaux</td><td style="padding:10px 14px">50 m²</td><td style="padding:10px 14px">25 personnes</td><td style="padding:10px 14px">20 personnes</td><td style="padding:10px 14px">120 € TTC</td><td style="padding:10px 14px">200 € TTC</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:spacer {"height":"24px"} -->
+<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Ce qui est inclus, ce qui est en supplément</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Inclus dans la location</strong> : le vidéoprojecteur, l'écran de projection, le paperboard, le wifi, la climatisation et le mobilier modulable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>En supplément</strong> : le café d'accueil à 5 € par personne (café, thé, viennoiseries), la pause du matin ou de l'après-midi à 3 € par personne (café, thé, jus de fruits), le parking sécurisé à 15 € la nuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Les factures Victoria Garden permettent la récupération de TVA sur une note de frais.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Réserver une salle sans réserver de chambre</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">La location de salle est indépendante de l'hébergement. Vous pouvez réserver le salon Pauillac ou le salon Margaux sans prendre la moindre chambre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Les salles sont ouvertes à tous les professionnels : entreprises bordelaises, indépendants, organismes de formation, équipes en déplacement. C'est la différence avec un hôtel de séminaire classique, où la salle est souvent conditionnée à un volume de nuitées.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Les deux salons conviennent aux formations et ateliers, aux présentations professionnelles, aux réunions de travail, aux conférences en petit format et aux activités de team building.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Combien coûte une journée de séminaire</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Voici deux calculs faits à partir des tarifs ci-dessus, salle et pauses comprises, hors hébergement.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Poste</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">15 personnes, salon Pauillac</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">25 personnes, salon Margaux</th></tr></thead><tbody><tr><td style="padding:10px 14px">Salle, journée complète</td><td style="padding:10px 14px">180 € TTC</td><td style="padding:10px 14px">200 € TTC</td></tr><tr><td style="padding:10px 14px">Café d'accueil (5 € par personne)</td><td style="padding:10px 14px">75 € TTC</td><td style="padding:10px 14px">125 € TTC</td></tr><tr><td style="padding:10px 14px">Une pause (3 € par personne)</td><td style="padding:10px 14px">45 € TTC</td><td style="padding:10px 14px">75 € TTC</td></tr><tr><td style="padding:10px 14px"><strong>Total</strong></td><td style="padding:10px 14px"><strong>300 € TTC</strong></td><td style="padding:10px 14px"><strong>400 € TTC</strong></td></tr><tr><td style="padding:10px 14px"><strong>Par personne</strong></td><td style="padding:10px 14px"><strong>20 € TTC</strong></td><td style="padding:10px 14px"><strong>16 € TTC</strong></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">L'hébergement se chiffre à part, selon la typologie et le nombre de nuits. Pour un séminaire avec nuitées, écrivez à <a href="mailto:commercial@victoriagarden.com">commercial@victoriagarden.com</a> : les entreprises peuvent bénéficier d'un contrat société avec des tarifs dédiés fixés à l'année.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Héberger vos équipes sur place</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">La résidence compte 100 appartements de 20 à 36 m². Chacun dispose d'un espace salon, d'un coin cuisine équipé et d'une salle de bain privative. Vos équipes ne dînent pas forcément au restaurant tous les soirs, et personne ne partage sa chambre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Typologie</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Capacité</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Description</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À partir de</th></tr></thead><tbody><tr><td style="padding:10px 14px">Studio Lits Jumeaux</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Deux lits séparés</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio Double</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Un lit double</td><td style="padding:10px 14px">72 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio Supérieur</td><td style="padding:10px 14px">2 personnes</td><td style="padding:10px 14px">Plus spacieux, lit double</td><td style="padding:10px 14px">82 € la nuit</td></tr><tr><td style="padding:10px 14px">Studio Triple</td><td style="padding:10px 14px">3 personnes</td><td style="padding:10px 14px">Idéal petit groupe</td><td style="padding:10px 14px">102 € la nuit</td></tr><tr><td style="padding:10px 14px">Suite</td><td style="padding:10px 14px">4 personnes</td><td style="padding:10px 14px">Espace et confort prolongé</td><td style="padding:10px 14px">122 € la nuit</td></tr><tr><td style="padding:10px 14px">Studios Communicants</td><td style="padding:10px 14px">4 personnes</td><td style="padding:10px 14px">Deux studios reliés</td><td style="padding:10px 14px">150 € la nuit</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Le petit-déjeuner continental est à 12 € par adulte. La remise de 20 % s'applique à partir de la quatrième nuit : sur un séminaire d'une ou deux nuits, elle ne joue pas, et c'est le contrat société qu'il faut regarder. Une remise de 10 % s'applique à toute réservation effectuée trente jours à l'avance.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/entreprises-et-groupes/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Contacter le service commercial</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Accès et transports</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">La résidence est au 127 cours de la Somme, entre Nansouty et la place de la Victoire. Elle est desservie par le tram B, aux arrêts Saint-Nicolas et Victoire, et par plusieurs lignes de bus.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes" style="margin:0 0 28px"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Destination</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">Distance</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">À pied</th><th style="background-color:#2c7373;color:#ffffff;padding:12px 14px;text-align:left;font-weight:600">En voiture</th></tr></thead><tbody><tr><td style="padding:10px 14px">Place de la Victoire</td><td style="padding:10px 14px">0,7 km</td><td style="padding:10px 14px">9 min</td><td style="padding:10px 14px">—</td></tr><tr><td style="padding:10px 14px">Gare Bordeaux Saint-Jean</td><td style="padding:10px 14px">1,6 km</td><td style="padding:10px 14px">21 min</td><td style="padding:10px 14px">4 min</td></tr><tr><td style="padding:10px 14px">Aéroport Bordeaux-Mérignac</td><td style="padding:10px 14px">18,0 km</td><td style="padding:10px 14px">—</td><td style="padding:10px 14px">27 min</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Depuis Euratlantique, comptez 15 à 20 minutes en transport en commun. Depuis Mériadeck, environ 10 minutes en bus ou en tram depuis la place Gambetta. Le parking sécurisé est sur place, à 15 € la nuit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><em>Distances et temps de marche calculés par routage piéton depuis le 127 cours de la Somme (OpenStreetMap).</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" style="margin-top:8px;margin-bottom:16px">Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Faut-il réserver des chambres pour louer une salle de réunion ?</strong><br>Non. La location de salle est indépendante de l'hébergement. Vous pouvez réserver une salle sans réserver la moindre chambre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Combien coûte une salle de réunion à Bordeaux chez Victoria Garden ?</strong><br>Le salon Pauillac est à 100 € TTC la demi-journée et 180 € TTC la journée. Le salon Margaux est à 120 € TTC la demi-journée et 200 € TTC la journée. Le vidéoprojecteur, l'écran, le paperboard et le wifi sont inclus.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Combien de personnes peut-on accueillir ?</strong><br>Jusqu'à 20 personnes en conférence dans le salon Pauillac, et jusqu'à 25 dans le salon Margaux. En disposition en U, comptez 15 personnes pour le Pauillac et 20 pour le Margaux.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Nous prévoyons un team building de 15 personnes, quelle salle choisir ?</strong><br>Le salon Pauillac. Il accueille 15 personnes en disposition en U et 20 en conférence, et son mobilier se réorganise en ateliers par sous-groupes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Les organismes de formation peuvent-ils louer la salle ?</strong><br>Oui. Les salles sont ouvertes à tous les professionnels, y compris les formateurs indépendants et les organismes de formation, sans condition d'hébergement.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>L'entreprise peut-elle récupérer la TVA ?</strong><br>Oui. Les factures Victoria Garden permettent la récupération de TVA pour une note de frais.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>Y a-t-il un service de restauration ?</strong><br>Un café d'accueil est proposé à 5 € par personne et une pause à 3 € par personne. Chaque appartement dispose par ailleurs d'un coin cuisine équipé, et le petit-déjeuner continental est à 12 € par adulte.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65"><strong>La résidence est-elle loin de la gare Saint-Jean ?</strong><br>Elle est à 1,6 km, soit 4 minutes en voiture et 21 minutes à pied. Le tram B dessert la résidence aux arrêts Saint-Nicolas et Victoire.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Faut-il reserver des chambres pour louer une salle de reunion a Bordeaux ?","acceptedAnswer":{"@type":"Answer","text":"Non. La location de salle est independante de l'hebergement. Vous pouvez reserver une salle sans reserver la moindre chambre."}},
+{"@type":"Question","name":"Combien coute une salle de reunion a Bordeaux chez Victoria Garden ?","acceptedAnswer":{"@type":"Answer","text":"Le salon Pauillac est a 100 EUR TTC la demi-journee et 180 EUR TTC la journee. Le salon Margaux est a 120 EUR TTC la demi-journee et 200 EUR TTC la journee. Le videoprojecteur, l'ecran, le paperboard et le wifi sont inclus."}},
+{"@type":"Question","name":"Combien de personnes peut accueillir une salle de seminaire chez Victoria Garden Bordeaux ?","acceptedAnswer":{"@type":"Answer","text":"Jusqu'a 20 personnes en conference dans le salon Pauillac (35 m2) et jusqu'a 25 dans le salon Margaux (50 m2). En disposition en U, 15 personnes pour le Pauillac et 20 pour le Margaux."}},
+{"@type":"Question","name":"Les organismes de formation peuvent-ils louer la salle ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les salles sont ouvertes a tous les professionnels, y compris les formateurs independants et les organismes de formation, sans condition d'hebergement."}},
+{"@type":"Question","name":"L'entreprise peut-elle recuperer la TVA sur un seminaire ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les factures Victoria Garden permettent la recuperation de TVA pour une note de frais."}}
+]}
+</script>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Pour découvrir la résidence et toutes nos typologies : <a href="https://www.victoriagarden.com/destination/appart-hotel-bordeaux-centre/">notre appart'hôtel à Bordeaux centre</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Vous cherchez une salle sans hébergement : <a href="https://www.victoriagarden.com/trouver-une-salle-de-formation-a-bordeaux/">comparer les salles de formation à Bordeaux</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin-bottom:20px;line-height:1.65">Vos collaborateurs restent plusieurs semaines : <a href="https://www.victoriagarden.com/appart-hotel-au-mois/">nos séjours au mois</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="https://www.victoriagarden.com/entreprises-et-groupes/" style="background-color:#2c7373;color:#ffffff;border-radius:6px;padding:10px 22px;font-size:15px;font-weight:500;line-height:1.2">Demander un devis séminaire</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+=== FIN DU CODE ===
