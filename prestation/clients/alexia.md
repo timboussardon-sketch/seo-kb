@@ -8,8 +8,8 @@
 - Offre : async (Loom + WhatsApp), mois 1 call hebdo
 
 ## Où on en est
-Étape courante : setup système (repo + skills + workflow mots-clés câblés)
-Prochaine action : Alexia choisit le 1er compte pilote → dérouler le workflow mots-clés (déposer son export GSC). Faire compléter les `[À COMPLÉTER]` de `my-rules.md` (% IA, posture concurrents/désaccord, 4 workflows).
+Étape courante : installation terminée (Claude Code + coffre Obsidian « base SEO » connectés au call 3). Reste à personnaliser les 4 workflows.
+Prochaine action : **bloqué sur Alexia** — elle doit envoyer ses process agence (audit / mots-clés / rédaction) + exemples d'audits et de rapports mensuels (demandé par WhatsApp, relancé au call 3). Sans ça, pas de personnalisation des workflows. Workflow suivi en dernier (elle ne fait pas les rapports). Faire compléter les `[À COMPLÉTER]` de `my-rules.md` (% IA, posture concurrents/désaccord, 4 workflows).
 
 ## Accès et data
 - GSC : à brancher (API GSC souhaitée, dépasser la GSC classique) · GA4 : oui (second, jamais seul)
@@ -25,6 +25,7 @@ Prochaine action : Alexia choisit le 1er compte pilote → dérouler le workflow
 | 2026-06-30 | setup | Onglet **Installation** au dashboard : vault Obsidian épuré (227 notes, `AGENTS.md` inclus, 0 PII tiers / 0 secret) + step-by-step Cowork méthode raw→wiki (ranger le vault dans son dossier claude, prompts d'ingestion). Déployé sur organikk.co | public/alexia-accompagnement/ + vault-seo-organikk.zip | — |
 | 2026-07-01 | 1 | Kit d'accompagnement complet : `SKILLS.md` + `WORKFLOWS.md` ajoutés aux 3 zips (dataset, cowork-pack, vault) ; vault embarque **tous les skills** dans `skills-a-partager/` (fichiers renommés `<nom>.md`), `ton-de-voix-tim` retiré (voix perso), slug client `feedback_golfiller_*` neutralisé. Process capitalisé en **Annexe A** de la roadmap | public/alexia-accompagnement/ (vault-seo-organikk.zip, alexia-dataset.zip) | roadmap-prestation |
 | 2026-07-08 | setup | Drive d'accompagnement monté (modèle Leexi Annexe B, structure adaptée consultante) : 7 dossiers, ~28 docs (Lisez-moi, 3 contexte, 3 méthode, 11 skills, 6 doctrine, 5 fiches clients, DPA). Export MCP Drive nettoyé + anonymisé | Drive « Alexia — Accompagnement SEO (Organikk) » | — |
+| 2026-07-17 | setup (call 3) | Bascule chat → terminal : coffre Obsidian unique renommé « base SEO » (doublon supprimé), terminal connecté au coffre, règle raw/wiki intégrée. Diagnostic posé : Semrush écrase les skills dans le chat, aucun skill déclenché sur la recherche mots-clés prêt-à-porter. Méthode posée : 1 conversation/client épinglée, projets par tâche (pas par client), tout rendu = un fichier, 1 coffre/client à terme. Cadré le plan de redirection migration (audit indexation avant/après, ~100 URL, tableau de rapprochement validé en Sheet avant écriture Shopify) | [[alexia-call-3-resume]] | indexation-check, seo-recherche-mots-cles |
 
 ## Spécificités client
 - Multi-client (12+ comptes) : `data/clients/<slug>/` par compte, pas mono-marque comme Leexi.
