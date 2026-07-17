@@ -141,3 +141,23 @@ Commit + push main + déploiement prod qadence.io. Design Google-mono.
 **Optimisation cache** (commit `76314d7`) : voix (12 003 car.) + règle fondamentale (~6 500 car.) déplacées dans la tête cacheable du prompt (~4 600 tokens qui passaient plein tarif à chaque session/invalidation → tarif cache 10 %). Rappel court en fin de queue pour garder le poids de fin de prompt.
 
 **Déploiements** : migration via API Management (HTTP 201), `seo-agent` v261, `distill-session` v34, `cron-reco-outcome` v1, front Netlify ×3. Vérifs : cron actif en cron.job, fonctions répondent, `agent_recos` existe. Le système démarre à vide : les blocs temporels se remplissent avec l'usage, premiers outcomes à J+14.
+
+## 2026-07-17 — Agents autonomes : les findings n'atteignaient jamais la base (2 bugs) — DÉPLOYÉ
+
+Parti d'une question de Tim : « où s'affichent les résultats une fois les crons terminés ? ». Réponse : **nulle part**. Les agents tournaient, trouvaient, et jetaient tout. Découvert en vérifiant la prod, pas le code.
+
+**Le constat en base** : `optimizations` = 1 053 lignes, **toutes avec `agent_id` NULL**, la plus récente du 26/05 et venant d'un autre écrivain. Aucun finding d'agent n'y était jamais arrivé. En face : Watcher 436 runs `success` / 1 310 findings comptés, 649 notifications « X points trouvés — À regarder dans tes optimisations » pointant vers un panneau vide.
+
+**Bug 1** — `optimizations.domain` est `NOT NULL` sans défaut, et `persistFinding` (`agent-runner/index.ts`) ne l'envoyait jamais. Chaque insert cassait sur `23502 null value in column "domain"`. Prouvé en rejouant l'insert exact en prod avec rollback garanti.
+
+**Bug 2** — `optimizations.type` porte un `CHECK` sur 8 valeurs (`title, meta, contenu, cwv, maillage, structure_hn, quick_win, other`), alors que le prompt laissait le LLM inventer les siennes (`traffic_drop`…). Masqué par le bug 1, apparu au premier run réparé. Fix : normalisation sur `other` + type d'origine conservé dans `evidence.type_agent` (on ne perd pas la trouvaille) + prompt qui énumère les valeurs acceptées.
+
+**La cause racine des deux : l'erreur était avalée.** Un `console.error`, un run marqué `success`, et `findings_count` qui comptait la sortie du LLM au lieu de ce qui était gardé. Corrigé : perte totale (trouvé > 0, enregistré = 0) → run en `error` ; perte partielle → `success` mais casse écrite dans `agent_runs.error` ; `findings_count` et la notification comptent l'**enregistré**. Leçon générale : ne jamais notifier sur une écriture non vérifiée.
+
+**Vérif prod** (qadence.io, run réel) : 3 trouvés → 3 enregistrés → 0 erreur. Cinq lignes `agent_id='watcher'` en base, les premières de l'histoire de la table. Les résultats s'affichent dans le panneau Recommandations, le plan d'action et la cloche.
+
+**Déploiements** : `agent-runner` (×2, le premier run échouait encore parce que le deploy n'était pas passé — toujours vérifier la sortie `Deployed Functions`). Commit `9f794be0`, push OK (183 commits de retard rattrapés).
+
+**Restes ouverts** (non traités) : les 1 053 lignes `agent_id` NULL viennent d'un autre écrivain arrêté le 26/05, à investiguer ; `cocon` fait 7 runs `success` pour **0 finding** ; `cannibal` est à 9 erreurs sur 51 runs (18 %, vs 3/439 pour watcher) ; un run watcher bloqué en `running` depuis le 23/06 ; 5 findings en doublon sur qadence.io issus de mes runs de test.
+
+**Journal à corriger** : la ligne « retirer code mort (score-engine/agent-runner jamais déployés) » plus haut est fausse — `agent-runner` est déployé et tourne en prod depuis mars.
