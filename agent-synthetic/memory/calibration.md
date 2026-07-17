@@ -1224,3 +1224,37 @@ Note globale : 4.2/5 (édition solide, info du jour sur un fait daté du 16 juil
 ### Discipline anti-pattern IA respectée
 
 Grep tiret cadratim `—` = 0 sur draft final (seuls séparateurs `---` markdown en début/fin de blocs, pas des tirets intra-texte). Zéro mot banni après vérification (grep = 0 sur crucial pivotal groundbreaking comprehensive paysage explorons révolutionnaire game-changer incontournable catalyser synergie leverage disrupter décrypter nestled vibrant renowned). Zéro métaphore vocabulaire empruntée : 4 occurrences initiales du mot « rail » (rail de conversion, rail connecteur, rail organique, rail agentique) détectées en relecture et corrigées en « canal » avant validation, correction loggée dans mistakes.jsonl M-007. Aucune personnification (Google/Instacart/Illyes/Mueller/Splitt verbes littéraux : annonce, publie, déclare, précise, répond, rapporte, active). Vouvoiement maintenu. Pas d'émoji. Aucune ouverture méta-rhétorique. Pas de conclusion-résumé redondante (juste séparateur `---` et signature draft SyntheticBrain).
+
+## Édition 2026-07-17-v2 (local après-midi) — GEO, la mesure n'est pas reproductible
+
+Info du jour : convergence de trois publications du 14 au 16 juillet sur la non-reproductibilité de la mesure GEO. Survey critique de 45 études (arXiv 2607.14035), preprint Bridge Evidence (arXiv 2607.15253), test réseau Suganthan sur le canal `bing` cohorté.
+
+| Axe | Note | Détail |
+|---|---|---|
+| source_diversity | 9 sources | arxiv.org x2 (primaire académique), suganthan.com (primaire praticien, nouvelle), seroundtable.com x2 (exploit), developers.google.com x2 (primaire : changelog + guide canonicalisation), searchengineland.com (exploit), search-off-the-record (primaire Google) |
+| claim_density | 9 verified dont 1 à confidence 0,6 | Info du jour 6 claims (survey no-causal-effect, gains conditionnels papier fondateur, leviers reproductibles + citation-rewrites-impair-retrieval, Spearman -0,026, documents-pont 27,2 pct + entités 4,02x, pipe bing cohorté) ; B1 1 claim (fragile, 403) ; B2 1 claim ; B3 1 claim |
+| novelty_score | 5/5 | Les deux preprints ne sont repris par personne à la date de rédaction. Le rapprochement survey + Bridge Evidence + test terrain Suganthan n'existe dans aucune autre publication. Angle que les résumés de veille concurrents ne peuvent pas produire : il fallait ouvrir les trois et voir qu'ils disent la même chose. |
+| doctrine_fit | 5/5 | 3 fiches articulées avec rôle distinct, dont une corroboration indépendante réelle : « citation-oriented rewrites can impair retrieval » (survey, juillet, corpus de 45 études) recoupe le finding SAGEO porté par structural-information-geo depuis avril (body text seul : Hit Rate -4,54). Deux corpus, même conclusion. metriques-visibilite-geo gagne une limite dure (mesure répétée, multi-comptes, datée). methode-organikk-4-piliers : proposition d'éclater le KPI unique du pilier AEO en vecteur à 4 grandeurs. |
+| redite_risk | faible | Aucun recoupement avec l'édition du matin (Business SEO, Connected Apps). Aucun des 3 sujets n'est dans said_index. 7 sujets écartés dont 3 pour redite. |
+| clickbait_risk | faible | Titre littéral et chiffré (« 45 études GEO passées en revue : aucune technique n'a d'effet causal démontré sur le fait d'être retrouvé »). Le titre énonce exactement la conclusion du papier, sans extrapoler. Le corps refuse explicitement la lecture « le GEO ne sert à rien ». |
+
+**Note globale : 4,6/5.**
+
+**Ce qui a marché** :
+- Le fact-check n'a pas été délégué. Le run principal a rouvert chaque source primaire lui-même, et ça a rattrapé deux erreurs d'agent avant rédaction (M-008 attribution du chiffre « two weeks » au changelog au lieu du guide ; M-009 inférence « pas la France » présentée comme un fait). Les deux seraient parties en production sans cette passe.
+- Les 8 chiffres du preprint Bridge Evidence ont été vérifiés un par un sur la page primaire, tous confirmés exactement. Les deux verbatims clés du survey aussi.
+- La convergence entre trois sources de nature différente (deux preprints académiques + un test de praticien) donne un angle qu'aucune source seule ne portait. Le survey annonce « substantial run-to-run variability » en résumé, Suganthan en donne la version observable compte par compte. Le rapprochement est le produit du run, pas d'une source.
+- Règle dure explore/publication respectée sur le claim `bing` : source nouvelle (suganthan.com) + source à historique (seroundtable, 1,24).
+- Les sous-agents ont rendu leurs échecs plutôt que de les combler. L'agent communautaire a écrit « je n'ai aucun signal terrain à te donner » au lieu de fabriquer un « plusieurs SEO rapportent ». L'agent explore a rendu 4 candidats vérifiés au lieu de 8 padés, et a documenté 10 études séduisantes écartées pour redatation.
+- Pilier GEO tenu, après Recherche agentique (07-16 v2) et Business SEO (07-17 matin). Directive de variation respectée.
+
+**Ce qui aurait pu être meilleur** :
+- **Zéro signal terrain** (M-010). Reddit et X sont inaccessibles depuis cet environnement, toutes les routes testées échouent. L'édition repose entièrement sur du document publié. C'est une perte structurelle, pas un accident de run : à arbitrer avec Tim.
+- **L'angle Niche SEO n'est toujours pas tenu**, malgré une priorité maintenue depuis plusieurs éditions. Le seul candidat de la fenêtre (GoGoChimp) a été rejeté après vérification : deux fenêtres de mesure différentes pour des chiffres identiques, donc au moins une des deux est fausse. Le refus est le bon appel, mais la directive reste non satisfaite et il faut se demander si elle est tenable à cadence quotidienne.
+- **B1 est le maillon faible de l'édition** (confidence 0,6). La page SERoundtable a renvoyé 403 à la vérification directe alors qu'un sous-agent l'avait ouverte plus tôt dans le même run. Les verbatims Mueller n'ont pas pu être recoupés sur le transcript primaire. La réserve est publiée en clair dans la brève, mais une brève dont on ne peut pas vérifier les citations aurait pu être remplacée.
+- **Deux preprints non relus par les pairs portent l'info du jour.** L'auteur du survey n'a pas d'affiliation renseignée et travaille seul. C'est assumé et publié en limite, mais ça plafonne la confiance de l'édition à medium-high, pas high.
+- **Collision d'ID** entre le run cloud du matin et le run local (M-011). Détectée par hasard en relisant questions.md.
+
+### Discipline anti-pattern IA respectée
+
+Grep tiret cadratim `—` = 0 et demi-cadratin `–` = 0 sur le draft final (seuls séparateurs `---` markdown). Zéro mot banni (grep = 0 sur crucial, pivotal, groundbreaking, comprehensive, paysage, explorons, révolutionnaire, game-changer, incontournable, catalyser, synergie, leverage, disrupter, décrypter, nestled, vibrant, renowned, il est important, dans un monde, territoire, quick win, gains rapides, money page, lien mort). Zéro métaphore ni vocabulaire emprunté (grep = 0 sur rails, carburant, fusée, boussole, vague, tsunami, bataille, arme, ouvrir la voie, terrain de jeu, tuyau, passer à la caisse, pierre angulaire, colonne vertébrale, au cœur de, moteur de croissance) : le grep de M-007 a été rejoué en gate, cette fois sans occurrence. Aucune personnification (Google, OpenAI, Mueller, Suganthan : verbes littéraux, publie, soumet, indique, compte, se corrige, relie). Vouvoiement maintenu, zéro tutoiement. Aucun émoji. Aucune ouverture méta-rhétorique. Pas de conclusion-résumé redondante (séparateur `---` et signature draft SyntheticBrain). 2 845 mots.

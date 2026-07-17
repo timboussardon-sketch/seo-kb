@@ -445,3 +445,59 @@ Aucun diff de skill proposé ce run.
 **Décision demandée** : soit (1) ajouter la commande `grep -iE '\b(rails?|carburant|fusée|boussole|vague|tsunami|bataille|arme|passer à la caisse|ouvrir la voie|terrain de jeu|tuyau)\b' <draft>` comme étape obligatoire du gate qualité de l'agent 7 dans la SKILL.md, soit (2) formaliser dans un script `validate-draft.sh` complémentaire à `validate.sh` (qui valide les JSONL, pas le corps du draft), soit (3) laisser en règle mémoire humaine et re-vérifier au prochain run.
 
 **Trace** : mistakes.jsonl M-007.
+
+### Q-2026-07-17-v2-1 : la veille communautaire (Reddit, X) est morte, on fait quoi ?
+
+**Contexte** : l'agent de veille communautaire du run du 17 juillet après-midi n'a pu ouvrir ni Reddit ni X. Toutes les routes ont échoué : Reddit renvoie 403 en direct, en `.json` et en RSS ; WebFetch le refuse par politique ; l'archive pullpush répond 200 avec `data:[]` vide même sans filtre de date ; les mirrors redlib sont en 503/403 ou derrière une preuve de travail Anubis ; WebSearch refuse le domaine reddit.com. Côté X, nitter.net répond 200 avec un corps vide, xcancel et poast sont en 503. Conséquence : l'édition du 17 après-midi ne contient **aucun signal terrain**. C'est loggé en M-010. Le skill SyntheticBrain prévoit Reddit et X comme sources de veille, mais la capacité n'existe plus. Tant que ce n'est pas tranché, chaque édition perdra la couche « plusieurs praticiens constatent la même chose », qui est justement celle qu'aucun média SEO ne fournit.
+
+**Décision demandée** : soit (1) Tim fournit une clé API Reddit (et éventuellement X) à mettre dans `~/.config/`, soit (2) Tim colle les threads à la main quand il en voit passer, comme il le fait déjà pour les verbatims Reddit destinés au travail mots-clés, soit (3) le skill acte que le signal terrain n'est plus disponible, retire Reddit et X de la liste des sources de l'agent 1 et cesse de compter cette couche dans `source_diversity`.
+
+**Trace** : mistakes.jsonl M-010, runs.jsonl 2026-07-17-local-v2 champ `decisions`.
+
+### Q-2026-07-17-v2-2 : la directive « Niche SEO prioritaire » est-elle tenable à cadence quotidienne ?
+
+**Contexte** : l'angle Niche SEO est marqué prioritaire dans les directives depuis plusieurs éditions et n'est toujours pas tenu. Le run du 17 après-midi a cherché activement (agent explore dédié, cible n°1) et n'a trouvé qu'un seul candidat sur la fenêtre : GoGoChimp, agence CRO de Glasgow, qui revendique 3 263 citations Copilot contre 87 clics organiques Google. Rejeté après vérification : deux de ses pages donnent les mêmes chiffres pour deux fenêtres de mesure différentes (28 avril-30 juin vs 19 avril-3 juillet), donc au moins une des deux est fausse ; contradiction interne aussi sur la concentration (84 pct vs deux tiers) ; comparaison d'une part de citation mono-requête à un baseline cross-moteurs ; chaîne de sources qui pointe vers des agrégateurs. Le rejet est le bon appel. Mais la directive reste non satisfaite édition après édition, ce qui use la mémoire sans rien produire.
+
+**Décision demandée** : soit (1) accepter que Niche SEO sorte quand la matière existe (une fois par mois environ) et retirer la mention « priorité maintenue » qui se répète sans effet, soit (2) **Tim fournit les cas de niche depuis son terrain client** (ce serait de la data first-party, donc supérieure à n'importe quelle source publique, et cohérent avec la doctrine « le corpus nourrit le bot »), soit (3) abaisser la barre de preuve pour cet angle et publier des cas en « témoignage non vérifié » clairement étiquetés (non recommandé : contredit la règle de recoupement).
+
+**Trace** : directives.md sections 2026-07-16-v2 et 2026-07-17-v2, sources.jsonl entrée gogochimp.com 2026-07-17.
+
+### Q-2026-07-17-v2-3 : ajouter un check d'unicité des IDs à validate.sh ?
+
+**Contexte** : le run local de l'après-midi a alloué `M-007` à sa première erreur alors que le run cloud du matin avait déjà pris `M-007` le même jour. Deux lignes M-007 sans rapport ont coexisté dans `mistakes.jsonl`. `validate.sh` n'a rien détecté : il valide la forme JSON et le `capture_mode`, pas l'unicité des identifiants. La collision a été trouvée par hasard, en relisant `questions.md` qui mentionnait un M-007 déjà pris. Le problème vaut pour tout ledger à ID séquentiel (mistakes, claims, headlines, predictions) dès que deux runs tombent le même jour, ce qui est le cas standard depuis que le cron cloud tourne deux fois par jour.
+
+**Diff de skill proposé** : ajouter à `validate.sh` un check qui charge chaque ledger, extrait les champs `id`, et sort non-zéro si un doublon existe. Et ajouter à la SKILL.md, agent 8 : « avant d'écrire une ligne à ID séquentiel, relire le fichier entier et prendre max(id)+1, jamais le dernier ID mémorisé en début de run ».
+
+**Piège à éviter dans l'implémentation, vérifié sur ce run** : un check d'unicité naïf sur `predictions.jsonl` sort 6 faux positifs (P-2026-06-01-1, P-2026-06-01-v2-2, P-2026-06-06-v2-2, P-2026-06-06-v3-2, P-2026-06-10-v2-2, P-2026-06-15-2). Ce ne sont pas des collisions : ce sont des lignes de mise à jour de résolution, qui portent volontairement l'`id` de la prédiction qu'elles complètent et se distinguent par les champs `update_edition` et `status_update` au lieu de `date`, `edition` et `claim`. C'est le schéma append-only voulu. Le check ne doit donc porter que sur les lignes **définissantes** (celles qui ont un champ `claim` non vide), pas sur les lignes de mise à jour. Un check qui ignore cette distinction ferait échouer `validate.sh` sur une mémoire saine et bloquerait tous les commits.
+
+**Décision demandée** : soit (1) appliquer le diff à `validate.sh` et à la SKILL.md, soit (2) appliquer seulement la consigne SKILL.md sans toucher au script, soit (3) laisser en règle mémoire humaine.
+
+**Trace** : mistakes.jsonl M-011, renumérotation M-008/M-009/M-010 faite sur ce run.
+
+### Q-2026-07-17-v2-4 : éclater le KPI du pilier 4 (AEO) de la méthode Organikk en vecteur à 4 grandeurs ?
+
+**Contexte** : la fiche `concepts/methode-organikk-4-piliers` fait porter au pilier 4 (AEO) un KPI unique, « taux de citation dans les réponses génératives ». Le survey de 45 études du 15 juillet défend un vecteur de visibilité qui sépare explicitement quatre grandeurs qui ne bougent pas ensemble : découvrabilité (est-ce que le contenu entre dans l'ensemble retrouvé), citation (est-ce qu'il est cité une fois retrouvé), absorption factuelle (est-ce que son contenu passe dans la réponse même sans citation), résultat économique. Le papier Bridge Evidence renforce le point par un autre chemin : environ un tiers des documents causalement utiles à un agent ne ressemblent pas à des documents pertinents et n'apparaissent dans aucune réponse finale. Un taux de citation seul agrège donc quatre choses distinctes, et c'est précisément l'erreur de mesure que le survey reproche au marché.
+
+**Décision demandée** : soit (1) modifier la fiche `methode-organikk-4-piliers` pour remplacer le KPI unique du pilier 4 par un vecteur à 4 composantes, soit (2) laisser la fiche et créer un concept séparé `vecteur-visibilite-geo` référencé depuis le pilier 4 et depuis `metriques-visibilite-geo`, soit (3) ne rien changer et considérer que le taux de citation reste le bon KPI opérationnel côté client, parce qu'il est le seul mesurable en pratique aujourd'hui.
+
+**Trace** : claims.jsonl C-2026-07-17-v2-2 et C-2026-07-17-v2-3, édition 2026-07-17-v2 section « Connexions doctrine ».
+
+### Q-2026-07-17-v2-5 : formaliser `metriques-visibilite-geo` avec une exigence de protocole ?
+
+**Contexte** : la fiche `concepts/metriques-visibilite-geo` liste déjà en limites qu'aucun outil grand public ne calcule ces métriques et que les métriques 2024-2025 peuvent évoluer. Deux faits du 17 juillet durcissent la limite. Le survey rapporte que les audits commerciaux révèlent « low source overlap, substantial run-to-run variability, and persistent fidelity gaps », et propose un protocole reproductible (mesures répétées, paraphrases, contrôles, validation humaine, interférence multi-acteurs). Suganthan montre que deux comptes ChatGPT testés à la même période ne voient pas les mêmes canaux de retrieval (`bing` présent chez l'un, 0 sur 595 résultats chez l'autre). Conclusion opérationnelle : un relevé GEO qui ne documente pas le compte, son tier, sa géo et sa date de capture n'est comparable à rien.
+
+**Décision demandée** : soit (1) ajouter à la fiche une section « Conditions de validité d'une mesure » avec les 4 éléments obligatoires (compte, tier, géo, date), soit (2) en faire une règle opposable dans les livrables clients Organikk (tout tableau de citations IA porte ces 4 mentions), soit (3) les deux.
+
+**Trace** : claims.jsonl C-2026-07-17-v2-1 et C-2026-07-17-v2-6, predictions.jsonl P-2026-07-17-v2-1.
+
+### Q-2026-07-17-v2-6 : le commentaire de `stable_runs_done` dans manifest.yml fait 45 605 caractères sur une ligne
+
+**Contexte** : le champ `migration.stable_runs_done` du `manifest.yml` porte un commentaire YAML d'une seule ligne de **45 605 caractères**, dans lequel chaque run empile depuis des semaines le résumé intégral de son édition (sujet, chiffres, sources, prédictions, brèves). Le mot `stable_runs_done` apparaît 18 fois dans le fichier, presque toujours à l'intérieur de ce commentaire. Le run du 17 juillet après-midi a incrémenté le compteur à 94 sans rien ajouter au commentaire, pour ne pas aggraver le problème.
+
+**Pourquoi c'est un problème** : (1) l'information est déjà stockée proprement et de façon requêtable dans `runs.jsonl`, avec un objet par run ; le commentaire en est une copie dégradée et non parsable. (2) Le manifest est le premier fichier que l'agent 0 lit à chaque run, donc ce bloc est rechargé en contexte à chaque édition pour zéro valeur ajoutée. (3) Un commentaire de cette taille sur une ligne rend le fichier illisible pour un humain et fragile à éditer, alors que c'est le fichier qui déclare quelle mémoire fait foi. (4) La croissance est illimitée et strictement monotone.
+
+**Décision demandée** : soit (1) vider le commentaire et le remplacer par une ligne courte du type `# compteur de runs stables ; le detail par run vit dans ledgers/runs.jsonl`, soit (2) archiver le contenu actuel du commentaire dans un fichier `derived/stable_runs_log.md` avant de le vider (par prudence, même si le contenu est théoriquement redondant avec runs.jsonl), soit (3) laisser tel quel.
+
+**Recommandation de l'agent** : option (2), puis inscrire dans la SKILL.md, section « Clôture du run », que l'incrément de `stable_runs_done` ne s'accompagne d'aucun commentaire, le détail allant dans `runs.jsonl`.
+
+**Trace** : manifest.yml champ `migration.stable_runs_done`, incrémenté à 94 sans ajout de commentaire au run 2026-07-17-local-v2.

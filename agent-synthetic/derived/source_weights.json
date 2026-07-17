@@ -1,8 +1,8 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-07-17",
+  "updated": "2026-07-17-v2",
   "weights": {
-    "google-search-central": 1.17,
+    "google-search-central": 1.25,
     "the-keyword": 1.29,
     "bing-webmaster": 1.05,
     "search-engine-land": 1.3,
@@ -95,7 +95,7 @@
     "mmm-online": 0.64,
     "socialsamosa": 0.59,
     "fortune": 1.08,
-    "seroundtable": 1.04,
+    "seroundtable": 1.3,
     "optimixed": 1.04,
     "searchengineland": 1.04,
     "searchenginejournal": 1.04,
@@ -245,6 +245,9 @@
     "company-instacart": 0.72,
     "engadget": 0.65,
     "macrumors": 0.65,
-    "search-off-the-record": 0.9
+    "search-off-the-record": 0.9,
+    "arxiv": 1.13,
+    "suganthan": 1.04,
+    "gogochimp": 0.8
   }
 }
