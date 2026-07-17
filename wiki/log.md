@@ -1284,3 +1284,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - régularisation: index.md ne listait pas le call 14 (Transcripts 11 → 13), ni les entities Upscale/Vincent/Yalp/Baptiste (nouvelle section Prospects Organikk — vente prestation)
 - voix: entrée ajoutée dans `raw/notes/tim-my-voice.md` (§ Observations terrain)
 - suite: rapport + cas clients à envoyer vendredi ou lundi max ; décision de Baptiste avant ses congés le 27/07
+
+## [2026-07-17] proposition | Deck Yalp + nouveau modèle de propale en slides
+- output: [[propositions/modele-deck-slides]] (gabarit) + `~/Documents/Proposition-Yalp/` (livrable client)
+- source: [[sources/2026-07-16-call-15-baptiste-yalp]] + pré-audit du 2026-07-08
+- prix arbitré: 1 400 € HT/mois (fourchette prospect 15-20 k€/12 mois)
+- format: 10 slides 16:9, DA presentation-seo, remplace le dossier A4 par défaut
+- doctrine: approche 3 partis pris + roadmap 4 phases reprises de build-presentation-seo.py, jamais réinventées
+- limite: aucune projection chiffrée, GSC non branchée. Objectif 15-20 leads/mois = chiffre de Tim, absent du transcript (exception assumée)
+- skill déclenché: none (rédaction directe, modèle capitalisé)

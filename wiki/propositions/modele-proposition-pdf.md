@@ -94,4 +94,5 @@ Quand la mettre dans le fil : en pièce jointe du mail de proposition, ou envoy�
 
 ## Lié
 
+- [[modele-deck-slides]] — le deck en slides 16:9, **format par défaut depuis le 2026-07-17**. Celui-ci reste le dossier A4 dense, quand le prospect veut du détail écrit.
 - [[template-retainer-2h-500]] — l'autre modèle de proposition, format rétainer léger, texte markdown simple. Celui-ci est le format « gros dossier » designé.

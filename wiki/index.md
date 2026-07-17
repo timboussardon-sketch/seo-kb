@@ -374,4 +374,5 @@ status: stable
 
 ## Propositions (2)
 - [[propositions/template-retainer-2h-500]] — Template de proposition retainer 2h/mois à 500 €
-- [[propositions/modele-proposition-pdf]] — Modèle de proposition PDF
+- [[propositions/modele-proposition-pdf]] — Modèle de proposition PDF (dossier A4, 11 sections)
+- [[propositions/modele-deck-slides]] — Modèle de deck en slides 16:9, format par défaut depuis le 2026-07-17
