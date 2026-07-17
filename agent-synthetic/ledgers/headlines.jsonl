@@ -170,3 +170,9 @@
 {"id": "H-2026-07-16-v2-B1", "candidate": "Google Job Indexing API : soumis n'est pas indexe", "chosen": true, "type": "breve-B1", "date": "2026-07-16-v2"}
 {"id": "H-2026-07-16-v2-B2", "candidate": "Quatre types de degradation de contenu, dont une propre aux surfaces IA", "chosen": true, "type": "breve-B2", "date": "2026-07-16-v2"}
 {"id": "H-2026-07-16-v2-B3", "candidate": "Google teste le toggle masquer les resultats sponsorises dans Google Shopping", "chosen": true, "type": "breve-B3", "date": "2026-07-16-v2"}
+{"id": "H-2026-07-17-info-A", "candidate": "Google AI Mode intègre Instacart, Canva et YouTube Music. Un pan du parcours d'achat migre dans la réponse générative", "chosen": true, "type": "info-jour", "date": "2026-07-17"}
+{"id": "H-2026-07-17-info-B", "candidate": "Connected Apps dans AI Mode: la conversion sort du site marchand pour se faire dans l'interface Google", "chosen": false, "type": "info-jour", "date": "2026-07-17"}
+{"id": "H-2026-07-17-info-C", "candidate": "Google choisit qui exécute l'action dans AI Mode: Instacart, Canva et YouTube Music entrent, la procédure d'entrée n'est pas publiée", "chosen": false, "type": "info-jour", "date": "2026-07-17"}
+{"id": "H-2026-07-17-B1", "candidate": "Gary Illyes recommande de retirer le champ lastmod du sitemap XML quand les dates sont fausses", "chosen": true, "type": "breve-B1", "date": "2026-07-17"}
+{"id": "H-2026-07-17-B2", "candidate": "Search Off the Record précise ce que veut dire Discovered vs Crawled Not Indexed en 2026, en pointant explicitement l'AI-generated content", "chosen": true, "type": "breve-B2", "date": "2026-07-17"}
+{"id": "H-2026-07-17-B3", "candidate": "Google active par défaut les Local Inventory Ads dans les campagnes Shopping standard au 31 août 2026", "chosen": true, "type": "breve-B3", "date": "2026-07-17"}

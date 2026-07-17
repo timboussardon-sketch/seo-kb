@@ -421,3 +421,27 @@ Aucun diff de skill proposé ce run.
 
 **Trace** : predictions.jsonl P-2026-07-02-v2-5-resolution.
 
+
+### Q-2026-07-17-1 : formaliser un critère pilier « Business SEO côté sortie de conversion » distinct de « Business SEO côté couche opérateur » ?
+
+**Contexte** : depuis 07-13 morning (Kasper couche opérateur mesure GEO) et 07-14 v2 (Bocconi bascule marché mesurable), le pilier Business SEO a été mobilisé sur des angles différents (mesure marché vs mesure produit). L'édition 2026-07-17 (Connected Apps AI Mode) ajoute un 3e angle : la sortie de la conversion hors site marchand. Ces trois angles partagent le pilier Business SEO mais interrogent des mécaniques différentes.
+
+**Décision demandée** : soit (1) maintenir le pilier Business SEO comme un ensemble unique large, soit (2) introduire une sous-classification (Business SEO / marché, Business SEO / couche opérateur, Business SEO / sortie de conversion) dans les directives et le said_index pour améliorer l'anti-redite fine, soit (3) créer un pilier distinct « Commerce agentique » pour le sous-cas conversion hors site.
+
+**Trace** : runs.jsonl 2026-07-13, 2026-07-14-v2, 2026-07-17 champ `pilier_info_jour`.
+
+### Q-2026-07-17-2 : valider passage exploit pour les 4 sources ajoutées en pratique le 2026-07-17 ?
+
+**Contexte** : 4 sources utilisées pour la 1re fois dans l'édition Connected Apps (company.instacart.com trust 0.72, engadget.com trust 0.65, macrumors.com trust 0.65, search-off-the-record.libsyn.com trust 0.9). company.instacart.com est un billet primaire marque, utile quand la marque annonce une intégration produit. search-off-the-record.libsyn.com est la source primaire officielle Google Search Central pour les épisodes du podcast, avec un potentiel d'usage récurrent élevé sur les prochaines éditions.
+
+**Décision demandée** : soit (1) passer les 4 sources en exploit d'emblée, soit (2) attendre une 2e utilisation utile avant passage exploit (règle standard SyntheticBrain), soit (3) passer search-off-the-record.libsyn.com et company.instacart.com en exploit d'emblée (sources primaires marque à forte valeur documentaire) et laisser engadget.com et macrumors.com en explore.
+
+**Trace** : sources.jsonl entrées 2026-07-17.
+
+### Q-2026-07-17-3 : proposer une auto-check obligatoire « grep -iE 'rail\b' hors sens ferroviaire » dans la routine post-rédaction ?
+
+**Contexte** : le mot « rail » (métaphore ferroviaire interdite dans le prompt SyntheticBrain) est apparu 4 fois dans le corps de l'info du jour du 17 juillet, loggé en mistake M-007. La liste des mots métaphoriques interdits (rails, carburant, fusée, boussole, vague, tsunami, bataille, arme, passer à la caisse, ouvrir la voie, terrain de jeu, tuyau) est vérifiée par grep post-rédaction. « rail » figure explicitement dans la liste mais l'auto-check ne s'est déclenché qu'après relecture manuelle du draft, pas dans une routine automatisée.
+
+**Décision demandée** : soit (1) ajouter la commande `grep -iE '\b(rails?|carburant|fusée|boussole|vague|tsunami|bataille|arme|passer à la caisse|ouvrir la voie|terrain de jeu|tuyau)\b' <draft>` comme étape obligatoire du gate qualité de l'agent 7 dans la SKILL.md, soit (2) formaliser dans un script `validate-draft.sh` complémentaire à `validate.sh` (qui valide les JSONL, pas le corps du draft), soit (3) laisser en règle mémoire humaine et re-vérifier au prochain run.
+
+**Trace** : mistakes.jsonl M-007.

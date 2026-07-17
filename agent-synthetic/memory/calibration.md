@@ -1193,3 +1193,34 @@ Note globale : 4.2/5 (edition solide, mono-vendor pour info du jour compensé pa
 - Domaine #1 le plus cité en AI Mode non identifié — pousser la recherche primaire vers Similarweb ou Ahrefs Brand Radar avant la prochaine tentative de re-traitement du sujet.
 - Doctrine 9e dimension proposée sans encore de fiche `wiki/concepts/` formalisée : à valider en revue hebdo, pas de modification autonome de la doctrine.
 
+
+## Édition 2026-07-17 (vendredi cloud matin, pilier Business SEO)
+
+Note globale : 4.2/5 (édition solide, info du jour sur un fait daté du 16 juillet avec 6 sources indépendantes recoupées dont 2 primaires, 3 brèves toutes datées du même jour, 3 hubs doctrine mobilisés sans mention décorative, 2 prédictions vérifiables datées).
+
+| Axe | Note | Détail |
+|---|---|---|
+| source_diversity | 11 sources | blog.google (primaire), company.instacart.com (primaire), searchengineland.com x2 (exploit), techcrunch.com (secondaire), engadget.com (secondaire), macrumors.com (secondaire), seroundtable.com x2 (exploit), search-off-the-record.libsyn.com (primaire Google Search Central), optimixed.com (corroborateur), digitalphablet.com (corroborateur) |
+| claim_density | 8 verified + 2 discarded | Info du jour 5 claims verified (annonce, expérience achat, procédure inscription non publiée, disponibilité US-only, divergence mécaniques sélection texte vs panier) + 2 discarded (SOCi 1.2 pct janvier 2026 redite ; AI Mode 1 milliard MAU Google I/O mai 2026 non neuf) ; B1 1 claim verified ; B2 1 claim verified ; B3 1 claim verified |
+| novelty_score | 4/5 | Fait daté du 16 juillet, angle Business SEO non tenu depuis 07-14-v2 Bocconi. Baisse pour un angle qui aurait pu être Recherche agentique côté Google-as-runtime, éviter empilement piliers proches. |
+| doctrine_fit | 4/5 | 3 hubs articulés avec rôle distinct: mots-cles-actionnels (intention Do, changement d'exécutant), tabou-visibilite (où se mesure la conversion), agentic-search (Google-as-runtime vs runtime agent externe SPACE). Baisse pour absence de nouvelle proposition de dimension formalisée. |
+| redite_risk | faible | Sujet Google AI Mode Connected Apps neuf au 16 juillet. Anti-redite 4 sujets écartés listés dans said_index (SOCi, 1 milliard MAU, Merchant Center Next drop, Performance Max product reporting). |
+| clickbait_risk | faible | Titre littéral, énumération des 3 partenaires, formulation « Un pan du parcours d'achat migre dans la réponse générative » factuelle. Pas de promesse creuse, pas d'affirmation au-delà de la source. |
+
+**Ce qui a marché** :
+- 2 sources primaires (Google blog + Instacart blog) et 4 sources secondaires indépendantes recoupées sur le même fait.
+- Distinction explicite entre citation textuelle dans AI Mode et contenu du panier connecteur (deux mécaniques distinctes, doctrine articulée sans confusion).
+- 4 points « non documentés » listés en clair (protocole, procédure inscription, disponibilité hors US, partage de revenus) — barre de rigueur maintenue.
+- 3 hubs doctrine mobilisés avec lecture opérationnelle spécifique (pas mention décorative).
+- 2 prédictions vérifiables avec critères de résolution positive/négative distincts (procédure publique inscription + mesure interne trafic référral marchand nommé).
+- Variation piliers tenue : Business SEO ≠ Recherche agentique (SPACE 07-16 v2) ≠ Actualité SEO (Profound 07-16 matin).
+
+**Ce qui aurait pu être meilleur** :
+- 0 nouvelle source explore formellement ajoutée avec statut « explore » : 4 sources nouvelles (company.instacart.com, engadget.com, macrumors.com, search-off-the-record.libsyn.com) ont été utilisées pour la 1re fois mais leur trust initial reste à valider en revue hebdo. Objectif « 1 source neuve indépendante par édition » tenu en pratique mais mal loggé.
+- L'angle Niche SEO n'est toujours pas tenu (dernier vrai cas niche > 4 semaines). Piste candidate SOCi Local Visibility Index écartée car rapport de janvier 2026, redite déguisée.
+- L'angle Product-Led SEO strict (calculateur/simulateur/générateur qui gagne citations IA sur requête Do) non tenu depuis 16 juin v2, priorité maintenue.
+- Verbatim Mueller/Splitt dans le podcast Search Off the Record cité via SERoundtable, non vérifié en écoute directe du podcast : limite documentaire à mentionner explicitement dans la brève B2 (mentionnée mais mérite clarification).
+
+### Discipline anti-pattern IA respectée
+
+Grep tiret cadratim `—` = 0 sur draft final (seuls séparateurs `---` markdown en début/fin de blocs, pas des tirets intra-texte). Zéro mot banni après vérification (grep = 0 sur crucial pivotal groundbreaking comprehensive paysage explorons révolutionnaire game-changer incontournable catalyser synergie leverage disrupter décrypter nestled vibrant renowned). Zéro métaphore vocabulaire empruntée : 4 occurrences initiales du mot « rail » (rail de conversion, rail connecteur, rail organique, rail agentique) détectées en relecture et corrigées en « canal » avant validation, correction loggée dans mistakes.jsonl M-007. Aucune personnification (Google/Instacart/Illyes/Mueller/Splitt verbes littéraux : annonce, publie, déclare, précise, répond, rapporte, active). Vouvoiement maintenu. Pas d'émoji. Aucune ouverture méta-rhétorique. Pas de conclusion-résumé redondante (juste séparateur `---` et signature draft SyntheticBrain).

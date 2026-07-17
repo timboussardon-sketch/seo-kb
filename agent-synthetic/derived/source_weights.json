@@ -1,6 +1,6 @@
 {
   "_comment": "Poids courants par source, derives de sources.jsonl par l'agent 9. base tier (primaire 1.05 / secondaire 1.00 / communautaire 0.95) + 0.04*useful_hits - 0.1*noise_hits, borne [0.8,1.3]. Reecrit a chaque calibration.",
-  "updated": "2026-07-09-v2",
+  "updated": "2026-07-17",
   "weights": {
     "google-search-central": 1.17,
     "the-keyword": 1.29,
@@ -241,6 +241,10 @@
     "grayvault-consulting": 1.04,
     "sqmagazine-tech": 1.02,
     "testingcatalog": 1.05,
-    "theaicareerlab": 0.95
+    "theaicareerlab": 0.95,
+    "company-instacart": 0.72,
+    "engadget": 0.65,
+    "macrumors": 0.65,
+    "search-off-the-record": 0.9
   }
 }
