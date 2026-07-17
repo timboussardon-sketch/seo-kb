@@ -4,7 +4,7 @@ title: Registre des contradictions et dépendances ouvertes
 aliases: [contradictions, dette-doctrinale, dependances-ouvertes]
 tags: [meta, doctrine, lint, contradictions, dette]
 created: 2026-05-16
-updated: 2026-07-10
+updated: 2026-07-17
 sources: 0
 confidence: high
 status: living-doc
@@ -29,7 +29,7 @@ status: living-doc
 
 | ID | Contradiction / dépendance | Statut | Détectée | Action attendue |
 |---|---|---|---|---|
-| C-001 | Discordance parcours Franck : Jumpto vs SEO.fr | `ouverte` | 2026-05-01 | Clarifier au prochain call/ingest |
+| C-001 | Discordance parcours Franck : Jumpto vs SEO.fr | `acceptée` | 2026-05-01 | Limite assumée [[revue-hebdo/2026-W29]] : jamais citer le rattachement de Franck (Jumpto vs SEO.fr) sans le re-vérifier au moment de l'usage |
 | C-002 | Paper OpenDecoder (Mo et al., 2026) jamais ingéré alors qu'il fonde le scoring | `ouverte` | 2026-04-30 | Item long terme — re-litiger seulement si [[hypotheses#H-010]] redevient critique |
 | C-003 | Cluster Organikk + 4 modèles pSEO non implémentés, zéro mesure post-déploiement | `en-cours` | 2026-04-30 | Mesurer après déploiement → [[preuves/index]] |
 | C-004 | Snapshot qadence-seo-agent figé au 2026-04-30, le repo évolue | `résolue` | 2026-04-30 | Fermée [[revue-hebdo/2026-W27]] : [[entities/qadence-seo-agent]] maintenue vivante fait référence d'état, le snapshot est une photo datée |
@@ -38,7 +38,7 @@ status: living-doc
 | C-007 | "11 workflows automatisés" (drive-accompagnement) vs 10 skills documentés | `acceptée` | 2026-04-30 | Limite assumée [[revue-hebdo/2026-W24]] : jamais citer un décompte de skills sans le recompter depuis AGENTS.md §7 au moment de l'usage |
 | C-008 | Brevet Google US12536233B1 : publication ≠ déploiement | `ouverte` | 2026-05-01 | Surveiller déploiement réel |
 | C-009 | Papers MAGEO (2604.19516) et Role-Augmented G-SEO (2508.11158) non ingérés | `ouverte` | 2026-05-01 | Ingest papers si Tim valide la priorité |
-| C-010 | Statut inscription bootcamp Cécile / Franck non confirmé | `ouverte` | 2026-05-01 | Confirmer via suivi prospects |
+| C-010 | Statut inscription bootcamp Cécile / Franck non confirmé | `acceptée` | 2026-05-01 | Limite assumée [[revue-hebdo/2026-W29]] : jamais citer un décompte d'inscriptions bootcamp sans le re-vérifier au moment de l'usage |
 | C-011 | Chiffres glossaire non sourcés (40% AIO clics, 15M req/j Perplexity, 90-99% autorité 301) | `acceptée` | 2026-04-13 | Limite assumée [[revue-hebdo/2026-W26]] : jamais publier ces 3 chiffres sans source primaire ; sourcer au moment de l'usage |
 | C-012 | Glossaire simplifie MIRAS "multi-résolution" en "mémoire long-terme" | `acceptée` | 2026-04-13 | Vulgarisation assumée du glossaire public ; divergence documentée dans la source, référence canonique = [[entities/miras]] |
 | C-013 | Reranking : plafond effective rate ~70% non résolu par aucune méthode étudiée | `acceptée` | 2026-04-25 | Limite scientifique connue, à citer comme telle |
@@ -47,7 +47,15 @@ status: living-doc
 
 ### C-001 — Franck : Jumpto vs SEO.fr
 
-[[entities/jumpto]] porte un flag `a-verifier`. Au call-08 Franck est rattaché à Jumpto ; au call-10 il se présente comme ex-fondateur de SEO.fr (vendu début 2024 à Netlinking.fr), profil freelance. [[entities/franck]] a été corrigé en ce sens mais le parcours intermédiaire 2024-? n'est pas documenté. Risque : citer le mauvais rattachement dans une analyse prospects. Action : trancher au prochain contact, fermer le flag sur [[entities/jumpto]].
+[[entities/jumpto]] porte un flag `a-verifier`. Au call-08 Franck est rattaché à Jumpto ; au call-10 il se présente comme ex-fondateur de SEO.fr (vendu début 2024 à Netlinking.fr), profil freelance. [[entities/franck]] a été corrigé en ce sens mais le parcours intermédiaire 2024-? n'est pas documenté. Risque : citer le mauvais rattachement dans une analyse prospects.
+
+`acceptée` depuis le 2026-07-17 ([[revue-hebdo/2026-W29]] point 4), en bloc avec C-010 — même objet, même cause. Ouverte 77 jours en attente d'un contact qui n'est jamais venu et qu'aucun bootcamp en cours ne provoquera. Calque C-007 / C-011 : quand une contradiction attend une information que rien ne produit, on la convertit en garde-fou à l'usage plutôt que de la laisser figurer indéfiniment en dette active. Accepter n'est pas résoudre. Limite : **jamais citer le rattachement de Franck sans le re-vérifier au moment de l'usage**. Le flag `a-verifier` sur [[entities/jumpto]] reste et porte désormais la limite au lieu d'attendre un call. Repasse `ouverte` si un contact réel apporte le parcours 2024-?.
+
+### C-010 — Statut inscription bootcamp Cécile / Franck
+
+Le statut d'inscription au bootcamp de Cécile et de Franck n'a jamais été confirmé (détecté le 2026-05-01, suivi prospects). Risque : citer un décompte d'inscrits faux dans le discours commercial ou une analyse de conversion.
+
+`acceptée` depuis le 2026-07-17 ([[revue-hebdo/2026-W29]] point 4), en bloc avec C-001. Même diagnostic : aucun bootcamp en cours ne produira la confirmation, l'attente est indéfinie. Limite : **jamais citer un décompte d'inscriptions bootcamp sans le re-vérifier au moment de l'usage**, exactement comme C-007 impose de recompter les skills depuis AGENTS.md §7. Repasse `ouverte` si un cycle bootcamp reprend et rend les statuts vérifiables.
 
 ### C-002 — OpenDecoder jamais ingéré
 

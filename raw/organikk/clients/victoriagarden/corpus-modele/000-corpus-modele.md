@@ -13,6 +13,7 @@ La doctrine « corpus d'abord, pages ensuite » appliquée à Victoria Garden. O
 
 - [[stack-corpus-victoriagarden]] — les 5 couches de corpus, mappées sur Leexi et bxble.
 - [[5-modeles-corpus-victoriagarden]] — les 5 modèles de pages qui en sortent, avec ordre de construction.
+- [[motif-seminaire-diagnostic-2026-07-17]] — le séminaire n'est pas un motif, c'est une offre à part : 9 454 impressions, 42 clics, cannibalisation à 4 URL, corpus déjà complet.
 
 ## Les 5 modèles en une ligne
 

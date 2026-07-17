@@ -5,10 +5,10 @@ title: "Moteurs IA : chiffres d'usage et d'identité (juillet 2026)"
 aliases: [moteurs-ia-chiffres-usage-2026]
 tags: [geo, moteur-ia, chatgpt, gemini, perplexity, mistral, deepseek, statistiques]
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-17
 sources: 5
 confidence: medium
-status: draft
+status: stable
 ---
 
 # Moteurs IA : chiffres d'usage et d'identité (juillet 2026)

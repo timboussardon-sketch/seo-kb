@@ -4,8 +4,8 @@ title: "Post LinkedIn — 4 infos SEO du jeudi (2026-06-18)"
 aliases: [post-jeudi-4-infos-2026-06-18, jeudi-4-infos-18-juin]
 tags: [post-linkedin, doctrine-tim, aeo, ia-commerce, conversion, chatgpt-ads, shopify]
 created: 2026-06-18
-updated: 2026-06-18
-status: draft
+updated: 2026-07-17
+status: stale
 sources: 4
 confidence: medium
 ---

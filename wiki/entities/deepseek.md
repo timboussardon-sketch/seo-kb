@@ -4,10 +4,10 @@ title: DeepSeek
 aliases: [deepseek, deepseek-r1]
 tags: [ia, llm, moteur-ia, chine, geo]
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-17
 sources: 1
 confidence: medium
-status: draft
+status: stable
 ---
 
 # DeepSeek

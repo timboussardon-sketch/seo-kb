@@ -56,7 +56,7 @@ Il n'existe **aucun tarif mensuel publié**, ni aucune dégressivité liée à u
 | Ménage à la demande | 25 €, pour les séjours de 7 nuits et plus | Hub |
 | Panier de bienvenue | 25 € pour 2 personnes | Hub |
 | Matériel bébé | Sur demande : lit parapluie, chaise haute. Code promo Gambin | Hub |
-| Salle de réunion | Existe, tarif non publié | Hub |
+| Salle de réunion | **Tarifs publiés.** Salon Pauillac (35 m²) : 100 € TTC la demi-journée, 180 € la journée. Salon Margaux (50 m²) : 120 € TTC la demi-journée, 200 € la journée | `/hotel-salle-de-reunion-bordeaux/` et `/reservez-votre-prochain-hotel-pour-votre-seminaire/`, vérifié le 2026-07-17 |
 
 ### Facturation entreprise
 
@@ -137,10 +137,10 @@ La page bordeaux.fr du règlement n'a pas pu être lue directement (404 sur `/p3
 - **Horaires de réception et procédure d'arrivée tardive.** Absents du site. Seule mention de « 24h/24 » : les vélos en libre-service, pas la réception.
 - **Politique de prolongation et d'annulation** pour un séjour d'accompagnement hospitalier.
 - **Conditions animaux au-delà du tarif** : poids maximum, nombre, espaces interdits. Le site donne le prix (12 €/nuit) et rien d'autre.
-- **Tarif de la salle de réunion.**
+- ~~**Tarif de la salle de réunion.**~~ **Corrigé le 2026-07-17 : ce point était faux.** Les tarifs, surfaces, capacités et équipements des deux salons sont publiés sur le site. Voir [[motif-seminaire-diagnostic-2026-07-17]].
 - **Data PMS** : durée moyenne de séjour, motif, part affaires.
 
-Ces cinq points ne s'obtiennent que par le client.
+Ces quatre points ne s'obtiennent que par le client.
 
 ---
 

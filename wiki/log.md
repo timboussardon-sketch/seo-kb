@@ -1293,3 +1293,15 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - doctrine: approche 3 partis pris + roadmap 4 phases reprises de build-presentation-seo.py, jamais réinventées
 - limite: aucune projection chiffrée, GSC non branchée. Objectif 15-20 leads/mois = chiffre de Tim, absent du transcript (exception assumée)
 - skill déclenché: none (rédaction directe, modèle capitalisé)
+
+## [2026-07-17] revue-hebdo | Semaine W29 — 7 décisions
+- édition: [[revue-hebdo/2026-W29]]
+- promotions: 3 draft→stable exécutées ([[entities/deepseek]], [[entities/mistral]], [[sources/2026-07-07-moteurs-ia-chiffres-usage]]) / 0 stable→stale
+- hypothèse en test: aucune nouvelle — H-007 garde la place jusqu'à son J+30 (2026-08-06) ; H-009 pré-arbitrée sur Victoria Garden (en-test à la publication client, sortie du programme au 2026-08-31)
+- lot ingest W30: Victoria Garden (10 fichiers P1, chantier vivant + GSC + sujet H-009)
+- skips actés: Leexi (notes-meet + recherche-rgpd, date de mort W28 atteinte) ; refresh playbook Reddit attaché au J+30 H-007 ; skip golfiller-strat dégelé (sprint réel 07-06→07-09) et rattaché au J+90 (2026-09-01)
+- règle posée: le rituel ne fait pas exécuter les ingests, le travail les fait exécuter — rattachement à une échéance datée ou un chantier vivant, jamais à un vote hebdomadaire
+- contradictions: C-001 + C-010 `ouverte`→`acceptée` en bloc (77j, garde-fou à l'usage, calque C-007/C-011)
+- archivage: [[posts-linkedin/2026-06-18-jeudi-4-infos]] → `stale` (conditionnel W28, sans réponse)
+- résurgence: rail réparé par la migration GH Actions (W28 point 6) ; verdict [[concepts/information-gain]] exécuté — section Corroboration 2026 ([[sources/2026-06-05-algorithme-fin-des-backlinks-llms]]), point de contrôle prod, wording « visibilité »→« citations IA », sources 6→7
+- fil rouge: le corpus quitte le pari de publication Organikk (6 itérations, 0 page, pilote supprimé le 07-13) pour la production client chez Victoria Garden ; le binôme corpus passe `stale` le 2026-07-31 s'il ne publie pas

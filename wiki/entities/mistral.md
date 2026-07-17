@@ -4,10 +4,10 @@ title: Mistral AI (Le Chat)
 aliases: [mistral, mistral-ai, le-chat]
 tags: [ia, llm, moteur-ia, france, geo]
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-17
 sources: 1
 confidence: medium
-status: draft
+status: stable
 ---
 
 # Mistral AI (Le Chat)

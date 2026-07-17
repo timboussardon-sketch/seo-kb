@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-07-10
+updated: 2026-07-17
 sources: 0
 confidence: high
 status: living-doc
@@ -38,7 +38,7 @@ status: living-doc
 | H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — |
 | H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `en-test` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (baseline structurelle capturée) |
 | H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
-| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) |
+| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) · Victoria Garden pré-arbitrée [[revue-hebdo/2026-W29]] : `en-test` à la publication client, sortie du programme au 2026-08-31 |
 | H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
 
 ## Détail
@@ -102,6 +102,8 @@ Test : A/B sur pages Organikk, présence vs absence du bloc answer-first, mesure
 Énoncé : les preuves chiffrées du discours commercial (1h30→45min de rédaction, closing 10→50%, top 2 sur balle de golf, [[sources/2026-04-13-cas-clients-resultats]]) tiennent sur un échantillon mesuré, pas seulement auto-rapporté. `confidence: medium` par défaut sur la source.
 
 Test : instrumenter sur les prochains clients (Victoria Garden, FG Formation) une mesure tierce avant/après, archivée dans [[preuves/index]]. C'est ce qui transforme un argument de vente en preuve opposable.
+
+Conditionnel pré-arbitré le 2026-07-17 ([[revue-hebdo/2026-W29]] point 2) : **Victoria Garden est le meilleur candidat que H-009 ait eu**, et il est prêt sauf sur un point. Le client est nommé dans l'énoncé du test depuis l'origine, la GSC arrive en exports manuels, et deux baselines sont capturées avant toute décision — l'audit du 2026-06-11 (`raw/organikk/clients/victoriagarden/`, marque −41 %, hors-marque ×4,3) et le motif séminaire mesuré le 2026-07-17 à 9 454 impressions / 42 clics / CTR 0,44 %. Ce qui manque n'est pas l'instrument mais l'intervention : les 4 contenus Gutenberg du chantier hub sont livrés et attendent d'être collés côté client. Pas de publication, pas d'avant/après, pas de test — H-009 reste donc `ouvert`. **Dès que le client publie, la fiche preuve s'ouvre avec J+30 et J+90 datés depuis la mise en ligne et H-009 repasse `en-test` sans repasser par le rituel.** Si rien n'est publié d'ici au 2026-08-31, Victoria Garden sort du programme H-009, sans re-débat.
 
 Repassée `ouvert` le 2026-07-10 ([[revue-hebdo/2026-W28]] point 2), clause de falsification pré-arbitrée en W27 appliquée sans nouveau débat : l'échéance J+30 du 2026-07-03 (P-golfiller-2026-06-03-1) est passée sans mesure — aucun export Golfiller postérieur au 2026-06-10 dans `raw/data/exports-gsc/`, prédiction toujours `open` dans le ledger, table J+30 de la fiche vide. Le discours commercial reste auto-rapporté. Les échéances J+90 (2026-09-01 et 2026-09-08) restent actives dans le ledger : si les mesures sont relevées à ces dates, H-009 peut repasser `en-test` sur décision de revue.
 

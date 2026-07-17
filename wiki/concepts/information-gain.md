@@ -4,8 +4,8 @@ title: Information Gain (standard Google + benchmark GEO)
 aliases: [information-gain, gain-information]
 tags: [seo, geo, quality-raters, benchmark, ranking, aeo]
 created: 2026-04-12
-updated: 2026-04-13
-sources: 6
+updated: 2026-07-17
+sources: 7
 confidence: high
 status: stable
 ---
@@ -57,6 +57,14 @@ Les sites bas-ranking gagnent massivement, les sites top-1 perdent :
 
 → GEO = levier anti-monopole pour petits sites.
 
+### Corroboration 2026
+
+Le benchmark primaire date de 2024. Un second benchmark, le GEO Benchmark 2026 de ConvertMate [[sources/2026-06-05-algorithme-fin-des-backlinks-llms]], mesure sur de la data fraîche et prolonge le finding « Authoritative ne fait que +13 % » : la corrélation entre backlinks et citation LLM tombe à r = 0,18, contre r = 0,87 pour la pertinence sémantique — environ 4× plus déterminante. Il ajoute deux leviers absents du paper de 2024 : le multimodal (+156 %) et la fraîcheur (un contenu de moins de 3 mois est cité 3× plus, ce qui recoupe [[concepts/weight-decay]]).
+
+Les deux études sont indépendantes et pointent dans la même direction : l'autorité et les liens pèsent peu, la matière sémantique et la donnée pèsent. C'est la corroboration qui manquait à un concept adossé à une seule source.
+
+Point de contrôle côté production : [[sources/2026-06-02-algorithme-geo-pas-un-scam]] reprend les chiffres du benchmark sous leur forme **corrigée** (+41 % Quotation Addition, +34 % Statistics Addition), pas sous la forme erronée de la newsletter #3. La correction documentée sur cette page a bien migré dans le contenu publié — rien à re-corriger côté données.
+
 ## Forme atomique
 
 L'IA vérifie les claims par **atomisation** : chaque affirmation est découpée en fait isolé et vérifié indépendamment [[sources/2026-03-11-algorithme-data-claude-perplexity]].
@@ -73,12 +81,12 @@ L'information gain est le **concept standardisé** (Google QRG, étude académiq
 
 ## Limites
 
-- L'étude arxiv:2311.09735 date de 2024 — les métriques peuvent avoir évolué
-- Le benchmark couvre la visibilité dans les réponses IA, pas le ranking Google classique
+- L'étude arxiv:2311.09735 date de 2024 — les métriques peuvent avoir évolué. Atténué depuis le 2026-07-17 : le GEO Benchmark 2026 recoupe la direction du finding (section Corroboration 2026), sans rejouer le protocole
+- Le benchmark couvre les citations IA dans les réponses génératives, pas le ranking Google classique
 - LLM-as-judge (G-Eval) = variance admise par les auteurs
 - Top 5 sources seulement par requête, corpus anglais majoritaire
 - Les gains dépendent fortement du **domaine** (Law & Gov aime Authoritative, Business aime Fluency, etc.) — pas de règle universelle
 
 ## Pages liées
 
-[[sources/2026-04-13-geo-aggarwal-2024]] (source primaire paper) · [[sources/2026-04-13-google-quality-raters-guidelines-2026]] (source primaire QRG) · [[sources/2026-03-06-algorithme-etude-citation-ia]] (source secondaire newsletter avec chiffres imprécis) · [[sources/2026-03-11-algorithme-data-claude-perplexity]] · [[sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas]] · [[sources/2026-03-13-algorithme-agents-seo-consultants]] · [[entities/geo-bench]] · [[entities/quality-raters-guidelines]] · [[concepts/surprise-gap]] · [[concepts/surprise-metric]] · [[concepts/data-proprietaire]] · [[concepts/metriques-visibilite-geo]] · [[concepts/answer-first-pattern]]
+[[sources/2026-04-13-geo-aggarwal-2024]] (source primaire paper) · [[sources/2026-04-13-google-quality-raters-guidelines-2026]] (source primaire QRG) · [[sources/2026-03-06-algorithme-etude-citation-ia]] (source secondaire newsletter avec chiffres imprécis) · [[sources/2026-03-11-algorithme-data-claude-perplexity]] · [[sources/2026-03-17-algorithme-pourquoi-article-ne-rank-pas]] · [[sources/2026-03-13-algorithme-agents-seo-consultants]] · [[entities/geo-bench]] · [[entities/quality-raters-guidelines]] · [[concepts/surprise-gap]] · [[concepts/surprise-metric]] · [[concepts/data-proprietaire]] · [[concepts/metriques-visibilite-geo]] · [[concepts/answer-first-pattern]] · [[sources/2026-06-05-algorithme-fin-des-backlinks-llms]] (corroboration 2026) · [[sources/2026-06-02-algorithme-geo-pas-un-scam]] (point de contrôle production)
