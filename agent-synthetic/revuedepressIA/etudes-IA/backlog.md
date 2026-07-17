@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-17 · YouTube dans les moteurs IA : premier domaine cité par Perplexity (32,4 %), paradoxe du chapitre (seul Google lit les timestamps), benchmarks par format et moteur (2025-2026) → `2026-07-17-stats-youtube-citations-ia-transcriptions.md`
 - 2026-07-16 · Perplexity Media Program et monétisation des citations : éditeurs partenaires, revenus partagés, impact sur la neutralité éditoriale (2025-2026) → `2026-07-16-stats-perplexity-media-program-citations-monetisation.md`
 - 2026-07-15 · Agentic search et trafic non-humain : volume d'agents IA sur le web, impact sur Google Analytics 4 et le "dark traffic" IA (2025-2026) → `2026-07-15-stats-agentic-search-dark-traffic-ga4.md`
 - 2026-07-13 · Requêtes locales et résumés IA en 2026 : impact GSC avant/après AI Mode, taux d'impressions capturées et CTR résiduel → `2026-07-13-stats-ai-mode-impact-requetes-locales-gsc.md`
@@ -36,11 +37,7 @@
 
 ## À faire (par priorité)
 
-1. **YouTube et citations IA : 32,4 % de Perplexity, transcriptions comme source citable, benchmark par type de contenu (2025-2026)**
-   - Angle : YouTube est le domaine le plus cité par Perplexity (32,4 %, Ahrefs Brand Radar, étude 2026-06-20) — mais ses mécanismes d'extraction (transcription auto, chapitres, description) et l'impact sur les créateurs restent non mesurés ; comment les moteurs IA traitent la vidéo vs le texte.
-   - Sources à explorer : Ahrefs Brand Radar (breakdown YouTube par requête type), Tubular Labs / VidIQ (transcriptions), Moz/Semrush (présence vidéo en AIO), annonces YouTube sur l'indexation IA.
-   - Transformation originale pressentie : croisement volume de transcriptions indexables / taux de citation effectif vs pages texte de même autorité.
-   - Anti-redite : l'étude 2026-06-20 mentionne YouTube en chiffre ; aucune étude du vault n'analyse le contenu vidéo comme source pour les moteurs IA.
+_(file vide — ajouter de nouveaux sujets lors de la prochaine itération)_
 
 ## Sujets écartés (avec raison)
 (vide)
