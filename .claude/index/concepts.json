@@ -1604,6 +1604,7 @@
       "wiki/preuves/2026-05-16-pseo-secteur-ville-data-proprietaire.md",
       "wiki/preuves/2026-06-12-golfiller-instrumentation-client.md",
       "wiki/preuves/2026-07-10-organikk-batch-juillet-data-proprietaire.md",
+      "wiki/preuves/2026-07-17-organikk-directories-guide-google.md",
       "wiki/preuves/_template.md",
       "wiki/preuves/index.md",
       "wiki/propositions/modele-deck-slides.md",
@@ -1750,6 +1751,7 @@
     "backrefs": [
       "wiki/log.md",
       "wiki/revue-hebdo/2026-W28.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "medium",
@@ -1760,7 +1762,7 @@
       "chatgpt-search",
       "geo"
     ],
-    "status": "draft",
+    "status": "stable",
     "tags": [
       "ia",
       "llm",
@@ -1779,6 +1781,7 @@
     ],
     "backrefs": [
       "wiki/index.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md"
     ],
     "confidence": "medium",
@@ -1873,6 +1876,9 @@
     "backrefs": [
       "qadence/drive-qadence/18-mots-cles-que-je-rate.md",
       "wiki/concepts/fraicheur-contenu.md",
+      "wiki/hypotheses.md",
+      "wiki/log.md",
+      "wiki/preuves/2026-07-17-organikk-directories-guide-google.md",
       "wiki/queries/pseo-2026-07-07-organikk-corpus.md",
       "wiki/sources/2026-06-05-algorithme-fin-des-backlinks-llms.md"
     ],
@@ -1882,11 +1888,12 @@
       "geo",
       "data-proprietaire",
       "information-gain",
+      "hypotheses",
+      "2026-07-17-organikk-directories-guide-google",
       "surprise-gap",
       "answer-first-pattern",
       "preuve-atomique",
       "aeo",
-      "hypotheses",
       "methode-organikk-4-piliers"
     ],
     "status": "emerging",
@@ -2993,13 +3000,16 @@
       "wiki/entities/quality-raters-guidelines.md",
       "wiki/entities/sge.md",
       "wiki/entities/youtube.md",
+      "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
+      "wiki/preuves/2026-07-17-organikk-directories-guide-google.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
       "wiki/queries/audit-stats-organikk-2026-07-13.md",
       "wiki/revue-hebdo/2026-W21.md",
       "wiki/revue-hebdo/2026-W22.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/revue-hebdo/resurgence-2026-07-15.md",
       "wiki/sources/2026-02-20-organikk-information-gain-geo.md",
       "wiki/sources/2026-02-27-algorithme-youtube-ai-overviews.md",
@@ -3034,6 +3044,9 @@
       "2026-04-13-geo-aggarwal-2024",
       "2026-03-06-algorithme-etude-citation-ia",
       "anti-ai-writing",
+      "2026-06-05-algorithme-fin-des-backlinks-llms",
+      "weight-decay",
+      "2026-06-02-algorithme-geo-pas-un-scam",
       "2026-03-11-algorithme-data-claude-perplexity",
       "surprise-metric",
       "data-proprietaire",
@@ -3352,6 +3365,7 @@
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
       "wiki/revue-hebdo/2026-W28.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-04-13-call-08-franck.md",
       "wiki/sources/2026-04-15-call-10-franck-suite.md"
     ],
@@ -3455,6 +3469,7 @@
       "wiki/entities/organikk-co.md",
       "wiki/entities/yalp.md",
       "wiki/index.md",
+      "wiki/keywords/recherche-2026-07-17-victoriagarden-b2b-sport-cse.md",
       "wiki/log.md",
       "wiki/moc/moc-maillage.md",
       "wiki/queries/2026-06-10-golfiller-gsc-6mois.md",
@@ -3751,6 +3766,7 @@
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
       "wiki/revue-hebdo/2026-W28.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-04-11-seo-ia-tim.md",
       "wiki/syntheses/doctrine-seo-post-sge.md"
     ],
@@ -3778,6 +3794,7 @@
       "4-piliers-organikk"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-17-revue-presse-v2.md",
       "newsletter-IA/_MODELE-newsletter-IA.md",
       "organikk/commercial/PLAYBOOK.md",
       "qadence/drive-qadence/14-site-non-cite-par-chatgpt.md",
@@ -3908,6 +3925,7 @@
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-16-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-16-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-17-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-17-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
@@ -4054,6 +4072,7 @@
     "backrefs": [
       "wiki/log.md",
       "wiki/revue-hebdo/2026-W28.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md"
     ],
     "confidence": "medium",
@@ -4064,7 +4083,7 @@
       "chatgpt-search",
       "geo"
     ],
-    "status": "draft",
+    "status": "stable",
     "tags": [
       "ia",
       "llm",
@@ -4187,6 +4206,7 @@
       "wiki/keywords/recherche-2026-05-27-seo-content-writer.md",
       "wiki/keywords/recherche-2026-05-27-vendeur-amazon.md",
       "wiki/keywords/recherche-2026-06-05-consultant-seo-startup.md",
+      "wiki/keywords/recherche-2026-07-17-victoriagarden-b2b-sport-cse.md",
       "wiki/log.md",
       "wiki/methodes/ranker-verticale-niche-sans-backlink.md",
       "wiki/posts-linkedin/2026-05-05-workflow-kw-research-5-etapes.md",
@@ -4381,6 +4401,7 @@
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
       "wiki/revue-hebdo/2026-W28.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-01-15-organikk-mots-cles-seo-2026.md",
       "wiki/sources/2026-02-10-organikk-creer-bot-ia-seo.md",
       "wiki/sources/2026-03-04-algorithme-lancer-site-sans-cms.md",
@@ -4546,6 +4567,7 @@
       "wiki/entities/qadence-seo-agent.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/preuves/2026-07-17-organikk-directories-guide-google.md",
       "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
       "wiki/sources/2026-01-28-organikk-premier-agent-seo-ia.md",
       "wiki/sources/2026-02-10-organikk-creer-bot-ia-seo.md",
@@ -5446,6 +5468,7 @@
       "wiki/hypotheses.md",
       "wiki/index.md",
       "wiki/moc/moc-aeo-geo.md",
+      "wiki/preuves/2026-07-17-organikk-directories-guide-google.md",
       "wiki/sources/2026-01-08-organikk-seo-agence-immobiliere-lyon.md",
       "wiki/sources/2026-01-12-organikk-seo-serrurier-lyon.md",
       "wiki/sources/2026-03-11-algorithme-data-claude-perplexity.md",
@@ -6150,6 +6173,7 @@
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-17-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -6523,6 +6547,7 @@
       "wiki/log.md",
       "wiki/moc/moc-vente-objections.md",
       "wiki/queries/2026-06-24-mots-cles-que-les-ia-ne-mangent-pas.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/revue-hebdo/resurgence-2026-07-15.md",
       "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
       "wiki/sources/2026-03-05-organikk-strategie-seo-du-moment.md",
@@ -6859,6 +6884,7 @@
       "wiki/revue-hebdo/2026-W26.md",
       "wiki/revue-hebdo/2026-W27.md",
       "wiki/revue-hebdo/2026-W28.md",
+      "wiki/revue-hebdo/2026-W29.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md"
     ],
     "confidence": "medium",
@@ -6959,6 +6985,7 @@
       "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
       "qadence/drive-qadence/02-chute-de-trafic-seo-que-faire.md",
       "raw/papers/titans-architecture-google-deepmind.md",
+      "wiki/concepts/information-gain.md",
       "wiki/concepts/ingenierie-semantique-inversee.md",
       "wiki/concepts/rrf.md",
       "wiki/concepts/surprise-gap.md",

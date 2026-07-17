@@ -44,6 +44,7 @@ status: living-doc
 | [[preuves/2026-05-16-pseo-secteur-ville-data-proprietaire]] | 5 pages pSEO secteur×ville Organikk | [[hypotheses#H-007]] | ≤ 2026-05-13 | `en-cours` (gelée, baseline jamais capturée) |
 | [[preuves/2026-06-12-golfiller-instrumentation-client]] | 2 pages Golfiller instrumentées (ledger content-brain + exports GSC) | [[hypotheses#H-009]] | 2026-06-10 | `en-cours` (J+30 non mesuré, J+90 seuls actifs) |
 | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] | 3 URLs Organikk publiées le 2026-07-07 (guide Reddit, outil citation LLM, article audit) | [[hypotheses#H-007]] | 2026-07-07 | `en-cours` |
+| [[preuves/2026-07-17-organikk-directories-guide-google]] | 129 URLs Organikk : guide des évaluateurs Google (101 pages) + mises à jour datées (26 pages) | [[hypotheses#H-011]] | 2026-07-17 | `en-cours` (baseline capturée à J0) |
 
 ## Données minimales par fiche
 

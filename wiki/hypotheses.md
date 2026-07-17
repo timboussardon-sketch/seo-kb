@@ -40,6 +40,7 @@ status: living-doc
 | H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
 | H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) · Victoria Garden pré-arbitrée [[revue-hebdo/2026-W29]] : `en-test` à la publication client, sortie du programme au 2026-08-31 |
 | H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
+| H-011 | Combler un manque de matière de l'IA (référentiel daté, sourcé, structuré) fait de nous la source citée | `en-test` | [[concepts/directories-data-ia]] · [[concepts/information-gain]] | [[preuves/2026-07-17-organikk-directories-guide-google]] (baseline structurelle capturée) |
 
 ## Détail
 
@@ -114,6 +115,18 @@ Historique : `en-test` du 2026-06-12 au 2026-07-10 (décision [[revue-hebdo/2026
 Énoncé : le système de scoring 4 axes ([[sources/2026-04-15-opendecoder-seo-scoring-system]]) transpose fidèlement le paper OpenDecoder (Mo et al., 2026), qui n'est pas encore ingéré comme source paper. Croise [[contradictions#C-002]].
 
 Test : ingérer le paper primaire, auditer la fidélité de la transposition formule par formule.
+
+### H-011 — Le manque de matière de l'IA comme gisement
+
+Énoncé : là où l'IA répond en citant de la matière mais que cette matière manque ou est mal structurée (non datée, non sourcée, dispersée), celui qui la fournit proprement devient la source citée. C'est la doctrine [[concepts/directories-data-ia]], posée le 2026-06-21 en `confidence: medium` sur la seule cohérence avec [[concepts/data-proprietaire]] et [[concepts/information-gain]], sans preuve terrain dédiée.
+
+Ouverte `en-test` le 2026-07-17, à la publication des deux premiers directories sur `organikk.co` ([[log]] 2026-07-17). Les deux conditions apprises de [[hypotheses#H-007]] sont remplies dès l'ouverture : la baseline existe par construction (129 URLs neuves, zéro historique GSC), et la propriété GSC `organikk.co` est déjà connectée via l'edge `admin-gsc-export` de Fusionn, donc l'instrument ne manque pas.
+
+Le cas est franc parce que le manque est mesurable : Google publie ses *General Guidelines* en un PDF anglais de 182 pages, les moteurs génératifs le citent de mémoire et se trompent de version. Fiche : [[preuves/2026-07-17-organikk-directories-guide-google]], jalons J+30 = 2026-08-16, J+90 = 2026-10-15.
+
+Clause de falsification pré-arbitrée : pas de pull GSC archivé à l'échéance → fiche gelée, retour `ouvert` sans débat. Même règle que H-007, pour la même raison.
+
+Test : suivre impressions, positions et citations IA des pages du guide sur les requêtes où l'IA répond aujourd'hui de travers (« fully meets », « needs met », « quality rater guidelines », « scaled content abuse »), sur 90j.
 
 ---
 

@@ -4,8 +4,8 @@ title: Directories Data IA (idéation par le manque de l'IA)
 aliases: [directories-data-ia, data-gap-geo, matiere-manquante-ia]
 tags: [doctrine-tim, geo, aeo, ideation, mots-cles, data, methode]
 created: 2026-06-21
-updated: 2026-06-21
-sources: 0
+updated: 2026-07-17
+sources: 1
 confidence: medium
 status: emerging
 ---
@@ -16,7 +16,9 @@ Heuristique d'idéation de contenu et de mots-clés **inversée**. On ne part pa
 
 On produit cette matière, on la structure pour être extractible, l'IA la cite. C'est du [[concepts/geo]] natif, pas du SEO de mot-clé classique.
 
-> Doctrine émergente posée le 2026-06-21. `confidence: medium` tient sur la cohérence avec [[concepts/data-proprietaire]] et [[concepts/information-gain]], pas encore sur une preuve terrain dédiée.
+> Doctrine émergente posée le 2026-06-21. `confidence: medium` tient sur la cohérence avec [[concepts/data-proprietaire]] et [[concepts/information-gain]].
+>
+> **Premier test terrain ouvert le 2026-07-17** : deux directories publiés sur `organikk.co`, 129 URLs, baseline capturée le jour même. Hypothèse [[hypotheses#H-011]], fiche [[preuves/2026-07-17-organikk-directories-guide-google]], jalons J+30 = 2026-08-16 et J+90 = 2026-10-15. La confiance ne monte pas avant la mesure.
 
 ## Pourquoi ça marche
 
@@ -40,9 +42,13 @@ Chaque type = un manque récurrent de l'IA, donc un gisement.
 | **Actualité / fraîcheur** | faible sur le très récent | Organikk → brèves / `/actualites` |
 | **Statistiques sourcées** | chiffres orphelins, non datés | Organikk → `/statistiques` |
 | **Concordance / correspondances** | relations entre entités mal mappées | Bxble → concordance versets |
+| **Document de référence mal structuré** | cité de mémoire, mauvaise version | Organikk → `/guide-evaluateurs-google` |
+| **Chronologie datée** | dates approximatives, fins de déploiement inconnues | Organikk → `/mises-a-jour-google` |
 | **Définitions / glossaire d'entités** | définitions floues, non canoniques | gisement libre |
 | **Comparaisons / benchmarks chiffrés** | A vs B sans données dures | gisement libre |
 | **Data first-party unique** | données que personne d'autre n'a | études Fusionn / GSC |
+
+Les deux types ajoutés le 2026-07-17 sortent du chantier Organikk. Le **document de référence mal structuré** est le gisement le plus franc rencontré : Google publie ses *General Guidelines* en un PDF anglais de 182 pages, les moteurs le citent de mémoire et se trompent de version. La **chronologie datée** vient du constat que Google publie les dates de début et de fin de ses déploiements, et que presque personne ne reprend la date de fin.
 
 ## Où ça se branche
 
@@ -50,9 +56,10 @@ Porte d'entrée **alternative** au workflow mots-clés classique (`seo-recherche
 
 ## Limites
 
-- Doctrine non encore instrumentée par une preuve datée (pas de fiche [[hypotheses]] dédiée au 2026-06-21).
-- Un référentiel n'est défendable que s'il se met à jour : sans mise à jour, la fraîcheur se retourne contre lui.
+- Doctrine instrumentée depuis le 2026-07-17 ([[hypotheses#H-011]]) mais **pas encore validée** : la mesure tombe au J+30 et au J+90.
+- Un référentiel n'est défendable que s'il se met à jour : sans mise à jour, la fraîcheur se retourne contre lui. Le cas est concret sur `/guide-evaluateurs-google`, qui devra suivre chaque nouvelle version du PDF de Google.
 - Vaut pour les domaines où l'IA répond en citant de la matière. Moins pertinent pour le pur transactionnel local.
+- **Le volume n'est pas le produit.** Le chantier du 2026-07-17 a produit 39 pages de mises à jour candidates, dont 13 se réduisaient à un nom et deux dates : coupées après notation. Un corpus complet ne fait pas 1 page par ligne. Une page n'existe que si elle a quelque chose de spécifique à dire ; le reste reste une ligne du tableau de référence.
 
 ## Pages liées
 

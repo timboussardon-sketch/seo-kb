@@ -1305,3 +1305,22 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - archivage: [[posts-linkedin/2026-06-18-jeudi-4-infos]] → `stale` (conditionnel W28, sans réponse)
 - résurgence: rail réparé par la migration GH Actions (W28 point 6) ; verdict [[concepts/information-gain]] exécuté — section Corroboration 2026 ([[sources/2026-06-05-algorithme-fin-des-backlinks-llms]]), point de contrôle prod, wording « visibilité »→« citations IA », sources 6→7
 - fil rouge: le corpus quitte le pari de publication Organikk (6 itérations, 0 page, pilote supprimé le 07-13) pour la production client chez Victoria Garden ; le binôme corpus passe `stale` le 2026-07-31 s'il ne publie pas
+
+## [2026-07-17] publication | Directories Organikk — guide des évaluateurs Google + mises à jour datées
+- déclencheur : farming de directories sur organikk.co, scoring de 10 modèles candidats
+- modèles retenus : guide des évaluateurs Google (8,7/10), mises à jour Google datées (7,0/10)
+- modèles écartés en cours de route : papers → implication SEO (3 fiches du vault non sourcées), réglementation IA (arbitrage Tim)
+- publié : 129 URLs, commit `53e6cdd`, repo organikk-next, déployé et vérifié en production
+  - `/guide-evaluateurs-google` : 101 pages + référence, corpus des 151 sections du PDF officiel
+  - `/mises-a-jour-google` : 26 pages + référence, corpus des 41 déploiements du Search Status Dashboard
+- traduction : 74 sections FR produites en 8 lots parallèles, contrôle automatique (ratio de longueur, nombres conservés, mots bannis, tiret cadratin), fusion refusée tant qu'une alerte subsiste
+- notation des 141 pages candidates : médiane guide 7,8 / médiane mises à jour 5,8 → 13 pages coupées (nom + deux dates, rien de spécifique à dire)
+- corrections du corpus au passage :
+  - `raw/papers/google-quality-raters-guidelines-2026.md` datait « Édition 2026 » → version réelle du 11 septembre 2025, vérifiée en couverture du PDF
+  - 2 titres FR faux dans `qrg-passages.json` : 11.0 (FAQ Page Quality, pas « Introduction au Needs Met ») et 12.0 (utilisateurs et requêtes, pas « Mobile ») → répare aussi `/outils/quality-rater-guidelines`
+- hypothèse ouverte : [[hypotheses#H-011]] `en-test`, premier test terrain de [[concepts/directories-data-ia]]
+- fiche preuve : [[preuves/2026-07-17-organikk-directories-guide-google]], baseline capturée à J0, jalons J+30 = 2026-08-16 et J+90 = 2026-10-15
+- concepts touchés : 1 ([[concepts/directories-data-ia]] — 2 types ajoutés à la typologie, limite « volume ≠ produit » ajoutée)
+- contradictions : N
+- angle SEO identifié : le gisement le plus franc est le document de référence officiel mal structuré (PDF long, anglais, cité de mémoire par les IA). Corollaire posé en limite du concept : un corpus complet ne fait pas 1 page par ligne.
+- en attente d'arbitrage Tim : section 4.2 traduite mais non publiée (mot banni dans la traduction fidèle du texte de Google)

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: paper
-title: "Google Quality Raters Guidelines — Édition 2026"
+title: "Google Quality Raters Guidelines — version du 11 septembre 2025"
 aliases: []
 tags: []
 created: 2026-04-12
@@ -11,13 +11,13 @@ confidence: medium
 status: draft
 ---
 
-# Google Quality Raters Guidelines — Édition 2026
+# Google Quality Raters Guidelines — version du 11 septembre 2025
 
 ## Référence
 - Auteurs : Google Search Quality Team
-- Date : 2026 (mise à jour)
+- Date : version du 11 septembre 2025, vérifiée en couverture du PDF le 2026-07-17. Titre exact du document : « General Guidelines », 182 pages.
 - Source : Documentation publique Google
-- Lien : https://guidelines.raterhub.com (ou search quality evaluator guidelines)
+- Lien : https://guidelines.raterhub.com/searchqualityevaluatorguidelines.pdf (redirige vers le fichier hébergé par Google)
 
 ## Résumé
 - **Page 42 :** Le contenu "effort-less" (sans effort) reçoit la note la plus basse — implication directe pour le contenu généré par IA sans supervision
