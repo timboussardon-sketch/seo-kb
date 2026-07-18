@@ -37,7 +37,11 @@
 
 ## À faire (par priorité)
 
-_(file vide — ajouter de nouveaux sujets lors de la prochaine itération)_
+1. **Reddit en 2026 : de premier domaine social à 16,6 % de part dans les citations IA — qui a hérité des parts perdues ?** — La chute de Reddit est documentée dans les données (46,7 % → 16,6 % sur ChatGPT entre mi-2024 et début 2026), mais aucune étude ne trace qui en a profité. Angle : décomposer la redistribution par moteur (ChatGPT, Perplexity, Google AI Mode), identifier les bénéficiaires (Quora, YouTube, Substack, forums spécialisés, forums Reddit alternatifs), qualifier l'effet de l'accord licensing Google-Reddit et du Reddit API gate de 2023 sur la présence dans les corpus d'entraînement. Benchmarks 2024-2026.
+
+2. **LinkedIn dans les citations IA : quelle visibilité réelle pour le premier réseau professionnel mondial ?** — Aucune étude du vault ne porte spécifiquement sur LinkedIn comme source citée par les moteurs génératifs. Les données BuzzStream (4M citations : blog/contenu >50 %, news 14 %, communiqués 0,04 %) n'isolent pas LinkedIn. Angle : part de LinkedIn dans les citations Perplexity, ChatGPT Search, Google AI Mode, Claude ; types de contenus favorisés (articles long-form vs posts courts vs profils vs showcase pages) ; comparaison avec les autres plateformes sociales ; données Ahrefs Brand Radar, SE Ranking, Profound, 2025-2026. Sujet stratégique pour une audience B2B.
+
+3. **Schema.org et citations IA en 2026 : quel type de balisage a un impact réel ?** — Plusieurs études du vault signalent une contradiction non résolue : DigitalApplied mesure une corrélation 2,3× pour les pages balisées, Ahrefs un effet légèrement négatif (−4,6 % AIO, nul sur ChatGPT), Digital Applied et GEO paper montrent des effets positifs sur les citations. Angle : démêler corrélation vs causalité, segmenter par type de schema (FAQ, HowTo, Article, Review, Product, Organization, BreadcrumbList), identifier lesquels ont un effet mesurable et sur quels moteurs, données 2025-2026. Transformation originale : tableau schema × moteur avec effet chiffré et niveau de preuve.
 
 ## Sujets écartés (avec raison)
 (vide)
