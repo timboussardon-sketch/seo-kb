@@ -1306,6 +1306,18 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - résurgence: rail réparé par la migration GH Actions (W28 point 6) ; verdict [[concepts/information-gain]] exécuté — section Corroboration 2026 ([[sources/2026-06-05-algorithme-fin-des-backlinks-llms]]), point de contrôle prod, wording « visibilité »→« citations IA », sources 6→7
 - fil rouge: le corpus quitte le pari de publication Organikk (6 itérations, 0 page, pilote supprimé le 07-13) pour la production client chez Victoria Garden ; le binôme corpus passe `stale` le 2026-07-31 s'il ne publie pas
 
+## [2026-07-19] etude-ia | Reddit dans les citations IA en 2026 : redistribution, bénéficiaires, mécanisme num=100
+- skill: seo-page-statistiques (SyntheticBrain)
+- output: [[agent-synthetic/revuedepressIA/etudes-IA/2026-07-19-stats-reddit-citations-ia-redistribution]]
+- sources vérifiées par fetch : Ahrefs Brand Radar (3,1M requêtes Perplexity, juin 2026), Profound (680M citations, aug. 2024 – jun. 2025), Semrush (230K prompts, 13 semaines, juil.–oct. 2025), 5WPR/Similarweb (600K events, jan.–fév. 2026), Wellows (350K citations), Bluefish/Adweek (6 mois), Tinuiti Q1 2026, Reddit SEC 10-Q Q3 2025 + Q1 2026, CBS News (deal Google-Reddit), Axis Intelligence, Locomotive Agency (num=100), AI Law & Policy (procès Reddit v. Perplexity)
+- transformation originale : réconciliation des 4 métriques contradictoires (top-10 Profound 46,7 % / présence-prompt Semrush 60 %→10 % / volume Tinuiti 24 % / top-50 Ahrefs 16,6 % = 4 objets distincts sur 4 périodes différentes)
+- bénéficiaires identifiés : YouTube (n°1 Perplexity à 32,4 %), LinkedIn (rang 5 ChatGPT), Wikipedia (stable)
+- perdant inattendu : Quora (−21,5 % MoM), pas Quora-remplacant-Reddit comme souvent supposé
+- contre-analyse : Reddit reste n°2 Perplexity, chute ChatGPT mécanique (num=100) pas éditoriale, licences $203M protègent la position dans les corpus
+- [À SOURCER] : 86 % Perplexity post-procès, mécanisme complet num=100, données FR, Substack
+- backlog mis à jour : sujet 1 passé en Fait, renumération des 2 sujets restants
+- README études-IA mis à jour : ligne 2026-07-19 ajoutée
+
 ## [2026-07-17] publication | Directories Organikk — guide des évaluateurs Google + mises à jour datées
 - déclencheur : farming de directories sur organikk.co, scoring de 10 modèles candidats
 - modèles retenus : guide des évaluateurs Google (8,7/10), mises à jour Google datées (7,0/10)
