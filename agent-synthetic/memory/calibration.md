@@ -1258,3 +1258,23 @@ Info du jour : convergence de trois publications du 14 au 16 juillet sur la non-
 ### Discipline anti-pattern IA respectée
 
 Grep tiret cadratim `—` = 0 et demi-cadratin `–` = 0 sur le draft final (seuls séparateurs `---` markdown). Zéro mot banni (grep = 0 sur crucial, pivotal, groundbreaking, comprehensive, paysage, explorons, révolutionnaire, game-changer, incontournable, catalyser, synergie, leverage, disrupter, décrypter, nestled, vibrant, renowned, il est important, dans un monde, territoire, quick win, gains rapides, money page, lien mort). Zéro métaphore ni vocabulaire emprunté (grep = 0 sur rails, carburant, fusée, boussole, vague, tsunami, bataille, arme, ouvrir la voie, terrain de jeu, tuyau, passer à la caisse, pierre angulaire, colonne vertébrale, au cœur de, moteur de croissance) : le grep de M-007 a été rejoué en gate, cette fois sans occurrence. Aucune personnification (Google, OpenAI, Mueller, Suganthan : verbes littéraux, publie, soumet, indique, compte, se corrige, relie). Vouvoiement maintenu, zéro tutoiement. Aucun émoji. Aucune ouverture méta-rhétorique. Pas de conclusion-résumé redondante (séparateur `---` et signature draft SyntheticBrain). 2 845 mots.
+
+
+## 2026-07-19 (édition cloud matin)
+
+Pilier retenu : GEO / search IA. Info du jour Duane Forrester Answer Engine Fingerprint framework (SEJ 582124, 16 juillet 2026).
+
+| Axe | Note | Détail |
+|---|---|---|
+| `source_diversity` | 7 | SEJ Forrester (primaire auteur) + Google Search Central + Microsoft blogs.bing.com + SEJ Montti (adjacent) + SEJ Southern (B1) + OpenAI Help Center (B2) + SEJ Kaushik (B3). 7 sources distinctes dont 5 primaires + 2 reprises secondaires. |
+| `claim_density` | 7 | 5 claims `verified` dans le corps. Info du jour porte C-1 (fingerprint framework) et C-2 (Montti adjacent). B1 porte C-3, B2 porte C-4, B3 porte C-5. |
+| `novelty_score` | 4 | Cadre propriétaire Forrester avec taxonomie explicite (persistance documentée / opacité / spéculation) qui ne circule pas dans les résumés génériques. Le mérite du run : décomposer l'article en 3 volets à preuve différenciée et articuler avec 4 concepts doctrine. |
+| `doctrine_fit` | 5 | 4 concepts wiki reliés avec rôle distinct (metriques-visibilite-geo, structural-information-geo, agentic-search, tabou-visibilite). Aucune mention décorative. |
+| `redite_risk` | faible | Anti-redite vérifiée vs 07-15/16/17/18 + v2/v3. Pilier GEO tenu la dernière fois 07-17 v2 (Martinez survey) mais angle distinct : Martinez portait sur la non-reproductibilité des techniques, Forrester porte sur la persistance des signaux SEO classiques. Deux objets différents. |
+| `clickbait_risk` | faible | Titre « Ce que votre historique SEO transporte, et où il s'arrête » = question + délimitation, prouve qu'on a creusé. Pas de promesse creuse. |
+
+Note globale : 3.7 / 5 (média des 6 axes convertis en 5).
+
+**Ce qui a marché.** L'exercice de décomposer une analyse propriétaire d'auteur reconnu en volets à preuve différenciée (Google documenté / Bing documenté / ChatGPT opaque / native model weights spéculatif) évite deux pièges classiques : (1) prendre l'article Forrester comme parole d'évangile mono-source, (2) le disqualifier comme opinion parce qu'il n'y a pas de figures. La corroboration primaire tient sur les deux volets documentés. Le troisième est publié en clair comme opaque, avec citation de Forrester sur son propre doute. Le quatrième est marqué hypothèse.
+
+**Ce qui aurait pu être mieux.** Une source FR de référence (Abondance, Frenchweb) n'a pas été consultée alors qu'un relais francophone sur le fingerprint aurait renforcé le recoupement. À rattraper la prochaine fois.

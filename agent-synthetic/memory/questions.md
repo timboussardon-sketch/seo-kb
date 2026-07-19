@@ -501,3 +501,14 @@ Aucun diff de skill proposé ce run.
 **Recommandation de l'agent** : option (2), puis inscrire dans la SKILL.md, section « Clôture du run », que l'incrément de `stable_runs_done` ne s'accompagne d'aucun commentaire, le détail allant dans `runs.jsonl`.
 
 **Trace** : manifest.yml champ `migration.stable_runs_done`, incrémenté à 94 sans ajout de commentaire au run 2026-07-17-local-v2.
+
+
+## Questions post-run 2026-07-19
+
+- **Q-2026-07-19-1** (à valider en revue hebdo) : le SEJ passe à 4 useful hits en une seule édition (Forrester + Montti + Southern + Kaushik). Sa pondération actuelle risque de dominer la sélection. Faut-il capper explicitement une source à ≤ 2 hits par édition pour forcer la diversité, ou accepter la sur-représentation quand le SEJ concentre effectivement les faits frais de la semaine ? Tim tranche.
+
+- **Q-2026-07-19-2** (mémoire) : le typo `décopurage` est réapparu dans l'édition 07-19 alors qu'il avait déjà été corrigé dans l'édition 07-12. Cela signale une reprise partielle du texte source lors de la rédaction. Proposition à valider : ajouter un check post-rédaction spécifique aux typos identifiés dans les 5 dernières éditions, alimenté par un fichier `memory/typos_a_surveiller.md` que l'agent maintient. Sinon, laisser le check libre.
+
+- **Q-2026-07-19-3** (piste doctrine) : le cadre Forrester (persistance documentée sur Google + Bing, opacité sur ChatGPT) suggère une nouvelle fiche dans `wiki/concepts/` intitulée `fingerprint-persistance-cross-engine` qui articulerait les composantes du fingerprint (liens, schema, canonique, qualité par section) avec leur persistance mesurable par moteur. À valider en revue hebdo, ne pas créer seul. Rôle : compléter `metriques-visibilite-geo` par une lecture par moteur, pas par métrique.
+
+- **Q-2026-07-19-4** (audit source) : la source `help.openai.com` (article 20001276) a été utilisée pour la 1re fois ce run comme primaire OpenAI (mise à jour app desktop). Elle mérite un statut trust = 0.85 (primaire éditeur, pas rumeur). Confirmer en revue hebdo son passage en `exploit` si un 2e hit utile suit sous 30 jours, sinon laisser `explore`.
