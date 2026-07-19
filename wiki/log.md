@@ -1336,3 +1336,12 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - contradictions : N
 - angle SEO identifié : le gisement le plus franc est le document de référence officiel mal structuré (PDF long, anglais, cité de mémoire par les IA). Corollaire posé en limite du concept : un corpus complet ne fait pas 1 page par ligne.
 - en attente d'arbitrage Tim : section 4.2 traduite mais non publiée (mot banni dans la traduction fidèle du texte de Google)
+
+## [2026-07-19] recap-hebdo | Algorithme semaine W29 — le clic devenu variable aléatoire
+- output: [[syntheses/algorithme-week-2026-W29]]
+- éditions parsées: 6 (2026-07-12 au 2026-07-17, pas d'édition les 18 et 19)
+- pilier dominant: SEO 15/27 items (56%) — mais 81% des items touchent l'IA ; pilier CONTENU à zéro
+- consensus: 6 assertions à 2+ sources (llms.txt mort, 53%/6% info vs transac, clics perdus non-déchet, citation non reproductible, lisibilité machine, GSC sans clics)
+- désaccords: 4 (part ChatGPT 92% vs 62%, -39,8% vs -58%, Google vs Agarwal & Sen, Cloudflare vs Cloudflare)
+- signaux faibles: 4 (tribunal allemand, CMA UK, 28,8% recherche interne, Ask YouTube)
+- angles proposés: log de recherche interne comme source de mots-clés propriétaire ; citation IA = tirage au sort, pas position
