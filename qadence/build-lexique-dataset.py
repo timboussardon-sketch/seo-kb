@@ -26,7 +26,8 @@ VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GROUNDING = os.path.join(VAULT, "qadence", "grounding", "modificateurs.json")
 OUT = os.path.join(VAULT, "qadence", "grounding", "lexique.json")
 
-MIN_N = 15  # en dessous, l'intention observée n'est pas publiable
+MIN_N = 15      # en dessous, l'échantillon ne dit rien
+MIN_PART = 60   # une dominante à 40 % n'est pas une dominante, c'est une répartition plate
 
 # --- Curation à la main. Doctrine, pas data. ---------------------------------
 # Chaque famille dit ce que le modificateur RÉVÈLE de la personne qui tape.
@@ -180,6 +181,7 @@ def main():
     mesures = {m["token"]: m for m in g["modificateurs"]}
 
     fiches = []
+    ecartes = []
     for fam_slug, fam in FAMILLES.items():
         for mod in fam["modificateurs"]:
             m = mesures.get(mod)
@@ -196,11 +198,20 @@ def main():
                 }
                 if total >= MIN_N:
                     dominante = max(dist, key=dist.get)
-                    mesure["intention_observee"] = {
-                        "dominante": dominante,
-                        "part": round(100 * dist[dominante] / total),
-                        "distribution": dist,
-                    }
+                    part = round(100 * dist[dominante] / total)
+                    if part >= MIN_PART:
+                        mesure["intention_observee"] = {
+                            "dominante": dominante,
+                            "part": part,
+                            "distribution": dist,
+                        }
+            # RÈGLE DURE : pas de mesure, pas de fiche. Un modificateur qu'on n'a
+            # pas observé dans de la donnée réelle ne se publie pas, même si la
+            # doctrine sait quoi en dire. Les écartés sont tracés dans
+            # `ecartes_faute_de_donnee` pour savoir quoi grounder plus tard.
+            if not mesure:
+                ecartes.append({"modificateur": mod, "famille": fam_slug})
+                continue
             fiches.append(
                 {
                     "slug": slugify(mod),
@@ -213,30 +224,35 @@ def main():
                 }
             )
 
-    mesures_ok = sum(1 for f in fiches if f["mesure"])
-    intentions_ok = sum(
-        1 for f in fiches if f["mesure"] and f["mesure"]["intention_observee"]
-    )
+    intentions_ok = sum(1 for f in fiches if f["mesure"]["intention_observee"])
+    familles_retenues = sorted({f["famille"] for f in fiches})
 
     payload = {
         "corpus": "Lexique des modificateurs d'intention",
-        "familles": {k: {kk: vv for kk, vv in v.items() if kk != "modificateurs"}
-                     for k, v in FAMILLES.items()},
+        "regle": "Une fiche n'existe que si le modificateur a été observé dans "
+                 "de la donnée réelle. Aucune fréquence, aucune intention n'est "
+                 "estimée. L'intention n'est publiée qu'au-delà de "
+                 f"{MIN_N} mots-clés classés.",
+        "familles": {
+            k: {kk: vv for kk, vv in v.items() if kk != "modificateurs"}
+            for k, v in FAMILLES.items()
+            if k in familles_retenues
+        },
         "seuil_intention_publiable": MIN_N,
         "total_fiches": len(fiches),
-        "fiches_avec_frequence_mesuree": mesures_ok,
         "fiches_avec_intention_publiable": intentions_ok,
+        "ecartes_faute_de_donnee": ecartes,
         "source_mesures": g["sources"],
         "fiches": fiches,
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-    print(f"familles              : {len(FAMILLES)}")
-    print(f"fiches                : {len(fiches)}")
-    print(f"dont fréquence mesurée: {mesures_ok}")
-    print(f"dont intention publiable (n>={MIN_N}): {intentions_ok}")
-    print(f"écrit                 : {OUT}")
+    print(f"fiches publiables (mesurées) : {len(fiches)}")
+    print(f"dont intention publiable     : {intentions_ok}")
+    print(f"écartées faute de donnée     : {len(ecartes)}")
+    print(f"familles retenues            : {len(familles_retenues)}/{len(FAMILLES)}")
+    print(f"écrit                        : {OUT}")
 
 
 if __name__ == "__main__":

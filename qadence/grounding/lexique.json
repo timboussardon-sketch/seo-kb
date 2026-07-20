@@ -1,5 +1,6 @@
 {
   "corpus": "Lexique des modificateurs d'intention",
+  "regle": "Une fiche n'existe que si le modificateur a été observé dans de la donnée réelle. Aucune fréquence, aucune intention n'est estimée. L'intention n'est publiée qu'au-delà de 15 mots-clés classés.",
   "familles": {
     "achat-direct": {
       "libelle": "Achat direct",
@@ -60,17 +61,521 @@
       "libelle": "Recherche d'outil",
       "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
       "etage": "Do"
-    },
-    "probleme": {
-      "libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage": "Know"
     }
   },
   "seuil_intention_publiable": 15,
-  "total_fiches": 222,
-  "fiches_avec_frequence_mesuree": 95,
-  "fiches_avec_intention_publiable": 11,
+  "total_fiches": 95,
+  "fiches_avec_intention_publiable": 9,
+  "ecartes_faute_de_donnee": [
+    {
+      "modificateur": "tarifs",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "coût",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "cout",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "combien ça coûte",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "acheter",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "commander",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "souscrire",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "prendre",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "moins cher",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "essai",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "essai gratuit",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "démo",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "demo",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "promo",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "réduction",
+      "famille": "achat-direct"
+    },
+    {
+      "modificateur": "versus",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "comparatif",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "comparaison",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "comparer",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "meilleurs",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "alternative",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "alternatives",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "lequel choisir",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "quel choisir",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "différence",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "difference",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "ou",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "classement",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "concurrent",
+      "famille": "comparaison"
+    },
+    {
+      "modificateur": "tests",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "retour",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "retour d'expérience",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "fiable",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "arnaque",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "témoignage",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "note",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "sérieux",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "vaut le coup",
+      "famille": "evaluation"
+    },
+    {
+      "modificateur": "tutoriel",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "tuto",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "étapes",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "etapes",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "exemples",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "modèle",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "modele",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "checklist",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "méthode",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "methode",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "créer",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "creer",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "mettre en place",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "configurer",
+      "famille": "usage"
+    },
+    {
+      "modificateur": "qu'est-ce que",
+      "famille": "definition"
+    },
+    {
+      "modificateur": "principe",
+      "famille": "definition"
+    },
+    {
+      "modificateur": "explication",
+      "famille": "definition"
+    },
+    {
+      "modificateur": "expliqué",
+      "famille": "definition"
+    },
+    {
+      "modificateur": "vulgarisé",
+      "famille": "definition"
+    },
+    {
+      "modificateur": "excel",
+      "famille": "format"
+    },
+    {
+      "modificateur": "word",
+      "famille": "format"
+    },
+    {
+      "modificateur": "vidéo",
+      "famille": "format"
+    },
+    {
+      "modificateur": "schéma",
+      "famille": "format"
+    },
+    {
+      "modificateur": "schema",
+      "famille": "format"
+    },
+    {
+      "modificateur": "liste",
+      "famille": "format"
+    },
+    {
+      "modificateur": "télécharger",
+      "famille": "format"
+    },
+    {
+      "modificateur": "telecharger",
+      "famille": "format"
+    },
+    {
+      "modificateur": "infographie",
+      "famille": "format"
+    },
+    {
+      "modificateur": "ppt",
+      "famille": "format"
+    },
+    {
+      "modificateur": "pour",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "débutant",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "debutant",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "pme",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "tpe",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "e-commerce",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "b2c",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "independant",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "étudiant",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "etudiant",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "association",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "artisan",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "startup",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "grand compte",
+      "famille": "profil"
+    },
+    {
+      "modificateur": "près de moi",
+      "famille": "geographie"
+    },
+    {
+      "modificateur": "pres de moi",
+      "famille": "geographie"
+    },
+    {
+      "modificateur": "autour de moi",
+      "famille": "geographie"
+    },
+    {
+      "modificateur": "prestataire",
+      "famille": "prestataire"
+    },
+    {
+      "modificateur": "spécialiste",
+      "famille": "prestataire"
+    },
+    {
+      "modificateur": "specialiste",
+      "famille": "prestataire"
+    },
+    {
+      "modificateur": "accompagnement",
+      "famille": "prestataire"
+    },
+    {
+      "modificateur": "prestation",
+      "famille": "prestataire"
+    },
+    {
+      "modificateur": "école",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "ecole",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "metier",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "stage",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "diplôme",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "diplome",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "reconversion",
+      "famille": "emploi-formation"
+    },
+    {
+      "modificateur": "nouveau",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "nouvelle",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "dernier",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "dernière",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "mise à jour",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "actualité",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "récent",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "recent",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "aujourd'hui",
+      "famille": "temporel"
+    },
+    {
+      "modificateur": "tool",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "software",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "saas",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "générateur",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "generateur",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "calculateur",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "simulateur",
+      "famille": "outil"
+    },
+    {
+      "modificateur": "erreur",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "problème",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "probleme",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "ne fonctionne pas",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "ne marche pas",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "pourquoi",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "résoudre",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "resoudre",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "corriger",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "réparer",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "reparer",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "bug",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "panne",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "bloqué",
+      "famille": "probleme"
+    },
+    {
+      "modificateur": "bloque",
+      "famille": "probleme"
+    }
+  ],
   "source_mesures": {
     "google_suggest": {
       "chemin": "fusionn/grounding/*.json",
@@ -128,33 +633,6 @@
       }
     },
     {
-      "slug": "tarifs",
-      "modificateur": "tarifs",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "cout",
-      "modificateur": "coût",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "cout",
-      "modificateur": "cout",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "combien",
       "modificateur": "combien",
       "famille": "achat-direct",
@@ -175,15 +653,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "combien-ca-coute",
-      "modificateur": "combien ça coûte",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "devis",
@@ -208,33 +677,6 @@
       }
     },
     {
-      "slug": "acheter",
-      "modificateur": "acheter",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "commander",
-      "modificateur": "commander",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "souscrire",
-      "modificateur": "souscrire",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "abonnement",
       "modificateur": "abonnement",
       "famille": "achat-direct",
@@ -257,15 +699,6 @@
       }
     },
     {
-      "slug": "prendre",
-      "modificateur": "prendre",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "pas-cher",
       "modificateur": "pas cher",
       "famille": "achat-direct",
@@ -286,15 +719,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "moins-cher",
-      "modificateur": "moins cher",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "gratuit",
@@ -358,53 +782,9 @@
           "free communication",
           "free communication apps"
         ],
-        "intention_observee": {
-          "dominante": "Know",
-          "part": 40,
-          "distribution": {
-            "Know": 14,
-            "Do": 13,
-            "Know-décisionnel": 8
-          }
-        },
+        "intention_observee": null,
         "echantillon_intention": 35
       }
-    },
-    {
-      "slug": "essai",
-      "modificateur": "essai",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "essai-gratuit",
-      "modificateur": "essai gratuit",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "demo",
-      "modificateur": "démo",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "demo",
-      "modificateur": "demo",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "offre",
@@ -427,24 +807,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "promo",
-      "modificateur": "promo",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "reduction",
-      "modificateur": "réduction",
-      "famille": "achat-direct",
-      "famille_libelle": "Achat direct",
-      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "vs",
@@ -477,42 +839,6 @@
       }
     },
     {
-      "slug": "versus",
-      "modificateur": "versus",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "comparatif",
-      "modificateur": "comparatif",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "comparaison",
-      "modificateur": "comparaison",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "comparer",
-      "modificateur": "comparer",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "meilleur",
       "modificateur": "meilleur",
       "famille": "comparaison",
@@ -533,15 +859,6 @@
         "intention_observee": null,
         "echantillon_intention": 3
       }
-    },
-    {
-      "slug": "meilleurs",
-      "modificateur": "meilleurs",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "meilleure",
@@ -588,87 +905,6 @@
       }
     },
     {
-      "slug": "alternative",
-      "modificateur": "alternative",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "alternatives",
-      "modificateur": "alternatives",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "lequel-choisir",
-      "modificateur": "lequel choisir",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "quel-choisir",
-      "modificateur": "quel choisir",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "difference",
-      "modificateur": "différence",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "difference",
-      "modificateur": "difference",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "ou",
-      "modificateur": "ou",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "classement",
-      "modificateur": "classement",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "concurrent",
-      "modificateur": "concurrent",
-      "famille": "comparaison",
-      "famille_libelle": "Comparaison",
-      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "avis",
       "modificateur": "avis",
       "famille": "evaluation",
@@ -713,51 +949,6 @@
       }
     },
     {
-      "slug": "tests",
-      "modificateur": "tests",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "retour",
-      "modificateur": "retour",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "retour-d-experience",
-      "modificateur": "retour d'expérience",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "fiable",
-      "modificateur": "fiable",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "arnaque",
-      "modificateur": "arnaque",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "review",
       "modificateur": "review",
       "famille": "evaluation",
@@ -800,42 +991,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "temoignage",
-      "modificateur": "témoignage",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "note",
-      "modificateur": "note",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "serieux",
-      "modificateur": "sérieux",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "vaut-le-coup",
-      "modificateur": "vaut le coup",
-      "famille": "evaluation",
-      "famille_libelle": "Évaluation et réassurance",
-      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "ca-marche",
@@ -904,24 +1059,6 @@
       }
     },
     {
-      "slug": "tutoriel",
-      "modificateur": "tutoriel",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "tuto",
-      "modificateur": "tuto",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
       "slug": "guide",
       "modificateur": "guide",
       "famille": "usage",
@@ -942,24 +1079,6 @@
         "intention_observee": null,
         "echantillon_intention": 13
       }
-    },
-    {
-      "slug": "etapes",
-      "modificateur": "étapes",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "etapes",
-      "modificateur": "etapes",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "exemple",
@@ -984,33 +1103,6 @@
       }
     },
     {
-      "slug": "exemples",
-      "modificateur": "exemples",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "modele",
-      "modificateur": "modèle",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "modele",
-      "modificateur": "modele",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
       "slug": "template",
       "modificateur": "template",
       "famille": "usage",
@@ -1031,33 +1123,6 @@
         "intention_observee": null,
         "echantillon_intention": 7
       }
-    },
-    {
-      "slug": "checklist",
-      "modificateur": "checklist",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "methode",
-      "modificateur": "méthode",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "methode",
-      "modificateur": "methode",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "faire",
@@ -1082,33 +1147,6 @@
       }
     },
     {
-      "slug": "creer",
-      "modificateur": "créer",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "creer",
-      "modificateur": "creer",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "mettre-en-place",
-      "modificateur": "mettre en place",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
       "slug": "utiliser",
       "modificateur": "utiliser",
       "famille": "usage",
@@ -1129,15 +1167,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "configurer",
-      "modificateur": "configurer",
-      "famille": "usage",
-      "famille_libelle": "Mise en œuvre",
-      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "definition",
@@ -1226,15 +1255,6 @@
         "intention_observee": null,
         "echantillon_intention": 1
       }
-    },
-    {
-      "slug": "qu-est-ce-que",
-      "modificateur": "qu'est-ce que",
-      "famille": "definition",
-      "famille_libelle": "Définition",
-      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
-      "etage_doctrine": "Know-Simple",
-      "mesure": null
     },
     {
       "slug": "signification",
@@ -1333,42 +1353,6 @@
       }
     },
     {
-      "slug": "principe",
-      "modificateur": "principe",
-      "famille": "definition",
-      "famille_libelle": "Définition",
-      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
-      "etage_doctrine": "Know-Simple",
-      "mesure": null
-    },
-    {
-      "slug": "explication",
-      "modificateur": "explication",
-      "famille": "definition",
-      "famille_libelle": "Définition",
-      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
-      "etage_doctrine": "Know-Simple",
-      "mesure": null
-    },
-    {
-      "slug": "explique",
-      "modificateur": "expliqué",
-      "famille": "definition",
-      "famille_libelle": "Définition",
-      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
-      "etage_doctrine": "Know-Simple",
-      "mesure": null
-    },
-    {
-      "slug": "vulgarise",
-      "modificateur": "vulgarisé",
-      "famille": "definition",
-      "famille_libelle": "Définition",
-      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
-      "etage_doctrine": "Know-Simple",
-      "mesure": null
-    },
-    {
       "slug": "pdf",
       "modificateur": "pdf",
       "famille": "format",
@@ -1397,33 +1381,6 @@
         },
         "echantillon_intention": 15
       }
-    },
-    {
-      "slug": "excel",
-      "modificateur": "excel",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "word",
-      "modificateur": "word",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "video",
-      "modificateur": "vidéo",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "video",
@@ -1492,33 +1449,6 @@
       }
     },
     {
-      "slug": "schema",
-      "modificateur": "schéma",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "schema",
-      "modificateur": "schema",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "liste",
-      "modificateur": "liste",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
       "slug": "download",
       "modificateur": "download",
       "famille": "format",
@@ -1541,33 +1471,6 @@
       }
     },
     {
-      "slug": "telecharger",
-      "modificateur": "télécharger",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "telecharger",
-      "modificateur": "telecharger",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "infographie",
-      "modificateur": "infographie",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
       "slug": "powerpoint",
       "modificateur": "powerpoint",
       "famille": "format",
@@ -1588,69 +1491,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "ppt",
-      "modificateur": "ppt",
-      "famille": "format",
-      "famille_libelle": "Format attendu",
-      "signal": "La personne veut un objet à emporter, pas une page à lire.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "pour",
-      "modificateur": "pour",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "debutant",
-      "modificateur": "débutant",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "debutant",
-      "modificateur": "debutant",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "pme",
-      "modificateur": "pme",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "tpe",
-      "modificateur": "tpe",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "e-commerce",
-      "modificateur": "e-commerce",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "ecommerce",
@@ -1705,15 +1545,6 @@
       }
     },
     {
-      "slug": "b2c",
-      "modificateur": "b2c",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
       "slug": "freelance",
       "modificateur": "freelance",
       "famille": "profil",
@@ -1756,69 +1587,6 @@
         "intention_observee": null,
         "echantillon_intention": 0
       }
-    },
-    {
-      "slug": "independant",
-      "modificateur": "independant",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "etudiant",
-      "modificateur": "étudiant",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "etudiant",
-      "modificateur": "etudiant",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "association",
-      "modificateur": "association",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "artisan",
-      "modificateur": "artisan",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "startup",
-      "modificateur": "startup",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "grand-compte",
-      "modificateur": "grand compte",
-      "famille": "profil",
-      "famille_libelle": "Profil de la personne",
-      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "paris",
@@ -2179,24 +1947,6 @@
       }
     },
     {
-      "slug": "pres-de-moi",
-      "modificateur": "près de moi",
-      "famille": "geographie",
-      "famille_libelle": "Ancrage géographique",
-      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "pres-de-moi",
-      "modificateur": "pres de moi",
-      "famille": "geographie",
-      "famille_libelle": "Ancrage géographique",
-      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "local",
       "modificateur": "local",
       "famille": "geographie",
@@ -2217,15 +1967,6 @@
         "intention_observee": null,
         "echantillon_intention": 6
       }
-    },
-    {
-      "slug": "autour-de-moi",
-      "modificateur": "autour de moi",
-      "famille": "geographie",
-      "famille_libelle": "Ancrage géographique",
-      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "agence",
@@ -2368,33 +2109,6 @@
       }
     },
     {
-      "slug": "prestataire",
-      "modificateur": "prestataire",
-      "famille": "prestataire",
-      "famille_libelle": "Recherche de prestataire",
-      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "specialiste",
-      "modificateur": "spécialiste",
-      "famille": "prestataire",
-      "famille_libelle": "Recherche de prestataire",
-      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "specialiste",
-      "modificateur": "specialiste",
-      "famille": "prestataire",
-      "famille_libelle": "Recherche de prestataire",
-      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
       "slug": "specialist",
       "modificateur": "specialist",
       "famille": "prestataire",
@@ -2415,24 +2129,6 @@
         "intention_observee": null,
         "echantillon_intention": 9
       }
-    },
-    {
-      "slug": "accompagnement",
-      "modificateur": "accompagnement",
-      "famille": "prestataire",
-      "famille_libelle": "Recherche de prestataire",
-      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "prestation",
-      "modificateur": "prestation",
-      "famille": "prestataire",
-      "famille_libelle": "Recherche de prestataire",
-      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
-      "etage_doctrine": "Do",
-      "mesure": null
     },
     {
       "slug": "service",
@@ -2474,15 +2170,7 @@
           "services marketing integrating customer focus across the firm",
           "services marketing people technology strategy"
         ],
-        "intention_observee": {
-          "dominante": "Know",
-          "part": 44,
-          "distribution": {
-            "Know": 8,
-            "Know-décisionnel": 2,
-            "Do": 8
-          }
-        },
+        "intention_observee": null,
         "echantillon_intention": 18
       }
     },
@@ -2692,24 +2380,6 @@
       }
     },
     {
-      "slug": "ecole",
-      "modificateur": "école",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
-      "slug": "ecole",
-      "modificateur": "ecole",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
       "slug": "master",
       "modificateur": "master",
       "famille": "emploi-formation",
@@ -2806,15 +2476,6 @@
       }
     },
     {
-      "slug": "metier",
-      "modificateur": "metier",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
       "slug": "devenir",
       "modificateur": "devenir",
       "famille": "emploi-formation",
@@ -2859,42 +2520,6 @@
       }
     },
     {
-      "slug": "stage",
-      "modificateur": "stage",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
-      "slug": "diplome",
-      "modificateur": "diplôme",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
-      "slug": "diplome",
-      "modificateur": "diplome",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
-      "slug": "reconversion",
-      "modificateur": "reconversion",
-      "famille": "emploi-formation",
-      "famille_libelle": "Emploi et formation",
-      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
-      "etage_doctrine": "hors-cible",
-      "mesure": null
-    },
-    {
       "slug": "2025",
       "modificateur": "2025",
       "famille": "temporel",
@@ -2937,87 +2562,6 @@
         "intention_observee": null,
         "echantillon_intention": 2
       }
-    },
-    {
-      "slug": "nouveau",
-      "modificateur": "nouveau",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "nouvelle",
-      "modificateur": "nouvelle",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "dernier",
-      "modificateur": "dernier",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "derniere",
-      "modificateur": "dernière",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "mise-a-jour",
-      "modificateur": "mise à jour",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "actualite",
-      "modificateur": "actualité",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "recent",
-      "modificateur": "récent",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "recent",
-      "modificateur": "recent",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "aujourd-hui",
-      "modificateur": "aujourd'hui",
-      "famille": "temporel",
-      "famille_libelle": "Fraîcheur",
-      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
-      "etage_doctrine": "Know",
-      "mesure": null
     },
     {
       "slug": "outil",
@@ -3202,204 +2746,6 @@
         },
         "echantillon_intention": 17
       }
-    },
-    {
-      "slug": "tool",
-      "modificateur": "tool",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "software",
-      "modificateur": "software",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "saas",
-      "modificateur": "saas",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "generateur",
-      "modificateur": "générateur",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "generateur",
-      "modificateur": "generateur",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "calculateur",
-      "modificateur": "calculateur",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "simulateur",
-      "modificateur": "simulateur",
-      "famille": "outil",
-      "famille_libelle": "Recherche d'outil",
-      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
-      "etage_doctrine": "Do",
-      "mesure": null
-    },
-    {
-      "slug": "erreur",
-      "modificateur": "erreur",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "probleme",
-      "modificateur": "problème",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "probleme",
-      "modificateur": "probleme",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "ne-fonctionne-pas",
-      "modificateur": "ne fonctionne pas",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "ne-marche-pas",
-      "modificateur": "ne marche pas",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "pourquoi",
-      "modificateur": "pourquoi",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "resoudre",
-      "modificateur": "résoudre",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "resoudre",
-      "modificateur": "resoudre",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "corriger",
-      "modificateur": "corriger",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "reparer",
-      "modificateur": "réparer",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "reparer",
-      "modificateur": "reparer",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "bug",
-      "modificateur": "bug",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "panne",
-      "modificateur": "panne",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "bloque",
-      "modificateur": "bloqué",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
-    },
-    {
-      "slug": "bloque",
-      "modificateur": "bloque",
-      "famille": "probleme",
-      "famille_libelle": "Dépannage",
-      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
-      "etage_doctrine": "Know",
-      "mesure": null
     }
   ]
 }
