@@ -9,7 +9,7 @@ tags: [acquisition, deliverable, resume-call, coaching-sportif, raphael]
 lien: "[[call-16-raphael-coach-sportif]]"
 ---
 
-# Résumé du call — Raphaël
+# Résumé du call : Raphaël
 
 > Document à envoyer après le call. Tutoiement (acté pendant l'échange). Le détail du fonctionnement de l'accompagnement est dans le deuxième document.
 
@@ -19,7 +19,7 @@ lien: "[[call-16-raphael-coach-sportif]]"
 
 Ton site t'a rapporté 20 à 25 demandes par mois pendant trois ans sans que tu y touches. Il en rapporte une dizaine aujourd'hui, spams compris. Ta Search Console est passée d'environ 35 clics par jour à un ou deux, et ton nombre de mots-clés positionnés a été divisé par quatre en un an, avec un décrochage net à partir d'avril-mai 2025.
 
-Le diagnostic tient en une ligne : tes pages répondent à des questions que ChatGPT répond maintenant à la place de ton site. Douleur à l'épaule, signification en médecine chinoise, proverbes, chansons de sport. Ce sont de bons contenus, et ils ne ramènent aucun client. Google a arrêté de les afficher parce qu'il n'a plus de raison de les afficher.
+Le diagnostic tient en une ligne : tes pages traitent des questions que ChatGPT traite maintenant à la place de ton site. Douleur à l'épaule, signification en médecine chinoise, proverbes, chansons de sport. Ce sont de bons contenus, et ils ne ramènent aucun client. Google a arrêté de les afficher parce qu'il n'a plus de raison de les afficher.
 
 Ce qu'on fait : on arrête l'informationnel, on récupère la data que tu as déjà (tes 911 soumissions de formulaire), on en sort les 20 à 30 requêtes business sur lesquelles des gens te contactent vraiment, et on construit 30 à 50 pages qui ont chacune un point de conversion. On garde ton site et on change les requêtes qu'il vise.
 
