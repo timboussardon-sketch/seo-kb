@@ -1,0 +1,3405 @@
+{
+  "corpus": "Lexique des modificateurs d'intention",
+  "familles": {
+    "achat-direct": {
+      "libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage": "Do"
+    },
+    "comparaison": {
+      "libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage": "Do"
+    },
+    "evaluation": {
+      "libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage": "Do"
+    },
+    "usage": {
+      "libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage": "Know"
+    },
+    "definition": {
+      "libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage": "Know-Simple"
+    },
+    "format": {
+      "libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage": "Know"
+    },
+    "profil": {
+      "libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage": "Know"
+    },
+    "geographie": {
+      "libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage": "Do"
+    },
+    "prestataire": {
+      "libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage": "Do"
+    },
+    "emploi-formation": {
+      "libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage": "hors-cible"
+    },
+    "temporel": {
+      "libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage": "Know"
+    },
+    "outil": {
+      "libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage": "Do"
+    },
+    "probleme": {
+      "libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage": "Know"
+    }
+  },
+  "seuil_intention_publiable": 15,
+  "total_fiches": 222,
+  "fiches_avec_frequence_mesuree": 95,
+  "fiches_avec_intention_publiable": 11,
+  "source_mesures": {
+    "google_suggest": {
+      "chemin": "fusionn/grounding/*.json",
+      "requetes": 13344,
+      "verticales": 23
+    },
+    "mots_cles_classes": {
+      "chemin": "raw/data/keyword-research-2026-05-02/keywords-cleaned.csv",
+      "mots_cles": 1986
+    }
+  },
+  "fiches": [
+    {
+      "slug": "prix",
+      "modificateur": "prix",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 270,
+        "verticales": 20,
+        "exemples_reels": [
+          "agence communication prix",
+          "prix agence communication",
+          "prix communication animale",
+          "prix communication maroc france",
+          "agence de prix",
+          "communication prix"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 9
+      }
+    },
+    {
+      "slug": "tarif",
+      "modificateur": "tarif",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 209,
+        "verticales": 19,
+        "exemples_reels": [
+          "agence communication tarif",
+          "freelance communication tarif",
+          "tarif agence communication",
+          "tarif communication",
+          "tarif communication animale",
+          "tarif communication animale laila del monte"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 3
+      }
+    },
+    {
+      "slug": "tarifs",
+      "modificateur": "tarifs",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "cout",
+      "modificateur": "coût",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "cout",
+      "modificateur": "cout",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "combien",
+      "modificateur": "combien",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 128,
+        "verticales": 17,
+        "exemples_reels": [
+          "bts communication combien d année",
+          "bts communication combien de temps",
+          "master communication combien d année",
+          "combien coute une communication a l etranger",
+          "combien coute une communication animal",
+          "combien coute une communication telephonique"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "combien-ca-coute",
+      "modificateur": "combien ça coûte",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "devis",
+      "modificateur": "devis",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 100,
+        "verticales": 16,
+        "exemples_reels": [
+          "devis agence de communication exemple",
+          "devis agence communication",
+          "devis agence de communication pdf",
+          "devis communication digitale",
+          "agence de communication devis",
+          "communication devis"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "acheter",
+      "modificateur": "acheter",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "commander",
+      "modificateur": "commander",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "souscrire",
+      "modificateur": "souscrire",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "abonnement",
+      "modificateur": "abonnement",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 11,
+        "verticales": 6,
+        "exemples_reels": [
+          "internet abonnement",
+          "internet prix abonnement",
+          "prestashop prix abonnement",
+          "combien coute abonnement shopify",
+          "prix shopify abonnement",
+          "shopify abonnement"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "prendre",
+      "modificateur": "prendre",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "pas-cher",
+      "modificateur": "pas cher",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 167,
+        "verticales": 14,
+        "exemples_reels": [
+          "communication pas cher",
+          "agence de communication pas cher",
+          "beton contact pas cher",
+          "coffret communication pas cher",
+          "colle contact pas cher",
+          "communication animale pas cher"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "moins-cher",
+      "modificateur": "moins cher",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "gratuit",
+      "modificateur": "gratuit",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 221,
+        "verticales": 19,
+        "exemples_reels": [
+          "communication whatsapp gratuit",
+          "contact gratuit air france",
+          "contact gratuit colissimo",
+          "contact gratuit mondial relay",
+          "contact gratuit oney",
+          "contact gratuit orange"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 8
+      }
+    },
+    {
+      "slug": "gratuite",
+      "modificateur": "gratuite",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 85,
+        "verticales": 18,
+        "exemples_reels": [
+          "communication animale gratuite",
+          "communication gratuite",
+          "communication gratuite avec whatsapp",
+          "communication gratuite mots fléchés",
+          "formation communication animale gratuite",
+          "formation growth marketing gratuite"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "free",
+      "modificateur": "free",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 204,
+        "verticales": 20,
+        "exemples_reels": [
+          "agence free contact",
+          "tarif communication free",
+          "tarif communication free mobile",
+          "free agence media",
+          "free communication",
+          "free communication apps"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 40,
+          "distribution": {
+            "Know": 14,
+            "Do": 13,
+            "Know-décisionnel": 8
+          }
+        },
+        "echantillon_intention": 35
+      }
+    },
+    {
+      "slug": "essai",
+      "modificateur": "essai",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "essai-gratuit",
+      "modificateur": "essai gratuit",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "demo",
+      "modificateur": "démo",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "demo",
+      "modificateur": "demo",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "offre",
+      "modificateur": "offre",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 34,
+        "verticales": 14,
+        "exemples_reels": [
+          "communication paris offre",
+          "agence communication offre emploi",
+          "communication offre d'emploi",
+          "consultant communication offre emploi",
+          "consultant marketing digital offre d emploi",
+          "digital marketing offre d emploi"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "promo",
+      "modificateur": "promo",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "reduction",
+      "modificateur": "réduction",
+      "famille": "achat-direct",
+      "famille_libelle": "Achat direct",
+      "signal": "La personne a choisi de payer. Elle cherche le montant ou le moyen de passer commande.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "vs",
+      "modificateur": "vs",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 289,
+        "verticales": 21,
+        "exemples_reels": [
+          ".agency vs .com",
+          "communication vs",
+          "communication vs marketing",
+          "agency vs media",
+          "communication vs information",
+          "communication vs interpersonal skills"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 79,
+          "distribution": {
+            "Know": 53,
+            "Know-décisionnel": 11,
+            "Do": 3
+          }
+        },
+        "echantillon_intention": 67
+      }
+    },
+    {
+      "slug": "versus",
+      "modificateur": "versus",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "comparatif",
+      "modificateur": "comparatif",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "comparaison",
+      "modificateur": "comparaison",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "comparer",
+      "modificateur": "comparer",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "meilleur",
+      "modificateur": "meilleur",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 226,
+        "verticales": 19,
+        "exemples_reels": [
+          "meilleur communication",
+          "meilleur communication entreprise",
+          "meilleur communication moto",
+          "meilleur agence communication",
+          "meilleur agence de communication au monde",
+          "meilleur agent com avis"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 3
+      }
+    },
+    {
+      "slug": "meilleurs",
+      "modificateur": "meilleurs",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "meilleure",
+      "modificateur": "meilleure",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 23,
+        "verticales": 6,
+        "exemples_reels": [
+          "meilleure agence communication paris",
+          "meilleure agence communication",
+          "meilleure communication animale",
+          "meilleure communication synonyme",
+          "meilleure agence growth",
+          "meilleure agence marketing au québec"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "top",
+      "modificateur": "top",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 13,
+        "verticales": 7,
+        "exemples_reels": [
+          "top agence communication",
+          "top agence communication paris",
+          "top growth agency",
+          "top agence marketing",
+          "top agence publicitaire",
+          "top app marketing agencies"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "alternative",
+      "modificateur": "alternative",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "alternatives",
+      "modificateur": "alternatives",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "lequel-choisir",
+      "modificateur": "lequel choisir",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "quel-choisir",
+      "modificateur": "quel choisir",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "difference",
+      "modificateur": "différence",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "difference",
+      "modificateur": "difference",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "ou",
+      "modificateur": "ou",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "classement",
+      "modificateur": "classement",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "concurrent",
+      "modificateur": "concurrent",
+      "famille": "comparaison",
+      "famille_libelle": "Comparaison",
+      "signal": "La personne a une liste courte. Elle arbitre entre des options déjà identifiées.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "avis",
+      "modificateur": "avis",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 311,
+        "verticales": 18,
+        "exemples_reels": [
+          "agence avis contact",
+          "agence de communication avis",
+          "avis communication animale",
+          "agence com avis",
+          "agence com pralognan avis",
+          "agence de communication z and ko avis"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "test",
+      "modificateur": "test",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 26,
+        "verticales": 8,
+        "exemples_reels": [
+          "seo test",
+          "seo test website",
+          "test seo gratuit",
+          "internet connection test",
+          "internet debit test",
+          "internet quality test"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "tests",
+      "modificateur": "tests",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "retour",
+      "modificateur": "retour",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "retour-d-experience",
+      "modificateur": "retour d'expérience",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "fiable",
+      "modificateur": "fiable",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "arnaque",
+      "modificateur": "arnaque",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "review",
+      "modificateur": "review",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 8,
+        "verticales": 8,
+        "exemples_reels": [
+          "communication comments for performance review",
+          "growth guys canada review",
+          "seo review tools",
+          "seo review tools",
+          "seo review tools",
+          "seo review tools"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 10
+      }
+    },
+    {
+      "slug": "reviews",
+      "modificateur": "reviews",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 14,
+        "verticales": 8,
+        "exemples_reels": [
+          "agency growth team reviews",
+          "development agency reviews",
+          "grow agency reviews",
+          "growth agency reviews",
+          "rise agency group reviews",
+          "rise agency reviews"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "temoignage",
+      "modificateur": "témoignage",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "note",
+      "modificateur": "note",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "serieux",
+      "modificateur": "sérieux",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "vaut-le-coup",
+      "modificateur": "vaut le coup",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "ca-marche",
+      "modificateur": "ça marche",
+      "famille": "evaluation",
+      "famille_libelle": "Évaluation et réassurance",
+      "signal": "La personne veut être rassurée avant d'engager. Elle cherche l'expérience des autres.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 11,
+        "verticales": 11,
+        "exemples_reels": [
+          "marketing digital comment ça marche",
+          "seo comment ça marche",
+          "internet comment ça marche",
+          "seo comment ça marche",
+          "e commerce comment ça marche",
+          "prestashop comment ça marche"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "comment",
+      "modificateur": "comment",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 238,
+        "verticales": 20,
+        "exemples_reels": [
+          "comment améliorer communication",
+          "comment améliorer la communication dans une équipe de travail",
+          "comment com",
+          "comment enregistrer une communication",
+          "comment enregistrer une communication sur iphone",
+          "comment enregistrer une communication sur whatsapp"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "comment-faire",
+      "modificateur": "comment faire",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 27,
+        "verticales": 13,
+        "exemples_reels": [
+          "comment faire communication animale",
+          "formation comment faire",
+          "digital marketing comment faire",
+          "marketing comment faire",
+          "comment faire marketing digital",
+          "seo comment faire"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "tutoriel",
+      "modificateur": "tutoriel",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "tuto",
+      "modificateur": "tuto",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "guide",
+      "modificateur": "guide",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 11,
+        "verticales": 8,
+        "exemples_reels": [
+          "digital marketing guide",
+          "digital marketing guide pdf",
+          "content manager guide",
+          "e commerce guide",
+          "prestashop guide",
+          "prestashop installation guide"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 13
+      }
+    },
+    {
+      "slug": "etapes",
+      "modificateur": "étapes",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "etapes",
+      "modificateur": "etapes",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "exemple",
+      "modificateur": "exemple",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 242,
+        "verticales": 19,
+        "exemples_reels": [
+          "devis agence de communication exemple",
+          "agence media exemple",
+          "exemple communication commerciale",
+          "exemple communication de crise",
+          "exemple communication institutionnelle",
+          "exemple communication interne"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 4
+      }
+    },
+    {
+      "slug": "exemples",
+      "modificateur": "exemples",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "modele",
+      "modificateur": "modèle",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "modele",
+      "modificateur": "modele",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "template",
+      "modificateur": "template",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 36,
+        "verticales": 9,
+        "exemples_reels": [
+          "development agency website template",
+          "marketing agency template free",
+          "free marketing agency website template",
+          "free marketing plan template",
+          "marketing agency website template",
+          "digital agency html template"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 7
+      }
+    },
+    {
+      "slug": "checklist",
+      "modificateur": "checklist",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "methode",
+      "modificateur": "méthode",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "methode",
+      "modificateur": "methode",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "faire",
+      "modificateur": "faire",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 32,
+        "verticales": 14,
+        "exemples_reels": [
+          "comment faire communication animale",
+          "formation comment faire",
+          "digital marketing comment faire",
+          "marketing comment faire",
+          "comment faire marketing digital",
+          "seo comment faire"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "creer",
+      "modificateur": "créer",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "creer",
+      "modificateur": "creer",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "mettre-en-place",
+      "modificateur": "mettre en place",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "utiliser",
+      "modificateur": "utiliser",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 21,
+        "verticales": 12,
+        "exemples_reels": [
+          "formation comment utiliser l intelligence artificielle",
+          "comment utiliser seoul 1988",
+          "comment utiliser seoul 1988 eye cream",
+          "comment utiliser seoul 1988",
+          "comment utiliser seoul 1988 eye cream",
+          "comment utiliser content manager"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "configurer",
+      "modificateur": "configurer",
+      "famille": "usage",
+      "famille_libelle": "Mise en œuvre",
+      "signal": "La personne a décidé de faire elle-même. Elle cherche le mode opératoire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "definition",
+      "modificateur": "définition",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 91,
+        "verticales": 16,
+        "exemples_reels": [
+          "communication définition",
+          "bonne communication définition",
+          "communication interpersonnelle définition",
+          "communication non verbale définition",
+          "communication non verbale définition oms",
+          "communication orale définition"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "definition",
+      "modificateur": "definition",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 222,
+        "verticales": 20,
+        "exemples_reels": [
+          "agence media definition",
+          "agence publicitaire definition",
+          "agency communication definition",
+          "agence de com definition",
+          "agency definition communication",
+          "agency definition media"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 8
+      }
+    },
+    {
+      "slug": "def",
+      "modificateur": "def",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 46,
+        "verticales": 15,
+        "exemples_reels": [
+          "communication/def",
+          "agence communication def",
+          "communication assertive def",
+          "communication corporate def",
+          "communication def",
+          "communication digitale def"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 3
+      }
+    },
+    {
+      "slug": "c-est-quoi",
+      "modificateur": "c'est quoi",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 39,
+        "verticales": 18,
+        "exemples_reels": [
+          "growth marketing c'est quoi",
+          "growth operator c'est quoi",
+          "inbound marketing c'est quoi",
+          "marketing digital c'est quoi",
+          "agence marketing c'est quoi",
+          "marketing c'est quoi"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "qu-est-ce-que",
+      "modificateur": "qu'est-ce que",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": null
+    },
+    {
+      "slug": "signification",
+      "modificateur": "signification",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 16,
+        "verticales": 6,
+        "exemples_reels": [
+          "seo geo signification",
+          "seo signification",
+          "signification seo",
+          "seo geo signification",
+          "seo signification",
+          "signification seo"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "meaning",
+      "modificateur": "meaning",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 86,
+        "verticales": 17,
+        "exemples_reels": [
+          "agency communication meaning",
+          "platform communication meaning",
+          "and growth meaning",
+          "growth agency meaning",
+          "growth meaning",
+          "growth out meaning"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 81,
+          "distribution": {
+            "Know": 22,
+            "Do": 4,
+            "Know-décisionnel": 1
+          }
+        },
+        "echantillon_intention": 27
+      }
+    },
+    {
+      "slug": "what-is",
+      "modificateur": "what is",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 14,
+        "verticales": 9,
+        "exemples_reels": [
+          "digital marketing what is it",
+          "inbound marketing what is it",
+          "marketing what is it",
+          "seo consultant what is it",
+          "seo expert what is it",
+          "e commerce what is it"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 11
+      }
+    },
+    {
+      "slug": "que-es",
+      "modificateur": "que es",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": {
+        "occurrences_suggest": 35,
+        "verticales": 17,
+        "exemples_reels": [
+          "growth agency que es",
+          "growth que es",
+          "inbound marketing que es",
+          "content marketing que es",
+          "inbound outbound marketing que es",
+          "seo agency que es"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 7
+      }
+    },
+    {
+      "slug": "principe",
+      "modificateur": "principe",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": null
+    },
+    {
+      "slug": "explication",
+      "modificateur": "explication",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": null
+    },
+    {
+      "slug": "explique",
+      "modificateur": "expliqué",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": null
+    },
+    {
+      "slug": "vulgarise",
+      "modificateur": "vulgarisé",
+      "famille": "definition",
+      "famille_libelle": "Définition",
+      "signal": "La personne découvre le sujet. Elle ne connaît pas encore le vocabulaire.",
+      "etage_doctrine": "Know-Simple",
+      "mesure": null
+    },
+    {
+      "slug": "pdf",
+      "modificateur": "pdf",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 98,
+        "verticales": 19,
+        "exemples_reels": [
+          "devis agence de communication pdf",
+          "agence pdf com formation",
+          "communication definition pdf",
+          "communication en dialogues pdf",
+          "communication non verbale pdf",
+          "communication pdf"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 67,
+          "distribution": {
+            "Know": 10,
+            "Do": 3,
+            "Know-décisionnel": 2
+          }
+        },
+        "echantillon_intention": 15
+      }
+    },
+    {
+      "slug": "excel",
+      "modificateur": "excel",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "word",
+      "modificateur": "word",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "video",
+      "modificateur": "vidéo",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "video",
+      "modificateur": "video",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 26,
+        "verticales": 9,
+        "exemples_reels": [
+          "agence marketing video",
+          "marketing video",
+          "digital video repair",
+          "text editor video",
+          "e commerce video",
+          "shopify video"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 5
+      }
+    },
+    {
+      "slug": "youtube",
+      "modificateur": "youtube",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 58,
+        "verticales": 17,
+        "exemples_reels": [
+          "conversation youtube",
+          "conversation youtube mp3",
+          "agency to grow youtube channel",
+          "growth youtube",
+          "agence marketing youtube",
+          "marketing youtube"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 14
+      }
+    },
+    {
+      "slug": "image",
+      "modificateur": "image",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 32,
+        "verticales": 8,
+        "exemples_reels": [
+          "growth image",
+          "digital marketing image",
+          "marketing image",
+          "text editor in image",
+          "text editor in image online",
+          "text editor on image"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "schema",
+      "modificateur": "schéma",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "schema",
+      "modificateur": "schema",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "liste",
+      "modificateur": "liste",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "download",
+      "modificateur": "download",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 20,
+        "verticales": 7,
+        "exemples_reels": [
+          "digital agency html template free download",
+          "internet download manager",
+          "content manager assetto corsa download",
+          "content manager download",
+          "content manager download assetto corsa",
+          "content manager free download"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 3
+      }
+    },
+    {
+      "slug": "telecharger",
+      "modificateur": "télécharger",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "telecharger",
+      "modificateur": "telecharger",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "infographie",
+      "modificateur": "infographie",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "powerpoint",
+      "modificateur": "powerpoint",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 9,
+        "verticales": 1,
+        "exemples_reels": [
+          "outil ia gratuit pour présentation powerpoint",
+          "outil ia pour faire des powerpoint",
+          "outil ia pour présentation powerpoint gratuit",
+          "outil ia powerpoint",
+          "ia powerpoint",
+          "ia qui fait des powerpoint"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "ppt",
+      "modificateur": "ppt",
+      "famille": "format",
+      "famille_libelle": "Format attendu",
+      "signal": "La personne veut un objet à emporter, pas une page à lire.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "pour",
+      "modificateur": "pour",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "debutant",
+      "modificateur": "débutant",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "debutant",
+      "modificateur": "debutant",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "pme",
+      "modificateur": "pme",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "tpe",
+      "modificateur": "tpe",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "e-commerce",
+      "modificateur": "e-commerce",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "ecommerce",
+      "modificateur": "ecommerce",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 16,
+        "verticales": 5,
+        "exemples_reels": [
+          "agence marketing ecommerce",
+          "dhl ecommerce tarif",
+          "e commerce ou ecommerce",
+          "ecommerce store",
+          "ecommerce template",
+          "ecommerce website builder free"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 7
+      }
+    },
+    {
+      "slug": "b2b",
+      "modificateur": "b2b",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 14,
+        "verticales": 8,
+        "exemples_reels": [
+          "inbound marketing b2b",
+          "agence marketing b2b",
+          "marketing b2b",
+          "agence seo b2b",
+          "prestashop b2b",
+          "shopify b2b"
+        ],
+        "intention_observee": {
+          "dominante": "Do",
+          "part": 96,
+          "distribution": {
+            "Do": 47,
+            "Know": 1,
+            "Know-décisionnel": 1
+          }
+        },
+        "echantillon_intention": 49
+      }
+    },
+    {
+      "slug": "b2c",
+      "modificateur": "b2c",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "freelance",
+      "modificateur": "freelance",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 381,
+        "verticales": 21,
+        "exemples_reels": [
+          "agence communication freelance",
+          "freelance communication bordeaux",
+          "freelance communication digitale",
+          "freelance communication lyon",
+          "freelance communication paris",
+          "freelance communication tarif"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 5
+      }
+    },
+    {
+      "slug": "independant",
+      "modificateur": "indépendant",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 10,
+        "verticales": 3,
+        "exemples_reels": [
+          "comment être indépendant",
+          "comment être indépendant émotionnellement",
+          "comment être indépendant financièrement à 18 ans",
+          "consultant indépendant en anglais",
+          "définition être indépendant",
+          "e commerce indépendant"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "independant",
+      "modificateur": "independant",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "etudiant",
+      "modificateur": "étudiant",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "etudiant",
+      "modificateur": "etudiant",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "association",
+      "modificateur": "association",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "artisan",
+      "modificateur": "artisan",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "startup",
+      "modificateur": "startup",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "grand-compte",
+      "modificateur": "grand compte",
+      "famille": "profil",
+      "famille_libelle": "Profil de la personne",
+      "signal": "La personne se reconnaît dans un segment. Elle écarte tout ce qui ne lui parle pas.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "paris",
+      "modificateur": "paris",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 333,
+        "verticales": 19,
+        "exemples_reels": [
+          "agence communication paris",
+          "agence communication paris 11",
+          "agence communication paris 12",
+          "agence communication paris 15",
+          "agence communication paris 17",
+          "agence communication paris recrutement"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "lyon",
+      "modificateur": "lyon",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 260,
+        "verticales": 18,
+        "exemples_reels": [
+          "agence communication lyon",
+          "agence communication lyon 1",
+          "agence communication lyon 2",
+          "agence communication lyon 3",
+          "agence communication lyon 6",
+          "agence communication lyon 9"
+        ],
+        "intention_observee": {
+          "dominante": "Do",
+          "part": 100,
+          "distribution": {
+            "Do": 18
+          }
+        },
+        "echantillon_intention": 18
+      }
+    },
+    {
+      "slug": "marseille",
+      "modificateur": "marseille",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 28,
+        "verticales": 12,
+        "exemples_reels": [
+          "agence communication marseille",
+          "agence marketing marseille",
+          "agence seo marseille",
+          "avis sur digimood agence seo sea marseille",
+          "consultant seo marseille",
+          "freelance seo marseille"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "bordeaux",
+      "modificateur": "bordeaux",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 19,
+        "verticales": 11,
+        "exemples_reels": [
+          "agence communication bordeaux",
+          "freelance communication bordeaux",
+          "communication bordeaux",
+          "agence marketing bordeaux",
+          "agence marketing sportif bordeaux",
+          "marketing bordeaux"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "lille",
+      "modificateur": "lille",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 42,
+        "verticales": 14,
+        "exemples_reels": [
+          "agence communication lille",
+          "communication lille",
+          "freelance communication lille",
+          "agence marketing lille",
+          "agence seo lille",
+          "agence seo e commerce lille"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "toulouse",
+      "modificateur": "toulouse",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 26,
+        "verticales": 11,
+        "exemples_reels": [
+          "agence communication toulouse",
+          "communication freelance toulouse",
+          "communication toulouse",
+          "freelance communication toulouse",
+          "agence marketing digital toulouse",
+          "agence marketing et communication toulouse"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "nantes",
+      "modificateur": "nantes",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 31,
+        "verticales": 14,
+        "exemples_reels": [
+          "agence communication nantes",
+          "freelance communication nantes",
+          "growth nantes",
+          "agence marketing nantes",
+          "agence seo nantes",
+          "seo nantes"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "nice",
+      "modificateur": "nice",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 19,
+        "verticales": 10,
+        "exemples_reels": [
+          "agence communication nice",
+          "agence marketing nice",
+          "agence seo nice",
+          "expert seo nice",
+          "freelance seo nice",
+          "agence digitale nice"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "strasbourg",
+      "modificateur": "strasbourg",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 12,
+        "verticales": 10,
+        "exemples_reels": [
+          "agence communication strasbourg",
+          "agence marketing strasbourg",
+          "freelance seo strasbourg",
+          "agence digitale strasbourg",
+          "consultant seo strasbourg",
+          "freelance seo strasbourg"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "montpellier",
+      "modificateur": "montpellier",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 18,
+        "verticales": 9,
+        "exemples_reels": [
+          "agence communication montpellier",
+          "agence marketing montpellier",
+          "agence seo montpellier",
+          "avis sur noiise agence seo montpellier",
+          "freelance seo montpellier",
+          "agence digitale montpellier"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "france",
+      "modificateur": "france",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 99,
+        "verticales": 20,
+        "exemples_reels": [
+          "prix communication maroc france",
+          "agence communication france",
+          "agence communication ile de france",
+          "combien d agence de communication en france",
+          "contact avis france",
+          "contact gratuit air france"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 7
+      }
+    },
+    {
+      "slug": "belgique",
+      "modificateur": "belgique",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 19,
+        "verticales": 13,
+        "exemples_reels": [
+          "agence communication belgique",
+          "prix communication belgique france",
+          "formation tarification soins infirmiers belgique",
+          "formation digital marketing belgique",
+          "agence marketing belgique",
+          "agence seo belgique"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "suisse",
+      "modificateur": "suisse",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 13,
+        "verticales": 9,
+        "exemples_reels": [
+          "agence communication suisse",
+          "formation pas cher en suisse",
+          "agence marketing suisse",
+          "agence seo suisse",
+          "agence digitale suisse",
+          "agence digitale suisse romande"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "maroc",
+      "modificateur": "maroc",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 57,
+        "verticales": 17,
+        "exemples_reels": [
+          "prix communication maroc france",
+          "contact gratuit royal air maroc",
+          "prix communication maroc",
+          "growth formula prix maroc",
+          "height growth prix maroc",
+          "digital marketing formation maroc"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "tunisie",
+      "modificateur": "tunisie",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 69,
+        "verticales": 16,
+        "exemples_reels": [
+          "agence communication tunisie",
+          "formation agence de voyage tunisie",
+          "agence de formation professionnelle tunisie",
+          "formation freelance tunisie",
+          "growth formula prix tunisie",
+          "height growth prix tunisie"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "canada",
+      "modificateur": "canada",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 15,
+        "verticales": 5,
+        "exemples_reels": [
+          "contact avis canada",
+          "development agency canada",
+          "development agency of canada",
+          "formation pas cher au canada",
+          "growth guys canada",
+          "growth guys canada review"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "pres-de-moi",
+      "modificateur": "près de moi",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "pres-de-moi",
+      "modificateur": "pres de moi",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "local",
+      "modificateur": "local",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 25,
+        "verticales": 9,
+        "exemples_reels": [
+          "marketing local",
+          "consultant seo local",
+          "seo local",
+          "seo local c'est quoi",
+          "consultant seo local",
+          "agence expert seo local"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 6
+      }
+    },
+    {
+      "slug": "autour-de-moi",
+      "modificateur": "autour de moi",
+      "famille": "geographie",
+      "famille_libelle": "Ancrage géographique",
+      "signal": "La personne veut un interlocuteur joignable, ou une règle qui s'applique chez elle.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "agence",
+      "modificateur": "agence",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 167,
+        "verticales": 15,
+        "exemples_reels": [
+          "agence seo lille",
+          "agence seo toulouse",
+          "seo agence",
+          "agence expert seo local",
+          "agence seo",
+          "agence seo angers"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 10
+      }
+    },
+    {
+      "slug": "agency",
+      "modificateur": "agency",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 439,
+        "verticales": 17,
+        "exemples_reels": [
+          ".agency vs .com",
+          "agency communication definition",
+          "agency communication meaning",
+          "agency definition communication",
+          "agency definition media",
+          "agency media definition"
+        ],
+        "intention_observee": {
+          "dominante": "Do",
+          "part": 71,
+          "distribution": {
+            "Know": 7,
+            "Do": 20,
+            "Know-décisionnel": 1
+          }
+        },
+        "echantillon_intention": 28
+      }
+    },
+    {
+      "slug": "consultant",
+      "modificateur": "consultant",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 414,
+        "verticales": 18,
+        "exemples_reels": [
+          "consultant communication",
+          "consultant communication freelance",
+          "consultant communication offre emploi",
+          "consultant communications",
+          "tjm consultant communication",
+          "consultant growth"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 13
+      }
+    },
+    {
+      "slug": "freelance",
+      "modificateur": "freelance",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 381,
+        "verticales": 21,
+        "exemples_reels": [
+          "agence communication freelance",
+          "freelance communication bordeaux",
+          "freelance communication digitale",
+          "freelance communication lyon",
+          "freelance communication paris",
+          "freelance communication tarif"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 5
+      }
+    },
+    {
+      "slug": "expert",
+      "modificateur": "expert",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 140,
+        "verticales": 15,
+        "exemples_reels": [
+          "expert communication",
+          "expert communication non verbale",
+          "expert communication unifiée inc",
+          "expert growth",
+          "business growth expert",
+          "expert growth marketing"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 11
+      }
+    },
+    {
+      "slug": "cabinet",
+      "modificateur": "cabinet",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 86,
+        "verticales": 13,
+        "exemples_reels": [
+          "cabinet communication",
+          "cabinet de conseil communication",
+          "cabinet de recrutement communication paris",
+          "cabinet recrutement communication",
+          "cabinet congestion the growth of a ministerial maze",
+          "cabinet de recrutement growth"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "prestataire",
+      "modificateur": "prestataire",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "specialiste",
+      "modificateur": "spécialiste",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "specialiste",
+      "modificateur": "specialiste",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "specialist",
+      "modificateur": "specialist",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 26,
+        "verticales": 9,
+        "exemples_reels": [
+          "inbound marketing specialist",
+          "certified marketing management specialist",
+          "seo outreach specialist",
+          "seo outreach specialist remote",
+          "seo outreach specialist",
+          "seo outreach specialist remote"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 9
+      }
+    },
+    {
+      "slug": "accompagnement",
+      "modificateur": "accompagnement",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "prestation",
+      "modificateur": "prestation",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "service",
+      "modificateur": "service",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 42,
+        "verticales": 17,
+        "exemples_reels": [
+          "contact prixtel service client",
+          "contact tjmaxx customer service",
+          "service communication",
+          "service communication is currently unavailable",
+          "service communication is currently unavailable copilot",
+          "service communication stihl"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "services",
+      "modificateur": "services",
+      "famille": "prestataire",
+      "famille_libelle": "Recherche de prestataire",
+      "signal": "La personne a renoncé à faire elle-même. Elle cherche quelqu'un à qui confier le travail.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 20,
+        "verticales": 13,
+        "exemples_reels": [
+          "agency growth services",
+          "digital marketing services",
+          "- services marketing quarterly",
+          "lyon marketing services",
+          "services marketing integrating customer focus across the firm",
+          "services marketing people technology strategy"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 44,
+          "distribution": {
+            "Know": 8,
+            "Know-décisionnel": 2,
+            "Do": 8
+          }
+        },
+        "echantillon_intention": 18
+      }
+    },
+    {
+      "slug": "emploi",
+      "modificateur": "emploi",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 54,
+        "verticales": 16,
+        "exemples_reels": [
+          "communication lyon emploi",
+          "communication paris emploi",
+          "agence communication emploi",
+          "agence communication offre emploi",
+          "communication emploi",
+          "consultant communication offre emploi"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "job",
+      "modificateur": "job",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 70,
+        "verticales": 20,
+        "exemples_reels": [
+          "communication lyon job",
+          "agence communication job",
+          "communication job",
+          "communication paris job",
+          "growth job",
+          "digital marketing job description"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 4
+      }
+    },
+    {
+      "slug": "jobs",
+      "modificateur": "jobs",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 162,
+        "verticales": 19,
+        "exemples_reels": [
+          "communication freelance jobs",
+          "freelance media agency jobs",
+          "paris communication jobs",
+          "agency growth team jobs",
+          "agence francaise development jobs",
+          "agency business development jobs"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 94,
+          "distribution": {
+            "Know": 15,
+            "Do": 1
+          }
+        },
+        "echantillon_intention": 16
+      }
+    },
+    {
+      "slug": "salaire",
+      "modificateur": "salaire",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 49,
+        "verticales": 15,
+        "exemples_reels": [
+          "growth hacker salaire",
+          "consultant marketing digital salaire",
+          "marketing digital salaire",
+          "consultant marketing salaire",
+          "expert marketing digital salaire",
+          "marketing salaire"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "recrutement",
+      "modificateur": "recrutement",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 35,
+        "verticales": 13,
+        "exemples_reels": [
+          "agence communication lyon recrutement",
+          "agence communication paris recrutement",
+          "communication lyon recrutement",
+          "cabinet de recrutement communication paris",
+          "cabinet recrutement communication",
+          "communication recrutement"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "offre-d-emploi",
+      "modificateur": "offre d'emploi",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 14,
+        "verticales": 10,
+        "exemples_reels": [
+          "communication offre d'emploi",
+          "consultant marketing offre d'emploi",
+          "marketing offre d'emploi",
+          "consultant seo offre d'emploi",
+          "consultant seo offre d'emploi",
+          "content manager offre d'emploi"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "formation",
+      "modificateur": "formation",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 520,
+        "verticales": 21,
+        "exemples_reels": [
+          "communication formation",
+          "formation communication animale",
+          "agence de communication formation",
+          "agence pdf com formation",
+          "communication animale formation",
+          "communication formation à distance"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 5
+      }
+    },
+    {
+      "slug": "certification",
+      "modificateur": "certification",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 97,
+        "verticales": 19,
+        "exemples_reels": [
+          "certification communication",
+          "certification growth marketing",
+          "inbound marketing certification",
+          "inbound marketing certification hubspot",
+          "inbound marketing certification hubspot academy",
+          "inbound marketing certification hubspot answers"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 4
+      }
+    },
+    {
+      "slug": "certificat",
+      "modificateur": "certificat",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 29,
+        "verticales": 12,
+        "exemples_reels": [
+          "certificat communication",
+          "certificat communication à distance",
+          "certificat communication marketing",
+          "certificat communication organisationnelle",
+          "certificat communication publique",
+          "certificat communication udem"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "ecole",
+      "modificateur": "école",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "ecole",
+      "modificateur": "ecole",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "master",
+      "modificateur": "master",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 54,
+        "verticales": 14,
+        "exemples_reels": [
+          "master communication combien d année",
+          "master communication",
+          "master communication corporate",
+          "paris communication master",
+          "master growth",
+          "master growth marketing"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "cours",
+      "modificateur": "cours",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 11,
+        "verticales": 7,
+        "exemples_reels": [
+          "cours gratuit marketing digital pdf",
+          "marketing cours",
+          "marketing digital cours gratuit",
+          "marketing fondamental cours",
+          "marketing pdf cours",
+          "cours seo gratuit pdf"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "course",
+      "modificateur": "course",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 61,
+        "verticales": 16,
+        "exemples_reels": [
+          "free communication skills course",
+          "free communication skills course with certificate online",
+          "digital marketing course",
+          "digital marketing course fees",
+          "digital marketing free course",
+          "digital marketing free course with certificate"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 74,
+          "distribution": {
+            "Know": 14,
+            "Know-décisionnel": 3,
+            "Do": 2
+          }
+        },
+        "echantillon_intention": 19
+      }
+    },
+    {
+      "slug": "metier",
+      "modificateur": "métier",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 8,
+        "verticales": 6,
+        "exemples_reels": [
+          "communication métier",
+          "marketing métier",
+          "métier consultant seo",
+          "consultant seo fiche métier",
+          "développeur ia fiche métier",
+          "rédacteur web fiche métier"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "metier",
+      "modificateur": "metier",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "devenir",
+      "modificateur": "devenir",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 20,
+        "verticales": 7,
+        "exemples_reels": [
+          "comment devenir marketing digital",
+          "comment devenir marketing digital sans diplôme",
+          "comment devenir consultant seo",
+          "devenir consultant seo",
+          "devenir consultant seo autodidacte",
+          "devenir consultant seo freelance"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "alternance",
+      "modificateur": "alternance",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": {
+        "occurrences_suggest": 16,
+        "verticales": 9,
+        "exemples_reels": [
+          "communication lyon alternance",
+          "alternance paris communication",
+          "communication formation alternance",
+          "formation lyon alternance",
+          "marketing digital lyon alternance",
+          "marketing digital paris alternance"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "stage",
+      "modificateur": "stage",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "diplome",
+      "modificateur": "diplôme",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "diplome",
+      "modificateur": "diplome",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "reconversion",
+      "modificateur": "reconversion",
+      "famille": "emploi-formation",
+      "famille_libelle": "Emploi et formation",
+      "signal": "La personne veut EXERCER le métier, pas l'acheter. Piège classique du trafic qui ne convertit jamais.",
+      "etage_doctrine": "hors-cible",
+      "mesure": null
+    },
+    {
+      "slug": "2025",
+      "modificateur": "2025",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 26,
+        "verticales": 13,
+        "exemples_reels": [
+          "prix agence media de l année 2025",
+          "formation gratuite nations unies 2025",
+          "tarif seolis 2025",
+          "tarif seolis fevrier 2025",
+          "meilleur consultant seo france 2025",
+          "tarif seolis 2025"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 7
+      }
+    },
+    {
+      "slug": "2026",
+      "modificateur": "2026",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": {
+        "occurrences_suggest": 29,
+        "verticales": 11,
+        "exemples_reels": [
+          "prix agence media de l année 2026",
+          "seo in guk couple 2026",
+          "meilleur agence seo 2026",
+          "meilleure agence seo 2026",
+          "tarif seolis 2026",
+          "meilleur consultant seo 2026"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "nouveau",
+      "modificateur": "nouveau",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "nouvelle",
+      "modificateur": "nouvelle",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "dernier",
+      "modificateur": "dernier",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "derniere",
+      "modificateur": "dernière",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "mise-a-jour",
+      "modificateur": "mise à jour",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "actualite",
+      "modificateur": "actualité",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "recent",
+      "modificateur": "récent",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "recent",
+      "modificateur": "recent",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "aujourd-hui",
+      "modificateur": "aujourd'hui",
+      "famille": "temporel",
+      "famille_libelle": "Fraîcheur",
+      "signal": "La personne se méfie de l'information périmée. Elle veut l'état actuel.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "outil",
+      "modificateur": "outil",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 84,
+        "verticales": 15,
+        "exemples_reels": [
+          "outil communication",
+          "outil communication autisme",
+          "outil communication couple",
+          "outil communication entreprise",
+          "outil communication interne",
+          "outil communication interne entreprise"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 3
+      }
+    },
+    {
+      "slug": "outils",
+      "modificateur": "outils",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 37,
+        "verticales": 13,
+        "exemples_reels": [
+          "communication outils",
+          "outils growth marketing",
+          "marketing outils",
+          "seo outils",
+          "seo outils",
+          "seo outils"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 1
+      }
+    },
+    {
+      "slug": "logiciel",
+      "modificateur": "logiciel",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 151,
+        "verticales": 17,
+        "exemples_reels": [
+          "logiciel communication",
+          "logiciel communication autisme",
+          "logiciel communication digitale",
+          "logiciel communication entreprise",
+          "logiciel communication gratuit",
+          "logiciel communication handicap"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 2
+      }
+    },
+    {
+      "slug": "plateforme",
+      "modificateur": "plateforme",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 60,
+        "verticales": 16,
+        "exemples_reels": [
+          "plateforme communication",
+          "plateforme de communication ppt",
+          "plateforme freelance communication",
+          "plateforme growth",
+          "plateforme immediate growth",
+          "marketing plateforme de marque"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 0
+      }
+    },
+    {
+      "slug": "platform",
+      "modificateur": "platform",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 272,
+        "verticales": 16,
+        "exemples_reels": [
+          "communications platform",
+          "platform communication meaning",
+          "platform growth",
+          "platform marketing",
+          "platform marketing agency",
+          "platform marketing real estate"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 4
+      }
+    },
+    {
+      "slug": "application",
+      "modificateur": "application",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 9,
+        "verticales": 7,
+        "exemples_reels": [
+          "internet gratuit application",
+          "application e commerce exemple",
+          "meilleur application shopify gratuite",
+          "woocommerce application",
+          "ia application",
+          "ia meilleur application"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 6
+      }
+    },
+    {
+      "slug": "app",
+      "modificateur": "app",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 21,
+        "verticales": 9,
+        "exemples_reels": [
+          "agency app development",
+          "digital agency japan app",
+          "content manager free app key",
+          "free content manager app key",
+          "e commerce app",
+          "shopify app store"
+        ],
+        "intention_observee": null,
+        "echantillon_intention": 4
+      }
+    },
+    {
+      "slug": "tools",
+      "modificateur": "tools",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": {
+        "occurrences_suggest": 43,
+        "verticales": 11,
+        "exemples_reels": [
+          "digital marketing tools",
+          "free marketing tools",
+          "marketing tools",
+          "free seo tools",
+          "seo review tools",
+          "seo studio tools"
+        ],
+        "intention_observee": {
+          "dominante": "Know",
+          "part": 71,
+          "distribution": {
+            "Know": 12,
+            "Know-décisionnel": 1,
+            "Do": 4
+          }
+        },
+        "echantillon_intention": 17
+      }
+    },
+    {
+      "slug": "tool",
+      "modificateur": "tool",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "software",
+      "modificateur": "software",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "saas",
+      "modificateur": "saas",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "generateur",
+      "modificateur": "générateur",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "generateur",
+      "modificateur": "generateur",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "calculateur",
+      "modificateur": "calculateur",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "simulateur",
+      "modificateur": "simulateur",
+      "famille": "outil",
+      "famille_libelle": "Recherche d'outil",
+      "signal": "La personne cherche un logiciel qui fait le travail, pas un prestataire.",
+      "etage_doctrine": "Do",
+      "mesure": null
+    },
+    {
+      "slug": "erreur",
+      "modificateur": "erreur",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "probleme",
+      "modificateur": "problème",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "probleme",
+      "modificateur": "probleme",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "ne-fonctionne-pas",
+      "modificateur": "ne fonctionne pas",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "ne-marche-pas",
+      "modificateur": "ne marche pas",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "pourquoi",
+      "modificateur": "pourquoi",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "resoudre",
+      "modificateur": "résoudre",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "resoudre",
+      "modificateur": "resoudre",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "corriger",
+      "modificateur": "corriger",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "reparer",
+      "modificateur": "réparer",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "reparer",
+      "modificateur": "reparer",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "bug",
+      "modificateur": "bug",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "panne",
+      "modificateur": "panne",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "bloque",
+      "modificateur": "bloqué",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    },
+    {
+      "slug": "bloque",
+      "modificateur": "bloque",
+      "famille": "probleme",
+      "famille_libelle": "Dépannage",
+      "signal": "Quelque chose est cassé. La personne cherche à réparer, pas à comprendre.",
+      "etage_doctrine": "Know",
+      "mesure": null
+    }
+  ]
+}
