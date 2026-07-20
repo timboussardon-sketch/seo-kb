@@ -1345,3 +1345,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - désaccords: 4 (part ChatGPT 92% vs 62%, -39,8% vs -58%, Google vs Agarwal & Sen, Cloudflare vs Cloudflare)
 - signaux faibles: 4 (tribunal allemand, CMA UK, 28,8% recherche interne, Ask YouTube)
 - angles proposés: log de recherche interne comme source de mots-clés propriétaire ; citation IA = tirage au sort, pas position
+
+## [2026-07-20] backlog | sweep — 245 en backlog (P1:127 P2:35 P3:83)
+- raw scannés: 379 (+6 vs sweep 2026-07-13)
+- entrées: 4 P1 (fgformation-patterns-requetes, fgformation-modele-corpus, alexia/2026-07-17-call-3-resume, victoriagarden/corpus-modele/motif-seminaire-diagnostic-2026-07-17) + 1 P3 (organikk/prospection/journal-prospection)
+- sorties: aucune — call-15-baptiste-yalp ingéré à chaud le 07-16 sans entrer au backlog
+- prochain lot proposé: Victoria Garden (lot W30 voté, 11 fichiers avec le motif séminaire neuf), puis FG-Formation corpus (fgformation-patterns-requetes + fgformation-modele-corpus)
+- nouveaux skips: aucun — journal-prospection posé en candidat skip (fichier auto-synchro Supabase, doctrine déjà dans methodes/farming-prospection)
