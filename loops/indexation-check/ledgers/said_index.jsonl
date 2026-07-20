@@ -31,3 +31,13 @@
 {"date":"2026-07-13","angle":"scraping site: officiellement retire de l'audit ce run (6/6 runs a non testable, diff urlInspection en attente)","report":"reports/indexation-organikk-2026-07-13.md"}
 {"date":"2026-07-13","angle":"statut indexation Google non teste ce run (pas d'acces edge admin-gsc-export dans l'environnement) - 'non testable' distinct de 'non indexee'","report":"reports/indexation-organikk-2026-07-13.md"}
 {"date":"2026-07-13","angle":"sitemap stable 146 URLs (delta 0) - trajectoire 35j 169-136-143-143-146-146","report":"reports/indexation-organikk-2026-07-13.md"}
+{"date":"2026-07-20","angle":"audit indexation Organikk site complet - HTTP+sitemap+canonical+maillage (run hebdo)","perimetre":"organikk.co - 330 URLs du sitemap","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"EVENEMENT sitemap x2 en 7 jours : 146 -> 330 URLs (+184). Sections neuves guide-evaluateurs-google (103), mises-a-jour-google (27), statuts-indexation-google (17), robots-ia (14), glossaire (7)","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"CRITIQUE /manifeste toujours 404 - 3e recurrence, reco P1 du 10/07 non appliquee apres 10j","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"CRITIQUE /accompagnement-seo-geo toujours orpheline - 3e recurrence, scale-up n'a apporte aucun lien entrant","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"sitemap_canonical_mismatch 7e recurrence - probleme s'aggrave mecaniquement (329 requetes crawl inutiles vs 145 au run precedent)","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"lastmod_uniforme 7e recurrence - couteux sur corpus qui vient de doubler avec du contenu frais","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"NOUVELLE ANOMALIE /robots-ia/ : 14 pages ajoutees semaine, 12/14 sous 300 mots - statut editorial a trancher","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"POSITIF les 11 fiches wiki densifiees au 13/07 restent stables >=400 mots au 20/07","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"OBSERVATION maillage /guide-evaluateurs-google/* : 32/103 pages n'ont que le hub comme lien entrant, pas de transverse entre chapitres","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-20","angle":"POSITIF pipeline tient sur +184 pages en semaine : 100% HTTP 200, canonical, h1, title, pas de noindex","report":"reports/indexation-organikk-2026-07-20.md"}
