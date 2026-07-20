@@ -11,13 +11,15 @@ lien: "[[raphael-coach-sportif]]"
 
 # Email d'envoi de proposition — Raphaël
 
-> Tutoiement, acté pendant le call. Adresse à récupérer, elle n'est pas sur raphael.fitness (formulaire uniquement, tél. 438 813 0117).
+> Repris sur le gabarit de base ([[simplimo-email]], [[horizoncrm-email]]), passé au tutoiement : la relation est établie au call.
 >
-> **À compléter avant envoi** : le nombre de mots-clés business et le nombre de demandes mensuelles sur lesquels tu t'engages, marqués `[X]` et `[Y]`.
+> Adresse à récupérer, elle n'est pas sur raphael.fitness (formulaire uniquement, tél. 438 813 0117).
 >
-> Les deux documents sont hébergés sur organikk.co, rien à mettre en pièce jointe.
+> **À compléter avant envoi** : `[X]` mots-clés business et `[Y]` demandes par mois, les deux valeurs de l'engagement.
+>
+> L'espace client est en ligne : https://organikk.co/raphael-accompagnement/
 
-**Objet :** Ce qu'on fait sur raphael.fitness
+**Objet :** Proposition Organikk × Raphaël Fitness
 
 ---
 
@@ -25,45 +27,42 @@ Salut Raphaël,
 
 Merci pour le call, et félicitations pour le petit.
 
-Comme promis, tu trouveras deux documents : le résumé de ce qu'on s'est dit, et la proposition.
+Comme convenu, je reviens vers toi avec la proposition chiffrée.
 
-Le point de départ, pour qu'on soit d'accord : ton contenu n'est pas en cause. Tu as écrit ton site seul et il t'a ramené 20 à 25 demandes par mois pendant trois ans. Ce qui a changé, c'est que tes pages répondent à des questions que ChatGPT traite maintenant à ta place, et Google a arrêté de les afficher. Tes impressions ont baissé en même temps que tes clics, donc tes pages sont sorties de l'affichage. On peut agir dessus.
+Les objectifs de la mission sur les 3 prochains mois :
 
-Ce qu'on fait sur les trois prochains mois :
+Couper les pages qui brouillent ton positionnement : les proverbes, les chansons de sport, l'article sur comment devenir coach sportif en France
 
-On coupe les pages qui brouillent ton positionnement : les proverbes, les chansons de sport, l'article sur comment devenir coach sportif en France.
+Exploiter tes 911 formulaires pour sortir les situations précises sur lesquelles des gens te contactent vraiment, plutôt que des mots-clés trouvés dans un outil
 
-On récupère tes 911 formulaires et on en sort les situations précises sur lesquelles des gens te contactent vraiment. C'est ta data, personne d'autre ne l'a, et c'est elle qui décide des pages qu'on crée. Pas un outil de mots-clés.
+Valider ensemble [X] mots-clés business et construire 30 à 50 pages autour, en ensembles cohérents par cible
 
-On valide ensemble [X] mots-clés business, et on construit 30 à 50 pages autour, en ensembles cohérents par cible.
+Mettre un point de conversion sur chaque page : un demi-programme à télécharger, un bilan, une vidéo courte. Si on ne trouve rien à proposer sur une page, on ne la crée pas
 
-On met un point de conversion sur chaque page : un demi-programme à télécharger, un bilan, une vidéo courte. Si on ne trouve rien à proposer sur une page, on ne crée pas la page.
+Rendre ta page de coaching en visio visible, alors qu'aujourd'hui aucune recherche ne tombe dessus
 
-On rend ta page visio visible. C'est ton offre la plus rentable et aujourd'hui aucune recherche ne tombe dessus.
+Travailler ta fiche Google et tes avis, qui sont déjà ce qui te fait ressortir dans ChatGPT
 
-On travaille ta fiche Google et tes avis, qui sont déjà ce qui te fait ressortir dans ChatGPT.
+Créer un agent SEO dédié au projet, que tu pilotes sans moi en fin de mission
 
-On construit ton agent SEO sur ta data, pour que tu produises sans moi à la fin de la mission.
+Revenir à [Y] demandes par mois. Si on n'y est pas à trois mois, je continue à travailler gratuitement jusqu'à ce qu'on y soit
 
-L'objectif chiffré : revenir à [Y] demandes par mois. Si on n'y est pas à trois mois, je continue à travailler gratuitement jusqu'à ce qu'on y soit.
+Point important : tu n'es jamais engagé. La mission peut être arrêtée à la fin de n'importe quel mois, sans préavis.
 
-Ce que j'attends de toi pour démarrer, sur une semaine :
+Le résumé du call est ici :
 
-L'export de tes 911 soumissions de formulaire, un accès à ta Search Console, le MCP Webflow, tes programmes et tes trames de séance, tes avant-après avec leurs dates. Et à partir de maintenant, l'enregistrement de tes calls prospects. C'est la seule chose sur laquelle je ne peux pas me substituer à toi.
+https://organikk.co/raphael-accompagnement/resume-call.html
 
-Point important : tu n'es jamais engagé. La mission s'arrête à la fin de n'importe quel mois, sans préavis.
+Et la proposition complète, avec le diagnostic, les requêtes qu'on va attaquer, le planning sur trois mois et ce que je te demande au démarrage :
 
-Les deux documents sont ici :
+https://organikk.co/raphael-accompagnement/
 
-La proposition : https://organikk.co/raphael-accompagnement/
+Je reste disponible si tu veux qu'on repasse certains points de vive voix.
 
-Le résumé du call : https://organikk.co/raphael-accompagnement/resume-call.html
-
-Si tu préfères le PDF de la proposition : https://organikk.co/raphael-accompagnement/proposition-raphael-organikk.pdf
-
-Si c'est bon pour toi, on peut attaquer fin juillet. Dis-moi si tu veux qu'on repasse certains points de vive voix avant.
+Au plaisir de travailler avec toi sur ce projet.
 
 Excellente journée 🙏🏼
 
 Tim
 organikk.co
+Linkedin
