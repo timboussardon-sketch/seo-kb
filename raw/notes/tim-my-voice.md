@@ -241,3 +241,42 @@ Source : [[call-15-baptiste-yalp]] · [[sources/2026-07-16-call-15-baptiste-yalp
 **Tic oral nouveau** : « je rebondis dessus » / « pour rebondir à ce que tu me disais » — sert de charnière pour raccrocher un point laissé en suspens par le prospect plutôt que de dérouler son plan.
 
 Concepts mobilisés : [[data-proprietaire]] · [[know-simple-know-do]] · [[purete-vectorielle]] · [[tabou-visibilite]] · [[parasite-seo]] · [[entities/golfiller]]
+
+## [2026-07-20] Call de vente Raphaël (coach sportif, Montréal + visio)
+
+Source : [[call-16-raphael-coach-sportif]] · [[entities/raphael-coach-sportif]]. Premier call face à un prospect **non outillé**, qui a fait son SEO seul et qui a vécu trois ans sur cet acquis avant de décrocher. Miroir exact du call Yalp. Ce que ça ajoute :
+
+**« Je vais pas te mentir » devient le marqueur dominant.** Cinq occurrences, toujours au moment d'annoncer une contrainte que le prospect n'a pas demandée : le délai (« à moins de trois mois c'est un peu compliqué quand même d'avoir des vrais résultats »), le risque concurrentiel (« avec de l'IA on peut facilement te passer devant »), et une fois doublée par « je vais pas te vendre du rêve ». La formule ne sert jamais à annoncer une bonne nouvelle. C'est son signal de passage en mode contrainte.
+
+**« On s'en fout » est son opérateur de disqualification du volume.** Six occurrences, toutes sur la même objection : « Là il n'y a pas beaucoup de volume. » → « Oui mais c'est pas grave », « on s'en fout parce qu'en fait les mots-clés à volume ils sont mangés par GPT », « je m'en fous en fait ». Il ne réfute pas la donnée, il la déclasse. Nouvelle famille à côté de « ça m'intéresse pas » et « le mot-clé me fait pas rêver » : là où ces deux-là écartent une piste, « on s'en fout » invalide le critère de décision lui-même.
+
+**La franchise qui lui coûte, deux fois dans le même call.** Sur le timing : « Tu viens un peu tard, il aurait fallu venir toi deux mois en arrière. » Sur le prix : il convertit 850 € en 850 $ CAD et le commente à voix haute, « c'est pas à ta faveur, mais je peux faire un effort », puis « moi je suis perdant ». Il dit le geste au lieu de le laisser passer pour un tarif. Prolonge l'honnêteté de vente déjà relevée avec Catherine et Baptiste.
+
+**Il enseigne par question rhétorique.** Nouveau, très net : « En fait tu dilues la pureté sémantique. Qu'est-ce que la pureté sémantique ? En fait toi tu es un coach sportif, t'es pas un Doctissimo du coaching sportif. » Il pose le terme, se pose la question à lui-même, et répond par une comparaison concrète et un peu moqueuse. Même mouvement sur « Pourquoi il te passe pas devant ? Parce que... ». Le concept n'arrive jamais comme une définition, il arrive comme une réponse.
+
+**« Je dis n'importe quoi » remplace la clause de sauvegarde de Yalp.** Là où il disait « encore une fois, c'est juste un exemple », il dit ici huit fois « je dis n'importe quoi » avant ou après chaque illustration (diabétique, anorexie, déplacement d'épaule, rue Montesquieu, coach sportif 500 $). Même fonction : empêcher le prospect de prendre l'exemple pour la reco. Le registre s'adapte au prospect, la précaution reste.
+
+**Valider avant de trancher, confirmé, avec une nuance de registre.** « Globalement, ton SEO il est bon » en ouverture, « c'est pas si dégueu que ça », « tes premiers questionnaires ils sont pas mal », « c'est vraiment bien ça ». Le familier monte d'un cran face à un artisan qu'il tutoie, alors qu'il restait sobre avec Baptiste.
+
+**Il refuse l'idée du prospect quand elle vient d'un outil et pas de sa data.** Raphaël propose « coach sportif perte de poids ». Tim ne dit ni oui ni non, il renvoie à la source : « Est-ce que ta data te fait ressortir des entrepreneurs ? Oui ou non ? Oui, alors on part dessus. Non, il faut regarder sur quoi elle te fait partir. » Et plus loin : « On va pas inventer sans data, tu vois. » La data du client arbitre, jamais lui ni l'outil.
+
+**Il borne son propre rôle vers la sortie.** « Au bout d'un moment tu peux pas me payer », « c'est pas de te garder », « t'as tout à gagner à maîtriser ton SEO par toi-même parce que t'es plus skin in the game que moi ». Il vend trois mois en visant l'autonomie, et le dit avant que le prospect ne demande une durée.
+
+**Nouvelles formulations, signature**
+- « Un avis vaut quasiment un backlink. »
+- « Google va pas indexer une page que ChatGPT peut faire en une réponse. »
+- « L'informationnel est mort. »
+- « Tu attires beaucoup de touristes. » (pour le trafic informationnel non qualifié)
+- « Si on n'arrive pas à trouver un mot-clé qui propose un lead magnet, on ne crée pas la page. »
+- « Ta data en fait c'est ton cerveau. »
+- « Il faut que le SEO soit sur la donnée que Raphaël a. » (il nomme le client dans la règle)
+- « Les gens tapent 24 mots dans les LLM. »
+- « C'est un vrai agent, c'est pas un truc ChatGPT à la con. »
+- « Piloter, c'est envoyer un message dans le chat, c'est tout. »
+- « Ce que je te donne en gratuit, tu peux l'avoir en payant. » (il place Fusionn en filet de sécurité, pas en upsell)
+- « Ton blog ne suffit plus. »
+- Sur le second cerveau : « j'aime pas le mot particulièrement, mais... » (il s'excuse du terme avant de l'employer, cf. [[feedback_pas_de_second_cerveau]])
+
+**Tic oral confirmé** : « Bon j'ai trop parlé là » après un monologue long, exactement comme « J'ai beaucoup parlé, je ferai un petit résumé de tout ça » sur Yalp. Et la relance systématique : « Qu'est-ce que t'en penses de tout ça un peu ? », « Vas-y dis-moi un petit peu ce que tu penses », « Est-ce que tu penses que ça peut être intéressant tu vois ? ».
+
+Concepts mobilisés : [[concepts/data-proprietaire]] · [[concepts/purete-vectorielle]] · [[concepts/mots-cles-actionnels]] · [[concepts/programmatique-pseo]] · [[entities/raphael-coach-sportif]]
