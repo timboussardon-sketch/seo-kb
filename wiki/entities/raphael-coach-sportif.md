@@ -18,7 +18,7 @@ Coach sportif indépendant depuis 2016. Deux activités : du coaching en salle �
 
 Source : [[call-16-raphael-coach-sportif]] (call de vente du 2026-07-20). Le nom de domaine reste à confirmer.
 
-## Profil d'acheteur : le rentier de son propre SEO
+## Profil d'acheteur : il a vécu sur un acquis qu'il n'entretenait plus
 
 Nouveau profil dans la KB, l'inverse exact de [[entities/baptiste-yalp]]. Baptiste est outillé et cherche une direction. Raphaël n'est pas outillé du tout, et il a longtemps vécu sur un acquis qu'il n'a pas entretenu.
 
@@ -26,7 +26,7 @@ Nouveau profil dans la KB, l'inverse exact de [[entities/baptiste-yalp]]. Baptis
 
 Il n'a rien touché depuis des années pour deux raisons cumulées : il n'en avait pas besoin (agenda plein) et sa vie personnelle a pris la place (rénovation de maison, naissance il y a dix jours). Il ouvre le sujet parce qu'il est en congé paternité et qu'il a enfin le temps.
 
-## Le déclencheur : la chute
+## Le déclencheur : la baisse des demandes
 
 Le volume entrant est passé d'environ 20 à 25 demandes par mois à une dizaine, spams inclus. Le taux de conversion a suivi. Double conséquence : ses propres heures ne se remplissent plus, et il n'a plus de surplus à revendre ou à échanger avec ses partenaires de salle.
 
@@ -48,9 +48,9 @@ Sur la Search Console, le trafic est passé d'environ 35 clics par jour à un ou
 
 La salle absorbe beaucoup plus de volume que la visio, mais la visio est la plus rentable pour lui.
 
-## Sa data dormante
+## Ses 911 formulaires jamais exploités
 
-Un formulaire unique sur le site, rempli **911 fois**, avec l'objectif (perte de poids, prise de muscle, remise en forme), le type de programme souhaité et un champ de texte libre. C'est le gisement de [[concepts/data-proprietaire|data propriétaire]] du dossier, et il n'a jamais été exploité. Environ 80 % des demandes portent sur la perte de poids.
+Un formulaire unique sur le site, rempli **911 fois**, avec l'objectif (perte de poids, prise de muscle, remise en forme), le type de programme souhaité et un champ de texte libre. C'est la [[concepts/data-proprietaire|data propriétaire]] du dossier, et elle n'a jamais été exploitée. Environ 80 % des demandes portent sur la perte de poids.
 
 Il n'enregistre aucun call client. Tim lui demande de commencer.
 

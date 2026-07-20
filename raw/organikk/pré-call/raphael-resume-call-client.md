@@ -21,7 +21,7 @@ Ton site t'a rapporté 20 à 25 demandes par mois pendant trois ans sans que tu 
 
 Le diagnostic tient en une ligne : tes pages répondent à des questions que ChatGPT répond maintenant à la place de ton site. Douleur à l'épaule, signification en médecine chinoise, proverbes, chansons de sport. Ce sont de bons contenus, et ils ne ramènent aucun client. Google a arrêté de les afficher parce qu'il n'a plus de raison de les afficher.
 
-Ce qu'on fait : on arrête l'informationnel, on récupère la data que tu as déjà (tes 911 soumissions de formulaire), on en sort les 20 à 30 requêtes business sur lesquelles des gens te contactent vraiment, et on construit 30 à 50 pages qui ont chacune un point de conversion. Ton site ne se refait pas. Il se recentre.
+Ce qu'on fait : on arrête l'informationnel, on récupère la data que tu as déjà (tes 911 soumissions de formulaire), on en sort les 20 à 30 requêtes business sur lesquelles des gens te contactent vraiment, et on construit 30 à 50 pages qui ont chacune un point de conversion. On garde ton site et on change les requêtes qu'il vise.
 
 Un point important : tu ressors déjà dans ChatGPT. C'est pour ça que repartir de zéro serait une erreur.
 
@@ -85,7 +85,7 @@ Sur les modèles d'IA, un avis pèse aujourd'hui presque autant qu'un lien entra
 
 Pas tes séances de coaching, elles ne serviront à rien. Tes premiers échanges avec un prospect, avant de signer. Les questions qu'on te pose, les objections, ce qui n'a pas marché avec le coach précédent. C'est cette matière qui fait la différence entre une page écrite par une IA et une page écrite à partir de ce que tes clientes t'ont réellement dit.
 
-Ta FAQ ne sera pas celle que je trouve sur Google. Ce sera celle que tes clientes t'ont posée.
+Ta FAQ reprendra les questions que tes clientes t'ont posées en call, avec leurs mots.
 
 ---
 

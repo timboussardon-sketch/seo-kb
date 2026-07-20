@@ -16,9 +16,9 @@ lien: "[[call-16-raphael-coach-sportif]]"
 
 Coach sportif indépendant depuis 2016, deux offres : salle à Montréal tenue par ses associés, visio assurée par lui depuis la France. Site Webflow écrit entièrement par lui, sans SEO. A vécu trois ans sur un acquis de 20 à 25 demandes par mois. Est tombé à une dizaine, spams inclus.
 
-Le dossier est simple et il est bon. Antériorité de site depuis 2016, présence déjà constatée dans ChatGPT, une offre à 400 $ CAD par mois et par client avec cinq ans de rétention, et surtout **911 soumissions de formulaire jamais exploitées**. C'est le meilleur gisement de data propriétaire vu sur un prospect solo.
+Le dossier est simple et il est bon. Antériorité de site depuis 2016, présence déjà constatée dans ChatGPT, une offre à 400 $ CAD par mois et par client avec cinq ans de rétention, et surtout **911 soumissions de formulaire jamais exploitées**. C'est le plus gros volume de data propriétaire vu sur un prospect solo.
 
-L'angle : on ne refait rien, on recentre. On coupe l'informationnel, on éclate la perte de poids (80 % de ses demandes) en cibles précises tirées de ses 911 formulaires, on construit 30 à 50 pages business en hubs, et on rend la visio visible. Verrou : il n'enregistre aucun call, il faut qu'il commence.
+L'angle : on garde le site et on change les requêtes visées. On coupe l'informationnel, on éclate la perte de poids (80 % de ses demandes) en cibles précises tirées de ses 911 formulaires, on construit 30 à 50 pages business en hubs, et on rend la visio visible. Point à régler : il n'enregistre aucun call, il faut qu'il commence.
 
 Closing acquis à l'oral, sous réserve de réception des documents. 850 $ CAD/mois, 3 mois, démarrage fin juillet 2026.
 
