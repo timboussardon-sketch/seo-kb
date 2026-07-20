@@ -65,10 +65,25 @@ def rest(method: str, path: str, key: str, body=None):
             time.sleep(3 * (attempt + 1))
 
 
+PASTILLE = '🟢🟡🟠🔵'
+
+
+def strip_badges(text: str) -> str:
+    """Retire les badges de fiabilité, garde les identifiants techniques.
+
+    Les backticks servent à deux choses dans les éditions : les badges
+    (`🟢 Confirmé`) et les identifiants techniques (`Google-GeminiNotebook`,
+    `robots.txt`). Tout supprimer amputait les brèves de leurs noms propres en
+    plein milieu d'une phrase. Seul un span porteur de pastille est un badge.
+    """
+    text = re.sub(rf'`[^`]*[{PASTILLE}][^`]*`\s*(?:—|-)?\s*', '', text)
+    return re.sub(r'`([^`]*)`', r'\1', text)
+
+
 def clean_body(raw: str) -> str:
     """Corps en clair : faits + Limites, sans la ligne Sources, sans markdown."""
     body = re.split(r'\n\*\*Sources?\.\*\*|\n\*Sources?\s*:', raw)[0]
-    body = re.sub(r'`[^`]*`', '', body)                 # tags `🟢 Confirmé` éventuels
+    body = strip_badges(body)                           # tags `🟢 Confirmé` éventuels
     body = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', body)  # liens markdown
     body = body.replace('**', '').replace('*', '')
     return re.sub(r'\s+', ' ', body).strip()

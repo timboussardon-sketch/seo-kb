@@ -61,25 +61,113 @@ def rest(method: str, path: str, key: str, body=None):
                 raise
             time.sleep(3 * (attempt + 1))
 
+PASTILLE = '🟢🟡🟠🔵'
+
+def strip_badges(text: str) -> str:
+    """Retire les badges de fiabilité, garde les identifiants techniques.
+
+    Les backticks portent soit un badge (`🟢 Confirmé`), soit un identifiant
+    technique (`Google-GeminiNotebook`, `robots.txt`). Tout supprimer amputait
+    les brèves de leurs noms propres. Seul un span à pastille est un badge."""
+    text = re.sub(rf'`[^`]*[{PASTILLE}][^`]*`\s*(?:—|-)?\s*', '', text)
+    return re.sub(r'`([^`]*)`', r'\1', text)
+
 def clean_body(raw: str) -> str:
-    """Texte de la brève en clair : sans la ligne Sources, sans markdown."""
-    body = re.split(r'\n\*Sources\s*:', raw)[0]
+    """Texte de la brève en clair : sans la ligne Sources, sans badge, sans markdown."""
+    # « Sources : » (édition longue) ou « Source : » (bloc stat du jour, singulier)
+    body = re.split(r'\*Sources?\s*:', raw)[0]
+    body = strip_badges(body)
     body = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', body)
     body = body.replace('**', '').replace('*', '')
     return re.sub(r'\s+', ' ', body).strip()
 
-def parse_edition(path: Path):
-    """Retourne [(position, titre, body, url, source)] pour une édition."""
-    text = path.read_text(encoding='utf-8')
+def source_of(chunk: str):
+    """(url, nom) de la source d'une brève. Priorité à la ligne Sources ; à
+    défaut le premier lien du chunk (format 3 blocs : `🟢` — *[SEJ](url)*)."""
+    m = re.search(r'\*Sources?\s*:\s*\[([^\]]+)\]\((https?://[^)]+)\)', chunk)
+    if not m:
+        m2 = re.search(r'\[([^\]]+)\]\((https?://[^)]+)\)', chunk)
+        if not m2:
+            return None
+        return m2.group(2), re.sub(r'\s+', ' ', m2.group(1)).strip()
+    return m.group(2), re.sub(r'\s+', ' ', m.group(1)).strip()
+
+def parse_legacy(text: str):
+    """Format historique (jusqu'au 2026-06-29) : titre en `**N. Titre**`."""
     out = []
     for m in re.finditer(r'\*\*(\d+)\.\s+(.+?)\*\*(.*?)(?=\n---|\Z)', text, re.S):
-        pos = int(m.group(1))
-        title = re.sub(r'\s+', ' ', m.group(2)).strip()
-        src = re.search(r'\*Sources\s*:\s*\[([^\]]+)\]\((https?://[^)]+)\)', m.group(3))
+        src = source_of(m.group(3))
         if not src:
             continue
-        out.append((pos, title, clean_body(m.group(3)), src.group(2), src.group(1)))
+        title = re.sub(r'\s+', ' ', m.group(2)).strip()
+        out.append((int(m.group(1)), title, clean_body(m.group(3)), src[0], src[1]))
     return out
+
+def parse_headings(text: str):
+    """Variante ancienne : titre en `### N. Titre` (ex. 2026-06-03)."""
+    out = []
+    for m in re.finditer(r'^###\s+(\d+)\.\s+(.+?)$(.*?)(?=^###\s|^##\s|\Z)', text, re.S | re.M):
+        src = source_of(m.group(3))
+        if not src:
+            continue
+        title = re.sub(r'\s+', ' ', m.group(2)).strip()
+        out.append((int(m.group(1)), title, clean_body(m.group(3)), src[0], src[1]))
+    return out
+
+def parse_3blocs(text: str):
+    """Format 3 blocs (décision Tim, 2026-07-14) : `## 01 · L'info du jour`,
+    `## 02 · La stat du jour`, `## 03 · Les autres infos en bref`.
+
+    Positions : 1 = info du jour, 2 = stat du jour, 3+ = les brèves numérotées.
+    Le titre en gras ouvre la phrase dans le bloc 03, donc le body garde le
+    titre : l'amputer produirait un texte qui commence au milieu d'une phrase."""
+    out = []
+    blocs = {}
+    for m in re.finditer(r'^##\s*0?(\d+)\s*·\s*(.+?)$(.*?)(?=^##\s|\Z)', text, re.S | re.M):
+        blocs[int(m.group(1))] = m.group(3)
+    if not blocs:
+        return []
+
+    if 1 in blocs:
+        chunk = blocs[1]
+        t = re.search(r'\*\*(.+?)\*\*', chunk, re.S)
+        src = source_of(chunk)
+        if t and src:
+            title = re.sub(r'\s+', ' ', t.group(1)).strip()
+            body = clean_body(re.split(r'\*\*.+?\*\*', chunk, maxsplit=1, flags=re.S)[-1])
+            out.append((1, title, body, src[0], src[1]))
+
+    if 2 in blocs:
+        chunk = blocs[2]
+        src = source_of(chunk)
+        body = clean_body(chunk)
+        if src and body:
+            # pas de titre dédié dans ce bloc : la première phrase fait le titre
+            title = re.split(r'(?<=[.!?])\s+', body)[0].strip()
+            out.append((2, title, body, src[0], src[1]))
+
+    if 3 in blocs:
+        items = re.finditer(
+            r'^(\d+)\.\s+\*\*(.+?)\*\*(.*?)(?=^\d+\.\s+\*\*|\Z)',
+            blocs[3], re.S | re.M,
+        )
+        for m in items:
+            src = source_of(m.group(3))
+            if not src:
+                continue
+            title = re.sub(r'\s+', ' ', m.group(2)).strip()
+            body = clean_body(f'**{m.group(2)}**{m.group(3)}')
+            out.append((int(m.group(1)) + 2, title, body, src[0], src[1]))
+    return out
+
+def parse_edition(path: Path):
+    """Retourne [(position, titre, body, url, source)] pour une édition.
+
+    Trois formats coexistent dans breves-IA/ : on tente le 3 blocs, puis le
+    legacy, puis les titres en `###`. Réparer l'un en cassant l'autre
+    republierait un historique vide."""
+    text = path.read_text(encoding='utf-8')
+    return parse_3blocs(text) or parse_legacy(text) or parse_headings(text)
 
 def canonical_by_date():
     """Un seul fichier par jour : le plus complet (plus de brèves), puis le plus
@@ -99,9 +187,25 @@ def canonical_by_date():
             best[date] = (score, path)
     return {d: p for d, (s, p) in best.items()}
 
+def dry_run(backfill: int):
+    """Contrôle du parsing sans réseau ni clé : ce qui SERAIT publié."""
+    canon = canonical_by_date()
+    for date in sorted(canon)[-backfill:]:
+        path = canon[date]
+        items = parse_edition(path)
+        flag = '' if items else '   ← AUCUNE BRÈVE PARSÉE'
+        print(f'\n{date}  ({path.name})  {len(items)} brèves{flag}')
+        for pos, title, body, url, source in items:
+            print(f'  {pos}. {title[:90]}')
+            print(f'     {source} · {url[:80]}')
+            print(f'     {body[:120]}…')
+
 def main():
     backfill = int(sys.argv[sys.argv.index('--backfill') + 1]) if '--backfill' in sys.argv else 1
     force = '--force' in sys.argv
+    if '--dry-run' in sys.argv:
+        dry_run(backfill)
+        return
     key = service_key()
     # « déjà publié » se juge par DATE, pas par nom de fichier : si le fichier
     # canonique d'un jour change (v2 -> v3), republier sous un nouveau stem
