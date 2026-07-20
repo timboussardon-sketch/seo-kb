@@ -1,7 +1,7 @@
-# Sante boucle - agent-synthetic (2026-06-29)
+# Sante boucle - agent-synthetic (2026-07-20)
 
-**Statut : OK**
+**Statut : ESCALATE** - 5 predictions en retard
 
-- Runs loggés : 58
-- Claims : 705 (verifies : 0)
-- Predictions : 132 ouvertes, 0 en retard, 0 resolues
+- Runs loggés : 101
+- Claims : 1103 (verifies : 0)
+- Predictions : 247 ouvertes, 5 en retard, 1 resolues

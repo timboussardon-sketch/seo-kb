@@ -1,7 +1,7 @@
-# Sante boucle - golfiller (2026-06-29)
+# Sante boucle - golfiller (2026-07-20)
 
-**Statut : OK**
+**Statut : WATCH** - 1 prediction(s) en retard
 
 - Runs loggés : 4
 - Claims : 11 (verifies : 0)
-- Predictions : 3 ouvertes, 0 en retard, 0 resolues
+- Predictions : 3 ouvertes, 1 en retard, 0 resolues

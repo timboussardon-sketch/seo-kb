@@ -1,12 +1,14 @@
 {
   "brain": "agent-synthetic",
-  "generated": "2026-06-29",
-  "runs": 58,
-  "claims_total": 705,
+  "generated": "2026-07-20",
+  "runs": 101,
+  "claims_total": 1103,
   "claims_verified": 0,
-  "predictions_open": 132,
-  "predictions_overdue": 0,
-  "predictions_resolved": 0,
-  "status": "OK",
-  "reasons": []
+  "predictions_open": 247,
+  "predictions_overdue": 5,
+  "predictions_resolved": 1,
+  "status": "ESCALATE",
+  "reasons": [
+    "5 predictions en retard"
+  ]
 }
