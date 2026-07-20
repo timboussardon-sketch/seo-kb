@@ -66,3 +66,10 @@ Excellente journée 🙏🏼
 Tim
 organikk.co
 Linkedin
+
+Présentation de mon accompagnement :
+https://organikk.co/presentation-seo
+
+Cas clients :
+- https://organikk.co/cas-clients/golfiller/
+- https://organikk.co/cas-clients/victoria-garden/

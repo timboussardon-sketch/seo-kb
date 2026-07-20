@@ -100,3 +100,6 @@ Deux leviers à croiser :
 - [[fgformation-mots-cles]] — la recherche de mots-clés du projet
 - [[fgformation-mots-cles-decisionnels]] — le tri décisionnel qui alimente les Spokes
 - [[fgformation-modeles-pseo]] — les 2 arbres de modèles de pages pSEO
+- [[fgformation-regles-redaction]] — **à lire avant toute rédaction** : protocole de sources, faits déjà vérifiés en source primaire, écarts ouverts
+- [[fgformation-modele-financement]] — le modèle « une page par financement »
+- [[fgformation-corpus-notation]] — notation des corpus, état des pages existantes
