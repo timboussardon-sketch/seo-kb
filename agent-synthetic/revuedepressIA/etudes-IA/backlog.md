@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-21 · Schema.org et citations IA (2025-2026) : 2,3× de corrélation (Digital Applied) vs zéro gain causal (Ahrefs DiD) — tableau schema × moteur × niveau de preuve (6 études réconciliées), mécanisme corrélation/causalité, effet Google vs non-Google, balisage attribut-complet → `2026-07-21-stats-schema-org-citations-ia.md`
 - 2026-07-20 · LinkedIn dans les citations IA en 2026 : 0,53 % du total mondial vs 11 % sur les requêtes professionnelles — réconciliation des 3 mesures contradictoires (Semrush 325K, Meltwater 9,5M, Semrush 126M), effet de la langue (−75 % hors anglais), absence du top-36 cross-platform → `2026-07-20-stats-linkedin-citations-ia-visibilite-reelle.md`
 - 2026-07-19 · Reddit dans les citations IA en 2026 : 16,6 % sur Perplexity, YouTube premier à 32,4 %, mécanisme num=100 et procès Perplexity — réconciliation des 4 métriques contradictoires, bénéficiaires (YouTube, LinkedIn) et perdants (Quora) → `2026-07-19-stats-reddit-citations-ia-redistribution.md`
 - 2026-07-17 · YouTube dans les moteurs IA : premier domaine cité par Perplexity (32,4 %), paradoxe du chapitre (seul Google lit les timestamps), benchmarks par format et moteur (2025-2026) → `2026-07-17-stats-youtube-citations-ia-transcriptions.md`
@@ -39,7 +40,7 @@
 
 ## À faire (par priorité)
 
-1. **Schema.org et citations IA en 2026 : quel type de balisage a un impact réel ?** — Plusieurs études du vault signalent une contradiction non résolue : DigitalApplied mesure une corrélation 2,3× pour les pages balisées, Ahrefs un effet légèrement négatif (−4,6 % AIO, nul sur ChatGPT), Digital Applied et GEO paper montrent des effets positifs sur les citations. Angle : démêler corrélation vs causalité, segmenter par type de schema (FAQ, HowTo, Article, Review, Product, Organization, BreadcrumbList), identifier lesquels ont un effet mesurable et sur quels moteurs, données 2025-2026. Transformation originale : tableau schema × moteur avec effet chiffré et niveau de preuve.
+(vide — file à réalimenter)
 
 ## Sujets écartés (avec raison)
 (vide)
