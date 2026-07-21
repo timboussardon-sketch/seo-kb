@@ -123,11 +123,21 @@ Actuellement le site pousse « le plus grand réseau, plus efficace, plus flexib
 ## Points à trancher / vérifier avant d'envoyer
 
 - **Prénom de l'interlocutrice** à confirmer (« Marie-Hélène » entendu, incertain).
-- **Prix de la mission** : non abordé au call. Client bien plus gros que les propales habituelles (80 M€, besoin contenu + géoloc + corrections). À caler après le pré-audit, ou à laisser hors du doc à ce stade.
-- Toutes les stats du call (÷5, 74k, 200k, 83 %) sont **à confirmer en GSC** avant de les figer dans un livrable. Doctrine : aucun volume/position/trafic inventé.
+- **Prix de la mission** : non abordé au call. Client bien plus gros que les propales habituelles, besoin contenu + géoloc + corrections. À caler après le pré-audit, ou à laisser hors du doc à ce stade.
+- Toutes les stats du call sont **à confirmer en GSC**. Doctrine : aucun volume/position/trafic inventé.
+
+## Corrections apportées par le pré-audit (data réelle, 2026-07-21)
+
+Vérifié sur stych.fr et les registres publics, à intégrer partout :
+- **Taux de réussite = 86 %** (pratique) et 95 % (code), pas 83 %. + 25 h de moyenne pour réussir (30 % sous la moyenne nationale), 340 € d'économie moyenne. Source : /tarifs et /etude.
+- **CA public ~50 M€ (2024)**, pas 80 M€ (le 80 M€ est peut-être 2025 ou projeté, à confirmer). Société MERCURE FORMATION (ex Auto-école.net, ~10 ans), SIREN 800953564, Paris 75010, ~520 salariés dont ~400 enseignants.
+- **Pages géo = pattern `/lp-nos-points-de-rdv/auto/{région}/{dépt}/{ville}`, ~700 villes, ~50 mots chacune** (coquilles vides). Confirmé ultra-thin sur la page test Versailles. C'est le gisement à reconstruire.
+- **Assurance auto listée sur le site** (+ moto, éco-conduite, vélo, trottinette) : contredit le « pas d'assurance » du call. À clarifier.
+- Sitemap = ~1 050 URL au total, liste plate, sans lastmod.
 
 ---
 
 ## Liens
 
+- [[stych-preaudit]] — le pré-audit complet avec la data réelle (stratégie pSEO, roadmap 90 j)
 - [[stych-accompagnement]] — le deck d'accompagnement joint (façon Yalp)
