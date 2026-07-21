@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+<title>Proposition SEO, Harvestr · organikk.co</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+:root{
+  --page:#dcdcdf;
+  --bg:#f5f5f7;
+  --ink:#1d1d1f;
+  --ink-2:#3a3a3c;
+  --muted:#6e6e73;
+  --muted-2:#8e8e93;
+  --line:rgba(0,0,0,.08);
+  --grad:linear-gradient(120deg,#1B3E8F 0%,#2559DD 48%,#5b86f5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{
+  font-family:'Geist',-apple-system,system-ui,sans-serif;
+  background:var(--page); color:var(--ink);
+  -webkit-font-smoothing:antialiased; letter-spacing:-.012em;
+}
+.mono{font-family:'Geist Mono',ui-monospace,monospace}
+
+.deck{padding:36px 0 90px}
+.slide{
+  width:min(1120px,calc(100vw - 48px)); aspect-ratio:16/9;
+  margin:0 auto 30px; background:var(--bg);
+  border-radius:12px; padding:60px 68px;
+  position:relative; display:flex; flex-direction:column; justify-content:center;
+  overflow:hidden;
+  box-shadow:0 18px 50px -22px rgba(0,0,0,.28);
+}
+.n{position:absolute; bottom:26px; right:34px; font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.16em; color:var(--muted-2)}
+.wm{position:absolute; bottom:26px; left:68px; font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.14em; color:var(--muted-2)}
+
+/* ── couverture ── */
+.cover{
+  background:linear-gradient(120deg,#1B3E8F 0%,#2559DD 48%,#5b86f5 100%) !important;
+  align-items:flex-start; justify-content:center;
+}
+.nb{white-space:nowrap}
+.cover .logo-inline{height:.87em; width:auto; vertical-align:-.15em}
+.end{align-items:center !important; justify-content:center !important}
+.end .logo-big{width:min(46%,420px); height:auto; display:block}
+.cover .kick{
+  font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:.22em;
+  text-transform:uppercase; color:#A8C7FF; margin-bottom:22px;
+}
+.cover .mark{
+  font-size:52px; font-weight:600; letter-spacing:-.04em; color:#fff; line-height:1.1;
+  max-width:20ch;
+}
+.cover .mark span{color:#A8C7FF}
+.cover .sub{margin-top:22px; font-size:16px; line-height:1.6; color:rgba(255,255,255,.82); max-width:56ch}
+.cover .by{
+  margin-top:36px; padding-top:20px; border-top:1px solid rgba(255,255,255,.2);
+  font-size:13px; line-height:1.6; color:rgba(255,255,255,.78);
+}
+.cover .by b{color:#fff; font-weight:600}
+.cover .n{color:rgba(255,255,255,.5)}
+
+.kick-s{
+  font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--muted-2); margin-bottom:14px;
+}
+h1{
+  font-size:42px; line-height:1.1; font-weight:600; letter-spacing:-.035em;
+  background:var(--grad); -webkit-background-clip:text; background-clip:text;
+  color:transparent; max-width:22ch;
+}
+.lede + .lede{margin-top:12px}
+.lede{margin-top:18px; font-size:16px; line-height:1.6; color:var(--muted); max-width:62ch}
+.body{margin-top:46px}
+
+/* ── reveal ── */
+.rv{opacity:0; transform:translateY(14px); transition:opacity .62s cubic-bezier(.22,.8,.3,1), transform .62s cubic-bezier(.22,.8,.3,1)}
+.slide.in .rv{opacity:1; transform:none}
+.slide.in .rv:nth-child(1){transition-delay:.05s}
+.slide.in .rv:nth-child(2){transition-delay:.13s}
+.slide.in .rv:nth-child(3){transition-delay:.21s}
+.slide.in .rv:nth-child(4){transition-delay:.29s}
+
+/* ── chiffres ── */
+.four{display:grid; grid-template-columns:repeat(4,1fr); gap:40px}
+.fig-n{
+  font-size:50px; font-weight:600; letter-spacing:-.045em; line-height:1;
+  background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
+  font-variant-numeric:tabular-nums;
+}
+.fig-n small{font-size:25px}
+.fig-t{margin-top:11px; font-size:14.5px; line-height:1.5; color:var(--ink-2); max-width:26ch}
+.fig-s{margin-top:8px; font-family:'Geist Mono',monospace; font-size:9.5px; line-height:1.5; color:var(--muted-2); max-width:30ch}
+
+/* ── colonnes ── */
+.three{display:grid; grid-template-columns:repeat(3,1fr); gap:44px}
+.pil-k{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#2559DD; margin-bottom:14px}
+.pil-t{font-size:21px; font-weight:600; letter-spacing:-.025em; line-height:1.25; margin-bottom:12px}
+.pil-d{font-size:14.5px; line-height:1.6; color:var(--muted)}
+
+/* ── duo ── */
+.duo{display:grid; grid-template-columns:1fr 1fr; gap:30px}
+.card{
+  background:#fff; border:1px solid rgba(0,0,0,.07); border-radius:14px;
+  padding:26px 28px 24px; display:flex; flex-direction:column;
+  box-shadow:0 10px 30px -18px rgba(12,26,70,.28);
+}
+.card-role{
+  font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted-2); margin-bottom:14px;
+}
+.card ul{list-style:none}
+.card li{
+  font-size:14px; line-height:1.5; color:var(--muted);
+  padding:9px 0 9px 17px; position:relative; border-bottom:1px solid rgba(0,0,0,.05);
+}
+.card li:last-child{border-bottom:0}
+.card li::before{content:''; position:absolute; left:1px; top:16px; width:5px; height:5px; border-radius:50%; background:#2559DD}
+.card.f li::before{background:#FF371C}
+.card li b{color:var(--ink-2); font-weight:600}
+
+/* ── liste mots-clés ── */
+.kw{display:grid; grid-template-columns:repeat(2,1fr); gap:14px 30px}
+.kw-item{
+  background:#fff; border:1px solid rgba(0,0,0,.07); border-radius:11px;
+  padding:16px 20px; display:flex; align-items:baseline; gap:14px;
+  box-shadow:0 8px 24px -18px rgba(12,26,70,.28);
+}
+.kw-n{font-family:'Geist Mono',monospace; font-size:11px; font-weight:500; color:#2559DD; flex:none}
+.kw-t{font-size:14.5px; line-height:1.45; color:var(--ink-2)}
+.kw-t b{font-weight:600; color:var(--ink)}
+
+/* ── roadmap ── */
+.road{display:grid; grid-template-columns:repeat(4,1fr); gap:30px}
+.mo-k{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#2559DD; margin-bottom:12px}
+.mo-t{font-size:17.5px; font-weight:600; letter-spacing:-.025em; margin-bottom:11px; line-height:1.25}
+.mo-d{font-size:13.5px; line-height:1.58; color:var(--muted)}
+
+/* ── prix ── */
+.price{display:grid; grid-template-columns:1fr 380px; gap:44px; align-items:center}
+.price-list{list-style:none}
+.price-list li{
+  font-size:15px; line-height:1.5; color:var(--muted);
+  padding:11px 0 11px 17px; position:relative; border-bottom:1px solid var(--line);
+}
+.price-list li:last-child{border-bottom:0}
+.price-list li::before{content:''; position:absolute; left:1px; top:19px; width:5px; height:5px; border-radius:50%; background:#2559DD}
+.price-list li b{color:var(--ink-2); font-weight:600}
+.price-box{
+  background:linear-gradient(150deg,#1B3E8F 0%,#2559DD 60%,#4685F0 100%);
+  border-radius:18px; padding:40px 36px; color:#fff;
+  box-shadow:0 20px 46px -24px rgba(12,26,70,.5);
+}
+.price-amount{font-size:54px; font-weight:600; letter-spacing:-.045em; line-height:1}
+.price-unit{margin-top:8px; font-size:14px; color:rgba(255,255,255,.8)}
+.price-x{
+  margin-top:20px; padding-top:18px; border-top:1px solid rgba(255,255,255,.22);
+  font-size:12.5px; line-height:1.6; color:rgba(255,255,255,.82);
+}
+
+.rule{height:1px; background:var(--line); margin-top:32px}
+.foot{margin-top:20px; font-size:12.5px; line-height:1.6; color:var(--muted); max-width:88ch}
+.foot b{color:var(--ink-2); font-weight:600}
+.note{margin-top:26px; font-size:11.5px; line-height:1.6; color:var(--muted-2); max-width:92ch}
+
+/* ── slide finale ── */
+.final h1{max-width:24ch}
+.final .steps{margin-top:38px; display:flex; gap:44px}
+.step-k{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#2559DD; margin-bottom:10px}
+.step-t{font-size:15.5px; line-height:1.55; color:var(--ink-2); max-width:28ch}
+.sign{margin-top:44px; padding-top:20px; border-top:1px solid var(--line)}
+.sign-name{font-size:15px; font-weight:600}
+.sign-mail{margin-top:4px; font-family:'Geist Mono',monospace; font-size:12.5px; color:#2559DD}
+
+.nav{
+  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+  display:flex; gap:7px; align-items:center;
+  background:rgba(255,255,255,.9); backdrop-filter:blur(12px);
+  border:1px solid var(--line); border-radius:99px; padding:8px 14px; z-index:20;
+}
+.dot{width:6px; height:6px; border-radius:50%; background:rgba(0,0,0,.16); cursor:pointer; border:0; padding:0}
+.dot.on{background:#2559DD; transform:scale(1.4)}
+
+@media (prefers-reduced-motion: reduce){
+  .rv{opacity:1; transform:none; transition:none}
+}
+
+@media(max-width:860px){
+  .slide{aspect-ratio:auto; padding:34px 24px}
+  .three,.four,.road,.duo,.kw,.price{grid-template-columns:1fr; gap:26px}
+  h1{font-size:28px}
+  .fig-n{font-size:40px}
+  .final .steps{flex-direction:column; gap:24px}
+}
+
+/* Print en DERNIER : Chrome rend le PDF avec une viewport étroite, ce qui
+   déclencherait le bloc mobile ci-dessus. On réimpose le layout desktop. */
+@media print{
+  body{background:#fff}
+  .nav{display:none}
+  .deck{padding:0}
+  @page{size:297mm 167mm; margin:0}
+  .slide{
+    width:297mm !important; height:167mm !important; aspect-ratio:auto;
+    margin:0 !important; border-radius:0; box-shadow:none;
+    padding:60px 68px !important; page-break-after:always; break-after:page;
+  }
+  .rv{opacity:1 !important; transform:none !important; transition:none !important}
+  .three{grid-template-columns:repeat(3,1fr) !important; gap:44px !important}
+  .four{grid-template-columns:repeat(4,1fr) !important; gap:40px !important}
+  .duo{grid-template-columns:1fr 1fr !important; gap:30px !important}
+  .kw{grid-template-columns:repeat(2,1fr) !important; gap:14px 30px !important}
+  .road{grid-template-columns:repeat(4,1fr) !important; gap:30px !important}
+  .price{grid-template-columns:1fr 380px !important; gap:44px !important}
+  .final .steps{flex-direction:row !important; gap:44px !important}
+  h1{font-size:42px !important}
+  .fig-n{font-size:50px !important}
+  /* background-clip:text ne survit pas au rendu PDF : couleur pleine */
+  h1,.fig-n{
+    background:none !important;
+    -webkit-background-clip:border-box !important; background-clip:border-box !important;
+    color:#2559DD !important; -webkit-text-fill-color:#2559DD !important;
+  }
+  .cover .mark{color:#fff !important; -webkit-text-fill-color:#fff !important}
+  .cover .mark span{color:#A8C7FF !important; -webkit-text-fill-color:#A8C7FF !important}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- 0 · COUVERTURE -->
+<section class="slide cover">
+  <div class="rv">
+    <div class="kick">Proposition SEO · Juillet 2026</div>
+    <div class="mark"><svg style="height:.8em;width:auto;vertical-align:-.06em;color:#fff" viewBox="0 0 87 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.0383301 17.2632H3.20731V10.9484C3.20731 9.00539 4.20195 8.17266 5.40477 8.17266C6.81578 8.17266 7.53285 9.07478 7.53285 10.6477V17.2632H10.7481V10.2082C10.7481 7.22428 9.10577 5.46631 6.37628 5.46631C5.0578 5.46631 3.94751 6.04459 3.18418 6.96984V0.377441H0.0383301V17.2632Z" fill="currentColor"/><path d="M17.5996 17.4945C19.1032 17.4945 20.3291 16.87 21.0924 15.9679V17.2632H24.2614V5.69762H21.0924V6.83105C20.3291 6.02146 19.1494 5.46631 17.6459 5.46631C15.0321 5.46631 12.025 7.3862 12.025 11.4804C12.025 15.5515 15.1477 17.4945 17.5996 17.4945ZM18.2242 14.58C16.4662 14.58 15.1246 13.2384 15.1246 11.4573C15.1246 9.67619 16.4662 8.35771 18.2242 8.35771C19.9359 8.35771 21.185 9.74559 21.185 11.4573C21.185 13.169 19.9359 14.58 18.2242 14.58Z" fill="currentColor"/><path d="M25.9932 17.2632H29.1622V11.8043C29.1622 9.65306 29.9024 8.77407 31.5909 8.77407H33.4877V5.69762H32.3311C30.7582 5.69762 29.7173 6.39156 29.139 7.59438V5.69762H25.9932V17.2632Z" fill="currentColor"/><path d="M38.9611 17.2632H42.1532L46.4094 5.69762H43.1941L40.5572 13.2153L37.8508 5.69762H34.5893L38.9611 17.2632Z" fill="currentColor"/><path d="M52.3541 17.4945C54.9217 17.4945 56.749 16.2223 57.7437 14.4181L55.2224 12.9146C54.7135 14.0249 53.6494 14.7188 52.3772 14.7188C50.7118 14.7188 49.6709 13.8861 49.3008 12.6139H58.2294V11.4573C58.2294 8.1264 55.8006 5.46631 52.2616 5.46631C48.9307 5.46631 46.2475 8.14953 46.2475 11.4804C46.2475 14.8113 48.7456 17.4945 52.3541 17.4945ZM52.2847 8.24206C53.6263 8.24206 54.621 8.8666 55.0373 10.0694H49.4396C49.9253 8.98226 50.9431 8.24206 52.2847 8.24206Z" fill="currentColor"/><path d="M64.1416 17.4945C67.4725 17.5408 69.0454 15.3202 69.0454 13.6316C69.0454 11.1335 66.8017 10.4395 64.8587 10.0463C63.1238 9.69932 62.453 9.51427 62.453 9.00539C62.453 8.4965 62.9157 8.05701 63.9566 8.05701C64.9975 8.05701 65.7839 8.56589 66.0846 9.32922L68.8835 8.14953C68.0508 6.53035 66.5704 5.46631 63.9797 5.46631C61.1114 5.42005 59.2378 7.15489 59.2378 9.09791C59.2378 11.573 61.3196 12.29 63.4014 12.6601C64.743 12.9146 65.8765 13.0996 65.8765 13.7242C65.8765 14.2793 65.3213 14.7651 64.2804 14.7651C63.147 14.7651 62.268 14.2562 61.8516 13.1921L58.8214 14.3718C59.6542 16.4074 61.3427 17.4945 64.1416 17.4945Z" fill="currentColor"/><path d="M69.8558 8.54276H71.8219V12.2438C71.8219 16.0141 73.0247 17.2632 76.7026 17.2632H77.1652V14.3024C75.2222 14.3024 74.9909 14.0249 74.9909 12.2206V8.54276H77.1652V5.69762H74.9909V1.25643L71.8219 2.99127V5.69762H69.8558V8.54276Z" fill="currentColor"/><path d="M78.6709 17.2632H81.8399V11.8043C81.8399 9.65306 82.5801 8.77407 84.2687 8.77407H86.1654V5.69762H85.0089C83.4359 5.69762 82.395 6.39156 81.8168 7.59438V5.69762H78.6709V17.2632Z" fill="currentColor"/></svg> a déjà construit la bonne page. Il en manque <span>une dizaine</span>.</div>
+    <p class="sub">Un audit fait à partir de vos seules pages publiques, sans accès à votre Search Console. Voici ce que je vois, et ce que je construirais à votre place.</p>
+    <div class="by">
+      Préparé par <b>Timothée Boussardon</b><br />
+      organikk.co · pour l'équipe Harvestr
+    </div>
+  </div>
+  <div class="n">00</div>
+</section>
+
+<!-- 1 · LE CONSTAT -->
+<section class="slide">
+  <div class="rv">
+    <h1>Vous avez construit la bonne page, puis vous vous êtes arrêtés</h1>
+    <p class="lede">Votre page « productboard alternative » vise exactement la requête d'un acheteur en train de comparer des outils. C'est le bon type de page, décisionnel et pas informationnel, et elle est bien faite.</p>
+    <p class="lede">Le problème, c'est qu'elle est seule. Votre catégorie compte une dizaine d'outils que vos acheteurs comparent à Harvestr, et vous n'avez la page que pour un seul. Pendant ce temps, votre blog court après des questions que ChatGPT et les AI Overviews traitent déjà sans un clic.</p>
+  </div>
+  <div class="body rv">
+    <div class="four">
+      <div>
+        <div class="fig-n">38</div>
+        <div class="fig-t">pages seulement dans votre sitemap principal</div>
+      </div>
+      <div>
+        <div class="fig-n">≈60</div>
+        <div class="fig-t">articles de blog, tous informationnels, dernier publié en février 2024</div>
+      </div>
+      <div>
+        <div class="fig-n">1</div>
+        <div class="fig-t">page de comparaison décisionnelle, et elle fonctionne</div>
+      </div>
+      <div>
+        <div class="fig-n">6</div>
+        <div class="fig-t">pages d'intégration bloquées dans votre propre robots.txt</div>
+      </div>
+    </div>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr · relevé le 21/07/2026</div>
+  <div class="n">01</div>
+</section>
+
+<!-- 2 · CE QUI BLOQUE -->
+<section class="slide">
+  <div class="rv">
+    <h1>Vos problématiques actuelles</h1>
+    <p class="lede">Trois choses vous coûtent des acheteurs aujourd'hui.</p>
+  </div>
+  <div class="body rv">
+    <div class="three">
+      <div>
+        <div class="pil-k">Problématique 01</div>
+        <div class="pil-t">Votre blog nourrit les IA, pas vos ventes</div>
+        <p class="pil-d">Une soixantaine d'articles, tous informationnels : « what is JTBD », « OKRs », « product-led growth ». Le dernier date de février 2024.</p>
+        <p class="pil-d" style="margin-top:10px">Ces requêtes, ChatGPT et les AI Overviews y répondent maintenant sans envoyer de clic. Vous entretenez un canal qui s'évapore.</p>
+      </div>
+      <div>
+        <div class="pil-k">Problématique 02</div>
+        <div class="pil-t">Une seule page décisionnelle, jamais déclinée</div>
+        <p class="pil-d">Votre page « productboard alternative » prouve que le format marche. Mais chaque « canny alternative », « aha alternative », « cycle alternative » est une requête d'acheteur en fin de parcours.</p>
+        <p class="pil-d" style="margin-top:10px">Le pattern qui convertit existe déjà chez vous. Il n'est décliné qu'une fois.</p>
+      </div>
+      <div>
+        <div class="pil-k">Problématique 03</div>
+        <div class="pil-t">Vous bloquez vos propres pages business</div>
+        <p class="pil-d">Six pages d'intégration (Jira, Linear, Notion, GitHub, Figma, Chrome) sont interdites d'indexation dans votre robots.txt, alors qu'elles figurent dans votre sitemap.</p>
+        <p class="pil-d" style="margin-top:10px">« Product feedback tool + Jira » est une requête d'acheteur déjà équipé. Vous empêchez Google de la voir.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr</div>
+  <div class="n">02</div>
+</section>
+
+<!-- 3 · NOTRE APPROCHE -->
+<section class="slide">
+  <div class="rv">
+    <h1>Notre approche tient en trois partis pris</h1>
+    <p class="lede">Le reste en découle.</p>
+  </div>
+  <div class="body rv">
+    <div class="three">
+      <div>
+        <div class="pil-k">01</div>
+        <div class="pil-t">On ne produit que du décisionnel</div>
+        <p class="pil-d">Uniquement les requêtes où l'internaute attend une décision : un comparatif, une intégration, un cas d'usage. L'informationnel, les moteurs génératifs le servent déjà mieux que vous, et sans clic. On ne va pas se battre là-dessus.</p>
+      </div>
+      <div>
+        <div class="pil-k">02</div>
+        <div class="pil-t">Votre data est la matière première</div>
+        <p class="pil-d">Vos cas clients (Agorapulse, Dashdoc, 360Learning), vos arguments face à Productboard, vos données de revenu par feedback. C'est ce qu'aucun modèle ne régénère. Une page bâtie là-dessus ne se copie pas au clavier, et c'est elle que les IA citent.</p>
+      </div>
+      <div>
+        <div class="pil-k">03</div>
+        <div class="pil-t">On n'achète pas de lien, on va les construire</div>
+        <p class="pil-d">Un comparatif produit une fois est décliné sur LinkedIn, Reddit et les communautés produit, là où vos acheteurs lisent et où les moteurs de réponse vont chercher. Un angle différent à chaque fois, pour que les versions ne se concurrencent pas.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr</div>
+  <div class="n">03</div>
+</section>
+
+<!-- 4 · MOTS-CLÉS BUSINESS -->
+<section class="slide">
+  <div class="rv">
+    <h1>Exemple de requêtes business que l'on va attaquer</h1>
+    <p class="lede">Votre catégorie se compare, outil par outil. Chaque nom de concurrent tapé à côté du vôtre est un acheteur en train de choisir.</p>
+  </div>
+  <div class="body rv">
+    <div class="kw">
+      <div class="kw-item"><span class="kw-n">01</span><span class="kw-t"><b>Productboard alternative.</b> Vous l'avez déjà. On la renforce et on la maille au reste.</span></div>
+      <div class="kw-item"><span class="kw-n">02</span><span class="kw-t"><b>Canny alternative.</b> Le comparatif que vos acheteurs font le plus souvent, et vous n'avez pas la page.</span></div>
+      <div class="kw-item"><span class="kw-n">03</span><span class="kw-t"><b>Aha, Cycle, Dovetail alternative.</b> Le même pattern décliné sur chaque nom de la catégorie.</span></div>
+      <div class="kw-item"><span class="kw-n">04</span><span class="kw-t"><b>Customer feedback tool with Jira integration.</b> L'acheteur qui a déjà sa stack et veut savoir si ça se branche.</span></div>
+      <div class="kw-item"><span class="kw-n">05</span><span class="kw-t"><b>Feedback management for customer success teams.</b> Votre positionnement, sans page dédiée.</span></div>
+      <div class="kw-item"><span class="kw-n">06</span><span class="kw-t"><b>Best product feedback tool for B2B SaaS.</b> La question posée à une IA, et vos cas clients vous y font citer.</span></div>
+    </div>
+    <p class="note">Ce sont des pistes, pas la liste définitive. On la fige au cadrage, votre Search Console en main, en croisant les requêtes qui vous amènent déjà des démos et les concurrents sur lesquels la preuve existe. « Product management » générique n'en fera pas partie : trop large, mangé par l'IA, et ça attire surtout des curieux.</p>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr</div>
+  <div class="n">04</div>
+</section>
+
+<!-- 5 · L'AGENT SEO HARVESTR -->
+<section class="slide">
+  <div class="rv">
+    <h1>On construit votre agent SEO pendant qu'on produit</h1>
+    <p class="lede">Vous êtes une équipe tech : Claude Code tourne sans doute déjà sur votre repo. Ce qui lui manque, c'est le contexte de Harvestr. On le lui donne, et il devient votre agent SEO.</p>
+  </div>
+  <div class="body rv">
+    <div class="duo">
+      <div class="card">
+        <div class="card-role">Ce qu'on met dedans</div>
+        <ul>
+          <li>Vos cas clients et les secteurs où vous gagnez face à Productboard.</li>
+          <li>Votre positionnement, vos personas, les objections que vous levez en vente.</li>
+          <li>Vos modèles de page (comparatif, intégration, cas d'usage) et votre ton.</li>
+          <li>Ma doctrine et mes sources, pour que vous puissiez challenger mes recommandations.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-role">Ce qu'il fait ensuite</div>
+        <ul>
+          <li>Il produit les comparatifs et pages d'intégration suivants à partir des modèles validés.</li>
+          <li>Il surveille votre Search Console : indexation, cannibalisation, positions.</li>
+          <li>Il reste sur votre repo, connecté à votre Claude, et il est à vous.</li>
+          <li>C'est lui qui produit et surveille quand je ne suis plus là.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr</div>
+  <div class="n">05</div>
+</section>
+
+<!-- 6 · LA ROADMAP -->
+<section class="slide">
+  <div class="rv">
+    <h1>La roadmap</h1>
+    <p class="lede">Trois mois pour poser la machine, trois de plus pour la pousser. Ensuite, elle tourne sans moi.</p>
+  </div>
+  <div class="body rv">
+    <div class="road">
+      <div>
+        <div class="mo-k">Mois 1</div>
+        <div class="mo-t">Stratégie</div>
+        <p class="mo-d">Audit complet, puis on sort les requêtes décisionnelles de votre catégorie et de votre data plutôt que d'un outil. On repart avec les 5 à 10 requêtes business qu'on tient et la carte des pages à produire.</p>
+      </div>
+      <div>
+        <div class="mo-k">Mois 2</div>
+        <div class="mo-t">Mise en production et agent SEO</div>
+        <p class="mo-d">Les premiers comparatifs partent en ligne et on débloque vos pages d'intégration. En parallèle, on construit l'agent SEO Harvestr sur votre data : c'est lui qui produira quand je ne serai plus là.</p>
+      </div>
+      <div>
+        <div class="mo-k">Mois 3</div>
+        <div class="mo-t">Mise en production et optimisation</div>
+        <p class="mo-d">On continue de produire et on optimise l'existant plutôt que d'empiler des pages. À la fin du mois, on mesure les demandes de démo et on décide : autonomie avec l'agent, ou prolongation.</p>
+      </div>
+      <div>
+        <div class="mo-k">Mois 3 à 6</div>
+        <div class="mo-t">Optimisation, production et CRO</div>
+        <p class="mo-d">La production continue sur les concurrents et intégrations suivants, l'existant s'optimise, et on travaille le taux de conversion des pages : ce qui décide un visiteur à demander une démo plutôt qu'à repartir.</p>
+      </div>
+    </div>
+    <p class="note">Rythme de production : 10 à 15 pages par mois, soit 45 à 50 à trois mois. Ce qu'on attend de vous : votre data (cas clients, arguments de vente, positionnement) et la description de vos process. C'est la seule chose sur laquelle je ne peux pas me substituer à vous.</p>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr</div>
+  <div class="n">06</div>
+</section>
+
+<!-- 7 · RÉSULTATS -->
+<section class="slide">
+  <div class="rv">
+    <h1>Nos KPIs durant la mission</h1>
+    <p class="lede">L'objectif est d'amener quelques requêtes décisionnelles vraiment importantes jusqu'au Top 3, plutôt que d'accumuler des positions moyennes.</p>
+  </div>
+  <div class="body rv">
+    <div class="three">
+      <div>
+        <div class="pil-k">La métrique</div>
+        <div class="pil-t">Les demandes de démo</div>
+        <p class="pil-d">Pas le trafic, pas les impressions. Ce que je suis, ce sont les démos et les inscriptions qui arrivent par le SEO.</p>
+      </div>
+      <div>
+        <div class="pil-k">La cible</div>
+        <div class="pil-t">Vos comparatifs au Top 3</div>
+        <p class="pil-d">Sur « [concurrent] alternative » et vos intégrations clés, là où l'acheteur choisit. Quelques requêtes gagnées valent mieux que des dizaines de positions moyennes.</p>
+      </div>
+      <div>
+        <div class="pil-k">L'équation</div>
+        <div class="pil-t">Une catégorie qui se compare</div>
+        <p class="pil-d">Chaque concurrent nommé égale une page, égale un acheteur capté au moment du choix. Le pattern se décline autant qu'il y a de concurrents.</p>
+      </div>
+    </div>
+    <p class="note">Je préfère rester prudent sur les chiffres tant que je n'ai pas analysé votre Search Console. C'est justement le premier objectif du cadrage : remplacer les hypothèses par des données réelles.</p>
+  </div>
+  <div class="wm">organikk.co &amp; Harvestr</div>
+  <div class="n">07</div>
+</section>
+
+<!-- 8 · LOGO -->
+<section class="slide cover end">
+  <div class="rv" style="display:flex;align-items:center;gap:22px;justify-content:center">
+    <svg style="height:104px;width:104px;color:#A8C7FF" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="currentColor"/><g clip-path="url(#clip0_801_3573)"><path class="shape" d="M5.78945 14.1102L4.10318 11.1806C4.02974 11.0532 4.02974 10.8962 4.10318 10.7687L7.6034 4.68756C7.76158 4.41274 8.15674 4.41274 8.31491 4.68756L10.0012 7.61735C10.0746 7.74485 10.0746 7.90181 10.0012 8.0293L6.50096 14.1102C6.34279 14.385 5.94763 14.385 5.78945 14.1102Z" fill="white"/><path class="shape" d="M15.664 19.2757L13.9777 16.3459C13.9042 16.2184 13.9042 16.0614 13.9777 15.9339L17.4779 9.85309C17.6361 9.57827 18.0312 9.57827 18.1894 9.85309L19.8757 12.7829C19.9491 12.9104 19.9491 13.0673 19.8757 13.1948L16.3755 19.2757C16.2173 19.5505 15.8221 19.5505 15.664 19.2757Z" fill="white"/><path class="shape" d="M13.6904 12.8001H9.60633C9.45945 12.8001 9.32387 12.8786 9.25071 13.0061L6.52442 17.7426C6.36625 18.0174 6.56397 18.3605 6.88004 18.3605H10.2526C10.3995 18.3605 10.5351 18.282 10.6082 18.1545L13.6904 12.7998V12.8001Z" fill="white"/><path class="shape" d="M17.1175 5.59277H13.7449C13.5981 5.59277 13.4625 5.67125 13.3893 5.79875L10.3071 11.1535H14.3912C14.5381 11.1535 14.6737 11.075 14.7468 10.9475L17.4734 6.21069C17.6316 5.93587 17.4338 5.59277 17.1178 5.59277H17.1175Z" fill="white"/></g><defs><clipPath id="clip0_801_3573"><rect width="15.8824" height="15" fill="white" transform="translate(4.0481 4.48193)"/></clipPath></defs></svg>
+    <svg style="height:58px;width:auto;color:#fff" viewBox="0 0 87 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.0383301 17.2632H3.20731V10.9484C3.20731 9.00539 4.20195 8.17266 5.40477 8.17266C6.81578 8.17266 7.53285 9.07478 7.53285 10.6477V17.2632H10.7481V10.2082C10.7481 7.22428 9.10577 5.46631 6.37628 5.46631C5.0578 5.46631 3.94751 6.04459 3.18418 6.96984V0.377441H0.0383301V17.2632Z" fill="currentColor"/><path d="M17.5996 17.4945C19.1032 17.4945 20.3291 16.87 21.0924 15.9679V17.2632H24.2614V5.69762H21.0924V6.83105C20.3291 6.02146 19.1494 5.46631 17.6459 5.46631C15.0321 5.46631 12.025 7.3862 12.025 11.4804C12.025 15.5515 15.1477 17.4945 17.5996 17.4945ZM18.2242 14.58C16.4662 14.58 15.1246 13.2384 15.1246 11.4573C15.1246 9.67619 16.4662 8.35771 18.2242 8.35771C19.9359 8.35771 21.185 9.74559 21.185 11.4573C21.185 13.169 19.9359 14.58 18.2242 14.58Z" fill="currentColor"/><path d="M25.9932 17.2632H29.1622V11.8043C29.1622 9.65306 29.9024 8.77407 31.5909 8.77407H33.4877V5.69762H32.3311C30.7582 5.69762 29.7173 6.39156 29.139 7.59438V5.69762H25.9932V17.2632Z" fill="currentColor"/><path d="M38.9611 17.2632H42.1532L46.4094 5.69762H43.1941L40.5572 13.2153L37.8508 5.69762H34.5893L38.9611 17.2632Z" fill="currentColor"/><path d="M52.3541 17.4945C54.9217 17.4945 56.749 16.2223 57.7437 14.4181L55.2224 12.9146C54.7135 14.0249 53.6494 14.7188 52.3772 14.7188C50.7118 14.7188 49.6709 13.8861 49.3008 12.6139H58.2294V11.4573C58.2294 8.1264 55.8006 5.46631 52.2616 5.46631C48.9307 5.46631 46.2475 8.14953 46.2475 11.4804C46.2475 14.8113 48.7456 17.4945 52.3541 17.4945ZM52.2847 8.24206C53.6263 8.24206 54.621 8.8666 55.0373 10.0694H49.4396C49.9253 8.98226 50.9431 8.24206 52.2847 8.24206Z" fill="currentColor"/><path d="M64.1416 17.4945C67.4725 17.5408 69.0454 15.3202 69.0454 13.6316C69.0454 11.1335 66.8017 10.4395 64.8587 10.0463C63.1238 9.69932 62.453 9.51427 62.453 9.00539C62.453 8.4965 62.9157 8.05701 63.9566 8.05701C64.9975 8.05701 65.7839 8.56589 66.0846 9.32922L68.8835 8.14953C68.0508 6.53035 66.5704 5.46631 63.9797 5.46631C61.1114 5.42005 59.2378 7.15489 59.2378 9.09791C59.2378 11.573 61.3196 12.29 63.4014 12.6601C64.743 12.9146 65.8765 13.0996 65.8765 13.7242C65.8765 14.2793 65.3213 14.7651 64.2804 14.7651C63.147 14.7651 62.268 14.2562 61.8516 13.1921L58.8214 14.3718C59.6542 16.4074 61.3427 17.4945 64.1416 17.4945Z" fill="currentColor"/><path d="M69.8558 8.54276H71.8219V12.2438C71.8219 16.0141 73.0247 17.2632 76.7026 17.2632H77.1652V14.3024C75.2222 14.3024 74.9909 14.0249 74.9909 12.2206V8.54276H77.1652V5.69762H74.9909V1.25643L71.8219 2.99127V5.69762H69.8558V8.54276Z" fill="currentColor"/><path d="M78.6709 17.2632H81.8399V11.8043C81.8399 9.65306 82.5801 8.77407 84.2687 8.77407H86.1654V5.69762H85.0089C83.4359 5.69762 82.395 6.39156 81.8168 7.59438V5.69762H78.6709V17.2632Z" fill="currentColor"/></svg>
+  </div>
+  <div class="n">08</div>
+</section>
+
+</div>
+
+<nav class="nav" id="nav"></nav>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var nav = document.getElementById('nav');
+
+  slides.forEach(function(s, i){
+    var b = document.createElement('button');
+    b.className = 'dot';
+    b.setAttribute('aria-label', 'Slide ' + i);
+    b.addEventListener('click', function(){ s.scrollIntoView({behavior:'smooth', block:'center'}); });
+    nav.appendChild(b);
+  });
+  var dots = Array.prototype.slice.call(nav.children);
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        var i = slides.indexOf(e.target);
+        dots.forEach(function(d, j){ d.classList.toggle('on', j === i); });
+      }
+    });
+  }, {threshold:.45});
+  slides.forEach(function(s){ io.observe(s); });
+
+  document.addEventListener('keydown', function(e){
+    var i = dots.findIndex(function(d){ return d.classList.contains('on'); });
+    if (i < 0) i = 0;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
+      e.preventDefault();
+      if (slides[i+1]) slides[i+1].scrollIntoView({behavior:'smooth', block:'center'});
+    }
+    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      if (slides[i-1]) slides[i-1].scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  });
+})();
+</script>
+</body>
+</html>
