@@ -1278,3 +1278,27 @@ Note globale : 3.7 / 5 (média des 6 axes convertis en 5).
 **Ce qui a marché.** L'exercice de décomposer une analyse propriétaire d'auteur reconnu en volets à preuve différenciée (Google documenté / Bing documenté / ChatGPT opaque / native model weights spéculatif) évite deux pièges classiques : (1) prendre l'article Forrester comme parole d'évangile mono-source, (2) le disqualifier comme opinion parce qu'il n'y a pas de figures. La corroboration primaire tient sur les deux volets documentés. Le troisième est publié en clair comme opaque, avec citation de Forrester sur son propre doute. Le quatrième est marqué hypothèse.
 
 **Ce qui aurait pu être mieux.** Une source FR de référence (Abondance, Frenchweb) n'a pas été consultée alors qu'un relais francophone sur le fingerprint aurait renforcé le recoupement. À rattraper la prochaine fois.
+
+
+## 2026-07-22 (édition cloud)
+
+Pilier retenu : GEO / mesure. Info du jour Semrush + Kevin Indig, étude longitudinale 1 094 catégories US 50 000 marques dans ChatGPT janvier-juin 2026 (blog.semrush.com 20 juillet + SEL 482901 21 juillet + Growth Memo 20 juillet).
+
+| Axe | Note | Détail |
+|---|---|---|
+| `source_diversity` | 12 | semrush.com (primaire) + SEL Danny Goodwin 482901 (reprise trade) + Growth Memo Kevin Indig (interprétation co-auteur) + blog.google (primaire B1) + SEL Barry Schwartz 482893 (B1) + 9to5google (B1) + cryptobriefing (B1) + SEJ Matt Southern 582976 (B2) + SEJ Brooke Osmundson 582816 (B3) + support.google.com/google-ads/answer/17213585 (primaire B3) + seroundtable 41717 (B3) + optimixed daily recap 21 juillet. |
+| `claim_density` | 22 verified info du jour + 8 B1 + 7 B2 + 8 B3 = 45 | Info du jour porte C-1 à C-7 principaux. B1 porte C-B1-1. B2 porte C-B2-1. B3 porte C-B3-1. Détail claims.jsonl 2026-07-22. |
+| `novelty_score` | 4 | Étude de scale trois ordres de grandeur au-dessus des précédentes GEO cross-engine (12 marques Franco, 50 marques Zatuchin, 50 000 marques Semrush+Indig). Longitudinale six mois vs snapshots précédents. Trois findings distinctifs jamais publiés à ce niveau de granularité : 15,2 % owner + SEO trad ~50 % prédictif + 90,4 % stabilité + décorrélation mention-citation r=-0,229. |
+| `doctrine_fit` | 5 | 4 concepts articulés avec rôle distinct : metriques-visibilite-geo (dimension propriété thématique cross-prompt) + entites-vectorielles (mention textuelle vs citation) + agentic-search (lecture agentique 5 questions consécutives) + tabou-visibilite (score ownership pas leads). |
+| `redite_risk` | faible-moyen | 3e étude cross-engine mesure en 3 jours (Vishwakarma 07-20 morning + DC360 07-21 morning + Franco+Zatuchin 07-21 v2 + Semrush+Indig 07-22). Angle distinct : topic-level ownership durability sur 6 mois, non traité par les 3 précédentes. Passage GEO malgré directive « ne pas ré-enchaîner » assumé et justifié dans notes_agent_10 du run. |
+| `clickbait_risk` | faible | Titre « 15 % des sujets ChatGPT ont un propriétaire, et le SEO classique ne l'explique qu'à moitié » = chiffre + observation contre-intuitive + limite explicite. Prouve qu'on a creusé. |
+
+Note globale : 3.6 / 5.
+
+**Ce qui a marché.** Pipeline recoupement à trois sources (Semrush primaire + SEL Goodwin trade + Growth Memo Indig interprétation) permet de séparer clairement les chiffres qui viennent du dataset brut (15,2 % / 55,7 % / 90,4 % dans les trois sources) des chiffres d'interprétation qui viennent uniquement de Kevin Indig (89,3 % de la demande / 61,6 % Retail / r=-0,229 corrélation). Cette séparation est rendue explicite dans le corps du draft, ce qui prévient l'amalgame « Semrush a mesuré 89 % ».
+
+**Ce qui aurait pu être mieux.** Pas d'ouverture d'un vertical FR ni de test sur Perplexity/Gemini/Claude (l'étude reste ChatGPT only). L'angle B2 (SEJ 29 % ads AI Mode) reste sur des données SE Ranking déjà rappelées dans said_index (0716 + 0720 v2 morning), l'apport neuf est l'analyse de non-recouvrement 2 % paid/organic et la variance sectorielle 72 % Pets / 2 % Healthcare — apport substantiel mais brève d'agrégation, pas de nouveau dataset.
+
+### Discipline anti-pattern IA respectée
+
+Grep tiret cadratim `—` intra-texte = 0 après correction ligne 25 (« et ce qu'il ne prédit pas » remplacé par virgule). Seuls les 5 tirets structurels restent (title, heading Info du jour, 3 headings B1/B2/B3). Zéro mot banni sur crucial, pivotal, groundbreaking, comprehensive, paysage, explorons, révolutionnaire, majeur, incontournable, synergie, leverage, disrupter, décrypter, il est important, dans un monde, game-changer, innovant, robuste. Zéro métaphore résiduelle sur rail, cascade, vague, tsunami, boussole, fusée, bataille, passer-à-la-caisse, ouvrir-la-voie, poser-les-bases, goutte-d-eau, miette, carburant, arme, terrain-de-jeu. Vouvoiement maintenu (une occurrence « ne vous rend pas propriétaire » dans le corps). Aucun émoji. Aucune personnification (Semrush, Kevin Indig, Google, Robby Stein, Barry Schwartz, Matt Southern, Brooke Osmundson : verbes littéraux publie, signe, reprend, précise, annonce, documente, positionne). Aucune ouverture méta-rhétorique. Pas de conclusion redondante (séparateur `---` et signature « Draft SyntheticBrain. Rien n'a été envoyé. »). Correction post-rédaction : typo « La rappel » → « Le rappel » ligne 67.
