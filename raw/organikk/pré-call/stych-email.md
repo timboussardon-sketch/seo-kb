@@ -11,36 +11,61 @@ tags: [acquisition, email, stych, propale]
 
 # Email d'envoi, Stych (brouillon, NE PAS envoyer sans validation)
 
-> Destinataire : responsable SEO de Stych (prénom à confirmer, « Marie-Hélène » entendu au call, incertain). Adresse pro Stych déjà créée. Vouvoiement.
+> Destinataire : Marie-Hélène, responsable SEO de Stych. Adresse pro Stych déjà créée. Tutoiement (choix de Tim). Calqué sur le gabarit d'email Yalp/Baptiste.
 
-**Objet :** Stych, votre pré-audit SEO et le plan de travail
+**Objet :** Stych, ton pré-audit et ma proposition d'accompagnement
 
 ---
 
-Bonjour [Prénom],
+Bonjour Marie-Hélène,
 
-Merci pour l'échange de mardi. Comme convenu, voici de quoi juger concrètement ce que je ferais sur Stych, pas de la théorie.
+J'espère que tu vas bien.
 
-Deux documents :
+Je reviens vers toi, comme convenu.
 
-**Le pré-audit** relève l'état réel du site à partir de vos pages publiques. La conclusion tient en une ligne : l'agence précédente a déployé près de 7 500 pages locales et décisionnelles, puis les a laissées vides. 3 564 pages « auto-école + ville » à cinquante mots chacune, et même vos pages « permis accéléré » ou « permis pas cher » par ville sont des gabarits répétés sans donnée locale (au point qu'une faute de frappe, « à rrmoindre coût », se retrouve sur 274 d'entre elles). Le modèle est là, la matière manque. C'est probablement ce qui a chuté depuis février, et c'est le levier le plus rentable à reprendre avant votre pic de novembre.
-→ https://organikk.co/stych-pre-audit/
+Je te joins ci-dessous ma proposition d'accompagnement pour Stych, avec le pré-audit du site.
 
-**Le document d'accompagnement** montre comment je travaillerais avec vous : l'approche, des exemples de requêtes business qu'on irait chercher, la roadmap de septembre à novembre, et le périmètre.
-→ https://organikk.co/stych-accompagnement/
+Les objectifs sur les 3 prochains mois :
 
-Un point que je n'ai pas inventé et que je ne cache pas : tous les chiffres de trafic restent à confirmer dans votre Search Console. C'est justement le premier objectif du cadrage, remplacer les hypothèses par vos données réelles.
+Diagnostiquer la chute de trafic depuis le 11 février et remettre d'aplomb tes pages locales.
 
-La suite que je propose : on se cale un point, votre Search Console ouverte, pour figer les mots-clés prioritaires et le périmètre sur vos vrais chiffres. Vous validez ensuite avec votre CEO. L'idée est d'être opérationnels avant novembre.
+Remplir tes 3 564 pages de villes, aujourd'hui à cinquante mots chacune, avec ta vraie data locale (taux de réussite officiels par département, points de rendez-vous, délais d'examen).
 
-Prenez le temps de regarder, et dites-moi oui ou non franchement, ça me va dans les deux cas.
+Créer les deux modèles décisionnels qui manquent par ville : la boîte automatique et la conduite accompagnée.
 
-Timothée Boussardon
-organikk.co
+Remonter tes meilleurs arguments (86 % de réussite, 25 h en moyenne pour réussir) en tête des pages où la décision se prend.
+
+Te positionner sur tes mots-clés business locaux et décisionnels, avant ton pic de novembre.
+
+Créer l'agent SEO de Stych, connecté à ton environnement, qui produit et surveille ensuite.
+
+Travailler la conversion du code gratuit vers les heures de conduite.
+
+Te rendre autonome sur la direction SEO, pas seulement sur la production.
+
+Important : tu n'es jamais engagée et tu peux arrêter la prestation d'un mois sur l'autre, sans préavis.
+
 
 Présentation de mon accompagnement :
 https://organikk.co/presentation-seo
 
+Pré-audit de stych.fr :
+https://organikk.co/stych-pre-audit/
+
+Ma proposition pour Stych :
+https://organikk.co/stych-accompagnement/
+
 Cas clients :
 - https://organikk.co/cas-clients/golfiller/
 - https://organikk.co/cas-clients/victoria-garden/
+
+(je ne suis pas une agence, c'est surtout de l'accompagnement, les cas clients ci-dessus sont plus parlants)
+
+
+Petite précision : si on travaille ensemble, c'est moi qui serai sur ton projet.
+
+Fais-moi un retour,
+Excellente journée
+
+Timothée Boussardon
+organikk.co
