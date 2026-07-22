@@ -40,7 +40,9 @@
 
 ## À faire (par priorité)
 
-(vide — file à réalimenter)
+1. **X (ex-Twitter) dans les citations IA 2025-2026** : part de voix par moteur IA (Perplexity, ChatGPT Search, AI Overviews), types de posts cités (threads, citations, infographies), impact des accords de données entre Twitter/xAI et Grok, comparaison avec la chute Reddit — données SE Ranking, Ahrefs Brand Radar, Profound — angle inédit : Reddit a perdu 86 % en 18 mois sur Perplexity, X a-t-il absorbé une partie de ce trafic ?
+2. **Trafic référent des moteurs IA en GA4 2025-2026** : volume de sessions depuis ChatGPT Search, Perplexity, Gemini, Claude.ai vs trafic organique Google, par secteur (media, e-commerce, B2B SaaS, santé) — sources : Adobe Analytics, Cloudflare Radar, études agences (Amsive, Seer, Goodie) — angle : comment mesurer le ROI réel d'une stratégie GEO depuis GA4, et combien vaut une citation IA en termes de sessions effectives ?
+3. **Podcasts et contenus audio dans les citations IA 2025-2026** : part des transcriptions de podcasts (Spotify, Apple Podcasts, YouTube audio) dans les sources citées par les LLMs, impact des transcriptions automatiques sur l'indexabilité, comparaison taux de citation texte vs audio — angle quasi inédit : le contenu audio est désormais crawlé via sa transcription, mais les études existantes ignorent ce vecteur (aucune des 33 études produites ne le couvre).
 
 ## Sujets écartés (avec raison)
 (vide)
