@@ -294,6 +294,8 @@
       "agent-synthetic/revuedepressIA/2026-07-16-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -600,6 +602,7 @@
       "agent-synthetic/memory/wording_rules.md",
       "agent-synthetic/revuedepressIA/2026-06-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-13-revue-presse.md",
       "content-brain/_template/memory/score-grid.md",
       "content-brain/_template/memory/wording_rules.md",
@@ -712,6 +715,7 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-02-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
       "raw/bootcamp4/session-1-mots-cles-transcript.md",
@@ -1455,6 +1459,7 @@
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-16-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -2055,6 +2060,7 @@
       "cartographie-entites-vectorielles"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
       "qadence/drive-qadence/11-mon-article-ne-ressort-pas.md",
       "qadence/drive-qadence/12-quels-mots-cles-ajouter-a-ma-page.md",
@@ -2241,6 +2247,7 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-11-revue-presse.md",
       "raw/agents/qadence-seo-agent/README.md",
@@ -2982,6 +2989,7 @@
     ],
     "backrefs": [
       "agent-synthetic/memory/notation.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-04-revue-presse.md",
       "qadence/drive-qadence/06-passer-en-premiere-page-google.md",
       "qadence/drive-qadence/10-page-non-indexee-google.md",
@@ -3950,6 +3958,8 @@
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -4987,6 +4997,7 @@
       "preuve"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-workflow-article.md",
@@ -6253,6 +6264,7 @@
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -6574,6 +6586,8 @@
       "agent-synthetic/revuedepressIA/2026-07-16-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
