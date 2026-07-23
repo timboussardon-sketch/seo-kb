@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+<title>Audit SEO pré-call, KQUEO · organikk.co</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+:root{
+  --bg:#f5f5f7;
+  --card:#ffffff;
+  --ink:#1d1d1f;
+  --ink-2:#3a3a3c;
+  --muted:#6e6e73;
+  --muted-2:#8e8e93;
+  --line:rgba(0,0,0,.09);
+  --blue:#2559DD;
+  --blue-d:#1B3E8F;
+  --grad:linear-gradient(120deg,#1B3E8F 0%,#2559DD 52%,#5b86f5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{
+  font-family:'Geist',-apple-system,system-ui,sans-serif;
+  background:var(--bg); color:var(--ink);
+  -webkit-font-smoothing:antialiased; letter-spacing:-.011em; line-height:1.6;
+}
+.mono{font-family:'Geist Mono',ui-monospace,monospace}
+.wrap{max-width:840px; margin:0 auto; padding:60px 40px 90px}
+
+/* ── en-tête ── */
+.head{border-bottom:1px solid var(--line); padding-bottom:30px; margin-bottom:12px}
+h1{font-size:35px; line-height:1.14; font-weight:600; letter-spacing:-.035em; max-width:22ch;
+   background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+.head .sub{margin-top:16px; font-size:16px; color:var(--muted); max-width:64ch}
+.meta{margin-top:22px; font-size:13px; line-height:1.7; color:var(--muted)}
+.meta b{color:var(--ink-2); font-weight:600}
+
+/* ── sections ── */
+section{margin-top:44px}
+h2{font-size:24px; font-weight:600; letter-spacing:-.028em; color:var(--ink); margin-bottom:16px; line-height:1.2}
+h3{font-size:16px; font-weight:600; color:var(--ink); margin:24px 0 7px; letter-spacing:-.015em}
+p{font-size:15px; color:var(--ink-2); max-width:72ch}
+p + p{margin-top:12px}
+
+/* ── résumé ── */
+.resume{background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:26px 30px; box-shadow:0 12px 34px -22px rgba(12,26,70,.30)}
+.resume p{font-size:15.5px; color:var(--ink-2)}
+.resume p:first-child{font-weight:500; color:var(--ink)}
+
+/* ── stats ── */
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:22px; margin:22px 0 8px}
+.stat{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 18px}
+.stat .n{font-size:34px; font-weight:600; letter-spacing:-.04em; line-height:1; color:var(--blue); font-variant-numeric:tabular-nums}
+.stat .n small{font-size:19px}
+.stat .t{margin-top:9px; font-size:12.5px; line-height:1.45; color:var(--muted)}
+
+/* ── listes ── */
+ul.clean{list-style:none; margin-top:8px}
+ul.clean li{font-size:15px; color:var(--ink-2); padding:8px 0 8px 20px; position:relative; border-bottom:1px solid rgba(0,0,0,.05); max-width:74ch}
+ul.clean li:last-child{border-bottom:0}
+ul.clean li::before{content:''; position:absolute; left:2px; top:15px; width:5px; height:5px; border-radius:50%; background:var(--blue)}
+ul.clean li b{color:var(--ink); font-weight:600}
+code{font-family:'Geist Mono',monospace; font-size:.88em; color:var(--blue-d); background:#eef2fb; padding:1px 5px; border-radius:4px}
+
+/* ── tableau modèles ── */
+.tbl-wrap{margin-top:16px; border:1px solid var(--line); border-radius:12px; overflow:hidden}
+table{border-collapse:collapse; width:100%; font-size:13.5px; table-layout:fixed}
+thead th{background:#eef2fb; color:var(--blue-d); text-align:left; font-weight:600; font-size:12.5px;
+  padding:12px 13px; letter-spacing:-.01em; border-bottom:1px solid var(--line)}
+thead th:nth-child(1){width:23%}
+thead th:nth-child(2){width:20%}
+thead th:nth-child(3){width:13%}
+thead th:nth-child(4){width:22%}
+thead th:nth-child(5){width:22%}
+tbody td{padding:13px 13px; border-top:1px solid var(--line); color:var(--ink-2); vertical-align:top; line-height:1.45; word-wrap:break-word; overflow-wrap:break-word}
+tbody tr:nth-child(even){background:#fafafb}
+td.mdl{font-weight:600; color:var(--ink)}
+td .pat{font-family:'Geist Mono',monospace; font-size:11.5px; color:var(--blue-d)}
+.ok{color:#1a7f47; font-weight:600}
+.no{color:#b0341d; font-weight:600}
+.note-tbl{margin-top:14px; font-size:13px; color:var(--muted); max-width:74ch}
+
+/* ── roadmap ── */
+.phase{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 26px; margin-top:14px;
+  box-shadow:0 10px 30px -24px rgba(12,26,70,.28); display:grid; grid-template-columns:96px 1fr; gap:22px; align-items:start}
+.phase .ph-k{font-size:13.5px; font-weight:600; color:var(--blue); padding-top:2px}
+.phase .ph-t{font-size:16.5px; font-weight:600; letter-spacing:-.02em; margin-bottom:7px}
+.phase .ph-d{font-size:14px; color:var(--muted); line-height:1.55; max-width:64ch}
+.rhythm{margin-top:16px; font-size:13px; color:var(--muted); background:#eef2fb; border-radius:10px; padding:15px 18px; max-width:74ch}
+.rhythm b{color:var(--ink-2)}
+.anchor{margin-top:10px; font-size:12px; color:var(--muted-2)}
+
+/* ── à récupérer ── */
+.call-box{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px 28px}
+.foot{margin-top:52px; padding-top:22px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); line-height:1.7}
+
+@media(max-width:720px){
+  .wrap{padding:40px 20px 70px}
+  .stats{grid-template-columns:1fr 1fr; gap:14px}
+  .phase{grid-template-columns:1fr; gap:8px}
+  h1{font-size:28px}
+}
+@media print{
+  body{background:#fff}
+  .wrap{max-width:none; padding:0}
+  @page{size:A4; margin:15mm 14mm}
+  section{margin-top:26px}
+  .phase,.resume,.call-box{break-inside:avoid}
+  table{font-size:11px}
+  thead th{padding:8px 9px; font-size:11px}
+  tbody td{padding:9px 9px}
+  thead{display:table-header-group}
+  tbody tr{break-inside:avoid}
+  h1,.stat .n{background:none !important; -webkit-text-fill-color:initial !important}
+  h1{-webkit-background-clip:border-box !important; background-clip:border-box !important; color:#1B3E8F !important}
+  .stat .n{color:#2559DD !important}
+}
+</style>
+</head>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <h1>KQUEO : 143 articles qui informent, presque rien qui fait décider</h1>
+    <p class="sub">Diagnostic, modèles de pages à produire et roadmap 90 jours, préparés avant l'échange à partir des seules pages publiques.</p>
+    <div class="meta">
+      Préparé par <b>Timothée Boussardon</b>, organikk.co<br />
+      Cible <b>kqueo.fr</b>, mobilier ergonomique de bureau, bureaux assis-debout et chaises ergonomiques<br />
+      Relevé le <b>23/07/2026</b>, données 100 % publiques, Search Console à récupérer au call
+    </div>
+  </header>
+
+  <!-- EN RÉSUMÉ -->
+  <section>
+    <h2>En résumé</h2>
+    <div class="resume">
+      <p>KQUEO a déjà fait le travail le plus dur : un catalogue découpé en 52 collections par taille, par matière et par usage, et 143 articles qui couvrent l'ergonomie de fond en comble.</p>
+      <p>Le problème n'est pas le volume, c'est l'orientation. Ces 143 articles répondent à des questions que les réponses génératives traitent désormais sans renvoyer de clic : comment régler sa chaise, quelle couleur au bureau, comment soulager une sciatique. Pendant ce temps, ce qui fait vraiment décider un acheteur, cinq installations nommées dont 50 bureaux à l'Opéra Garnier, un ergonome, un showroom parisien, plus de 1 800 avis vérifiés, tient sur une page de 1 100 mots accessible depuis le pied de page seulement. Et la note de 9,4/10 affichée à l'écran n'est balisée nulle part dans le code des pages produit.</p>
+      <p>L'ouverture est nette : sortir la preuve du pied de page et construire les pages de décision d'équipement, par secteur, par nombre de postes, par dispositif de financement. On remplit les cases vides, on ne recrée pas les 52 collections qui existent déjà.</p>
+    </div>
+  </section>
+
+  <!-- AUDIT -->
+  <section>
+    <h2>L'audit</h2>
+
+    <h3>Identité et modèle</h3>
+    <p>Fabricant français de mobilier ergonomique de bureau, en vente directe sur Shopify. Promesse affichée en accueil : « Allez, on (se) bouge ! Le bureau qui vous fait bouger ». Gammes propriétaires de bureaux assis-debout (Dynamic, Lift, Space, Corner, Smooth, Connect, Bambou), de chaises ergonomiques (Terrana, Moove, Zen, Flow, Sphera) et d'accessoires de mouvement (tapis de marche Walker, pédalier Eliptic). Prix relevés de 79 € pour les accessoires à plus de 1 200 € sur les postes doubles.</p>
+    <p>Deux cibles cohabitent sur le même site : le particulier qui achète un poste, et l'entreprise qui en équipe vingt ou cinquante. La seconde a un point de conversion distinct, la demande de devis, et une ligne téléphonique dédiée.</p>
+    <p>La data propriétaire mobilisable est solide et rare dans cette catégorie : cinq installations nommées avec leurs volumes (Opéra Garnier 50 bureaux, IPTEK Coworking 33, EAS International 35, LOUMI 19, American Library in Paris 10), un ergonome identifié qui anime les formations en entreprise, un showroom à Paris rue Monsigny, plus de 1 800 avis vérifiés notés 9,4/10, une garantie de 5 à 7 ans et 30 jours d'essai.</p>
+
+    <h3>État SEO technique</h3>
+    <div class="stats">
+      <div class="stat"><div class="n">143</div><div class="t">articles de blog, 4 rubriques, très majoritairement informationnels</div></div>
+      <div class="stat"><div class="n">52</div><div class="t">collections déjà segmentées par taille, matière et usage</div></div>
+      <div class="stat"><div class="n">0</div><div class="t">note d'avis balisée sur les 6 pages produit relevées</div></div>
+      <div class="stat"><div class="n">5</div><div class="t">cas clients nommés, tous sur une page liée en pied de page</div></div>
+    </div>
+    <ul class="clean">
+      <li><b>La segmentation du catalogue est faite, et bien faite.</b> 52 collections découpées par dimension (110 à 240 cm), par matière (verre, bambou, maille, cuir reconstitué, bouclette) et par usage (petit espace, open space, gaming, design). Les pages relevées portent 2 400 à 2 650 mots. Rien à recréer de ce côté.</li>
+      <li><b>La preuve n'est pas lisible par les machines.</b> Le site affiche 9,4/10 sur plus de 1 800 avis, mais aucune des 6 pages produit testées ne contient de balisage <code>aggregateRating</code>. Résultat : pas d'étoiles dans Google, et aucun signal de confiance exploitable par les moteurs de réponse au moment où ils choisissent qui citer.</li>
+      <li><b>Les meilleures références sont en pied de page.</b> Les cinq installations nommées tiennent sur <code>/pages/espace-professionnels</code>, 1 100 mots, dont le seul lien depuis l'accueil se trouve à 91 % du document, dans le pied de page. La page qui porte l'argument le plus cher à produire est celle qu'on trouve le moins.</li>
+      <li><b>Le blog produit du contenu que l'IA restitue sans clic.</b> Sur 143 articles : 66 sur le mobilier, 47 sur l'environnement de travail, 24 sur la santé, 10 d'actualité. Les sujets sont soignés, mais ce sont des questions auxquelles une réponse générative répond directement dans son résumé.</li>
+      <li><b>Aucune comparaison entre les gammes.</b> Un acheteur qui hésite entre un Dynamic et un Lift ne trouve pas de page qui tranche, alors que trois articles de blog effleurent le sujet côté technique (un moteur ou deux, pneumatique ou électrique, manuel ou motorisé).</li>
+      <li><b>Points techniques relevés en accueil.</b> La balise <code>h1</code> porte le logo en image, sans texte. Le document pèse 1,99 Mo, avec un premier octet mesuré à 1,03 s. Les données structurées se limitent à <code>Organization</code> et <code>WebSite</code>, sans bloc <code>FAQPage</code> sur les guides et collections testés.</li>
+      <li><b>Le fichier <code>agents.md</code> est celui que Shopify génère par défaut.</b> Il explique aux agents d'achat comment passer commande, il ne dit rien des gammes, de l'ergonome, du showroom ni des installations. C'est la porte d'entrée des assistants d'achat, elle est aujourd'hui vide de tout argument.</li>
+    </ul>
+
+    <h3>Le constat, reformulé en coût</h3>
+    <p>Une commande de 20 ou 50 postes ne se décide pas en une visite. Elle commence par des recherches d'aménagement, de budget, de financement, de délai, souvent des semaines avant le premier appel. Aujourd'hui, cette recherche ne croise chez KQUEO qu'une page de 1 100 mots que rien ne met en avant, pendant que l'effort de production part sur des articles qui répondent à des questions posées sans intention d'achat.</p>
+    <p>Chaque projet d'équipement qui se prépare sans croiser KQUEO se conclut chez un fournisseur qui, lui, avait la page. Et chaque page produit sans note balisée se présente à Google et aux moteurs de réponse comme un produit sans avis, alors qu'il y en a 1 800.</p>
+
+    <h3>L'angle défendable</h3>
+    <p>Une réponse générative sait déjà expliquer comment régler une assise ou pourquoi alterner les positions. Elle ne peut pas inventer 50 bureaux installés à l'Opéra Garnier, un ergonome qui forme les équipes sur site, un showroom rue Monsigny, une garantie de sept ans et 1 800 avis vérifiés.</p>
+    <p>Le terrain qui tient, c'est la décision d'équipement : par secteur d'activité, par nombre de postes, par dispositif de financement, par motif de santé. Sur ces requêtes, l'acheteur cherche un fournisseur qu'il peut appeler, pas un résumé. C'est exactement là que la data de KQUEO produit une page que personne ne peut recopier.</p>
+  </section>
+
+  <!-- MODÈLES DE PAGES -->
+  <section>
+    <h2>Les modèles de pages à produire</h2>
+    <p>On ne part pas d'une liste de mots-clés, on part de modèles de pages, avec une vérification de ce qui existe déjà sur le site. Le principe : un modèle, une variable, des dizaines de pages, et on ne produit que les cases vides. La colonne « déjà sur le site » est relevée dans le sitemap le 23/07 ; les requêtes déjà couvertes se confirment en Search Console au cadrage.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Modèle de page</th><th>Pattern d'URL</th><th>Intention</th><th>Déjà sur le site ?</th><th>Ce qui remplit la page</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mdl">Équipement par secteur</td>
+            <td><span class="pat">/pages/mobilier-ergonomique-[secteur]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Aucune</span>. Une seule collection pro générique et une page espace professionnels de 1 100 mots.</td>
+            <td>Les cinq installations nommées, une par secteur : culture, coworking, industrie, bibliothèque, agence.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Équipement par nombre de postes</td>
+            <td><span class="pat">/pages/equiper-[N]-postes</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Aucune</span>.</td>
+            <td>Les volumes réellement livrés (10, 19, 33, 35, 50 postes), tarifs dégressifs, montage, reprise de l'ancien mobilier, délai.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Comparaison entre gammes</td>
+            <td><span class="pat">/pages/[gamme]-ou-[gamme]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Aucune page</span>. Trois articles de blog traitent la technique (moteurs, pneumatique, manuel), jamais les gammes entre elles.</td>
+            <td>Plateau, piètement, course de réglage, prix, garantie, avis clients par gamme.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Financement et dispositifs d'achat</td>
+            <td><span class="pat">/pages/financer-bureau-[dispositif]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Deux articles de blog</span> sur les aides et le forfait télétravail, jamais reliés au catalogue ni au devis.</td>
+            <td>Amortissement, TVA, aides à l'aménagement de poste, budget CSE, forfait télétravail, mise en relation devis.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Collection par motif de santé</td>
+            <td><span class="pat">/collections/bureau-[motif]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Traité au blog uniquement</span> (mal de dos, hernie discale, sciatique, canal carpien), aucune collection marchande.</td>
+            <td>Sélection de produits, critères de l'ergonome, avis des clients concernés, lien vers l'article existant.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-tbl">Les requêtes exactes se figent au cadrage, Search Console en main, après avoir vérifié ce sur quoi le site ressort déjà. On ne cible jamais une requête que KQUEO couvre déjà : les 52 collections et les 143 articles sont un acquis, on part des modèles et on remplit les vides. Aucun volume affiché, il se cale sur données au cadrage.</p>
+  </section>
+
+  <!-- ROADMAP -->
+  <section>
+    <h2>Roadmap 90 jours</h2>
+    <p>Calée sur la méthode Organikk en quatre phases. Trois mois pour poser la machine, trois de plus pour la pousser, puis l'agent SEO prend le relais.</p>
+
+    <div class="phase">
+      <div class="ph-k">Mois 1</div>
+      <div>
+        <div class="ph-t">Stratégie</div>
+        <p class="ph-d">Audit complet et connexion de la Search Console. On relève ce sur quoi le site ressort déjà, sur les 52 collections comme sur les 143 articles, puis on sort les requêtes de décision d'équipement de la data KQUEO (installations, gammes, arguments de devis, motifs de santé) plutôt que d'un outil. On repart avec la carte des pages à produire et les deux modèles de départ : secteur et nombre de postes. Corrections techniques en parallèle : balisage des avis sur les 78 produits, h1 textuel en accueil, réécriture du fichier agents.md avec les gammes et les références.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 2</div>
+      <div>
+        <div class="ph-t">Mise en production et agent SEO</div>
+        <p class="ph-d">Les premières pages secteur et postes partent en ligne, adossées aux installations réelles, et l'espace professionnels remonte dans la navigation avec ses cas clients développés. En parallèle, on construit l'agent SEO KQUEO sur leur data et nos process : c'est lui qui produira et surveillera ensuite.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 3</div>
+      <div>
+        <div class="ph-t">Mise en production et optimisation</div>
+        <p class="ph-d">Pages de financement et collections par motif de santé, chacune reliée aux articles de blog qui traitent déjà le sujet, pour que 143 articles se mettent à servir la vente au lieu de vivre à côté. On mesure en Search Console (indexation, positions, requêtes gagnées) et on optimise l'existant plutôt que d'empiler. Fin du mois : on décide entre autonomie avec l'agent et prolongation.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 3 à 6</div>
+      <div>
+        <div class="ph-t">Optimisation, production et CRO</div>
+        <p class="ph-d">Le reste des secteurs et des gammes est décliné, l'existant s'optimise, et on travaille le taux de conversion des pages : ce qui décide un responsable d'aménagement à demander un devis ou à réserver le showroom plutôt qu'à repartir. C'est là que le trafic de décision acquis se transforme en demandes entrantes.</p>
+      </div>
+    </div>
+
+    <p class="rhythm"><b>Rythme de production :</b> 10 à 15 pages par mois, soit 45 à 50 à trois mois. <b>Ce qu'on attend de KQUEO :</b> sa data (installations, volumes livrés, expertise de l'ergonome, arguments de devis) et la description de ses process. C'est la seule chose sur laquelle on ne peut pas se substituer à l'équipe.</p>
+    <p class="anchor">Ancrage doctrine : méthode Organikk 4 piliers, data propriétaire, liens gagnés jamais achetés, mots-clés actionnels.</p>
+  </section>
+
+  <!-- À RÉCUPÉRER AU CALL -->
+  <section>
+    <h2>À récupérer au call</h2>
+    <div class="call-box">
+      <ul class="clean">
+        <li><b>Accès Search Console.</b> Impressions par mois, position moyenne, requêtes qui ramènent déjà des ventes et des devis, et surtout ce sur quoi le site ressort déjà, pour ne produire aucune page en doublon.</li>
+        <li><b>La part réelle du chiffre d'affaires entreprise</b> face au particulier, et la volonté de la faire grandir. C'est ce qui décide de l'ordre des modèles.</li>
+        <li><b>Qui décide et qui a la main sur le thème Shopify</b>, pour savoir ce qu'on peut modifier nous-mêmes (balisage des avis, structure des pages, navigation).</li>
+        <li><b>Le parcours réel d'une demande de devis</b> : d'où viennent les projets aujourd'hui, combien de temps entre le premier contact et la commande, qui traite.</li>
+        <li><b>Les gammes à pousser et les stocks</b>, pour ne pas produire des pages sur des produits en fin de vie.</li>
+        <li><b>Les autres domaines et redirections</b> : kqueo.com redirige bien en 301 vers kqueo.fr, vérifier qu'il n'existe pas d'autres versions en ligne.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot">
+    organikk.co, audit préparé à partir de données publiques le 23/07/2026.<br />
+    Volumes, positions et trafic à confirmer sur la Search Console. Aucun chiffre non sourcé n'est avancé dans ce document.
+  </div>
+
+</div>
+</body>
+</html>
