@@ -16,9 +16,9 @@ Note interne de préparation. Ne se montre pas au prospect. Les livrables montra
 
 ## En résumé
 
-Fabricant français de mobilier ergonomique de bureau, boutique Shopify, vente directe aux particuliers et aux entreprises. Le site est loin d'être vide : 78 produits, 52 collections finement segmentées, 143 articles de blog, 23 pages. Le problème n'est pas le volume, c'est l'orientation : les 143 articles sont informationnels (comment régler sa chaise, quelle couleur au bureau, soulager une sciatique), exactement la matière que les réponses génératives restituent sans renvoyer de clic.
+Fabricant français de mobilier ergonomique de bureau, boutique Shopify, vente directe aux particuliers et aux entreprises. 78 produits, 52 collections finement segmentées, 143 articles de blog, 23 pages. Les 143 articles sont informationnels (comment régler sa chaise, quelle couleur au bureau, soulager une sciatique). ChatGPT et les AI Overviews restituent ce type de réponse sans renvoyer de clic.
 
-Pendant ce temps, la data qui fait décider un acheteur entreprise dort : cinq installations nommées avec leurs volumes (Opéra Garnier 50 bureaux, IPTEK 33, EAS International 35, LOUMI 19, American Library in Paris 10), un ergonome, un showroom parisien, plus de 1 800 avis notés 9,4/10. Le tout tient sur une page de 1 100 mots dont le seul lien depuis l'accueil est en pied de page. Et la note de 9,4/10 n'est balisée sur aucune des six pages produit relevées.
+La data qui fait décider un acheteur entreprise est en ligne mais sans travail SEO : cinq installations nommées avec leurs volumes (Opéra Garnier 50 bureaux, IPTEK 33, EAS International 35, LOUMI 19, American Library in Paris 10), un ergonome, un showroom parisien, plus de 1 800 avis notés 9,4/10. Le tout tient sur une page de 1 100 mots dont le seul lien depuis l'accueil est en pied de page. Et la note de 9,4/10 n'est balisée sur aucune des six pages produit relevées.
 
 On démarre sur le décisionnel d'équipement (par secteur, par nombre de postes, par financement) et sur la remise en état de la preuve. On ne touche pas aux 52 collections, elles sont déjà bien faites.
 
@@ -30,7 +30,7 @@ Sources : sitemaps kqueo.fr relevés le 23/07/2026 (`sitemap_products_1` 78, `si
 
 **Modèle et conversion.** Vente directe sur Shopify. Deux points de conversion distincts : l'achat en ligne pour le particulier (79 € à plus de 1 200 €), la demande de devis pour l'entreprise (tarifs dégressifs, montage, reprise de l'ancien mobilier, garantie étendue à 5 ans). Promotion active au moment du relevé (soldes jusqu'à -60 %).
 
-**Data propriétaire mobilisable.** Cinq installations nommées avec volumes. Un ergonome identifié (Romain Morvan) qui anime les formations en entreprise. Plus de 1 800 avis vérifiés notés 9,4/10 (Société des Avis Garantis). Garantie 5 à 7 ans, 30 jours d'essai, 1 bureau acheté = 1 arbre planté. C'est du carburant rare dans cette catégorie.
+**Data propriétaire mobilisable.** Cinq installations nommées avec volumes. Un ergonome identifié (Romain Morvan) qui anime les formations en entreprise. Plus de 1 800 avis vérifiés notés 9,4/10 (Société des Avis Garantis). Garantie 5 à 7 ans, 30 jours d'essai, 1 bureau acheté = 1 arbre planté. Peu de sites de cette catégorie ont autant de preuve nommée.
 
 **Pain probable (analyse interne, ne pas balancer frontalement).** Ils ont investi dans un blog volumineux pensé pour un SEO d'avant les réponses génératives, et ils n'ont pas transposé cet effort côté décision d'achat entreprise. Le B2B semble arriver par bouche-à-oreille, salons et réseau (Preventica cité au blog), pas par le site. Résultat : la partie du chiffre d'affaires au panier le plus élevé dépend le moins du canal qu'ils alimentent le plus.
 
@@ -38,13 +38,13 @@ Sources : sitemaps kqueo.fr relevés le 23/07/2026 (`sitemap_products_1` 78, `si
 
 ## 2. L'angle : le décisionnel d'équipement d'abord
 
-**Ce sur quoi ils sont défendables.** La décision d'équipement professionnel. Un moteur de réponse sait expliquer comment régler une assise, il ne peut pas produire 50 bureaux installés à l'Opéra Garnier, un ergonome qui intervient sur site, un showroom où l'on essaie, 1 800 avis et une garantie de sept ans. Sur « équiper un open space », « mobilier ergonomique pour coworking », « financer l'achat de bureaux assis-debout », l'acheteur veut un fournisseur qu'il peut appeler, pas un résumé.
+**Ce sur quoi ils sont défendables.** La décision d'équipement professionnel. ChatGPT n'a accès ni aux 50 bureaux installés à l'Opéra Garnier, ni à l'ergonome qui intervient sur site, ni au showroom où l'on essaie, ni aux 1 800 avis, ni à la garantie de sept ans. Sur « équiper un open space », « mobilier ergonomique pour coworking », « financer l'achat de bureaux assis-debout », celui qui cherche veut un fournisseur qu'il peut appeler dans la journée.
 
-**Second levier.** Le décisionnel santé côté commerçant. Le blog traite déjà mal de dos, hernie discale, sciatique, canal carpien, mais rien ne relie ces sujets à une sélection de produits. Il y a un pont à construire entre 24 articles santé et le catalogue.
+**Second levier.** Le décisionnel santé côté commerçant. Le blog traite déjà mal de dos, hernie discale, sciatique, canal carpien, mais rien ne relie ces sujets à une sélection de produits. 24 articles santé existent, aucun ne mène à une sélection de produits.
 
-**Ce qu'on ne fait pas en premier.** On ne retouche pas les 52 collections, elles sont segmentées et étoffées (2 400 à 2 650 mots relevés). On ne se bat pas sur « bureau assis-debout » générique : trop large, très disputé par les revendeurs et les places de marché, et le site y travaille déjà. On ne produit pas un article de blog de plus.
+**Ce qu'on ne fait pas en premier.** On ne retouche pas les 52 collections, elles sont segmentées et étoffées (2 400 à 2 650 mots relevés). On laisse « bureau assis-debout » générique : trop large, très disputé par les revendeurs et les places de marché, et le site y travaille déjà. On ne produit pas un article de blog de plus.
 
-**Timing, le hook.** Ils ont déjà fait le travail le plus coûteux (catalogue segmenté, contenu abondant, preuve réelle). Le chantier n'est pas de produire plus, c'est de réorienter. C'est le moment le moins cher pour le faire.
+**Timing, le hook.** Ils ont déjà fait le travail le plus coûteux (catalogue segmenté, contenu abondant, preuve réelle). Il reste à réorienter cette production vers la décision d'achat. C'est le moment le moins cher pour le faire.
 
 ## 3. État des lieux SEO (relevé le 23/07/2026)
 
@@ -64,7 +64,7 @@ Sources : sitemaps kqueo.fr relevés le 23/07/2026 (`sitemap_products_1` 78, `si
 
 ## 4. La stratégie pSEO : croiser secteur, taille et motif
 
-Le catalogue est découpé par produit. Il n'est jamais découpé par situation d'achat. C'est là que se trouvent les pages manquantes.
+Le catalogue est découpé par produit. Les pages manquantes sont celles qui découpent par situation d'achat : secteur, taille du parc, financement, motif de santé.
 
 **M1, secteur × équipement** (Do, BoFu)
 - URL : `/pages/mobilier-ergonomique-[secteur]`. Coworking, collectivité, cabinet, bibliothèque, agence, industrie, établissement culturel.
@@ -76,13 +76,13 @@ Le catalogue est découpé par produit. Il n'est jamais découpé par situation 
 - URL : `/pages/equiper-[N]-postes`. 5, 10, 20, 30, 50 postes.
 - Variable : la taille du parc. ~5 pages.
 - Donnée par page : les volumes réellement livrés (10, 19, 33, 35, 50), délai, logistique, tarif dégressif, parcours de devis.
-- Anti-thin : chaque page porte un cas chiffré, pas une grille théorique.
+- Anti-thin : chaque page porte un cas chiffré et un volume réellement livré.
 
 **M3, comparaison entre gammes** (Do, BoFu)
 - URL : `/pages/[gamme]-ou-[gamme]`. Dynamic ou Lift, Lift ou Space, manuel ou électrique, un moteur ou deux.
 - Variable : le couple de gammes. ~6 à 8 pages.
 - Donnée par page : plateau, piètement, course de réglage, charge, prix, garantie, avis clients de chaque gamme.
-- Anti-thin : consolider avec les trois articles de blog existants plutôt que de créer un doublon. Vérifier la cannibalisation avant publication.
+- Anti-thin : consolider avec les trois articles de blog existants. Vérifier la cannibalisation avant publication.
 
 **M4, financement et dispositifs** (Do, BoFu)
 - URL : `/pages/financer-bureau-[dispositif]`. Amortissement, TVA, aides à l'aménagement de poste, budget CSE, forfait télétravail.
@@ -121,7 +121,7 @@ Rythme : 10 à 15 pages par mois, 45 à 50 à trois mois.
 
 ## 6. Notes pour le call
 
-**Hook d'ouverture.** « Vous avez déjà fait le travail le plus coûteux : 52 collections bien segmentées, 143 articles, une preuve client que personne n'a dans votre catégorie. Le problème n'est pas d'en produire plus, c'est que rien de tout ça ne travaille pour la vente entreprise. »
+**Hook d'ouverture.** « Vous avez 50 bureaux posés à l'Opéra Garnier, 33 chez IPTEK, 35 chez EAS. La page qui raconte ça fait 1 100 mots et on la trouve seulement en pied de page. C'est là qu'il y a de l'argent à récupérer. »
 
 **Questions à poser.**
 - Quelle part du chiffre d'affaires vient des entreprises, et où vous voulez l'emmener ?
@@ -132,10 +132,10 @@ Rythme : 10 à 15 pages par mois, 45 à 50 à trois mois.
 - Il y a un objectif sur le showroom, ou c'est accessoire ?
 
 **Freins probables.**
-- « On a déjà beaucoup de contenu. » → Oui, et c'est justement le sujet : 143 articles qui répondent à des questions que ChatGPT traite sans renvoyer de clic. On ne va pas en produire un 144e, on va construire les pages qui manquent, celles qui portent une décision d'achat.
-- « Le SEO c'est lent. » → Le chantier technique sur les avis se voit en quelques semaines dans les résultats. Les pages d'équipement mettent plus longtemps, mais elles visent un panier de plusieurs milliers d'euros, pas un accessoire à 79 €.
+- « On a déjà beaucoup de contenu. » → Oui, et c'est justement le sujet : 143 articles qui répondent à des questions que ChatGPT traite sans renvoyer de clic. On construit les pages qui portent une décision d'achat. Aucun article de blog supplémentaire.
+- « Le SEO c'est lent. » → Le chantier technique sur les avis se voit en quelques semaines dans les résultats. Les pages d'équipement mettent plus longtemps et visent un panier à plusieurs milliers d'euros.
 - « On travaille déjà avec quelqu'un. » → Demander ce qui est produit, à quel rythme, et sur quel type de page. Si la réponse est « des articles de blog », l'écart avec ce qu'on propose se voit tout seul.
-- « Notre site est sur Shopify, on est limités. » → Le balisage des avis, les pages et les collections se font dans Shopify. Ce n'est pas un frein, c'est même plus rapide qu'un site sur mesure.
+- « Notre site est sur Shopify, on est limités. » → Le balisage des avis, les pages et les collections se font dans Shopify, souvent plus vite que sur un site sur mesure.
 - Budget. → Le retour se calcule sur une seule commande d'équipement à 20 ou 50 postes.
 
 **Closing.** Repartir avec la roadmap 90 jours datée, l'accès GSC demandé, et la liste des secteurs sur lesquels ils ont des références exploitables. Format probable : accompagnement 3 mois avec agent SEO à la clé, puis décision.
