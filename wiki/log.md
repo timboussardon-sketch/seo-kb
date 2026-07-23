@@ -1363,3 +1363,16 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - [À SOURCER]: X sur Claude, % X individuel Meltwater, API "9 900 %" non fetchée, trafic sortant Grok
 - contradictions: N
 - backlog: sujet 1 "À faire" déplacé en "Fait" ; 2 sujets restants renumérotés
+
+## [2026-07-23] mots-cles | Victoria Garden — les mots-clés business non traités
+- output: [[keywords/decisionnels-2026-07-23-victoriagarden-business-non-traites]]
+- skills: seo-recherche-mots-cles + seo-mots-cles-decisionnels (chaîne mots-clés)
+- périmètre: 72 pages FR auditées (title + H1 + corps) × 1 645 requêtes GSC (export 2026-06-11) × 375 seeds Google Suggest relevés le 2026-07-23
+- segmentation GSC: 166 requêtes de nom · 1 479 hors nom, dont 1 075 business (48 978 imp, 336 clics) et 404 éditoriales
+- résultat: 17 clusters business sans page dédiée, dont 6 avec impressions réelles
+- top 2 (score 10/10): kitchenette (140 imp, pos 12,1, mot présent dans 27 corps de page et zéro title/H1) · logement temporaire Bx+Pau (792 imp, pos 8,2, 6 formulations Suggest avec ville)
+- gabarits prêts: 8 pages établissements de santé (CHU Pellegrin, Haut-Lévêque, Tivoli, Bordeaux Nord, Saint-Augustin, Bel-Air, clinique du Sport) · 3 pages équipements Pau (Zénith, Palais Beaumont, Stade du Hameau) · 7 pages de séries incomplètes (3 capacités Pau + 4 mois Bordeaux)
+- doublons trouvés: `/entreprises-et-groupes-copie/`, double page novembre Bordeaux, séminaire vs salle de réunion — les 3 indexables, canonical sur elles-mêmes
+- désalignement signalé: « appart hotel pau » 1 986 imp pos 6,8 répond sur `/destination/visiter-pau/` (slug + H1 orientés visite, pas hébergement) — Pau n'a pas de hub équivalent à Bordeaux
+- écartés sur data: quartiers hors implantation (Bordeaux Lac, Mérignac, Pessac, Chartrons, Floirac) · logement étudiant/stagiaire/alternant (SERP CROUS, budgets 250-300 €/mois, 6 imp pos 54,5) · hébergement chantier (zéro suggestion Bx et Pau) · salons/congrès/concerts/tournages (zéro suggestion)
+- contradictions: 1 — le cadrage du 2026-07-10 listait l'hébergement de chantier comme motif de séjour de la couche 1 ; Suggest le dément sur les deux villes

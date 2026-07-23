@@ -42,6 +42,11 @@ Carte d'entrée des sorties du workflow mots-clés (pilote enrichissement direct
 - [[keywords/recherche-2026-05-27-seo-content-writer]] — Recherche mots-clés — SEO content writer
 - [[keywords/recherche-2026-05-27-vendeur-amazon]] — Recherche mots-clés — vendeur Amazon
 
+## Clients — Victoria Garden
+
+- [[keywords/recherche-2026-07-17-victoriagarden-b2b-sport-cse]] — Mots-clés B2B manquants : équipe sportive et comité d'entreprise
+- [[keywords/decisionnels-2026-07-23-victoriagarden-business-non-traites]] — Les mots-clés business non traités (17 clusters, 72 pages auditées)
+
 ## Autres
 
 - [[keywords/recherche-2026-06-05-consultant-seo-startup]] — Recherche mots-clés — Consultant SEO startup

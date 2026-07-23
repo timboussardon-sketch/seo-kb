@@ -296,6 +296,8 @@
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -1128,6 +1130,7 @@
       "wiki/concepts/maillage-interne.md",
       "wiki/entities/yalp.md",
       "wiki/index.md",
+      "wiki/keywords/decisionnels-2026-07-23-victoriagarden-business-non-traites.md",
       "wiki/log.md",
       "wiki/queries/2026-06-10-golfiller-gsc-90j.md",
       "wiki/sources/2026-04-05-organikk-audit-seo-claude-7-phases.md",
@@ -2061,6 +2064,7 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse.md",
       "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
       "qadence/drive-qadence/11-mon-article-ne-ressort-pas.md",
       "qadence/drive-qadence/12-quels-mots-cles-ajouter-a-ma-page.md",
@@ -2170,6 +2174,7 @@
     ],
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
       "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
       "qadence/drive-qadence/02-chute-de-trafic-seo-que-faire.md",
       "qadence/drive-qadence/03-mon-site-perd-des-positions.md",
@@ -2688,6 +2693,7 @@
       "xai"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/etudes-IA/2026-07-23-stats-x-twitter-citations-ia-verrou-acces.md",
       "wiki/entities/x-twitter.md",
       "wiki/index.md",
       "wiki/log.md",
@@ -3498,6 +3504,7 @@
       "wiki/entities/raphael-coach-sportif.md",
       "wiki/entities/yalp.md",
       "wiki/index.md",
+      "wiki/keywords/decisionnels-2026-07-23-victoriagarden-business-non-traites.md",
       "wiki/keywords/recherche-2026-07-17-victoriagarden-b2b-sport-cse.md",
       "wiki/log.md",
       "wiki/moc/moc-maillage.md",
@@ -3960,6 +3967,8 @@
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -4226,6 +4235,7 @@
       "wiki/index.md",
       "wiki/keywords/clustering-2026-05-28-agence-seo.md",
       "wiki/keywords/decisionnels-2026-05-28-agence-seo.md",
+      "wiki/keywords/decisionnels-2026-07-23-victoriagarden-business-non-traites.md",
       "wiki/keywords/index.md",
       "wiki/keywords/recherche-2026-05-27-agence-communication.md",
       "wiki/keywords/recherche-2026-05-27-agence-growth.md",
@@ -5792,7 +5802,9 @@
       "citation-vs-clic"
     ],
     "backrefs": [
+      "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
       "qadence/drive-qadence/04-beaucoup-impressions-peu-de-clics.md",
       "qadence/drive-qadence/05-ameliorer-taux-de-clic-google.md",
       "wiki/entities/sparktoro.md",
@@ -6588,6 +6600,8 @@
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
@@ -6704,6 +6718,7 @@
       "agent-synthetic/revuedepressIA/2026-06-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-05-revue-presse.md",
       "agent-synthetic/revuedepressIA/revuedepress/2026-06-06-revue-presse-v3.md",
       "qadence/drive-qadence/01-pourquoi-mon-trafic-google-baisse.md",
@@ -7016,6 +7031,7 @@
       "wiki/entities/bootcamp-seo-ia.md",
       "wiki/entities/fg-formation.md",
       "wiki/index.md",
+      "wiki/keywords/decisionnels-2026-07-23-victoriagarden-business-non-traites.md",
       "wiki/log.md",
       "wiki/moc/moc-maillage.md",
       "wiki/sources/2026-04-13-victoria-garden-pseo.md"
@@ -7224,6 +7240,7 @@
       "x.com"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/etudes-IA/2026-07-23-stats-x-twitter-citations-ia-verrou-acces.md",
       "wiki/audit/2026-06-01-audit.md",
       "wiki/entities/grok.md",
       "wiki/index.md",

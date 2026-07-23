@@ -21,7 +21,7 @@ status: stable
 - [[moc/moc-vente-objections]] — vente, avatar, objections
 - [[moc/moc-redaction]] — rédaction et ton de voix
 - [[moc/moc-methode-kb]] — méthode KB et système
-- [[keywords/index]] — recherches mots-clés : index des campagnes (27 pages)
+- [[keywords/index]] — recherches mots-clés : index des campagnes (29 pages)
 
 ### Registres (boucles fermées)
 - [[hypotheses]] — registre des claims non validés (revue mensuelle)
