@@ -4,7 +4,7 @@
 - Domaine : kqueo.fr (Shopify, 5 ans)
 - Type : e-commerce B2C, mobilier de bureau ergonomique
 - Démarré : non signé au 2026-07-23 (propale en cours)
-- Offre : accompagnement système SEO, 1 850 € HT/mois, tarif unique, en complément du consultant rédacteur en place
+- Offre : accompagnement système SEO, 2 mois de mission à 1 400 € HT/mois (mois 1 analyse + data + construction, mois 2 entraînement + automatisation), puis 3 mois de suivi. En complément du consultant rédacteur en place.
 
 ## Où on en est
 Étape courante : **2, pré-call et diagnostic d'entrée** (fait). Call de découverte tenu le 23/07.
