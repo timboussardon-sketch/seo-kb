@@ -1352,3 +1352,14 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - sorties: aucune — call-15-baptiste-yalp ingéré à chaud le 07-16 sans entrer au backlog
 - prochain lot proposé: Victoria Garden (lot W30 voté, 11 fichiers avec le motif séminaire neuf), puis FG-Formation corpus (fgformation-patterns-requetes + fgformation-modele-corpus)
 - nouveaux skips: aucun — journal-prospection posé en candidat skip (fichier auto-synchro Supabase, doctrine déjà dans methodes/farming-prospection)
+
+## [2026-07-23] etude-ia | X et les moteurs IA 2025-2026 — le verrou d'accès mesuré
+- output: [[agent-synthetic/revuedepressIA/etudes-IA/2026-07-23-stats-x-twitter-citations-ia-verrou-acces]]
+- source_type: query / skill seo-page-statistiques
+- sources vérifiées: 10 (Ahrefs Brand Radar 1,9M requêtes Grok ; Profound 680M citations ; Perplexity Index Everything-PR ; Ahrefs AI Overviews 76,7M ; Meltwater GenAI Lens 5,35M ; robots.txt X.com direct ; API X Social Media Today ; DemandSage Grok stats ; Contently 5-études synthèse ; Profound LinkedIn)
+- chiffres clés: X.com 12e sur Grok (1,4 %) · absent top 50 ChatGPT/Perplexity/AIO · robots.txt `User-agent: * / Disallow: /` · API 200–42 000 $/mois · Grok 2,8 % marché mondial IA · Reddit #1 Grok (16,3 %)
+- transformation originale: réconciliation Meltwater (top 5 social, qualitatif) vs Ahrefs (12e global, 1,4 %, quantitatif) — 3 mécanismes (périmètre social vs all-domains, timeline mars-avr vs juin, format tweet anti-citabilité) ; paradoxe intégration verticale xAI-Grok ; redistribution post-Reddit vers YouTube pas X
+- first-party: réservé honnêtement (vault a analyses qualitatives X-Twitter/Grok, pas de mesure chiffrée)
+- [À SOURCER]: X sur Claude, % X individuel Meltwater, API "9 900 %" non fetchée, trafic sortant Grok
+- contradictions: N
+- backlog: sujet 1 "À faire" déplacé en "Fait" ; 2 sujets restants renumérotés
