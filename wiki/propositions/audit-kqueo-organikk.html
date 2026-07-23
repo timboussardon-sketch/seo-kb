@@ -29,6 +29,16 @@ html,body{
 .mono{font-family:'Geist Mono',ui-monospace,monospace}
 .wrap{max-width:840px; margin:0 auto; padding:60px 40px 90px}
 
+/* ── page de garde ── */
+.cover{
+  background:linear-gradient(135deg,#1B3E8F 0%,#2559DD 52%,#5b86f5 100%);
+  border-radius:18px; padding:52px; margin-bottom:10px;
+  color:#fff; display:flex; align-items:center; justify-content:center; text-align:center;
+  min-height:clamp(440px, 76vh, 640px);
+  box-shadow:0 26px 60px -30px rgba(12,26,70,.55);
+}
+.cover-brand{font-size:80px; font-weight:600; letter-spacing:-.04em; color:#fff; line-height:1}
+
 /* ── en-tête ── */
 .head{border-bottom:1px solid var(--line); padding-bottom:30px; margin-bottom:12px}
 h1{font-size:35px; line-height:1.14; font-weight:600; letter-spacing:-.035em; max-width:22ch;
@@ -117,6 +127,12 @@ td .pat{font-family:'Geist Mono',monospace; font-size:11.5px; color:var(--blue-d
   h1,.stat .n{background:none !important; -webkit-text-fill-color:initial !important}
   h1{-webkit-background-clip:border-box !important; background-clip:border-box !important; color:#1B3E8F !important}
   .stat .n{color:#2559DD !important}
+  .cover{
+    min-height:auto; height:calc(100vh - 30mm); border-radius:0; margin:0;
+    padding:56px 48px; box-shadow:none; break-after:page; page-break-after:always;
+    background:linear-gradient(135deg,#1B3E8F 0%,#2559DD 52%,#5b86f5 100%) !important;
+  }
+  .cover-brand{color:#fff !important; -webkit-text-fill-color:#fff !important}
 }
 </style>
 </head>
@@ -124,15 +140,15 @@ td .pat{font-family:'Geist Mono',monospace; font-size:11.5px; color:var(--blue-d
 <body>
 <div class="wrap">
 
-  <header class="head">
-    <h1>Votre première source de trafic est celle qui ne vend pas</h1>
-    <p class="sub">Diagnostic, modèles de pages à produire et roadmap 90 jours, établis après notre échange du 23 juillet.</p>
-    <div class="meta">
-      Préparé par <b>Timothée Boussardon</b>, organikk.co<br />
-      Cible <b>kqueo.fr</b>, mobilier ergonomique de bureau, bureaux assis-debout et chaises ergonomiques<br />
-      Relevé le <b>23/07/2026</b> sur données publiques, complété par notre échange. Search Console à brancher au démarrage
-    </div>
-  </header>
+  <section class="cover">
+    <div class="cover-brand">KQUEO</div>
+  </section>
+
+  <div class="meta">
+    Pré-audit préparé par <b>Timothée Boussardon</b>, organikk.co<br />
+    Cible <b>kqueo.fr</b>, mobilier de bureau ergonomique, bureaux assis-debout et chaises ergonomiques<br />
+    Relevé le <b>23/07/2026</b> sur données publiques, complété par notre échange du même jour
+  </div>
 
   <!-- EN RÉSUMÉ -->
   <section>
