@@ -48,8 +48,8 @@ html,body{
 .end{align-items:center !important; justify-content:center !important}
 .end .logo-big{width:min(46%,420px); height:auto; display:block}
 .cover .kick{
-  font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:.22em;
-  text-transform:uppercase; color:#A8C7FF; margin-bottom:22px;
+  font-size:13.5px; font-weight:600; letter-spacing:-.01em;
+  color:#A8C7FF; margin-bottom:22px;
 }
 .cover .mark{
   font-size:52px; font-weight:600; letter-spacing:-.04em; color:#fff; line-height:1.1;
@@ -98,7 +98,7 @@ h1{
 
 /* ── colonnes ── */
 .three{display:grid; grid-template-columns:repeat(3,1fr); gap:44px}
-.pil-k{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#2559DD; margin-bottom:14px}
+.pil-k{font-size:12.5px; font-weight:650; letter-spacing:-.01em; color:#2559DD; margin-bottom:12px}
 .pil-t{font-size:21px; font-weight:600; letter-spacing:-.025em; line-height:1.25; margin-bottom:12px}
 .pil-d{font-size:14.5px; line-height:1.6; color:var(--muted)}
 
@@ -110,8 +110,8 @@ h1{
   box-shadow:0 10px 30px -18px rgba(12,26,70,.28);
 }
 .card-role{
-  font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.16em;
-  text-transform:uppercase; color:var(--muted-2); margin-bottom:14px;
+  font-size:13px; font-weight:650; letter-spacing:-.01em;
+  color:var(--muted-2); margin-bottom:12px;
 }
 .card ul{list-style:none}
 .card li{
@@ -121,6 +121,9 @@ h1{
 .card li:last-child{border-bottom:0}
 .card li::before{content:''; position:absolute; left:1px; top:16px; width:5px; height:5px; border-radius:50%; background:#2559DD}
 .card.f li::before{background:#FF371C}
+.card.next{background:linear-gradient(135deg,#1B3E8F 0%,#2559DD 58%,#4a76ea 100%); border:0}
+.card.next .card-role{color:rgba(255,255,255,.72)}
+.card.next .pil-d{color:rgba(255,255,255,.94)}
 .card li b{color:var(--ink-2); font-weight:600}
 
 /* ── liste mots-clés ── */
@@ -136,7 +139,7 @@ h1{
 
 /* ── roadmap ── */
 .road{display:grid; grid-template-columns:repeat(4,1fr); gap:30px}
-.mo-k{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#2559DD; margin-bottom:12px}
+.mo-k{font-size:12.5px; font-weight:650; letter-spacing:-.01em; color:#2559DD; margin-bottom:10px}
 .mo-t{font-size:17.5px; font-weight:600; letter-spacing:-.025em; margin-bottom:11px; line-height:1.25}
 .mo-d{font-size:13.5px; line-height:1.58; color:var(--muted)}
 
@@ -427,7 +430,7 @@ h1{
         <div class="card-role">Aujourd'hui</div>
         <p class="pil-d">Clément écrit, dépose dans Notion avec des liens Drive. Vous reprenez le texte à la main dans Shopify. Mathias reçoit chaque demande technique. La mesure s'arrête aux positions.</p>
       </div>
-      <div class="card">
+      <div class="card next">
         <div class="card-role">Demain</div>
         <p class="pil-d">Le système sait quoi produire, dans quel ordre, il publie, et il mesure ce qui amène des commandes. Documenté, il tourne avec votre équipe, y compris quand je ne suis plus là.</p>
       </div>
