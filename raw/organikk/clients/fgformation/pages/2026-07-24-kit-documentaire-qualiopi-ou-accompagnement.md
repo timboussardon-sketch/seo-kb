@@ -11,7 +11,7 @@ status: draft
 
 **Slug proposé :** `/kit-documentaire-qualiopi-ou-accompagnement/`
 **Title SEO :** Kit documentaire Qualiopi ou accompagnement : comment choisir - FG Formation
-**Méta description :** Un kit fournit des modèles de documents, un accompagnement construit vos preuves réelles. L'auditeur échantillonne vos actions, pas vos trames. Comparaison honnête des deux options.
+**Méta description :** L'auditeur échantillonne vos actions réelles, pas vos trames. Ce qu'un kit documentaire couvre vraiment, ce qu'il laisse à votre charge, et les cas où il suffit.
 
 ---
 

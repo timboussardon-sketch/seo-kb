@@ -11,7 +11,7 @@ status: draft
 
 **Slug proposé :** `/formation-qualiopi-ou-accompagnement/`
 **Title SEO :** Formation Qualiopi ou accompagnement : quel format choisir - FG Formation
-**Méta description :** Une formation transmet la méthode, un accompagnement construit le dossier avec vous. Le bon format dépend d'une question : qui fera vivre le système qualité ensuite. Comparaison honnête.
+**Méta description :** Le bon format dépend d'une question : qui fera vivre le système qualité après la certification ? Ce que chaque format livre vraiment, et les cas où la formation seule suffit.
 
 ---
 

@@ -11,7 +11,7 @@ status: draft
 
 **Slug proposé :** `/consultant-qualiopi-independant-ou-cabinet/`
 **Title SEO :** Consultant Qualiopi indépendant ou cabinet : comment choisir - FG Formation
-**Méta description :** Un indépendant vous suit seul du diagnostic à l'audit, un cabinet met une équipe et des process. Les questions à poser avant de signer, et le profil qui convient à chacun.
+**Méta description :** Qui travaillera réellement sur votre dossier, et qui sera là à l'audit de surveillance ? Les questions à poser avant de signer, et le profil qui convient à chaque format.
 
 ---
 

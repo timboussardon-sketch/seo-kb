@@ -11,7 +11,7 @@ status: draft
 
 **Slug proposé :** `/audit-blanc-seul-ou-accompagnement-complet/`
 **Title SEO :** Audit blanc seul ou accompagnement complet : que choisir - FG Formation
-**Méta description :** L'audit blanc teste un dossier qui existe, l'accompagnement complet le construit puis le teste. Le bon choix dépend de l'état de vos preuves aujourd'hui. Comparaison poste par poste.
+**Méta description :** L'audit blanc suppose un dossier qui existe déjà : il vous remet la liste des écarts. Si le dossier reste à construire, le besoin est ailleurs. Le bon choix selon l'état de vos preuves.
 
 ---
 

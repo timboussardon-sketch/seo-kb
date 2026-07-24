@@ -11,7 +11,7 @@ status: draft
 
 **Slug proposé :** `/consultant-qualiopi-ou-logiciel/`
 **Title SEO :** Consultant Qualiopi ou logiciel Qualiopi : comment choisir - FG Formation
-**Méta description :** Un logiciel organise vos preuves, un consultant interprète le référentiel pour votre activité. L'audit ne vérifie ni l'un ni l'autre : il vérifie des preuves datées. Comparaison poste par poste.
+**Méta description :** Ranger ses preuves dans un logiciel ne dit pas lesquelles produire. Ce que chaque option couvre vraiment, ce qu'elle coûte, et les cas où l'une des deux suffit.
 
 ---
 
