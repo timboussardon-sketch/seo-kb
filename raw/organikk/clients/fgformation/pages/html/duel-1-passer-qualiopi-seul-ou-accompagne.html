@@ -1,0 +1,509 @@
+<!-- INTÉGRATION WORDPRESS
+  Slug : /passer-qualiopi-seul-ou-accompagne/
+  Title SEO : Passer Qualiopi seul ou accompagné : comment choisir - FG Formation
+  Méta description : Aucun texte n'impose un accompagnement pour obtenir Qualiopi. Ce qui change vraiment entre les deux options : les preuves, le coût, l'audit de surveillance. Comparaison poste par poste.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  .fgq, .fgq *, .fgq *::before, .fgq *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bleu: #224077; --orange: #EC683A; --orange-clair: #fdf1ec; --bleu-clair: #edf1f8; --gris-fond: #f7f6f3; --gris-texte: #374151; --gris-muted:
+  #6b7280; --blanc: #ffffff; --radius: 10px; }
+  .fgq { font-family: 'Inter', system-ui, sans-serif; font-size: 15px; line-height: 1.7; background: var(--gris-fond); color: var(--gris-texte); }
+  .fgq .page-wrapper { max-width: 1080px; margin: 0 auto; padding: 0 24px 64px; }
+  .fgq .layout-grid { display: grid; grid-template-columns: 1fr 290px; gap: 36px; align-items: start; }
+  .fgq .hero { background: var(--bleu); padding: 52px 48px 44px; border-radius: var(--radius); margin: 24px 0 36px; }
+  .fgq .hero h1 { font-size: 31px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 14px; max-width: 580px; }
+  .fgq .hero p { font-size: 16px; color: rgba(255,255,255,0.68); max-width: 520px; line-height: 1.65; }
+  .fgq .hero-stats { display: flex; gap: 36px; margin-top: 32px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.1); flex-wrap: wrap; }
+  .fgq .hero-stat .num { font-size: 22px; font-weight: 700; color: #fff; }
+  .fgq .hero-stat .lbl { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; text-transform: uppercase; letter-spacing: .04em; }
+  .fgq .btn-orange { display: inline-block; background: var(--orange); color: #fff !important; font-size: 14px; font-weight: 600; padding: 12px 26px;
+  border-radius: 7px; text-decoration: none; transition: background .15s; }
+  .fgq .btn-orange:hover { background: #d45a2e; }
+  .fgq .btn-white { display: inline-block; background: #fff; color: var(--bleu); font-size: 14px; font-weight: 700; padding: 12px 26px; border-radius: 7px;
+  text-decoration: none; }
+  .fgq .resume-box { background: var(--bleu-clair); padding: 18px 22px; border-radius: var(--radius); margin-bottom: 0; font-size: 14px; color: var(--bleu);
+  line-height: 1.7; }
+  .fgq .resume-box strong { font-weight: 600; }
+  .fgq .toc { background: var(--blanc); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 32px; }
+  .fgq .toc-title { font-size: 11px; font-weight: 600; color: var(--gris-muted); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 12px; }
+  .fgq .toc ol { padding-left: 18px; }
+  .fgq .toc ol li { margin-bottom: 5px; }
+  .fgq .toc a { font-size: 13px; color: var(--bleu); text-decoration: none; }
+  .fgq .toc a:hover { text-decoration: underline; }
+  .fgq .main-content h2 { font-size: 21px; font-weight: 700; color: var(--bleu); margin: 32px 0 16px; }
+  .fgq .main-content h2:first-of-type { margin-top: 32px; }
+  .fgq .main-content h3 { font-size: 17px; font-weight: 600; color: var(--bleu); margin: 24px 0 10px; }
+  .fgq .main-content p { font-size: 15px; color: var(--gris-texte); line-height: 1.8; margin-bottom: 16px; }
+  .fgq .main-content ul, .fgq .main-content ol { padding-left: 20px; margin-bottom: 16px; }
+  .fgq .main-content li { font-size: 15px; color: var(--gris-texte); line-height: 1.7; margin-bottom: 8px; }
+  .fgq .info-box { background: var(--orange-clair); border-radius: var(--radius); padding: 18px 22px; margin: 16px 0 28px; }
+  .fgq .info-box ul { margin-bottom: 0; padding-left: 18px; }
+  .fgq .info-box li { font-size: 14px; color: var(--bleu); }
+  .fgq .alert-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 16px 20px; margin: 20px 0; border-radius: 0 var(--radius) var(--radius) 0; }
+  .fgq .alert-box p { margin-bottom: 0; font-size: 14px; }
+  .fgq .cta-inline { background: var(--bleu); border-radius: var(--radius); padding: 28px 32px; margin: 36px 0; }
+  .fgq .cta-inline p { font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.55; margin-bottom: 16px; }
+  .fgq .cta-inline strong { color: #fff; font-weight: 600; }
+  .fgq .table-wrap { overflow-x: auto; margin: 20px 0 32px; border-radius: var(--radius); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .fgq table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; min-width: 700px; }
+  .fgq thead { background: var(--bleu); color: #fff; }
+  .fgq thead th { padding: 14px 12px; text-align: left; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; }
+  .fgq tbody tr { border-bottom: 1px solid #ece9e0; }
+  .fgq tbody tr:nth-child(even) { background: #fafaf8; }
+  .fgq tbody tr:hover { background: var(--bleu-clair); }
+  .fgq tbody td { padding: 14px 12px; vertical-align: top; line-height: 1.5; color: var(--gris-texte); }
+  .fgq tbody td:first-child { font-weight: 600; color: var(--bleu); white-space: nowrap; }
+  .fgq tbody td:nth-child(5), .fgq tbody td:nth-child(6), .fgq tbody td:nth-child(7) { text-align: center; font-weight: 600; color: var(--bleu); }
+  .fgq .faq-item { background: var(--blanc); border-radius: var(--radius); margin-bottom: 8px; overflow: hidden; }
+  .fgq .faq-question { padding: 16px 20px; font-size: 14px; font-weight: 600; color: var(--bleu); display: flex; justify-content: space-between; align-items:
+  center; cursor: pointer; }
+  .fgq .faq-question:hover { background: var(--bleu-clair); }
+  .fgq .faq-chevron { color: var(--orange); font-size: 18px; transition: transform .2s; }
+  .fgq .faq-item.open .faq-chevron { transform: rotate(180deg); }
+  .fgq .faq-reponse { background: var(--gris-fond); padding: 0 20px; font-size: 14px; color: var(--gris-texte); line-height: 1.7; max-height: 0; overflow:
+  hidden; transition: max-height .25s ease, padding .25s ease; }
+  .fgq .faq-item.open .faq-reponse { max-height: 600px; padding: 16px 20px; }
+  .fgq .sidebar { position: sticky; top: 24px; display: flex; flex-direction: column; gap: 20px; }
+  .fgq .sidebar-cta { background: var(--bleu); border-radius: var(--radius); padding: 28px 22px; text-align: center; }
+  .fgq .sidebar-cta h3 { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .fgq .sidebar-cta p { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 18px; line-height: 1.55; }
+  .fgq .sidebar-score { background: rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; margin-bottom: 18px; }
+  .fgq .sidebar-score .stars { font-size: 15px; color: var(--orange); }
+  .fgq .sidebar-score small { display: block; font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; }
+  .fgq .sidebar-cta .btn-white { width: 100%; text-align: center; display: block; }
+  .fgq .sidebar-links { background: var(--blanc); border-radius: var(--radius); padding: 18px 20px; }
+  .fgq .sidebar-links h4 { font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--gris-muted); margin-bottom: 12px; }
+  .fgq .sidebar-links a { display: block; font-size: 13px; color: var(--bleu); padding: 7px 0; text-decoration: none; border-bottom: 1px solid
+  var(--gris-fond); }
+  .fgq .sidebar-links a:last-child { border-bottom: none; }
+  .fgq .sidebar-links a:hover { color: var(--orange); }
+  .fgq .fg-wrap { max-width: 100%; margin: 28px 0 32px; }
+  .fgq .fg-bandeau, .fgq .fg-bandeau:hover, .fgq .fg-bandeau:visited, .fgq .fg-bandeau:active, .fgq .fg-bandeau:focus { display: block; text-decoration: none
+  !important; background: linear-gradient(130deg, #1b3568 0%, #224077 55%, #1a306a 100%); border-radius: 16px 16px 0 0; overflow: hidden; position: relative;
+  transition: transform .18s ease, box-shadow .18s ease; box-shadow: 0 6px 32px rgba(34,64,119,0.25); }
+  .fgq .fg-bandeau:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(34,64,119,0.35); }
+  .fgq .fg-bandeau *, .fgq .fg-bandeau *:hover, .fgq .fg-bandeau *:visited { text-decoration: none !important; }
+  .fgq .fg-bandeau::before { content: ""; position: absolute; top: -60px; right: -60px; width: 240px; height: 240px; background: rgba(255,255,255,0.025);
+  border-radius: 50%; pointer-events: none; }
+  .fgq .fg-inner { display: flex; align-items: stretch; position: relative; z-index: 1; min-height: 140px; }
+  .fgq .fg-col-text { flex: 1; padding: 24px 28px; display: flex; flex-direction: column; justify-content: center; gap: 10px; border-right: 1px solid
+  rgba(255,255,255,0.07); }
+  .fgq .fg-headline { font-size: 17px; font-weight: 800; color: #ffffff; line-height: 1.35; }
+  .fgq .fg-headline em { font-style: normal; color: #EC683A; }
+  .fgq .fg-subline { font-size: 13px; color: rgba(255,255,255,0.62); }
+  .fgq .fg-col-stats { flex-shrink: 0; padding: 22px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  border-right: 1px solid rgba(255,255,255,0.07); }
+  .fgq .fg-stat { text-align: center; }
+  .fgq .fg-stat-num { font-size: 24px; font-weight: 800; background: linear-gradient(160deg, #fff 0%, #dde8ff 25%, #a8c2f0 45%, #fff 55%, #bdd1f8 75%, #8aaee8
+  100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .fgq .fg-stat-label { font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-top: 4px; line-height: 1.35; }
+  .fgq .fg-cta-btn { background: #EC683A; color: #fff !important; font-size: 12.5px; font-weight: 700; padding: 10px 22px; border-radius: 8px; text-align:
+  center; width: 100%; }
+  .fgq .fg-bandeau:hover .fg-cta-btn { background: #d45a2e; }
+  .fgq .fg-col-photo { flex-shrink: 0; width: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px 14px;
+  gap: 8px; }
+  .fgq .fg-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+  .fgq .fg-expert-name { font-size: 12px; font-weight: 700; color: #ffffff; text-align: center; }
+  .fgq .fg-expert-title { font-size: 10px; color: rgba(255,255,255,0.5); display: block; margin-top: 2px; }
+  .fgq .fg-footer { background: #ffffff; padding: 8px 24px; display: flex; align-items: center; justify-content: center; gap: 8px; border-top: 1px solid
+  #e8e6e0; border-radius: 0 0 16px 16px; box-shadow: 0 6px 20px rgba(34,64,119,0.08); }
+  .fgq .fg-google-rating { display: flex; align-items: center; gap: 6px; }
+  .fgq .fg-google-logo { display: flex; align-items: center; gap: 4px; font-size: 11px; color: #5f6368; }
+  .fgq .fg-stars { display: flex; gap: 1px; }
+  .fgq .fg-star { width: 14px; height: 14px; }
+  .fgq .fg-rating-text { font-size: 11px; font-weight: 700; color: #202124; }
+  .fgq .fg-rating-count { font-size: 10px; color: #5f6368; }
+  .fgq .fg-logos-bar { background: #ffffff; border-radius: 0 0 16px 16px; padding: 8px 24px 12px; display: flex; justify-content: center; box-shadow: 0 6px
+  20px rgba(34,64,119,0.08); }
+  .fgq .fg-logos-bar img { max-width: 100%; height: auto; opacity: 0.85; }
+  @media (max-width: 780px) {
+    .fgq .layout-grid { grid-template-columns: 1fr; }
+    .fgq .sidebar { position: static; order: -1; }
+    .fgq .sidebar-links { display: none; }
+    .fgq .hero { padding: 32px 20px 28px; margin: 12px 0 24px; }
+    .fgq .hero h1 { font-size: 22px; }
+    .fgq .hero-stats { gap: 18px; }
+    .fgq .fg-inner { flex-direction: column; }
+    .fgq .fg-col-text { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .fgq .fg-col-stats { width: 100%; border-right: none; }
+    .fgq .fg-col-photo { width: 100%; flex-direction: row; padding: 16px 20px; }
+    .fgq .fg-avatar { width: 56px; height: 56px; }
+  }
+  </style>
+
+<div class="fgq">
+<div class="page-wrapper">
+  <header class="hero">
+    <h1>Passer
+Qualiopi seul ou accompagné : comment choisir</h1>
+    <p>Aucun texte n&#x27;impose un accompagnement. Ce qui change vraiment entre les deux options : les preuves, le coût, l&#x27;audit de surveillance. Comparaison poste par poste.</p>
+    <div class="hero-stats">
+        <div class="hero-stat"><div class="num">1 000+</div><div class="lbl">Entreprises accompagnées</div></div>
+        <div class="hero-stat"><div class="num">100%</div><div class="lbl">Taux de réussite</div></div>
+        <div class="hero-stat"><div class="num">4.9/5</div><div class="lbl">242 avis vérifiés</div></div>
+      </div>
+  </header>
+  <div class="layout-grid">
+    <main class="main-content">
+      <div class="resume-box">
+<p>Aucun texte n'impose de se faire accompagner pour obtenir Qualiopi.
+Le référentiel et son guide de lecture sont publics et gratuits, et
+l'audit de certification se paie dans les deux cas. L'accompagnement se
+justifie quand chaque mois sans certification coûte du chiffre
+d'affaires, ou quand le dossier de preuves part de zéro.</p>
+<p>FG Formation vend de l'accompagnement Qualiopi. Cette page compare
+quand même les deux options poste par poste, y compris les cas où passer
+seul est le bon choix. Données vérifiées le 24 juillet 2026 sur les
+textes en vigueur.</p>
+</div>
+
+      <div class="fg-wrap">
+          <a href="https://linkly.link/2mdDo" class="fg-bandeau" target="_blank" rel="noopener">
+            <div class="fg-inner">
+              <div class="fg-col-text">
+                <div class="fg-headline">Vous cherchez un accompagnement Qualiopi<br><em>sérieux, simple et rapide ?</em></div>
+                <div class="fg-subline">Prenez RDV avec moi, on en discute.</div>
+              </div>
+              <div class="fg-col-stats">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                  <div class="fg-stat"><div class="fg-stat-num">1 000+</div><div class="fg-stat-label">Entreprises<br>accompagnées</div></div>
+                  <div class="fg-stat"><div class="fg-stat-num">100 %</div><div class="fg-stat-label">Taux de<br>réussite</div></div>
+                </div>
+                <div class="fg-cta-btn">Prenez RDV avec moi</div>
+              </div>
+              <div class="fg-col-photo">
+                <img decoding="async" class="fg-avatar" src="data:image/webp;base64,UklGRjRaAABXRUJQVlA4WAoAAAAQAAAAKwEAKwEAQUxQSFMtAAANj0c0DGH+v1vTIyLjq9DtEPr3/5fkprE+c6ampqbT0+l0lEYIoQghhJCFYwvbGO87Ow47hmzA9fUlBseXHePl+noYx+PrMTs4TMJm9s12bGO8CmNkIYQiFNFplE6np6fT6ampOffkT6hzTq2nqvJrRP8dSJIURYTHFirbzCHgEwgDAAAgzEFuUgC4qQqBhLhoEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvmzPCCNyS67+8KkvDAIFWGSIeyyByHmNubojMaInqUiVXX2+IRQRoBGiGZlsWtM0TdM0RplFmWXVajWLMUaZ+ruiZll3GX6sH5qtacgkfKMZuVy2ue3MpiaDmQ2LUSZ8QgjRiBBl6KRarnw1XqlUqkJU/Gs8893PC1C8HZitLTAJ9Q49IYnU0qnmngtaU5pGfFkDhBBCdN3Qcvmmc9rTFqW1L4aGqg2T8diIK0kWi0pW2/rDC4tUpnPGWa3tuTAjSW/ONzWd39uDidHibw8XGib3eOxImJYw2wWiJfdhlHhTaMYPLE1Esd7U2TG9vUpVZV+2o6f1jE4MfDoyVjd5eMSMmO0CIYCBOcXYpvbzRgsJuCuD+zDTPu2SHPMvi1nSTZQyomkaIQS65kteqqll5kUpNvbroYIZxymBLMBFgx3Z3sTdFwZxvcEol593UUfOl2PqtUa5UPpDpVEz6xRM7gLEFcNIp1O5M/Kt2XQmpburJS0dvZe2jQ99ODBhMkbiQsJ8sq1crM2leJPwWwByfWlwH/skLdex6MJcw+tZy2wURgu/r9RqJJ1JaR6OY9RiFrWq1Uaj9sdquUGy2dyZbZ1NRoq4qUvP6r2wefTYoYkaf0HFg5gwIneNe5D5sT8jDCEQuFp/pHXOmWt4hnFlrDD8eUlPEwIneah1e+1Qi5pmfbxQ+rpW1drO7WrpSLk1m22aOTs/vvdokb+pok+2ZR1OcSdftlb5bjHar1qY9fB/aWLs2KkqcbgmwDvJD1UrxeHTQw3WOnVyW7PLW0TrmnF18+jLh8pi1hdtktwh28QRmT5+Scp8SPEpjvI+eZCWnbm43XQ1fKV4/FjZzOoOPwQinnp+qTY68tlILZOfOznn4vv2WYszH789Uk906Fy00HTP95MnjzUMEcZCYVDi2ReAWMOsDg1/Um6ZPmWyc6TJ9C6dUnhvX51LjS7ZlvUVWb4sGLxtf1OKObd1ucoY7X912JDyPbR5QXCqFgffGasuuHxyk3NIXrS89eU3ByjXGVGS3CHbxBGZPn5JynxI8SnOYR6hsnnmzYy52Hti4K3xrCbbPjRyz7sg74GxfUfo1GX2ysNR0XXz5MIzQ7WEhcxNiy23Xpx69yPdOcKGRzz7QiKrPLT3ZG7+Zc1yF/W2ZZeOv7yPi4wi2Zb1l2l+TBZyO2233Oya8wd3eo6zoUGIZJVOvnqy+4fTHLe3LFtBt+2pc5HRI8kF7pEp/VK0OWS3XnG1yx3VwWeKaT4r4f0Kn+zeh0psYv9r5kU3tMmzR23JCm1Hf42LjBpJLYl65hZK/izGxQYmKUGY/qPLqVO/9dIbVUfKKyDeVbv7oRKtDu49NPnGGXKPc3NuLz51mCuMGjHuEykc3aRwJZ5kSwuWsK6rnWvuddEw9PpzYrSNw4raJSSKb75grFySlT+EXLVqbEs/C7dvIaUsuGfcXaIuuozJa+tOew3uGuQzOL7eDYuIoeu0Ybor4W91BUT3v1C8eUmL3Mwty0e2FrjC6JAwox/wM0wT7rWAJKYn9/Q6lRc2D4uXI6EhkablprR+U/uP0ZNl6hQjNiih+sAT5cvv0Bxj2+xdv7K4wsiQFMLS37jFJVfiSba0ELIif+tKp4STO/cRkBCyyTG7aJn8vbaWikXpP7Zpp8erDZbKVkeqJlPY9KkdR1d/X54Y961tf3g/TRzQFtwpBl3h3qHnTmkEPItDIS3bfmW3aVLZW6kp01s0kmaWXh/7dKRkUp6Dimhgx/APlzRJNp1279j2sYSBzOopzmh6/B1CwPM6FDJaZkxqMt1ihWgpIy2mG0Zvz9mofjVeKlYIZdwI4ZM5sI2tnCP1punWxVv3WFxeJIhxn0g2cotOrsSTbGm+E0J+e9+w2qHAfHczAQkjhcTzLfMubKr7kiT1xMh3t56VZ+U/FmvFQp2xMJPUaYF9G3pWdxPRkZ71lY0DSQGk6y5D7gAd2UwJeIIHJC2XbbLMOZNS5QYLYA5xezqd7z4rxapfFwdqjGdi6IR/fW/+rTk5hlb8cnedy1NMDpMKL7jYi1f4CXvCveabFv3YGUJPvkHAszsgaS3dk1otI1VzRk/ARNFT2Vz3OcbEJ4MVxk0RNrGR7ZVVM4mIwvb765sKXJtyYtwn0t/w6HQQV+JJtjQ/ZnSs+uw2HX9y+BG+iApidcdEfslSzaIu6RbSrbn2ZefVjw0P1007kEJfy775WNeDzdKHqVtuX/++FXMgs253dHzsmUFIAgMRtNyyM6ga0zTPmJ1pfDZUKVUZz8pQqfb8OyuuSAnp7Q+PPFXk8tSSsJ5kXNcw4DHvSYS7zA9p318uK6UHH9N4ggcjjaRaWi9quO1h355u7ZvURMePDFQot0mYZB19InNfszTxvOP89SNcnlJi3CeOv2EO4ko8yZbmbTgpRO5PO2o3jwTPmdyc73Vm6kxd3kn525Kf8T1t9KOTZRqu3Nrzz911nSH8vOD+p35lxhS0nnuoo83tOoQYnu9+iaS6LmmyR1vlcwUpKLt7zsd7B8MeTEe26GultWnrmurWKtemjoQNhRdcLMgreMx7EvHhNbLkNlll/dkP7X+TxPBM90d6c673ooaPiZWyl0Aq3zX9q/fHuWXCpOovjq2cJd/1nc3jXJsyYtwn4m9ERDqIK/EkW5q3rTJrux1LqYf0oNmSuuZbKT1aS8F0x5VNew9WWQhaXaPu/W3T784IF//o8m37mNJOQ/aMC9lx6yN6GXegK5G2VaY8l9v9MiFw6PHRjlCbXXT2lzRyH6+yM+eW3xni6RkmTeyYWC1F1Yy73njd4tqUkGRYyQuu3vcT9sTLZe33Mnn/+VeEwKmHp7wnMS0/+QIquhShH/LyvmPJWW8NVim3T3hUf+WDHy6QvhA9cOxZk2tTQoz7xDNRfLmSEgYX0vrWyQoH1hMCpx7RAa9OwWjvOiMljXgR/JGed2fp1cN1xk0UGtHDG5f+KC3m4Q9o68pcW/hk21j4xOEaTpIIbmdvIq5S9cvk2Rx9+zWNuDvU/uFBJL/gnNqfxCQ9oj+ycy7++FCZchOFR5WN1l0dAIwfTN0yxLWFTeJLi2xQ97DkRvYk++gq4qeT5P2Vt4iHRFu5B+nZzqk1119RfKj7+vJbozy0QqTqrz58qF1axC/cPMy1hU6SgT0770seczF++n9/U56iiEEf3CMuZOt3lU6aZ14grWkQiR8BFsHXfefFIYtbKTyyDm9eO08oXvDAfafAtYVLCiC9xpJn4RuyfNSwr7oSLy6UmXKBwadyEd9EFs+bvfdwyAPEwPal1xDR/KM79rOoAx6Vh4jSJt2HPlu5CxkLLq4xwGOL6p/NmH76cI3yAAuN2OCWy6Wt955nDkUccutlZYOPEO4OT7L1uwjvnRvdP/E2kTHj+tH3RhvcUOFR5d4L7xbL0q5NW99lUYbc/bLpR9Zr0lUv4sVBqZ4qAMShQlovXfW3nx5n3FDhUeMx3CuyMbPxrd00uoANVLLK0Ab4E+einDSfZZ9jtV12zmunGI+x8Kj6c+N/GWIJv/aNfVxbiCQZ2DOhfMljhCHzqCzr6AZwd/ghSb+YCXQ0ue+xaH7ane+8WeO2Co/Yw+zBtGhs0+ZDiCak1pqSvFObCE95X8SLVNG04G/qQJx+iHfetZ+/ScPN4se/eFhsmU1PHWSRA3Hf/fLco3+T7FEf5JBNtMy3/j9zKbH5s67ln+4Jd4LXePrre8XWvXrbENcWFkkG9uyxL3ks9VP5e86hLcKbPknWn+rMFfjSM47bkYOUmytE+j9fPyQ+Dk1ed+8IogbaDWfLq3Tpql+yi7ip5dK0mPzG7YeYp33r0yo3V5j09BcPicY67ts0HDWYM1+ez22U3emPZM0tM8oM8StSHl3V2F8jdqSFSOa/mj81xDJr/mNVri0UkgzsmUg+tKH3PvmJjcKVAYiBZLrPZ0AcNxGYqz59s8ItFiY9rN1nAOSG6Q81IgSkZ7WkbPxRcdU/Cc2a3pjIafHcxLi//A/9E9JkOLxc/hfrZwTQbkk/XY8O5NdINijbCytJUwAi6M5/c5QCsd16LvpDf4XxYAuPao9NuooA+v2f/4qrCoEkA3v21VOYsU4SVltPuB+DETI395jx3aXx7Nt/Y05UuNHCI3Pt8isAZO8/8GZEwLhJmnpYm9OE8JQPRMbMunvrcfyr1vaxIqHCbuFRZcvVMwA037WzEA2Yt1AooS8VJUGBiDRfOEFhb/E+ffPTKiHEjrfwiJ3a8VAeQN/yzbUoQO8PJS2793InBqVUt+k6+Y3rX7Xro2JBGir173ikGcCtZ2y11EP6ASb94VvS1YCkmZUMX1TEvKr3H74qcKOFS+9+vsoAtDsqv1IO+h1S36vrNaEmKBFG7D32p3RzRUxowyXz6dStAPJrdo6qhismCSH1DSDCiQFJbznvj7BL7E8d+aEKuGFDpfLGK+eJD0P3rSuphZ5rhSL6vHQ1KJGW6b+niPsmph3f/lPF4nYLl0qbb+sBsKjjSUslaPdLKvYcE1ICU34Jq8EuCYDzSv0i3kKmQ3vvygL6ytP7FYL2I0lGcRMI4x4MRmid898McN/iu8Ka/cUQ44YNl9grxbvF7O6hRybUwcyF0jphm6jj+R6I0Hol+F8kxNabGqzxbA2ZrB0XzQLQuWJLVRVk5JX62yUhhEsJQqR1Ef+jxCiZ7/znBI+3sKm8dZWY3f2k+L4quNsSIo6/SAgTRwQho+9sOEoi3NxUqlNu2LBpz7E1BpB68IkRNdB5pVDT2KQBhBKe8kGo45x6khQjpxV9fxEKltf/lr5GVF27CSogvVYS8Atp8isdA5DeUrNDP0m21m99VSV2yIVOpa2rmwDyg+HDKuAm55pKksG4BwOQqWdpopR820gV3LCh0/CLa1OAvn5TMVyQZr+XSy3uIHLYE57v/om1zo47e4dYW2qsztM2fHq2ZQmAaVN30tBhrfQHr+i2KKFLOvono9NMmpI/80vxYSd8quz8YR4gd/Sf9C1MsrR3J4FZnUJAYSsc8hj3oH/SMwUD9pYoD8+s9ZvctuHToQP3A2i562HqVxg3snAKv9VtZ6xplbRU3yI0CLKPXLN/yp79FyBJNmHm7/y2wg0ZPrEn+/rEetR4m/oURijES8DDCyDLqOjqoXHCIJEtMYhBtM4mJE6x/vtbCiYE8tJodRrQ1jxT8ieLG1/6F+4F95fybaKlynbi4jjenH9i5TwvSYP1KriZVNBL+D6AOR3P+lTls493SefnU3AZeghvxTexbNXSk6boF/znCGN28Ckguv3GZoDc/tGgP1WEQXYXceti2zLp+g5C4DxQrtY3Ge1FkyROyZESVaT41MCtYtWwdJsfUcLKsrFtAS5SUmukd80mArfCMyAAmUglDxqpGuVmUkHm5tvaAPKjo4N+VPkLxCltkmdP8avhAK1o2cTZCXTKKA8+FVR+5i6xdr/9ibofVYRB+hdGnB3UpGfoE/wZL/BPuRySpxiMqVkZS6PD5F4A1w0NeksSVpYtbQtwKlkgmXx/hde4Ec8A/6TlGkierfnvfse4mdTQxDP36EDzim2mD0ku3XM53ym5bRtBaKCzhhb74sd4WVoToIb26HPERNg85C1JeF12F3FebxbPHS3xVsICnZpGEqFRZco0l3fdA6B5+XYfiuyeOIzt6FLmh+K56jYCj8KTwD8JVQl0yFXtqOJmUkPszdQiAFeVjnpK8mHenlbpOuNXQ4O62ZxEJaOVBSgiuvXHWSB17cvejRAG6V8cQUmuFc+Zu+RWwpoDnzUBJNDELlO1FIrek+0Tp8FRDz3CyrKxbQGSjN4u8dw+cZMH8QzwT2nTTJZbHK+wb/yHyc2kimpPrdSB9rm7qJcez75dL0XBMwShwp/OSqKDbpgm7LhTRoe1aQBZNjzqpYcwgDAQRqQPA4vEc6ND/BAi0HTNSKLSVKurVF3ae7NYjXa86y5HWFk2ti1AvIqvElLoTgJeQpwDm2aKJFBTTUZRZK4qos8vagVSK16ou+txM650ni+dxQrUkwhvxzeZhXRTEpVsqtLgcaeMartvJUBP9jB110MYQBgIE2bukJZVb+pChRdRLtU3WQXSkkiYspQu+diLs1sAfeleV+3CyrKxxX3acmn+u1dq2YuCzRkbBiV68pT8n/9iMm4pZTRQEQusKwbH3cW496tVavlQBn4hANWqLXoCHXJVk8edOqKvXa0DbZ17XMUIl4MwEEaAaVXRu5c1Ap/gn8xP/74znUCT4HyBKpXNjhuTAX3uiaq7GDgszRwfzCaOw1fhGRCAqkPd9vs1gW5sxgTjZlJHE0fEi3CW2e8qxtktl7tf18BCB5aykmgWnMoXKeXBp4zo7isMIHvJW25ihMtBGAgjpE90rfIhIUKOJ1Eu1T8RYiGRVldaw1Qqm42NLwC0madqrlrgsDTLXip0jJQBXuNNPAMCEKiVTqJD7pwv6uCWUkfWe4sNYApOuolx61S7ZOi3dSgA8y9/SaIVgzaL9Ne4DRXS/u5mcfOHDRclhAGEgTAygwKonubsG4JQpdiRRD+zk35Tpkp1j5emAVh0suJQIkzssHT2EiGjX/ziNT7IzoAgRPv/9rv2wwl0ylo1cEupo+qvL9eAnlS/ixI3zojn3jOEz/hVTyK8nQCEskES5yAirb1oMTAopP5sB5A77wR1KiEMIAyEzRJLLmu/xH4OQmcQYnxxlUQ3NzeN2A9HAOcNVLxBk/ioFJa8xpt4+Aeiepm0JFGj6bP/vUy5pdRR451rAXSyUacSZ4ea2oSzThHJb/yqJxHeTqDPQaVGm5FEs+DmSo0x24zqiA61ZoFs70GnEsIAwkDaCYDaJ5wDQCCq/9c3Ukl0oVMfomqFF8pTAGPSJ9QL9MVCRKkgd85P4QkRiBil1B6SkqjR7/zO/sbBLaWOGgN9GjBntOhQ4nyn9Irn+iVD293iVz2J8JQPRI1qKk0SqDT+8m2T2WZUSQemZoCWzDCVZRAGEIZ2aUg45mA/B8rFByJWTyXSg0ZBVx04w9k8gPkfWR7QJf5gYlzWwmu8iSdEIBKPaMmyOe1ncjMppcLoHAAzBkxZhtwb/TzpHUodfuNXPYnwlA9GlQl7rEqgYjKd6G1ZWqxY3JhKyPrNJACttCjLIAwgLNUrhzpBIAhG5T9+O59ApWgYXbMu1FD58GAjbOFO84/kmoA2MuaIXak+JwXjrx3zWF7jTTwnghFqY9lWkjg7Hcj8aHEDIL3nH9ltcXupoMFsC5BqH5JkOOzaWxF9GoFCoFXShOQpxo09TIq5ju8dsD91cHsqoFpVLA2mn25IMggDCOtl0hUCdYA6s5tKnicva3d+6uipjzFFs51PLwbQM16XvQGxCL1QSBhxGpnXeBNPiIBEmW57OIHmwG7L9/wQ5SZTQNZAn1h3ZqSlqGzXVJtIlWEEhYDEfvefnQAAAIkyw3OevvuVye2pgNh4ugnINA9LMggDiNEiRvbPCAJCQGJH9T6SYIW0VJQ8LN6HaAVSZ/5Gjl1xX4f0Tii49MhPCePDSUm3HZ1YJ5G+Vp3bSwXVa8KaXaNUyJB80iOeK0MtWOa/n6klWcmRErenEhrtIEBXoSE0EAaQSaIbY5nAEJQs09adaEWfUCX49LmGVOzYleyLVItUiFoQal0hgYbibNHi9lJBg20pINVUALMNKznbAMC+Cg5ByaqlDNeSPHO8s74W81gVVNGyYo0wSAFGGJAVnyZqJYKgEJgm0plEa6qtUlUgWBo9GmIed/4XTHhDvHDFs3W3W3iNN/G0CEzQaLJhnpW5vVRQpd4KoL3AGIikX2rLdPvNr3oS4SkfmOpmE0myks4UwaCCWC0HINsQU2jhM+nOako1kFqpTU+0G9OFUPW6euAPZ0jTwhrXIJL2HGlmnFMO9d+epyfajd/6mttLCRXFiJunVQYiXNIqOjGeCg7BPwfVmxKtWtPFY0qokEsBOVoFGGHQped/S4JDYIJOAQAAAAAAAAAAAAAAAAAAAAAAAAAAkm0wKmbSQIrYX4Mk42YteWmlGIim/2MlgSZ2HlHn02RhLLBZGkDLBAMRQ5Ml+mC/NJUCy01r054daE2ylaj1J25PXxTOmlHcWBZuZsiKRRZtEKiE5psm1a2JYnKhmOIrmgJLDhHl2/8umzhrimmdpRT0q86Sp9IJV7jVlJBVz4lDhUGYNSMVqhRS59LkGxoqlNtTDdFKXsRflYERhowwsGkpBQOy6kS7U+F4R//j21KRTWyPL6KohfofzorP9FedpUsZcKspIVoXHziyNQYCR7F3pWBWc1rilZrB7amGmJkSU2jNBCMM/8CLSN6AEHRhW0plEw/+rCqIxAiSkpcbkomFei5AKbBx0pZ4Bx6D3GpqyDQcByJcIu1hQCAq1duT7jFuHG5bJSQOzmUsYdLBDtkwIBA1yvJS4a/TQtTUNOkgmZiEBcHI+vpMPemqGQE3mRoydSIdogNWOWskXLGYsK0iauiaC9glNAhGNT2VdMVUKNkkuhPke3nUuqniNd7EcyIYoUoyCVeq3F7KyCIaQERWC1+LV5xGXX/zdjyJ8HYCEavUW0nCFcmeikhj4j0rNMgTF6FEMZiVFpJwS3aV0wOdCUdQ4WPnwXJxCA9/H0S4pmBkfnVmOtlKKaW8MFnEf/09IDzBIJHQwDzJRv42CEbWUK4l0Xb6lboI4iAfhAjHwe2lx33n7QWx28IC0jDrIklWzKKu8kClg8PZmii2DmfwKrJ18TdTEw3LNaL0IHzjLIQAGrGCQ0Cig9kkW4qy4TRReYsbOCbEhl5VDHS0MiORiuPtNqB05ZeRv4845jwpHTCMmkvwqhrhPpkdkyWDqheTUtFZ6UXrWG/UdR1IabXgEJTYYL45ucqgUs32ysr9UDN0peCidqKaRA87gvDjlNKSlt6PmitoaeXAGqen6klVhgp28Ki885vSAG44Qdg2XQ8OwWmkNbEu7M8qFa3lpMLDT/4buQSH4DSayybVGvSIvQhVesg417HSf1pCxtm/t5zBq6w3E0ioG1k/UyvbkALvd8TRiXExe20rNZRDvZ44S1HHkPlrorhI7RQcKuhEK4CWMlUOjXKzlkhluKBYdk7M6FjFmRxfngsgX284g1fdrPx3ZyXMg45R4APVxmivizuJs0yInE2hrhzIeFMqkc6jSnWLPKdudwoFelq8O0vKgRXTmUTZHQPmW8o/u5zhbMsxCbbyQDo37gxeqHvQTKBPHPTgGDej4mmdPAV2KTRHkDrzi8AQAtUnuhJoBfqRvau+MyUt+g3Xg/xgUAiB6l9ckCg3SlOM99S/jeR5/aeay8A50gugs1pyBK/CROtvbUmYq6O7cuq1N0sfgU66+IKdvhBAq1lWDhir9SbBzM65CDLLJ0+kiWL9InLrohNluJShHgBZraIcUD1xUSYx7t+zt97Ikih0YBIFMMIX2C4TOzHJMDoG5OBV1jORCgfz3UlR6q/9OSod6JJGJrcsJbViF2Cc96l6IKPj01JJUaqReAmJJLfNKA6ucWiNdwGkc9RSDrRx7LsdSbFQb5Ao6BdfMohYnv3eVQn97AIN6DIL6oGeHL8qWg0rtEA9GmcRt9J6asxVCTvVlgWaU6PqAdWPzu1MhlKOythmTJJKw9kj4ZahlgxAukaYciBsuNqnJ8KTxai8rlM94rlTLktZyWMlMW7OPSF/Dgo7itx9zVA/8r187It4s31FoqBffCCT1lTu6zPCGkN9Yr5XqqoGkQvD6dZEeLIWFf3dVTE+lT3i0PrifE1cGFMMop5NVLviumbwyE8WCfnibSgtZi0vNcNGG9DSelQ1iGSofnJhLgHuHHWEifoF+wXSrC7j7jaGcSrmY9M/r6kHYvWTafEvViEST4qlubSm+tBwi0PhlvrATABTJkqqQWzjH8+N/6n6+6jMAabVxXP7iWcE7L1UDDfth5WDWHy8i0XpuJdiNSLytbniuQHDXQthYGPoADLf+5CpB9DyL8+bk4p7icq5qU081+8Rs8ItE4U+gaNVxSBt7NR7Fywx4luk7xFRefm062KK+ImPtGVHLjKAKdaQchBE+18444oOg8R3r3+uR2RhtVQ8Vx6CJwCHupoAbcF+09bB2/Ek+8QjPAQCP0tEJ3YN5S/q6IplM9LkwiIRabVXWlh55Yb0ahxriDXXwo9rykGmxmD/aVx5WWx2z/FxMCpDWo/kkwPET9qWj11KgCnslGpwIas6/vXSmJ7KH5NoyNcvEc+NjbmrEbXCwEdbW4HspCMUPN89yT7xCA+BwM+uZA00N8ezjNqzsYjwNKlVjzCT4o8wMmyJYF92tKYUPDZWMDtJ7HYxYJ6KymJhsuTqNzR/aVt770bxjSNzXDG4U/XA7FwsJ3WnIxIY5ErpPTLoLYdJFj7emQNyl7xD1YIHHcp1xa1IbzYrKhPgPvHccd1HHIIwQker0wBy1cEK87Y/33myh0B2vec2VpoSx7lwVYvIuU96j3zoN22J+fKVaaCtcx9TCh5UO3Z+a8glIta1exwJ9embpdzwZFErm/hwSzuAm99oRAfYoNkXconINN+KRumWPgPt805H4X8i3DAyvgDArMqgt/35zpM9BLLrvbeJTy7OhlyiEYlWJC5oc6TXyDGfaSuiz3prdhOQv/gtqhK8iO7XZ4b7rSEic1dGI3H3peK5k6anIFHrMPEAmwzgmv6CSvAiWvrwkpb4FUTisESa1L2q+4pDEOEGlA5cC6Cr800f9heqQiC73sdmHcWM2J1SaETBzyvEc5V+32krwha7+9oAfdUTdYXgTeMfTe+I3S1aBNZWZGZKmPF9H5JELTexZNFi/2Ua0N3+tkLwJtpfuEKPGxAzAsPSCmmt8JpXHDrbI4xI+btraROAH79c9bS/UBUC2fW+tvLeS8Kd20Vi6NTMCHwFkix1NEDaypF7vHyZeKOaB9WBD2JDx67PxOygNdQrv108V/+lH02ilptYtqj18qU5wLjthboy8EP09eYZJF4lVWOqlU9pks7UMw6d7RHbDXL+HjXF7G8BPehlf6EqBLLrfW4jJxbn4wWG+lvulHy8SwuQto7Ire1aqQHZlZupKvBF1p7GNVqcCvnGn5li4b3TxHPDJ/32SvTJadF9+iwA88g+VeCPSm9M7dFidWgwxa1I180nfMShsz3CiCOF6Y4fpwFt1TMejQhVIZBdz3/5Ijp4YmmsGsyYluJWusVzg4OB0tYleN80FgG4orFPEfgkczdZFqcGm+tqLxirxXPWDp+yRC03sYtFG8+tyAD6yl0VNeCXSh+cPStGJWcpLGI4JeK5oxU/cehsjzDiksIHG0vEJ6Hml1ztL1SFQHY9v9cvDR67POQGFb/ooLbcJz23gwRLW7fgrW9bqwOpBx4rRQMc88X9heuysSlZraxQM/mB1NLxEb/CRC03satF+8e/L143N26nKsA30dqBc3rjc0vrCGXKNHcsF89V+fVwQMzwt6wQH7vuODzgYn+hKgSy6+V7/c6Eq1P02MDiLwepGs1iBS45dw9fnQUFl+DF8WOrCNBy5+a6AghAtS/OjQ1qs5Yf2FNTIVkMDtJfFHfaysIDQp/vnQJgUeYVBRCArKKRj88seMbcL942mZK/WCuJfdJOvBCBYfzlNeKFs2Zr1WF/oSoEsuu5bwLQBGuJ0ZKhd/Gxw0omwldR8dzEC3bahgnAs60LAHTdtt4MHYJQrdIRp7Vo9/L3+pmCBegK8Zy5zu5RmCAurVvZDOCWif2hQxBqfP1dEqdt2qR3iqFrTa2U7L+PT3/DBUIPjosZTtOdT01I9heqQiC7PuCFQqvCB5W88haw91nYUi9LiefK/C9CBSGEbrlklhiQLt7CIgNsIptGnLaW5W8UWMhC10gtbbC/xIQLUnOlbQ/ogPaT4f1chn3ij4dA4FEciMokB6Wbgrde88EQX/JiAJXr+o/bcRgySAZ/v3wTAbJrd4yD7zzHQyC7nvsmALGayV+9saq68qMJFppM8UGnWVopbLHTNmRwSFl3Yw+AeXM3N0KFQNSotJB4bXOM/WH+w5SrpZYeD1onarmJXc3paG70hbvEx67ryEvUPvFMD4HAQ9g/iSVbLeOwQGzWWPNPTISo8T7J9odP2HEYOjhsvrv2I9Hg6icK9sbTPASy67lvAlE9TRCvrQ8nWVgK9euoNKV7xDZM2OCis7F++TSx5l+1qRQNoH/8phGnIr7QLH2jysIRSOYtlvYNXGLo4OKt+oZVbQCuaX66wXM8BAIP24Crq0yUSkimn2mdpOEI7LxZaulN/qpQAC5m3//ZSg0wbv/yXZ7jIZBdzx0TiKopu8Rsy8/+dSUUeca9kidHxfozfHCTYz2evUUk0YPbhlgo4nk+BCMLUVgwhL4EqB2lYez/A1Ldg2GMeKKWm9jVlk5vibnY5ut7AbSu2lbgQR6YwEM4GPGQj0QJeQ0w9aMQTtqSSaIl62mebErA1ewjT61pEl9Jzn7C4pkelOx67phAFMXfIdh/TvVkcG3dN0Jaqn9kd0YJeCh6/cj9aUC7m/xfFoJ4ng+BiDTVY7i1zX8x2AxeTMUehbSmeo53RBG4Osx6qX6H+FByz+m3LZ7pwQg8hAOR1l6P42leeYAFHHbWQlpTbeTTc0XgYfnq9kuniDXtQ788zjM9GNn13DcBiGQv5NaK4eW571SDtbDSkmaw2/hKRhF4aio+uHaymPzc/9ipEMQjCOkzKBDH7ZbiQRZAFPmZ1BJ9MrRME7XcxK7m5N7yoFO7VraLl+/qR0s8zoMQeBQHoex0Ft0SMLmvPDDqv8P6FRdIf7D7C16rDDyNz/Z89IAOkFnXrq/wTA9Adn2w691ZRKuEGIALLn5xlPrSJL7dXCu1NLiT2D1RBX4E0+e/vC8l8mjxg6Wg4hGAspeYiNgW4qeL6xbu2mf5nCHLS6qTG8J1OeMmdjUn95Y3/bN2h5iVXXHpgw0e6r4JPIQDUHsrgLj+nHb5B4eYn6F52u2QllTbiV2rEvzYv/HYeTeIfl03aWODJ7tfsuu5b3wTmVJDjLe+2c9VfGxT1shLqofF1Fwh+BNWfvDya4Sgn521rhZIPPyTMZUiztsVuV95T4Xn3CO1VFkXehcYN7GrRbm3vEgEe+3hxZeJ7SeTHvF/ETx+fROamoFYb3f+Zj91ESISc8pq6Q/qW8Unl6gBoWR06/Uzxfj+o3M21njK+yK7PsgEuNN+q8d4E5PSpR8Mu+uYcY/8B/8k5r5qwbe2oUcemCz+4O6pDxX9iucp4ZvS04GYn5Zc/0y/yZwqrloB6ZvGP/9RQQeEdleLcm95kn0Sj4+tX9kH8bHj6od9TobB2/VN+U7Efpt52+f7R0zGREouuFbeH/89r40gyKoOPbdysnjJLLtyfZGnvDfZ9QEmwFPsrwzx33qv7jh9eKjKoF1zpSzl51/zHiiHIPIOrX9gppD1/R+uP+5TPPxSfj4Atx+xnQx3XtvdOHC4eE+b3No//UGNqxk3satFubc8yT7xwJYurrt+mdimrdl5yPQOe/AQ9kfILykDSISK5mnzc5q8bqluE7XRBBdVg1svv0Jo7XrgrVcol+pOdj3/5Yu67hR7UvzIduflJx4Vi0VlFa7B61+hvBR56MobxAy77cGJDQ1P8Twl/BDpXQUAAIAEaW58nTLBhHETu9qVe8uT7JNbbFcfPvcOEQup/3nG9jHG9bgQ+B0+SOu+zUqg/dQ2vqCKMLjmeOkxcr+YZRt3XLhtgOtxIbve1x/1XcsSaB/YQLjq6IM8cv3Lpw90AyDLVm9/33QVz/PBi4hxxfxk+SW38dJTykQLWzNuYlfTcm95kn3yCu9XPvjhTCG19cHPni276AG/w4talp3Dkmdv/L+vRG3UwZXo/qdun0MAtKzMbCo49dj1Xr9Iz3I9WX7Lc5THpKhRXOEavOHoHLl/+t0Z0fwNP96223IRDwcJO+SWXc0SaO+321CsmwhTulqXe8uT7BMPby+q7iw8IH3f6V5d3VKRxMD1Dug91+pJ1MaeXeKDRhzAk6q7f716ijQJv/XCLaeEErvebdhtWzSbJtBuPntEqI8WhKf17Z1X/0CEB7nsng9/XuHiHfmATPsVU60kmvgWHjJUaxc2Fnbl1nUS95Yn2Sce3n5ofEtqlbQAzq/s2XnQhHRHKj9lUmuNJdJtz0i3xQR8Uf1fP1s5A9KnqB+PbGxQQlK90y6w+FwvifZ/Pi16ED0IV+/7G6/8SVZq8kfLN+3Jzbwkz9tOpP34OhIJ/aJWvuQk7i1Psk+eEe66LN1QWTVZ6v/ke3K0QmP6K4QVzi8OSHuMwDc1dj93/U2G9J2lD0iofWSL1ItoQviaiw+X758FwP6VVLX/9IbUiXhBINqz/eIfiAlxMo0lh7caUtTFDIJRaUvh9kUJVbtpUHQlwqBI+J4NLWsSqLr6i21ST2IIwen5V7vvakmYrz5Ht6Tk2hhCcGJjz55YcZ2WIPvwtnGpPxEHleKPbhm7d0km9JqoGnLgqX1R7I+olZt1EveWJ9knHuEhEAisk9saKxZkEmDQHXtiWE6s2EIIJImuH3wmfdusuH8yG/+3A3KqRLbCNXgVipfzofH6E9qdc5pifMfgC3ui2ytRKzfrJO4tT7JPPMJDIBAwiRoHn6svvqpZi+fs5OSLRUcyJSFwEs30v1icf1VHDGcne16rycNVxCtcg1eheJ4SLkT7XzjUc+2MfLzafnMviXrnRK1o1s3A3FueZJ94hIdA4Gd3Kr+5tz57UUc6HjW0dHhvwTnjTUjw3FAZfGOk5eq+phj8Gjj0QU6eMsajwjV4FYrn+eBN1vjBF2udN/a0kgjbrDZ08DWXXiUr+CJr+Ph7VsuV3blUJGOrUtx3ouGS84kL/ojWho8eaXRN7eskUZuYHD/5cd2Ql23xqnANXoXieUoEoNL44SPj1oLZHV1Rme6Vhk69V3C7lswQjGipsP/jhtY5tyuXVWsns1zef6KOFHH5FpDYEIhEl+oTQ8MnKm3nTO7sMFStMUeGPxs1Xda5Ma1wDV6F4nlKhEKsUT758VCxmOua1J1vyufC6me9VC4VTwyN5Qx3u/zVAd+Dct0qjnw2UqcU+fM6OjK6ruu6rnk63bIsy7LMwsiXY5ZGUoZGPL4yJT+ESpSxerVanvhyfNzSjZRhpImu/52maxqj1KL/ZVGzYZl1Sr18kwQVrsGrUDxPCTVEKTXrtWqtVrEs67+pRSkAAAAAAPCs+esB0SHbFn7LXxmIDCXSDgBWUDgguiwAANB5AJ0BKiwBLAE+nU6hTSWkIyIiVFkwsBOJYm3h+/cPhJaSf6X+Y/G7qS8z/wf/E9BL+p99D7bs59L/w3qY/Qn/M/xfpb/M+ZqZF5hDyHp9/x/1P/zPVb+xf679e+479leuA9F7+AUITx37Qfpvnq56D/DZ7JpoH23Vdlm2/Sf816gP1L/02c7oC5fUTOrxQ+psjPkJIlsCepv9P+wB+k3S38wH7Wfst74PoR/1nqAf3vqGPQA8u32Mf7b/1eoA//+wKdkP+WxopwjspulO46493XGr1KE5IBmX7M+dP6n9gXo1/s57LP64+QYgJ2OH25xhU/8rp6Vq+WeaB0f/BTzTXd910oZCFyfPlvn13F2jEDzLB00r/OeXbv7N9Ywimq1GmHuTO/zkBgx70FLD7WFGF1sycf3wezkNl/OsbhAz14MOB9V/ELIY//omuU7Kr3OCAicDf12XtBDPpVNurAnO0ImxyWDbYSlLtcCA1ghoFwrV3cgEe/qc76AuePwVO5uYCGxDnJd3IJecUn5w5NHEiH+hbW19kdFP/3bV+ptb9rVbes+aQzZ8c9e5Tgjl5kV66oXRoFI8KaLPEMCvRj9rA1ro11sW8Seve1O5s7+tkWnP+hgvx+IWlG+AvPDQLfXW3/qPm4a73z+XGd6o8ZasHZAKndaD02bZ6BwYlIwQeOlQNl3b3jZAmiqdj5l3yeLsNX3nX/pwjtCXaozhJ59NGWteoG1ZIJMWzZcn0DGSD7DjS/uSobjhpJ0BBh+v5O5EMfSdqEyQ6IZC1hNmQUUiQ9WluI/Mo/czaW7F5adqub3VrcmBgeWwFrbrrKUFTrPAyx/uZvn2wPxmHJ5nNHp65KUawDrcPNH20KLtwM5Jsff+TkwDIE+KVUP27KVuzikXQmJoysX2zEIrGqMs8ybyIO/nLzuH/7k9r296IUU0VxYCYyzoA5Hdnbu9L+g7N+e4mHk9sx0/6l2dVSO+4V9ut9DVd/zARC5tYqINsOWJjBHLjd2AHk5mvkVf7p4Dk3xej/5LO/6cWzoAXCiHIHN4BBtfq1Ut2w3rDR7kQH+qu5Nz6U+bQmCQ2ZwKta8DrC6WolC+i1mzywo7IYR6FBf4gjh+aZevpxnRitmYGadYQRPoTATXmBELlH6byB48dHSCFTJDY+mWHCwaVeiv1hoH7CTQqthwwYb6STfXp7sMpe/gkrO1hgzOU7m/ROQaqsAb1+9FvYOix3Xf6Qhz+EtcQoboiSQ0cp3N+ia5QQdZdAWltmpuAmgwa2kFz/B717TpyxfFBcYcDHSiqQ6ZuP18EOb9E0IAAP77/aGUE93EKCe6X+9cIvuVQf71Meh743Tt/wTbBsg4Dkiw3rimzrnvBY3GnnnI6oYeRlpVAcAZjYyR1IXD0L/idXUeFCHpLdYIy4yKNPm87W6iEGcNfD6Q6GMTH+LHB0NF3cLGXJVWfvJU3R1Z/P/+GTw9NqfvqKGE5Z58yhFnTHg/Zh9tGxAxUdSyzop34XdABEWvDttBC8w4arqUFhHQ8/dGWWNhfP1vT78YmnfK/Q9U5Y8wb5vV/l1vqeXIppwcbjKOchJsXQY3O+NqrWgni7/gJLBi8OoWVlj6//+w3YWhe/eEYu/UBTHI29yJncFXujHZTpWm7LcW/pU1Hjt1RfBS7ahm8re3YLKQh9hHyrjseUOYdsFcp7c7bwR45WKWgo4oePXycbnhtJunelsN8yNgdTz7anBAxPjh7lnm1lFHviq5uDap6J/uMgdGsLfmDU1XxANPgK914Gg66dlK7dpKENxLS7MIOr+XnwYhkqvJKPMyezL4zEn684Xo9XqWE3cH0Db27paZSRzhq0kXqi8vl4RrWkKcutIIz79i+F1ch0lt9DytfCURIG+Wt4OthY27P/HJ+pNRJ8OB/mv4njILtpZnVaTfXWoVAQUbR0dmg3dSo9JSK3mKKgwcLUCaK1alAXiK278cMkXu4AjwxGhFcEu/RmA7K5jLCO4gTfaM1Vu41oZ2sqetCbTRTL28fzPK1QegpA1TZ7Pfk4tRt5OKeJwHI4+4VQv9E0gle8xU+Sy/ZLzef0Nt80HRvIY7JBZFdPEzuCbiejkQeH/LkL68L0OtuHqkrs57h/hj3IeqhBAg5C+Iq/LhUkH0FguPWvvJiwfK1OrMKHong/46/yBqKSTr8+shALKUXSK4rGYzZ4u/RtQdnmAcbPhI4WVT3rGsNK7GHuXBm07yApuclhTFRscfvKk0YvciBLSJ08JUzzRI1MgA4WtDO+z62K5y55Unmf0Uphg2z5F1tNiGroMb/6b3YfvPoVMasGBzSVRa9PqpAFTAGYcIMv0HcBjYxOUln7vKNfwSJPAKsaBx1x6zCbu9ZhERR00haw7lfA0MkuijqcGXydVgfRKS+eaVuvmgED7EQYi69oRUQWVKyymWfK7PrDFM5NE/ujP5XvNJ3vav5KJtqe05aIuDWbY5CjMfVxwtQy5kwmrQheeRk/4pWgEf7RDzUYDxCiQtd9H/O3/SQhXM7vkrcBC1u/kRY1uSSmoUsupMc8aizvJx7Cz4/ftbapXiWdz8Pfly/GmRqDbTmh6FeTyJY8/cX9xYddNF0fRR4MzcCOI/K+hp5v2YcgXC5jDdrTNEGpyDnurXrs7JGlsYm10wlw5Kmu6SguPJX/qmeL0n95Ud/SjgTYxDLBxMpXIkSqD/gt9XGIt6BHI3OFsN8SHmHFj2aY/oHIndUWJbW+/VHf5/r3JLD5tPCHf9iG8jGmjINiyPGg0wxN0/CyMNdUNohsvggGnjwkGrHxjRUZ1zuQvLPuXpNwQnnxIHPKiwec2pIJN1fCeIoobjL8xG0ZMdTK6VQJ1DPrMBF84/O2dFUIA5hwOxVJCHPkIoJJqPqV6kAjiDmKY38wndk5f0lnsIpxCVYjvoG5hBzNnpKKOPAOHJOPxFXjGHnl7mIkv1o6x4Qzg3tcc2FA74dKvdTCCy9TuWVs+RUUhjXdB7oHACoB8MJ48x8JiB4zyVwFj8uXFufzVvmvl9By7Sq4oI6FJPmulFBH8AG15tHJjYwLa9YHpgtNDHxfLNSt3GL9Leqvf+ylyaabB5fzucLHUG/fvW4qINrZ9H+EqwQ/gHllrcLiNRvqyxWVyQkPHyGPVERIjI7PIPusoq6Vf9Z9EnWS+yyMtfXmQgZWU3DqnoNES6o1y5rBHSIflc+vHwD6OqPYcl9fjdwtX3K0xVP1P4wHoKkvmm2V5KWzNP3IRAje5rq86m0X14XjlQ4i31uyHQ47SDq+xBbchro96g26MeliPAFLFoASMeiZBQ2mn7nwcgs4xXWzHrwpZVJ3OAPRiAplDjl9KxPSgGFVsXxR9ITQaqSGL23tBdVUAMD6uVkvChX3LfNK3N42FRVUoN+hMcvgAAKOvm4ExnW3KnEvDkGAQBq1hxwT7FUrJpK9POxhotIvKy2Qn3EOd//uvSlLacZ+ij8zE3rqQEoHloym/kLHrSxJQGlAO/XpQQUxP0sOqLLT9R/3oclf7aCZWn3tftm4mTe/Eelblwn7Q4Jwt9CaKkb9sE8RFwVfu5LiaSX6Vftb3yva0P4Nt1P7xZxixHJIOdAYpVTlfvYJH3pyZ5ivgX2GOVE/XGt4Xsi+pK72YYE73B/TSg+UiZN38wj206vpko/6swcOltVE/LmvWx5Ce/eEuN3+3b08d0qO+MamHSpsIcuY9Piq8AST+D7HArB8QyZ4JBW9a3AfC7O6GCl+ahbxmBcajkvpCRaVLbl7Gf+tTAJSwpEtpmLtJhdnQGp7kTv/P+0OIXI0LrzZlbNsxs2XP3O72dUNFsYVSHWpdubq5mBG+geIEzXxD3oseOe3HO8azEe0GvRyfVKbCfzIHXIBt7Fg23/RUgbdSgmXnWmYZq2sLOyWqUZB6GDKh65qFX7UH5r9YGfLWctEK0tHjDY+kk2l48sCQEvV0dP9+OjWeiSqMQb8BVENBbsVT2TVhkZgDhtWtYObgs4aJvM5PLEglI+/hz9a9Zz7+IqP0DtGFhCz9f0wcbp+5MghnoZRWqCGeh0JuYVnUtZNGJsly8Ea52GF/13nfkEH3Kf2WLe/6uQ65YS9+8RnH4Kuxv4n7LEF3BYQNNdn0WxCcY0b/02SARw8LeJLThQjGUT0Vo1MBZo3wyo7fo75Hz51TcF2IMN20WakQbcyUlnTA97OvvpVaxlVuuBnyYozYfPOmQw+W99I6Rz/6WPpQMJpLb4r2LORPTe1wook2l8K3wwZYXhtqIP4Fj6NlkDh8pAKrfLJvw6gPOj3Mux2AE3++ALP6E6jXW++FuKxiuTQFlucAUC1XGeK4fVADSMO+T3xB1Yema4nthgKEjj2sIhHsStv6yFToo4mLJDeCgRIA5+owk2aUVTe0qO9uLTKKl7NN+HgZux79m8p8hQG7bcd4tBkZsgs7vGNlQj9m4qqM3opy5p8lIR3+OewzrcSeMAde/kkyjlIy+OG2wWPApZMeBNvF8D2jPLqaqB+o8NE09agNDUbm47+9aXralmC8znAJCVia6GBYuX2F/Ln88BLCidr2M367+ZODv1EAYzyohVn3n78fD9dkgC/EHvL/3U9tABfPB73GBfD0yJh0BRnPWqhOwIVUChJc4AQAueEoiqCs74pY5I7r6QJTGYfQBZeo9VoMwNUm++6ZW+ygVL5cRkdmc7rafqsBSbGTjrbHpuI/SdSNWbGTxVR+dtIm83+7Znrj9EMIrT5o6MomVwaGjBAReA39t62jBGgv3kQHOALcuIfMBAMBz2XJiYqMpLfHkpftbhFoKlUQgh60ATRSI1EFx/Ol6NoPqHTP1jm/Ut4qwg1k4xg24Oz3NUxwx13OoSHhat0xe4l2lrMHl8aPfkrVAedFDV9wlzb7P1e0e8kDu+48cG0y9BRaPyX4HqLD/h/1uc4o1rqQ/dJUNAH1XMrO4U81Z6UU43LknI08CjyvgrNKaKhtjaKrCqh42BtE1p36KTPeZ5kuRHY0q4RFgg5ARg/bZWXBpI2KK73P/FNpbPicIHsGNqmKjf6Fae6/9KBtUudCLU/HyKSKBdVUPKKTMJo4nTEFW6Mpzpe4oUR4ipjEKsxkguhtd+lmO+/Q6rW+BnnIf5lWy/e+TaA3/Of9NB4mlGPfF/w6xqA1dtRU1gJBkwzK/U0zdhFNB9qDKpVIebx13VlBGAjnS/n8FWjkjY3A1r474uOXwoklardn9Li//5V/m4/9OfXwobPNIELC2/6hmhTtEDePvs39i/8q61x4XY79UvjfHF3k/l+iDUQHFOU7TkSV1qVuycgAg5swGqPUa9mhSVzPYo483Bvn9JWu0cwueNiDpfhyJbGFaBbZ3XIIy27LebFlCcgs6jgosbRlGg5D6wF4xFgWBapoeJuML/NTqCyPuV4pcy33MBs1Q10GFg18Np1TMB3/B4laSupPREHrfGJdTS8HWDQE2qLKS7svOjRk2TGEGFRke35DIaU0IGe9YKZmUXqrTMyyXKdd7BpEJUuW1EQnIMaaWywVYhbX2/xOTUMRlvaPaX5hf6LSRZBGprUZYqtPXZrwevxzMG3tV1x5vL6jDXT975cLGkK8WGg86SjbV4QsIVoNk9CzRJUnJ+Dr2oHjgWQUoQEiML6qw7disd5xO1qwUCelaBVNkOoJ1OkGuuVfyekHdOkOvp86L7O1ALY8TNMB8s7kvMS+fsdni8e0YIPTCj9IN6RcUgU2dr+wqT8z4HpTalwi8UCjamwXrkRTqbff0iYoX5V8ajXbslL+YcuwSYHtR1B2uP+ZyfKm7yJJd2bPQFsH0gpUT81JtwmywkN9iX75NHIVuHkiTlcjhm7QN2oKld/zxAAAzJCZi6I1ics/H4sJiO1tJ/C376UHi/HpAUehjbtE5csjz4NRcYvtgkf+ncjXmWTLA8pCUxMOhSfG0CYun6ODlK4iuRy6SqwIPydpFpBnqGCepFZgx9V7dJaDM7QdP3BgEzRq9q1n8jtc3DDgRdapzOHvv3oHgPq0D7buFSbN5QCsAS9cly7Qo8BYPyfOpkmWIcsurxVgR6RgZLiGkPPyGuvHQZVsA2F7AtjW4NM4PFJCtdRS7K0FWXoFt2fXdwYPNP1JRs8hTvgHTGzhHylOL/O0oHxYbv271zNOodl8stk+jnn9aiU+nHevEcCzyh/CbJb143UlcBftehfBLkcfq7HaGmintUav19YIZaAdN1wCFJSAocnSaJIvX9cQvtQAPKyNWZYH/ybfeJ5vMDf3olc6CAH7A83YNXnbxO0o40c99X+NaJfZM1SqlLHpIl6mAaMiTFyYY1dv0g8bOmepfhzkp98eu1RC9dOOknMQMQPpofBb139q/znsLbDxAFC1aN2BmpCahdTQOyeYjiBFUO/HLK9RDEoLME+D9AHjdqaesegV04xAHpphoY8hto8BHG1c/Y2A2LLFAeeDgYyQTV6A4T4z45xNNUijIv0kP+6bH0wLKCareyZL3dyq095KEkxmrjVm57tr8tFM3L1yK74THmEP3MX/7I/DarpRlATfjZ8xgiCdEH7vAgh/8YqS+LNlUdJIeDN46PoTzf8Qk+zijUNcIk9DT8xMoh52KYZ+8hY3+V/hqZd7KNwZEyq+5jJuGC+bnS3Lu1G4FhhE9WzQg7Uv1PXoR9UHjVcozTf6nbn+WhVyYtgZ/Q8kwAEaUPi+PluJYveMwGYEnWw63zXTs0LwIRpGZHo3pniGs//27Z83y/bDfzPDjPbZoFm7ApAhVli8mgK12WDaMJF/LiFrV3/hrWDPbyRsDf73vBDnB0+VXVhxwtr43/+D4x9EZaOhMBE3yJcyOSPPKv9GeVcTWg6ftPGUVg7z86C60i5qP7p+YXpEij8YakbxHearl77UreO0iV0GcazqO2de4Knnen0Jj2pQ4CZADiga+cz+e7mxzOqMDkt/nkaw6XHQUn4uY6cFQiSCGjKVUOj2lxR6ZApQmNC+hTxr1ApHiHK+HtWWKzmSxokXikIFBp4KVPaAvOQID4ECdc9/qdwdiYJclX+YtrKwD4pGIMm6Zl0mJNG64AbbyOPwFMs+0wAVdxLKCbTr4czT//aGAoZDreWWaOHofBCe7TyfV08tKyco1R7i0ZA7AS6uYhWSC57fm9JyuBt//lX8sWNK3j0do/45WKlZID69r7A2p8uBkyPvFnn8W0cP5qeXH/Yf+khg/bi6edJSdOYxIYYXqXwMtESGsV+WR5o3gyfSgpcaoan9yW9AhGcnLS+7sfVk5LTQA1/JeU33n9T/wU1fz/2ND9N330o+BMauyI3YA4iXOkceq96DbTDXjtY9J+8IO55uSF35twH55T9GOZ2qQLpmAAAIXjX3WmULDo6hY7hZ7SA9aw1rGEO4Kmm7xJ+/lOC+40JBEIVPy6J/jtyGtpmr/RmPQwwbFI65DuP78t/8m34NfH46P/UzHsPLZflKQt8y3RIZ/WKrr57kf3bWAUCuAyz8quozHXVV/NU3nf/drTXTp+6/jL2+YRHZWwwuOnW1ybUzSp8wyq/CmhKSmyinc8uer9/iF9ACdMDKh3LSA8i8/T1zS9m7AL/eNFX/9Xp/lyfhUfwXxn2KDIRArJd/hqD+xkBSfODZE1IQUelcTe6zV9dZ3IkiThiYpKlObwPJv+xD+1/8xcIT7T5NroisPnPP/zhdLjYb5Vf6Jd1syWui86K9N9Nktw30LzXz6dxys5L1N5LO8yB79TYjSD1Zx/HqWTYscOFX30XiYxGndqB70EEpXMYDQK56MVHqXbRN2Qjc0JAT827NdajUdKwNA0Vn0a4aWFKk//eaLw26NffNhNgxYFFtRRCt+XTA6a6xdnVES/nkY3PyyQOLkqEVaj12476pbCMtthdEMRihTF0lUd/cFuWs/0LYZEHW1VnUry25cFcyHHGOzI+PZpTgxEoCxW4xmMQ/S++2JFw/H9J+WsDgTP+NSj7dm7M/bJhELVK5ItD9cGkgEKX+q4jdBMYviz9TwgPsd0Z2S5EwqOrHeUKiejZ9C4rzu7a/o7yJOpaH63/ZLTCLu6s2Yph4iIWQLHHbQNf6Bt/I32iMCshH5gynmqduisdCgr9f+DYEAM85gjvQ8f9DPDRfz8iInzefwj4zJZqneqT8bPu/dnfuT7BPk6MiduXpfIWHqxsiB9b3JPFN/DMqvjk5W/7khryWtTCvxWf7L83ootwYqd/1laSKO5LjDeKY8ofsaSZmWRjcue0EpDrk09kr7tZEyi+ArsMKS/v/uXjBft/2JyaAAAKflIZgv0wh4I/sCNW0+e7y9fx8pacbjH/WLHYISGj+zkh7Alf8KeoNylwmZ10A/6HGYCaPR/7YV2G5/6Cc4tFOJw0GcHxd6395//Ct/+tkhozuG4KrJqhF1sPWoZSZxCGt2DLZKGq4knuyYEa/Bs+uqGcxR3R4w9ELFZYgW1qe/pzf9Drk37oHAVj3DPKTv/v2hnhl70rYdU2jdLP3bzb3Zhjcab/JaETgsj95hdu1/nvW8fzp/ho//EYuSwCX/ydrTtlb5nYCfDNc1h/7MWHkAb+31eiAXeYpcq9qJ91jTMzs9Mq9xxo6f/NLv+rFU/4sp/711VyMxtCQ9fBTp6hhtt3jtPGBkZt2V0KbzVRSnf5/5SHXrSX2ckGWIDSV55FNL7xrg6mdL/+Gv3WKRMOToN3pkIio9mHwdEQxAEXdD9i85TXZ/8chrX29XTMgl/8fZLvXnaF1fUiYDTJSoGne73Q3EGgJ1vQNNeGtD99F0WMtBtz7/mTLS/6nmfJ/938YNU0XOl8zJp1NatzxWjn1/eP/JU5JB/MVRTmvc8kkbdoDbnR0SCblblfwu+vtc//yrMmk1FdRkaJLsxugrIs8I+DzX/h3cUw31VA2pJEJqxGqmc42Drv1ml3QCNJtt7GNbOnKp/u7+L5Mie0/4xIlJBtdsNYB0SQ30aqvVWauraUFHibqgHOQefip/kLxvQBSMKLqxZZsOGUhdt7GvrCiZRa+Y7+HY/L2qjO/4lyVKhiE8bdKCZKV6D8VyJ1XRICuB+WIaExjveywyoKod4wAt+FjtNG8lo4d2pSLSJ/j/grwYIr3AIF6zQZJB3vbcPsh+PcVICDOTbyaConMR+zTOnZewIBoojFIMRYngzlrl/JRuT1CP6I9bDDjBbjY5EKQYZYAMjyiVOxbf+mwNHnftV/WotLBk2FxW+E1yyT/6DxWjW5SF9THCyH735dAcd1f6HBYE6CQHBoTCgHRbgA+NmB/LG0LQr96CowK0sYWNY/i2V40x31TWNWzeP/BmyVBAnldpnlaQJpcq76jR5WfAaydpfWGA4E0QreKDUTWYU43GwHS7/qSEZbw1H/XyuQXqKMH1eoILlLHy2nfsHpN4wfAiC5xUl+se133KnxLYKzksHa3+AEwDSCxgxHVovQmy6DJ9fQC4o1bhvg4ijwmQ/RfG1oCATer7RmQzoPmHyEgGQoPHByftX0RB3WHJ2dt+4fPEU42nZGBXGsGv9Ln2fRLkYY3Vf724V/2oOAhQgcn3/67lyow5ZjRC71dtrhLFDk7h/6Jc6+r1N9xE/FXOE2+au2JbQGQuCtusgtfzxMVulWv+ge/ykx5sULh6kCnUyRN/JWFdS9WyHN2F6A6e8ouD74A8qX91xIy8c2fdXgvK66t+VcMfKent++sJ2X/KrzAsOVJPNFWcnXXwKn0hzGYSyBQjSxbQol05fufcto1Nb+6DTrgL0XUDJ7Y/4Mu8netLzroZ6giJxXg/62cfn/XMpTetVDd1PuSf/4UyS/Drw5OazMTZusU5em114X+5j0KwRT2BPN6bmQPv3FVVv+2ko4FMX8/+J4AMTlMfd7hq32V6JVN0TN//vw38MmBbPR9zBX+f9a8CJ2nm3pJlshz8z/p+sv+rqPvk6y1kZCuWOjSzzw2qu3/9hCcWemTfLuuSjWCpl2bVKcdI8VKmh0AX8r87Apg+Z0D9onMlxrJTNUlF+y2Ya/2jfhVgpE3PjCpkrR6ZzdKgPLiglWJ1E5Cn4CLftZqL//ZGvBNf/kl7WhnZ8teWthxTRmyve8ZyRP7IeOvKDs5X7uSGdgsBLHoOMKUoMDk/gUlnf4kcSqiMMTDaWnNqzHlqaTDzsnRgUM+7gY2kJnffGUWyFCYek9kkYUEWDbFqcLpv/I0+Grej96t/55OSF3vYWd9U8//h4iYQrPp2IaTOTp8/6bV1sLv8wezYhRP0Dc4pjYGIvjZW7qn9QI5gcCpmpc3x9ik3p6hzBpKS6a8lrxPpiExcazOYQdKyWDs7JLgbelxWHx22gIf82fHLrA1ciLbX8y7l6Z44RGEIzp/EUfy2uUdnXXT+P+Cq+jp/P/JIvM0n/jt+R+6pBuPkvft9BrsNGl/Cw7SHNcq9uxI3i+/x5WCf8lR5yWdjX8IH7CMyDlI+P7H3YuUZ3uojL528j5Vw0sOO0vjO3fbWyN0vSpjyMG41doRQ5vZJ/5gOHFxf71+WAt1ESRYOD4nT095FxrXLAwBQz8t/mGN3phmUVAy2BP85QzC9yfbk0nFDkSg7JT/HQh6dWM+7Lg33PRRK3JpTvFv34fk3O83RgRU5eI/2VG2/rdY5/+TtQbJhUmI3Mts30AI+gs/v9NiXDww3m97f+/8wpXzVZqo3kxRATDackIf4RH6X59lb6kgNsRNOC5IM9kTK+dansfKX08wBMmAMIRtm3rw0XDSGrIxKyYPXmj//x+3xje4BclqSO4B4lKSGhQS0A48XCawTo3YuYJPvUKYFWdV5I7N8EL6f4Gd/9KwH/qq/DkOZJjXl8mfVJBu4CkEwcZMDKz8jn9eN0thtpnZugRMNC9gBPCeDaqH/iRw3dxWKs1F9JlgdFWw49K29UQsVf/0x4byk8P/bzmA6uxK/w15Ig2oSHgABA6qSZHnCVhE/PVzu3/rPfRXS5OepPnTNmQH8TiAx/UQVneNEclvK/kQme/1lvRdNeGzwAZTe+FTd1ZcFuz3p1PR09WEJJrxOoxpopTh5udAsuIYwzSWLdc5qc4muaWM5izYOwKGv44URzV64t0mlnn/mjXaU6XoAeDNMZfTKAqDKLgOJdG+wGUwF+G2d34+n4dX0JYvupDGVazccMjNchPLdTFiGXPE3Qo3ZLD+pVZXbS7O9zeI7CeAX8G7ubDox5+8ARcSj4DU3s9BqjC3bwZyLXDAhNfcU/mBHyrRhBZz+GmQU5/fZq7GB2QrH0yT/nN/xMa0+7dACNEHrhFM5E1Wk0Mvgh3x0govBa8LfYqsBieDwPQp59qfgKwv2OV31uuW+06BH68NHP5WZ3rVwbtWJ4jUEN2ItN9NVa/EuwFHHO+W+50Wtwv/Sr70J26KncKBjNUXoPx2/OnU0MMXND6nolzy+jF93fhOJ3M8Pp31H5xV1fY7/U6UUp3cGXgEO3BL95nKR6eV2K7CFBnhuTcklP2Z5MYGrCf/9HZ207CpOsOlinR6/sfzyOPni2WehYu20aGeajpR/bOcMsx3sjfQdf/unQjLdFmJ6rvu2kDnrNsbjk7G34iGdOHPINp02NW7Gf4LJP8xmTHDfj5wCAraUtfP9ik/Pf+Xm2CDu26ygvssO/qdjIWfnGt/4Ne7ECpPBYMg57ZS1Sjq3sgZIYiEG8exJx7KPCVUOXkuyRGcfFjMTOT/OPyanByZk9r15gv0reEX64bdR4oimJ+lqgefN5skToNbEcyUeekDvKE4wLgF9zidGj4VivJ75XMK51RD9X8aI37N9dok/e4+zetkBVy/5nA2yfsTb/LwMrU4BA4Pc36/J3PTiC9gBNYCillItX2TLrO4wZTB+q9hOuYTDzHwAlWJyx7pV3UnQnsLBuDyxMPF0BeaTqWXg0e1zOBvqXzKrcDbRDhuw9/lMN7F52tQg3XZ9r4X72KV3xwFxNCtixJ4fO9xtUm/sFexvdKtvCdbf4uoR5FVZ3InM+tQwmHSpIil3iFShhr4Ce7NhdKjUISoLgAgag6nzxR72Ms6whnrpGe1pB64u0icLPMRH9mkhrt5/vyD7S7VBDNuIVQXxuPlTNsAnQ6sesm9/c0eefZirP9zyT02TyQZpR5G79REYe/TO5Gsrggn/6Msf/x1vDhaFM6S3fQ1+/L8F38vY6drZH0sQmh9LnT9wb0HVETAwphSTiJ29V7NBKGDecrAIb8T1q8vqgubdsTIuwY2uHudQnsG5FdKlHJ56PIzdGeBLVPB6JxtFjQh2fkl0q/vlh8lACTkEwaKfAMvmWcREA3b64jrnqwV/7PVPRLsHi4i5crcWTVeIObbPAWBieUlBo0tlBHr55Ysr6zQ479mv1efa/LWEZOG0ZM4yl/TPu/b1bgLSB17btodrRlkOn70+ldlMpt0Wxh8OjKIl1RpcZmoDGnRWzEHVyNoASiJtiX0XTxAHV9TzunS/C5S+3KekKQzT/jcx2j/9q7ipfS7ZOETmf5HX92KOY7vsJuZfv/Iz4f2YbVcOi2sXjK7qP/1un+f/d9crLNP7oEyIrU2pN0062hzLe376H97rmgbKq4O28G1Kw/aX7fZkeaLG/AstxV6RL84LdaJvbUEfoe/C7ndnIui7FSFAb/aZQt175+u7rZFFNjh3S8LPu0cg78uD85xblyc8NBaLtHqW/MGF2BaWkkkbYf8i4rInW/MqA1fzYtx9nQEbQeVaj8lFfUA0SPMgUQMtRz/1Veqbg2RVWLR8C5Sqpaelsu5+/HWy1w3+wbdPtv7FZ8gHXcGwaeLE4QoNBHA8xwJ3lYyHzn/U7orolq+Lr4D+PXo+3J8+YP1lO/pvlZ//hQ/blTL+RF9+AAoKDi30FtXKQuOS2b438/23fW9H/JS6/Er9zv87/X46+l1MPX1qd4AE06qjaAkk/480cE/Pz6TCaF+myQEkgcmpDQ6WuaKPmJOM0V4DBfzrqbyFh/uQd5qTZ63BMsNSnkd9mPtBDATMYEqpcA+SqirTGeQ0ZkgrgJPAPr5YK2f618OEiMLhAXq/LVq/Wa8Dr1cmC1P5Nw0foxSmFnJr6FwRttetV+jZuJ6Utl/aA3VnjRfkjxsNp9kDJbzx/WPhoQDPUpjas9rZKylrRGPwFnkttj1g4Yx6LWuVQK/11V2G/2LJLUIfVox01Pl51CtaiTf1OyLV+Wl9Pr9JCrFbTw0gka1f5t/D7/2eZ+zr11FXpCvUtiAH/LRZRqK9r/PynxXDaEvZk2ymjsKNPf2YwvuBZlVUPRIzn6ZbcqrQQFJeN4MvQNyqOWCpUYVXauQ89eE/x0UAixNhBFO2dyn1IWi6Boh6VNojuLHgZX0SgDBBIrPwUyv8F3eKdiwnfvPxhmNQM+/HTNwv4g6S1opiz/+39GcBnO6nRLDs05CpUnXMeLingXy3WYMWV6EiW40G2eGHEpm108Y+mUz8sL1ErrF2QMbNSxgSzMs4GxY2pHi+939/4DWDX54Smt8BCJj1a5xtcPVir2HYIQvyNguXlLjeG9nF6YBdE/9rNT8Na8QBqYwszBcon9JCE3RGgFhOO4GgrFgp10APdAFVU9UCLElLANLu0YxMckUBZcrBDePgmE1/WY+tHrYGeacHqytI5wfKoSzbnZ0h8ivFIeGZdr9qIywEYUbIFn//s4GuttX5PlNDxD3rrTtLTX+jRVZ5piAXWG+DhujxnL5P9PY+d5NqD0gNsDOKzZBSUwVa+KcHieVn7FRhIzaImdSNPxQ2jwdSp+PdJeJm8PKOX0hAQrQHq7dv2dimuVD6VN/xDIK7qu8dlrSFeVyfWlVvJTUpeI3Q5tvHd5djenbJ23dGhGbx1du8BWZLSteClbP7in+rvR7l1JnpOfxeniG8ovKiIZuvPNiX+r/73R/jt+R/87gJf+vz1/9DTf49KVI1EXdFLu9QW7rg9AozyVRxYl9EKb5By6iSmSfqa4mCU/fCPrrod3+QNGz//g1Sej+FDechKVNjGzHOTkYTQwgCRGkL5JBTH8kbjNcxWCeC5jcQKYV/yuW1OFj1tjv+Cr+tKeM/5YQfLrrsoeuPc7ZljuaJ4idajz8qWwfvmJ0n6dTRmDrMnG8FlncOcWlObssgKA6jG1e4cJ9QIqSM1R19LI1cb2G309YpTh6Cd4Wp/I8rdaQpVCOra0SidvypMgHKr6qMOvGUqCGV90U1SB4B/ONL/OhlYEjkf5rO2EfMcfDExWZN2ngdCZsKzEgE+6psf12D0egDLJRj4nYKmuGAqLGsISn0C5SHqGHrFABf99g07Uz9BmqwNPxiOLMr5oAcVAdY6d3CZF74LKhw9PGymbY3oHY3z/rWHC5oQrNOiGl3mLQ+GibOuMO+tu3uZpQyHYcRSD0n0fRU6UsTScg9poNCxALTcoFRsshhJV/Lvg1BuvuYHm0QgZO+9Rs4ZgcQn/4z4Zff6HnqGqX/0aZIOzES2orNXQT72Zu3KNX0WcWuFMrJb//gw25fzzNZaIE+KMwAS/8sCXLtX7BeTvmX5+nNExYImoFioDS+f8LU5/xyIuQCB33j/6QSKf/Tn/6vCvO7dO9+ivusGqnd7y5m53n6aEeP/eq9sqX7+8/4viTAZeHm3zD4uX+TZES/+uAvYEHUjoLVDgicdc2Rn1ZPgH/GIICjKh61CsEzKVPrw/xdyajk/9utb3+B5S6izXJpDupwwcehXbn/vyJDr4c8pxWdyd7++g5zSs7Fiw513wO+qDBikKkTMz5majXZoogdG8xC/2zhy5YPos/uAvS+FQaFQ4cWCUeop7OA/wn7t7lv/EaebzhWzv+qVXIrbe3138RnKgPM9s0xyF2D9Btm8W17ynxf9DaqKehhz/ud7zhiEB/QQ1qlYOg5j/DYn7bycjtvO4hy6LdfbXGJk5h44csFTlFTtpIqaaLYYblsvcSwE84z/tXymfobZd57YnRMVT9w/8ndTmqH8yGon0cOUp1pDgyoBO9BDa8ZNIau5Qsuvk22+JGSEUSIyRHUy4sb5Pe4bhxS942TuriVxoXgjKOv9ZWb8EILHh+ZyA3eidks761agJJZXO3qe9bMEiZ5t7AsgForQmgTONhAJylIqCrySWf/z8AlIesBwCiuiTbrLiSa3oA8I68o/53R5PPeFu67fABlfh+5uOpkc823ahfmn4r0+Rwk5e+nJFoGWGbv51eN3SzBen3Ajvf8TxWDZQzfuAVc+KQDsZgcxqd5E6U96QFOANLXlaBSpD25bMXPonB3hovhkzdapeV+l+hOAbPKnl3zAzvTxJYky+jlAxr3vB2bIM2f0v3hrVvD+AYCbf+1Aj3fdO4iwAAA" alt="François Gruel">
+                <div class="fg-expert-name">François Gruel<span class="fg-expert-title">Expert Qualiopi</span></div>
+              </div>
+            </div>
+          </a>
+          <div class="fg-footer">
+            <div class="fg-google-rating">
+              <div class="fg-google-logo">
+                <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21
+  3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86
+  0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43
+  8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1
+  3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                <span style="color:#202124;font-weight:700;">Google</span>
+              </div>
+              <div class="fg-stars">
+                <svg class="fg-star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z" 
+  fill="#FBBC04"/></svg>
+                <svg class="fg-star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z" 
+  fill="#FBBC04"/></svg>
+                <svg class="fg-star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z" 
+  fill="#FBBC04"/></svg>
+                <svg class="fg-star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z" 
+  fill="#FBBC04"/></svg>
+                <svg class="fg-star" viewBox="0 0 20 20"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FBBC04"/><stop offset="50%" 
+  stop-color="#e0ddd8"/></linearGradient></defs><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z" 
+  fill="url(#half)"/></svg>
+              </div>
+              <span class="fg-rating-text">4,9/5</span>
+              <span class="fg-rating-count">, 242 avis</span>
+            </div>
+          </div>
+          <!-- Bande de logos clients : réinsérer ici l'image base64 depuis fg-bandeau.html
+          <div class="fg-logos-bar">
+            <img decoding="async" src="DATA_URI_LOGOS_CLIENTS" alt="Clients : Decathlon, Aftral, Vinci Construction, CCI Paris, Institution Nationale des Invalides, ENSP">
+          </div>
+          -->
+        </div>
+
+      <nav class="toc">
+<div class="toc-title">Sommaire</div>
+<ol>
+<li><a href="#passer-seul-le-referentiel-est-public-le-guide-de-lecture-es">Passer
+seul : le référentiel est public, le guide de lecture est gratuit</a></li>
+<li><a href="#un-accompagnement-couvre-la-preparation-jamais-l-audit-lui-m">Un
+accompagnement couvre la préparation, jamais l&#x27;audit lui-même</a></li>
+<li><a href="#seul-ou-accompagne-la-comparaison-poste-par-poste">Seul ou
+accompagné : la comparaison poste par poste</a></li>
+<li><a href="#la-duree-de-l-audit-est-fixee-par-arrete-le-temps-de-prepara">La
+durée de l&#x27;audit est fixée par arrêté, le temps de préparation non</a></li>
+<li><a href="#le-cout-l-audit-se-paie-dans-les-deux-cas-les-tarifs-des-cer">Le
+coût : l&#x27;audit se paie dans les deux cas, les tarifs des certificateurs
+sont libres</a></li>
+<li><a href="#le-point-ou-ca-bloque-l-auditeur-ne-valide-que-des-preuves-d">Le
+point où ça bloque : l&#x27;auditeur ne valide que des preuves datées</a></li>
+<li><a href="#non-conformites-six-mois-pour-corriger-une-mineure-trois-moi">Non-conformités
+: six mois pour corriger une mineure, trois mois pour une majeure</a></li>
+<li><a href="#l-audit-de-surveillance-a-lieu-entre-le-14e-et-le-22e-mois-a">L&#x27;audit
+de surveillance a lieu entre le 14e et le 22e mois, à distance</a></li>
+<li><a href="#quand-passer-seul-est-le-bon-choix">Quand passer seul est le bon
+choix</a></li>
+<li><a href="#quand-l-accompagnement-se-justifie">Quand l&#x27;accompagnement se
+justifie</a></li>
+<li><a href="#questions-frequentes">Questions fréquentes</a></li>
+</ol>
+</nav>
+
+      <h2 id="passer-seul-le-referentiel-est-public-le-guide-de-lecture-es">Passer
+seul : le référentiel est public, le guide de lecture est gratuit</h2>
+<p>Le référentiel national qualité est une annexe du décret n° 2019-565
+du 6 juin 2019. Il compte 7 critères et 32 indicateurs, tous publics. Le
+ministère du Travail publie gratuitement un guide de lecture qui
+détaille, indicateur par indicateur, le niveau attendu et les éléments
+de preuve acceptés. Ce guide évolue : vérifiez toujours la version en
+vigueur avant de construire votre dossier.</p>
+<p>Passer seul, c'est lire ces deux documents, construire votre système
+de preuves indicateur par indicateur, choisir un organisme certificateur
+accrédité, puis payer et passer l'audit. Rien dans cette liste ne
+nécessite un prestataire externe.</p>
+<p>Un point ne change jamais, quelle que soit l'option : c'est vous qui
+passez l'audit. Un accompagnateur ne se présente pas à votre place
+devant l'auditeur.</p>
+<h2 id="un-accompagnement-couvre-la-preparation-jamais-l-audit-lui-m">Un
+accompagnement couvre la préparation, jamais l'audit lui-même</h2>
+<p>Un accompagnement sérieux couvre la lecture du référentiel appliquée
+à votre activité, un cadre de travail avec des modèles de documents, la
+construction du dossier de preuves avec vous, et en général un audit
+blanc avant le passage réel.</p>
+<p>Il a aussi des limites, les mêmes partout. L'accompagnateur ne passe
+pas l'audit à votre place et ne décide pas à la place du certificateur,
+qui reste seul à délivrer ou refuser la certification. Quant à la
+responsabilité de votre conformité, elle reste la vôtre pendant toute la
+durée de la certification, quoi qu'en dise un contrat de prestation.</p>
+<p>Méfiez-vous des offres qui promettent l'inverse. Un dossier construit
+sans vous produit une certification que vous ne savez pas défendre. Un
+formateur reçu en rendez-vous le résumait ainsi : « je veux rester
+acteur, je ne veux pas être bloqué face à l'auditeur ». C'est le bon
+réflexe.</p>
+<h2 id="seul-ou-accompagne-la-comparaison-poste-par-poste">Seul ou
+accompagné : la comparaison poste par poste</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Poste</th>
+<th>En autonomie</th>
+<th>Avec un accompagnement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le référentiel à couvrir</td>
+<td>7 critères, 32 indicateurs</td>
+<td>Les mêmes, sans exception</td>
+</tr>
+<tr>
+<td>Qui construit le dossier de preuves</td>
+<td>Vous, seul</td>
+<td>Vous, avec un cadre et des modèles</td>
+</tr>
+<tr>
+<td>L'audit de certification</td>
+<td>Payant, auprès d'un certificateur accrédité</td>
+<td>Identique, l'accompagnateur n'audite pas</td>
+</tr>
+<tr>
+<td>Face à l'auditeur</td>
+<td>Vous</td>
+<td>Vous, la responsabilité ne se délègue pas</td>
+</tr>
+<tr>
+<td>Le coût</td>
+<td>Le prix de l'audit seul</td>
+<td>L'audit plus la prestation</td>
+</tr>
+<tr>
+<td>Après la certification</td>
+<td>Vous gérez seul la surveillance</td>
+<td>Selon l'offre : arrêt à la certification ou suivi jusqu'à l'audit de
+surveillance</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="la-duree-de-l-audit-est-fixee-par-arrete-le-temps-de-prepara">La
+durée de l'audit est fixée par arrêté, le temps de préparation non</h2>
+<p>Les textes fixent la durée de l'audit, pas celle de la préparation.
+L'arrêté du 6 juin 2019 prévoit un audit initial d'une journée en
+dessous de 750 000 € de chiffre d'affaires, d'une journée et demie
+au-delà, avec des majorations par catégorie d'actions supplémentaire et
+par site audité. L'audit de surveillance dure une demi-journée pour la
+plupart des structures.</p>
+<p>Le temps de préparation, lui, n'est publié nulle part de façon
+fiable, et nous ne l'inventerons pas : il dépend entièrement de l'état
+de vos preuves au départ. Une responsable d'organisme certifié nous le
+disait en préparant sa surveillance : « on fait tout à la main, c'est
+lourd ». C'est ce poste-là, la préparation, qu'un accompagnement réduit.
+La durée de l'audit, elle, reste la même pour tout le monde.</p>
+<h2 id="le-cout-l-audit-se-paie-dans-les-deux-cas-les-tarifs-des-cer">Le
+coût : l'audit se paie dans les deux cas, les tarifs des certificateurs
+sont libres</h2>
+<p>En autonomie, vous payez un seul poste : l'audit de certification.
+Les tarifs des certificateurs sont libres et il n'existe aucun barème
+public. Ils varient selon votre chiffre d'affaires, vos catégories
+d'actions et votre nombre de sites, puisque ces trois variables
+déterminent la durée d'audit fixée par l'arrêté. Demandez plusieurs
+devis (les écarts d'un certificateur à l'autre sont réels).</p>
+<p>Accompagné, vous payez l'audit plus la prestation d'accompagnement.
+C'est mécaniquement l'option la plus chère. Si vous avez du temps devant
+vous et un système documentaire déjà en place, l'économie de l'autonomie
+est réelle et personne ne devrait vous dire le contraire. Le détail de
+nos tarifs est publié sur la page <a
+href="https://fgformation.fr/le-guide/qualiopi-cest-quoi/accompagnement-qualiopi-tarif/">tarif
+de l'accompagnement Qualiopi</a>.</p>
+<h2 id="le-point-ou-ca-bloque-l-auditeur-ne-valide-que-des-preuves-d">Le
+point où ça bloque : l'auditeur ne valide que des preuves datées</h2>
+<p>Voici ce que les audits blancs que nous menons montrent de façon
+répétée : les candidats font le travail, mais ne savent pas le prouver.
+Ils accueillent correctement leurs stagiaires, évaluent, ajustent, se
+forment. Puis l'auditeur demande le document daté qui l'atteste, et il
+n'existe pas.</p>
+<p>Le référentiel n'audite pas ce que vous faites, il audite ce que vous
+pouvez démontrer. Chaque indicateur appelle des éléments de preuve
+concrets, datés, rattachés à votre activité réelle. Le déclaratif ne
+vaut rien. Et certains indicateurs laissent une marge d'interprétation à
+l'auditeur : c'est précisément sur ces indicateurs-là que les candidats
+en autonomie se font surprendre, faute d'avoir vu passer d'autres audits
+avant le leur.</p>
+<p>C'est le poste où le choix seul ou accompagné se joue vraiment. Tout
+le reste, un candidat rigoureux le fait sans aide.</p>
+<h2 id="non-conformites-six-mois-pour-corriger-une-mineure-trois-moi">Non-conformités
+: six mois pour corriger une mineure, trois mois pour une majeure</h2>
+<p>Un audit qui se passe mal ne signifie pas repartir de zéro. L'arrêté
+du 6 juin 2019 organise deux régimes.</p>
+<p>La non-conformité mineure demande un plan d'action dans le délai fixé
+par le certificateur, mis en œuvre sous six mois, et vérifié à l'audit
+suivant. Non levée à cet audit, elle est requalifiée en non-conformité
+majeure.</p>
+<p>La non-conformité majeure exige des actions correctives effectives
+sous trois mois, vérifiées avant toute décision de certification.
+Concrètement : pas de certification tant que ce n'est pas corrigé, donc
+pas de financement débloqué pendant ce délai. Pour un formateur dont des
+clients attendent la prise en charge, ces trois mois sont le vrai coût
+d'un audit raté.</p>
+<h2 id="l-audit-de-surveillance-a-lieu-entre-le-14e-et-le-22e-mois-a">L'audit
+de surveillance a lieu entre le 14e et le 22e mois, à distance</h2>
+<p>La certification est délivrée pour trois ans. Entre le 14e et le 22e
+mois, un audit de surveillance vérifie que le référentiel est toujours
+appliqué. Il se déroule à distance dans la plupart des cas.</p>
+<p>C'est là que les dossiers construits par quelqu'un d'autre se voient.
+L'auditeur interroge la personne en face de lui, pas le prestataire qui
+a rédigé les documents dix-huit mois plus tôt. Plusieurs organismes nous
+contactent à l'approche de cette échéance après un audit initial
+douloureux, avec des non-conformités majeures encore en mémoire et des
+process jamais vraiment appropriés.</p>
+<p>Un accompagnement se juge sur ce critère : est-ce que vous savez
+tenir l'audit de surveillance sans lui ? Si la réponse est non, ce
+n'était pas de l'accompagnement, c'était de la sous-traitance de
+conformité.</p>
+<h2 id="quand-passer-seul-est-le-bon-choix">Quand passer seul est le bon
+choix</h2>
+<p>Vous avez déjà un système qualité documenté, par exemple une autre
+certification ou des process écrits et datés. Vous avez du temps devant
+vous, sans client bloqué en attente d'un financement. L'administratif ne
+vous rebute pas. Dans cette situation, le guide de lecture et les textes
+suffisent, et un accompagnement complet ne vous apporterait pas
+grand-chose.</p>
+<p>Dans ce cas, la seule dépense externe pertinente peut être un audit
+blanc sec, sans accompagnement autour, pour tester votre dossier avant
+l'audit réel. C'est le format le plus léger du marché et il suffit à un
+candidat déjà structuré.</p>
+<h2 id="quand-l-accompagnement-se-justifie">Quand l'accompagnement se
+justifie</h2>
+<p>Des clients attendent que votre formation devienne finançable et
+chaque mois de retard se compte en chiffre d'affaires perdu. Vous créez
+votre organisme et vous découvrez le vocabulaire en même temps que les
+démarches. Vous avez perdu votre certification après un départ dans
+l'équipe et il faut la reconstruire. Votre premier audit a laissé des
+non-conformités et la surveillance approche. Ou vous savez simplement
+que le documentaire ne se fera pas si personne ne structure le travail
+avec vous : « j'ai horreur de l'administratif » est la phrase que nous
+entendons le plus en rendez-vous.</p>
+<p>Dans ces situations, le calcul n'est pas le prix de la prestation,
+c'est le coût du délai et celui d'un audit raté. Notre façon de
+travailler est détaillée sur la page <a
+href="https://fgformation.fr/laccompagnement-fg-formation/">l'accompagnement
+FG Formation</a> et son <a
+href="https://fgformation.fr/sommaire-contenu-accompagnement-qualiopi/">contenu
+complet</a>. Et si vous hésitez encore entre les deux options, <a
+href="https://fgformation.fr/contact/">décrivez votre situation</a> :
+vous saurez si un accompagnement se justifie dans votre cas, ou si vous
+pouvez passer seul.</p>
+<div class="cta-inline">
+          <p><strong>Vous hésitez encore entre les deux options ?</strong><br>Décrivez votre situation à François : en 30 minutes, vous savez laquelle correspond à votre cas.</p>
+          <a href="https://linkly.link/2mdDo" class="btn-orange">Découvrir l'accompagnement FG Formation</a>
+        </div>
+
+<h2 id="questions-frequentes">Questions fréquentes</h2>
+<div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Un
+accompagnateur peut-il garantir l'obtention de Qualiopi ?<span class="faq-chevron">▾</span></div>
+          <div class="faq-reponse">Non. La décision appartient au certificateur accrédité et à personne
+d'autre. Une promesse commerciale de certification garantie n'engage pas
+l'auditeur qui viendra contrôler vos preuves.</div>
+        </div>
+<div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on acheter
+un dossier Qualiopi tout fait ?<span class="faq-chevron">▾</span></div>
+          <div class="faq-reponse">Des offres existent. Le problème : le référentiel audite vos
+processus sur votre activité réelle, et un dossier générique se repère à
+l'audit, au plus tard à la surveillance, quand vous êtes seul face à
+l'auditeur. La responsabilité de la conformité reste la vôtre dans tous
+les cas.</div>
+        </div>
+<div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Peut-on
+se faire accompagner uniquement pour l'audit de surveillance ?<span class="faq-chevron">▾</span></div>
+          <div class="faq-reponse">Oui. C'est un format court : remise à niveau du dossier et audit
+blanc avant l'échéance. C'est l'option adaptée aux organismes déjà
+certifiés qui veulent sécuriser le passage sans payer un accompagnement
+complet. Voir notre <a
+href="https://fgformation.fr/formation-audit-surveillance-qualiopi/">préparation
+à l'audit de surveillance</a>.</div>
+        </div>
+<div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Combien coûte l'audit de
+certification ?<span class="faq-chevron">▾</span></div>
+          <div class="faq-reponse">Il n'existe pas de barème public : les tarifs des certificateurs sont
+libres. Le devis dépend de votre chiffre d'affaires, de vos catégories
+d'actions et de votre nombre de sites, car ces variables fixent la durée
+d'audit prévue par l'arrêté du 6 juin 2019. Comparez plusieurs
+certificateurs avant de signer.</div>
+        </div>
+<hr />
+<p><strong>À propos de l'auteur.</strong> François Gruel accompagne des
+formateurs indépendants et des organismes de formation dans leur
+certification Qualiopi, de la déclaration d'activité à l'audit de
+surveillance. Les situations citées sur cette page viennent de
+rendez-vous et d'audits blancs menés par FG Formation, anonymisés.</p>
+<p><strong>Sources.</strong> Consultées le 24 juillet 2026 :</p>
+<ul>
+<li>Décret n° 2019-565 du 6 juin 2019 relatif au référentiel national
+qualité (annexe : 7 critères, 32 indicateurs), Légifrance.</li>
+<li>Arrêté du 6 juin 2019 relatif aux modalités d'audit associées au
+référentiel national qualité, version en vigueur, Légifrance : durées
+d'audit, audit de surveillance entre le 14e et le 22e mois, régime des
+non-conformités mineures et majeures, certification délivrée pour trois
+ans.</li>
+<li>Guide de lecture du référentiel national qualité, ministère du
+Travail (V9 du 8 janvier 2024, version en vigueur à la date de
+consultation).</li>
+</ul>
+<p>Les textes et le guide de lecture évoluent. Les informations de cette
+page sont exactes à la date indiquée.</p>
+
+    </main>
+    <aside class="sidebar">
+        <div class="sidebar-cta">
+          <h3>Réserver un appel</h3>
+          <p>Échangeons 30 min gratuitement pour évaluer votre projet.</p>
+          <div class="sidebar-score"><span class="stars">★★★★★</span><small>4.9/5, 242 avis vérifiés</small></div>
+          <a href="https://linkly.link/2mdDo" class="btn-white">Je prends RDV →</a>
+        </div>
+        <div class="sidebar-links">
+          <h4>Pages associées</h4>
+          <a href="/laccompagnement-fg-formation/">L&#x27;accompagnement FG Formation</a>
+<a href="/le-guide/qualiopi-cest-quoi/accompagnement-qualiopi-tarif/">Tarif de l&#x27;accompagnement</a>
+<a href="/le-guide/audit-blanc-qualiopi/">Audit blanc Qualiopi</a>
+<a href="/le-guide/qualiopi-cest-quoi/">Qualiopi : guide complet</a>
+        </div>
+      </aside>
+  </div>
+</div>
+</div>
