@@ -62,7 +62,7 @@ Un accompagnement système, en complément de Clément, qui garde la rédaction.
 
 Deux indicateurs, fixés ensemble au cadrage : la production (20 à 30 pages pendant la mission, rythme tenu ensuite par Clément) et les commandes et e-mails collectés qui arrivent par le SEO, en fourchette calée sur ce que la Search Console montrera au premier mois.
 
-Et une garantie : +20 % de trafic ou +20 % de leads, l'un des deux suffit. Si aucun n'est atteint à la fin du suivi, je continue à travailler sans facturer jusqu'à ce que ce soit fait.
+Et une garantie : +20 % de trafic ou +20 % de leads. Si aucun des deux n'est atteint à la fin du suivi, je continue à travailler sans facturer jusqu'à ce que ce soit fait.
 
 Budget : 1 400 € HT par mois, mois 1 et mois 2. Sans engagement au-delà.
 

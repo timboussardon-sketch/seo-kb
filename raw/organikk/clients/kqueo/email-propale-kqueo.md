@@ -45,7 +45,7 @@ Construire l'agent SEO de KQUEO sur votre data, avec lequel Clément produit, qu
 
 Puis 3 mois de suivi jusqu'à votre autonomie complète.
 
-Avec une garantie : +20 % de trafic ou +20 % de leads, l'un des deux suffit. Si aucun n'est atteint à la fin du suivi, je continue à travailler sans facturer jusqu'à ce que ce soit fait.
+Avec une garantie : +20 % de trafic ou +20 % de leads. Si aucun des deux n'est atteint à la fin du suivi, je continue à travailler sans facturer jusqu'à ce que ce soit fait.
 
 Important : vous n'êtes jamais engagés et vous pouvez arrêter la prestation d'un mois sur l'autre, sans préavis.
 
