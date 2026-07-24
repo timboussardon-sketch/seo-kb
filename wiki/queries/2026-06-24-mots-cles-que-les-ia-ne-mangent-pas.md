@@ -4,10 +4,10 @@ title: "Mots-clés que les IA ne peuvent pas manger (matière newsletter)"
 aliases: [mots-cles-que-l-ia-ne-mange-pas, kw-non-cannibalisables, newsletter-ia-ne-mange-pas]
 tags: [newsletter, geo, aeo, mots-cles-actionnels, product-led, data-proprietaire, ai-overview, cannibalisation]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-24
 sources: 6
 confidence: high
-status: draft
+status: stable
 ---
 
 # Mots-clés que les IA ne peuvent pas manger

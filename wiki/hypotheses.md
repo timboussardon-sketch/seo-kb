@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-07-17
+updated: 2026-07-24
 sources: 0
 confidence: high
 status: living-doc
@@ -105,6 +105,8 @@ Test : A/B sur pages Organikk, présence vs absence du bloc answer-first, mesure
 Test : instrumenter sur les prochains clients (Victoria Garden, FG Formation) une mesure tierce avant/après, archivée dans [[preuves/index]]. C'est ce qui transforme un argument de vente en preuve opposable.
 
 Conditionnel pré-arbitré le 2026-07-17 ([[revue-hebdo/2026-W29]] point 2) : **Victoria Garden est le meilleur candidat que H-009 ait eu**, et il est prêt sauf sur un point. Le client est nommé dans l'énoncé du test depuis l'origine, la GSC arrive en exports manuels, et deux baselines sont capturées avant toute décision — l'audit du 2026-06-11 (`raw/organikk/clients/victoriagarden/`, marque −41 %, hors-marque ×4,3) et le motif séminaire mesuré le 2026-07-17 à 9 454 impressions / 42 clics / CTR 0,44 %. Ce qui manque n'est pas l'instrument mais l'intervention : les 4 contenus Gutenberg du chantier hub sont livrés et attendent d'être collés côté client. Pas de publication, pas d'avant/après, pas de test — H-009 reste donc `ouvert`. **Dès que le client publie, la fiche preuve s'ouvre avec J+30 et J+90 datés depuis la mise en ligne et H-009 repasse `en-test` sans repasser par le rituel.** Si rien n'est publié d'ici au 2026-08-31, Victoria Garden sort du programme H-009, sans re-débat.
+
+Note 2026-07-24 ([[revue-hebdo/2026-W30]] point 2) : **FG Formation, nommé dans l'énoncé du test depuis l'origine au même titre que Victoria Garden, devient le candidat le plus rapide.** La série « X ou Y » (7 pages duel, gabarit fgq, `raw/organikk/clients/fgformation/pages/`) est produite et attend la validation de Tim page par page — pas un dépôt client, pas de blocage tiers. Contrairement à Victoria Garden où l'intervention dépend du client, ici la mise en ligne dépend de Tim seul. Pas encore publié au 2026-07-24, donc H-009 ne change pas de statut cette semaine ; mais si FG publie avant Victoria Garden, c'est FG qui ouvre la fiche preuve, pas un vote.
 
 Repassée `ouvert` le 2026-07-10 ([[revue-hebdo/2026-W28]] point 2), clause de falsification pré-arbitrée en W27 appliquée sans nouveau débat : l'échéance J+30 du 2026-07-03 (P-golfiller-2026-06-03-1) est passée sans mesure — aucun export Golfiller postérieur au 2026-06-10 dans `raw/data/exports-gsc/`, prédiction toujours `open` dans le ledger, table J+30 de la fiche vide. Le discours commercial reste auto-rapporté. Les échéances J+90 (2026-09-01 et 2026-09-08) restent actives dans le ledger : si les mesures sont relevées à ces dates, H-009 peut repasser `en-test` sur décision de revue.
 

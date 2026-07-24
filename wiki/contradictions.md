@@ -4,7 +4,7 @@ title: Registre des contradictions et dépendances ouvertes
 aliases: [contradictions, dette-doctrinale, dependances-ouvertes]
 tags: [meta, doctrine, lint, contradictions, dette]
 created: 2026-05-16
-updated: 2026-07-17
+updated: 2026-07-24
 sources: 0
 confidence: high
 status: living-doc
@@ -33,7 +33,7 @@ status: living-doc
 | C-002 | Paper OpenDecoder (Mo et al., 2026) jamais ingéré alors qu'il fonde le scoring | `ouverte` | 2026-04-30 | Item long terme — re-litiger seulement si [[hypotheses#H-010]] redevient critique |
 | C-003 | Cluster Organikk + 4 modèles pSEO non implémentés, zéro mesure post-déploiement | `en-cours` | 2026-04-30 | Mesurer après déploiement → [[preuves/index]] |
 | C-004 | Snapshot qadence-seo-agent figé au 2026-04-30, le repo évolue | `résolue` | 2026-04-30 | Fermée [[revue-hebdo/2026-W27]] : [[entities/qadence-seo-agent]] maintenue vivante fait référence d'état, le snapshot est une photo datée |
-| C-005 | Audit blanc Qualiopi FG Formation lu en titre seulement | `ouverte` | 2026-04-30 | Détailler le contenu en source |
+| C-005 | Audit blanc Qualiopi FG Formation lu en titre seulement | `en-cours` | 2026-04-30 | Ingest attaché au lot FG-Formation W31 ([[revue-hebdo/2026-W30]] point 4) |
 | C-006 | 21 templates Drive Accompagnement : seul l'INDEX est en wiki source | `acceptée` | 2026-04-30 | Limite assumée, ingest à la demande |
 | C-007 | "11 workflows automatisés" (drive-accompagnement) vs 10 skills documentés | `acceptée` | 2026-04-30 | Limite assumée [[revue-hebdo/2026-W24]] : jamais citer un décompte de skills sans le recompter depuis AGENTS.md §7 au moment de l'usage |
 | C-008 | Brevet Google US12536233B1 : publication ≠ déploiement | `ouverte` | 2026-05-01 | Surveiller déploiement réel |
@@ -56,6 +56,12 @@ status: living-doc
 Le statut d'inscription au bootcamp de Cécile et de Franck n'a jamais été confirmé (détecté le 2026-05-01, suivi prospects). Risque : citer un décompte d'inscrits faux dans le discours commercial ou une analyse de conversion.
 
 `acceptée` depuis le 2026-07-17 ([[revue-hebdo/2026-W29]] point 4), en bloc avec C-001. Même diagnostic : aucun bootcamp en cours ne produira la confirmation, l'attente est indéfinie. Limite : **jamais citer un décompte d'inscriptions bootcamp sans le re-vérifier au moment de l'usage**, exactement comme C-007 impose de recompter les skills depuis AGENTS.md §7. Repasse `ouverte` si un cycle bootcamp reprend et rend les statuts vérifiables.
+
+### C-005 — Audit blanc Qualiopi FG Formation lu en titre seulement
+
+`raw/notes/fg-formation/audit-blanc.md` n'a jamais été détaillé en source, et le dossier FG Formation compte aussi 5 transcripts d'audits blancs individuels (`clients/fgformation/calls/audit-blanc-{marc-d,paul-g,julie-h,nadia-r,karim-b}.md`) jamais ingérés — le point P1 du backlog resté en tête de liste depuis mai.
+
+Passée `en-cours` le 2026-07-24 ([[revue-hebdo/2026-W30]] point 4) : le dossier n'est plus une hypothèse de travail, il alimente une livraison réelle. Le duel publié `raw/organikk/clients/fgformation/pages/2026-07-24-audit-blanc-seul-ou-accompagnement-complet.md` cite directement la matière audit blanc pour opposer les deux voies (seul vs accompagné) — un contenu client sort avec une source que la KB ne connaît qu'en titre. Ferme quand le lot FG-Formation du point 3 ingère `audit-blanc.md` + les 5 transcripts individuels dans `wiki/sources/`.
 
 ### C-002 — OpenDecoder jamais ingéré
 

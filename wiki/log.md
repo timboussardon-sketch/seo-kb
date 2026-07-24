@@ -1376,3 +1376,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - désalignement signalé: « appart hotel pau » 1 986 imp pos 6,8 répond sur `/destination/visiter-pau/` (slug + H1 orientés visite, pas hébergement) — Pau n'a pas de hub équivalent à Bordeaux
 - écartés sur data: quartiers hors implantation (Bordeaux Lac, Mérignac, Pessac, Chartrons, Floirac) · logement étudiant/stagiaire/alternant (SERP CROUS, budgets 250-300 €/mois, 6 imp pos 54,5) · hébergement chantier (zéro suggestion Bx et Pau) · salons/congrès/concerts/tournages (zéro suggestion)
 - contradictions: 1 — le cadrage du 2026-07-10 listait l'hébergement de chantier comme motif de séjour de la couche 1 ; Suggest le dément sur les deux villes
+
+## [2026-07-24] revue-hebdo | Semaine W30 — 7 décisions
+- promotions: mots-clés-que-les-ia-ne-mangent-pas draft→stable
+- hypothèse en test: aucune nouvelle — H-007 garde la place (J+30 2026-08-06) ; H-009 s'étend à FG Formation comme candidat parallèle à Victoria Garden
+- lot ingest W31: FG-Formation (patterns-requetes, modele-corpus, série X ou Y + 7 duels, audit-blanc.md + 5 transcripts) ; vote Victoria Garden retiré (2ᵉ non-exécution)
+- contradiction: C-005 ouverte→en-cours (audit blanc Qualiopi, attaché au lot FG-Formation)
+- résurgence: muette (1er raté post-migration GH Actions, à vérifier avant le 2026-07-29)
+- fil rouge: le pattern corpus tourne à 3 clients (Golfiller, Victoria Garden, FG Formation) ; date de mort du pari Organikk inchangée au 2026-07-31

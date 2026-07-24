@@ -4,7 +4,7 @@ title: Revue hebdo — rituel de décision
 aliases: [revue-hebdo, weekly-review, rituel-hebdo]
 tags: [meta, rituel, revue, decision]
 created: 2026-05-16
-updated: 2026-07-10
+updated: 2026-07-24
 sources: 0
 confidence: high
 status: living-doc
@@ -53,6 +53,8 @@ status: living-doc
 | 2026-W28 | [[revue-hebdo/2026-W28]] | les 3 conditionnels W27 tombés, tranchés sans re-débat · 0 promotion (binôme corpus promotable à la 1ʳᵉ page publiée) · **H-009 `en-test`→`ouvert` en séance** (J+30 Golfiller jamais mesuré, clause de falsification appliquée, J+90 seuls actifs) · **H-007 `ouvert`→`en-test` en séance** : GSC organikk.co **enfin branchée** (edge admin-gsc-export) + batch 3 URLs publié le 07/07 → fiche [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (J+30 = 2026-08-06) · lot W29 = **refresh playbook Reddit en tête** (source publiée + instrumentée) + Leexi **avec date de mort**, **etude-ctr skippé en séance** (4 votes, édition gelée) · 0 contradiction fermée, **C-003 débloquée** de son « zéro mesure » structurel · jeudi-4-infos : Tim tranche avant W29 sinon `stale` · **résurgence muette ×2** → migration GH Actions avant le 15/07 · fil rouge : **le corpus Organikk publie, la boucle preuves mesure** ; édition « mots-clés non mangés » gelée |
 
 | 2026-W29 | [[revue-hebdo/2026-W29]] | **3 promotions exécutées** (deepseek, mistral, moteurs-ia-chiffres-usage) · **aucune nouvelle hypothèse en test** : H-007 garde la place jusqu'à son J+30 du 2026-08-06 (une à la fois tant qu'aucune échéance n'a été tenue — H-009 est morte de ça) ; **H-009 pré-arbitrée sur Victoria Garden** (2 baselines capturées, `en-test` à la publication client, sortie du programme au 2026-08-31) · lot W30 = **Victoria Garden** ; **Leexi skippé en séance** (3ᵉ non-exécution), refresh playbook Reddit **attaché au J+30 H-007** au lieu d'un 5ᵉ vote, skip `golfiller-strat` **dégelé** (sprint réel constaté) et rattaché au J+90 · règle posée : **le rituel ne fait pas exécuter les ingests, le travail les fait exécuter** · **C-001 + C-010 `ouverte`→`acceptée` en bloc** (77j, garde-fou à l'usage, calque C-007/C-011) · **jeudi-4-infos `stale` par défaut** (conditionnel W28) · **résurgence réparée par la migration GH Actions**, verdict information-gain exécuté (Corroboration 2026, sources 6→7) · fil rouge : **le corpus quitte le pari de publication Organikk pour la production client (Victoria Garden)** ; le pari Organikk passe `stale` le 2026-07-31 s'il ne publie pas |
+
+| 2026-W30 | [[revue-hebdo/2026-W30]] | **1 promotion** (mots-clés-que-les-ia-ne-mangent-pas draft→stable) · aucune hypothèse forcée en-test, H-007 garde la place (J+30 2026-08-06) ; **H-009 s'étend à FG Formation** (candidat parallèle à Victoria Garden, publication dépend de Tim seul, pas d'un client) · lot W31 = **FG-Formation** (ferme C-005 au passage), **vote Victoria Garden retiré** (2ᵉ non-exécution consécutive, même traitement que Leexi en W29) · **C-005 `ouverte`→`en-cours`** (audit blanc Qualiopi, matière citée dans un duel publié cette semaine) · rien à archiver, date de mort du pari Organikk inchangée au 2026-07-31 · **résurgence muette** (1er raté post-migration GH Actions) · fil rouge : **le pattern corpus tourne à 3 clients (Golfiller, Victoria Garden, FG Formation), seul Organikk ne l'exécute pas chez lui** |
 
 Chaque édition est filée dans `revue-hebdo/YYYY-Www.md` et résumée dans cette table.
 
