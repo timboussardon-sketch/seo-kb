@@ -16,18 +16,18 @@ Dérivé du gabarit maître `_MODELE-email-propale.md`. Recalé le 24/07 sur l'o
 **Écarts au gabarit, assumés :**
 
 1. **Vouvoiement** : tout le call l'était.
-2. **Le résumé du call remplace le pré-audit dans le bloc de liens** (demande de Tim : présentation + résumé + proposition). Le pré-audit reste en ligne sur `/kqueo-pre-audit/` si on veut l'ajouter.
+2. **Le résumé de call ne se donne pas au client** (décision Tim 24/07) : il reste un document interne. Le bloc de liens = présentation + proposition + cas clients. Le pré-audit reste en ligne sur `/kqueo-pre-audit/`, hors email aussi.
 3. **[Prénom]** : absent du transcript, à compléter avant envoi.
 
 ---
 
-**Objet :** KQUEO, le résumé de notre échange et ma proposition d'accompagnement
+**Objet :** KQUEO, ma proposition d'accompagnement
 
 Bonjour [Prénom],
 
 Merci pour l'échange de mardi, et merci à Mathias pour le contexte technique.
 
-Je reviens vers vous comme convenu, avec le résumé de notre échange et ma proposition d'accompagnement pour KQUEO.
+Je reviens vers vous comme convenu, avec ma proposition d'accompagnement pour KQUEO.
 
 Ce que je mets en place sur les deux mois de mission :
 
@@ -52,9 +52,6 @@ Important : vous n'êtes jamais engagés et vous pouvez arrêter la prestation d
 
 Présentation de mon accompagnement :
 https://organikk.co/presentation-seo
-
-Le résumé de notre échange :
-https://organikk.co/kqueo-resume-call/
 
 Ma proposition pour KQUEO :
 https://organikk.co/kqueo-accompagnement/

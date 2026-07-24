@@ -14,7 +14,7 @@ status: draft
 
 # Résumé de notre échange du 23 juillet
 
-> Draft de la version à envoyer avec la proposition. Ne part pas sans validation de Tim. Transcript et notes internes : [[2026-07-23-call-decouverte]]. Registre : vouvoiement, comme le call.
+> **Document interne : ne s'envoie pas au client** (décision Tim 24/07). Sert de préparation et de trace. Transcript et notes internes : [[2026-07-23-call-decouverte]]. Registre : vouvoiement, comme le call.
 > **Version slides (le doc qui se montre)** : `wiki/propositions/resume-call-kqueo-organikk.html` + `Resume-call-KQUEO-organikk.co.pdf`. Ce fichier-ci reste le texte source.
 
 ---
