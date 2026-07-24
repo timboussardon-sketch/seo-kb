@@ -70,7 +70,7 @@ Budget : 1 400 € HT par mois, mois 1 et mois 2. Sans engagement au-delà.
 
 Vous m'ouvrez les accès Search Console et GA4, on cale le call de lancement, et j'attaque par le relevé de ce qui vous amène des commandes aujourd'hui.
 
-La proposition complète est ici : [lien]
+La proposition complète est ici : https://organikk.co/kqueo-accompagnement/
 
 Fais-moi un retour, et bonne journée à vous deux.
 
