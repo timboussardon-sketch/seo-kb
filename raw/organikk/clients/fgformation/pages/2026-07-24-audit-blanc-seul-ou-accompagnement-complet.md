@@ -17,11 +17,11 @@ status: draft
 
 # Audit blanc seul ou accompagnement complet : que choisir
 
-Un audit blanc teste un dossier qui existe déjà : simulation de l'audit, écarts relevés, correctifs à faire. Un accompagnement complet construit ce dossier avec vous, puis le teste. La question n'est donc pas de savoir quelle formule est la meilleure : c'est l'état de votre dossier aujourd'hui qui décide.
+Un audit blanc suppose un dossier qui existe déjà : il le passe dans les conditions de l'audit réel et vous remet la liste des écarts. Quand le dossier reste à construire, le besoin relève de l'accompagnement complet, qui se termine lui aussi par un audit blanc. La question n'est donc pas de savoir quelle formule est la meilleure : c'est l'état de votre dossier aujourd'hui qui décide.
 
 FG Formation vend les deux formats. L'intérêt de cette page est justement de ne pas vous vendre le gros quand le petit suffit : pour une partie des organismes qui nous contactent, l'audit blanc seul est la bonne réponse.
 
-## L'audit blanc teste, l'accompagnement construit
+## L'audit blanc suppose un dossier déjà construit
 
 L'audit blanc est une simulation : un intervenant extérieur passe votre dossier et votre discours dans les conditions de l'audit réel, indicateur par indicateur, et vous remet la liste des écarts. Ce qu'il est exactement, ce qu'il n'est pas et comment il se déroule sont détaillés sur notre page [audit blanc Qualiopi](https://fgformation.fr/le-guide/audit-blanc-qualiopi/).
 

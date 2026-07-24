@@ -17,11 +17,11 @@ status: draft
 
 # Formation Qualiopi ou accompagnement : quel format choisir
 
-Une formation Qualiopi transmet la méthode : vous repartez avec les compétences pour construire et tenir votre conformité. Un accompagnement produit le résultat avec vous : le dossier de preuves prêt pour l'audit, construit sur votre activité. Le bon format dépend d'une question : qui fera vivre le système qualité après la certification ?
+Une formation Qualiopi vous apprend à construire et tenir votre conformité vous-même. Si personne dans la structure ne fera ce travail ensuite, c'est l'accompagnement qu'il vous faut : le dossier de preuves sort de la prestation, construit sur votre activité. Une question tranche entre les deux : qui fera vivre le système qualité après la certification ?
 
 Transparence complète : FG Formation vend les deux formats. Cette page ne cherche pas à vous vendre les deux, elle sert à choisir le bon. Certains profils n'ont besoin que d'une formation, et nous l'écrivons plus bas.
 
-## La formation transmet une compétence, l'accompagnement produit un dossier
+## À la fin, le livrable diffère : des compétences, ou un dossier prêt pour l'audit
 
 La distinction tient au livrable. À la fin d'une formation, le livrable est dans votre tête et dans vos notes : vous savez lire les 7 critères et les 32 indicateurs du référentiel (annexe du décret n° 2019-565 du 6 juin 2019), vous savez quelles preuves construire et comment les tenir. Le dossier, lui, reste à faire.
 

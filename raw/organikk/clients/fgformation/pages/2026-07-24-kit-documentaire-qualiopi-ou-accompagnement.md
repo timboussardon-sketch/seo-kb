@@ -17,7 +17,7 @@ status: draft
 
 # Kit documentaire Qualiopi ou accompagnement : comment choisir
 
-Un kit documentaire fournit des modèles : trames de procédures, registres, documents types à adapter. Un accompagnement construit avec vous les preuves réelles que ces modèles sont censés refléter. L'écart entre les deux se voit à l'audit : l'auditeur échantillonne vos actions réelles, pas vos trames.
+Un kit documentaire, ce sont des modèles : trames de procédures, registres, documents types à adapter. Le référentiel, lui, exige des preuves produites par votre activité réelle, et c'est ce travail-là que couvre un accompagnement. L'écart entre les deux se voit à l'audit : l'auditeur échantillonne vos actions, pas vos trames.
 
 FG Formation vend de l'accompagnement, pas de kit. La grille reste la même pour les deux options, et le cas où un kit suffit est traité plus bas, sans détour.
 

@@ -17,13 +17,13 @@ status: draft
 
 # Consultant Qualiopi ou logiciel Qualiopi : comment choisir
 
-Un logiciel Qualiopi organise vos preuves, un consultant construit avec vous le système qui les produit. L'audit ne vérifie ni l'outil ni le prestataire : il vérifie des preuves datées, rattachées à votre activité réelle. Et les deux options se combinent plus souvent qu'elles ne s'opposent.
+Un logiciel Qualiopi range et rappelle : documents centralisés, échéances suivies. Le consultant intervient sur autre chose, le choix des preuves qui tiendront face à l'auditeur, indicateur par indicateur. L'audit ne vérifie ni l'outil ni le prestataire : il vérifie des preuves datées, rattachées à votre activité réelle. Et les deux options se combinent plus souvent qu'elles ne s'opposent.
 
 Pour la transparence : FG Formation vend de l'accompagnement par consultant, pas de logiciel. Cette page décrit ce que chaque option fait réellement, y compris les cas où un logiciel suffit. Données vérifiées le 24 juillet 2026.
 
-## Un logiciel organise les preuves, un consultant interprète le référentiel
+## Votre problème est l'organisation des preuves, ou leur interprétation
 
-Les deux réponses ne traitent pas le même problème. Un logiciel de gestion Qualiopi traite un problème d'organisation : où sont les documents, qui les a produits, quand, et qu'est-ce qui manque. Un consultant traite un problème d'interprétation : qu'est-ce que l'indicateur 11 attend concrètement d'un organisme comme le vôtre, quelle preuve tiendra face à l'auditeur, laquelle ne tiendra pas.
+Les deux réponses ne traitent pas le même problème. L'organisation d'abord : où sont les documents, qui les a produits, quand, qu'est-ce qui manque. C'est le terrain du logiciel. L'interprétation est un exercice d'une autre nature : qu'est-ce que l'indicateur 11 attend concrètement d'un organisme comme le vôtre, quelle preuve tiendra face à l'auditeur, laquelle ne tiendra pas. Personne n'a encore codé cette réponse-là dans un outil.
 
 Le référentiel national qualité compte 7 critères et 32 indicateurs, publiés en annexe du décret n° 2019-565 du 6 juin 2019. Aucun texte n'impose d'outil, aucun texte n'impose de prestataire. Le seul juge est l'auditeur du certificateur accrédité, et il ne note ni votre logiciel ni votre consultant : il contrôle vos preuves.
 
