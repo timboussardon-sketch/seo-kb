@@ -4,6 +4,18 @@ Rédigé le 2026-07-25. Cadre non négociable : Discovery est un agent autonome 
 
 Mission de l'agent : découvrir des lois sur le site. Pas des erreurs, des lois. Chaque découverte doit être impossible ou très coûteuse à trouver à la main.
 
+## Décisions du 25/07 (Tim)
+
+**Architecture d'intelligence — Claude aux deux bouts, la stat au milieu.**
+Claude planificateur en début de run (contexte du site + mémoire des découvertes → choisit et paramètre les hypothèses à tester, en propose de nouvelles), la stat en juge (SQL + seuils + réplication : Claude n'a pas le droit de vote), Claude interprète en fin de run (rédige la réflexion, relie les découvertes, hiérarchise par importance business). Même socle Claude que le produit, sans toucher à seo-agent. L'agent garde la mémoire de ce qu'il a testé par site : il ne repart jamais de zéro.
+
+**Stockage du résultat et de la réflexion — 5 niveaux, tout dans l'existant.**
+1. `agent_runs` : le passage (déjà).
+2. `discoveries` enrichie (énoncé, chiffres+périmètre, réflexion rédigée, score, cycle de vie) : le carnet de recherche, mémoire longue de l'agent.
+3. `project_events` + `project_memory` : la découverte entre dans la conscience temporelle que le chat LIT DÉJÀ → l'agent conversationnel peut expliquer chaque découverte sans qu'on modifie seo-agent ni le chat.
+4. `optimizations` : l'action dérivée (bouton Corriger, déjà).
+5. Compte-rendu email + cloche : la diffusion (déjà).
+
 ---
 
 ## État au 25/07 (Phase 0, livrée)
