@@ -9,6 +9,8 @@ Mission de l'agent : découvrir des lois sur le site. Pas des erreurs, des lois.
 **Architecture d'intelligence — Claude aux deux bouts, la stat au milieu.**
 Claude planificateur en début de run (contexte du site + mémoire des découvertes → choisit et paramètre les hypothèses à tester, en propose de nouvelles), la stat en juge (SQL + seuils + réplication : Claude n'a pas le droit de vote), Claude interprète en fin de run (rédige la réflexion, relie les découvertes, hiérarchise par importance business). Même socle Claude que le produit, sans toucher à seo-agent. L'agent garde la mémoire de ce qu'il a testé par site : il ne repart jamais de zéro.
 
+**Cadence par SITE (jamais quotidien sur un site)** : premier passage à J+1 après la mise en projet du site, puis tous les 7 jours. Mécanique : ticker quotidien 6h15 (`cron-discovery` + RPC `discovery_due_sites`) qui ne ramasse que les sites dus, plafonds 8 sites/user et 150/tick. EN PROD depuis le 25/07 (migration 20260725000005).
+
 **Stockage du résultat et de la réflexion — 5 niveaux, tout dans l'existant.**
 1. `agent_runs` : le passage (déjà).
 2. `discoveries` enrichie (énoncé, chiffres+périmètre, réflexion rédigée, score, cycle de vie) : le carnet de recherche, mémoire longue de l'agent.
@@ -70,12 +72,17 @@ Livrable : le registre grossit tout seul, les lois se raffinent. Effort : 2 jour
 
 ## Phase 4 — Surfaces et rétention
 
-1. Ligne Discovery dans le panneau Autonomes (toggle + i18n FR/EN, pastille couleur). L'utilisateur voit l'agent, peut le couper.
-2. Compte-rendu email : la découverte passe EN TÊTE quand il y en a une (« Cette semaine, votre agent a découvert quelque chose sur votre site »), les recommandations classiques après. C'est la promesse de retour : « qu'est-ce que Qadence va découvrir cette semaine ? »
-3. Cycle de vie visible dans la phrase : Signal / Tendance confirmée / Éteinte — même grammaire de fiabilité que les brèves.
-4. Aucune nouvelle vue dans l'app pour l'instant (cadre : pas de refonte).
+1. **Vue « Analyses » (décision Tim 25/07 : l'utilisateur consulte les analyses visuellement).** Nouvelle vue plein écran sur le patron d'AccountPage (aucun contact avec le chat) :
+   - accès depuis la Sidebar + depuis la notification de la cloche ;
+   - par projet, la timeline des découvertes en cartes : énoncé + chiffres + périmètre, état visible (Signal / Tendance confirmée / Éteinte), mini-graphique 14j vs 14j (barres bleues, DA sobre existante : #4F6BFF, Geist, jamais de scroll horizontal) ;
+   - la **réflexion de l'agent dépliable** sur chaque carte (le carnet de recherche : ce qui a été testé, sur quoi, ce qui a été écarté) ;
+   - bouton « Corriger » (réutilise le mécanisme du panneau Recommandations) ;
+   - pied de vue : historique des passages de l'agent (agent_runs) — quand il est passé, ce qu'il a trouvé, quand il repasse.
+2. Ligne Discovery dans le panneau Autonomes (toggle + i18n FR/EN, pastille couleur). L'utilisateur voit l'agent, peut le couper.
+3. Compte-rendu email : la découverte passe EN TÊTE quand il y en a une, avec lien vers la vue Analyses. C'est la promesse de retour : « qu'est-ce que Qadence a découvert cette semaine ? »
+4. Cycle de vie visible partout : Signal / Tendance confirmée / Éteinte — même grammaire de fiabilité que les brèves.
 
-Effort : 1 jour.
+Effort : 2 jours (la vue est le gros morceau).
 
 ## Phase 5 — Convergence (plus tard, pas avant que le reste tourne)
 
