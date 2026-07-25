@@ -1379,3 +1379,21 @@ Grep tiret cadratim `—` intra-texte = 0 après correction ligne 25 (« et ce q
 - **Pilier respecté** : Recherche agentique tenu comme info du jour (priorité directive), avec fait franchement neuf (spec finale à J-3) distinct de Yelp x OpenAI, OpenAI 10M, DataDome Q2.
 - **Interdiction mono-Google** : respectée (Google est mentionné comme absence : « aucun connecteur MCP officiel Google au 25 juillet 2026 »).
 - **Pattern reproductible** : spec de protocole charnière technique + cas d'usage sectoriel existant (Semrush x Perplexity) = tenable en info du jour si (a) la spec est datée avec deadline proche, (b) au moins 3 sources techniques indépendantes documentent les changements, (c) le cas sectoriel est primaire, (d) les absences documentaires sont publiées explicitement (pas de connecteur GSC, pas de chiffre trafic), (e) 3 prédictions vérifiables datées.
+
+## Édition 2026-07-25-v2 (cloud) - Pilier Product-Led SEO / MCP côté éditeurs SEO
+
+| Axe | Valeur |
+|---|---|
+| source_diversity | 12 (info du jour 9 + B1 3 + B2 3 + B3 1) |
+| claim_density | 22 verified + 1 uncertain flaggé (Serpstat vendor tripled MoM) |
+| novelty_score | 4/5 |
+| doctrine_fit | 5/5 (6 concepts articulés distinctement : agentic-search + product-led-seo + test-substitution-llm + data-proprietaire + tabou-visibilite + metriques-visibilite-geo) |
+| redite_risk | faible (0 recouvrement said_index sur 4 sujets, complète MCP matin sans dupliquer) |
+| clickbait_risk | faible |
+| **Note globale** | **3.8/5** |
+
+### Décisions clés
+- Info du jour Product-Led SEO plutôt que Recherche agentique bis pour respecter directive « NE PAS ré-enchaîner RA » (matin déjà MCP spec).
+- Pivot corrige lecture réductrice édition matin (« Semrush seul ») en agrégeant 3 guides comparatifs indépendants qui documentent 7 éditeurs SEO en production MCP officiel.
+- Discipline anti-visibilité respectée : « visibilité SERP » → « position SERP », « levier de rétention » → « mécanisme de rétention ».
+- Note P-2026-07-25-1 (édition matin) partiellement pré-résolue par Ahrefs MCP + Screaming Frog MCP déjà documentés ; à confirmer par communication primaire pour bascule `resolved`.
