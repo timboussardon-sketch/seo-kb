@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-25 · Podcasts et citations IA 2025-2026 : concentration extrême (30 émissions sur 4,5M), paradoxe du jardin clos Apple/Spotify, entonnoir 0,0077 % des actifs cités régulièrement, réconciliation Edison/Triton → `2026-07-25-stats-podcasts-citations-ia-transcriptions.md`
 - 2026-07-24 · Trafic référent des moteurs IA en GA4 (2025-2026) : 0,2 % du web total, rendement ×14 pour Claude vs ChatGPT en B2B, inversion de conversion retail (−38 % mars 2025 → +42 % mars 2026, Adobe >1T visites), réconciliation des 3 datasets (Previsible 92,4 % / Goodie B2B 62,6 % / Trakkr 91,3 %) via tableau rendement-par-visite inédit → `2026-07-24-stats-trafic-referent-moteurs-ia-ga4.md`
 - 2026-07-23 · X (ex-Twitter) dans les citations IA 2025-2026 : 12e sur Grok (1,4 %), absent du top 50 ailleurs — robots.txt `User-agent: * / Disallow: /` bloque GPTBot/PerplexityBot/OAI-SearchBot, API 200–42 000 $/mois, intégration xAI-Grok insuffisante pour lever le verrou de format tweet — réconciliation Meltwater (top 5 social, qualitatif) vs Ahrefs (12e, 1,4 %, quantitatif) vs absent ChatGPT/Perplexity/AIO — la chute Reddit -86 % a profité à YouTube pas à X → `2026-07-23-stats-x-twitter-citations-ia-verrou-acces.md`
 - 2026-07-21 · Schema.org et citations IA (2025-2026) : 2,3× de corrélation (Digital Applied) vs zéro gain causal (Ahrefs DiD) — tableau schema × moteur × niveau de preuve (6 études réconciliées), mécanisme corrélation/causalité, effet Google vs non-Google, balisage attribut-complet → `2026-07-21-stats-schema-org-citations-ia.md`
@@ -42,7 +43,7 @@
 
 ## À faire (par priorité)
 
-1. **Podcasts et contenus audio dans les citations IA 2025-2026** : part des transcriptions de podcasts (Spotify, Apple Podcasts, YouTube audio) dans les sources citées par les LLMs, impact des transcriptions automatiques sur l'indexabilité, comparaison taux de citation texte vs audio — angle quasi inédit : le contenu audio est désormais crawlé via sa transcription, mais les études existantes ignorent ce vecteur (aucune des 34 études produites ne le couvre).
+*(file vide — relance avec 3 nouveaux sujets à la prochaine session si aucun sujet n'est ajouté d'ici là)*
 
 ## Sujets écartés (avec raison)
 (vide)
