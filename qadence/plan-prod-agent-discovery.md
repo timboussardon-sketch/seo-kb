@@ -14,7 +14,7 @@ Claude planificateur en début de run (contexte du site + mémoire des découver
 **Stockage du résultat et de la réflexion — 5 niveaux, tout dans l'existant.**
 1. `agent_runs` : le passage (déjà).
 2. `discoveries` enrichie (énoncé, chiffres+périmètre, réflexion rédigée, score, cycle de vie) : le carnet de recherche, mémoire longue de l'agent.
-3. `project_events` + `project_memory` : la découverte entre dans la conscience temporelle que le chat LIT DÉJÀ → l'agent conversationnel peut expliquer chaque découverte sans qu'on modifie seo-agent ni le chat.
+3. `project_events` + `project_memory` : la découverte entre dans la conscience temporelle que le chat LIT DÉJÀ → l'agent conversationnel peut expliquer chaque découverte sans qu'on modifie seo-agent ni le chat. **CÂBLÉ le 25/07 (niveau 1, vérifié en prod)** : chaque publication écrit le journal (`project_events` type `discovery` → section timeline du prompt), un fait (`project_memory` clé `analyse:<dkey>` → section faits, retiré à l'extinction), et la notification existante alimente la section signaux. Niveau 2 (plus tard, ÉVALS obligatoires car prompt modifié) : section dédiée « Découvertes de l'agent » dans le bloc temporel + libellé `discovery` dans EVENT_LABEL + outil `get_discoveries` pour répondre aux « pourquoi ? » avec le raisonnement complet.
 4. `optimizations` : l'action dérivée (bouton Corriger, déjà).
 5. Compte-rendu email + cloche : la diffusion (déjà).
 
