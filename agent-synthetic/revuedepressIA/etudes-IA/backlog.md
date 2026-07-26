@@ -43,7 +43,9 @@
 
 ## À faire (par priorité)
 
-*(file vide — relance avec 3 nouveaux sujets à la prochaine session si aucun sujet n'est ajouté d'ici là)*
+1. **Substack et newsletters dans les citations IA 2025-2026** — format semi-fermé (paywall partiel, Common Crawl sporadique) vs newsletters indexées ; qui se fait citer (Substack, Beehiiv, Ghost) sur quels moteurs ; corrélation avec la fréquence de publication et le volume d'abonnés ; effet du partenariat Google-Substack (déc. 2024) sur la découvrabilité. Angle : quantifier le paradoxe newsletters-à-fort-engagement-peu-citées vs blogs-à-faible-engagement-indexés.
+2. **Wikipedia dans les citations IA 2025-2026 : premier domaine cité ou sur-cité ?** — Wikipedia est dans le corpus d'entraînement de tous les LLMs ET régulièrement crawlé ; séparer l'effet "memorization" (données pré-coupe) vs "retrieval" (RAG en temps réel) ; part de Wikipedia par moteur (Perplexity, ChatGPT Search, Google AIO, Claude) et par domaine thématique (santé, tech, histoire) ; comparer avec l'effet Britannica, DBpedia, Wikidata. Angle : réconcilier la part de Wikipedia dans les datasets d'entraînement (étude EleutherAI, Llama 2, GPT-4) avec sa part dans les citations observées par Ahrefs/Profound.
+3. **Core Web Vitals et vitesse de page des sources citées par les IA 2025-2026** — les pages citées par les moteurs génératifs sont-elles techniquement plus rapides ? Corrélation LCP/CLS/INP avec la probabilité de citation sur Perplexity, ChatGPT Search, Google AIO ; benchmark SE Ranking (FCP 3× déjà cité dans l'étude du 2026-06-30) à approfondir avec un dataset dédié performance × citation ; position de Google sur "la vitesse n'est pas un facteur de ranking IA" vs signaux expérimentaux. Angle : distinguer l'effet vitesse (signal technique) de l'effet autorité (DA corrélé à la vitesse sur les grands domaines) — la corrélation est-elle une illusion ?
 
 ## Sujets écartés (avec raison)
 (vide)
