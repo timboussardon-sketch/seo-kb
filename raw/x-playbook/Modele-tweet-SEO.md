@@ -300,3 +300,435 @@ N. [ÉQUATION MÉMORISABLE : X = A + B]
 ```
 
 Règle dure des trois modèles : au moins une position à contre-courant assumée, sinon le post ne fait pas débattre et l'algo ne le pousse pas.
+
+---
+
+# Banque de modèles viraux
+
+15 structures repérées sur les posts SEO/IA qui cartonnent en EN.
+
+À combiner avec les 3 familles ci-dessus : ces modèles donnent la STRUCTURE, les familles donnent la mécanique du hook.
+
+## 1. Le remplacement
+
+Le plus fréquent.
+
+Exemples de hooks : « We cancelled Semrush. » / « Claude replaced my agency. » / « AI replaced my SEO team. »
+
+```
+We stopped using [Tool].
+
+Instead, we built [System].
+
+Here's exactly how.
+```
+
+## 2. Le résultat impossible
+
+Toujours commencer par le résultat.
+
+Exemples : « #1 on Google. » / « $3.5M ARR. » / « 530k visitors. »
+
+```
+We reached [Result].
+
+Here's exactly what we did.
+
+(no hacks)
+```
+
+## 3. L'entreprise d'agents
+
+Très tendance.
+
+```
+Company
+
+├ CEO
+├ SEO Agent
+├ Content Agent
+├ Outreach Agent
+├ Analytics Agent
+└ QA Agent
+```
+
+Puis expliquer chaque rôle.
+
+## 4. Le playbook complet
+
+Toujours « Full » / « complete ».
+
+```
+The complete SEO AI playbook.
+
+Everything from:
+
+→ Research
+→ Content
+→ Technical
+→ Internal linking
+→ Reporting
+
+Free.
+```
+
+## 5. L'organigramme
+
+Les gens adorent.
+
+```
+SEO
+
+├ Discovery
+├ Technical
+├ Content
+├ Internal Linking
+├ Reporting
+└ Growth
+```
+
+## 6. Le framework
+
+Créer un mot.
+
+Exemples : SEO Heist, Hermes, LLM SEO, Agent Operator.
+
+```
+Everyone talks about SEO.
+
+I use [Nom].
+
+Here's the framework.
+```
+
+## 7. Le contre-pied
+
+Très viral.
+
+```
+SEO isn't about backlinks anymore.
+
+It's about [nouvelle idée].
+
+Here's why.
+```
+
+## 8. Le « Entire »
+
+Très utilisé.
+
+```
+GPT-5 runs my entire SEO.
+
+Every page.
+
+Every audit.
+
+Every report.
+
+Automatically.
+```
+
+## 9. Les douleurs
+
+```
+Tired of...
+
+Solved.
+
+Tired of...
+
+Solved.
+
+Tired of...
+
+Solved.
+```
+
+## 10. Les données
+
+Très fort.
+
+```
+We analyzed
+
+14,000 websites
+
+8M pages
+
+120M links
+
+Here's what everyone gets wrong.
+```
+
+## 11. Les coulisses
+
+```
+I wasn't going to publish this.
+
+But here is our internal workflow.
+```
+
+## 12. Les automatisations
+
+```
+Every Monday
+
+↓
+
+SEO Audit
+
+↓
+
+Content ideas
+
+↓
+
+Internal linking
+
+↓
+
+Priority report
+
+Runs automatically.
+```
+
+## 13. Le futur
+
+```
+The future of SEO isn't rankings.
+
+It's AI recommendations.
+
+Most people haven't noticed yet.
+```
+
+## 14. Le système visuel
+
+Toujours un schéma.
+
+```
+Traffic
+
+↓
+
+Discovery
+
+↓
+
+Content
+
+↓
+
+Internal Linking
+
+↓
+
+Conversion
+```
+
+## 15. La checklist
+
+Très sauvegardée (bookmarks = signal fort pour l'algo).
+
+```
+If your SEO doesn't have:
+
+☐ Internal links
+
+☐ Schema
+
+☐ CWV
+
+☐ AI visibility
+
+☐ Entity coverage
+
+You're already behind.
+```
+
+---
+
+# Les hooks qui reviennent le plus
+
+## « We... »
+
+```
+We stopped buying backlinks.
+
+Traffic increased.
+
+Here's why.
+```
+
+## « I built... »
+
+```
+I built an AI SEO employee.
+
+It replaced 5 tools.
+
+Here's everything.
+```
+
+## « The future... »
+
+```
+The future of SEO won't be done by humans.
+
+It will be managed by humans.
+```
+
+## « Most people... »
+
+```
+Most SEO experts are optimizing Google.
+
+I'm optimizing AI.
+```
+
+## « Everyone... »
+
+```
+Everyone is building prompts.
+
+We're building SEO companies.
+```
+
+---
+
+# Les modèles de posts pour Qadence
+
+8 déclinaisons prêtes à adapter, une par structure virale.
+
+## Modèle 1 — Le remplacement
+
+```
+We cancelled Ahrefs.
+
+We cancelled Semrush.
+
+We cancelled Screaming Frog.
+
+One autonomous SEO workspace replaced all three.
+
+Here's how it works.
+```
+
+## Modèle 2 — L'entreprise
+
+```
+SEO Department
+
+├ Discovery Agent
+├ Technical Agent
+├ Internal Linking Agent
+├ Content Agent
+├ GEO Agent
+├ Reporting Agent
+└ QA Agent
+
+Every morning they deliver one prioritized action list.
+```
+
+## Modèle 3 — Le framework
+
+```
+There are 4 generations of SEO.
+
+SEO 1.0 → Manual.
+
+SEO 2.0 → SaaS.
+
+SEO 3.0 → AI copilots.
+
+SEO 4.0 → Autonomous agents.
+
+Most companies are still in generation 2.
+```
+
+## Modèle 4 — Les données
+
+```
+We analyzed 10,000 SEO audits.
+
+The biggest ranking problem wasn't content.
+
+It wasn't backlinks.
+
+It was prioritization.
+
+Here's the data.
+```
+
+## Modèle 5 — La douleur
+
+```
+Tired of checking Search Console every day?
+
+Solved.
+
+Tired of writing audit reports?
+
+Solved.
+
+Tired of wondering what to fix first?
+
+Solved.
+
+That's exactly why we built autonomous SEO agents.
+```
+
+## Modèle 6 — Le futur
+
+```
+In five years, SEO teams won't disappear.
+
+They'll become agent managers.
+
+The work won't be:
+
+→ writing titles
+
+→ checking rankings
+
+→ exporting CSVs
+
+It will be:
+
+→ assigning objectives
+
+→ reviewing decisions
+
+→ improving systems.
+```
+
+## Modèle 7 — La vision
+
+```
+Stop collecting SEO tools.
+
+Start building an SEO operating system.
+
+Tools answer questions.
+
+Systems produce outcomes.
+```
+
+## Modèle 8 — Le playbook
+
+```
+The complete Autonomous SEO Playbook.
+
+Research
+Technical
+Internal Linking
+Content
+GEO
+Monitoring
+Reporting
+
+Everything runs from one workspace.
+```
+
+Rappel : les chiffres des modèles Qadence (10,000 audits, etc.) sont des placeholders de structure. Avant publication, remplacer par de la data réelle vérifiée, jamais un chiffre inventé.
