@@ -174,5 +174,37 @@
     "noise_hits": 0,
     "status": "explore",
     "last_useful": "2026-07-25"
+  },
+  "yro.slashdot.org": {
+    "weight": 0.7,
+    "trust": 0.65,
+    "useful_hits": 1,
+    "noise_hits": 0,
+    "status": "explore",
+    "last_useful": "2026-07-27"
+  },
+  "daringfireball.net": {
+    "weight": 0.8,
+    "trust": 0.75,
+    "useful_hits": 1,
+    "noise_hits": 0,
+    "status": "explore",
+    "last_useful": "2026-07-27"
+  },
+  "industry-lens.com": {
+    "weight": 0.5,
+    "trust": 0.4,
+    "useful_hits": 1,
+    "noise_hits": 1,
+    "status": "explore",
+    "last_useful": "2026-07-27"
+  },
+  "previsible.com": {
+    "weight": 0.75,
+    "trust": 0.7,
+    "useful_hits": 1,
+    "noise_hits": 0,
+    "status": "explore",
+    "last_useful": "2026-07-27"
   }
 }

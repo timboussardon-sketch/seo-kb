@@ -1397,3 +1397,27 @@ Grep tiret cadratim `—` intra-texte = 0 après correction ligne 25 (« et ce q
 - Pivot corrige lecture réductrice édition matin (« Semrush seul ») en agrégeant 3 guides comparatifs indépendants qui documentent 7 éditeurs SEO en production MCP officiel.
 - Discipline anti-visibilité respectée : « visibilité SERP » → « position SERP », « levier de rétention » → « mécanisme de rétention ».
 - Note P-2026-07-25-1 (édition matin) partiellement pré-résolue par Ahrefs MCP + Screaming Frog MCP déjà documentés ; à confirmer par communication primaire pour bascule `resolved`.
+
+## Édition 2026-07-27 (cloud) - Pilier Product-Led SEO
+
+| Axe | Valeur |
+|---|---|
+| source_diversity | 11 (info du jour 3 sources : theStacc primaire self-published + Ahrefs benchmarks primaire vendeur + Seer Interactive référence corroboration doctrine passée ; B1 3 sources : blog MCP primaire + WorkOS + Digital Applied ; B2 3 sources : Everything-PR distribution + 5wpr.com + SOCi corroboration antérieure ; B3 2 sources : Slashdot reprise + Daring Fireball + PPC Land + MediaPost rappel primaire) |
+| claim_density | 11 verified + 4 discarded (GoGoChimp rejeté, Ahrefs Brand Radar 23x trop ancien juin 2025, UK CMA SMS 10 octobre 2025 trop ancien, Google BP reviews investigation 3 juillet trop ancien) |
+| novelty_score | 3/5 (cas theStacc documenté mais isolé et self-reported ; benchmark Ahrefs large indépendante recadre ; MCP 2026-07-28 = charnière technique publiée à J-1 mais déjà mentionnée 07-25 ; 5W = corroboration motif SOCi ; SerpApi = rappel de fond avec circulation neuve audience développeur) |
+| doctrine_fit | 4/5 (4 concepts articulés distinctement : product-led-seo + data-proprietaire + scaled-content-abuse + tabou-visibilite ; metriques-visibilite-geo dans B2) |
+| redite_risk | moyen (motif SOCi corroboré non nouveau, MCP mentionné 07-25 mais 28 juillet fait procédural neuf, SerpApi rappel de fond 07-22 mais reprise Slashdot 26 juillet est fait de circulation) |
+| clickbait_risk | faible (titre factuel avec deux chiffres vérifiables 512 pages + 574 000 USD, précise l'angle analytique « ce qu'il faut y lire ET ce qu'il ne prouve pas », évite ton triomphaliste vendor case study) |
+| **Note globale** | **3.4/5** |
+
+### Décisions clés
+- Constat 26-27 juillet 2026 : rareté de fait franchement neuf sur les 5 familles, particulièrement sur pilier Niche SEO (SocialPanel Khan couvert 07-26 morning, YMYL Bing deindex couvert 07-18) et Product-Led SEO (Ryan Law 07-20 v2, MCP éditeurs 07-25 v2). Pivot pragmatique vers cas theStacc anecdotique documenté.
+- Cas theStacc self-published traité honnêtement avec 5 limites méthodologiques publiées dans le corps (autoreporté, anonymisé, isolé, biais last-click, survie updates rétrospective).
+- Cross-référence obligatoire avec Ahrefs benchmarks juin 2026 (344 956 sites GSC anonymisés) pour recadrer et éviter l'effet vendor case study.
+- GoGoChimp tentée puis écartée après vérification source déjà rejetée dans sources.jsonl 07-17-v2 (contradictions internes). Discipline anti-M-005 tenue.
+- Ahrefs Brand Radar 23x écarté après vérification date (juin 2025, un an trop ancien ; agrégateur IndustryLens redate faussement).
+- UK CMA Google SMS écarté après vérification date (10 octobre 2025, confusion avec 'triggers powers' juillet 2026 = mise en application).
+- Note globale 3.4 assumée : édition qui documente sans découvrir, novelty 3/5 honnête.
+
+### Pattern reproductible
+Quand la fenêtre de temps court ne fournit pas de fait franchement neuf : (a) chercher pilier moins récent dans variation ; (b) chercher cas documenté self-published mais publier 5 limites méthodologiques explicites en corps ; (c) cross-référencer obligatoirement avec donnée benchmark large indépendante ; (d) accepter novelty modeste 3/5 plutôt que forcer une lecture triomphaliste ; (e) 3 prédictions vérifiables datées critères binaires pour tester le cas rétrospectivement.
