@@ -1,12 +1,12 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-07-26 09:44 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-07-27 09:30 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **889 fichiers** markdown (524 dans `raw/`, 365 dans `wiki/`)
-- **1590k mots** au total
-- **7671 wikilinks** (moyenne 8.6 / fichier)
+- **892 fichiers** markdown (526 dans `raw/`, 366 dans `wiki/`)
+- **1594k mots** au total
+- **7684 wikilinks** (moyenne 8.6 / fichier)
 - **Ratio raw→wiki** : 0.70 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
@@ -15,9 +15,9 @@
 |---------|---------:|-----:|:--------------:|
 | raw/articles | 65 | 122.5k | 2026-06-08 |
 | raw/notes | 87 | 212.8k | 2026-07-22 |
-| raw/revue-de-presse | 39 | 41.2k | 2026-07-20 |
+| raw/revue-de-presse | 41 | 43.4k | 2026-07-27 |
 | raw/newsletter | 0 | 0 | — |
-| raw/journal | 70 | 90.8k | 2026-07-25 |
+| raw/journal | 70 | 90.8k | 2026-07-26 |
 | raw/briefs | 0 | 0 | — |
 | raw/etudes-seo | 7 | 6.1k | 2026-06-08 |
 | raw/papers | 5 | 2.3k | 2026-07-17 |
@@ -35,21 +35,21 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **111** commits
-- **59** fichiers créés
-- **40** fichiers modifiés
+- **115** commits
+- **58** fichiers créés
+- **41** fichiers modifiés
 
 ### 30 derniers jours
-- **471** commits
+- **476** commits
 - **344** fichiers créés
-- **108** fichiers modifiés
+- **109** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
-- **39** éditions publiées (16 sur les 30 derniers jours)
-- Dernière édition : `2026-07-20-revue-presse` (il y a 6j)
-- **Couverture 30j** : 16/30 (53%)
+- **41** éditions publiées (18 sur les 30 derniers jours)
+- Dernière édition : `2026-07-27-revue-presse` (il y a 0j)
+- **Couverture 30j** : 18/30 (60%)
 
 ### Newsletter
 - **0** newsletters
@@ -101,25 +101,26 @@
 ## 🔥 Activité git
 
 ```
-30j: █▃█▅██████▅▃█████████▃████▃██·
+30j: ▃█▅██████▅▃█████████▃████▃█▃█▁
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
-**Streak actuel** : 0 jour(s) consécutif(s) avec commit
+**Streak actuel** : 57 jour(s) consécutif(s) avec commit
 
 ### Dossiers inactifs > 14j
 
-- `raw/articles` — dernière modif il y a **48j** (2026-06-08)
-- `wiki/briefs` — dernière modif il y a **45j** (2026-06-11)
+- `raw/articles` — dernière modif il y a **49j** (2026-06-08)
+- `wiki/briefs` — dernière modif il y a **46j** (2026-06-11)
+- `wiki/audit` — dernière modif il y a **15j** (2026-07-12)
 
 ## 🤖 Automatisations (LaunchAgents)
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-07-26 09:00 | 256 | ✗ |
-| recap-jour | 2026-07-25 23:07 | 0 | ✓ |
+| revue-presse | 2026-07-27 09:08 | 0 | ✓ |
+| recap-jour | 2026-07-27 04:00 | 256 | ✗ |
 | refresh-snapshots | 2026-06-01 08:14 | 0 | ✓ |
-| dashboard | 2026-07-26 09:44 | 0 | ✓ |
+| dashboard | 2026-07-27 09:30 | 0 | ✓ |
 
 ---
 
