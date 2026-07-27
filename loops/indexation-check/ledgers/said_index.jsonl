@@ -41,3 +41,12 @@
 {"date":"2026-07-20","angle":"POSITIF les 11 fiches wiki densifiees au 13/07 restent stables >=400 mots au 20/07","report":"reports/indexation-organikk-2026-07-20.md"}
 {"date":"2026-07-20","angle":"OBSERVATION maillage /guide-evaluateurs-google/* : 32/103 pages n'ont que le hub comme lien entrant, pas de transverse entre chapitres","report":"reports/indexation-organikk-2026-07-20.md"}
 {"date":"2026-07-20","angle":"POSITIF pipeline tient sur +184 pages en semaine : 100% HTTP 200, canonical, h1, title, pas de noindex","report":"reports/indexation-organikk-2026-07-20.md"}
+{"date":"2026-07-27","angle":"audit indexation Organikk site complet - HTTP+sitemap+canonical+maillage (run hebdo)","perimetre":"organikk.co - 330 URLs du sitemap","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"CRITIQUE /manifeste toujours 404 - 4e recurrence, reco P1 du 10/07 non appliquee apres 17j","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"CRITIQUE /accompagnement-seo-geo toujours orpheline - 4e recurrence sur 330 pages, reco C2 non appliquee","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"sitemap_canonical_mismatch 8e recurrence - P1 du 15/06 sans effet 42 jours","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"lastmod_uniforme 8e recurrence - P2 du 15/06 sans effet 42 jours","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"POSITIF wiki 56/56 fiches au-dessus de 400 mots (vs 55/56 au 20/07), moyenne 577","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"sitemap stable 330 URLs (delta 0) apres scale-up - trajectoire 49j 169-136-143-143-146-146-330-330","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"section robots-ia inchangee : 12/14 sous 300 mots, en attente d'arbitrage editorial","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-07-27","angle":"statut indexation Google non teste ce run (pas d'acces edge admin-gsc-export) - 'non testable' distinct de 'non indexee'","report":"reports/indexation-organikk-2026-07-27.md"}
