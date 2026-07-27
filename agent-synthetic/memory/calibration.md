@@ -1421,3 +1421,28 @@ Grep tiret cadratim `—` intra-texte = 0 après correction ligne 25 (« et ce q
 
 ### Pattern reproductible
 Quand la fenêtre de temps court ne fournit pas de fait franchement neuf : (a) chercher pilier moins récent dans variation ; (b) chercher cas documenté self-published mais publier 5 limites méthodologiques explicites en corps ; (c) cross-référencer obligatoirement avec donnée benchmark large indépendante ; (d) accepter novelty modeste 3/5 plutôt que forcer une lecture triomphaliste ; (e) 3 prédictions vérifiables datées critères binaires pour tester le cas rétrospectivement.
+
+## Édition 2026-07-27-v2 (cloud, après-midi) - Pilier GEO
+
+| Axe | Valeur |
+|---|---|
+| source_diversity | 8 (info du jour 3 sources primaires : seerinteractive.com (étude Sonny Vasquez 24 juillet 2026 fresh) + ahrefs.com (référence historique juillet 2025) + apiserpent.com/contently.com (corroboration GrowByData) ; B1 2 sources : tech-insider.org + theregister.com ; B2 3 sources : tradingkey.com + cnbc.com + almcorp.com ; B3 2 sources : apiserpent.com + contently.com) |
+| claim_density | 10 verified + 0 discarded loggés ce run |
+| novelty_score | 3/5 (étude Seer fresh 24 juillet 2026, direction connue mais apport propre = distinction date de mise à jour vs date de publication est neuf ; 72 pct fresh by last-update vs 42 pct actually published in last year est un ratio qui n'a pas été mesuré ailleurs à cette précision) |
+| doctrine_fit | 4/5 (4 concepts articulés distinctement : fraicheur-contenu avec révision requise fiche + metriques-visibilite-geo + data-proprietaire + tabou-visibilite ; révision fiche fraicheur-contenu à évaluer en revue hebdo) |
+| redite_risk | faible (Seer content recency study non couvert, angle mise-à-jour vs publication est neuf par rapport aux mesures Ahrefs juillet 2025 et GrowByData) |
+| clickbait_risk | faible (titre factuel avec repérage étude datée et angle analytique « date de mise à jour compte plus que date de publication », évite formulation vendor triomphaliste) |
+| **Note globale** | **3.5/5** |
+
+### Décisions clés
+- Info du jour GEO Seer Interactive content recency 24 juillet 2026 : pilier respecte directive (Product-Led SEO en info du jour matin 07-27, ne pas ré-enchaîner ; ré-enchaîner GEO après matin GEO 5W B2 acceptable car angle distinct : Seer = mesure freshness au niveau page individuelle avec dataset non-branded 4 industries, distinct du motif d'invisibilité services locaux corroboré 5W+SOCi).
+- Corroboration Ahrefs juillet 2025 (un an ancien) intégrée explicitement comme référence historique dans le corps, avec note de date. Discipline anti-M-005 tenue.
+- 5 sources nouvelles explore ajoutées (apiserpent.com 0.55, tech-insider.org 0.6, tradingkey.com 0.6, theregister.com utile même connue implicit, contently.com 0.65 utile B2B).
+- Distinction B1 (MCP 10K+ serveurs adoption scale) distincte de la brève B1 matin (protocol details) : angle scale de déclaration non-audité, avec 4 limites méthodo explicites (répartition interne/public, taux rétention, volume moyen requêtes, taux utilisation effective).
+- B2 Reddit Q2 30 juillet earnings : calendrier procédural neuf, contexte Google AI deal renewal rappelé sans re-traiter le fait 21-22 juillet déjà couvert 07-24-v2.
+- B3 GrowByData 3.2× corroboration séparée avec 2 limites explicites (source vendeur, non-reproduite tiers, ChatGPT seul).
+- 3 prédictions nouvelles v2 avec dates précises (31/03/2027 reproduction Seer, 30/06/2027 clarification Google, 31/12/2026 outil GEO colonne mise-à-jour).
+- Discipline anti-pattern IA : run propre, zéro métaphore, vouvoiement, zéro personnification (Seer publie, Ahrefs mesurait, Reddit annonce, Anthropic-OpenAI-Google-Microsoft-AWS auraient cité). Zéro tirets cadratim.
+
+### Pattern reproductible
+Quand une nouvelle étude apporte un raffinement conceptuel plutôt qu'un renversement (ici : freshness = update date > publish date, pas freshness ≠ signal), l'angle qui distingue précisément l'apport propre de la mesure (ratio 72 pct vs 42 pct = 30 pt gap sur sous-ensemble daté) et qui articule une révision explicite d'une fiche doctrine existante ([[concepts/fraicheur-contenu]] à réviser) donne doctrine_fit 4/5 et novelty 3/5 honnête sans forcer. Quand une source vendeur (GrowByData 3.2×) corrobore la direction sans reproduire la méthodologie, la placer comme corroboration séparée en brève avec limites explicites, pas en info du jour.
