@@ -296,6 +296,8 @@
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-25-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -1469,6 +1471,7 @@
       "agent-synthetic/revuedepressIA/2026-07-20-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-24-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-25-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1977,6 +1980,7 @@
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-19-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-14-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-22-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-23-revue-presse.md",
@@ -3981,6 +3985,8 @@
       "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-24-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-25-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -5026,6 +5032,7 @@
       "preuve"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-21-revue-presse.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-peurs-objections.md",
       "raw/notes/_archive/skills-pre-cursor-merge-2026-04-25/skill-quick-win.md",
@@ -5690,7 +5697,8 @@
     ],
     "backrefs": [
       "raw/notes/tim-my-voice.md",
-      "raw/transcripts/call-16-raphael-coach-sportif.md"
+      "raw/transcripts/call-16-raphael-coach-sportif.md",
+      "wiki/ingest-backlog.md"
     ],
     "confidence": "medium",
     "file": "wiki/entities/raphael-coach-sportif.md",
@@ -5826,6 +5834,7 @@
       "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/2026-07-14-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse-v2.md",
       "qadence/drive-qadence/04-beaucoup-impressions-peu-de-clics.md",
       "qadence/drive-qadence/05-ameliorer-taux-de-clic-google.md",
       "wiki/entities/sparktoro.md",
@@ -6622,6 +6631,8 @@
       "agent-synthetic/revuedepressIA/2026-07-22-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-24-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-25-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-26-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
