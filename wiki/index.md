@@ -360,7 +360,8 @@ status: stable
 ### Quick Wins (0)
 ### Cannibalisation (0)
 ### Maillage (0)
-### Posts LinkedIn (0)
+### Posts LinkedIn (1)
+- [[posts-linkedin/2026-07-27-arborescence-agent-seo]] — L'arborescence de mon agent SEO (draft)
 ### Revues de presse (2)
 - [[revues-presse/2026-04-13-claude-code-obsidian-sans-complexite]] — Claude Code + Obsidian setup (validé Tim)
 - [[revues-presse/2026-04-13-algorithme-revue-presse]] — Édition Algorithme + 4e brève A-RAG

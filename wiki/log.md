@@ -1391,3 +1391,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - sorties: aucune
 - prochain lot proposé: FG-Formation (lot W31 déjà voté, grossi de 10 à 21 fichiers cibles — patterns-requetes, modele-corpus, série X ou Y + 7 pages, 5 transcripts audit-blanc-*)
 - nouveaux skips: aucun
+
+## [2026-07-27] post-linkedin | Arborescence de l agent SEO (skills Claude)
+- output: [[posts-linkedin/2026-07-27-arborescence-agent-seo]]
+- skill déclenché: ton-de-voix-tim
+- modèle: arborescence "marketing team with AI agents", adapté SEO
