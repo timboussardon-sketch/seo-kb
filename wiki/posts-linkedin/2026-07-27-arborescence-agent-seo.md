@@ -16,6 +16,8 @@ status: draft
 
 ---
 
+Comment faire tourner un agent SEO avec Claude et des skills.
+
 J'ai remplacé une bonne partie de mes outils SEO par un dossier de fichiers markdown.
 
 Chaque fichier est un skill : un process documenté que Claude Code exécute. Mes étapes, mes formats de sortie, mes interdits.
@@ -41,7 +43,7 @@ Voici l'arborescence de mon agent SEO ↓
 ┃ ┣ /programmatique-pseo
 ┃ ┗ /maillage-systeme
 ┃
-┣📁 Data Search Console
+┣📁 Données Search Console
 ┃ ┣ /quick-win
 ┃ ┣ /cannibalisation
 ┃ ┣ /maillage-gsc
@@ -58,7 +60,7 @@ Voici l'arborescence de mon agent SEO ↓
 ┃ ┣ /donnees-structurees
 ┃ ┗ /product-led-seo
 ┃
-┣📁 Social
+┣📁 Réseaux sociaux
 ┃ ┣ /reddit-cockpit
 ┃ ┣ /x-reply-cockpit
 ┃ ┗ /linkedin-journal
