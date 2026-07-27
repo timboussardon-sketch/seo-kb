@@ -1384,3 +1384,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - contradiction: C-005 ouverte→en-cours (audit blanc Qualiopi, attaché au lot FG-Formation)
 - résurgence: muette (1er raté post-migration GH Actions, à vérifier avant le 2026-07-29)
 - fil rouge: le pattern corpus tourne à 3 clients (Golfiller, Victoria Garden, FG Formation) ; date de mort du pari Organikk inchangée au 2026-07-31
+
+## [2026-07-27] backlog | sweep — 268 en backlog (P1:149 P2:35 P3:84)
+- raw scannés: 402 (+23 vs sweep 2026-07-20)
+- entrées: 22 P1 (FG-Formation ×11 dont la série X ou Y et ses 7 pages, Raphaël ×4 nouveau prospect, KQUEO ×3 nouveau client, terrain pré-call ×4 dont Stych) + 1 P3 (notes/Extension.md)
+- sorties: aucune
+- prochain lot proposé: FG-Formation (lot W31 déjà voté, grossi de 10 à 21 fichiers cibles — patterns-requetes, modele-corpus, série X ou Y + 7 pages, 5 transcripts audit-blanc-*)
+- nouveaux skips: aucun

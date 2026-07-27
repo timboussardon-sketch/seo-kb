@@ -148,10 +148,27 @@ Anti-thin, données terrain (zéro chiffre inventé), sourcing obligatoire, cano
 
 ## 6. Notes pour le call (<durée>)
 
-- Hook d'ouverture : « [insight #5, formulé] »
-- Questions à poser : [qui décide, leads web vs autres, accès GSC, qui pilote la refonte, poids de chaque pôle dans le CA].
-- Freins probables à lever : « [objection] » → [la réponse]. (insight #6)
-- Closing : repartir avec la roadmap datée. [Bootcamp si quelqu'un suit en interne / accompagnement 6 mois si enjeu business fort]. (insight #7)
+Déroulé calé sur la trame de découverte (introduction → connexion → situation → problème → conséquences → solution idéale → présentation → engagement → objections), remplie avec les insights de la section B.
+
+**Introduction.** Présentation brève. Demander la permission de poser quelques questions.
+
+**Connexion.** Mettre le prospect à l'aise, entrer par le hook d'ouverture (insight #5) : « [timing formulé, ex. refonte en cours] ». Comprendre rapidement son contexte.
+
+**Situation.** « Comment gérez-vous [le pôle ciblé] aujourd'hui ? » « Quel est votre processus actuel ? » Plus les questions factuelles : qui décide, leads web vs autres, accès GSC, qui pilote la refonte, poids de chaque pôle dans le CA.
+
+**Problème.** Faire émerger la difficulté qui recoupe le pain identifié (insight #2) : « Qu'est-ce qui vous frustre le plus ? » « Depuis combien de temps ce problème existe-t-il ? »
+
+**Conséquences.** Explorer l'impact, jamais deviné : « Quel impact cela a-t-il sur votre activité ? » « Que se passe-t-il si rien ne change ? »
+
+**Solution idéale.** « À quoi ressemblerait la solution parfaite pour vous ? » Écouter et noter avant de présenter quoi que ce soit.
+
+**Présentation.** Montrer uniquement comment l'accompagnement répond aux problèmes que le prospect vient lui-même de nommer, ancré sur l'angle (insight #1) et le levier pSEO (insight #3). Pas le pitch générique.
+
+**Engagement.** « Est-ce que vous pensez que cela répond à ce que vous recherchez ? »
+
+**Traitement des objections.** Freins probables à lever (insight #6) : « [objection] » → [la réponse]. Poser une question avant de répondre plutôt que d'argumenter directement, ex. « Qu'est-ce qui vous fait penser que le prix est un problème ? ».
+
+**Closing.** Repartir avec la roadmap datée. [Bootcamp si quelqu'un suit en interne / accompagnement 6 mois si enjeu business fort]. (insight #7)
 
 ---
 
