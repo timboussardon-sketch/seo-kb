@@ -146,3 +146,8 @@ Append-only. Format : ## [YYYY-MM-DD] <client> | étape N | action
 
 ## [2026-07-03] catherine | étape 1 | déployé sur organikk.co (push validé par Tim)
 - organikk.co/catherine-accompagnement/ et admin.html en ligne (200), X-Robots-Tag noindex vérifié
+
+## [2026-07-27] raphael | onboarding | espace client créé
+- espace-raphael-fitness/ dans organikk-next (clone espace-leexi) : proposition, collecte, diagnostic, stratégie + 3 onglets à venir
+- tracker créé : clients/raphael.md
+- commit organikk-next 67d71be, PAS poussé (organikk = prod sur push main)
