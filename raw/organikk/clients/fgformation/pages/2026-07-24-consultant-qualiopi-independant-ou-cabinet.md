@@ -17,15 +17,15 @@ status: draft
 
 # Consultant Qualiopi indépendant ou cabinet : comment choisir
 
-Entre un consultant indépendant et un cabinet d'accompagnement, la différence se joue sur deux points : qui travaille réellement sur votre dossier, et ce qui se passe si cet interlocuteur change en cours de route. Chez un indépendant, la même personne vous suit du diagnostic à l'audit : celui qui vend est celui qui fait. Un cabinet répond à d'autres contraintes, avec une équipe, des process rodés et une capacité qu'une personne seule n'a pas.
+Entre un consultant indépendant et un cabinet d'accompagnement, la différence se joue sur deux points : qui travaille vraiment sur votre dossier, et ce qui se passe si cet interlocuteur change en cours de route. Chez un indépendant, c'est la même personne qui vous suit du diagnostic à l'audit : celui qui vend, c'est celui qui fait. Un cabinet, lui, répond à d'autres contraintes : une équipe, des process rodés, une capacité qu'une personne seule n'a pas.
 
-FG Formation est un consultant indépendant : cette page est écrite depuis ce côté-là du marché, et elle le dit. Les cas où un cabinet est le meilleur choix existent, ils sont nommés plus bas.
+On est un consultant indépendant chez FG Formation : cette page est écrite depuis ce côté-là du marché, et on ne s'en cache pas. Les cas où un cabinet est le meilleur choix existent, on les nomme plus bas.
 
 ## La différence : un interlocuteur unique ou une organisation
 
-Le référentiel est le même pour tout le monde, 7 critères et 32 indicateurs (annexe du décret n° 2019-565 du 6 juin 2019), et aucun texte ne réglemente les prestataires d'accompagnement : ni statut requis, ni agrément, ni annuaire officiel. Indépendant ou cabinet, personne n'est « habilité Qualiopi », et méfiez-vous de qui le laisserait entendre.
+Le référentiel est le même pour tout le monde : 7 critères et 32 indicateurs (annexe du décret n° 2019-565 du 6 juin 2019). Et aucun texte ne réglemente les prestataires d'accompagnement : ni statut requis, ni agrément, ni annuaire officiel. Indépendant ou cabinet, personne n'est « habilité Qualiopi ». Méfiez-vous de qui vous laisserait entendre le contraire.
 
-La vraie différence est organisationnelle. Chez un indépendant, la personne du premier rendez-vous est celle qui lira vos preuves et vous préparera à l'audit. Dans un cabinet, la prestation peut être portée par plusieurs intervenants, avec une méthode commune et une continuité que porte la structure, pas une seule personne.
+La vraie différence est organisationnelle. Chez un indépendant, la personne du premier rendez-vous est celle qui lira vos preuves et vous préparera à l'audit. Dans un cabinet, la prestation peut être portée par plusieurs intervenants, avec une méthode commune. La continuité, c'est la structure qui la porte, pas une seule personne.
 
 ## Indépendant ou cabinet : la comparaison poste par poste
 
@@ -40,35 +40,35 @@ La vraie différence est organisationnelle. Chez un indépendant, la personne du
 
 ## L'indépendant : celui qui vend est celui qui fait
 
-L'argument central de l'indépendant tient en une phrase : aucun écart entre la personne évaluée au premier rendez-vous et celle qui fera le travail. L'expérience annoncée est celle qui s'applique à votre dossier, et la mémoire de votre situation reste entière d'un bout à l'autre, jusqu'à l'audit de surveillance dix-huit mois plus tard.
+L'argument central de l'indépendant tient en une phrase : aucun écart entre la personne évaluée au premier rendez-vous et celle qui fera le travail. L'expérience annoncée, c'est celle qui s'applique à votre dossier. Et la mémoire de votre situation reste entière d'un bout à l'autre, jusqu'à l'audit de surveillance dix-huit mois plus tard.
 
-La limite est tout aussi claire : un agenda d'une seule personne. Un indépendant sérieux refuse des dossiers quand il est plein, ne peut pas paralléliser un déploiement multi-sites, et son indisponibilité n'a pas de remplaçant. Si votre calendrier exige plusieurs intervenants en même temps, l'indépendant n'est pas le bon format.
+La limite est tout aussi claire : un agenda d'une seule personne. Un indépendant sérieux refuse des dossiers quand il est plein. Il ne peut pas paralléliser un déploiement multi-sites, et son indisponibilité n'a pas de remplaçant. Si votre calendrier exige plusieurs intervenants en même temps, l'indépendant n'est pas le bon format.
 
 ## Le cabinet : la capacité et la continuité de structure
 
-Un cabinet absorbe ce qu'un indépendant ne peut pas prendre : plusieurs établissements à préparer en parallèle, des volumes de sessions importants, des exigences de contractualisation d'entreprise (délégations, remplacement d'intervenant, engagement de moyens formalisé). La méthode est outillée, la continuité ne dépend pas d'une personne : si un intervenant part, la structure le remplace.
+Un cabinet absorbe ce qu'un indépendant ne peut pas prendre : plusieurs établissements à préparer en parallèle, des volumes de sessions importants, des exigences de contractualisation d'entreprise (délégations, remplacement d'intervenant, engagement de moyens formalisé). La méthode est outillée. La continuité ne dépend pas d'une personne : si un intervenant part, la structure le remplace.
 
-Le point à vérifier porte sur l'organisation de votre cabinet en particulier, pas sur la réputation des cabinets en général : qui interviendra réellement sur votre dossier, et cette personne sera-t-elle encore là à l'audit de surveillance.
+Le point à vérifier, c'est l'organisation de votre cabinet en particulier, pas la réputation des cabinets en général : qui interviendra réellement sur votre dossier, et cette personne sera-t-elle encore là à l'audit de surveillance ?
 
 ## Les questions à poser avant de signer, aux deux
 
-La grille est la même pour les deux formats, posez-la telle quelle. Qui travaillera concrètement sur mon dossier, et puis-je parler à cette personne avant de signer ? Combien de dossiers mène-t-elle en parallèle ? Qui sera mon interlocuteur à l'audit de surveillance, entre le 14e et le 22e mois ? Que se passe-t-il, contractuellement, si cette personne part ? Et que couvre exactement le périmètre écrit : construction, audit blanc, surveillance ?
+La grille est la même pour les deux formats, posez-la telle quelle. Qui travaillera concrètement sur mon dossier ? Puis-je parler à cette personne avant de signer ? Combien de dossiers mène-t-elle en parallèle ? Qui sera mon interlocuteur à l'audit de surveillance, entre le 14e et le 22e mois ? Que se passe-t-il, contractuellement, si cette personne part ? Et que couvre exactement le périmètre écrit : construction, audit blanc, surveillance ?
 
-Un prestataire sérieux, indépendant ou cabinet, répond à ces cinq questions sans détour. Une réponse évasive sur « qui fera le travail » est le signal le plus fiable pour passer votre chemin. Nous avons détaillé la démarche générale dans [comment choisir le bon partenaire d'accompagnement](https://fgformation.fr/le-guide/choisir-bon-partenaire-certification-qualiopi/).
+Un prestataire sérieux, indépendant ou cabinet, répond à ces cinq questions sans détour. Une réponse évasive sur « qui fera le travail », c'est le signal le plus fiable pour passer votre chemin. On a détaillé la démarche générale dans [comment choisir le bon partenaire d'accompagnement](https://fgformation.fr/le-guide/choisir-bon-partenaire-certification-qualiopi/).
 
 ## Le point où ça bloque : le changement d'interlocuteur en cours de route
 
-Le scénario douloureux, nous le connaissons par nos rendez-vous côté organismes : la personne qui portait la connaissance part, et « on repart de zéro ». Ce risque joue dans les deux camps. Côté client, quand le référent interne s'en va. Côté prestataire, quand l'intervenant qui connaissait votre dossier quitte le cabinet, ou quand l'indépendant devient indisponible.
+Le scénario douloureux, on le connaît par nos rendez-vous côté organismes : la personne qui portait la connaissance part, et « on repart de zéro ». Ce risque joue dans les deux camps. Côté client, quand le référent interne s'en va. Côté prestataire, quand l'intervenant qui connaissait votre dossier quitte le cabinet, ou quand l'indépendant devient indisponible.
 
-La parade tient à la trace écrite, pas au format choisi : exigez, quel que soit le prestataire, que le travail laisse un dossier documenté et transmissible chez vous, pas dans la tête ou les outils du prestataire. Un accompagnement dont toute la connaissance repose sur une personne extérieure reproduit exactement la fragilité qu'il devait corriger.
+La parade tient à la trace écrite, pas au format choisi : exigez, quel que soit le prestataire, que le travail laisse un dossier documenté et transmissible chez vous, pas dans la tête ou les outils du prestataire. Un accompagnement dont toute la connaissance repose sur une seule personne extérieure reproduit exactement la fragilité qu'il était censé corriger.
 
 ## Quand l'indépendant est le bon choix
 
-Vous êtes formateur indépendant ou organisme à taille humaine, sur un site, avec un dossier qui tient dans une relation à deux. Vous voulez évaluer directement la personne qui fera le travail, et la garder du diagnostic à la surveillance. C'est le périmètre naturel de l'indépendant, et c'est le nôtre : notre façon de travailler est décrite sur [l'accompagnement FG Formation](https://fgformation.fr/laccompagnement-fg-formation/).
+Vous êtes formateur indépendant, ou organisme à taille humaine, sur un site, avec un dossier qui tient dans une relation à deux. Vous voulez évaluer directement la personne qui fera le travail, et la garder du diagnostic à la surveillance. C'est le périmètre naturel de l'indépendant. Et c'est le nôtre : notre façon de travailler est décrite sur [l'accompagnement FG Formation](https://fgformation.fr/laccompagnement-fg-formation/).
 
 ## Quand le cabinet est le bon choix
 
-Plusieurs établissements ou entités à certifier, un calendrier qui impose de paralléliser, des exigences contractuelles de continuité que seule une structure peut porter, ou une direction achats qui requiert un prestataire dimensionné. Dans ces situations, un indépendant honnête vous le dira de lui-même : le format cabinet est le bon, et le nôtre ne l'est pas.
+Plusieurs établissements ou entités à certifier. Un calendrier qui impose de paralléliser. Des exigences contractuelles de continuité que seule une structure peut porter. Ou une direction achats qui requiert un prestataire dimensionné. Dans ces situations, un indépendant honnête vous le dira lui-même : le format cabinet est le bon, et le nôtre ne l'est pas.
 
 Pour situer votre cas, [décrivez votre structure et votre calendrier](https://fgformation.fr/contact/) : si le format indépendant n'est pas adapté, vous le saurez au premier échange.
 
@@ -76,7 +76,7 @@ Pour situer votre cas, [décrivez votre structure et votre calendrier](https://f
 
 ### Existe-t-il un agrément ou une liste officielle des accompagnateurs Qualiopi ?
 
-Non. Aucun texte n'encadre les prestataires d'accompagnement. Les seuls opérateurs réglementés du dispositif sont les certificateurs, accrédités pour délivrer la certification. Le choix d'un accompagnateur repose donc sur les vérifications que vous faites vous-même.
+Non. Aucun texte n'encadre les prestataires d'accompagnement. Les seuls opérateurs réglementés du dispositif, ce sont les certificateurs, accrédités pour délivrer la certification. Le choix d'un accompagnateur repose donc sur les vérifications que vous faites vous-même.
 
 ### Comment vérifier le sérieux d'un consultant ou d'un cabinet ?
 
@@ -84,7 +84,7 @@ Par les preuves : des références vérifiables, des réponses précises aux cin
 
 ### Un indépendant peut-il accompagner un organisme multi-sites ?
 
-Tout dépend du calendrier. En séquentiel, site après site, c'est possible. En parallèle sur un délai court, c'est le format cabinet qui convient : un agenda d'une personne ne se divise pas.
+Tout dépend du calendrier. En séquentiel, site après site, c'est possible. En parallèle sur un délai court, c'est le format cabinet qui convient : un agenda d'une personne, ça ne se divise pas.
 
 ### Le prix diffère-t-il entre indépendant et cabinet ?
 

@@ -17,19 +17,19 @@ status: draft
 
 # Accompagnement Qualiopi à distance ou en présentiel : que choisir
 
-Les textes n'imposent aucune modalité pour se préparer à Qualiopi, mais ils en imposent une pour l'audit lui-même : l'initial se tient dans vos locaux, la surveillance se fait à distance dans la plupart des cas. Le contenu d'un accompagnement reste identique à distance et sur place : lecture du référentiel, construction des preuves, audit blanc. Le choix de la modalité de préparation gagne à suivre ce calendrier réglementaire.
+Les textes n'imposent aucune modalité pour vous préparer à Qualiopi. Mais ils en imposent une pour l'audit lui-même : l'initial se tient dans vos locaux, la surveillance se fait à distance dans la plupart des cas. Le contenu d'un accompagnement, lui, reste identique à distance et sur place : lecture du référentiel, construction des preuves, audit blanc. Le choix de votre modalité de préparation gagne à suivre ce calendrier réglementaire.
 
-Ce duel est le plus symétrique de notre série de comparaisons : aucune des deux modalités n'est structurellement supérieure, et le choix se fait sur des critères concrets, listés ici.
+C'est le duel le plus symétrique de notre série : aucune des deux modalités n'est structurellement meilleure. Le choix se fait sur des critères concrets, qu'on liste ici.
 
 ## Les textes n'imposent aucune modalité d'accompagnement
 
-Le référentiel national qualité (7 critères, 32 indicateurs, annexe du décret n° 2019-565 du 6 juin 2019) décrit ce qu'un prestataire doit démontrer, pas la façon de s'y préparer. Aucun texte ne dit qu'un accompagnement doit se tenir dans vos locaux, ni qu'une visioconférence vaudrait moins qu'une réunion sur place. Le seul juge reste l'auditeur, et il ne saura même pas comment vous vous êtes préparé.
+Le référentiel national qualité (7 critères, 32 indicateurs, annexe du décret n° 2019-565 du 6 juin 2019) décrit ce qu'un prestataire doit démontrer, pas la façon de s'y préparer. Aucun texte ne dit qu'un accompagnement doit se tenir dans vos locaux, ni qu'une visioconférence vaudrait moins qu'une réunion sur place. Le seul juge, c'est l'auditeur, et il ne saura même pas comment vous vous êtes préparé.
 
-Le choix de la modalité est donc entièrement le vôtre. Il mérite mieux qu'une habitude ou qu'un a priori, parce que les deux formats n'ont pas le même rythme ni le même coût.
+Le choix de la modalité est donc entièrement le vôtre. Il mérite mieux qu'une habitude ou un a priori, parce que les deux formats n'ont ni le même rythme ni le même coût.
 
 ## Les règles de l'audit : sur site pour l'initial, à distance pour la surveillance
 
-C'est le fait le plus utile de cette page. L'arrêté du 6 juin 2019 prévoit que l'organisme certificateur réalise l'audit initial dans les locaux de l'organisme candidat. L'audit de surveillance, entre le 14e et le 22e mois, est réalisé à distance, sauf cas particuliers : signalements, risques identifiés, ou audit sur site demandé par l'organisme lui-même.
+C'est le fait le plus utile de cette page. L'arrêté du 6 juin 2019 prévoit que l'organisme certificateur réalise l'audit initial dans les locaux de l'organisme candidat. L'audit de surveillance, entre le 14e et le 22e mois, se fait à distance, sauf cas particuliers : signalements, risques identifiés, ou audit sur site demandé par l'organisme lui-même.
 
 Votre cycle de certification est donc mixte par construction : un rendez-vous physique au départ, un contrôle en visioconférence à mi-parcours. Une préparation intelligente reproduit ces conditions : s'entraîner sur place pour l'initial, s'entraîner à l'écran pour la surveillance.
 
@@ -46,7 +46,7 @@ Votre cycle de certification est donc mixte par construction : un rendez-vous ph
 
 ## À distance : le rythme court et le partage d'écran
 
-Le format à distance a deux forces concrètes. Le rythme d'abord : des sessions d'une ou deux heures, faciles à placer dans un agenda de formateur en activité, permettent d'avancer chaque semaine à un rythme régulier, sans bloquer plusieurs journées d'affilée. Le travail sur documents ensuite : un partage d'écran met la preuve sous les yeux des deux participants, la correction se fait en direct dans le fichier, et rien ne se perd entre deux rendez-vous.
+Le format à distance a deux forces concrètes. Le rythme, d'abord : des sessions d'une ou deux heures, faciles à placer dans un agenda de formateur en activité, vous font avancer chaque semaine à un rythme régulier, sans bloquer plusieurs journées d'affilée. Le travail sur documents, ensuite : un partage d'écran met la preuve sous les yeux des deux participants, la correction se fait en direct dans le fichier, et rien ne se perd entre deux rendez-vous.
 
 S'ajoute l'argument géographique : le consultant se choisit sur son expérience, pas sur son département. À distance, un organisme installé loin des grandes villes accède aux mêmes prestataires que les autres.
 
@@ -54,25 +54,25 @@ S'ajoute l'argument géographique : le consultant se choisit sur son expérience
 
 Le format sur place garde un avantage que la visioconférence ne remplace pas : voir les lieux. Les locaux, l'affichage, l'organisation matérielle, la réalité des moyens décrits dans le dossier. Pour un organisme qui accueille du public dans ses murs, cette vérification vaut la peine avant que l'auditeur, lui, ne la fasse pendant l'audit initial.
 
-Le présentiel garde aussi la préférence de certains dirigeants pour les étapes de cadrage : poser le diagnostic et le plan de travail autour d'une table, puis dérouler le suivi à distance. Rien dans les textes ni dans la pratique ne s'y oppose, c'est une affaire de fonctionnement personnel.
+Le présentiel garde aussi la préférence de certains dirigeants pour les étapes de cadrage : poser le diagnostic et le plan de travail autour d'une table, puis dérouler le suivi à distance. Rien dans les textes ni dans la pratique ne s'y oppose. C'est une affaire de fonctionnement personnel.
 
 ## Le coût : le déplacement est le seul écart structurel
 
-À contenu égal, la différence de coût entre les deux modalités tient à une seule ligne : les déplacements. Selon les prestataires, ils sont facturés en plus, intégrés au prix, ou limités par une zone d'intervention. À distance, la ligne disparaît. Sur la durée d'un accompagnement complet, l'écart n'est pas anecdotique pour un organisme éloigné de son prestataire ; à périmètre écrit égal, comparez les devis avec et sans déplacements. Nos tarifs sont publiés sur la [page tarif](https://fgformation.fr/le-guide/qualiopi-cest-quoi/accompagnement-qualiopi-tarif/).
+À contenu égal, la différence de coût entre les deux modalités tient à une seule ligne : les déplacements. Selon les prestataires, ils sont facturés en plus, intégrés au prix, ou limités par une zone d'intervention. À distance, cette ligne disparaît. Sur la durée d'un accompagnement complet, l'écart n'est pas anecdotique pour un organisme éloigné de son prestataire. À périmètre écrit égal, comparez les devis avec et sans déplacements. Nos tarifs sont publiés sur la [page tarif](https://fgformation.fr/le-guide/qualiopi-cest-quoi/accompagnement-qualiopi-tarif/).
 
 ## Le point où ça bloque : l'audit se passe à l'oral, entraînez-vous dans les conditions réelles
 
-Nos audits blancs montrent que le dossier ne fait pas tout : l'échange avec l'auditeur compte aussi. Des candidats aux preuves correctes se déstabilisent à l'oral, sur les indicateurs laissés à l'interprétation de l'auditeur. Cette déstabilisation diffère en face à face et à l'écran : la surveillance se déroule en visioconférence, avec ses silences et ses documents à présenter en partage d'écran, et s'entraîne dans ces mêmes conditions.
+Nos audits blancs montrent que le dossier ne fait pas tout : l'échange avec l'auditeur compte aussi. Des candidats aux preuves correctes se déstabilisent à l'oral, sur les indicateurs laissés à l'interprétation de l'auditeur. Et cette déstabilisation diffère en face à face et à l'écran : la surveillance se déroule en visioconférence, avec ses silences et ses documents à présenter en partage d'écran. Ça s'entraîne dans ces mêmes conditions.
 
-Le critère de choix le plus concret est donc celui-là : préparez chaque audit dans sa modalité réelle. Un audit blanc sur site avant l'audit initial, un entraînement à l'écran avant la surveillance. Un accompagnement qui mélange les deux formats calque le cycle réel de la certification.
+Le critère de choix le plus concret, c'est celui-là : préparez chaque audit dans sa modalité réelle. Un audit blanc sur site avant l'audit initial. Un entraînement à l'écran avant la surveillance. Un accompagnement qui mélange les deux formats calque tout simplement le cycle réel de la certification.
 
 ## Quand la distance est le bon choix
 
-Votre agenda est morcelé et des sessions courtes hebdomadaires vous font avancer plus vite que des journées bloquées. Votre activité est en ligne ou sans accueil de public dans des locaux dédiés. Ou le prestataire dont vous voulez l'expérience n'est pas dans votre région. Dans ces cas, la distance ne vous fait rien perdre : le contenu est le même.
+Votre agenda est morcelé, et des sessions courtes hebdomadaires vous font avancer plus vite que des journées bloquées. Votre activité est en ligne, ou sans accueil de public dans des locaux dédiés. Ou le prestataire dont vous voulez l'expérience n'est pas dans votre région. Dans ces cas, la distance ne vous fait rien perdre : le contenu est le même.
 
 ## Quand le présentiel se justifie
 
-Vous accueillez du public dans vos locaux et vous voulez qu'un regard extérieur les passe en revue avant l'auditeur. Vous démarrez et préférez poser le cadrage autour d'une table. Ou votre audit initial approche et vous voulez une répétition dans les conditions exactes du jour J, sur place. Le présentiel se réserve alors aux étapes où être là change quelque chose, et le suivi courant reste à distance.
+Vous accueillez du public dans vos locaux et vous voulez qu'un regard extérieur les passe en revue avant l'auditeur. Vous démarrez, et vous préférez poser le cadrage autour d'une table. Ou votre audit initial approche, et vous voulez une répétition dans les conditions exactes du jour J, sur place. Le présentiel se réserve alors aux étapes où être là change quelque chose, et le suivi courant reste à distance.
 
 Pour savoir quel découpage colle à votre situation, [décrivez votre organisation](https://fgformation.fr/contact/) : le format se cale sur votre cycle d'audit, pas l'inverse.
 
