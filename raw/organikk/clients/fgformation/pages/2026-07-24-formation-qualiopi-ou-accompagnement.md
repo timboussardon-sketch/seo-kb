@@ -17,17 +17,17 @@ status: draft
 
 # Formation Qualiopi ou accompagnement : quel format choisir
 
-Le choix entre une formation Qualiopi et un accompagnement individuel tient à une question : qui fera vivre le système qualité après la certification ? Une formation transmet la compétence de construire et tenir sa conformité soi-même. Un accompagnement produit directement le dossier de preuves, construit sur votre activité, pour les structures où personne n'est en mesure de faire ce travail ensuite.
+Qui va faire vivre le système qualité après la certification ? C'est la question qui tranche entre une formation et un accompagnement. Avec une formation, vous apprenez à construire et tenir votre conformité vous-même. Avec un accompagnement, le dossier de preuves se construit directement, avec vous, sur votre activité.
 
-Transparence complète : FG Formation vend les deux formats. Cette page ne cherche pas à vous vendre les deux, elle sert à choisir le bon. Certains profils n'ont besoin que d'une formation, et nous l'écrivons plus bas.
+On vend les deux formats chez FG Formation, autant le dire tout de suite. Cette page ne cherche pas à vous convaincre de prendre les deux : elle sert à choisir le bon. Pour certains profils, une formation seule suffit très bien. On l'explique plus bas.
 
 ## Le critère qui distingue les deux formats : le livrable final
 
-La distinction tient au livrable. À la fin d'une formation, le livrable est dans votre tête et dans vos notes : vous savez lire les 7 critères et les 32 indicateurs du référentiel (annexe du décret n° 2019-565 du 6 juin 2019), vous savez quelles preuves construire et comment les tenir. Le dossier, lui, reste à faire.
+Tout se joue sur le livrable. Avec une formation, à la fin, vous savez. Vous connaissez les 7 critères et les 32 indicateurs du référentiel (annexe du décret n° 2019-565 du 6 juin 2019). Vous savez quelles preuves construire et comment les tenir. Mais le dossier, lui, reste à faire.
 
-À la fin d'un accompagnement, le livrable est le dossier : un système de preuves construit sur vos formations réelles, testé en audit blanc, prêt pour l'auditeur. La compétence se transmet en chemin, mais elle n'est pas le produit principal.
+Avec un accompagnement, à la fin, c'est le dossier qui existe : un système de preuves construit sur vos formations réelles, testé en audit blanc, prêt pour l'auditeur. Vous apprenez aussi en chemin, mais ce n'est pas ce qu'on vous vend en premier.
 
-Aucun des deux formats n'est imposé par les textes. Un candidat peut se présenter à l'audit sans formation et sans accompagnement, comme nous le détaillons dans [passer Qualiopi seul ou accompagné](/passer-qualiopi-seul-ou-accompagne/).
+Aucun des deux formats n'est obligatoire. Rien dans les textes ne vous empêche de vous présenter à l'audit sans formation et sans accompagnement. On détaille ce cas dans [passer Qualiopi seul ou accompagné](/passer-qualiopi-seul-ou-accompagne/).
 
 ## Formation ou accompagnement : la comparaison poste par poste
 
@@ -42,51 +42,53 @@ Aucun des deux formats n'est imposé par les textes. Un candidat peut se présen
 
 ## La formation : le bon format quand il y a un référent
 
-Le cas type vient de nos rendez-vous avec des services formation internes et des organismes structurés : une personne est désignée pour porter la qualité, elle sera là dans dix-huit mois pour l'audit de surveillance, et la structure préfère internaliser la compétence plutôt qu'acheter une prestation à chaque échéance. Former ce référent coûte une fois et sert sur tout le cycle de trois ans.
+Le cas type, on le voit dans nos rendez-vous avec des services formation internes et des organismes déjà structurés. Une personne est désignée pour porter la qualité. Elle sera encore là dans dix-huit mois pour l'audit de surveillance. Et la structure préfère internaliser la compétence : acheter une prestation à chaque échéance ne l'intéresse pas. Vous formez ce référent une fois, ça sert sur tout le cycle de trois ans.
 
-La formation a une condition de réussite que personne ne peut contourner : le travail documentaire reste à faire après. Une formation suivie puis rangée dans un classeur ne produit aucune preuve.
+Il y a une condition de réussite qu'on ne peut pas contourner : le travail documentaire reste à faire après la formation. Si elle finit rangée dans un classeur, elle ne produit aucune preuve.
 
 Nos formations sont décrites sur les pages [formation Qualiopi initial](https://fgformation.fr/formation-qualiopi-initial/) et [parcours label et Qualiopi](https://fgformation.fr/parcours-formation-label-et-qualiopi/).
 
 ## L'accompagnement : le bon format quand le dossier doit sortir
 
-Le cas type est différent : un dirigeant ou un formateur indépendant, des clients qui attendent que la formation devienne finançable, et personne pour porter le chantier documentaire. « J'ai horreur de l'administratif » est la phrase que nous entendons le plus en rendez-vous. Dans cette situation, envoyer cette personne en formation ne change rien au fait que le dossier ne se fera pas tout seul.
+Le cas type est différent. Un dirigeant, ou un formateur indépendant. Des clients qui attendent que la formation devienne finançable. Et personne pour porter le chantier documentaire. « J'ai horreur de l'administratif » : c'est la phrase qu'on entend le plus en rendez-vous. Envoyer cette personne en formation ne change rien : le dossier ne se fera pas tout seul.
 
-L'accompagnement met un cadre, des échéances et un interlocuteur qui a déjà vu passer des audits. Le contenu complet est détaillé sur [l'accompagnement FG Formation](https://fgformation.fr/laccompagnement-fg-formation/) et son [sommaire](https://fgformation.fr/sommaire-contenu-accompagnement-qualiopi/).
+L'accompagnement pose un cadre, des échéances, et un interlocuteur qui a déjà vu passer des audits. Le contenu complet est détaillé sur [l'accompagnement FG Formation](https://fgformation.fr/laccompagnement-fg-formation/) et son [sommaire](https://fgformation.fr/sommaire-contenu-accompagnement-qualiopi/).
 
 ## Le temps : une durée fixe contre un suivi étalé
 
-Une formation a une durée connue d'avance : le programme, les dates, le volume d'heures sont fixés à l'inscription. Un accompagnement s'étale sur la préparation, jusqu'à l'audit, à un rythme qui dépend de l'état de départ de vos preuves.
+Une formation a une durée connue d'avance : le programme, les dates, le volume d'heures sont fixés dès l'inscription. Un accompagnement, lui, s'étale sur la préparation jusqu'à l'audit, à un rythme qui dépend de l'état de vos preuves au départ.
 
-La durée de l'audit lui-même ne change dans aucun scénario : elle est fixée par l'arrêté du 6 juin 2019 selon votre chiffre d'affaires, vos catégories d'actions et vos sites. Ni une formation ni un accompagnement ne la raccourcissent.
+La durée de l'audit, elle, ne change jamais : elle est fixée par l'arrêté du 6 juin 2019 selon votre chiffre d'affaires, vos catégories d'actions et vos sites. Ni la formation ni l'accompagnement ne la raccourcissent.
 
 ## Le financement : deux natures de prestation différentes
 
 Une action de formation délivrée par un organisme certifié Qualiopi peut être prise en charge par les financeurs listés à l'article L6316-1 du code du travail, selon les conditions propres à votre financeur. FG Formation est certifié Qualiopi, le certificat est [publié sur le site](https://fgformation.fr/certificat-qualiopi-francois-gruel-consult/).
 
-Une prestation d'accompagnement relève du conseil, pas de la formation. Avant de compter sur une prise en charge, interrogez votre financeur sur la nature de prestation qu'il accepte : c'est lui qui décide, pas le prestataire.
+Un accompagnement, lui, relève du conseil, pas de la formation. Avant de compter sur une prise en charge, posez la question à votre financeur : c'est lui qui décide, pas le prestataire.
 
 ## Le point où ça bloque : la compétence ne remplace pas la discipline
 
-Nos audits blancs montrent le même écart chez les candidats formés et chez les autodidactes : savoir quoi prouver ne suffit pas, il faut l'avoir fait, session après session, avec des documents datés. Une formation transmet la compétence de savoir quoi prouver ; produire ces preuves, session après session, reste votre travail après la formation. Si personne dans la structure n'a le temps ou la constance de le faire, la formation aura été un bon moment et le dossier sera vide au moment de l'audit.
+Nos audits blancs montrent le même écart, chez les candidats formés comme chez les autodidactes : savoir quoi prouver ne suffit pas. Il faut l'avoir fait, session après session, avec des documents datés. Une formation transmet la compétence. Produire les preuves, ensuite, reste votre travail.
 
-C'est le critère de choix le plus concret que nous puissions donner : si vous savez que l'application ne suivra pas, une formation ne réglera pas le problème.
+Si personne dans la structure n'a le temps ou la constance de le faire, la formation aura été un bon moment. Et le dossier sera vide au moment de l'audit.
+
+C'est le critère le plus honnête qu'on puisse vous donner : si vous savez déjà que l'application ne suivra pas, une formation ne réglera rien.
 
 ## Quand la formation est le bon choix
 
-Un référent est désigné et durablement en poste. La structure veut internaliser la compétence pour le cycle complet, surveillance et renouvellement compris. Le calendrier laisse le temps d'appliquer après la formation. Dans ce cas, la formation coûte moins cher qu'un accompagnement et vous rend indépendant des prestataires (nous compris).
+Un référent est désigné, et il reste en poste durablement. La structure veut internaliser la compétence pour tout le cycle, surveillance et renouvellement compris. Le calendrier laisse le temps d'appliquer après la formation. Dans ce cas, la formation coûte moins cher qu'un accompagnement, et elle vous rend indépendant des prestataires, nous compris.
 
 ## Quand l'accompagnement est le bon choix
 
-Personne n'est disponible pour porter seul le chantier documentaire. Le calendrier est contraint par des clients en attente de financement. Ou un premier audit a laissé des non-conformités à corriger sous délai : six mois pour une mineure, trois mois pour une majeure, les délais de l'arrêté ne négocient pas. Dans ces cas, le format qui produit le dossier l'emporte sur le format qui enseigne à le produire.
+Personne n'est disponible pour porter seul le chantier documentaire. Le calendrier est contraint par des clients qui attendent leur financement. Ou un premier audit a laissé des non-conformités à corriger sous délai : six mois pour une mineure, trois mois pour une majeure. Les délais de l'arrêté ne négocient pas. Dans ces cas, mieux vaut le format qui produit le dossier que celui qui vous apprend à le produire.
 
-Vous hésitez entre les deux ? [Décrivez votre situation](https://fgformation.fr/contact/) : la réponse tient en général en un échange, et elle peut être « formation seule ».
+Vous hésitez entre les deux ? [Décrivez votre situation](https://fgformation.fr/contact/) : la réponse tient en général en un échange. Et elle peut très bien être « formation seule ».
 
 ## Questions fréquentes
 
 ### Peut-on combiner formation et accompagnement ?
 
-Oui, et c'est un format courant : former le référent, puis un audit blanc avant l'échéance pour tester ce qui a été construit. C'est moins cher qu'un accompagnement complet et plus sûr qu'une formation seule.
+Oui, et c'est même un format courant : on forme le référent, puis un audit blanc avant l'échéance pour tester ce qui a été construit. Moins cher qu'un accompagnement complet, plus sûr qu'une formation seule.
 
 ### La formation garantit-elle la certification ?
 
@@ -94,11 +96,11 @@ Non. Aucun format ne la garantit : la décision appartient au certificateur accr
 
 ### Une formation Qualiopi est-elle obligatoire avant l'audit ?
 
-Non. Aucun texte n'exige de formation préalable. Le référentiel et son guide de lecture sont publics, un candidat peut se préparer seul.
+Non. Aucun texte n'exige de formation préalable. Le référentiel et son guide de lecture sont publics : vous pouvez très bien vous préparer seul.
 
 ### Quelle durée prévoir entre la décision et l'audit ?
 
-Aucune durée officielle n'existe et elle varie selon l'état de vos preuves. Méfiez-vous des délais garantis : le seul calendrier ferme est celui de l'audit, une fois la date posée avec le certificateur.
+Aucune durée officielle n'existe, ça varie selon l'état de vos preuves. Méfiez-vous des délais garantis : le seul calendrier ferme, c'est celui de l'audit, une fois la date posée avec le certificateur.
 
 ---
 

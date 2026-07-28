@@ -17,15 +17,15 @@ status: draft
 
 # Kit documentaire Qualiopi ou accompagnement : comment choisir
 
-L'arrêté du 6 juin 2019 prévoit que l'auditeur échantillonne des actions réellement menées par votre organisme, pas des documents types. Un kit documentaire fournit des trames à adapter : procédures, registres, modèles de convocation ou d'émargement. Produire les preuves rattachées à votre activité réelle, c'est le travail que couvre un accompagnement.
+L'arrêté du 6 juin 2019 prévoit que l'auditeur échantillonne des actions réellement menées par votre organisme, pas des documents types. Un kit documentaire, ce sont des trames à adapter : procédures, registres, modèles de convocation ou d'émargement. Produire les preuves rattachées à votre activité réelle, c'est ça, le travail que couvre un accompagnement.
 
-FG Formation vend de l'accompagnement, pas de kit. La grille reste la même pour les deux options, et le cas où un kit suffit est traité plus bas, sans détour.
+On vend de l'accompagnement chez FG Formation, pas de kit. La grille reste la même pour les deux options, et le cas où un kit suffit, on le traite plus bas, sans détour.
 
 ## Le contenu réel d'un kit documentaire
 
-Un kit documentaire Qualiopi est, selon les offres, un ensemble de trames : procédures types, modèles de convocation, d'émargement, de questionnaire, registres à compléter, parfois organisés indicateur par indicateur. C'est une base de départ, et une base correcte vaut mieux qu'une page blanche.
+Un kit documentaire Qualiopi, c'est selon les offres un ensemble de trames : procédures types, modèles de convocation, d'émargement, de questionnaire, registres à compléter, parfois organisés indicateur par indicateur. C'est une base de départ. Et une base correcte vaut toujours mieux qu'une page blanche.
 
-Ce qu'aucun kit ne contient : vos preuves. Le référentiel national qualité (7 critères, 32 indicateurs, annexe du décret n° 2019-565 du 6 juin 2019) se démontre avec des documents produits par votre activité, datés, rattachés à des sessions qui ont existé. Un modèle vierge, ou rempli en série la semaine de l'audit, n'atteste de rien.
+Ce qu'aucun kit ne contient, ce sont vos preuves. Le référentiel national qualité (7 critères, 32 indicateurs, annexe du décret n° 2019-565 du 6 juin 2019) se démontre avec des documents produits par votre activité, datés, rattachés à des sessions qui ont existé. Un modèle vierge, ou rempli en série la semaine de l'audit, n'atteste de rien.
 
 ## Kit ou accompagnement : la comparaison poste par poste
 
@@ -40,29 +40,29 @@ Ce qu'aucun kit ne contient : vos preuves. Le référentiel national qualité (7
 
 ## L'échantillonnage : l'auditeur contrôle vos actions réelles
 
-C'est le fait qui départage les deux options. L'arrêté du 6 juin 2019 prévoit que l'échantillonnage par l'auditeur des actions à auditer est représentatif de l'activité du prestataire. L'auditeur part donc de vos formations réelles et remonte vers les preuves. Il ne part pas de vos documents pour vérifier qu'ils sont bien rédigés.
+C'est le fait qui départage les deux options. L'arrêté du 6 juin 2019 prévoit que l'échantillonnage par l'auditeur est représentatif de votre activité réelle. L'auditeur part de vos formations réelles et remonte vers les preuves. Il ne part pas de vos documents pour vérifier qu'ils sont bien rédigés.
 
-Une procédure type magnifiquement écrite, sans session réelle qui l'applique, ne répond à aucun indicateur. À l'inverse, une preuve modeste mais vraie, datée, rattachée à une session, tient. Le kit produit la première catégorie si personne ne fait le travail d'application. C'est sa limite structurelle, pas un défaut des kits en particulier.
+Une procédure type magnifiquement écrite, sans session réelle qui l'applique, ne répond à aucun indicateur. À l'inverse, une preuve modeste mais vraie, datée, rattachée à une session, tient. Le kit produit la première catégorie si personne ne fait le travail d'application derrière. C'est sa limite, pas un défaut des kits en particulier.
 
 ## Ce qu'un bon kit apporte quand même
 
-Écartons la caricature : un kit n'est pas une arnaque. Pour un candidat qui sait déjà ce que chaque indicateur attend, une base documentaire correcte évite de réinventer des trames et fait gagner du temps de mise en forme. Le guide de lecture du référentiel, publié gratuitement par le ministère du Travail, décrit d'ailleurs les éléments de preuve attendus indicateur par indicateur : c'est le complément gratuit de n'importe quel kit, et le document de référence de votre auditeur.
+Écartons la caricature : un kit n'est pas une arnaque. Pour un candidat qui sait déjà ce que chaque indicateur attend, une base documentaire correcte évite de réinventer des trames et fait gagner du temps de mise en forme. Le guide de lecture du référentiel, publié gratuitement par le ministère du Travail, décrit d'ailleurs les preuves attendues indicateur par indicateur. C'est le complément gratuit de n'importe quel kit. Et c'est le document que votre auditeur connaît par cœur.
 
 ## Le coût : un achat unique contre une prestation
 
-Le kit est l'option la moins chère du marché de l'aide à la certification, et de loin. Un accompagnement coûte plus cher, précisément parce qu'il inclut ce que le kit laisse à votre charge : l'adaptation à votre activité, la production des preuves avec vous, et le test du dossier avant l'audit. Les prix des kits varient selon les éditeurs et ne sont pas comparables à périmètre égal ; nos tarifs d'accompagnement sont publiés sur la [page tarif](https://fgformation.fr/le-guide/qualiopi-cest-quoi/accompagnement-qualiopi-tarif/).
+Le kit est l'option la moins chère du marché de l'aide à la certification, et de loin. Un accompagnement coûte plus cher, précisément parce qu'il inclut ce que le kit laisse à votre charge : l'adaptation à votre activité, la production des preuves avec vous, le test du dossier avant l'audit. Les prix des kits varient selon les éditeurs, ils ne sont pas comparables à périmètre égal. Nos tarifs d'accompagnement sont publiés sur la [page tarif](https://fgformation.fr/le-guide/qualiopi-cest-quoi/accompagnement-qualiopi-tarif/).
 
-Le calcul honnête intègre le coût d'un audit raté : une non-conformité majeure se corrige sous trois mois avant toute décision de certification, trois mois pendant lesquels aucun financement ne se débloque. Un kit à petit prix suivi d'un audit raté coûte plus cher qu'un accompagnement.
+Le calcul honnête intègre le coût d'un audit raté : une non-conformité majeure se corrige sous trois mois avant toute décision de certification, trois mois pendant lesquels aucun financement ne se débloque. Un kit à petit prix suivi d'un audit raté coûte plus cher, au final, qu'un accompagnement.
 
 ## Le point où ça bloque : le dossier rempli en une fois se repère
 
-Nos audits blancs font ressortir un même scénario : un dossier construit en une seule fois, la semaine avant l'audit, se repère à ses dates. Des documents tous produits le même mois, pour des sessions étalées sur l'année, affichent des dates incohérentes que l'auditeur repère. Le déclaratif ne vaut rien : un kit rempli à la chaîne améliore la présentation du dossier, pas ce qu'il prouve.
+Nos audits blancs font ressortir un même scénario : un dossier construit en une seule fois, la semaine avant l'audit, ça se repère à ses dates. Des documents tous produits le même mois, pour des sessions étalées sur l'année, ça affiche des dates incohérentes que l'auditeur repère tout de suite. Le déclaratif ne vaut rien : un kit rempli à la chaîne améliore la présentation du dossier, pas ce qu'il prouve.
 
-Un prospect nous le disait très bien en rendez-vous : il voulait « rester acteur », pas recevoir « un kit clé en main ». Le référentiel audite une pratique réelle ; une bibliothèque de documents ne suffit pas à la démontrer.
+Un prospect nous le disait très bien en rendez-vous : il voulait « rester acteur », pas recevoir « un kit clé en main ». Le référentiel audite une pratique réelle. Une bibliothèque de documents ne suffit pas à la démontrer.
 
 ## Quand un kit suffit
 
-Vous connaissez le référentiel, par une certification précédente ou une formation. Vous avez le temps de produire vos preuves session après session, et la discipline documentaire ne vous fait pas peur. Il vous manque des trames propres pour ne pas partir de zéro. Dans ce cas, un kit, le guide de lecture gratuit et de la constance suffisent, et un accompagnement complet serait une dépense sans objet.
+Vous connaissez le référentiel, par une certification précédente ou une formation. Vous avez le temps de produire vos preuves session après session, et la discipline documentaire ne vous fait pas peur. Il vous manque juste des trames propres pour ne pas partir de zéro. Dans ce cas, un kit, le guide de lecture gratuit et un peu de constance suffisent. Un accompagnement complet serait une dépense sans objet.
 
 ## Quand l'accompagnement se justifie
 
