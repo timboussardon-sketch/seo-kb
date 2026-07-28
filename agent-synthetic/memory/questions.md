@@ -560,3 +560,22 @@ Aucun diff de skill proposé ce run.
 - **Q-2026-07-27-v2-5** (piste éditoriale prochaine édition) : Reddit publie ses résultats Q2 2026 le jeudi 30 juillet 2026 après clôture. La brève B2 anticipe cette publication comme fait procédural neuf. Faut-il prévoir une couverture info du jour systématique le vendredi 31 juillet 2026 sur les chiffres de licence data IA isolés + position officielle Reddit sur le renouvellement Google (pilier Business SEO fort avec fait franchement neuf attendu), ou attendre que l'agent décide de la pertinence selon la substance publiée ? Recommandation de l'agent : couverture info du jour ou brève selon la substance publiée par Reddit (chiffre isolé, verbatim direction sur renouvellement, ou silence procédural). À trancher jeudi soir.
 
 - **Q-2026-07-27-v2-6** (règle dure explore contre Ahrefs juillet 2025) : la corroboration Ahrefs pour l'info du jour est un an ancien. Techniquement la règle dure explore/publication est tenue (Ahrefs = source connue historique + Seer = source connue historique + GrowByData = source connue historique via reprise Api Serpent + Contently). Cependant, si l'on considère « historique récent » comme <6 mois, seule Seer et GrowByData sont ≤6 mois. Question : la règle dure « au moins une source avec historique » doit-elle inclure une notion de récence pour l'historique lui-même ? Actuellement l'agent tolère un historique ancien tant qu'il est daté ; à valider si Tim veut ce durcissement ou non.
+
+## Édition 2026-07-28 - Questions pour Tim (revue hebdo)
+
+### Sources à discuter au passage exploit → exploit
+
+- **novadata.io** (explore, trust 0,5) : aggregateur reprise Ecommerce Times, source non-primaire, non-audit. Utilisée ce run pour claim Perplexity Buy Now 2M/2Md USD faute de mieux, avec limites explicites. Question : garder ou retirer ? Alternative pour couvrir Ecommerce Times sans passer par un aggregateur ?
+- **fool.com** (nouvelle explore, trust 0,65) : presse financiere US Motley Fool. Historique long, couverture earnings previews stocks. Candidate exploit pour couvrir plus systématiquement les résultats trimestriels Reddit/Alphabet/Meta et leur exposition à AI licensing.
+- **bootcampdigital.com** (nouvelle explore, trust 0,60) : agence formation digitale US, roundup mensuel Meta/TikTok/LinkedIn. Utile pour reprise annonces vendor mais insuffisante seule. À corroborer avec source primaire vendor pour tout claim publié.
+
+### Doctrine à formaliser potentiellement
+
+- **Fiche doctrinale « point d'accès agent »** : la spec MCP 2026-07-28 stateless rend techniquement viable de considérer un serveur MCP comme un point d'accès distinct de la page web indexée par les crawlers. Cette distinction n'est pas encore dans [[concepts/agentic-search]]. Question : créer une fiche `wiki/concepts/point-acces-agent.md` ou étendre `agentic-search.md` ? Nécessite au moins 3-5 cas mesurés avant formalisation.
+- **Doctrine « métrique containment rate »** : Meta introduit une métrique proche de ce que les vendors GEO commencent à instrumenter (Nudge, Kasper, Loftie). Question : la métrique de « conversation résolue sans transfert humain » devient-elle une dimension du filtre `test-substitution-llm` ? À poser en revue hebdo si autre vendor confirme.
+
+### Pièges méthodologiques rencontrés ce run
+
+- **Piège M-005 revisité** : Google AI Mode 53 langues (ALM Corp) - fait originel 5 nouvelles langues remonte septembre 2025, l'article reprend en fausse fraîcheur 2026. Écarté après vérification. Renforcement discipline : toujours ouvrir la source primaire (blog.google) pour vérifier date de première annonce avant de citer un chiffre. À noter dans mistakes.jsonl si repérage récurrent.
+- **Règle dure explore borderline** : le claim Perplexity Buy Now 2M/2Md USD repose sur 2 sources coordonnées (Ecommerce Times primaire + Novadata reprise), aucune dans registre historique consolidé. La règle dure demande « 2 sources indépendantes dont au moins une a déjà un historique dans sources.jsonl ». Ni Ecommerce Times ni Novadata n'ont d'historique. Publié quand même comme brève avec limites explicites triples (source thin, pas de communication Perplexity, pas d'audit tiers), pas comme info du jour. Question Tim : la règle dure explore permet-elle ce compromis pour une brève, ou faudrait-il écarter complètement ? Précédents : 2026-07-03-v2 CiteLens 500 prompts single-vendor publié en info du jour avec limites explicites, précédent pour publication conditionnée à documentation des réserves.
+

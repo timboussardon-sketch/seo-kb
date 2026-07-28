@@ -1446,3 +1446,22 @@ Quand la fenêtre de temps court ne fournit pas de fait franchement neuf : (a) c
 
 ### Pattern reproductible
 Quand une nouvelle étude apporte un raffinement conceptuel plutôt qu'un renversement (ici : freshness = update date > publish date, pas freshness ≠ signal), l'angle qui distingue précisément l'apport propre de la mesure (ratio 72 pct vs 42 pct = 30 pt gap sur sous-ensemble daté) et qui articule une révision explicite d'une fiche doctrine existante ([[concepts/fraicheur-contenu]] à réviser) donne doctrine_fit 4/5 et novelty 3/5 honnête sans forcer. Quand une source vendeur (GrowByData 3.2×) corrobore la direction sans reproduire la méthodologie, la placer comme corroboration séparée en brève avec limites explicites, pas en info du jour.
+
+## Édition 2026-07-28 (cloud matin) - pilier Recherche agentique - MCP 2026-07-28 spec normative published today
+
+| Axe | Note | Détail |
+|---|---|---|
+| source_diversity | 10 | info du jour 4 (blog.modelcontextprotocol.io + workos + theregister + techtimes) + B1 4 (fool + cnbc + tradingkey + WSJ via reprise) + B2 2 (novadata + ecommercetimes indirect) + B3 1 (bootcampdigital) |
+| claim_density | 8 verified + 1 uncertain + 5 discarded loggés | 4 claims info du jour MCP, 2 claims Reddit Q2, 1 claim uncertain Perplexity thin corroboration, 1 claim Meta vendor |
+| novelty_score | 3 | fait procédural jour-J MCP distinct chiffres pré-couverts, angle éditorial focus limites (adoption non mesurée post-release) et implication opérationnelle (barrière déploiement baisse) |
+| doctrine_fit | 3 | 2 concepts articulés distinctement (agentic-search info-jour, tabou-visibilite B2) |
+| redite_risk | moyen | MCP couvert 07-25 spec finale scheduled et 07-27-v2 B1 10K serveurs, mais angle jour-J publication normative + implications opérationnelles distinct |
+| clickbait_risk | faible | titre factuel "MCP 2026-07-28 passe stateless aujourd hui, la barriere de mise en production d un serveur baisse" |
+
+**Note globale** : 3,4 / 5.
+
+**Ce qui marche** : angle jour-J sur événement pré-annoncé (release day mécanique + implication opérationnelle), variation piliers respectée vs 07-27 Product-Led et 07-27-v2 GEO, discipline anti-M-005 stricte (5 discardes explicites dont 4 pour date-ancienneté 3-9 mois et 1 hors-périmètre DMA), 5 nouvelles prédictions datées, 2 sources nouvelles explore.
+
+**Ce qui pourrait être mieux** : 3 brèves toutes Business SEO (variation pilier interne faible), corroboration B2 Perplexity thin (2 sources coordonnées sans historique consolidé — publié avec limites explicites mais règle dure explore borderline), pas de nouvelle mesure indépendante ni d'audit tiers sur les revendications vendor de la journée. Le doctrine_fit reste 3/5 : le lien agentic-search est correct mais le point d'accès agent MCP n'est pas encore une fiche doctrinale complète à référencer, seulement mentionné.
+
+**Ce qui aurait rendu meilleure** : (1) une mesure tierce indépendante du parc de serveurs MCP publiée aujourd'hui aurait fait passer novelty à 4 et doctrine_fit à 4, (2) une prise de parole officielle Perplexity chiffrée aurait résolu le uncertain de B2 en verified, (3) l'ajout d'un B3 dans un pilier autre que Business SEO (par exemple GEO ou Actualité SEO) aurait amélioré la diversité pilier.

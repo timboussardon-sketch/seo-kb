@@ -1,210 +1,5615 @@
 {
-  "mcp.directory": {
-    "weight": 0.85,
-    "trust": 0.7,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "contextbolt.com": {
-    "weight": 0.8,
-    "trust": 0.6,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "usecarly.com": {
-    "weight": 0.8,
-    "trust": 0.6,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "seoprofy.com": {
-    "weight": 0.8,
-    "trust": 0.6,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "apigene.ai": {
-    "weight": 0.775,
-    "trust": 0.55,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "omnibound.ai": {
-    "weight": 0.775,
-    "trust": 0.55,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "storylab.ai": {
-    "weight": 0.775,
-    "trust": 0.55,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "blog.google": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "exploit",
-    "last_useful": "2026-06-12"
-  },
-  "pymnts.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 6,
-    "noise_hits": 0,
-    "status": "exploit",
-    "last_useful": "2026-06-12"
-  },
-  "optimixed.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 2,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-06-12"
-  },
-  "404media.co": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-06-12"
-  },
-  "theatlantic.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-06-12"
-  },
-  "kottke.org": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-06-12"
-  },
-  "reutersinstitute.politics.ox.ac.uk": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 3,
-    "noise_hits": 0,
-    "status": "explore-promu-direct",
-    "last_useful": "2026-06-22"
-  },
-  "gijn.org": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-06-22"
-  },
-  "ifj.org": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-06-22"
-  },
-  "ads.apple.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-19"
-  },
-  "cultofmac.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-19"
-  },
-  "macrumors.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-19"
-  },
-  "releasebot.io": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-19"
-  },
-  "marktechpost.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-19"
-  },
-  "uponlinemedia.com": {
-    "weight": 0.75,
-    "trust": 0.5,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-25"
-  },
-  "yro.slashdot.org": {
-    "weight": 0.7,
-    "trust": 0.65,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-27"
-  },
-  "daringfireball.net": {
-    "weight": 0.8,
-    "trust": 0.75,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-27"
-  },
-  "industry-lens.com": {
-    "weight": 0.5,
-    "trust": 0.4,
-    "useful_hits": 1,
-    "noise_hits": 1,
-    "status": "explore",
-    "last_useful": "2026-07-27"
-  },
-  "previsible.com": {
-    "weight": 0.75,
-    "trust": 0.7,
-    "useful_hits": 1,
-    "noise_hits": 0,
-    "status": "explore",
-    "last_useful": "2026-07-27"
+  "generated_at": "2026-07-28",
+  "sources": {
+    "search-engine-land": {
+      "weight": 10.8,
+      "trust": 0.72,
+      "useful_hits": 14,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-18",
+      "name": "Search Engine Land"
+    },
+    "ppc.land": {
+      "weight": 10.4,
+      "trust": 0.8,
+      "useful_hits": 12,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-27",
+      "name": "PPC Land"
+    },
+    "seroundtable.com": {
+      "weight": 10.2,
+      "trust": 0.85,
+      "useful_hits": 11,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-trade",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "developers.google.com": {
+      "weight": 9.2,
+      "trust": 1.15,
+      "useful_hits": 7,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "search-engine-journal": {
+      "weight": 8.28,
+      "trust": 0.69,
+      "useful_hits": 11,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-18",
+      "name": "Search Engine Journal"
+    },
+    "the-keyword": {
+      "weight": 7.12,
+      "trust": 0.89,
+      "useful_hits": 7,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-18",
+      "name": "The Keyword (blog Google)"
+    },
+    "salesforce.com": {
+      "weight": 7.0,
+      "trust": 1.4,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "venturebeat.com": {
+      "weight": 6.3,
+      "trust": 1.05,
+      "useful_hits": 5,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "exploit-majeure",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "arxiv.org": {
+      "weight": 6.3,
+      "trust": 0.9,
+      "useful_hits": 6,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-academique",
+      "last_useful": "2026-07-25",
+      "name": "arXiv (Cornell Univ preprint repository)"
+    },
+    "S-pymnts-google-2026": {
+      "weight": 5.95,
+      "trust": 0.85,
+      "useful_hits": 6,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "search-engine-roundtable": {
+      "weight": 5.85,
+      "trust": 0.65,
+      "useful_hits": 8,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-18",
+      "name": "Search Engine Roundtable"
+    },
+    "digitalapplied.com": {
+      "weight": 5.8,
+      "trust": 1.16,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire",
+      "last_useful": "2026-07-27",
+      "name": ""
+    },
+    "searchengineland": {
+      "weight": 5.4,
+      "trust": 0.9,
+      "useful_hits": 5,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-secondaire-presse",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "law360.com": {
+      "weight": 5.25,
+      "trust": 1.05,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "digitalapplied": {
+      "weight": 5.2,
+      "trust": 0.65,
+      "useful_hits": 7,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": "Digital Applied (blog SEO/stats search)"
+    },
+    "abondance.com": {
+      "weight": 5.2,
+      "trust": 1.04,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire-presse-FR",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "searchenginejournal": {
+      "weight": 5.1,
+      "trust": 0.85,
+      "useful_hits": 5,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-secondaire-presse",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "developer.chrome.com": {
+      "weight": 4.85,
+      "trust": 0.97,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-16",
+      "name": ""
+    },
+    "support.google.com": {
+      "weight": 4.75,
+      "trust": 0.95,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "google-search-central": {
+      "weight": 4.6,
+      "trust": 0.92,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-06",
+      "name": "Google Search Central Blog"
+    },
+    "optimixed.com": {
+      "weight": 4.5,
+      "trust": 0.5,
+      "useful_hits": 8,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "searchengineland.com": {
+      "weight": 4.5,
+      "trust": 0.9,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "ahrefs": {
+      "weight": 4.25,
+      "trust": 0.85,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-20",
+      "name": "Ahrefs (blog / études données)"
+    },
+    "blogs.bing.com": {
+      "weight": 4.25,
+      "trust": 0.85,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-officielle",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "digitalphablet.com": {
+      "weight": 4.25,
+      "trust": 0.85,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "tier2-specialise",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "blog.google": {
+      "weight": 3.8,
+      "trust": 0.95,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "reutersinstitute.politics.ox.ac.uk": {
+      "weight": 3.68,
+      "trust": 0.92,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore-promu-direct",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": ""
+    },
+    "gsqi.com": {
+      "weight": 3.6,
+      "trust": 1.2,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "courthousenews.com": {
+      "weight": 3.6,
+      "trust": 0.72,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-legal",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "seerinteractive.com": {
+      "weight": 3.52,
+      "trust": 0.88,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "exploit-promotion-proposee",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-16",
+      "name": ""
+    },
+    "cloudflare-blog": {
+      "weight": 3.4,
+      "trust": 0.85,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-14",
+      "name": "Cloudflare Blog"
+    },
+    "courtlistener": {
+      "weight": 3.4,
+      "trust": 0.85,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "fortune": {
+      "weight": 3.4,
+      "trust": 0.85,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "radar.cloudflare.com": {
+      "weight": 3.39,
+      "trust": 1.13,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "techcrunch.com": {
+      "weight": 3.24,
+      "trust": 1.08,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "getpassionfruit": {
+      "weight": 3.1,
+      "trust": 0.62,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-03",
+      "name": "Passionfruit (blog SEO/GEO)"
+    },
+    "techtimes": {
+      "weight": 3.0,
+      "trust": 0.6,
+      "useful_hits": 4,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "seroundtable": {
+      "weight": 3.0,
+      "trust": 0.5,
+      "useful_hits": 5,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "optimixed": {
+      "weight": 3.0,
+      "trust": 0.5,
+      "useful_hits": 5,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "microsoft.com/security/blog": {
+      "weight": 3.0,
+      "trust": 1.0,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "brightedge.com": {
+      "weight": 3.0,
+      "trust": 1.0,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "law360": {
+      "weight": 2.96,
+      "trust": 0.74,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "sparktoro": {
+      "weight": 2.85,
+      "trust": 0.95,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primary",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "developers.google.com/search/updates": {
+      "weight": 2.85,
+      "trust": 0.95,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "digitalcommerce360.com": {
+      "weight": 2.8,
+      "trust": 0.7,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "searchenginejournal.com": {
+      "weight": 2.7,
+      "trust": 0.9,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "blog.modelcontextprotocol.io": {
+      "weight": 2.7,
+      "trust": 0.9,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-28",
+      "name": ""
+    },
+    "pymnts": {
+      "weight": 2.64,
+      "trust": 0.66,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": "PYMNTS (paiements / commerce IA)"
+    },
+    "search-engine-land-lauer": {
+      "weight": 2.6,
+      "trust": 1.3,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "Search Engine Land - Dan Lauer column"
+    },
+    "cloudflare-radar": {
+      "weight": 2.55,
+      "trust": 0.85,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-01",
+      "name": "Cloudflare Radar / blog Cloudflare"
+    },
+    "pressgazette.co.uk": {
+      "weight": 2.55,
+      "trust": 0.85,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-17",
+      "name": ""
+    },
+    "semrush.com": {
+      "weight": 2.55,
+      "trust": 0.85,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "adweek": {
+      "weight": 2.55,
+      "trust": 0.85,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "anthropic.com": {
+      "weight": 2.55,
+      "trust": 0.85,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "cnbc.com": {
+      "weight": 2.55,
+      "trust": 0.85,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": ""
+    },
+    "averi": {
+      "weight": 2.48,
+      "trust": 0.62,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-08",
+      "name": "Averi (benchmarks citation IA)"
+    },
+    "techcrunch-ai": {
+      "weight": 2.4,
+      "trust": 0.6,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-20",
+      "name": "TechCrunch (IA/Search)"
+    },
+    "mediapost": {
+      "weight": 2.4,
+      "trust": 0.6,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-14",
+      "name": "MediaPost"
+    },
+    "sistrix.com": {
+      "weight": 2.4,
+      "trust": 1.2,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-mesure",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "ahrefs.com": {
+      "weight": 2.4,
+      "trust": 0.8,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-07-27",
+      "name": ""
+    },
+    "neowin.net": {
+      "weight": 2.4,
+      "trust": 0.6,
+      "useful_hits": 3,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire-presse-tech",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "similarweb-geo": {
+      "weight": 2.34,
+      "trust": 0.78,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-05-30",
+      "name": "Similarweb (blog GEO / gen AI stats)"
+    },
+    "newsroom.tiktok.com": {
+      "weight": 2.3,
+      "trust": 1.15,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "google.com": {
+      "weight": 2.3,
+      "trust": 1.15,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "variety": {
+      "weight": 2.26,
+      "trust": 1.13,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-06-24",
+      "name": "Variety"
+    },
+    "seer-interactive": {
+      "weight": 2.25,
+      "trust": 0.75,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-05-30",
+      "name": "Seer Interactive (insights)"
+    },
+    "themedialeader.fr": {
+      "weight": 2.25,
+      "trust": 0.75,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-media-business-FR",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "cloudflare.net": {
+      "weight": 2.2,
+      "trust": 1.1,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-corp",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "siliconangle.com": {
+      "weight": 2.16,
+      "trust": 0.72,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-tech-news",
+      "last_useful": "2026-07-16",
+      "name": "SiliconANGLE"
+    },
+    "marketingdive.com": {
+      "weight": 2.16,
+      "trust": 1.08,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "specialiste-secondaire",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "workos.com": {
+      "weight": 2.16,
+      "trust": 0.72,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": ""
+    },
+    "9to5google": {
+      "weight": 2.1,
+      "trust": 0.7,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-20",
+      "name": "9to5Google"
+    },
+    "S-optimixed": {
+      "weight": 2.1,
+      "trust": 0.7,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "businesswire.com": {
+      "weight": 2.1,
+      "trust": 1.05,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "wire-primaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "mediapost.com": {
+      "weight": 2.1,
+      "trust": 0.7,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire",
+      "last_useful": "2026-07-27",
+      "name": ""
+    },
+    "adweek.com": {
+      "weight": 2.1,
+      "trust": 1.05,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "specialiste-secondaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "x.com/twitter": {
+      "weight": 2.1,
+      "trust": 0.7,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-annonce-publique",
+      "last_useful": "2026-07-02",
+      "name": ""
+    },
+    "walkersands.com": {
+      "weight": 2.1,
+      "trust": 1.05,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit-hit",
+      "tier": "secondaire-editeur-etude",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "news.adobe.com": {
+      "weight": 2.08,
+      "trust": 1.04,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "aibusiness.com": {
+      "weight": 2.04,
+      "trust": 0.68,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-sector-news",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "blogdumoderateur.com": {
+      "weight": 2.0,
+      "trust": 1.0,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire-presse-FR",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "thepaypers": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": "The Paypers"
+    },
+    "tryprofound.com": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "thenextweb.com": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse",
+      "last_useful": "2026-06-16",
+      "name": ""
+    },
+    "androidauthority": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": "Android Authority"
+    },
+    "windowslatest": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-30",
+      "name": "Windows Latest"
+    },
+    "ppcnewsfeed.com": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "engadget.com": {
+      "weight": 1.95,
+      "trust": 0.65,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-tech",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "cloud.google.com": {
+      "weight": 1.94,
+      "trust": 0.97,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "apple-support-119829": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "investor.visa.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "S-blog.google-gemini": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "gracenote.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "nielsen.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "pewresearch.org": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "gov.uk": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-regulateur",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "developers.googleblog.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "sec.gov": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-regulateur",
+      "last_useful": "2026-06-21",
+      "name": ""
+    },
+    "status.search.google.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-officielle",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "ads-developers.googleblog.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "blog.google/products-and-platforms/products/search": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "support.google.com/adspolicy": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "bloomberg.com": {
+      "weight": 1.9,
+      "trust": 0.95,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "presse-primaire",
+      "last_useful": "2026-07-10",
+      "name": ""
+    },
+    "lumar": {
+      "weight": 1.86,
+      "trust": 0.62,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-05-30",
+      "name": "Lumar (industry news SEO/AI)"
+    },
+    "adyen.com": {
+      "weight": 1.84,
+      "trust": 0.92,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "news.bloomberglaw.com": {
+      "weight": 1.84,
+      "trust": 0.92,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-juridique",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "deepmind.google": {
+      "weight": 1.84,
+      "trust": 0.92,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "paz.ai": {
+      "weight": 1.8,
+      "trust": 0.6,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "bloomberg": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "github.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "judiciary.senate.gov": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "windowscentral.com": {
+      "weight": 1.8,
+      "trust": 0.6,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-06-18",
+      "name": ""
+    },
+    "canneslions.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-org",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "iabtechlab.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-normative",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "advertising.amazon.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "corporate.asda.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-marchand",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "blog-google-innovation-ai": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "blog.google Innovation and AI"
+    },
+    "ai-google-dev-docs": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "ai.google.dev (Gemini API docs)"
+    },
+    "cloudflare.com/press/press-releases": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "blog.cloudflare.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "editeur-primaire-infrastructure",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "support.google.com/merchants": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "vendeur-primaire",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "support.google.com/google-ads": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "washingtonpost.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-generaliste-primaire-US",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "search-off-the-record.libsyn.com": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier1-primaire-marque",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "doi.org": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-doi-proceedings",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "modelcontextprotocol-blog": {
+      "weight": 1.8,
+      "trust": 0.9,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-25",
+      "name": "Model Context Protocol Blog (blog officiel du protocole MCP)"
+    },
+    "google-cloud-blog": {
+      "weight": 1.76,
+      "trust": 0.88,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-02",
+      "name": "Google Cloud Blog (AI/agents)"
+    },
+    "marketingedge.com.ng": {
+      "weight": 1.74,
+      "trust": 0.58,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "emarketer": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire-presse",
+      "last_useful": "2026-06-25",
+      "name": "eMarketer / Insider Intelligence"
+    },
+    "openai-blog": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-02",
+      "name": "OpenAI (blog / index)"
+    },
+    "sistrix": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-06",
+      "name": "SISTRIX Blog"
+    },
+    "stripe-blog": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-07",
+      "name": "Stripe Blog"
+    },
+    "npr": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-08",
+      "name": "NPR"
+    },
+    "aleydasolis.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-expert",
+      "last_useful": "2026-06-08",
+      "name": "Aleyda Solis (blog SEO consultant)"
+    },
+    "about.nike.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "truthonthemarket.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary-thinktank",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "bloomberglaw.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "jonesday.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary-law",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "heise.de": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "forrester.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "S-404media": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "S-theatlantic": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "gist.github.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "mlex.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "usa.visa.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-16",
+      "name": ""
+    },
+    "agenticresourcediscovery.org": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-spec",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "newsroom.pinterest.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "shopify.engineering": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-21",
+      "name": ""
+    },
+    "aws.amazon.com/blogs/industries": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-21",
+      "name": ""
+    },
+    "wppmedia.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "adage": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire-secondaire-presse",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "bruceclay.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "walker-sands": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "Walker Sands"
+    },
+    "squareup.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "openai.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "editeur-primaire-llm",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "cloudflare.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "known-exploit",
+      "tier": "primaire-infra",
+      "last_useful": "2026-07-10",
+      "name": ""
+    },
+    "x-ai-news": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendeur-primaire",
+      "last_useful": "2026-07-10",
+      "name": "xAI News"
+    },
+    "stripe.com/newsroom": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "editeur-primaire-fintech",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "arxiv.org/abs/2602.16136": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "paper-academique-primaire",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "ads.apple.com": {
+      "weight": 1.7,
+      "trust": 0.85,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "windowsreport.com": {
+      "weight": 1.65,
+      "trust": 0.55,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "thestacc.com": {
+      "weight": 1.65,
+      "trust": 0.55,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-07-27",
+      "name": ""
+    },
+    "prnewswire": {
+      "weight": 1.65,
+      "trust": 0.55,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": "PR Newswire (fil distribution PR)"
+    },
+    "ietf-datatracker": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-06",
+      "name": "IETF Datatracker (drafts de normes)"
+    },
+    "reuters-via-investing": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "productledseo.com": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-08",
+      "name": "Eli Schwartz / The Future of SEO (Substack)"
+    },
+    "mealeys.com": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary-law",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "nicolasbouliane.com": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-editeur",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "aboutamazon": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-22",
+      "name": "About Amazon (blog officiel AWS news)"
+    },
+    "cjr.org": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-institutionnel-journalisme",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "forbes.com": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "known-exploit",
+      "tier": "presse-business-US",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "x.com/glenngabe": {
+      "weight": 1.6,
+      "trust": 0.8,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "known-exploit",
+      "tier": "vendeur-primaire-social",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "lilyraynyc": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "Lily Ray (Amsive, Substack)"
+    },
+    "sensor-tower": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "infoq.com": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "1492.vision": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-16",
+      "name": ""
+    },
+    "niemanlab.org": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "analyse-journalism",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "magnite.com": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "wbd.com": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "similarweb-corp-reports": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "insidernj.com": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-pr",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "semafor.com": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "adexchanger": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-29",
+      "name": "AdExchanger"
+    },
+    "404media-co": {
+      "weight": 1.56,
+      "trust": 0.78,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-29",
+      "name": "404 Media"
+    },
+    "cnbc": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-07",
+      "name": "CNBC"
+    },
+    "retaildive": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": "Retail Dive"
+    },
+    "mastercard-newsroom": {
+      "weight": 1.5,
+      "trust": 0.5,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "digitalauthority.me": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "axios.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "trade-primaire-tech-scoops",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "aljazeera.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-generaliste-international",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "fiercepharma": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": "Fierce Pharma (presse trade pharma)"
+    },
+    "adexchanger.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "specialiste-ad-tech",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "thedrum": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire-presse",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "thegrocer.co.uk": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse-trade-uk",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "amediaoperator.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-media-business",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "growth-memo.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore->exploit-candidat",
+      "tier": "trade-primaire",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "plausible.io": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire-blog",
+      "last_useful": "2026-07-02",
+      "name": ""
+    },
+    "einpresswire.com": {
+      "weight": 1.5,
+      "trust": 0.5,
+      "useful_hits": 2,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "sterlingsky.ca": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "gartner.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "thehackernews.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "malwarebytes.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "claude.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "money.usnews.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "known-exploit",
+      "tier": "presse-secondaire-relais-reuters",
+      "last_useful": "2026-07-10",
+      "name": ""
+    },
+    "help.barnesandnoble.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "editeur-primaire-produit",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "github.com/agentic-commerce-protocol": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "specification-technique-primaire",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "similarweb.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire-mesure-trafic",
+      "last_useful": "2026-07-20",
+      "name": "SimilarWeb"
+    },
+    "wheresyoured.at": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "independant-analyste-leak-primaire",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "x.com/kmadhavan7": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "meta-newsroom": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "theregister.com": {
+      "weight": 1.5,
+      "trust": 0.75,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": ""
+    },
+    "paymentsdive": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "suganthan.com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "praticien-primaire",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "advancedwebranking.com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "jonloomer.com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "blog-praticien-social-ads",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "pymnts.com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "known-exploit",
+      "tier": "trade-primaire-paiements",
+      "last_useful": "2026-07-10",
+      "name": ""
+    },
+    "axios-com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire-tech-scoops",
+      "last_useful": "2026-07-10",
+      "name": "Axios"
+    },
+    "inquirer.com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-generaliste-US",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "modernretail.co": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-magazine-retail-primaire",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "foundationinc.co": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-newsletter",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "company.instacart.com": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier1-primaire-marque",
+      "last_useful": "2026-07-17",
+      "name": ""
+    },
+    "workos-blog": {
+      "weight": 1.44,
+      "trust": 0.72,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": "WorkOS Blog (analyses techniques auth/identity)"
+    },
+    "abondance": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "Abondance (Olivier Andrieu, search/SEO FR)"
+    },
+    "martech": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "MarTech (martech.org)"
+    },
+    "airops": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-02",
+      "name": "AirOps (rapports data AI search)"
+    },
+    "thenextweb": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "TheNextWeb"
+    },
+    "aljazeera": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-08",
+      "name": "Al Jazeera"
+    },
+    "serpalerts": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "the-decoder.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "siliconrepublic.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "futurum.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "helpnetsecurity.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-securite",
+      "last_useful": "2026-07-14",
+      "name": "Help Net Security"
+    },
+    "9to5google.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "trade-primaire",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "digiday.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "streamingmedia.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "otterly.ai": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "socialmediatoday.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media-social",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "learn.meltwater.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "computing.co.uk": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-17",
+      "name": ""
+    },
+    "bleepingcomputer.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "frac.tl": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-data",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "conductor.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-16",
+      "name": ""
+    },
+    "stagwellglobal.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "storyboard18.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-asie",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "gijn.org": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": ""
+    },
+    "emarketer.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "analyste-trade",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "performancemarketingworld.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse-trade",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "betanews.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "beehiiv": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendor",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "grocerygazette.co.uk": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse-trade-uk",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "editorandpublisher.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "lbbonline.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "engadget": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-30",
+      "name": "Engadget"
+    },
+    "soci.ai": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendor-local-visibility",
+      "last_useful": "2026-07-01",
+      "name": ""
+    },
+    "wwd.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "papers.ssrn.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "techrepublic.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "bidnamic.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-technique",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "x.com/thefox": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "vendeur-primaire-social",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "x.com/rmstein": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "vendeur-primaire-social",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "testingcatalog.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire-produit",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "qz.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-tech-business",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "spectrumlocalnews.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-locale-US-cable",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "mybrandi.ai": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendor-primaire-etude",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "macrumors.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-tech",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "marktechpost.com": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "refibuy.ai": {
+      "weight": 1.4,
+      "trust": 0.7,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire-vendor-mesure-agentic-commerce",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "techspot.com": {
+      "weight": 1.36,
+      "trust": 0.68,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-tech-independent",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "medianama.com": {
+      "weight": 1.36,
+      "trust": 0.68,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-tech-analyse-inde",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "digitalcommerce360": {
+      "weight": 1.32,
+      "trust": 0.66,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-02",
+      "name": "Digital Commerce 360"
+    },
+    "yext": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "Yext (etudes citations IA)"
+    },
+    "shopify-blog": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-02",
+      "name": "Shopify (blog commerce / agentic)"
+    },
+    "mediacopilot": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": "Media Copilot"
+    },
+    "interestingengineering": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": ""
+    },
+    "neowin": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": ""
+    },
+    "usnews-money": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "modernretail": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": "Modern Retail"
+    },
+    "thewrap": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-08",
+      "name": "TheWrap"
+    },
+    "bursonglobal.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "paymentexpert": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "seo-kreativ": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "S-kottke": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "firstpagesage.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "ghacks.net": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "9to5mac.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "time.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-presse",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "launchcodex.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-17",
+      "name": ""
+    },
+    "techstrong.ai": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-18",
+      "name": ""
+    },
+    "yext.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "explore",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "higoodie.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-21",
+      "name": ""
+    },
+    "ifj.org": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": ""
+    },
+    "thekeyword.co": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media-search",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "videoweek.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "specialiste-secondaire",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "netinfluencer.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "specialiste-creator-economy",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "retailtechinnovationhub.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-media-retail-tech",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "sqmagazine.co.uk": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-secondaire-tech",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "shootonline.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "aiinside-show": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-29",
+      "name": "AI Inside Podcast"
+    },
+    "larevuedudigital.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-specialisee-FR",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "streetfightmag.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-local-seo",
+      "last_useful": "2026-07-01",
+      "name": ""
+    },
+    "almcorp.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "known-exploit",
+      "tier": "agence-analyse-seo",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "practicalecommerce.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-media-ecommerce",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "originality.ai": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "benzinga.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-primaire-financiere",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "martechnotes.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "cxtoday.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "community.shopify.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-communauty",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "previsible-io": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-07-07",
+      "name": "Previsible (agence SEO/GEO, David Bell CPO + Jordan Koene CEO)"
+    },
+    "globenewswire.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "wire-primaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "grayvaultconsulting.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "blog-agence-PPC",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "marktechpost-com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-tech-analyse",
+      "last_useful": "2026-07-10",
+      "name": "MarkTechPost"
+    },
+    "loamly.ai": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendor-primaire-attribution",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "stacker.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media-data",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "seranking.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendor-primary",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "alphasignal.ai": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-tech-newsletter",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "seoforlunch.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-specialise",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "perplexity.ai/changelog": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "retailtouchpoints.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-retail-media",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "fool.com": {
+      "weight": 1.3,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": "The Motley Fool"
+    },
+    "cmswire": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "CMSWire (digital marketing / AEO)"
+    },
+    "decrypt": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "Decrypt (tech/IA news)"
+    },
+    "xpert.digital": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "hospitality.today": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-18",
+      "name": ""
+    },
+    "fintechnews.sg": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "telecompaper.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "marketingtechnews.net": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media-marketing",
+      "last_useful": "2026-06-23",
+      "name": ""
+    },
+    "hellopartner.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "specialiste-creator-economy",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "newjerseyglobe.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-regional",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "communicateonline.me": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "bestmediainfo.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "exchange4media.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "testingcatalog": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "TestingCatalog"
+    },
+    "cmswire.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-marketing-numerique",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "averi.ai": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendor-analytics",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "surfacedby.com": {
+      "weight": 1.24,
+      "trust": 0.62,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-primaire-outil-mesure-geo",
+      "last_useful": "2026-07-20",
+      "name": ""
+    },
+    "theseocommunity": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-05-30",
+      "name": "The SEO Community (blog)"
+    },
+    "tryprofound": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-05-30",
+      "name": "Profound (AI platform citation patterns)"
+    },
+    "searchlab": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "Searchlab (statistiques parts de marche search)"
+    },
+    "cyberscoop": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "CyberScoop"
+    },
+    "almcorp": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-01",
+      "name": "ALM Corp (blog SEO/AI search)"
+    },
+    "paypal-newsroom": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-06-03",
+      "name": "PayPal Newsroom"
+    },
+    "retail-systems": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-03",
+      "name": "Retail Systems"
+    },
+    "apptopia": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "mesure",
+      "last_useful": "2026-06-06",
+      "name": "Apptopia (analytics apps tierces)"
+    },
+    "piunikaweb": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": "Piunikaweb"
+    },
+    "e-commerce.news": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": ""
+    },
+    "techwyse": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": ""
+    },
+    "fibre2fashion": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-06",
+      "name": ""
+    },
+    "androidheadlines": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "europeanfinancialreview": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "eutoday": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": "EU Today"
+    },
+    "mobileworldlive": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": "Mobile World Live"
+    },
+    "businesswire": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-06-07",
+      "name": "Business Wire (PR primaire)"
+    },
+    "macobserver": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "mmm-online": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "stellagent.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "sgbonline.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "tripledart.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "everything-pr": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": "Everything-PR (Citation Share Index franchise)"
+    },
+    "swipeinsight": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "derivatex.agency": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-agence-editeur",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "metricusapp.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-12",
+      "name": ""
+    },
+    "opentools.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "technologychecker.io": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "swipeinsight.app": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "techtimes.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-tech-analyse",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "kaleighmoore.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "blog.imseankim.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-praticien",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "webdeveloper.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "peec.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "marketingprofs.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "explore",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "theaiinsider.tech": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "5wpr": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-22",
+      "name": "5W AI Communications (etudes citation IA)"
+    },
+    "affiversemedia.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "specialiste-affiliate",
+      "last_useful": "2026-06-24",
+      "name": ""
+    },
+    "buzzincontent.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "kamcity.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse-trade-uk",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "brandinginasia.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-trade",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "creative.salon": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "roastbrief.us": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "cyberpress": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "CyberPress"
+    },
+    "briefglance": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-29",
+      "name": "BriefGlance"
+    },
+    "jason-howell-substack": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-29",
+      "name": "Jason Howell Substack"
+    },
+    "pureinfotech": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-30",
+      "name": "Pureinfotech"
+    },
+    "karineabbou.substack.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "consultante-SEO-substack-FR",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "tikr.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-finance-tech",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "webpronews.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-analyse-tech",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "finance.yahoo.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-finance-portail",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "stanventures.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-seo-marketing",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "martechseries.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media-secondaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "api.on-page.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "rankability.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "anicca.co.uk": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "sg.finance.yahoo.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-agregateur-financier",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "2x.marketing": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-editeur-service",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "releasebot.io": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-aggregator",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "zatomarketing.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "martech.news": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-media-secondaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "vendasta.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "josephcharnin.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-analyse-praticien-independant",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "searchsignal.online": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "recherche-independante-ai-search",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "getkasper.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendeur-primaire-produit",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "unite.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "reprise-analyse-ia",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "mlq.ai": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "reprise-analyse",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "techwyse.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-news-tier2",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "authoritytech.io": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-agence",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "tapclicks.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-analytics",
+      "last_useful": "2026-07-14",
+      "name": ""
+    },
+    "digitaltoday.co.kr": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-regional-news",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "alexanderchukovski.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier2-specialise",
+      "last_useful": "2026-07-16",
+      "name": ""
+    },
+    "analyticsinsight": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "cultofmac.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "superpath.co": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-content-marketing",
+      "last_useful": "2026-07-20",
+      "name": "Superpath"
+    },
+    "tradingkey.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": ""
+    },
+    "bootcampdigital.com": {
+      "weight": 1.2,
+      "trust": 0.6,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": "Boot Camp Digital"
+    },
+    "geafirst.com": {
+      "weight": 1.16,
+      "trust": 0.58,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-analyse-tech",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "the-ai-corner": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "communautaire",
+      "last_useful": "2026-06-06",
+      "name": ""
+    },
+    "themobileindian": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": ""
+    },
+    "aiautomationglobal": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": "AI Automation Global"
+    },
+    "techbuzz-ai": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-07",
+      "name": "TechBuzz AI"
+    },
+    "prca.global": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "socialsamosa": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-09",
+      "name": ""
+    },
+    "hulkapps": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "espial-solutions": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "convertmate.io": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondary",
+      "last_useful": "2026-06-11",
+      "name": ""
+    },
+    "secureinseconds.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "martechcube.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "ekamoira.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "ranketai.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-13",
+      "name": ""
+    },
+    "welcome.ai": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "sedestral.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "technobezz.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "nohacks.co": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "cybersecuritynews.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "apichangelog.substack.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-15",
+      "name": ""
+    },
+    "winbuzzer.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": "2026-06-18",
+      "name": ""
+    },
+    "chatforest.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-18",
+      "name": ""
+    },
+    "stocktitan.net": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "financial-news-reprise",
+      "last_useful": "2026-06-20",
+      "name": ""
+    },
+    "morningstar-prnewswire": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "communautaire",
+      "last_useful": "2026-06-22",
+      "name": "Morningstar pickup PRNewswire"
+    },
+    "adobomagazine.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse-asia",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "retailtimes.co.uk": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-presse-trade-uk",
+      "last_useful": "2026-06-25",
+      "name": ""
+    },
+    "ibtimes.sg": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-international",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "newsbytesapp.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "joinground.substack.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "eseospace.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "position.digital": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "schemaninja.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "synscribe.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "zoomyourtraffic.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-reprise",
+      "last_useful": "2026-06-27",
+      "name": ""
+    },
+    "gotechtor": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "Gotechtor"
+    },
+    "itechpost": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "iTechPost"
+    },
+    "launchcodex": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-28",
+      "name": "Launchcodex"
+    },
+    "stord": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendeur-rapport",
+      "last_useful": "2026-06-30",
+      "name": "Stord (State of AI in E-Commerce report)"
+    },
+    "startuphub.ai": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-startup-tech",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "stocktwits.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "presse-finance-marche",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "leadgen-economy.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-business-leadgen",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "citelens.io": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-vendeur-geo",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "intelligentretail.tech": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-media-retail-tech",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "seoteric.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "ewrdigital.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "opollo.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-04",
+      "name": ""
+    },
+    "concurate.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "ramp.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "coincentral.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-financiere-crypto",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "parameter.io": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-financiere",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "blockonomi.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-financiere-crypto",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "frase.io": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-outil-editeur-seo",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "ziptie.dev": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-outil-editeur",
+      "last_useful": "2026-07-05",
+      "name": ""
+    },
+    "edtechinnovationhub.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "business-news.org.uk": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "eightx.co": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-analyste-cfo",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "letsdatascience.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "analyse-tierce",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "theaicareerlab.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-analyse-tierce",
+      "last_useful": "2026-07-09",
+      "name": ""
+    },
+    "thrumos-com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "reprise-analyse-seo",
+      "last_useful": "2026-07-10",
+      "name": "Thrum"
+    },
+    "memeburn.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-tech-analyse",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "wersm.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-social-media",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "2236.io": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-analyse-tech",
+      "last_useful": "2026-07-11",
+      "name": ""
+    },
+    "joinindexed.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-analyse-agence-seo",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "unrealwebmarketing.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-analyse-praticien-independant",
+      "last_useful": "2026-07-12",
+      "name": ""
+    },
+    "theoryhouse.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendeur-primaire-agence",
+      "last_useful": "2026-07-13",
+      "name": ""
+    },
+    "channelx.world": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-ecommerce-uk",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "newswire.com": {
+      "weight": 1.1,
+      "trust": 0.55,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-21",
+      "name": ""
+    },
+    "cryptobriefing": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "simonwillison": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "theblock": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "anthropic-blog": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "microsoft-azure-blog": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "claude-api-docs": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "google-ads-help": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-10",
+      "name": ""
+    },
+    "shashi.co": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-14",
+      "name": ""
+    },
+    "actgsys.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-06-18",
+      "name": ""
+    },
+    "allineedformywebsite.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "communautaire",
+      "last_useful": "2026-06-19",
+      "name": ""
+    },
+    "selfstorming.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-analyse",
+      "last_useful": "2026-06-26",
+      "name": ""
+    },
+    "leakypaywall.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "blog-publisher-tech",
+      "last_useful": "2026-06-30",
+      "name": ""
+    },
+    "momenticmarketing.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-agence-seo",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "tech.einnews.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-pr-syndication",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "natlawreview.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire-pr-syndication",
+      "last_useful": "2026-07-03",
+      "name": ""
+    },
+    "tech2geek.net": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "windowsnews.ai": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-06",
+      "name": ""
+    },
+    "lasvegassun.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-07",
+      "name": ""
+    },
+    "realinternetsales.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "trade-secondaire",
+      "last_useful": "2026-07-08",
+      "name": ""
+    },
+    "citelens": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "einpresswire": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "semrush": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "growth-memo": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "siteline": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "primaire-vendeur",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "aivo-journal": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "contentgrip": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-15",
+      "name": ""
+    },
+    "storyboard18": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-18",
+      "name": ""
+    },
+    "help.openai.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "developersdigest.tech": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-19",
+      "name": ""
+    },
+    "sigir2026.org": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "mcp.directory": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "contextbolt.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "usecarly.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "apigene.ai": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "omnibound.ai": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "seoprofy.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "storylab.ai": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "uponlinemedia.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-25",
+      "name": ""
+    },
+    "mdfarukkhan.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "khanit.com.bd": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "socialpanel.pro": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "ethanlazuk.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "explainx.ai": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "aiweekly.co": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "thestateofbrand.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "shopifreaks.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-26",
+      "name": ""
+    },
+    "everything-pr.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-27",
+      "name": ""
+    },
+    "5wpr.com": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-27",
+      "name": ""
+    },
+    "novadata.io": {
+      "weight": 1.0,
+      "trust": 0.5,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": "2026-07-28",
+      "name": ""
+    },
+    "digital-markets-act.ec.europa.eu": {
+      "weight": 0.95,
+      "trust": 0.95,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "courtlistener.com": {
+      "weight": 0.95,
+      "trust": 0.95,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "youtube-veille": {
+      "weight": 0.9,
+      "trust": 0.45,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "decouverte",
+      "last_useful": "2026-06-06",
+      "name": "YouTube (veille vidéo SEO/IA)"
+    },
+    "tools.euroland.com": {
+      "weight": 0.9,
+      "trust": 0.9,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "cnn.com": {
+      "weight": 0.9,
+      "trust": 0.9,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "blog-ericgoldman": {
+      "weight": 0.85,
+      "trust": 0.85,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "blog.cloudflare.com/making-ai-search-smarter": {
+      "weight": 0.85,
+      "trust": 0.85,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit-hit",
+      "tier": "primaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "france24.com": {
+      "weight": 0.85,
+      "trust": 0.85,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "euronews.com": {
+      "weight": 0.85,
+      "trust": 0.85,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "datadome.co": {
+      "weight": 0.8,
+      "trust": 0.8,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "x.com": {
+      "weight": 0.75,
+      "trust": 0.75,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "ca.finance.yahoo.com": {
+      "weight": 0.75,
+      "trust": 0.75,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "daringfireball.net": {
+      "weight": 0.75,
+      "trust": 0.75,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "bing-webmaster": {
+      "weight": 0.7,
+      "trust": 0.7,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "primaire",
+      "last_useful": null,
+      "name": "Bing Webmaster Blog"
+    },
+    "forbes.com/sites/sandycarter": {
+      "weight": 0.7,
+      "trust": 0.7,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "tier-2",
+      "last_useful": null,
+      "name": ""
+    },
+    "investing.com": {
+      "weight": 0.7,
+      "trust": 0.7,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "previsible.com": {
+      "weight": 0.7,
+      "trust": 0.7,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "yro.slashdot.org": {
+      "weight": 0.65,
+      "trust": 0.65,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "citelens.ai": {
+      "weight": 0.62,
+      "trust": 0.62,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "the-verge-ai": {
+      "weight": 0.6,
+      "trust": 0.6,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": "The Verge (IA)"
+    },
+    "ars-technica": {
+      "weight": 0.6,
+      "trust": 0.6,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": "Ars Technica"
+    },
+    "implicator.ai": {
+      "weight": 0.6,
+      "trust": 0.6,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "tech-insider.org": {
+      "weight": 0.6,
+      "trust": 0.6,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "hacker-news": {
+      "weight": 0.55,
+      "trust": 0.55,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "communautaire",
+      "last_useful": null,
+      "name": "Hacker News (Algolia)"
+    },
+    "cryptobriefing.com": {
+      "weight": 0.55,
+      "trust": 0.55,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "gurufocus.com": {
+      "weight": 0.55,
+      "trust": 0.55,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "gadgetreview.com": {
+      "weight": 0.55,
+      "trust": 0.55,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "apiserpent.com": {
+      "weight": 0.55,
+      "trust": 0.55,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "reddit-seo": {
+      "weight": 0.5,
+      "trust": 0.5,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "exploit",
+      "tier": "communautaire",
+      "last_useful": null,
+      "name": "Reddit r/SEO + r/bigseo + r/TechSEO"
+    },
+    "gncrypto": {
+      "weight": 0.5,
+      "trust": 0.5,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "prnewswire.com": {
+      "weight": 0.5,
+      "trust": 0.5,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "industry-lens.com": {
+      "weight": 0.4,
+      "trust": 0.4,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "secondaire",
+      "last_useful": null,
+      "name": ""
+    },
+    "gogochimp.com": {
+      "weight": 0.3,
+      "trust": 0.3,
+      "useful_hits": 0,
+      "noise_hits": 0,
+      "status": "rejete",
+      "tier": "agence-autopromo",
+      "last_useful": null,
+      "name": ""
+    }
   }
 }
