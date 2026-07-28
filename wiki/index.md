@@ -31,9 +31,9 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (95)
+## Sources (99)
 
-### Articles (48)
+### Articles (52)
 - [[sources/2026-01-08-organikk-seo-agence-immobiliere-lyon]] — SEO local immobilier Lyon : micro-intentions, estimateurs, newsletter à backlinks
 - [[sources/2026-01-12-organikk-seo-serrurier-lyon]] — SEO serrurier Lyon : transparence tarifaire, 30 KW bottom-funnel, leads seuls
 - [[sources/2026-01-15-organikk-mots-cles-seo-2026]] — Mots-clés 2026 : volume = projection, GSC = fait, requêtes 24+ mots
@@ -82,6 +82,10 @@ status: stable
 - [[sources/2026-07-07-organikk-automatiser-audit-seo-claude-code]] — Audit SEO mensuel automatisé Claude Code : lire le diff, pas produire l'analyse
 - [[sources/2026-07-07-organikk-guide-reddit-seo-geo]] — Guide Reddit SEO/GEO : 80% posts cités < 20 upvotes, répétition > seuil
 - [[sources/2026-07-08-algorithme-redaction-claude]] — Rédaction + Claude : l'IA transpose, ne pense jamais ; templates ton de voix + anti-IA
+- [[sources/2026-07-14-algorithme-ia-moins-utile-google]] — Confiance recherche IA en chute (−28 pts) malgré adoption ; GSC absorbe le social
+- [[sources/2026-07-16-algorithme-seo-technique-claude]] — 6 tâches SEO technique déléguées à Claude, sans outil SEO classique
+- [[sources/2026-07-16-organikk-optimiser-seo-technique-claude]] — Version longue : indexation, maillage, cannibalisation, schema, CWV via Claude
+- [[sources/2026-07-21-algorithme-systeme-seo-claude-obsidian]] — 5 règles système SEO Claude+Obsidian : data propriétaire, local, wiki/raw, audit, anti-boucle
 
 ### Doctrine (23)
 - [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim

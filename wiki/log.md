@@ -1396,3 +1396,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - output: [[posts-linkedin/2026-07-27-arborescence-agent-seo]]
 - skill déclenché: ton-de-voix-tim
 - modèle: arborescence "marketing team with AI agents", adapté SEO
+
+## [2026-07-28] ingest | Scrape auto publications (Algorithme + Organikk)
+- source_type: article
+- sources créées: 4 ([[sources/2026-07-14-algorithme-ia-moins-utile-google]], [[sources/2026-07-16-algorithme-seo-technique-claude]], [[sources/2026-07-16-organikk-optimiser-seo-technique-claude]], [[sources/2026-07-21-algorithme-systeme-seo-claude-obsidian]])
+- posts sautés (déjà ingérés): 3 (redaction-claude, guide-reddit-seo-geo, automatiser-audit-seo-claude-code)
+- wikilinks: min 2/fiche, 0 lien mort (vérifié)
+- nœuds suggérés (à créer en curation): aucun
+- angle SEO transverse: le SEO technique (indexation, maillage, cannibalisation, schema, CWV) devient délégable à Claude quasi intégralement — le différenciant se déplace vers la donnée propriétaire et le système (Wiki/Raw), pas l'exécution

@@ -365,6 +365,7 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/moc/moc-aeo-geo.md",
+      "wiki/posts-linkedin/2026-07-27-arborescence-agent-seo.md",
       "wiki/revue-hebdo/resurgence-2026-07-15.md",
       "wiki/sources/2026-04-13-core-ranking-jin-2025.md",
       "wiki/sources/2026-04-13-raid-gseo-2025.md",
@@ -376,6 +377,7 @@
       "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
       "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
       "wiki/sources/2026-04-30-scheduled-skills-cron.md",
+      "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/tim-profil-doctrine.md",
@@ -1143,7 +1145,9 @@
       "wiki/sources/2026-04-05-organikk-audit-seo-claude-7-phases.md",
       "wiki/sources/2026-05-27-organikk-5-skills-seo-technique-claude.md",
       "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
-      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md"
+      "wiki/sources/2026-07-16-algorithme-seo-technique-claude.md",
+      "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
+      "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/cannibalisation.md",
@@ -1716,6 +1720,7 @@
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
+      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md",
       "wiki/syntheses/algorithme-week-2026-W29.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
@@ -1844,7 +1849,8 @@
       "wiki/index.md",
       "wiki/log.md",
       "wiki/sources/2026-06-17-algorithme-creez-votre-agent-seo.md",
-      "wiki/sources/2026-07-08-algorithme-redaction-claude.md"
+      "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
+      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md"
     ],
     "confidence": "medium",
     "file": "wiki/concepts/dette-cognitive.md",
@@ -2487,7 +2493,8 @@
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
       "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
       "wiki/sources/2026-07-07-organikk-guide-reddit-seo-geo.md",
-      "wiki/sources/2026-07-09-call-14-vincent-upscale.md"
+      "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
+      "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/geo.md",
@@ -2639,7 +2646,8 @@
       "wiki/sources/2026-04-25-scan-arxiv-25-avril.md",
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
-      "wiki/sources/2026-07-07-organikk-guide-reddit-seo-geo.md"
+      "wiki/sources/2026-07-07-organikk-guide-reddit-seo-geo.md",
+      "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/google-ai-mode.md",
@@ -2942,7 +2950,10 @@
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
-      "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md"
+      "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
+      "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md",
+      "wiki/sources/2026-07-16-algorithme-seo-technique-claude.md",
+      "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/gsc.md",
@@ -3459,7 +3470,8 @@
       "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
       "wiki/sources/2026-04-12-organikk-wiki-ia-obsidian-claude.md",
-      "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md"
+      "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
+      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md"
     ],
     "confidence": "medium",
     "file": "wiki/entities/karpathy.md",
@@ -3636,7 +3648,9 @@
       "wiki/sources/2026-01-12-organikk-seo-serrurier-lyon.md",
       "wiki/sources/2026-01-20-organikk-roadmap-seo-2026.md",
       "wiki/sources/2026-04-05-organikk-audit-seo-claude-7-phases.md",
-      "wiki/sources/2026-05-27-organikk-5-skills-seo-technique-claude.md"
+      "wiki/sources/2026-05-27-organikk-5-skills-seo-technique-claude.md",
+      "wiki/sources/2026-07-16-algorithme-seo-technique-claude.md",
+      "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/maillage-interne.md",
@@ -4954,6 +4968,7 @@
       "wiki/sources/2026-04-30-qadence-seo-agent-snapshot.md",
       "wiki/sources/2026-06-03-organikk-systeme-seo-ia-complet.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
+      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md",
       "wiki/syntheses/doctrine-seo-post-sge.md"
     ],
     "confidence": "high",
@@ -5505,7 +5520,10 @@
       "wiki/sources/2026-06-24-algorithme-fin-des-mots-cles.md",
       "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
       "wiki/sources/2026-07-07-organikk-guide-reddit-seo-geo.md",
-      "wiki/sources/2026-07-08-algorithme-redaction-claude.md"
+      "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
+      "wiki/sources/2026-07-16-algorithme-seo-technique-claude.md",
+      "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md",
+      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/qadence-seo-agent.md",
