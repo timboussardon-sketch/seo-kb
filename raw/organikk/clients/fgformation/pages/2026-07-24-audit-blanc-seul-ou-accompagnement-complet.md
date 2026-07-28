@@ -17,7 +17,7 @@ status: draft
 
 # Audit blanc seul ou accompagnement complet : que choisir
 
-Un audit blanc suppose un dossier qui existe déjà : il le passe dans les conditions de l'audit réel et vous remet la liste des écarts. Quand le dossier reste à construire, le besoin relève de l'accompagnement complet, qui se termine lui aussi par un audit blanc. La question n'est donc pas de savoir quelle formule est la meilleure : c'est l'état de votre dossier aujourd'hui qui décide.
+Le choix entre audit blanc seul et accompagnement complet ne se joue pas sur la formule : il se joue sur l'état de votre dossier aujourd'hui. Un audit blanc suppose un dossier qui existe déjà : il le passe dans les conditions de l'audit réel et remet la liste des écarts. Quand le dossier reste à construire, le besoin relève de l'accompagnement complet, qui se termine lui aussi par un audit blanc.
 
 FG Formation vend les deux formats. L'intérêt de cette page est justement de ne pas vous vendre le gros quand le petit suffit : pour une partie des organismes qui nous contactent, l'audit blanc seul est la bonne réponse.
 
@@ -42,7 +42,7 @@ Aucun des deux n'est prévu par les textes : le référentiel (7 critères, 32 i
 
 ## L'audit blanc seul : pour un dossier qui existe déjà
 
-Le cas type vient de nos rendez-vous avec des organismes certifiés qui préparent leur audit de surveillance : le système qualité tourne, les preuves existent, et le besoin tient en deux formules entendues en call : « valider que tout soit carré » et « repartir sur une bonne base ». Un des responsables l'a dit sans détour : pas besoin « d'un jour par semaine pendant 12 mois ». Il a raison, et un prestataire honnête doit savoir l'entendre.
+Le cas type vient de nos rendez-vous avec des organismes certifiés qui préparent leur audit de surveillance : le système qualité tourne, les preuves existent, et le besoin tient en deux formules entendues en call : « valider que tout soit carré » et « repartir sur une bonne base ». Un des responsables l'a dit sans détour : pas besoin « d'un jour par semaine pendant 12 mois ».
 
 Pour ce profil, l'audit blanc seul répond au besoin exact : un regard extérieur, dans les conditions du réel, à un moment choisi. Notre format dédié à cette échéance est décrit sur la page [préparation à l'audit de surveillance](https://fgformation.fr/formation-audit-surveillance-qualiopi/).
 
@@ -64,15 +64,15 @@ Entre les deux options de cette page, la hiérarchie est simple et nous n'allons
 
 Le mauvais calcul, c'est l'audit blanc choisi pour son prix alors que le dossier n'existe pas : vous payez un diagnostic dont vous connaissez déjà la conclusion, puis le travail de construction reste entier.
 
-## Le point où ça bloque : l'audit blanc révèle, il ne corrige pas
+## Le point où ça bloque : la liste d'écarts ne se corrige pas seule
 
-Le livrable d'un audit blanc est une liste d'écarts. Ce que nos audits blancs montrent : quand les écarts sont ponctuels, un document manquant, une preuve mal datée, le candidat corrige seul sans difficulté. Quand les écarts sont structurels, plusieurs indicateurs sans preuve, un pan d'activité jamais documenté, la liste ne suffit plus : il faut construire, et on retombe sur le périmètre de l'accompagnement.
+Le livrable d'un audit blanc est une liste d'écarts. Nos audits blancs distinguent deux profils d'écarts : ponctuels (un document manquant, une preuve mal datée), le candidat corrige seul sans difficulté ; structurels (plusieurs indicateurs sans preuve, un pan d'activité jamais documenté), la liste ne suffit plus. Il faut alors construire, et on retombe sur le périmètre de l'accompagnement.
 
 L'audit blanc seul suppose donc un pari : que vos écarts seront ponctuels. Pour un organisme certifié qui fait vivre son système, le pari est raisonnable. Pour un premier passage, il l'est rarement.
 
 ## Quand l'audit blanc seul suffit
 
-Vous êtes certifié et votre système qualité a tourné depuis l'audit précédent. Ou vous préparez un premier audit en autonomie, avec un dossier construit, et vous voulez le tester avant le passage réel plutôt que de le découvrir pendant. Dans les deux cas, le format court répond au besoin, et le reste serait de la survente.
+Vous êtes certifié et votre système qualité a tourné depuis l'audit précédent. Ou vous préparez un premier audit en autonomie, avec un dossier construit, et vous voulez le tester avant le passage réel, sans le découvrir pendant. Dans les deux cas, le format court répond au besoin, et le reste serait de la survente.
 
 ## Quand l'accompagnement complet se justifie
 

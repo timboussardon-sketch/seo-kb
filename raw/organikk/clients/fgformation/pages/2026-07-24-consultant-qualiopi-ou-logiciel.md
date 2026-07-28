@@ -17,11 +17,11 @@ status: draft
 
 # Consultant Qualiopi ou logiciel Qualiopi : comment choisir
 
-Un logiciel Qualiopi range et rappelle : documents centralisés, échéances suivies. Le consultant intervient sur autre chose, le choix des preuves qui tiendront face à l'auditeur, indicateur par indicateur. L'audit ne vérifie ni l'outil ni le prestataire : il vérifie des preuves datées, rattachées à votre activité réelle. Et les deux options se combinent plus souvent qu'elles ne s'opposent.
+L'audit ne contrôle ni un outil ni un prestataire : il contrôle des preuves datées, rattachées à votre activité réelle. Un logiciel Qualiopi centralise ces preuves et rappelle les échéances, mais ne dit pas lesquelles produire pour tenir face à l'auditeur, indicateur par indicateur. Cette seconde tâche, l'interprétation du référentiel appliquée à votre cas, reste le travail du consultant. Les deux options se combinent d'ailleurs plus souvent qu'elles ne s'opposent.
 
 Pour la transparence : FG Formation vend de l'accompagnement par consultant, pas de logiciel. Cette page décrit ce que chaque option fait réellement, y compris les cas où un logiciel suffit. Données vérifiées le 24 juillet 2026.
 
-## Votre problème est l'organisation des preuves, ou leur interprétation
+## Ce que chaque option résout vraiment
 
 Les deux réponses ne traitent pas le même problème. L'organisation d'abord : où sont les documents, qui les a produits, quand, qu'est-ce qui manque. C'est le terrain du logiciel. L'interprétation est un exercice d'une autre nature : qu'est-ce que l'indicateur 11 attend concrètement d'un organisme comme le vôtre, quelle preuve tiendra face à l'auditeur, laquelle ne tiendra pas. Personne n'a encore codé cette réponse-là dans un outil.
 
@@ -62,9 +62,9 @@ Les deux structures de coût ne se comparent pas sur un mois, elles se comparent
 
 ## Le point où ça bloque : un outil vide ne prouve rien
 
-Le scénario que nous voyons en audit blanc n'est pas l'organisme sans logiciel. C'est l'organisme équipé, abonné, et dont l'outil est à moitié vide, parce que personne n'a tranché ce qu'il fallait y mettre pour chaque indicateur. Le logiciel a été acheté comme une réponse, alors qu'il n'est qu'un rangement.
+Le scénario que nous voyons le plus souvent en audit blanc est celui d'un organisme équipé, abonné, dont l'outil reste à moitié vide parce que personne n'a tranché ce qu'il fallait y mettre pour chaque indicateur. Le logiciel a été acheté comme une réponse ; il n'est qu'un rangement.
 
-L'inverse existe aussi : un dossier tenu dans des classeurs, complet, daté, qui passe l'audit sans difficulté. L'auditeur échantillonne vos actions réelles et leurs preuves. Le support n'a jamais fait échouer personne. L'absence de fond, si.
+L'inverse existe aussi : un dossier tenu dans des classeurs, complet, daté, qui passe l'audit sans difficulté. L'auditeur échantillonne vos actions réelles et leurs preuves : le support n'a jamais fait échouer personne, seule l'absence de fond y arrive.
 
 ## Quand le logiciel suffit
 
@@ -72,11 +72,11 @@ Vous savez déjà ce que chaque indicateur attend, parce que vous êtes certifi�
 
 ## Quand le consultant se justifie
 
-Vous préparez votre première certification et le référentiel est une découverte. Ou votre premier audit a laissé des non-conformités que vous ne savez pas corriger. Ou l'audit de surveillance approche et personne dans la structure ne sait ce qui sera contrôlé. Dans ces cas, le problème n'est pas le rangement des preuves, c'est de savoir lesquelles produire. Un outil n'y répond pas.
+Vous préparez votre première certification et le référentiel est une découverte. Ou votre premier audit a laissé des non-conformités que vous ne savez pas corriger. Ou l'audit de surveillance approche et personne dans la structure ne sait ce qui sera contrôlé. Dans ces cas, le problème porte sur le choix des preuves à produire, pas sur leur rangement. Un outil n'y répond pas.
 
-## Les deux ensemble : l'outil au quotidien, le consultant aux échéances
+## Les deux ensemble, à des moments différents
 
-Les deux options ne s'excluent pas. Un organisme peut tenir sa gestion documentaire dans un logiciel toute l'année et faire intervenir un consultant aux moments qui comptent : la construction initiale du système de preuves, puis un audit blanc avant l'audit initial ou l'audit de surveillance. Un accompagnement sérieux s'adapte d'ailleurs aux outils déjà en place plutôt que d'imposer les siens.
+Les deux options ne s'excluent pas. Un organisme peut tenir sa gestion documentaire dans un logiciel toute l'année et faire intervenir un consultant aux moments qui comptent : la construction initiale du système de preuves, puis un audit blanc avant l'audit initial ou l'audit de surveillance. Un accompagnement sérieux s'adapte d'ailleurs aux outils déjà en place, sans imposer les siens.
 
 Si vous hésitez sur votre propre situation, [décrivez-la](https://fgformation.fr/contact/) : vous saurez si votre problème relève de l'organisation, de l'interprétation, ou des deux.
 

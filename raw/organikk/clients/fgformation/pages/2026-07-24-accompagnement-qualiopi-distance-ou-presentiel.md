@@ -17,7 +17,7 @@ status: draft
 
 # Accompagnement Qualiopi à distance ou en présentiel : que choisir
 
-Le contenu d'un accompagnement Qualiopi est identique à distance et sur place : lecture du référentiel, construction des preuves, audit blanc. Les textes n'imposent aucune modalité. L'audit, lui, a des règles : l'initial se tient dans vos locaux, la surveillance se fait à distance dans la plupart des cas. Votre préparation gagne à ressembler à ce calendrier.
+Les textes n'imposent aucune modalité pour se préparer à Qualiopi, mais ils en imposent une pour l'audit lui-même : l'initial se tient dans vos locaux, la surveillance se fait à distance dans la plupart des cas. Le contenu d'un accompagnement reste identique à distance et sur place : lecture du référentiel, construction des preuves, audit blanc. Le choix de la modalité de préparation gagne à suivre ce calendrier réglementaire.
 
 Ce duel est le plus symétrique de notre série de comparaisons : aucune des deux modalités n'est structurellement supérieure, et le choix se fait sur des critères concrets, listés ici.
 
@@ -27,7 +27,7 @@ Le référentiel national qualité (7 critères, 32 indicateurs, annexe du décr
 
 Le choix de la modalité est donc entièrement le vôtre. Il mérite mieux qu'une habitude ou qu'un a priori, parce que les deux formats n'ont pas le même rythme ni le même coût.
 
-## L'audit, lui, a des règles : initial sur site, surveillance à distance
+## Les règles de l'audit : sur site pour l'initial, à distance pour la surveillance
 
 C'est le fait le plus utile de cette page. L'arrêté du 6 juin 2019 prévoit que l'organisme certificateur réalise l'audit initial dans les locaux de l'organisme candidat. L'audit de surveillance, entre le 14e et le 22e mois, est réalisé à distance, sauf cas particuliers : signalements, risques identifiés, ou audit sur site demandé par l'organisme lui-même.
 
@@ -46,7 +46,7 @@ Votre cycle de certification est donc mixte par construction : un rendez-vous ph
 
 ## À distance : le rythme court et le partage d'écran
 
-Le format à distance a deux forces concrètes. Le rythme d'abord : des sessions d'une ou deux heures, faciles à placer dans un agenda de formateur en activité, permettent d'avancer chaque semaine au lieu de concentrer le travail sur quelques journées. Le travail sur documents ensuite : un partage d'écran met la preuve sous les yeux des deux participants, la correction se fait en direct dans le fichier, et rien ne se perd entre deux rendez-vous.
+Le format à distance a deux forces concrètes. Le rythme d'abord : des sessions d'une ou deux heures, faciles à placer dans un agenda de formateur en activité, permettent d'avancer chaque semaine à un rythme régulier, sans bloquer plusieurs journées d'affilée. Le travail sur documents ensuite : un partage d'écran met la preuve sous les yeux des deux participants, la correction se fait en direct dans le fichier, et rien ne se perd entre deux rendez-vous.
 
 S'ajoute l'argument géographique : le consultant se choisit sur son expérience, pas sur son département. À distance, un organisme installé loin des grandes villes accède aux mêmes prestataires que les autres.
 
@@ -62,9 +62,9 @@ Le présentiel garde aussi la préférence de certains dirigeants pour les étap
 
 ## Le point où ça bloque : l'audit se passe à l'oral, entraînez-vous dans les conditions réelles
 
-Ce que nos audits blancs montrent : le dossier ne fait pas tout, l'échange avec l'auditeur compte. Des candidats aux preuves correctes se déstabilisent à l'oral, sur les indicateurs laissés à l'interprétation de l'auditeur. Et la déstabilisation n'est pas la même en face à face et à l'écran : la surveillance en visioconférence, avec ses silences et ses documents à présenter en partage d'écran, se répète en visioconférence.
+Nos audits blancs montrent que le dossier ne fait pas tout : l'échange avec l'auditeur compte aussi. Des candidats aux preuves correctes se déstabilisent à l'oral, sur les indicateurs laissés à l'interprétation de l'auditeur. Cette déstabilisation diffère en face à face et à l'écran : la surveillance se déroule en visioconférence, avec ses silences et ses documents à présenter en partage d'écran, et s'entraîne dans ces mêmes conditions.
 
-Le critère de choix le plus concret est donc celui-là : préparez chaque audit dans sa modalité réelle. Un audit blanc sur site avant l'audit initial, un entraînement à l'écran avant la surveillance. Un accompagnement qui mélange les deux formats n'est pas une concession, c'est le calque du cycle réel.
+Le critère de choix le plus concret est donc celui-là : préparez chaque audit dans sa modalité réelle. Un audit blanc sur site avant l'audit initial, un entraînement à l'écran avant la surveillance. Un accompagnement qui mélange les deux formats calque le cycle réel de la certification.
 
 ## Quand la distance est le bon choix
 
@@ -111,7 +111,7 @@ Les textes évoluent. Les informations de cette page sont exactes à la date ind
 
 - **Duel neutre, pas d'encart juge et partie** : FG propose les deux modalités (pages locales Lyon/Paris/etc. pour le présentiel), aucune des deux options n'est « la sienne » contre l'autre. Vérifier avec François le vocabulaire exact de sa zone d'intervention avant mise en ligne.
 - **Colonne vertébrale factuelle** : audit initial dans les locaux + surveillance à distance sauf trois cas (arrêté consolidé, vérifié le 24/07). C'est l'angle différenciant de la page, aucun site du créneau ne structure le choix de modalité sur le cycle d'audit réel.
-- **Claim « la déstabilisation n'est pas la même en face à face et à l'écran »** : constat praticien d'audits blancs, formulé comme tel.
+- **Claim « la déstabilisation diffère en face à face et à l'écran »** : constat praticien d'audits blancs, formulé comme tel.
 - **Aucun chiffre de coût** : le poste déplacements est décrit structurellement (facturé, intégré ou zoné), sans montant.
 - **Maillage sortant** : page tarif, contact, duels 1 et 5 à lier à l'intégration ; les pages locales (accompagnement-qualiopi-lyon, etc.) peuvent mailler vers ce duel pour la question de la modalité.
 - **Série complète** : 7 duels produits. Prochaine étape proposée : hub « choisir son accompagnement Qualiopi » (refonte de choisir-bon-partenaire) qui liste les 7 duels.

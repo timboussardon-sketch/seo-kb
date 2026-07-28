@@ -35,7 +35,7 @@ Un accompagnement sérieux couvre la lecture du référentiel appliquée à votr
 
 Il a aussi des limites, les mêmes partout. L'accompagnateur ne passe pas l'audit à votre place et ne décide pas à la place du certificateur, qui reste seul à délivrer ou refuser la certification. Quant à la responsabilité de votre conformité, elle reste la vôtre pendant toute la durée de la certification, quoi qu'en dise un contrat de prestation.
 
-Méfiez-vous des offres qui promettent l'inverse. Un dossier construit sans vous produit une certification que vous ne savez pas défendre. Un formateur reçu en rendez-vous le résumait ainsi : « je veux rester acteur, je ne veux pas être bloqué face à l'auditeur ». C'est le bon réflexe.
+Méfiez-vous des offres qui promettent l'inverse. Un dossier construit sans vous produit une certification que vous ne savez pas défendre. Un formateur reçu en rendez-vous le résumait ainsi : « je veux rester acteur, je ne veux pas être bloqué face à l'auditeur ».
 
 ## Seul ou accompagné : la comparaison poste par poste
 
@@ -62,7 +62,7 @@ Accompagné, vous payez l'audit plus la prestation d'accompagnement. C'est méca
 
 ## Le point où ça bloque : l'auditeur ne valide que des preuves datées
 
-Voici ce que les audits blancs que nous menons montrent de façon répétée : les candidats font le travail, mais ne savent pas le prouver. Ils accueillent correctement leurs stagiaires, évaluent, ajustent, se forment. Puis l'auditeur demande le document daté qui l'atteste, et il n'existe pas.
+Nos audits blancs font ressortir un même scénario, de façon répétée : les candidats font le travail, mais ne savent pas le prouver. Ils accueillent correctement leurs stagiaires, évaluent, ajustent, se forment. Puis l'auditeur demande le document daté qui l'atteste, et il n'existe pas.
 
 Le référentiel n'audite pas ce que vous faites, il audite ce que vous pouvez démontrer. Chaque indicateur appelle des éléments de preuve concrets, datés, rattachés à votre activité réelle. Le déclaratif ne vaut rien. Et certains indicateurs laissent une marge d'interprétation à l'auditeur : c'est précisément sur ces indicateurs-là que les candidats en autonomie se font surprendre, faute d'avoir vu passer d'autres audits avant le leur.
 
@@ -80,9 +80,9 @@ La non-conformité majeure exige des actions correctives effectives sous trois m
 
 La certification est délivrée pour trois ans. Entre le 14e et le 22e mois, un audit de surveillance vérifie que le référentiel est toujours appliqué. Il se déroule à distance dans la plupart des cas.
 
-C'est là que les dossiers construits par quelqu'un d'autre se voient. L'auditeur interroge la personne en face de lui, pas le prestataire qui a rédigé les documents dix-huit mois plus tôt. Plusieurs organismes nous contactent à l'approche de cette échéance après un audit initial douloureux, avec des non-conformités majeures encore en mémoire et des process jamais vraiment appropriés.
+L'audit de surveillance expose les dossiers construits par quelqu'un d'autre : l'auditeur interroge la personne en face de lui, pas le prestataire qui a rédigé les documents dix-huit mois plus tôt. Plusieurs organismes nous contactent à l'approche de cette échéance après un audit initial douloureux, avec des non-conformités majeures encore en mémoire et des process jamais vraiment appropriés.
 
-Un accompagnement se juge sur ce critère : est-ce que vous savez tenir l'audit de surveillance sans lui ? Si la réponse est non, ce n'était pas de l'accompagnement, c'était de la sous-traitance de conformité.
+Un accompagnement se juge sur ce critère : vous devez savoir tenir l'audit de surveillance sans le prestataire qui a construit le dossier. Sans cette autonomie transmise, la prestation a produit de la sous-traitance de conformité, sous couvert d'accompagnement.
 
 ## Quand passer seul est le bon choix
 
@@ -94,7 +94,7 @@ Dans ce cas, la seule dépense externe pertinente peut être un audit blanc sec,
 
 Des clients attendent que votre formation devienne finançable et chaque mois de retard se compte en chiffre d'affaires perdu. Vous créez votre organisme et vous découvrez le vocabulaire en même temps que les démarches. Vous avez perdu votre certification après un départ dans l'équipe et il faut la reconstruire. Votre premier audit a laissé des non-conformités et la surveillance approche. Ou vous savez simplement que le documentaire ne se fera pas si personne ne structure le travail avec vous : « j'ai horreur de l'administratif » est la phrase que nous entendons le plus en rendez-vous.
 
-Dans ces situations, le calcul n'est pas le prix de la prestation, c'est le coût du délai et celui d'un audit raté. Notre façon de travailler est détaillée sur la page [l'accompagnement FG Formation](https://fgformation.fr/laccompagnement-fg-formation/) et son [contenu complet](https://fgformation.fr/sommaire-contenu-accompagnement-qualiopi/). Et si vous hésitez encore entre les deux options, [décrivez votre situation](https://fgformation.fr/contact/) : vous saurez si un accompagnement se justifie dans votre cas, ou si vous pouvez passer seul.
+Dans ces situations, le calcul porte sur le coût du délai et celui d'un audit raté, pas sur le seul prix de la prestation. Notre façon de travailler est détaillée sur la page [l'accompagnement FG Formation](https://fgformation.fr/laccompagnement-fg-formation/) et son [contenu complet](https://fgformation.fr/sommaire-contenu-accompagnement-qualiopi/). Et si vous hésitez encore entre les deux options, [décrivez votre situation](https://fgformation.fr/contact/) : vous saurez si un accompagnement se justifie dans votre cas, ou si vous pouvez passer seul.
 
 ## Questions fréquentes
 

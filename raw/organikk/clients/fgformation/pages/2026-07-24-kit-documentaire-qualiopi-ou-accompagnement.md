@@ -17,11 +17,11 @@ status: draft
 
 # Kit documentaire Qualiopi ou accompagnement : comment choisir
 
-Un kit documentaire, ce sont des modèles : trames de procédures, registres, documents types à adapter. Le référentiel, lui, exige des preuves produites par votre activité réelle, et c'est ce travail-là que couvre un accompagnement. L'écart entre les deux se voit à l'audit : l'auditeur échantillonne vos actions, pas vos trames.
+L'arrêté du 6 juin 2019 prévoit que l'auditeur échantillonne des actions réellement menées par votre organisme, pas des documents types. Un kit documentaire fournit des trames à adapter : procédures, registres, modèles de convocation ou d'émargement. Produire les preuves rattachées à votre activité réelle, c'est le travail que couvre un accompagnement.
 
 FG Formation vend de l'accompagnement, pas de kit. La grille reste la même pour les deux options, et le cas où un kit suffit est traité plus bas, sans détour.
 
-## Un kit fournit des modèles, pas des preuves
+## Le contenu réel d'un kit documentaire
 
 Un kit documentaire Qualiopi est, selon les offres, un ensemble de trames : procédures types, modèles de convocation, d'émargement, de questionnaire, registres à compléter, parfois organisés indicateur par indicateur. C'est une base de départ, et une base correcte vaut mieux qu'une page blanche.
 
@@ -56,9 +56,9 @@ Le calcul honnête intègre le coût d'un audit raté : une non-conformité maje
 
 ## Le point où ça bloque : le dossier rempli en une fois se repère
 
-Voici ce que nos audits blancs montrent : un dossier construit en une seule fois, la semaine avant l'audit, se repère à ses dates. Des documents tous produits le même mois pour des sessions étalées sur l'année racontent leur propre histoire, et l'auditeur la lit. Le déclaratif ne vaut rien, et un kit rempli à la chaîne reste du déclaratif avec une meilleure mise en page.
+Nos audits blancs font ressortir un même scénario : un dossier construit en une seule fois, la semaine avant l'audit, se repère à ses dates. Des documents tous produits le même mois, pour des sessions étalées sur l'année, affichent des dates incohérentes que l'auditeur repère. Le déclaratif ne vaut rien : un kit rempli à la chaîne améliore la présentation du dossier, pas ce qu'il prouve.
 
-Un prospect nous le disait très bien en rendez-vous : il voulait « rester acteur », pas recevoir « un kit clé en main ». La formule résume l'enjeu : le référentiel audite une pratique, pas une bibliothèque de documents.
+Un prospect nous le disait très bien en rendez-vous : il voulait « rester acteur », pas recevoir « un kit clé en main ». Le référentiel audite une pratique réelle ; une bibliothèque de documents ne suffit pas à la démontrer.
 
 ## Quand un kit suffit
 
@@ -74,15 +74,15 @@ Pour situer votre cas, [décrivez votre situation](https://fgformation.fr/contac
 
 ### Un kit documentaire est-il reconnu par les certificateurs ?
 
-La question ne se pose pas dans ces termes : le certificateur ne valide ni kit ni prestataire, il audite vos preuves. Aucun document type n'a de valeur en soi, adapté et appliqué il en acquiert.
+La question ne se pose pas dans ces termes : le certificateur ne valide ni kit ni prestataire, il audite vos preuves. Un document type n'a de valeur qu'une fois adapté à votre activité et appliqué en session réelle.
 
 ### Peut-on combiner kit et accompagnement ?
 
-Un accompagnement apporte en général ses propres trames, adaptées avec vous : le kit devient alors redondant. Si vous avez déjà acheté un kit, un accompagnement peut partir de vos documents existants plutôt que de les remplacer.
+Un accompagnement construit ses propres trames avec vous, à partir de vos formations réelles : le kit devient redondant sur ce point précis. Si vous avez déjà acheté un kit, un accompagnement peut partir de vos documents existants, sans les remplacer.
 
 ### Existe-t-il des modèles de documents gratuits ?
 
-Le guide de lecture du référentiel, publié par le ministère du Travail, décrit gratuitement les éléments de preuve attendus pour chaque indicateur. Ce n'est pas un jeu de trames, mais c'est la source sur laquelle tout kit sérieux est construit.
+Le guide de lecture du référentiel, publié par le ministère du Travail, décrit gratuitement les éléments de preuve attendus pour chaque indicateur. Il explique ce que chaque indicateur attend, sans fournir de trames prêtes à remplir : c'est la source sur laquelle tout kit sérieux devrait s'appuyer.
 
 ### Un kit couvre-t-il l'audit de surveillance ?
 

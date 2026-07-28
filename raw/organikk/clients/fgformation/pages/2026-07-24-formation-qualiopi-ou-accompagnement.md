@@ -17,11 +17,11 @@ status: draft
 
 # Formation Qualiopi ou accompagnement : quel format choisir
 
-Une formation Qualiopi vous apprend à construire et tenir votre conformité vous-même. Si personne dans la structure ne fera ce travail ensuite, c'est l'accompagnement qu'il vous faut : le dossier de preuves sort de la prestation, construit sur votre activité. Une question tranche entre les deux : qui fera vivre le système qualité après la certification ?
+Le choix entre une formation Qualiopi et un accompagnement individuel tient à une question : qui fera vivre le système qualité après la certification ? Une formation transmet la compétence de construire et tenir sa conformité soi-même. Un accompagnement produit directement le dossier de preuves, construit sur votre activité, pour les structures où personne n'est en mesure de faire ce travail ensuite.
 
 Transparence complète : FG Formation vend les deux formats. Cette page ne cherche pas à vous vendre les deux, elle sert à choisir le bon. Certains profils n'ont besoin que d'une formation, et nous l'écrivons plus bas.
 
-## À la fin, le livrable diffère : des compétences, ou un dossier prêt pour l'audit
+## Le critère qui distingue les deux formats : le livrable final
 
 La distinction tient au livrable. À la fin d'une formation, le livrable est dans votre tête et dans vos notes : vous savez lire les 7 critères et les 32 indicateurs du référentiel (annexe du décret n° 2019-565 du 6 juin 2019), vous savez quelles preuves construire et comment les tenir. Le dossier, lui, reste à faire.
 
@@ -68,9 +68,9 @@ Une prestation d'accompagnement relève du conseil, pas de la formation. Avant d
 
 ## Le point où ça bloque : la compétence ne remplace pas la discipline
 
-Nos audits blancs montrent le même écart chez les candidats formés et chez les autodidactes : savoir quoi prouver ne suffit pas, il faut l'avoir fait, session après session, avec des documents datés. Une formation règle le « quoi », pas le « fait ». Si personne dans la structure n'a le temps ou la constance de produire les preuves, la formation aura été un bon moment et le dossier sera vide au moment de l'audit.
+Nos audits blancs montrent le même écart chez les candidats formés et chez les autodidactes : savoir quoi prouver ne suffit pas, il faut l'avoir fait, session après session, avec des documents datés. Une formation transmet la compétence de savoir quoi prouver ; produire ces preuves, session après session, reste votre travail après la formation. Si personne dans la structure n'a le temps ou la constance de le faire, la formation aura été un bon moment et le dossier sera vide au moment de l'audit.
 
-C'est le critère de choix le plus honnête que nous puissions donner : si vous savez que l'application ne suivra pas, ne payez pas une formation, le problème est ailleurs.
+C'est le critère de choix le plus concret que nous puissions donner : si vous savez que l'application ne suivra pas, une formation ne réglera pas le problème.
 
 ## Quand la formation est le bon choix
 

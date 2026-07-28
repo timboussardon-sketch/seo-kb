@@ -17,7 +17,7 @@ status: draft
 
 # Consultant Qualiopi indépendant ou cabinet : comment choisir
 
-Chez un consultant indépendant, celui qui vend est celui qui fait : la même personne vous suit du diagnostic à l'audit. Le cabinet répond à d'autres contraintes, avec une équipe, des process rodés et une capacité qu'une personne seule n'a pas. La différence se joue sur deux points : qui travaille réellement sur votre dossier, et ce qui se passe si cet interlocuteur change en cours de route.
+Entre un consultant indépendant et un cabinet d'accompagnement, la différence se joue sur deux points : qui travaille réellement sur votre dossier, et ce qui se passe si cet interlocuteur change en cours de route. Chez un indépendant, la même personne vous suit du diagnostic à l'audit : celui qui vend est celui qui fait. Un cabinet répond à d'autres contraintes, avec une équipe, des process rodés et une capacité qu'une personne seule n'a pas.
 
 FG Formation est un consultant indépendant : cette page est écrite depuis ce côté-là du marché, et elle le dit. Les cas où un cabinet est le meilleur choix existent, ils sont nommés plus bas.
 
@@ -25,7 +25,7 @@ FG Formation est un consultant indépendant : cette page est écrite depuis ce c
 
 Le référentiel est le même pour tout le monde, 7 critères et 32 indicateurs (annexe du décret n° 2019-565 du 6 juin 2019), et aucun texte ne réglemente les prestataires d'accompagnement : ni statut requis, ni agrément, ni annuaire officiel. Indépendant ou cabinet, personne n'est « habilité Qualiopi », et méfiez-vous de qui le laisserait entendre.
 
-La vraie différence est organisationnelle. Chez un indépendant, la personne du premier rendez-vous est celle qui lira vos preuves et vous préparera à l'audit. Dans un cabinet, la prestation peut être portée par plusieurs intervenants, avec une méthode commune et une continuité assurée par la structure plutôt que par une personne.
+La vraie différence est organisationnelle. Chez un indépendant, la personne du premier rendez-vous est celle qui lira vos preuves et vous préparera à l'audit. Dans un cabinet, la prestation peut être portée par plusieurs intervenants, avec une méthode commune et une continuité que porte la structure, pas une seule personne.
 
 ## Indépendant ou cabinet : la comparaison poste par poste
 
@@ -48,7 +48,7 @@ La limite est tout aussi claire : un agenda d'une seule personne. Un indépendan
 
 Un cabinet absorbe ce qu'un indépendant ne peut pas prendre : plusieurs établissements à préparer en parallèle, des volumes de sessions importants, des exigences de contractualisation d'entreprise (délégations, remplacement d'intervenant, engagement de moyens formalisé). La méthode est outillée, la continuité ne dépend pas d'une personne : si un intervenant part, la structure le remplace.
 
-Le point à vérifier n'est pas la qualité des cabinets en général, c'est l'organisation du vôtre : qui interviendra réellement sur votre dossier, et cette personne sera-t-elle encore là à l'audit de surveillance.
+Le point à vérifier porte sur l'organisation de votre cabinet en particulier, pas sur la réputation des cabinets en général : qui interviendra réellement sur votre dossier, et cette personne sera-t-elle encore là à l'audit de surveillance.
 
 ## Les questions à poser avant de signer, aux deux
 
@@ -60,7 +60,7 @@ Un prestataire sérieux, indépendant ou cabinet, répond à ces cinq questions 
 
 Le scénario douloureux, nous le connaissons par nos rendez-vous côté organismes : la personne qui portait la connaissance part, et « on repart de zéro ». Ce risque joue dans les deux camps. Côté client, quand le référent interne s'en va. Côté prestataire, quand l'intervenant qui connaissait votre dossier quitte le cabinet, ou quand l'indépendant devient indisponible.
 
-La parade n'est pas le choix du format, c'est la trace écrite : exigez, quel que soit le prestataire, que le travail laisse un dossier documenté et transmissible chez vous, pas dans la tête ou les outils du prestataire. Un accompagnement dont toute la connaissance repose sur une personne extérieure reproduit exactement la fragilité qu'il devait corriger.
+La parade tient à la trace écrite, pas au format choisi : exigez, quel que soit le prestataire, que le travail laisse un dossier documenté et transmissible chez vous, pas dans la tête ou les outils du prestataire. Un accompagnement dont toute la connaissance repose sur une personne extérieure reproduit exactement la fragilité qu'il devait corriger.
 
 ## Quand l'indépendant est le bon choix
 
