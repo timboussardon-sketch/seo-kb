@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+<title>Audit SEO, MYLEGITECH · organikk.co</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+:root{
+  --bg:#f5f5f7;
+  --card:#ffffff;
+  --ink:#1d1d1f;
+  --ink-2:#3a3a3c;
+  --muted:#6e6e73;
+  --muted-2:#8e8e93;
+  --line:rgba(0,0,0,.09);
+  --blue:#2559DD;
+  --blue-d:#1B3E8F;
+  --grad:linear-gradient(120deg,#1B3E8F 0%,#2559DD 52%,#5b86f5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{
+  font-family:'Geist',-apple-system,system-ui,sans-serif;
+  background:var(--bg); color:var(--ink);
+  -webkit-font-smoothing:antialiased; letter-spacing:-.011em; line-height:1.6;
+}
+.mono{font-family:'Geist Mono',ui-monospace,monospace}
+.wrap{max-width:840px; margin:0 auto; padding:60px 40px 90px}
+
+/* ── en-tête ── */
+.head{border-bottom:1px solid var(--line); padding-bottom:30px; margin-bottom:12px}
+h1{font-size:35px; line-height:1.14; font-weight:600; letter-spacing:-.035em; max-width:22ch;
+   background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+.head .sub{margin-top:16px; font-size:16px; color:var(--muted); max-width:64ch}
+.meta{margin-top:22px; font-size:13px; line-height:1.7; color:var(--muted)}
+.meta b{color:var(--ink-2); font-weight:600}
+
+/* ── sections ── */
+section{margin-top:44px}
+h2{font-size:24px; font-weight:600; letter-spacing:-.028em; color:var(--ink); margin-bottom:16px; line-height:1.2}
+h3{font-size:16px; font-weight:600; color:var(--ink); margin:24px 0 7px; letter-spacing:-.015em}
+p{font-size:15px; color:var(--ink-2); max-width:72ch}
+p + p{margin-top:12px}
+
+/* ── résumé ── */
+.resume{background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:26px 30px; box-shadow:0 12px 34px -22px rgba(12,26,70,.30)}
+.resume p{font-size:15.5px; color:var(--ink-2)}
+.resume p:first-child{font-weight:500; color:var(--ink)}
+
+/* ── stats ── */
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:22px; margin:22px 0 8px}
+.stat{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 18px}
+.stat .n{font-size:34px; font-weight:600; letter-spacing:-.04em; line-height:1; color:var(--blue); font-variant-numeric:tabular-nums}
+.stat .n small{font-size:19px}
+.stat .t{margin-top:9px; font-size:12.5px; line-height:1.45; color:var(--muted)}
+
+/* ── listes ── */
+ul.clean{list-style:none; margin-top:8px}
+ul.clean li{font-size:15px; color:var(--ink-2); padding:8px 0 8px 20px; position:relative; border-bottom:1px solid rgba(0,0,0,.05); max-width:74ch}
+ul.clean li:last-child{border-bottom:0}
+ul.clean li::before{content:''; position:absolute; left:2px; top:15px; width:5px; height:5px; border-radius:50%; background:var(--blue)}
+ul.clean li b{color:var(--ink); font-weight:600}
+code{font-family:'Geist Mono',monospace; font-size:.88em; color:var(--blue-d); background:#eef2fb; padding:1px 5px; border-radius:4px}
+
+/* ── tableau modèles ── */
+.tbl-wrap{margin-top:16px; border:1px solid var(--line); border-radius:12px; overflow:hidden}
+table{border-collapse:collapse; width:100%; font-size:13.5px; table-layout:fixed}
+thead th{background:#eef2fb; color:var(--blue-d); text-align:left; font-weight:600; font-size:12.5px;
+  padding:12px 13px; letter-spacing:-.01em; border-bottom:1px solid var(--line)}
+thead th:nth-child(1){width:23%}
+thead th:nth-child(2){width:20%}
+thead th:nth-child(3){width:13%}
+thead th:nth-child(4){width:22%}
+thead th:nth-child(5){width:22%}
+tbody td{padding:13px 13px; border-top:1px solid var(--line); color:var(--ink-2); vertical-align:top; line-height:1.45; word-wrap:break-word; overflow-wrap:break-word}
+tbody tr:nth-child(even){background:#fafafb}
+td.mdl{font-weight:600; color:var(--ink)}
+td .pat{font-family:'Geist Mono',monospace; font-size:11.5px; color:var(--blue-d)}
+.ok{color:#1a7f47; font-weight:600}
+.no{color:#b0341d; font-weight:600}
+.note-tbl{margin-top:14px; font-size:13px; color:var(--muted); max-width:74ch}
+
+/* ── roadmap ── */
+.phase{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 26px; margin-top:14px;
+  box-shadow:0 10px 30px -24px rgba(12,26,70,.28); display:grid; grid-template-columns:96px 1fr; gap:22px; align-items:start}
+.phase .ph-k{font-size:13.5px; font-weight:600; color:var(--blue); padding-top:2px}
+.phase .ph-t{font-size:16.5px; font-weight:600; letter-spacing:-.02em; margin-bottom:7px}
+.phase .ph-d{font-size:14px; color:var(--muted); line-height:1.55; max-width:64ch}
+.rhythm{margin-top:16px; font-size:13px; color:var(--muted); background:#eef2fb; border-radius:10px; padding:15px 18px; max-width:74ch}
+.rhythm b{color:var(--ink-2)}
+.anchor{margin-top:10px; font-size:12px; color:var(--muted-2)}
+
+/* ── à récupérer ── */
+.call-box{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px 28px}
+.foot{margin-top:52px; padding-top:22px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); line-height:1.7}
+
+@media(max-width:720px){
+  .wrap{padding:40px 20px 70px}
+  .stats{grid-template-columns:1fr 1fr; gap:14px}
+  .phase{grid-template-columns:1fr; gap:8px}
+  h1{font-size:28px}
+}
+@media print{
+  body{background:#fff}
+  .wrap{max-width:none; padding:0}
+  @page{size:A4; margin:15mm 14mm}
+  section{margin-top:26px}
+  .phase,.resume,.call-box{break-inside:avoid}
+  table{font-size:11px}
+  thead th{padding:8px 9px; font-size:11px}
+  tbody td{padding:9px 9px}
+  thead{display:table-header-group}
+  tbody tr{break-inside:avoid}
+  h1,.stat .n{background:none !important; -webkit-text-fill-color:initial !important}
+  h1{-webkit-background-clip:border-box !important; background-clip:border-box !important; color:#1B3E8F !important}
+  .stat .n{color:#2559DD !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <h1>MYLEGITECH : l'architecture par métier existe, la preuve produit n'y est pas</h1>
+    <p class="sub">Diagnostic, modèles de pages à produire et roadmap 90 jours, préparés avant l'échange à partir des seules pages publiques.</p>
+    <div class="meta">
+      Préparé par <b>Timothée Boussardon</b>, organikk.co<br />
+      Cible <b>mylegitech.com</b>, catégorie LegalTech et Contract Lifecycle Management (CLM)<br />
+      Relevé le <b>28/07/2026</b>, données 100 % publiques, Search Console à récupérer au call
+    </div>
+  </header>
+
+  <!-- EN RÉSUMÉ -->
+  <section>
+    <h2>En résumé</h2>
+    <div class="resume">
+      <p>MYLEGITECH a déjà construit ce que peu d'éditeurs CLM de cette taille ont construit : six pages par métier, neuf pages par secteur d'activité et sept pages par fonctionnalité, en plus d'une histoire propriétaire (naissance d'ImmoSign en 2018, rapprochement avec Seraphin.legal, capital ouvert à La Boite Immo et au Groupe Arche). C'est une architecture rare, déjà en ligne.</p>
+      <p>Deux angles restent ouverts. Les six pages métier partagent la même trame de bénéfices génériques, sans reprendre les cas déjà publiés sur le blog pour ces mêmes postes, et deux métiers cités dans le blog (contract manager, legal ops) n'ont pas de page dédiée comme les six autres. Les sept pages fonctionnalités, elles, sont entièrement en texte : aucune ne montre le produit en vidéo, alors qu'une chaîne YouTube MyLegiTech existe déjà, sans lien depuis le site.</p>
+      <p>L'ouverture est nette : approfondir chaque page métier avec la matière déjà publiée ailleurs sur le site, et prouver chaque fonctionnalité par une vidéo dédiée. On remplit les cases vides et on prouve ce qui est déjà écrit, on ne recommence pas à zéro.</p>
+    </div>
+  </section>
+
+  <!-- AUDIT -->
+  <section>
+    <h2>L'audit</h2>
+
+    <h3>Identité et modèle</h3>
+    <p>MYLEGITECH est une LegalTech spécialisée dans le Contract Lifecycle Management (CLM) : rédaction, négociation, signature électronique, envoi de recommandés électroniques, suivi et analyse des contrats par l'IA. La marque réunit deux histoires : ImmoSign, née en 2018 pour les professionnels de l'immobilier, et Seraphin.legal, spécialiste de la rédaction intelligente, rapprochées à partir de 2022 et unifiées sous MYLEGITECH. Le capital est ouvert à La Boite Immo et au Groupe Arche. Le point de conversion est l'essai gratuit du générateur de contrats ou la réservation d'une démonstration.</p>
+    <p>La data propriétaire mobilisable est réelle : une histoire fondatrice datée (2018 à 2023), un produit propre nommé (La ContraTECH), des livres blancs et audits téléchargeables (La FaciliTECH), des formations dédiées (MYLEGITECH Academy), et des témoignages métier déjà publiés sur le blog (paroles de juristes, contract managers, legal ops en entreprise).</p>
+
+    <h3>État SEO technique</h3>
+    <div class="stats">
+      <div class="stat"><div class="n">338</div><div class="t">URLs au sitemap : 301 articles de blog, 9 pages, 28 fiches glossaire</div></div>
+      <div class="stat"><div class="n">18<small> mois</small></div><div class="t">depuis le dernier article de blog réellement nouveau (04/02/2025)</div></div>
+      <div class="stat"><div class="n">22</div><div class="t">pages métier, secteur et fonctionnalité déjà en ligne, absentes du sitemap XML</div></div>
+      <div class="stat"><div class="n">0</div><div class="t">vidéo sur les 7 pages fonctionnalités vérifiées</div></div>
+    </div>
+    <ul class="clean">
+      <li><b>Une architecture décisionnelle déjà là.</b> 6 pages <code>/solutions/[métier]</code> (Directeur Juridique, DRH, DAF &amp; DGS, Directeur Commercial, Acheteur, Agent immobilier), 9 pages <code>/secteurs-d-activite/[secteur]</code> et 7 pages <code>/fonctionnalites/[fonction]</code>. Rare pour un éditeur de cette taille, et aucune de ces 22 pages ne figure dans <code>page-sitemap.xml</code>, qui ne référence que les 9 URLs institutionnelles (accueil, contact, mentions légales, CGU/CGS, démo, à propos).</li>
+      <li><b>Blog volumineux mais figé.</b> 301 articles cumulés sur deux fichiers sitemap, mais le dernier réellement nouveau date du 04/02/2025 (« MYLEGITECH éditeur leader en France des solutions de CLM »). Plusieurs dizaines d'anciens articles affichent une date de modification en novembre 2025, signe d'une republication technique plutôt que d'un nouveau contenu.</li>
+      <li><b>Pages métier au texte interchangeable.</b> La page Directeur Juridique relevée reprend la même trame de bénéfices CLM génériques (sécurisez, automatisez, accélérez, suivez…) que les 5 autres pages solutions, sans reprendre le vocabulaire ni les cas déjà publiés sur le blog pour ce métier précis.</li>
+      <li><b>Deux métiers présents dans le blog, absents des pages solutions.</b> Contract manager et legal ops apparaissent dans plusieurs articles (rôle du contract manager, idées reçues sur le legal ops, témoignage d'une legal ops chez Renault), mais n'ont pas de page <code>/solutions/</code> dédiée comme les 6 autres métiers.</li>
+      <li><b>Zéro preuve produit en vidéo.</b> Les 7 pages fonctionnalités (rédaction, automatisation, négociation, signature électronique, recommandé électronique, suivi, analyse IA) sont entièrement en texte. Une chaîne YouTube « MyLegiTech » existe, mais aucun lien vers elle n'a été trouvé sur la page d'accueil, le pied de page ou les pages fonctionnalités.</li>
+    </ul>
+
+    <h3>Le constat, reformulé en coût</h3>
+    <p>Chaque page fonctionnalité qui décrit le produit en texte seul, sans le montrer, laisse la démonstration se faire ailleurs, chez un concurrent qui filme son écran. Chaque métier identifié dans le blog mais sans page dédiée renvoie sa recherche vers une page pensée pour un autre poste, donc un peu moins pertinente au moment de choisir. Et une vingtaine de pages qui portent l'essentiel du modèle commercial restent hors du sitemap XML soumis à Google, un point technique qui limite leur découverte.</p>
+
+    <h3>L'angle défendable</h3>
+    <p>MYLEGITECH a déjà construit ce qu'un concurrent mettrait des mois à répliquer : une architecture par métier, par secteur et par fonctionnalité, plus une histoire propriétaire qu'aucune réponse générative ne peut raconter à sa place. Le terrain qui reste à occuper : approfondir chaque page métier avec la douleur réelle du poste plutôt qu'un pitch CLM interchangeable, et prouver chaque fonctionnalité en vidéo plutôt qu'en descriptif.</p>
+  </section>
+
+  <!-- MODÈLES DE PAGES -->
+  <section>
+    <h2>Les modèles de pages à produire</h2>
+    <p>On ne part pas d'une liste de mots-clés, on part de modèles de pages, avec une vérification de ce qui existe déjà sur le site. Le principe : un modèle, une variable, des dizaines de pages, et on ne produit que les cases vides. La colonne « déjà sur le site » est relevée dans le sitemap le 28/07 ; les requêtes déjà couvertes se confirment en Search Console au cadrage.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Modèle de page</th><th>Pattern d'URL</th><th>Intention</th><th>Déjà sur le site ?</th><th>Ce qui remplit la page</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mdl">Page métier manquante</td>
+            <td><span class="pat">/solutions/[métier]</span></td>
+            <td>Do · MoFu-BoFu</td>
+            <td><span class="no">Partiellement</span>. 6 métiers déjà couverts. Contract manager et legal ops absents malgré du contenu blog dédié.</td>
+            <td>Contenu déjà écrit à recycler : « rôle du contract manager », « idées reçues legal ops », témoignage d'une legal ops chez Renault.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Vidéo produit par fonctionnalité</td>
+            <td><span class="pat">vidéo YouTube + embed sur /fonctionnalites/[fonction]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Aucune</span>. 7 pages fonctionnalités 100 % texte. Chaîne YouTube MyLegiTech existante, non reliée au site.</td>
+            <td>Capture d'écran réelle du produit par fonctionnalité, pas un script marketing.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Approfondissement des pages métier existantes</td>
+            <td><span class="pat">même URL /solutions/[métier], contenu enrichi</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Générique</span>. Les 6 pages partagent la même trame de bénéfices CLM, sans le vocabulaire ni les cas propres à chaque métier.</td>
+            <td>Cas d'usage et témoignages déjà publiés sur LegiBLOG par métier (paroles de juristes, DRH, DAF).</td>
+          </tr>
+          <tr>
+            <td class="mdl">Comparatif « [outil] alternative »</td>
+            <td><span class="pat">/compare/[outil]-clm-alternative</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Aucune</span> page de comparaison trouvée dans le sitemap ni le menu.</td>
+            <td>Positionnement propriétaire (CLM accessible et no-code) face aux suites juridiques plus lourdes. Liste des outils comparés à confirmer au call.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Page d'intégration par outil</td>
+            <td><span class="pat">/product/integrations/[outil]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Une seule page</span> <code>/integrations/</code> généraliste. Aucune déclinaison par outil (SSO, ERP, CRM) trouvée.</td>
+            <td>La liste d'intégrations déjà citée sur les pages solutions, déclinée une page par outil.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-tbl">Les requêtes exactes (logiciel de gestion de contrats pour contract manager, signature électronique démonstration, MYLEGITECH vs [outil]) se figent au cadrage, Search Console en main, après avoir vérifié ce sur quoi le site ressort déjà. On ne cible jamais une requête que MYLEGITECH couvre déjà : on part des modèles et on remplit les vides. Aucun volume affiché, il se cale sur données au cadrage.</p>
+  </section>
+
+  <!-- ROADMAP -->
+  <section>
+    <h2>Roadmap 90 jours</h2>
+    <p>Calée sur la méthode Organikk en quatre phases. Trois mois pour poser la machine, trois de plus pour la pousser, puis l'agent SEO prend le relais.</p>
+
+    <div class="phase">
+      <div class="ph-k">Mois 1</div>
+      <div>
+        <div class="ph-t">Stratégie</div>
+        <p class="ph-d">Audit complet et connexion de la Search Console. On relève ce sur quoi le site ressort déjà, pour ne pas dupliquer les 6 pages métier existantes. Correction technique du sitemap XML : les 22 pages métier, secteur et fonctionnalité y entrent. Cadrage des deux premiers modèles : la page Contract Manager et la première vidéo fonctionnalité.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 2</div>
+      <div>
+        <div class="ph-t">Mise en production et agent SEO</div>
+        <p class="ph-d">Première page métier manquante (Contract Manager) en ligne, et première page fonctionnalité enrichie d'une vidéo produit. En parallèle, on construit l'agent SEO MYLEGITECH sur leur data (blog, témoignages, LegiBLOG) : c'est lui qui produira et surveillera ensuite.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 3</div>
+      <div>
+        <div class="ph-t">Mise en production et optimisation</div>
+        <p class="ph-d">Page Legal Ops et suite des vidéos fonctionnalités. On mesure en Search Console (indexation, positions, requêtes gagnées) et on optimise les 6 pages métier existantes avec le vocabulaire et les cas propres à chaque poste, plutôt que d'empiler. Fin du mois : on décide entre autonomie avec l'agent et prolongation.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 3 à 6</div>
+      <div>
+        <div class="ph-t">Optimisation, production et CRO</div>
+        <p class="ph-d">Le reste des vidéos fonctionnalités et des comparatifs est décliné, l'existant s'optimise, et on travaille le taux de conversion des pages : ce qui décide un visiteur à demander une démo ou un essai gratuit plutôt qu'à repartir.</p>
+      </div>
+    </div>
+
+    <p class="rhythm"><b>Rythme de production :</b> 10 à 15 pages par mois, soit 45 à 50 à trois mois. <b>Ce qu'on attend de MYLEGITECH :</b> sa data (témoignages métier déjà publiés, accès à la chaîne YouTube, description réelle du produit par fonctionnalité). C'est la seule chose sur laquelle on ne peut pas se substituer à l'équipe.</p>
+    <p class="anchor">Ancrage doctrine : méthode Organikk 4 piliers, data propriétaire, liens gagnés jamais achetés, mots-clés actionnels.</p>
+  </section>
+
+  <!-- À RÉCUPÉRER AU CALL -->
+  <section>
+    <h2>À récupérer au call</h2>
+    <div class="call-box">
+      <ul class="clean">
+        <li><b>Qui pilote le contenu aujourd'hui.</b> Agence ou équipe interne, comment sont produites les pages solutions, secteurs et fonctionnalités, et qui a la main sur le WordPress.</li>
+        <li><b>Accès Search Console.</b> Impressions par mois, position moyenne, requêtes qui ramènent déjà des demandes de démo, et surtout ce sur quoi le site ressort déjà, pour ne produire aucune page en doublon.</li>
+        <li><b>Le sitemap XML incomplet.</b> Confirmer si l'absence des pages métier, secteur et fonctionnalité du fichier soumis à Google est un choix ou un oubli du plugin SEO.</li>
+        <li><b>L'état réel de la chaîne YouTube MyLegiTech.</b> Dernière publication, contenu déjà tourné ou à produire.</li>
+        <li><b>Les outils auxquels leurs prospects les comparent</b> en vente, pour ordonner les comparatifs.</li>
+        <li><b>Ce qui frustre le plus</b> dans l'acquisition de démos aujourd'hui, depuis quand, et l'impact business si rien ne change.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot">
+    organikk.co, audit préparé à partir de données publiques le 28/07/2026.<br />
+    Volumes, positions et trafic à confirmer sur la Search Console. Aucun chiffre non sourcé n'est avancé dans ce document.
+  </div>
+
+</div>
+</body>
+</html>

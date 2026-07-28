@@ -78,15 +78,15 @@ La question ne se pose pas dans ces termes : le certificateur ne valide ni kit n
 
 ### Peut-on combiner kit et accompagnement ?
 
-Un accompagnement construit ses propres trames avec vous, à partir de vos formations réelles : le kit devient redondant sur ce point précis. Si vous avez déjà acheté un kit, un accompagnement peut partir de vos documents existants, sans les remplacer.
+Un accompagnement construit ses propres trames avec vous, à partir de vos formations réelles : le kit devient redondant sur ce point-là. Si vous avez déjà acheté un kit, un accompagnement peut très bien partir de vos documents existants, sans les remplacer.
 
 ### Existe-t-il des modèles de documents gratuits ?
 
-Le guide de lecture du référentiel, publié par le ministère du Travail, décrit gratuitement les éléments de preuve attendus pour chaque indicateur. Il explique ce que chaque indicateur attend, sans fournir de trames prêtes à remplir : c'est la source sur laquelle tout kit sérieux devrait s'appuyer.
+Le guide de lecture du référentiel, publié par le ministère du Travail, décrit gratuitement les preuves attendues pour chaque indicateur. Il explique ce qu'on attend de vous, sans vous fournir de trames prêtes à remplir : c'est la source sur laquelle tout kit sérieux devrait s'appuyer.
 
 ### Un kit couvre-t-il l'audit de surveillance ?
 
-Un kit est un achat ponctuel : la mise à jour du dossier pour la surveillance (entre le 14e et le 22e mois après la certification) reste à votre charge, avec ou sans nouvelles trames.
+Un kit, c'est un achat ponctuel : la mise à jour du dossier pour la surveillance (entre le 14e et le 22e mois après la certification) reste à votre charge, avec ou sans nouvelles trames.
 
 ---
 
