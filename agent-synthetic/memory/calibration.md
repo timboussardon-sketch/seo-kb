@@ -1465,3 +1465,22 @@ Quand une nouvelle étude apporte un raffinement conceptuel plutôt qu'un renver
 **Ce qui pourrait être mieux** : 3 brèves toutes Business SEO (variation pilier interne faible), corroboration B2 Perplexity thin (2 sources coordonnées sans historique consolidé — publié avec limites explicites mais règle dure explore borderline), pas de nouvelle mesure indépendante ni d'audit tiers sur les revendications vendor de la journée. Le doctrine_fit reste 3/5 : le lien agentic-search est correct mais le point d'accès agent MCP n'est pas encore une fiche doctrinale complète à référencer, seulement mentionné.
 
 **Ce qui aurait rendu meilleure** : (1) une mesure tierce indépendante du parc de serveurs MCP publiée aujourd'hui aurait fait passer novelty à 4 et doctrine_fit à 4, (2) une prise de parole officielle Perplexity chiffrée aurait résolu le uncertain de B2 en verified, (3) l'ajout d'un B3 dans un pilier autre que Business SEO (par exemple GEO ou Actualité SEO) aurait amélioré la diversité pilier.
+
+## Édition 2026-07-28-v2 (cloud après-midi) - pilier Actualité SEO - Google review snippet clause action manuelle 24 juillet 2026
+
+| Axe | Note | Détail |
+|---|---|---|
+| source_diversity | 9 | info du jour 3 (developers.google.com changelog + page canonique + SEL Barry Schwartz + SEJ) + B1 2 (Releasebot Perplexity + Campaign Middle East) + B2 2 (Optimixed daily recap + Optimixed article dédié) + B3 2 (Releasebot + Campaign Middle East) + contexte B2 1 (SE Roundtable Barry Schwartz page indexing) |
+| claim_density | 8 verified + 5 discarded loggés | 3 claims info du jour Google review snippet, 2 claims B1 Perplexity, 2 claims B2 GSC bug + context, 1 claim B3 Perplexity enterprise |
+| novelty_score | 3 | fait procédural documentation officielle Google 24 juillet non couvert précédemment, angle novel = clause action manuelle inscrite explicite + distinction périmètre schema.org Review vs Google Business Profile + implication perte rich result étoile agrégée |
+| doctrine_fit | 4 | 3 concepts articulés distinctement : e-e-a-t + quality-raters-guidelines (info du jour) + metriques-visibilite-geo + tabou-visibilite (B1) + agentic-search (B3) |
+| redite_risk | faible | sujet non couvert éditions précédentes, distinct info du jour du matin (RA MCP), distinct 07-27-v2 GEO Seer, distinct 07-27 morning Product-Led theStacc |
+| clickbait_risk | faible | titre factuel "Review snippet, Google ajoute la clause d action manuelle sur les avis incentives non declares" |
+
+**Note globale** : 3,6 / 5.
+
+**Ce qui marche** : pilier Actualité SEO respecte directive rotation (vs matin RA), sujet non redite, doctrine articulée sur 3 fiches distinctes (e-e-a-t, quality-raters-guidelines, agentic-search) avec proposition explicite de révision de metriques-visibilite-geo, corroboration primaire + secondaire (Google Search Central + SEL + SEJ), verbatim clauses cité textuellement, distinction périmètre (schema.org Review vs Google Business Profile) qui évite un amalgame fréquent dans la presse SEO. B1 corrobore Perplexity release notes primaire indirect par Campaign Middle East secondaire. B3 exploite la même release Perplexity mais sur un axe distinct (contrôles d'accès entreprise vs vérification citation utilisateur). Discipline anti-pattern IA propre : 7 em-dash structurels sur headings et Lien doctrine (pas intra-texte), 0 mot banni, 0 métaphore, vouvoiement maintenu.
+
+**Ce qui pourrait être mieux** : B2 mono-source Optimixed (reprise de Search Engine Roundtable, pas de source primaire directe consultée pour le bug du 27 juillet — Optimixed cite Barry Schwartz sans lien direct vers l'article SE Roundtable original). La règle dure explore est respectée puisque Optimixed n'est pas une source explore mais exploit (11 hits cumulés), mais l'idéal aurait été d'accéder à l'article SE Roundtable primaire. Deux brèves Perplexity (B1 + B3) sur la même release notes est une redondance limitée, mais les axes sont distincts (interface utilisateur vs contrôles entreprise) et documentés séparément dans les deux sources indépendantes.
+
+**Ce qui aurait rendu meilleure** : (1) l'accès direct à l'article SE Roundtable Barry Schwartz 27 juillet 2026 primaire pour le bug GSC robots.txt aurait renforcé B2, (2) une prise de parole John Mueller verbatim citée aurait donné doctrine_fit 4 sur B2, (3) une révision effective de la fiche `wiki/concepts/metriques-visibilite-geo.md` intégrant la 4e dimension (support de citation affiché par le moteur) aurait clos la boucle doctrine identifiée dans B1.

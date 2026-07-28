@@ -1,0 +1,66 @@
+---
+type: revue-presse
+title: Review snippet, Google ajoute la clause d'action manuelle sur les avis incentivés non déclarés
+date: 2026-07-28
+pilier: Actualité SEO
+edition: 2026-07-28-v2
+author: SyntheticBrain
+status: draft
+---
+
+# Review snippet, Google ajoute la clause d'action manuelle sur les avis incentivés non déclarés
+
+## Résumé
+
+- Google a publié le 24 juillet 2026 une modification du guide `Review snippet (Review, AggregateRating) structured data`, qui interdit désormais explicitement d'inclure des avis « faux ou incentivés non déclarés » dans le balisage, et rattache la violation à une action manuelle en Search Console.
+- La règle vise le balisage structuré (`schema.org/Review` et `AggregateRating`) publié sur le site de l'éditeur, distinct des avis Google Business Profile qui ont leur propre régime.
+- Perplexity a livré le 27 juillet 2026 deux fonctionnalités qui déplacent la vérification de citation dans l'interface utilisateur, `Check Sources` et `Source Context Panel`, ce qui crée un affichage natif comparable à ce que les outils GEO tiers instrumentent depuis l'extérieur.
+- Google Search Console présente depuis le 27 juillet 2026 un dysfonctionnement documenté de la fonction de demande d'indexation pour les fichiers `robots.txt`, confirmé par John Mueller sur certaines de ses propres propriétés.
+
+## Info du jour — Actualité SEO
+
+Google a modifié le 24 juillet 2026 la documentation officielle du review snippet dans le Search Central. L'entrée « Added a new review snippet guideline about fake and undisclosed incentivized reviews » figure dans le changelog `developers.google.com/search/updates` daté de ce jour ([Google Search Central Updates, 2026-07-24](https://developers.google.com/search/updates)). La page canonique `Review snippet (Review, AggregateRating) structured data` porte la même date de mise à jour et intègre la clause dans la section `Content guidelines for reviews` ([Google Search Central Docs, 2026-07-24](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)).
+
+Le texte ajouté est court et normatif. Verbatim, la nouvelle ligne dit : *« Don't include fake or undisclosed incentivized reviews on your page or in your structured data markup. »* Les exemples fournis par Google sur la même page sont explicites : d'une part les avis qui ne reposent pas sur une expérience réelle du produit ou du service, d'autre part les avis rédigés en échange d'un bénéfice (argent, remise, bon d'achat, produit gratuit) sans divulgation claire et visible de la contrepartie ([Google Search Central Docs, 2026-07-24](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)).
+
+Le point qui déplace le sujet dans le champ Actualité SEO est la clause d'enforcement inscrite sur la même page. Google rappelle en clair que la violation d'une des règles rattachées au review snippet peut déclencher une action manuelle : *« If your site violates one or more of these guidelines, then Google may take manual action against it. Once you have remedied the problem, you can submit your site for reconsideration. »* ([Google Search Central Docs, 2026-07-24](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)). L'action manuelle a pour effet la perte d'éligibilité au review snippet dans les résultats de recherche et dans les Knowledge Panels, ce qui retire l'étoile agrégée et le compteur d'avis à côté du lien organique.
+
+Le changement est ciblé et sa portée est délimitée. Le balisage concerné est le `schema.org/Review` et le `AggregateRating` publiés sur le site de l'éditeur, y compris quand le score agrégé provient d'un tiers agrégateur importé sur la page. Ce périmètre est distinct de celui des avis publiés dans un profil `Google Business Profile`, qui relèvent d'un régime séparé documenté ailleurs, avec ses propres interdictions de sollicitation et son propre système de signalement, sans passer par la Search Console ([Search Engine Land, 2026-07-24](https://searchengineland.com/google-says-dont-include-fake-or-undisclosed-incentivized-reviews-in-review-snippet-structured-data-483456)). La distinction compte pour un consultant qui audite les deux surfaces : la fiche du restaurant sur Google Maps et les étoiles rendues sous le lien organique du site du restaurant ne sont plus régies par le même texte quand l'incentivation est en cause.
+
+Ce que ce jour ne change pas. Le nouveau libellé ne définit pas un seuil quantitatif à partir duquel une action manuelle est engagée. Il ne précise ni la part d'avis incentivés tolérée sous divulgation, ni la fenêtre de récidive, ni le délai de traitement d'une demande de reconsidération. La reprise indépendante par Search Engine Journal note que la clause vient s'ajouter à trois autres motifs d'action manuelle déjà cités dans la même section, ce qui suggère que Google formalise un régime déjà appliqué au cas par cas plutôt qu'un durcissement soudain ([Search Engine Journal, 2026-07-24](https://www.searchenginejournal.com/google-expands-review-guidelines-and-warns-of-manual-actions/583674/)).
+
+**Lien doctrine** — La règle recoupe deux points cadrés dans le vault. D'abord [[concepts/e-e-a-t]], sur la dimension `Trustworthiness` : un avis publié en échange d'un bénéfice sans divulgation est un signal négatif direct sur la fiabilité du contenu qui l'affiche. Ensuite [[entities/quality-raters-guidelines]] : les Quality Rater Guidelines demandent depuis plusieurs éditions aux évaluateurs humains d'écarter les pages dont la réputation est construite artificiellement. Le nouveau texte du review snippet ajoute une conséquence procédurale à un principe qualitatif déjà énoncé côté évaluation humaine, sans en changer la définition. Le point neuf pour un consultant SEO est le point de sortie opérationnel : la perte d'un rich result et la perte d'une étoile agrégée sont désormais un risque adossé à une clause écrite, pas seulement à un jugement d'évaluateur.
+
+## Brèves
+
+### B1 — GEO. Perplexity intègre la vérification de citation dans l'interface utilisateur avec Check Sources et Source Context Panel
+
+Perplexity a publié le 27 juillet 2026 une note de version qui introduit deux fonctions destinées à rendre la vérification de citation visible dans le flux de réponse ([Releasebot Perplexity Release Notes, 2026-07-27](https://releasebot.io/updates/perplexity-ai)). La première, `Check Sources`, vérifie la correspondance entre les affirmations d'une réponse `Ask` ou `Computer` et les sources citées, et produit un résumé du niveau de support. La seconde, `Source Context Panel`, garde les citations et les sources d'appui à côté de la réponse, avec un affichage adapté à la comparaison inter-sources sans quitter la conversation ([Campaign Middle East AI platform updates July 2026, 2026-07-24](https://campaignme.com/ai-platform-updates-you-need-to-know-from-july-2026/)).
+
+Le fait est frais et documenté par la note de version primaire du moteur, avec une reprise indépendante. La description opérationnelle de `Check Sources` publiée par le fournisseur indique trois cas d'usage nommés : la relecture d'une synthèse de recherche avant partage, la vérification d'un énoncé médical, juridique ou financier vis-à-vis des sources citées, et la localisation au niveau du claim des points qui demandent un contrôle plus poussé ([Releasebot Perplexity Release Notes, 2026-07-27](https://releasebot.io/updates/perplexity-ai)).
+
+Le point utile pour un consultant GEO est ce que ces deux fonctions déplacent dans la mécanique de mesure. La qualité perçue d'une citation, jusqu'ici estimée en externe par des outils tiers qui interrogent les moteurs, devient une information affichée à l'utilisateur dans l'interface même. Un vendor GEO qui commercialise une note agrégée de « qualité de citation » se positionne désormais par rapport à un affichage natif du moteur, sur la même surface que la réponse. La conséquence pratique est double : d'une part, les pages fortement citées mais peu supportées par leur propre contenu peuvent être signalées à l'utilisateur au moment de la réponse ; d'autre part, la mesure indirecte publiée par des outils tiers doit préciser en quoi elle diffère de la vérification affichée en interface.
+
+**Lien doctrine** — [[concepts/metriques-visibilite-geo]] : les trois métriques historiques (Imp_wc, Imp_pos, Subjective Impression) ne capturent pas la profondeur du support de citation qu'un moteur peut désormais afficher lui-même. Le sujet mérite une revue de la fiche. [[concepts/tabou-visibilite]] : la « visibilité » agrégée dans un moteur cache le fait qu'un affichage de citation peut désormais être qualifié par le moteur lui-même. Mesurer les citations d'un client sans regarder le taux de support affiché par `Check Sources` reviendrait à ne mesurer qu'une partie du signal.
+
+### B2 — Actualité SEO. Google Search Console signale un dysfonctionnement de la demande d'indexation sur les fichiers robots.txt, John Mueller confirme
+
+Un dysfonctionnement de la fonction de demande d'indexation dans Google Search Console appliquée aux fichiers `robots.txt` a été signalé le 27 juillet 2026 par Jay Cooper sur Bluesky, avec un retour d'erreur cohérent sur plusieurs propriétés ([Optimixed Daily Search Forum Recap, 2026-07-27](https://www.optimixed.com/daily-search-forum-recap-july-27-2026/)). John Mueller de Google a répondu sur le même canal, en indiquant que certaines de ses propres propriétés reproduisent l'erreur alors que d'autres non ([Optimixed Google Request Indexing Issue With Robots.txt Files, 2026-07-27](https://www.optimixed.com/google-request-indexing-issue-with-robots-txt-files/)).
+
+Le point de contexte est que la Search Console est en situation de reporting sensible depuis plusieurs semaines. Le rapport `Page Indexing` a été rétabli le 3 juillet 2026 après un blocage de trois semaines, sans communiqué officiel de Google et avec un décalage résiduel de plusieurs jours dans les données rendues aux propriétaires ([Search Engine Roundtable Barry Schwartz, 2026-07-03](https://www.seroundtable.com/google-search-console-page-indexing-fixed-41623.html)). Le rapport du 27 juillet indique que la fonction n'a pas basculé en erreur globale, mais qu'elle échoue de manière conditionnée, ce qui est un motif de faux positif dans le suivi de l'indexation d'un fichier `robots.txt` récemment modifié.
+
+Ce que ce signalement change pour un consultant. Après modification d'un `robots.txt`, la vérification de prise en compte par Google via la Search Console reste utile mais son résultat immédiat peut être trompeur quand la fonction échoue silencieusement. Le contrôle par lecture du fichier avec un `User-Agent: Googlebot` déclaré et par observation du comportement de crawl côté serveur reste la voie fiable, tant que la fonction n'a pas été confirmée rétablie sur les propriétés concernées.
+
+### B3 — Business SEO. Perplexity ajoute des contrôles d'accès entreprise (SCIM, rôles personnalisés) et Claude Opus 5 dans Search et Computer
+
+La même note de version Perplexity du 27 juillet 2026 documente une deuxième couche d'ajouts orientée vers les décideurs achat en entreprise ([Releasebot Perplexity Release Notes, 2026-07-27](https://releasebot.io/updates/perplexity-ai)). Les administrateurs des organisations Enterprise peuvent désormais créer des rôles personnalisés avec permissions granulaires, synchroniser des groupes depuis un fournisseur d'identité via SCIM, et fixer des plafonds d'usage de crédits par groupe. Ces fonctions sont réservées aux organisations Enterprise sous contrat annuel commercial. Deux autres ajouts sont notables : des identifiants d'API personnalisés pour l'authentification tierce, et l'accès à `Claude Opus 5` dans Search et dans Computer, avec des `Agent API Skills` composables ([Campaign Middle East, 2026-07-24](https://campaignme.com/ai-platform-updates-you-need-to-know-from-july-2026/)).
+
+Le point utile pour un responsable SEO/GEO en entreprise est le passage d'un moteur grand public à un outil intégrable dans une gestion d'accès existante. Le contrôle d'accès basé sur les rôles avec SCIM aligne le moteur sur la même mécanique que celle des SaaS d'entreprise déjà en place (Okta, Azure AD, Google Workspace), ce qui simplifie l'inscription au budget IT d'un abonnement collectif et la traçabilité par utilisateur.
+
+Les réserves à retenir. La note de version ne publie ni prix ni volumes d'utilisateurs sous contrat annuel, ni la répartition par vertical ou par géographie. Elle n'indique pas non plus le seuil à partir duquel les contrôles SCIM et RBAC deviennent effectifs. Le fournisseur communique une capacité, pas une adoption. À traiter comme une évolution du positionnement produit, pas comme une mesure de pénétration en entreprise.
+
+**Lien doctrine** — [[concepts/agentic-search]] : les moteurs génératifs qui poussent leurs contrôles d'accès vers les standards d'identité d'entreprise (SCIM, RBAC, API keys) sortent du champ de la mesure de citation publique. Un moteur utilisé sous authentification interne d'entreprise devient un canal de recherche qui n'est plus mesurable par une visite de scan externe. Ce point rejoint la limite pratique déjà notée pour Perplexity `Space` et les autres runtimes agent authentifiés.
+
+---
+
+Draft SyntheticBrain. Rien n'a été envoyé.
