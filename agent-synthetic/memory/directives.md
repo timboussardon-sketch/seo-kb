@@ -3244,3 +3244,22 @@ Pas encore d'historique. Première édition à produire sans biais de boucle. Ob
 - **Note pilier prochaine info du jour** : viser **GEO** (l'écart depuis 07-27-v2 commence à peser, 5 jours) ou **Product-Led SEO** (5 jours depuis 07-27 morning) avec fait franchement neuf. **Recherche agentique** possible si fait vraiment nouveau (au-delà du MCP déjà couvert 3 fois cette semaine). NE PAS enchainer 3e Actualité SEO consécutif. **Niche SEO** possible sur cas concret publié.
 
 - **Boucle doctrine à surveiller** : proposition explicite dans B1 de réviser `wiki/concepts/metriques-visibilite-geo.md` pour intégrer une 4e dimension « support de citation affiché par le moteur » (post-Perplexity Check Sources). À valider en revue hebdo vendredi 2026-07-31 ; pas de modification unilatérale, question posée pour Tim dans `memory/questions.md` si besoin (mais ici la révision est signalée dans la note du run, suffisant sans doublon question).
+
+## 2026-07-30 — Directive pour la prochaine édition
+
+**Pilier à viser**: Niche SEO ou Recherche agentique avec fait franchement neuf. **NE PAS re-enchaîner** Business SEO (info jour 07-29) ni GEO (2 brèves 07-29 sur 3). **NE PAS re-enchaîner** Actualité SEO plus d'une brève (déjà info jour 07-28-v2 et B1 07-29).
+
+**Sujets sous non-redite tenues** (ne pas rouvrir sans conditions ci-après):
+- Perplexity Personal Computer Windows lancement — sauf chiffre inscription liste attente, mesure adoption post-lancement, ouverture grand public
+- Google testing related searches browsing history — sauf généralisation officielle Google, mesure CTR impact tiers, enterrement du test
+- WebSearchAPI referral report Cloudflare Radar — sauf reproduction méthodologie analyste tiers non-vendeur, publication update fenêtre suivante avec direction confirmée
+- Chemist Warehouse 220 pct AIO trimestre — sauf case study reproduit 2e retailer nommé même pattern, framework mention-citation-conversion publié audit tiers, chiffre CA attribué
+
+**Prédictions échues à surveiller pour résolution**:
+- P-2026-07-28-2 (Reddit T2 chiffre licence data IA >39M USD publié 30 juillet, échéance 31 juillet 2026)
+- P-2026-07-28-v2-4 (GSC robots.txt bug résolu communiqué officiel Google avant 31 août 2026)
+- P-2026-07-28-3 (Reddit position renouvellement contrat Google publiée avant 31 août 2026)
+
+**Watchlists rappels**:
+- MCP 400M SDK downloads (Anthropic 28 juillet) — a mentionner uniquement si mutation neuve (audit tiers, incident, milestone quantifié différent)
+- Cognizant expansion partnership Anthropic (27 juillet) — a mentionner uniquement si annonce client nommé secteur régulé chiffré

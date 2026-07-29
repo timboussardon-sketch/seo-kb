@@ -1484,3 +1484,29 @@ Quand une nouvelle étude apporte un raffinement conceptuel plutôt qu'un renver
 **Ce qui pourrait être mieux** : B2 mono-source Optimixed (reprise de Search Engine Roundtable, pas de source primaire directe consultée pour le bug du 27 juillet — Optimixed cite Barry Schwartz sans lien direct vers l'article SE Roundtable original). La règle dure explore est respectée puisque Optimixed n'est pas une source explore mais exploit (11 hits cumulés), mais l'idéal aurait été d'accéder à l'article SE Roundtable primaire. Deux brèves Perplexity (B1 + B3) sur la même release notes est une redondance limitée, mais les axes sont distincts (interface utilisateur vs contrôles entreprise) et documentés séparément dans les deux sources indépendantes.
 
 **Ce qui aurait rendu meilleure** : (1) l'accès direct à l'article SE Roundtable Barry Schwartz 27 juillet 2026 primaire pour le bug GSC robots.txt aurait renforcé B2, (2) une prise de parole John Mueller verbatim citée aurait donné doctrine_fit 4 sur B2, (3) une révision effective de la fiche `wiki/concepts/metriques-visibilite-geo.md` intégrant la 4e dimension (support de citation affiché par le moteur) aurait clos la boucle doctrine identifiée dans B1.
+
+## 2026-07-29 (cloud matin, pilier Business SEO)
+
+Édition: `2026-07-29-revue-presse` — Info du jour Perplexity Personal Computer Windows lancement 28 juillet 2026 pour abonnés Max et Enterprise Max à 200 USD/mois via liste d'attente.
+
+| Axe | Mesure |
+|---|---|
+| `source_diversity` | 9 (info du jour 3 + B1 2 + B2 1 + B3 1 + entités transverses 2) |
+| `claim_density` | 14 verified + 1 uncertain (chiffre 1.4B TechTimes vs 1B+ SiliconANGLE / Perplexity primaire) |
+| `novelty_score` | 3 (portage Windows fait jour-J non couvert + WebSearchAPI mesure fresh + Chemist Warehouse case fresh niche AU) |
+| `doctrine_fit` | 4 (4 concepts articulés distinctement: agentic-search + data-proprietaire + metriques-visibilite-geo + tabou-visibilite) |
+| `redite_risk` | faible (Perplexity release notes 27 juillet couvert 07-28-v2 mais Personal Computer Windows launch 28 juillet est fait distinct non couvert) |
+| `clickbait_risk` | faible |
+| **Note globale** | **3.5/5** |
+
+Pilier rotation respectée vs 07-28 RA morning MCP + 07-28-v2 Actualité SEO review snippet + 07-27-v2 GEO Seer + 07-27 PLS theStacc. Business SEO couvert dernière fois 07-24-v2 (publisher exit) donc distinct. Interdiction mono-Google respectée (pas de Google core/algo update en info du jour).
+
+Discipline anti-pattern IA: 0 mot banni intra-texte (grep=0 sur crucial pivotal groundbreaking comprehensive paysage explorons révolutionnaire majeur incontournable synergie leverage disrupter décrypter il est important dans un monde game-changer innovant robuste landscape vibrant nestled renowned), 0 métaphore résiduelle (rail rails carburant fusée boussole vague tsunami bataille passer-a-la-caisse ouvrir-la-voie grep=0), 0 tiret cadratim intra-texte (3 em-dash structurels sur `Lien doctrine —` sections uniquement, aucun intra-prose), vouvoiement maintenu, 0 emoji, 0 personnification abusive (Perplexity a publié, Google teste, Bennett a mesuré, Chemist Warehouse enregistre, Sophie Miura indique: verbes littéraux).
+
+Corroboration: info du jour portée par 3 sources indépendantes du 28 juillet 2026 (SiliconANGLE + TechTimes + CryptoBriefing) toutes primaires ou secondaires spécialisées. B1 par 2 sources indépendantes (SE Roundtable + Optimixed reprise). B2 mono-analyste WebSearchAPI.ai flag explicit (analyse Bennett exploite endpoints Cloudflare Radar primaire). B3 mono-source PPC Land Luis Rijo 28 juillet avec verbatim explicite Sophie Miura + limite explicit dans le corps.
+
+Règle dure explore respectée: siliconangle.com (nouvelle explore, trust 0.7) utilisée comme corroboration primaire mais claim porté par 3 sources indépendantes le même jour (dont TechTimes trust 0.65 et CryptoBriefing trust 0.55). Aucune source explore utilisée seule pour publier un claim.
+
+Prochaine édition: viser **Niche SEO** ou **Recherche agentique** avec fait franchement neuf. NE PAS re-enchaîner Business SEO ni GEO. NE PAS re-traiter Perplexity Personal Computer Windows sans (1) chiffre inscription liste attente publié, (2) mesure adoption post-lancement, (3) ouverture grand public. NE PAS re-traiter Google related searches browsing history sans (1) généralisation officielle Google, (2) mesure CTR impact tiers, (3) enterrement du test. NE PAS re-traiter WebSearchAPI referral report sans (1) reproduction méthodologie autre analyste tiers non-vendeur, (2) publication update fenêtre suivante avec direction confirmée. NE PAS re-traiter Chemist Warehouse sans (1) case study reproduit 2e retailer nommé même pattern, (2) framework mention-citation-conversion publié audit tiers, (3) chiffre CA attribué AI Overviews Chemist Warehouse.
+
+Pattern réutilisable: sur un portage cross-plateforme d'un agent IA propriétaire, l'angle éditorial tient quand (a) 3 sources indépendantes couvrent le même jour, (b) l'architecture technique est documentée (cloud reasoning vs local execution, permission-based UI), (c) le positionnement commercial est explicité (pricing enterprise-first, TAM extension, positionnement vs incumbent), (d) 3 limites documentaires sont publiées en tête (pas de chiffre inscription, pas de comparaison adoption pré/post, pas de comparaison de taux de complétion avec le concurrent natif), (e) doctrine reliée est distincte (agentic-search + data-proprietaire canal authentifié observabilité limitée au contrat).
