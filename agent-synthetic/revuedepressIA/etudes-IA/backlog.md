@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-07-29 · Core Web Vitals et citations IA 2025-2026 : FCP <0,4s = 3,2× plus de citations ChatGPT (SE Ranking, 129K domaines), LCP corrélation Spearman −0,12 à −0,18 pour Google AIO (Dan Taylor, 107K pages), 56,8 % des domaines cités passent les CWV vs 40 % web moyen — réconciliation des 3 études (3 objets distincts), confound autorité-vitesse (5× vs 3,2×), paradoxe INP → `2026-07-29-stats-core-web-vitals-citations-ia.md`
 - 2026-07-28 · Wikipedia dans les citations IA 2025-2026 : #2 domaine global (Semrush, 26,3 %), #1 sur ChatGPT (Profound, 7,8 %) et sur les 3 moteurs en mention share (Ahrefs : ChatGPT 16,3 % / Perplexity 12,5 % / AIO 8,4 %), multiplicateur entraînement→runtime ×2,6–2,8, −8 % trafic humain Wikimedia, 88 Md vues bot 2025, Britannica #49 vs Wikipedia #2 → `2026-07-28-stats-wikipedia-citations-ia-memorisation-vs-retrieval.md`
 - 2026-07-27 · Newsletters et citations IA 2025-2026 : 0,07 % des réponses pour Substack, 213 newsletters citées sur 2M+ de publications, paradoxe abonnés/citations (800K abonnés < 40K avec archive ouverte), réconciliation Britopian (0,07 %) vs Everything-PR (213 newsletters en B2B) → `2026-07-27-stats-substack-newsletters-citations-ia.md`
 - 2026-07-25 · Podcasts et citations IA 2025-2026 : concentration extrême (30 émissions sur 4,5M), paradoxe du jardin clos Apple/Spotify, entonnoir 0,0077 % des actifs cités régulièrement, réconciliation Edison/Triton → `2026-07-25-stats-podcasts-citations-ia-transcriptions.md`
@@ -45,7 +46,7 @@
 
 ## À faire (par priorité)
 
-1. **Core Web Vitals et vitesse de page des sources citées par les IA 2025-2026** — les pages citées par les moteurs génératifs sont-elles techniquement plus rapides ? Corrélation LCP/CLS/INP avec la probabilité de citation sur Perplexity, ChatGPT Search, Google AIO ; benchmark SE Ranking (FCP 3× déjà cité dans l'étude du 2026-06-30) à approfondir avec un dataset dédié performance × citation ; position de Google sur "la vitesse n'est pas un facteur de ranking IA" vs signaux expérimentaux. Angle : distinguer l'effet vitesse (signal technique) de l'effet autorité (DA corrélé à la vitesse sur les grands domaines) — la corrélation est-elle une illusion ?
+(vide)
 
 ## Sujets écartés (avec raison)
 (vide)
