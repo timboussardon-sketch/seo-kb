@@ -46,7 +46,11 @@
 
 ## À faire (par priorité)
 
-(vide)
+1. **Secteurs verticaux et citations IA : santé, finance, voyage, e-commerce, tech (2025-2026)** — Quels secteurs concentrent le plus de citations dans les moteurs génératifs ? Benchmarks par vertical, par moteur (ChatGPT, Perplexity, Google AIO, Claude) et par type de requête. Transformation originale : réconciliation du taux de déclenchement par secteur (% de requêtes qui génèrent une citation) vs part absolue des citations (volume). Sources cibles : Ahrefs Brand Radar vertical breakdown, SE Ranking secteur, Profound vertical data, SparkToro query-type analysis, BrightEdge vertical benchmarks.
+
+2. **Domaines institutionnels (.edu, .gov, .org) dans les citations IA : autorité perçue vs poids réel (2025-2026)** — La part des TLD institutionnels dans les réponses génératrices vs leur poids réel sur le web (W3Techs : ~3 % .gov+.edu+.org du web total). Sur-représentation quantifiée par moteur. Transformation originale : tableau croisé TLD × moteur × type de requête (factuelle vs opinion vs commerciale) pour dépasser la mesure globale. Sources cibles : Profound TLD breakdown (déjà vérifié : .com 80,41 %), Ahrefs AIO top-10, SE Ranking SHAP par TLD, Digital Applied study.
+
+3. **Accords de licensing de données IA et impact mesurable sur les citations des éditeurs partenaires (2024-2026)** — Reddit ($203M Google, $60M OpenAI), Associated Press (OpenAI), Axel Springer ($100M+), News Corp ($250M+), Financial Times, Le Monde, Condé Nast, Dotdash Meredith. Les partenaires sont-ils davantage cités que les non-partenaires à DA équivalent ? Transformation originale : tableau deals signés (montant, date, contrepartie) × évolution des citations mesurée avant/après par les études disponibles (Profound, Ahrefs, SE Ranking). Contre-analyse : Perplexity Media Program (§16) n'a montré aucun biais, mais Reddit chute de 46 % à 16 % après licences. Sources cibles : rapports annuels éditeurs, presse spécialisée (Nieman Lab, Press Gazette, Digiday), études Ahrefs Brand Radar chronologiques.
 
 ## Sujets écartés (avec raison)
 (vide)
