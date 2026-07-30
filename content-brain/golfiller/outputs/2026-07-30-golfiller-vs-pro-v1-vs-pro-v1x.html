@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titleist Pro V1 ou Pro V1x : prototype Golfiller</title>
+<style>
+body{margin:0;background:#f6f5f1;padding:40px 16px 80px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.proto-flag{max-width:760px;margin:0 auto 24px;background:#111;color:#F5E137;font-size:13px;padding:10px 16px;border-radius:6px}
+
+.gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-size:17px;line-height:1.7}
+.gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 6px;color:var(--gf-ink)}
+.gf-article .gf-eyebrow{font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--gf-accent);font-weight:700;margin-bottom:10px}
+.gf-article .gf-meta{font-size:13px;color:var(--gf-muted);margin-bottom:22px}
+.gf-article h2{font-size:clamp(21px,3vw,27px);line-height:1.25;letter-spacing:-.01em;margin:44px 0 14px;color:var(--gf-ink)}
+.gf-article h3{font-size:19px;line-height:1.3;margin:28px 0 6px;color:var(--gf-ink)}
+.gf-article p{margin:0 0 16px}
+.gf-article a{color:var(--gf-accent);text-decoration:none;border-bottom:1px solid rgba(16,132,116,.3)}
+.gf-article a:hover{border-bottom-color:var(--gf-accent)}
+.gf-article .gf-lead{font-size:19px;color:var(--gf-ink)}
+.gf-article .gf-transparence{background:var(--gf-soft);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--gf-muted);margin:0 0 22px}
+.gf-article ul{margin:0 0 16px;padding-left:0;list-style:none}
+.gf-article ul li{position:relative;padding-left:22px;margin-bottom:10px}
+.gf-article ul li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--gf-accent)}
+.gf-article .gf-table-wrap{overflow-x:auto;margin:0 0 20px}
+.gf-article table{width:100%;border-collapse:collapse;font-size:15px}
+.gf-article thead th{background:#5BD8C0;text-align:left;font-weight:700;color:#13241d;padding:11px 14px;border-bottom:2px solid var(--gf-line);white-space:nowrap}
+.gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
+.gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
+.gf-article tbody tr:nth-child(even){background:#fafcfb}
+
+.gf-article .gf-quote{background:#fff;border:1px solid var(--gf-line);border-radius:10px;padding:16px 18px;margin:0 0 14px}
+.gf-article .gf-quote-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.gf-article .gf-quote-avatar{width:30px;height:30px;border-radius:50%;background:var(--gf-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
+.gf-article .gf-quote-meta{font-size:13px;color:var(--gf-muted)}
+.gf-article .gf-quote-meta b{color:var(--gf-ink)}
+.gf-article .gf-quote-text{font-size:14.5px;color:var(--gf-ink);line-height:1.6;margin:0 0 8px}
+.gf-article .gf-quote-foot{font-size:12.5px;color:var(--gf-muted)}
+.gf-article .gf-quote-foot a{border-bottom:1px solid rgba(16,132,116,.3)}
+
+.gf-article .choice-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 14px}
+@media (max-width:600px){.gf-article .choice-cards{grid-template-columns:1fr}}
+.gf-article .choice-card{background:#fff;border:1px solid var(--gf-line);border-radius:10px;padding:18px}
+.gf-article .choice-card .cc-need{font-size:12.5px;color:var(--gf-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.gf-article .choice-card .cc-tool{font-size:22px;font-style:italic;font-weight:600;margin-bottom:10px}
+.gf-article .choice-card .cc-facts{font-size:13.5px;color:var(--gf-muted)}
+.gf-article .choice-card .cc-facts div{padding:5px 0;border-top:1px solid var(--gf-line)}
+.gf-article .choice-dark{background:var(--gf-ink);color:#fff;border-radius:10px;padding:18px;margin:0 0 20px}
+.gf-article .choice-dark .cc-need{color:#9fb8ae;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.gf-article .choice-dark .cc-tool{font-size:20px;font-style:italic}
+
+.gf-article .gf-cta{display:inline-block;margin:6px 0 8px;background:var(--gf-accent);color:#fff;padding:12px 22px;border-radius:10px;font-weight:600;border:0}
+.gf-article .gf-cta:hover{background:#0c6a5d}
+
+.gf-article .gf-faq{border-top:1px solid var(--gf-line)}
+.gf-article .gf-faq details[open] summary .gf-ico{transform:rotate(45deg)}
+.gf-article .gf-faq summary::-webkit-details-marker{display:none!important}
+.gf-article .gf-faq summary::marker{content:""!important}
+.gf-article .gf-faq .gf-a li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--gf-accent)}
+
+.gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
+.gf-article .gf-sources h2{font-size:18px;margin:0 0 10px}
+.gf-article .gf-sources li::before{background:var(--gf-muted)}
+.gf-article .gf-verif-note{font-size:12.5px;color:#a08a3a;background:#fbf6e6;border-radius:8px;padding:10px 12px;margin:0 0 16px}
+</style>
+</head>
+<body>
+
+<div class="proto-flag">PROTOTYPE LOCAL, structure et contenu à valider avant intégration Shopify (template gf-article).</div>
+
+<article class="gf-article">
+  <span class="gf-eyebrow">Comparatif · balles de golf</span>
+  <h1>Titleist Pro V1 ou Pro V1x : quelle balle choisir ?</h1>
+  <div class="gf-meta">Données vérifiées le 30 juillet 2026 · lecture 6 min</div>
+
+  <p class="gf-lead">La Pro V1 et la Pro V1x sortent de la même gamme Titleist et visent le même joueur assidu, mais pas le même vol de balle. La V1 part plus bas et roule davantage sur le green ; la V1x monte plus haut et spinne plus. La compression, que Titleist ne publie pas, est mesurée indépendamment par un laboratoire spécialisé : c'est elle qui explique l'écart de sensation au driver.</p>
+
+  <div class="gf-transparence">Cette page est publiée par Golfiller, revendeur de balles de golf reconditionnées, y compris des deux modèles comparés ici. La grille de critères est identique pour les deux balles, et les données viennent de fiches constructeur ou de mesures indépendantes, jamais d'une estimation interne.</div>
+
+  <h2>Pro V1 x Pro V1x</h2>
+  <p>Les deux balles partagent la même construction générale (multicouche à couverture uréthane) et le même public : joueurs à l'index bas ou intermédiaire qui veulent une balle de tour. La différence tient à la trajectoire recherchée. La Pro V1 atteint son apogée plus tôt et roule davantage à l'atterrissage : elle convient à un jeu qui cherche la régularité et le contrôle en direction. La Pro V1x atteint un apogée plus tardif et plus haut, avec plus de spin : elle convient à un swing rapide qui veut de la hauteur et de l'arrêt sur les approches longues. Pour situer ces deux balles face au reste du catalogue, ou en comparer d'autres librement, voir le <a href="2026-07-30-golfiller-comparateur-balles.html">comparateur général</a>.</p>
+
+  <h2>Construction et compression</h2>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr><th>Critère</th><th>Pro V1</th><th>Pro V1x</th></tr></thead>
+      <tbody>
+        <tr><td>Construction</td><td>Multicouche, couverture uréthane</td><td>Multicouche, couverture uréthane</td></tr>
+        <tr><td>Compression mesurée</td><td>92,5</td><td>98,7 à 102,0 selon l'échantillon</td></tr>
+        <tr><td>Compression publiée par Titleist</td><td>Non</td><td>Non</td></tr>
+        <tr><td>Trajectoire</td><td>Apogée plus tôt, plus basse</td><td>Apogée plus tard, plus haute</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source-note" style="font-size:13px;color:var(--gf-muted)">Compression mesurée par MyGolfSpy Ball Lab (test 2025), un laboratoire indépendant qui teste chaque modèle sur un échantillon de 36 balles. Titleist ne communique pas ce chiffre pour ses balles de tour.</p>
+
+  <h2>Swing, usage et prix</h2>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr><th>Critère</th><th>Pro V1</th><th>Pro V1x</th></tr></thead>
+      <tbody>
+        <tr><td>Swing recommandé</td><td>Rapide</td><td>Très rapide</td></tr>
+        <tr><td>Recherché pour</td><td>Contrôle, régularité, roule maîtrisée</td><td>Hauteur, spin, arrêt sur les approches</td></tr>
+        <tr><td>Prix occasion Golfiller</td><td>Jusqu'à -60 % vs neuf</td><td>Voir fiche produit</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Titleist Pro V1</h3>
+  <p>La balle la plus vendue du circuit professionnel, jouée par une majorité du top mondial. Sa compression mesurée de 92,5 la classe parmi les balles de tour les plus fermes, mais son atout reste la régularité : plusieurs golfeurs qui jouent les deux modèles rapportent une distance quasi identique au driver, avec un jeu plus prévisible en direction sur la Pro V1.</p>
+
+  <h3>Titleist Pro V1x</h3>
+  <p>La version sœur, plus ferme (98,7 à 102,0 de compression mesurée), pensée pour un vol plus haut et plus de spin. Elle demande une vitesse de swing plus élevée pour exprimer sa compression : en dessous, elle reste dure sans apporter le bénéfice recherché. Le revers du spin élevé revient dans plusieurs retours de joueurs : sur les wedges et petits fers, elle peut reculer plus que voulu sur un green réceptif.</p>
+
+  <h2>Ce qu'en disent les golfeurs</h2>
+  <p>Cinq retours réels tirés d'un même fil de discussion GolfWRX consacré à ce duel, ouvert en février 2023. Sélection équilibrée, traduite de l'anglais.</p>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">S</span><span class="gf-quote-meta"><b>SUITS</b> · GolfWRX, forum Golf Balls · 1er février 2023</span></div>
+    <p class="gf-quote-text">« Je ne dois sûrement pas être le seul, mais j'ai vraiment du mal à sentir la différence entre la V1 et la V1x la plupart du temps. Elles se sentent différemment au contact du club, ça c'est sûr. Quand je les frappe bien au driver, elles finissent à moins de 5 mètres l'une de l'autre. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1918608-outside-of-firmness-i-cannot-separate-v1-from-v1x/#findComment-24611083" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">J</span><span class="gf-quote-meta"><b>Jeff58</b> · GolfWRX, forum Golf Balls · 1er février 2023</span></div>
+    <p class="gf-quote-text">« La différence principale recherchée, c'est la trajectoire. La V1 atteint son apogée plus tôt, typiquement avec un maximum plus bas, et roule davantage à cause d'un angle de descente plus faible. La X atteint son maximum plus tard, et souvent plus haut. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1918608-outside-of-firmness-i-cannot-separate-v1-from-v1x/#findComment-24611559" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">A</span><span class="gf-quote-meta"><b>Abh159</b> · GolfWRX, forum Golf Balls · 1er février 2023</span></div>
+    <p class="gf-quote-text">« Côté distance totale, elles sont similaires pour moi aussi, mais la X part clairement plus haut. Là où je remarque la plus grosse différence, c'est sur les wedges et petits fers : je ne joue pas la X parce qu'il n'est pas rare qu'un fer 9 revienne en arrière du green tellement elle spinne. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1918608-outside-of-firmness-i-cannot-separate-v1-from-v1x/#findComment-24612517" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">R</span><span class="gf-quote-meta"><b>ReidE5</b> · GolfWRX, forum Golf Balls · 1er février 2023</span></div>
+    <p class="gf-quote-text">« J'avais toujours écarté la V1x parce qu'elle me semblait trop ferme. J'ai réalisé que même la balle la plus ferme se sent douce quand on trouve le centre de la face. J'ai besoin de la hauteur et du spin supplémentaires de la V1x, donc je reste sur ce style de balle. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1918608-outside-of-firmness-i-cannot-separate-v1-from-v1x/#findComment-24611440" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">P</span><span class="gf-quote-meta"><b>philly2kuk</b> · GolfWRX, forum Golf Balls · 1er février 2023</span></div>
+    <p class="gf-quote-text">« Pour moi, la V1x spinne plus sur tous les coups. Je frappe la V1 plus droit et de façon plus régulière. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1918608-outside-of-firmness-i-cannot-separate-v1-from-v1x/#findComment-24611619" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <p class="gf-verif-note">Note de méthode : ces cinq citations viennent d'un unique fil GolfWRX, récupéré et vérifié mot pour mot (pseudo, date, texte) avant traduction. Aucune citation Reddit n'a pu être vérifiée sur ce duel dans cette session (accès Reddit bloqué côté recherche) : la page s'appuie donc uniquement sur GolfWRX, un forum matériel golf de référence.</p>
+
+  <h2>Ce que montrent les données</h2>
+  <ul>
+    <li>La compression mesurée de la Pro V1 est de 92,5 et celle de la Pro V1x de 98,7 à 102,0 selon l'échantillon testé (MyGolfSpy Ball Lab, 2025).</li>
+    <li>Titleist ne publie la compression officielle d'aucune des deux balles.</li>
+    <li>Sur le fil de discussion cité, plusieurs golfeurs rapportent une distance totale quasi identique entre les deux modèles au driver, l'écart se jouant sur la trajectoire et le comportement au petit jeu.</li>
+    <li>Le retour le plus cité sur la Pro V1x concerne un spin plus élevé aux fers courts, avec un risque de recul excessif sur un green réceptif.</li>
+  </ul>
+
+  <h2>Pro V1 ou Pro V1x : le choix par besoin</h2>
+  <div class="choice-cards">
+    <div class="choice-card">
+      <div class="cc-need">Vous cherchez la régularité en direction</div>
+      <div class="cc-tool">Pro V1</div>
+      <div class="cc-facts">
+        <div>Compression mesurée 92,5</div>
+        <div>Trajectoire plus basse, roule davantage</div>
+      </div>
+    </div>
+    <div class="choice-card">
+      <div class="cc-need">Vous cherchez la hauteur et le spin</div>
+      <div class="cc-tool">Pro V1x</div>
+      <div class="cc-facts">
+        <div>Compression mesurée 98,7 à 102,0</div>
+        <div>Trajectoire plus haute, plus de spin</div>
+      </div>
+    </div>
+  </div>
+  <div class="choice-dark">
+    <div class="cc-need">Dans les deux cas</div>
+    <div class="cc-tool">Le reconditionnement ne change ni la compression ni la construction</div>
+  </div>
+
+  <h2>Les alternatives aux deux balles</h2>
+  <p>Deux familles pour qui hésite encore : les balles multicouches concurrentes (Callaway Chrome Soft, TaylorMade TP5 et TP5x, Srixon Z-Star) pour un profil de jeu comparable, ou les balles 2 pièces plus abordables (Srixon AD333, Callaway Supersoft) pour un swing plus lent ou un budget plus serré. Chacune fera l'objet de son propre comparatif.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="gf-faq" style="border-top:1px solid #e0ece9;margin-top:8px">
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span class="gf-q" style="flex:1 1 auto">La Pro V1x va-t-elle plus loin que la Pro V1 ?</span><span class="gf-ico" style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div class="gf-a" style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75">
+        <p style="margin:0">Pas plus loin en général : plusieurs golfeurs qui jouent les deux balles rapportent une distance totale proche au driver. La différence se joue sur la trajectoire (plus haute sur la V1x) et sur le spin aux fers courts, pas sur la distance totale.</p>
+      </div>
+    </details>
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span class="gf-q" style="flex:1 1 auto">Pourquoi Titleist ne publie-t-il pas la compression de ses balles ?</span><span class="gf-ico" style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div class="gf-a" style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75">
+        <p style="margin:0">Titleist communique sur la construction et le comportement en vol, pas sur ce chiffre précis. La valeur affichée ici vient d'un laboratoire indépendant (MyGolfSpy Ball Lab) qui mesure chaque modèle sur un échantillon de balles achetées dans le commerce.</p>
+      </div>
+    </details>
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span class="gf-q" style="flex:1 1 auto">Une Pro V1 ou Pro V1x reconditionnée joue-t-elle différemment du neuf ?</span><span class="gf-ico" style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div class="gf-a" style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75">
+        <p style="margin:0">Non. Le grade d'occasion ne touche que l'aspect cosmétique de la balle : le noyau, le nombre de couches et la compression restent ceux du modèle d'origine.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="gf-sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>MyGolfSpy Ball Lab, test 2025 : compression Titleist Pro V1 (92,5) et Pro V1x (98,7 à 102,0)</li>
+      <li>GolfWRX, fil « Outside of firmness I cannot separate V1 from V1x », forum Golf Balls, ouvert le 1er février 2023</li>
+      <li>Catalogue et prix occasion Golfiller, à reconfirmer sur le live avant mise en ligne</li>
+    </ul>
+  </div>
+</article>
+
+</body>
+</html>

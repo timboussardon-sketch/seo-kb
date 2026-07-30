@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparateur de balles de golf : prototype Golfiller</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f5f1; padding: 0 0 80px; }
+
+.golf-page { max-width: 900px; margin: 0 auto; font-family: 'Source Sans 3', -apple-system, sans-serif; color: #333; line-height: 1.6; padding: 0 16px; }
+.golf-page h1 { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 2.8rem; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.05; margin: 0 0 10px; color: #111; }
+.golf-page h2 { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.02em; margin-top: 52px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #111; color: #111; }
+.golf-page p { margin: 0 0 14px; line-height: 1.65; font-size: 15px; }
+.golf-page a { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+.golf-page a:hover { color: #108474; }
+.golf-page strong { color: #111; font-weight: 700; }
+.gf-lead { font-size: 17px; color: #444; max-width: 620px; }
+
+/* ===== notice prototype ===== */
+.proto-flag { max-width: 900px; margin: 0 auto; background: #111; color: #F5E137; font-family: 'Source Sans 3', sans-serif; font-size: 13px; padding: 10px 16px; }
+
+/* ===== HERO ===== */
+.cmp-hero { padding: 44px 16px 0; }
+.cmp-eyebrow { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.14em; font-size: 0.85rem; color: #108474; margin-bottom: 6px; }
+.cmp-dimple-rule { max-width: 900px; margin: 24px auto 0; height: 10px;
+  background-image: radial-gradient(circle, rgba(16,132,116,0.35) 1.4px, transparent 1.6px);
+  background-size: 12px 12px; }
+
+/* ===== GOLF BALL (signature) ===== */
+.gball { position: relative; border-radius: 50%; flex-shrink: 0;
+  background: radial-gradient(circle at 32% 30%, #ffffff, #f2f2ee 55%, #e1e1da 100%);
+  box-shadow: inset -3px -4px 7px rgba(0,0,0,0.10), inset 2px 2px 4px rgba(255,255,255,0.9), 0 2px 5px rgba(0,0,0,0.14);
+}
+.gball::before { content: ''; position: absolute; inset: 0; border-radius: 50%;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.16) 1px, transparent 1.3px);
+  background-size: 22% 22%; opacity: 0.75; }
+.gball.gball-a { box-shadow: inset -3px -4px 7px rgba(0,0,0,0.10), inset 2px 2px 4px rgba(255,255,255,0.9), 0 0 0 3px #4ECDC4, 0 2px 5px rgba(0,0,0,0.14); }
+.gball.gball-b { box-shadow: inset -3px -4px 7px rgba(0,0,0,0.10), inset 2px 2px 4px rgba(255,255,255,0.9), 0 0 0 3px #F5E137, 0 2px 5px rgba(0,0,0,0.14); }
+.gball.gball-unknown { background: #fff; box-shadow: inset 0 0 0 2px dashed transparent; border: 2px dashed #bbb; display:flex; align-items:center; justify-content:center; }
+.gball.gball-unknown::before { display: none; }
+.gball.gball-unknown span { font-family: 'Bebas Neue', Impact, sans-serif; color: #999; }
+
+/* ===== SÉLECTEUR ===== */
+.cmp-picker { margin: 28px 0 14px; }
+.cmp-picker-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: start; }
+@media (max-width: 640px) { .cmp-picker-row { grid-template-columns: 1fr; } .cmp-vs-col { justify-self: center; } }
+
+.cmp-slot { position: relative; background: #fff; border-radius: 12px; box-shadow: 0 2px 14px rgba(0,0,0,0.06); padding: 16px; border-top: 4px solid #4ECDC4; }
+#slotB.cmp-slot { border-top-color: #F5E137; }
+.cmp-slot-label { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 0.85rem; letter-spacing: 0.06em; color: #888; margin-bottom: 8px; display: block; }
+.cmp-input { width: 100%; padding: 12px 13px; border: 2px solid #e2e2dc; border-radius: 8px; font-family: 'Source Sans 3', sans-serif; font-size: 15px; background: #fff; }
+.cmp-input:focus { outline: none; border-color: #108474; }
+.cmp-selected-chip { display: none; align-items: center; gap: 12px; }
+.cmp-selected-chip.on { display: flex; }
+.cmp-selected-chip .cmp-chip-text { flex: 1; }
+.cmp-selected-chip .cmp-chip-brand { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+.cmp-selected-chip b { display: block; font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.02em; font-size: 1.25rem; color: #111; }
+.cmp-selected-chip button { background: #f2f2ee; border: 0; width: 28px; height: 28px; border-radius: 50%; color: #666; font-size: 16px; cursor: pointer; line-height: 1; }
+.cmp-selected-chip button:hover { background: #e5e5e0; }
+.cmp-dropdown { position: absolute; top: calc(100% - 4px); left: 16px; right: 16px; background: #fff; border: 1px solid #e2e2dc; border-radius: 10px; max-height: 260px; overflow-y: auto; z-index: 20; box-shadow: 0 10px 26px rgba(0,0,0,0.14); display: none; }
+.cmp-dropdown.open { display: block; }
+.cmp-dropdown-item { padding: 11px 14px; cursor: pointer; font-size: 14.5px; border-bottom: 1px solid #f1f1ec; display: flex; justify-content: space-between; gap: 10px; }
+.cmp-dropdown-item:last-child { border-bottom: 0; }
+.cmp-dropdown-item:hover, .cmp-dropdown-item.active { background: #eaf7f5; }
+.cmp-dropdown-item .cmp-di-brand { color: #999; font-size: 12.5px; white-space: nowrap; }
+.cmp-dropdown-empty { padding: 14px; font-size: 14px; color: #888; font-style: italic; }
+
+.cmp-vs-col { display: flex; flex-direction: column; align-items: center; margin-top: 34px; gap: 6px; }
+.cmp-vs-col .gball { width: 48px; height: 48px; }
+.cmp-vs-col span { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; color: #999; }
+
+/* ===== DUELS POPULAIRES ===== */
+.cmp-popular { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 18px 0 8px; }
+.cmp-popular-label { font-size: 12px; color: #888; margin-right: 2px; }
+.cmp-pop-btn { padding: 7px 14px; background: #fff; border: 2px solid #4ECDC4; border-radius: 20px; font-size: 13px; font-weight: 600; color: #0c5c50; cursor: pointer; font-family: 'Source Sans 3', sans-serif; transition: background .15s, color .15s; }
+.cmp-pop-btn:hover { background: #4ECDC4; color: #111; }
+
+/* ===== PANNEAU RÉSULTAT ===== */
+.cmp-result { display: none; margin-top: 32px; }
+.cmp-result.on { display: block; }
+.cmp-panel { background: #fff; border-radius: 14px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); padding: 26px; }
+
+.cmp-panel-head { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px; margin-bottom: 22px; }
+@media (max-width: 640px) { .cmp-panel-head { grid-template-columns: 1fr 1fr; } .cmp-panel-head .cmp-vs-col { display: none; } }
+.cmp-col-head { display: flex; align-items: center; gap: 12px; }
+.cmp-col-head.b { flex-direction: row-reverse; text-align: right; }
+.cmp-col-head .gball { width: 40px; height: 40px; }
+.cmp-col-head .cmp-col-brand { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; }
+.cmp-col-head .cmp-col-model { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 1.35rem; letter-spacing: 0.01em; color: #111; line-height: 1.1; }
+.cmp-col-head.a .cmp-col-model { border-bottom: 3px solid #4ECDC4; display: inline-block; padding-bottom: 2px; }
+.cmp-col-head.b .cmp-col-model { border-bottom: 3px solid #F5E137; display: inline-block; padding-bottom: 2px; }
+
+/* compression : deux barres empilées, jamais de chevauchement */
+.cmp-comp-wrap { margin: 0 0 26px; }
+.cmp-comp-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 14px; }
+.cmp-comp-row { display: grid; grid-template-columns: 100px 1fr 64px; align-items: center; gap: 12px; margin-bottom: 10px; }
+.cmp-comp-name { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 14px; color: #111; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cmp-comp-track { height: 10px; background: #f0f0ec; border-radius: 5px; overflow: hidden; }
+.cmp-comp-fill { height: 100%; border-radius: 5px; }
+.cmp-comp-fill.fill-a { background: #4ECDC4; }
+.cmp-comp-fill.fill-b { background: #F5E137; }
+.cmp-comp-val { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 14px; color: #111; text-align: right; white-space: nowrap; }
+.cmp-comp-val.unknown { color: #bbb; font-family: 'Source Sans 3', sans-serif; font-style: italic; font-size: 12px; }
+.cmp-comp-scale { display: flex; justify-content: space-between; font-size: 11px; color: #bbb; margin: 4px 0 0 112px; }
+.cmp-comp-legend { font-size: 12px; color: #999; margin-top: 4px; }
+@media (max-width: 480px) { .cmp-comp-row { grid-template-columns: 68px 1fr 56px; } .cmp-comp-scale { margin-left: 80px; } }
+
+/* fiche comparative */
+.cmp-rows { border-top: 1px solid #eee; }
+.cmp-row { display: grid; grid-template-columns: 118px 1fr 1fr; gap: 10px; padding: 12px 0; border-bottom: 1px solid #f2f2ee; font-size: 14px; align-items: center; }
+.cmp-row-label { color: #999; font-size: 12.5px; }
+.cmp-row-a, .cmp-row-b { color: #222; font-weight: 600; }
+.cmp-row-b { text-align: right; }
+@media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-row-label { grid-column: 1 / -1; margin-bottom: -4px; } }
+
+.cmp-panel-ctas { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }
+.cmp-cta { display: block; text-align: center; background: #111; color: #F5E137 !important; text-decoration: none !important; padding: 12px 16px; border-radius: 8px; font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; font-size: 14px; transition: background .15s; }
+.cmp-cta:hover { background: #333; }
+
+.cmp-verdict { background: #eaf6f3; border: 1px solid #d3ece7; border-radius: 10px; padding: 16px 18px; font-size: 14.5px; color: #1a2e29; margin-top: 20px; }
+.cmp-verdict .cmp-verdict-eyebrow { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.06em; font-size: 0.8rem; color: #108474; display: block; margin-bottom: 6px; }
+.cmp-reconditionne-note { font-size: 13px; color: #999; font-style: italic; margin-top: 14px; }
+
+/* ===== TABLEAU VUE D'ENSEMBLE ===== */
+.golf-page table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 14px 0 20px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.golf-page thead tr { background: #4ECDC4; }
+.golf-page th { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 10px 12px; text-align: center; color: #0c3d36; }
+.golf-page th:first-child { text-align: left; padding-left: 14px; }
+.golf-page th.th-prix { background: #F5E137; color: #4a4200; }
+.golf-page tbody tr { border-bottom: 1px solid #eee; }
+.golf-page tbody tr:nth-child(odd) { background: #fff; }
+.golf-page tbody tr:nth-child(even) { background: #fafaf7; }
+.golf-page tbody tr:hover { background: #f0f0ee; }
+.golf-page td { padding: 11px 12px; text-align: center; font-size: 13px; color: #333; font-variant-numeric: tabular-nums; }
+.golf-page td:first-child { text-align: left; padding-left: 14px; font-weight: 600; color: #111; }
+.golf-page td.cell-prix { background: #FBF3AE; font-weight: 700; color: #4a4200; }
+.golf-page .table-wrap { overflow-x: auto; margin: 16px 0 24px; -webkit-overflow-scrolling: touch; }
+.golf-page .full-table { min-width: 640px; }
+.golf-page .table-row-btn { border: 0; background: none; cursor: pointer; font: inherit; color: #108474; text-decoration: underline; text-underline-offset: 2px; padding: 0; }
+
+/* ===== FAQ ===== */
+.golf-page details { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+.golf-page details:first-of-type { border-top: 1px solid #e5e5e5; }
+.golf-page details summary { font-weight: 600; color: #111; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 15px; gap: 14px; }
+.golf-page details summary::-webkit-details-marker { display: none; }
+.golf-page details summary::after { content: '+'; font-size: 22px; font-weight: 400; color: #111; transition: transform 0.2s; line-height: 1; flex-shrink: 0; }
+.golf-page details[open] summary::after { content: '−'; }
+.golf-page details p { margin: 12px 0 0; color: #555; font-size: 14px; line-height: 1.6; }
+
+.golf-page .source-note { font-size: 12px; color: #888; line-height: 1.6; font-style: italic; margin-top: 16px; }
+.gf-sources { margin-top: 40px; padding-top: 18px; border-top: 1px solid #e0ece9; font-size: 13px; color: #5b6b62; }
+.gf-sources h2 { font-size: 18px; margin: 0 0 10px; }
+.gf-sources ul { margin: 0; padding-left: 18px; }
+.gf-sources li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<div class="proto-flag">PROTOTYPE LOCAL : pas encore collé sur golfiller.fr. Catalogue/prix à reconfirmer sur le live (scrape bloqué côté sandbox), voir note en bas.</div>
+
+<div class="cmp-hero">
+  <div class="golf-page" style="padding:0">
+    <span class="cmp-eyebrow">OUTIL · COMPARATEUR</span>
+    <h1>Comparateur de balles de golf</h1>
+    <p class="gf-lead">Choisissez deux balles, n'importe lesquelles de notre catalogue. Vous voyez la construction, la compression mesurée et le profil de swing recommandé, côte à côte, avant d'acheter en reconditionné.</p>
+  </div>
+</div>
+<div class="cmp-dimple-rule"></div>
+
+<div class="golf-page">
+
+  <div class="cmp-picker">
+    <div class="cmp-picker-row">
+      <div class="cmp-slot" id="slotA">
+        <span class="cmp-slot-label">Balle A</span>
+        <input type="text" class="cmp-input" id="inputA" placeholder="Chercher une balle (ex. Pro V1)" autocomplete="off">
+        <div class="cmp-selected-chip" id="chipA">
+          <span class="gball gball-a" style="width:38px;height:38px"></span>
+          <div class="cmp-chip-text"><span class="cmp-chip-brand"></span><b></b></div>
+          <button type="button" aria-label="Retirer" data-clear="A">×</button>
+        </div>
+        <div class="cmp-dropdown" id="dropdownA"></div>
+      </div>
+      <div class="cmp-vs-col"><span class="gball" style="width:48px;height:48px"></span><span>VS</span></div>
+      <div class="cmp-slot" id="slotB">
+        <span class="cmp-slot-label">Balle B</span>
+        <input type="text" class="cmp-input" id="inputB" placeholder="Chercher une balle (ex. Chrome Soft)" autocomplete="off">
+        <div class="cmp-selected-chip" id="chipB">
+          <span class="gball gball-b" style="width:38px;height:38px"></span>
+          <div class="cmp-chip-text"><span class="cmp-chip-brand"></span><b></b></div>
+          <button type="button" aria-label="Retirer" data-clear="B">×</button>
+        </div>
+        <div class="cmp-dropdown" id="dropdownB"></div>
+      </div>
+    </div>
+
+    <div class="cmp-popular">
+      <span class="cmp-popular-label">Duels fréquents :</span>
+      <button type="button" class="cmp-pop-btn" data-a="titleist-pro-v1" data-b="titleist-pro-v1x">Pro V1 vs Pro V1x</button>
+      <button type="button" class="cmp-pop-btn" data-a="titleist-pro-v1" data-b="callaway-chrome-soft">Pro V1 vs Chrome Soft</button>
+      <button type="button" class="cmp-pop-btn" data-a="srixon-ad333" data-b="callaway-supersoft">AD333 vs Supersoft</button>
+      <button type="button" class="cmp-pop-btn" data-a="taylormade-tp5" data-b="taylormade-tp5x">TP5 vs TP5x</button>
+      <button type="button" class="cmp-pop-btn" data-a="callaway-chrome-soft" data-b="srixon-zstar">Chrome Soft vs Z-Star</button>
+    </div>
+  </div>
+
+  <div class="cmp-result" id="cmpResult">
+    <div class="cmp-panel">
+      <div class="cmp-panel-head" id="cmpPanelHead"></div>
+      <div class="cmp-comp-wrap">
+        <div class="cmp-comp-title">Compression mesurée</div>
+        <div id="cmpCompBars"></div>
+        <div class="cmp-comp-scale"><span>0 · très basse</span><span>105 · très haute</span></div>
+        <div class="cmp-comp-legend" id="cmpCompLegend"></div>
+      </div>
+      <div class="cmp-rows" id="cmpRows"></div>
+      <div class="cmp-panel-ctas" id="cmpCtas"></div>
+    </div>
+    <div class="cmp-verdict" id="cmpVerdict"></div>
+    <p class="cmp-reconditionne-note">Le reconditionnement ne touche pas le noyau ni la compression de la balle : seul l'aspect cosmétique change entre le neuf et l'occasion.</p>
+  </div>
+
+  <h2>Les comparatifs détaillés</h2>
+  <p>Cinq duels documentés en profondeur : tableaux complets, retours de golfeurs sourcés (Reddit, GolfWRX, Golf Monthly), verdict par profil de swing.</p>
+  <div class="cmp-popular" style="margin-top:0">
+    <a class="cmp-pop-btn" style="text-decoration:none;display:inline-block" href="2026-07-30-golfiller-vs-pro-v1-vs-pro-v1x.html">Pro V1 vs Pro V1x</a>
+    <a class="cmp-pop-btn" style="text-decoration:none;display:inline-block" href="2026-07-30-golfiller-vs-pro-v1-vs-chrome-soft.html">Pro V1 vs Chrome Soft</a>
+    <a class="cmp-pop-btn" style="text-decoration:none;display:inline-block" href="2026-07-30-golfiller-vs-ad333-vs-supersoft.html">AD333 vs Supersoft</a>
+    <a class="cmp-pop-btn" style="text-decoration:none;display:inline-block" href="2026-07-30-golfiller-vs-tp5-vs-tp5x.html">TP5 vs TP5x</a>
+    <a class="cmp-pop-btn" style="text-decoration:none;display:inline-block" href="2026-07-30-golfiller-vs-chrome-soft-vs-zstar.html">Chrome Soft vs Z-Star</a>
+  </div>
+
+  <h2>Toutes les balles du catalogue, vue d'ensemble</h2>
+  <p>Cliquez sur un nom pour le charger directement dans le comparateur ci-dessus.</p>
+  <div class="table-wrap">
+    <table class="full-table">
+      <thead>
+        <tr><th>Balle</th><th>Construction</th><th>Compression</th><th>Swing recommandé</th><th class="th-prix">Prix occasion</th></tr>
+      </thead>
+      <tbody id="cmpTableBody"></tbody>
+    </table>
+  </div>
+  <p class="source-note">Compression : valeur mesurée ou publiée par le fabricant quand disponible ; sinon mesure d'un laboratoire indépendant (MyGolfSpy Ball Lab) ou d'un média de test golf, jamais un chiffre inventé. Titleist ne publie pas la compression exacte de ses balles Pro V1 / Pro V1x / AVX : la valeur affichée est celle mesurée indépendamment, indiquée comme telle.</p>
+
+  <h2>Questions fréquentes</h2>
+  <details>
+    <summary>Une balle à compression plus haute va-t-elle toujours plus loin ?</summary>
+    <p>Non, et c'est même l'inverse en dessous d'une certaine vitesse de swing. Une compression haute demande une vitesse de club élevée pour se déformer à l'impact et restituer son énergie. En dessous de cette vitesse, elle reste rigide et vous coûte des mètres : une compression plus basse, mieux assortie à votre swing, ira plus loin.</p>
+  </details>
+  <details>
+    <summary>Le reconditionnement change-t-il la compression de la balle ?</summary>
+    <p>Non. Le grade d'occasion (état cosmétique) ne touche ni au noyau ni au nombre de couches. Une balle reconditionnée conserve la compression et la construction de son modèle d'origine ; seul l'aspect visuel change.</p>
+  </details>
+  <details>
+    <summary>Pourquoi Titleist n'affiche pas la compression de ses balles ?</summary>
+    <p>Titleist ne publie pas ce chiffre pour ses Pro V1, Pro V1x et AVX. Le comparateur affiche à la place la valeur mesurée par un laboratoire indépendant (MyGolfSpy Ball Lab), en le précisant clairement plutôt que d'avancer un chiffre constructeur qui n'existe pas.</p>
+  </details>
+
+  <div class="gf-sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>MyGolfSpy Ball Lab : Titleist Pro V1 (test 2025, compression 92,5), Pro V1x (test 2025, spread mesuré 98,7 à 102,0), AVX (test 2024, compression 77, stable depuis plusieurs générations)</li>
+      <li>TaylorMade : fiches officielles TP5 et TP5x (compression constructeur)</li>
+      <li>Wilson : fiche officielle DUO Soft ; MyGolfSpy Ball Lab (mesure indépendante)</li>
+      <li>Decathlon : fiche officielle Inesis Tour 900</li>
+      <li>Today's Golfer : test indépendant Srixon AD333 (modèle 2026)</li>
+      <li>Out of Bounds Golf : test indépendant Srixon Z-Star et Q-Star Tour</li>
+      <li>MyGolfSpy Ball Lab : mesure indépendante Callaway Chrome Soft et Supersoft</li>
+      <li>Golflink : test indépendant Wilson Ultra</li>
+      <li>Catalogue et prix occasion Golfiller, constatés en juin 2026 sur les pages déjà publiées ; à reconfirmer sur le live avant mise en ligne de cet outil.</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  var BALLS = [
+    { id:'wilson-dx2-soft', marque:'Wilson', modele:'DX2 Soft', construction:'2 pièces, Surlyn', compression:29, compLabel:'très basse', swing:'lent', prix:'dès 9,99 €', url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'srixon-ad333', marque:'Srixon', modele:'AD333', construction:'2 pièces', compression:68, compLabel:'basse à modérée', swing:'lent à modéré', prix:'dès 9,99 €', url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'srixon-qstar-tour', marque:'Srixon', modele:'Q-Star Tour', construction:'3 pièces, uréthane', compression:75, compLabel:'modérée (70 à 75 selon génération)', swing:'modéré', prix:'dès 15,99 €', url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'callaway-chrome-soft', marque:'Callaway', modele:'Chrome Soft', construction:'multicouche, uréthane', compression:72, compLabel:'moyenne souple', swing:'modéré à rapide', prix:'dès 21,99 €', url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'callaway-supersoft', marque:'Callaway', modele:'Supersoft', construction:'2 pièces', compression:38, compLabel:'très basse', swing:'lent', prix:null, url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'taylormade-tp5', marque:'TaylorMade', modele:'TP5', construction:'5 pièces, uréthane', compression:85, compLabel:'haute', swing:'rapide', prix:'dès 21,99 €', url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'taylormade-tp5x', marque:'TaylorMade', modele:'TP5x', construction:'5 pièces, uréthane', compression:97, compLabel:'très haute', swing:'très rapide', prix:'dès 21,99 €', url:'https://golfiller.fr/products/taylormade-tp5x' },
+    { id:'srixon-zstar', marque:'Srixon', modele:'Z-Star', construction:'3 pièces, uréthane', compression:88, compLabel:'haute', swing:'rapide', prix:'dès 15,99 €', url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'wilson-ultra', marque:'Wilson', modele:'Ultra', construction:'2 pièces', compression:90, compLabel:'haute', swing:'rapide', prix:null, url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'inesis-tour-900', marque:'Inesis', modele:'Tour 900', construction:'3 pièces, uréthane/Surlyn', compression:90, compLabel:'haute', swing:'rapide', prix:null, url:'https://golfiller.fr/collections/nos-produits' },
+    { id:'titleist-pro-v1', marque:'Titleist', modele:'Pro V1', construction:'multicouche, uréthane', compression:92.5, compLabel:'haute', indep:true, swing:'rapide', prix:null, prixNote:'jusqu’à -60 % vs neuf', url:'https://golfiller.fr/products/titleist-pro-v1' },
+    { id:'titleist-pro-v1x', marque:'Titleist', modele:'Pro V1x', construction:'multicouche, uréthane', compression:100, compShort:'98,7–102', compLabel:'très haute (98,7 à 102 selon l’échantillon)', indep:true, swing:'très rapide', prix:null, url:'https://golfiller.fr/collections/titleist' },
+    { id:'titleist-avx', marque:'Titleist', modele:'AVX', construction:'multicouche, uréthane', compression:77, compLabel:'moyenne à élevée', indep:true, swing:'modéré à rapide', prix:null, url:'https://golfiller.fr/collections/titleist' }
+  ];
+
+  var byId = {};
+  BALLS.forEach(function (b) { byId[b.id] = b; });
+
+  var state = { A: null, B: null };
+  var MAX_COMP = 105;
+
+  function label(b) { return b.marque + ' ' + b.modele; }
+  function compDisplay(b) {
+    if (b.compShort) return b.compShort;
+    return b.compression ? (b.compression % 1 === 0 ? b.compression : b.compression.toFixed(1)).toString().replace('.', ',') : 'n.c.';
+  }
+
+  function ballAvatar(b, side, size) {
+    if (!b || !b.compression) {
+      return '<span class="gball gball-unknown" style="width:' + size + 'px;height:' + size + 'px"><span style="font-size:' + Math.round(size * 0.5) + 'px">?</span></span>';
+    }
+    return '<span class="gball gball-' + side + '" style="width:' + size + 'px;height:' + size + 'px"></span>';
+  }
+
+  function renderDropdown(which, query) {
+    var dd = document.getElementById('dropdown' + which);
+    var q = (query || '').toLowerCase().trim();
+    var matches = BALLS.filter(function (b) {
+      return !q || label(b).toLowerCase().indexOf(q) !== -1;
+    });
+    if (!matches.length) {
+      dd.innerHTML = '<div class="cmp-dropdown-empty">Aucune balle ne correspond.</div>';
+    } else {
+      dd.innerHTML = matches.map(function (b) {
+        return '<div class="cmp-dropdown-item" data-id="' + b.id + '"><span>' + label(b) + '</span><span class="cmp-di-brand">' + (b.compression ? 'compression ' + compDisplay(b) : b.compLabel) + '</span></div>';
+      }).join('');
+    }
+    dd.classList.add('open');
+  }
+
+  function closeDropdown(which) {
+    document.getElementById('dropdown' + which).classList.remove('open');
+  }
+
+  function selectBall(which, id) {
+    state[which] = id;
+    var input = document.getElementById('input' + which);
+    var chip = document.getElementById('chip' + which);
+    var b = byId[id];
+    input.style.display = 'none';
+    chip.querySelector('.cmp-chip-brand').textContent = b.marque;
+    chip.querySelector('b').textContent = b.modele;
+    chip.classList.add('on');
+    closeDropdown(which);
+    renderResult();
+  }
+
+  function clearBall(which) {
+    state[which] = null;
+    document.getElementById('input' + which).style.display = 'block';
+    document.getElementById('input' + which).value = '';
+    document.getElementById('chip' + which).classList.remove('on');
+    renderResult();
+  }
+
+  ['A', 'B'].forEach(function (which) {
+    var input = document.getElementById('input' + which);
+    input.addEventListener('focus', function () { renderDropdown(which, input.value); });
+    input.addEventListener('input', function () { renderDropdown(which, input.value); });
+    input.addEventListener('blur', function () { setTimeout(function () { closeDropdown(which); }, 150); });
+    document.getElementById('dropdown' + which).addEventListener('mousedown', function (e) {
+      var item = e.target.closest('.cmp-dropdown-item');
+      if (item) selectBall(which, item.getAttribute('data-id'));
+    });
+    document.getElementById('chip' + which).querySelector('button').addEventListener('click', function () {
+      clearBall(which);
+    });
+  });
+
+  document.querySelectorAll('.cmp-pop-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      selectBall('A', btn.getAttribute('data-a'));
+      selectBall('B', btn.getAttribute('data-b'));
+      document.getElementById('cmpResult').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  function row(label_, a, b) {
+    return '<div class="cmp-row"><span class="cmp-row-label">' + label_ + '</span><span class="cmp-row-a">' + a + '</span><span class="cmp-row-b">' + b + '</span></div>';
+  }
+
+  function renderCompBars(a, b) {
+    var html = '';
+    [['a', a], ['b', b]].forEach(function (pair) {
+      var side = pair[0], ball = pair[1];
+      var valHtml = ball.compression
+        ? '<span class="cmp-comp-val">' + compDisplay(ball) + '</span>'
+        : '<span class="cmp-comp-val unknown">non publiée</span>';
+      var fillHtml = ball.compression
+        ? '<div class="cmp-comp-fill fill-' + side + '" style="width:' + Math.min(100, (ball.compression / MAX_COMP) * 100) + '%"></div>'
+        : '';
+      html += '<div class="cmp-comp-row">' +
+        '<span class="cmp-comp-name">' + ball.modele + '</span>' +
+        '<div class="cmp-comp-track">' + fillHtml + '</div>' +
+        valHtml +
+        '</div>';
+    });
+    document.getElementById('cmpCompBars').innerHTML = html;
+    var indepNote = (a.indep || b.indep)
+      ? '* mesurée par un laboratoire indépendant (MyGolfSpy Ball Lab) : le fabricant ne publie pas ce chiffre.'
+      : '';
+    document.getElementById('cmpCompLegend').textContent = indepNote;
+  }
+
+  function verdictText(a, b) {
+    if (!a.compression && !b.compression) {
+      return 'Ni ' + label(a) + ' ni ' + label(b) + ' ne publient leur compression exacte. Basez votre choix sur le profil de swing recommandé et sur le nombre de couches (une multicouche uréthane privilégie le spin et le toucher, une 2 pièces privilégie la distance et la tolérance).';
+    }
+    if (a.compression && !b.compression) {
+      return label(a) + ' est mesurée à ' + compDisplay(a) + ' de compression. ' + label(b) + ' ne publie pas ce chiffre : son fabricant recommande un swing ' + b.swing + '.';
+    }
+    if (!a.compression && b.compression) {
+      return label(b) + ' est mesurée à ' + compDisplay(b) + ' de compression. ' + label(a) + ' ne publie pas ce chiffre : son fabricant recommande un swing ' + a.swing + '.';
+    }
+    var lower = a.compression <= b.compression ? a : b;
+    var higher = a.compression <= b.compression ? b : a;
+    if (lower.id === higher.id) {
+      return label(a) + ' et ' + label(b) + ' affichent une compression proche : le choix se fait sur la construction et le toucher, pas sur la distance.';
+    }
+    return label(lower) + ' (compression ' + compDisplay(lower) + ') se déforme davantage à l’impact et convient à un swing ' + lower.swing + '. ' +
+      label(higher) + ' (compression ' + compDisplay(higher) + ') demande une vitesse de swing plus élevée pour restituer son énergie : elle vise un swing ' + higher.swing + '.';
+  }
+
+  function renderResult() {
+    var result = document.getElementById('cmpResult');
+    if (!state.A || !state.B) { result.classList.remove('on'); return; }
+    var a = byId[state.A], b = byId[state.B];
+
+    document.getElementById('cmpPanelHead').innerHTML =
+      '<div class="cmp-col-head a">' + ballAvatar(a, 'a', 40) + '<div><div class="cmp-col-brand">' + a.marque + '</div><div class="cmp-col-model">' + a.modele + '</div></div></div>' +
+      '<div class="cmp-vs-col"><span class="gball" style="width:30px;height:30px"></span></div>' +
+      '<div class="cmp-col-head b"><div><div class="cmp-col-brand">' + b.marque + '</div><div class="cmp-col-model">' + b.modele + '</div></div>' + ballAvatar(b, 'b', 40) + '</div>';
+
+    renderCompBars(a, b);
+
+    function compRowText(ball) {
+      var txt = ball.compression ? compDisplay(ball) + ' : ' + ball.compLabel : ball.compLabel;
+      return txt + (ball.indep ? ' *' : '');
+    }
+
+    document.getElementById('cmpRows').innerHTML =
+      row('Construction', a.construction, b.construction) +
+      row('Compression', compRowText(a), compRowText(b)) +
+      row('Swing recommandé', a.swing, b.swing) +
+      row('Prix occasion', a.prix || (a.prixNote || 'voir fiche produit'), b.prix || (b.prixNote || 'voir fiche produit'));
+
+    document.getElementById('cmpCtas').innerHTML =
+      '<a class="cmp-cta" href="' + a.url + '" target="_blank" rel="noopener">Voir ' + a.modele + '</a>' +
+      '<a class="cmp-cta" href="' + b.url + '" target="_blank" rel="noopener">Voir ' + b.modele + '</a>';
+
+    document.getElementById('cmpVerdict').innerHTML = '<span class="cmp-verdict-eyebrow">Ce que ça change pour votre swing</span>' + verdictText(a, b);
+    result.classList.add('on');
+  }
+
+  function renderTable() {
+    var sorted = BALLS.slice().sort(function (x, y) { return (x.compression || 0) - (y.compression || 0); });
+    document.getElementById('cmpTableBody').innerHTML = sorted.map(function (b) {
+      return '<tr>' +
+        '<td><button type="button" class="table-row-btn" data-id="' + b.id + '">' + label(b) + '</button></td>' +
+        '<td>' + b.construction + '</td>' +
+        '<td>' + (b.compression ? compDisplay(b) : 'n.c.') + (b.compression ? '' : ' (non publiée)') + '</td>' +
+        '<td>' + b.swing + '</td>' +
+        '<td class="cell-prix">' + (b.prix || 'n.c.') + '</td>' +
+        '</tr>';
+    }).join('');
+    document.querySelectorAll('.table-row-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-id');
+        if (!state.A) selectBall('A', id);
+        else selectBall('B', id);
+        document.getElementById('cmpResult').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+
+  renderTable();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titleist Pro V1 ou Callaway Chrome Soft : prototype Golfiller</title>
+<style>
+body{margin:0;background:#f6f5f1;padding:40px 16px 80px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.proto-flag{max-width:760px;margin:0 auto 24px;background:#111;color:#F5E137;font-size:13px;padding:10px 16px;border-radius:6px}
+
+.gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-size:17px;line-height:1.7}
+.gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 6px;color:var(--gf-ink)}
+.gf-article .gf-eyebrow{font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--gf-accent);font-weight:700;margin-bottom:10px}
+.gf-article .gf-meta{font-size:13px;color:var(--gf-muted);margin-bottom:22px}
+.gf-article h2{font-size:clamp(21px,3vw,27px);line-height:1.25;letter-spacing:-.01em;margin:44px 0 14px;color:var(--gf-ink)}
+.gf-article h3{font-size:19px;line-height:1.3;margin:28px 0 6px;color:var(--gf-ink)}
+.gf-article p{margin:0 0 16px}
+.gf-article a{color:var(--gf-accent);text-decoration:none;border-bottom:1px solid rgba(16,132,116,.3)}
+.gf-article a:hover{border-bottom-color:var(--gf-accent)}
+.gf-article .gf-lead{font-size:19px;color:var(--gf-ink)}
+.gf-article .gf-transparence{background:var(--gf-soft);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--gf-muted);margin:0 0 22px}
+.gf-article ul{margin:0 0 16px;padding-left:0;list-style:none}
+.gf-article ul li{position:relative;padding-left:22px;margin-bottom:10px}
+.gf-article ul li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--gf-accent)}
+.gf-article .gf-table-wrap{overflow-x:auto;margin:0 0 20px}
+.gf-article table{width:100%;border-collapse:collapse;font-size:15px}
+.gf-article thead th{background:#5BD8C0;text-align:left;font-weight:700;color:#13241d;padding:11px 14px;border-bottom:2px solid var(--gf-line);white-space:nowrap}
+.gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
+.gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
+.gf-article tbody tr:nth-child(even){background:#fafcfb}
+
+.gf-article .gf-quote{background:#fff;border:1px solid var(--gf-line);border-radius:10px;padding:16px 18px;margin:0 0 14px}
+.gf-article .gf-quote-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.gf-article .gf-quote-avatar{width:30px;height:30px;border-radius:50%;background:var(--gf-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
+.gf-article .gf-quote-meta{font-size:13px;color:var(--gf-muted)}
+.gf-article .gf-quote-meta b{color:var(--gf-ink)}
+.gf-article .gf-quote-text{font-size:14.5px;color:var(--gf-ink);line-height:1.6;margin:0 0 8px}
+.gf-article .gf-quote-foot{font-size:12.5px;color:var(--gf-muted)}
+.gf-article .gf-quote-foot a{border-bottom:1px solid rgba(16,132,116,.3)}
+
+.gf-article .choice-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 14px}
+@media (max-width:600px){.gf-article .choice-cards{grid-template-columns:1fr}}
+.gf-article .choice-card{background:#fff;border:1px solid var(--gf-line);border-radius:10px;padding:18px}
+.gf-article .choice-card .cc-need{font-size:12.5px;color:var(--gf-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.gf-article .choice-card .cc-tool{font-size:22px;font-style:italic;font-weight:600;margin-bottom:10px}
+.gf-article .choice-card .cc-facts{font-size:13.5px;color:var(--gf-muted)}
+.gf-article .choice-card .cc-facts div{padding:5px 0;border-top:1px solid var(--gf-line)}
+.gf-article .choice-dark{background:var(--gf-ink);color:#fff;border-radius:10px;padding:18px;margin:0 0 20px}
+.gf-article .choice-dark .cc-need{color:#9fb8ae;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.gf-article .choice-dark .cc-tool{font-size:20px;font-style:italic}
+
+.gf-article .gf-faq{border-top:1px solid var(--gf-line)}
+.gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
+.gf-article .gf-sources h2{font-size:18px;margin:0 0 10px}
+.gf-article .gf-sources li::before{background:var(--gf-muted)}
+.gf-article .gf-verif-note{font-size:12.5px;color:#a08a3a;background:#fbf6e6;border-radius:8px;padding:10px 12px;margin:0 0 16px}
+</style>
+</head>
+<body>
+
+<div class="proto-flag">PROTOTYPE LOCAL, structure et contenu à valider avant intégration Shopify (template gf-article).</div>
+
+<article class="gf-article">
+  <span class="gf-eyebrow">Comparatif · balles de golf</span>
+  <h1>Titleist Pro V1 ou Callaway Chrome Soft : quelle balle choisir ?</h1>
+  <div class="gf-meta">Données vérifiées le 30 juillet 2026 · lecture 6 min</div>
+
+  <p class="gf-lead">Les deux balles les plus jouées sur le circuit professionnel, mais pas la même sensation. La Pro V1, plus ferme, vise le contrôle et la régularité. La Chrome Soft, nettement plus souple, mise sur le toucher au green et un prix d'occasion plus accessible. L'écart de compression mesuré (92,5 contre 72) explique la différence de sensation à l'impact.</p>
+
+  <div class="gf-transparence">Cette page est publiée par Golfiller, revendeur de balles de golf reconditionnées, y compris des deux modèles comparés ici. La grille de critères est identique pour les deux balles, et les données viennent de fiches constructeur ou de mesures indépendantes, jamais d'une estimation interne.</div>
+
+  <h2>Pro V1 x Chrome Soft</h2>
+  <p>La Pro V1 est la balle la plus vendue du PGA Tour, construite pour une trajectoire prévisible et un contrôle de direction élevé. La Chrome Soft cible un joueur qui privilégie le toucher : sa couverture en uréthane, plus souple, absorbe davantage l'impact, ce qui se traduit par une sensation "molle" au putter et au chip, au prix d'une durabilité parfois jugée inférieure par certains joueurs. Pour situer ces deux balles face au reste du catalogue, voir le <a href="2026-07-30-golfiller-comparateur-balles.html">comparateur général</a>.</p>
+
+  <h2>Construction et compression</h2>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr><th>Critère</th><th>Pro V1</th><th>Chrome Soft</th></tr></thead>
+      <tbody>
+        <tr><td>Construction</td><td>Multicouche, couverture uréthane</td><td>Multicouche, couverture uréthane</td></tr>
+        <tr><td>Compression mesurée</td><td>92,5</td><td>72</td></tr>
+        <tr><td>Compression publiée par le fabricant</td><td>Non (Titleist)</td><td>Non officiellement, mesure indépendante retenue</td></tr>
+        <tr><td>Sensation</td><td>Ferme, contrôle en direction</td><td>Souple, toucher marqué au green</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source-note" style="font-size:13px;color:var(--gf-muted)">Compressions mesurées par MyGolfSpy Ball Lab, laboratoire indépendant qui teste chaque modèle sur un échantillon de balles achetées dans le commerce.</p>
+
+  <h2>Swing, usage et prix</h2>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr><th>Critère</th><th>Pro V1</th><th>Chrome Soft</th></tr></thead>
+      <tbody>
+        <tr><td>Swing recommandé</td><td>Rapide</td><td>Modéré à rapide</td></tr>
+        <tr><td>Recherché pour</td><td>Contrôle, régularité</td><td>Toucher, prix d'occasion plus bas</td></tr>
+        <tr><td>Prix occasion Golfiller</td><td>Jusqu'à -60 % vs neuf</td><td>Dès 21,99 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Titleist Pro V1</h3>
+  <p>La référence du circuit professionnel, compression mesurée à 92,5. Plusieurs golfeurs qui l'ont testée après une autre balle premium reviennent dessus pour sa régularité en direction, quitte à sacrifier un peu de toucher pur au petit jeu.</p>
+
+  <h3>Callaway Chrome Soft</h3>
+  <p>Compression mesurée à 72, nettement plus souple que la Pro V1. Les retours de golfeurs mettent en avant le contrôle autour du green et un jeu qui reste globalement dans l'axe. Le point qui revient le plus souvent en négatif : une couverture jugée moins résistante, avec des marques ou, plus rarement, des fissures rapportées après un faible nombre de trous.</p>
+
+  <h2>Ce qu'en disent les golfeurs</h2>
+  <p>Cinq retours réels et équilibrés, traduits de l'anglais, tirés de forums golf publics.</p>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">P</span><span class="gf-quote-meta"><b>Parsaregood</b> · Golf Monthly Forums · 15 février 2020</span></div>
+    <p class="gf-quote-text">« Je joue la Pro V1x et j'ai testé tous les autres modèles premium équivalents, pour moi c'est la meilleure balle. [...] La Chrome Soft X est correcte mais autour des greens je préfère la Pro V. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfmonthly.com/threads/pro-v1-worth-the-money.104330/" target="_blank" rel="noopener">Voir le fil sur Golf Monthly Forums</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">N</span><span class="gf-quote-meta"><b>u/NotSoUsual</b> · r/golf · 27 juin 2015</span></div>
+    <p class="gf-quote-text">« Je pense que leur plus gros atout, c'est le contrôle autour du green. Aujourd'hui même, j'ai tapé un chip un peu fin et j'ai vu la balle rebondir puis freiner net. [...] C'est vraiment une excellente balle, à un prix juste. »</p>
+    <div class="gf-quote-foot"><a href="https://www.reddit.com/r/golf/comments/3b7s1v/chrome_soft_review/csjuofd/" target="_blank" rel="noopener">Voir le fil sur Reddit (r/golf)</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">T</span><span class="gf-quote-meta"><b>u/Timely_Ad8334</b> · r/golf · 15 mai 2024</span></div>
+    <p class="gf-quote-text">« J'ai eu 3 Chrome Soft qui se sont fissurées, toutes de la même boîte. En plus de 30 ans à taper toutes les balles possibles, je n'avais jamais vu une balle se fissurer en jouant. [...] Je joue la Pro V1x depuis peu, mais elle n'a pas cette douceur que la Chrome Soft a pour mon jeu. »</p>
+    <div class="gf-quote-foot"><a href="https://www.reddit.com/r/golf/comments/1au3j2n/chrome_soft_cracked/l47989s/" target="_blank" rel="noopener">Voir le fil sur Reddit (r/golf)</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">M</span><span class="gf-quote-meta"><b>Mel Smooth</b> · Golf Monthly Forums · 15 février 2020</span></div>
+    <p class="gf-quote-text">« Je n'ai jamais pu justifier de jouer la Pro V1. Je perdais facilement 3 ou 4 balles par partie sur mon ancien parcours, donc le prix combiné à mon manque de talent la rendait bien trop chère. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfmonthly.com/threads/pro-v1-worth-the-money.104330/" target="_blank" rel="noopener">Voir le fil sur Golf Monthly Forums</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">H</span><span class="gf-quote-meta"><b>u/hockeybru</b> · r/golf · 21 octobre 2023</span></div>
+    <p class="gf-quote-text">« Honnêtement, j'ai l'impression que la Chrome Soft dévie moins que les autres balles premium. Beaucoup de mes meilleurs scores ont été faits avec, parce qu'elle semble rester en jeu. Elle est aussi incroyable au chip et au putting. »</p>
+    <div class="gf-quote-foot"><a href="https://www.reddit.com/r/golf/comments/17crlta/aside_from_pro_v1_what_golf_ball_are_you_using/k5s86bm/" target="_blank" rel="noopener">Voir le fil sur Reddit (r/golf)</a> · traduit de l'anglais</div>
+  </div>
+
+  <p class="gf-verif-note">Note de méthode : les citations Reddit ci-dessus ont été extraites du HTML brut des fils (pseudo, horodatage, texte confirmés). Les citations Golf Monthly viennent d'un fil réel vérifié par deux lectures indépendantes ; leur mot-à-mot exact reste à recontrôler manuellement avant publication, par prudence.</p>
+
+  <h2>Ce que montrent les données</h2>
+  <ul>
+    <li>La compression mesurée de la Pro V1 est de 92,5 contre 72 pour la Chrome Soft (MyGolfSpy Ball Lab).</li>
+    <li>Le retour le plus cité en faveur de la Chrome Soft porte sur le toucher au green et le contrôle en direction.</li>
+    <li>Le retour le plus cité en négatif sur la Chrome Soft porte sur la durabilité de la couverture, avec des cas rapportés de fissures.</li>
+    <li>Le reconditionnement Golfiller ne change ni la compression ni le noyau des deux modèles : seul l'aspect cosmétique varie selon le grade.</li>
+  </ul>
+
+  <h2>Pro V1 ou Chrome Soft : le choix par besoin</h2>
+  <div class="choice-cards">
+    <div class="choice-card">
+      <div class="cc-need">Vous cherchez le contrôle et la régularité</div>
+      <div class="cc-tool">Pro V1</div>
+      <div class="cc-facts">
+        <div>Compression mesurée 92,5</div>
+        <div>Swing rapide recommandé</div>
+      </div>
+    </div>
+    <div class="choice-card">
+      <div class="cc-need">Vous cherchez le toucher et un prix plus doux</div>
+      <div class="cc-tool">Chrome Soft</div>
+      <div class="cc-facts">
+        <div>Compression mesurée 72</div>
+        <div>Dès 21,99 € en occasion</div>
+      </div>
+    </div>
+  </div>
+  <div class="choice-dark">
+    <div class="cc-need">Dans les deux cas</div>
+    <div class="cc-tool">Le reconditionnement ne change ni la compression ni la construction</div>
+  </div>
+
+  <h2>Les alternatives aux deux balles</h2>
+  <p>Pour un profil de jeu comparable, voir aussi les duels <a href="2026-07-30-golfiller-vs-pro-v1-vs-pro-v1x.html">Pro V1 vs Pro V1x</a> et <a href="2026-07-30-golfiller-vs-chrome-soft-vs-zstar.html">Chrome Soft vs Z-Star</a>.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="gf-faq" style="border-top:1px solid #e0ece9;margin-top:8px">
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span style="flex:1 1 auto">La Chrome Soft est-elle moins durable que la Pro V1 ?</span><span style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75"><p style="margin:0">Plusieurs retours de golfeurs signalent des marques d'usure plus rapides sur la Chrome Soft, et de rares cas de fissure. Rien de systématique ni de mesuré en laboratoire, mais c'est le point négatif le plus souvent cité.</p></div>
+    </details>
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span style="flex:1 1 auto">La Chrome Soft convient-elle à un swing lent ?</span><span style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75"><p style="margin:0">Mieux que la Pro V1 : sa compression mesurée de 72 la rend plus facile à comprimer à vitesse modérée. Un swing très lent restera toutefois mieux servi par une 2 pièces comme l'AD333 ou la Supersoft.</p></div>
+    </details>
+  </div>
+
+  <div class="gf-sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>MyGolfSpy Ball Lab : compression Titleist Pro V1 (92,5, test 2025) et Callaway Chrome Soft (72, mesurée)</li>
+      <li>Golf Monthly Forums, fil « Pro V1 worth the money », 15 février 2020</li>
+      <li>Reddit r/golf, fils « Chrome Soft Review » (2015), « Chrome Soft cracked » (2024), « Aside from Pro V1 what golf ball are you using » (2023)</li>
+      <li>Catalogue et prix occasion Golfiller, à reconfirmer sur le live avant mise en ligne</li>
+    </ul>
+  </div>
+</article>
+
+</body>
+</html>

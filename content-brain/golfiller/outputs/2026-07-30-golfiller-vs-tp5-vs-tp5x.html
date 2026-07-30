@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaylorMade TP5 ou TP5x : prototype Golfiller</title>
+<style>
+body{margin:0;background:#f6f5f1;padding:40px 16px 80px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.proto-flag{max-width:760px;margin:0 auto 24px;background:#111;color:#F5E137;font-size:13px;padding:10px 16px;border-radius:6px}
+
+.gf-article{--gf-ink:#13241d;--gf-muted:#5b6b62;--gf-line:#e0ece9;--gf-accent:#108474;--gf-soft:#eaf6f3;max-width:760px;margin:0 auto;color:var(--gf-ink);font-size:17px;line-height:1.7}
+.gf-article h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 6px;color:var(--gf-ink)}
+.gf-article .gf-eyebrow{font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--gf-accent);font-weight:700;margin-bottom:10px}
+.gf-article .gf-meta{font-size:13px;color:var(--gf-muted);margin-bottom:22px}
+.gf-article h2{font-size:clamp(21px,3vw,27px);line-height:1.25;letter-spacing:-.01em;margin:44px 0 14px;color:var(--gf-ink)}
+.gf-article h3{font-size:19px;line-height:1.3;margin:28px 0 6px;color:var(--gf-ink)}
+.gf-article p{margin:0 0 16px}
+.gf-article a{color:var(--gf-accent);text-decoration:none;border-bottom:1px solid rgba(16,132,116,.3)}
+.gf-article a:hover{border-bottom-color:var(--gf-accent)}
+.gf-article .gf-lead{font-size:19px;color:var(--gf-ink)}
+.gf-article .gf-transparence{background:var(--gf-soft);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--gf-muted);margin:0 0 22px}
+.gf-article ul{margin:0 0 16px;padding-left:0;list-style:none}
+.gf-article ul li{position:relative;padding-left:22px;margin-bottom:10px}
+.gf-article ul li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--gf-accent)}
+.gf-article .gf-table-wrap{overflow-x:auto;margin:0 0 20px}
+.gf-article table{width:100%;border-collapse:collapse;font-size:15px}
+.gf-article thead th{background:#5BD8C0;text-align:left;font-weight:700;color:#13241d;padding:11px 14px;border-bottom:2px solid var(--gf-line);white-space:nowrap}
+.gf-article tbody td{padding:11px 14px;border-bottom:1px solid var(--gf-line);color:var(--gf-muted)}
+.gf-article tbody td:first-child{color:var(--gf-ink);font-weight:600}
+.gf-article tbody tr:nth-child(even){background:#fafcfb}
+
+.gf-article .gf-quote{background:#fff;border:1px solid var(--gf-line);border-radius:10px;padding:16px 18px;margin:0 0 14px}
+.gf-article .gf-quote-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.gf-article .gf-quote-avatar{width:30px;height:30px;border-radius:50%;background:var(--gf-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
+.gf-article .gf-quote-meta{font-size:13px;color:var(--gf-muted)}
+.gf-article .gf-quote-meta b{color:var(--gf-ink)}
+.gf-article .gf-quote-text{font-size:14.5px;color:var(--gf-ink);line-height:1.6;margin:0 0 8px}
+.gf-article .gf-quote-foot{font-size:12.5px;color:var(--gf-muted)}
+.gf-article .gf-quote-foot a{border-bottom:1px solid rgba(16,132,116,.3)}
+
+.gf-article .choice-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 14px}
+@media (max-width:600px){.gf-article .choice-cards{grid-template-columns:1fr}}
+.gf-article .choice-card{background:#fff;border:1px solid var(--gf-line);border-radius:10px;padding:18px}
+.gf-article .choice-card .cc-need{font-size:12.5px;color:var(--gf-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.gf-article .choice-card .cc-tool{font-size:22px;font-style:italic;font-weight:600;margin-bottom:10px}
+.gf-article .choice-card .cc-facts{font-size:13.5px;color:var(--gf-muted)}
+.gf-article .choice-card .cc-facts div{padding:5px 0;border-top:1px solid var(--gf-line)}
+.gf-article .choice-dark{background:var(--gf-ink);color:#fff;border-radius:10px;padding:18px;margin:0 0 20px}
+.gf-article .choice-dark .cc-need{color:#9fb8ae;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.gf-article .choice-dark .cc-tool{font-size:20px;font-style:italic}
+
+.gf-article .gf-faq{border-top:1px solid var(--gf-line)}
+.gf-article .gf-sources{margin-top:40px;padding-top:18px;border-top:1px solid var(--gf-line);font-size:14px;color:var(--gf-muted)}
+.gf-article .gf-sources h2{font-size:18px;margin:0 0 10px}
+.gf-article .gf-sources li::before{background:var(--gf-muted)}
+.gf-article .gf-verif-note{font-size:12.5px;color:#a08a3a;background:#fbf6e6;border-radius:8px;padding:10px 12px;margin:0 0 16px}
+</style>
+</head>
+<body>
+
+<div class="proto-flag">PROTOTYPE LOCAL, structure et contenu à valider avant intégration Shopify (template gf-article).</div>
+
+<article class="gf-article">
+  <span class="gf-eyebrow">Comparatif · balles de golf</span>
+  <h1>TaylorMade TP5 ou TP5x : quelle balle choisir ?</h1>
+  <div class="gf-meta">Données vérifiées le 30 juillet 2026 · lecture 5 min</div>
+
+  <p class="gf-lead">Deux constructions 5 pièces identiques sur le papier, une différence de compression nette (85 contre 97) qui se traduit sur le terrain par plus de spin sur la TP5 et plus de distance sur la TP5x. Plusieurs golfeurs qui jouent les deux rapportent d'ailleurs ne sentir presque aucune différence de performance globale : le choix se fait sur ce que vous recherchez en priorité.</p>
+
+  <div class="gf-transparence">Cette page est publiée par Golfiller, revendeur de balles de golf reconditionnées, y compris des deux modèles comparés ici. La grille de critères est identique pour les deux balles, et les données viennent de fiches constructeur ou de mesures indépendantes, jamais d'une estimation interne.</div>
+
+  <h2>TP5 x TP5x</h2>
+  <p>Les deux balles partagent la même construction 5 pièces à couverture uréthane, la signature technique de TaylorMade sur sa gamme de tour. La TP5 vise le spin, en particulier au petit jeu ; la TP5x vise une trajectoire plus haute et plus de distance, avec un peu moins de spin sur les longs coups. Pour situer ces deux balles face au reste du catalogue, voir le <a href="2026-07-30-golfiller-comparateur-balles.html">comparateur général</a>.</p>
+
+  <h2>Construction et compression</h2>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr><th>Critère</th><th>TP5</th><th>TP5x</th></tr></thead>
+      <tbody>
+        <tr><td>Construction</td><td>5 pièces, uréthane</td><td>5 pièces, uréthane</td></tr>
+        <tr><td>Compression publiée par TaylorMade</td><td>85</td><td>97</td></tr>
+        <tr><td>Trajectoire</td><td>Plus basse, plus de spin</td><td>Plus haute, un peu moins de spin</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Swing, usage et prix</h2>
+  <div class="gf-table-wrap">
+    <table>
+      <thead><tr><th>Critère</th><th>TP5</th><th>TP5x</th></tr></thead>
+      <tbody>
+        <tr><td>Swing recommandé</td><td>Rapide</td><td>Très rapide</td></tr>
+        <tr><td>Recherché pour</td><td>Spin, contrôle au petit jeu</td><td>Distance, pénétration au vent</td></tr>
+        <tr><td>Prix occasion Golfiller</td><td>Dès 21,99 €</td><td>Dès 21,99 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>TaylorMade TP5</h3>
+  <p>Compression publiée de 85. Les retours de golfeurs qui comparent les deux modèles reviennent souvent sur un spin plus élevé et un toucher jugé un peu plus doux, en particulier au putter, sans réel écart de distance constaté au driver par rapport à la TP5x.</p>
+
+  <h3>TaylorMade TP5x</h3>
+  <p>Compression publiée de 97, la plus haute du catalogue comparé ici. Plusieurs retours de golfeurs à vitesse de swing élevée la préfèrent pour sa stabilité et sa distance au driver, y compris dans le vent, au prix d'un spin un peu plus faible sur les longs coups qui peut réduire le contrôle sur un green ferme.</p>
+
+  <h2>Ce qu'en disent les golfeurs</h2>
+  <p>Cinq retours réels et équilibrés, traduits de l'anglais, tirés du forum GolfWRX.</p>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">Z</span><span class="gf-quote-meta"><b>u/Z1ggy16</b> · GolfWRX, forum Golf Balls · 25 septembre 2018</span></div>
+    <p class="gf-quote-text">« "Meilleure" c'est relatif. La TP5 spinne plus, la TP5X spinne un peu moins et vole un peu plus haut. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1547846-tp5-or-tp5x/" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">N</span><span class="gf-quote-meta"><b>u/noodle3872</b> · GolfWRX, forum Golf Balls · 25 septembre 2018</span></div>
+    <p class="gf-quote-text">« J'ai joué les deux. Elles se jouaient tellement de manière similaire que ça s'est joué sur la sensation. Je préfère la sensation de la TP5. Honnêtement, je pourrais jouer l'une ou l'autre sans avoir l'impression de perdre en performance. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/1547846-tp5-or-tp5x/" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">S</span><span class="gf-quote-meta"><b>u/sbjinx</b> · GolfWRX, forum Golf Balls · 7 juin 2024</span></div>
+    <p class="gf-quote-text">« Je n'ai joué que 2 rounds avec la TP5x, mais pour moi elle volait un peu plus haut, un peu plus loin, avec moins de spin aux fers et wedges, et un peu moins souple au putter. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/2004932-prov1-vs-tp5x-new-version/" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">T</span><span class="gf-quote-meta"><b>u/Teebs</b> · GolfWRX, forum Golf Balls · 5 avril 2025</span></div>
+    <p class="gf-quote-text">« Après plus de tests aujourd'hui, aucun doute que la TP5x est longue mais elle ne spinne pas assez pour moi. Je garderai peut-être une manche sous la main pour les jours de vent et les greens souples, mais sur des greens fermes elle ne s'arrête tout simplement pas. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/2045129-tp5-v-tp5x-v-prov1x/" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <div class="gf-quote">
+    <div class="gf-quote-head"><span class="gf-quote-avatar">H</span><span class="gf-quote-meta"><b>u/hammergolf</b> · GolfWRX, forum Golf Balls · 2 avril 2025</span></div>
+    <p class="gf-quote-text">« J'ai joué les 3, la TP5x était la meilleure pour moi. C'était de loin la plus longue des trois, mais elle garde beaucoup de spin autour des greens. »</p>
+    <div class="gf-quote-foot"><a href="https://forums.golfwrx.com/topic/2045129-tp5-v-tp5x-v-prov1x/" target="_blank" rel="noopener">Voir le fil sur GolfWRX</a> · traduit de l'anglais</div>
+  </div>
+
+  <p class="gf-verif-note">Note de méthode : ces citations viennent de fils GolfWRX réels, lus via un lecteur en lecture seule (accès direct bloqué par le forum), avec double vérification sur plusieurs d'entre elles. Le mot-à-mot exact reste à recontrôler manuellement avant publication, par prudence. Aucune citation Reddit vérifiable n'a été trouvée sur ces deux modèles précis.</p>
+
+  <h2>Ce que montrent les données</h2>
+  <ul>
+    <li>TaylorMade publie une compression de 85 pour la TP5 et 97 pour la TP5x.</li>
+    <li>Plusieurs golfeurs qui jouent les deux modèles rapportent une performance globale très proche, la différence se jouant sur la trajectoire et le spin plutôt que sur la distance totale.</li>
+    <li>Le retour le plus cité en faveur de la TP5x concerne sa stabilité dans le vent ; le plus cité en négatif concerne un manque de spin sur greens fermes.</li>
+  </ul>
+
+  <h2>TP5 ou TP5x : le choix par besoin</h2>
+  <div class="choice-cards">
+    <div class="choice-card">
+      <div class="cc-need">Vous cherchez le spin et le toucher</div>
+      <div class="cc-tool">TP5</div>
+      <div class="cc-facts">
+        <div>Compression 85</div>
+        <div>Swing rapide recommandé</div>
+      </div>
+    </div>
+    <div class="choice-card">
+      <div class="cc-need">Vous cherchez la distance et la stabilité</div>
+      <div class="cc-tool">TP5x</div>
+      <div class="cc-facts">
+        <div>Compression 97</div>
+        <div>Swing très rapide recommandé</div>
+      </div>
+    </div>
+  </div>
+  <div class="choice-dark">
+    <div class="cc-need">Dans les deux cas</div>
+    <div class="cc-tool">Le reconditionnement ne change ni la compression ni la construction</div>
+  </div>
+
+  <h2>Les alternatives aux deux balles</h2>
+  <p>Pour un profil de jeu comparable, voir aussi le duel <a href="2026-07-30-golfiller-vs-chrome-soft-vs-zstar.html">Chrome Soft vs Z-Star</a>.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="gf-faq" style="border-top:1px solid #e0ece9;margin-top:8px">
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span style="flex:1 1 auto">La TP5x va-t-elle vraiment plus loin que la TP5 ?</span><span style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75"><p style="margin:0">Pour un swing rapide, oui, en particulier dans le vent. Pour un swing plus modéré, plusieurs golfeurs rapportent une distance quasi identique entre les deux modèles : l'écart se joue surtout sur la trajectoire et le spin.</p></div>
+    </details>
+    <details style="border-bottom:1px solid #e0ece9;padding:4px 0">
+      <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 2px;margin:0;font-weight:600;font-size:17px;color:#13241d"><span style="flex:1 1 auto">Pourquoi jouer la TP5 plutôt que la TP5x ?</span><span style="flex:none;font-size:28px;line-height:1;color:#108474">+</span></summary>
+      <div style="padding:6px 2px 24px;color:#5b6b62;line-height:1.75"><p style="margin:0">Pour le spin et le contrôle au petit jeu, en particulier sur un green réceptif où la TP5x peut manquer d'accroche pour certains joueurs.</p></div>
+    </details>
+  </div>
+
+  <div class="gf-sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>TaylorMade : fiches officielles TP5 (compression 85) et TP5x (compression 97)</li>
+      <li>GolfWRX, fils « TP5 or TP5X? » (2018), « ProV1 vs. TP5X new version » (2024), « TP5 v TP5x v ProV1x » (2025)</li>
+      <li>Catalogue et prix occasion Golfiller, à reconfirmer sur le live avant mise en ligne</li>
+    </ul>
+  </div>
+</article>
+
+</body>
+</html>
