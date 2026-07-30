@@ -2290,3 +2290,11 @@ Tout déployé, commité, poussé. Données de test nettoyées, user de test sup
   - table `reddit_copilot_state` créée via API Management `/database/query` (RLS activé, aucune policy : seul le service_role de la fonction y accède, keyé par device_id uuid).
 - Testé bout-en-bout : save `{"ok":true}` puis load renvoie l'état exact. Ligne de test supprimée.
 - Note archi : le front a un fallback localStorage, donc la page marche même si le backend tombe (persistance appareil garantie, sync serveur en plus).
+
+## 2026-07-30 — Économies de tokens Gemini : cache citation-probe + plafond docs ai-chat
+- Audit demandé par Tim ("comment économiser des tokens sur Fusionn ?") sur les ~40 edge functions qui appellent Gemini. Deux vraies inefficiences trouvées (le reste — `fetch-volume-trends`, `tool-cluster-keywords`, `rerank.ts` — était déjà correctement optimisé).
+- **`tool-citation-probe`** (le plus gros levier) : tirait 9 prompts groundés (Google Search) en `gemini-2.5-pro` à chaque appel, sans aucun cache — relancer la même analyse domaine+secteur refaisait les 9 appels à zéro.
+  - Nouvelle table `citation_probe_cache` (migration `20260730120000_citation_probe_cache.sql`, clé `domain`+`sector`, RLS on, service_role only) : cache 30 jours, même logique que `keyword_trends_data`.
+  - Modèle `gemini-2.5-pro` → `gemini-2.5-flash` : la fonction ne fait que du pattern-matching (`detectCitation`), le grounding fait le vrai travail, pas besoin de pro.
+- **`ai-chat`** : les documents attachés manuellement (`documents` table) étaient réinjectés en entier, sans plafond, à CHAQUE message du thread — un fichier long attaché tôt dans la conversation gonflait chaque tour suivant. Plafonné à 8000 caractères, aligné sur l'autre chemin de documents (`contextDocuments`, déjà plafonné).
+- Migration appliquée (`supabase db push --linked`), les 2 edge functions déployées (`supabase functions deploy`), commit auto-committé puis push `main` (`3d81d0f..fa0c0e7`, ne touche que `supabase/` → pas de build Netlify déclenché).
