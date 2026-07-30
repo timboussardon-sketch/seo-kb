@@ -44,11 +44,19 @@ DENY_DIRS = {
     "wiki/propositions",  # templates de propale avec exemples client
     "wiki/preuves",       # perf client mesurée
     "wiki/agents",        # config interne
+    "wiki/moc",           # MOC = navigation du vault de Tim, wikilinks non portables hors Obsidian
+    "wiki/decisions",     # ADR internes (schéma vault, LaunchAgents, infra perso)
+    "wiki/ops",           # health-checks des automatisations perso de Tim
+    "wiki/revues-presse", # éditions de la newsletter perso Algorithme
+    "wiki/posts-linkedin",# drafts LinkedIn perso de Tim
+    "wiki/queries",       # questions ad-hoc, souvent sur le business Organikk lui-même
+    "wiki/methodes",      # fiches méthode des automatisations perso (SyntheticBrain, etc.)
 }
 # Registres système à la racine de wiki/.
 DENY_ROOT = {
     "wiki/index.md", "wiki/log.md", "wiki/hypotheses.md",
     "wiki/contradictions.md", "wiki/ingest-backlog.md",
+    "wiki/dashboard.md",  # stats auto-générées du vault perso de Tim
 }
 # Couche 3 : noms de CLIENTS / PROSPECTS (pas les produits de Tim).
 CLIENT_RE = re.compile(
@@ -56,6 +64,8 @@ CLIENT_RE = re.compile(
 )
 CALL_RE = re.compile(r"call-\d+", re.IGNORECASE)
 DENY_SOURCE_TYPES = {"client-note", "transcript", "gsc-export"}
+# Types méta-vault : décrivent le SYSTÈME de Tim (navigation, décisions, méthode), pas la doctrine SEO.
+DENY_TYPES = {"moc", "decision", "register", "methode"}
 # Fiches de personnes (prospects, clients, participants) reconnues par leurs tags.
 DENY_TAGS = {"prospect", "client", "personne"}
 TITLE_PERSON_RE = re.compile(r"\((?:prospect|client|bo[iî]te)\b", re.IGNORECASE)
@@ -97,6 +107,8 @@ def excluded(rel: str, fm: dict, body: str) -> str | None:
     for d in DENY_DIRS:
         if rel == d or rel.startswith(d + "/"):
             return f"dossier interne ({d})"
+    if stringify(fm.get("type")) in DENY_TYPES:
+        return f"type={fm.get('type')} (méta-vault, non portable)"
     if stringify(fm.get("source_type")) in DENY_SOURCE_TYPES:
         return f"source_type={fm.get('source_type')}"
     if str(fm.get("confidential")).lower() in ("true", "1", "yes", "oui"):
