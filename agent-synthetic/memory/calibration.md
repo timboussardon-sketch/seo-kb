@@ -1531,3 +1531,16 @@ Règle dure explore respectée: 6 sources nouvelles explore ajoutées (github.co
 Prochaine édition (30 juillet 2026 matin): NE PAS ré-enchaîner Recherche agentique (2/2 des 2 dernières info du jour). NE PAS ré-enchaîner Business SEO en info du jour. Viser strictement **Actualité SEO** (Reddit Q2 30 juillet si chiffre isolé), **Niche SEO** (cas concret publié) ou **GEO** (mesure indépendante) avec fait franchement neuf.
 
 Pattern réutilisable: sur un vendeur déjà couvert le même jour en info du jour matin (Perplexity Personal Computer Windows), la v2 tient quand (a) le produit est distinct (pplx CLI = interface programmatique Search API vs agent local exécution), (b) le mécanisme est documenté concrètement (deux commandes + sortie JSON pur + absence de mode conversation + absence de choix de modèle), (c) la tarification est lisible (5 USD/1000 requêtes 50 QPS applicable à tous les paliers), (d) 5 limites documentaires sont publiées en tête (pas de chiffre d'usage pplx CLI, pas de description comportement coupure réseau, pas de traitement des sites bloquant le user-agent content fetch, pas de mesure indépendante de latence/couverture/qualité, pas de reprise indépendante de la presse SEO), (e) doctrine reliée est différenciante (agentic-search point d'appel machine distinct de Comet et Personal Computer + metriques-visibilite-geo Search API JSON brut vs réponse synthétisée). Complément B3 : quand un patron d'architecture apparaît chez deux fournisseurs la même semaine (Cursor Router 22 juillet + Fireworks Nexus 26 juillet), le documenter comme patron pour un cas d'usage adjacent (coding agents) puis poser explicitement la question ouverte de transposition côté recherche générative multi-moteurs, sans prétendre à une preuve qui n'existe pas.
+
+## 2026-07-30 — Édition Actualité SEO Anthropic Claude + Mueller pivot
+
+- **Note globale**: 3,5/5
+- **source_diversity**: 12 (info du jour 8 sources indépendantes, B1 5, B2 3, B3 2)
+- **claim_density**: 17 verified + 1 uncertain (« des centaines » Anthropic non vérifié) + 6 discarded (redite ou hors périmètre)
+- **novelty_score**: 3 (angle doctrine SEO anti-pattern appliqué cas LLM company + pivot doctrinal fresh Mueller 29 juillet + convergence)
+- **doctrine_fit**: 4 (3 concepts articulés distinctement e-e-a-t + agentic-search + metriques-visibilite-geo pour info du jour ; product-led-seo pour B2 ; passage-ranking pour B3)
+- **redite_risk**: faible-moyen (Anthropic Claude 3-5 jours incident + Meta Business Agent déjà mentionné 07-28 B3 mais chiffres officiels distincts)
+- **clickbait_risk**: faible
+- **Pilier**: Actualité SEO (info du jour), Business SEO (B1), Actualité SEO (B2 et B3)
+- **12 corrections post-relecture appliquées** avant validation (voir directives 2026-07-30 discipline anti-pattern IA)
+- **Fenêtre événementielle pauvre**: constat 4ème édition consécutive, méthode confirmée : cas SEO doctrine + pivot fresh même jour = édition tenable sans forcer novelty
