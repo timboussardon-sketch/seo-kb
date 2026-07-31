@@ -7,8 +7,8 @@
 - Offre : 1:1 · 850 $ CAD/mois · 3 mois · sans engagement · objectif chiffré validé après analyse des formulaires, travail gratuit au-delà si non atteint
 
 ## Où on en est
-Étape courante : onboarding — espace client créé, collecte à lancer
-Prochaine action : envoyer le lien de l'espace à Raphaël (après validation Tim), récupérer l'export des 911 formulaires + accès GSC + MCP Webflow
+Étape courante : onboarding — espace client + Drive créés, collecte à lancer
+Prochaine action : envoyer le lien de l'espace et du Drive à Raphaël (après validation Tim), poser le partage « tout le monde avec le lien : éditeur » sur le Drive, récupérer l'export des 911 formulaires + accès GSC + MCP Webflow
 
 ## Accès et data
 - GSC : non · GA4 : non · MCP Webflow : non
@@ -21,6 +21,7 @@ Fait via le call de vente du 2026-07-20 : [[call-16-raphael-coach-sportif]] · s
 | Date | Étape (roadmap) | Ce qui a été fait | Output | Skill |
 |---|---|---|---|---|
 | 2026-07-27 | onboarding | Espace client créé (clone espace-leexi, DA organikk) : proposition, collecte (doc_key `raphael`), diagnostic, stratégie, mots-clés/production/suivi à venir. Commit 67d71be, non poussé | `organikk-next/public/espace-raphael-fitness/` | — |
+| 2026-07-31 | onboarding | Drive créé sur le modèle Leexi (00→07, [[feedback_drive_client_modele_leexi]]), dossiers adaptés au plan réel (Stratégie, Data propriétaire 911 formulaires, Analyses, Pages business, Élagage, Ton de voix, Optimisation par mot-clé). Doc 00 Lisez-moi rédigé. Dossiers 01-07 vides, à peupler au fil de la mission | id `1C4o8PCeqDdArAHUIP9sadjlJoQ64bWsl` | — |
 
 ## Spécificités client
 - Tutoiement acté au call (contrairement à Leexi en vouvoiement) : l'espace client tutoie.
