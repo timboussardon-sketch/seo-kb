@@ -1560,3 +1560,19 @@ Pattern réutilisable: sur un vendeur déjà couvert le même jour en info du jo
 | **note_globale** | **3,6/5** |
 
 Faits notables : résolution simultanée de P-2026-07-28-2 et P-2026-07-30-v2-4 verified. OKF v0.2 lève une anti-redite ancienne (14 juin 2026) par condition explicite remplie. Pilier variation OK (2 Actualité SEO + 1 BS + 1 RA). Attention piège de re-enchaîner Actualité SEO en info du jour prochaine (3/3 dernières).
+
+## 2026-07-31 v2 — Édition GEO Writesonic ghost citation
+
+| Axe | Mesure |
+|---|---|
+| source_diversity | 9 sources indépendantes (info 3, B1 2, B2 2, B3 2, dédoublonnées) |
+| claim_density_verified | 9 |
+| claim_density_uncertain | 1 (écart 8 pts AI Mode vs AIO lecture interpretive fragile) |
+| claims_discarded | 12 (9 anti-redite, 3 hors-périmètre ou stale, 1 hors-directive Business SEO) |
+| novelty_score | 4/5 (hiérarchie per-engine première publication cette échelle + hiérarchie contre-intuitive Perplexity en tête + addition 6e dimension doctrine metriques-visibilite-geo) |
+| doctrine_fit | 4/5 (metriques-visibilite-geo addition explicite + grounding-score + agentic-search) |
+| redite_risk | faible (Writesonic 16M per-engine distinct Ahrefs 43 pct + Pillarbase passage + Seer URL-competitor + Indig 61,7 pct méthodologie distincte) |
+| clickbait_risk | faible |
+| **note_globale** | **3,5/5** |
+
+Faits notables : 3e GEO en info du jour sur les 4 dernières (07-27-v2 Seer + 07-30-v2 Pillarbase + 07-31-v2 Writesonic), seuil critique atteint. Correction post-relecture unique : absorbe/efface personnification technologique → reprend/conserve/ne-réutilise-pas. Piliers brèves diversifiés (Product-Led SEO + Niche SEO + GEO complémentaire). 6 nouvelles prédictions ouvertes. Corroboration Kevin Indig avril 2026 méthodologie indépendante Writesonic. Constat maintenu 5e édition consécutive de fenêtre pauvre en faits franchement neufs sur les 5 familles : la prochaine édition doit basculer piiler (Niche SEO, PLS ou RA en priorité).
