@@ -1544,3 +1544,19 @@ Pattern réutilisable: sur un vendeur déjà couvert le même jour en info du jo
 - **Pilier**: Actualité SEO (info du jour), Business SEO (B1), Actualité SEO (B2 et B3)
 - **12 corrections post-relecture appliquées** avant validation (voir directives 2026-07-30 discipline anti-pattern IA)
 - **Fenêtre événementielle pauvre**: constat 4ème édition consécutive, méthode confirmée : cas SEO doctrine + pivot fresh même jour = édition tenable sans forcer novelty
+
+## 2026-07-31 — Édition Actualité SEO Reddit T2 2026
+
+| Axe | Mesure |
+|---|---|
+| source_diversity | 12 sources indépendantes (info 5, B1 3, B2 6, B3 3, dédoublonnées) |
+| claim_density_verified | 11 |
+| claim_density_uncertain | 1 (estimation ~40M USD autres deals, fragile explicitée) |
+| claims_discarded | 13 (12 anti-redite, 1 hors-périmètre GPT-5.6) |
+| novelty_score | 4/5 (chiffre isolé du jour + 2 prédictions résolues + verbatim CEO 4 usages + estimation solde analytique) |
+| doctrine_fit | 4/5 (6 concepts articulés distinctement) |
+| redite_risk | faible |
+| clickbait_risk | faible |
+| **note_globale** | **3,6/5** |
+
+Faits notables : résolution simultanée de P-2026-07-28-2 et P-2026-07-30-v2-4 verified. OKF v0.2 lève une anti-redite ancienne (14 juin 2026) par condition explicite remplie. Pilier variation OK (2 Actualité SEO + 1 BS + 1 RA). Attention piège de re-enchaîner Actualité SEO en info du jour prochaine (3/3 dernières).
