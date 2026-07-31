@@ -11,11 +11,17 @@ status: stable
 
 Carte d'entrée des sorties du workflow mots-clés (pilote enrichissement directory `fusionn.co/blog`). Chaîne type : recherche → clustering → décisionnels → modèles pSEO. Voir la doctrine dans [[concepts/mots-cles-actionnels]] et [[concepts/programmatique-pseo]].
 
-## Chaîne complète — agence SEO
+## Chaîne complète — agence SEO (fusionn.co, 2026-05-28)
 
 - [[keywords/clustering-2026-05-28-agence-seo]] — Clustering mots-clés — agence SEO
 - [[keywords/decisionnels-2026-05-28-agence-seo]] — Mots-clés décisionnels — agence SEO
 - [[keywords/modeles-pseo-2026-05-28-agence-seo]] — Modèles pSEO Spokes — agence SEO
+
+## Chaîne complète — agence SEO / SEO IA (Organikk.co, 2026-07-31)
+
+- [[keywords/recherche-2026-07-31-agence-seo-organikk]] — Recherche mots-clés — 73 mots-clés qualifiés
+- [[keywords/clusters-2026-07-31-agence-seo-organikk]] — Clustering — 22 clusters, cannibalisation vérifiée contre le repo live
+- [[keywords/decisionnels-2026-07-31-agence-seo-organikk]] — Décisionnels — shortlist SEO IA/GEO priorisée
 
 ## Recherches par métier / secteur (campagne 2026-05-27)
 

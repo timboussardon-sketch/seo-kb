@@ -1404,3 +1404,9 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: min 2/fiche, 0 lien mort (vérifié)
 - nœuds suggérés (à créer en curation): aucun
 - angle SEO transverse: le SEO technique (indexation, maillage, cannibalisation, schema, CWV) devient délégable à Claude quasi intégralement — le différenciant se déplace vers la donnée propriétaire et le système (Wiki/Raw), pas l'exécution
+
+## [2026-07-31] query | Workflow mots-clés complet — agence SEO / SEO IA Organikk
+- output: [[keywords/recherche-2026-07-31-agence-seo-organikk]] → [[keywords/clusters-2026-07-31-agence-seo-organikk]] → [[keywords/decisionnels-2026-07-31-agence-seo-organikk]]
+- skills déclenchés: seo-recherche-mots-cles, seo-clustering-mots-cles, seo-mots-cles-decisionnels
+- cannibalisation vérifiée contre organikk-next/src/app (15 pages live inventoriées, dont systeme-seo-ia)
+- résultat clé: cluster "Agence/consultant SEO IA-GEO" (pivot agence seo geo, score 8/10) = terrain quasi vierge, priorité absolue
