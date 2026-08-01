@@ -75,7 +75,7 @@ body { margin: 0; background: #f6f5f1; padding: 0 0 80px; }
 /* ===== DUELS POPULAIRES ===== */
 .cmp-popular { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 18px 0 8px; }
 .cmp-popular-label { font-size: 12px; color: #888; margin-right: 2px; }
-.cmp-pop-btn { padding: 7px 14px; background: #fff; border: 2px solid #4ECDC4; border-radius: 20px; font-size: 13px; font-weight: 600; color: #0c5c50; cursor: pointer; font-family: 'Source Sans 3', sans-serif; transition: background .15s, color .15s; }
+.cmp-pop-btn { padding: 7px 14px; background: #fff; border: 2px solid #4ECDC4; border-radius: 20px; font-size: 13px; font-weight: 600; color: #0c5c50; cursor: pointer; font-family: 'Source Sans 3', sans-serif; transition: background .15s, color .15s; text-decoration: none; display: inline-block; }
 .cmp-pop-btn:hover { background: #4ECDC4; color: #111; }
 
 /* ===== PANNEAU RÉSULTAT ===== */
@@ -278,6 +278,7 @@ body { margin: 0; background: #f6f5f1; padding: 0 0 80px; }
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  if (!document.getElementById('slotA')) return; // inoffensif sur les autres pages du site
 
   var BALLS = [
     { id:'wilson-dx2-soft', marque:'Wilson', modele:'DX2 Soft', construction:'2 pièces, Surlyn', compression:29, compLabel:'très basse', swing:'lent', prix:'dès 9,99 €', url:'https://golfiller.fr/collections/nos-produits' },
@@ -369,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.querySelectorAll('.cmp-pop-btn').forEach(function (btn) {
+  document.querySelectorAll('.cmp-pop-btn[data-a]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       selectBall('A', btn.getAttribute('data-a'));
       selectBall('B', btn.getAttribute('data-b'));
