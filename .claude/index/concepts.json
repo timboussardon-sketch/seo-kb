@@ -305,6 +305,7 @@
       "agent-synthetic/revuedepressIA/2026-07-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -429,7 +430,8 @@
       "agent-synthetic/revuedepressIA/breves-IA/2026-06-08-breves-v2.md",
       "wiki/index.md",
       "wiki/log.md",
-      "wiki/sources/2026-05-13-algorithme-process-verifier-indexation.md"
+      "wiki/sources/2026-05-13-algorithme-process-verifier-indexation.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md"
     ],
     "confidence": "medium",
     "file": "wiki/entities/ahrefs.md",
@@ -691,6 +693,7 @@
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
+      "wiki/sources/2026-07-29-organikk-creer-site-ia-seo.md",
       "wiki/syntheses/algorithme-week-2026-W29.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/tim-profil-doctrine.md",
@@ -1489,6 +1492,7 @@
       "agent-synthetic/revuedepressIA/2026-07-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1734,6 +1738,9 @@
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
       "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md",
+      "wiki/sources/2026-07-31-algorithme-ai-overviews-99-pourcent.md",
+      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md",
       "wiki/syntheses/algorithme-week-2026-W29.md",
       "wiki/syntheses/audit-doctrine-2026.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
@@ -2131,6 +2138,7 @@
       "wiki/sources/2026-04-05-organikk-audit-seo-claude-7-phases.md",
       "wiki/sources/2026-05-27-algorithme-methode-claude-semantique.md",
       "wiki/sources/2026-06-24-algorithme-fin-des-mots-cles.md",
+      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md",
       "wiki/syntheses/workflow-complet-consultant-seo-ia.md"
     ],
     "confidence": "high",
@@ -2668,7 +2676,8 @@
       "wiki/sources/2026-06-12-algorithme-youtube-domine-fanout.md",
       "wiki/sources/2026-07-07-moteurs-ia-chiffres-usage.md",
       "wiki/sources/2026-07-07-organikk-guide-reddit-seo-geo.md",
-      "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md"
+      "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md",
+      "wiki/sources/2026-07-31-algorithme-ai-overviews-99-pourcent.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/google-ai-mode.md",
@@ -2781,6 +2790,7 @@
     "backrefs": [
       ".agents/skills/resurgence-espacee/SKILL.md",
       "AGENTS.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-20-revue-presse.md",
       "content-brain/_template/memory/score-grid.md",
       "content-brain/golfiller/memory/score-grid.md",
@@ -2974,7 +2984,8 @@
       "wiki/sources/2026-07-07-organikk-automatiser-audit-seo-claude-code.md",
       "wiki/sources/2026-07-14-algorithme-ia-moins-utile-google.md",
       "wiki/sources/2026-07-16-algorithme-seo-technique-claude.md",
-      "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md"
+      "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md",
+      "wiki/sources/2026-07-29-organikk-creer-site-ia-seo.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/gsc.md",
@@ -3019,7 +3030,8 @@
       "wiki/concepts/boucle-sortie-mesure.md",
       "wiki/entities/ahrefs.md",
       "wiki/sources/2026-05-13-algorithme-process-verifier-indexation.md",
-      "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md"
+      "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
+      "wiki/sources/2026-07-29-organikk-creer-site-ia-seo.md"
     ],
     "confidence": "medium",
     "file": "wiki/concepts/gsc-export.md",
@@ -3616,7 +3628,8 @@
       "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md",
       "wiki/sources/2026-05-19-algorithme-10-convictions-seo.md",
       "wiki/sources/2026-06-09-algorithme-ia-detruire-business-seo.md",
-      "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md"
+      "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/linkedin.md",
@@ -3711,6 +3724,7 @@
       "raw/articles/posts-linkedin/post-linkedin-maillage-62-liens-30min.md",
       "raw/articles/posts-linkedin/post-linkedin-maillage-interne-skill.md",
       "raw/journal/2026-07-14.md",
+      "raw/journal/2026-07-31.md",
       "raw/organikk/pré-call/proximit-call-damien.md",
       "raw/organikk/pré-call/proximit-propale.md",
       "raw/transcripts/video-erreur-ia-137-pages.md",
@@ -4031,6 +4045,8 @@
       "agent-synthetic/revuedepressIA/2026-07-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -4355,6 +4371,9 @@
       "wiki/sources/2026-07-01-algorithme-x2-trafic-3-mois.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md",
+      "wiki/sources/2026-07-31-algorithme-ai-overviews-99-pourcent.md",
+      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
     ],
     "confidence": "high",
@@ -4606,7 +4625,8 @@
       "wiki/sources/2026-05-12-organikk-role-consultant-seo-2026.md",
       "wiki/sources/2026-06-03-organikk-systeme-seo-ia-complet.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
-      "wiki/sources/2026-07-08-algorithme-redaction-claude.md"
+      "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
+      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/obsidian.md",
@@ -4649,7 +4669,8 @@
       "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
       "wiki/sources/2026-04-12-organikk-wiki-ia-obsidian-claude.md",
-      "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md"
+      "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
+      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/obsidian-as-ide.md",
@@ -4721,7 +4742,8 @@
       "wiki/sources/2026-05-27-organikk-5-skills-seo-technique-claude.md",
       "wiki/sources/2026-06-03-organikk-systeme-seo-ia-complet.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
-      "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md"
+      "wiki/sources/2026-06-24-organikk-mots-cles-qui-ramenent-du-clic.md",
+      "wiki/sources/2026-07-29-organikk-creer-site-ia-seo.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/organikk-co.md",
@@ -5560,7 +5582,8 @@
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
       "wiki/sources/2026-07-16-algorithme-seo-technique-claude.md",
       "wiki/sources/2026-07-16-organikk-optimiser-seo-technique-claude.md",
-      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md"
+      "wiki/sources/2026-07-21-algorithme-systeme-seo-claude-obsidian.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/qadence-seo-agent.md",
@@ -5790,6 +5813,7 @@
       "subreddit"
     ],
     "backrefs": [
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "wiki/concepts/parasite-seo.md",
       "wiki/entities/perplexity.md",
       "wiki/entities/wikipedia.md",
@@ -6200,6 +6224,8 @@
       "wiki/sources/2026-06-19-algorithme-test-reddit-seo.md",
       "wiki/sources/2026-06-29-algorithme-livres-ia-amazon.md",
       "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md",
+      "wiki/sources/2026-07-31-algorithme-ai-overviews-99-pourcent.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/tim-profil-doctrine.md"
@@ -6360,6 +6386,7 @@
       "agent-synthetic/revuedepressIA/2026-07-01-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-07-15-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-13-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-15-revue-presse.md",
@@ -6695,6 +6722,7 @@
       "agent-synthetic/revuedepressIA/2026-07-28-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-29-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-07-31-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-11-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-25-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-27-revue-presse.md",
@@ -6773,6 +6801,7 @@
       "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md",
       "wiki/sources/2026-07-09-call-14-vincent-upscale.md",
       "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md",
       "wiki/syntheses/algorithme-week-2026-W29.md",
       "wiki/syntheses/faq-geo-175-questions.md",
       "wiki/syntheses/vendre-seo-ia-2026.md",
@@ -7252,7 +7281,8 @@
     "backrefs": [
       "wiki/index.md",
       "wiki/log.md",
-      "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md"
+      "wiki/sources/2026-05-08-organikk-ranker-chatgpt-2026.md",
+      "wiki/sources/2026-07-28-algorithme-site-linkedin-contenu.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/wikipedia.md",

@@ -1410,3 +1410,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - skills déclenchés: seo-recherche-mots-cles, seo-clustering-mots-cles, seo-mots-cles-decisionnels
 - cannibalisation vérifiée contre organikk-next/src/app (15 pages live inventoriées, dont systeme-seo-ia)
 - résultat clé: cluster "Agence/consultant SEO IA-GEO" (pivot agence seo geo, score 8/10) = terrain quasi vierge, priorité absolue
+
+## [2026-08-01] ingest | Scrape auto publications (Algorithme + Organikk)
+- source_type: article
+- sources créées: 4 ([[sources/2026-07-28-algorithme-site-linkedin-contenu]], [[sources/2026-07-29-organikk-creer-site-ia-seo]], [[sources/2026-07-31-algorithme-ai-overviews-99-pourcent]], [[sources/2026-07-31-organikk-mots-cles-business-claude]])
+- posts sautés (déjà ingérés): 0 (dernier ingest couvrait jusqu'au 2026-07-21 Algorithme / 2026-07-16 Organikk)
+- wikilinks: min 2/fiche, 0 lien mort (vérifié)
+- nœuds suggérés (à créer en curation): aucun
+- angle SEO transverse: convergence des deux canaux sur la même thèse — le trafic informationnel est absorbé par les AI Overviews (99% des KW purs), le SEO se redéploie sur le décisionnel + la donnée propriétaire (RAG Obsidian, GSC brute) + un système multi-canal site/LinkedIn/contenu

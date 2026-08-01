@@ -31,9 +31,9 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (99)
+## Sources (103)
 
-### Articles (52)
+### Articles (56)
 - [[sources/2026-01-08-organikk-seo-agence-immobiliere-lyon]] — SEO local immobilier Lyon : micro-intentions, estimateurs, newsletter à backlinks
 - [[sources/2026-01-12-organikk-seo-serrurier-lyon]] — SEO serrurier Lyon : transparence tarifaire, 30 KW bottom-funnel, leads seuls
 - [[sources/2026-01-15-organikk-mots-cles-seo-2026]] — Mots-clés 2026 : volume = projection, GSC = fait, requêtes 24+ mots
@@ -86,6 +86,10 @@ status: stable
 - [[sources/2026-07-16-algorithme-seo-technique-claude]] — 6 tâches SEO technique déléguées à Claude, sans outil SEO classique
 - [[sources/2026-07-16-organikk-optimiser-seo-technique-claude]] — Version longue : indexation, maillage, cannibalisation, schema, CWV via Claude
 - [[sources/2026-07-21-algorithme-systeme-seo-claude-obsidian]] — 5 règles système SEO Claude+Obsidian : data propriétaire, local, wiki/raw, audit, anti-boucle
+- [[sources/2026-07-28-algorithme-site-linkedin-contenu]] — SEO = Site+LinkedIn+Contenu : typologies résistantes, 58% baisse clics pos1 (Ahrefs)
+- [[sources/2026-07-29-organikk-creer-site-ia-seo]] — Site généré par prompts (bxble) : 12 600 pages indexées, fondation technique + anti-pattern UI IA
+- [[sources/2026-07-31-algorithme-ai-overviews-99-pourcent]] — 99% des KW informationnels avalés par AI Overviews (146M SERPs) ; réorientation multi-canal
+- [[sources/2026-07-31-organikk-mots-cles-business-claude]] — Mots-clés business via Claude : 3 étapes RAG Obsidian + 3 skills, data propriétaire
 
 ### Doctrine (23)
 - [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim
