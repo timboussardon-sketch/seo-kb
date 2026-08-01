@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+<title>Audit SEO pré-call, organikk.co (exemple) · organikk.co</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+:root{
+  --bg:#f5f5f7;
+  --card:#ffffff;
+  --ink:#1d1d1f;
+  --ink-2:#3a3a3c;
+  --muted:#6e6e73;
+  --muted-2:#8e8e93;
+  --line:rgba(0,0,0,.09);
+  --blue:#2559DD;
+  --blue-d:#1B3E8F;
+  --grad:linear-gradient(120deg,#1B3E8F 0%,#2559DD 52%,#5b86f5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{
+  font-family:'Geist',-apple-system,system-ui,sans-serif;
+  background:var(--bg); color:var(--ink);
+  -webkit-font-smoothing:antialiased; letter-spacing:-.011em; line-height:1.6;
+}
+.mono{font-family:'Geist Mono',ui-monospace,monospace}
+.wrap{max-width:840px; margin:0 auto; padding:60px 40px 90px}
+
+/* ── en-tête ── */
+.head{border-bottom:1px solid var(--line); padding-bottom:30px; margin-bottom:12px}
+h1{font-size:35px; line-height:1.14; font-weight:600; letter-spacing:-.035em; max-width:22ch;
+   background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+.head .sub{margin-top:16px; font-size:16px; color:var(--muted); max-width:64ch}
+.meta{margin-top:22px; font-size:13px; line-height:1.7; color:var(--muted)}
+.meta b{color:var(--ink-2); font-weight:600}
+
+/* ── sections ── */
+section{margin-top:44px}
+h2{font-size:24px; font-weight:600; letter-spacing:-.028em; color:var(--ink); margin-bottom:16px; line-height:1.2}
+h3{font-size:16px; font-weight:600; color:var(--ink); margin:24px 0 7px; letter-spacing:-.015em}
+p{font-size:15px; color:var(--ink-2); max-width:72ch}
+p + p{margin-top:12px}
+
+/* ── résumé ── */
+.resume{background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:26px 30px; box-shadow:0 12px 34px -22px rgba(12,26,70,.30)}
+.resume p{font-size:15.5px; color:var(--ink-2)}
+.resume p:first-child{font-weight:500; color:var(--ink)}
+
+/* ── stats ── */
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:22px; margin:22px 0 8px}
+.stat{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 18px}
+.stat .n{font-size:34px; font-weight:600; letter-spacing:-.04em; line-height:1; color:var(--blue); font-variant-numeric:tabular-nums}
+.stat .n small{font-size:19px}
+.stat .t{margin-top:9px; font-size:12.5px; line-height:1.45; color:var(--muted)}
+
+/* ── listes ── */
+ul.clean{list-style:none; margin-top:8px}
+ul.clean li{font-size:15px; color:var(--ink-2); padding:8px 0 8px 20px; position:relative; border-bottom:1px solid rgba(0,0,0,.05); max-width:74ch}
+ul.clean li:last-child{border-bottom:0}
+ul.clean li::before{content:''; position:absolute; left:2px; top:15px; width:5px; height:5px; border-radius:50%; background:var(--blue)}
+ul.clean li b{color:var(--ink); font-weight:600}
+code{font-family:'Geist Mono',monospace; font-size:.88em; color:var(--blue-d); background:#eef2fb; padding:1px 5px; border-radius:4px}
+
+/* ── tableau modèles ── */
+.tbl-wrap{margin-top:16px; border:1px solid var(--line); border-radius:12px; overflow:hidden}
+table{border-collapse:collapse; width:100%; font-size:13.5px; table-layout:fixed}
+thead th{background:#eef2fb; color:var(--blue-d); text-align:left; font-weight:600; font-size:12.5px;
+  padding:12px 13px; letter-spacing:-.01em; border-bottom:1px solid var(--line)}
+thead th:nth-child(1){width:23%}
+thead th:nth-child(2){width:20%}
+thead th:nth-child(3){width:13%}
+thead th:nth-child(4){width:22%}
+thead th:nth-child(5){width:22%}
+tbody td{padding:13px 13px; border-top:1px solid var(--line); color:var(--ink-2); vertical-align:top; line-height:1.45; word-wrap:break-word; overflow-wrap:break-word}
+tbody tr:nth-child(even){background:#fafafb}
+td.mdl{font-weight:600; color:var(--ink)}
+td .pat{font-family:'Geist Mono',monospace; font-size:11.5px; color:var(--blue-d)}
+.ok{color:#1a7f47; font-weight:600}
+.no{color:#b0341d; font-weight:600}
+.note-tbl{margin-top:14px; font-size:13px; color:var(--muted); max-width:74ch}
+
+/* ── roadmap ── */
+.phase{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 26px; margin-top:14px;
+  box-shadow:0 10px 30px -24px rgba(12,26,70,.28); display:grid; grid-template-columns:96px 1fr; gap:22px; align-items:start}
+.phase .ph-k{font-size:13.5px; font-weight:600; color:var(--blue); padding-top:2px}
+.phase .ph-t{font-size:16.5px; font-weight:600; letter-spacing:-.02em; margin-bottom:7px}
+.phase .ph-d{font-size:14px; color:var(--muted); line-height:1.55; max-width:64ch}
+.rhythm{margin-top:16px; font-size:13px; color:var(--muted); background:#eef2fb; border-radius:10px; padding:15px 18px; max-width:74ch}
+.rhythm b{color:var(--ink-2)}
+.anchor{margin-top:10px; font-size:12px; color:var(--muted-2)}
+
+/* ── à récupérer ── */
+.call-box{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px 28px}
+.foot{margin-top:52px; padding-top:22px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); line-height:1.7}
+
+@media(max-width:720px){
+  .wrap{padding:40px 20px 70px}
+  .stats{grid-template-columns:1fr 1fr; gap:14px}
+  .phase{grid-template-columns:1fr; gap:8px}
+  h1{font-size:28px}
+}
+@media print{
+  body{background:#fff}
+  .wrap{max-width:none; padding:0}
+  @page{size:A4; margin:15mm 14mm}
+  section{margin-top:26px}
+  .phase,.resume,.call-box{break-inside:avoid}
+  table{font-size:11px}
+  thead th{padding:8px 9px; font-size:11px}
+  tbody td{padding:9px 9px}
+  thead{display:table-header-group}
+  tbody tr{break-inside:avoid}
+  h1,.stat .n{background:none !important; -webkit-text-fill-color:initial !important}
+  h1{-webkit-background-clip:border-box !important; background-clip:border-box !important; color:#1B3E8F !important}
+  .stat .n{color:#2559DD !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <h1>organikk.co : le blog tourne, la déclinaison sectorielle s'est arrêtée à mi-mai</h1>
+    <p class="sub">Diagnostic, modèles de pages à produire et roadmap 90 jours, préparés avant l'échange à partir des seules pages publiques et du repo source.</p>
+    <div class="meta">
+      Préparé par <b>Timothée Boussardon</b>, organikk.co<br />
+      Cible <b>organikk.co</b>, catégorie conseil SEO/GEO pour PME B2B et experts à matière dense<br />
+      Relevé le <b>01/08/2026</b>, données 100 % publiques (sitemap, robots.txt, repo source), Search Console à récupérer au call
+    </div>
+  </header>
+
+  <!-- EN RÉSUMÉ -->
+  <section>
+    <h2>En résumé</h2>
+    <div class="resume">
+      <p>Organikk publie beaucoup et vite : 27 articles de blog en sept mois, une bibliothèque wiki de définitions dense, et un dernier article daté de la veille de ce relevé. Le fond éditorial tourne à plein régime.</p>
+      <p>La déclinaison par secteur, elle, s'est arrêtée en route. Sur les 14 pages stratégie sectorielle censées démontrer l'expertise par métier, 3 seulement correspondent au persona déclaré (PME B2B, SaaS vertical) : les 11 autres visent des métiers locaux hors périmètre, et l'ensemble n'a plus bougé depuis le 18 mai. Les pages secteur avec outil dédié n'existent que pour deux verticales, elles aussi figées depuis mi-mai. La page /tarifs, publiée le jour de ce relevé, comble un vide réel mais n'a encore aucune déclinaison par cas d'usage.</p>
+      <p>L'ouverture est directe : le modèle qui marche existe déjà, validé sur logiciel-cybersecurite et logiciel-gestion-rh. Il reste à le décliner sur les verticales que le site dit cibler (cabinets de conseil, biotech, formateurs, industrie spécialisée), à rafraîchir ce qui est en ligne, et à laisser le blog continuer son rythme.</p>
+    </div>
+  </section>
+
+  <!-- AUDIT -->
+  <section>
+    <h2>L'audit</h2>
+
+    <h3>Identité et modèle</h3>
+    <p>Conseil SEO/GEO pour PME B2B et experts à matière dense : consultants, cabinets de conseil, formateurs, biotech, industrie spécialisée, SaaS verticaux. Les blogs vitrine et les sites informatifs sans monétisation sont explicitement écartés. Deux offres publiées sur /tarifs : une prestation SEO/GEO avec agent IA à 1 200 € HT/mois sans engagement (mise en place 0 à 1 sur 3 mois, agent remis au client en fin de mission), et un accompagnement système 1:1 à partir de 1 200 € HT. Le point de conversion est le formulaire de /accompagnement-1-1-30-jours (5 questions, puis visio et pré-audit).</p>
+    <p>La preuve sociale existe mais reste concentrée : 6 avis publiés sur /avis, une étude de cas chiffrée détaillée (appart-hôtel) sur /etudes-de-cas, et des captures Search Console réelles de clients affichées sur la page d'accueil. C'est de la data propriétaire directement mobilisable, mais peu déclinée en pages dédiées par secteur.</p>
+
+    <h3>État SEO technique</h3>
+    <div class="stats">
+      <div class="stat"><div class="n">332</div><div class="t">pages recensées dans le sitemap public, relevé le 01/08/2026</div></div>
+      <div class="stat"><div class="n">27</div><div class="t">articles de blog depuis le 08/01/2026, dernier publié le 31/07/2026</div></div>
+      <div class="stat"><div class="n">3<small>/14</small></div><div class="t">pages stratégie sectorielle alignées avec le persona B2B/SaaS déclaré</div></div>
+      <div class="stat"><div class="n">0</div><div class="t">page publique bloquée au robots.txt (3 espaces clients privés interdits)</div></div>
+    </div>
+    <ul class="clean">
+      <li><b>Blog très frais et régulier.</b> 27 articles depuis janvier 2026, cadence proche de l'hebdomadaire sur les deux derniers mois, dernier publié le 31/07/2026, soit la veille de ce relevé.</li>
+      <li><b>Stratégie sectorielle figée à mi-mai.</b> Les 14 pages <code>/strategies/[secteur]-[ville]</code> sont toutes publiées entre le 15 et le 18/05/2026, aucune mise à jour depuis. 3 seulement (logiciel-cybersecurite, logiciel-gestion-rh, centre-formation-ia) correspondent au persona déclaré ; les 11 autres (paysagiste, avocat dommage corporel, hôtel, dentiste, couvreur, plombier, frigoriste, coach sportif) ciblent des métiers locaux hors périmètre explicite.</li>
+      <li><b>Pages secteur à peine amorcées.</b> 2 pages <code>/secteurs</code> seulement (avocat, hôtellerie), publiées mi-mai et non retouchées depuis, alors que le persona cite cabinets de conseil, biotech, formateurs et industrie spécialisée.</li>
+      <li><b>Robots.txt propre.</b> <code>Allow: /</code> général, seules 3 zones clients privées interdites (dashboard bootcamp, espace Leexi, espace FG Formation). Aucune page publique de conversion bloquée.</li>
+      <li><b>Page /tarifs récente, pas encore déclinée.</b> Publiée le 01/08/2026 avec les deux offres (1 200 € HT/mois et accompagnement 1:1), aucune page de déclinaison par cas d'usage en ligne à ce jour.</li>
+    </ul>
+
+    <h3>Le constat, reformulé en coût</h3>
+    <p>Un décideur SaaS B2B, cabinet de conseil ou biotech qui cherche un accompagnement SEO/GEO taillé pour son secteur trouve, au mieux, une des trois pages stratégie alignées, gelée depuis le 18 mai. Sur les 11 autres verticales déjà produites, c'est un métier local hors périmètre qui répond à sa place. Les requêtes décisionnelles posées par le vrai persona (formateur Qualiopi, industrie spécialisée, cabinet de conseil) ne rencontrent aujourd'hui aucune page dédiée, alors que le blog, lui, tourne à plein régime.</p>
+
+    <h3>L'angle défendable</h3>
+    <p>Le fond est là : cadence de publication rare sur ce type de site, bibliothèque wiki dense sur le vocabulaire du domaine, preuves publiques (captures Search Console réelles, étude de cas chiffrée, avis) plutôt que des promesses. C'est exactement ce que les moteurs de réponse valorisent pour citer une source. Ce qui manque, c'est la déclinaison de ce fond sur les verticales que le site dit cibler : le format qui convertit est déjà validé sur logiciel-cybersecurite et logiciel-gestion-rh, il reste à le reproduire plutôt qu'à en inventer un nouveau.</p>
+  </section>
+
+  <!-- MODÈLES DE PAGES -->
+  <section>
+    <h2>Les modèles de pages à produire</h2>
+    <p>On ne part pas d'une liste de mots-clés, on part de modèles de pages, avec une vérification de ce qui existe déjà sur le site. Le principe : un modèle, une variable, des dizaines de pages, et on ne produit que les cases vides. La colonne « déjà sur le site » est relevée dans le sitemap et le repo source le 01/08 ; les requêtes déjà couvertes se confirment en Search Console au cadrage.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Modèle de page</th><th>Pattern d'URL</th><th>Intention</th><th>Déjà sur le site ?</th><th>Ce qui remplit la page</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mdl">Stratégie sectorielle B2B / SaaS</td>
+            <td><span class="pat">/strategies/[secteur]</span></td>
+            <td>Do · décisionnel</td>
+            <td><span class="ok">Oui pour 3</span> (logiciel-cybersecurite, logiciel-gestion-rh, centre-formation-ia), figées depuis le 18/05. Absent pour cabinet de conseil, biotech, industrie spécialisée, organisme de formation Qualiopi.</td>
+            <td>Chiffres sectoriels sourcés (comme paysagiste-paris avec les chiffres UNEP), requêtes du décideur, roadmap 12 mois.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Page secteur avec outil dédié</td>
+            <td><span class="pat">/secteurs/[type-de-structure]</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Oui pour 2</span> (avocat, hôtellerie), figées depuis mi-mai. Absent pour cabinet de conseil, formateur, biotech.</td>
+            <td>Cas d'usage terrain, outil interactif dédié, procédure de contact par typologie.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Consultant/agence + ville, pour la recherche locale</td>
+            <td><span class="pat">/coaching-seo-[ville], /freelance-geo-[ville]</span></td>
+            <td>Do · Website</td>
+            <td><span class="no">Oui pour Lyon seulement</span>. Aucune déclinaison Paris, Bordeaux, Nantes, malgré une offre pilotée à distance.</td>
+            <td>Repositionnement « accompagnement en visio, pas de contrainte géographique » plus preuve locale si pertinente.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Cas d'usage autour de la page tarifs</td>
+            <td><span class="pat">/tarifs + déclinaisons par profil</span></td>
+            <td>Do · BoFu</td>
+            <td><span class="no">Page mère créée le 01/08/2026</span> (2 offres). Aucune déclinaison par cas d'usage en ligne.</td>
+            <td>Réponses aux objections prix par profil (SaaS, cabinet, biotech), sans dupliquer le prix déjà affiché.</td>
+          </tr>
+          <tr>
+            <td class="mdl">Étude de cas chiffrée par vertical</td>
+            <td><span class="pat">/etudes-de-cas/[client]</span></td>
+            <td>Know-Do · preuve</td>
+            <td><span class="no">Oui pour 1 cas détaillé</span> (appart-hôtel). 6 avis publiés sur /avis sans étude de cas associée.</td>
+            <td>Mécanisme réel, capture Search Console, décision prise, résultat mesuré au canal (emails/devis), pas au trafic.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-tbl">Les requêtes exactes se figent au cadrage, Search Console en main. On ne cible aucune requête déjà couverte par les 3 pages stratégie B2B/SaaS existantes ni par le cas client publié : elles sont à renforcer et à rafraîchir, pas à dupliquer. Aucun volume affiché, il se cale sur données au cadrage.</p>
+  </section>
+
+  <!-- ROADMAP -->
+  <section>
+    <h2>Roadmap 90 jours</h2>
+    <p>Calée sur la méthode Organikk en quatre phases. Trois mois pour poser la machine, trois de plus pour la pousser, puis l'agent SEO prend le relais.</p>
+
+    <div class="phase">
+      <div class="ph-k">Mois 1</div>
+      <div>
+        <div class="ph-t">Stratégie</div>
+        <p class="ph-d">Audit complet et connexion de la Search Console. On relève les 14 pages stratégie et les 2 pages secteur existantes, puis on priorise les verticales du persona déclaré qui n'ont aucune page dédiée (cabinet de conseil, biotech, formateur Qualiopi, industrie spécialisée). Carte des pages à produire, deux modèles de départ : stratégie sectorielle et page secteur avec outil. Aucune correction technique bloquante à traiter, le robots.txt est propre.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 2</div>
+      <div>
+        <div class="ph-t">Mise en production et agent SEO</div>
+        <p class="ph-d">Les premières pages stratégie et secteur sortent sur les verticales prioritaires manquantes. Les 3 pages déjà alignées (logiciel-cybersecurite, logiciel-gestion-rh, centre-formation-ia) sont rafraîchies. En parallèle, l'agent SEO interne se construit sur cette même data (cas clients, avis, captures Search Console) pour prendre le relais sur la production et la surveillance.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 3</div>
+      <div>
+        <div class="ph-t">Mise en production et optimisation</div>
+        <p class="ph-d">Suite des modèles secteur et cas d'usage tarifs. Mesure en Search Console (indexation, requêtes gagnées sur les verticales ciblées) et rafraîchissement des 11 pages stratégie hors périmètre, plutôt que d'empiler du volume. Fin du mois : décision entre autonomie avec l'agent et prolongation.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="ph-k">Mois 3 à 6</div>
+      <div>
+        <div class="ph-t">Optimisation, production et CRO</div>
+        <p class="ph-d">Le reste des verticales est décliné, l'existant continue d'être rafraîchi, et le taux de passage entre /tarifs et le formulaire de /accompagnement-1-1-30-jours se travaille directement : ce qui décide un visiteur à remplir le formulaire plutôt qu'à repartir.</p>
+      </div>
+    </div>
+
+    <p class="rhythm"><b>Rythme de production :</b> 10 à 15 pages par mois, soit 45 à 50 à trois mois. <b>Ce qu'on attend d'Organikk :</b> sa data (cas clients, avis, captures Search Console) et la description des process de publication actuels. C'est la seule chose sur laquelle on ne peut pas se substituer à l'équipe.</p>
+    <p class="anchor">Ancrage doctrine : méthode Organikk 4 piliers, data propriétaire, liens gagnés jamais achetés, mots-clés actionnels.</p>
+  </section>
+
+  <!-- À RÉCUPÉRER AU CALL -->
+  <section>
+    <h2>À récupérer au call</h2>
+    <div class="call-box">
+      <ul class="clean">
+        <li><b>Pourquoi la déclinaison sectorielle s'est arrêtée mi-mai.</b> Processus de publication actuel, qui pilote les pages stratégie et secteur, ce qui a bloqué la suite.</li>
+        <li><b>Accès Search Console.</b> Requêtes qui ramènent déjà des formulaires remplis sur /accompagnement-1-1-30-jours, et ce sur quoi le site ressort déjà pour les verticales du persona (SaaS B2B, cabinet de conseil), pour ne produire aucune page en doublon.</li>
+        <li><b>Faisabilité de mise à jour</b> des 3 pages stratégie alignées et des 2 pages secteur, figées depuis mi-mai.</li>
+        <li><b>Poids réel du SEO</b> dans l'acquisition de leads face aux autres canaux (LinkedIn, prospection directe).</li>
+        <li><b>Depuis quand et à quel coût</b> les verticales prioritaires du persona (biotech, cabinets, formateurs, industrie spécialisée) restent sans page dédiée, alors que la demande entrante cible précisément ce profil.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot">
+    organikk.co, audit préparé à partir de données publiques et du repo source le 01/08/2026.<br />
+    Volumes, positions et trafic à confirmer sur la Search Console. Aucun chiffre non sourcé n'est avancé dans ce document.
+  </div>
+
+</div>
+</body>
+</html>
