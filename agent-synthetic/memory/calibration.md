@@ -1576,3 +1576,19 @@ Faits notables : résolution simultanée de P-2026-07-28-2 et P-2026-07-30-v2-4 
 | **note_globale** | **3,5/5** |
 
 Faits notables : 3e GEO en info du jour sur les 4 dernières (07-27-v2 Seer + 07-30-v2 Pillarbase + 07-31-v2 Writesonic), seuil critique atteint. Correction post-relecture unique : absorbe/efface personnification technologique → reprend/conserve/ne-réutilise-pas. Piliers brèves diversifiés (Product-Led SEO + Niche SEO + GEO complémentaire). 6 nouvelles prédictions ouvertes. Corroboration Kevin Indig avril 2026 méthodologie indépendante Writesonic. Constat maintenu 5e édition consécutive de fenêtre pauvre en faits franchement neufs sur les 5 familles : la prochaine édition doit basculer piiler (Niche SEO, PLS ou RA en priorité).
+
+## 2026-08-01 — Édition Recherche agentique Reddit v Perplexity ruling
+
+| Axe | Mesure |
+|---|---|
+| source_diversity | 8 sources indépendantes (info 6 = MLex + Law.com + Cryptopolitan + Reuters/TradingView + StockTwits + Gurufocus + Bloomberg Law + Bloomberg Tax [MLex et Bloomberg Law comptent séparés]) ; B1 3 sources (SER + SEL + Optimixed reprise + Digiday historique) ; B2 2 sources (SEL + Optimixed reprise) ; B3 3 sources (SER + Position Digital + eSEOspace) |
+| claim_density_verified | 7 |
+| claim_density_uncertain | 0 |
+| claims_discarded | 10 (fake fresh AIO Discover 2025 anti-M-005, redites 07-25-v2 AdSense + 07-31 Shopping AI + 07-31 Microsoft Q4 + 07-30-v2 personalized related + 07-08 GSC Platform Properties, hors périmètre YouTube audio + Cognizant + Anthropic Frontier Red Team + opinions Optimixed 31 juillet sans data primaire) |
+| novelty_score | 4/5 (précédent procédural DMCA §1201(a) valide contre moteur génératif, distinct des théories droit d'auteur classique NYT/Nikkei/Britannica et distinct CFAA Amazon-Perplexity Comet, ouvre discovery pour données IP rotation et volume SerpApi) |
+| doctrine_fit | 4/5 (data-proprietaire alimenté par distinction contenu copyrightable plus dispositif contrôle accès actif, agentic-search côté opérateur remise en cause pas seulement droit d'auteur) |
+| redite_risk | faible (angle procedural ruling ratio decidendi distinct des angles précédents citations Reddit/Perplexity 06-01, jurisprudence Amazon-Perplexity CFAA 06-01-v2, procès 9e Circuit 06-12) |
+| clickbait_risk | faible |
+| **note_globale** | **3,6/5** |
+
+Faits notables : pilier Recherche agentique tenu vs directive interdiction ré-enchaînement GEO seuil critique (3/4 dernières info du jour). Résolution partielle P-2026-07-24-5 (décision SDNY Reddit v SerpApi motion to dismiss enfin sortie). Discipline anti-pattern IA correction post-relecture triple : pivot → décision, bascule → décision est procédurale + cocktail → deux facteurs distincts. Zéro métaphore intra-text vérifiée. 5 tirets cadratim structurels headings uniquement zéro intra-text. 3 sources primaires juridiques MLex + Law.com + Reuters via TradingView + coverage secondaire Cryptopolitan pour attribution multi-sources verdict. Nuance importante attribution RDDT 22 pct partielle (Gurufocus facteur principal user growth US pas décision, décision amplificateur seul), pas de raccourci causal. 3 prédictions nouvelles P-2026-08-01-1/2/3.
