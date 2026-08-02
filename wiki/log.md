@@ -11,6 +11,17 @@ status: stable
 
 > Journal chronologique append-only. Parseable via `grep "^## \[" wiki/log.md`.
 
+## [2026-08-02] etude-IA | Accords de licensing IA et citations des éditeurs partenaires (2023-2026)
+- skill: seo-page-statistiques (SyntheticBrain)
+- output: [[agent-synthetic/revuedepressIA/etudes-IA/2026-08-02-stats-licensing-deals-citations-ia.md]]
+- sources vérifiées: 11 (Semrush, CJR/Tow Center, 5WPR/Profound, Brookings, LLM Pulse, Digiday ×2, AuthorityTech, Machine Relations/Profound, Tinuiti/SaaS Intelligence, LLM Pulse Perplexity)
+- transformation originale: tableau deal × plateforme × citations (7 lignes croisées, inédit)
+- chiffres vérifiés par fetch: Semrush (Reddit ChatGPT -83 % sept. 2025), CJR (zéro corrélation), LLM Pulse (127 deals), AuthorityTech (partenariat absent des facteurs Perplexity), Digiday
+- [À SOURCER]: montants AP/Le Monde/Condé Nast/Reuters, FT $5-10M non confirmé officiellement, étude avant/après contrôlée inexistante
+- first-party: réservé honnêtement (aucune propriété partenaire IA dans le portefeuille)
+- contre-analyse: disponibilité ≠ préférence, Wikipedia sans deal = #1, accords retrieval avantage structurel mais non mesuré
+- status: draft
+
 ## [2026-04-11] bootstrap | Init du vault
 - AGENTS.md v1.0 créé
 - stubs wiki/ (index.md, log.md) créés

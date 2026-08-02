@@ -4,6 +4,7 @@
 > Règle anti-redite : ne pas reproduire un sujet `fait` ni un angle déjà couvert. Si la file est vide ou tous les sujets sont périmés, la routine propose 3 nouveaux sujets et s'arrête sans publier.
 
 ## Fait
+- 2026-08-02 · Accords de licensing IA et impact sur les citations des éditeurs partenaires (2023-2026) : 127 deals signés, aucun avantage de citation prouvé — Reddit ($130M/an Google+OpenAI) voit ChatGPT réduire ses citations de ~60 % à ~10 % délibérément (Semrush, sept. 2025) ; Reddit absent de deal Perplexity = premier domaine cité (46,7 %, Profound) ; WSJ (News Corp, ~$50M/an) absent du top 20 ChatGPT ; CJR (1 600 requêtes, 8 moteurs, 20 éditeurs) : zéro corrélation deal / précision d'attribution ; tableau deal × plateforme × citations comme transformation originale → `2026-08-02-stats-licensing-deals-citations-ia.md`
 - 2026-08-01 · Domaines institutionnels (.edu, .gov, .org) dans les citations IA 2025-2026 : .org sur-représenté ×2,82 porté par Wikipedia, .edu et .gov absents du top 10 TLD ChatGPT, institutionnel = 5-15 % selon moteur vs 30,3 % en santé — réconciliation TLD brut vs catégorie institutionnelle vs top 50 → `2026-08-01-stats-domaines-institutionnels-citations-ia.md`
 - 2026-07-31 · Secteurs verticaux et citations IA 2025-2026 : 5 objets de mesure révèlent 5 classements différents — santé 43 % déclenchement AIO vs 6,3 % citation ChatGPT (paradoxe mémoire/retrieval), voyage inverse (5-28 % AIO vs 22,6 % ChatGPT), SaaS le plus fragmenté (5,1 domaines/réponse, top-10 = 28,4 %), santé le plus concentré (71,2 %), réconciliation Ahrefs/Similarweb/Attrifast/BrightEdge/Adthena → `2026-07-31-stats-secteurs-verticaux-citations-ia.md`
 - 2026-07-29 · Core Web Vitals et citations IA 2025-2026 : FCP <0,4s = 3,2× plus de citations ChatGPT (SE Ranking, 129K domaines), LCP corrélation Spearman −0,12 à −0,18 pour Google AIO (Dan Taylor, 107K pages), 56,8 % des domaines cités passent les CWV vs 40 % web moyen — réconciliation des 3 études (3 objets distincts), confound autorité-vitesse (5× vs 3,2×), paradoxe INP → `2026-07-29-stats-core-web-vitals-citations-ia.md`
@@ -48,7 +49,7 @@
 
 ## À faire (par priorité)
 
-1. **Accords de licensing de données IA et impact mesurable sur les citations des éditeurs partenaires (2024-2026)** — Reddit ($203M Google, $60M OpenAI), Associated Press (OpenAI), Axel Springer ($100M+), News Corp ($250M+), Financial Times, Le Monde, Condé Nast, Dotdash Meredith. Les partenaires sont-ils davantage cités que les non-partenaires à DA équivalent ? Transformation originale : tableau deals signés (montant, date, contrepartie) × évolution des citations mesurée avant/après par les études disponibles (Profound, Ahrefs, SE Ranking). Contre-analyse : Perplexity Media Program (§16) n'a montré aucun biais, mais Reddit chute de 46 % à 16 % après licences. Sources cibles : rapports annuels éditeurs, presse spécialisée (Nieman Lab, Press Gazette, Digiday), études Ahrefs Brand Radar chronologiques.
+(vide — file épuisée, 3 nouveaux sujets à proposer lors de la prochaine exécution)
 
 ## Sujets écartés (avec raison)
 (vide)
