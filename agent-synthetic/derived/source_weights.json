@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-29",
+  "generated_at": "2026-08-02",
   "sources": {
     "search-engine-land": {
       "weight": 10.8,
       "trust": 0.72,
-      "useful_hits": 14,
+      "useful_hits": 15,
       "noise_hits": 0,
       "status": "exploit",
       "tier": "secondaire",
-      "last_useful": "2026-07-18",
+      "last_useful": "2026-08-02",
       "name": "Search Engine Land"
     },
     "ppc.land": {
@@ -44,11 +44,11 @@
     "search-engine-journal": {
       "weight": 8.28,
       "trust": 0.69,
-      "useful_hits": 11,
+      "useful_hits": 12,
       "noise_hits": 0,
       "status": "exploit",
       "tier": "secondaire",
-      "last_useful": "2026-07-18",
+      "last_useful": "2026-08-02",
       "name": "Search Engine Journal"
     },
     "the-keyword": {
@@ -5610,6 +5610,16 @@
       "tier": "agence-autopromo",
       "last_useful": null,
       "name": ""
+    },
+    "geosurge.ai": {
+      "weight": 0.65,
+      "trust": 0.65,
+      "useful_hits": 1,
+      "noise_hits": 0,
+      "status": "explore",
+      "tier": "vendor-primaire-methodo-ouverte",
+      "last_useful": "2026-08-02",
+      "name": "geoSurge"
     }
   }
 }
