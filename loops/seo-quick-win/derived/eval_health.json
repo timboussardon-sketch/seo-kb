@@ -1,12 +1,14 @@
 {
   "brain": "seo-quick-win",
-  "generated": "2026-07-27",
+  "generated": "2026-08-03",
   "runs": 2,
   "claims_total": 6,
   "claims_verified": 0,
   "predictions_open": 2,
-  "predictions_overdue": 0,
+  "predictions_overdue": 1,
   "predictions_resolved": 0,
-  "status": "OK",
-  "reasons": []
+  "status": "WATCH",
+  "reasons": [
+    "1 prediction(s) en retard"
+  ]
 }

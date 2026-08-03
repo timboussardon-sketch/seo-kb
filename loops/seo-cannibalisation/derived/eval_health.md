@@ -1,4 +1,4 @@
-# Sante boucle - seo-cannibalisation (2026-07-27)
+# Sante boucle - seo-cannibalisation (2026-08-03)
 
 **Statut : OK**
 
