@@ -49,7 +49,11 @@
 
 ## À faire (par priorité)
 
-(vide — file épuisée, 3 nouveaux sujets à proposer lors de la prochaine exécution)
+1. **Microsoft Copilot et Bing AI dans les citations : profil, domaines favoris et part de voix (2025-2026)** — Copilot reste le troisième acteur mondial derrière ChatGPT et Perplexity mais est quasi absent des études de citation. Quels domaines cite-t-il préférentiellement ? Quelle part de son inventaire provient de l'index Bing ? Comment son profil diffère-t-il de ChatGPT Search ? Quelles sont ses parts de marché effectives dans les référrals web ? Angle : réconciliation des mesures contradictoires (Goodie B2B : Copilot quasi absent vs First Page Sage : 6-8 %, biais distribution Windows captive).
+
+2. **Contenu derrière paywall et citations IA : quelle pénalité mesurée ? (2025-2026)** — Les médias derrière paywall (NYT, Le Monde, FT, médias spécialisés) sont-ils systématiquement moins cités que leurs équivalents en accès libre ? Quelle est la pénalité chiffrée par moteur ? Le contenu gratuit est-il sur-représenté dans les corpus d'entraînement et dans le retrieval temps réel ? Angle distinct de l'étude licensing deals (celle-ci mesurait la corrélation deal/citations, pas accès libre/paywall) et de l'étude newsletters payantes (qui ne couvrait que Substack). Sources potentielles : Muck Rack, AuthorityTech, Ahrefs (ratio paywall/non-paywall dans les citations).
+
+3. **Hallucinations et citations fantômes dans les moteurs IA : taux mesurés par plateforme (2025-2026)** — À quel taux les moteurs IA inventent-ils des sources ou citent-ils des URLs inexistantes ? Quel moteur est le plus fiable (Perplexity vs ChatGPT vs Claude vs Gemini) ? Quelles catégories de contenu (santé, juridique, actualité) sont les plus sujettes aux hallucinations de sources ? Angle : distinct des études sur "qui est cité" — c'est sur la fiabilité des citations elles-mêmes. Sources potentielles : Stanford HAIL, NewsGuard AI Misinformation Tracker, AuthorityTech "61,7 % citations fantômes" (déjà dans le vault, à ouvrir comme sujet central).
 
 ## Sujets écartés (avec raison)
 (vide)
