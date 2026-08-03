@@ -50,3 +50,14 @@
 {"date":"2026-07-27","angle":"sitemap stable 330 URLs (delta 0) apres scale-up - trajectoire 49j 169-136-143-143-146-146-330-330","report":"reports/indexation-organikk-2026-07-27.md"}
 {"date":"2026-07-27","angle":"section robots-ia inchangee : 12/14 sous 300 mots, en attente d'arbitrage editorial","report":"reports/indexation-organikk-2026-07-27.md"}
 {"date":"2026-07-27","angle":"statut indexation Google non teste ce run (pas d'acces edge admin-gsc-export) - 'non testable' distinct de 'non indexee'","report":"reports/indexation-organikk-2026-07-27.md"}
+{"date":"2026-08-03","angle":"audit indexation Organikk site complet - HTTP+sitemap+canonical+maillage (run hebdo)","perimetre":"organikk.co - 332 URLs du sitemap","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"CRITIQUE /manifeste toujours 404 - 5e recurrence, reco P1 du 10/07 non appliquee apres 24j","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"CRITIQUE /accompagnement-seo-geo toujours orpheline - 5e recurrence sur 331 pages ; refonte /accompagnement-1-1-30-jours n'a rien change","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"sitemap_canonical_mismatch 9e recurrence - P1 du 15/06 sans effet 49 jours","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"lastmod_uniforme 9e recurrence - P2 du 15/06 sans effet 49 jours","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"POSITIF M4 fermee : /accompagnement-1-1-30-jours refondue avec h1 + 1313 mots (vs 165 la semaine derniere) - 1ere reco cloturee depuis le 13/07","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"section robots-ia 13/13 sous 300 mots (une page retiree, 13 restantes toutes sous 300) - 3e occurrence en attente d'arbitrage editorial","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"OBSERVATION section statuts-indexation-google : 3/16 sous 300 mots - meme pattern pSEO court a surveiller","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"OBSERVATION divergence title/h1 post-refonte /accompagnement-1-1-30-jours (title=Coaching SEO vs h1=Systeme SEO proprietaire)","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"sitemap delta faible +2 (330 -> 332) - trajectoire 56j 169-136-143-143-146-146-330-330-332, mouvement interne wiki 56->55","report":"reports/indexation-organikk-2026-08-03.md"}
+{"date":"2026-08-03","angle":"statut indexation Google non teste ce run (pas d'acces edge admin-gsc-export) - diff urlInspection 24j d'ouverture","report":"reports/indexation-organikk-2026-08-03.md"}
