@@ -644,3 +644,31 @@ Aucun diff de skill proposé ce run.
 **Question 3 — reproduction indépendante non-Solis prioritaire pour la boucle apprentissage** : la mesure Solis est intra-productrice (Solis publie 3 articles, dont 2 empiriques primaires et 1 synthèse). Elle atteint la règle dure explore parce qu'aleydasolis.com a un historique exploit fort (trust élevé, useful_hits historiques). Mais la validation de la thèse « facteur 2 Accounting/Finance vs CRM/Collaboration » nécessite une reproduction indépendante non-Solis. Prédiction P-2026-08-03-1 (échéance 30/06/2027) est le mécanisme de résolution. Question à Tim : est-ce que le run doit activement chercher une source alternative (Semrush AI Visibility Index, Ahrefs Brand Radar, Profound, Peec, Writesonic, autre consultant) qui aurait publié un chiffre équivalent sur les mêmes sous-verticaux SaaS, plutôt que d'attendre la prédiction ? Proposition : ajouter à la veille prochaine édition une recherche cible « 3rd-party vs first-party citation SaaS AI search » sur les 4-5 vendeurs mentionnés.
 
 **Non bloquant** : Q1, Q2 et Q3 à traiter en revue hebdo (vendredi). Q2 est le plus urgent, car l'accumulation de dimensions non formalisées (mémoire pré-recherche + régime first-party/tiers) dilue la doctrine `metriques-visibilite-geo`.
+
+## Q-2026-08-04-v2
+
+### Q-2026-08-04-v2-1 — Le mot « visibility » institué par l'IAB comme label officiel : quelle nuance apporter à [[concepts/tabou-visibilite]] ?
+
+**Statut** : à trancher en revue hebdo.
+
+L'IAB a publié le 3 août 2026 « Measuring Visibility in the AI Era », qui institue « visibility » comme label industriel officiel de mesure de présence dans les moteurs génératifs. Or [[concepts/tabou-visibilite]] classe le mot « visibilité » comme mot à bannir dans un pitch commercial B2B services / freelance, avec pivot documenté 10 % → 50 % de closing en remplaçant par « mots-clés business / conversion / leads ».
+
+Ces deux positions ne se contredisent pas mécaniquement : l'une relève de la mesure industrielle (catégorie utile), l'autre de la vente d'un devis à un décideur non-expert (mot qui casse la conversion). Mais elles créent une tension linguistique à documenter dans le concept.
+
+**Proposition de diff sur `wiki/concepts/tabou-visibilite.md`** (à valider vendredi) : ajouter une section « Nuance industrie vs vente » qui note que le label institutionnel IAB est utile pour standardiser la mesure, sans le rendre acceptable comme argument de closing. Confidence : medium. À vérifier avec Tim si la nuance conforte ou fragilise la position.
+
+### Q-2026-08-04-v2-2 — Cadre IAB comme candidat wiki/concepts/cadre-iab-4p-visibilite-ia.md ?
+
+**Statut** : à trancher en revue hebdo.
+
+Le cadre IAB (4 P Presence/Prominence/Portrayal/Persuasion + 2 tiers Directional/Decision-grade + seuil 50 requêtes) mériterait un concept propre dans le vault, distinct de [[concepts/metriques-visibilite-geo]] qui couvre les métriques algorithmiques (Aggarwal + SAGEO). Le cadre IAB est un cadre business, le concept metriques-visibilite-geo est un cadre technique. Les articuler l'un à l'autre est plus clair dans deux fiches qui se référencent que dans une seule.
+
+**Proposition** : créer `wiki/concepts/cadre-iab-4p-visibilite-ia.md` (type : concept, tags : geo, mesure, iab, standard, visibilite-ia, project-eidos), avec description des 4 P, des 2 tiers, du seuil 50 requêtes, contributeurs nommés, lien vers PDF IAB. Ajouter une section « Articulation avec metriques-visibilite-geo » qui range chaque métrique Aggarwal dans un P IAB. Confidence : medium.
+
+### Q-2026-08-04-v2-3 — Ihab Rizk (Microsoft Clarity) contributeur cadre IAB : cross-appointment à intégrer dans doctrine ?
+
+**Statut** : signal d'observation, pas action immédiate.
+
+MediaPost (Laurie Sullivan, 4 août) nomme Ihab Rizk (Senior Product Manager Microsoft Clarity) parmi les contributeurs du cadre IAB. Rizk est également l'auteur signataire de l'annonce Topic Insights Clarity du 9 juillet 2026 (v1 morning 08-04). Cross-appointment industriel : l'auteur d'une brique produit majeure de mesure GEO gratuite est simultanément contributeur d'un cadre normatif adopté par l'organisation professionnelle. Ce cross-appointment n'est pas discret et suggère une intention de Microsoft d'aligner sa brique produit sur le cadre normatif adopté par le marché avant d'autres.
+
+**Observation à surveiller** : Microsoft Clarity publiera-t-il avant fin 2026 une grille de correspondance explicite entre ses colonnes (Topic Insights, Query Topics, Branded Query Segmentation) et les 4 P IAB (Presence, Prominence, Portrayal, Persuasion) ? Signal doctrine si oui : le cross-appointment était opérationnel, pas décoratif. À noter dans P-2026-08-04-v2-1 (l'outil qui bougera en premier pourrait bien être Clarity, ce qui rendrait la prédiction moins prédictive et plus attendue).
