@@ -107,6 +107,7 @@ h1{
 
 /* ── positions ── */
 .six{display:grid; grid-template-columns:repeat(3,1fr); gap:38px 40px}
+.four-pos{display:grid; grid-template-columns:repeat(4,1fr); gap:38px 32px}
 .pos-n{
   font-size:44px; font-weight:600; letter-spacing:-.04em; line-height:1;
   background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
@@ -132,7 +133,7 @@ h1{
 
 @media(max-width:860px){
   .slide{aspect-ratio:auto; padding:34px 24px}
-  .kw,.six,.traffic-duo{grid-template-columns:1fr; gap:20px}
+  .kw,.six,.four-pos,.traffic-duo{grid-template-columns:1fr; gap:20px}
   h1{font-size:28px}
   .pos-n{font-size:38px}
 }
@@ -150,6 +151,7 @@ h1{
   .rv{opacity:1 !important; transform:none !important; transition:none !important}
   .kw{grid-template-columns:repeat(2,1fr) !important; gap:16px 30px !important}
   .six{grid-template-columns:repeat(3,1fr) !important; gap:38px 40px !important}
+  .four-pos{grid-template-columns:repeat(4,1fr) !important; gap:38px 32px !important}
   .traffic-duo{grid-template-columns:1fr 1.15fr !important; gap:44px !important}
   h1{font-size:38px !important}
   .pos-n{font-size:44px !important}
@@ -178,7 +180,36 @@ h1{
   <div class="n">00</div>
 </section>
 
-<!-- 1 · LISTE DES CONTENUS AJOUTÉS -->
+<!-- 1 · POSITIONS -->
+<section class="slide">
+  <div class="rv">
+    <h1>Les positions de Victoria Garden sur ses requêtes clés</h1>
+  </div>
+  <div class="body rv">
+    <div class="four-pos">
+      <div>
+        <div class="pos-n">2<small>e</small></div>
+        <div class="pos-t">« apparthotel bordeaux »</div>
+      </div>
+      <div>
+        <div class="pos-n">9<small>e</small></div>
+        <div class="pos-t">« appart hotel bordeaux »</div>
+      </div>
+      <div>
+        <div class="pos-n">2<small>e</small></div>
+        <div class="pos-t">« appart hotel pau »</div>
+      </div>
+      <div>
+        <div class="pos-n">3<small>e</small></div>
+        <div class="pos-t">« apparthotel pau »</div>
+      </div>
+    </div>
+  </div>
+  <div class="wm">victoriagarden.com</div>
+  <div class="n">01</div>
+</section>
+
+<!-- 2 · LISTE DES CONTENUS AJOUTÉS -->
 <section class="slide">
   <div class="rv">
     <h1>Liste des contenus ajoutés</h1>
@@ -244,10 +275,10 @@ h1{
     </div>
   </div>
   <div class="wm">victoriagarden.com</div>
-  <div class="n">01</div>
+  <div class="n">02</div>
 </section>
 
-<!-- 2 · COMPARATIF 3 MOIS -->
+<!-- 3 · COMPARATIF 3 MOIS -->
 <section class="slide">
   <div class="rv">
     <h1>Les résultats progressent sur les trois derniers mois</h1>
@@ -268,10 +299,10 @@ h1{
     </div>
   </div>
   <div class="wm">victoriagarden.com</div>
-  <div class="n">02</div>
+  <div class="n">03</div>
 </section>
 
-<!-- 3 · CITATIONS IA -->
+<!-- 4 · CITATIONS IA -->
 <section class="slide">
   <div class="rv">
     <h1>Victoria Garden est citée par Microsoft Copilot</h1>
@@ -291,7 +322,7 @@ h1{
     </div>
   </div>
   <div class="wm">victoriagarden.com</div>
-  <div class="n">03</div>
+  <div class="n">04</div>
 </section>
 
 </div>
