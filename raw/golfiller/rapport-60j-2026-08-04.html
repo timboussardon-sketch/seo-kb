@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
-<title>Rapport 30 jours · Golfiller</title>
+<title>Rapport 60 jours · Golfiller</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
 
@@ -91,15 +91,18 @@ h1{
 .kw-file{font-family:'Geist Mono',monospace; font-size:10.5px; color:var(--muted-2); word-break:break-all}
 
 /* ── chiffres comparatifs ── */
-.four{display:grid; grid-template-columns:repeat(4,1fr); gap:36px}
-.fig-n{
-  font-size:44px; font-weight:600; letter-spacing:-.04em; line-height:1;
+.traffic-duo{display:grid; grid-template-columns:1fr 1.15fr; gap:44px; align-items:center}
+.tstat{list-style:none}
+.tstat li{padding:13px 0; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:14px}
+.tstat li:last-child{border-bottom:0}
+.tstat b{
+  font-size:23px; font-weight:600; letter-spacing:-.03em; flex:none; min-width:78px;
   background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
   font-variant-numeric:tabular-nums;
 }
-.fig-n small{font-size:22px}
-.fig-t{margin-top:11px; font-size:14px; line-height:1.5; color:var(--ink-2); max-width:24ch}
-.fig-s{margin-top:8px; font-family:'Geist Mono',monospace; font-size:9.5px; line-height:1.5; color:var(--muted-2); max-width:26ch}
+.tstat span{font-size:13.5px; line-height:1.5; color:var(--muted)}
+.shot{width:100%; display:block; border-radius:10px; border:1px solid rgba(0,0,0,.08); box-shadow:0 16px 38px -20px rgba(12,26,70,.35)}
+.shot-cap{margin-top:9px; font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.06em; color:var(--muted-2)}
 
 /* ── positions ── */
 .six{display:grid; grid-template-columns:repeat(3,1fr); gap:38px 40px}
@@ -128,10 +131,9 @@ h1{
 
 @media(max-width:860px){
   .slide{aspect-ratio:auto; padding:34px 24px}
-  .kw,.six,.four{grid-template-columns:1fr; gap:20px}
+  .kw,.six,.traffic-duo{grid-template-columns:1fr; gap:20px}
   h1{font-size:28px}
   .pos-n{font-size:38px}
-  .fig-n{font-size:36px}
 }
 
 @media print{
@@ -147,11 +149,10 @@ h1{
   .rv{opacity:1 !important; transform:none !important; transition:none !important}
   .kw{grid-template-columns:repeat(2,1fr) !important; gap:16px 30px !important}
   .six{grid-template-columns:repeat(3,1fr) !important; gap:38px 40px !important}
-  .four{grid-template-columns:repeat(4,1fr) !important; gap:36px !important}
+  .traffic-duo{grid-template-columns:1fr 1.15fr !important; gap:44px !important}
   h1{font-size:38px !important}
   .pos-n{font-size:44px !important}
-  .fig-n{font-size:44px !important}
-  h1,.pos-n,.fig-n{
+  h1,.pos-n,.tstat b{
     background:none !important;
     -webkit-background-clip:border-box !important; background-clip:border-box !important;
     color:#2559DD !important; -webkit-text-fill-color:#2559DD !important;
@@ -166,8 +167,8 @@ h1{
 <!-- 0 · COUVERTURE -->
 <section class="slide cover">
   <div class="rv">
-    <div class="kick">Rapport interne · Golfiller · Juillet-Août 2026</div>
-    <div class="mark">30 jours de production sur golfiller.fr</div>
+    <div class="kick">Rapport interne · Golfiller · Juin-Août 2026</div>
+    <div class="mark">60 jours de production sur golfiller.fr</div>
     <div class="by">
       Préparé par <b>Timothée Boussardon</b><br />
       golfiller.fr
@@ -209,6 +210,27 @@ h1{
         <span class="kw-t">
           <b>Pro V1 vs Chrome Soft</b>
           <span class="kw-file">2026-07-30-golfiller-vs-pro-v1-vs-chrome-soft.html</span>
+        </span>
+      </div>
+      <div class="kw-item">
+        <span class="kw-n">05</span>
+        <span class="kw-t">
+          <b>AD333 vs Supersoft</b>
+          <span class="kw-file">2026-07-30-golfiller-vs-ad333-vs-supersoft.html</span>
+        </span>
+      </div>
+      <div class="kw-item">
+        <span class="kw-n">06</span>
+        <span class="kw-t">
+          <b>TP5 vs TP5x</b>
+          <span class="kw-file">2026-07-30-golfiller-vs-tp5-vs-tp5x.html</span>
+        </span>
+      </div>
+      <div class="kw-item">
+        <span class="kw-n">07</span>
+        <span class="kw-t">
+          <b>Chrome Soft vs Z-Star</b>
+          <span class="kw-file">2026-07-30-golfiller-vs-chrome-soft-vs-zstar.html</span>
         </span>
       </div>
     </div>
@@ -261,26 +283,16 @@ h1{
     <p class="lede">Comparé aux trois mois précédents, sur Google Search Console.</p>
   </div>
   <div class="body rv">
-    <div class="four">
+    <div class="traffic-duo">
+      <ul class="tstat">
+        <li><b>+67 %</b><span>de clics — 11,6 k vs 6,94 k sur les 3 mois précédents</span></li>
+        <li><b>+55 %</b><span>d'impressions — 298 k vs 192 k sur les 3 mois précédents</span></li>
+        <li><b>+0,3 pt</b><span>de CTR moyen — 3,9 % vs 3,6 % sur les 3 mois précédents</span></li>
+        <li><b>−1,9</b><span>position moyenne — 6,8 vs 8,7 sur les 3 mois précédents</span></li>
+      </ul>
       <div>
-        <div class="fig-n">+67 <small>%</small></div>
-        <div class="fig-t">de clics</div>
-        <div class="fig-s">11,6 k vs 6,94 k sur les 3 mois précédents</div>
-      </div>
-      <div>
-        <div class="fig-n">+55 <small>%</small></div>
-        <div class="fig-t">d'impressions</div>
-        <div class="fig-s">298 k vs 192 k sur les 3 mois précédents</div>
-      </div>
-      <div>
-        <div class="fig-n">+0,3 <small>pt</small></div>
-        <div class="fig-t">de CTR moyen</div>
-        <div class="fig-s">3,9 % vs 3,6 % sur les 3 mois précédents</div>
-      </div>
-      <div>
-        <div class="fig-n">−1,9</div>
-        <div class="fig-t">position moyenne</div>
-        <div class="fig-s">6,8 vs 8,7 sur les 3 mois précédents</div>
+        <img class="shot" src="gsc-comparatif-3mois.png" alt="Google Search Console — Performances, comparatif 3 derniers mois vs 3 mois précédents, golfiller.fr" />
+        <div class="shot-cap">Google Search Console · golfiller.fr · Performances · Comparer</div>
       </div>
     </div>
   </div>
