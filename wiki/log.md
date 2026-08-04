@@ -1429,3 +1429,24 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: min 2/fiche, 0 lien mort (vérifié)
 - nœuds suggérés (à créer en curation): aucun
 - angle SEO transverse: convergence des deux canaux sur la même thèse — le trafic informationnel est absorbé par les AI Overviews (99% des KW purs), le SEO se redéploie sur le décisionnel + la donnée propriétaire (RAG Obsidian, GSC brute) + un système multi-canal site/LinkedIn/contenu
+
+## [2026-08-03] query | Tri anti-IA + overview GEO — freelance SEO IA
+- outputs: [[keywords/resistants-ia-2026-08-03-freelance-seo-ia]], [[keywords/overview-2026-08-03-freelance-seo-ia]]
+- skills déclenchés: seo-mots-cles-resistants-ia, seo-mots-cles-overview
+- ancrage: échantillon et axes tirés de [[keywords/recherche-2026-05-27-freelance-seo]] (pas de nouvel export GSC/Keyword Planner pour ce run)
+- résultat clé: 13 mots-clés résistants priorisés (villes, TJM, plateformes, comparatifs, secteurs) vs 4 absorbés ; matrice overview à 12 croisements retenus, top potentiel GEO sur SaaS B2B, santé YMYL, formation Qualiopi, hôtellerie, finance
+- prochaine étape: seo-mots-cles-decisionnels sur les résistants, seo-recherche-mots-cles sur les 12 croisements overview
+
+## [2026-08-03] query | Mots-clés comparatifs Organikk (veille, pas de page)
+- output: [[keywords/recherche-2026-08-03-comparaisons-organikk]]
+- skill déclenché: seo-recherche-mots-cles
+- périmètre: 46 mots-clés comparatifs génériques (format prestataire, SEO vs SEA/content/growth, humain vs IA, modalité contractuelle) — aucun concurrent nommé, conforme à la règle dure Organikk du 2026-07-29
+- statut: veille uniquement, aucune page comparative créée, Tim doit arbitrer avant toute activation
+
+## [2026-08-04] ingest | Scrape auto publications (Algorithme + Organikk)
+- source_type: article
+- sources créées: 1 ([[sources/2026-08-03-organikk-5-leviers-citation-chatgpt]])
+- posts sautés (déjà ingérés): 0 (Algorithme n'a pas publié de nouveau post depuis le 31/07 déjà ingéré)
+- wikilinks: min 2/fiche, 0 lien mort (vérifié)
+- nœuds suggérés (à créer en curation): aucun
+- angle SEO transverse: la citation IA (ChatGPT) suit la même logique que le ranking Google classique — Surprise Gap, données propriétaires et FAQ construite sur verbatims réels plutôt que sur les PAA génériques

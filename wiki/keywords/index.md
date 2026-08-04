@@ -23,6 +23,15 @@ Carte d'entrée des sorties du workflow mots-clés (pilote enrichissement direct
 - [[keywords/clusters-2026-07-31-agence-seo-organikk]] — Clustering — 22 clusters, cannibalisation vérifiée contre le repo live
 - [[keywords/decisionnels-2026-07-31-agence-seo-organikk]] — Décisionnels — shortlist SEO IA/GEO priorisée
 
+## Requêtes comparatives — veille Organikk (2026-08-03)
+
+- [[keywords/recherche-2026-08-03-comparaisons-organikk]] — 46 mots-clés comparatifs (vs/ou/meilleur), veille uniquement, aucun concurrent nommé
+
+## Tri anti-IA + overview GEO — freelance SEO IA (2026-08-03)
+
+- [[keywords/resistants-ia-2026-08-03-freelance-seo-ia]] — Mots-clés résistants à l'IA — freelance SEO IA
+- [[keywords/overview-2026-08-03-freelance-seo-ia]] — Overview mot-clé GEO — freelance SEO IA
+
 ## Recherches par métier / secteur (campagne 2026-05-27)
 
 - [[keywords/recherche-2026-05-27-agence-communication]] — Recherche mots-clés — agence communication
