@@ -1,12 +1,12 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-08-04 09:41 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-08-05 09:46 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
-- **923 fichiers** markdown (540 dans `raw/`, 383 dans `wiki/`)
-- **1623k mots** au total
-- **7814 wikilinks** (moyenne 8.5 / fichier)
+- **926 fichiers** markdown (541 dans `raw/`, 385 dans `wiki/`)
+- **1625k mots** au total
+- **7832 wikilinks** (moyenne 8.5 / fichier)
 - **Ratio raw→wiki** : 0.71 *(< 1 = matière brute pas encore synthétisée)*
 
 ### Détail par dossier
@@ -15,7 +15,7 @@
 |---------|---------:|-----:|:--------------:|
 | raw/articles | 65 | 122.5k | 2026-06-08 |
 | raw/notes | 88 | 213.2k | 2026-08-03 |
-| raw/revue-de-presse | 44 | 46.8k | 2026-08-03 |
+| raw/revue-de-presse | 45 | 47.8k | 2026-08-04 |
 | raw/newsletter | 0 | 0 | — |
 | raw/journal | 76 | 101.5k | 2026-08-03 |
 | raw/briefs | 0 | 0 | — |
@@ -24,7 +24,7 @@
 | raw/cas-clients | 1 | 1.4k | 2026-05-26 |
 | wiki/concepts | 66 | 26.8k | 2026-07-17 |
 | wiki/entities | 64 | 19.5k | 2026-07-20 |
-| wiki/sources | 109 | 62.8k | 2026-08-01 |
+| wiki/sources | 110 | 63.1k | 2026-08-04 |
 | wiki/syntheses | 9 | 18.0k | 2026-07-19 |
 | wiki/briefs | 7 | 22.9k | 2026-06-11 |
 | wiki/queries | 16 | 28.0k | 2026-07-24 |
@@ -35,21 +35,21 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **84** commits
-- **54** fichiers créés
-- **29** fichiers modifiés
+- **80** commits
+- **52** fichiers créés
+- **27** fichiers modifiés
 
 ### 30 derniers jours
-- **427** commits
-- **335** fichiers créés
-- **88** fichiers modifiés
+- **434** commits
+- **293** fichiers créés
+- **80** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
-- **44** éditions publiées (15 sur les 30 derniers jours)
-- Dernière édition : `2026-08-03-revue-presse` (il y a 1j)
-- **Couverture 30j** : 15/30 (50%)
+- **45** éditions publiées (16 sur les 30 derniers jours)
+- Dernière édition : `2026-08-04-revue-presse` (il y a 1j)
+- **Couverture 30j** : 16/30 (53%)
 
 ### Newsletter
 - **0** newsletters
@@ -64,7 +64,7 @@
 - **0** briefs raw + **7** briefs wiki
 
 ### Wiki structuré
-- **66** concepts · **64** entités · **109** sources · **9** synthèses
+- **66** concepts · **64** entités · **110** sources · **9** synthèses
 
 ### Notes brutes (input flow)
 - **88** notes raw
@@ -73,8 +73,8 @@
 
 ### Top 10 hubs (les plus cités)
 
-- `[[data-proprietaire]]` — **258** backlinks
-- `[[surprise-gap]]` — **151** backlinks
+- `[[data-proprietaire]]` — **259** backlinks
+- `[[surprise-gap]]` — **153** backlinks
 - `[[grounding-score]]` — **134** backlinks
 - `[[information-gain]]` — **110** backlinks
 - `[[mots-cles-actionnels]]` — **105** backlinks
@@ -84,7 +84,7 @@
 - `[[anti-ai-writing]]` — **84** backlinks
 - `[[tabou-visibilite]]` — **74** backlinks
 
-### Orphelins (sans backlink) : **529**
+### Orphelins (sans backlink) : **530**
 
 - `raw/journal/2026-07-13.md`
 - `raw/journal/2026-05-07.md`
@@ -96,12 +96,12 @@
 - `raw/journal/2026-06-19.md`
 - `raw/journal/2026-07-17.md`
 - `raw/journal/2026-07-07.md`
-*(529 au total — voir `wiki/audit` pour la liste complète)*
+*(530 au total — voir `wiki/audit` pour la liste complète)*
 
 ## 🔥 Activité git
 
 ```
-30j: █▅▃█████████▃████▃█▃███▃█▅█▃█▁
+30j: ▅▃█████████▃████▃█▃███▃█▅█▃██▁
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
@@ -109,21 +109,21 @@
 
 ### Dossiers inactifs > 14j
 
-- `raw/articles` — dernière modif il y a **57j** (2026-06-08)
-- `wiki/concepts` — dernière modif il y a **18j** (2026-07-17)
-- `wiki/entities` — dernière modif il y a **15j** (2026-07-20)
-- `wiki/syntheses` — dernière modif il y a **16j** (2026-07-19)
-- `wiki/briefs` — dernière modif il y a **54j** (2026-06-11)
-- `wiki/audit` — dernière modif il y a **23j** (2026-07-12)
+- `raw/articles` — dernière modif il y a **58j** (2026-06-08)
+- `wiki/concepts` — dernière modif il y a **19j** (2026-07-17)
+- `wiki/entities` — dernière modif il y a **16j** (2026-07-20)
+- `wiki/syntheses` — dernière modif il y a **17j** (2026-07-19)
+- `wiki/briefs` — dernière modif il y a **55j** (2026-06-11)
+- `wiki/audit` — dernière modif il y a **24j** (2026-07-12)
 
 ## 🤖 Automatisations (LaunchAgents)
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-08-04 09:01 | 0 | ✓ |
-| recap-jour | 2026-08-04 07:45 | 0 | ✓ |
+| revue-presse | 2026-08-05 09:10 | 0 | ✓ |
+| recap-jour | 2026-08-05 03:02 | 256 | ✗ |
 | refresh-snapshots | 2026-08-01 10:36 | 0 | ✓ |
-| dashboard | 2026-08-04 09:41 | 0 | ✓ |
+| dashboard | 2026-08-05 09:46 | 0 | ✓ |
 
 ---
 
