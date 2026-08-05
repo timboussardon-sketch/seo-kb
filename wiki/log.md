@@ -1450,3 +1450,8 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: min 2/fiche, 0 lien mort (vérifié)
 - nœuds suggérés (à créer en curation): aucun
 - angle SEO transverse: la citation IA (ChatGPT) suit la même logique que le ranking Google classique — Surprise Gap, données propriétaires et FAQ construite sur verbatims réels plutôt que sur les PAA génériques
+
+## [2026-08-05] resurgence | [[concepts/persistent-wiki-vs-rag]] — verdict proposé
+- output: [[revue-hebdo/resurgence-2026-08-05]]
+- verdict: à mettre à jour — le vault a franchi le seuil ~100 sources (110) et bâti l'infra RAG (./kb, ChromaDB, 2026-05-26) que le concept jugeait non nécessaire à cette échelle
+- concept miroir concerné: [[concepts/cli-tools-optional]] (même correction à appliquer)
