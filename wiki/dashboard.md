@@ -1,6 +1,6 @@
 # 📊 Dashboard SEO KB
 
-*Généré automatiquement le 2026-08-05 09:46 — actualisé chaque jour à 09:30*
+*Généré automatiquement le 2026-08-06 09:43 — actualisé chaque jour à 09:30*
 
 ## 🗂️ Volume du vault
 
@@ -35,20 +35,20 @@
 ## 📈 Production
 
 ### 7 derniers jours
-- **80** commits
-- **52** fichiers créés
-- **27** fichiers modifiés
+- **67** commits
+- **51** fichiers créés
+- **19** fichiers modifiés
 
 ### 30 derniers jours
-- **434** commits
-- **293** fichiers créés
-- **80** fichiers modifiés
+- **419** commits
+- **285** fichiers créés
+- **78** fichiers modifiés
 
 ## 📰 Flux métier
 
 ### Revue de presse "Algorithme"
 - **45** éditions publiées (16 sur les 30 derniers jours)
-- Dernière édition : `2026-08-04-revue-presse` (il y a 1j)
+- Dernière édition : `2026-08-04-revue-presse` (il y a 2j)
 - **Couverture 30j** : 16/30 (53%)
 
 ### Newsletter
@@ -101,7 +101,7 @@
 ## 🔥 Activité git
 
 ```
-30j: ▅▃█████████▃████▃█▃███▃█▅█▃██▁
+30j: ▃█████████▃████▃█▃███▃█▅█▃█▅█▁
        (· = 0, ▁ = 1-2, ▃ = 3-4, ▅ = 5-7, █ = 8+)
 ```
 
@@ -109,21 +109,21 @@
 
 ### Dossiers inactifs > 14j
 
-- `raw/articles` — dernière modif il y a **58j** (2026-06-08)
-- `wiki/concepts` — dernière modif il y a **19j** (2026-07-17)
-- `wiki/entities` — dernière modif il y a **16j** (2026-07-20)
-- `wiki/syntheses` — dernière modif il y a **17j** (2026-07-19)
-- `wiki/briefs` — dernière modif il y a **55j** (2026-06-11)
-- `wiki/audit` — dernière modif il y a **24j** (2026-07-12)
+- `raw/articles` — dernière modif il y a **59j** (2026-06-08)
+- `wiki/concepts` — dernière modif il y a **20j** (2026-07-17)
+- `wiki/entities` — dernière modif il y a **17j** (2026-07-20)
+- `wiki/syntheses` — dernière modif il y a **18j** (2026-07-19)
+- `wiki/briefs` — dernière modif il y a **56j** (2026-06-11)
+- `wiki/audit` — dernière modif il y a **25j** (2026-07-12)
 
 ## 🤖 Automatisations (LaunchAgents)
 
 | Job | Dernier run | Exit | État |
 |-----|-------------|-----:|:----:|
-| revue-presse | 2026-08-05 09:10 | 0 | ✓ |
-| recap-jour | 2026-08-05 03:02 | 256 | ✗ |
+| revue-presse | 2026-08-06 09:10 | 256 | ✗ |
+| recap-jour | 2026-08-06 06:52 | 256 | ✗ |
 | refresh-snapshots | 2026-08-01 10:36 | 0 | ✓ |
-| dashboard | 2026-08-05 09:46 | 0 | ✓ |
+| dashboard | 2026-08-06 09:43 | 0 | ✓ |
 
 ---
 
