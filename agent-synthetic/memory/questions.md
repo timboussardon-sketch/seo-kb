@@ -689,3 +689,23 @@ MediaPost (Laurie Sullivan, 4 août) nomme Ihab Rizk (Senior Product Manager Mic
 **Diff de skill proposé** : aucun ce run. Le skill `agent-synthetic` a bien tenu la boucle sur ce cycle (briefing → veille → recoupement → fact-check → rédaction → apprentissage). La discipline anti-M-005 sur les études propriétaires anciennes datées explicitement dans le corps est un pattern reproductible qui pourrait devenir une règle explicite dans `voix-synthetic.md` (voir Q2).
 
 **Sources nouvelles à valider en revue hebdo** : athenahq.ai (trust 0,65 vendor GEO primaire, rapport State of AI Search 2026, corroborée via SEJ Southern 3 août), globenewswire.com (trust 0,75 wire release primaire, Cequence 30 juillet), developers.cloudflare.com (trust 0,9 vendor primaire doc, Block AI Bots classification), blog.modelcontextprotocol.io (trust 0,9 primaire MCP spec 2026-07-28), martechseries.com (trust 0,7 media adtech, Pie coverage). Les 8 autres sources nouvelles (citybiz, pulse2, retailtechinnovationhub, vmblog, manilatimes, securitymea, finsmes, releasebot) sont des sources secondaires ou wire syndication (trust 0,55-0,65), à surveiller sur 2-3 hits utiles avant décision passage exploit.
+
+## Q-2026-08-06 (revue hebdo)
+
+### Q1 — Nouvelle fiche concept `risque-plateforme-actif-seo`
+
+Le run 2026-08-06 documente le cas Google Blogger (bug d'enforcement automatique 4-5 août, compte à rebours à 89 jours sur des blogs de 12 à 18 ans). La doctrine actuelle `arbitrage-plateforme-publication` traite le choix de plateforme comme un arbitrage vers là où Google envoie le clic. Le cas Blogger relève d'une classe distincte : plateforme d'hébergement propriété du même moteur qui juge le contenu, risque d'enforcement automatique documenté, valeur d'actif SEO longue durée exposée.
+
+Proposition : créer une fiche concept `wiki/concepts/risque-plateforme-actif-seo.md` distincte, avec 3 axes : (1) surface d'exposition (hébergement + juge = concentration de risque), (2) mécanisme d'enforcement (scan automatique + compte à rebours + faux positifs), (3) plan de portage (sauvegarde + domaine propriétaire + procédure de récupération). Doctrine à valider en revue hebdo.
+
+### Q2 — Nouvelle dimension `langue-de-fetch` dans `metriques-visibilite-geo`
+
+L'étude Serraris 5 août SEL 484251 mesure sur 272 sites Bing + 26 propriétés ChatGPT un biais anglais dans le fetch AI (ChatGPT 65-79 % pages EN, index 2,6). Cette dimension n'est pas couverte par les 3 métriques Aggarwal (Imp_wc, Imp_pos, Subjective Impression) ni par les 8 dimensions ajoutées récemment (persistance-temporelle, recommandation-nominative, nommage-marque-vs-url, propriete-thematique-cross-prompt, cadence-mise-a-jour, auto-citation, pre-recherche, cit_ext/cit_own).
+
+Question : ajouter langue-de-fetch comme 9e dimension distincte à `metriques-visibilite-geo`, ou la fusionner dans entites-vectorielles (biais d'ancrage sémantique par langue) ? Ma préférence : dimension distincte, puisque la mesure est comportementale (quelle langue le moteur va chercher) et pas sémantique (quel vecteur est ancré).
+
+### Q3 — Tolérance Weglot vendor SaaS pour corroboration secondaire directionnelle
+
+Weglot rapporte un gain de +327 % en visibilité AI Overviews + ChatGPT pour sites avec traductions, utilisé dans la brève GEO comme corroboration secondaire directionnelle de Serraris. Weglot est un vendor SaaS de traductions, méthodologie non publique, chiffre marqué direction non valeur.
+
+Question : la règle wording_rules doit-elle spécifier explicitement les cas où un vendor SaaS peut servir de corroboration secondaire directionnelle sans franchir la règle dure explore (une source explore ne suffit jamais à publier) ? Ma proposition : oui, si (a) marqué explicitement corroboration directionnelle, (b) chiffre traité comme direction pas valeur, (c) source primaire différente porte le claim principal. À trancher en revue hebdo pour formaliser dans `memory/wording_rules.md`.
