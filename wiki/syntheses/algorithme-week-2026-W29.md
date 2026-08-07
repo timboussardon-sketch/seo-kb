@@ -4,7 +4,8 @@ title: Algorithme — Récap semaine 29 (2026-07-12 au 2026-07-17)
 date: 2026-07-19
 week: 2026-W29
 tags: [synthese, algorithme, recap-hebdo, seo, ia, geo]
-status: draft
+status: stable
+updated: 2026-08-07
 sources_count: 6
 ---
 

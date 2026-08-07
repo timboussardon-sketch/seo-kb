@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-07-24
+updated: 2026-08-07
 sources: 0
 confidence: high
 status: living-doc
@@ -36,7 +36,7 @@ status: living-doc
 | H-004 | Une page "entity / style wiki" est mieux citée en SGE qu'une page statique équivalente | `ouvert` | [[concepts/persistent-wiki-vs-rag]] · [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] | — |
 | H-005 | structural-information-geo (title/meta/schema > body, +22% Hit Rate) se généralise au contenu français | `ouvert` | [[concepts/structural-information-geo]] | — |
 | H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — |
-| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `en-test` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (baseline structurelle capturée) |
+| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `ouvert` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (gelée, J+30 non tenu) |
 | H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
 | H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) · Victoria Garden pré-arbitrée [[revue-hebdo/2026-W29]] : `en-test` à la publication client, sortie du programme au 2026-08-31 |
 | H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
@@ -85,6 +85,8 @@ Test : échantillon de requêtes Organikk pertinentes, distribution des dates de
 ### H-007 — Data propriétaire contre Retrieval Collapse
 
 Énoncé : le Retrieval Collapse (67% du pool capte 80% de l'exposition, NAVER [[sources/2026-04-25-scan-arxiv-25-avril]]) frappe moins les pages portant une donnée propriétaire unique. C'est l'argument scientifique central vendu aux prospects ([[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]]).
+
+Repassée `ouvert` le 2026-08-07 ([[revue-hebdo/2026-W32]] point 2), clause de falsification appliquée sans nouveau débat : le J+30 du 2026-08-06 est passé, la table de mesure de [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] est restée vide, aucun pull archivé. Le rapport `reports/indexation-organikk-2026-08-03.md` documente pourquoi : « indexation Google non testée ce run, pas d'accès à l'edge `admin-gsc-export` depuis cet environnement », blocage ouvert depuis le 2026-07-10 (24 jours au 08-03, `loops/indexation-check/memory/questions.md`). La connexion GSC existe (vérifiée fonctionnelle le 07-10) mais aucun pull `searchAnalytics` sur les 3 URLs cohortes n'a été fait ni archivé à l'échéance — la clause ne distingue pas « personne n'a rien mesuré » de « l'instrument était accessible mais personne ne s'en est servi » : dans les deux cas, pas de pull = fiche gelée. J+90 (2026-10-05) reste actif dans le ledger. [[hypotheses#H-011]] dépend du même edge pour son J+30 du 2026-08-16 : risque de rejouer le même gel si le pull n'est pas fait avant cette date.
 
 Repassée `en-test` le 2026-07-10 ([[revue-hebdo/2026-W28]] point 2), les deux conditions posées en W25 étant enfin remplies : un sprint de contenu Organikk réel la tire (batch publié le 2026-07-07 : guide Reddit SEO/GEO, outil probabilité de citation LLM, article audit automatisé — [[log]] 2026-07-07), et la baseline existe avant la décision (URLs neuves, zéro historique GSC par construction). L'instrument manquant depuis W20 est en place : propriété GSC `organikk.co` connectée via l'edge `admin-gsc-export` de Fusionn, première mesure réelle servie au run indexation du 2026-07-10. Fiche : [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]], jalons J+30 = 2026-08-06, J+90 = 2026-10-05. Clause de falsification pré-arbitrée : pas de pull archivé à l'échéance → fiche gelée, retour `ouvert` sans débat.
 

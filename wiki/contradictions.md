@@ -4,7 +4,7 @@ title: Registre des contradictions et dépendances ouvertes
 aliases: [contradictions, dette-doctrinale, dependances-ouvertes]
 tags: [meta, doctrine, lint, contradictions, dette]
 created: 2026-05-16
-updated: 2026-07-24
+updated: 2026-08-07
 sources: 0
 confidence: high
 status: living-doc
@@ -36,8 +36,8 @@ status: living-doc
 | C-005 | Audit blanc Qualiopi FG Formation lu en titre seulement | `en-cours` | 2026-04-30 | Ingest attaché au lot FG-Formation W31 ([[revue-hebdo/2026-W30]] point 4) |
 | C-006 | 21 templates Drive Accompagnement : seul l'INDEX est en wiki source | `acceptée` | 2026-04-30 | Limite assumée, ingest à la demande |
 | C-007 | "11 workflows automatisés" (drive-accompagnement) vs 10 skills documentés | `acceptée` | 2026-04-30 | Limite assumée [[revue-hebdo/2026-W24]] : jamais citer un décompte de skills sans le recompter depuis AGENTS.md §7 au moment de l'usage |
-| C-008 | Brevet Google US12536233B1 : publication ≠ déploiement | `ouverte` | 2026-05-01 | Surveiller déploiement réel |
-| C-009 | Papers MAGEO (2604.19516) et Role-Augmented G-SEO (2508.11158) non ingérés | `ouverte` | 2026-05-01 | Ingest papers si Tim valide la priorité |
+| C-008 | Brevet Google US12536233B1 : publication ≠ déploiement | `acceptée` | 2026-05-01 | Limite assumée [[revue-hebdo/2026-W32]] : jamais citer ce brevet comme mécanisme en production sans vérifier son statut de déploiement au moment de l'usage |
+| C-009 | Papers MAGEO (2604.19516) et Role-Augmented G-SEO (2508.11158) non ingérés | `acceptée` | 2026-05-01 | Limite assumée [[revue-hebdo/2026-W32]] : ingest à la demande seulement, si un contenu ou une hypothèse en fait un blocage réel |
 | C-010 | Statut inscription bootcamp Cécile / Franck non confirmé | `acceptée` | 2026-05-01 | Limite assumée [[revue-hebdo/2026-W29]] : jamais citer un décompte d'inscriptions bootcamp sans le re-vérifier au moment de l'usage |
 | C-011 | Chiffres glossaire non sourcés (40% AIO clics, 15M req/j Perplexity, 90-99% autorité 301) | `acceptée` | 2026-04-13 | Limite assumée [[revue-hebdo/2026-W26]] : jamais publier ces 3 chiffres sans source primaire ; sourcer au moment de l'usage |
 | C-012 | Glossaire simplifie MIRAS "multi-résolution" en "mémoire long-terme" | `acceptée` | 2026-04-13 | Vulgarisation assumée du glossaire public ; divergence documentée dans la source, référence canonique = [[entities/miras]] |
@@ -62,6 +62,14 @@ Le statut d'inscription au bootcamp de Cécile et de Franck n'a jamais été con
 `raw/notes/fg-formation/audit-blanc.md` n'a jamais été détaillé en source, et le dossier FG Formation compte aussi 5 transcripts d'audits blancs individuels (`clients/fgformation/calls/audit-blanc-{marc-d,paul-g,julie-h,nadia-r,karim-b}.md`) jamais ingérés — le point P1 du backlog resté en tête de liste depuis mai.
 
 Passée `en-cours` le 2026-07-24 ([[revue-hebdo/2026-W30]] point 4) : le dossier n'est plus une hypothèse de travail, il alimente une livraison réelle. Le duel publié `raw/organikk/clients/fgformation/pages/2026-07-24-audit-blanc-seul-ou-accompagnement-complet.md` cite directement la matière audit blanc pour opposer les deux voies (seul vs accompagné) — un contenu client sort avec une source que la KB ne connaît qu'en titre. Ferme quand le lot FG-Formation du point 3 ingère `audit-blanc.md` + les 5 transcripts individuels dans `wiki/sources/`.
+
+### C-008 — Brevet Google, publication ≠ déploiement
+
+`acceptée` depuis le 2026-08-07 ([[revue-hebdo/2026-W32]] point 4), en bloc avec C-009. Ouverte 98 jours (2026-05-01), citée dans six éditions consécutives (W25 à W30) sous « lignes > 60j, event-gated », jamais tranchée : elle attend un déploiement produit que rien dans le travail réel ne peut accélérer. Même diagnostic que C-001/C-007/C-010/C-011 : quand une contradiction attend un événement externe que rien ne provoque, la reconduire chaque semaine ne vaut plus rien. Limite : **jamais citer ce brevet comme mécanisme actif en production sans revérifier son statut au moment de l'usage.** Repasse `ouverte` si une source (doc Google, SEO news, changelog observé) documente un déploiement réel.
+
+### C-009 — Papers MAGEO et Role-Augmented G-SEO non ingérés
+
+`acceptée` depuis le 2026-08-07 ([[revue-hebdo/2026-W32]] point 4), en bloc avec C-008. Même historique : 98 jours, six éditions consécutives sans mouvement, aucun contenu ni hypothèse n'a jamais réclamé ces deux papers. Contrairement à C-002 (OpenDecoder, bloque directement [[hypotheses#H-010]]), rien ici ne dépend de l'ingest. Limite : **ingest à la demande seulement**, si un contenu publié ou une hypothèse du registre s'appuie explicitement sur MAGEO ou Role-Augmented G-SEO. Repasse `ouverte` si ce déclencheur survient.
 
 ### C-002 — OpenDecoder jamais ingéré
 

@@ -3,13 +3,23 @@ type: register
 title: Log chronologique du vault
 tags: [register, log]
 created: 2026-04-11
-updated: 2026-06-06
+updated: 2026-08-07
 status: stable
 ---
 
 # Log
 
 > Journal chronologique append-only. Parseable via `grep "^## \[" wiki/log.md`.
+
+## [2026-08-07] revue-hebdo | Semaine W32 — 7 décisions
+- édition: [[revue-hebdo/2026-W32]]
+- promotions: 1 draft→stable (algorithme-week-2026-W29)
+- hypothese: H-007 en-test→ouvert (clause de falsification, edge GSC admin-gsc-export inaccessible 24j, J+30 08-06 manqué)
+- lot ingest: FG-Formation recentré sur audit-blanc.md + 5 transcripts audit-blanc-* (ferme C-005)
+- contradiction fermée: C-008 + C-009 ouverte→acceptée (en bloc, 98j sans mouvement)
+- archivage: [[queries/pseo-2026-07-07-organikk-corpus]] + [[queries/product-led-2026-07-07-organikk-anti-chatgpt]] draft→stale (date de mort 07-31, exécutée avec 1 semaine de retard, W31 sautée)
+- résurgence: [[concepts/persistent-wiki-vs-rag]] mis à jour (cadrage binaire → couches complémentaires) + [[concepts/cli-tools-optional]] en miroir
+- fil rouge: 47 études IA quotidiennes (agent-synthetic/revuedepressIA/etudes-IA/) sans synthèse — `facteurs-citation-ia` à ouvrir
 
 ## [2026-08-02] etude-IA | Accords de licensing IA et citations des éditeurs partenaires (2023-2026)
 - skill: seo-page-statistiques (SyntheticBrain)

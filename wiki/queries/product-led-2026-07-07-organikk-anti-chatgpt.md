@@ -7,10 +7,13 @@ created: 2026-07-07
 updated: 2026-07-07
 sources: 3
 confidence: medium
-status: draft
+status: stale
+updated: 2026-08-07
 ---
 
 # Organikk : modèles de pages anti-ChatGPT
+
+> Passé `stale` le 2026-08-07 ([[revue-hebdo/2026-W32]] point 5), même bascule et même date de mort que [[queries/pseo-2026-07-07-organikk-corpus]] — voir cette page pour le détail de la décision.
 
 Skill `seo-product-led-seo`, suite de [[queries/pseo-2026-07-07-organikk-corpus]] (itérations 1-3 écartées ou partielles). Filtre appliqué : la doctrine anti-ChatGPT de Tim. Aucun mot-clé sur lequel ChatGPT peut se mettre ; il reste les requêtes où le clic est obligatoire. Trois familles survivantes : transactionnel ultra-niché, outil sur data propriétaire, preuve vérifiable.
 

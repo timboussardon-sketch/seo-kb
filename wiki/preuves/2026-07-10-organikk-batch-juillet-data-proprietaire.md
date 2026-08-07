@@ -7,7 +7,7 @@ created: 2026-07-10
 updated: 2026-07-10
 sources: 2
 confidence: medium
-status: en-cours
+status: gelée
 hypothese: H-007
 contenu: "https://organikk.co/blog/guide-reddit-seo-geo/"
 publie_le: 2026-07-07
@@ -47,7 +47,7 @@ Falsification : si à une échéance aucun pull n'est archivé dans cette fiche,
 
 ## Mesure J+30
 
-Échéance 2026-08-06.
+Échéance 2026-08-06 — **manquée, fiche gelée** ([[revue-hebdo/2026-W32]] point 2). Aucun pull `searchAnalytics` archivé à l'échéance : la table reste vide. `reports/indexation-organikk-2026-08-03.md` confirme l'edge `admin-gsc-export` inaccessible depuis l'environnement de run du loop `indexation-check` (24 jours d'ouverture au 08-03, `loops/indexation-check/memory/questions.md`), mais le pull manuel via `preuves/SETUP-GSC` n'a pas non plus été fait. H-007 repasse `ouvert`. J+90 reste actif.
 
 | URL | Impressions | Clics | Position | Part non brandée | Citations IA |
 |---|---|---|---|---|---|

@@ -7,10 +7,13 @@ created: 2026-07-07
 updated: 2026-07-13
 sources: 4
 confidence: medium
-status: draft
+status: stale
+updated: 2026-08-07
 ---
 
 # Organikk : modèles de pages corpus pour ranker
+
+> Passé `stale` le 2026-08-07 ([[revue-hebdo/2026-W32]] point 5), exécution de la date de mort pré-arbitrée en [[revue-hebdo/2026-W29]] et confirmée en [[revue-hebdo/2026-W30]] : si aucune page issue des modèles corpus n'était publiée sur organikk.co d'ici au 2026-07-31, le binôme passait `stale` « sans débat ». Zéro page publiée à cette date — la revue W31 qui devait exécuter la bascule a sauté (rituel non tenu), la bascule est appliquée ici avec une semaine de retard. Ne bloque pas [[hypotheses#H-007]] (cohorte = le batch publié du 2026-07-07, sans rapport avec ces modèles) ni [[contradictions#C-003]].
 
 Application de la doctrine [[corpus-qadence|Corpus]] (corpus d'abord, pages en sous-produit) au site organikk.co. Skill `seo-programmatique-pseo`, données du 2026-07-07.
 

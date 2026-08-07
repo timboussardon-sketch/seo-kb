@@ -4,7 +4,7 @@ title: Wiki persistant vs RAG
 aliases: [persistent-wiki, rag-vs-wiki, wiki-vs-rag]
 tags: [pattern-kb, wiki, rag, meta, fondation]
 created: 2026-04-11
-updated: 2026-04-11
+updated: 2026-08-07
 sources: 1
 confidence: high
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # Wiki persistant vs RAG
 
 Le contraste central du pattern proposé par [[entities/karpathy]] dans [[sources/2026-04-11-karpathy-llm-wiki]].
+
+> **Mise à jour 2026-08-07** ([[revue-hebdo/2026-W32]] point 6, résurgence [[revue-hebdo/resurgence-2026-08-05]]) : le cadrage binaire ci-dessous date du bootstrap du vault. `wiki/sources/` compte aujourd'hui 110 fichiers — le seuil « ~100 sources » que la source elle-même désignait comme point de bascule (§ Argument d'échelle) est franchi. Et le tooling a effectivement émergé : `.claude/vector-store/` (ChromaDB, embeddings `paraphrase-multilingual-mpnet-base-v2`) + `.claude/index/concepts.json`, exposés via `./kb` (AGENTS.md §7ter, skill `kb-semantic-search`), commit du 2026-05-26. Ce n'est pas un remplacement du wiki par du RAG, c'est une superposition : `./kb search` fait de la recherche cosinus sur des embeddings (RAG au sens strict), mais chaque chunk garde ses métadonnées frontmatter (type, tags, status, confidence) pour un filtrage déterministe avant la recherche sémantique, et `concepts.json` (wikilinks, backrefs) reste la structure atomique de référence. Le clivage qui compte n'est plus « wiki **ou** RAG » mais « qui compile » (le wiki, une fois, en continu) vs « qui récupère » (le vector store, à chaque query) — deux couches complémentaires, pas deux architectures concurrentes. Voir [[concepts/cli-tools-optional]], mis à jour en miroir le même jour.
 
 ## Les deux approches
 

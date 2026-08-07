@@ -4,7 +4,7 @@ title: CLI tools (optionnels, émergents)
 aliases: [cli-tools, qmd-wiki]
 tags: [pattern-kb, outil, cli, meta, optionnel]
 created: 2026-04-11
-updated: 2026-04-11
+updated: 2026-08-07
 sources: 1
 confidence: medium
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # CLI tools (optionnels, émergents)
 
 Position de [[sources/2026-04-11-karpathy-llm-wiki]] sur le tooling : **optionnel par défaut, utile à mesure que la KB grossit**.
+
+> **Mise à jour 2026-08-07** ([[revue-hebdo/2026-W32]] point 6, en miroir de [[concepts/persistent-wiki-vs-rag]]) : la prédiction ci-dessous s'est vérifiée. Le seuil ~100 sources est franchi (110 au 2026-08-07) et l'outil de recherche a émergé exactement au moment prédit — pas `qmd` cité par la source, mais un outil maison (`./kb`, ChromaDB + `paraphrase-multilingual-mpnet-base-v2`, commit 2026-05-26, AGENTS.md §7ter), conforme au principe DIY décrit plus bas (« vibe-code a naive search script as the need arises »). Le point qui reste vrai : le tooling ne s'est pas substitué à l'index markdown, il s'est ajouté par-dessus, filtré par le frontmatter avant la recherche cosinus. Pattern modulaire confirmé, pas contredit.
 
 ## Ce que dit la source
 

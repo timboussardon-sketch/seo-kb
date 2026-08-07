@@ -744,6 +744,7 @@
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-06-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-21-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
@@ -2125,6 +2126,7 @@
     "backrefs": [
       "agent-synthetic/revuedepressIA/2026-07-21-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-02-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-22-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-24-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-25-revue-presse.md",
@@ -4076,6 +4078,8 @@
       "agent-synthetic/revuedepressIA/2026-08-04-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-08-06-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-06-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -5216,6 +5220,7 @@
       "agent-synthetic/revuedepressIA/2026-07-30-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-08-03-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-21-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-23-revue-presse.md",
