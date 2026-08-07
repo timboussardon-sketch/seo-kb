@@ -52,7 +52,11 @@
 
 ## À faire (par priorité)
 
-*(file vide — ajouter de nouveaux sujets à la prochaine session)*
+1. **Gemini et Google AI Mode dans les citations IA (2026) : profil des sources, domaines favoris, part de voix et recoupement avec les AI Overviews classiques** — Google AI Mode est déployé mondialement depuis avril 2026 mais son profil de citations n'a pas encore été étudié en isolation. Angle : en quoi Gemini cite-t-il différemment des AIO classiques ? Recoupement cross-engine avec ChatGPT et Perplexity. Requête-ancre : « Gemini citations statistiques 2026 », « Google AI Mode sources ».
+
+2. **Marques et citations IA : brand mention share, requêtes branded vs génériques et hallucination de marque dans les réponses génératives (2025-2026)** — Le niveau domaine a été couvert ; le niveau marque (combien de fois une marque est mentionnée vs combien de fois elle est correctement liée, taux de confusion ou d'attribution erronée par moteur) est un objet de mesure distinct. Requête-ancre : « brand mention IA statistiques », « brand safety réponses IA 2026 ».
+
+3. **Contenu "evergreen" vs actualité dans les citations IA : durée de vie et taux de citation selon le type de contenu (2025-2026)** — La fraîcheur côté délai de crawl a été traitée. Cet angle aborde le type de contenu (guide stable de type "how-to", analyse d'actualité, opinion, étude) et son taux de citation comparé sur le long terme. Requête-ancre : « contenu evergreen citations IA », « durée de vie contenu IA statistiques ».
 
 ## Sujets écartés (avec raison)
 (vide)
