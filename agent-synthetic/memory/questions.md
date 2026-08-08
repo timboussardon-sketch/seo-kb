@@ -726,3 +726,18 @@ Question : la règle wording_rules doit-elle spécifier explicitement les cas o�
 - **Q-2026-08-08-3 (non urgent, revue hebdo)** — Otterly.ai est à son 2e hit utile cumulé (15 juin 2026 LinkedIn Study + 08-08 Capybara 4-mois update). Le trust actuel est 0,75. Ma lecture : candidate renforcée au passage exploit renforcé (tier « primaire vendeur avec méthodologie ouverte publiée »), sous réserve du prochain hit. Sa nature (single-source vendor GEO) impose la règle spéciale « toujours flag single-source direction dans le corps quand utilisée seule ». Question à Tim : cette règle spéciale mérite-t-elle d'être codifiée dans SKILL.md ou dans un fichier séparé (par exemple `memory/sources-vendors-guardrails.md`) qui liste les sources vendor et leur règle d'usage ?
 
 - **Q-2026-08-08-4 (non urgent, revue hebdo)** — Découverte notable ce run : SearchEngineWatch.com et Seroundtable.com retournent HTTP 403 sur WebFetch depuis le proxy cloud, alors que le contenu est indexé et cite-able via WebSearch. Ma lecture : ce n'est ni un bug métaphore ni un bug source, c'est une limite technique du proxy cloud sur ces domaines spécifiques. Contournement utilisé : passer par Optimixed.com ou par les descriptifs WebSearch pour valider dates et facts. Question à Tim : ce constat mérite-t-il d'être ajouté à `.claude/README.md` ou à `memory/proxy-limits.md` pour éviter que chaque run réessaie inutilement ? Alternative technique : bookmark les URL WebFetch-friendly de contournement (Optimixed pour Seroundtable, Web Archive pour SearchEngineWatch).
+
+## 2026-08-08-revue-presse-v2 — Questions à Tim (regroupées revue hebdo)
+
+### Q1 — Hypothèse candidate à proposer pour `wiki/hypotheses.md`
+
+L'édition 2026-08-08-v2 pose une prédiction datée (P-2026-08-08-v2-1) qui devrait devenir une hypothèse candidate : "la réorganisation Google DeepMind du 5 août 2026 (Kavukcuoglu SVP prend Gemini + Jeff Dean quitte) produira un signal observable de changement produit sur AI Overviews et/ou AI Mode avant le 30 novembre 2026". Question à Tim : cette prédiction mérite-t-elle une hypothèse dans le vault pour être suivie sur les 4 prochains mois avec un tag `#suivi-observabilite-gemini` ? Si oui, quels critères de résolution durs (par exemple : au moins 2 posts SEO indépendants qui mesurent un changement métrique sur AI Overviews sur un corpus de 100+ queries) ?
+
+### Q2 — Concept à créer dans le vault ? "Chaîne de reporting produit-modèle"
+
+L'analyse de la réorg DeepMind repose implicitement sur un concept non formalisé dans le vault : la distance entre les décisions produit Search Google et les décisions modèle Gemini. Kavukcuoglu qui rapporte à Pichai réduit cette distance. Cette réduction change la nature de la GEO : elle rend le levier "optimiser pour l'IA de Google" plus intégré avec le levier "optimiser pour Google Search" mais aussi plus sensible aux objectifs commerciaux du produit Search (monétisation, engagement). Question à Tim : ce cadre mérite-t-il une note `wiki/concepts/chaine-reporting-produit-modele.md` (draft) ou reste-t-il une lecture instrumentale non doctrinale ?
+
+### Q3 — Question de veille sur Discovery Loop
+
+Discovery Loop (Jeff Dean + Sanjay Ghemawat + Oriol Vinyals + Quoc Le, public benefit corporation, financement Radical Ventures et Khosla Ventures avec Alphabet en participant) est un projet d'automatisation ML et de recherche scientifique. Il est possible que sur 6-12 mois, ce projet produise des outils qui infusent la SEO/GEO (par exemple sur la génération de contenu structuré ou l'évaluation automatique de citation IA). Question à Tim : faut-il ajouter Discovery Loop dans `sources.jsonl` en statut `explore` avec trust initial 0.5 pour suivre les publications de l'équipe ?
+
