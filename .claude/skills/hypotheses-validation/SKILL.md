@@ -30,9 +30,10 @@ Lis `wiki/hypotheses.md`. Pour chaque H-XXX `ouvert` ou `en-test` :
 
 - Une fiche `wiki/preuves/*.md` la concerne-t-elle ? Quel verdict ?
 - Une source ingérée ce mois apporte-t-elle un benchmark, une donnée terrain, un test qui pèse pour ou contre ?
+- **Chercher activement le contre-argument** (`./kb search`, contradictions.md, sources ingérées ce mois, web si besoin) — pas seulement relever ce qui va dans le sens de l'hypothèse. Mettre à jour la colonne Contre-argument du tableau de bord, même si le résultat reste "à chercher" faute de piste sérieuse.
 - Statut à faire évoluer ? `ouvert` → `en-test` (test lancé) → `validé` / `invalidé` (preuve à l'appui) ; ou `heuristique` si non prouvable mais cohérent et explicitement assumé.
 
-Règle dure : pas de fiche preuve exploitable = pas de passage à `validé`/`invalidé`. On ne valide jamais sur du ressenti.
+Règle dure : pas de fiche preuve exploitable = pas de passage à `validé`/`invalidé`. On ne valide jamais sur du ressenti. Un contre-argument solide et non réfuté bloque le passage à `validé` même si une preuve favorable existe par ailleurs — les deux doivent être pesés, pas seulement la preuve qui arrange l'hypothèse.
 
 ## ÉTAPE 3 — RÉPERCUTER SUR LA DOCTRINE
 

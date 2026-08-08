@@ -541,7 +541,7 @@ Décision fondatrice : [[decisions/0001-fermeture-boucles-systeme]]. Le système
 
 ### Boucle doctrine → validation
 
-Toute la doctrine repose sur des transferts d'architecture non prouvables directement. [[hypotheses]] rassemble les claims "non validé" en programme de recherche, [[contradictions]] consolide la dette. **Règle dure : une hypothèse ne passe `validé`/`invalidé` que via une [[preuves/index|fiche preuve]] adossée à de la data réelle. Jamais sur du ressenti.** Skill `hypotheses-validation`, 1er du mois.
+Toute la doctrine repose sur des transferts d'architecture non prouvables directement. [[hypotheses]] rassemble les claims "non validé" en programme de recherche, [[contradictions]] consolide la dette. **Règle dure : une hypothèse ne passe `validé`/`invalidé` que via une [[preuves/index|fiche preuve]] adossée à de la data réelle. Jamais sur du ressenti.** Avant de faire avancer un statut, chercher activement le contre-argument le plus solide (colonne dédiée dans le tableau de bord) — pas seulement la preuve qui va dans le sens espéré ; un contre-argument non réfuté bloque le passage à `validé`. Skill `hypotheses-validation`, 1er du mois.
 
 ### Boucle sortie → apprentissage
 
@@ -561,6 +561,6 @@ Auto (agent, cron, zéro effort) : sweeps, résurgence, maintenance des registre
 
 ---
 
-**Version** : 2.6 SEO-first — 2026-05-16 (ajout §14 trois boucles + rituel ; nouveaux types `register|moc|decision|proof` en §5.1 ; nouveaux dossiers wiki en §3 ; §7bis skills système ; cf. [[decisions/0001-fermeture-boucles-systeme]])
+**Version** : 2.7 SEO-first — 2026-08-08 (§14 : contre-argument actif obligatoire avant de faire avancer une hypothèse, colonne dédiée dans [[hypotheses]]) ; 2.6 — 2026-05-16 (ajout §14 trois boucles + rituel ; nouveaux types `register|moc|decision|proof` en §5.1 ; nouveaux dossiers wiki en §3 ; §7bis skills système ; cf. [[decisions/0001-fermeture-boucles-systeme]])
 **Maintainer humain** : Timothée Boussardon
 **Maintainer LLM** : Claude Code (et tout agent qui lit ce fichier)

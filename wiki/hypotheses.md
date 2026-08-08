@@ -4,7 +4,7 @@ title: Registre des hypothèses
 aliases: [hypotheses, registre-hypotheses, hypotheses-non-validees]
 tags: [meta, doctrine, validation, hypotheses, moat]
 created: 2026-05-16
-updated: 2026-08-07
+updated: 2026-08-08
 sources: 0
 confidence: high
 status: living-doc
@@ -15,6 +15,8 @@ status: living-doc
 > Toute la doctrine de cette KB repose sur des transferts d'architecture (Titans/MIRAS → Google Search) et des intuitions terrain. Beaucoup sont marquées "non validé" un peu partout dans le wiki. Tant qu'elles restent éparpillées en note de bas de page, elles ne se font jamais trancher. Ce registre les rassemble en programme de recherche : une ligne = une affirmation testable + comment on la tranche + son statut.
 >
 > Règle : une hypothèse ne passe pas `validé` ou `invalidé` sans une [[preuves/index|fiche preuve]] qui pointe vers une donnée terrain, un test, ou un benchmark. Pas de preuve = ça reste `ouvert`. C'est ce registre qui transforme "data propriétaire" d'un argument commercial en moat réel. Voir [[concepts/data-proprietaire]] et [[concepts/persistent-wiki-vs-rag]].
+>
+> Règle : avant de faire avancer une hypothèse vers `en-test`/`validé`, chercher activement le contre-argument le plus solide dans le vault et à l'extérieur — pas seulement noter la preuve qui va dans le sens de l'hypothèse. Le résultat va dans la colonne **Contre-argument** du tableau. Une hypothèse sans contre-argument cherché n'a pas été confrontée, elle a juste été supportée.
 >
 > Cadence de revue : mensuelle via le skill `hypotheses-validation`. Mention en [[revue-hebdo/index|revue hebdo]] de toute hypothèse passée `en-test`.
 
@@ -28,19 +30,19 @@ status: living-doc
 
 ## Tableau de bord
 
-| ID | Hypothèse (résumé) | Statut | Pages doctrine qui en dépendent | Preuve |
-|---|---|---|---|---|
-| H-001 | Google Search/SGE utilise en prod une mémoire type Titans/MIRAS (surprise metric, weight decay) | `heuristique` | [[concepts/surprise-metric]] · [[concepts/weight-decay]] · [[syntheses/doctrine-seo-post-sge]] | — |
-| H-002 | Un Surprise Gap fort augmente la mémorisation et la citation par les LLM | `ouvert` | [[concepts/surprise-gap]] · [[concepts/surprise-metric]] | — |
-| H-003 | Le Grounding Score (cosinus intention↔page + divergence) prédit la citation IA | `ouvert` | [[concepts/grounding-score]] · [[concepts/methode-organikk-4-piliers]] | — |
-| H-004 | Une page "entity / style wiki" est mieux citée en SGE qu'une page statique équivalente | `ouvert` | [[concepts/persistent-wiki-vs-rag]] · [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] | — |
-| H-005 | structural-information-geo (title/meta/schema > body, +22% Hit Rate) se généralise au contenu français | `ouvert` | [[concepts/structural-information-geo]] | — |
-| H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — |
-| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `ouvert` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (gelée, J+30 non tenu) |
-| H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — |
-| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) · Victoria Garden pré-arbitrée [[revue-hebdo/2026-W29]] : `en-test` à la publication client, sortie du programme au 2026-08-31 |
-| H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — |
-| H-011 | Combler un manque de matière de l'IA (référentiel daté, sourcé, structuré) fait de nous la source citée | `en-test` | [[concepts/directories-data-ia]] · [[concepts/information-gain]] | [[preuves/2026-07-17-organikk-directories-guide-google]] (baseline structurelle capturée) |
+| ID | Hypothèse (résumé) | Statut | Pages doctrine qui en dépendent | Preuve | Contre-argument |
+|---|---|---|---|---|---|
+| H-001 | Google Search/SGE utilise en prod une mémoire type Titans/MIRAS (surprise metric, weight decay) | `heuristique` | [[concepts/surprise-metric]] · [[concepts/weight-decay]] · [[syntheses/doctrine-seo-post-sge]] | — | Titans/MIRAS est un papier de recherche Google DeepMind, pas une confirmation que Google Search en prod l'utilise — le transfert est un pari architectural, non observable de l'extérieur |
+| H-002 | Un Surprise Gap fort augmente la mémorisation et la citation par les LLM | `ouvert` | [[concepts/surprise-gap]] · [[concepts/surprise-metric]] | — | à chercher (prochaine revue mensuelle) |
+| H-003 | Le Grounding Score (cosinus intention↔page + divergence) prédit la citation IA | `ouvert` | [[concepts/grounding-score]] · [[concepts/methode-organikk-4-piliers]] | — | à chercher (prochaine revue mensuelle) |
+| H-004 | Une page "entity / style wiki" est mieux citée en SGE qu'une page statique équivalente | `ouvert` | [[concepts/persistent-wiki-vs-rag]] · [[queries/2026-04-12-wiki-pattern-vs-grounding-score]] | — | à chercher (prochaine revue mensuelle) |
+| H-005 | structural-information-geo (title/meta/schema > body, +22% Hit Rate) se généralise au contenu français | `ouvert` | [[concepts/structural-information-geo]] | — | Le finding SAGEO Arena n'est validé que sur corpus anglophone — rien ne dit que le poids relatif title/meta/schema vs body tient en français |
+| H-006 | Google applique un biais de récence fort (obs. Metehan, `use_freshness_scoring_profile`) | `ouvert` | [[concepts/weight-decay]] · [[entities/metehan]] | — | Source unique, citation secondaire de Tim, jamais vérifiée indépendamment — `confidence: medium` sur la page doctrine pour cette raison |
+| H-007 | La data propriétaire réduit le Retrieval Collapse et augmente l'exposition réelle | `ouvert` | [[concepts/data-proprietaire]] · [[concepts/retrieval-collapse]] | [[preuves/2026-07-10-organikk-batch-juillet-data-proprietaire]] (gelée, J+30 non tenu) | Deux cycles de mesure gelés faute de pull GSC archivé (2026-06-19 et 2026-08-06) — l'effet n'a jamais été mesuré, ni confirmé ni infirmé, malgré deux fenêtres J+30 passées |
+| H-008 | L'answer-first pattern (validé A/B Xiaohongshu) tient sur Google/IA en français | `ouvert` | [[concepts/answer-first-pattern]] | — | Validé uniquement sur Xiaohongshu (plateforme, marché et langue différents) — jamais testé sur Google ni en français |
+| H-009 | Les résultats commerciaux Tim (1h30→45min, closing 10→50%, top 2) tiennent sur un échantillon instrumenté, pas seulement auto-rapporté | `ouvert` | [[sources/2026-04-13-cas-clients-resultats]] | [[preuves/2026-06-12-golfiller-instrumentation-client]] (J+30 non mesuré) · Victoria Garden pré-arbitrée [[revue-hebdo/2026-W29]] : `en-test` à la publication client, sortie du programme au 2026-08-31 | Les chiffres d'origine (1h30→45min, closing 10→50%) sont invérifiables rétroactivement et restent auto-rapportés — deux tentatives d'instrumentation (Golfiller, Victoria Garden) n'ont à ce jour produit aucune mesure tierce |
+| H-010 | Le scoring 4 axes transpose fidèlement le paper OpenDecoder (Mo et al., 2026) | `ouvert` | [[sources/2026-04-15-opendecoder-seo-scoring-system]] | — | Le paper primaire n'est pas ingéré dans le vault — la fidélité de la transposition n'a jamais été auditée formule par formule, elle est supposée |
+| H-011 | Combler un manque de matière de l'IA (référentiel daté, sourcé, structuré) fait de nous la source citée | `en-test` | [[concepts/directories-data-ia]] · [[concepts/information-gain]] | [[preuves/2026-07-17-organikk-directories-guide-google]] (baseline structurelle capturée) | Posée en `confidence: medium` sur la seule cohérence avec [[concepts/data-proprietaire]] et [[concepts/information-gain]] — aucune preuve terrain dédiée à l'origine, la mesure J+30 (2026-08-16) tranchera |
 
 ## Détail
 
@@ -136,10 +138,11 @@ Test : suivre impressions, positions et citations IA des pages du guide sur les 
 
 ## Quand une hypothèse change de statut
 
-1. Créer ou mettre à jour la [[preuves/index|fiche preuve]] correspondante
-2. Passer le statut ici + dans le tableau de bord
-3. Sur les pages doctrine listées, ajuster le `confidence:` et le wording (un `validé` enlève le "non validé", un `invalidé` impose une correction documentée)
-4. Logguer dans [[log]] : `## [YYYY-MM-DD] hypothese | H-XXX → validé/invalidé`
-5. Si `invalidé` : ouvrir une entrée dans [[contradictions]] pour tracer la dette doctrinale à corriger
+1. Chercher activement le contre-argument le plus solide (vault + web) et mettre à jour la colonne Contre-argument — avant de regarder si la preuve va dans le sens espéré
+2. Créer ou mettre à jour la [[preuves/index|fiche preuve]] correspondante
+3. Passer le statut ici + dans le tableau de bord
+4. Sur les pages doctrine listées, ajuster le `confidence:` et le wording (un `validé` enlève le "non validé", un `invalidé` impose une correction documentée)
+5. Logguer dans [[log]] : `## [YYYY-MM-DD] hypothese | H-XXX → validé/invalidé`
+6. Si `invalidé` : ouvrir une entrée dans [[contradictions]] pour tracer la dette doctrinale à corriger
 
 Pages liées : [[index]] · [[contradictions]] · [[preuves/index]] · [[ingest-backlog]] · [[concepts/data-proprietaire]]

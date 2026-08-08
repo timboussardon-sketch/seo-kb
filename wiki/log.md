@@ -1473,3 +1473,10 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - wikilinks: min 2/fiche, 0 lien mort (vérifié)
 - nœuds suggérés (à créer en curation): aucun
 - angle SEO transverse: le maillage interne piloté par clustering + classification Know-Simple/Know/Do est présenté comme le levier système qui dépasse l'optimisation ponctuelle par outil IA
+
+## [2026-08-08] systeme | AGENTS.md v2.6 → v2.7 — contre-argument actif obligatoire dans la boucle doctrine→validation
+- déclencheur: comparaison avec l'architecture multi-agents de TradingAgents (débat bull/bear avant décision) — la boucle doctrine→validation existante confrontait déjà les hypothèses à des preuves, mais jamais à une recherche active de ce qui les réfute
+- AGENTS.md §14: ajout d'une phrase dans "Boucle doctrine → validation" — chercher le contre-argument le plus solide avant de faire avancer un statut, un contre-argument non réfuté bloque le passage à `validé`
+- [[hypotheses]]: nouvelle colonne "Contre-argument" dans le tableau de bord + règle explicite dans l'intro + étape 1 de "Quand une hypothèse change de statut". Les 11 lignes existantes remplies : H-001/H-005/H-006/H-007/H-008/H-009/H-010/H-011 depuis le contre-argument déjà présent en prose dans leur section Détail (pas une nouvelle recherche) ; H-002/H-003/H-004 laissées "à chercher (prochaine revue mensuelle)" faute de piste déjà documentée — aucun contre-argument inventé
+- skill `hypotheses-validation` (`.claude/skills/hypotheses-validation/SKILL.md`): étape 2 étendue — recherche active du contre-argument (`./kb search`, contradictions.md, sources du mois, web) avant de faire évoluer un statut
+- portée: additif, ne change aucun statut existant, la prochaine revue mensuelle (1er du mois) est le premier passage réel du mécanisme
