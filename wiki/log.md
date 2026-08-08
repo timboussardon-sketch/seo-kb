@@ -3,7 +3,7 @@ type: register
 title: Log chronologique du vault
 tags: [register, log]
 created: 2026-04-11
-updated: 2026-08-07
+updated: 2026-08-08
 status: stable
 ---
 
@@ -1465,3 +1465,11 @@ Doctrine 2026-05-16 : 1 hypothèse bougée (validé:0 invalidé:0 en-test:1) / 0
 - output: [[revue-hebdo/resurgence-2026-08-05]]
 - verdict: à mettre à jour — le vault a franchi le seuil ~100 sources (110) et bâti l'infra RAG (./kb, ChromaDB, 2026-05-26) que le concept jugeait non nécessaire à cette échelle
 - concept miroir concerné: [[concepts/cli-tools-optional]] (même correction à appliquer)
+
+## [2026-08-08] ingest | Scrape auto publications (Algorithme + Organikk)
+- source_type: article
+- sources créées: 1 ([[sources/2026-08-05-algorithme-5-facons-exploiter-ia-seo]])
+- posts sautés (déjà ingérés): 0 (Organikk n'a pas publié de nouveau post depuis le 03/08 déjà ingéré ; les 9 autres posts du listing correspondaient tous à des fiches existantes)
+- wikilinks: min 2/fiche, 0 lien mort (vérifié)
+- nœuds suggérés (à créer en curation): aucun
+- angle SEO transverse: le maillage interne piloté par clustering + classification Know-Simple/Know/Do est présenté comme le levier système qui dépasse l'optimisation ponctuelle par outil IA

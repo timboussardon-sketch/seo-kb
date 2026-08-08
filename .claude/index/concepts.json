@@ -312,6 +312,8 @@
       "agent-synthetic/revuedepressIA/2026-08-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-08-04-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -742,9 +744,13 @@
       "arbitrage-plateforme"
     ],
     "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/2026-07-02-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-06-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-02-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-07-21-revue-presse.md",
       "raw/bootcamp4/session-1-mots-cles-nouveautes.md",
@@ -1399,6 +1405,7 @@
       "wiki/entities/qadence-seo-agent.md",
       "wiki/index.md",
       "wiki/log.md",
+      "wiki/revue-hebdo/2026-W32.md",
       "wiki/revue-hebdo/resurgence-2026-08-05.md",
       "wiki/sources/2026-04-11-karpathy-llm-wiki.md",
       "wiki/sources/2026-04-13-call-03-cecile-suite.md",
@@ -1410,6 +1417,7 @@
     "file": "wiki/concepts/cli-tools-optional.md",
     "outlinks": [
       "2026-04-11-karpathy-llm-wiki",
+      "2026-W32",
       "persistent-wiki-vs-rag",
       "obsidian"
     ],
@@ -1509,6 +1517,7 @@
       "agent-synthetic/revuedepressIA/2026-08-03-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-16-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-18-revue-presse.md",
@@ -1855,6 +1864,7 @@
       "wiki/index.md",
       "wiki/revue-hebdo/2026-W29.md",
       "wiki/revue-hebdo/2026-W30.md",
+      "wiki/revue-hebdo/2026-W32.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md"
     ],
     "confidence": "medium",
@@ -2670,6 +2680,9 @@
       "ai-mode"
     ],
     "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/directives.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/breves-IA/2026-06-04-breves-v2.md",
       "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-03-breves-v2.md",
       "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-06-breves.md",
@@ -3599,6 +3612,7 @@
       "wiki/sources/2026-01-28-organikk-premier-agent-seo-ia.md",
       "wiki/sources/2026-05-19-algorithme-10-convictions-seo.md",
       "wiki/sources/2026-07-16-call-15-baptiste-yalp.md",
+      "wiki/sources/2026-08-05-algorithme-5-facons-exploiter-ia-seo.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/algorithme-week-2026-W29.md",
       "wiki/syntheses/process-keyword-research-5-etapes.md"
@@ -3768,7 +3782,8 @@
       "wiki/moc/moc-maillage.md",
       "wiki/queries/pseo-2026-05-13-organikk-secteur-ville.md",
       "wiki/sources/2026-04-24-cluster-business-organikk-4-piliers.md",
-      "wiki/sources/2026-04-30-newsletter-maillage-interne.md"
+      "wiki/sources/2026-04-30-newsletter-maillage-interne.md",
+      "wiki/sources/2026-08-05-algorithme-5-facons-exploiter-ia-seo.md"
     ],
     "confidence": "high",
     "file": "wiki/concepts/maillage-systeme.md",
@@ -4080,6 +4095,8 @@
       "agent-synthetic/revuedepressIA/2026-08-05-revue-presse.md",
       "agent-synthetic/revuedepressIA/2026-08-06-revue-presse-v2.md",
       "agent-synthetic/revuedepressIA/2026-08-06-revue-presse.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse-v2.md",
+      "agent-synthetic/revuedepressIA/2026-08-07-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-08-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-09-revue-presse.md",
       "agent-synthetic/revuedepressIA/_archive/2026-06-10-revue-presse.md",
@@ -4662,7 +4679,8 @@
       "wiki/sources/2026-06-03-organikk-systeme-seo-ia-complet.md",
       "wiki/sources/2026-06-11-organikk-construire-agent-seo-claude.md",
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
-      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md"
+      "wiki/sources/2026-07-31-organikk-mots-cles-business-claude.md",
+      "wiki/sources/2026-08-05-algorithme-5-facons-exploiter-ia-seo.md"
     ],
     "confidence": "high",
     "file": "wiki/entities/obsidian.md",
@@ -4954,6 +4972,8 @@
       "perplexity-ai"
     ],
     "backrefs": [
+      "agent-synthetic/memory/calibration.md",
+      "agent-synthetic/memory/directives.md",
       "agent-synthetic/revuedepressIA/breves-IA/_archive/2026-06-06-breves-v2.md",
       "agent-synthetic/revuedepressIA/etudes-IA/2026-06-20-stats-citations-ia-domaines-recouvrement.md",
       "agent-synthetic/revuedepressIA/etudes-IA/2026-07-16-stats-perplexity-media-program-citations-monetisation.md",
@@ -5030,6 +5050,7 @@
       "raw/articles/organikk-blog/creer-bot-ia-seo.md",
       "raw/articles/organikk-blog/ma-strategie-seo-du-moment.md",
       "raw/articles/organikk-blog/wiki-ia-obsidian-claude.md",
+      "raw/journal/2026-08-07.md",
       "wiki/clusters/2026-07-16-qadence-chatbot-agent-seo.md",
       "wiki/concepts/cli-tools-optional.md",
       "wiki/concepts/dette-cognitive.md",
@@ -5051,6 +5072,7 @@
       "wiki/moc/moc-methode-kb.md",
       "wiki/queries/2026-04-12-wiki-pattern-vs-grounding-score.md",
       "wiki/queries/transfert-vault-client.md",
+      "wiki/revue-hebdo/2026-W32.md",
       "wiki/revue-hebdo/resurgence-2026-05-16.md",
       "wiki/revue-hebdo/resurgence-2026-08-05.md",
       "wiki/revues-presse/2026-04-13-claude-code-obsidian-sans-complexite.md",
@@ -5070,8 +5092,10 @@
     "outlinks": [
       "karpathy",
       "2026-04-11-karpathy-llm-wiki",
-      "notebooklm",
+      "2026-W32",
+      "resurgence-2026-08-05",
       "cli-tools-optional",
+      "notebooklm",
       "ingest-workflow",
       "query-synthesis",
       "obsidian-as-ide",
@@ -6615,6 +6639,7 @@
       "wiki/sources/2026-07-08-algorithme-redaction-claude.md",
       "wiki/sources/2026-07-15-google-slop-detection-s-cts.md",
       "wiki/sources/2026-08-03-organikk-5-leviers-citation-chatgpt.md",
+      "wiki/sources/2026-08-05-algorithme-5-facons-exploiter-ia-seo.md",
       "wiki/syntheses/4-piliers-organikk.md",
       "wiki/syntheses/doctrine-seo-post-sge.md",
       "wiki/syntheses/faq-geo-175-questions.md",

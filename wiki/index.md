@@ -31,9 +31,9 @@ status: stable
 - [[revue-hebdo/index]] — rituel de décision hebdo (vendredi)
 - [[decisions/index]] — journal de décisions (ADR)
 
-## Sources (104)
+## Sources (105)
 
-### Articles (57)
+### Articles (58)
 - [[sources/2026-01-08-organikk-seo-agence-immobiliere-lyon]] — SEO local immobilier Lyon : micro-intentions, estimateurs, newsletter à backlinks
 - [[sources/2026-01-12-organikk-seo-serrurier-lyon]] — SEO serrurier Lyon : transparence tarifaire, 30 KW bottom-funnel, leads seuls
 - [[sources/2026-01-15-organikk-mots-cles-seo-2026]] — Mots-clés 2026 : volume = projection, GSC = fait, requêtes 24+ mots
@@ -91,6 +91,7 @@ status: stable
 - [[sources/2026-07-31-algorithme-ai-overviews-99-pourcent]] — 99% des KW informationnels avalés par AI Overviews (146M SERPs) ; réorientation multi-canal
 - [[sources/2026-07-31-organikk-mots-cles-business-claude]] — Mots-clés business via Claude : 3 étapes RAG Obsidian + 3 skills, data propriétaire
 - [[sources/2026-08-03-organikk-5-leviers-citation-chatgpt]] — 5 leviers citation ChatGPT : surprise gap, ancrage terrain, FAQ depuis verbatims
+- [[sources/2026-08-05-algorithme-5-facons-exploiter-ia-seo]] — 5 chantiers IA/SEO système : data client, Google élargi, contenu, maillage clustering
 
 ### Doctrine (23)
 - [[sources/2026-03-31-tim-profil-et-regles]] — Profil, règles, ton de voix de Tim
